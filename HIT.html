@@ -1,5 +1,5 @@
 <!-- You must include this JavaScript file -->
-<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+<script src="https://assets.crowd.aws/crowd-html-elements.js" async></script>
 
 <!-- For the full list of available Crowd HTML Elements and their input/output documentation,
       please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
@@ -8,16 +8,19 @@
   div {
     margin: 1rem;
   }
+
   input[type="radio"],
   input[type="checkbox"] {
     height: 1rem;
     width: 1rem;
     margin-left: 1rem;
   }
+
   label {
     display: inline-flex;
     font-weight: 300;
   }
+
   img {
     width: 50%;
   }
@@ -26,31 +29,22 @@
 <div>
   <!-- You must include crowd-form so that your task submits answers to MTurk -->
   <crowd-form answer-format="flatten-objects">
-    <crowd-instructions link-text="View instructions" link-type="button">
-      <short-summary>
-        <p>
-          Read about the task and answer the questions below.
-        </p>
-        <p>
-          Your answers will be compared to other workers. If your answers align
-          with most other workers answers, you will receive a bonus of up to $1.
-        </p>
-      </short-summary>
-      <detailed-instructions>
-        <p>
-          Read about the task with the included materials.
-          <br />Answer all the questions below about the task. <br />If a
-          question is unclear, answer it, then mark it as unclear, and provide
-          some suggestions about how we might make it more clear in the future.
-        </p>
-      </detailed-instructions>
-    </crowd-instructions>
+    <h2>
+      Read about ${taskName} and answer questions below.
+    </h2>
+    <p>
+      Your answers will be compared to other workers. <strong>If your answers align
+        with most other workers', you will receive a bonus of up to $1.</strong>
+    </p>
+    <p>
+      If a question is unclear, <strong>answer it, then mark it as unclear</strong>, and provide some suggestions about
+      how we might make
+      it more clear in the future.
+    </p>
 
-    <div id="task">
-      <h1 id="taskName">Read the instructions for ${taskName}</h1>
-      <p id="taskDescription">${taskDescription}</p>
-    </div>
-    <h1 id="questionHeading">Answer questions about ${taskName}</h1>
+    <h2>Read the instructions for ${taskName}</h2>
+    <p>${taskDescription}</p>
+    <h2>Answer questions about ${taskName}</h2>
   </crowd-form>
 </div>
 <script async>
@@ -276,7 +270,7 @@
   function fillQuestions() {
     questions.forEach(q => {
       crowdForm.innerHTML +=
-        "<div><p>" + q.question + "</p>" + inputs[q.type](q.id) + "</div><br>";
+        "<p>" + q.question + "</p>" + inputs[q.type](q.id) + "<br><br>";
     });
   }
 
