@@ -1,0 +1,26 @@
+id,question,type
+q1,Can the task - at least theoretically - be done by one individual?,tf
+q2,Can the task difficulty or complexity be varied systematically?,complexity
+q3,There is more than one correct solution,l5pt
+q4,Correctness of a solution can be demonstrated,l5pt
+q5,Integrated actions of group members is required,l5pt
+q6,The task is commonly encountered by members of the society,l5pt
+q7,Task is interesting and attractive,l5pt
+q8,Task requires equal participation or effort from group members,l5pt
+q9,Tasks involve conflict as opposed to cooperation among group members,l5pt
+q10,The goal of the task is to perform as much or as quickly as possible?,l5pt
+q11,The goal of the task is to produce a specific desired outcome?,l5pt
+q12,What is the ratio of mental to motor effort in this task,mentalMotor
+q13,Categorize this task,intellective
+q14,Does the task require generating an action-oriented plan?,tf
+q15,Does the task require generating novel ideas?,tf
+q16,Is there an objectively correct answer?,tf
+q17,Does this task require resolving differences in viewpoint or opinion?,tf
+q18,Does this task induce a conflict of interest between the members?,tf
+q19,Is it against an opponent or adversary group?,tf
+q20,Can the task be divided into two or more easily separated parts?,tf
+q21,Does the task require various skills or abilities?,tf
+q22,Can the group just sum the product of the members' efforts?,tf
+q23,Does the task require group members to contribute identically to the group's product?,tf
+q24,Can one member's contribution determine the group's product?,tf
+q25,Does it permit the group members to weight contributions in any way they want?,tf

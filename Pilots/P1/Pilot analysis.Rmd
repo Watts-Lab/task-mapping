@@ -1,0 +1,175 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(readr)
+library(pwr)
+library(readr)
+```
+```{r}
+
+TFLevels = c("Definitely false",
+             "Probably false",
+             "Neither true nor false",
+             "Probably true",
+             "Definitely true")
+ratioMentalLevels = c("Entirely mental effort",
+                      "Moderately mental effort",
+                      "About 50–50",
+                      "Moderately motor effort",
+                      "Entirely motor effort")
+intelectiveLevels = c("Purely judgmental: no demonstrably correct answer.", 
+                      "Intermediate: correctness of a proposed solution is more difficult, but not impossible.", 
+                      "Purely intellective: correctness of a proposed solution can be readily demonstrated.",
+                      "Simultaneous: both intellective and judgmental")
+
+p1RawData <- read_csv("Task Mapping P1 Cleaned.csv") %>% 
+  mutate(Task = Order) %>% 
+  select(-Order) %>% mutate(
+    Q3 = Q3=="Yes",
+    Q4 = Q4=="Yes",
+    Q5_1 = factor(Q5_1, levels = TFLevels),
+    Q5_2 = factor(Q5_2, levels = TFLevels),
+    Q5_3 = factor(Q5_3, levels = TFLevels),
+    Q5_4 = factor(Q5_4, levels = TFLevels),
+    Q5_5 = factor(Q5_5, levels = TFLevels),
+    Q5_6 = factor(Q5_6, levels = TFLevels),
+    Q5_7 = factor(Q5_7, levels = TFLevels),
+    Q5_8 = factor(Q5_8, levels = TFLevels),
+    Q5_9 = factor(Q5_9, levels = TFLevels),
+    Q6 = factor(Q6, levels = ratioMentalLevels),
+    Q7 = factor(Q7, levels = intelectiveLevels),
+    Q8 = Q8=="Yes",
+    Q9 = Q9=="Yes",
+    Q10 = Q10=="Yes",
+    Q11 = Q11=="Yes",
+    Q12 = Q12=="Yes",
+    Q13 = Q13=="Yes",
+    Q14 = Q14=="Yes",
+    Q15 = Q15=="Yes",
+    Q16 = Q16=="Yes",
+    Q17 = Q17=="Yes",
+    Q18 = Q18=="Yes",
+    Q19 = Q19=="Yes"
+  ) %>% mutate(
+    Q3 = as.numeric(Q3),
+    Q4 = as.numeric(Q4),
+    # Q5_1 = as.numeric(Q5_1),
+    # Q5_2 = as.numeric(Q5_2),
+    # Q5_3 = as.numeric(Q5_3),
+    # Q5_4 = as.numeric(Q5_4),
+    # Q5_5 = as.numeric(Q5_5),
+    # Q5_6 = as.numeric(Q5_6),
+    # Q5_7 = as.numeric(Q5_7),
+    # Q5_8 = as.numeric(Q5_8),
+    # Q5_9 = as.numeric(Q5_9),
+    # Q6 = as.numeric(Q6),
+    # Q7 = as.numeric(Q7),
+    Q5_1 = (as.numeric(Q5_1)-1)/(length(TFLevels)-1),
+    Q5_2 = (as.numeric(Q5_2)-1)/(length(TFLevels)-1),
+    Q5_3 = (as.numeric(Q5_3)-1)/(length(TFLevels)-1),
+    Q5_4 = (as.numeric(Q5_4)-1)/(length(TFLevels)-1),
+    Q5_5 = (as.numeric(Q5_5)-1)/(length(TFLevels)-1),
+    Q5_6 = (as.numeric(Q5_6)-1)/(length(TFLevels)-1),
+    Q5_7 = (as.numeric(Q5_7)-1)/(length(TFLevels)-1),
+    Q5_8 = (as.numeric(Q5_8)-1)/(length(TFLevels)-1),
+    Q5_9 = (as.numeric(Q5_9)-1)/(length(TFLevels)-1),
+    Q6 = (as.numeric(Q6)-1)/(length(ratioMentalLevels)-1),
+    Q7 = (as.numeric(Q7)-1)/(length(intelectiveLevels)-1),
+    Q8 = as.numeric(Q8),
+    Q9 = as.numeric(Q9),
+    Q10 = as.numeric(Q10),
+    Q11 = as.numeric(Q11),
+    Q12 = as.numeric(Q12),
+    Q13 = as.numeric(Q13),
+    Q14 = as.numeric(Q14),
+    Q15 = as.numeric(Q15),
+    Q16 = as.numeric(Q16),
+    Q17 = as.numeric(Q17),
+    Q18 = as.numeric(Q18),
+    Q19 = as.numeric(Q19)
+  )
+
+qValues = c("Q3", "Q4", 
+            "Q5_1", "Q5_2", "Q5_3", "Q5_4", "Q5_5", "Q5_6", "Q5_7", "Q5_8", "Q5_9", 
+            "Q6", "Q7", "Q8", "Q9", "Q10", "Q11", "Q12", "Q13", "Q14", "Q15", "Q16", "Q17", "Q18", "Q19")
+qNames = c("Can it be individual", 
+           "Complexity be varied systematically", 
+           "Is there more than one solution", 
+           "Can correctness of solution be shown", 
+           "Integrating action required", 
+           "Real world task", 
+           "Interesting task", 
+           "Equal participation", 
+           "Conflict instead of cooperation", 
+           "Performance task", 
+           "Producing an outcome", 
+           "Mental : Motor", 
+           "Intellective", 
+           "Planning", 
+           "Idea generation", 
+           "Objectively correct", 
+           "Cognitive Conflict", 
+           "It induces a conflict of interest", 
+           "Is there an opponent or adversary", 
+           "Can the task be broken into parts", 
+           "Skills diversity required", 
+           "Is it a sum of efforts", 
+           "Is contribution identical", 
+           "One member determine the product", 
+           "Can the group weigh contributions") 
+
+p1TaskQuestionData = p1RawData %>% 
+  select(-Duration,-UserLanguage, -Q20) %>% 
+  gather(key="Question",value="Value",-Task, -ResponseId) %>% 
+  mutate(
+    Respondant = ResponseId,
+    Question = factor(Question, levels=qValues),
+    Value = as.numeric(Value),
+    Type = case_when(
+      grepl("Q5_",Question) ~ paste(length(TFLevels),"Factor"),
+      Question == "Q6" ~ paste(length(ratioMentalLevels),"Factor"),
+      Question == "Q7" ~ paste(length(intelectiveLevels),"Factor"),
+      TRUE ~ "Binary"
+    ), 
+    Task = case_when(
+      Task == "MindsEyeTask" ~ "Minds eye",
+      Task == "RoomAssignmentTask" ~ "Room asgmt."
+    )
+    ) %>% select(-ResponseId)
+
+p1QuestionData = p1TaskQuestionData %>%
+  group_by(Task,Type,Question) %>%
+  summarise(
+    Median = median(Value),
+    Mean = mean(Value),
+    Variance = var(Value),
+    Error = sd(Value)/sqrt(n())
+  )
+
+ggplot(p1QuestionData, aes(Question,Mean,color=Task,shape=Type)) +
+  geom_pointrange(aes(ymin=Mean-Error, ymax=Mean+Error)) +
+  # geom_point(aes(x=Question,y=Median)) + 
+  scale_x_discrete(labels=qNames) +
+  labs(shape = "Answer type") +
+  coord_flip() + 
+  theme_minimal()
+
+ggplot(p1QuestionData, aes(Question,Variance,fill=Task, width=.75)) +
+  geom_col(position = "dodge") + 
+  geom_point(aes(x=Question,y=.3,shape=Type)) + 
+  scale_x_discrete(labels=qNames) +
+  scale_y_continuous(limits = c(0,.3)) +
+  labs(shape = "Answer type") +
+  coord_flip() + 
+  theme_minimal()
+```
