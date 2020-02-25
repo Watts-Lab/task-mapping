@@ -22,6 +22,14 @@ questions <- read_csv("Questions.csv")
 questions <- questions %>% 
   mutate(question = factor(question,levels=rev(questions$question)))
 
+llevels <- c("0","1","2","3","4")
+mlevels <- c("emotor","mmotor","even","mMental","eMental")
+ilevels <- c("intellective","both","intermediate","judgmental")
+
+lfactor <- function(column) {factor(column,levels=llevels)}
+mfactor <- function(column) {factor(column,levels=mlevels)}
+ifactor <- function(column) {factor(column,levels=ilevels)}
+
 myData <- read_csv("P2data.csv") %>% 
   mutate(
     Task = Input.taskName
@@ -35,108 +43,18 @@ questionData <- myData %>%
   filter(Status == TRUE) %>% 
   separate(Label,c("Type","id","Answer")) %>%
   select(-Status,-Type) %>% 
-  mutate(
-    Answer = case_when(
-      Answer == "true" ~ 1,
-      Answer == "false" ~ 0,
-      Answer == "0" ~ 0/4,
-      Answer == "1" ~ 1/4,
-      Answer == "2" ~ 2/4,
-      Answer == "3" ~ 3/4,
-      Answer == "4" ~ 4/4,
-      Answer == "emotor" ~ 0/4,
-      Answer == "mmotor" ~ 1/4,
-      Answer == "even" ~ 2/4,
-      Answer == "mMental" ~ 3/4,
-      Answer == "eMental" ~ 4/4,
-      Answer == "intellective" ~ 0/2,
-      Answer == "both" ~ 1/2,
-      Answer == "intermediate" ~ 2/2,
-      Answer == "judgmental" ~ 2/2
-    )
-  ) %>% 
   inner_join(questions) %>%
-  mutate(
-    Question = question,
-    Type = case_when(
-      type == "tf" ~ "Logical",
-      type == "complexity" ~ "Logical",
-      type == "complexity" ~ "Logical",
-      type == "l5pt" ~ "5pt Ordinal",
-      type == "mentalMotor" ~ "5pt Ordinal",
-      type == "intellective" ~ "4pt Nominal"
-    )
-  ) %>%
-  select(-type) %>%
-  mutate(
-    question = substr(question,1,35),
-    id = sub("q","",id)
-    ) %>%
-  unite(Quest,question,id,sep=" - ") 
+  unite(Question, type,question, sep = " - ") %>% 
+  select(-id) %>% 
+  spread(Question, Answer) %>% 
+  mutate_at(vars(contains("tf - ")),as.logical) %>% 
+  mutate_at(vars(contains("complexity - ")),as.logical) %>% 
+  mutate_at(vars(contains("l5pt - ")),lfactor) %>%
+  mutate_at(vars(contains("mentalMotor - ")),mfactor) %>%
+  mutate_at(vars(contains("intellective - ")),ifactor)
+
+questionData = na.omit(questionData)
 ```
-```{r}
-summaryData <- questionData %>% group_by(Task,Question,Quest,Type) %>%
-  summarise(
-    Median = median(Answer),
-    Mean = mean(Answer),
-    Variance = var(Answer),
-    Error = sd(Answer)/sqrt(n()), 
-  )
-
-summaryQuestionData <- summaryData %>% group_by(Question,Quest,Type) %>%
-  summarise(
-    Error = sd(Variance)/sqrt(n()),
-    Variance = mean(Variance)
-  )
-
-ordinalScaling = 5
-
-ggplot(summaryQuestionData, aes(Question,Variance, width=.75,color=Type)) +
-  geom_pointrange(aes(ymin=Variance-Error, ymax=Variance+Error)) +
-  scale_x_discrete(labels=summaryData$Quest) +
-  labs(y="Mean variance",color="Answer type") +
-  coord_flip() + 
-  theme_minimal()
-
-summaryTaskData <- summaryData %>% group_by(Task) %>%
-  summarise(
-    Error = sd(Variance)/sqrt(n()),
-    Variance = mean(Variance)
-  )
-
-ggplot(summaryTaskData, aes(Task,Variance, width=.75)) +
-  geom_pointrange(aes(ymin=Variance-Error, ymax=Variance+Error)) +
-  # geom_point(aes(x=summaryQuestionOnlyData$Question,y=summaryQuestionOnlyData$Variance)) + 
-  # scale_x_discrete(labels=summaryData$Quest) +
-  # scale_y_continuous(limits = c(0,.3)) +
-  labs(y="Mean variance") +
-  coord_flip() + 
-  theme_minimal()
-
-matrixData = summaryData %>% select(Task,Question,Quest,Variance) %>%
-  spread(Task, Variance)
-
-ggplot(summaryData,aes(Task,Question)) + 
-  geom_tile(aes(fill = Variance,color=-1*Variance)) + 
-  geom_text(aes(label=round(Variance,digits =2), color=-1*Variance), size=2.5) + 
-  scale_y_discrete(labels=summaryData$Quest) + 
-  scale_x_discrete(labels=unique(substr(summaryData$Task,1,15))) +
-  theme_minimal() + 
-  theme(axis.text.x = element_text(angle = 30, hjust = 1), legend.position = "none") 
-
-workerData <- questionData %>% group_by(WorkerId) %>% 
-  summarise(
-    Median = median(Answer),
-    Mean = mean(Answer),
-    Variance = var(Answer),
-    Error = sd(Answer)/sqrt(n())
-  )
-  
-
-```  
-rows samples, columns raters
-11 ----------------- 9 
-
 # Krippendorff’s Alpha
 Values range from 0 to 1, where 0 is perfect disagreement and 1 is perfect agreement. Krippendorff suggests: “[I]t is customary to require α ≥ .800. Where tentative conclusions are still acceptable, α ≥ .667 is the lowest conceivable limit (2004, p. 241).”
 
@@ -146,163 +64,41 @@ Values range from 0 to 1, where 0 is perfect disagreement and 1 is perfect agree
 More than .75 is acceptable in many feilds
 
 ```{r}
-matrixData <- myData %>% 
-  select(-contains("unclear"), -contains("details"),-AssignmentId) %>% 
-    gather(key="Label",value="Status",-Task,-WorkerId) %>%
-  filter(Status == TRUE) %>% 
-  separate(Label,c("Type","id","Answer")) %>%
-  select(-Status,-Type) %>% 
-  mutate(
-    Answer = case_when(
-      Answer == "true" ~ 1,
-      Answer == "false" ~ 0,
-      Answer == "0" ~ 0/4,
-      Answer == "1" ~ 1/4,
-      Answer == "2" ~ 2/4,
-      Answer == "3" ~ 3/4,
-      Answer == "4" ~ 4/4,
-      Answer == "emotor" ~ 0/4,
-      Answer == "mmotor" ~ 1/4,
-      Answer == "even" ~ 2/4,
-      Answer == "mMental" ~ 3/4,
-      Answer == "eMental" ~ 4/4,
-      Answer == "intellective" ~ 0/2,
-      Answer == "both" ~ 1/2,
-      Answer == "intermediate" ~ 2/2,
-      Answer == "judgmental" ~ 2/2
-    )
-  ) %>% 
-  inner_join(questions) %>%
-  mutate(
-    Question = question,
-    Type = case_when(
-      type == "tf" ~ "Logical",
-      type == "complexity" ~ "Logical",
-      type == "complexity" ~ "Logical",
-      type == "l5pt" ~ "5pt Ordinal",
-      type == "mentalMotor" ~ "5pt Ordinal",
-      type == "intellective" ~ "4pt Nominal"
-    )
-  ) %>%
-  select(-type, -question, -Type, -WorkerId) %>%
-  # filter(id == "q5") %>%
-  # filter(Task == "Chess") %>% 
-  group_by(Task,Question) %>%
-  mutate(
-    Rater = row_number(),
-    Rater = paste("R",Rater,sep="")
-  ) %>% 
-  ungroup() %>% 
-  mutate(
-    Rater = factor(Rater)
-  ) %>%
-  spread(Rater,Answer) %>%
-  group_by(Question, id) %>% 
-  summarise(
-    rows = dim(data.matrix(cbind(R1,R2,R3,R4,R5,R6,R7,R8)))[1],
-    cols = dim(data.matrix(cbind(R1,R2,R3,R4,R5,R6,R7,R8)))[2],
-    Mean = mean(data.matrix(cbind(R1,R2,R3,R4,R5,R6,R7,R8))),
-    FleissKappa = kappam.fleiss(data.matrix(cbind(R1,R2,R3,R4,R5,R6,R7,R8)))$value,
-    KrippAlpha = kripp.alpha(data.matrix(cbind(R1,R2,R3,R4,R5,R6,R7,R8)))$value
-  )
+calculateFleissKappa = function(dataTable, rowGroup, colPattern) {
+  rowGroups = unique(dataTable[rowGroup])
+  apply(rowGroups,1,function(group){
+    groupTable = dataTable %>% filter(!!as.symbol(rowGroup) == group)
+    cols = as.data.frame(names(groupTable %>% select(matches(colPattern))))
+    return(apply(cols,1,function(column){
+      colTable = groupTable %>% select(!!as.symbol(column))
+      return(kappam.fleiss(t(colTable))$value)
+    }))
+  })
+}
 
-ggplot(matrixData, aes(FleissKappa,KrippAlpha)) + 
-  geom_smooth(method = lm) + 
-  geom_label(aes(label=id)) + 
-  coord_fixed()
+calculateKrippAlpha = function(dataTable, rowGroup, colPattern) {
+  rowGroups = unique(dataTable[rowGroup])
+  apply(rowGroups,1,function(group){
+    groupTable = dataTable %>% filter(!!as.symbol(rowGroup) == group)
+    cols = as.data.frame(names(groupTable %>% select(matches(colPattern))))
+    return(apply(cols,1,function(column){
+      colTable = groupTable %>% select(!!as.symbol(column))
+      return(kripp.alpha(as.matrix(colTable))$value)
+    }))
+  })
+}
 
-ggplot(matrixData) +
-  geom_line(aes(Question,KrippAlpha, group=1, color="red")) +
-  geom_line(aes(Question,FleissKappa, group=1, color="blue")) +
-  scale_x_discrete(labels=summaryData$Quest) +
-  labs(y="Coefficient",color="Answer type") +
-  coord_flip() + 
-  theme_minimal()
-
+calculateFleissKappa(questionData,"Task"," - ")
+calculateKrippAlpha(questionData,"Task"," - ")
 ```
 
 ```{r}
-workers = unique(myData$WorkerId)
+testData = questionData %>% 
+  filter(Task == "Sudoku") %>%
+  select(contains("intellectiv"),Task,WorkerId) %>% 
+  spread(WorkerId,`intellective - Categorize this task`)
 
-matrixData <- myData %>% 
-  select(-contains("unclear"), -contains("details"),-AssignmentId) %>% 
-    gather(key="Label",value="Status",-Task,-WorkerId) %>%
-  filter(Status == TRUE) %>% 
-  separate(Label,c("Type","id","Answer")) %>%
-  select(-Status,-Type) %>% 
-  mutate(
-    Answer = case_when(
-      Answer == "true" ~ 1,
-      Answer == "false" ~ 0,
-      Answer == "0" ~ 0/4,
-      Answer == "1" ~ 1/4,
-      Answer == "2" ~ 2/4,
-      Answer == "3" ~ 3/4,
-      Answer == "4" ~ 4/4,
-      Answer == "emotor" ~ 0/4,
-      Answer == "mmotor" ~ 1/4,
-      Answer == "even" ~ 2/4,
-      Answer == "mMental" ~ 3/4,
-      Answer == "eMental" ~ 4/4,
-      Answer == "intellective" ~ 0/2,
-      Answer == "both" ~ 1/2,
-      Answer == "intermediate" ~ 2/2,
-      Answer == "judgmental" ~ 2/2
-    )
-  ) %>% 
-  inner_join(questions) %>%
-  mutate(
-    Question = question,
-    Type = case_when(
-      type == "tf" ~ "Logical",
-      type == "complexity" ~ "Logical",
-      type == "complexity" ~ "Logical",
-      type == "l5pt" ~ "5pt Ordinal",
-      type == "mentalMotor" ~ "5pt Ordinal",
-      type == "intellective" ~ "4pt Nominal"
-    )
-  ) %>%
-  select(-type, -question, -Type) %>%
-  # filter(id == "q5") %>%
-  group_by(Task,Question) %>%
-  mutate(
-    Rater = WorkerId
-  ) %>% 
-  ungroup() %>% 
-  spread(Rater,Answer) %>%
-  group_by(Question, id) %>%
-  select(matches("A[A-Z0-9].")) %>%
-  summarise(
-    rows = dim(data.matrix(cbind(!!workers)))[1],
-    cols = dim(data.matrix(cbind(!!workers)))[2],
-    # mine = select(one_of(c("A112LUS6RHBNYB"))),
-    # print(data.matrix(select(one_of(!!workers)))),
-    # Mean = mean(data.matrix(!!workers)),
-    # Variance = var(data.matrix(!!workers)),
-    # FleissKappa = kappam.fleiss(data.matrix(!!workers))$value,
-    
-    # We need some way to filter out workers who didn't work on a particular question
-    KrippAlpha = kripp.alpha(data.matrix(!!workers))$value
-  )
-
-ggplot(matrixData, aes(Variance,KrippAlpha)) + 
-  geom_smooth(method = lm) + 
-  geom_label(aes(label=id)) + 
-  coord_fixed() +
-  scale_x_continuous(limits = c(0,.3))
-
-
-ggplot(matrixData, aes(FleissKappa,KrippAlpha)) + 
-  geom_smooth(method = lm) + 
-  geom_label(aes(label=id)) + 
-  coord_fixed()
-
-ggplot(matrixData) +
-  geom_line(aes(Question,KrippAlpha, group=1, color="red")) +
-  geom_line(aes(Question,FleissKappa, group=1, color="blue")) +
-  scale_x_discrete(labels=summaryData$Quest) +
-  labs(y="Coefficient",color="Answer type") +
-  coord_flip() + 
-  theme_minimal()
-
+as.matrix(as.matrix(testData))
+kripp.alpha(t(as.matrix(testData)))
+kappam.fleiss(as.matrix(testData))
 ```
