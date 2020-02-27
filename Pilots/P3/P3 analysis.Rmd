@@ -15,8 +15,7 @@ library(pwr)
 library(readr)
 library(irr)
 ```
-
-```{r dataStructure, echo=FALSE}
+```{r dataStructure, include=FALSE}
 rawData <- read_csv("Pilot 3 data.csv") 
 
 questions <- rawData %>% 
@@ -94,38 +93,55 @@ responses <- rawData %>%
   mutate_at(vars(contains("intellective - ")),intelletiveType) %>% 
   select(-contains("character - "))
 ```
-```{r analysis, echo = FALSE}
+We first build several core data frames:
+
+- **Tasks** lists the `r dim(tasks)[1]` tasks we studied and their IDs 
+- **Questions** lists the `r dim(questions)[1]` questions, their IDs and the answer type they use
+- **Responses** lists `r dim(responses)[1]` total responses, broken out by task-respondant pairs, with questions as columns. These encompass responses from `r length(unique(responses$ResponseId))` unique individuals.
+```{r analysis, include = FALSE}
 # Accepts a table, a column name to group by, and a column name pattern to select subjects. 
 calculateFleissKappa = function(dataTable, rowGroup, colPattern) {
   rowGroups = unique(dataTable[rowGroup])
-  as.data.frame(apply(rowGroups,1,function(group){
+  apply(rowGroups,1,function(group){
     groupTable = dataTable %>% filter(!!as.symbol(rowGroup) == group)
     cols = as.data.frame(names(groupTable %>% select(matches(colPattern))))
     return(apply(cols,1,function(column){
       colTable = groupTable %>% select(!!as.symbol(column))
       return(kappam.fleiss(t(as.matrix(colTable)))$value)
     }))
-  }))
+  })
 }
 
 # Accepts a table, a column name to group by, and a column name pattern to select subjects. 
 calculateKrippAlpha = function(dataTable, rowGroup, colPattern) {
   rowGroups = unique(dataTable[rowGroup])
-  as.data.frame(apply(rowGroups,1,function(group){
+  apply(rowGroups,1,function(group){
     groupTable = dataTable %>% filter(!!as.symbol(rowGroup) == group)
     cols = as.data.frame(names(groupTable %>% select(matches(colPattern))))
     return(apply(cols,1,function(column){
       colTable = groupTable %>% select(!!as.symbol(column))
       return(kripp.alpha(as.matrix(colTable))$value)
     }))
-  }))
+  })
 }
 
-calculateFleissKappa(responses,"Task"," - ")
-calculateKrippAlpha(responses,"Task"," - ")
+fleissKappaMatrix = calculateFleissKappa(responses,"Task"," - ")
+kripAlphaMatrix = calculateKrippAlpha(responses,"Task"," - ")
 ```
+To evaluate the inter rater reliability, we compute Fleiss' Kappa 
+
+`r round(fleissKappaMatrix,2)`
+
+and Krippendorf's Alpha 
+
+`r round(kripAlphaMatrix,2)`
+
+for each task-question pair (a `r dim(fleissKappaMatrix)` matrix, because one question was dropped due to being a free text response). However, this does not give us what we want as each position in these results is calculated from a 1 dimensional vector, which is not how these statistics are intended to be used. All this tells us is that 
+
+*Note that in Fleiss' Kappa, `NA` for a 1 dimensional vector is similar to 1, as in no variance across respondants. Kripendorf's Alpha does this correctly and shows 1 in those positions.*
 ```{r}
-subsetResponse = responses %>% filter(Task == "Sudoku") %>% select(contains("mental"))
-kappam.fleiss(t(subsetResponse))
+subsetResponse <- responses %>% select(ResponseId,Task,contains("mental")) %>% spread(ResponseId, `mental - 6 - What is the ratio of mental to motor effort in the task?\nFor example, basketball requires almost entirely motor effort, while calculating a tip in a restaurant is almost entirely mental effort.`)
+names(subsetResponse)
+kappam.fleiss(subsetResponse)
 ```
 
