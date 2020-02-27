@@ -1,0 +1,131 @@
+---
+title: "P3 analysis"
+author: "Mark Whiting"
+date: "2/26/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(readr)
+library(pwr)
+library(readr)
+library(irr)
+```
+
+```{r dataStructure, echo=FALSE}
+rawData <- read_csv("Pilot 3 data.csv") 
+
+questions <- rawData %>% 
+  filter(
+    StartDate == "Start Date"
+  ) %>% 
+  select(contains("Q")) %>% 
+  gather(ID, Question) %>% 
+  separate(ID,c("TaskID","QID","EID")) %>%
+  unite("QuestionID",QID,EID,na.rm=TRUE,sep="") %>%  
+  filter(!grepl("Q",TaskID)) %>%
+  filter(!grepl("Q44",Question)) %>% 
+  mutate(
+    TaskID = as.numeric(TaskID),
+    QuestionID = as.numeric(sub("Q","",QuestionID))
+  )
+
+tasks <- questions %>% 
+  filter(QuestionID == 3) %>% 
+  separate(Question, c("Task","Question"), sep = " - ") %>% 
+  select(contains("Task"))
+
+questions <- questions %>% 
+  left_join(tasks) %>% 
+  group_by(Task) %>% 
+  mutate(
+    Question = sub(paste(" *-* *",Task," - ",sep = ""),"",Question)
+  ) %>% 
+  ungroup() %>%
+  select(contains("Question")) %>% 
+  distinct() %>% 
+  mutate(
+    Question = sub("For the next few questions answer the degree to which each aspect can be achieved with \\[Field-1\\].","",Question),
+    Question = sub("\\[Field-1\\]","the task",Question),
+    ResponseType = case_when(
+      QuestionID == 6 ~ "mental",
+      QuestionID == 7 ~ "intellective",
+      QuestionID > 50 ~ "l5pt",
+      QuestionID == 32 ~ "agree",
+      QuestionID == 44 ~ "character", 
+      TRUE ~ "yn" 
+    ),
+    Question = paste(ResponseType, QuestionID, Question, sep = " - ")
+  ) 
+
+mentalType <- function(column) {ordered(column,levels=c("Entirely mental effort", "Moderately mental effort", "About 50–50", "Moderately motor effort", "Entirely motor effort"))}
+intelletiveType <- function(column) {factor(column)}
+l5ptType <- function(column) {ordered(column,levels=c("Definitely false", "Probably false", "Neither true nor false", "Probably true", "Definitely true"))}
+agreeType <- function(column) {ordered(column,levels=c("Strongly disagree", "Somewhat disagree", "Neither agree nor disagree", "Somewhat agree", "Strongly agree"))}
+characterType <- function(column) {as.character(column)}
+ynType <- function(column) {ordered(column,levels=c("No","Yes"))}
+
+responses <- rawData %>%
+  filter(Finished == "True") %>% 
+  select(ResponseId, contains("Q")) %>% 
+  filter(!is.na(`2_Q32`)) %>% 
+  gather(Question,Answer,-ResponseId) %>% 
+  separate(Question,c("TaskID","QID","EID")) %>%
+  unite("QuestionID",QID,EID,na.rm=TRUE,sep="") %>%  
+  filter(!grepl("Q",TaskID)) %>% 
+  mutate(
+    TaskID = as.numeric(TaskID),
+    QuestionID = as.numeric(sub("Q","",QuestionID))
+  ) %>%
+  left_join(questions) %>% 
+  left_join(tasks) %>% 
+  filter(!is.na(QuestionID)) %>% 
+  select(-TaskID, -QuestionID, -ResponseType) %>%
+  spread(Question,Answer) %>% 
+  mutate_at(vars(contains("yn - ")),ynType) %>%
+  mutate_at(vars(contains("character - ")),characterType) %>%
+  mutate_at(vars(contains("agree - ")),agreeType) %>%
+  mutate_at(vars(contains("l5pt - ")),l5ptType) %>%
+  mutate_at(vars(contains("mental - ")),mentalType) %>%
+  mutate_at(vars(contains("intellective - ")),intelletiveType) %>% 
+  select(-contains("character - "))
+```
+```{r analysis, echo = FALSE}
+# Accepts a table, a column name to group by, and a column name pattern to select subjects. 
+calculateFleissKappa = function(dataTable, rowGroup, colPattern) {
+  rowGroups = unique(dataTable[rowGroup])
+  as.data.frame(apply(rowGroups,1,function(group){
+    groupTable = dataTable %>% filter(!!as.symbol(rowGroup) == group)
+    cols = as.data.frame(names(groupTable %>% select(matches(colPattern))))
+    return(apply(cols,1,function(column){
+      colTable = groupTable %>% select(!!as.symbol(column))
+      return(kappam.fleiss(t(as.matrix(colTable)))$value)
+    }))
+  }))
+}
+
+# Accepts a table, a column name to group by, and a column name pattern to select subjects. 
+calculateKrippAlpha = function(dataTable, rowGroup, colPattern) {
+  rowGroups = unique(dataTable[rowGroup])
+  as.data.frame(apply(rowGroups,1,function(group){
+    groupTable = dataTable %>% filter(!!as.symbol(rowGroup) == group)
+    cols = as.data.frame(names(groupTable %>% select(matches(colPattern))))
+    return(apply(cols,1,function(column){
+      colTable = groupTable %>% select(!!as.symbol(column))
+      return(kripp.alpha(as.matrix(colTable))$value)
+    }))
+  }))
+}
+
+calculateFleissKappa(responses,"Task"," - ")
+calculateKrippAlpha(responses,"Task"," - ")
+```
+```{r}
+subsetResponse = responses %>% filter(Task == "Sudoku") %>% select(contains("mental"))
+kappam.fleiss(t(subsetResponse))
+```
+

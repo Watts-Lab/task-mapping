@@ -64,28 +64,30 @@ Values range from 0 to 1, where 0 is perfect disagreement and 1 is perfect agree
 More than .75 is acceptable in many feilds
 
 ```{r}
+# Accepts a table, a column name to group by, and a column name pattern to select subjects. 
 calculateFleissKappa = function(dataTable, rowGroup, colPattern) {
   rowGroups = unique(dataTable[rowGroup])
-  apply(rowGroups,1,function(group){
+  as.data.frame(apply(rowGroups,1,function(group){
     groupTable = dataTable %>% filter(!!as.symbol(rowGroup) == group)
     cols = as.data.frame(names(groupTable %>% select(matches(colPattern))))
     return(apply(cols,1,function(column){
       colTable = groupTable %>% select(!!as.symbol(column))
-      return(kappam.fleiss(t(colTable))$value)
+      return(kappam.fleiss(t(as.matrix(colTable)))$value)
     }))
-  })
+  }))
 }
 
+# Accepts a table, a column name to group by, and a column name pattern to select subjects. 
 calculateKrippAlpha = function(dataTable, rowGroup, colPattern) {
   rowGroups = unique(dataTable[rowGroup])
-  apply(rowGroups,1,function(group){
+  as.data.frame(apply(rowGroups,1,function(group){
     groupTable = dataTable %>% filter(!!as.symbol(rowGroup) == group)
     cols = as.data.frame(names(groupTable %>% select(matches(colPattern))))
     return(apply(cols,1,function(column){
       colTable = groupTable %>% select(!!as.symbol(column))
       return(kripp.alpha(as.matrix(colTable))$value)
     }))
-  })
+  }))
 }
 
 calculateFleissKappa(questionData,"Task"," - ")
@@ -94,11 +96,9 @@ calculateKrippAlpha(questionData,"Task"," - ")
 
 ```{r}
 testData = questionData %>% 
-  filter(Task == "Sudoku") %>%
-  select(contains("intellectiv"),Task,WorkerId) %>% 
-  spread(WorkerId,`intellective - Categorize this task`)
+  filter(Task == "Ad writing") %>%
+  select(contains("complexity"))
 
-as.matrix(as.matrix(testData))
-kripp.alpha(t(as.matrix(testData)))
-kappam.fleiss(as.matrix(testData))
+kripp.alpha((as.matrix(testData)))$value
+kappam.fleiss(t(as.matrix(testData)))$value
 ```
