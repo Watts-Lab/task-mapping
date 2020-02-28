@@ -139,9 +139,107 @@ and Krippendorf's Alpha
 for each task-question pair (a `r dim(fleissKappaMatrix)` matrix, because one question was dropped due to being a free text response). However, this does not give us what we want as each position in these results is calculated from a 1 dimensional vector, which is not how these statistics are intended to be used. All this tells us is that 
 
 *Note that in Fleiss' Kappa, `NA` for a 1 dimensional vector is similar to 1, as in no variance across respondants. Kripendorf's Alpha does this correctly and shows 1 in those positions.*
-```{r}
-subsetResponse <- responses %>% select(ResponseId,Task,contains("mental")) %>% spread(ResponseId, `mental - 6 - What is the ratio of mental to motor effort in the task?\nFor example, basketball requires almost entirely motor effort, while calculating a tip in a restaurant is almost entirely mental effort.`)
-names(subsetResponse)
-kappam.fleiss(subsetResponse)
+
+So, we'd rather do this for subsets of the data, e.g. for each task, find the agreemt across raters and questions, or for each question, find the agreement across raters and tasks, or even, for each rater, find the agremeent across tasks and questions. In the next section, these assesments are performed.
+
+```{r per task agreement, message=FALSE, warning=FALSE}
+questionNames = names(responses %>% select(-ResponseId, -Task))
+perTaskAgreement = responses %>% group_by(Task) %>% 
+  summarise(
+    fleissKappa = kappam.fleiss(t(cbind(
+      .data[[questionNames[1]]],
+      .data[[questionNames[2]]],
+      .data[[questionNames[3]]],
+      .data[[questionNames[4]]],
+      .data[[questionNames[5]]],
+      .data[[questionNames[6]]],
+      .data[[questionNames[7]]],
+      .data[[questionNames[8]]],
+      .data[[questionNames[9]]],
+      .data[[questionNames[10]]],
+      .data[[questionNames[11]]],
+      .data[[questionNames[12]]],
+      .data[[questionNames[13]]],
+      .data[[questionNames[14]]],
+      .data[[questionNames[15]]],
+      .data[[questionNames[16]]],
+      .data[[questionNames[17]]],
+      .data[[questionNames[18]]],
+      .data[[questionNames[19]]],
+      .data[[questionNames[20]]],
+      .data[[questionNames[21]]],
+      .data[[questionNames[22]]],
+      .data[[questionNames[23]]],
+      .data[[questionNames[24]]],
+      .data[[questionNames[25]]],
+      .data[[questionNames[26]]]
+      )))$value
+  )
+  
+# kappam.fleiss(subsetResponse)
+```
+```{r per question agreement, message=FALSE, warning=FALSE}
+questionNames = names(responses %>% select(-ResponseId, -Task))
+
+perQuestionAgreement = as.data.frame(Reduce(rbind,Map(function(question) {
+  responses %>% select(ResponseId, Task, !!question)
+  return(cbind(question,fleissKappa = kappam.fleiss(responses %>% 
+  select(ResponseId, Task, !!question) %>% 
+  spread(ResponseId,!!question))$value))
+},questionNames)))
+
+perQuestionAgreement <- perQuestionAgreement %>% mutate(fleissKappa = as.numeric(as.character(fleissKappa)))
+```
+```{r per rater agreement, message=FALSE, warning=FALSE}
+questionNames = names(responses %>% select(-ResponseId, -Task))
+
+perRaterAgreement = responses %>% group_by(ResponseId) %>% 
+  summarise(
+    fleissKappa = kappam.fleiss(t(cbind(
+      .data[[questionNames[1]]],
+      .data[[questionNames[2]]],
+      .data[[questionNames[3]]],
+      .data[[questionNames[4]]],
+      .data[[questionNames[5]]],
+      .data[[questionNames[6]]],
+      .data[[questionNames[7]]],
+      .data[[questionNames[8]]],
+      .data[[questionNames[9]]],
+      .data[[questionNames[10]]],
+      .data[[questionNames[11]]],
+      .data[[questionNames[12]]],
+      .data[[questionNames[13]]],
+      .data[[questionNames[14]]],
+      .data[[questionNames[15]]],
+      .data[[questionNames[16]]],
+      .data[[questionNames[17]]],
+      .data[[questionNames[18]]],
+      .data[[questionNames[19]]],
+      .data[[questionNames[20]]],
+      .data[[questionNames[21]]],
+      .data[[questionNames[22]]],
+      .data[[questionNames[23]]],
+      .data[[questionNames[24]]],
+      .data[[questionNames[25]]],
+      .data[[questionNames[26]]]
+      )))$value
+  )
+```
+```{r message=FALSE, warning=FALSE}
+ggplot(perTaskAgreement,aes(Task,fleissKappa)) +
+  geom_col() + 
+  coord_flip() + 
+  theme_minimal()
+
+ggplot(perQuestionAgreement,aes(question,fleissKappa)) +
+  geom_col() + 
+  scale_x_discrete(labels=substring(perQuestionAgreement$question,0,40)) + 
+  coord_flip() + 
+  theme_minimal()
+
+ggplot(perRaterAgreement,aes(ResponseId,fleissKappa)) +
+  geom_col() + 
+  coord_flip() + 
+  theme_minimal()
 ```
 
