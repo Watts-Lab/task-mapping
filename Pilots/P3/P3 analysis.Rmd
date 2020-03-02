@@ -332,7 +332,7 @@ ourMeasure <- responses %>%
   group_by(Task) %>% 
   summarize_each(function(col) {
     agreement = mean((outer(col,col,function(x, y) as.integer(x==y)) %*% replicate(n(), 1)) / n())
-    random = 1/nlevels(col) ** 2
+    random = 1/nlevels(col)
     return(agreement - random)
   })  %>% gather(Question,Agreement,-Task)
 
