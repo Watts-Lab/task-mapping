@@ -70,7 +70,7 @@ agreeType <- function(column) {ordered(column,levels=c("Strongly disagree", "Som
 characterType <- function(column) {as.character(column)}
 ynType <- function(column) {ordered(column,levels=c("No","Yes"))}
 
-responses <- rawData %>%
+responsesAll <- rawData %>%
   filter(Finished == "True") %>% 
   select(ResponseId, contains("Q")) %>% 
   filter(!is.na(`2_Q32`)) %>% 
@@ -92,7 +92,9 @@ responses <- rawData %>%
   mutate_at(vars(contains("agree - ")),agreeType) %>%
   mutate_at(vars(contains("l5pt - ")),l5ptType) %>%
   mutate_at(vars(contains("mental - ")),mentalType) %>%
-  mutate_at(vars(contains("intellective - ")),intelletiveType) %>% 
+  mutate_at(vars(contains("intellective - ")),intelletiveType) 
+
+responses = responsesAll %>% 
   select(-contains("character - "))
 ```
 We first build several core data frames:
@@ -144,7 +146,7 @@ for each task-question pair (a `r dim(fleissKappaMatrix)` matrix, because one qu
 
 So, we'd rather do this for subsets of the data, e.g. for each task, find the agreemt across raters and questions, or for each question, find the agreement across raters and tasks, or even, for each rater, find the agremeent across tasks and questions. In the next section, these assesments are performed.
 
-```{r per task agreement, message=FALSE, warning=FALSE}
+```{r per task agreement, include=FALSE}
 questionNames = names(responses %>% select(-ResponseId, -Task))
 perTaskAgreement = responses %>% group_by(Task) %>% 
   summarise(
@@ -175,29 +177,8 @@ perTaskAgreement = responses %>% group_by(Task) %>%
       .data[[questionNames[24]]],
       .data[[questionNames[25]]],
       .data[[questionNames[26]]]
-      )))$value
-  )
-  
-# kappam.fleiss(subsetResponse)
-```
-```{r per question agreement, message=FALSE, warning=FALSE}
-questionNames = names(responses %>% select(-ResponseId, -Task))
-
-perQuestionAgreement = as.data.frame(Reduce(rbind,Map(function(question) {
-  responses %>% select(ResponseId, Task, !!question)
-  return(cbind(question,fleissKappa = kappam.fleiss(responses %>% 
-  select(ResponseId, Task, !!question) %>% 
-  spread(ResponseId,!!question))$value))
-},questionNames)))
-
-perQuestionAgreement <- perQuestionAgreement %>% mutate(fleissKappa = as.numeric(as.character(fleissKappa)))
-```
-```{r per rater agreement, message=FALSE, warning=FALSE}
-questionNames = names(responses %>% select(-ResponseId, -Task))
-
-perRaterAgreement = responses %>% group_by(ResponseId) %>% 
-  summarise(
-    fleissKappa = kappam.fleiss(t(cbind(
+      )))$value,
+    kripAlpha = kripp.alpha((cbind(
       .data[[questionNames[1]]],
       .data[[questionNames[2]]],
       .data[[questionNames[3]]],
@@ -227,21 +208,139 @@ perRaterAgreement = responses %>% group_by(ResponseId) %>%
       )))$value
   )
 ```
+
+```{r per question agreement, include=FALSE}
+perQuestionAgreement = as.data.frame(Reduce(rbind,Map(function(Question) {
+  return(cbind(
+    Question,
+    fleissKappa = kappam.fleiss(responses %>% 
+                                  select(ResponseId, Task, !!Question) %>% 
+                                  spread(ResponseId,!!Question))$value,
+    kripAlpha = kripp.alpha(t(responses %>% 
+                                  select(ResponseId, Task, !!Question) %>% 
+                                  spread(ResponseId,!!Question)))$value
+    ))
+},questionNames)))
+
+# These end up as factors because of cbind, so we coerce them to numerics. Note that we do this via character because otherwise they are coerced as the numerical value of the ordinal. 
+perQuestionAgreement <- perQuestionAgreement %>% mutate(
+  fleissKappa = as.numeric(as.character(fleissKappa)), 
+  kripAlpha = as.numeric(as.character(kripAlpha))
+  )
+```
+
+```{r per rater agreement, include=FALSE}
+perRaterAgreement = responses %>% group_by(ResponseId) %>% 
+  summarise(
+    fleissKappa = kappam.fleiss(t(cbind(
+      .data[[questionNames[1]]],
+      .data[[questionNames[2]]],
+      .data[[questionNames[3]]],
+      .data[[questionNames[4]]],
+      .data[[questionNames[5]]],
+      .data[[questionNames[6]]],
+      .data[[questionNames[7]]],
+      .data[[questionNames[8]]],
+      .data[[questionNames[9]]],
+      .data[[questionNames[10]]],
+      .data[[questionNames[11]]],
+      .data[[questionNames[12]]],
+      .data[[questionNames[13]]],
+      .data[[questionNames[14]]],
+      .data[[questionNames[15]]],
+      .data[[questionNames[16]]],
+      .data[[questionNames[17]]],
+      .data[[questionNames[18]]],
+      .data[[questionNames[19]]],
+      .data[[questionNames[20]]],
+      .data[[questionNames[21]]],
+      .data[[questionNames[22]]],
+      .data[[questionNames[23]]],
+      .data[[questionNames[24]]],
+      .data[[questionNames[25]]],
+      .data[[questionNames[26]]]
+      )))$value, 
+    kripAlpha = kripp.alpha((cbind(
+      .data[[questionNames[1]]],
+      .data[[questionNames[2]]],
+      .data[[questionNames[3]]],
+      .data[[questionNames[4]]],
+      .data[[questionNames[5]]],
+      .data[[questionNames[6]]],
+      .data[[questionNames[7]]],
+      .data[[questionNames[8]]],
+      .data[[questionNames[9]]],
+      .data[[questionNames[10]]],
+      .data[[questionNames[11]]],
+      .data[[questionNames[12]]],
+      .data[[questionNames[13]]],
+      .data[[questionNames[14]]],
+      .data[[questionNames[15]]],
+      .data[[questionNames[16]]],
+      .data[[questionNames[17]]],
+      .data[[questionNames[18]]],
+      .data[[questionNames[19]]],
+      .data[[questionNames[20]]],
+      .data[[questionNames[21]]],
+      .data[[questionNames[22]]],
+      .data[[questionNames[23]]],
+      .data[[questionNames[24]]],
+      .data[[questionNames[25]]],
+      .data[[questionNames[26]]]
+      )))$value
+  )
+```
+
 ```{r message=FALSE, warning=FALSE}
 ggplot(perTaskAgreement,aes(Task,fleissKappa)) +
   geom_col() + 
+  geom_point(aes(x = perTaskAgreement$Task, y = perTaskAgreement$kripAlpha)) + 
   coord_flip() + 
   theme_minimal()
 
-ggplot(perQuestionAgreement,aes(question,fleissKappa)) +
+ggplot(perQuestionAgreement,aes(Question,fleissKappa)) +
   geom_col() + 
-  scale_x_discrete(labels=substring(perQuestionAgreement$question,0,40)) + 
+  geom_point(aes(x = perQuestionAgreement$Question, y = perQuestionAgreement$kripAlpha)) + 
+  scale_x_discrete(labels=substring(perQuestionAgreement$Question,0,40)) + 
   coord_flip() + 
   theme_minimal()
 
 ggplot(perRaterAgreement,aes(ResponseId,fleissKappa)) +
   geom_col() + 
+  geom_point(aes(x = perRaterAgreement$ResponseId, y = perRaterAgreement$kripAlpha)) + 
   coord_flip() + 
   theme_minimal()
 ```
 
+```{r agreement studies}
+
+# Expanding the 'per question' design
+mine = kappam.fleiss(
+  (responses %>% select(questionNames[26],Task,ResponseId) %>% spread(ResponseId,questionNames[26])),
+  detail = TRUE)$detail
+
+as.data.frame(mine) %>% 
+  filter(Var2 == "Kappa") %>% 
+  mutate(
+    Task = Var1,
+    fleissKappa = Freq
+  ) 
+
+# percentage of agreements for each qestion for each task - agreement at a random guess
+ourMeasure <- responses %>% 
+  select(-ResponseId) %>% 
+  group_by(Task) %>% 
+  summarize_each(function(col) {
+    agreement = mean((outer(col,col,function(x, y) as.integer(x==y)) %*% replicate(n(), 1)) / n())
+    random = 1/nlevels(col) ** 2
+    return(agreement - random)
+  })  %>% gather(Question,Agreement,-Task)
+
+ggplot(ourMeasure, aes(Task,Question,fill = Agreement)) + 
+  geom_tile() + 
+  geom_text(aes(label=paste(round(Agreement*100,0),"%",sep = ""),color=-Agreement),size=3) + 
+  scale_y_discrete(labels=substring(unique(ourMeasure$Question),0,20)) + 
+  scale_x_discrete(labels=substring(unique(ourMeasure$Task),0,10)) + 
+  theme(legend.position="none",axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
