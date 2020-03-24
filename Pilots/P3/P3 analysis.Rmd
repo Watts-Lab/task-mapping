@@ -60,8 +60,10 @@ questions <- questions %>%
       QuestionID == 44 ~ "character", 
       TRUE ~ "yn" 
     ),
-    Question = paste(ResponseType, QuestionID, Question, sep = " - ")
+    # Question = paste(ResponseType, QuestionID, Question, sep = " - ")
   ) 
+
+write_csv(questions,"questions.csv")
 
 mentalType <- function(column) {ordered(column,levels=c("Entirely mental effort", "Moderately mental effort", "About 50–50", "Moderately motor effort", "Entirely motor effort"))}
 intelletiveType <- function(column) {factor(column)}
@@ -93,6 +95,9 @@ responsesAll <- rawData %>%
   mutate_at(vars(contains("l5pt - ")),l5ptType) %>%
   mutate_at(vars(contains("mental - ")),mentalType) %>%
   mutate_at(vars(contains("intellective - ")),intelletiveType) 
+
+unique(responsesAll$`Categorize the task among the options below:`)
+
 
 responses = responsesAll %>% 
   select(-contains("character - "))
