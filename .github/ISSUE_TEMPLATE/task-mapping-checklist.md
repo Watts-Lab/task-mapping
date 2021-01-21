@@ -21,10 +21,13 @@ assignees: ''
 - [ ] Read the paper and search through any associated documents or references to find a root source of the task. 
 - [ ] Check the PR, making modifications wherever you see necessary to ensure that the task is adequately documented.
 - [ ] Check that the template renders correctly by previewing and making any necessary adjustments.
-- [ ] When ready, approve the PR and merge it.
+- [ ] When ready, submit a passing review.
 
-## Taks mapping
-- [ ] Mark 
+## Task mapping
+- [ ] First pass assignee: Complete the task mapping survey for this task
+- [ ] Second pass assignee: Complete the task mapping survey for this task
+- [ ] Reach agreement (check differences, and discuss until both agree on an answer)
+- [ ] Merge and close PR.
 
 - - - 
 # Summary
