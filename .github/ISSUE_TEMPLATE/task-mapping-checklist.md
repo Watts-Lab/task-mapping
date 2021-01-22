@@ -9,21 +9,22 @@ assignees: ''
 
 # Instructions
 ## First pass 
+- [ ] Choose a task with a blank `phase` column from [tasks](https://docs.google.com/spreadsheets/d/1r6JphHOM8K_dCrdX9ESx_05oYGtPVyVejxKBL1B3VL0/edit#gid=1644218186) and change the `phase` column to `1`.
 - [ ] Name this issue as the name of the focal task, and remove this line.
 - [ ] Create the issue and assign yourself.
-- [ ] Read the paper and search through any associated documents or references to find a root source of the task. 
+- [ ] Read the linked paper and search through any associated documents or references to find a root source of the task. 
 - [ ] Edit the issue completing the template below (drag and drop images into the editor, but also store them on your computer too for future use) (you can use the `Preview` mode to see how it will look. 
 - [ ] Make a new document in the folder [tasks folder](https://github.com/Watts-Lab/task-mapping/tree/master/tasks) named `{task name}.md` and put the contents of the template below into it (the part that starts with "Summary").
 - [ ] Save it and add a pull request with the name and message `{task name}`
 
-## Second pass (review)
+## Second pass
 - [ ] Add yourself as a secondary assignee to the issue.
 - [ ] Read the paper and search through any associated documents or references to find a root source of the task. 
 - [ ] Check the PR, making modifications wherever you see necessary to ensure that the task is adequately documented.
 - [ ] Check that the template renders correctly by previewing and making any necessary adjustments.
 - [ ] When ready, submit a passing review.
 
-## Task mapping
+## Task mapping (in progress contact Mark before starting)
 - [ ] First pass assignee: Complete the task mapping survey for this task
 - [ ] Second pass assignee: Complete the task mapping survey for this task
 - [ ] Reach agreement (check differences, and discuss until both agree on an answer)
@@ -32,6 +33,9 @@ assignees: ''
 - - - 
 # Summary
 > Replace this entire line with a high level summary that presents the main idea of the task.
+
+# References
+> Provide a full reference and link to the main paper and any subsequent papers used in the process of finding details about the task
 
 # Stimuli
 - The visual components via screenshots
