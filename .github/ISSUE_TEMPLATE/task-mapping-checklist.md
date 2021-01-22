@@ -10,11 +10,10 @@ assignees: ''
 # Instructions
 ## First pass
 - [ ] Choose a task with a blank `phase` column from [tasks](https://docs.google.com/spreadsheets/d/1r6JphHOM8K_dCrdX9ESx_05oYGtPVyVejxKBL1B3VL0/edit#gid=1644218186) and check that it appears to be a valid task entry, e.g. it has a link to a paper and a name etc. Change the `phase` column to `1` in that sheet.
-- [ ] Name this issue as the name of the focal task, and remove this line.
+- [ ] Name the issue as the name of the task.
 - [ ] Create the issue and assign yourself.
 - [ ] Read the linked paper and search through any associated documents or references to find a root source of the task. 
-- [ ] Edit the issue completing the template below (drag and drop images into the editor, but also store them on your computer too for future use) (you can use the `Preview` mode to see how it will look. 
-- [ ] Make a new document in the folder [tasks folder](https://github.com/Watts-Lab/task-mapping/tree/master/tasks) named `{task name}.md` and put the contents of the template below into it (the part that starts with "Summary").
+- [ ] Make a new document in the folder [tasks](https://github.com/Watts-Lab/task-mapping/tree/master/tasks) named `{task name}.md` and put the contents of the template below into it (the part that starts with "Summary").
 - [ ] Save it and add a pull request with the name and message `{task name}`
 
 ## Second pass (a different person does this)
