@@ -9,7 +9,7 @@ assignees: ''
 
 # Instructions
 ## First pass
-- [ ] Choose a task with a blank `phase` column from [tasks](https://docs.google.com/spreadsheets/d/1r6JphHOM8K_dCrdX9ESx_05oYGtPVyVejxKBL1B3VL0/edit#gid=1644218186) and change the `phase` column to `1`.
+- [ ] Choose a task with a blank `phase` column from [tasks](https://docs.google.com/spreadsheets/d/1r6JphHOM8K_dCrdX9ESx_05oYGtPVyVejxKBL1B3VL0/edit#gid=1644218186) and check that it appears to be a valid task entry, e.g. it has a link to a paper and a name etc. Change the `phase` column to `1` in that sheet.
 - [ ] Name this issue as the name of the focal task, and remove this line.
 - [ ] Create the issue and assign yourself.
 - [ ] Read the linked paper and search through any associated documents or references to find a root source of the task. 
