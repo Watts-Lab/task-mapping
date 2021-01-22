@@ -12,9 +12,9 @@ assignees: ''
 - [ ] Name this issue as the name of the focal task, and remove this line.
 - [ ] Create the issue and assign yourself.
 - [ ] Read the paper and search through any associated documents or references to find a root source of the task. 
-- [ ] Edit the issue completing the template below (drag and drop images into the editor, but also store them on your computer too for future use)
-- [ ] Make a new document named `{task name}.md` and put the contents of the template below into it.
-- [ ] Save it as a PR
+- [ ] Edit the issue completing the template below (drag and drop images into the editor, but also store them on your computer too for future use) (you can use the `Preview` mode to see how it will look. 
+- [ ] Make a new document in the folder [tasks folder](https://github.com/Watts-Lab/task-mapping/tree/master/tasks) named `{task name}.md` and put the contents of the template below into it (the part that starts with "Summary").
+- [ ] Save it and add a pull request with the name and message `{task name}`
 
 ## Second pass (review)
 - [ ] Add yourself as a secondary assignee to the issue.
