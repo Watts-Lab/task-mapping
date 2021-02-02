@@ -2,7 +2,7 @@
 name: Task mapping checklist
 about: Task mapping checklist
 title: Task name
-labels: ''
+labels: 'task'
 assignees: ''
 
 ---
