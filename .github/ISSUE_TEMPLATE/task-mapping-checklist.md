@@ -14,7 +14,8 @@ assignees: ''
 - [ ] Create the issue and assign yourself.
 - [ ] Read the linked paper and search through any associated documents or references to find a root source of the task. 
 - [ ] Make a new document in the folder [tasks](https://github.com/Watts-Lab/task-mapping/tree/master/tasks) named `{task name}.md` based on the [task-mapping template](https://github.com/Watts-Lab/task-mapping/blob/master/task-representation.md).
-- [ ] Save it and add a pull request with the name and message `{task name}`
+- [ ] Save it and add a pull request with the name `{task name}` and a link to this issue in the message. 
+- [ ] Add images to the `tasks/images` folder and to the text with the format `![Alt text](images/task_name_image_name)`.
 
 ## Second pass (a different person does this)
 - [ ] Add yourself as a secondary assignee to the issue.
