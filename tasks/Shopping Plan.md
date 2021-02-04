@@ -1,26 +1,25 @@
 # Summary
-> A high level summary that presents the main idea of the task.
+>Individuals were assigned a number of tasks to complete alone and with a group to determine if there is a level of intelligence among groups as there is in an individual.
 
 # References
-> Provide a full reference and link to the main paper and any subsequent papers used in the process of finding details about the task
+> Source: https://science.sciencemag.org/content/330/6004/686.full
+> Supporting: https://science.sciencemag.org/content/sci/suppl/2010/09/29/science.1193147.DC1/Woolley_SOM.pdf
 
 # Stimuli
 ## The visual components
-> Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
 
 ## Materials for alternative versions of the experiment 
-> If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-> In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
+
 
 # Procedure
 ## Steps
-> A task flow describing the stages a participant goes through and a formal specification of any conditional or complex relationships therein. 
-> List the steps that make up the task. This could include a training protocol, pre and post surveys, task rounds, etc.  
-> Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
+>The group had to plan a shopping trip as though they were all residents of the same house sharing the same car. Each member had a grocery list and the group was given a map that showed distances and times between each store.
+>The group had to decide how to get the items on their list while considering the constraints like some stores having cheaper and higher quality options requiring more driving time.
+>The point values were assigned to grocery items based on (a) each item purchased = +1 point, (b) bonus for high quality item = +1 point, (c) bonus for lower priced alternative = +2 points, (d) penalty for leaving frozen items in the car beyond 30 minutes = loss of all points for that item
+> The goal was to purchase as many high-quality items as possible, therefore aiming for the highest number of points
 
 ## Rolls 
-> A description of roles if relevant to the task.  
-> If relevant, describe how roles are assigned and used in the task. List all rolls and list how the experience for each roll differs from others.
+> Each individual had the same role as residents of the same house sharing the same car.
 
 ## Instructions
 > Complete instructions shown to participants at each stage of the task.  
@@ -28,9 +27,7 @@
 
 # Criteria
 ## Performance calculation
-> A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
-> Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.
+> Performance was evaluated based on the number of points the group obtained.
 
 ## Incentives
-> A formal specification of the incentives for participation.   
-> Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+> All participants were paid for their participation. 
