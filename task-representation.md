@@ -18,9 +18,9 @@
 > List the steps that make up the task. This could include a training protocol, pre and post surveys, task rounds, etc.  
 > Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
 
-## Rolls 
+## Roles 
 > A description of roles if relevant to the task.  
-> If relevant, describe how roles are assigned and used in the task. List all rolls and list how the experience for each roll differs from others.
+> If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
 
 ## Instructions
 > Complete instructions shown to participants at each stage of the task.  
