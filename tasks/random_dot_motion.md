@@ -1,22 +1,23 @@
 # Summary
-> A high level summary that presents the main idea of the task.
+> Participants are asked to answer which direction (0 to 360 degrees) a circular field of 50 dots are moving.
 
 # References
-> Provide a full reference and link to the main paper and any subsequent papers used in the process of finding details about the task
+> Dynamics of judgment propagation. Mehdi Moussaïd, Stefan M. Herzog, Juliane E. Kämmer, Ralph Hertwig. Proceedings of the National Academy of Sciences Apr 2017, 114 (16) 4117-4122; DOI: 10.1073/pnas.1611998114
 
 # Stimuli
 ## The visual components
-> Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
+> Video of dot movement: http://movie-usa.glencoesoftware.com/video/10.1073/pnas.1611998114/video-1
 
 ## Materials for alternative versions of the experiment 
-> If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-> In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
+> There are 2 versions of the study. In version 1,  2 individuals were paired. In study 2, 6 participants were paired in a chain.
 
 # Procedure
 ## Steps
-> A task flow describing the stages a participant goes through and a formal specification of any conditional or complex relationships therein. 
-> List the steps that make up the task. This could include a training protocol, pre and post surveys, task rounds, etc.  
-> Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
+> There are three difficulty levels. The three difficulty levels were characterized by
+different proportions of correlated dots, pc = 50%, 30%, and 5%. In addition, the deviation was set to « = 0° in difficulty level 1 and to « = 45° in
+difficulty levels 2 and 3.
+![Image](dot.png)
+
 
 ## Roles 
 > A description of roles if relevant to the task.  
