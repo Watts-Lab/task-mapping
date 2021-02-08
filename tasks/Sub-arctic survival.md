@@ -19,10 +19,11 @@
 > The team members (no distiction of roles) receive general instructions regarding their conditions: The time of the day, locations, distance from safety, vegetation and terrain, clothing, health and belongings. Every team member has access to a topological map and detailed information about expected temperature variations, snowfall, sunrise and sunset times, and wind and temperature conditions that cause exposed flesh to freeze. The team must stay together.
 > Step 1: The members receive a list of items that they salvaged in the plane crash and must individually rank in the order of how important the item is to their survival.
 > Step 2: Without modifying the list in step 1, now the members must collectivelly make a new ranked list.
+> Step 3: Compare team list to expert answers.
 
 
-## Rolls 
-> No Roles (really?)
+## Roles
+> All of the participants have the same role.
 
 ## Instructions
 > Apart from the previous steps, teams are given a time limit to finish their discussions.
@@ -30,6 +31,7 @@
 # Criteria
 ## Performance calculation
 > The performance of the team is evaluated against the oficial ranking of sub-arctic survival experts. The closer the team's ranking is to the one of the experts, the better the synergy of the team. In the case of this survival task, it was observed that 90% of the time teams perform better than their average member and 50% of the times they perform better than their best member did individually.
+> The correct answers in order are: 1.waterproof matches, 2.hand axe, 3. heavy duty canvas, 4. sleeping bag, 5. gallon maple syrup,6. braided nylon rope, 7. snowshoes, 8. inner tube, 9. shaving kit and mirror, 10. flashlight, 11.bacardi rum, 12.alarm clock, 13.compass, 14.celestial navigation book, 15.water purification tablets
 
 ## Incentives
 > This is a team dynamic exercise, advertised as a task for managers to diagnose their own teams. No monetary or other incentives were observed.
