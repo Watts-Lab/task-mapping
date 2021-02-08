@@ -10,7 +10,9 @@
 
 # Stimuli
 ## The visual components
-> https://www.google.com/url?sa=i&url=http%3A%2F%2Fhushlphs.weebly.com%2Fuploads%2F9%2F9%2F5%2F3%2F9953763%2Fthe_subartic_situation.pdf&psig=AOvVaw1v56SSpGvmaWvD7ve12plA&ust=1612299842027000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPC_0I3Lye4CFQAAAAAdAAAAABAD
+> ![Image](images/sub_arctic_survival_map.png)
+
+> ![Image](images/sub_arctic_survival_sheet.png)
 
 > Aditionally, the participants are informed more details about their situation, such as expectations of their rescue, their clothing, the terrain, and additional details about their belongings.
 
