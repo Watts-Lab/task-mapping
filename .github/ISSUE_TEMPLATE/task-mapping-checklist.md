@@ -2,7 +2,7 @@
 name: Task mapping checklist
 about: Task mapping checklist
 title: Task name
-labels: ''
+labels: 'task'
 assignees: ''
 
 ---
@@ -13,9 +13,9 @@ assignees: ''
 - [ ] Name the issue as the name of the task.
 - [ ] Create the issue and assign yourself.
 - [ ] Read the linked paper and search through any associated documents or references to find a root source of the task. 
-- [ ] Make a new document in the folder [tasks](https://github.com/Watts-Lab/task-mapping/tree/master/tasks) named `{task name}.md` based on the [task-mapping template](https://github.com/Watts-Lab/task-mapping/blob/master/task-representation.md).
-- [ ] Save it and add a pull request with the name `{task name}` and leave a link to this issue as the message.
+- [ ] Make a new branch named the task name and create a new file in the folder [tasks](https://github.com/Watts-Lab/task-mapping/tree/master/tasks) named `{task name}.md`. Start by populating it with the [task-mapping template](https://github.com/Watts-Lab/task-mapping/blob/master/task-representation.md) content. When saving this, be sure to commit to your new branch (if you're in master you won't be able to commit and only be able to create a pull request, instead, do this from your branch so you can commit). 
 - [ ] Add images to the `tasks/images` folder and to the text with the format `![Alt text](images/task_name_image_name)`.
+- [ ] Add a pull request between your new branch and `master` with the name `{task name}` and a link to this issue in the message.
 
 ## Second pass (a different person does this)
 - [ ] Add yourself as a secondary assignee to the issue.
