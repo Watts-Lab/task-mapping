@@ -24,7 +24,6 @@ PMID: 11185783 DOI: 10.1037//0278-7393.26.6.1568
 
 # Procedure
 ## Steps
-## Steps
 > Step One: Participants were randomly assigned to one of three conditions with the restriction that there were 20 people in each condition 
         Nominal Condition: participants would work alone to recall words: Tested individually 
         Collaborative Group See Condition: participants worked in pairs and took turns recalling words and were showed the words that 
