@@ -30,9 +30,11 @@ PMID: 11185783 DOI: 10.1037//0278-7393.26.6.1568
         each other were recalling. They sat opposite each other at a table
         Collaborative Group No See Condition: participants recalled word lists in pairs, using a turn-taking method however they did not 
         see what word the other recalled
+##
 > Step Two: Participants are told they will see a list of words that will be tested on later but not told how they will be tested
-> Step Three: Participants are given a booklet containing a word list, they are told to start on page one and study each word (one word in the middle of each page 
-in 20 point black font). They are not allowed to talk or write anything down during the study period 
+##
+> Step Three: Participants are given a booklet containing a word list, they are told to start on page one and study each word (one word in the middle of each page in 20 point black font). They are not allowed to talk or write anything down during the study period 
+##
 > Step Four: After study period, participants completed addition problems for sixty seconds to reduce recency effects
         
 ## Roles 
