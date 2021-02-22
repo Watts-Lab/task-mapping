@@ -16,19 +16,27 @@
 
 # Procedure
 ## Steps
-> Twenty-two three person groups will perform this task simultaneously in separate rooms.
-> The open group condition will be notified that their group will be reconstituted during the second part of the task. This should not be told to the closed group.
-> The groups will then perform task one for 10 minutes.
-> Then, the open group condition would be told that one of the group members would join another group, and another individual who had completed part one in another group would their group. This is done randomly.
-> Before beginning part two, all of the groups should spend 5 minutes talking about their group task. Then they will perform part two for 10 minutes.
+>Step one: Twenty-two three person groups will perform this task simultaneously in separate rooms.
+>
+>Step two: The open group condition will be notified that their group will be reconstituted during the second part of the task. This should not be told to the closed group.
+>
+>Step three: The groups will then perform task one for 10 minutes.
+>
+>Step four: Then, the open group condition would be told that one of the group members would join another group, and another individual who had completed part one in another group would their group. This is done randomly.
+>
+>Step five: Before beginning part two, all of the groups should spend 5 minutes talking about their group task. Then they will perform part two for 10 minutes.
 
 ## Roles 
 > The open group condition is randomly selected, but made aware that before part two of their task, a member of their group will leave and be replaced by a person who had completed part one in a different group. That member will then join another group.
 > The closed group condition will not be made aware of this, and will complete part one, spend 5 minutes discussing the task as the open group does, and then complete part two.
 
 ## Instructions
-> Select a member of the group to record the group's ideas.
+> You will be asked to join a three person group and move into private rooms. Select a member of the group to record the group's ideas.
+> 
 > Part 1: View the list of 12 fruit items and generate as many criteria to classify these items into subgroups in 10 minutes.
+> 
+> Spend 5 minutes discussing the group task
+> 
 > Part 2: View the list of 12 vegetable items and generate sorting critera in 10 minutes.
 
 # Criteria
