@@ -15,13 +15,13 @@
 # Procedure
 ## Steps
 > Room A:
-> 1 Given 10 dollar ‘Showing up fee’
-> 2 Given two envelopes, one larger one with a key, and a smaller one with a corresponding letter
-> 3 Subjects go behind privacy partition and place money to invested in the lettered envelope
-> 4 Subjects then place envelope in mailbox
+* 1 Given 10 dollar ‘Showing up fee’
+* 2 Given two envelopes, one larger one with a key, and a smaller one with a corresponding letter
+* 3 Subjects go behind privacy partition and place money to invested in the lettered envelope
+* 4 Subjects then place envelope in mailbox
 > Room B: 
-> 1 Participants receive triple the amount given by participant in room A
-Repeat steps 2-4 from room A
+* 1 Participants receive triple the amount given by participant in room A
+* Repeat steps 2-4 from room A
 
 ## Rolls 
 > Subjects are assigned to either room A or B. Subjects in room A are given a 10 dollar ‘showing up fee’ and have to decide how much to send to subjects in room B. Room B participants receive tripled money and are asked to decide how much to send back to those in room A.
