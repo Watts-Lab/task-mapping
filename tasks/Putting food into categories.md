@@ -39,7 +39,7 @@
 > Part 1: View the list of 12 fruit items and generate as many criteria to classify these items into subgroups in 10 minutes.
 > 
 > Spend 5 minutes discussing the group task
-> 
+>
 > Part 2: View the list of 12 vegetable items and generate sorting critera in 10 minutes.
 
 # Criteria
