@@ -19,7 +19,7 @@
 > 2 Given two envelopes, one larger one with a key, and a smaller one with a corresponding letter
 > 3 Subjects go behind privacy partition and place money to invested in the lettered envelope
 > 4 Subjects then place envelope in mailbox
-Room B: 
+> Room B: 
 > 1 Participants receive triple the amount given by participant in room A
 Repeat steps 2-4 from room A
 
