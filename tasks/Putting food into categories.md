@@ -4,8 +4,11 @@
 
 # References
 > Main: https://www.sciencedirect.com/science/article/pii/S0749597805000889#bib55
+> 
 > Supporting 1: https://psycnet.apa.org/fulltext/1962-07800-001.pdf
+> 
 > Supporting 2: https://reader.elsevier.com/reader/sd/pii/S0749597896926758?token=6F390ACF46EE8BA13D5DFE17BBC146CA40CFC2001BDC02763037F69BCB0D4F4D8D2AE57A3DB253CF8F3CC883B95C9185
+> 
 > Supporting 3: http://users.ece.utexas.edu/~perry/education/382v-s08/papers/mcgrath84.pdf
 
 # Stimuli
