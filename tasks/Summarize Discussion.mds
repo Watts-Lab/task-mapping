@@ -1,37 +1,54 @@
 # Summary
-> A high level summary that presents the main idea of the task.
+> This study looks at the effects of time limits and different task types on the quality and quantity of group performance and patterns of group interaction. 
+> Specifically how time limits effect of ten and twenty minutes impact story generation (production), developing a plan of action (planning) 
+> or a summary of the discussion of an issue (discussion). The results are interpreted in terms of social entrainment, meaning how people modify and adjust behavior 
+> based on changes to condition. 
+
 
 # References
-> Provide a full reference and link to the main paper and any subsequent papers used in the process of finding details about the task
+> Hackman, J. R., Jones, L. E., & McGrath, J. E. (1967). A set of dimensions for describing the general properties of group-generated written passages. 
+Psychological Bulletin, 67(6), 379–390. https://doi.org/10.1037/h0024647 
+https://psycnet.apa.org/record/1967-10399-001
+
+> McGrath, J. (1985). Effects of time limits and task types on task performance and interaction of four-person groups. Journal of Personality and Social 
+> Psychology., 49(2), 395–407. https://doi.org/10.1037/0022-3514.49.2.395
+https://psycnet-apa-org.proxy.library.upenn.edu/fulltext/1986-01128-001.html
+
+
 
 # Stimuli
 ## The visual components
-> Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
+> There were no visual components to teh study 
 
 ## Materials for alternative versions of the experiment 
-> If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-> In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
+> There were no alternative versions of these specific experiments however they did take place a part of a larger study 
 
 # Procedure
 ## Steps
-> A task flow describing the stages a participant goes through and a formal specification of any conditional or complex relationships therein. 
-> List the steps that make up the task. This could include a training protocol, pre and post surveys, task rounds, etc.  
-> Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
+> Step One: Participants were instructed they were taking part in a study on task types and told time limits on the task performance group. They were told an observer
+> would be in the room to make periodic observations 
+> Step Two: The experimenter read the first problem to the group, give a time limit for the first session and instruct participants to use the full time available.
+      This instruction was intended to counteract the participants desire to finish the experiment as quickly as possible
+> Step Three: Once the first trial is complete, experimenters collected the solutions and pass out a questionnaire 
+> Step Four: Experimenter would read second problem when all participants had finished the questionnaire and would begin timing the session/making observations  
+> Step Five: Once the second trial was complete, experimenters collected the solutions and pass out a questionnaire
+> Step Six: once the questionnaires were completed the participants were debriefed and excused 
 
 ## Roles 
-> A description of roles if relevant to the task.  
-> If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
+> No roles were assigned to participants however participants were assigned to four person same-sex groups for the tasks 
 
 ## Instructions
-> Complete instructions shown to participants at each stage of the task.  
-> Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
+> EXTACT INSTRUCTIONS NOT INCLUDED IN STUDY/COULD NOT FIND ONLINE APPENDIX - OUTREACH NEEDED 
+
 
 # Criteria
 ## Performance calculation
-> A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
-> Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
-> This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
+> The quality of the written reports were assesed on four dimensions developed by Hackman, Jones and McGrath (1967) (https://psycnet.apa.org/record/1967-10399-001): 
+> The dimensions are: length, originality, quality of presentation, adequacy and creativity and one dimension assessing the length (Quantity)
+> All group products were rated on scales assessing five dimensions using a 7- pile sort-resort procedure by three judges- two assessed each dimension and all three 
+> assessed product rating, scores for dimensions were averaged in anaylsis 
+> Observations of group behavior were also recorded- an observer recorded a code for each comment at the ten second mark of ten second intervals 
+> Observers underwent a month of training based on an interrater reliability criterion of 0.9 
 
 ## Incentives
-> A formal specification of the incentives for participation.   
-> Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+> No incentives are listed 
