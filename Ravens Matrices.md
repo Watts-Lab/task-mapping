@@ -1,8 +1,8 @@
 # Summary
-> A high level summary that presents the main idea of the task.
+> These series of tasks worked to identify individual contributions to group performance to determine "team players." Once the team player was found, most tasks ensued to determine how "team players" improve group performance.
 
 # References
-> Provide a full reference and link to the main paper and any subsequent papers used in the process of finding details about the task
+> Main paper: https://www.nber.org/system/files/working_papers/w27071/w27071.pdf
 
 # Stimuli
 ## The visual components
