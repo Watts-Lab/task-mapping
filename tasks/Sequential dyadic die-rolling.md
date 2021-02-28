@@ -22,7 +22,7 @@
 
 > Step Four: After indicating they understood rules, participants were paired up and played one period of die rolling task for payoff 
 
-> Step Five: Participants were told that in the second stage they will engage in up to 30 additional periods with a different partner, and that they will be paid according to the results of one of these periods, which will be randomly selected. In reality there were always 20 additional periods and the participants paoff was varried based on experimental treatments (two person treatments vs. one person treatment) The payment incentives varied between treatments.
+> Step Five: Participants were told that in the second stage they will engage in up to 30 additional periods with a different partner, and that they will be paid according to the results of one of these periods, which will be randomly selected. In reality there were always 20 additional periods and the participants payoff was varried based on experimental treatments (two person treatments vs. one person treatment) The payment incentives varied between treatments, with different inventives for A and B in a series of treatments.
 
 > Step Six: Phase three focused o social value orientation through use of SVO slider. The measure assesses magnitude of people's concern to others' outcomes. Participants made a series of 15 choices between 9 resource allocation opporunities between self and another participant 
 
@@ -95,16 +95,14 @@ recipient then your payoff will be determined by one of the other participants.
 
 # Criteria
 ## Performance calculation
-> A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
-> Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
-> This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
+> The amount of double reported across treatment conditions served as the measure for corrupt behavior. Researchers looked at the mean number of reported double in comparison to the honesty baseline in all treatments. 
 
 ## Incentives
 Incentives were based on rolling outcomes and corruption, the rules were as follows: 
 > In the main aligned outcomes treatment, if both A and B reported the same number, each earned that number in euros (i.e., if both
 reported 1, each earns V1; if both reported 2, each earns V2; etc.). 
 
-> In the casesthey reported different numbers, they earned nothing. In six control treatments the payoff of either A or B was varied. 
+> In the cases they reported different numbers, they earned nothing. In six control treatments the payoff of either A or B was varied. 
 In treatment A-high (B-high) A(B) earned V6 if a double was reported (regardless of the value of the double), whereas B (A) earned the value of the double as in aligned outcomes. 
 
 > In treatment A-low, A (B) earned V1 if a double was reported (regardless of the value of the double), whereas B (A) earned the value of the double as in aligned outcomes. 
