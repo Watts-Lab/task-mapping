@@ -6,7 +6,7 @@
 
 # Stimuli
 ## The visual components
-> I have an image but need help uploading it
+> ![Alt text](tasks/images/Volunteervisual.png)
 
 
 ## Materials for alternative versions of the experiment 
