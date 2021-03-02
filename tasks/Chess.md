@@ -1,4 +1,4 @@
 # Summary
-Chess is a really fun game.
+Chess is a somewhat fun game.
 
 ![Chess image](images/ChessSet.jpg)
