@@ -14,24 +14,30 @@
 # Procedure
 ## Steps
 > There are three difficulty levels. The three difficulty levels were characterized by
-different proportions of correlated dots, pc = 50%, 30%, and 5%. In addition, the deviation was set to « = 0° in difficulty level 1 and to « = 45° in
+different proportions of correlated dots, pc = 50%, 30%, and 5%. In addition, the deviation was set to 0° in difficulty level 1 and to 45° in
 difficulty levels 2 and 3.
-![Image](dot.png)
 
+ > There are 2 versions of the study
+ > Version 1: Individuals were paired with the same partner for 15 consecutive rounds. In each round, the individual made a guess, then looked at their partner's estimate, and finally revised their guess. Partners always had the same correct angle programmed into the dots, but the difficulty level could vary by trial between the pair. 
+ > Version 2: A group of 6 participants (A, B...F) are connected along a chain. After each initial guess, A's estimate is shown to B, B's estimate is shown to C, ... E's estimate is shown to F. This was repeated across 15 rounds. A (head of chain) always experienced difficultu level 1, and all other participants in the chain experinced difficulty level 3. 
 
-## Roles 
-> A description of roles if relevant to the task.  
-> If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
+## Details of Task development
+> The task was developed using HTML/JavaScript and SmartFoxServer. A set of 25 unique angles equidistantly distributed between 0° and
+360° served as true angles. The animation was displayed at a rate of 20 frames
+per s.
+
 
 ## Instructions
 > Complete instructions shown to participants at each stage of the task.  
 > Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
+> 1. While the dots are still moving, participants indicated their estimate by using the computer mouse to place a black arrow in the circular area.
+> 2. After confirming the estimate (by a mouse click), the dots stopped moving and a blue arrow indicating the partner's guess was displaced. Participants were instructed to revise (or not revise) their estimate, and confirm their new estimate.
+> 3. The correct angle was displaced as a red arrow. 
+
 
 # Criteria
 ## Performance calculation
-> A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
-> Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.
+> A points system was used to reward more accurate guesses. The function $p=10^{-5e_f^2}$, where $e_f$ is the the error on the final estimate in radians, was rounded to the nearest integer. 
 
 ## Incentives
-> A formal specification of the incentives for participation.   
-> Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+> 0.005 Euros per point were awarded to participants.
