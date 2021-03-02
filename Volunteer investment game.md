@@ -3,6 +3,10 @@
 
 # References
 > Babcock, L., Recalde, M. P., Vesterlund, L., & Weingart, L. (2017). Gender differences in accepting and receiving requests for tasks with low promotability. American Economic Review, 107(3), 714-47.
+>
+>  Paper: https://pubs.aeaweb.org/doi/pdfplus/10.1257/aer.20141734
+> 
+> Appendix with instructions: https://www.aeaweb.org/content/file?id=7448
 
 # Stimuli
 ## The visual components
