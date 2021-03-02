@@ -3,6 +3,9 @@
 
 # References
 > Gneezy, U. (2005). Deception: The role of consequences. American Economic Review, 95(1), 384-394.
+> 
+>Paper: https://www.jstor.org/stable/pdf/4132685.pdf?casa_token=hVN12rjlQK4AAAAA:iVtcEgAIRjimcT9izU4j-KhbDdOjwFcPzwKzxilgQwVuF_h9SmhTbeqh7ie2g4gNJAvf7MJPRk04k86f8yndrGwTgrZYtpJn6ZwHYUXpLyrKra-nNpRl
+
 
 # Stimuli
 ## The visual components
