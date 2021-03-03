@@ -1,37 +1,32 @@
 # Summary
-> These series of tasks worked to identify individual contributions to group performance to determine "team players." Once the team player was found, most tasks ensued to determine how "team players" improve group performance.
+> A series of tasks worked to identify individual contributions to group performance to determine "team players." Once the team player was found, most tasks ensued to determine how "team players" improve group performance. The Ravens Task in specific measured pattern recognition and spatial reasoning. This contributes to the study of IQ or liquid intelligence. 
 
 # References
 > Main paper: https://www.nber.org/system/files/working_papers/w27071/w27071.pdf
+> > Supporting paper: Raven, J. (2003). Raven’s Advanced Progressive Matrices, Test Books 1 and 2: Pearson Assessment.
 
 # Stimuli
 ## The visual components
-> Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
+> Raven's matrices involve determining the missing element in a pattern which is generally presented in the form of a matrix.
+> In the advanced form of the matrices, items are presented in black on a white background similar to the standard version, and also becomes increasingly difficult throughout the test. 
 
 ## Materials for alternative versions of the experiment 
-> If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-> In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
+>  Raven’s Advanced Progressive Matrices was used for the task of the individual, but for the group task a very similar test called the Culture Fair Intelligence Test was used.
+> In the group phase, all members gathered around a single laptop and collectively decided on an answer for each item.
 
 # Procedure
 ## Steps
-> A task flow describing the stages a participant goes through and a formal specification of any conditional or complex relationships therein. 
-> List the steps that make up the task. This could include a training protocol, pre and post surveys, task rounds, etc.  
-> Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
+> Have participants complete 14 Ravens items (even numbered items, ranging in difficulty from across sets I and II) in seven minutes 
 
 ## Roles 
-> A description of roles if relevant to the task.  
-> If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
+> All individual participants had the same role.
 
 ## Instructions
-> Complete instructions shown to participants at each stage of the task.  
-> Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
+> Participants are asked to look for a pattern and determine ‘what comes next’. Participants were asked to find the missing element (from options
+a to f). 
 
 # Criteria
-## Performance calculation
-> A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
-> Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
-> This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
+>  Points are given to each item where the next element in the pattern is determined correctly.
 
-## Incentives
-> A formal specification of the incentives for participation.   
-> Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+## Performance calculation
+> No incentives were mentioned
