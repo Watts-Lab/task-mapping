@@ -9,6 +9,7 @@
 ## The visual components
 > Raven's matrices involve determining the missing element in a pattern which is generally presented in the form of a matrix.
 > In the advanced form of the matrices, items are presented in black on a white background similar to the standard version, and also becomes increasingly difficult throughout the test. 
+> 
 ![Example](images/Example.jpg)
 
 ## Materials for alternative versions of the experiment 
