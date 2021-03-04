@@ -8,6 +8,9 @@
 ## The visual components
 > The participants were shown a board on their individual tablets and a bank of railroad pieces on the left side of the screen.
 > As participants placed pieces on the board, a piece from the bank of pieces was greyed out so that piece could no longer be selected.
+
+![Railroad](images/Railroad.jpg)
+
 > Utterances in the neutral and vulnerable conditions were shown as if they were spoken by the robot after each player had completed their track and the team was shown their overall
 score (whether or not they successfully completed that round).
 
