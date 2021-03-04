@@ -7,6 +7,9 @@
 
 ## The visual components
 > The participants were shown a board on their individual tablets and a bank of railroad pieces on the left side of the screen.
+
+![Board](images/Board.jpg)
+
 > As participants placed pieces on the board, a piece from the bank of pieces was greyed out so that piece could no longer be selected.
 
 ![Railroad](images/Railroad.jpg)
@@ -20,13 +23,18 @@ score (whether or not they successfully completed that round).
 
 # Procedure
 ## Steps
-> Participants are given consent form and a preexperiment survey upon arrival.
-> They are taken into the experiment room, where they sat in a pre-determined layout facing a small table, the other participants, and the robot, named Echo
-> They are told they would be playing a game, as a group, along with the robot. The game is to be described as "created for kindergarten-aged children" and should be shown a high score board.
-> They then begin the game tutorial on their personal tablet. The tutorial had two levels: level one allowing them to create a train track route without a time contraint, and level two with a time contraint. 
-> There were 30 rounds in which players had to complete, and were preprogrammed in the following order:
+> Step 1:Participants are given consent form and a preexperiment survey upon arrival.
+> 
+> Step 2:They are taken into the experiment room, where they sat in a pre-determined layout facing a small table, the other participants, and the robot, named Echo
+> 
+> Step 3: They are told they would be playing a game, as a group, along with the robot. The game is to be described as "created for kindergarten-aged children" and should be shown a high score board.
+> 
+> Step 4: They then begin the game tutorial on their personal tablet. The tutorial had two levels: level one allowing them to create a train track route without a time contraint, and level two with a time contraint. 
+> 
+> Step 5: There were 30 rounds in which players had to complete, and were preprogrammed in the following order:
 > > 7 winning rounds, 10 rounds (6 wins and 4 loses) wherein each participant (including Echo) made one mistake, an additional 10 rounds where each participant (including Echo) made another mistake, and 3 final winning rounds
-> At the end of the rounds, the robot says "goodbye" and the participants fill out a postsurvey. 
+> > 
+> Step 6: At the end of the rounds, the robot says "goodbye" and the participants fill out a postsurvey. 
 
 ## Roles 
 > A description of roles if relevant to the task.  
