@@ -15,17 +15,13 @@
 
 # Procedure
 ## Steps
-> Step One: The general instructions, which were read out loud by an experimenter, informed participants that they will engage in a study composed of three stages. Each stage was explained separately once the previous stage was completed.
-
-> Step Two: Participants learned that they will earn money based on their performance in each of the three stages. 
-
-> Step Three: In the first stage, participants learned that they will engage in a die-rolling task in which the amount of money they will earn depends on the results of two die rolls. Following the general instructions, participants received on-screen treatment-specific information about the rules determining their payoff and had a few practice rounds to make sure they understood the payoffs associated with each roll. 
-
-> Step Four: After indicating they understood rules, participants were paired up and played one period of die rolling task for payoff 
-
-> Step Five: Participants were told that in the second stage they will engage in up to 30 additional periods with a different partner, and that they will be paid according to the results of one of these periods, which will be randomly selected. In reality there were always 20 additional periods and the participants payoff was varried based on experimental treatments (two person treatments vs. one person treatment) The payment incentives varied between treatments, with different inventives for A and B in a series of treatments.
-
-> Step Six: Phase three focused o social value orientation through use of SVO slider. The measure assesses magnitude of people's concern to others' outcomes. Participants made a series of 15 choices between 9 resource allocation opporunities between self and another participant 
+1. receives instructions regarding how to play and earn payoff
+2. engages in practices rounds
+3. gets paired with partner
+4. Player A rolls and reports result to player B
+5. Player B rolls and reports result to player A
+6. If the answers match, both players receive payoff
+7. Repeat steps 4-6 up to 30 times
 
 ## Roles 
 > N/A
