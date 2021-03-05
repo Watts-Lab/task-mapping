@@ -17,7 +17,7 @@ PMID: 11185783 DOI: 10.1037//0278-7393.26.6.1568
 
 
 # Stimuli
-> No Visuals Included in paper or appendix but booklet with words printed in black 20 point font was used 
+> No Visuals Included in paper or appendix but booklet with words printed in black 20 point font was used. Four lists of words from Stadler, Roediger and McDermott’s (1999) corpus of semantic associates were used: bread, man, music and sleep
 
 ## Materials for alternative versions of the experiment 
 > N/A
@@ -28,11 +28,9 @@ PMID: 11185783 DOI: 10.1037//0278-7393.26.6.1568
 > Step Two: Show participants booklet with list of words and give them time to study words 
 > Step Three: Particpants complete addition tasks to reduce reency effects 
 > Step Four: Participants enter recall task based on assigned group  
->       Nominal Condition: participants would work alone to recall words: Tested individually 
-        Collaborative Group See Condition: participants worked in pairs and took turns recalling words and were showed the words that 
-        each other were recalling. They sat opposite each other at a table
-        Collaborative Group No See Condition: participants recalled word lists in pairs, using a turn-taking method however they did not 
-        see what word the other recalled
+> Nominal Condition: participants would work alone to recall words: Tested individually 
+Collaborative Group See Condition: participants worked in pairs and took turns recalling words and were showed the words that each other were recalling. They sat opposite each other at a table 
+> Collaborative Group No See Condition: participants recalled word lists in pairs, using a turn-taking method however they did not  see what word the other recalled
      
 ## Roles 
 > 
