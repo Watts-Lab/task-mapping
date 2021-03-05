@@ -4,6 +4,7 @@
 
 # References
 > Appendix File includes instructions and computer screen reference images: https://www.pnas.org/content/pnas/suppl/2015/08/05/1423035112.DCSupplemental/pnas.1423035112.sapp.pdf
+> Weisel, O., & Shalvi, S. (2015). The collaborative roots of corruption. Proceedings of the National Academy of Sciences, 112(34), 10651-10656.
 
 # Stimuli
 ## The visual components
