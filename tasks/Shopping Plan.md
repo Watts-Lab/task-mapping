@@ -4,6 +4,7 @@
 # References
 > Source: https://science.sciencemag.org/content/330/6004/686.full
 > > Supporting: https://science.sciencemag.org/content/sci/suppl/2010/09/29/science.1193147.DC1/Woolley_SOM.pdf
+> > 
 > > Supporting: http://users.ece.utexas.edu/~perry/education/382v-s08/papers/mcgrath84.pdf
 
 # Stimuli
