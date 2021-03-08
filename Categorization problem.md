@@ -9,8 +9,18 @@
 > Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
 
 ## Materials for alternative versions of the experiment 
-> If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-> In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
+> ![Stimulus1B](images/Stimulus1B.jpg)
+> ![Stimulus1D](images/Stimulus1D.jpg)
+> ![Stimulus1H](images/Stimulus1H.jpg)
+> ![Stimulus1J](images/Stimulus1J.jpg)
+> ![Stimulus2B](images/Stimulus2B.jpg)
+> ![Stimulus2D](images/Stimulus2D.jpg)
+> ![Stimulus2H](images/Stimulus2H.jpg)
+> ![Stimulus2J](images/Stimulus2J.jpg)
+> ![Stimulus3B](images/Stimulus3B.jpg)
+> ![Stimulus3D](images/Stimulus3D.jpg)
+> ![Stimulus3H](images/Stimulus3H.jpg)
+> ![Stimulus3J](images/Stimulus3J.jpg)
 
 # Procedure
 ## Steps
