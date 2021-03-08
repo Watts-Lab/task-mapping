@@ -13,7 +13,7 @@
 > ![Stimulus1D](images/Stimulus1D.jpg)
 > ![Stimulus1H](images/Stimulus1H.jpg)
 > ![Stimulus1J](images/Stimulus1J.jpg)
-> ![Stimulus2B](images/Stimulus2B.jpg)
+> ![Simulus2B](images/Simulus2B.jpg)
 > ![Stimulus2D](images/Stimulus2D.jpg)
 > ![Stimulus2H](images/Stimulus2H.jpg)
 > ![Stimulus2J](images/Stimulus2J.jpg)
