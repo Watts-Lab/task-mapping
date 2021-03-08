@@ -1,37 +1,46 @@
 # Summary
-> A high level summary that presents the main idea of the task.
+> Groups of 2 to 5 answer questions requiring the estimation of a quantity 
 
 # References
-> Provide a full reference and link to the main paper and any subsequent papers used in the process of finding details about the task
+> Woolley, A. W., Chabris, C. F., Pentland, A., Hashmi, N., & Malone, T. W. (2010). Evidence for a Collective Intelligence Factor in the Performance of Human Groups. Science, 330(6004), 686 LP – 688. https://doi.org/10.1126/science.1193147
+> Supplementary information: https://science.sciencemag.org/content/sci/suppl/2010/09/29/science.1193147.DC1/Woolley_SOM_Revision_1.pdf
 
 # Stimuli
-## The visual components
-> Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
-
-## Materials for alternative versions of the experiment 
-> If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-> In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
+From: Warrier V., Bethlehem R.A., Baron-Cohen S. (2017) The “Reading the Mind in the Eyes” Test (RMET). In: Zeigler-Hill V., Shackelford T. (eds) Encyclopedia of Personality and Individual Differences. Springer, Cham. https://doi.org/10.1007/978-3-319-28099-8_549-1
+> Example of stimuli during RME test (not during task itself): 
+> 
+> ![RME Test Question](https://github.com/Watts-Lab/task-mapping/blob/unscramble-words/images/rme%20test.gif)
 
 # Procedure
 ## Steps
-> A task flow describing the stages a participant goes through and a formal specification of any conditional or complex relationships therein. 
-> List the steps that make up the task. This could include a training protocol, pre and post surveys, task rounds, etc.  
-> Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
+### Pre-surveys
+> 1. Individuals completed the Wonderlic Personnel Test (WPT), a 50-item measure that is widely used for assessing individual intelligence.
+> 2. Individuals completed the the NEO Five Factor Inventory. 
+> 3. Individuals completed a RME (Readoing the Mind in Eyes) test
+> 4. Individuals were sorted into groups of 2-5
+> 
+### Task
+> 5.  Groups were given a set of 20 items requiring estimation of a quantity (e.g., "What was the median age in the U.S. in 2009?") and had 10
+minutes to answer as many as possible. 
 
-## Roles 
-> A description of roles if relevant to the task.  
-> If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
+### Post-surveys
+> 6. Group satisfaction was measured; Participants indicated their agreement to statements such as “I have been
+very satisfied working on this team” on a five-point scale.
+> 7. Motivation was measured; Participants indicated their agreement to statements such as “I would feel bad and
+unhappy if our team has performed poorly” (reverse-scored) on a five-point scale.
+> 8. Social cohesiveness was measured: Participants indicated their agreement to statements such as “Members of this group would
+enjoy being at a party together” on a five-point scale. 
+> 9. Psychological safety was measured; Participants indicated their agreement to statements such as “It is difficult to
+ask other members of this team for help” on a five-point scale.
+
 
 ## Instructions
-> Complete instructions shown to participants at each stage of the task.  
-> Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
+> 1. Participants were instructed to individually complete personality tests
+> 2. Participants were instructed to answer as many estimation questions as possible (out of 20) in a group within 10 minutes
 
 # Criteria
 ## Performance calculation
-> A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
-> Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
-> This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
+> Groups were scored based on the absolute percent deviation of their estimate from the correct answer.  
 
 ## Incentives
-> A formal specification of the incentives for participation.   
-> Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+> Participants were paid for participating.
