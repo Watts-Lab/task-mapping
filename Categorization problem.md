@@ -6,13 +6,16 @@
 
 # Stimuli
 ## The visual components
-> Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
+> The cards given to the participants are shown below.
+> The barrier set up is shown in the below image.
+> ![Barrier](images/Barrier.jpg)
 
 ## Materials for alternative versions of the experiment 
 > Twelve different stimulus conditions were used in the experiment (Training 1, Training 2,
 B, C, D, E, F, G, H, I, J and K). Each experimental group received the
 same two sets of training stimuli plus a combination of three of the other stimuli sets in a
-random order (e.g. BCD, BDI, CHK, and DHJ). 
+random order (e.g. BCD, BDI, CHK, and DHJ).
+>
 > ![Stimulus1B](images/Stimulus1B.jpg)
 > ![Stimulus1D](images/Stimulus1D.jpg)
 > ![Stimulus1H](images/Stimulus1H.jpg)
@@ -35,19 +38,22 @@ random order (e.g. BCD, BDI, CHK, and DHJ).
 > Step three: The students were asked not to disclose any information to their classmates during the three weeks of the study.
 > 
 > Step four: The first training session used stimulus 1. In this training, cards were initially distributed such that each individual was provided with two identical cards to provide a hint on how to form card categories (i.e., one item per card used as the basis for
-  grouping). All participants were allowed to see each others cards. They were allowed to ask questions and the experimenter provided them with feedback on the correct categories during the training sections
+grouping). All participants were allowed to see each others cards. They were allowed to ask questions and the experimenter provided them with feedback on the correct categories during the training sections
 >
-> Step five: During the second training session, the experimenter introduced a barrier across the table (a wooden cross of about 48 inches long for each slab and 12 inches high). The barrier allowed subjects to see one another and exchange cards easily, but 
- prevented them from seeing one anothers cards. Participants had homogeneous but non-identical cards. They had to describe their cards in order to find out what other group members had,
+> Step five: During the second training session, the experimenter introduced a barrier across the table (a wooden cross of about 48 inches long for each slab and 12 inches high). The barrier allowed subjects to see one another and exchange cards easily, but prevented them from seeing one anothers cards. Participants had homogeneous but non-identical cards. They had to describe their cards in order to find out what other group members had.
 > 
-> Step six: Each individual was told they would receive up to three bonus marks in the course for their participation. They were told they would receive half a mark for each of the three experiments if they individually were able to come up with four of a kind, and half a mark per experiment if every other member of the group was also able 
-to come up with their 4 of a kind. They could receive 0 marks if they did not get four of a kind in any of the three conditions, 1.5 marks if they got four of a kind on all three conditions, and the full 3 marks if they and
-the other members of the group got four of a kind on all three conditions.
+>Step six: There were three experimental rounds. Sixteen cards were distributed to each of the four group members, and each card had two
+objects on it. They were required to use all sixteen cards to form four sets or categories of objects making sure that no unused cards were left over.
+>> Only one object on each card was used in category formation. This implied that the other objects were redundant not required in category formation.
+>> 
+>> The distribution of the initial set was held constant such that subject 1 always received specific cards {i.e. 1, 6, 11, 15}; subject 2 received cards {2, 5, 9,  13}; subject 3 received cards {3, 7, 10, 14} and subject 4 received cards {4, 8, 12 and 16}. This invariably led to each person having at least one card for each potentially correct set. For instance, the first correct set is {1, 2, 3 and 4} and this card set is distributed among the four participants. 
 >
-> Step seven: 
+> Step seven: Each participant had to fill out a short questionnaire after each task.
+> 
+> Step eight: Each individual was told they would receive up to three bonus marks in the course for their participation. They were told they would receive half a mark for each of the three experiments if they individually were able to come up with four of a kind, and half a mark per experiment if every other member of the group was also able to come up with their 4 of a kind. They could receive 0 marks if they did not get four of a kind in any of the three conditions, 1.5 marks if they got four of a kind on all three conditions, and the full 3 marks if they and the other members of the group got four of a kind on all three conditions.
+
 ## Roles 
-> A description of roles if relevant to the task.  
-> If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
+> Each of the four participants had the same role.
 
 ## Instructions
 > Instructions
