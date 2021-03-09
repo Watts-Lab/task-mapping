@@ -3,6 +3,7 @@
 
 # References
 > Dynamics of judgment propagation. Mehdi Moussaïd, Stefan M. Herzog, Juliane E. Kämmer, Ralph Hertwig. Proceedings of the National Academy of Sciences Apr 2017, 114 (16) 4117-4122; DOI: 10.1073/pnas.1611998114
+> 
 > Supporting Information: https://www.pnas.org/content/pnas/suppl/2017/03/29/1611998114.DCSupplemental/pnas.201611998SI.pdf?targetid=nameddest%3DSTXT
 
 
