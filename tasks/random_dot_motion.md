@@ -4,6 +4,9 @@
 # References
 > Dynamics of judgment propagation. Mehdi Moussaïd, Stefan M. Herzog, Juliane E. Kämmer, Ralph Hertwig. Proceedings of the National Academy of Sciences Apr 2017, 114 (16) 4117-4122; DOI: 10.1073/pnas.1611998114
 
+Supporting Information: https://www.pnas.org/content/pnas/suppl/2017/03/29/1611998114.DCSupplemental/pnas.201611998SI.pdf?targetid=nameddest%3DSTXT
+
+
 # Stimuli
 ## The visual components
 > Video of dot movement: http://movie-usa.glencoesoftware.com/video/10.1073/pnas.1611998114/video-1
@@ -18,8 +21,22 @@ different proportions of correlated dots, pc = 50%, 30%, and 5%. In addition, th
 difficulty levels 2 and 3.
 
  > There are 2 versions of the study
- > Version 1: Individuals were paired with the same partner for 15 consecutive rounds. In each round, the individual made a guess, then looked at their partner's estimate, and finally revised their guess. Partners always had the same correct angle programmed into the dots, but the difficulty level could vary by trial between the pair. 
- > Version 2: A group of 6 participants (A, B...F) are connected along a chain. After each initial guess, A's estimate is shown to B, B's estimate is shown to C, ... E's estimate is shown to F. This was repeated across 15 rounds. A (head of chain) always experienced difficultu level 1, and all other participants in the chain experinced difficulty level 3. 
+  ### Version 1 
+ > 1. Participants receive instructions and complete five individual training rounds at each difficulty level.
+2. Participants are then paired with a randomly assigned partner in the first study for 15 rounds
+3. In each round, participants first observe sets of 50 moving dots on a screen some moving consistently in a similar direction (“correlated dots”) and others in random directions.
+4. They then estimate the angle (the main direction of the correlated dots) by moving an arrow
+5. Next they observe their partner’s estimate, partners always had the same correct angle programmed into the dots, but the difficulty level could vary by trial between the pair.
+6. Finally either revised the first estimate or discounted the advice by pressing a button.
+7. Subsequently, the correct angle was revealed, the participant’s total score was updated, and a new round started.
+8. After 15 rounds, participants were informed that they would be paired with a new partner and another series of 15 rounds started. This procedure was repeated six times, corresponding to the six conditions of difficulty level faced by participants and partners
+9. Participants then complete the 7th condition as a manipulation check in which the individual faced a low difficulty level and the partner faced a high difficulty level.
+
+
+ ### Version 2 
+1. Six people are given specific letters (A, B, C, D, E, F) in a chain
+2. Each person in the chain is paired with their predecessor for 15 consecutive rounds and the level of difficulty increases further down the chain (A-head of the chain always has difficulty level one and difficulty increases along the chain)
+3. The individual at position k observed the final estimate of the individual at position k ‒ 1 before entering their final estimate
 
 ## Details of Task development
 > The task was developed using HTML/JavaScript and SmartFoxServer. A set of 25 unique angles equidistantly distributed between 0° and
@@ -37,7 +54,7 @@ per s.
 
 # Criteria
 ## Performance calculation
-> A points system was used to reward more accurate guesses. The function $p=10^{-5e_f^2}$, where $e_f$ is the the error on the final estimate in radians, was rounded to the nearest integer. 
+> A points system was used to reward more accurate guesses. The function $p=10^{-5e_f^2}$, where $e_f$ is the the error on the final estimate in radians, was rounded to the nearest integer. Participants could score between 0-10 points per round.
 
 ## Incentives
-> 0.005 Euros per point were awarded to participants.
+> 0.005 Euros per point were awarded to participants. They received a flat fee of 10.0 Euros for their participation, in addition to a monetary bonus depending on the performance.
