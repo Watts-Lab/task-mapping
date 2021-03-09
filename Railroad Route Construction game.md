@@ -5,6 +5,7 @@ group tension and facilitate positive group dynamics.
 # References
 > Main article: https://www.pnas.org/content/117/12/6370.short
 > > Supporting article: https://www.pnas.org/content/pnas/suppl/2020/03/03/1910402117.DCSupplemental/pnas.1910402117.sapp.pdf
+> > Supporting article: https://dl.acm.org/doi/10.1145/3171221.3171275  
 
 ## The visual components
 > The participants were shown a board on their individual tablets and a bank of railroad pieces on the left side of the screen.
