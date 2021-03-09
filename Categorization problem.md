@@ -9,6 +9,10 @@
 > Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
 
 ## Materials for alternative versions of the experiment 
+> Twelve different stimulus conditions were used in the experiment (Training 1, Training 2,
+B, C, D, E, F, G, H, I, J and K). Each experimental group received the
+same two sets of training stimuli plus a combination of three of the other stimuli sets in a
+random order (e.g. BCD, BDI, CHK, and DHJ). 
 > ![Stimulus1B](images/Stimulus1B.jpg)
 > ![Stimulus1D](images/Stimulus1D.jpg)
 > ![Stimulus1H](images/Stimulus1H.jpg)
