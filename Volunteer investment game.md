@@ -7,6 +7,8 @@
 >  Paper: https://pubs.aeaweb.org/doi/pdfplus/10.1257/aer.20141734
 > 
 > Appendix with instructions: https://www.aeaweb.org/content/file?id=7448
+> 
+> Original Study: Maynard Smith, J., and G. R. Price. 1973. “The Logic of Animal Conflict.” Nature 246: 15–18. 
 
 # Stimuli
 ## The visual components
@@ -14,7 +16,13 @@
 
 
 ## Materials for alternative versions of the experiment 
-> This paper includes five similar experiments with varying complexity, I can include information for all of them, but am unsure if it would make this make this file so long it is no longer useful.
+>Experiment 2: single-sex replication of experiment one
+>
+>Experiment 3: Add a fourth group member, a requestor, who prior to the two-minute investment round is charged with asking one of the three members of the investment group to invest
+>
+>Experiment 4: Participants perform two different tasks, with the instructions or each task only being given immediately preceding the task. Task 1 was a five-round version of Experiment One, Task 2 participants to predict the outcomes in a previous session of Experiment 1.
+>
+>Experiment 5: Mirrors experiment 4, participants play 10 rounds and are provide demographic information about group members in three of those rounds. They are asked to make 6 payoff decisions to pay themselves and 2 other group members
 
 # Procedure
 ## Steps
