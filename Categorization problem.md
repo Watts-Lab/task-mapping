@@ -3,6 +3,7 @@
 
 # References
 > Main: https://uwspace.uwaterloo.ca/bitstream/handle/10012/824/gaabimbo2006.pdf?sequence=1&isAllowed=y 
+> > Supporting: https://psycnet.apa.org/record/1974-24140-001 
 
 # Stimuli
 ## The visual components
@@ -31,7 +32,8 @@ random order (e.g. BCD, BDI, CHK, and DHJ).
 
 # Procedure
 ## Steps
-> Step one: Group members arrived, introduced themselves, and were given name tags. They were made aware that they would be video recorded.
+> Step one: Group members arrived, introduced themselves, and were given name tags. The groups were made of four subjects who either signed up
+for the same time slot or were randomly assigned. They were made aware that they would be video recorded.
 > 
 > Step two: Students were provided with a set of verbal instructions and clarifications as required.
 > 
@@ -42,7 +44,7 @@ grouping). All participants were allowed to see each others cards. They were all
 >
 > Step five: During the second training session, the experimenter introduced a barrier across the table (a wooden cross of about 48 inches long for each slab and 12 inches high). The barrier allowed subjects to see one another and exchange cards easily, but prevented them from seeing one anothers cards. Participants had homogeneous but non-identical cards. They had to describe their cards in order to find out what other group members had.
 > 
->Step six: There were three experimental rounds. Sixteen cards were distributed to each of the four group members, and each card had two
+>Step six: There were three experimental rounds. Sixteen cards were distributed among the four group members, and each card had two
 objects on it. They were required to use all sixteen cards to form four sets or categories of objects making sure that no unused cards were left over.
 >> Only one object on each card was used in category formation. This implied that the other objects were redundant not required in category formation.
 >> 
@@ -78,9 +80,9 @@ Thank you for your time and participation.
 Good Luck 
 # Criteria
 ## Performance calculation
-> A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
-> Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
-> This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
-
+> Three measures
+> > Time taken
+> > Total number of cards that had to be exchanged for the group to reach the desired solution
+> > Rate of card exchange per minute
 ## Incentives
 >  The graduate students were paid for their participation while the undergraduate students (excluding one) were compensated with three bonus marks in an organizational behaviour undergraduate course. 
