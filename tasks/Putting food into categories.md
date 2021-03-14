@@ -13,10 +13,6 @@
 
 # Stimuli
 
-## Materials for alternative versions of the experiment 
-> If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-> In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
-
 # Procedure
 ## Steps
 >Step one: Twenty-two three person groups will perform this task simultaneously in separate rooms.
@@ -32,6 +28,7 @@
 ## Roles 
 > The open group condition is randomly selected, but made aware that before part two of their task, a member of their group will leave and be replaced by a person who had completed part one in a different group. That member will then join another group.
 > The closed group condition will not be made aware of this, and will complete part one, spend 5 minutes discussing the task as the open group does, and then complete part two.
+> The raters involved in performance calculation were blind to the experimental conditions
 
 ## Instructions
 > You will be asked to join a three person group and move into private rooms. Select a member of the group to record the group's ideas.
@@ -47,6 +44,7 @@
 > Creativity was measured by fluency and flexibility.
 > Fluency was calculated by two raters who independently coded each transcript of ideas for the total number of non-repetitive ideas.
 > Flexibility was calculated by two raters independently as well, but they classified ideas into mutually exclusive idea categories and counted the total number of non-repetitive idea categories used by each group (ex. physical characteristics, seasonality).
+> The raters were blind to the experimental conditions
 
 ## Incentives
 > Since this was apart of a class activity, there was no incentive.
