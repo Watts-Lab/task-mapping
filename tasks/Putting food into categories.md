@@ -11,8 +11,6 @@
 > 
 > Supporting 3: http://users.ece.utexas.edu/~perry/education/382v-s08/papers/mcgrath84.pdf
 
-# Stimuli
-
 # Procedure
 ## Steps
 >Step one: Twenty-two three person groups will perform this task simultaneously in separate rooms.
