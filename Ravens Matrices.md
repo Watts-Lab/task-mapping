@@ -33,4 +33,4 @@ a to f).
 >  Points are given to each item where the next element in the pattern is determined correctly.
 
 ## Performance calculation
-> No incentives were mentioned
+> Participants who completed the study were paid a total of $100: $10 for completing the individual tests; $30 for lab visit 1; and $60 for lab visit 2. We elected not to explicitly pay groups for better performance, relying instead on intrinsic motivation through priming.
