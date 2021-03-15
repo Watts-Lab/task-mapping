@@ -1,16 +1,14 @@
 # Summary
-> A high level summary that presents the main idea of the task.
+> Players either 'dare' or 'chicken out' simultaneously each leading to different payoffs depending on the decisions of both playersc. 
 
 # References
-> Provide a full reference and link to the main paper and any subsequent papers used in the process of finding details about the task
+> Main Paper: https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.11.4.167
+> 
 
 # Stimuli
 ## The visual components
-> Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
+> ![image](https://user-images.githubusercontent.com/78745728/111169331-3ca64a00-8579-11eb-85a0-2bdb24860f82.png)
 
-## Materials for alternative versions of the experiment 
-> If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-> In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
 
 # Procedure
 ## Steps
