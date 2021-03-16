@@ -22,7 +22,8 @@ Viability Scale: Jessica Nicole Cooperstein. 2017. Initial Development of a Team
 
 # Procedure
 ## Steps
-> 1. Participants assigned to task group
+> 1. Participants assigned to task group- the teams were allocated based on social golfer matching, so that each collaboration
+consists of members who have never interacted before
 > 2. Participants play four rounds of that task (order balanced across groups: 2 with same group, two with new group) 
 > 3. At the end of each round participants complete a viability scal
 > 4. At the end of all rounds participants attitudinal data collected 
