@@ -9,6 +9,9 @@ Intellective task: participants were asked to correctly answer a series of quest
 
 Cognitive Conflict Task: teams were given $500,000 and had to allocate funds between a number of competing programs which were each designed to appeal to particular personal values
 
+# Stimuli 
+
+![image](https://user-images.githubusercontent.com/78745728/111316750-e816d380-8639-11eb-8a23-1904bae1dbc0.png)
 
 # References
 > Tasks based on: Joseph Edward McGrath. 1984. Groups: Interaction and performance. Vol. 14. Prentice-Hall, Englewood Cliffs, NJ
