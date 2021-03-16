@@ -1,5 +1,5 @@
 # Summary
->  One player, the proposer, is endowed with a sum of money and can split it with another player (the responder). The responder then can accept or reject the money. If the offer is accepted, both players split the money. If the offer is rejected, both players leave with nothing." also maybe clarify that it is usually played over several rounds. 
+>  One player, the proposer, is endowed with a sum of money and can split it with another player (the responder). The responder then can accept or reject the money. If the offer is accepted, both players split the money. If the offer is rejected, both players leave with nothing. The game is usually played over several rounds. 
 
 # References
 > Task Description: https://en.wikipedia.org/wiki/Ultimatum_game
