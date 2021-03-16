@@ -4,7 +4,6 @@
 # References
 > Main paper: https://www.nber.org/system/files/working_papers/w27071/w27071.pdf
 > > Supporting paper: Raven, J. (2003). Raven’s Advanced Progressive Matrices, Test Books 1 and 2: Pearson Assessment.
-> > > CANNOT FIND ACCESS TO THIS PAPER
 
 # Stimuli
 ## The visual components
