@@ -3,6 +3,7 @@
 
 # References
 > Engel D, Woolley AW, Jing LX, Chabris CF, Malone TW (2014) Reading the Mind in the Eyes or Reading between the Lines? Theory of Mind Predicts Collective Intelligence Equally Well Online and Face-To-Face. PLOS ONE 9(12): e115212. https://doi.org/10.1371/journal.pone.0115212
+> Supporting information: https://doi.org/10.1371/journal.pone.0115212.s002
 
 # Stimuli
 ## The visual components
@@ -16,17 +17,12 @@ From: Warrier V., Bethlehem R.A., Baron-Cohen S. (2017) The “Reading the Mind 
 
 # Procedure
 ## Steps
-> A task flow describing the stages a participant goes through and a formal specification of any conditional or complex relationships therein. 
-> List the steps that make up the task. This could include a training protocol, pre and post surveys, task rounds, etc.  
-> Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
 > 1. Participants were assigned randomly to groups of 4
-> 2. Each of the groups was assigned either face-to-face collaboration or online collaboration. 
+> 2. Each of the groups was assigned either face-to-face collaboration or online collaboration. Participants in the online group were serated randomly in a large room and used a text-chat to communicate with group members
 > 3. All participants had personal laptops and worked with their group members in a shared online system to complete the task.
-> 4. Participants in the face-to-face group were seated in a small room with a round table
-> 5. Participants in the online group were serated randomly in a large room and used a text-chat to communicate with group members
-> 6. Groups were presented with a list of 24 randomly scrambled words. Groups had 2 minutes to unscramble as many of the words as possible. Each word only had one correct answer.
-> 7. Individuals completed the Reading in Mind's Eye (RME) Test. The test consists of 36 images of only the eyes of individuals, and participants are asked to choose among four possible mental states to describe the person whose eyes are pictured. The options are all complex mental states (e.g., shame, guilt, curiosity, desire) rather than simple emotions (e.g., happiness, anger).
-> 8. Individuals completed a Five Factor Personality Inventory. This test measures Extraversion, Agreeableness, Conscientiousness, Openness to Experience, and Neuroticism. Sixty items are responded to on a 1 to 5 scale; the mean for each scale was calculated for each participant.
+> 4. Groups were presented with a list of 24 randomly scrambled words. Groups had 2 minutes to unscramble as many of the words as possible. Each word only had one correct answer.
+> 5. Individuals completed the Reading in Mind's Eye (RME) Test. The test consists of 36 images of only the eyes of individuals, and participants are asked to choose among four possible mental states to describe the person whose eyes are pictured. The options are all complex mental states (e.g., shame, guilt, curiosity, desire) rather than simple emotions (e.g., happiness, anger).
+> 6. Individuals completed a Five Factor Personality Inventory. This test measures Extraversion, Agreeableness, Conscientiousness, Openness to Experience, and Neuroticism. Sixty items are responded to on a 1 to 5 scale; the mean for each scale was calculated for each participant.
 
 
 ## Instructions
