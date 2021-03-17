@@ -17,7 +17,7 @@
 > 
 > Transparent version: A see-through box can be used so participants know how much the previous player put in. Alternatively, players can be told how much the previous players put in.
 > 
-> Punishment/awards: A player can choose to punish "free-riders", i.e. those who don't contribute any money, by imposing a fine. Conversely, a player may choose to reward the highest contributer(s). Punishments and rewards are taken out of the player's own tokens.
+> Punishment/rewards: A player can choose to punish "free-riders", i.e. those who don't contribute any money, by imposing a fine. Conversely, a player may choose to reward the highest contributer(s). Punishments and rewards are taken out of the player's own tokens.
 
 # Procedure
 ## Steps
@@ -40,4 +40,4 @@
 > Participants are evaluated by how many tokens they each give to the public pool.
 
 ## Incentives
-> Participants do not receive incentives to participate.
+> Incentives may be given at the researchers' discretion- i.e. players may keep the money they gained during the task.
