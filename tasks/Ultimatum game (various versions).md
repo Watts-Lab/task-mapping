@@ -4,9 +4,6 @@
 # References
 > Task Description: https://en.wikipedia.org/wiki/Ultimatum_game
 
-# Stimuli
-## The visual components
-> Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
 
 ## Materials for alternative versions of the experiment 
 >  competitive ultimatum game : there are many proposers and the responder can accept at most one of their offers: With more than three (naïve) proposers the responder is usually offered almost the entire endowment 
@@ -44,8 +41,10 @@ There will be a number of rounds, and you are always matched with the same perso
 4. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
 
 ## Roles 
-> The proposer- endowed with a sum of money  
-> The responder- decides to accept or reject money from proposer.
+
+The proposer- endowed with a sum of money  
+
+The responder- decides to accept or reject money from proposer.
 
 # Criteria
 ## Performance calculation
