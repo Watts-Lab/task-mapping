@@ -13,7 +13,7 @@ From: Warrier V., Bethlehem R.A., Baron-Cohen S. (2017) The “Reading the Mind 
 
 Example of stimuli during RME test (not during task itself): 
 
-![RME Test Question](/images/rme%20test.gif)
+![RME Test Question](/images/rme_test.gif)
 
 # Procedure
 ## Steps
