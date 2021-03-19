@@ -16,6 +16,7 @@
 B, C, D, E, F, G, H, I, J and K). Each experimental group received the
 same two sets of training stimuli plus a combination of three of the other stimuli sets in a
 random order (e.g. BCD, BDI, CHK, and DHJ).
+>The different stimuli combinations affect the perceived degree of difficulty
 >
 > ![Stimulus1B](images/Stimulus1B.jpg)
 > ![Stimulus1D](images/Stimulus1D.jpg)
