@@ -51,7 +51,7 @@ objects on it. They were required to use all sixteen cards to form four sets or 
 >> 
 >> The distribution of the initial set was held constant such that subject 1 always received specific cards {i.e. 1, 6, 11, 15}; subject 2 received cards {2, 5, 9,  13}; subject 3 received cards {3, 7, 10, 14} and subject 4 received cards {4, 8, 12 and 16}. This invariably led to each person having at least one card for each potentially correct set. For instance, the first correct set is {1, 2, 3 and 4} and this card set is distributed among the four participants. 
 >
-> Step seven: Each participant had to fill out a short questionnaire after each task.
+> Step seven: Each participant had to fill out a short questionnaire after each task. The questionnaire questions include rating the difficulty of the task, specifying the source of difficulty and identifying the leader of the group if any.
 > 
 > Step eight: Each individual was told they would receive up to three bonus marks in the course for their participation. They were told they would receive half a mark for each of the three experiments if they individually were able to come up with four of a kind, and half a mark per experiment if every other member of the group was also able to come up with their 4 of a kind. They could receive 0 marks if they did not get four of a kind in any of the three conditions, 1.5 marks if they got four of a kind on all three conditions, and the full 3 marks if they and the other members of the group got four of a kind on all three conditions.
 
