@@ -1,5 +1,5 @@
 # Summary
-> Players are provided different equilibrium points that are pareto ranked and need to make a payoff decision that reaches a efficient equibilibrium point with uncertainty testing payoff dominance.  
+> Players within a group are provided with a set of numbers that they must choose from to make a payoff decision that reaches an efficient equilibrium point, with uncertainty testing payoff dominance. For example, if all players choose the highest value, the group reaches a pay-off dominant equilibrium, where players each receive the highest possible amount of money. If players choose different values, the group is in disequilibrium and they receive sub-optimal gains.
 
 # References
 > Original Paper: https://www.jstor.org/stable/2006745?casa_token=8Kk87aHnoVIAAAAA%3AuNhlcFLseFbinYshXbx56f0Jt6jUyJW_62oZgXV14PXEcbwzwCV4MebPnUimUi9Qz4wgn7MOcAw6T6ZkjYKNzc0Q3MMcQBRj3LJKnHShXISvBOAGeLls&seq=1
@@ -8,9 +8,12 @@
 
 > Crawford, Vincent P., "An 'Evolutionary' Interpretation of Van Huyck, Battalio, and Beil's Experimental Results on Coordination," unpublished manuscript,   January 1989
  
+ > Additional reference paper: https://www.frontiersin.org/articles/10.3389/fpsyg.2019.00112/full#B91
+ 
 # Stimuli
 ## 
-> Minimum-Effort Tacit Coordination Game.png
+> Minimum-effort_tacit_coordination_game_Equation
+>
 
 ## Materials for alternative versions of the experiment 
 > There were three variations of the experiment that were used in seven experiments- see the payoff table image below: 
