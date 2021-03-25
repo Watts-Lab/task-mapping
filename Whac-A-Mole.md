@@ -19,17 +19,19 @@
 > 
 > The open circle shows the rod on the screen.
 > 
-> Green: Player gained a point
+> Listed below is the meaning of each target and the x/y color–space coordinates according to the International Committee on Illumination 
 > 
-> Yellow: Opponent lost a point
+> Green: Player gained a point;  22.3 cd/m2, 0.186/0.760
 > 
-> Red: Player lost a point
+> Yellow: Opponent lost a point; 22.6 cd/m2, 0.340/0.545
 > 
-> Magenta: Opponent gained a point
+> Red: Player lost a point; 6.64 cd/m2, 0.621/0.322
 > 
-> Blue: Added to both players
+> Magenta: Opponent gained a point; 6.32 cd/m2, 0.314/0.131
 > 
-> Purple: Removed from both players
+> Blue: Added to both players; 5.49 cd/m2, 0.167/0.121
+> 
+> Purple: Removed from both players; 5.22 cd/m2, 0.213/0.135
 
 ## Materials for alternative versions of the experiment 
 > Players played 30 different variations of the game.
