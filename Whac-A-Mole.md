@@ -10,6 +10,9 @@
 # Stimuli
 ## The visual components
 > Players used a “rod” to reach for targets (green and yellow) that were briefly shown among distracters (red, magenta, blue, and purple) on a large touch screen
+> 
+> ![Whac1](images/Whac1.png)
+> 
 > Green: Player gained a point
 > Yellow: Opponent lost a point
 > Red: Player lost a point
