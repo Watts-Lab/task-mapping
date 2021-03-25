@@ -3,8 +3,11 @@
 
 # References
 > Main paper: https://www.pnas.org/content/pnas/110/50/20046.full.pdf
+> 
 > Supporting paper: https://www.pnas.org/content/pnas/suppl/2013/11/20/1305996110.DCSupplemental/pnas.201305996SI.pdf
+> 
 > Movie 1: http://www.pnas.org/lookup/suppl/doi:10.1073/pnas.1305996110/-/DCSupplemental/sm01.wmv
+> 
 > Movie 2: http://www.pnas.org/lookup/suppl/doi:10.1073/pnas.1305996110/-/DCSupplemental/sm02.wmv 
 
 # Stimuli
@@ -49,7 +52,7 @@
 
 # Criteria
 ## Performance calculation
-> An open cirlce was used to represent the location of the rod on the screen, and the closed circles represented the targets. When the open circle overlapped a closed circle there was immediate feedback shown by either a green square or red square if the participant won or lost a point respectively.
+> An open circle was used to represent the location of the rod on the screen, and the closed circles represented the targets. When the open circle overlapped a closed circle there was immediate feedback shown by either a green square or red square if the participant won or lost a point respectively.
 
 ## Incentives
 > Players received a reward of 80 cents when they had won a game, 40 cents for a draw, and no extra reward if lost.
