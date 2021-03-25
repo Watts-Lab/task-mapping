@@ -34,7 +34,9 @@
 # Procedure
 ## Steps
 > Participants were paired to stand on either side of a large screen each holding a rod
+> 
 > They were instructed to hit the green and yellow targets on the screen as they appeared. They would accumulate points for each correct target they hit.
+> 
 > Participants played 30 Whac-A-Mole games that each lasted 40 seconds. They were allowed to take breaks between rounds
 
 ## Roles 
@@ -42,6 +44,7 @@
 
 ## Instructions
 > Players were instructed to hold the chopstick like a pen and not to talk during the games. 
+> 
 > They were instructed neither to block their opponent nor to place the stick on the table and slide from target to target without lifting the stick
 
 # Criteria
