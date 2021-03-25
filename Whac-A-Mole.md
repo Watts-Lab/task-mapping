@@ -12,12 +12,20 @@
 > Players used a “rod” to reach for targets (green and yellow) that were briefly shown among distracters (red, magenta, blue, and purple) on a large touch screen
 > 
 > ![Whac1](images/Whac1.png)
+> ![Whac2](images/Whac2.png)
+> 
+> The open circle shows the rod on the screen.
 > 
 > Green: Player gained a point
+> 
 > Yellow: Opponent lost a point
+> 
 > Red: Player lost a point
+> 
 > Magenta: Opponent gained a point
+> 
 > Blue: Added to both players
+> 
 > Purple: Removed from both players
 
 ## Materials for alternative versions of the experiment 
