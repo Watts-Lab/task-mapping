@@ -22,7 +22,7 @@
 > 2. Participants are randomly assigned into groups of 3-6; given 2 minutes to introduce themselves
 > 3. Participants then answered an estimation question
 > 4. Then rated their confidence and the difficulty of the question on a scale of 1-7
-> 5. Then participants discussed the question with their groups and tried to improve their answer
+> 5. Then participants discussed the question with their groups for 3 minutes to try to improve their answer
 > 6. Answered the same question as before
 > 7. Repeat steps 3-6 for all questions
 > 8. Participants indicated if the group interation improved their second estimates on a scale from -2 to 2.
