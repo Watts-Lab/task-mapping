@@ -6,7 +6,14 @@ Participants had to assign students to rooms to maximize student utility.
 
 # Stimuli
 ## The visual components
-Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
+>Phase 1 Stimuli
+>
+![Phase1Stim](images/Phase1Stim.png)
+![Phase1Stim2](images/Phase1Stim2.png)
+>
+>Phase 2 Group Stimuli
+>
+![Phase2Stim](images/Phase2Stim.png)
 
 ## Materials for alternative versions of the experiment 
 If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
