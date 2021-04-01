@@ -1,8 +1,8 @@
 # Summary
-A high level summary that presents the main idea of the task.
+Participants had to assign students to rooms to maximize student utility.
 
 # References
-Provide a full reference and link to the main paper and any subsequent papers used in the process of finding details about the task
+> Main paper: https://psyarxiv.com/ra9qy/
 
 # Stimuli
 ## The visual components
@@ -15,11 +15,29 @@ In the case that the complete set is not possible, provide enough unique example
 
 # Procedure
 ## Steps
-A task flow describing the stages a participant goes through and a formal specification of any conditional or complex relationships therein. 
-
-List the steps that make up the task. This could include a training protocol, pre and post surveys, task rounds, etc.  
-
-Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
+> Phase One:
+> > 1200 participants completed 5 room tasks (three “ very low” and two “moderate” complexity tasks) and a standard “Reading the Mind in the Eyes” (RME) test.
+> > > The task required to assign N “students” to M “rooms” so as to maximize the total utility of the students, each of who has a specified utility for each room, while also respecting Q constraints.
+> > > 
+> > > The complexity of the task is characterized by the different number of students to be assigned (N), the number of dorm rooms available (M), and the number of constraints (Q). 
+> > > 
+> > > In each room assignment problem, a “utility table” was presented, providing participant(s) with the information on students’ ratings/preferences (between 0 and 100) to each of the M rooms indicating how satisfied they would be if being assigned to the room.
+> > > 
+> Phase Two: 828 of the original 1200 participants completed 5 more room tasks varying in very low, low, moderate, high, and very high complexity, with all tasks timing out at 10 mins. 
+> > > Based on each individual's score in task one, they were categorized by skill level and social perceptiveness (HH, MH, LH, HL, ML, LL) 
+> > > > HH: High skill, high social perceptiveness
+> > > > 
+> > > > MH: Mixed high/low skill, high social perceptiveness
+> > > > 
+> > > > LH: Low skill, high social perceptiveness
+> > > > 
+> > > > HL: High skill, low social perceptiveness
+> > > > 
+> > > > ML: Mixed high/low skill, low social perceptiveness
+> > > > 
+> > > > LL: Low skill, low social perceptiveness
+> > > > 
+> > > Within these categories, the participants were then separated either into groups, or remained individual.
 
 ## Roles 
 A description of roles if relevant to the task.  
@@ -27,19 +45,26 @@ A description of roles if relevant to the task.
 If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
 
 ## Instructions
-Complete instructions shown to participants at each stage of the task.  
 
-Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
 
 # Criteria
 ## Performance calculation
-A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
-
-Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
-
-This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
+> Phase One:
+> > Performance was calculated by looking at skill, social perceptiveness, and cognitive style.
+> > > Skill was defined as the sum of the scores the participant achieved in the moderately complex tasks. The score a participant earned in a room assignment task considers both the total utility of students decided by rooms they were assigned and penalties caused by violations of any constraints. Individuals who scored above/below the median skill score were classified as high/low skill, respectively.
+> > > 
+> > > Social perceptiveness was defined as the number of RME questions correctly answered. As with skill, individuals above/below the median social perceptiveness score were classified as high/low social perceptiveness, respectively.
+> > > 
+> > > Cognitive style was defined in two ways: if the participant assigned students then worked out conflicts they were in the "optimize first" category, and if they worked out conflicts before moving on to assigning more students then they were in the "satisfy first" category.
+>
+> Phase Two:
+> > Performance was calculated by considering the normalized score the individual or group obtained on this task, defined as score on task T/ max score for task T.
+> > 
+> > Duration (or time to completion) was measured as the time elapsed from the start of the task until a solution is submitted
+> > 
+> > Efficiency was measured as normalized score/ duration.
 
 ## Incentives
-A formal specification of the incentives for participation.   
-
-Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+> Overall scores were defined as the sum of students’ ratings of their assigned rooms - 100 * the number of violated constraints
+> If each student got assigned to one room and the participant had a positive score, participant(s) could earn a “performance-based bonus” using a 500 points:$1 USD conversion rate in phase one, and a 1000 points:$1 USD conversion rate in phase two. 
+> If the submitted plan was indeed the optimal one, an additional $0.5 USD “optimal assignment bonus” would be given.
