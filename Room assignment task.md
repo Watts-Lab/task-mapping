@@ -45,7 +45,15 @@ A description of roles if relevant to the task.
 If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
 
 ## Instructions
-
+![Instruction1](images/Instruction1.png)
+![Instruction2](images/Instruction2.png)
+![Instruction3](images/Instruction3.png)
+![Instruction4](images/Instruction4.png)
+![Instruction5](images/Instruction5.png)
+![Instruction6](images/Instruction6.png)
+![Instruction7](images/Instruction7.png)
+![Instruction8](images/Instruction8.png)
+![Instruction9](images/Instruction9.png)
 
 # Criteria
 ## Performance calculation
@@ -55,7 +63,14 @@ If relevant, describe how roles are assigned and used in the task. List all role
 > > > 
 > > > Social perceptiveness was defined as the number of RME questions correctly answered. As with skill, individuals above/below the median social perceptiveness score were classified as high/low social perceptiveness, respectively.
 > > > 
-> > > Cognitive style was defined in two ways: if the participant assigned students then worked out conflicts they were in the "optimize first" category, and if they worked out conflicts before moving on to assigning more students then they were in the "satisfy first" category.
+> > > Cognitive style was defined by:
+> > > > Speed (“tortoises” vs. “hares”)
+> > > > 
+> > > > Preference for efficiency vs. perfection (“pragmatist” vs. “perfectionist”)
+> > > > 
+> > > > Tolerance for constraint violation (low vs. high)
+> > > > 
+> > > > Preference for optimization vs. constraint resolution (“optimizer” vs. “resolver”): if the participant assigned students then worked out conflicts they were in the "optimize first" category, and if they worked out conflicts before moving on to assigning more students then they were in the "satisfy first" category.
 >
 > Phase Two:
 > > Performance was calculated by considering the normalized score the individual or group obtained on this task, defined as score on task T/ max score for task T.
@@ -66,5 +81,7 @@ If relevant, describe how roles are assigned and used in the task. List all role
 
 ## Incentives
 > Overall scores were defined as the sum of students’ ratings of their assigned rooms - 100 * the number of violated constraints
+> 
 > If each student got assigned to one room and the participant had a positive score, participant(s) could earn a “performance-based bonus” using a 500 points:$1 USD conversion rate in phase one, and a 1000 points:$1 USD conversion rate in phase two. 
+> 
 > If the submitted plan was indeed the optimal one, an additional $0.5 USD “optimal assignment bonus” would be given.
