@@ -6,11 +6,7 @@ Players contribute some money to a public pool/box, which is totalled and multip
 
 Main article: https://en.wikipedia.org/wiki/Public_goods_game
 
-
-
 More info: Tomassini, M., &amp; Antonioni, A. (2020). Public goods games on coevolving social network models. _Frontiers in Physics_ https://doi.org/10.3389/fphy.2020.00058
-
-
 
 Dong, Y., Zhang, B. & Tao, Y. The dynamics of human behavior in the public goods game with institutional incentives. _Sci Rep 6, 28809_ (2016). https://doi.org/10.1038/srep28809
 
