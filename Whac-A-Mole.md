@@ -48,7 +48,7 @@ Experiment Three: New participants played four blocks against a computer. The ac
 > Participants played 30 Whac-A-Mole games that each lasted 40 seconds. They were allowed to take breaks between rounds
 
 ## Roles 
-> Each participant had the same role.
+> In Experiment Two: a confederate was instructed to adjust its behavior across blocks. The confederate was instructed to act as a slow player in block 1 (games 1-4) and block 3 (games 9–12) and act as a fast player in block 2 (games 5–8) and block 4 (games 13–16).
 
 ## Instructions
 > Players were instructed to hold the chopstick like a pen and not to talk during the games. 
