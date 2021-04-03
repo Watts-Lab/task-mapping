@@ -35,6 +35,9 @@
 
 ## Materials for alternative versions of the experiment 
 > Players played 30 different variations of the game.
+> 
+> Experiment Two: A male confederate played 4 blocks of 4 whac-a-mole games (4 × 4 = 16 games) against 20 separate players. The confederate was instructed to be slow in blocks 1 and 3 and fast in blocks 2 and 4 and to only hit correct (i.e., yellow or green) targets. Researchers did not dissociate between reward and punishment of opponents, and players could only affect their own score when hitting a target.
+Experiment Three: New participants played four blocks against a computer. The actions of the computer opponent were based on the confederate’s behavior of a selected experimental session in experiment 2. The player’s wins and losses were scored according to whether he or she hit the targets before the invisible confederate
 
 # Procedure
 ## Steps
