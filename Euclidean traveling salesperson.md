@@ -12,9 +12,6 @@ filled in. To the left is a timer (showing 32s remaining) along with the reset a
 >
 ![TSP](images/TSP.png)
 
-## Materials for alternative versions of the experiment 
-
-
 # Procedure
 ## Steps
 > Obtain informed consent
