@@ -7,40 +7,37 @@ This task involves finding the shortest path among a number of “cities” on a
 
 # Stimuli
 ## The visual components
-Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
+> An example TSP from the experiment with the optimal solution
+filled in. To the left is a timer (showing 32s remaining) along with the reset and submit buttons.
+>
+![TSP](images/TSP.png)
 
 ## Materials for alternative versions of the experiment 
-If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
 
-In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
 
 # Procedure
 ## Steps
-A task flow describing the stages a participant goes through and a formal specification of any conditional or complex relationships therein. 
-
-List the steps that make up the task. This could include a training protocol, pre and post surveys, task rounds, etc.  
-
-Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
+> Obtain informed consent
+> Each subject took a nine-problem pretest, in part to train them on the TSP and in part to assess their individual abilities with respect to solving TSPs
+> Phase One:
+> > Subjects were asked to click with the computer’s mouse on the city icons in the sequence corresponding to the path they wished to submit as their answer. The computer program would draw a line segment connecting each pair of cities as soon as the second city in each leg of the journey had been clicked on.
+> > Each map consisted of 25 cities and thus required 25 separate legs of the overall journey to complete. Participants complete 6 different maps. 
+> > They had 17 tries per map, and 50 seconds per map.
+> Phase Two:
+> > Subjects were put into groups of three, and assigned to one of three conditions.
+> > > CT treatment: subjects could see the previous round’s solutions from the other subjects in their triad (neighbors) along with the distances of those solutions
+> > > IT treatment: subjects could see their neighbors’ solutions only on rounds 4, 7, 10, 13, and 16
+> > > NT treatment: neighbors’ solutions were never visible.
 
 ## Roles 
-A description of roles if relevant to the task.  
-
-If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
+> All participants had the same role.
 
 ## Instructions
-Complete instructions shown to participants at each stage of the task.  
-
-Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
+> Ask
 
 # Criteria
 ## Performance calculation
-A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
-
-Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
-
-This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
+> The quality of solutions was recorded as a distance (to be minimized) and as a number of correct legs. A leg was considered correct if it was part of an optimal solution.
 
 ## Incentives
-A formal specification of the incentives for participation.   
-
-Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+> Subjects were paid $10 for showing up to the experiment, $1 for each pretest problem they found the optimum for, and 50 cents per round during an experimental trial in which they found the optimum
