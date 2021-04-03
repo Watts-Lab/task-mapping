@@ -19,7 +19,7 @@ Chat Screen:
 consists of members who have never interacted before in groups of 3-4 people 
 > 2. Participants play four rounds of that task (order balanced across groups: 2 with same group, two with new group). Teams wrote
 ads for different Kickstarter projects in each round, so they would never repeat the exact same task. At the end of the round, the team collectively
-decided on a final advertisement and one member submitted it on behalf of the team.
+decided on a final advertisement and one member submitted it on behalf of the team. Each team had 10 minutes to complete each advertisement
 > 3. At the end of each round participants complete a viability scale
 > 4. At the end of all rounds participants attitudinal data collected 
 
@@ -51,4 +51,4 @@ Ad Performance:
 For the creative ad writing task, each advertisement was added to a campaign for the product on Google Ads. We turned off any optimization, ensuring that ads were seen at the same rate. After 48 hours, we recorded each ad’s click through rate (CTR) as a measure of the group’s performance
 
 ## Incentives
-Participants were paid $12 per hour for taking part in the experiment, and were incentivized to complete the entire study by receiving a majority of their payment as a bonus at the end of the experiment.
+Participants were paid $10 per task which typically took an hour and were also offered a bonus of up to $2 for above average work
