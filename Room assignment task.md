@@ -6,6 +6,9 @@ Participants had to assign students to rooms to maximize student utility.
 
 # Stimuli
 ## The visual components
+> RME test
+![RME](images/RME.png)
+>
 >Phase 1 Stimuli
 >
 ![Phase1Stim](images/Phase1Stim.png)
@@ -15,10 +18,6 @@ Participants had to assign students to rooms to maximize student utility.
 >
 ![Phase2Stim](images/Phase2Stim.png)
 
-## Materials for alternative versions of the experiment 
-If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-
-In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
 
 # Procedure
 ## Steps
@@ -30,26 +29,28 @@ In the case that the complete set is not possible, provide enough unique example
 > > > 
 > > > In each room assignment problem, a “utility table” was presented, providing participant(s) with the information on students’ ratings/preferences (between 0 and 100) to each of the M rooms indicating how satisfied they would be if being assigned to the room.
 > > > 
+> > >  At any time during the allotted 5-minute period for a task, the participant could push a button to submit her solution and move on to the next task, or the participant would be automatically redirected to the next task when the 5-minute timer was up
+> > > 
 > Phase Two: 828 of the original 1200 participants completed 5 more room tasks varying in very low, low, moderate, high, and very high complexity, with all tasks timing out at 10 mins. 
-> > > Based on each individual's score in task one, they were categorized by skill level and social perceptiveness (HH, MH, LH, HL, ML, LL) 
-> > > > HH: High skill, high social perceptiveness
-> > > > 
-> > > > MH: Mixed high/low skill, high social perceptiveness
-> > > > 
-> > > > LH: Low skill, high social perceptiveness
-> > > > 
-> > > > HL: High skill, low social perceptiveness
-> > > > 
-> > > > ML: Mixed high/low skill, low social perceptiveness
-> > > > 
-> > > > LL: Low skill, low social perceptiveness
-> > > > 
+> > > Based on each individual's score in task one, they were categorized into blocks by skill level and social perceptiveness (HH, MH, LH, HL, ML, LL) 
+> > > 
 > > > Within these categories, the participants were then separated either into groups, or remained individual.
+> > > 
+> > > To avoid conflicts, when one group member was moving a student icon, that particular student icon was “locked” and other group members could not move it until it was released. We provided a chatbox on the task interface, enabling group members to communicate freely with each other during the tasks. All group members had to agree on the placements before moving on, or the task would continue automatically after 10 minutes.
 
 ## Roles 
-A description of roles if relevant to the task.  
-
-If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
+> Phase two groups were categorized into blocks (HH, MH, LH, HL, ML, LL)
+> HH: High skill, high social perceptiveness
+>  
+> MH: Mixed high/low skill, high social perceptiveness
+> 
+> LH: Low skill, high social perceptiveness
+> 
+> HL: High skill, low social perceptiveness
+> 
+> ML: Mixed high/low skill, low social perceptiveness
+> 
+> LL: Low skill, low social perceptiveness
 
 ## Instructions
 ![Instruction1](images/Instruction1.png)
