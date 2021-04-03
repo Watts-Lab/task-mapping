@@ -1,5 +1,5 @@
 # Summary
-> A task to show that imitation exists in competitive settings.
+> A task to show that imitation exists in competitive settings. Players were required to hit targets on a large visual touchscreen before their competitors.
 
 # References
 > Main paper: https://www.pnas.org/content/pnas/110/50/20046.full.pdf
