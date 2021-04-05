@@ -37,7 +37,7 @@
 > Every person had the same role
 
 ## Instructions
-> None given, can ask barb
+> The researchers didn’t provide explicit instructions in either the paper or appendix, but did offer tips to calibrate groups in study 2. They urged participants to “elicit reasons from everyone” or “only adjust towards those you trust” or “be honest about what you know and don’t know.”
 
 # Criteria
 ## Performance calculation
