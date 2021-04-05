@@ -20,7 +20,7 @@
 > Player 2 then decides which payoff option to choose based without any additional info about the payoff.
 
 ## Roles 
-> This is a 2-player game where player 1 sends a message to player 2 chooses option A or B. Player 1 can choose to tell the truth or lie to player 2 and player 2 can choose to head or ignore the advice of player 1. 
+> This is a 2-player game where player 1 sends a message to player 2 chooses option A or B. Player 1 can choose to tell the truth or lie to player 2 and player 2 can choose to heed or ignore the advice of player 1. 
 
 ## Instructions
 > From the Appendix:
