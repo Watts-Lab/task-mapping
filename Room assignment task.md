@@ -43,12 +43,12 @@ Phase One:
 > 
 >At any time during the allotted 5-minute period for a task, the participant could push a button to submit her solution and move on to the next task, or the participant would be automatically redirected to the next task when the 5-minute timer was up
 
-Phase Two: 828 of the original 1200 participants completed 5 more room tasks varying in very low, low, moderate, high, and very high complexity, with all tasks timing out at 10 mins. 
-> > > Based on each individual's score in task one, they were categorized into blocks by skill level and social perceptiveness (HH, MH, LH, HL, ML, LL) 
-> > > 
-> > > Within these categories, the participants were then separated either into groups, or remained individual.
-> > > 
-> > > When the task is performed in groups then:
+Phase Two: Teams of 3 participants were randomly constructed and tasked to complete 5 more room tasks varying in very low, low, moderate, high, and very high complexity, with all tasks timing out at 10 mins. 
+>Based on each individual's score in task one, they were categorized into blocks by skill level and social perceptiveness (HH, MH, LH, HL, ML, LL) 
+>
+>Within these categories, the participants were then separated either into groups, or remained individual.
+> 
+>When the task is performed in groups then:
 
 * All participants can do the assignment simultaneously, however, ony one
   student can be moved by one player at any given time (i.e., locking the
