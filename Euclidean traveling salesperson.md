@@ -23,7 +23,7 @@ filled in. To the left is a timer (showing 32s remaining) along with the reset a
 > > Each map consisted of 25 cities and thus required 25 separate legs of the overall journey to complete. Participants complete 6 different maps. 
 > > They had 17 tries per map, and 50 seconds per map. If the subject had not submitted an answer by the end of the 50s, the interface automatically moved on.
 > Phase Two:
-> > Subjects were put into groups of three, and assigned to one of three conditions.
+> > Subjects were put into groups of three, and assigned to one of three conditions. Subjects were randomly matched with and anonymous to each other; the order of treatments was also randomly assigned and subjects were exposed to multiple treatments.
 > > > CT treatment: subjects could see the previous round’s solutions from the other subjects in their triad (neighbors) along with the distances of those solutions
 > > > IT treatment: subjects could see their neighbors’ solutions only on rounds 4, 7, 10, 13, and 16
 > > > NT treatment: neighbors’ solutions were never visible.
