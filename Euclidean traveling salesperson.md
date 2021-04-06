@@ -4,6 +4,7 @@ This task involves finding the shortest path among a number of “cities” on a
 # References
 > Main paper: https://www.pnas.org/content/pnas/115/35/8734.full.pdf
 > > Supporting paper: https://www.pnas.org/content/pnas/suppl/2018/08/09/1802407115.DCSupplemental/pnas.1802407115.sapp.pdf 
+> > Data for replication: https://dataverse.harvard.edu/dataset.xhtmlpersistentId=doi:10.7910/DVN/TSSQLY&version=2.0
 
 # Stimuli
 ## The visual components
