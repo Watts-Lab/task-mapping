@@ -19,8 +19,9 @@ filled in. To the left is a timer (showing 32s remaining) along with the reset a
 > Each subject took a nine-problem pretest, in part to train them on the TSP and in part to assess their individual abilities with respect to solving TSPs
 > Phase One:
 > > Subjects were asked to click with the computer’s mouse on the city icons in the sequence corresponding to the path they wished to submit as their answer. The computer program would draw a line segment connecting each pair of cities as soon as the second city in each leg of the journey had been clicked on.
+> > Subjects could see the solution they entered in the previous round, in a smaller window below the main task window, along with its distance.
 > > Each map consisted of 25 cities and thus required 25 separate legs of the overall journey to complete. Participants complete 6 different maps. 
-> > They had 17 tries per map, and 50 seconds per map.
+> > They had 17 tries per map, and 50 seconds per map. If the subject had not submitted an answer by the end of the 50s, the interface automatically moved on.
 > Phase Two:
 > > Subjects were put into groups of three, and assigned to one of three conditions.
 > > > CT treatment: subjects could see the previous round’s solutions from the other subjects in their triad (neighbors) along with the distances of those solutions
