@@ -1,5 +1,5 @@
 # Summary
-Participants had to assign students to rooms to maximize student utility.
+Participants had to assign students to rooms to maximize student utility while respecting constraints.
 
 # References
 > Main paper: https://psyarxiv.com/ra9qy/
