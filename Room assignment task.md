@@ -3,6 +3,7 @@ Participants had to assign students to rooms to maximize student utility while r
 
 # References
 > Main paper: https://psyarxiv.com/ra9qy/
+> https://github.com/amaatouq/room-assignment/blob/master/Readme.md
 
 # Stimuli
 ## The visual components
