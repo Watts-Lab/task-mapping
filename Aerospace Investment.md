@@ -2,9 +2,11 @@
 A high level summary that presents the main idea of the task.
 
 
-
 # References
 Provide a full reference and link to the main paper and any subsequent papers used in the process of finding details about the task
+
+https://www.pon.harvard.edu/shop/aerospace-investment/
+https://www.pon.harvard.edu/wp-content/uploads/images/posts/Aerospace_Teachers_Package_Watermarked-1.pdf
 
 # Stimuli
 ## The visual components
