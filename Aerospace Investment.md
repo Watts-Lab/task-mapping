@@ -1,5 +1,5 @@
 # Summary
-A high level summary that presents the main idea of the task.
+This is a two-person scored negotiation simulation involving a venture capital investment. Individuals are scored on their ability to attain favorable investment terms for themselves and on the quality of the relationship they develop with their potential business partner. The simulation introduces the incorporation of process and relationship interests into negotiation strategy. Relationship-straining conflict has been purposefully included in the negotiation to assess students’ ability to deal with difficult demands while maintaining a positive relationship.
 
 
 # References
@@ -26,22 +26,36 @@ List the steps that make up the task. This could include a training protocol, pr
 Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
 
 ## Roles 
-A description of roles if relevant to the task.  
+One particpant playes the role of a venture capatilist investor.
 
-If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
-
+The other is the founder of the aerospace company.
 ## Instructions
-Complete instructions shown to participants at each stage of the task.  
+The task has 3 sets of instructions: 1 set of general instructions for both parties, 1 for the VC investor and 1 for the founder.
 
-Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
+### General instructions for both parties
 
+In this role simulation, you will negotioate the terms of a potential $100 million investment by venture capital firm _Aerovent Capital_ in the startup company _Earth Escape._ This will be a _balance concerns_ negotiation. As defined by G. Richard Shell in _Bargaining for Advantage,_ a negotation involves balanced concerns if the immediate substantive stakes and future relationship are in balanced tension with each other. Accordingly, each of you will be scored both on your ability to negotiate favorable contract terms for yourself and on the quality of the relationship you develop with your potential business partner.
+
+****Substantive Points****
+
+Each of you will be given confidential instructions explaining your interests and preferences regarding the substantive terms of the investment and their corresponding point values. Point values for each term are unique to your role and are based on your role's personal, professional, and financial concerns. Do not share this information until the entire excercise, including evaluations, has been completed.
+
+****Process Points****
+
+In addition to your substantive points, each of you also will recieve process points, based on your counterpart's perception of your ability to develop and maintain a positive relationship. After you have concluded the substantive negotation, but before you debrief the excercise, each of you will complete a brief process evaluation in which you assess the degree to which your counterpart met five basic process/relationship interests (such as trust) discussed in the confidential instructions, and in which you award process points accordingly.
+
+****Total Score****
+
+Your total score (Substantive Points + Process Points) reflects your overall success in the negotiation. Your goal is to maximize your personal Total Score. YUniversity our Total Score relects the importance of balancing both substantive and relationship concerns, but if your potential business partner has no desire to work with you again, you have left significant value at the negotiating, and this will be reflected in a lower Total Score.
+
+### Confidential instructions for the Founder
+
+****Scenario****
+
+ 
 # Criteria
 ## Performance calculation
-A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
 
-Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
-
-This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
 
 ## Incentives
 A formal specification of the incentives for participation.   
