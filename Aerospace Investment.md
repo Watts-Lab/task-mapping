@@ -3,10 +3,10 @@ This is a two-person scored negotiation simulation involving a venture capital i
 
 
 # References
-Provide a full reference and link to the main paper and any subsequent papers used in the process of finding details about the task
 
-https://www.pon.harvard.edu/shop/aerospace-investment/
-https://www.pon.harvard.edu/wp-content/uploads/images/posts/Aerospace_Teachers_Package_Watermarked-1.pdf
+High level overview: https://www.pon.harvard.edu/shop/aerospace-investment/
+
+Watermarked instructors copy including instructions, learning objectives, and scoring metrics: https://www.pon.harvard.edu/wp-content/uploads/images/posts/Aerospace_Teachers_Package_Watermarked-1.pdf
 
 
 # Procedure
