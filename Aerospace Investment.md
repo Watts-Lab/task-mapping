@@ -12,10 +12,6 @@ https://www.pon.harvard.edu/wp-content/uploads/images/posts/Aerospace_Teachers_P
 ## The visual components
 Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
 
-## Materials for alternative versions of the experiment 
-If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-
-In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
 
 # Procedure
 ## Steps
@@ -48,16 +44,22 @@ In addition to your substantive points, each of you also will recieve process po
 
 Your total score (Substantive Points + Process Points) reflects your overall success in the negotiation. Your goal is to maximize your personal Total Score. YUniversity our Total Score relects the importance of balancing both substantive and relationship concerns, but if your potential business partner has no desire to work with you again, you have left significant value at the negotiating, and this will be reflected in a lower Total Score.
 
-### Confidential instructions for the Founder
+Confidential instructions for each participant can be found here: https://www.pon.harvard.edu/wp-content/uploads/images/posts/Aerospace_Teachers_Package_Watermarked-1.pdf
 
-****Scenario****
+
 
  
 # Criteria
 ## Performance calculation
 
+Performance is determined by earning substantive points and process points. 
+
+Substantive points are calculated along 8 metrics: VC equity %, Type of Stock, Dividends, Antidilution, VC board appointments, Vesting, Ceo Replacement, and No shop clause. 
+
+Process points are based on the other participants perception of the relationship. They are scored along 5 metrics: Trust, Respect, Equitability, Regard for other's interests, Interest in Future Collaboration.
+
+To perform well, participants must strike a balance between earning favorable terms for their respective company while maintaining a positive relationship with the other person.
+
 
 ## Incentives
-A formal specification of the incentives for participation.   
-
-Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+While winning itself is meant to motivate participants, this is meant to be a learning excercise and thus no monetary or token incentives.
