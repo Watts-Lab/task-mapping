@@ -8,18 +8,14 @@ Provide a full reference and link to the main paper and any subsequent papers us
 https://www.pon.harvard.edu/shop/aerospace-investment/
 https://www.pon.harvard.edu/wp-content/uploads/images/posts/Aerospace_Teachers_Package_Watermarked-1.pdf
 
-# Stimuli
-## The visual components
-Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
-
 
 # Procedure
 ## Steps
-A task flow describing the stages a participant goes through and a formal specification of any conditional or complex relationships therein. 
-
-List the steps that make up the task. This could include a training protocol, pre and post surveys, task rounds, etc.  
-
-Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
+1. Participants read the instructions
+2. Participants negotiate the terms of the 8 scored metrics
+3. They then score their partner on the 5 relational dimensions
+4. Points are tallied
+5. Participants are debriefed on learning objectives and outcomes
 
 ## Roles 
 One particpant playes the role of a venture capatilist investor.
@@ -59,6 +55,9 @@ Substantive points are calculated along 8 metrics: VC equity %, Type of Stock, D
 Process points are based on the other participants perception of the relationship. They are scored along 5 metrics: Trust, Respect, Equitability, Regard for other's interests, Interest in Future Collaboration.
 
 To perform well, participants must strike a balance between earning favorable terms for their respective company while maintaining a positive relationship with the other person.
+
+![Alt text](/images/optimal-fnd-sbscr.png)
+![Alt text](/images/optimal-vc-sbscr.png)
 
 
 ## Incentives
