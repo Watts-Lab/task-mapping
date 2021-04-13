@@ -12,7 +12,7 @@ Main paper: https://onlinelibrary-wiley-com.proxy.library.upenn.edu/doi/pdfdirec
 
 # Procedure
 ## Steps
-> Randomly divide participants as individual or groups.
+> Randomly divide participants as individual or groups of either 3-4 or of 6-7.
 > Participants received the Tartaglia transportation puzzle and answer six questions regarding the participants memory about previous experience with the problem, and was requested to estimate his ability to solve the problem within a 45-minute period.
 > Participants were then instructed to solve the problem
  
