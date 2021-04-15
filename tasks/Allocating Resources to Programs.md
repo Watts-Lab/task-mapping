@@ -9,8 +9,10 @@ Some Intended and Unintended Consequences. MIS Quarterly 12, 3 (1988), 463–478
 
 # Stimuli
 ## The visual components
-![image](https://user-images.githubusercontent.com/78745728/113324863-9af75a80-92e5-11eb-80a3-cb9d2ade4a87.png)
-Personality Values(in task related article): ![image](https://user-images.githubusercontent.com/78745728/113490956-662d0400-949b-11eb-8bf8-5576f21cad8f.png)
+![image](/images/Allocating_Resources_to_Programs_Chatbox.png)
+
+Personality Values(in task related article): 
+![image](/images/Allocating_Resources_to_Programs_Values.png)
 
 # Procedure
 ## Steps

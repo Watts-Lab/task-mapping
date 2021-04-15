@@ -31,7 +31,7 @@ Subjects are assigned to either room A or B. Subjects in room A are given a 10 d
 # Criteria
 ## Performance calculation
 There is no correct answer. The amount of money being sent back and forth is the only thing being measured.
-A metric evaluated by the source paper was the mean and deviation of the amount of money sent from both rooms A and B in the 2 versions of the experiment (supplying the history chart for the subjetcs in the beginning vs not supplying it)
+A metric evaluated by the source paper was the mean and deviation of the amount of money sent from both rooms A and B in the 2 versions of the experiment (supplying the history chart for the subjects in the beginning vs not supplying it)
 
 ## Incentives
 Subjects are incentivized to walk away from the experiment with as much money as possible. Max 30 dollars

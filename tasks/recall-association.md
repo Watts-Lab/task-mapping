@@ -36,7 +36,7 @@ Step One: Assign participants to one of three conditions
 
 Step Two: Show participants booklet with list of words and give them time to study words 
 
-Step Three: Particpants complete addition tasks to reduce reency effects 
+Step Three: Participants complete addition tasks to reduce recency effects 
 
 Step Four: Participants enter recall task based on assigned group  
 

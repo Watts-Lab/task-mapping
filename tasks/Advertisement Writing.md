@@ -9,19 +9,18 @@ Viability Scale: Jessica Nicole Cooperstein. 2017. Initial Development of a Team
 
 # Stimuli
 ## The visual components
-Chat Screen: 
-![image](https://user-images.githubusercontent.com/78745728/113309674-61b6ee80-92d5-11eb-8ae8-3d147935357c.png)
+![Chat Screen](/images/Advertisment_Writing_Chatbox.png)
 
 
 # Procedure
 ## Steps
-> 1. Participants assigned to task group- the teams were allocated based on social golfer matching, so that each collaboration
+1. Participants assigned to task group- the teams were allocated based on social golfer matching, so that each collaboration
 consists of members who have never interacted before in groups of 3-4 people 
-> 2. Participants play four rounds of that task (order balanced across groups: 2 with same group, two with new group). Teams wrote
+2. Participants play four rounds of that task (order balanced across groups: 2 with same group, two with new group). Teams wrote
 ads for different Kickstarter projects in each round, so they would never repeat the exact same task. At the end of the round, the team collectively
 decided on a final advertisement and one member submitted it on behalf of the team. Each team had 10 minutes to complete each advertisement
-> 3. At the end of each round participants complete a viability scale
-> 4. At the end of all rounds participants attitudinal data collected 
+3. At the end of each round participants complete a viability scale
+4. At the end of all rounds participants attitudinal data collected 
 
 
 ## Instructions
@@ -44,8 +43,9 @@ The following instructions appear during the course of the activity:
 # Criteria
 ## Performance calculation
 Team fracture: 
-> Associated with low average team viability scores:  at the end of each round, each participant filled out a 14-item viability scale drawn from prior work
-> Attitudinal data: when at least half of a group’s members privately excluded that group from future rounds 
+Associated with low average team viability scores:  at the end of each round, each participant filled out a 14-item viability scale drawn from prior work
+
+Attitudinal data: when at least half of a group’s members privately excluded that group from future rounds 
 
 Ad Performance: 
 For the creative ad writing task, each advertisement was added to a campaign for the product on Google Ads. We turned off any optimization, ensuring that ads were seen at the same rate. After 48 hours, we recorded each ad’s click through rate (CTR) as a measure of the group’s performance

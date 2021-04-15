@@ -35,7 +35,7 @@ Step one: Have participants complete 14 Ravens items (even numbered items, rangi
 
 In the individual task all participants had the same role.
 
-In the group task all individuals gathered around one laptop and collaborated, with one contributer also being assigned as the reporter.
+In the group task all individuals gathered around one laptop and collaborated, with one contributor also being assigned as the reporter.
 
 ## Instructions
 

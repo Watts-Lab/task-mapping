@@ -1,15 +1,15 @@
 # Summary
-> Players either 'dare' or 'chicken out' simultaneously each leading to different payoffs depending on the decisions of both players. The principle of the game is that while the outcome is ideal for one player to yield (to avoid the worst outcome if neither yields), but the individuals try to avoid it out of pride for not wanting to look like a 'chicken'. So each player taunts the other to increase the risk of shame in yielding. When one player yields the game is over. 
+Players either 'dare' or 'chicken out' simultaneously each leading to different payoffs depending on the decisions of both players. The principle of the game is that while the outcome is ideal for one player to yield (to avoid the worst outcome if neither yields), but the individuals try to avoid it out of pride for not wanting to look like a 'chicken'. So each player taunts the other to increase the risk of shame in yielding. When one player yields the game is over. 
 
 # References
-> Main Paper: https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.11.4.167
+Main Paper: https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.11.4.167
 
-> Reference Paper Two Describes procedure for playing Chicken/includes instructions: https://www-sciencedirect-com.proxy.library.upenn.edu/science/article/pii/S0022103110000983?via%3Dihub
+Reference Paper Two Describes procedure for playing Chicken/includes instructions: https://www-sciencedirect-com.proxy.library.upenn.edu/science/article/pii/S0022103110000983?via%3Dihub
 
 
 # Stimuli
 ## The visual components
-![image](https://user-images.githubusercontent.com/78745728/112493433-88ff4000-8d58-11eb-9087-fc3e89ed0a6d.png)
+![image](/images/Chicken_Game_Payoff_Structure.png)
 
 
 # Procedure
@@ -31,11 +31,14 @@ You will choose either option A or B
 Option B may lead to the best or worst outcome, option A will always be second best or second worst
 Please see Fig. 1 for visual
 
-Exact Instructions: 
+### Exact Instructions: 
+
 “In the next part, you will play for points, and each point represents a lottery ticket. How many points you will win [lose], will be determined not only by your own choice, but also by the choice of the other person. At the same time, his or her points are also partly determined by your choices. 
+
 The game will be played as follows. You will have to make a choice between two possibilities, called A and B (the other will have to make the same choice). At the moment you make your choice, you do not know the choice of the other, and the other does not know your choice. The number of points that each of you wins [loses] is determined by the combination of choices by you and the other. As you can see in the figure below, there are four possible outcomes.” 
 
 Next, one of the four payoff matrices from Fig. 1 was shown (with A and B instead of C and D), which remained on screen until participants had played their game. 
+
 In addition, outcomes for the four possible combinations of choices were also explained in words. To make sure that participants understood the games, an explanation about the strategic implications of the payoff structure was given to the participant. Participants in the chicken game were told that choosing B might lead to the best possible outcome (if the other chooses A), but also to the worst possible outcome (if the other chooses B) for oneself, whereas choosing A can only lead to the second-best and second-worst outcomes.
 
 # Criteria

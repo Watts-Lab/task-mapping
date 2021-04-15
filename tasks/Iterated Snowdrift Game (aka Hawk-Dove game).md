@@ -6,10 +6,9 @@ Snowdrift Game: two drivers (players) are trapped on either side of a snowdrift 
 
 # References
 Prisoner’s Dilemma: 
-> Axelrod R, Hamilton WD Science. 1981 Mar 27; 211(4489):1390-6.
+1. Axelrod R, Hamilton WD Science. 1981 Mar 27; 211(4489):1390-6.
 	Link: https://pubmed-ncbi-nlm-nih-gov.proxy.library.upenn.edu/7466396/
-
-> Axelrod R. Basic Books; New York, NY: 1984. The evolution of cooperation
+2. Axelrod R. Basic Books; New York, NY: 1984. The evolution of cooperation
 
 
 # Stimuli
