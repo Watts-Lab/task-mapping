@@ -87,7 +87,7 @@ Success was contingent on everyone in the group completing their part of the gam
 
 ## Instructions
 
-ASK FOR INSTRUCTIONS
+ASK FOR INSTRUCTIONS!
 
 # Criteria
 ## Performance calculation
