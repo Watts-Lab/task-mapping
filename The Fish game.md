@@ -12,7 +12,9 @@ Supporting paper: https://www-jstor-org.proxy.library.upenn.edu/stable/pdf/23343
 ![Fish2](images/Fish2.png)
 
 > Participants could only see the scores at their avatars' locations
+> 
 > They could also see the positions, directions, and speeds of all other players
+> 
 > Players controlled their avatars using the left and right arrow keys to turn and could hold the space bar to accelerate
 
 ## Materials for alternative versions of the experiment 
@@ -21,11 +23,16 @@ The weighting between the noise field and the spotlight were manipulated to gene
 # Procedure
 ## Steps
 > Participants either played alone or in groups from 2-6.
->  After agreeing to participate, participants were presented with a set of instructions. 
+> 
+> After agreeing to participate, participants were presented with a set of instructions. 
 > > These instructions described the mechanics of the game
+> > 
 > The participants were not informed about the nature of the underlying score fields and were not encouraged to work together
+> 
 > Participants completed a comprehension test
+> 
 > Participants were put into a waiting room for up to five minutes or until a pre-assigned number of other players joined the game
+> 
 > Each participant played in a single game for 6 minutes
 
 
@@ -38,9 +45,11 @@ Will ask
 # Criteria
 ## Performance calculation
 > The score of a player at a particular point in time was simply determined by the location of that player in the virtual world, which parallels the fishes’ preferences for darker areas in their environment.
-> To discourage inactivity, players were awared a score of zero if their avatars were touching a wall
+> 
+> To discourage inactivity, players were awarded a score of zero if their avatars were touching a wall
 >
 ## Incentives
-Participants were paid 50 cents for reading the instructions, and could receive a bonus of up to $1.25 during the six minutes of gameplay
-> These bonuses were the players' cumulative scores divided by the total length of the game times the total possible bonus
-They were also paid 12 cents per minute for any time spend in the waiitng room, minus any time that player spent against a wall
+>Participants were paid 50 cents for reading the instructions, and could receive a bonus of up to $1.25 during the six minutes of gameplay
+> >These bonuses were the players' cumulative scores divided by the total length of the game times the total possible bonus
+>
+>They were also paid 12 cents per minute for any time spend in the waiting room, minus any time that player spent against a wall
