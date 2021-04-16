@@ -34,6 +34,6 @@ of you raise a fist. Then those who raised an open hand receive 40 points and th
 
 # Criteria
 ## Performance calculation
-Total Points gained over rounds 
+Total Points gained over rounds, points are allocated based on majority votes, for example if the majority voted for (“compete”) then a player who voted for compete would receive 10 points. Those who raised a fist (“collude”) would receive 0 points. 
 ## Incentives
 No incentives were described but task was used to teach students about Oligopolies not in an experiment 
