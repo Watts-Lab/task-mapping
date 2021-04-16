@@ -30,7 +30,7 @@ Main Paper: https://psycnet-apa-org.proxy.library.upenn.edu/fulltext/1997-30049-
 Experimentor: Greeted participants, handed out instructions and provides instructions 
 
 ## Instructions
-Reached out to researchers 
+Instructions unavailable from researchers 
 
 # Criteria
 ## Performance calculation
