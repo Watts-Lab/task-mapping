@@ -1,45 +1,46 @@
 # Summary
-A high level summary that presents the main idea of the task.
+This task works to use collective sensing in groups of fish in order to better understand collective intelligence in human groups. To do this, individuals participated in a gradient-sensing task in which every location in this virtual world responded to a score value that changed over time.
 
 # References
 Main paper: https://people.csail.mit.edu/pkrafft/papers/krafft-et-al-2015-emergent.pdf
+
 Supporting paper: https://www-jstor-org.proxy.library.upenn.edu/stable/pdf/23343730.pdf?refreqid=excelsior%3A497fb73bd3cb7e6d7fbdb013b9e0a0f4
 
 # Stimuli
 ## The visual components
+![Fish1](images/Fish1.png)
+![Fish2](images/Fish2.png)
+
+> Participants could only see the scores at their avatars' locations
+> They could also see the positions, directions, and speeds of all other players
+> Players controlled their avatars using the left and right arrow keys to turn and could hold the space bar to accelerate
 
 ## Materials for alternative versions of the experiment 
-If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-
-In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
+The weighting between the noise field and the spotlight were manipulated to generate different task conditions
 
 # Procedure
 ## Steps
-A task flow describing the stages a participant goes through and a formal specification of any conditional or complex relationships therein. 
+> Participants either played alone or in groups from 2-6.
+>  After agreeing to participate, participants were presented with a set of instructions. 
+> > These instructions described the mechanics of the game
+> The participants were not informed about the nature of the underlying score fields and were not encouraged to work together
+> Participants completed a comprehension test
+> Participants were put into a waiting room for up to five minutes or until a pre-assigned number of other players joined the game
+> Each participant played in a single game for 6 minutes
 
-List the steps that make up the task. This could include a training protocol, pre and post surveys, task rounds, etc.  
-
-Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
 
 ## Roles 
-A description of roles if relevant to the task.  
-
-If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
+Participants had the same role
 
 ## Instructions
-Complete instructions shown to participants at each stage of the task.  
-
-Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
+Will ask
 
 # Criteria
 ## Performance calculation
-A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
-
-Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
-
-This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
-
+> The score of a player at a particular point in time was simply determined by the location of that player in the virtual world, which parallels the fishes’ preferences for darker areas in their environment.
+> To discourage inactivity, players were awared a score of zero if their avatars were touching a wall
+>
 ## Incentives
-A formal specification of the incentives for participation.   
-
-Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+Participants were paid 50 cents for reading the instructions, and could receive a bonus of up to $1.25 during the six minutes of gameplay
+> These bonuses were the players' cumulative scores divided by the total length of the game times the total possible bonus
+They were also paid 12 cents per minute for any time spend in the waiitng room, minus any time that player spent against a wall
