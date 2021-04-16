@@ -22,7 +22,9 @@ Main Paper: https://psycnet-apa-org.proxy.library.upenn.edu/fulltext/1997-30049-
 5. The experimenter then read aloud the task instructions, which the participants followed along on their paper copies. The participants then read silently their copies of the company profiles and provided their private opinions of the correct rank ordering of the three companies on special forms provided. To reinforce the privacy of these decisions, participants were not asked to put theirnames on the forms.
 6. After the individuals recorded their private opinions, groups were then instructed to discuss the three companies and to reach a unanimous decision on a rank order among them. 
 
-7. Groups in the face-to-face conditions then moved immediately to the discussion. The experimenter remained in the room throughout the session, andaudiotaped the discussions, which were transcribed for later analysis. Groups in the GDSS conditions received the brief software training and then moved to the discussion. The groups were not given a definite time limit for their discussion at the outset but were told that most groups took approximately 30 min. The experimenter gave the groups a 10-min warning andstopped the discussion at the end of 45 min, even if a decisionhad not been reached.
+7. Groups in the face-to-face conditions then moved immediately to the discussion. The experimenter remained in the room throughout the session, andaudiotaped the discussions, which were transcribed for later analysis. Groups in the GDSS conditions received the brief software training and then moved to the discussion. The groups were not given a definite time limit for their discussion at the outset but were told that most groups took approximately 30 min. The experimenter gave the groups a 10-min warning and stopped the discussion at the end of 45 min, even if a decisionhad not been reached.
+
+8. Participants in the face-to-face conditions recorded the final group decision on a special form provided, and groups in the GDSS conditions typed the group decision into their computer transcripts. Participants in all conditions provided their current private opinions on special forms provided.
 
 ## Roles 
 Experimentor: Greeted participants, handed out instructions and provides instructions 
@@ -35,9 +37,10 @@ Reached out to researchers
 - Solution found 
 Transcript Reviews: 
 - Information Coverage: The total number of their unshared pieces of information the minorities presented 
-- Persistance: the number of times minorities peated those arguments
+- Persistance: the number of times minorities repeated those arguments
 - Attention Majority Groups gave to minority groups: positive/negative public reactions to arguments
 - Extent to which groups discovered differences in sets of information and attempted to pool information 
+- The information pooling was scored on a 5-point scale ranging from no mention of different information (0), to at least one person explicitly raises the issue, but no one responds (1) to at least one person raises the issue, and there is minimal response (2) to clear group realization that information is different (3) to full recognition and attempt at pooling different information (4)
 
 ## Incentives
 Participants received course credit for their participation 
