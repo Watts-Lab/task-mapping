@@ -20,7 +20,7 @@ Supporting paper: https://www-jstor-org.proxy.library.upenn.edu/stable/pdf/23343
 > Players controlled their avatars using the left and right arrow keys to turn and could hold the space bar to accelerate
 
 ## Materials for alternative versions of the experiment 
-The weighting between the noise field and the spotlight were manipulated to generate different task conditions
+The weighting between the noise field and the spotlight were manipulated to generate different task conditions which corresponded to “low” and “medium” noise levels 
 
 # Procedure
 ## Steps
