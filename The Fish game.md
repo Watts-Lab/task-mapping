@@ -34,6 +34,7 @@ The weighting between the noise field and the spotlight were manipulated to gene
 > Participants completed a comprehension test
 > 
 > Participants were put into a waiting room for up to five minutes or until a pre-assigned number of other players joined the game
+> > While in the waiting room, participants could familiarize themselves with the controls of the game. Players were not shown any score in the waiting room unless the participant was against a wall, in which case the displayed score would change from a dashed line to a red “0%”.
 > 
 > Each participant played in a single game for 6 minutes
 
