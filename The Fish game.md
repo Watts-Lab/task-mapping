@@ -10,7 +10,9 @@ Supporting paper: https://www-jstor-org.proxy.library.upenn.edu/stable/pdf/23343
 ## The visual components
 ![Fish1](images/Fish1.png)
 ![Fish2](images/Fish2.png)
-
+>
+>These score fields consisted of 480 × 285 arrays of score values for each 125ms time interval in our game. First, a “spotlight” of high value was created that moved in straight paths between uniformly randomly chosen locations. This spotlight was then combined with a field of spatially correlated noise. This procedure yields a complex landscape with many transient maxima and a single persistent time-varying global maximum.
+>
 > Participants could only see the scores at their avatars' locations
 > 
 > They could also see the positions, directions, and speeds of all other players
