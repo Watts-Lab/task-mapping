@@ -45,6 +45,8 @@ ASK
 
 # Criteria
 ## Performance calculation
+>Success on the group Optimization task required collective planning and the sharing of unique information.
+>Individual and Group performance was measured, accounting for differences in task difficulty and endowment of individual skill
 
 ## Incentives
 > Participants who completed the study were paid a total of $100: $10 for completing the individual tests; $30 for lab visit 1; and $60 for lab visit 2. 
