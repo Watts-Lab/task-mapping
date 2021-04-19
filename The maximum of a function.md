@@ -1,12 +1,12 @@
 # Summary
-A high level summary that presents the main idea of the task.
+The goal of this task was to find the maximum of a complex function
 
 # References
 Main paper: https://www.nber.org/system/files/working_papers/w27071/w27071.pdf
 
 # Stimuli
 ## The visual components
-Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
+![Optimization.](images/Optimization.png)
 
 ## Materials for alternative versions of the experiment 
 > There were individual and group versions of the task
