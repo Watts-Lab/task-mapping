@@ -8,14 +8,19 @@
 
 ## Materials for alternative versions of the experiment 
 >Three variations of each type of task was used to prevent subjects in one group from communicating to another group
+>Study Two repeated the same tasks but with 2 or 10 person groups and with increased encouragement to communicate: Each subject was given 5 colored and 10 white cards for logic problems and 2 colored and 4 white cards for anagram problems. They instructed to deposit a card in a box each time he/she spoke. Subjects started with colored cards and when those were used up they moved to white cards
 
 # Procedure
 ## Steps
 > Randomly assign participants to work alone or in groups of 2, 5, or 10.
 > 
-> First, participants will complete 33 anagrams randing from 5 to 14 letters in 5 minutes
+> Order of tasks was counterbalanced so some groups started with anagrams while others started with logic
 > 
-> Then, participants with complete a logic problem by compiling information among the different group members and make 15 deductions to arrive at a solution in 25 minutes.
+> Participants completed 33 anagrams ranging from 5 to 14 letters in 5 minutes
+> > To keep coordination demands to a minimum, each member had a list of all the anagrams
+> > Each group member could work independently, and would announce the solution to be entered on a group sheet
+> 
+> Participants would complete a logic problem by compiling information among the different group members and make 15 deductions to arrive at a solution in 25 minutes. Clues were distributed among different group members so that communication was required since clues had to be combined
 > > An example of a logic problem:
 > > > 1. Pair first and last names with destinations to determine which five couples vacationed at various ski resorts
 > > > 2. Clues include: "Neither Tammy nor Sue vacationed in Innsbruck," and Both Rita and Mrs. Owens returned from their vacations with broken wrists."
