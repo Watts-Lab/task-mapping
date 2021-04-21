@@ -20,7 +20,12 @@
 > > To keep coordination demands to a minimum, each member had a list of all the anagrams
 > > Each group member could work independently, and would announce the solution to be entered on a group sheet
 > 
-> Participants would complete a logic problem by compiling information among the different group members and make 15 deductions to arrive at a solution in 25 minutes. Clues were distributed among different group members so that communication was required since clues had to be combined
+> Participants would complete a logic problem by compiling information among the different group members and make 15 deductions to arrive at a solution in 25 minutes.
+> 
+> Clues were distributed among different group members so that communication was required since clues had to be combined
+> 
+> The clue enabled subjects to rule out all possibilities except one and to reach a correct deduction for the first sequential decision. This, when combined with other clues, allowed further deductions, which then led to a solution.
+> 
 > > An example of a logic problem:
 > > > 1. Pair first and last names with destinations to determine which five couples vacationed at various ski resorts
 > > > 2. Clues include: "Neither Tammy nor Sue vacationed in Innsbruck," and Both Rita and Mrs. Owens returned from their vacations with broken wrists."
