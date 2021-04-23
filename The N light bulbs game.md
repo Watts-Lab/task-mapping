@@ -3,7 +3,9 @@ A high level summary that presents the main idea of the task.
 
 # References
 Main paper: https://www.nature.com/articles/s41598-020-59946-9.pdf
+
 Data: https://github.com/cuehs/transmissionchains_independentsolvers
+
 Supplemental paper: https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-020-59946-9/MediaObjects/41598_2020_59946_MOESM1_ESM.pdf
 
 
