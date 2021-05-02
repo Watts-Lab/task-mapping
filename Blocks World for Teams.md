@@ -7,8 +7,11 @@ Main paper: https://journals-sagepub-com.proxy.library.upenn.edu/doi/10.1177/001
 # Stimuli
 ## The visual components
 >The environment contained nine rooms, designated A1 through C3, with each room containing colored blocks. A 10th room, designated the “drop zone,” was located at the bottom of the map. There were also hallways allowing the participants to travel from room to room.
+>
 >Each participant could only see the blocks in the room he or she was currently occupying, including the drop zone. Participants were also unable to see the locations of their teammates; however, when another agent was occupying an adjacent room, the door to that room was colored red; otherwise, it was colored green
+>
 >To communicate with each other the BW4T interface included a large chat window and a set of predetermined communications to facilitate this interaction: “Ask,” “Question,” “Tell,” and “Relay.” The participants then had to select who the message was for, whether it was about a room or a block, and then further describe it using the predetermined options.
+>
 >To know what was in the block zone the participants either had to visit the block zome or communicate to each other
 >
 ![Experimenter](images/Experimenter.png)
