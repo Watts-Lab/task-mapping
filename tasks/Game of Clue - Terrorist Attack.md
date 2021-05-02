@@ -14,11 +14,16 @@ See supplemetal materials PDF for images of computer interface
 # Procedure
 ## Steps
 1. The experiment was carried out in a laboratory setting, with each participant seated at a computer in a private carrel. Each experimental run lasted 25 minutes. Each experimental session began with an instructional video explaining the platform and the task in uniform fashion to every subject across all sessions. To control for individual aptitude, each person then took a pretest with the same format as the experimental task, with a similar but smaller-scale problem and without interaction with other participants.
+> There were four 16-person network treatments
+    Caveman (CAVE): contained four four-person cliques
+    Hierarchy (HIER): four four-person cliques arranged in a conventional centralized structure
+    Rewired Caveman (RCAVE): removed links from the caveman network, then added links that created shortcuts through the network
+    Ring (RING): a network that was neither clustered nor centralized
 2. Subjects could take part in up to three runs of the experiment. Within any given run, all subjects had the same level of experience with the experiment. That is, if a subject were taking part in a second run, then all of the other subjects in that run would also be taking part for the second time. Holding this experience constant eliminated the possibility of spurious correlations between learning and network structure. In the multivariate analyses, we include a round variable that indicates the experience of the participants in number of runs through the experiment.
 > Before each run began, a network treatment was chosen at random and study subjects were randomly assigned to a position in that network that was uncorrelated to their physical location in the laboratory. Participants were assigned a pseudonym to further obscure their identities from each other; the pseudonyms were shuffled before each round.
-4. Participants were given two clues at the start of each round and were allowed to search for more clues once per minute. 
+4. Participants were given two clues at the start of each round and were allowed to search for more clues once per minute. They could share clues they had one at a time with one or more of their neighbors, and could add free-text annotations to these shared clues
 5. The initial distribution of clues was not correlated with outcomes. Each clue was only relevant to one subproblem. Some clues contained useless or misleading information. 
-6. Subjects had to combine multiple clues to conclusively arrive at the correct answer. The number of clues necessary to solve a single subproblem ranged from 2 to 10, with a median of 5 and a mean of 5.3.
+6. Subjects had to combine multiple clues to conclusively arrive at the correct answer. The number of clues necessary to solve a single subproblem ranged from 2 to 10, with a median of 5 and a mean of 5.3. Each participant typed their solution into the separate spaces given for each subproblem, and could check their neighbors solutions at any time and any number of times
 
 
 ## Instructions
