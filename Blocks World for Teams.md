@@ -51,7 +51,7 @@ Main paper: https://journals-sagepub-com.proxy.library.upenn.edu/doi/10.1177/001
 >The experimenter's screen had an overview of all of the rooms
 
 ## Instructions
-ASK
+ASKED AND WAITING FOR REPLY
 
 # Criteria
 ## Performance calculation
