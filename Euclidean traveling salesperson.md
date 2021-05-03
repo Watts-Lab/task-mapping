@@ -32,7 +32,7 @@ filled in. To the left is a timer (showing 32s remaining) along with the reset a
 > All participants had the same role.
 
 ## Instructions
-> Ask
+> ASKED AND WAITING RESPONSE
 
 # Criteria
 ## Performance calculation
