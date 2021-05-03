@@ -43,7 +43,7 @@ The weighting between the noise field and the spotlight were manipulated to gene
 Participants had the same role
 
 ## Instructions
-Will ask
+ASKED AND WAITING RESPONSE
 
 # Criteria
 ## Performance calculation
