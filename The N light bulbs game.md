@@ -44,7 +44,7 @@ in parallel without interactions.
 
 
 ## Instructions
-ASK
+ASKED AND WAITING RESPONSE
 
 # Criteria
 ## Performance calculation
