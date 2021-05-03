@@ -41,7 +41,7 @@ for some tasks.
 > In the group, one participant was the Reporter, who entered the group’s answer for the output-maximizing input after each participant in the group submitted their own guesses
 
 ## Instructions
-ASK 
+ASKED AND WAITING RESPONSE
 
 # Criteria
 ## Performance calculation
