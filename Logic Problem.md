@@ -36,7 +36,7 @@
 >All participants had the same role
 
 ## Instructions
-ASK
+ASKED AND WAITING RESPONSE
 
 # Criteria
 ## Performance calculation
