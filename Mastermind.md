@@ -6,7 +6,7 @@ Main paper: https://www-sciencedirect-com.proxy.library.upenn.edu/science/articl
 
 # Stimuli
 ## The visual components
-Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
+![mastermind](images/mastermind.png)
 
 ## Materials for alternative versions of the experiment 
 There were six conditions: four group conditions and two individual conditions. The participants were randomly assigned to each, and the group condition contained groups of three.
@@ -47,7 +47,7 @@ Group condition
 In the ranking information condition, all ranking information was verbally communicated by the experimenters directly to the participants
 
 ## Instructions
-ASK
+ASKED AND WAITING RESPONSE
 
 # Criteria
 ## Performance calculation
