@@ -6,20 +6,26 @@ Main paper: https://www.researchgate.net/publication/23196347_Propagation_of_Inn
 
 # Stimuli
 ## The visual components
-Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
+![guesses](images/guesses.png)
 
 ## Materials for alternative versions of the experiment 
 >There were two fixed random orderings of 8 payout functions (including the functions used in Study 2) and network structures that were counterbalanced between groups.
+>
 >The positions of the maxima were different for each of the 8 problems
+>
 >The network structure for each problem was either full, lattic, small-world, or random
 
 # Procedure
 ## Steps
->Participants signed into a compute and gave themselves a handle or were assigned an ID
+>Participants signed into a computer and gave themselves a handle or were assigned an ID
+>
 >Once all participants signed on, they received the instructions to the task
+>
 >Each problem consisted of 15 rounds in which participants had 20 seconds each round to guess a number between 0-100
 >> When the round ended, the guesses were sent to a server which would calculate a score between 0-50, add normally-distributed noise with a variance of 25, and return the feedback.
+>> 
 >> The participants then began the next round knowing their guess and score as well as a list of their neighbor's guesses and scores
+>> 
 >> After the 15 rounds, the participants were given 15 seconds before the next problem began
 
 ## Roles 
