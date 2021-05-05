@@ -40,7 +40,47 @@ Optimization, and Shapes
 9. After the memorization period, all three team members gathered around the Reporter’s laptop to answer a set of 24 questions about the stimuli. There are an equal number of questions about each type of stimuli. The structure of the questions mirror those used in the individual assessments
 
 ## Instructions
-See image in stimuli section & reached out to authors 5/2 
+![image](https://user-images.githubusercontent.com/78745728/117159957-b8a95b00-ad8e-11eb-95c4-9e1837151347.png)
+![image](https://user-images.githubusercontent.com/78745728/117159981-bd6e0f00-ad8e-11eb-9e4a-db6f14eb25dd.png)
+![image](https://user-images.githubusercontent.com/78745728/117159995-c1019600-ad8e-11eb-9199-ea66f27bdc47.png)
+![image](https://user-images.githubusercontent.com/78745728/117160009-c52db380-ad8e-11eb-819a-6762a166a2be.png)
+![image](https://user-images.githubusercontent.com/78745728/117160029-c8c13a80-ad8e-11eb-92b3-cff2b8ed709f.png)
+![image](https://user-images.githubusercontent.com/78745728/117160380-10e05d00-ad8f-11eb-98f0-21e65d30f52d.png)
+![image](https://user-images.githubusercontent.com/78745728/117160419-16d63e00-ad8f-11eb-9daf-d06bd7691466.png)
+![image](https://user-images.githubusercontent.com/78745728/117160451-1f2e7900-ad8f-11eb-8f3c-d0be558e7100.png)
+![image](https://user-images.githubusercontent.com/78745728/117160498-26558700-ad8f-11eb-8d7e-b918fe79fd31.png)
+![image](https://user-images.githubusercontent.com/78745728/117160521-2a81a480-ad8f-11eb-9a08-53602255f6b9.png)
+![image](https://user-images.githubusercontent.com/78745728/117160534-2e152b80-ad8f-11eb-93a6-4eda5e42489f.png)
+![image](https://user-images.githubusercontent.com/78745728/117160553-32d9df80-ad8f-11eb-8934-b85384f75d8e.png)
+![image](https://user-images.githubusercontent.com/78745728/117160573-379e9380-ad8f-11eb-8b84-39f86095517f.png)
+![image](https://user-images.githubusercontent.com/78745728/117160580-3a00ed80-ad8f-11eb-8b2c-578afc9ea0f6.png)
+![image](https://user-images.githubusercontent.com/78745728/117160596-3e2d0b00-ad8f-11eb-8d54-ddc4290c306f.png)
+![image](https://user-images.githubusercontent.com/78745728/117160610-408f6500-ad8f-11eb-8304-cc569928d595.png)
+![image](https://user-images.githubusercontent.com/78745728/117160621-438a5580-ad8f-11eb-898b-308a68afa936.png)
+![image](https://user-images.githubusercontent.com/78745728/117160632-471ddc80-ad8f-11eb-85a7-b26c163ce207.png)
+![image](https://user-images.githubusercontent.com/78745728/117160645-4a18cd00-ad8f-11eb-9a6a-a1bf5710d0c5.png)
+![image](https://user-images.githubusercontent.com/78745728/117160657-4d13bd80-ad8f-11eb-93db-b67dc590fcdc.png)
+![image](https://user-images.githubusercontent.com/78745728/117161108-a7ad1980-ad8f-11eb-8012-dcf0f1a15955.png)
+![image](https://user-images.githubusercontent.com/78745728/117161129-aaa80a00-ad8f-11eb-89d5-45a68503761f.png)
+![image](https://user-images.githubusercontent.com/78745728/117161141-ae3b9100-ad8f-11eb-81df-aeae75de1a6a.png)
+![image](https://user-images.githubusercontent.com/78745728/117161154-b09deb00-ad8f-11eb-8784-ea4d20365f3e.png)
+SKIPPED OPTIMIZATION TASK INSTRUCTIONS
+![image](https://user-images.githubusercontent.com/78745728/117161261-c3b0bb00-ad8f-11eb-88d8-ecdab623a422.png)
+![image](https://user-images.githubusercontent.com/78745728/117161280-c6abab80-ad8f-11eb-9207-ff24c01a9b43.png)
+![image](https://user-images.githubusercontent.com/78745728/117161292-ca3f3280-ad8f-11eb-86ba-c6448653106e.png)
+![image](https://user-images.githubusercontent.com/78745728/117161336-d1664080-ad8f-11eb-94b7-b412d67bd738.png)
+![image](https://user-images.githubusercontent.com/78745728/117161360-d5925e00-ad8f-11eb-9c8f-0d9658aa6ebe.png)
+![image](https://user-images.githubusercontent.com/78745728/117161374-d88d4e80-ad8f-11eb-9678-7b3d64c03c04.png)
+![image](https://user-images.githubusercontent.com/78745728/117161388-db883f00-ad8f-11eb-98ad-743632b34e67.png)
+![image](https://user-images.githubusercontent.com/78745728/117161413-dfb45c80-ad8f-11eb-80f1-f7c01b63c6c3.png)
+![image](https://user-images.githubusercontent.com/78745728/117161427-e2af4d00-ad8f-11eb-9d9c-c1e1d598f257.png)
+![image](https://user-images.githubusercontent.com/78745728/117161439-e642d400-ad8f-11eb-95c1-235491698c1a.png)
+![image](https://user-images.githubusercontent.com/78745728/117161451-e93dc480-ad8f-11eb-9a58-70e24a844d92.png)
+![image](https://user-images.githubusercontent.com/78745728/117161464-ec38b500-ad8f-11eb-90ed-22069cdeb0ae.png)
+![image](https://user-images.githubusercontent.com/78745728/117161479-ef33a580-ad8f-11eb-8ade-c68cafcfd2f7.png)
+![image](https://user-images.githubusercontent.com/78745728/117161491-f22e9600-ad8f-11eb-9028-d7fdfdef936f.png)
+![image](https://user-images.githubusercontent.com/78745728/117161502-f5298680-ad8f-11eb-927a-b71a2a656877.png)
+
 
 # Criteria
 ## Performance calculation
