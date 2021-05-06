@@ -36,7 +36,12 @@
 >All participants had the same role
 
 ## Instructions
-ASKED AND WAITING RESPONSE
+> Anagram task
+> > Each participant was presented with a sheet with the entire list of anagrams. They were instructed to solve as many anagrams as they could and pool individual solutions to compile a group list of solutions. 
+
+> Logic problem task
+> > Clues were distributed, and solutions could only be made by sharing and discussing clues. Participants were encouraged to collaborate and were provided a grid on a whiteboard that helped the group keep track of decisions that they made. 
+
 
 # Criteria
 ## Performance calculation
