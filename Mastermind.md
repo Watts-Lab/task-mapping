@@ -46,9 +46,6 @@ Group condition
 ## Roles 
 In the ranking information condition, all ranking information was verbally communicated by the experimenters directly to the participants
 
-## Instructions
-ASKED AND WAITING RESPONSE
-
 # Criteria
 ## Performance calculation
 Performance was determined by a trials-to-solution score which was the number of trials it took to arrive at a correct solution.
