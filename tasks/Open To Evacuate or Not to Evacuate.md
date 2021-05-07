@@ -8,7 +8,7 @@ Data Files: https://humannaturelab.net/publications/collective-communication-and
 # Stimuli
 ## The visual components
 ![image](https://user-images.githubusercontent.com/78745728/117169986-9b2cbf00-ad97-11eb-84d7-66849fa6f64d.png)
-
+Network topology varied as either a random-regular network or a ring-lattice network. Network size was also manipulated to have 10, 20, 40, or 60 nodes.
 
 # Procedure
 ## Steps
@@ -21,7 +21,8 @@ Data Files: https://humannaturelab.net/publications/collective-communication-and
 7. The games of networked groups required an exact number of subjects. When the subjects who successfully clicked the button were more than the required number, surplus subjects, who were randomly selected, were dropped from the game. When the number of qualified subjects was less than the required number, the game did not start (and subjects got their show-up fee). 
 8. At the start of the game, we selected one subject (the ‘informant’) at random who was informed in advance whether a disaster would indeed strike or not. The behaviours of the informants did not vary significantly across the network treatments
 >  The exact sentence that the informants received in their game screen was ‘A disaster is going to strike!’ when a disaster would strike or ‘There is no disaster’. when a disaster would not strike. Uninformed subjects received notification that ‘A disaster may or may not strike’.
-9. The other subjects were informed that some players had accurate information about the disaster, and they were also told that immediate neighbours of the informant would know the identity of the informant by our marking ‘i’ on the informant's node in their network diagram in the game screen. When a disaster struck before they evacuated, the subjects earned no bonus. Otherwise, they earned a bonus of $2.00 without the disaster or $1.00 with the disaster by spending $1.00 to evacuate, plus $0.10 per other player who took the correct action accordingly 
+9. The other subjects were informed that some players had accurate information about the disaster, and they were also told that immediate neighbours of the informant would know the identity of the informant by our marking ‘i’ on the informant's node in their network diagram in the game screen. When a disaster struck before they evacuated, the subjects earned no bonus. Otherwise, they earned a bonus of $2.00 without the disaster or $1.00 with the disaster by spending $1.00 to evacuate, plus $0.10 per other player who took the correct action accordingly.
+>  In the network conditions, subjects shared their information; when clicking the 'Safe' button, their node turned blue and after 5 seconds automatically turned to grey, and likewise, when clicking the 'Danger' button, their node turned red. Subjects could only see the colors of neighbors that they were directly connected. Once subjects chose to evacuate, they couldn't send signals and their node turned grey, and their neighbors weren't informed of their evacuation.
 10. Each session ended in 75 s. In half of the sessions, a disaster struck at the end of the game. We did not inform any subjects, including the informants, when their sessions would end, the global network structure in which they were embedded, or how many informants were in the game.
 
 ## Roles 
@@ -32,11 +33,7 @@ Reached out to instructors 5/5
 
 # Criteria
 ## Performance calculation
-A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
-
-Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
-
-This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
+Performance was calculated based on the participant's ability to correctly avoid an impending disaster, and the payoffs are displayed in the Stimuli sections
 
 ## Incentives
 the subjects were paid a $1.00 show-up fee and a bonus depending on whether they took the appropriate decision with respect to an impending disaster.
