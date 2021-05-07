@@ -6,9 +6,13 @@ Main Paper: http://collections.uakron.edu/digital/collection/p15960coll1/id/2125
 
 # Stimuli
 ## The visual components
-![
+![89](images/89.png)
 
 ## Materials for alternative versions of the experiment 
+![90](images/90.png)
+![91](images/91.png)
+![92](images/92.png)
+![93](images/93.png)
 
 # Procedure
 ## Steps
