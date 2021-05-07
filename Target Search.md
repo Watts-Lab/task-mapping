@@ -17,9 +17,13 @@ Main Paper: http://collections.uakron.edu/digital/collection/p15960coll1/id/2125
 # Procedure
 ## Steps
 >The group is given a blank diagram with letters on the x-axis and numbers on the y-axis.
+>
 >Participants are read the instructions.
+>
 >Paricipants will be given 3 minutes for discussion before making a group decision, then will have 10 trials to choose a coordinate.
+>
 >After each decision, they will be told their score based on the diagram.
+>
 >The highest possible score would be a score of 200, where the group chooses the central coordinate on all 10 trials.
 
 ## Roles 
