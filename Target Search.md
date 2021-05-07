@@ -40,6 +40,4 @@ The decision must be a group decision. You will be allowed three minutes for dis
 Total score on 10 trials; number of trials to discover coordinate having highest value.
 
 ## Incentives
-A formal specification of the incentives for participation.   
-
-Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+None mentioned
