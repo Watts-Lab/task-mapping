@@ -4,6 +4,8 @@ This is a search task in which participants guess numbers between 0-100 and the 
 # References
 Main paper: https://www.researchgate.net/publication/23196347_Propagation_of_Innovations_in_Networked_Groups
 
+Small World Network Structure: Ahmed E. & Abdusalam, H. A. (2000). On social percolation and small world network. European Physical Journal B, 15, 569-571. 
+
 # Stimuli
 ## The visual components
 ![guesses](images/guesses.png)
