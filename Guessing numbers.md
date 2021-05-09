@@ -10,16 +10,10 @@ Small World Network Structure: Ahmed E. & Abdusalam, H. A. (2000). On social per
 ## The visual components
 ![guesses](images/guesses.png)
 
-## Materials for alternative versions of the experiment 
->There were two fixed random orderings of 8 payout functions (including the functions used in Study 2) and network structures that were counterbalanced between groups.
->
->The positions of the maxima were different for each of the 8 problems
->
->The network structure for each problem was either full, lattic, small-world, or random
-
 # Procedure
 ## Steps
 >Participants signed into a computer and gave themselves a handle or were assigned an ID
+>> There were different network structures for each group of 10 participants (either a fully-connected network, small-world, or random network)
 >
 >Once all participants signed on, they received the instructions to the task
 >
