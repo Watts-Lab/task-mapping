@@ -41,7 +41,12 @@ for some tasks.
 > In the group, one participant was the Reporter, who entered the group’s answer for the output-maximizing input after each participant in the group submitted their own guesses
 
 ## Instructions
-ASKED AND WAITING RESPONSE
+![Op1](images/Op1.png)
+![Op2](images/Op2.png)
+![Op3](images/Op3.png)
+![Op4](images/Op4.png)
+![Op5](images/Op5.png)
+![Op6](images/Op6.png)
 
 # Criteria
 ## Performance calculation
