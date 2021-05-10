@@ -40,6 +40,12 @@ Optimization, and Shapes
 9. After the memorization period, all three team members gathered around the Reporter’s laptop to answer a set of 24 questions about the stimuli. There are an equal number of questions about each type of stimuli. The structure of the questions mirror those used in the individual assessments
 
 ## Instructions
+Group Instructions: Welcome everyone! My name is ___, thanks for joining us for today’s session. The plan for today is for you to work on a set of tasks very similar to those that you completed in the individual, online assessments. Today we’ll be working in person, in groups of three people.
+Figure 1: Overview of Experiment Notes: this figure describes the experimental design from an individual participant’s perspective. Tasks are described in Section 2.2. Task batteries represent unique sequences of tasks. Participants never see the same exact task more than once. Lab visits involve 6, 9 or 12 participants, who were randomly allocated to groups of 3 people - see Sections 2.3 and 2.4 for details. Battery AProblem Solving (Optimization A; Memory A; Shapes A)Personality (Big5)Emotional perception (RMET)Participants complete tests online (usually at home)Phase 1: Individual testingPhase 2: Group testingLab Visit 11stgroup2ndgroupBattery BOptimization BMemory B Shapes B Battery COptimization CMemory C Shapes CBattery DOptimization DMemory D Shapes DBattery EOptimization EMemory E Shapes E CryptographyLab Visit 23rdgroup4thgroup
+First, we are going to jumble you up into groups of three people using randomization balls. Once you get your ball, keep hold of it for the whole session. It will tell you who you will be working with throughout the session.
+Based on the randomization ball, we’ll put you into your first group for today. After solving some tasks, you’ll come back here after roughly 25 minutes. Then, we’ll put you in your second group, and you’ll solve some more tasks. All these tasks will be similar to ones you’ve done before.
+“Remember you’re working as a group, even though you each have your own laptop. There are no individual scores: you’re working as a team to solve problems.”
+
 ![image](https://user-images.githubusercontent.com/78745728/117159957-b8a95b00-ad8e-11eb-95c4-9e1837151347.png)
 ![image](https://user-images.githubusercontent.com/78745728/117159981-bd6e0f00-ad8e-11eb-9e4a-db6f14eb25dd.png)
 ![image](https://user-images.githubusercontent.com/78745728/117159995-c1019600-ad8e-11eb-9199-ea66f27bdc47.png)
