@@ -41,6 +41,11 @@ for some tasks.
 > In the group, one participant was the Reporter, who entered the group’s answer for the output-maximizing input after each participant in the group submitted their own guesses
 
 ## Instructions
+Group Instructions: Welcome everyone! My name is ___, thanks for joining us for today’s session. The plan for today is for you to work on a set of tasks very similar to those that you completed in the individual, online assessments. Today we’ll be working in person, in groups of three people.
+First, we are going to jumble you up into groups of three people using randomization balls. Once you get your ball, keep hold of it for the whole session. It will tell you who you will be working with throughout the session.
+Based on the randomization ball, we’ll put you into your first group for today. After solving some tasks, you’ll come back here after roughly 25 minutes. Then, we’ll put you in your second group, and you’ll solve some more tasks. All these tasks will be similar to ones you’ve done before.
+“Remember you’re working as a group, even though you each have your own laptop. There are no individual scores: you’re working as a team to solve problems.”
+
 ![Op1](images/Op1.png)
 ![Op2](images/Op2.png)
 ![Op3](images/Op3.png)
