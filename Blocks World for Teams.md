@@ -29,7 +29,15 @@ Supplementary: file:///Users/katelynbottcher/Downloads/961321058-MIT.pdf
 ![Experimenter](images/Experimenter.png)
 ![Participant](images/Participant.png)
 ![Communication](images/Communication.png)
-
+>
+>Questionnaires:
+![Question1](images/Question1.png)
+![Question2](images/Question2.png)
+![Question3](images/Question3.png)
+![Question4](images/Question4.png)
+![Question5](images/Question5.png)
+![Question6](images/Question6.png)
+![Question7](images/Question7.png) 
 
 # Procedure
 ## Steps
@@ -54,7 +62,10 @@ demographics
 >The experimenter's screen had an overview of all of the rooms
 
 ## Instructions
-ASKED AND WAITING FOR REPLY
+>In the first training round, experimenters instructed each participant step-by-step on how to travel
+between rooms, communicate with team members and pick up and drop off blocks as part of the
+training. Participants completed the second training sessions without the instructions from the
+experimenters. 
 
 # Criteria
 ## Performance calculation
