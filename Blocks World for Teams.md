@@ -1,8 +1,20 @@
 # Summary
 This studied examined the communication among teams by having teams of four people search for and deliver a specified series of colored blocks as quickly as possible.
 
+>Low-complexity task
+>> Participants were required to collect six blue-colored blocks
+>
+>Medium-complexity task
+>> Participants were required to search for and deliver 16 blocks, which were divided into two sequences that could be collected in parallel. One sequence called for pink- and green-colored blocks in alternating order, while the other required white and blue blocks in alternating order. Each of the four team members was assigned a specific color.
+>> 
+>> In one of the two medium-complexity tasks, it incorporated a “communication failure” in which two of the four agents were unable to communicate with each other for a prespecified duration within the task.
+>>
+>High-complexity task
+>> Participants were required to collect six blocks in a random sequence of colors that was predetermined during the experiment design phase
+
 # References
 Main paper: https://journals-sagepub-com.proxy.library.upenn.edu/doi/10.1177/0018720816639712
+Supplementary: file:///Users/katelynbottcher/Downloads/961321058-MIT.pdf
 
 # Stimuli
 ## The visual components
@@ -18,21 +30,12 @@ Main paper: https://journals-sagepub-com.proxy.library.upenn.edu/doi/10.1177/001
 ![Participant](images/Participant.png)
 ![Communication](images/Communication.png)
 
-## Materials for alternative versions of the experiment 
->Low-complexity task
->> Participants were required to collect six blue-colored blocks
->
->Medium-complexity task
->> Participants were required to search for and deliver 16 blocks, which were divided into two sequences that could be collected in parallel. One sequence called for pink- and green-colored blocks in alternating order, while the other required white and blue blocks in alternating order. Each of the four team members was assigned a specific color.
->> 
->> In one of the two medium-complexity tasks, it incorporated a “communication failure” in which two of the four agents were unable to communicate with each other for a prespecified duration within the task.
->>
->High-complexity task
->> Participants were required to collect six blocks in a random sequence of colors that was predetermined during the experiment design phase
 
 # Procedure
 ## Steps
-> Participants were asked if they were color blind
+> Each participant was given an introduction to the study, an informed
+consent form first. Next, participants completed an initial survey to document participant
+demographics
 > 
 > They were placed at computers with large boards between all four of them. They were asked to remain silent for the duration of the game.
 >  
