@@ -54,4 +54,4 @@ Subjective organization was examined using Tulving's measure of bidirectional pa
 
 
 ## Incentives
-All participants were volunteers
+All participants were paid volunteers
