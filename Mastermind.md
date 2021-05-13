@@ -1,14 +1,6 @@
 # Summary
 Participants played the mastermind game, in which a possible color pattern is randomly designated as the correct answer. If a player selects a correct color in the correct position, they receive a black peg. If a player selects a correct color in the incorrect position, they receive a white peg. Thus, if a player receives 4 black pegs, they know they placed the 4 colors in the correct positions. The objective of the task is to identify the correct response in the fewest possible trials.
 
-# References
-Main paper: https://www-sciencedirect-com.proxy.library.upenn.edu/science/article/pii/S0749597802000109?via%3Dihub
-
-# Stimuli
-## The visual components
-![mastermind](images/mastermind.png)
-
-## Materials for alternative versions of the experiment 
 There were six conditions: four group conditions and two individual conditions. The participants were randomly assigned to each, and the group condition contained groups of three.
 
 The easy conditions involved 4 sequential positions with 3 possible values (also represented by colors) and the difficult conditions involved 4 sequential positions with 6 possible values (typically represented by 6 different colors)
@@ -24,6 +16,13 @@ The easy conditions involved 4 sequential positions with 3 possible values (also
 >Ie (Individual/Easy problem)
 >
 >Id (Individual/Moderately difficult problem).
+
+# References
+Main paper: https://www-sciencedirect-com.proxy.library.upenn.edu/science/article/pii/S0749597802000109?via%3Dihub
+
+# Stimuli
+## The visual components
+![mastermind](images/mastermind.png)
 
 # Procedure
 ## Steps
