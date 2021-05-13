@@ -3,6 +3,7 @@ Group members collectively guess coordinates, and the value of the experimenters
 
 # References
 Main Paper: http://collections.uakron.edu/digital/collection/p15960coll1/id/21257/
+
 Task Paper: https://psycnet-apa-org.proxy.library.upenn.edu/fulltext/1960-05749-001.pdf
 
 # Stimuli
@@ -43,6 +44,10 @@ An observer was also persent who sat at one side of the room and unobtrusively r
 The experimenter and observer separately ranked the participants in order of perceived influence on the group process.
 
 ## Instructions
+This is a kind of search task. On each trial, you will choose one of the coordinates on this chart, e.g. D-5, E-10, etc. For each problem, I will have a chart with concentric, irregular lines drawn on it, like this (a diagram similar to the one shown above, right, is displayed to the group). The value of your decision will be determined by the value of this diagram. For example, if you choose D-3, this coordinate is outside the largest circle and has a value of zero; if you choose a coordinate between the largest and next largest circle, you get a value of 5, etc. The object is to earn as high a score as possible on the 10 trials allowed on each problem. After each decision, I will tell you the score you have earned according to my diagram. At first, of course, you will have no basis for making a choice. However, after a few trials, you should begin to learn something about the diagram that I have, and this be able to make more intelligent decisions.
+
+The decision must be a group decision. You will be allowed three minutes for discussion in making each decision. If you wish you may choose the same coordinate on successive trials. You may also mark your decisions and their value on the diagram, if you wish.
+
 Undifferentiated power structure:
 > Each choice will be determined by group discussion. You will be given two minutes to discuess each choice. If you agree before the end of two minutes, we will go on to the next choice. If you do not agree by the end of the discussion period the choice will be the coordinates agreed upon by the largest number of persons. In case of a tie, I will toss a coin to decided which one to accept.
 
