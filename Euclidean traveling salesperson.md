@@ -31,9 +31,6 @@ filled in. To the left is a timer (showing 32s remaining) along with the reset a
 ## Roles 
 > All participants had the same role.
 
-## Instructions
-> ASKED AND WAITING RESPONSE
-
 # Criteria
 ## Performance calculation
 > The quality of solutions was recorded as a distance (to be minimized) and as a number of correct legs. A leg was considered correct if it was part of an optimal solution.
