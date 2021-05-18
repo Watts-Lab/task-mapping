@@ -9,7 +9,7 @@ Pretest: Fiedler, F. A theory of leadership effectiveness. New York: McGraw-Hill
 
 # Stimuli
 ## The visual components
-Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
+![oil](/images/oil.png)
 
 # Procedure
 ## Steps
