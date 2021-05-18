@@ -20,7 +20,7 @@ Pretest: Fiedler, F. A theory of leadership effectiveness. New York: McGraw-Hill
 5. Each member received a 12 by 12 map showing land sections fulilling only one of the four criteria that would have to be met in order for a red dot to appear on the tab (chemical composition of land, surface hardness, surface mantle thickness, and geological stratification)
 6. They were given 1 minute to memorize the map without using a paper or pencil
 7. Subjects were then told them whether they had 3, 5, or 15 minutes to complete the group task. They were informed that in the past groups without time limits had taken about 10 minutes to complete the same task comfortably.
-8. Groups were then to decide which of the 144 desctions of land were suitable for drilling oit. WHen the team decided on a spot, a member pulled one of the tabs to see if there was a red dot or if the tab was blank.
+8. Groups were then to decide which of the 144 desctions of land were suitable for drilling oit. WHen the team decided on a spot, a member pulled one of the tabs to see if there was a red dot or if the tab was blank. They were told that there were 33 red dots ("hits") altogether
 9.  The subjects were paid according to the number of accurate recommendations they made, and for each mistake they would lose moey (points)
 10.  They were asked to complete a 7-point scale for sociometric ratings and 6 7-point scales to assess group process
 
@@ -39,4 +39,4 @@ Ask
 4. Group process: 6 7 point-scales assessed leadership, satisfaction with the group's output, satisfaction with the way the team functioned, pleasantness of the task, amount of stress each member experiences, and time-sufficience.
 
 ## Incentives
-The subjects were paid according to the number of accurate recommendations they made, and for each mistake they would lose moey (points)
+Participated for course credit
