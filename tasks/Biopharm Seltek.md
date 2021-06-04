@@ -25,7 +25,29 @@ Main Paper: https://www.sciencedirect.com/science/article/pii/S0749597817303965?
 
 
 ## Instructions
-Reached out to researchers 
+Synertech-Dosagen
+Confidential Information for Synertech
+You are the CFO of Synertech, a global pharmaceutical company with annual sales of $700 million, and significant cash reserves.  You need a new plant to manufacture a line of genetically-engineered compounds that are in the advanced stage of development.  You cannot modify one of your existing plants, because of the peculiarities of manufacturing genetically-engineered compounds.
+
+The total cost for building a new plant is $25 million.  If everything were to go perfectly, you estimate it would be a year before the plant was fully operational complete with FDA approval.  The product manager says that the market is ready for the compounds.  Production will be ready to begin in three months.  
+
+Dosagen, a pharmaceutical company with sales of $150 million, has for sale a plant that is suitable for manufacturing genetically-engineered compounds.  Dosagen’s plant is up and running and already has FDA approval.
+
+You are about to meet with the CFO of Dosagen.  You have full authority to buy the plant at whatever price you deem acceptable.  No other terms can be added to the negotiation.
+
+Your instructions for the negotiation also include making sure to let the CFO of Dosagen make the first offer in the negotiation. This will give you a sense of how much they may be willing to accept for their plant. Once they make the first offer, you should make sure to provide them a counteroffer.
+
+General Information
+Dosagen purchased this plant from Biotech, a diversified chemical company, three years ago for $15 million.  Biotech was at the time in bankruptcy and needed cash badly, so this purchase price may not be a good indicator of market value at that time.
+
+Two years ago, the Dosagen plant was appraised at $19 million.  The local real estate market has declined 5% since then.  However, the Dosagen plant is a unique property and general real estate trends may not apply.
+
+A plant similar to the Dosagen plant, although newer, sold for $26 million nine months ago.
+![image](https://user-images.githubusercontent.com/78745728/120843872-9f85fc80-c53c-11eb-99eb-394099abf9ae.png)
+
+ 
+![image](https://user-images.githubusercontent.com/78745728/120843829-909f4a00-c53c-11eb-9e74-09b5c736a7e9.png)
+
 
 # Criteria
 ## Performance calculation
