@@ -3,22 +3,22 @@ This task focused on short-term memory, which is closely associated with fluid i
 different types of stimuli: words, images and stories.
 
 # References
-Main Paper: https://www.nber.org/system/files/working_papers/w27071/w27071.pdf
+[Main Paper](https://www.nber.org/system/files/working_papers/w27071/w27071.pdf)
 
-Pre-Registration: Weidmann, Ben and David Deming. 2020. "Understanding Collective Intelligence." AEA RCT Registry. May 04. https://doi.org/10.1257/rct.2896-2.0.
+Pre-Registration: Weidmann, Ben and David Deming. 2020. "[Understanding Collective Intelligence.](https://doi.org/10.1257/rct.2896-2.0)" AEA RCT Registry. May 04.
 
-Individual Testing Stimuli: Duchaine, B., & Nakayama, K. (2006). The Cambridge Face Memory Test: Results for neurologically intact
+Individual Testing Stimuli: Duchaine, B., & Nakayama, K. (2006). [The Cambridge Face Memory Test: Results for neurologically intact
 individuals and an investigation of its validity using inverted face stimuli and prosopagnosic
-participants. Neuropsychologia, 44(4), 576-585. http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1046.6568&rep=rep1&type=pdf
+participants](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1046.6568&rep=rep1&type=pdf). Neuropsychologia, 44(4), 576-585.
 
 
-Short Story Descriptions: Sullivan, K. (2005). Alternate forms of prose passages for the assessment of auditory-verbal memory.
-Archives of Clinical Neuropsychology, 20(6), 745-753. https://watermark.silverchair.com/20-6-745.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAp0wggKZBgkqhkiG9w0BBwagggKKMIIChgIBADCCAn8GCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMTbqj_52E6TIpiGSOAgEQgIICUFC6mNKm81A34SENZaX8G3Y5j_lwVxdtUyEkAWT2tJ9EnjutE8SigdXsljqTSxgPtUtBg7_KyHx5b_ekoGXDYeNZRyMr3trC8byBJGjWnVsCbmTLvHwFwfIk3PvJ-_3lwPP1D1RBOp0ICeT2WyJ8GPWnBfHC5pT0lq2vrUM1ORFFv0Wekwe-b_c3CvX9a5mnEHuGuzakXsmk_GzDIaJZ6naP8PI9XdCJBhiZIzsU8Bdr5VhfqZryQm5ksXssiU6LiP0RKT_0N3PsTEIfIy_Tz6FbOBBI_akYJgvqOetbRJOpoWAR4xLtho5cO35Wddou89KuuAJRASo-EsSdkcACY8IleY3SrAOJHN09lbrGTak5leE2CxzCsKXCFFSL_plVz4McoufTH5X0YH3HItLKWtKsTEYO9is743DZ9NmUbDMgIA2_kRXJSFEjHm7oflpbRH_51NdE3yaCig7uKwZJ10zntCG53Qdu5QvYv_pfUJWMPmEeghH1zqzTGWdnahIxvPwXdJw8SQN2TRxNRVKciPmGW_OmqV-Y34j15kQU7eM4nBuUlkJiuWfxGmjcKT2JQHQpAFj5xVXd_ZH79NjfRPCVUep6RUib_1WpNqW8KW2kJ3Hq8Xs9bien1xsuM7rgNF79wg8by46JTWzF6cOg0Eote-iNcUR_Hiqm5qwEkOl4UtBxdkBumYElGUZ3hIyqg1c8p3FY0LiqYPt8fhAjMMUoVGDbs_3lQfJ5bphr0vVLlxkcCuRRnbXL_ido5A2wIEB-M5phry34bH9XF27yq9I
+Short Story Descriptions: Sullivan, K. (2005). [Alternate forms of prose passages for the assessment of auditory-verbal memory](https://watermark.silverchair.com/20-6-745.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAp0wggKZBgkqhkiG9w0BBwagggKKMIIChgIBADCCAn8GCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMTbqj_52E6TIpiGSOAgEQgIICUFC6mNKm81A34SENZaX8G3Y5j_lwVxdtUyEkAWT2tJ9EnjutE8SigdXsljqTSxgPtUtBg7_KyHx5b_ekoGXDYeNZRyMr3trC8byBJGjWnVsCbmTLvHwFwfIk3PvJ-_3lwPP1D1RBOp0ICeT2WyJ8GPWnBfHC5pT0lq2vrUM1ORFFv0Wekwe-b_c3CvX9a5mnEHuGuzakXsmk_GzDIaJZ6naP8PI9XdCJBhiZIzsU8Bdr5VhfqZryQm5ksXssiU6LiP0RKT_0N3PsTEIfIy_Tz6FbOBBI_akYJgvqOetbRJOpoWAR4xLtho5cO35Wddou89KuuAJRASo-EsSdkcACY8IleY3SrAOJHN09lbrGTak5leE2CxzCsKXCFFSL_plVz4McoufTH5X0YH3HItLKWtKsTEYO9is743DZ9NmUbDMgIA2_kRXJSFEjHm7oflpbRH_51NdE3yaCig7uKwZJ10zntCG53Qdu5QvYv_pfUJWMPmEeghH1zqzTGWdnahIxvPwXdJw8SQN2TRxNRVKciPmGW_OmqV-Y34j15kQU7eM4nBuUlkJiuWfxGmjcKT2JQHQpAFj5xVXd_ZH79NjfRPCVUep6RUib_1WpNqW8KW2kJ3Hq8Xs9bien1xsuM7rgNF79wg8by46JTWzF6cOg0Eote-iNcUR_Hiqm5qwEkOl4UtBxdkBumYElGUZ3hIyqg1c8p3FY0LiqYPt8fhAjMMUoVGDbs_3lQfJ5bphr0vVLlxkcCuRRnbXL_ido5A2wIEB-M5phry34bH9XF27yq9I).
+Archives of Clinical Neuropsychology, 20(6), 745-753.
 
-Images: Dennett, H. W., McKone, E., Tavashmi, R., Hall, A., Pidcock, M., Edwards, M., & Duchaine, B. (2012). The
+Images: Dennett, H. W., McKone, E., Tavashmi, R., Hall, A., Pidcock, M., Edwards, M., & Duchaine, B. (2012). [The
 Cambridge Car Memory Test: A task matched in format to the Cambridge Face Memory Test,
-with norms, reliability, sex differences, dissociations from face memory, and expertise effects.
-Behavior Research Methods, 44(2), 587-605. https://link.springer.com/article/10.3758/s13428-011-0160-2
+with norms, reliability, sex differences, dissociations from face memory, and expertise effects.](https://link.springer.com/article/10.3758/s13428-011-0160-2)
+Behavior Research Methods, 44(2), 587-605.
 
 # Stimuli
 ## The visual components
