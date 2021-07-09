@@ -1,5 +1,5 @@
 # Summary
-Participants recalled word lists in two sessions, in session one, they recalled words presented by an adio player independently. In session two they were assigned to pairs or worked as indivduals to recall the materials. 
+Participants recalled word lists in two sessions, in session one, they recalled words presented by an audio player independently. In session two they were assigned to pairs or worked as indivduals to recall the materials. 
 
 # References
 Main Paper: https://www.researchgate.net/profile/Masanobu-Takahashi/publication/6487298_Does_collaborative_remembering_reduce_false_memories/links/5a2729d00f7e9b71dd0c8b22/Does-collaborative-remembering-reduce-false-memories.pdf
@@ -24,11 +24,11 @@ Bjork, 1978), they were escorted by the experimenter to separate small rooms to 
 5. Participants in the individual recall groups were asked to write down all the words they could remember. Each pair of
 participants was given a sheet of paper, and one person was asked to volunteer to be the scribe. They were required to recall the material collaboratively, and to complete one recall sheet. No time limit was required to complete the final free recall test which typically took less than 20 minutes
 
-## Roles 
+## Roles
 In the groups of two, one person served as the scribe writing down all the words that the grop could remember. 
 
 ## Instructions
-Reached out 6/7
+Participants were asked to write down all the words they can remember. Later experiments modified groups to be either friends or non-friends (experiment 2), and then modified word number of recall tests (experiment 3).
 
 # Criteria
 ## Performance calculation
