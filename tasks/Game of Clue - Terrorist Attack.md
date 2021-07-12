@@ -26,9 +26,6 @@ See supplemetal materials PDF for images of computer interface
 6. Subjects had to combine multiple clues to conclusively arrive at the correct answer. The number of clues necessary to solve a single subproblem ranged from 2 to 10, with a median of 5 and a mean of 5.3. Each participant typed their solution into the separate spaces given for each subproblem, and could check their neighbors solutions at any time and any number of times
 
 
-## Instructions
-Reached out to researchers 
-
 # Criteria
 ## Performance calculation
 Exploration in information space at the collective level with two variables: the number of unique facts discovered by the group as a whole and the ratio of total facts found to unique facts found. The latter measure can be interpreted as the degree to which facts were found multiple times within the same group, or simply as the redundancy of facts found. The more unique facts and the lower the redundancy, the greater the exploration of information space.
