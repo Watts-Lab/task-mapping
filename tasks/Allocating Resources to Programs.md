@@ -10,9 +10,11 @@ Some Intended and Unintended Consequences. MIS Quarterly 12, 3 (1988), 463–478
 # Stimuli
 ## The visual components
 ![image](/images/Allocating_Resources_to_Programs_Chatbox.png)
+https://github.com/Watts-Lab/task-mapping/blob/5774ef8d9030eb097c52c45714614aabe3a3707e/images/Allocating_Resources_to_Programs_Chatbox.png
 
 Personality Values(in task related article): 
 ![image](/images/Allocating_Resources_to_Programs_Values.png)
+https://github.com/Watts-Lab/task-mapping/blob/5774ef8d9030eb097c52c45714614aabe3a3707e/images/Allocating_Resources_to_Programs_Values.png
 
 # Procedure
 ## Steps
@@ -38,8 +40,8 @@ Proposals received from various organizations for projects are listed below. Eac
 7. You have 10 minutes to complete this decision as a group.
 After everyone is done reading, begin discussing with your group members to agree on a final allocation. When prompted, enter the final choices and the reasons behind them.
 There is, of course, no optimal allocation. However, your group’s performance will be evaluated by judges based on how persuasive your arguments for the allocation are.
-8. You’re about half way through this round.
-As a reminder, you’re deciding on how to allocate $500,000 between the following initiatives based on which programs agree with your personal values:
+8. You are about half way through this round.
+As a reminder, you are deciding on how to allocate $500,000 between the following initiatives based on which programs agree with your personal values:
     > 1. To purchase a new computer system for the county government in order to hold local taxes constant.
     > 2. To establish a community arts program featuring art, music, and dance programs for children and adults.
     > 3. To establish an additional shelter for the homeless in the community.
@@ -48,7 +50,7 @@ As a reminder, you’re deciding on how to allocate $500,000 between the followi
     > 1. To purchase a new computer system for the county government in order to hold local taxes constant.
     > 2. To establish a community arts program featuring art, music, and dance programs for children and adults.
     > 3. To establish an additional shelter for the homeless in the community.
-11. Submit the team’s final choices by sending a message for each program starting with its number in the list above as well as the amount of money allocated and the main reason. Use this format:
+11. Submit the team final choices by sending a message for each program starting with its number in the list above as well as the amount of money allocated and the main reason. Use this format:
     > 1. $$$ reason
     > 2. $$$ reason
     > 3. $$$ reason
