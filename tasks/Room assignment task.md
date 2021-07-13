@@ -32,15 +32,15 @@ Phase 2 Exit Survey
 # Procedure
 ## Steps
 Phase One:
-1200 participants completed 5 room tasks (three “ very low” and two “moderate” complexity tasks) and a standard “Reading the Mind in the Eyes” (RME) test.
+1200 participants completed 5 room tasks (three 'very low' and two 'moderate' complexity tasks) and a standard 'Reading the Mind' in the Eyes (RME) test.
 
-The task required to assign N “students” to M “rooms” so as to maximize the total utility of the students, each of who has a specified utility for each room, while also respecting Q constraints.
+The task required to assign N 'students' to M 'rooms' so as to maximize the total utility of the students, each of who has a specified utility for each room, while also respecting Q constraints.
 
 High complexity: Assign 9 students to 6 rooms given 8 constraints
 
 Low complexity: Assign 6 students to 4 rooms given 2 constraints
 
-In each room assignment problem, a “utility table” was presented, providing participant(s) with the information on students’ ratings/preferences (between 0 and 100) to each of the M rooms indicating how satisfied they would be if being assigned to the room.
+In each room assignment problem, a 'utility table' was presented, providing participant(s) with the information on students’ ratings/preferences (between 0 and 100) to each of the M rooms indicating how satisfied they would be if being assigned to the room.
 
 At any time during the allotted 5-minute period for a task, the participant could push a button to submit her solution and move on to the next task, or the participant would be automatically redirected to the next task when the 5-minute timer was up
 
@@ -76,15 +76,15 @@ ML: Mixed high/low skill, low social perceptiveness
 LL: Low skill, low social perceptiveness
 
 ## Instructions
-![Instruction1](/images/Instruction1.png)
-![Instruction2](/images/Instruction2.png)
-![Instruction3](/images/Instruction3.png)
-![Instruction4](/images/Instruction4.png)
-![Instruction5](/images/Instruction5.png)
-![Instruction6](/images/Instruction6.png)
-![Instruction7](/images/Instruction7.png)
-![Instruction8](/images/Instruction8.png)
-![Instruction9](/images/Instruction9.png)
+![Instruction1](/images/Instruction1.png)https://github.com/Watts-Lab/task-mapping/blob/5774ef8d9030eb097c52c45714614aabe3a3707e/images/Room%20assignment%201.png
+![Instruction2](/images/Instruction2.png) https://github.com/Watts-Lab/task-mapping/blob/5774ef8d9030eb097c52c45714614aabe3a3707e/images/Room%20assignment%202.png
+![Instruction3](/images/Instruction3.png)https://github.com/Watts-Lab/task-mapping/blob/5774ef8d9030eb097c52c45714614aabe3a3707e/images/Room%20assignment%203.png
+![Instruction4](/images/Instruction4.png)https://github.com/Watts-Lab/task-mapping/blob/5774ef8d9030eb097c52c45714614aabe3a3707e/images/Room%20assignment%204.png
+![Instruction5](/images/Instruction5.png)https://github.com/Watts-Lab/task-mapping/blob/5774ef8d9030eb097c52c45714614aabe3a3707e/images/Room%20assignment%205.png
+![Instruction6](/images/Instruction6.png)https://github.com/Watts-Lab/task-mapping/blob/5774ef8d9030eb097c52c45714614aabe3a3707e/images/Room%20assignment%206.png
+![Instruction7](/images/Instruction7.png)https://github.com/Watts-Lab/task-mapping/blob/5774ef8d9030eb097c52c45714614aabe3a3707e/images/Room%20assignment%207.png
+![Instruction8](/images/Instruction8.png)https://github.com/Watts-Lab/task-mapping/blob/5774ef8d9030eb097c52c45714614aabe3a3707e/images/Room%20assignment%208.png
+![Instruction9](/images/Instruction9.png)https://github.com/Watts-Lab/task-mapping/blob/5774ef8d9030eb097c52c45714614aabe3a3707e/images/Room%20assignment%209.png
 
 # Criteria
 ## Performance calculation
