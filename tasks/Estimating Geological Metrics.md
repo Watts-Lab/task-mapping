@@ -1,6 +1,6 @@
 # Summary
 
-"Participants were asked to correctly answer a series of questions without looking up the solutions online, instead debating with their group members on what the answers to the questions could be. Prompts included estimating the number of states that border the Gulf of Mexico, the percentage of the U.S. population that goes online at least once a week, and the height in feet of Mount McKinley. At the end of each round, the team collectively decided on their final answers and one member submitted a final list of answers on behalf of the team.
+Participants were asked to correctly answer a series of questions without looking up the solutions online, instead debating with their group members on what the answers to the questions could be. Prompts included estimating the number of states that border the Gulf of Mexico, the percentage of the U.S. population that goes online at least once a week, and the height in feet of Mount McKinley. At the end of each round, the team collectively decided on their final answers and one member submitted a final list of answers on behalf of the team.
 
 # References
 Main Paper: https://hci.stanford.edu/publications/2019/fracture/fracture-cscw2019.pdf
