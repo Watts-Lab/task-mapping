@@ -10,6 +10,7 @@ Viability Scale: Jessica Nicole Cooperstein. 2017. Initial Development of a Team
 # Stimuli
 ## The visual components
 ![Chat Screen](/images/Advertisment_Writing_Chatbox.png)
+https://github.com/Watts-Lab/task-mapping/blob/3e1d61c1c386b1ccced3f8f20e0564874ed0477f/images/Advertisment_Writing_Chatbox.png
 
 
 # Procedure
