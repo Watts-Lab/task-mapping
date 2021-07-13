@@ -9,7 +9,7 @@ Woolley, A. W., Chabris, C. F., Pentland, A., Hashmi, N., & Malone, T. W. (2010)
 Supplementary information: https://science.sciencemag.org/content/sci/suppl/2010/09/29/science.1193147.DC1/Woolley_SOM_Revision_1.pdf
 
 # Stimuli
-From: Warrier V., Bethlehem R.A., Baron-Cohen S. (2017) The “Reading the Mind in the Eyes” Test (RMET). In: Zeigler-Hill V., Shackelford T. (eds) Encyclopedia of Personality and Individual Differences. Springer, Cham. https://doi.org/10.1007/978-3-319-28099-8_549-1
+From: Warrier V., Bethlehem R.A., Baron-Cohen S. (2017) The 'Reading the Mind in the Eyes' Test (RMET). In: Zeigler-Hill V., Shackelford T. (eds) Encyclopedia of Personality and Individual Differences. Springer, Cham. https://doi.org/10.1007/978-3-319-28099-8_549-1
 
 Example of stimuli during RME test (not during task itself): 
 
@@ -29,21 +29,21 @@ Example of stimuli during RME test (not during task itself):
 
 ### Task
 
-Groups were given a set of 20 items requiring estimation of a quantity (e.g., "What was the median age in the U.S. in 2009?") and had 10 minutes to answer as many as possible. 
+Groups were given a set of 20 items requiring estimation of a quantity (e.g., 'What was the median age in the U.S. in 2009?') and had 10 minutes to answer as many as possible. 
 
 ### Post-surveys
 
-Group satisfaction was measured; Participants indicated their agreement to statements such as “I have been
-very satisfied working on this team” on a five-point scale.
+Group satisfaction was measured; Participants indicated their agreement to statements such as 'I have been
+very satisfied working on this team' on a five-point scale.
 
-Motivation was measured; Participants indicated their agreement to statements such as “I would feel bad and
-unhappy if our team has performed poorly” (reverse-scored) on a five-point scale.
+Motivation was measured; Participants indicated their agreement to statements such as 'I would feel bad and
+unhappy if our team has performed poorly' (reverse-scored) on a five-point scale.
 
-Social cohesiveness was measured: Participants indicated their agreement to statements such as “Members of this group would
-enjoy being at a party together” on a five-point scale. 
+Social cohesiveness was measured: Participants indicated their agreement to statements such as 'Members of this group would
+enjoy being at a party together' on a five-point scale. 
 
-Psychological safety was measured; Participants indicated their agreement to statements such as “It is difficult to
-ask other members of this team for help” on a five-point scale.
+Psychological safety was measured; Participants indicated their agreement to statements such as 'It is difficult to
+ask other members of this team for help' on a five-point scale.
 
 
 ## Instructions
