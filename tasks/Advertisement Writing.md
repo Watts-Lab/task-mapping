@@ -37,7 +37,7 @@ The following instructions appear during the course of the activity:
 6. Your ads will be reviewed and checked after each task. If you go AFK on your teammates, you will NOT receive the stated pay.
 7. Say hello to your team members. Begin brainstorming ideas together!
 8. As a team, discuss and narrow down your ideas!
-9. Polish your team’s favorite ad and get ready to submit. Submit your ad by adding a “!” in front of the ad. For example, “!Ad text here.” Remember, your final ad can’t be more than a maximum of 30 characters long.
+9. Polish your team’s favorite ad and get ready to submit. Submit your ad by adding a '!' in front of the ad. For example, '!Ad text here.' Remember, your final ad can’t be more than a maximum of 30 characters long.
 10. This round is ending soon! Say goodbye to your teammates.
 
 # Criteria
