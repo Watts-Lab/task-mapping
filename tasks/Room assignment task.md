@@ -32,15 +32,15 @@ Phase 2 Exit Survey
 # Procedure
 ## Steps
 Phase One:
-1200 participants completed 5 room tasks (three “ very low” and two “moderate” complexity tasks) and a standard “Reading the Mind in the Eyes” (RME) test.
+1200 participants completed 5 room tasks (three 'very low' and two 'moderate' complexity tasks) and a standard 'Reading the Mind in the Eyes' (RME) test.
 
-The task required to assign N “students” to M “rooms” so as to maximize the total utility of the students, each of who has a specified utility for each room, while also respecting Q constraints.
+The task required to assign N 'students' to M 'rooms' so as to maximize the total utility of the students, each of who has a specified utility for each room, while also respecting Q constraints.
 
 High complexity: Assign 9 students to 6 rooms given 8 constraints
 
 Low complexity: Assign 6 students to 4 rooms given 2 constraints
 
-In each room assignment problem, a “utility table” was presented, providing participant(s) with the information on students’ ratings/preferences (between 0 and 100) to each of the M rooms indicating how satisfied they would be if being assigned to the room.
+In each room assignment problem, a 'utility table' was presented, providing participant(s) with the information on students ratings/preferences (between 0 and 100) to each of the M rooms indicating how satisfied they would be if being assigned to the room.
 
 At any time during the allotted 5-minute period for a task, the participant could push a button to submit her solution and move on to the next task, or the participant would be automatically redirected to the next task when the 5-minute timer was up
 
@@ -104,6 +104,6 @@ Efficiency was measured as normalized score/ duration.
 ## Incentives
 Overall scores were defined as the sum of students’ ratings of their assigned rooms - 100 * the number of violated constraints
 
-If each student got assigned to one room and the participant had a positive score, participant(s) could earn a “performance-based bonus” using a 500 points:$1 USD conversion rate in phase one, and a 1000 points:$1 USD conversion rate in phase two. 
+If each student got assigned to one room and the participant had a positive score, participant(s) could earn a 'performance-based bonus' using a 500 points:$1 USD conversion rate in phase one, and a 1000 points:$1 USD conversion rate in phase two. 
 
-If the submitted plan was indeed the optimal one, an additional $0.5 USD “optimal assignment bonus” would be given.
+If the submitted plan was indeed the optimal one, an additional $0.5 USD 'optimal assignment bonus' would be given.
