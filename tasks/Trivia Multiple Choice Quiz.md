@@ -54,6 +54,7 @@ Number of miles from New York to Los Angeles
    3: 13042
 11. Last chance to submit!
 12. This round is ending soon. Time to say goodbye to your teammates!
+
 # Criteria
 ## Performance calculation
 Team fracture: 
