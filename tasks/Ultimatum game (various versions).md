@@ -7,7 +7,7 @@ Task Description: https://en.wikipedia.org/wiki/Ultimatum_game
 
 ## Materials for alternative versions of the experiment 
 ### competitive ultimatum game : 
-There are many proposers and the responder can accept at most one of their offers: With more than three (naïve) proposers the responder is usually offered almost the entire endowment 
+There are many proposers and the responder can accept at most one of their offers: With more than three (naive) proposers the responder is usually offered almost the entire endowment 
   
 ### ultimatum game with tipping: 
  A tip is allowed from responder back to proposer, a feature of the trust game, and net splits tend to be more equitable.
