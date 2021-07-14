@@ -63,4 +63,4 @@ Group success at finding the maximum of a function
 
 ## Incentives
 Participants who completed the study were paid a total of $100: $10 for completing the individual tests; $30 for lab visit 1;
-and $60 for lab visit 2
+and $60 for lab visit 2. Groups were not explicitly paid for better performance, relying instead on intrinsic motivation through priming.
