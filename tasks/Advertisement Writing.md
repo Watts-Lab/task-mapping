@@ -37,7 +37,7 @@ The following instructions appear during the course of the activity:
 6. Your ads will be reviewed and checked after each task. If you go AFK on your teammates, you will NOT receive the stated pay.
 7. Say hello to your team members. Begin brainstorming ideas together!
 8. As a team, discuss and narrow down your ideas!
-9. Polish your team’s favorite ad and get ready to submit. Submit your ad by adding a “!” in front of the ad. For example, “!Ad text here.” Remember, your final ad can’t be more than a maximum of 30 characters long.
+9. Polish your team’s favorite ad and get ready to submit. Submit your ad by adding a '!' in front of the ad. For example, '!Ad text here.” Remember, your final ad can’t be more than a maximum of 30 characters long.
 10. This round is ending soon! Say goodbye to your teammates.
 
 # Criteria
@@ -45,7 +45,7 @@ The following instructions appear during the course of the activity:
 Team fracture: 
 Associated with low average team viability scores:  at the end of each round, each participant filled out a 14-item viability scale drawn from prior work
 
-Attitudinal data: when at least half of a group’s members privately excluded that group from future rounds 
+Attitudinal data: when at least half of a group members privately excluded that group from future rounds 
 
 Ad Performance: 
 For the creative ad writing task, each advertisement was added to a campaign for the product on Google Ads. We turned off any optimization, ensuring that ads were seen at the same rate. After 48 hours, we recorded each ad’s click through rate (CTR) as a measure of the group’s performance
