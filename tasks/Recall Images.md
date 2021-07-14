@@ -22,16 +22,18 @@ Behavior Research Methods, 44(2), 587-605.
 
 # Stimuli
 ## The visual components
-Example of study set up: ![image](https://user-images.githubusercontent.com/78745728/116818954-e8acf000-ab3b-11eb-9d3d-4fdd576fd625.png)
-Stimuli used in individual tests are based on these images: ![image](https://user-images.githubusercontent.com/78745728/116819043-4b05f080-ab3c-11eb-9bd9-f4bdd6a6258b.png)
+Example of study set up: 
+![image](/images/Recall_Images_Directions.png)
 
+Stimuli used in individual tests are based on these images: 
+![image](/images/Recall_Images_Individual_Test_Stimuli.png)
 
 # Procedure
 ## Steps
 1. Participants complete phase one of the experiment which includes series of online tests to measure their individual skill at three problem-solving tasks: Memory,
 Optimization, and Shapes
 2. Participants come to the lab and are randomly assigned to groups of three people. Each group completes a collective version of the individual problem-solving tasks: Memory, Optimization and Shapes. Participants visit the lab twice. During each visit, participants work in two separate groups. Over the course of the experiment, participants are allocated to a total of four groups. The average time between the individual assessment and the first lab visit is 11 days. The average time between the first and second lab visit is 11 days. 
-3. Participants start with the inividual tests,participants completed the images test, in which they were given 20 seconds to memorize six target faces (the stimuli come from the Cambridge Face Memory Test. Participants were then presented with 15 sets of three faces and asked to identify target faces. Participants had to memorize list of 12 target words over 24 seconds, then were presented with sets of three words and were asked to identify which, if any of the three, were target words. Last, participants completed the stories test in which they had 40 seconds to read two short paragraphs, of roughly 60 words each. At the end of the memorization period, participants were asked nine multiple-choice questions about the two paragraphs.
+3. Participants start with the individual tests, participants completed the images test, in which they were given 20 seconds to memorize six target faces (the stimuli come from the Cambridge Face Memory Test. Participants were then presented with 15 sets of three faces and asked to identify target faces. Participants had to memorize list of 12 target words over 24 seconds, then were presented with sets of three words and were asked to identify which, if any of the three, were target words. Last, participants completed the stories test in which they had 40 seconds to read two short paragraphs, of roughly 60 words each. At the end of the memorization period, participants were asked nine multiple-choice questions about the two paragraphs.
 4. After completing individual tests, participants get feedback and their overall performance relatative to other participants 
 5. Particants then do the group version of the task. Each group of three people work face-to-face in a single room. The tasks are computer based and each participant is provided with a laptop. Group members introduce themselves. Then, groups are required to nominate a ‘Reporter’. The Reporter is responsible for entering their group’s answers. Participants also gather around the Reporter’s laptop for some tasks. Before each problem-solving task, groups were prompted to discuss their strategy. In batteries B and D groups completed practice versions of each task.
 6. Each group is given 40 seconds to collectively remember 12 words, 6 images, and 2 stories. We add story and images stimuli to those described above, so that each time a group encountered the Memory task they are asked to memorize unseen material
@@ -41,51 +43,54 @@ Optimization, and Shapes
 
 ## Instructions
 Group Instructions: Welcome everyone! My name is ___, thanks for joining us for today’s session. The plan for today is for you to work on a set of tasks very similar to those that you completed in the individual, online assessments. Today we’ll be working in person, in groups of three people.
-Figure 1: Overview of Experiment Notes: this figure describes the experimental design from an individual participant’s perspective. Tasks are described in Section 2.2. Task batteries represent unique sequences of tasks. Participants never see the same exact task more than once. Lab visits involve 6, 9 or 12 participants, who were randomly allocated to groups of 3 people - see Sections 2.3 and 2.4 for details. Battery AProblem Solving (Optimization A; Memory A; Shapes A)Personality (Big5)Emotional perception (RMET)Participants complete tests online (usually at home)Phase 1: Individual testingPhase 2: Group testingLab Visit 11stgroup2ndgroupBattery BOptimization BMemory B Shapes B Battery COptimization CMemory C Shapes CBattery DOptimization DMemory D Shapes DBattery EOptimization EMemory E Shapes E CryptographyLab Visit 23rdgroup4thgroup
+Figure 1: Overview of Experiment Notes: this figure describes the experimental design from an individual participant’s perspective. Tasks are described in Section 2.2. Task batteries represent unique sequences of tasks. Participants never see the same exact task more than once. Lab visits involve 6, 9 or 12 participants, who were randomly allocated to groups of 3 people - see Sections 2.3 and 2.4 for details. Battery A Problem Solving (Optimization A; Memory A; Shapes A)Personality (Big5)Emotional perception (RMET)Participants complete tests online (usually at home)Phase 1: Individual testingPhase 2: Group testingLab Visit 1 1st group2nd group Battery B Optimization B Memory B Shapes B Battery C Optimization C Memory C Shapes C Battery D Optimization D Memory D Shapes D Battery E Optimization E Memory E Shapes E CryptographyLab Visit 23rd group 4th group
 First, we are going to jumble you up into groups of three people using randomization balls. Once you get your ball, keep hold of it for the whole session. It will tell you who you will be working with throughout the session.
 Based on the randomization ball, we’ll put you into your first group for today. After solving some tasks, you’ll come back here after roughly 25 minutes. Then, we’ll put you in your second group, and you’ll solve some more tasks. All these tasks will be similar to ones you’ve done before.
 “Remember you’re working as a group, even though you each have your own laptop. There are no individual scores: you’re working as a team to solve problems.”
 
-![image](https://user-images.githubusercontent.com/78745728/117159957-b8a95b00-ad8e-11eb-95c4-9e1837151347.png)
-![image](https://user-images.githubusercontent.com/78745728/117159981-bd6e0f00-ad8e-11eb-9e4a-db6f14eb25dd.png)
-![image](https://user-images.githubusercontent.com/78745728/117159995-c1019600-ad8e-11eb-9199-ea66f27bdc47.png)
-![image](https://user-images.githubusercontent.com/78745728/117160009-c52db380-ad8e-11eb-819a-6762a166a2be.png)
-![image](https://user-images.githubusercontent.com/78745728/117160029-c8c13a80-ad8e-11eb-92b3-cff2b8ed709f.png)
-![image](https://user-images.githubusercontent.com/78745728/117160380-10e05d00-ad8f-11eb-98f0-21e65d30f52d.png)
-![image](https://user-images.githubusercontent.com/78745728/117160419-16d63e00-ad8f-11eb-9daf-d06bd7691466.png)
-![image](https://user-images.githubusercontent.com/78745728/117160451-1f2e7900-ad8f-11eb-8f3c-d0be558e7100.png)
-![image](https://user-images.githubusercontent.com/78745728/117160498-26558700-ad8f-11eb-8d7e-b918fe79fd31.png)
-![image](https://user-images.githubusercontent.com/78745728/117160521-2a81a480-ad8f-11eb-9a08-53602255f6b9.png)
-![image](https://user-images.githubusercontent.com/78745728/117160534-2e152b80-ad8f-11eb-93a6-4eda5e42489f.png)
-![image](https://user-images.githubusercontent.com/78745728/117160553-32d9df80-ad8f-11eb-8934-b85384f75d8e.png)
-![image](https://user-images.githubusercontent.com/78745728/117160573-379e9380-ad8f-11eb-8b84-39f86095517f.png)
-![image](https://user-images.githubusercontent.com/78745728/117160580-3a00ed80-ad8f-11eb-8b2c-578afc9ea0f6.png)
-![image](https://user-images.githubusercontent.com/78745728/117160596-3e2d0b00-ad8f-11eb-8d54-ddc4290c306f.png)
-![image](https://user-images.githubusercontent.com/78745728/117160610-408f6500-ad8f-11eb-8304-cc569928d595.png)
-![image](https://user-images.githubusercontent.com/78745728/117160621-438a5580-ad8f-11eb-898b-308a68afa936.png)
-![image](https://user-images.githubusercontent.com/78745728/117160632-471ddc80-ad8f-11eb-85a7-b26c163ce207.png)
-![image](https://user-images.githubusercontent.com/78745728/117160645-4a18cd00-ad8f-11eb-9a6a-a1bf5710d0c5.png)
-![image](https://user-images.githubusercontent.com/78745728/117160657-4d13bd80-ad8f-11eb-93db-b67dc590fcdc.png)
-![image](https://user-images.githubusercontent.com/78745728/117161108-a7ad1980-ad8f-11eb-8012-dcf0f1a15955.png)
-![image](https://user-images.githubusercontent.com/78745728/117161129-aaa80a00-ad8f-11eb-89d5-45a68503761f.png)
-![image](https://user-images.githubusercontent.com/78745728/117161141-ae3b9100-ad8f-11eb-81df-aeae75de1a6a.png)
-![image](https://user-images.githubusercontent.com/78745728/117161154-b09deb00-ad8f-11eb-8784-ea4d20365f3e.png)
-SKIPPED OPTIMIZATION TASK INSTRUCTIONS
-![image](https://user-images.githubusercontent.com/78745728/117161261-c3b0bb00-ad8f-11eb-88d8-ecdab623a422.png)
-![image](https://user-images.githubusercontent.com/78745728/117161280-c6abab80-ad8f-11eb-9207-ff24c01a9b43.png)
-![image](https://user-images.githubusercontent.com/78745728/117161292-ca3f3280-ad8f-11eb-86ba-c6448653106e.png)
-![image](https://user-images.githubusercontent.com/78745728/117161336-d1664080-ad8f-11eb-94b7-b412d67bd738.png)
-![image](https://user-images.githubusercontent.com/78745728/117161360-d5925e00-ad8f-11eb-9c8f-0d9658aa6ebe.png)
-![image](https://user-images.githubusercontent.com/78745728/117161374-d88d4e80-ad8f-11eb-9678-7b3d64c03c04.png)
-![image](https://user-images.githubusercontent.com/78745728/117161388-db883f00-ad8f-11eb-98ad-743632b34e67.png)
-![image](https://user-images.githubusercontent.com/78745728/117161413-dfb45c80-ad8f-11eb-80f1-f7c01b63c6c3.png)
-![image](https://user-images.githubusercontent.com/78745728/117161427-e2af4d00-ad8f-11eb-9d9c-c1e1d598f257.png)
-![image](https://user-images.githubusercontent.com/78745728/117161439-e642d400-ad8f-11eb-95c1-235491698c1a.png)
-![image](https://user-images.githubusercontent.com/78745728/117161451-e93dc480-ad8f-11eb-9a58-70e24a844d92.png)
-![image](https://user-images.githubusercontent.com/78745728/117161464-ec38b500-ad8f-11eb-90ed-22069cdeb0ae.png)
-![image](https://user-images.githubusercontent.com/78745728/117161479-ef33a580-ad8f-11eb-8ade-c68cafcfd2f7.png)
-![image](https://user-images.githubusercontent.com/78745728/117161491-f22e9600-ad8f-11eb-9028-d7fdfdef936f.png)
-![image](https://user-images.githubusercontent.com/78745728/117161502-f5298680-ad8f-11eb-927a-b71a2a656877.png)
+Images below and more screenshots in [Screenshots of Team Player Experiment](/images/Screenshots_of_Team_Player_Experiment.pdf) and [Teamplayer Experiment Protocols_abridged](/images/Teamplayer_Experiment_Protocols_abridged.pdf). 
+
+![image](/images/recall_images_instructions_1.png)
+![image](/images/recall_images_instructions_2.png)
+![image](/images/recall_images_instructions_3.png)
+![image](/images/recall_images_instructions_4.png)
+![image](/images/recall_images_instructions_5.png)
+![image](/images/recall_images_instructions_6.png)
+![image](/images/recall_images_instructions_7.png)
+![image](/images/recall_images_instructions_8.png)
+![image](/images/recall_images_instructions_9.png)
+![image](/images/recall_images_instructions_10.png)
+![image](/images/recall_images_instructions_11.png)
+![image](/images/recall_images_instructions_12.png)
+![image](/images/recall_images_instructions_13.png)
+![image](/images/recall_images_instructions_14.png)
+![image](/images/recall_images_instructions_15.png)
+![image](/images/recall_images_instructions_16.png)
+![image](/images/recall_images_instructions_17.png)
+![image](/images/recall_images_instructions_18.png)
+![image](/images/recall_images_instructions_19.png)
+![image](/images/recall_images_instructions_20.png)
+![image](/images/recall_images_instructions_21.png)
+![image](/images/recall_images_instructions_22.png)
+![image](/images/recall_images_instructions_23.png)
+![image](/images/recall_images_instructions_24.png)
+
+### Skipped optimization task instructions
+![image](/images/recall_images_instructions_25.png)
+![image](/images/recall_images_instructions_26.png)
+![image](/images/recall_images_instructions_27.png)
+![image](/images/recall_images_instructions_28.png)
+![image](/images/recall_images_instructions_29.png)
+![image](/images/recall_images_instructions_30.png)
+![image](/images/recall_images_instructions_31.png)
+![image](/images/recall_images_instructions_32.png)
+![image](/images/recall_images_instructions_33.png)
+![image](/images/recall_images_instructions_34.png)
+![image](/images/recall_images_instructions_35.png)
+![image](/images/recall_images_instructions_36.png)
+![image](/images/recall_images_instructions_37.png)
+![image](/images/recall_images_instructions_38.png)
+![image](/images/recall_images_instructions_39.png)
 
 
 # Criteria
@@ -94,4 +99,4 @@ Individual performance on memorizing and identifying stimuli based on questions 
 Group performance on memorizing and identifying stimuli based on questions after memorization period
 
 ## Incentives
-Participants who completed the study were paid a total of $100: $10 for completing the individual tests; $30 for lab visit 1;and $60 for lab visit 2. We elected not to explicitly pay groups for better performance, relying instead on intrinsic motivation through priming.
+Participants who completed the study were paid a total of $100: $10 for completing the individual tests; $30 for lab visit 1; and $60 for lab visit 2. We elected not to explicitly pay groups for better performance, relying instead on intrinsic motivation through priming.

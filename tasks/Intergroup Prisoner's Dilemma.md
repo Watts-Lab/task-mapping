@@ -1,5 +1,5 @@
 # Summary
-Intergroup Prisoner's Dilemma involves competition for a continuous public good, each player receives an endowment of e and has to decide whether or not to contribute his or her endowment. In IPD, group members were allowed to talk to eachother and to other groups before making payoff decisions. 
+Intergroup Prisoner's Dilemma involves competition for a continuous public good, each player receives an endowment of e and has to decide whether or not to contribute his or her endowment. In IPD, group members were allowed to talk to each other and to other groups before making payoff decisions. 
 In IPD, a rational player should never contribute, regardless of what the other (in-group and out-group) members do, defection is the dominant individual strategy in the IPD game. 
 
 # References
@@ -9,7 +9,8 @@ Detailed Task Description referenced in main paper: https://psycnet-apa-org.prox
 
 Task Instructions (requires payment to access): Bornstein, G., Rapoport, A., Kerpel, L, & Katz, T. (1989). Within and between group communication in intergroup competition for publicgoods. Journal of Experimental Social Psychology, 25, 422-4
 
-# Stimuli- see images folder for payoff matrix imagery 
+# Stimuli
+see images payoff matrix imagery
 
 # Materials for alternative versions of the experiment 
 A second version of the experiment allowed for intergroup communication.  After receiving the game instructions and before making their decisions, subjects were allowed to discuss the situation with all other participants. Discussions were held in the central experimental room. Each discussion lasted exactly 5 min.

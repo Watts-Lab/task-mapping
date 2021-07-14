@@ -6,7 +6,9 @@ Provide a full reference and link to the main paper and any subsequent papers us
 
 # Stimuli
 ## The visual components
-Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations.
+Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations. 
+
+If no visual components are provided or seem not to be needed describe an interface for executing this task in an online environment with remote participants. 
 
 ## Materials for alternative versions of the experiment 
 If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
@@ -30,6 +32,8 @@ If relevant, describe how roles are assigned and used in the task. List all role
 Complete instructions shown to participants at each stage of the task.  
 
 Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
+
+If the instructions are not available ask the paper's authors, however and if that fails, write new ones that appear as suitable as possible.
 
 # Criteria
 ## Performance calculation

@@ -69,12 +69,10 @@ Step 5: When the game began, each participant had 5 seconds to place their track
 Step 6: There were 30 rounds players had to complete, and were preprogrammed in the following order:
 
 
-7 winning rounds, 10 rounds (6 wins and 4 loses) wherein each participant (including Echo) made one mistake, an additional 10 rounds where each participant (including Echo) made another mistake, and 3 final winning rounds
+> 7 winning rounds, 10 rounds (6 wins and 4 loses) wherein each participant (including Echo) made one mistake, an additional 10 rounds where each participant (including Echo) made another mistake, and 3 final winning rounds
 
 
 Therefore, every group had the same score at the end of the game (22/30).
-
-
 
 
 Step 7: At the end of the rounds, the robot says "goodbye" and the participants fill out a postsurvey. 

@@ -1,12 +1,13 @@
 # Summary
->Researchers asked participants to work on a variety of group tasks including group typing to measure collective intelligence. The task had groups typing a complicated document simultaneously with other members inputs shown at a slight delay. 
+Researchers asked participants to work on a variety of group tasks including group typing to measure collective intelligence. The task had groups typing a complicated document simultaneously with other members inputs shown at a slight delay. 
 
 # References
 Woolley, A., Chabris, C., Pentland, A., Hashmi, N., & Malone, T. (2010). Evidence for a Collective Intelligence Factor in the Performance of Human Groups. Science, 330(6004).
 
 Link: https://www-jstor-org.proxy.library.upenn.edu/stable/40931726?pq-origsite=summon&seq=1#metadata_info_tab_contents
 
-Supps: https://science.sciencemag.org/content/sci/suppl/2010/09/29/science.1193147.DC1/Woolley_SOM_Revision_1.pdf
+Supplemental material: https://science.sciencemag.org/content/sci/suppl/2010/09/29/science.1193147.DC1/Woolley_SOM_Revision_1.pdf
+
 # Stimuli
 ## The visual components
 None given

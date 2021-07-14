@@ -33,10 +33,6 @@ Subjects were familiarized with the coloring problem but were not given any inst
 
 Subjects could update their colors at any time from a menu that included the fixed minimum of colors needed to solve the problem and were given different neighbor views from low view (solely subject colors and their neighbors colors), medium view (neighbors colors and labeled and number of links are visible) and high information view (entire network colors visible)
 
-## Roles 
-
-N/A
-
 ## Instructions
 
 Subjects were familiarized with the coloring problem but were not given any instructions on how to play it 
@@ -47,8 +43,6 @@ No communication was allowed outside the confines of the system and physical par
 The text at the bottom of each network screenshot reads as follows: "1 conflict in your immediate neighborhood. A thick line indicates a conflict that must be 
 resolved. A thin line is shown when color choices do not conflict.” The bar at the bottom of each screen gave subjects an indication of global progress toward a 
 solution.
-
-
 
 # Criteria
 ## Performance calculation

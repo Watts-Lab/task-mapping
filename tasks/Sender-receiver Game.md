@@ -4,6 +4,9 @@ A sender-receiver game (AKA signaling game) is a communication-based game where 
 # References
 Gneezy, U. (2005). Deception: The role of consequences. American Economic Review, 95(1), 384-394.
 
+Paper: https://www.jstor.org/stable/pdf/4132685.pdf?casa_token=hVN12rjlQK4AAAAA:iVtcEgAIRjimcT9izU4j-KhbDdOjwFcPzwKzxilgQwVuF_h9SmhTbeqh7ie2g4gNJAvf7MJPRk04k86f8yndrGwTgrZYtpJn6ZwHYUXpLyrKra-nNpRl
+
+
 # Stimuli
 ## The visual components
 There are no other visual components other than the instructions shown to participants.
@@ -17,7 +20,7 @@ Player 1 is told to send a message to player 2 about the payoff.
 Player 2 then decides which payoff option to choose based without any additional info about the payoff.
 
 ## Roles 
-This is a 2-player game where player 1 sends a message to player 2 chooses option A or B. Player 1 can choose to tell the truth or lie to player 2 and player 2 can choose to head or ignore the advice of player 1. 
+This is a 2-player game where player 1 sends a message to player 2 chooses option A or B. Player 1 can choose to tell the truth or lie to player 2 and player 2 can choose to heed or ignore the advice of player 1. 
 
 ## Instructions
 From the Appendix:
@@ -72,4 +75,3 @@ While there are no formal performance calculations, participants can earn a high
 
 ## Incentives
 Participants are paid cash. Either $5 or $6 depending on the action chosen.
-

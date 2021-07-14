@@ -19,7 +19,6 @@ Participants were given 800 units of Monopoly (Parker Brothers) money
 
 Participants were shown the following payoff matrix with written instructions- see image folder 
 
-
 # Procedure
 ## Steps
 1. Students are assigned to groups of six individuals and randomly arranged in pairs 

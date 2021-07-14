@@ -2,14 +2,12 @@
 Participants were asked to make a grid symmetrical from left-to-right and top-to-bottom using the fewest number of clicks.
 
 # References
-Main Paper: https://www.nature.com/articles/s41586-021-03380-y
-Supplementary Materials with instructions: https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03380-y/MediaObjects/41586_2021_3380_MOESM1_ESM.pdf
+- Main Paper: https://www.nature.com/articles/s41586-021-03380-y
+- Supplementary Materials with instructions: https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03380-y/MediaObjects/41586_2021_3380_MOESM1_ESM.pdf
 
 # Stimuli
 ## The visual components
-![image](https://user-images.githubusercontent.com/78745728/117834088-e128cd80-b244-11eb-8634-a77ada02b35e.png)
-
-
+![image](/images/abstract_grid.png)
 
 # Procedure
 ## Steps
@@ -21,12 +19,12 @@ Supplementary Materials with instructions: https://static-content.springer.com/e
 
 
 ## Instructions
-“Click spaces below to see how squares can be manipulated.” 
-“On the following pages, you will be shown patterns. For each one, your job is to arrange the blocks so that
+1. “Click spaces below to see how squares can be manipulated.” 
+2. “On the following pages, you will be shown patterns. For each one, your job is to arrange the blocks so that
 the left side perfectly mirrors the right side, and vice-versa.” 
-“Arrange the blocks so that the left side perfectly mirrors the right
+3. “Arrange the blocks so that the left side perfectly mirrors the right
 side and vice-versa. ONLY CONTINUE WHEN THE TWO SIDES ARE SYMMETRICAL.”
-“In general, what was your approach to make the sides symmetrical?”, with two response options: “I added squares until they were symmetrical” or “I removed squares until they were symmetrical.”
+4. “In general, what was your approach to make the sides symmetrical?”, with two response options: “I added squares until they were symmetrical” or “I removed squares until they were symmetrical.”
 
 # Criteria
 ## Performance calculation

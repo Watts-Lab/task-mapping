@@ -8,8 +8,7 @@ Supplemental Materials: https://pubsonline.informs.org/doi/suppl/10.1287/orsc.20
 
 # Stimuli
 ## The visual components
-See supplemetal materials PDF for images of computer interface 
-
+See supplemental materials PDF for images of computer interface 
 
 # Procedure
 ## Steps

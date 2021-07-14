@@ -1,5 +1,5 @@
 # Summary
->Working from the assumption that groups often make more accurate judgments than individuals, researchers had participants make initial independent estimates of uncertain quantities, discuss their answers in small groups, and revise their estimates.
+Working from the assumption that groups often make more accurate judgments than individuals, researchers had participants make initial independent estimates of uncertain quantities, discuss their answers in small groups, and revise their estimates.
 
 
 # References
@@ -7,7 +7,6 @@ Silver, I., Mellers, B., Tetlock, P. (Forthcoming). Wise teamwork: Collective co
 
 https://osf.io/tkgea/?view_only=b576f44d1bd74d2f9a36a248855324d9
 
-*Ask me for a link to the paper when youre ready to review
 # Stimuli
 ## The visual components
 None given, but below is a list of questions participants answered 

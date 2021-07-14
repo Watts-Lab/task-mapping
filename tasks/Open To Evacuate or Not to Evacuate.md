@@ -7,7 +7,8 @@ Data Files: https://humannaturelab.net/publications/collective-communication-and
 
 # Stimuli
 ## The visual components
-![image](https://user-images.githubusercontent.com/78745728/117169986-9b2cbf00-ad97-11eb-84d7-66849fa6f64d.png)
+![image](/images/open_to_evaluate_stimuli.png)
+
 Network topology varied as either a random-regular network or a ring-lattice network. Network size was also manipulated to have 10, 20, 40, or 60 nodes.
 
 # Procedure
@@ -29,56 +30,55 @@ Network topology varied as either a random-regular network or a ring-lattice net
 The Informant: informed in advance whether a disaster would indeed strike or not
 
 ## Instructions
-![image](https://user-images.githubusercontent.com/78745728/117552056-45fee080-b017-11eb-8b89-08d87f66512b.png)
-![image](https://user-images.githubusercontent.com/78745728/117552072-5b740a80-b017-11eb-9034-9103135a98e3.png)
-![image](https://user-images.githubusercontent.com/78745728/117552075-6169eb80-b017-11eb-8d0e-6f7209045bc7.png)
-![image](https://user-images.githubusercontent.com/78745728/117552078-662e9f80-b017-11eb-947b-e5417a51fb5b.png)
-![image](https://user-images.githubusercontent.com/78745728/117552082-6a5abd00-b017-11eb-8749-2867a3c47c25.png)
-![image](https://user-images.githubusercontent.com/78745728/117552086-70e93480-b017-11eb-81af-36766848e133.png)
-![image](https://user-images.githubusercontent.com/78745728/117552088-75155200-b017-11eb-922a-851e4957a23b.png)
-![image](https://user-images.githubusercontent.com/78745728/117552091-79da0600-b017-11eb-8b5d-8a16decde508.png)
-![image](https://user-images.githubusercontent.com/78745728/117552098-7d6d8d00-b017-11eb-8877-cfa9c06bae10.png)
-![image](https://user-images.githubusercontent.com/78745728/117552101-8199aa80-b017-11eb-9674-8bd9544fc7c5.png)
-![image](https://user-images.githubusercontent.com/78745728/117552104-85c5c800-b017-11eb-966e-39153c7920f2.png)
-![image](https://user-images.githubusercontent.com/78745728/117552110-9118f380-b017-11eb-9a40-2d34de51cd8f.png)
-![image](https://user-images.githubusercontent.com/78745728/117552113-95dda780-b017-11eb-81b9-ca51f4d67fe6.png)
-![image](https://user-images.githubusercontent.com/78745728/117552120-9c6c1f00-b017-11eb-8089-b795cc417c9d.png)
-![image](https://user-images.githubusercontent.com/78745728/117552125-a1c96980-b017-11eb-9dc8-02cb8df7fbe5.png)
-![image](https://user-images.githubusercontent.com/78745728/117552131-a726b400-b017-11eb-84ea-880fda4f54fa.png)
-![image](https://user-images.githubusercontent.com/78745728/117552138-b0178580-b017-11eb-962e-af01bf23dfcb.png)
-![image](https://user-images.githubusercontent.com/78745728/117552143-b6a5fd00-b017-11eb-9562-2cc74d8cba7b.png)
-![image](https://user-images.githubusercontent.com/78745728/117552150-bb6ab100-b017-11eb-8482-9e01b235a8e7.png)
-![image](https://user-images.githubusercontent.com/78745728/117552154-c02f6500-b017-11eb-94d0-fbd3207811db.png)
-![image](https://user-images.githubusercontent.com/78745728/117552158-c6bddc80-b017-11eb-975d-32e24bbd11a4.png)
-![image](https://user-images.githubusercontent.com/78745728/117552201-f66ce480-b017-11eb-9793-6dc13483f9a2.png)
-![image](https://user-images.githubusercontent.com/78745728/117552203-fa990200-b017-11eb-9d34-c1bcc9f6de69.png)
-![image](https://user-images.githubusercontent.com/78745728/117552210-fec51f80-b017-11eb-9b5b-769b931cae72.png)
-![image](https://user-images.githubusercontent.com/78745728/117552215-0389d380-b018-11eb-86aa-71c7522920da.png)
-![image](https://user-images.githubusercontent.com/78745728/117552220-08e71e00-b018-11eb-9bfe-6f11c903a23d.png)
-![image](https://user-images.githubusercontent.com/78745728/117552223-0c7aa500-b018-11eb-863b-409f8d74a905.png)
-![image](https://user-images.githubusercontent.com/78745728/117552226-11d7ef80-b018-11eb-9e43-d163832c29e5.png)
-![image](https://user-images.githubusercontent.com/78745728/117552231-169ca380-b018-11eb-9923-17aa9ac3c503.png)
-![image](https://user-images.githubusercontent.com/78745728/117552236-1ac8c100-b018-11eb-8248-76735b303f5d.png)
-![image](https://user-images.githubusercontent.com/78745728/117552242-22886580-b018-11eb-8c8f-4c6f7814b101.png)
-![image](https://user-images.githubusercontent.com/78745728/117552245-25835600-b018-11eb-84ed-87d414b7269b.png)
-![image](https://user-images.githubusercontent.com/78745728/117552248-2a480a00-b018-11eb-98de-62e4f0806036.png)
-![image](https://user-images.githubusercontent.com/78745728/117552251-2ddb9100-b018-11eb-96be-a0384b8f897d.png)
-![image](https://user-images.githubusercontent.com/78745728/117552254-316f1800-b018-11eb-8367-5f3394997332.png)
-![image](https://user-images.githubusercontent.com/78745728/117552257-359b3580-b018-11eb-8bc1-bbd781e8086b.png)
-![image](https://user-images.githubusercontent.com/78745728/117552260-39c75300-b018-11eb-80cb-efb1cbad42fc.png)
-![image](https://user-images.githubusercontent.com/78745728/117552264-3fbd3400-b018-11eb-90d9-485df8277a87.png)
-![image](https://user-images.githubusercontent.com/78745728/117552266-4481e800-b018-11eb-8609-6dd7824d0fab.png)
-![image](https://user-images.githubusercontent.com/78745728/117552267-48156f00-b018-11eb-866b-ecba2f184c65.png)
-![image](https://user-images.githubusercontent.com/78745728/117552273-4cda2300-b018-11eb-9afc-ef7f279bd076.png)
-![image](https://user-images.githubusercontent.com/78745728/117552277-51064080-b018-11eb-9f07-cff254f1d5f2.png)
-![image](https://user-images.githubusercontent.com/78745728/117552283-595e7b80-b018-11eb-92ca-856f0ba55347.png)
-![image](https://user-images.githubusercontent.com/78745728/117552286-5cf20280-b018-11eb-9d3c-bb9a1f1ddd20.png)
-![image](https://user-images.githubusercontent.com/78745728/117552288-61b6b680-b018-11eb-925d-155435fe6f16.png)
-![image](https://user-images.githubusercontent.com/78745728/117552292-65e2d400-b018-11eb-814a-286893b0ac32.png)
-![image](https://user-images.githubusercontent.com/78745728/117552295-6a0ef180-b018-11eb-8992-598b6d6d965d.png)
-![image](https://user-images.githubusercontent.com/78745728/117552297-6da27880-b018-11eb-9730-6f19e78d3592.png)
-![image](https://user-images.githubusercontent.com/78745728/117552299-7135ff80-b018-11eb-8864-0edf6ee753e7.png)
-
+![image](/images/open_to_evaluate_instructions_1.png)
+![image](/images/open_to_evaluate_instructions_2.png)
+![image](/images/open_to_evaluate_instructions_3.png)
+![image](/images/open_to_evaluate_instructions_4.png)
+![image](/images/open_to_evaluate_instructions_5.png)
+![image](/images/open_to_evaluate_instructions_6.png)
+![image](/images/open_to_evaluate_instructions_7.png)
+![image](/images/open_to_evaluate_instructions_8.png)
+![image](/images/open_to_evaluate_instructions_9.png)
+![image](/images/open_to_evaluate_instructions_10.png)
+![image](/images/open_to_evaluate_instructions_11.png)
+![image](/images/open_to_evaluate_instructions_12.png)
+![image](/images/open_to_evaluate_instructions_13.png)
+![image](/images/open_to_evaluate_instructions_14.png)
+![image](/images/open_to_evaluate_instructions_15.png)
+![image](/images/open_to_evaluate_instructions_16.png)
+![image](/images/open_to_evaluate_instructions_17.png)
+![image](/images/open_to_evaluate_instructions_18.png)
+![image](/images/open_to_evaluate_instructions_19.png)
+![image](/images/open_to_evaluate_instructions_20.png)
+![image](/images/open_to_evaluate_instructions_21.png)
+![image](/images/open_to_evaluate_instructions_22.png)
+![image](/images/open_to_evaluate_instructions_23.png)
+![image](/images/open_to_evaluate_instructions_24.png)
+![image](/images/open_to_evaluate_instructions_25.png)
+![image](/images/open_to_evaluate_instructions_26.png)
+![image](/images/open_to_evaluate_instructions_27.png)
+![image](/images/open_to_evaluate_instructions_28.png)
+![image](/images/open_to_evaluate_instructions_29.png)
+![image](/images/open_to_evaluate_instructions_30.png)
+![image](/images/open_to_evaluate_instructions_31.png)
+![image](/images/open_to_evaluate_instructions_32.png)
+![image](/images/open_to_evaluate_instructions_33.png)
+![image](/images/open_to_evaluate_instructions_34.png)
+![image](/images/open_to_evaluate_instructions_35.png)
+![image](/images/open_to_evaluate_instructions_36.png)
+![image](/images/open_to_evaluate_instructions_37.png)
+![image](/images/open_to_evaluate_instructions_38.png)
+![image](/images/open_to_evaluate_instructions_39.png)
+![image](/images/open_to_evaluate_instructions_40.png)
+![image](/images/open_to_evaluate_instructions_41.png)
+![image](/images/open_to_evaluate_instructions_42.png)
+![image](/images/open_to_evaluate_instructions_43.png)
+![image](/images/open_to_evaluate_instructions_44.png)
+![image](/images/open_to_evaluate_instructions_45.png)
+![image](/images/open_to_evaluate_instructions_46.png)
+![image](/images/open_to_evaluate_instructions_47.png)
+![image](/images/open_to_evaluate_instructions_48.png)
+![image](/images/open_to_evaluate_instructions_49.png)
 
 # Criteria
 ## Performance calculation
@@ -86,5 +86,7 @@ Performance was calculated based on the participant's ability to correctly avoid
 
 ## Incentives
 the subjects were paid a $1.00 show-up fee and a bonus depending on whether they took the appropriate decision with respect to an impending disaster.
-> When a disaster struck before they evacuated, the subjects earned no bonus. 
-> > Otherwise, they earned a bonus of $2.00 without the disaster or $1.00 with the disaster by spending $1.00 to evacuate, plus $0.10 per other player who took the correct action accordingly
+
+ When a disaster struck before they evacuated, the subjects earned no bonus. 
+
+ Otherwise, they earned a bonus of $2.00 without the disaster or $1.00 with the disaster by spending $1.00 to evacuate, plus $0.10 per other player who took the correct action accordingly
