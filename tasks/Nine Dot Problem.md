@@ -31,15 +31,15 @@ circles to connect the dots. Participants were also encouraged to remember where
 11. The experimenter then introduced the target problem by saying that the participants should remember what they learned about the shape of the problem and how to make non-dot turns when working on the target problem. The experimenter also suggested that participants could draw unfilled circles around the dots if they found it difficult to turn in empty space. The participants had 4 min to attempt the target problem. 
 
 ## Roles 
-An experimenter was present and provided instructions to participants throughout the experiment 
+An experimenter was present and provided instructions to participants throughout the experiment. Participants were screened for prior knowledge of the nine-dot problem.
 
 ## Instructions
-Maier's Paper: Given nine dots through which four lines must be drawn in such a manner that all dots will eb passed through. The pencil must not be taken from the paper and no line should be retraced. 
+Maier's Paper: Given nine dots through which four lines must be drawn in such a manner that all dots will be passed through. The pencil must not be taken from the paper and no line should be retraced. 
 
 
 # Criteria
 ## Performance calculation
-Finding a solution given time contrainsts  
+Finding a solution given time and information constraints, such as knowing whether to make non-dot turns or not. Participants were also sometimes trained earlier in judgement tasks and other connect-the-dot tasks, with performances then being compared afterward.
 
 ## Incentives
-None listed 
+None listed.
