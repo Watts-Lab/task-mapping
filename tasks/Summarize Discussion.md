@@ -43,6 +43,43 @@ Step Five: Once the second trial was complete, experimenters collected the solut
 
 Step Six: once the questionnaires were completed the participants were debriefed and excused 
 
+## Instructions 
+
+Instructions: 10 minutes then 20 minutes trial 
+
+You will be participating in a study on task types, time limits and group performance and given specific tasks to work on as a group. You will need to document your answers to each task and will submit responses at the end of each task session.  
+
+You will be observed by one of our team members throughout the experiment but they will not help you in any way.
+
+The first problem you will need to work on as a group is to discuss an issue, specifically what makes for success in our culture. You will have 10 minutes to work on this task. Please use the full time available. 
+
+After time passes
+
+We will now collect your responses to the discussion problem. You will now have 20 minutes to discuss if birth control pills be made available without prescription. 
+
+After time passes
+
+We will now collect your responses to the discussion problem two. 
+______________________________________________________________________________
+
+Instructions: 20 minutes then 10 minutes trial 
+
+You will be participating in a study on task types, time limits and group performance and given specific tasks to work on as a group. You will need to document your answers to each task and will submit responses at the end of each task session.  
+
+You will be observed by one of our team members throughout the experiment but they will not help you in any way.
+
+The first problem you will need to work on as a group is to discuss an issue, specifically what makes for success in our culture. You will have 20 minutes to work on this task. Please use the full time available. 
+
+After time passes
+
+We will now collect your responses to the discussion problem one. You will now have 10 minutes to discuss if birth control pills be made available without prescription. 
+
+After time passes
+
+We will now collect your responses to the discussion problem two. We thank you for your time today. 
+![image](https://user-images.githubusercontent.com/78745728/126358788-d5f63a5e-19d1-4c7e-8441-0f8ec233b2cd.png)
+
+
 ## Roles 
 
 No roles were assigned to participants however participants were assigned to four person same-sex groups for the tasks 
