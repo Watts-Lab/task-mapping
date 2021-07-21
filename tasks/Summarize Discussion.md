@@ -44,6 +44,7 @@ Step Five: Once the second trial was complete, experimenters collected the solut
 Step Six: once the questionnaires were completed the participants were debriefed and excused 
 
 ## Instructions 
+> Instructions developed by CSSL research team
 
 Instructions: 10 minutes then 20 minutes trial 
 
