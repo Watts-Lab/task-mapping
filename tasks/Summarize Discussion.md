@@ -78,7 +78,6 @@ We will now collect your responses to the discussion problem one. You will now h
 After time passes
 
 We will now collect your responses to the discussion problem two. We thank you for your time today. 
-![image](https://user-images.githubusercontent.com/78745728/126358788-d5f63a5e-19d1-4c7e-8441-0f8ec233b2cd.png)
 
 
 ## Roles 
