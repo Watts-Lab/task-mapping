@@ -73,7 +73,7 @@ The first problem you will need to work on as a group is to discuss an issue, sp
 
 After time passes
 
-We will now collect your responses to the discussion problem one. You will now have 10 minutes to discuss if birth control pills be made available without prescription. 
+We will now collect your responses to the discussion problem one. You will now have 10 minutes to discuss if birth control pills should be made available without prescription. 
 
 After time passes
 
