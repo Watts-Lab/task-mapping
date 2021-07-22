@@ -49,6 +49,7 @@ At any time during the experiment,  you may choose to share any clue in the inbo
 
 To Search: 
 Every 60 seconds, you can conduct a Web-style search on any word in order to look for clues that may further your theory of the who, what, where, and when of the impending terrorist attack. When the “Search” button at the top of the page is green, you may (1) click on it (the button will turn green 60 seconds after the past search or else will count down in red the seconds remaining until 60 seconds have passed), (2) enter a term at the bottom of the screen, and (3) click on the adjacent “Search” button to execute the search. If a clue is found, the platform will (4) report it at the bottom of the screen and (5) add it to your inbox. Search terms must be full words; partial words will not work. If the search term is not found in any of the remaining clues, the search will be unsuccessful, the tool will return the message “No data associated with this key word,” and you’ll be able to search again. 
+
 ![image](https://user-images.githubusercontent.com/78745728/126653968-f89d4948-43f5-441c-8530-601584aab30c.png)
 
 Identify / Progress Check: 
