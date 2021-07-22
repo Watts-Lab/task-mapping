@@ -42,6 +42,7 @@ From the inbox screen, you will see you're pseudonym and two initial clues. You 
 
 To share a clue: 
 At any time during the experiment,  you may choose to share any clue in the inbox with certain other people, just as one might forward an email. To do so, simply (1) you select the radio button next to the relevant clue, (2) clicks on “Share,” (3) then select on the pop-up window the other people who will receive the clue, and (4) annotate the clue, if desired. The clue will then appear in the recipients’ inboxes. 
+
 ![image](https://user-images.githubusercontent.com/78745728/126653895-0c773aac-9a71-493d-b91c-f98aa6ea9a88.png)
 ![image](https://user-images.githubusercontent.com/78745728/126653928-913e13c3-9da8-429e-a9be-f8e36bc903b1.png)
 
