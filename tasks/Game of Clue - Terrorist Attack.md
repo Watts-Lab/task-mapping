@@ -54,6 +54,7 @@ Every 60 seconds, you can conduct a Web-style search on any word in order to loo
 
 Identify / Progress Check: 
 You will be paid based on how long you have the correct answer “identified” for any of the attack details submitted—who, what, where, or when (the last in terms of month, date, hour, or day/night). You will receive a specified rate per minute (15 cents per minute per subproblem, or 3.75 cents per minute for each component of “when,” for a maximum of 60 cents for each minute—a penny per second) for each correct answer while it is submitted as that subject’s first choice. There is no penalty for incorrect answers. You may submit and revise answers at any time, as many times as you wish, by doing the following: (1) click on the “Identify” button at the top of the inbox; (2) enter (via direct entry or pull-down) all of the answers you wish to enter in the first choice line and, optionally, the confidence level (percent) for each answer, along with any second-choice answers and your confidence levels (which do not affect payment and are not shared with others); (3) click on “OK” to submit
+
 ![image](https://user-images.githubusercontent.com/78745728/126654039-1ad26fb7-fbae-4513-8b9c-fe880cda8aad.png)
 ![image](https://user-images.githubusercontent.com/78745728/126654084-d68e508c-9769-4af7-981f-84b6002db68a.png)
 
