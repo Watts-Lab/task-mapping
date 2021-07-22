@@ -48,7 +48,6 @@ You are provided with a table that tells you the potential payoffs you may recei
 
 ![image](https://user-images.githubusercontent.com/78745728/126657420-9ae8b3f1-77a2-48f4-af8b-bc63a69976c6.png)
 
-
 At the beginning of every period, each participant will write on a reporting sheet their participant number and the value of X they have chosen and hand it in to the experimenter. The median value of X chosen will be announced, and each participant will then figure out their earnings for that period. If you will now look at your record sheet, you will see the following entries: BALANCE, YOUR CHOICE OF X, MEDIAN  VALUE OF X CHOSEN, and YOUR EARNINGS. In the first period your BALANCE is $2. In the second period your BALANCE is the value of your earnings in the first period plus the $2 beginning balance. In the third period your BALANCE is the value of your BALANCE in the second period plus the value of your earnings in the second period. Please keep accurate records throughout the experiment.
 
 All use subject to htt AVERAGE OPINION GAMES 909
