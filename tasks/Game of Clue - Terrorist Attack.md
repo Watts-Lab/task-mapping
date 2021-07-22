@@ -26,7 +26,7 @@ See supplemental materials PDF for images of computer interface
 
 
 ## Instructions
-Instructions on computer screen created by CSS Lab: 
+> Instructions on computer screen created by CSS Lab: 
 Thank you for participating in our study, please watch the following video about the task you’ll be working on today. You will be participating an a task involving piecing together clues to figure out the components of a terrorist attack. Specifically, 
 -	Who would carry out the attack (group involved))
 -	What would be the target (e.g., an embassy or a church)
