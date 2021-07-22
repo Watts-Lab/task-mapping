@@ -42,13 +42,20 @@ Optimization, and Shapes
 9. After the memorization period, all three team members gathered around the Reporter’s laptop to answer a set of 24 questions about the stimuli. There are an equal number of questions about each type of stimuli. The structure of the questions mirror those used in the individual assessments
 
 ## Instructions
-Group Instructions: Welcome everyone! My name is ___, thanks for joining us for today’s session. The plan for today is for you to work on a set of tasks very similar to those that you completed in the individual, online assessments. Today we’ll be working in person, in groups of three people.
+Group Instructions: Welcome everyone! My name is ___, thanks for joining us for today’s session. The plan for today is for you to work on a set of tasks very similar to those that you completed in the individual, online assessments.
+
+Today we’ll be working in person, in groups of three people.
+
 First, we are going to jumble you up into groups of three people using randomization balls. Once you get your ball, keep hold of it for the whole session. It will tell you who you will be working with throughout the session.
-Based on the randomization ball, we’ll put you into your first group for today. After solving some tasks, you’ll come back here after roughly 25 minutes. Then, we’ll put you in your second group, and you’ll solve some more tasks. All these tasks will be similar to ones you’ve done before.
+
+Based on the randomization ball, we’ll put you into your first group for today. After solving some tasks, you’ll come back here after roughly 25 minutes. Then, we’ll put you in your second group, and you’ll solve some more tasks.
+
+All these tasks will be similar to ones you’ve done before.
 “Remember you’re working as a group, even though you each have your own laptop. There are no individual scores: you’re working as a team to solve problems.”
 
 Images below and more screenshots in [Screenshots of Team Player Experiment](/images/Screenshots_of_Team_Player_Experiment.pdf) and [Teamplayer Experiment Protocols_abridged](/images/Teamplayer_Experiment_Protocols_abridged.pdf). 
 
+### Individual Optimization task- done prior to group tasks 
 ![image](/images/recall_images_instructions_1.png)
 ![image](/images/recall_images_instructions_2.png)
 ![image](/images/recall_images_instructions_3.png)
@@ -69,12 +76,14 @@ Images below and more screenshots in [Screenshots of Team Player Experiment](/im
 ![image](/images/recall_images_instructions_18.png)
 ![image](/images/recall_images_instructions_19.png)
 ![image](/images/recall_images_instructions_20.png)
+
+### Part One: Group task instructions 
 ![image](/images/recall_images_instructions_21.png)
 ![image](/images/recall_images_instructions_22.png)
 ![image](/images/recall_images_instructions_23.png)
 ![image](/images/recall_images_instructions_24.png)
 
-### Skipped optimization task instructions
+### Part Two: Group task instructions 
 ![image](/images/recall_images_instructions_25.png)
 ![image](/images/recall_images_instructions_26.png)
 ![image](/images/recall_images_instructions_27.png)
