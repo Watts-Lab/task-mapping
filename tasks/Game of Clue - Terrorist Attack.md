@@ -34,6 +34,7 @@ Thank you for participating in our study, please watch the following video about
 -	When the attack would take place (with four interdependent components—month, day, hour, and time of day (a.m. versus p.m.))
 
 Participants watch video and are returned to their inbox (below are descriptions of how the tasks work that could be included in a video or presented as-is)
+
 ![image](https://user-images.githubusercontent.com/78745728/126653865-a7a7726c-b60b-40d2-9ddb-33cc52a9e086.png)
 
 
