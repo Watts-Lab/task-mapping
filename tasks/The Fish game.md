@@ -43,7 +43,15 @@ The weighting between the noise field and the spotlight were manipulated to gene
 Participants had the same role
 
 ## Instructions
-ASKED AND WAITING RESPONSE
+Written by CSS Lab
+
+Thank you for participating in our experiment today. You will be controlling the movement and location of an avatar in this game and can see the movement and position of fellow players. Your goal is to move your avatar and you will gain payment based on the position of your avatar. 
+ 
+![Avatar Experience](/images/Fish2.png)
+
+While in the waiting room: 
+
+Before you start playing, please familiarize yourself with the game.  You can control your avatar using the left and right arrow keys to turn (at a rate of 40◦ per second) and can hold the spacebar to accelerate. Note, if you are close to a wall you’ll see your displayed score change from a dashed line to a red “0%”.
 
 # Criteria
 ## Performance calculation
