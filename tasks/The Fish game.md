@@ -43,7 +43,7 @@ The weighting between the noise field and the spotlight were manipulated to gene
 Participants had the same role
 
 ## Instructions
-Written by CSS Lab
+> Written by CSS Lab
 
 Thank you for participating in our experiment today. You will be controlling the movement and location of an avatar in this game and can see the movement and position of fellow players. Your goal is to move your avatar and you will gain payment based on the position of your avatar. 
  
