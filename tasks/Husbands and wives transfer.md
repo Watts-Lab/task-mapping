@@ -20,7 +20,14 @@ Participants received the Tartaglia transportation puzzle and answer six questio
 Participants were then instructed to solve the problem
  
 ## Instructions
-Ask
+> Written by CSS Lab 
+
+Thank you for participating in our study. You will be working to solve the Tartaglia Transportation puzzle today in groups. Before yo start working as a group, please review the problem and answer the following questions 
+
+Here is the problem and follow-up questions: 
+![Puzzle](/images/husband.png)
+
+Now that you've completed the questionnaire, please work with your group to solve the puzzle. 
 
 # Criteria
 ## Performance calculation
