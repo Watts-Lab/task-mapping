@@ -10,8 +10,13 @@ Crawford, Vincent P., "An 'Evolutionary' Interpretation of Van Huyck, Battalio, 
  
  Additional reference paper: https://www.frontiersin.org/articles/10.3389/fpsyg.2019.00112/full#B91
  
+ Instructions referenced in original paper and pulled from: https://www-jstor-org.proxy.library.upenn.edu/stable/pdf/2937932.pdf?refreqid=excelsior%3A7093aecaac43499ae40eb94a53f821ee
+ 
 # Stimuli
 ![iamge](/images/Minimum-effort_tacit_coordination_game_Equation.png)
+
+Payoff Table: ![image](https://user-images.githubusercontent.com/78745728/126657228-777ddce7-0bd2-467b-8c12-4a10664c64d6.png)
+
 
 
 ## Materials for alternative versions of the experiment 
@@ -35,7 +40,20 @@ Treatment C: In treatment C, group size was reduced to two people who were stran
 
 
 ## Instructions
-Authors no longer have instructions 
+This is an experiment in the economics of market decision  making. The instructions are simple. If you follow them closely and make appropriate decisions, you may make an appreciable amount of money. These earnings will be paid to you, in cash, at the end of the experiment.
+
+In this experiment you will participate in a market of nine people. There will be a number of market periods. In each period every participant will pick a value of X. The values of X you may choose are 1, 2, 3, 4, 5, 6, 7. The value you pick forX and the median value of X chosen will determine the payoff you receive for that period. (The median choice is determined as follows. The choices made by the nine participants will be ordered from smallest to largest in numerical order. The median choice is the fifth from the bottom or the fifth from the top of the ordered choices. For example, to find the median of the nine numbers 33, 30, 30, 27, 34, 32, 34, 29, 32 arrange the numbers in ascending order-27, 29, 30, 30, 32, 32, 33, 34, 34-find the fifth choice counting either from the first number forward or the last number back of the ordered choices and that is the median value. In this example the median choice is 32.)
+
+You are provided with a table that tells you the potential payoffs you may receive. Please look at the table now. The earnings in each period may be found by looking across from the value you choose on the left-hand side of the table and down from the median value chosen from the top of the table. For example, if you choose a 4 and the median value chosen is a 3, you earn 85 cents that period.
+
+![image](https://user-images.githubusercontent.com/78745728/126657420-9ae8b3f1-77a2-48f4-af8b-bc63a69976c6.png)
+
+At the beginning of every period, each participant will write on a reporting sheet their participant number and the value of X they have chosen and hand it in to the experimenter. The median value of X chosen will be announced, and each participant will then figure out their earnings for that period. If you will now look at your record sheet, you will see the following entries: BALANCE, YOUR CHOICE OF X, MEDIAN  VALUE OF X CHOSEN, and YOUR EARNINGS. In the first period your BALANCE is $2. In the second period your BALANCE is the value of your earnings in the first period plus the $2 beginning balance. In the third period your BALANCE is the value of your BALANCE in the second period plus the value of your earnings in the second period. Please keep accurate records throughout the experiment.
+
+All use subject to htt AVERAGE OPINION GAMES 909
+To be sure that everyone understands the instructions, please fill out the sheet labeled questions and turn it in to the experimenter. DO NOT PUT YOUR NAME OR PARTICIPANT NUMBER ON THE QUESTION SHEET. If there are any mistakes on the question sheet, the experimenter will go over the instructions again.
+
+IF YOU HAVE ANY QUESTIONS, PLEASE ASK THEM AT THIS TIME 
 
 # Criteria
 ## Performance calculation
