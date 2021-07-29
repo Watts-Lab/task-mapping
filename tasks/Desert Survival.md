@@ -34,19 +34,17 @@ Your task is to rank 16 items salvaged from the plane in the order of their impo
 # Criteria
 ## Performance calculation
 Individuals: 
-- Expertise. Individual expertise scores were calculated by summing the absolute values of the differences in each individual’s ranking of the various items (collected before the group discussion) and the expert ranking for each item 
+- Expertise. Individual expertise scores were calculated by summing the absolute values of the differences in each individual’s ranking of the various items (collected before the group discussion) and the expert ranking for each item.
 - Participation. Each participant wore a personal microphone which recorded the group discussion portion of the task.
-- Influence. Individual influence on the group’s final group decision was calculated by summing the absolute values of the differences in the initial individual ranking and the final group ranking for each item
-- Gender & Race Dissimilarity 
+- Influence. Individual influence on the group’s final group decision was calculated by summing the absolute values of the differences in the initial individual ranking and the final group ranking for each item.
+- Gender & Race Dissimilarity.
 
-Group 
-- Performance:We focus specifically on how well groups performed relative to the expertise available within the group by using a measure of “strong synergy,” which is measured by comparing the group’s raw performance with its best individual’s raw performance
-- Group diversity—gender:  We measured gender diversity by calculating group gender variety with Blau’s index (Blau, 1977), which
-represents the probability that two individuals taken at random from the group will be different genders. Higher numbers indicate higher levels of diversity.
+Group:
+- Performance: We focus specifically on how well groups performed relative to the expertise available within the group by using a measure of “strong synergy,” which is measured by comparing the group’s raw performance with its best individual’s raw performance
+- Group diversity—gender:  We measured gender diversity by calculating group gender variety with Blau’s index (Blau, 1977), which represents the probability that two individuals taken at random from the group will be different genders. Higher numbers indicate higher levels of diversity.
 - Participation pattern: The alignment of expertise and participation reflects the within-group correlation of individual expertise and individual speaking amounts; scores range from 21 to 1, and higher scores indicate a closer match between relative expertise and speaking amounts.
 - Influence pattern: The alignment of expertise and influence reflects the within-group correlation of individual expertise and individual influence; scores range from 21 to 1, and higher scores indicate a closer match between relative expertise and influence.
-- Group diversity—race: We calculated a group’s
-race diversity with respect to the race variety withinthe group using Blau’s index (Blau, 1977). Specifically, we make use of all seven categories of race in our sample (white, black, Asian, Indian, Hispanic, mixed race, and other) to capture the richest measure of race variety within a group. We report analyses using this measure in an Additional Analyses section in the following text.
+- Group diversity—race: We calculated a group’s race diversity with respect to the race variety withinthe group using Blau’s index (Blau, 1977). Specifically, we make use of all seven categories of race in our sample (white, black, Asian, Indian, Hispanic, mixed race, and other) to capture the richest measure of race variety within a group.
 
 ## Incentives
 Participants received $20 for participation. 
