@@ -2,7 +2,8 @@
 The negotiation task, New Recruit involves the negotiation of an employment package. Participants were instructed that they were to negotiate the contents of an employment package. They were randomly assigned the role of either the recruit or the recruiter. 
 
 # References
-Main Paper: https://www.sciencedirect.com/science/article/pii/S0749597802005320?casa_token=rx_dm0mo3UUAAAAA:ifdi1Y_euN4YTPaZ7yqTurJ6bsE5-GkUNEaiEr9ZHli-Njg1j8HdA_eT_Ke6hofAaA5dE9_DMD4%20;%20https://www.sciencedirect.com/science/article/abs/pii/S0749597810000257?casa_token=IeGCqA1owUkAAAAA:8a99guS3oI-0pnUk_LqLZamNx4LqCB7DEqLrvQnSoeEKikq0w-jpgCgxE53MzQA1taHZxmmgA4c
+Main Paper: 
+https://www.sciencedirect.com/science/article/abs/pii/S0749597810000257?casa_token=IeGCqA1owUkAAAAA:8a99guS3oI-0pnUk_LqLZamNx4LqCB7DEqLrvQnSoeEKikq0w-jpgCgxE53MzQA1taHZxmmgA4c
 
 Recruiter Negotiation Materials for recruiter: https://studydaddy.com/attachment/176835/NewRecruitRecruiter.pdf
 
@@ -16,17 +17,17 @@ Instructions for Recruiter: https://studydaddy.com/attachment/176835/NewRecruitR
 # Procedure
 ## Steps
 1. Participants were instructed that they were to negotiate the contents of an employment package. 
-2. They were randomly assigned the role of either the recruit or the recruiter. At this time, all participants received a package of material containing their confidential instructions and negotiation role information.
-3.  In the confidential instructions, participants in the 4-issue condition were instructed that 4 issues were to be negotiated. 
-4.  Likewise, participants in the 8-issue condition were instructed that 8 issues were to be negotiated. I
-5.  n both conditions, participants were explicitly instructed that their goal was to maximize their (individual) payoff and that they had one week in which to complete the negotiation.
+2. Within each experimental session, participants were randomly paired for the negotiation, resulting in 82 dyads. They were randomly assigned the role of either the recruit or the recruiter.
+3. There were six issues on which participants must reach agreement: these included one distributive, or “fixed-sum,” issue on which the parties’ interests were mutually opposing; one congruent issue on which the parties’ interests were aligned; and four integrative, or “pie-expanding,” issues on which the parties could make trade-offs that maximized both individual and overall value by logrolling among two pairs of issues with asymmetric points. 
+4. Participants received a list of settlement options for each issue, and the payoff (in points) associated with each option. They saw only their own payoff schedule, and were not aware of their counterparts’.
+5. Participants were explicitly instructed that their goal was to maximize their (individual) payoff, and were given 30 minutes to conduct their negotiation.
 
+**Background on negotiation** 
 
-Background on negotiation: 
-The negotiation task, New Recruit (Neale, 1997), involves the negotiation of an employment package. The New Recruit case has 8 issues—unknown to the participants, the payoffs are such that 2 issues are purely distributive (i.e., one person’s gain comes at the other’s loss), 2 issues are purely compatible (i.e., both parties want the same thing), and 4 issues have optimal logrolling potential. 
-> This case was used as published in the 8-issue condition, and a modified version of it was used in the 4-issue condition. The modified case was adjusted such that it had only 4 issues yet the type of issues negotiated were consistent across the experimental manipulation. That is, participants in the 4-issue condition negotiated one issue that was purely distributive, one that was purely compatible, and 2 issues that had optimal logrolling potential. The 8-issue condition had these same types of issues except twice as many. In short, both conditions negotiated the same types of issues.
+1. Dyads negotiated a simulated job offer (the “New Recruit” exercise; Neale, 1997). Dyads were assigned to one cell of a 2 (candidate emotion: happy vs. angry) × 2 (recruiter emotion: happy vs. angry) × 2 (power distribution: candidate high/recruiter low vs. candidate low/recruiter high) design; however, as explained below, the unit of analysis is generally the individual negotiator. Each participant’s emotion was manipulated through instructions. Dyads always contained one high- and one low-power negotiator; the role associated with each power level was counterbalanced. Power was manipulated through both alternative opportunities available to the negotiator and a narrative description of the power discrepancy between the two roles.
+2. In addition to reading about the issues to be negotiated and their associated point values, participants also read instructions that conveyed our power and emotion manipulations. These were delivered as two last-minute, urgent messages, separate from the main case materials; each participant received his or her own messages, and were not given any information about the other participant’s messages. Although many novice negotiators typically assume that the recruiter is more powerful than the candidate, we wanted to manipulate power independently from role. Therefore, regardless of the assigned role, participants were randomly assigned to the high-power or low-power condition.
+3. After completing the negotiation, participants were given a post-negotiation questionnaire that asked them to report their reactions to and feelings about the negotiation. They completed this questionnaire, which took about 10 min, and then were paid, thanked, and debriefed.
 
-It should also be noted that the specific 4 issues (out of 8 possible) negotiated in the 4-issue condition were counterbalanced across participants in the 4-issue condition. That is, whereas half of the participants in the 4-issue condition negotiated a specific subset of the 4 out of 8 possible issues, the remaining participants in this condition negotiated the opposing subset of 4 issues.
 
 ## Roles 
 A description of roles if relevant to the task.  
@@ -34,53 +35,24 @@ A description of roles if relevant to the task.
 If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
 
 ## Instructions
-Please see negotiation website for full instructions, below are the performance criteria questions: 
-Appendix A. Post-negotiation questions for Study 1
+Please see negotiation website for full instructions, below are the performance criteria questions:
 
+1.“How much power did you feel that YOU had in this negotiation?”
 
-1. In your opinion, how was the power distributed between the two parties?
-1	2	3	4	5	6	7
-I have all the power			equally			They have all the power
+2. Rate how much you are feeling the following emotions on a 1–7 scale with 7 = “a lot,”.
+happy, excited, lively, content, cheerful, pleased, satisfied, unhappy, sad, bored, hostile, angry, and stubborn.
 
-2. In your opinion, was the other party honest?
-1	2	3	4	5	6	7
-not at all						absolutely completely
-
-3. What was your target (goal) in this negotiation?—————————
-
-4. What do you think the other party’s target (goal) was?—————————
-
-5. Based upon your experience in this negotiation with the other side, to what degree are you willing to have future dealings (i.e., negotiations) with them? Please give your response on a scale of 1 to 100 with 1 being ‘not at all’ and 100 being ‘without hesitation.”—————————
-
-6. To what degree do you feel that the negotiation was argumentative?
-1	2	3	4	5	6	7
-not at all						absolutely completely
-
-7. To what degree do you feel that the negotiation was cooperative?
-1	2	3	4	5	6	7
-not at all						absolutely completely
-
-8. To what degree do you feel that you were able to personally manipulate and influence the outcome of this negotiation?
-1	2	3	4	5	6	7
-not at all						absolutely completely
-
-9. How satisfied are you with the negotiated outcome?
-1	2	3	4	5	6	7
-not at all			indifferent			absolutely completely
-
-10. To what degree do imagine that your outcome could have occurred with a better result?
-1	2	3	4	5	6	7
-not at all						absolutely completely
+Participants were asked about how they responded to their counterparts. These responses were designed to capture two categories, focus and getting tough.
 
 # Criteria
 ## Performance calculation
-Satisfaction. Participants’ post-negotiation satisfaction levels were measured by responses to three questions that were averaged into an overall satisfaction index measure (α=.82) ranging from 1 (low satisfaction) to 7 (high satisfaction).
-> satisfaction was measured by participants’ willingness to have a continued relationship with the other party. A negotiator’s desire to have a future relationship with the other party has been found to be primarily a function of negotiator satisfaction
-> Finally, an independent third party assessed negotiator satisfaction. After completing the negotiation and the post-negotiation questionnaire, participants were asked in an open-ended question to summarize their thoughts regarding the negotiation. 
+Integrative and Distributive Behavior: Videotape coding was used to measure observable, behavioral integrativeness in the negotiation. 
 
-Counterfactual thoughts. In order to verify the existence and the extent to which subjects had counterfactual thoughts, also measured were subjects’ ratings of the extent to which they had thoughts about how the situation could have occurred with a better outcome. Counterfactual thoughts were measured by responses to two questions that were aggregated into an overall counterfactual thought index measure (α=.79).
+> Coders were trained to distinguish between distributive and integrative behavior using dimensions derived from the past frames cited above, especially that of Weingart and colleagues (1999): making single-issue offers vs making multiple-issue offers; stating priorities vs stating positions; asking diagnostic questions vs justifying one’s offer. Specifically, the two coders received a chart listing these and other particular acts; the acts were grouped into “more integrative” and “more distributive” categories.
+These codes used 5-point scales to assess the degree to which each party was cooperative, where 5 = significant emphasis on the counterpart’s concerns; and the degree to which each party showed effort and perseverance, where 5 = repeated evidence of initiative and motivation to reach a deal. A third 5-point scale assessed coders’ overall impression of each negotiator, with 5 representing an overall impression of strong integrativeness.
 
-Controllability. Perceptions of controllability were measured by participants’ responses to the following single item question: “To what degree do you feel you were able to personally manipulate and influence the outcome of this negotiation?” Responses were recorded on a scale of 1 (“not at all”) to 7 (“absolutely completely”).
+
+Emotional Display: as further manipulation checks, coders rated each negotiator’s display of anger and happiness on separate 6-point scales, where 5 = a prolonged, intense display of that emotion and 0 = neutral affect.
 
 ## Incentives
-There were no incentives, the research took place with students in a class 
+The students were paid $10 for participating in the study.
