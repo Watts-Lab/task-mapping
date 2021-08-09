@@ -23,7 +23,6 @@ Negotiation Instructions: https://new.negotiationexercises.com/exercises/?query=
 > The buyer, Generex, represents a large power company interested in buying the division. Buyers had two alternatives, one relatively cheap and one relatively expensive: buy a much smaller wind division in a less-attractive market for $220 million, or develop a comparable facility from scratch for $350 million with a 3-year delay.
 
 ## Instructions
-ASKED FOR MORE DETAILS 6/7.
 
 Available on https://new.negotiationexercises.com/exercises/?query=energetics&negotiation_min=&negotiation_max=&roles=
 
