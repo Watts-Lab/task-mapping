@@ -1,0 +1,83 @@
+---
+title: "Task mapping data preperation"
+---
+
+```{r}
+library(tidyverse)
+library(irr)
+library(ggplot2)
+library(jsonlite)
+library(graphics)
+library(ggfortify)
+```
+
+```{r}
+# These read from our glitch server. If they are not working, double check that it is live by visiting https://task-robot.glitch.me 
+# The server should wake up after the first call, so just running this block twice should get the data on a fresh launch.
+
+# A table of all responses to the task mapping survey (notably this includes agreement instances as well as individual responses)
+raw_responses <- read_csv("https://task-robot.glitch.me/results/survey/csv",)
+
+# All the tasks that are in our mapping google sheet
+tasks <- read_csv("https://task-robot.glitch.me/tasks/csv")
+
+# All the questions asked in the mapping process
+questions <- read_csv("https://task-robot.glitch.me/questions/csv")
+```
+
+
+```{r}
+ordinals <- questions %>% filter(answer_type == "ordinal") %>%
+  inner_join(data.frame(name = raw_responses %>% names())) %>%
+  mutate(levels = strsplit(answer_choices, " \\| ")) %>% 
+  select(name,levels)
+
+clean_responses <- raw_responses %>%
+  select(-platform,-createdAt,-updatedAt,-`_id`) %>% 
+  mutate(
+    across( # this sets our variables to the right type
+      ordinals$name,
+      ~ ordered(.,levels = (ordinals %>% filter(name == cur_column()))$levels[[1]])
+      ),
+    stage = case_when( # lets us know which tasks have agreement
+      grepl("&", user) ~ "agreement",
+      grepl("\\|", user) ~ "agreement",
+      grepl(", ", user) ~ "agreement",
+      grepl(" and ", user) ~ "agreement",
+      TRUE ~ "individual"
+    )
+  ) %>% 
+  select(task,stage,user,everything())
+```
+
+```{r}
+# Store the main tables to csv so other people can use them.
+agreed_responses <- clean_responses %>%
+  filter(stage == "agreement") %>% 
+  select(-stage,-user) %>%
+  arrange(task)
+agreed_responses %>% 
+  write_csv("../task_map.csv")
+
+questions %>% 
+  select(name,text,answer_choices,answer_type,source) %>% 
+  arrange(name) %>% 
+  write_csv("../questions.csv")
+```
+
+```{r}
+# Initial analysis that might move to another file at a later point
+numerical_responses_matrix <- agreed_responses %>% 
+  select(task,ordinals$name) %>% 
+  column_to_rownames(var = "task") %>% 
+  mutate(across(everything(),as.numeric)) %>% 
+  na.omit()
+
+pca = prcomp(numerical_responses_matrix)
+plot(pca)
+biplot(pca,var.axes = FALSE,)
+
+# Methods from https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html 
+autoplot(pca,shape = FALSE, label.size = 3)
+# autoplot(pca, data = output_table, color = 'category')
+```
