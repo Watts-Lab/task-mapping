@@ -39,15 +39,50 @@ clean_responses <- raw_responses %>%
       ordinals$name,
       ~ ordered(.,levels = (ordinals %>% filter(name == cur_column()))$levels[[1]])
       ),
+    user = trimws(
+      gsub("  "," ",
+      gsub("( and |, |&)"," \\| ",
+      gsub("(Subramaniam|Bottcher|Sampath|Cullen|Balasubramanian)","",
+      gsub("sarikasu","Sarika",
+           gsub("(katelynbottcher|Katelynn)","Katelyn",
+                gsub("KaranSampath","Karan",user))))))),
     stage = case_when( # lets us know which tasks have agreement
-      grepl("&", user) ~ "agreement",
       grepl("\\|", user) ~ "agreement",
-      grepl(", ", user) ~ "agreement",
-      grepl(" and ", user) ~ "agreement",
       TRUE ~ "individual"
-    )
+    ),
+    name_clean = trimws(
+      gsub("  ", " ",
+           gsub("finding the maximum","find the maximum",
+           gsub("recall associations","recall association",
+           gsub("husband ","husbands ",
+           gsub("nine", "9",
+                gsub("suduko","sudoku",
+                sub("task","",
+                    gsub("various versions","",
+                gsub("hidden profile","",
+                gsub("[()-]", " ", 
+                     tolower(task)
+                     )
+                ))
+           ))))
+           ))
+      ))
   ) %>% 
+  left_join(tasks %>% mutate(name_clean = trimws(
+    gsub("  ", " ", 
+         sub("task","",
+        gsub("various versions","",
+         gsub("hidden profile","",
+         gsub("[\"()-]", " ", 
+              tolower(name)
+              )
+         ))
+    )))
+    ) %>% select(name, name_clean)) %>% 
+  mutate(task = name) %>% 
   select(task,stage,user,everything())
+
+unrecognised_tasks <- clean_responses %>% select(task,name_clean) %>% filter(is.na(task)) %>% arrange(name_clean)
 ```
 
 ```{r}
@@ -78,6 +113,18 @@ plot(pca)
 biplot(pca,var.axes = FALSE,)
 
 # Methods from https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html 
-autoplot(pca,shape = FALSE, label.size = 3)
-# autoplot(pca, data = output_table, color = 'category')
+autoplot(pca,
+         data = numerical_responses_matrix,
+         shape = FALSE,
+         label.size = 3) +
+  labs(title = "PCA of mapped tasks (across all features)", x = "", y = "") + 
+  ggpubr::theme_pubclean()
+ggsave("Mapped_task_PCA.pdf",
+       width = 7,
+       height = 5) 
 ```
+
+```{r}
+
+```
+
