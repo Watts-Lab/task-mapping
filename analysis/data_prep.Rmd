@@ -119,7 +119,7 @@ autoplot(pca,
          label.size = 3) +
   labs(title = "PCA of mapped tasks (across all features)", x = "", y = "") + 
   ggpubr::theme_pubclean()
-ggsave("Mapped_task_PCA.pdf",
+ggsave("Mapped_task_PCA.png",
        width = 7,
        height = 5) 
 ```
