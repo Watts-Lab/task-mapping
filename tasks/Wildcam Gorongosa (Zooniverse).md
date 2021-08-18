@@ -1,7 +1,7 @@
 # Summary
 Participants classified pictures taken by motion-detecting camera traps in Gorongosa National Park in Mozambique as part of a wildlife conservation effort (the trail cameras are designed to automatically take a photo when an animal moves in front of them)
 
-> For each image, participants in the experiment were tasked with (1) detecting the presence of the animal(s), (2) identifying the species type, (3) counting how many animals there are, (4) identifying the behaviors exhibited, specifically, identifying whether the animal(s) is (a) standing, (b) resting, (c) moving, (d) eating, or (e) interacting (multiple behaviors may be selected), and (5) recognizing whether any young are present. The 52 possible species options include a ‘Nothing here’ button but no ‘I don’t know’ option
+> For each image, participants in the experiment were tasked with (1) detecting the presence of the animal(s), (2) identifying the species type, (3) counting how many animals there are, (4) identifying the behaviors exhibited, specifically, identifying whether the animal(s) is (a) standing, (b) resting, (c) moving, (d) eating, or (e) interacting (multiple behaviors may be selected), and (5) recognizing whether any young are present. The 52 possible species options include a ‘Nothing here’ button but no ‘I don’t know’ option.
 
 # References
 Main Paper: https://arxiv.org/pdf/2009.11038.pdf
@@ -38,9 +38,11 @@ At the end of testing, participants individually completed an exit survey which 
 
 # Criteria
 ## Performance calculation
-Pace: defined as the number of images classified by i per minute (referred to as volume when considering the absolute number)
-Accuracy: defined as the number of correct guesses made by i as a proportion of volume
-Efficiency: defined as the number of correct guesses made by i per minute.  
+Pace: defined as the total number of images classified by the dyad or individual per minute (referred to as volume when considering the absolute number).
+
+Accuracy: defined as the number of correct guesses made by the dyad or individual as a proportion of volume.
+
+Efficiency: defined as the number of correct guesses made by the dyad or individual per minute.  
 
 ## Incentives
 Participants were paid £18 upon successfully completing both the training and testing stage.
