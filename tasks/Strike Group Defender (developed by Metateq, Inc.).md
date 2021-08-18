@@ -26,22 +26,19 @@ Finally, the participants were debriefed and released from the study. The entire
 
 ## Instructions
 
-Thank you for taking part in our evaluation of the Strike Group Defender (SGD) missile defense simulation.
-SGD was developed for training people in the art of missile defense.
-Today you will go through a series of training exercises and then complete some evaluation scenarios that will assess how well you can perform after training.
-Please advance to the next slide and watch the introductory video.
+Thank you for taking part in our evaluation of the Strike Group Defender (SGD) missile defense simulation. SGD was developed for training people in the art of missile defense.
+Today you will go through a series of training exercises and then complete some evaluation scenarios that will assess how well you can perform after training. Please advance to the next slide and watch the introductory video.
 
 Protect the Strike Group
 During the simulation you will be evaluated on how well you protect the strike group
 
 You can protect the strike group in the following ways:
-Neutralize: Defeat enemy missiles with countermeasures. 
+Neutralize: Defeat enemy missiles with countermeasures.
 Destroy: Shoot down missiles with your shipboard weapons.
 Conserve Resources: Employ your countermeasures and shipboard weapons efficiently.
 Minimize Risks: Limit the time that enemy missiles are locked on and tracking friendly assets.
 
-*The degree to which the objectives above are met will directly correspond to performance results
-
+**The degree to which the objectives above are met will directly correspond to performance results**
 
 You will now complete some training scenarios that will familiarize you with the SGD controls and user interface. 
 
@@ -50,7 +47,6 @@ Scenarios are scored according to the criteria discussed on the previous slide.
 Scenarios have minimum scores, it is possible you will have to repeat some scenarios. 
 
 Please Wait for Further Instruction
-
 
 Your training is now complete and you are ready for the evaluation phase. 
 Please carefully read the following slides, which will provide the information you need to be successful.
@@ -65,7 +61,6 @@ Area Defense--You and your teammate assume responsibility for defending specific
 Threat Defense--You and your teammate assume responsibility for defense against specific threats.
 MOTH MISSILE = Your Threat
 HUNGRY MISSILE = Teammate’s Threat
-
 
 You can coordinate strategy during the game by communicating with your teammate in the Comm Log.
 
@@ -87,7 +82,7 @@ Results Score: Your team goal is to achieve a Results Score of at least 240,000 
 Efficiency Score: Your team goal is to achieve an Efficiency Score of at least 32,000 points.
 Tracking Score: Your team goal is to achieve Tracking Score of at least 250 points.
 
-*The degree to which you meet the goals above will directly influence your team performance evaluation.
+**The degree to which you meet the goals above will directly influence your team performance evaluation.**
 
 Protect the Strike Group
 This is your primary objective during the simulation
@@ -102,10 +97,8 @@ Tracking Score: Your team goal is to achieve Tracking Score of at least 250 poin
 If you have any questions please ask them at this time.
 When ready, notify the experimenter and you will complete problem solving challenge.
 
-
 Team Condition: 
 One important feature of the evaluation phase is that you will now have command authority over a second ship. The ship is controlled by the player that began the experiment with you. The player will serve as a tool which you will use to meet objectives. You have the ability to directly control the other player’s ship just as you control your own ship. You can also direct the other player to carry out a specific defense strategy, reducing your need to directly intervene.
-
 
 # Criteria
 ## Performance calculation
@@ -116,4 +109,4 @@ Performance metrics were recorded through the in-game scoring system.
 Subjectively, participants provided feedback on their satisfaction with the team and satisfaction with performance. 
 
 ## Incentives
-Participants received course credit in exchange for completing the study
+Participants received course credit in exchange for completing the study.
