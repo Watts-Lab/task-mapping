@@ -23,13 +23,8 @@ Experiment:
 3. Once in the experiment, each team was presented with the same set of 1,567 tweets (i.e. teams only differed in the number of participants assigned to the task). All workers were instructed that they had to complete the following tasks: (1) identify tweets that referred specifically to instances of typhoon-related damage (e.g. washed-out bridges, flooded roads, damaged crops or buildings, displaced population); (2) create event records for every such instance, describing the event in words, attaching the relevant tweets, classifying it as one of several predefined types, and establishing its geographical location (by latitude and longitude as well as province and region); and (3) verify and, if necessary, correct the information in existing event reports. 
 4. Workers assigned to the n = 1 condition were told that they would be working alone; in all other conditions they were told the size of their team, shown the usernames of their coworkers, and instructed on how to create chat rooms for the purpose of communicating; however, they were not given any instructions in how to coordinate. 
 5. All teams were given one hour from the arrival time of the first members to identify as many crisis-related events as possible, and workers were informed that their individual compensation would vary between a minimum of $6 and a maximum of $15 and would be computed as a joint function of their own time spent working and the overall performance of their team relative to other teams. 
-> Specifically, each team was assigned a performance-based hourly wage between $6 and $15, computed as , where we note that the minimum of $6 per hour was considered a norm for the minimum acceptable wage on Mechanical Turk at the time of the experiment. Each participant was then paid an amount corresponding to their team’s wage, scaled by their own activity time: Individual Payment = Team Wage×Active Time. Workers were clearly informed of this compensation scheme, and were told that their activity would be monitored (see S2 Text for more details). 
-6. Because participants did not arrive at precisely the same time and because they also took varying lengths of time to complete the tutorial, they were assigned to a virtual “lobby” until sufficiently many participants were available to begin the experiment. At this point, all participants in the lobby were released simultaneously and randomly assigned to a predetermined set of teams of sizes n = 1, 2, 4, 8, 16, and 32 (see Fig 3 for an example).
-
-
-A description of roles if relevant to the task.  
-
-If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
+> Specifically, each team was assigned a performance-based hourly wage between $6 and $15, computed as , where we note that the minimum of $6 per hour was considered a norm for the minimum acceptable wage on Mechanical Turk at the time of the experiment. Each participant was then paid an amount corresponding to their team’s wage, scaled by their own activity time: Individual Payment = Team Wage×Active Time. Workers were clearly informed of this compensation scheme, and were told that their activity would be monitored. 
+6. Because participants did not arrive at precisely the same time and because they also took varying lengths of time to complete the tutorial, they were assigned to a virtual “lobby” until sufficiently many participants were available to begin the experiment. At this point, all participants in the lobby were released simultaneously and randomly assigned to a predetermined set of teams of sizes n = 1, 2, 4, 8, 16, and 32.
 
 ## Instructions
  
@@ -132,19 +127,16 @@ When you are in a chat room, you can use special characters to notify users and 
 When you start typing the symbols above, an automatic filtered list will appear. Selecting an item in this list will create a link in your chat message that users can click on to jump to the tweet or event.
 
 Type something in the chat. For example, to tell another user to look at the event you created, type “@myself can you take a look at event #1?” You are talking to yourself here, but you will be chatting with other users in the actual task. The project will run for one hour. You may quit the project at any time. If you perform no activity for several minutes, your session will be automatically idled.
-Your payment will be determined by how much time you personally spend working on the task, and also the
-overall performance of your team. Your team may be competing with other teams, and your team’s performance will be measured relative to
-either the best-performing team or other benchmarks. Your compensation will be calculated as: (minutes you worked)/60 × ($6 + your team bonus) 
+Your payment will be determined by how much time you personally spend working on the task, and also the overall performance of your team. Your team may be competing with other teams, and your team’s performance will be measured relative to either the best-performing team or other benchmarks. Your compensation will be calculated as: (minutes you worked)/60 × ($6 + your team bonus) 
 
-Your team bonus will be calculated as: (Valid events your team correctly records)/(Highest number of valid events labeled by any
-team) 
+Your team bonus will be calculated as: (Valid events your team correctly records)/(Highest number of valid events labeled by any team).
 If you work for the full one hour, your compensation will be no less than $6 and as much as $15, depending
 on your team’s performance.
 
 Your payment will be shown during the task in the highlighted region. If you quit early or are idle you will only by paid for the fraction of time you work. Thus, you should not just work hard yourself, but also help your team succeed.
 Sometimes, you may be on a team by yourself. In this case, you will be evaluated against others who are also working by themselves. 
 
-Please read and acknowledge the terms of use for participating in this project. Click to view the terms of use. (text of Section ??)
+Please read and acknowledge the terms of use for participating in this project. Click to view the terms of use.
 By clicking the checkbox below you confirm that you are at least 18 years of age, and that you understand what the project is about and how and why it is being done. Some tweets may contain descriptions or images of human or animal suffering, and may be disturbing to some users. If you know that you are adversely affected by this kind of content, feel free to exit the experiment. By checking the box, you also acknowledge that you accept this possibility through your participation in crisis mapping.
 (checkbox) I have read and acknowledged the terms of use. If you have any questions about this project, please contact Andrew Mao at [email].
 Click ’Finish’ below to join a team of other workers and start crisis mapping!
@@ -152,7 +144,10 @@ Click ’Finish’ below to join a team of other workers and start crisis mappin
 
 # Criteria
 ## Performance calculation
-For every team there are three standard measures of performance: precision, defined as the fraction of events identified by team that matched the gold standard; recall, defined as the fraction of all events in the gold standard that team i correctly identified; and F1 score, defined as the harmonic of mean of precision and recall. 
+For every team there are three standard measures of performance: 
+1. Precision: Defined as the fraction of events identified by team that matched the gold standard.
+2. Recall: Defined as the fraction of all events in the gold standard that team i correctly identified.
+3. F1 score: Defined as the harmonic of mean of precision and recall.
 
 ## Incentives
 Workers were informed that their individual compensation would vary between a minimum of $6 and a maximum of $15 and would be computed as a joint function of their own time spent working and the overall performance of their team relative to other teams.
