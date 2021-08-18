@@ -1,11 +1,8 @@
 # Summary
 Participants are divided into a group during phase one based on a trivial criteria. They then partake in a second task of goods distribution where the objective is to avoid objective influences during the good allocation. 
 
-
 # References
 Task: https://en.wikipedia.org/wiki/Minimal_group_paradigm
-
-
 
 ## Materials for alternative versions of the experiment 
 Researchers created two hypothetical groups, 'Group A' and 'Group B'. Group assignment was random. The members of the groups were all hypothetical people, and therefore, they had no distinguishable differences. The researchers then chose some members of each group at random to leave their original group and join the opposite group; these members were referred to as migrants. Participants then rated each group member on a seven-point Likert scale for favorability. Migrants were rated as significantly less favorable than non-migrants.
@@ -23,11 +20,11 @@ The traditional minimal group study consists of two phases.
 
 
 ## Instructions
-Not Available
+Not Available.
 
 # Criteria
 ## Performance calculation
-Allocation of resources to in-group or outgroup members 
+1. Allocation of resources to in-group or outgroup members
 
 ## Incentives
-N/A depends on research paper 
+N/A, depends on research paper.
