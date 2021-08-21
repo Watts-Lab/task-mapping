@@ -4,10 +4,7 @@ Participants work in teams team of other crisis mappers to create a crisis map f
 # References
 Paper: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0153048#sec007
 
-Detailed Instructions with images: https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pone.0153048/1/pone.0153048.s006.pdf?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20210809%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20210809T160608Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=691fed14db0aa3cfdb735ec22f4860e1e2fa664bed563065d679078c3d941d103652ea163b99cd4cd6acbc4aaf89d9f301ca2185f3501ceb5bda19cc525b52df04d98817c0b81bcc7ad9f044c8f8eae596912673d778180647fc096d95b7490a8aa65f5f3ce7b4abcb01ac0f6aba8c78598eae8eeaf3c915aa6f171ec16a47e9f9fee169325945a443fa76073a7c11a1e343fe7a57b35cdc89649029632135f842cde8c78b53e9af4065a330903b4414c558cebd037d95d81a4f370120998ff0ff07ef1cfa7aaf7aac05031a8cec5a1462bc6e999ba119f64bc9111340ba4f3be4f58649d8d52e1a94172f708ad2f5e08fe11ce442c9654eb11eae35494e4569
-
-Tutorial Github Materials:https://github.com/TurkServer/CrowdMapper/tree/master/client
-
+Detailed Instructions with images: https://doi.org/10.1371/journal.pone.0153048.s006
 
 # Procedure
 ## Steps
