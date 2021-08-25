@@ -12,7 +12,10 @@ Link: https://psycnet-apa-org.proxy.library.upenn.edu/record/2000-16508-010
 N/A 
 
 ## Materials for alternative versions of the experiment 
-N/A
+3 versions of a mock trial script.  All versions of the script should contain testimones from both the defense and the prosecution.  The only difference in the versions of the scipts are the extra admissable/inadmissable evidence. The three versions should be as follows:
+- Control group script, containing a script from a mock trial
+- Admissable group script, the same script as the control group, containing an extra piece of evidence that the group is allowed to use in their decision making
+- Inadmissable group script, the same script as the control group, containing the same extra piece of evidence as the Admissable group, however, this group is told the extra evidence is inadmissable
 
 # Procedure
 ## Steps
