@@ -13,7 +13,8 @@ Link: https://www.researchgate.net/profile/Laura-Kray-2/publication/222830434_Th
 
 # Stimuli
 ## The visual components
-Graphs are present in the case study
+The following figures are present in the case study
+
 ![Alt text](/images/Carter_Racing_Exhibt_1.png)
 ![Alt text](/images/Carter_Racing_Exhibt_C1.png)
 
