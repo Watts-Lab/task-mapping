@@ -17,13 +17,14 @@ Graphs are present in the case study
 
 ## Materials for alternative versions of the experiment 
 N/A
+Some studies that use this case study present groups with a counter-factual mind-set manipulation scenarios that they create
 
 # Procedure
 ## Steps
 1. Break up participants into groups of 3 or 4
 2. Present the participants with the case study, and allow them time to read it
 3. Inform groups that they can ask for extra information, but they must be very specific with what they are asking for
-    1. If they ask for extra information, specifically the data containing races where the engine did not fail, they are to be supplied with page C, which contains a small bit of narrative, and the graph containing the information they had requested
+    1. If they ask for extra information, specifically the data containing races where the engine did not fail, they are to be supplied with page C, which contains a small bit of narrative, and Exhibit C1, a graph containing the information they had requested
 4. Allow the participants to deliberate the answer for 45, and ask them to come to a group consensus
 5. Once they answer they should be asked to cite reasons why they decided to race or not to race
 6. Finally ask them to select their confidence on an 11 point scale, with the end points being “we are confident we made the wrong decision” and “we are confident we made the right decision” and the midpoint being neutral
@@ -36,8 +37,7 @@ Participant, their task is to read the case study and decide whether the team sh
 
 # Criteria
 ## Performance calculation
-No real Performance Criteria
-Some studies that use this case study present groups with a counter-factual mind-set manipulation scenarios that they create
+The goal of a group is to realize that the data they are given is incomplete, and ask for the supplemental information.
 
 ## Incentives
 No incentive was given to the group.
