@@ -30,7 +30,7 @@ assignees: ''
 - [ ] First pass assignee: Complete the [task mapping survey](https://task-robot.glitch.me/survey) entering your GitHub username as the user name, and the task file name as the task name.
 - [ ] Second pass assignee: Complete the [task mapping survey](https://task-robot.glitch.me/survey) entering your GitHub username as the user name, and the task file name as the task name.
 - [ ] Both assignees: meet to review the [agreement page](https://task-robot.glitch.me/agreement), selecting this task. 
-- [ ] Review major disagreements between your responses to check if any are challenging to reconcile. [Schedule a time for both of you to meet with Mark](whiting.me/meet), otherwise, move forward.
+- [ ] Review major disagreements between your responses to check if any are challenging to reconcile. [Schedule a time for both of you to meet with Mark](https://whiting.me/meet), otherwise, move forward.
 - [ ] First pass assignee: In a second browser window start a new [task mapping survey](https://task-robot.glitch.me/survey), this time entering the first then second assignee's GitHub usernames separated by ` | `, e.g., `markwhiting | djwatts`, and the task file name as the task name.
 - [ ] Fill in all the agreed responses, and the resolved conflicts.
 
