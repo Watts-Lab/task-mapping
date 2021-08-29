@@ -24,8 +24,7 @@ In the case that the complete set is not possible, provide enough unique example
 2. The first stimulus was a series of products and accompanying slogans. The group had to rate these slogans on a scale of 1 (worst) to 10 (best) based on what they believed a large sample of Americans would rate their suitability for the given products. 
 > Altogether, there were 4 products with 3 slogans each, resulting in 12 total slogans for groups to rate. The ground truth was based on poll responses of 100 American users on Amazon Mechanical Turk. 
 > The groups received points based on how close their ratings were to the ground truth averages. 
-3. The second judgment task involved rating 5 pictures on a scale of 1 (worst) to 10 (best) based on what participants believed a large sample of Americans rated them. The ground truth and the scoring of this task were established in the same way as with the slogan judgment task. 
-4. The combined time for all judgment tasks was 10 minutes.
+3. The combined time for all judgment tasks was 10 minutes.
 
 
 ## Instructions
@@ -35,8 +34,6 @@ As a group you will need to rate product slogans on a scale of 1 (worst) to 10 (
 
 You will earn points based on how close your ratings are to ground truth averages. 
 
-Next, you will rate the following pictures on a scale of 1 (worst) to 10 (best) based on what you believe a large sample of Americans rated them.
-Similar to the previous task, you will earn points based on how close your ratings are to ground truth averages. 
 
 # Criteria
 ## Performance calculation
