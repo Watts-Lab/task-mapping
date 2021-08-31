@@ -5,6 +5,9 @@ The wolf, goat and cabbage problem is a river crossing puzzle in which the objec
 Main Task Description: https://en.wikipedia.org/wiki/Wolf,_goat_and_cabbage_problem
 
 Procedure adapted from this Paper: https://journal.viterbo.edu/index.php/atpp/article/download/1024/841
+
+Additional Background information: https://www-tandfonline-com.proxy.library.upenn.edu/doi/abs/10.1080/0025570X.1990.11977478?tab=permissions&scroll=top
+
 # Stimuli
 
 ## Visual Components/description
