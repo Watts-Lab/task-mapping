@@ -5,6 +5,11 @@ The wolf, goat and cabbage problem is a river crossing puzzle in which the objec
 Main Task Description: https://en.wikipedia.org/wiki/Wolf,_goat_and_cabbage_problem
 
 Procedure adapted from this Paper: https://journal.viterbo.edu/index.php/atpp/article/download/1024/841
+# Stimuli
+
+## Visual Components/description
+
+A potentially effective visual (especially when showing the task to children) could be a cartoon with 3 frames. In each frame and on each side of the river the allowed and not allowed combinations of the stimuli (animals) could be shown. There are only 3 choose 2 *illegal* options and this would help make sure participants understand the task.
 
 ## Materials for alternative versions of the experiment 
 There are other cosmetic variations of the puzzle also exist, such as: wolf, sheep, and cabbage; fox, chicken, and grain;fox, goose and corn;and panther, pig, and porridge. The logic of the puzzle, in which there are three objects, A, B, and C, such that neither A and B nor B and C can be left together, remains the same.
