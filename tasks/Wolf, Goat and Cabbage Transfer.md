@@ -7,7 +7,7 @@ Main Task Description: https://en.wikipedia.org/wiki/Wolf,_goat_and_cabbage_prob
 Procedure adapted from this Paper: https://journal.viterbo.edu/index.php/atpp/article/download/1024/841
 
 ## Materials for alternative versions of the experiment 
-There are other cosmetic variations of the puzzle also exist, such as: wolf, sheep, and cabbage; fox, chicken, and grain;fox, goose and corn;and panther, pig, and porridge.The logic of the puzzle, in which there are three objects, A, B, and C, such that neither A and B nor B and C can be left together, remains the same.
+There are other cosmetic variations of the puzzle also exist, such as: wolf, sheep, and cabbage; fox, chicken, and grain;fox, goose and corn;and panther, pig, and porridge. The logic of the puzzle, in which there are three objects, A, B, and C, such that neither A and B nor B and C can be left together, remains the same.
 
 # Procedure
 ## Steps
@@ -24,6 +24,7 @@ Once upon a time a farmer went to a market and purchased a wolf, a goat, and a c
 If left unattended together, the wolf would eat the goat, or the goat would eat the cabbage.
 
 The farmer's challenge was to carry himself and his purchases to the far bank of the river, leaving each purchase intact. How did he do it?
+
 # Criteria
 ## Performance calculation
 Completion of Puzzle
