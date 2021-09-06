@@ -19,18 +19,20 @@ Link: https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.115.4325&rep=rep
 
 # Stimuli
 ## The visual components
-The following figures are present in the case study:
-
-![Alt text](/images/Carter_Racing_Exhibt_1.png)  
-The following exhibit and accompanying narrative is to be presented to the perticipants if extra information is requested
-![Alt text](/images/Carter_Racing_Exhibt_C1.png)
+The following figure is present in the base case study:  
+Exhibit 1  
+![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Exhibit_1.png)  
+The following exhibit and accompanying narrative is to be presented to the perticipants only if extra information is requested:  
+Part C and Exhibit C1  
+![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_C.png)
 
 
 Some studies that use this case study present groups with a counter-factual mind-set manipulation scenarios that they create.
 
-Breif decription of the pre-task scenarios:
+Breif decription of the pre-task scenarios:  
 Counterfactual Prime Condition:  
 > The protagonist Sue was at a rock concert of her favorite band.  Because her seat was not very close to the stage, Sue switched to a vacant seat in the third row.  Shortly thereafter, the emcee walked out on stage and announced that a valuable prize would be awarded to one lucky winner.  The women then reached her hand into a receptacle filled with ticket stubs and announced the winner was the person currently occupying Sue's old seat.  
+
 Non-counterfactual Prime Condition:  
 > A similar scenario was presented, except Sue did not switch seats and the winner was someone in a diffrent seat altogher.
 
