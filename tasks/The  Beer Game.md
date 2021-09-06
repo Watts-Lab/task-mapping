@@ -81,6 +81,7 @@ and a retail store. Material flows from upstream to downstream (i.e. from the fa
 # Criteria
 ## Performance calculation
 Costs for Team: goal is to have minimal costs per team 
+> these costs are accrued over time
 
 ## Incentives
 None Listed
