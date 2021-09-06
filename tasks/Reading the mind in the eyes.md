@@ -70,6 +70,16 @@ Depending on treatment condition participants would see different times- see cod
 TASK EXAMPLE: 
 Here is an example of the task. The correct answer is:strong>Panicked. Try hovering over the options to see the definition of each word.
 
+
+Final Survey Questions: 
+
+Please answer the following short survey. You do not have to provide any information you feel uncomfortable with.
+Age
+Gender
+Highest Education Qualification
+Do you feel the pay was fair?
+Please provide any feedback, including problems you encountered.
+
 # Criteria
 ## Performance calculation
 Social perceptiveness: the number of RME questionscorrectly answered. As with skill, individuals above/below the median social perceptiveness score were classified as high/low social perceptiveness, respectively.
