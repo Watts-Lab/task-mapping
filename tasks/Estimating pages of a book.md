@@ -8,14 +8,7 @@ Main Paper: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.01
 Detailed Task Description: https://doi.org/10.1371/journal.pone.0115212.s002
 # Stimuli
 ## The visual components
-Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations. 
-
-If no visual components are provided or seem not to be needed describe an interface for executing this task in an online environment with remote participants. 
-
-## Materials for alternative versions of the experiment 
-If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-
-In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
+CSS lab will need to find images of books 
 
 # Procedure
 ## Steps
