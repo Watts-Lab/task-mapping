@@ -5,11 +5,8 @@ Participants predicted how a larger group of Americans would rate a series of sl
 Main Paper: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0115212#pone.0115212.s002
 Task Descriptions: https://doi.org/10.1371/journal.pone.0115212.s002
 
-
-## Materials for alternative versions of the experiment 
-If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-
-In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
+# Stimuli
+CSS lab needs to develop slogans/products, none provided in original paper 
 
 # Procedure
 ## Steps
