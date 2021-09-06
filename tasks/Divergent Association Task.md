@@ -7,35 +7,45 @@ Olson, Jay A., et al. “Naming Unrelated Words Predicts Creativity.” PNAS, Na
 
 Link: https://www.pnas.org/content/118/25/e2022340118
 
+Supplementary Files with Instructions: https://www.pnas.org/content/pnas/suppl/2021/06/17/2022340118.DCSupplemental/pnas.2022340118.sapp.pdf
+
+Data Set: https://osf.io/kbeq6/
+
 # Stimuli
 ## The visual components
 N/A
 
-## Materials for alternative versions of the experiment 
-N/A
-
 # Procedure
-## Experiment 1
-The group of participants was selected entirely from undergraduate psychology courses from Melbourne, Australia, and from social media advertisements in Montreal, Canada.  The group was mostly female, between 18 and 20.
+Participants were asked to generate 10 unrelated nouns in four minutes. Participants were given instructions and asked to write down the words with a Pen and Pencil on the same instructions sheet.
+The task had the following additional instructions.  
+> 1) Use only single words. We used this rule because computational methods can score single words with less ambiguity than phrases. Words such as “cul de sac” were accepted and automatically hyphenated.  
+> 2) Use only nouns (e.g., things, objects, concepts). This rule keeps the class of words similar since the distance between words varies based on their part of speech, such as whether they are nouns or adjectives.  
+> 3) Avoid proper nouns (e.g., no specific people or places).  
+> 4) Avoid specialized vocabulary (e.g., no technical terms). This rule and the previous one prevent participants from using words that are too specific, which is one strategy to artificially inflate the score. To enforce these rules, only lowercase words from a common dictionary (53) were used in the calculation.  
+> 5) Think of the words on your own (e.g., do not just look at objects in your surroundings). During pilot testing, many participants would look around their environment for inspiration when naming the words. This strategy resulted in lower scores since common objects on one’s desk are often semantically similar.  
+> 6) You will have 4 min to complete this task. In our initial testing (54), this amount of time was sufficient to complete the task without much time pressure.
 
-This group follows the steps outlined.
+After the task, participants were asked what strategy they used, if any, to choose the words.
+> In Study 1A, two raters coded the responses based on 1) whether the 141 participants appeared to correctly follow the instructions and 2) whether they reported implementing a strategy such as naming the objects around them. Disagreements were resolved by discussion, and raters were liberal with their exclusions.
 
-## Experiment 2
-The group of participants were entirely recruited over television, radio and social media advertisements as a part of a campaign by the Australian Broadcasting Corporation.  This was a much larger group, of 8,572 participants from 98 different countries.  Most were Australian or from the United Kingdom.  The reported ages ranged from 7 to over 70, most falling in-between 35 and 54.  The group was a majority female.
-
-This group follows the steps outlined.
-## Steps
-1. ask a participant to give 10 nouns that are as different from each other as possible
-2. take the first seven valid words given by the participant
-3. DAT score is calculated using the instructions in the Criteria section
+DAT score is calculated using the instructions in the Criteria section
 
 ## Roles 
 Participant, gives 10 nouns that are as different as possible.
 
 ## Instructions
-Participants are instructed to give 10 nouns that are as different as possible.
+Instructions
+Please write 10 words that are as different from each other as possible, in all meanings and uses
+of the words.
+Rules
 
-The difference of the words is defined by the meanings of the words.
+1) Only single words.
+2) Only nouns (e.g., things, objects, concepts).
+3) No proper nouns (e.g., no specific people or places).
+4) No specialised vocabulary (e.g., no technical terms).
+5) Think of the words on your own (e.g., do not just look at objects in your surroundings).
+6) You will have 4 min.  
+** Actual Instruction document included in stimuli section
 
 # Criteria
 ## Performance calculation
@@ -51,4 +61,4 @@ Te minimum score is zero, and is obtained if all the words are the same.
 The maximum score is 200, and is obtained if the words are as different from each other as possible.
 
 ## Incentives
-No incentive was given to either group.
+No incentive was given.
