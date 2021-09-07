@@ -26,6 +26,8 @@ Main Paper: https://psycnet-apa-org.proxy.library.upenn.edu/fulltext/1997-30049-
 
 8. Participants in the face-to-face conditions recorded the final group decision on a special form provided, and groups in the GDSS conditions typed the group decision into their computer transcripts. Participants in all conditions provided their current private opinions on special forms provided.
 
+9. The participants were asked to complete a post-experimental questionnaire on which they indicated, using 3-point scales, the extent to which they could identify the authors of specific comments and their own comments could be identified by others.
+
 ## Roles 
 Experimentor: Greeted participants, handed out instructions and provides instructions 
 
