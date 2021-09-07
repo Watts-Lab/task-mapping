@@ -7,7 +7,7 @@ Task Descriptions: https://doi.org/10.1371/journal.pone.0115212.s002
 
 # Stimuli
 ## The visual components
-Stimuli needs to be determined by CSS lab 
+Stimuli needs to be determined by CSS lab.
 
 ## Materials for alternative versions of the experiment 
 If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
@@ -22,11 +22,11 @@ In the case that the complete set is not possible, provide enough unique example
 2. The first stimulus was a series of products and accompanying slogans. The group had to rate these slogans on a scale of 1 (worst) to 10 (best) based on what they believed a large sample of Americans would rate their suitability for the given products. 
 > Altogether, the task involved rating 5 pictures on a scale of 1 (worst) to 10 (best) based on what participants believed a large sample of Americans rated them. The ground truth was based on poll responses of 100 American users on Amazon Mechanical Turk. 
 > The groups received points based on how close their ratings were to the ground truth averages. 
-3. The combined time for all judgment tasks was 10 minutes.
+3. The combined time for all judgment tasks was 10 minutes (three tasks in total).
 
 
 ## Instructions
-Instructions written by CSS Lab 
+Instructions written by CSS Lab.
 
 As a group you will rate the following pictures on a scale of 1 (worst) to 10 (best) based on what you believe a large sample of Americans rated them.
 
@@ -37,4 +37,4 @@ You will earn points based on how close your ratings are to ground truth average
 The ground truth was based on poll responses of 100 American users on Amazon Mechanical Turk. The groups received points based on how close their ratings were to the ground truth averages.
 
 ## Incentives
-No incentives listed 
+All participants were paid for their participation and their written informed consent was obtained before the start of the session.
