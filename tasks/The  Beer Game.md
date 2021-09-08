@@ -10,16 +10,6 @@ Game Protocol/Checklist: https://usermanual.wiki/Document/systemdynamicssocietyb
 
 Instructions: https://ctl.mit.edu/sites/ctl.mit.edu/files/attachments/Rice%20-%20Beer%20Game%20Steps%20of%20Game%2011-16-16.pdf
 
-# Stimuli
-## The visual components
-Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations. 
-
-If no visual components are provided or seem not to be needed describe an interface for executing this task in an online environment with remote participants. 
-
-## Materials for alternative versions of the experiment 
-If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-
-In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
 
 # Procedure
 ## Steps
