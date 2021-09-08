@@ -16,7 +16,7 @@ Instructions: https://ctl.mit.edu/sites/ctl.mit.edu/files/attachments/Rice%20-%2
 1. To facilitate quick preparation at the facility, pre-assemble “kits” for each game board that includes pennies, demand cards, colored order pads, and two order forms for each position with initial demand already written on them. This enables a complete game board to be setup in less
 than two minutes. Thus, a team of 10 TAs can setup 100 boards in approximately 15-20 minutes.
 2. Once the doors open, remind particiapnts to find their group and sit at any game board. 
-3. At the official start time, reallocate any incomplete groups (i.e. including students who will be late or absent) into full groups of four. We alsoreserve a few game boards near the entrance for a “late arrivals section” to minimize disruptionduring the instructions. 
+3. At the official start time, reallocate any incomplete groups (i.e. including students who will be late or absent) into full groups of four. We also reserve a few game boards near the entrance for a “late arrivals section” to minimize disruption during the instructions. 
 4. Using PowerPoint slides, we then introduce the game board structure and the goal of the game, telling students to, “minimize your inventory costs by managing your Current Inventory‟ box”. 
 5. After watching one complete round of step-by-step instructions, the instructions are repeated while students follow along for two more rounds before allowing the teams to play on their own.
 > Although the game can be conducted with the instructor leading students through each step of each round, we allow the groups to play at their own pace after guiding them through the first two rounds, which is similar to Coakley et al.‟s approach.
