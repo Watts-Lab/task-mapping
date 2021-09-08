@@ -1,5 +1,5 @@
 # Summary
-The beer game is an exercise that simulates the material and information flows in a productiondistribution system. It has four players: retailer, wholesaler, distributor, and factory. Customer demand (in kegs of beer) arises at the retailer, which replenishes its inventory from the wholesaler, the wholesaler from the distributor, and the distributor from the factory. In each period, the channel members must decide how much, if any, to order from their respective suppliers and the factory must decide how much, if any, to produce. 
+The beer game is an exercise that simulates the material and information flows in a productiond istribution system. It has four players: retailer, wholesaler, distributor, and factory. Customer demand (in kegs of beer) arises at the retailer, which replenishes its inventory from the wholesaler, the wholesaler from the distributor, and the distributor from the factory. In each period, the channel members must decide how much, if any, to order from their respective suppliers and the factory must decide how much, if any, to produce. 
 
 # References
 Main Paper: https://www0.gsb.columbia.edu/mygsb/faculty/research/pubfiles/4345/stationary%20beer%20game.pdf
