@@ -29,10 +29,6 @@ turn, randomly assigned to a market by the simulation software, which does not a
 > The applied software uses different algorithms to calculate each company’s periodic share price based on how the company as well as their competitors decided on the above-described variables given the predetermined endowment and economic circumstances. 
 > The group then receives a full report documenting how the team performed as well as an updated economic forecast for the subsequent period in order to make new business decisions.
 
-## Roles 
-A description of roles if relevant to the task.  
-
-If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
 
 ## Instructions
 Instructions are included in TOPSIM Game: needs to be purchased: https://www.topsim.com/en/education-solutions/
@@ -42,6 +38,7 @@ Instructions are included in TOPSIM Game: needs to be purchased: https://www.top
 ## Performance calculation
 
 The team performance measures in our analyses are the firm’s final share price and whether a particular firm went bankrupt or not. Information on the share price was retrieved from firms’ reports after the last particular period had been simulated
+> If a team goes bankrupt they are removed from the game to avoid "sabotage activities". Firms were considered to be bankrupt as soon as their equity capital fell below zero in any of the periods played. These firms were immediately excluded from the game and assigned a share price of zero in order to avoid "sabotage activities".
 
 ## Incentives
 No incentives as students played this game as a part of their course and performance impacted final grades. 
