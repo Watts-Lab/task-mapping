@@ -56,12 +56,12 @@ Participant, their task is to read the case study and decide whether the team sh
 ## Instructions
 Link to the case study: https://execed.poole.ncsu.edu/wp-content/uploads/2020/06/Carter-Racing-A_B_C.pdf
 
-Additional Information Request Form:  
-![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Information_Request_Form.png) 
-
 ![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Teaching_Notes_1.png)
 ![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Teaching_Notes_2.png) 
 ![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Teaching_Notes_3.png) 
+
+Additional Information Request Form:  
+![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Information_Request_Form.png) 
 
 # Criteria
 ## Performance calculation
