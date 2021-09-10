@@ -18,13 +18,8 @@ Galinsky, A. D., & Moskowitz, G. B. (2000). Counterfactuals as behavioral primes
 Link: https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.115.4325&rep=rep1&type=pdf
 
 # Stimuli
-## The visual components
-The following figure is present in the base case study:  
-Exhibit 1  
-![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Exhibit_1.png)  
-The following exhibit and accompanying narrative is to be presented to the perticipants only if extra information is requested:  
-Part C and Exhibit C1  
-![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_C.png)
+## The visual components 
+![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Part_C.png)
 
 
 Some studies that use this case study present groups with a counter-factual mind-set manipulation scenarios that they create.
@@ -34,7 +29,13 @@ Counterfactual Prime Condition:
 > The protagonist Sue was at a rock concert of her favorite band.  Because her seat was not very close to the stage, Sue switched to a vacant seat in the third row.  Shortly thereafter, the emcee walked out on stage and announced that a valuable prize would be awarded to one lucky winner.  The women then reached her hand into a receptacle filled with ticket stubs and announced the winner was the person currently occupying Sue's old seat.  
 
 Non-counterfactual Prime Condition:  
-> A similar scenario was presented, except Sue did not switch seats and the winner was someone in a diffrent seat altogher.
+> A similar scenario was presented, except Sue did not switch seats and the winner was someone in a diffrent seat altogether.
+
+![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Counterfactual_Primes_1.png)
+![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Counterfactual_Primes_2.png)
+![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Counterfactual_Primes_3.png)
+![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Counterfactual_Primes_4.png)
+![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Counterfactual_Primes_5.png)
 
 # Procedure
 ## Steps
@@ -54,6 +55,13 @@ Participant, their task is to read the case study and decide whether the team sh
 
 ## Instructions
 Link to the case study: https://execed.poole.ncsu.edu/wp-content/uploads/2020/06/Carter-Racing-A_B_C.pdf
+
+Additional Information Request Form:  
+![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Information_Request_Form.png) 
+
+![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Teaching_Notes_1.png)
+![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Teaching_Notes_2.png) 
+![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Teaching_Notes_3.png) 
 
 # Criteria
 ## Performance calculation
