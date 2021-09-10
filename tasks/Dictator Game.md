@@ -48,9 +48,35 @@ Dictator, given the moral decision to pay their receiver out of their own pocket
 Receiver, given tasks to perform in idle time
 
 ## Instructions
-Groups A and B (Dictators and Receivers) are not to interact, only interaction is between participant and experimenter.
+In this experiment each of you will be paired with a different person who is in another room. You will not be told who you are matched with during or after the experiment, and he or she will not be told who you are either during or after the experiment.
 
-Dictators are given specific instructions on the experiment, stating that they are to decide their receivers’ payout, and their receiver will receive the same copy of instructions unless the exit is taken at a lower payout.
+You will notice that there are other people in the same room with you who are also participating in the experiment. You will not be paired with any of these people. The decisions that they make will have absolutely no effect on you nor will any of your decisions affect them. Most importantly, your decisions will be strictly anonymous and cannot be linked to you in any way.
+
+The experiment is conducted as follows:
+
+• Everyone in Room A and in Room B has been allocated $5.
+
+Earnings: [People in Room A have earned $10 for completing the 30‐minute task and people in Room B have earned $5 for completing the 30‐minute task.]
+
+• The person in Room A (YOU) has been provisionally allocated an additional $5. Participants in Room B have not been allocated this additional $5.
+
+• Your decision is a simple one: decide what portion, if any, of this $5 to transfer to the person you are paired with in Room B. Your choice can be anywhere from $0 to $5, in $0.50 increments. Your take‐home earnings from this experiment will be the summation of your initial $5 allocation and the money from this choice exercise. Likewise, the earnings of the person in Room B will be their initial $5 allocation added to the transfer amount from this exercise.
+
+Take $1: [Your decision is a simple one: decide what portion, if any, of this $5 to transfer to the person you are paired with in Room B. You can also transfer a negative amount: i.e., you can take up to $1 from the person in Room B. Thus, your transfer choice can be anywhere from −$1 to $5, in $0.50 increments. Your take‐home earnings from this experiment will be the summation of your initial $5 allocation and the money from this choice exercise. Likewise, the earnings of the person in Room B will be their initial $5 allocation added to the outcome of this choice exercise.]
+
+Take $5: [Your decision is a simple one: decide what portion, if any, of this $5 to transfer to the person you are paired with in Room B. You can also transfer a negative amount: i.e., you can take up to $5 from the person in Room B. Thus, your transfer choice can be anywhere from −$5 to $5, in $0.50 increments. Your take‐home earnings from this experiment will be the summation of your initial $5 allocation and the money from this choice exercise. Likewise, the earnings of the person in Room B will be their initial $5 allocation added to the outcome of this choice exercise.]
+
+Take $5 Earnings: [Your decision is a simple one: decide what portion, if any, of $5 to transfer to the person you are paired with in Room B. You can also transfer a negative amount: i.e., you can take up to $5 from person B's earnings. Thus, your transfer choice can be anywhere from −$5 to $5, in $0.50 increments. Your take‐home earnings from this experiment will be the summation of your initial $5 allocation and the money from this choice exercise. Likewise, the earnings of the person in Room B will be their initial $5 allocation added to the outcome of this choice exercise.]
+
+You will have five minutes to come to a decision about your choice. Please do not talk to the other people in this room until your session is completed. Do not be concerned if other people make their decisions before you, we will not collect the forms until after 5 minutes.
+
+Are there any questions? Please circle your transfer below:
+
+$0 $0.50 $1 $1.50 $2 $2.50 $3 $3.50 $4 $4.50 $5
+
+Take $1: [−$1 −$0.50] added
+
+Take $5 and Earnings: [−$5? −$0.50] added.
 
 # Criteria
 ## Performance calculation
