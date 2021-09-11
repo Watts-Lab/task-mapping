@@ -31,6 +31,27 @@ filled in. To the left is a timer (showing 32s remaining) along with the reset a
 ## Roles 
 > All participants had the same role.
 
+# Instructions
+> Instructions written by CSS Lab
+> 
+Thank you for your participation today. You'll be taking part in a study involving traveling salespersons (TSP). You will work individually for the first part of the experiment, and in groups of three for the second part.
+
+First you will complete the following pretest to assess your knowledge and experience with solving TSPs.
+
+Now, we will begin the task, in which your goal is to find the shortest path among a number of “cities” on a map, visiting each city except the first exactly once. Each path concludes with a return to the first city; thus the first city is visited twice. When the map appears, please click with the computer’s mouse on the city icons in the sequence corresponding to the path you wish to submit as your answer. There are 17 rounds in which you will have 50 seconds to find the solution to this same map. If you do not submit a path within the 50 seconds, you will automatically move into the next round.
+
+For CT:
+You have been randomly assigned to a group of three. You will now complete the same task, but you will see the previous round’s solutions from the other subjects in your triad (neighbors) along with the distances of those solutions. This will appear below the main task window next to your own previous solution and its distance. 
+
+For IT:
+You have been randomly assigned to a group of three. You will now complete the same task, but you will see the previous round’s solutions from the other subjects in your triad (neighbors) along with the distances of those solutions on rounds 4, 7, 10, 13, and 16. This will appear below the main task window next to your own previous solution and its distance. 
+
+For NT:
+You have been randomly assigned to a group of three. Please complete the task again as you did in the first phase of the task.
+
+Thank you for your time today.
+
+
 # Criteria
 ## Performance calculation
 > The quality of solutions was recorded as a distance (to be minimized) and as a number of correct legs. A leg was considered correct if it was part of an optimal solution.
