@@ -1,31 +1,31 @@
 # Summary
-> Groups were asked to design a house, garage, and pool from a limited set of building blocks and adhere to provided criteria (i.e. building codes)
+Groups were asked to design a house, garage, and pool from a limited set of building blocks and adhere to provided criteria (i.e. building codes)
 
 # References
-> Woolley, A. W., Chabris, C. F., Pentland, A., Hashmi, N., & Malone, T. W. (2010). Evidence for a Collective Intelligence Factor in the Performance of Human Groups. Science, 330(6004), 686 LP – 688. https://doi.org/10.1126/science.1193147
-> 
-> Supplementary information: https://science.sciencemag.org/content/sci/suppl/2010/09/29/science.1193147.DC1/Woolley_SOM_Revision_1.pdf
-> 
-> Process derived fromL: Woolley (2009): https://www.researchgate.net/profile/Anita-Woolley/publication/220520861_Means_vs_Ends_Implications_of_Process_and_Outcome_Focus_for_Team_Adaptation_and_Performance/links/567aa32e08ae19758380fc44/Means-vs-Ends-Implications-of-Process-and-Outcome-Focus-for-Team-Adaptation-and-Performance.pdf
+Woolley, A. W., Chabris, C. F., Pentland, A., Hashmi, N., & Malone, T. W. (2010). Evidence for a Collective Intelligence Factor in the Performance of Human Groups. Science, 330(6004), 686 LP – 688. https://doi.org/10.1126/science.1193147
+
+Supplementary information: https://science.sciencemag.org/content/sci/suppl/2010/09/29/science.1193147.DC1/Woolley_SOM_Revision_1.pdf
+ 
+Process derived from: Woolley (2009): https://www.researchgate.net/profile/Anita-Woolley/publication/220520861_Means_vs_Ends_Implications_of_Process_and_Outcome_Focus_for_Team_Adaptation_and_Performance/links/567aa32e08ae19758380fc44/Means-vs-Ends-Implications-of-Process-and-Outcome-Focus-for-Team-Adaptation-and-Performance.pdf
 
 # Stimuli
 ## The visual components
 > [to-do]
 
 ## Materials for alternative versions of the experiment 
-> If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-> In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
+If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
+In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
 
 # Procedure
 ## Steps
-> 1. Participants were given written and video instructions of building task. 
-> 2. The participants were given scoring information. The scoring was purposefully complex to encourage trade-offs. 
-> 3. The room was video taped with the knowledge and consent of all participants
-> 4. After the video was shown, teams were given 10 minutes to work on a worksheet. The worksheet was used to decide tasks, rough-draft building structure, and a division of roles. 
-> 5. Teams turned the worksheet in to the experimenter.
-> 6. Teams were given 40 minutes to complete building task.
-> 7. At 20 minutes, the team was told 20 minutes had past.
-> 8. At 35 minutes, the teams were told 5 minutes were remaining. 
+1. Participants were given written and video instructions of building task. 
+2. The participants were given scoring information. The scoring was purposefully complex to encourage trade-offs. 
+3. The room was video taped with the knowledge and consent of all participants.
+4. After the video was shown, teams were given 10 minutes to work on a worksheet. The worksheet was used to decide tasks, rough-draft building structure, and a division of roles. 
+5. Teams turned the worksheet in to the experimenter.
+6. Teams were given 40 minutes to complete building task.
+7. At 20 minutes, the team was told 20 minutes had past.
+8. At 35 minutes, the teams were told 5 minutes were remaining.
 
 
 ## Instructions
@@ -124,7 +124,7 @@ color (of the designer’s choice) all the way around.
 
 # Criteria
 ## Performance calculation
-> Points were calculated in dollar amount as shown above. 
+Points were calculated in dollar amount as shown above. 
 
 ## Incentives
-> A $300 prize was offered to the team with the highest score at the end of the study. The points were calculated as shown above. 
+A $300 prize was offered to the team with the highest score at the end of the study. The points were calculated as shown above. 
