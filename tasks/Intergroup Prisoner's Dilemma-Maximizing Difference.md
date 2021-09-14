@@ -34,6 +34,9 @@ Intergroup Prisoner’s Dilemma - Maximizing Difference(IPD-MD)
 Participant, is placed in a group at random and plays the game as instructed
 
 ## Instructions
+![image](https://github.com/Watts-Lab/task-mapping/blob/Intergroup-Prisoner's-Dilemma-Maximizing-Difference/images/Intergroup%20Prisoner's_Dilemma-Maximizing_Difference_Instructions1.png)  
+![image](https://github.com/Watts-Lab/task-mapping/blob/Intergroup-Prisoner's-Dilemma-Maximizing-Difference/images/Intergroup_Prisoner's_Dilemma-Maximizing_Difference_Instructions2.png)
+
 Intergroup Prisoner’s Dilemma(IPD)
 - Six participants are split into two groups, with three people per group, no communication between participants
 - Each participant gets 10 tokens, and can contribute as many as they want to the group
@@ -48,6 +51,7 @@ Intergroup Prisoner’s Dilemma - Maximizing Difference(IPD-MD)
 
 - Alternate version allows for communication within the group before making their independent decisions.
     - If communication was allowed, participants were allowed to meet with their group members for 5 minutes of free discussion, then return to their rooms to make their decisions
+    - In a second study, dictators were told that their decision would be kept confidential
 
 # Criteria
 ## Performance calculation
