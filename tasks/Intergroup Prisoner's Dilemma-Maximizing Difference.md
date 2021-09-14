@@ -51,7 +51,7 @@ Intergroup Prisoner’s Dilemma - Maximizing Difference(IPD-MD)
 
 - Alternate version allows for communication within the group before making their independent decisions.
     - If communication was allowed, participants were allowed to meet with their group members for 5 minutes of free discussion, then return to their rooms to make their decisions
-    - In a second study, dictators were told that their decision would be kept confidential
+    - Participants were told that their decision would be kept confidential
 
 # Criteria
 ## Performance calculation
