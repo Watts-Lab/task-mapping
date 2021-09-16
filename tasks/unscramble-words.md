@@ -25,8 +25,18 @@ From: Warrier V., Bethlehem R.A., Baron-Cohen S. (2017) The “Reading the Mind 
 
 
 ## Instructions
-1. Participants were instructued to complete the tasks with their group on their computer.
-2. Participants were instructured to take a series of personality tests.
+This is a test of your ability to unscramble a group of letters and make a word out of them. 
+Look at the groups of letters below. If they are unscrambled, each group will spell a common English word.
+
+	I. 	mtri
+	II.	nwti
+	III.	ltfa
+
+The first group spells trim when it is unscrambled. The second group spells twin;  and the third group spells flat.
+
+Your score on this test will be the number of words that you unscramble correctly.  Therefore, it will not be to your advantage to spend a lot of time on a hard word. Remember that all of the unscrambled words are common English words;  proper names (of people and places) are not used.
+
+
 
 # Criteria
 ## Performance calculation
