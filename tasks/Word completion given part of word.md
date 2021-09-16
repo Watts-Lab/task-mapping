@@ -32,6 +32,6 @@ words as possible.  Your group will earn 1 point for each correctly spelled Engl
 # Criteria
 ## Performance calculation
 Groups recieved one point for every word they completely correctly  
-
+Alternative:  Participant responses were coded into the following categories: aggressive words, neutral words, ambiguous words, and non-words.
 ## Incentives
 All participants were paid for their participation.
