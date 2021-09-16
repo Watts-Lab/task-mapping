@@ -36,14 +36,17 @@ ask other members of this team for help” on a five-point scale.
 Groups of 1-5 members all shared the same role
 
 ## Instructions
-1. Participants were instructed to individually complete personality tests
-2. Participants were given 10 minutes to come up with as many words beginning with "s" and ending with "n" as possible
-3. Participants were instructed to complete the post-survey scales
+Instructions developed by CSS lab
+
+You will have 10 minutes to come up with as many words as you can that start with S and end with N
+Your group will earn 1 point for each correctly spelled English word you complete.
 
 # Criteria
 ## Performance calculation
-Words had to be in English and spelled correctly
+Groups earned one point for every non-redundant English word
 
 ## Incentives
 Groups earned 1 point for each correctly spelled English word they
 completed. 
+
+All participants were paid for their participation.
