@@ -19,7 +19,12 @@ reached out to instructors
 3. Following the intelligence test, teams began working together on the group tasks in a private laboratory room.
 4. Groups had ten minutes to complete as many of the 36 words they could 
 4b. Other versions of the task use a different time period and different numbers of words, but the other features are the same. Additionally, this task comes from McGrath's broader set of tasks (quadrant 2 in his work) that are intellective: solving problems with a correct answer.
+# Alternative Procedure
+## Steps
 
+1. Participants arrive and are told participants that they were looking at a list of 98 words with letters missing (varying in number), and that their task was to fill in the blanks to make complete words by themselves
+2. Participants were given three minutes to complete as much of the word task as
+they could. 
 ## Instructions
 Reached out to instructors but wrote instructions: 
 
