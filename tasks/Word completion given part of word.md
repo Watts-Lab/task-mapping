@@ -18,7 +18,7 @@ reached out to instructors
 2. Before meeting their teams, individuals completed a brief intelligence test (described below). 
 3. Following the intelligence test, teams began working together on the group tasks in a private laboratory room.
 4. Groups had ten minutes to complete as many of the 36 words they could 
-
+4b. Other versions of the task use a different time period and different numbers of words, but the other features are the same. Additionally, this task comes from McGrath's broader set of tasks (quadrant 2 in his work) that are intellective: solving problems with a correct answer.
 
 ## Instructions
 Reached out to instructors but wrote instructions: 
