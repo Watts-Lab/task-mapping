@@ -9,8 +9,45 @@ Task Source: McGrath, Joseph Edward. Groups: Interaction and performance. Vol. 1
 Supplemental Materials: https://www.science.org/doi/suppl/10.1126/science.1193147/suppl_file/woolley_som.pdf
 Alternative task method: http://www.craiganderson.org/wp-content/uploads/caa/Scales/WordComp.pdf
 # Stimuli
-reached out to instructors 
+Stimuli is unavailable from researchers, stimuli developed by CSS lab 
 
+ocean: _ _cean            
+lackadaisical: lack_ _ _isical 
+disgusted: _ _ _gusted 
+control: con_ _ _l 
+color: _ _ lor 
+nonchalant : non_ _ _lant
+punishment: _ _nishment 
+analyze: ana_ _ze 
+downtown: do_ _ _wn
+eatable: _ _table 
+horrible: hor_ _ _le 
+reaction: _ _action 
+quirky: _ _irky 
+punishment: pun_ _ _ment 
+garrulous: _ _rulous 
+motionless: motio_ _ess
+domineering: _ _ _neering
+driving: dri_ _ing
+thinkable: _ _ _nkable
+grateful: gra_ _ful 
+snails: _ _ails 
+guard: g_ _rd
+depressed: _ _ _ressed 
+station: _ ta_ _ on 
+identify: _ _ entif_ 
+aftermath: aft_ _ mat_ 
+acoustics: _c_ _ stics
+judicious: ju_ _ ciou_ 
+alleged: _lleg_ _ 
+noxious: _ _ xious 
+abashed: ab_ _ he_  
+frightening: _ _ _ ghtening 
+surprise: su_pri_ _ 
+development: _ _vel_pment 
+purple: _ _ rple 
+watermelon: _ _ _ermelon 
+elephant: ele_ _an _ 
 
 # Procedure
 ## Steps
@@ -26,8 +63,6 @@ reached out to instructors
 2. Participants were given three minutes to complete as much of the word task as
 they could. 
 ## Instructions
-Reached out to instructors but wrote instructions: 
-
 Instructions developed by CSS lab 
 
 You will be given a set of 36 words with 2-3 letters missing (ex." _ ech_ _ que" would be "technique"). You will have 10 minutes to complete as many
