@@ -9,7 +9,13 @@ Detailed Task Description: https://doi.org/10.1371/journal.pone.0115212.s002
 
 # Stimuli
 ## The visual components
-CSS lab will need to find images of books.
+![Book 1](https://user-images.githubusercontent.com/78745728/133665104-8fc1bb5e-21d2-4a87-a5e2-64fc81a1d15d.png)
+![Book_2](https://user-images.githubusercontent.com/78745728/133664952-87a6fad0-40cd-4cc7-b110-2aaf9f5e766e.png)
+![Book 3](https://user-images.githubusercontent.com/78745728/133665162-aa168432-cb0e-4856-a330-d02893b4a304.png)
+![Book 4](https://user-images.githubusercontent.com/78745728/133664914-bca42993-d900-40e5-a341-3dc22a557143.png)
+![Book 5](https://user-images.githubusercontent.com/78745728/133665047-9bfe1b8f-acc9-42bc-bd0e-8bd854df1ef5.png)
+![Book 6](https://user-images.githubusercontent.com/78745728/133665006-f160f80b-03c8-4e89-9348-7b69982024a9.png)
+
 
 # Procedure
 ## Steps
