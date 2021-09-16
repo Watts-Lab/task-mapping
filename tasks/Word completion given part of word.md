@@ -7,7 +7,7 @@ Main Paper: https://www.science.org/doi/abs/10.1126/science.1193147
 
 Task Source: McGrath, Joseph Edward. Groups: Interaction and performance. Vol. 14. Englewood Cliffs, NJ: Prentice-Hall, 1984. http://users.ece.utexas.edu/~perry/education/382v-s08/papers/mcgrath84.pdf
 Supplemental Materials: https://www.science.org/doi/suppl/10.1126/science.1193147/suppl_file/woolley_som.pdf
-
+Alternative task method: http://www.craiganderson.org/wp-content/uploads/caa/Scales/WordComp.pdf
 # Stimuli
 reached out to instructors 
 
