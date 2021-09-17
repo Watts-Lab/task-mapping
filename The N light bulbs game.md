@@ -44,7 +44,10 @@ in parallel without interactions.
 
 
 ## Instructions
-ASKED AND WAITING RESPONSE
+Instructions developed by CSS Lab
+
+>You will be presented with a set of 10 lightbulbs. The lightbulbs without a cross can be turned on or off, while the ones with a cross cannot be manipulated. In each round, you can change the state of one lightbulb. Your goal is to search for the best possible solution that gives the highest payoff. Once you manipulate a lightbulb, you will then be informed about your new payoff and will be given the opportunity to return to your previous solution before a new round begins.
+>You will complete a total of 128 levels. 
 
 # Criteria
 ## Performance calculation
