@@ -17,9 +17,9 @@ Link: https://pubsonline.informs.org/doi/pdf/10.1287/mnsc.1120.1683?casa_token=R
 N/A
 ## Materials for alternative versions of the experiment 
 There are three complexity levels for participants to partake in, the total participant pool is broken up into thirds and evenly distributed over the different complexities.  The different levels change the solution landscape to make it easier or harder for the participants.  They are as follows:
-- Low Complexity: the effect of the location selected was turned into a step function for performance
+- Low Complexity: the effect of the location selected was turned into a step function for performance (i.e. the business district will perform better than the stadium and the school will perform better than the busniss district).
 - Medium Complexity: this uses the solution landscape from Ederer and Manso(2013). (https://pubsonline.informs.org/doi/pdf/10.1287/mnsc.1120.1683?casa_token=Rl6cTL3welQAAAAA%3AOaSbmiyqSm7uZxtZ5xzGdKzOzaPDXFTgwPzJGtk9VszT4o7lkEvazwyJVQO5PKf2q__RYBxV&)
-- High Complexity: Added an addition local optima, so there are now two local optima per location
+- High Complexity: Added an addition local optima, so there are now two local optima per location.
 
 The graphs below show the landscapes for the solutions for the best performing color choice.  
 ![image](https://github.com/Watts-Lab/task-mapping/blob/Iterative-Lemonade-Stand/images/Iterative_lemonade_stand_complexity_levels.png)
@@ -27,8 +27,8 @@ The graphs below show the landscapes for the solutions for the best performing c
 # Procedure
 ## Steps
 1) Participants are designated to arrive at the lab at specific times in groups of three.
-2) Subjects are all briefed on the computer interface and how to use the analyst commentary to their advantage.
-3) They are then given a primer on optimization and the impact of multimodal complexity on the solution search in objective terrains, followed by a quiz to test comprehension.  If they did not answer the questions correctly, they were given a more thorough explanation and asked more comprehension questions, if confusion persisted they were dismissed.
+2) Subjects are all briefed on the computer interface and how to use the analyst commentary to their advantage and are given a brief questionnaire containing questions about their demographic and familairity with a set of college level courses.
+3) They are then given a primer on optimization and the impact of multimodal complexity on the solution search in objective terrains, followed by a short quiz to test comprehension.  If they did not answer the questions correctly, they were given a more thorough explanation and asked more comprehension questions, if confusion persisted they were dismissed.
 4) Approximately half the participants were first subjected to independent(nominal) work, where they were given their own terminal, and instance of the problem.  They were allowed no communication.  After phase 1(15 minutes of work) had been completed, they were put into a collaborative structure for another 15 minutes in an attempt to work towards a solution.
     - The other half started in a group setting, where they first worked collaboratively for phase 1, then worked individually to finish the task.
 5) Participants then began to work towards solution development.
@@ -44,12 +44,10 @@ The graphs below show the landscapes for the solutions for the best performing c
 Participants are to act as the owner the of the lemonade stand
 
 ## Instructions
-(NOTE: WORKING ON SECURING MORE MATERIALS FOR PRE-EXPERIMENT PRIMER AND QUESTIONNAIRE)
-
 When participants are in the nominal setting, they are instructed to not communicate with each other at all, and each participant worked on their own interface. In the collaborative setting, they worked with their group on a single interface.  Whatever setting they started in, participants would work for 15 minutes(phase 1), then switch to the other setting(nominal -> collaborative, collaborative -> nominal) they would end the task by spending 15 minutes working towards a solution(phase 2).
 ![image](https://github.com/Watts-Lab/task-mapping/blob/Iterative-Lemonade-Stand/images/Iterative_lemonade_stand_lab_protocol.png)
 
-Provided below is an example of the interface.  It is described as a simple excel program that allows users to tweak five variables(price, lemon content, sugar content, color and location).  This worked over top of the fixed perfomance landscapes that are described in the "Materials for alternative versions of the experiment" section.  All solutions submitted by the participant were recorded, and feedback was given in terms of whether they performed better or worse, and and the feedback would note if it was the best performance so far.  This is designed to mimic real market feedback.  
+Provided below is an example of the interface.  It is described as a simple excel program that allows users to tweak five variables(price, lemon content, sugar content, color and location).  This worked over top of the fixed perfomance landscapes that are described in the "Materials for alternative versions of the experiment" section.  All solutions submitted by the participant were recorded, and feedback was given if the changes made performed better. The feedback would note if it was the best performance so far.  This is designed to mimic real market feedback.  It is important to note that if the changes did not have a positive impact on profits, no feedback was given.
 ![image](https://github.com/Watts-Lab/task-mapping/blob/Iterative-Lemonade-Stand/images/Iterative_lemonade_stand_interface.png)  
 
 After the experiment was completed, participants were given the following short questionnaire, and they recorded their answers.  
