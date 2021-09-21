@@ -35,10 +35,12 @@ All groups are to act as juries.  Juries with the inadmissable evidence are supp
 ## Performance calculation
 Not addressed within the paper, the focus of the experiment was to test the effects of group deliberation on each jurors specific bias stemming from inadmissable evidence.
 
-Perceptions of Guilt: Participants filled in pre and post-deliberation questionnaires, regarding their perceptions of the defendants guilt, and their confidence in their verdict.
-Guilt Score: 9-point grading scale.  Ranging from 1(definitely not guilty) to 9(definitely guilty).  This scale was to rank the degree to which they thought the defendant was culpable, regardless of their verdict.
-Confidence Scale: Participants indicated on a 9-point scale the degree of confidence they had in their verdict.  The scale ranged from, 1(not at all) to 9(very confident).
+Perceptions of Guilt: Participants filled in pre and post-deliberation questionnaires, regarding their perceptions of the defendants guilt, and their confidence in their verdict.  
+Guilt Score: 9-point grading scale.  Ranging from 1(definitely not guilty) to 9(definitely guilty).  This scale was to rank the degree to which they thought the defendant was culpable, regardless of their verdict.  
+Confidence Scale: Participants indicated on a 9-point scale the degree of confidence they had in their verdict.  The scale ranged from, 1(not at all) to 9(very confident).  
 Culpability Score: Participants in the inadmissable condition also ranked thei predicted estimate of how guilty they would have percieved the defendant if the critical evidence was not presented.  This was also ranked on a 9-point scale.
+
+If the time limit was reached, and no verdict was reached by the jury, the experiment ended in a hung jury.
 
 ## Incentives
 Participants in the experiment were incentivised with partial credit for a class.
