@@ -17,8 +17,8 @@ Link:https://d1wqtxts1xzle7.cloudfront.net/48887105/Visual_attention_Individual_
 
 # Stimuli
 ## The visual components
-Sample game screen
-![image]()
+Sample game screen  
+![image](https://github.com/Watts-Lab/task-mapping/blob/Space-Fortress/images/Space_Fortress_Diagram.png)
 ## Materials for alternative versions of the experiment 
 N/A
 
@@ -36,14 +36,16 @@ Training and Testing:
 Participants work either in teams or alone, to train and then compete in the Space Fortress game.
 
 ## Instructions
-(Waiting on a response from experimenters)
+![image](https://github.com/Watts-Lab/task-mapping/blob/Space-Fortress/images/Space_Fortress_Tasks_Description_Edwards.png)
+
+(Waiting on a response from experimenters for more)
 
 # Criteria
 ## Performance calculation
 The score of the game is how performance is evaluated.  Scoring varries between experiments.  Generally speaking, participants score points for damaging the fortress, destroying enemy mines, energizing friendly mines, selecting point bonuses when available, and destroying the fortress.  Participants will lose points for firing missiles after their supply is depleted, taking damage from a mine or fortress, and destroying their ship.
 
-General Scoring as defined by Mané and Donchin(1989):
-![image]()
+General Scoring as defined by Mané and Donchin(1989):  
+![image](https://github.com/Watts-Lab/task-mapping/blob/Space-Fortress/images/Space_Fortress_Scoring(Mane).png)
 
 Additionally, Edwards et. al. introduced additional scoring metrics.  They offered addition points for controlling the ship well.  Control points were awarded when the ship was between certain bounds, and points were lost if the ship was piloted off the screen, or entering a boundary around the fortress.  Additionally points were added to the score if the ships velocity was kept below a critical velocity.  The last additional criteria introduced in this experiment was speed at which participants interacted with mines.
 
