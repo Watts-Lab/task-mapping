@@ -29,7 +29,13 @@ Screening of Participants:
 - Participants are scored on how quickly and accurately they destroy the mines, and are either kept on for the experiment or dismissed based on their best score of three, two minute aiming drills.
 Training and Testing:
 - Participants are scheduled to participate in 10 one hour training sessions, spread over two consecutive weeks(five days a week, for two weeks).
-- During practice periods participants were subjected to different training protocols (based on the description of the experiment being ran, for example in Arthur et al(1995) there were five different training protocols, LIST THEM HERE).
+- During practice periods participants were subjected to different training protocols.
+  - Based on the description of the experiment being ran, for example in Arthur et al(1995) there were five different training protocols.  
+        - Individual: one participant controls everything.  
+        - AIM-Dyad: one participant controls the joystick(pilot/gunner) while the other controls response tasks(mine/missile manager).  
+        - Dyad-Player: paired with a Dyad-Observer, the Dyad-Player controlled the joystick, but not the response tasks, this allowed them to better focus on their tasks.  
+        - Dyad-Observer: simply watched the Dyad-Player, did not communicate with their partner, just watched and learned from their partners mistakes.  
+        - Test-Only Dyad: These subjects were given a partner, but did not train on the space fortress game, rather they trained on a hand held game (Road Race by Tiger Electronics Inc., 1991).  
 - Once the training period was over there is a testing phase, where participants completed two, three-minute test games and two, three-minute rest periods.  All test games were played individually, regardless of training protocol followed.
 
 ## Roles 
@@ -38,7 +44,14 @@ Participants work either in teams or alone, to train and then compete in the Spa
 ## Instructions
 ![image](https://github.com/Watts-Lab/task-mapping/blob/Space-Fortress/images/Space_Fortress_Tasks_Description_Edwards.png)
 
-(Waiting on a response from experimenters for more)
+Base game description interpreted from Mané, Amir, and Emanuel Donchin(1989):  
+The objective of the game is to launch missiles from your spaceship and destroy a space fortress.  In addition to this objective, the subject wants to avoid damaging the ship. The user faces a screen during play, and wears headphones that present sound effects for firing missiles and explosions.   
+The subject controls the ship using a joystick and a trigger.  The ship moves in a frictionless environment and thus will continue to move after input is no longer given.  To change direction the subject will move the joystick left or right which causes the ship to rotate.  Moving the joystick forward or backward causes the ship to accelerate. When the ship reaches the edge of the screen it enters “hyper-space” and immediately reappears on the other side of the screen.  
+To damage the fortress, the subject must first make it vulnerable by hitting it with 10 missiles fired with at least 250msec between shots.  Once it is vulnerable it can be destroyed with a burst of two missiles fired with less than 250msec between them.  The number of hits scored on the fortress is always displayed next to the fortress.  
+The fortress will track the subjects movement and will always face the ship.  The fortress will fire it’s own projectiles (called shells) at the ship, and will create mines which will chase the ship, and will cause damage unless action is taken against them.  There are two types of minds, friendly and enemy.  They are labeled with a letter to identify the type, this letters meaning is given to the participant before the game begins.  Enemy mines must be destroyed with a missile.  Friendly mines need to be energized.  The user must switch weapon systems by double tapping a button.  Once the weapon system is switch they can launch a missile at the mine, and it will be energized, after it is energized it will score a hit on the fortress.  If the subject fails to energize a friendly mine or destroy and enemy mine it will disappear after 10 seconds.  While mines are on the screen, the user cannot score hits on the fortress.  
+If a mine or fortress shell hits the ship it does damage.  If the ship is hit four times it is destroyed, this reset the game.  
+The subject is given 100 missiles at the start of the game, the number of remaining missiles is always displayed on the screen.  Once the supply is depleted, the subject can continue firing missiles at a cost of points every time a missile fired.  Opportunity to receive extra missiles is provided periodically.  This is done by prompting the user using a sequence of symbols appearing underneath the fortress.  Every time a sequence of two dollar signs appears under the fortress, the user can receive extra missiles or extra points by pressing one of two buttons while the second dollar sign in the sequence is present on the screen.
+Score is computed and displayed throughout the game.
 
 # Criteria
 ## Performance calculation
