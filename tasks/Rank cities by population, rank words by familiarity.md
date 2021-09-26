@@ -14,6 +14,7 @@ Main paper: http://collections.uakron.edu/digital/collection/p15960coll1/id/2125
 ![city6](/images/city6.png)
 ![city7](/images/city7.png)
 ![city8](/images/city8.png)
+![city9](/images/city9.png)
 
 
 # Procedure
