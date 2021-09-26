@@ -41,6 +41,4 @@ Population familiarity,
 Solution multiplicity
 
 ## Incentives
-A formal specification of the incentives for participation.   
-
-Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+None listed
