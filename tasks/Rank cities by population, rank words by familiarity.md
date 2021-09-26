@@ -6,7 +6,14 @@ Main paper: http://collections.uakron.edu/digital/collection/p15960coll1/id/2125
 
 # Stimuli
 ## The visual components
-![City1](/images/City1.png)
+![city1](/images/city1.png)
+![city2](/images/city2.png)
+![city3](/images/city3.png)
+![city4](/images/city4.png)
+![city5](/images/city5.png)
+![city6](/images/city6.png)
+![city7](/images/city7.png)
+![city8](/images/city8.png)
 
 
 # Procedure
