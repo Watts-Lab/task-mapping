@@ -21,7 +21,7 @@ Main paper: http://collections.uakron.edu/digital/collection/p15960coll1/id/2125
 ## Steps
 Groups are faced with the lists of cities or words, as seen above. 
 
-Participants are then read the instructions, and are to collectively complete the rankings. 
+Participants are then read the instructions, and are asked to collectively complete the rankings. 
 
 Time and accuracy are recorded.
 
