@@ -8,9 +8,7 @@ NASA task: Hall, J., & Watson, W. H. The effects of a normative intervention on 
 
 # Stimuli
 ## The visual components
-
-
-## Materials for alternative versions of the experiment 
+![NASA](/images/NASA.png)
 
 
 # Procedure
@@ -28,11 +26,16 @@ Simulation groups:
 > > 2. Groups were formed within two ability strate; above median ability and below median ability. 200 teams were sampled for each size and ability level.
 > > 3. Groups were formed within size specific ability bands. Fifty groups were simulated for each size and ability level.
 
+> AM NOT SURE WHAT TO SAY ABOUT UNIT AND NONUNIT WEIGHT
+
 ## Roles 
+The participants were mangers and graduate management students, and were to participate individually and in the group setting they were assigned.
 
 
 ## Instructions
+Adapted by the CSS Lab
 
+This task is an exercise in group and/or individual problem solving. Imagine yourself crash landed on the moon 200 miles from base. All but 15 pieces of equipment have been destroyed. The surviving items are to be ranked in order of their declining contribution to survival on the long trek to safety. 
 
 # Criteria
 ## Performance calculation
