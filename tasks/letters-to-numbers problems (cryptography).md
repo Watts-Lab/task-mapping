@@ -19,13 +19,15 @@ Main Paper: https://www.sciencedirect.com/science/article/pii/S0749597802000031
 3. Each member then wrote a proposed single hypothesis (e.g., A=7) on his/her response sheet, and the group discussed and proposed a single hypothesis, which the recorder wrote on the group response sheet. 
 4. The experimenter states whether or not the group hypothesis was correct, and the recorder circled Y (for Yes it is correct) or N (for No it is not correct) on a column on the response sheet. 
 5. Each group member then filled out a proposed full coding of the 10 letters to the 10 numbers (e.g., A=4,B=9,…,J=7) on his/her response sheet, and the group discussed and proposed the full coding, which the recorder filled out on the group response sheet. 
-6. After each trial the experimenter checked the coding of the 10 letters to numbers by the group and stated whether or not it was completely correct. The full correct group coding solved the problem, whereas an incorrect coding required another trial, up to a maximum of 10 trials. I
+6. After each trial the experimenter checked the coding of the 10 letters to numbers by the group and stated whether or not it was completely correct. The full correct group coding solved the problem, whereas an incorrect coding required another trial, up to a maximum of 10 trials.
 > Individuals followed the same procedure of proposed equations, one hypothesis, and full coding of the 10 letters to the 10 numbers. All group members and individuals had additional scratch paper for notes.
-7. After the problem was over the experimenter explains the purpose of the research to the participants, gives them a written debriefing with a reference for further reading, thanks them, and asks them not to discuss the experiment with other potential participants.
+7. After the problem was over the experimenter explained the purpose of the research to the participants, gave them a written debriefing with a reference for further reading, thanked them, and asks them not to discuss the experiment with other potential participants.
 
 
 ## Roles 
-Group Recorder: writes down group responses on group response sheet 
+Group Recorder: writes down group responses on group response sheet
+Experimenter: Verifies group hypotheses and equations
+
 
 ## Instructions
 This is an experiment in problem solving. The objective is to figure out a code in as few trials as possible. The numbers 0–9 have been coded as the letters A–J in some random order. You will be trying to find out which letter corresponds to which number. It is important to remember that all we are doing is changing the characters used to represent the numbers. We are not changing the way that the number system works. That is, we are still using the same decimal number system you have been using all of your life. Below is an example of a random code:
@@ -34,6 +36,7 @@ This is an experiment in problem solving. The objective is to figure out a code 
 
 
 First you will come up with addition or subtraction equations using the letters A–J that will be solved by the experimenter who will give you the answer in letter form. Then you will make a guess as to what one of the letters represents, and we will tell you whether or not the guess is correct. Then you will propose the full mapping of the 10 letters to the 10 numbers. When you have proposed the full correct mapping of the 10 letters to the 10 numbers you will have solved the problem. The objective is to solve the problem in as few trials as possible. Here are four example trials using the random code above. Note that underlined letters represent experimenter feedback.
+
 ![ Coding used in instructions](https://user-images.githubusercontent.com/78745728/134813882-c0cd99b1-fdff-4eb1-94be-27ef419e4906.png)
 
 On the first trial the person chooses the equation A + B= and the experimenter tells the person that the solution to this equation is C. This is because A=3 and B=5, which sums to 8, the letter represented by C. The person then guesses that A represents the number 1 and the experimenter indicates that this is not the case, or False. On the second trial the person asks the solution to the equation B + C= and is told that the answer is EA. This is because B=5 and C=8, which sums to 13 or EA. Note that on the third trial the person chooses to add three letters together. You may use as many letters as you desire in your equations. Note that on the fourth trial the person chooses to use a subtraction equation. You may use either addition or subtraction equations as you see fit
@@ -41,7 +44,7 @@ On the first trial the person chooses the equation A + B= and the experimenter t
 
 # Criteria
 ## Performance calculation
-The objective is to propose the full correct mapping of the 10 letters to the 10 numbers solve the problem in as few trials as possible. Performance calculation is based on number of trials used 
+The objective is to propose the full correct mapping of the 10 letters to the 10 numbers solve the problem in as few trials as possible. Performance calculation is based on the number of trials used, letters identified per trial, letters used per equation, and weighted letter identification (inversely proportional to the number of trials required to identify it).
 
 ## Incentives
-Some participants recieved payment while others recieved course credit for their participation. 
+Twenty groups and 80 individuals were paid recruits and 62 groups and 248 individuals received course credit for participation.
