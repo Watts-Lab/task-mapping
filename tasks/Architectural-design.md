@@ -30,100 +30,13 @@ In the case that the complete set is not possible, provide enough unique example
 
 ## Instructions
 
+Participants were shown cost tables for each individual structure, bonuses for whether the building could be lifted, flipped over and/or dropped as well as rewards for the aesthetic appeal of the building.
+
+Additionally there were rules governing the design of each building. The types of buildings were a house, garage and pool.
+
+Verbatim instructions shown to the participants can be found [here](https://docs.google.com/document/d/1_yMJ766Yo_GU_Eu6mNXrEs5sIusb-0vs5DespiykqcA/edit?usp=sharing).
+
 Documentation for the instructions can be found [here](https://drive.google.com/drive/folders/1W7pByMc7M1nKAEVNsp56huhRR7PwqHJ_?usp=sharing).
-
-### The following rules were shown to the participants (verbatim):
-
-#### House
-**Square footage (each “knob” is equal to one square foot):**
-• $10 per square foot on the ground floor
-• $20 per square foot on the second floor
-• $50 per square foot on subsequent floors
-**Quality: assessed using the “lift, flip, and drop test”**
-• No value added for buildings that cannot be lifted without
-any pieces falling off
-• $1,000 bonus for buildings that can be lifted
-• $1,500 bonus for buildings that can be lifted and flipped
-over
-• $2,000 bonus for buildings that can be lifted, flipped over,
-and dropped
-
-**Aesthetics: the attractiveness of your building will be assessed according to the following criteria:**
-• No value added for buildings that are a total eyesore
-• $1,000 bonus for good use of color
-• $1,500 bonus for good use of color and symmetry
-• $2,000 bonus for a “work of art”
-
-**Additional Rules:**
-• The walls separating the individual stories of the house
-must be least two (2) blocks high.
-• Each story of the house must be completely enclosed by
-a floor and a ceiling for it to count toward the point total. The
-ceiling of one story can also be considered the floor of the
-next story.
-• The walls around the outside of the house must be two
-knobs thick.
-• There must be a cement foundation (a layer of white Lego
-bricks) between the house and the ground, though it does not
-need to be directly touching the ground. This should be the
-same dimension as the first story of the house and can, but is
-not required to, serve as the floor of the first story as well.
-• There must be a solid layer of blue blocks between the top
-of the house and the sky. This should be the same dimension
-as the top story of the house and can, but is not required to,
-serve as the roof of the house.
-
-#### Garage
-
-**Square footage (each “knob” is equal to one square foot):**
-$20 per square foot
-Quality: assessed using the “lift, flip, and drop test”
-• No value added for buildings that cannot be lifted without
-any pieces falling off
-• $1,000 bonus for buildings that can be lifted
-• $1,500 bonus for buildings that can be lifted and flipped
-over
-• $2,000 bonus for buildings that can be lifted, flipped over,
-and dropped
-**Aesthetics: the attractiveness of your building will be assessed according to the following criteria:**
-• No value added for buildings that are a total eyesore
-• $1,000 bonus for good use of color
-• $1,500 bonus for good use of color and symmetry
-• $2,000 bonus for a “work of art”
-**Car spaces**: $2,000 for each individual parking space in the
-garage
-• Parking spaces must be completely enclosed and at least
-20 square feet (e.g., exposed knobs) in size and have a door
-opening that is at least 4 knobs wide and 2 blocks high to
-qualify for this bonus.
-**Additional Rules:**
-• The walls of the garage can be either one knob or two
-knobs thick.
-• There must be a cement foundation (a layer of white Lego
-bricks) between the garage and the ground, though it does not
-need to be directly touching the ground. This can, but is not
-required to, serve as the floor of the garage as well.
-• There must be a solid layer of blue blocks between the top
-of the garage and the sky. This should be the same dimension
-as the top of the garage and can, but is not required to, serve
-as the roof of the garage.
-• The garage must be completely enclosed on the top, bottom, and sides, except for specified doors.
-
-#### Pool
-**Square footage** (each “knob” is equal to one square foot):
-$50 per square foot
-**Aesthetics**: the attractiveness of your pool will be assessed
-according to the following criteria:
-• No value added for pools that are a total eyesore
-• $1,000 bonus for good use of color
-• $1,500 bonus for good use of color and symmetry
-• $2,000 bonus for a “work of art”
-**Additional Rules:**
-• There must be a diving board included.
-• The floor of the pool must be blue.
-• The walls around the edge of the pool should be only
-one knob thick and three blocks high and should be one solid
-color (of the designer’s choice) all the way around.
 
 # Criteria
 ## Performance calculation
