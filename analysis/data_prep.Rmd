@@ -34,7 +34,7 @@ ordinals <-
   select(name, levels, focus)
 
 clean_responses <- raw_responses %>%
-  select(-platform, -createdAt, -updatedAt, -`_id`) %>%
+  select(-platform, -createdAt, -`_id`) %>%
   mutate(
     across(# this sets our variables to the right type
       ordinals$name,
@@ -43,7 +43,7 @@ clean_responses <- raw_responses %>%
       )$levels[[1]])),
     user = trimws(gsub("  ", " ",
                        gsub(
-                         "( and |, |&)",
+                         "( and |, |&|\\/|;)",
                          " \\| ",
                          gsub(
                            "(Subramaniam|Bottcher|Sampath|Cullen|Balasubramanian)",
@@ -64,6 +64,9 @@ clean_responses <- raw_responses %>%
       TRUE ~ "individual"),
     name_clean = trimws(gsub(
       "  ", " ",
+      gsub(".md","",
+      gsub("judgement","judgment",
+      gsub("and slogan", "slogan",
       gsub(
         "finding the maximum",
         "find the maximum",
@@ -84,23 +87,26 @@ clean_responses <- raw_responses %>%
                              ))
                       ))
                ))
-        )
-      )
+        )))
+      ))
     )),
     performance_all = paste(performance_all,sep = ", ")
   ) %>%
   left_join(tasks %>% mutate(name_clean = trimws(gsub(
     "  ", " ",
+    sub("(anagrams)","",
     sub("task", "",
+        gsub(" and its variants","",
+             gsub("and slogan", "slogan",
         gsub(
           "various versions", "",
           gsub("hidden profile", "",
                gsub("[\"()-]", " ",
-                    tolower(name)))
-        ))
+                    tolower(name))))
+        ))))
   ))) %>% select(name, name_clean)) %>%
   mutate(task = name) %>%
-  select(task, stage, user, everything())
+  select(task, stage, user, updatedAt ,everything())
 
 unrecognised_tasks <-
   clean_responses %>% select(task, name_clean) %>% filter(is.na(task)) %>% arrange(name_clean)
@@ -110,8 +116,9 @@ unrecognised_tasks <-
 # Store the main tables to csv so other people can use them.
 agreed_responses <- clean_responses %>%
   filter(stage == "agreement") %>% 
-  select(-stage,-user) %>%
+  select(-stage,-user,-updatedAt) %>%
   arrange(task)
+
 agreed_responses %>% 
   write_csv("../task_map.csv")
 
@@ -119,6 +126,8 @@ questions %>%
   select(name,text,focus,answer_choices,answer_type,source) %>% 
   arrange(name) %>% 
   write_csv("../questions.csv")
+
+clean_responses %>% arrange(task,updatedAt)
 ```
 
 ```{r}
@@ -126,10 +135,9 @@ questions %>%
 numerical_responses_matrix <- agreed_responses %>% 
   select(task,ordinals$name) %>% 
   column_to_rownames(var = "task") %>% 
-  mutate(across(everything(),as.numeric)) %>% 
-  na.omit()
+  mutate(across(everything(),~ if_else(is.na(as.numeric(.)),0,as.numeric(.))))
 
-pca = prcomp(numerical_responses_matrix)
+pca = prcomp(~., data = numerical_responses_matrix,na.action = na.exclude)
 summary(pca)
 plot(pca)
 biplot(pca,var.axes = FALSE,)

@@ -25,7 +25,6 @@ From: Warrier V., Bethlehem R.A., Baron-Cohen S. (2017) The “Reading the Mind 
 
 
 ## Instructions
-Scrambled Words
 
 This is a test of your ability to unscramble a group of letters and make a word out of them. 
 Look at the groups of letters below. If they are unscrambled, each group will spell a common English word.
