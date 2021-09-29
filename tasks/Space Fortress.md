@@ -27,8 +27,12 @@ N/A
 Screening of Participants:
 - Participants are subjected to an aiming drill, as described in Donchin and Mané(1989).  The aiming drill is a simplified version of the Space Fortress game.  During the drill, the ship is located in the center of the screen, and has to rotate to shoot at mines that appear one at a time in 24 locations around the screen.  Mines do not move and will disappear if not struck by a missile within 10 seconds.
 - Participants are scored on how quickly and accurately they destroy the mines, and are either kept on for the experiment or dismissed based on their best score of three, two minute aiming drills.
+
 Training and Testing:
 - Participants are scheduled to participate in 10 one hour training sessions, spread over two consecutive weeks(five days a week, for two weeks).
+- Session (day) 1 of each two-week period of the study consisted of a screening session, two baseline Space Fortress games.
+- Sessions (days) 2-10 had 8 successive 3-minute practice periods followed by a test sequence of two, 3-minute test games and two, 3-minute rest periods. The order of rest (R) and test (T) was RTRT for half the subjects and TRTR for the other half.
+During the rest intervals, subjects completed a detailed survey 1 of their experience with specific video games.
 - During practice periods participants were subjected to different training protocols.
   - Based on the description of the experiment being ran, for example in Arthur et al(1995) there were five different training protocols.  
         - Individual: one participant controls everything.  
