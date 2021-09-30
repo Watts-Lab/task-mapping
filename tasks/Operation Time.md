@@ -7,7 +7,7 @@ Main paper: http://collections.uakron.edu/digital/collection/p15960coll1/id/2125
 # Stimuli
 ## The visual components
 Solution:
-
+![operation2](images/operation2.png)
 
 
 # Procedure
@@ -23,6 +23,8 @@ Each partipant has the same role
 You are a five man team whose job is to manufacture a product, the completion of which requires the operation of five machines. In the past, you have rotated position to avoid boredom, but each man has spent most of the time operating the machine that he prefers. John prefers machine 3, Steve machine 2, Walt machine 4, Robert machine 1, and Dennis machine 5.
 
 The Methods man has been around checking the time each man requires to complete the operation on one product when he is operating each of the five machines. He has come up with the following results:
+
+![operation1](images/operation1.png)
 
 Your foreman noticed that when each man runs the machine that he most prefers, the total time spent on each product is 16 minutes. It seems to him that a different method of operation would result in substantial savings. He believes in letting his workers make their own decision, in so far as possible, and has asked that you consider the problem and try to come up with a plan that will be more efficient than the present mode of operation.
 
