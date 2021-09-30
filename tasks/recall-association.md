@@ -1,14 +1,12 @@
 # Summary
 
 This study was designed to understand collaborative inhibition causes. Researchers compare individual recall (control) to two collaborative group conditions, 
-one in which people took turns recalling items together (See Group), the other in which people take turns recalling items but are not aware of the items their partner 
-has recalled (No See Group). Findings how that collaborative inhibition is due to interference caused by the product of recall- sharing answers with each other,
-not the process of taking turns without sharing. 
+one in which people took turns recalling items together (called the See Group) and the other in which people take turns recalling items but are not aware of the items their partner has recalled (No See Group). Findings how that collaborative inhibition is due to interference caused by the product of recall- sharing answers with each other, not the process of taking turns without sharing. 
 
 
 # References
 
- Paper Link: https://link.springer.com/article/10.3758/BF03196740
+Paper Link: https://link.springer.com/article/10.3758/BF03196740
 
 Papers with Similar Tasks: 
 
@@ -42,14 +40,15 @@ Step Three: Participants complete addition tasks to reduce recency effects
 
 Step Four: Participants enter recall task based on assigned group  
 
-Nominal Condition: participants would work alone to recall words: Tested individually 
+Nominal Condition: Participants would work alone to recall words and were tested individually 
 
 Collaborative Group See Condition: participants worked in pairs and took turns recalling words and were showed the words that each other were recalling. They sat opposite each other at a table 
 
-Collaborative Group No See Condition: participants recalled word lists in pairs, using a turn-taking method however they did not  see what word the other recalled
+Collaborative Group No See Condition: participants recalled word lists in pairs, using a turn-taking method however they did not see what words the other person recalled
      
 ## Roles 
 
+Participants worked in collaborative or non-collaborative roles, completing an individual recall survey afterward
 
 ## Instructions
 > Instructions written by CSS Lab
@@ -66,15 +65,14 @@ You will be working in pairs to write down as many items as you can from the wor
 
 This turn-taking procedure will be repeated until 1 person fails to recall a new item within 10 sec. The recall sheet will then be handed back to your partner. If they fail to recall another item within 10 sec for the third time, they will be excluded from further recall, and you will be given the chance to recall the remaining items.
 
-See Condition: 
-You will be working in pairs to write down as many items as you can from the word lists, you will have individual answer sheets. You will see some list names (bread, man, music, and sleep) are provided at the top of the recall sheet. One member of your team will begin by writing down one of the items, you must then tell your partner to begin. You cannot discuss the items with eachother.  
+No See Condition: 
+You will be working in pairs to write down as many items as you can from the word lists, you will have individual answer sheets. You will see some list names (bread, man, music, and sleep) are provided at the top of the recall sheet. One member of your team will begin by writing down one of the items, you must then tell your partner to begin. You cannot discuss the items with each other.  
 
 This turn-taking procedure will be repeated until 1 person fails to recall a new item within 10 sec. Your partner can then start to fill out their sheet.  If they fail to recall another item within 10 sec for the third time, they will be excluded from further recall, and you will be given the chance to recall the remaining items
 
 Final Recall: 
 
 You will now work independently on recalling list items. Please fill out the answer sheet with as many words as you can remember in any order. 
-
 
 # Criteria
 ## Performance calculation
@@ -83,4 +81,4 @@ Performance of each group is determined by number of words recalled correctly on
 
 ## Incentives
 
-There were no incentives for the project all participants were volunteers 
+There were no incentives for the project. All participants were volunteers.
