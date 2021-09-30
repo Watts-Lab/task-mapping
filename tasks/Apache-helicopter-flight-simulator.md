@@ -1,5 +1,5 @@
 # Summary
-In Experiment 1, using a a PC-based Apache helicopter flight simulator called Longbow2, participants in groups of 3 were given 15 minutes to complete various tasks (e.g. destroying enemy tanks) and stay alive. In Experiment 2, participants used low-fidelity tank battle simulation called Team Wargame Interaction Simulation Training in groups of 3. Teams were asked to take over enemy pillboxes, pick them up, and relocate them in friendly territory, where they were rebuilt as allied weapons in the simulation.
+In Experiment 1, using a a PC-based Apache helicopter flight simulator called Longbow2, participants in groups of 3 were given 15 minutes to complete various tasks (e.g. destroying enemy tanks) and stay alive. In Experiment 2, participants used a low-fidelity tank battle simulation called Team Wargame Interaction Simulation Training in groups of 3. Teams were asked to take over enemy pillboxes, pick them up, and relocate them in friendly territory, where they were rebuilt as allied weapons in the simulation.
 
 The paper varied the cross-training of participants.
 
