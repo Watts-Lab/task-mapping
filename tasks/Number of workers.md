@@ -6,7 +6,11 @@ Main paper:http://collections.uakron.edu/digital/collection/p15960coll1/id/21257
 
 # Stimuli
 ## The visual components
-![operationtim](/images/operationtim.png)
+One copy of each of the problem statement is provided to each group member:
+
+![workers](/images/workers.png)
+
+
 
 # Procedure
 ## Steps
@@ -17,6 +21,8 @@ They then read the instructions, and must collaborate and share information in o
 Each participant can either submit their own or someone else's answer. The administrator will then collect all solutions.
 
 The group performance score is dependent on the speed each participant submits a solution.
+
+The correct solution is 7
 
 ## Roles 
 There is an administrator of the task and the participants. Participants all have the same role.
