@@ -47,9 +47,6 @@ If the instructions are not available ask the paper's authors, however and if th
 
 # Criteria
 ## Performance calculation
-A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
-
-Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
 
 This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
 # Experiment 1
