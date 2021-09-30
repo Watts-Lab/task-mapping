@@ -8,6 +8,10 @@ Main paper: http://collections.uakron.edu/digital/collection/p15960coll1/id/2125
 ## The visual components
 One copy of each of the problem statement is provided to each group member:
 
+![plane](/images/plane.png)
+
+
+
 # Procedure
 ## Steps
 Partipants receive paper, pencil, and a copy of the instructions. 
