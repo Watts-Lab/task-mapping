@@ -51,7 +51,6 @@ If the instructions are not available ask the paper's authors, however and if th
 # Criteria
 ## Performance calculation
 
-This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
 ## Experiment 1
 Cross-Training Effectiveness: Cross-training effects were evaluated by participant responses to a 15-item multiple-choice scale that measured interpositional knowledge. Questions asked participants about their knowledge of team members’ equipment and task-related responsibilities. Sample items included “When the helicopter is destroying an enemy, what must the pilot do?” and “Who is responsible for identifying targets?” Participants were given 1 point for each correct item. Items were then summed to form a total score ranging from 0 to 15.
 
