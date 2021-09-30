@@ -7,7 +7,7 @@ Main paper: http://collections.uakron.edu/digital/collection/p15960coll1/id/2125
 # Stimuli
 ## The visual components
 Solution:
-![operation2](images/operation2.png)
+![operationtim](/images/operationtim.png)
 
 
 # Procedure
@@ -24,7 +24,7 @@ You are a five man team whose job is to manufacture a product, the completion of
 
 The Methods man has been around checking the time each man requires to complete the operation on one product when he is operating each of the five machines. He has come up with the following results:
 
-![operation1](images/operation1.png)
+![operationtime](/images/operationtime.png)
 
 Your foreman noticed that when each man runs the machine that he most prefers, the total time spent on each product is 16 minutes. It seems to him that a different method of operation would result in substantial savings. He believes in letting his workers make their own decision, in so far as possible, and has asked that you consider the problem and try to come up with a plan that will be more efficient than the present mode of operation.
 
