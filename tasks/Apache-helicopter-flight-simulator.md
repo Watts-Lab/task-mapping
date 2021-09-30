@@ -18,14 +18,14 @@ If no visual components are provided or seem not to be needed describe an interf
 # Procedure
 ## Steps
 
-# Experiment 1
+## Experiment 1
 1. Participants received 1.5 hr of role-specific task skills training.
 2. Three role-specific 15-item position competency tests were administered to participants on an individual basis immediately following training. For each incorrect item, the experimenter spent additional time with participants to ensure that role-based tasks were mastered
 3. Participants received cross-training manipulation followed by 3 15 minute practice sessions.
 4. Team members then individually responded to manipulation check items and completed concept maps.
 5. Team members performed the task in two parallel, counterbalanced 15-min performance episodes.
 
-# Experiment 2
+## Experiment 2
 1. Participants received 2 hr of individual skills training on tank driving, weapon systems, and team strategies for movement across the battlefield and capturing enemies. Experimenters used coaching and task checklists to ensure that teams reached a basic level of competency on the simulation before advancing further in the experiment
 2. Teams received the cross-training manipulation followed by a 35-min practice session. Teams in the positional rotation condition spent 14 min of this practice period in other members’ roles (7 min per role).
 3. Team members then individually responded to manipulation check items and completed concept maps.
@@ -33,10 +33,13 @@ If no visual components are provided or seem not to be needed describe an interf
 
 
 ## Roles 
-# Experiment 1
+## Experiment 1
 Pilot: Flies the aircraft
 Gunner: Operates the weapons system
 Radar Specialist: Responsible for monitoring and interpreting radar systems containing critical enemy information.
+
+## Experiment 2
+Three non-distinct roles: not all team members had the ability to shoot in the tank, and only one team member could build defense systems.
 
 ## Instructions
 Complete instructions shown to participants at each stage of the task.  
@@ -49,7 +52,7 @@ If the instructions are not available ask the paper's authors, however and if th
 ## Performance calculation
 
 This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
-# Experiment 1
+## Experiment 1
 Cross-Training Effectiveness: Cross-training effects were evaluated by participant responses to a 15-item multiple-choice scale that measured interpositional knowledge. Questions asked participants about their knowledge of team members’ equipment and task-related responsibilities. Sample items included “When the helicopter is destroying an enemy, what must the pilot do?” and “Who is responsible for identifying targets?” Participants were given 1 point for each correct item. Items were then summed to form a total score ranging from 0 to 15.
 
 Shared Team Interaction Model: Teammates were asked to make judgments about the relatedness of each pair of concepts (i.e. escape enemy attacks, follow waypoints,
@@ -61,7 +64,7 @@ Coordination: The task was recorded, and the audio was analyzed by graduate stud
 
 Task performance: A score was calculated from the sum of the number of targets acquired during the course of each mission and the team’s minutes of “alive time,” averaged over the two parallel missions. Team performance scores could range from 0 (no targets killed, helicopter killed by enemies immediately) to 30 (killed 15 targets, stayed alive for the duration of the 15-minute mission).
 
-# Experiment 2
+## Experiment 2
 Cross-Training Effectiveness: . Cross-training effects were evaluated by participant responses to the following statements: “I understand the responsibilities of my teammates” and “I would feel comfortable switching roles with [my teammate].” Responses were made on a 5-point Likert scale that ranged from 1 (strongly disagree) to 5 (strongly agree).
 
 Shared Team Interation Model: Participants were asked to choose from 50 concepts important to team interaction and place 12 of them in a prespecified hierarchical structure illustrating the sequence of task-related activities required to accomplish their mission. Examples of concepts included the following: travel in V formation, build barriers, shoot pillbox, and ambush from forest. Overlap in team members’ concept maps was assessed by the percentage of shared concepts placed identically on the concept maps. Higher scores on the mental model measure (ranged from 0% to 100%) indicated that a greater percentage of concepts were shared by all three members of a team.
