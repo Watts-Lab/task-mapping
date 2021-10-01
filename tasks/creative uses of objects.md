@@ -1,5 +1,5 @@
 # Summary
-Participants are presented with an object and its common use, and are asked to produce as many altnerative uses as they can under a set time limit. (Adapated from the Unusual Uses Test)
+Participants are presented with an object and its common use, and are asked to produce as many alternative uses as they can under a set time limit. (Adapated from the Unusual Uses Test)
 
 # References
 Wilson, R.C., Guilford, J.P., Christensen, P.R. et al. A factor-analytic study of creative-thinking abilities. Psychometrika 19, 297–311 (1954). https://doi.org/10.1007/BF02289230
