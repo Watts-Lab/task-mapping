@@ -27,8 +27,8 @@ If no visual components are provided or seem not to be needed describe an interf
 
 
 ## Roles 
-Pilot: Flies the aircraft
-Gunner: Operates the weapons system
+Pilot: Flies the aircraft\
+Gunner: Operates the weapons system\
 Radar Specialist: Responsible for monitoring and interpreting radar systems containing critical enemy information.
 
 ## Instructions
