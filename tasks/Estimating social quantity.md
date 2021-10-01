@@ -1,6 +1,6 @@
 # Summary
 
-Groups of 2 to 5 answer questions requiring the estimation of a quantity 
+Groups of 2 to 5 participants answer questions requiring the estimation of a quantity in real life. 
 
 # References
 
@@ -23,9 +23,9 @@ Example of stimuli during RME test (not during task itself):
 
 2. Individuals completed the the NEO Five Factor Inventory. 
 
-3. Individuals completed a RME (Readoing the Mind in Eyes) test
+3. Individuals completed a RME (Reading the Mind in Eyes) test.
 
-4. Individuals were sorted into groups of 2-5
+4. Individuals were sorted into groups of 2-5.
 
 ### Task
 
@@ -48,9 +48,9 @@ ask other members of this team for help' on a five-point scale.
 
 ## Instructions
 
-1. Participants were instructed to individually complete personality tests
+1. Participants were instructed to individually complete personality tests.
 
-2. Participants were instructed to answer as many estimation questions as possible (out of 20) in a group within 10 minutes
+2. Participants were instructed to answer as many estimation questions as possible (out of 20) in a group within 10 minutes.
 
 # Criteria
 ## Performance calculation
