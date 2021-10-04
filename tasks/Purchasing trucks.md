@@ -8,7 +8,7 @@ Main paper: http://collections.uakron.edu/digital/collection/p15960coll1/id/2125
 ## The visual components
 One copy of each of the problem statement is provided to each group member:
 
-![](/images/.png) 
+![trucks](/images/trucks.png) 
 
 # Procedure
 ## Steps
