@@ -31,7 +31,12 @@ The experimenter would read these rules to participants and then instructed them
 # Procedure
 ## Steps
 1. Participants are randomly broken into groups of four (or five in the case of Laughlin and Shipply) or are selected to complete the task in the nominal(individual) setting.
-2. Participants then followed instructions in an attempt to find the rule.
+2. Participants individually record a single hypothesis about what the correct rule might be.
+3. The group then engages in open discussion to consensus on a group hypothesis.
+4. Finally, the group tests the hypothesis by selecting another card in order to learn if it is an example or not. This is analogous to generating and testing a scientific hypothesis.
+5. Groups receive feedback on the status each card selected (i.e., the results of the “experiment”) but no feedback on the hypothesis itself
+6. On each trial, groups can see all the evidence (cards) that has accumulated from previous trials.
+7. The cycle of member hypothesis, discussion, group hypothesis, card selection, and feedback continues for 10–15 trials
 
 ## Roles 
 Participants worked either individually or in a group in an attempt to identify a pattern.
@@ -40,8 +45,10 @@ Participants worked either individually or in a group in an attempt to identify 
 From Laughlin and Shupe 1996:
 This is an experiment in problem solving, the two groups of four will solve the same problem in separate rooms(groups are random). The objective is to find a rule that divides an ordinary deck of playing cards into two groups, examples and non examples of that rule.  Aces are 1, twos are 2 and so on, up to jacks as 11, queens as 12 and kings as 13.  The rule may be based on any characteristic of the card, I.e. the rule may be ‘diamonds’ such that all diamonds would be an example of the rule, and all hearts, spades and clubs would be non examples.  I will start you with a card that is an example of the rule.  The first step will be for each of you to write down your individual hypothesis on your individual hypothesis sheet.  Then the four of you will decide on a group hypothesis, and the recorder (designated at random) will record the groups decision on the group decision sheet.  Then you will play any of the 52 cards you choose, if the card is also an example of the rule it will be placed to the right of known example card, if not it will be placed below the last card played.  This procedure will continue for ten trials, and you will then make your final hypothesis and group hypothesis and I will tell you whether or not your final group hypothesis is correct.
 
+## Alternative Version Instructions  
 Laughlin and Shipply 1983 followed a similar procedure, however they did not limit based on trials, rather they gave groups/indivudals 1 hour to complete the task, if they reached the correct solution early enough, another problem set was started.
 
+## Alternative Version Instructions  
 McGlynn, et al. is similar, however the experimenter provided each successive card rather than letting the group select cards.  Negative examples appears on trials 3, 5, 6, 10, and 12. The ninth card displayed ruled out most color based hypotheses if the rule was even-odd based, or it ruled out most even-odd hypotheses if the rule was color based. Their experiment ran for 12 trials.
 
 McGlynn, et al. also asked participants to fill out a questionnaire after the experiment.  One question asking the participants to estimate the number of hypotheses they personally generated.  The other two questions were as follows:
