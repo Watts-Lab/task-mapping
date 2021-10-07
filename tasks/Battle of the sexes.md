@@ -13,7 +13,15 @@ Link: https://www.jstor.org/stable/2555734
 
 # Stimuli
 ## The visual components
-(Screen shot from cooper of matrix)
+Session 1 Decision Matrix for Player B:  
+![image](https://github.com/Watts-Lab/task-mapping/blob/4dd19770c843e2c0f4bfdd26261988868abea099/images/Battle_of_the_sexes_session1_B.png)
+
+Session 1 Decision Matrix for Player S:  
+![image](https://github.com/Watts-Lab/task-mapping/blob/4dd19770c843e2c0f4bfdd26261988868abea099/images/Battle_of_the_sexes_session1_S.png)
+
+Session 2 Battle of the Sexes Decision Matrix:  
+![image](https://github.com/Watts-Lab/task-mapping/blob/4dd19770c843e2c0f4bfdd26261988868abea099/images/Battle_of_the_sexes_session2_matrix.png)
+
 ## Materials for alternative versions of the experiment 
 N/A
 
