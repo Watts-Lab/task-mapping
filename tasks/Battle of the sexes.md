@@ -50,15 +50,15 @@ In this session you will again experience a series of decision making periods, e
     - Communication channels:
         - 1-Way Communication: 
         - The phase 1 portion consists of two stages, in the first stage player B can chose to make an announcement to player S.  Player B can chose to announce their decision, ie. B1 or B2.  Player B will receive the prompt,
-        - IMAGE
+        - DO YOU WISH TO MAKE AN ANNOUNCEMENT?
         - If you select no, it will make the announcement for the period, if yes it will prompt,
-        - IMAGE
+        - WHAT DO YOU WISH TO ANNOUNCE?
         - You may enter B1 or B2.  After B has made their decision, player S will receive a message saying whether or not B has chosen to make an announcement and if so, they will see player B’s action.  It will them move to stage 2 where you play the game as before.
         - 2-Way-1-Round Communication:
         - Once again phase 1 will consist of 2 stages.  In the first stage each player will be prompted, asking whether or not they wish to make and announcement,
-        - IMAGE
+        - DO YOU WISH TO MAKE AN ANNOUNCEMENT?
         - If you select no, it will make the announcement for the period, if yes it will prompt,
-        - IMAGE
+        - WHAT DO YOU WISH TO ANNOUNCE?
         - If you are player B, you may enter B1 or B2, if you are player S you may enter S1 or S2.  After all players have made a decision on whether or not they want to make an announcement, the other player will receive a message about whether or not the other player made an announcement and if so, it will contain their announcement.  It will then move to stage 2 where you play the game as before.
         - 2-Way-3-Round Communication:
         - Once again phase 1 will consist of 2 stages.  This time the first stage will consist of three rounds. Meaning both players can make an announcement of their planned action for stage 2, three times.
