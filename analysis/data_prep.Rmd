@@ -128,6 +128,16 @@ questions %>%
   write_csv("../questions.csv")
 
 clean_responses %>% arrange(task,updatedAt)
+
+# Alsmost complete tasks
+clean_responses %>% 
+  group_by(task,stage) %>% 
+  summarise(n=n()) %>% 
+  pivot_wider(names_from = stage, values_from = n) %>% 
+  filter(is.na(agreement)) %>%
+  select(-agreement) %>% 
+  rename(number_of_ratings = individual) %>%
+  arrange(task)
 ```
 
 ```{r}
