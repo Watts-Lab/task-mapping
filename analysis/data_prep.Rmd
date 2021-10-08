@@ -9,6 +9,8 @@ library(ggplot2)
 library(jsonlite)
 library(graphics)
 library(ggfortify)
+library(stats)
+library(ggpubr)
 ```
 
 ```{r}
@@ -153,3 +155,56 @@ ggsave("Mapped_task_PCA.png",
        width = 7,
        height = 5) 
 ```
+
+```{r}
+task_names <- agreed_responses$task
+```
+
+```{r}
+# heatmap
+heatmap_matrix <- as.matrix(numerical_responses_matrix)
+
+png("heatmap.png", width = 20, height = 20, units = 'in', res = 600)
+heatmap <- heatmap(heatmap_matrix, Colv = NA) #Row dendrogram groups this by similarity in rows
+```
+
+```{r}
+# k-means clustering
+# source: https://www.datanovia.com/en/blog/k-means-clustering-visualization-in-r-step-by-step-guide/
+
+# Compute k-means with k = 3
+set.seed(123)
+res.km <- kmeans(numerical_responses_matrix, 5, nstart = 100)
+# K-means clusters showing the group of each individuals
+res.km$cluster
+
+task_clusters <- as.data.frame(cbind(task_names, res.km$cluster))
+
+task_clusters[order(task_clusters$V2),]
+
+
+
+# Dimension reduction using PCA
+res.pca <- prcomp(numerical_responses_matrix)
+# Coordinates of individuals
+ind.coord <- as.data.frame(get_pca_ind(res.pca)$coord)
+# Add clusters obtained using the K-means algorithm
+ind.coord$cluster <- factor(res.km$cluster)
+
+ind.coord$lbl <- c(1:48)
+# Data inspection
+head(ind.coord)
+
+
+ggscatter(
+  ind.coord, x = "Dim.1", y = "Dim.2", 
+  color = "cluster", palette = "npg", ellipse = TRUE, ellipse.type = "convex",
+  label = ind.coord$lbl
+) +
+  stat_mean(aes(color = cluster), size = 4)
+ggsave("Mapped_task_PCA_Clustered_Colored_5.png",
+       width = 7,
+       height = 6) 
+```
+
+

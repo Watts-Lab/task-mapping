@@ -1,5 +1,5 @@
 # Summary
-The beer game is an exercise that simulates the material and information flows in a productiond distribution system. It has four players: retailer, wholesaler, distributor, and factory. Customer demand (in kegs of beer) arises at the retailer, which replenishes its inventory from the wholesaler, the wholesaler from the distributor, and the distributor from the factory. In each period, the channel members must decide how much, if any, to order from their respective suppliers and the factory must decide how much, if any, to produce. 
+The beer game is an exercise that simulates the material and information flows in a production distribution system. It has four players: retailer, wholesaler, distributor, and factory. Customer demand (in kegs of beer) arises at the retailer, which replenishes its inventory from the wholesaler, the wholesaler from the distributor, and the distributor from the factory. In each period, the channel members must decide how much, if any, to order from their respective suppliers and the factory must decide how much, if any, to produce. 
 
 # References
 Main Paper: https://www0.gsb.columbia.edu/mygsb/faculty/research/pubfiles/4345/stationary%20beer%20game.pdf
@@ -15,7 +15,7 @@ Instructions: https://ctl.mit.edu/sites/ctl.mit.edu/files/attachments/Rice%20-%2
 ## Steps
 1. To facilitate quick preparation at the facility, pre-assemble “kits” for each game board that includes pennies, demand cards, colored order pads, and two order forms for each position with initial demand already written on them. This enables a complete game board to be setup in less
 than two minutes. Thus, a team of 10 TAs can setup 100 boards in approximately 15-20 minutes.
-2. Once the doors open, remind particiapnts to find their group and sit at any game board. 
+2. Once the doors open, remind participants to find their group and sit at any game board. 
 3. At the official start time, reallocate any incomplete groups (i.e. including students who will be late or absent) into full groups of four. We also reserve a few game boards near the entrance for a “late arrivals section” to minimize disruption during the instructions. 
 4. Using PowerPoint slides, we then introduce the game board structure and the goal of the game, telling students to, “minimize your inventory costs by managing your Current Inventory‟ box”. 
 5. After watching one complete round of step-by-step instructions, the instructions are repeated while students follow along for two more rounds before allowing the teams to play on their own.
