@@ -132,11 +132,11 @@ clean_responses %>% arrange(task,updatedAt)
 # Alsmost complete tasks
 clean_responses %>% 
   group_by(task,stage) %>% 
-  summarise(n=n()) %>% 
-  pivot_wider(names_from = stage, values_from = n) %>% 
+  summarise(mappers=paste(user, collapse = ' & ')) %>% 
+  pivot_wider(names_from = stage, values_from = mappers) %>% 
   filter(is.na(agreement)) %>%
-  select(-agreement) %>% 
-  rename(number_of_ratings = individual) %>%
+  select(-agreement) %>%
+  rename(mappers_so_far = individual) %>% 
   arrange(task)
 ```
 
