@@ -130,6 +130,16 @@ questions %>%
   write_csv("../questions.csv")
 
 clean_responses %>% arrange(task,updatedAt)
+
+# Alsmost complete tasks
+clean_responses %>% 
+  group_by(task,stage) %>% 
+  summarise(mappers=paste(user, collapse = ' & ')) %>% 
+  pivot_wider(names_from = stage, values_from = mappers) %>% 
+  filter(is.na(agreement)) %>%
+  select(-agreement) %>%
+  rename(mappers_so_far = individual) %>% 
+  arrange(task)
 ```
 
 ```{r}
@@ -174,7 +184,7 @@ heatmap <- heatmap(heatmap_matrix, Colv = NA) #Row dendrogram groups this by sim
 
 # Compute k-means with k = 3
 set.seed(123)
-res.km <- kmeans(numerical_responses_matrix, 5, nstart = 100)
+res.km <- kmeans(numerical_responses_matrix, 4, nstart = 100)
 # K-means clusters showing the group of each individuals
 res.km$cluster
 
@@ -191,7 +201,7 @@ ind.coord <- as.data.frame(get_pca_ind(res.pca)$coord)
 # Add clusters obtained using the K-means algorithm
 ind.coord$cluster <- factor(res.km$cluster)
 
-ind.coord$lbl <- c(1:48)
+ind.coord$lbl <- c(1:50)
 # Data inspection
 head(ind.coord)
 
@@ -202,7 +212,7 @@ ggscatter(
   label = ind.coord$lbl
 ) +
   stat_mean(aes(color = cluster), size = 4)
-ggsave("Mapped_task_PCA_Clustered_Colored_5.png",
+ggsave("Mapped_task_PCA_Clustered_Colored_4.png",
        width = 7,
        height = 6) 
 ```
