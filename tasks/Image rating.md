@@ -7,7 +7,13 @@ Task Descriptions: https://doi.org/10.1371/journal.pone.0115212.s002
 
 # Stimuli
 ## The visual components
-Stimuli needs to be determined by CSS lab.
+Images developed by CSS Lab- Needs to be rated by 100 MTurk Workers 
+Image One: https://unsplash.com/photos/KMn4VEeEPR8
+Image Two: https://unsplash.com/photos/dPgPoiUIiXk
+Image Three: https://unsplash.com/s/photos/abstract-art
+Image Four: https://unsplash.com/photos/TmOBXEBhh9I
+Image Five: https://unsplash.com/photos/Vc8GBqapdfs
+
 
 ## Materials for alternative versions of the experiment 
 If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
