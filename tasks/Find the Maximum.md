@@ -6,6 +6,8 @@ Main Paper: https://www.nber.org/system/files/working_papers/w27071/w27071.pdf
 
 # Stimuli
 ## The visual components
+Found in this [document](/images/Find_The_Maximum_Experience.pdf).
+
 Online test: 
 ![image](https://user-images.githubusercontent.com/78745728/121406436-24518b80-c92c-11eb-809e-62bf90953d49.png)
 ![image](https://user-images.githubusercontent.com/78745728/121406457-29aed600-c92c-11eb-9e19-13e9f85eea92.png)
