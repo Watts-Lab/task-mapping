@@ -41,9 +41,15 @@ Group condition
 5. During the group test, the members of the group first recorded what they individually thought the solution to the Mastermind task was. The group then engaged in free discussion and chose one of the three solutions proposed by the group members (the group was not allowed to choose solutions not proposed by any group member). Then the group entered its choice and was given information regarding the fit of their proposed solution to the actual solution. This continued for 8 trials or until a correct solution was found.
 6. The entire task had a one hour time limit
 
-
 ## Roles 
 In the ranking information condition, all ranking information was verbally communicated by the experimenters directly to the participants
+
+## Instructions
+The object of this game is to guess the sequence of four colored pegs the computer has selected at random from the circled colors in the right field.
+
+You start filling the holes at the bottom row with pegs, and each time you have completed a guess (i.e. filled all four holes) the computer will respond by giving you one peg for each correct color - black if your guess was also in the right place, otherwise white. (But you will not be informed about which colors were correct. That part you will have to figure out for yourself.)
+
+If you haven't managed to guess the sequence by your 8th guess, the computer will reveal it to you and the game ends.
 
 # Criteria
 ## Performance calculation
