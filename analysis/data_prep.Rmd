@@ -131,7 +131,7 @@ questions %>%
 
 clean_responses %>% arrange(task,updatedAt)
 
-# Alsmost complete tasks
+# Almost complete tasks
 clean_responses %>% 
   group_by(task,stage) %>% 
   summarise(mappers=paste(user, collapse = ' & ')) %>% 
@@ -166,55 +166,121 @@ ggsave("Mapped_task_PCA.png",
        height = 5) 
 ```
 
+
+
 ```{r}
+# helpful to get the task names
 task_names <- agreed_responses$task
 ```
 
+# Addressing Github #199 - Similar Question Sanity Check
 ```{r}
-# heatmap
-heatmap_matrix <- as.matrix(numerical_responses_matrix)
+# github issue 199: Add similar question sanity check in analysis
 
-png("heatmap.png", width = 20, height = 20, units = 'in', res = 600)
-heatmap <- heatmap(heatmap_matrix, Colv = NA) #Row dendrogram groups this by similarity in rows
+# QUESTIONS THAT ARE LOGICALLY EXCLUSIONARY #
+# goal_full + goal_partial == 6, because they need to be complements
+# options_independent + options_dependent== 6, because these are also opposites
+# outcome_certain + outcome_probablistic == 6, because these are also opposites
+# individual_theoretical + individual_practical == 6, because these are also opposites
+# submission_together + submission_separate == 6, because these are also opposites
+
+numerical_completed_tasks <- cbind(task_names, numerical_responses_matrix)
+
+# correct a typo
+numerical_completed_tasks <- numerical_completed_tasks %>%
+  rename(individual_theoretical = indvidual_theoretical)
+
+# Filter for questions that are logically exclusionary
+TOTAL_SCORE = 6
+
+numerical_completed_and_agreed <- numerical_completed_tasks %>%
+  filter(goal_full+goal_partial == TOTAL_SCORE) %>%
+  filter(options_independent+options_dependent == TOTAL_SCORE) %>%
+  filter(outcome_certain+outcome_probablistic == TOTAL_SCORE) %>%
+  filter(individual_theoretical+individual_practical == TOTAL_SCORE) %>%
+  filter(submission_together + submission_separate == TOTAL_SCORE)
+
+# Save the ones that disagree so that we can peek at them
+goal_disagreement<- numerical_completed_tasks %>%
+  filter(goal_full+goal_partial != TOTAL_SCORE) %>%
+  select(c(task_names, goal_full, goal_partial))
+
+options_disagreement<- numerical_completed_tasks %>%
+  filter(options_independent+options_dependent != TOTAL_SCORE)%>%
+  select(c(task_names, options_independent, options_dependent))
+
+outcome_disagreement<- numerical_completed_tasks %>%
+  filter(outcome_certain+outcome_probablistic != TOTAL_SCORE)%>%
+  select(c(task_names, outcome_certain, outcome_probablistic))
+
+individual_disagreement<- numerical_completed_tasks %>%
+  filter(individual_theoretical+individual_practical != TOTAL_SCORE)%>%
+  select(c(task_names, individual_theoretical, individual_practical))
+
+submission_disagreement<- numerical_completed_tasks %>%
+  filter(submission_together+submission_separate != TOTAL_SCORE)%>%
+  select(c(task_names, submission_together, submission_separate))
+```
+
+```{r}
+numerical_completed_and_agreed
+```
+
+# Visualization Explorations
+
+```{r}
+# heatmap generation
+heatmap_matrix <- as.matrix(numerical_completed_and_agreed%>%select(-c(task_names)))
+png(
+  "heatmap.png",
+  width = 20,
+  height = 20,
+  units = 'in',
+  res = 600
+)
+heatmap <-
+  heatmap(heatmap_matrix, Colv = NA) #Row dendrogram groups this by similarity in rows
 ```
 
 ```{r}
 # k-means clustering
 # source: https://www.datanovia.com/en/blog/k-means-clustering-visualization-in-r-step-by-step-guide/
-
-# Compute k-means with k = 3
 set.seed(123)
-res.km <- kmeans(numerical_responses_matrix, 4, nstart = 100)
+
+k = 5
+data = numerical_completed_and_agreed %>% select(-c(task_names))
+
+
+res.km <- kmeans(data, k, nstart = 100)
 # K-means clusters showing the group of each individuals
-res.km$cluster
-
 task_clusters <- as.data.frame(cbind(task_names, res.km$cluster))
-
 task_clusters[order(task_clusters$V2),]
 
-
-
 # Dimension reduction using PCA
-res.pca <- prcomp(numerical_responses_matrix)
+res.pca <- prcomp(data)
 # Coordinates of individuals
 ind.coord <- as.data.frame(get_pca_ind(res.pca)$coord)
 # Add clusters obtained using the K-means algorithm
 ind.coord$cluster <- factor(res.km$cluster)
 
-ind.coord$lbl <- c(1:50)
-# Data inspection
-head(ind.coord)
-
+ind.coord$lbl <- c(1:nrow(data))
 
 ggscatter(
-  ind.coord, x = "Dim.1", y = "Dim.2", 
-  color = "cluster", palette = "npg", ellipse = TRUE, ellipse.type = "convex",
+  ind.coord,
+  x = "Dim.1",
+  y = "Dim.2",
+  color = "cluster",
+  palette = "npg",
+  ellipse = TRUE,
+  ellipse.type = "convex",
   label = ind.coord$lbl
 ) +
-  stat_mean(aes(color = cluster), size = 4)
-ggsave("Mapped_task_PCA_Clustered_Colored_4.png",
-       width = 7,
-       height = 6) 
+  stat_mean(aes(color = cluster), size = k)
+ggsave(
+  paste("Mapped_task_PCA_Clustered_Colored_", k , ".png", sep = ""),
+  width = 7,
+  height = 6
+)
 ```
 
 
