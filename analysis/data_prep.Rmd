@@ -41,77 +41,93 @@ clean_responses <- raw_responses %>%
       ~ ordered(., levels = (
         ordinals %>% filter(name == cur_column())
       )$levels[[1]])),
-    user = trimws(gsub("  ", " ",
-                       
-                       gsub(
-                         "( and |, |&|\\/|;)",
-                         " \\| ",
-                         gsub(
-                           "(Subramaniam|Bottcher|Sampath|Cullen|Balasubramanian)",
-                           "",
-                           gsub(
-                             "sarikasu",
-                             "Sarika",
-                             gsub(
-                               "(katelynbottcher|Katelynn)",
-                               "Katelyn",
-                               gsub("KaranSampath", "Karan", user)
-                             )
-                           )
-                         )
-                       ))),
+    user = trimws(gsub(
+      "  ", " ",
+      
+      gsub(
+        "( and |, |&|\\/|;)",
+        " \\| ",
+        gsub(
+          "(Subramaniam|Bottcher|Sampath|Cullen|Balasubramanian)",
+          "",
+          gsub(
+            "sarikasu",
+            "Sarika",
+            gsub(
+              "(katelynbottcher|Katelynn)",
+              "Katelyn",
+              gsub("KaranSampath", "Karan", user)
+            )
+          )
+        )
+      )
+    )),
     stage = case_when(# lets us know which tasks have agreement
       grepl("\\|", user) ~ "agreement",
       TRUE ~ "individual"),
-    name_clean = trimws(gsub(
-      "  ", " ",
-      gsub(".md","",
-      gsub("contruction","construction",
-      gsub("judgement","judgment",
-      gsub("and slogan", "slogan",
-      gsub(
-        "finding the maximum",
-        "find the maximum",
-        gsub(
-          "recall associations",
-          "recall association",
-          gsub("husband ", "husbands ",
-               gsub(
-                 "nine", "9",
-                 gsub("suduko", "sudoku",
-                      sub(
-                        "task", "",
-                        gsub("various versions", "",
+    name_clean = trimws(gsub("  ", " ",
                              gsub(
-                               "hidden profile", "",
-                               gsub("[()-]", " ",
-                                    tolower(task))
-                             ))
-                      )))
-               ))
-        )))
-      ))
-    )),
-    performance_all = paste(performance_all,sep = ", ")
+                               ".md", "",
+                               gsub(
+                                 "contruction",
+                                 "construction",
+                                 gsub("judgement", "judgment",
+                                      gsub(
+                                        "and slogan",
+                                        "slogan",
+                                        gsub(
+                                          "finding the maximum",
+                                          "find the maximum",
+                                          gsub(
+                                            "recall associations",
+                                            "recall association",
+                                            gsub("husband ", "husbands ",
+                                                 gsub(
+                                                   "nine", "9",
+                                                   gsub("suduko", "sudoku",
+                                                        sub(
+                                                          "task", "",
+                                                          gsub("various versions", "",
+                                                               gsub(
+                                                                 "hidden profile", "",
+                                                                 gsub("[()-]", " ",
+                                                                      tolower(task))
+                                                               ))
+                                                        ))
+                                                 ))
+                                          )
+                                        )
+                                      ))
+                               )
+                             ))),
+    performance_all = paste(performance_all, sep = ", ")
   ) %>%
   left_join(tasks %>% mutate(name_clean = trimws(gsub(
     "  ", " ",
-    sub("(anagrams)","",
-    sub("task", "",
-        gsub(" and its variants","",
-             gsub("and slogan", "slogan",
-        gsub(
-          "various versions", "",
-          gsub("hidden profile", "",
-               gsub("[\"()-]", " ",
-                    tolower(name))))
-        ))))
+    sub("(anagrams)", "",
+        sub(
+          "task", "",
+          gsub(" and its variants", "",
+               gsub(
+                 "and slogan", "slogan",
+                 gsub("various versions", "",
+                      gsub(
+                        "hidden profile", "",
+                        gsub("[\"()-]", " ",
+                             tolower(name))
+                      ))
+               ))
+        ))
   ))) %>% select(name, name_clean)) %>%
   mutate(task = name) %>%
-  select(task, stage, user, updatedAt ,everything())
+  select(task, stage, user, updatedAt , everything())
 
 unrecognised_tasks <-
   clean_responses %>% select(task, name_clean) %>% filter(is.na(task)) %>% arrange(name_clean)
+
+if ((unrecognised_tasks %>% dim())[[1]] > 0)
+  stop("Error, some task names did not match:\n\n",
+       unrecognised_tasks)
 ```
 
 ```{r}
