@@ -8,7 +8,7 @@ Main paper:http://collections.uakron.edu/digital/collection/p15960coll1/id/21257
 ## The visual components
 One copy of each of the problem statement is provided to each group member:
 
-![father](/images/father.png)
+![moving](/images/moving.png)
 
 # Procedure
 ## Steps
