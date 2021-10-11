@@ -43,6 +43,8 @@ An observer was also persent who sat at one side of the room and unobtrusively r
 
 The experimenter and observer separately ranked the participants in order of perceived influence on the group process.
 
+In the second test, 20 four-person groups were observed in a situation that required that one member of each group volunteer for a task that would make him stand out from the other members. In addition to functioning as a group member, the volunteer was required to stand before the group and record on the blackboard the group's decisions regarding a number of issues.
+
 ## Instructions
 This is a kind of search task. On each trial, you will choose one of the coordinates on this chart, e.g. D-5, E-10, etc. For each problem, I will have a chart with concentric, irregular lines drawn on it, like this (a diagram similar to the one shown above, right, is displayed to the group). The value of your decision will be determined by the value of this diagram. For example, if you choose D-3, this coordinate is outside the largest circle and has a value of zero; if you choose a coordinate between the largest and next largest circle, you get a value of 5, etc. The object is to earn as high a score as possible on the 10 trials allowed on each problem. After each decision, I will tell you the score you have earned according to my diagram. At first, of course, you will have no basis for making a choice. However, after a few trials, you should begin to learn something about the diagram that I have, and this be able to make more intelligent decisions.
 
