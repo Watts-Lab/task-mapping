@@ -227,10 +227,14 @@ numerical_completed_and_agreed
 ```
 
 # Visualization Explorations
+```{r}
+data = numerical_completed_and_agreed
+
+data = as.matrix(data%>%select(-c(task_names)))
+```
 
 ```{r}
 # heatmap generation
-heatmap_matrix <- as.matrix(numerical_completed_and_agreed%>%select(-c(task_names)))
 png(
   "heatmap.png",
   width = 20,
@@ -239,7 +243,7 @@ png(
   res = 600
 )
 heatmap <-
-  heatmap(heatmap_matrix, Colv = NA) #Row dendrogram groups this by similarity in rows
+  heatmap(data, Colv = NA) #Row dendrogram groups this by similarity in rows
 ```
 
 ```{r}
@@ -248,8 +252,6 @@ heatmap <-
 set.seed(123)
 
 k = 5
-data = numerical_completed_and_agreed %>% select(-c(task_names))
-
 
 res.km <- kmeans(data, k, nstart = 100)
 # K-means clusters showing the group of each individuals
