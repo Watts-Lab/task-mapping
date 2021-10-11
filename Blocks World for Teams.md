@@ -15,6 +15,7 @@ This studied examined the communication among teams by having teams of four peop
 # References
 Main paper: https://journals-sagepub-com.proxy.library.upenn.edu/doi/10.1177/0018720816639712
 Supplementary: file:///Users/katelynbottcher/Downloads/961321058-MIT.pdf
+To run and download the game: https://github.com/eishub/BW4T/tree/master/doc/src/main
 
 # Stimuli
 ## The visual components
