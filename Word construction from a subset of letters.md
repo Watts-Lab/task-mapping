@@ -12,7 +12,9 @@ None mentioned
 
 # Procedure
 ## Steps
-Each participant worked alone for 3 min on a distractor task in which they had to produce as many four letter words as possible from a given set of nine letters (FIND TASK)
+Each participant worked alone for 3 min on a distractor task in which they had to produce as many four letter words as possible from a given set of nine letters
+
+The subset of letters did not allow for the participants to create the target words from the Hidden figures experiment
 
 ## Roles 
 Individuals worked alone
