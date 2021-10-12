@@ -1,5 +1,5 @@
 # Summary
-> Groups play checkers against a computer
+> Groups play checkers against a computer.
 
 # References
 > Woolley, A. W., Chabris, C. F., Pentland, A., Hashmi, N., & Malone, T. W. (2010). Evidence for a Collective Intelligence Factor in the Performance of Human Groups. Science, 330(6004), 686 LP – 688. https://doi.org/10.1126/science.1193147
