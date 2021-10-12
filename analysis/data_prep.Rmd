@@ -9,10 +9,11 @@ library(ggplot2)
 library(jsonlite)
 library(graphics)
 library(ggfortify)
+library(factoextra)
 library(stats)
 library(ggpubr)
 library(dbscan)
-library(EMCluster)
+library(dplyr)
 ```
 
 ```{r}
@@ -227,6 +228,14 @@ individual_disagreement<- numerical_completed_tasks %>%
 submission_disagreement<- numerical_completed_tasks %>%
   filter(submission_together+submission_separate != TOTAL_SCORE)%>%
   select(c(task_names, submission_together, submission_separate))
+
+## TODO: CONSOLIDATE ALL THE INCONSISTENT ONES INTO A SINGLE CSV
+
+# write.csv(goal_disagreement,"goal_disagreement.csv")
+# write.csv(options_disagreement,"options_disagreement.csv")
+# write.csv(outcome_disagreement,"outcome_disagreement.csv")
+# write.csv(individual_disagreement,"individual_disagreement.csv")
+# write.csv(submission_disagreement,"submission_disagreement.csv")
 ```
 
 ```{r}
@@ -236,8 +245,6 @@ numerical_completed_and_agreed
 ```{r warning=FALSE}
 questions$source_clean = as.factor(questions$source_clean)
 questions$source = as.factor(questions$source)
-
-print(levels(questions$source_clean))
 
 shaw <- "Shaw"
 mcgrath <- "McGrath"
@@ -258,6 +265,7 @@ get_filtered_data_for_author <- function(source_name){
     )), 0, as.numeric(.)))) %>%
     select_if(colSums(.) != 0) #I don't filter for the ordinals, so just filter out the column if it's zeroed out
   
+  # Add the task names back
   numerical_responses_one_framework <-
     cbind(task_names, numerical_responses_one_framework)
   
@@ -285,7 +293,6 @@ get_k_clusters <- function (data) {
   return(task_clusters[order(task_clusters$V2),])
 }
 
-
 all_clusters <- get_k_clusters(numerical_completed_tasks) %>%
   rename(All_Columns = V2)
 shaw_clusters <- get_k_clusters(shaw_data) %>%
@@ -302,15 +309,42 @@ consolidated_clusters_by_taxonomy <- all_clusters %>% left_join(shaw_clusters, b
   left_join(zigurs_clusters, by = "task_names") %>%
   left_join(steiner_clusters, by = "task_names")
 
+# Export all the clusters into a single CSV
 write.csv(consolidated_clusters_by_taxonomy,"consolidated_clusters_by_taxonomy.csv")
 ```
 
-# Clustering Explorations
+# Clustering Algorithm Explorations
+
+NOTE: the dbscan R package uses the Euclidean distance by default, but this doesn't work well for high-dimensional spaces: https://stats.stackexchange.com/questions/99171/why-is-euclidean-distance-not-a-good-metric-in-high-dimensions
+
+I have to port the data over to scikitlearn...
 ```{r}
+# DBSCAN and HDBSCAN
+data <- numerical_completed_tasks %>% select(-c(task_names)) %>% as.matrix()
 
 
+# playing with dbscan
+res.dbscan <-
+  dbscan(data,
+         eps = 13.5,
+         minPts = 5)
+
+res.dbscan$cluster
+
+task_clusters <- as.data.frame(cbind(task_names, res.dbscan$cluster))
+task_clusters_dbscan <- task_clusters[order(task_clusters$V2),]%>%
+  rename(All_Columns = V2) %>%
+  left_join(all_clusters, by = "task_names")
+
+write.csv(task_clusters_dbscan,"task_clusters_dbscan_kmeans_comparison.csv")
+
+# playing with hdbscan
+res.dbscan <-
+  hdbscan(data,
+         minPts = 5)
+
+res.dbscan
 ```
-
 
 # Visualization Explorations
 ```{r}
@@ -364,9 +398,43 @@ ggscatter(
   label = ind.coord$lbl
 ) +
   stat_mean(aes(color = cluster), size = k)
-    # + ggtitle("Zigurs")
+
 ggsave(
-  paste("Mapped_task_PCA_Clustered_Colored_", k , ".png", sep = ""),
+  paste("Mapped_task_PCA_Clustered_Colored_AGREEED_", k , ".png", sep = ""),
+  width = 7,
+  height = 6
+)
+```
+## Plot all taxonomies on the same axes
+```{r}
+all_clusters_taxonomies <- read_csv("consolidated_clusters_by_taxonomy_renumbered.csv") %>%
+  arrange(id)
+
+# Dimension reduction using PCA
+res.pca <- prcomp(as.matrix(numerical_completed_tasks %>% select(-c(task_names))))
+# Coordinates of individuals
+ind.coord <- as.data.frame(get_pca_ind(res.pca)$coord)
+
+
+# Add clusters
+ind.coord$cluster <- factor(all_clusters_taxonomies$Shaw)
+ind.coord$lbl <- c(1:nrow(all_clusters_taxonomies))
+
+# Plot
+ggscatter(
+  ind.coord,
+  x = "Dim.1",
+  y = "Dim.2",
+  color = "cluster",
+  palette = "npg",
+  ellipse = TRUE,
+  ellipse.type = "convex",
+  label = ind.coord$lbl
+) +
+  stat_mean(aes(color = cluster), size = k)
+
+ggsave(
+  paste("SHAW_sharedaxis_Mapped_task_PCA_Clustered_Colored_", k , ".png", sep = ""),
   width = 7,
   height = 6
 )
