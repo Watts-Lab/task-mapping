@@ -232,7 +232,6 @@ submission_disagreement<- numerical_completed_tasks %>%
 ```{r}
 numerical_completed_and_agreed
 ```
-
 # Filtering by Data Source / Top down v. Bottom up Explorations
 ```{r warning=FALSE}
 questions$source_clean = as.factor(questions$source_clean)
@@ -244,8 +243,6 @@ shaw <- "Shaw"
 mcgrath <- "McGrath"
 zigurs <- "Zigurs"
 steiner <- "Steiner"
-
-source_name <- zigurs
 
 get_filtered_data_for_author <- function(source_name){
   filtered_questions <-
@@ -307,6 +304,13 @@ consolidated_clusters_by_taxonomy <- all_clusters %>% left_join(shaw_clusters, b
 
 write.csv(consolidated_clusters_by_taxonomy,"consolidated_clusters_by_taxonomy.csv")
 ```
+
+# Clustering Explorations
+```{r}
+
+
+```
+
 
 # Visualization Explorations
 ```{r}
