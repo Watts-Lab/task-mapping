@@ -1,0 +1,19 @@
+"","task","raters","question1","answer1","question2","answer2"
+"1","Railroad Route Construction game","Katelyn | Sarika","goal_full",5,"goal_partial",0
+"2","Rank cities by population, rank words by familiarity","Andrew | Katelyn","goal_full",5,"goal_partial",5
+"3","Sudoku","Andrew | Sarika","goal_full",1,"goal_partial",1
+"4","Judgment of product and slogan","dodgehill | Sarika","options_independent",1,"options_dependent",4
+"5","Putting food into categories","Katelyn | Sakra","options_independent",1,"options_dependent",1
+"6","Recall word lists","Sarika | Karan","options_independent",1,"options_dependent",1
+"7","Sequential dyadic die-rolling","Sarika | Karan","options_independent",1,"options_dependent",4
+"8","Space Fortress","dodgehill | Sarika","options_independent",1,"options_dependent",1
+"9","Summarize Discussion","Sarika | Katelyn","options_independent",1,"options_dependent",1
+"10","Aerospace Investment (Role-playing)","Sarika | Andrew","outcome_certain",1,"outcome_probablistic",1
+"11","Investment game (hidden-profile)","Sarika | Katelyn","outcome_certain",1,"outcome_probablistic",1
+"12","Summarize Discussion","Sarika | Katelyn","outcome_certain",5,"outcome_probablistic",5
+"13","Run a mini business","Andrew | Katelyn","individual_theoretical",5,"individual_practical",5
+"14","Splitting a deck of cards","dodgehill | Sarika","individual_theoretical",1,"individual_practical",1
+"15","Iterated Snowdrift Game (aka Hawk-Dove game)","Katelyn | Sarika","submission_together",1,"submission_separate",1
+"16","Railroad Route Construction game","Katelyn | Sarika","submission_together",5,"submission_separate",5
+"17","Sequential dyadic die-rolling","Sarika | Karan","submission_together",5,"submission_separate",5
+"18","The N light bulbs game","benjamin-manning | Katelyn","submission_together",4,"submission_separate",4

@@ -211,36 +211,111 @@ numerical_completed_and_agreed <- filter_for_agreement(numerical_completed_tasks
 # Save the ones that disagree so that we can peek at them
 goal_disagreement<- numerical_completed_tasks %>%
   filter(goal_full+goal_partial != TOTAL_SCORE) %>%
-  select(c(task_names, goal_full, goal_partial))
+  select(c(task_names, goal_full, goal_partial)) %>%
+  pivot_longer(c(goal_full, goal_partial), names_to = "question_name") %>%
+  rename(task = task_names) %>%
+  left_join((clean_responses %>% filter(stage == "agreement")), by = "task") %>%
+  select(c(task, user, question_name, value)) %>%
+  pivot_wider(names_from = "question_name") %>%
+  mutate(
+    question1 = "goal_full",
+    question2 = "goal_partial"
+  ) %>%
+  rename(
+    answer1 = goal_full,
+    answer2 = goal_partial,
+    raters = user
+  ) %>%
+  select(c(task, raters, question1, answer1, question2, answer2))
 
 options_disagreement<- numerical_completed_tasks %>%
   filter(options_independent+options_dependent != TOTAL_SCORE)%>%
-  select(c(task_names, options_independent, options_dependent))
+  select(c(task_names, options_independent, options_dependent)) %>%
+  pivot_longer(c(options_independent, options_dependent), names_to = "question_name") %>%
+  rename(task = task_names) %>%
+  left_join((clean_responses %>% filter(stage == "agreement")), by = "task") %>%
+  select(c(task, user, question_name, value)) %>%
+  pivot_wider(names_from = "question_name") %>%
+  mutate(
+    question1 = "options_independent",
+    question2 = "options_dependent"
+  ) %>%
+  rename(
+    answer1 = options_independent,
+    answer2 = options_dependent,
+    raters = user
+  ) %>%
+  select(c(task, raters, question1, answer1, question2, answer2))
 
 outcome_disagreement<- numerical_completed_tasks %>%
-  filter(outcome_certain+outcome_probablistic != TOTAL_SCORE)%>%
-  select(c(task_names, outcome_certain, outcome_probablistic))
+  filter(outcome_certain+outcome_probablistic != TOTAL_SCORE) %>%
+  select(c(task_names, outcome_certain, outcome_probablistic)) %>%
+  pivot_longer(c(outcome_certain, outcome_probablistic), names_to = "question_name") %>%
+  rename(task = task_names) %>%
+  left_join((clean_responses %>% filter(stage == "agreement")), by = "task") %>%
+  select(c(task, user, question_name, value)) %>%
+  pivot_wider(names_from = "question_name") %>%
+  mutate(
+    question1 = "outcome_certain",
+    question2 = "outcome_probablistic"
+  ) %>%
+  rename(
+    answer1 = outcome_certain,
+    answer2 = outcome_probablistic,
+    raters = user
+  ) %>%
+  select(c(task, raters, question1, answer1, question2, answer2))
 
 individual_disagreement<- numerical_completed_tasks %>%
   filter(individual_theoretical+individual_practical != TOTAL_SCORE)%>%
-  select(c(task_names, individual_theoretical, individual_practical))
+  select(c(task_names, individual_theoretical, individual_practical)) %>%
+  pivot_longer(c(individual_theoretical, individual_practical), names_to = "question_name") %>%
+  rename(task = task_names) %>%
+  left_join((clean_responses %>% filter(stage == "agreement")), by = "task") %>%
+  select(c(task, user, question_name, value)) %>%
+   pivot_wider(names_from = "question_name") %>%
+  mutate(
+    question1 = "individual_theoretical",
+    question2 = "individual_practical"
+  ) %>%
+  rename(
+    answer1 = individual_theoretical,
+    answer2 = individual_practical,
+    raters = user
+  ) %>%
+  select(c(task, raters, question1, answer1, question2, answer2))
 
 submission_disagreement<- numerical_completed_tasks %>%
   filter(submission_together+submission_separate != TOTAL_SCORE)%>%
-  select(c(task_names, submission_together, submission_separate))
+  select(c(task_names, submission_together, submission_separate)) %>%
+  pivot_longer(c(submission_together, submission_separate), names_to = "question_name") %>%
+  rename(task = task_names) %>%
+  left_join((clean_responses %>% filter(stage == "agreement")), by = "task") %>%
+  select(c(task, user, question_name, value)) %>%
+  pivot_wider(names_from = "question_name") %>%
+  mutate(
+    question1 = "submission_together",
+    question2 = "submission_separate"
+  ) %>%
+  rename(
+    answer1 = submission_together,
+    answer2 = submission_separate,
+    raters = user
+  ) %>%
+  select(c(task, raters, question1, answer1, question2, answer2))
 
-## TODO: CONSOLIDATE ALL THE INCONSISTENT ONES INTO A SINGLE CSV
 
-# write.csv(goal_disagreement,"goal_disagreement.csv")
-# write.csv(options_disagreement,"options_disagreement.csv")
-# write.csv(outcome_disagreement,"outcome_disagreement.csv")
-# write.csv(individual_disagreement,"individual_disagreement.csv")
-# write.csv(submission_disagreement,"submission_disagreement.csv")
+## consolidate into single csv
+inconsistent_questions <- goal_disagreement %>% rbind(options_disagreement) %>%
+  rbind(outcome_disagreement) %>% rbind(individual_disagreement) %>% rbind(submission_disagreement)
+
+write.csv(inconsistent_questions,"task_mapping_issues.csv")
 ```
 
 ```{r}
 numerical_completed_and_agreed
 ```
+
 # Filtering by Data Source / Top down v. Bottom up Explorations
 ```{r warning=FALSE}
 questions$source_clean = as.factor(questions$source_clean)
@@ -439,9 +514,5 @@ ggsave(
   height = 6
 )
 ```
-
-
-
-
 
 
