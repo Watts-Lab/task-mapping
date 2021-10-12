@@ -23,6 +23,8 @@
 > 3. Participants were instructed to play a practice match
 > 4. Participants were instructed to play a test match against the computer
 
+(Instructions by CSS)
+
 # Criteria
 ## Performance calculation
 > Teams received one point for each move they made, two points for each piece captured, and 3 points for each king they earned.  
