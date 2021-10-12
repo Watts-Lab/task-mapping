@@ -11,6 +11,8 @@ library(graphics)
 library(ggfortify)
 library(stats)
 library(ggpubr)
+library(dbscan)
+library(EMCluster)
 ```
 
 ```{r}
@@ -166,8 +168,6 @@ ggsave("Mapped_task_PCA.png",
        height = 5) 
 ```
 
-
-
 ```{r}
 # helpful to get the task names
 task_names <- agreed_responses$task
@@ -193,12 +193,19 @@ numerical_completed_tasks <- numerical_completed_tasks %>%
 # Filter for questions that are logically exclusionary
 TOTAL_SCORE = 6
 
-numerical_completed_and_agreed <- numerical_completed_tasks %>%
-  filter(goal_full+goal_partial == TOTAL_SCORE) %>%
+
+filter_for_agreement <- function(data_table){
+  
+  data_table <- data_table %>% filter(goal_full+goal_partial == TOTAL_SCORE) %>%
   filter(options_independent+options_dependent == TOTAL_SCORE) %>%
   filter(outcome_certain+outcome_probablistic == TOTAL_SCORE) %>%
   filter(individual_theoretical+individual_practical == TOTAL_SCORE) %>%
   filter(submission_together + submission_separate == TOTAL_SCORE)
+  
+  return(data_table)
+}
+
+numerical_completed_and_agreed <- filter_for_agreement(numerical_completed_tasks)
 
 # Save the ones that disagree so that we can peek at them
 goal_disagreement<- numerical_completed_tasks %>%
@@ -226,9 +233,84 @@ submission_disagreement<- numerical_completed_tasks %>%
 numerical_completed_and_agreed
 ```
 
+# Filtering by Data Source / Top down v. Bottom up Explorations
+```{r warning=FALSE}
+questions$source_clean = as.factor(questions$source_clean)
+questions$source = as.factor(questions$source)
+
+print(levels(questions$source_clean))
+
+shaw <- "Shaw"
+mcgrath <- "McGrath"
+zigurs <- "Zigurs"
+steiner <- "Steiner"
+
+source_name <- zigurs
+
+get_filtered_data_for_author <- function(source_name){
+  filtered_questions <-
+    questions %>% filter(source_clean == source_name)
+  
+  data_selected <- agreed_responses %>%
+    select(c(filtered_questions$name, task))
+  
+  numerical_responses_one_framework <- data_selected %>%
+    column_to_rownames(var = "task") %>%
+    mutate(across(everything(),  ~ if_else(is.na(as.numeric(
+      .
+    )), 0, as.numeric(.)))) %>%
+    select_if(colSums(.) != 0) #I don't filter for the ordinals, so just filter out the column if it's zeroed out
+  
+  numerical_responses_one_framework <-
+    cbind(task_names, numerical_responses_one_framework)
+  
+  return(numerical_responses_one_framework)
+  # note - not filtered bc the columns may not exist in there
+}
+
+shaw_data <- get_filtered_data_for_author(shaw)
+mcgrath_data <- get_filtered_data_for_author(mcgrath)
+zigurs_data <- get_filtered_data_for_author(zigurs)
+steiner_data <- get_filtered_data_for_author(steiner)
+```
+
+## Explorations with comparing how the different authors' frameworks cluster
+```{r}
+set.seed(123)
+k = 5
+
+get_k_clusters <- function (data) {
+  data <- as.matrix(data %>% select(-c(task_names)))
+  res.km <-
+    kmeans(data, k, nstart = 100)
+  # K-means clusters showing the group of each individuals
+  task_clusters <- as.data.frame(cbind(task_names, res.km$cluster))
+  return(task_clusters[order(task_clusters$V2),])
+}
+
+
+all_clusters <- get_k_clusters(numerical_completed_tasks) %>%
+  rename(All_Columns = V2)
+shaw_clusters <- get_k_clusters(shaw_data) %>%
+  rename(Shaw = V2)
+mcgrath_clusters <- get_k_clusters(mcgrath_data) %>%
+  rename(McGrath = V2)
+zigurs_clusters <- get_k_clusters(zigurs_data) %>%
+  rename(Zigurs = V2)
+steiner_clusters <- get_k_clusters(steiner_data) %>%
+  rename(Steiner = V2)
+
+consolidated_clusters_by_taxonomy <- all_clusters %>% left_join(shaw_clusters, by = "task_names") %>%
+  left_join(mcgrath_clusters, by = "task_names") %>%
+  left_join(zigurs_clusters, by = "task_names") %>%
+  left_join(steiner_clusters, by = "task_names")
+
+write.csv(consolidated_clusters_by_taxonomy,"consolidated_clusters_by_taxonomy.csv")
+```
+
 # Visualization Explorations
 ```{r}
-data = numerical_completed_and_agreed
+data = numerical_completed_and_agreed # can update this to whatever
 
 data = as.matrix(data%>%select(-c(task_names)))
 ```
@@ -247,7 +329,7 @@ heatmap <-
 ```
 
 ```{r}
-# k-means clustering
+# k-means clustering + PCA Graph
 # source: https://www.datanovia.com/en/blog/k-means-clustering-visualization-in-r-step-by-step-guide/
 set.seed(123)
 
@@ -278,11 +360,16 @@ ggscatter(
   label = ind.coord$lbl
 ) +
   stat_mean(aes(color = cluster), size = k)
+    # + ggtitle("Zigurs")
 ggsave(
   paste("Mapped_task_PCA_Clustered_Colored_", k , ".png", sep = ""),
   width = 7,
   height = 6
 )
 ```
+
+
+
+
 
 
