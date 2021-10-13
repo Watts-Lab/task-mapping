@@ -2,9 +2,7 @@
 name: Task mapping checklist
 about: Task mapping checklist
 title: Task name
-labels: 'task'
-assignees: ''
-milestone: 'Task mapping'
+labels: task
 
 ---
 
@@ -27,7 +25,7 @@ milestone: 'Task mapping'
 - [ ] Check that the template renders correctly by previewing and making any necessary adjustments.
 - [ ] Submit a passing review, update the issue, and move on to the next steps.
 
-## Task mapping
+## Task mapping (do this after all previous sections are completed)
 - [ ] First pass assignee: Complete the [task mapping survey](https://task-robot.glitch.me/survey) entering your GitHub username as the user name, and the task file name as the task name.
 - [ ] Second pass assignee: Complete the [task mapping survey](https://task-robot.glitch.me/survey) entering your GitHub username as the user name, and the task file name as the task name.
 - [ ] Both assignees: meet to review the [agreement page](https://task-robot.glitch.me/agreement), selecting this task. 
@@ -35,7 +33,7 @@ milestone: 'Task mapping'
 - [ ] First pass assignee: In a second browser window start a new [task mapping survey](https://task-robot.glitch.me/survey), this time entering the first then second assignee's GitHub usernames separated by ` | `, e.g., `markwhiting | djwatts`, and the task file name as the task name.
 - [ ] Fill in all the agreed responses, and the resolved conflicts.
 
-## Wrapping up
+## Wrapping up (do this after all previous sections are completed)
 - [ ] Merge the PR, if you see options to also delete the associated fork, do that too.
 - [ ] Get the URL to the file in [`master/tasks`](https://github.com/Watts-Lab/task-mapping/tree/master/tasks) and replace the link in the [tasks](https://docs.google.com/spreadsheets/d/1r6JphHOM8K_dCrdX9ESx_05oYGtPVyVejxKBL1B3VL0/edit#gid=1644218186) sheet `task summary url` column.
 - [ ] Close this issue.
