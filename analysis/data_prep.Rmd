@@ -164,7 +164,7 @@ autoplot(pca,
          label.size = 3) +
   labs(title = paste("PCA of mapped tasks (across",dim(numerical_responses_matrix)[[2]],"task features and",dim(numerical_responses_matrix)[[1]],"tasks)",sep = " "), x = "", y = "") + 
   ggpubr::theme_pubclean()
-ggsave("Mapped_task_PCA.png",
+ggsave("./analysis_experiments/Mapped_task_PCA.png",
        width = 7,
        height = 5) 
 ```
@@ -194,7 +194,6 @@ numerical_completed_tasks <- numerical_completed_tasks %>%
 # Filter for questions that are logically exclusionary
 TOTAL_SCORE = 6
 
-
 filter_for_agreement <- function(data_table){
   
   data_table <- data_table %>% filter(goal_full+goal_partial == TOTAL_SCORE) %>%
@@ -205,8 +204,6 @@ filter_for_agreement <- function(data_table){
   
   return(data_table)
 }
-
-numerical_completed_and_agreed <- filter_for_agreement(numerical_completed_tasks)
 
 # Save the ones that disagree so that we can peek at them
 goal_disagreement<- numerical_completed_tasks %>%
@@ -309,11 +306,12 @@ submission_disagreement<- numerical_completed_tasks %>%
 inconsistent_questions <- goal_disagreement %>% rbind(options_disagreement) %>%
   rbind(outcome_disagreement) %>% rbind(individual_disagreement) %>% rbind(submission_disagreement)
 
-write.csv(inconsistent_questions,"task_mapping_issues.csv")
+write.csv(inconsistent_questions,"./analysis_experiments/task_mapping_issues.csv")
 ```
 
+## Save the agreed ones
 ```{r}
-numerical_completed_and_agreed
+numerical_completed_and_agreed <- filter_for_agreement(numerical_completed_tasks)
 ```
 
 # Filtering by Data Source / Top down v. Bottom up Explorations
@@ -385,7 +383,7 @@ consolidated_clusters_by_taxonomy <- all_clusters %>% left_join(shaw_clusters, b
   left_join(steiner_clusters, by = "task_names")
 
 # Export all the clusters into a single CSV
-write.csv(consolidated_clusters_by_taxonomy,"consolidated_clusters_by_taxonomy.csv")
+write.csv(consolidated_clusters_by_taxonomy,"./analysis_experiments/consolidated_clusters_by_taxonomy.csv")
 ```
 
 # Clustering Algorithm Explorations
@@ -411,7 +409,7 @@ task_clusters_dbscan <- task_clusters[order(task_clusters$V2),]%>%
   rename(All_Columns = V2) %>%
   left_join(all_clusters, by = "task_names")
 
-write.csv(task_clusters_dbscan,"task_clusters_dbscan_kmeans_comparison.csv")
+write.csv(task_clusters_dbscan,"./analysis_experiments/task_clusters_dbscan_kmeans_comparison.csv")
 
 # playing with hdbscan
 res.dbscan <-
@@ -428,10 +426,11 @@ data = numerical_completed_and_agreed # can update this to whatever
 data = as.matrix(data%>%select(-c(task_names)))
 ```
 
+## Heatmap
 ```{r}
 # heatmap generation
 png(
-  "heatmap.png",
+  "./analysis_experiments/heatmap.png",
   width = 20,
   height = 20,
   units = 'in',
@@ -441,6 +440,7 @@ heatmap <-
   heatmap(data, Colv = NA) #Row dendrogram groups this by similarity in rows
 ```
 
+## K-means clustering + PCA
 ```{r}
 # k-means clustering + PCA Graph
 # source: https://www.datanovia.com/en/blog/k-means-clustering-visualization-in-r-step-by-step-guide/
@@ -475,14 +475,15 @@ ggscatter(
   stat_mean(aes(color = cluster), size = k)
 
 ggsave(
-  paste("Mapped_task_PCA_Clustered_Colored_AGREEED_", k , ".png", sep = ""),
+  paste("./analysis_experiments/Mapped_task_PCA_Clustered_Colored_AGREEED_", k , ".png", sep = ""),
   width = 7,
   height = 6
 )
 ```
 ## Plot all taxonomies on the same axes
+Just replicates the same code as above, but generates a different file where you use the same PCA but cluster based on the selected columns
 ```{r}
-all_clusters_taxonomies <- read_csv("consolidated_clusters_by_taxonomy_renumbered.csv") %>%
+all_clusters_taxonomies <- read_csv("./analysis_experiments/consolidated_clusters_by_taxonomy_renumbered.csv") %>%
   arrange(id)
 
 # Dimension reduction using PCA
@@ -509,7 +510,7 @@ ggscatter(
   stat_mean(aes(color = cluster), size = k)
 
 ggsave(
-  paste("SHAW_sharedaxis_Mapped_task_PCA_Clustered_Colored_", k , ".png", sep = ""),
+  paste("./analysis_experiments/SHAW_sharedaxis_Mapped_task_PCA_Clustered_Colored_", k , ".png", sep = ""),
   width = 7,
   height = 6
 )
