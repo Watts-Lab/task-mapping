@@ -80,6 +80,7 @@ clean_responses <- raw_responses %>%
                                       gsub(
                                         "and slogan",
                                         "slogan",
+                                        gsub("hidden figure ", "hidden figures ",
                                         gsub(
                                           "finding the maximum",
                                           "find the maximum",
@@ -99,7 +100,7 @@ clean_responses <- raw_responses %>%
                                                                       tolower(task))
                                                                ))
                                                         ))
-                                                 ))
+                                                 )))
                                           )
                                         )
                                       ))
