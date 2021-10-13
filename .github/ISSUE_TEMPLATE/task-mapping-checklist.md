@@ -4,6 +4,7 @@ about: Task mapping checklist
 title: Task name
 labels: 'task'
 assignees: ''
+milestone: 'Task mapping'
 
 ---
 
