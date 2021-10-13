@@ -2,9 +2,8 @@
 name: Task mapping checklist
 about: Task mapping checklist
 title: Task name
-labels: 'task'
+labels: task
 assignees: ''
-milestone: 'Task mapping'
 
 ---
 
