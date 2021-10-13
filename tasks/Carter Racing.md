@@ -19,7 +19,7 @@ Link: https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.115.4325&rep=rep
 
 # Stimuli
 ## The visual components 
-![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Part_C.png)
+![image](/images/Carter_Racing_Part_C.png)
 
 
 Some studies that use this case study present groups with a counter-factual mind-set manipulation scenarios that they create.
@@ -31,11 +31,11 @@ Counterfactual Prime Condition:
 Non-counterfactual Prime Condition:  
 > A similar scenario was presented, except Sue did not switch seats and the winner was someone in a diffrent seat altogether.
 
-![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Counterfactual_Primes_1.png)
-![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Counterfactual_Primes_2.png)
-![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Counterfactual_Primes_3.png)
-![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Counterfactual_Primes_4.png)
-![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Counterfactual_Primes_5.png)
+![image](/images/Carter_Racing_Counterfactual_Primes_1.png)
+![image](/images/Carter_Racing_Counterfactual_Primes_2.png)
+![image](/images/Carter_Racing_Counterfactual_Primes_3.png)
+![image](/images/Carter_Racing_Counterfactual_Primes_4.png)
+![image](/images/Carter_Racing_Counterfactual_Primes_5.png)
 
 # Procedure
 ## Steps
@@ -56,12 +56,12 @@ Participant, their task is to read the case study and decide whether the team sh
 ## Instructions
 Link to the case study: https://execed.poole.ncsu.edu/wp-content/uploads/2020/06/Carter-Racing-A_B_C.pdf
 
-![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Teaching_Notes_1.png)
-![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Teaching_Notes_2.png) 
-![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Teaching_Notes_3.png) 
+![image](/images/Carter_Racing_Teaching_Notes_1.png)
+![image](/images/Carter_Racing_Teaching_Notes_2.png) 
+![image](/images/Carter_Racing_Teaching_Notes_3.png) 
 
 Additional Information Request Form:  
-![image](https://github.com/Watts-Lab/task-mapping/blob/Carter-Racing/images/Carter_Racing_Information_Request_Form.png) 
+![image](/images/Carter_Racing_Information_Request_Form.png) 
 
 # Criteria
 ## Performance calculation
