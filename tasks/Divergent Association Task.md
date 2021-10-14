@@ -13,7 +13,7 @@ Data Set: https://osf.io/kbeq6/
 
 # Stimuli
 ## The visual components
-Participant Instructions: ![image](https://github.com/Watts-Lab/task-mapping/blob/Divergent-Association-Task/images/Divergent_Association_Task_Instructions.png)
+Participant Instructions:  ![image](https://github.com/Watts-Lab/task-mapping/blob/d56a66f999e2d9fb0ce0d912d953041f7fa9cbe8/images/Divergent_Association_Task_Instructions.png)
 
 # Procedure
 Participants were asked to generate 10 unrelated nouns in four minutes. Participants were given instructions and asked to write down the words with a Pen and Pencil on the same instructions sheet.
