@@ -32,9 +32,11 @@ Jurors
 - All participants act as jurors on a regular jury
 
 ## Instructions
-The case summary is 6 pages and includes both prosecution and defense testimonies.  All trial summaries describe an alleged second degree sexual assault of a female victim taking place 18 months prior to the hearing.  
-The defendant was accused of disrobing and fondling the victim in the defendants house, while she waited for her playmate(the defendants daughter) to arrive.  
-The only variations between cases was the inclusion of critical evidence.  In the control version, the case against the defendant was designed to be weak.  In the other two versions critical evidence was sexed by the authorities from the defendants house.  The evidence was 17 photos of the victim either partially dressed for fully nude.  In both cases the defense objected to the evidence saying that  it was obtained through illegal search and seizure.  The evidence was then either ruled admissible or inadmissible.  In the inadmissible case, jurors are instructed to disregard the statement about the photographs, and no further rational is given by the judge.
+Instructions were adapted by the CSS lab.
+
+Participants are instructed to act as jurors on the trial they are about to read.  Once they have read the summary they are given a brief pre-deliberation questionnaire.  In this questionnaire they record their personal verdict for the trial, and their assuredness of this verdict.  
+Materials are collected, and the jury members are instructed on the law.  They are then asked to deliberate and reach a unanimous verdict.  They are allowed to delineate for 1 hour, or until they reach their verdict.  
+Then participants are once again given questionnaires where they once again render their individual verdict, and their assuredness of the verdict.
 
 # Criteria
 ## Performance calculation
