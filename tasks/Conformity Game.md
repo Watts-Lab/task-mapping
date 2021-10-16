@@ -64,13 +64,7 @@ Person W said “Euler ” with conviction 6
 
 # Criteria
 ## Performance calculation
-A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
-
-Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
-
-This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
+Percent change and confidence level, from 1 to 7, were independent variables and number of opposing messages was a dependent variable. Although expressed conviction declined continuously with increased numbers of people providing an opposing message, change was much less linear. As expected, very few people (less than 3% overall) changed when 4, 3, or even 2 others agreed with their position. However, when they received three or more opposing messages, substantially higher percentages (59%) of individuals changed their choice. Although individuals were surprisingly stubborn, weighting their own opinions highly even when faced with unanimous opposition, they were generally quite responsive to social influence.
 
 ## Incentives
-A formal specification of the incentives for participation.   
-
-Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+Each participant recieved $1 for predicting each answer of the majority.
