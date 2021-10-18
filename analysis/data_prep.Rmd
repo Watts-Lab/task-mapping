@@ -168,6 +168,7 @@ clean_responses %>%
 # Initial analysis that might move to another file at a later point
 numerical_responses_matrix <- agreed_responses %>% 
   select(task,ordinals$name) %>% 
+  distinct() %>%
   column_to_rownames(var = "task") %>% 
   mutate(across(everything(),~ if_else(is.na(as.numeric(.)),0,as.numeric(.))))
 
