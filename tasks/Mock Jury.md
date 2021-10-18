@@ -33,9 +33,10 @@ Jurors
 ## Instructions
 Instructions developed by CSS lab.
 
-Participants are instructed to act as jurors on the trial they are about to read.  Once they have read the summary they are given a brief pre-deliberation questionnaire.  In this questionnaire they record their personal verdict for the trial, and their assuredness of this verdict.  
-Materials are collected, and the jury members are instructed on the law.  They are then asked to deliberate and reach a unanimous verdict.  They are allowed to delineate for 1 hour, or until they reach their verdict.  
-Then participants are once again given questionnaires where they once again render their individual verdict, and their assuredness of the verdict.
+You are to act as a juror on the trial you are about to read.  Once you have read the summary you will be given a brief pre-deliberation questionnaire.  Before filling out the questionnaire, and continuing with the process, be sure that you take into account all facts of the trial and any specific instructions given by the judge.  
+In the questionnaire you will record your personal verdict for the trial, and your assuredness of this verdict (ie. how confident you are in your verdict).  
+Materials will then be collected, and you and your fellow jury members will be instructed on the laws surrounding the case.  You will then deliberate and attempt to reach a unanimous verdict.  The jury is allowed to deliberate for 1 hour, or until you reach a verdict.  
+Then all jurors will once again be given questionnaires where you will render your individual verdict, and your assuredness of the verdict.  
 
 # Criteria
 ## Performance calculation
