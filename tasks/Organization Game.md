@@ -10,7 +10,7 @@ Link: https://www.jstor.org/stable/2786835?casa_token=vlUx0jawDyAAAAAA%3AkwqZa3A
 
 # Stimuli
 ## The visual components
-Participants instruction manual available for purachase at  
+Participants instruction manual available for purchase at:  
 https://www.amazon.com/Organization-game-organizational-development-participants/dp/0876206437
 
 ## Materials for alternative versions of the experiment 
@@ -25,7 +25,7 @@ N/A
     - an in-house organizational development group
     - an internal accounting unit
     - a slack unit charged with addressing major issues that confronting the organization
-2. Participants are given minimal structure and have only unit heads, and resource controllers, from there they must decide how to further develop and staff the organization to create an effective system of operation.  This system must be flexible and able to adapt to internal and external forces.
+2. Participants are given minimal structure and have only unit heads, and resource controllers. From there, they must decide how to further develop and staff the organization to create an effective system of operation.  This system must be flexible and able to adapt to internal and external forces.
 
 ## Roles 
 Participants are assigned a role within the simulation by the instructor.
