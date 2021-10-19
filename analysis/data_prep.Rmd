@@ -53,8 +53,10 @@ clean_responses <- raw_responses %>%
         "( and |, |&|\\/|;)",
         " \\| ",
         gsub(
-          "(Subramaniam|Bottcher|Sampath|Cullen|Balasubramanian)",
+          "(Subramaniam|Bottcher|Sampath|Cullen|Balasubramanian|Paniukhina)",
           "",
+          gsub("paniukhina","Arina",
+               gsub("dodgehill","Dodge",
           gsub(
             "sarikasu",
             "Sarika",
@@ -62,9 +64,9 @@ clean_responses <- raw_responses %>%
               "(katelynbottcher|Katelynn)",
               "Katelyn",
               gsub("KaranSampath", "Karan", user)
-            )
+            ))
           )
-        )
+        ))
       )
     )),
     stage = case_when(# lets us know which tasks have agreement
@@ -73,6 +75,7 @@ clean_responses <- raw_responses %>%
     name_clean = trimws(gsub("  ", " ",
                              gsub(
                                ".md", "",
+                               gsub("fishing","fish",
                                gsub(
                                  "contruction",
                                  "construction",
@@ -101,14 +104,14 @@ clean_responses <- raw_responses %>%
                                                                ))
                                                         ))
                                                  )))
-                                          )
+                                          ))
                                         )
                                       ))
                                )
                              ))),
     performance_all = paste(performance_all, sep = ", ")
   ) %>%
-  left_join(tasks %>% mutate(name_clean = trimws(gsub(
+  full_join(tasks %>% mutate(name_clean = trimws(gsub(
     "  ", " ",
     sub("(anagrams)", "",
         sub(
@@ -124,9 +127,15 @@ clean_responses <- raw_responses %>%
                       ))
                ))
         ))
-  ))) %>% select(name, name_clean)) %>%
-  mutate(task = name) %>%
-  select(task, stage, user, updatedAt , everything())
+  ))) %>% select(name, name_clean,`phase 1 editor`,`phase 2 editor`,phase)) %>%
+  mutate(task = name,
+         editors = paste(`phase 1 editor`,`phase 2 editor`,sep = " -> "),
+         stage = case_when(
+           !is.na(stage) ~ stage,
+           !is.na(phase) ~ phase
+         )
+         ) %>%
+  select(task, stage, user, editors, updatedAt , everything(),-`phase 1 editor`,-`phase 2 editor`)
 
 unrecognised_tasks <-
   clean_responses %>% select(task, name_clean) %>% filter(is.na(task)) %>% arrange(name_clean)
@@ -140,7 +149,8 @@ if ((unrecognised_tasks %>% dim())[[1]] > 0)
 # Store the main tables to csv so other people can use them.
 agreed_responses <- clean_responses %>%
   filter(stage == "agreement") %>% 
-  select(-stage,-user,-updatedAt) %>%
+  select(-stage,-user,-updatedAt,-editors,-name,-name_clean,-phase) %>%
+  distinct() %>%
   arrange(task)
 
 agreed_responses %>% 
@@ -155,12 +165,13 @@ clean_responses %>% arrange(task,updatedAt)
 
 # Almost complete tasks
 clean_responses %>% 
+  filter(stage != "",editors != " -> ") %>% 
   group_by(task,stage) %>% 
-  summarise(mappers=paste(user, collapse = ' & ')) %>% 
-  pivot_wider(names_from = stage, values_from = mappers) %>% 
-  filter(is.na(agreement)) %>%
-  select(-agreement) %>%
-  rename(mappers_so_far = individual) %>% 
+  summarise(mappers=paste(user, collapse = ' + '),editors = first(editors)) %>% 
+  pivot_wider(names_from = stage, values_from = mappers,values_fill="") %>% 
+  filter(agreement=="") %>%
+  select(-agreement,-`1`,-`2`) %>%
+  rename(mappers_so_far = individual) %>%
   arrange(task)
 ```
 
@@ -168,14 +179,13 @@ clean_responses %>%
 # Initial analysis that might move to another file at a later point
 numerical_responses_matrix <- agreed_responses %>% 
   select(task,ordinals$name) %>% 
-  distinct() %>%
   column_to_rownames(var = "task") %>% 
   mutate(across(everything(),~ if_else(is.na(as.numeric(.)),0,as.numeric(.))))
 
 pca = prcomp(~., data = numerical_responses_matrix,na.action = na.exclude)
-summary(pca)
-plot(pca)
-biplot(pca,var.axes = FALSE,)
+# summary(pca)
+# plot(pca)
+# biplot(pca,var.axes = FALSE,)
 
 # Methods from https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html 
 autoplot(pca,
