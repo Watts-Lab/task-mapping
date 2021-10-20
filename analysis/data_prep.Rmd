@@ -132,7 +132,8 @@ clean_responses <- raw_responses %>%
          editors = paste(`phase 1 editor`,`phase 2 editor`,sep = " -> "),
          stage = case_when(
            !is.na(stage) ~ stage,
-           !is.na(phase) ~ phase
+           phase > 0 ~ paste("phase",phase), 
+           TRUE ~ "not started"
          )
          ) %>%
   select(task, stage, user, editors, updatedAt , everything(),-`phase 1 editor`,-`phase 2 editor`)
@@ -148,33 +149,65 @@ if ((unrecognised_tasks %>% dim())[[1]] > 0)
 ```{r}
 # Store the main tables to csv so other people can use them.
 agreed_responses <- clean_responses %>%
-  filter(stage == "agreement") %>% 
-  select(-stage,-user,-updatedAt,-editors,-name,-name_clean,-phase) %>%
+  filter(stage == "agreement") %>%
+  select(-stage, -user, -updatedAt, -editors, -name, -name_clean, -phase) %>%
   distinct() %>%
   arrange(task)
 
-agreed_responses %>% 
+agreed_responses %>%
   write_csv("../task_map.csv")
 
-questions %>% 
-  select(name,text,focus,answer_choices,answer_type,source) %>% 
-  arrange(name) %>% 
+questions %>%
+  select(name, text, focus, answer_choices, answer_type, source) %>%
+  arrange(name) %>%
   write_csv("../questions.csv")
 
-clean_responses %>% arrange(task,updatedAt)
+clean_responses %>% arrange(task, updatedAt)
 
-# Almost complete tasks
-clean_responses %>% 
-  filter(stage != "",editors != " -> ") %>% 
-  group_by(task,stage) %>% 
-  summarise(mappers=paste(user, collapse = ' + '),editors = first(editors)) %>% 
-  pivot_wider(names_from = stage, values_from = mappers,values_fill="") %>% 
-  filter(agreement=="") %>%
-  select(-agreement,-`1`,-`2`) %>%
-  rename(mappers_so_far = individual) %>%
+# Tasks and tracking
+tasks_tracking <- clean_responses %>%
+  filter(task != "") %>%
+  group_by(task, stage) %>%
+  summarise(mappers = paste(user, collapse = ' + '),
+            editors = first(editors)) %>% 
+  arrange(task, stage) %>% 
+  group_by(task) %>% 
+  summarise(
+    stage = first(stage),
+    editors = first(editors),
+    mappers = first(mappers)
+    ) %>% 
+  mutate(
+    editors = case_when(
+      editors == " -> " ~ "", 
+      TRUE ~ editors
+    ),
+    stage = case_when(
+      stage == "individual" & grepl("\\+",mappers) ~ "2 mappings",
+      stage == "individual" ~ "1 mapping",
+      stage == "agreement" ~ "done",
+      TRUE ~ stage
+    ),
+      stage = ordered(stage,levels = c("not started","phase 1", "phase 2", "1 mapping", "2 mappings", "done"))
+  ) %>%
   arrange(task)
 
-clean_responses %>% group_by(task,stage) %>% summarise(editors = first(editors)) %>% arrange(task,stage) %>% group_by(task) %>% summarise(stage = first(stage)) %>% write_csv("../tasks.csv")
+tasks_tracking %>% 
+  write_csv("../tasks.csv")
+
+tasks_tracking %>% 
+  filter(stage != "done", stage != "not started") %>% 
+  arrange(desc(stage),task) %>% 
+  write_csv("../mapping_progress.csv")
+
+clean_responses %>%
+  filter(task != "") %>% 
+  group_by(task, stage) %>% 
+  summarise(editors = first(editors)) %>% 
+  arrange(task, stage) %>% 
+  group_by(task) %>% 
+  summarise(stage = first(stage)) %>% 
+  
 ```
 
 ```{r}
