@@ -173,6 +173,8 @@ clean_responses %>%
   select(-agreement,-`1`,-`2`) %>%
   rename(mappers_so_far = individual) %>%
   arrange(task)
+
+clean_responses %>% group_by(task,stage) %>% summarise(editors = first(editors)) %>% arrange(task,stage) %>% group_by(task) %>% summarise(stage = first(stage)) %>% write_csv("../tasks.csv")
 ```
 
 ```{r}
