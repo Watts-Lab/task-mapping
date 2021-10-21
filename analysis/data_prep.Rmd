@@ -162,8 +162,6 @@ questions %>%
   arrange(name) %>%
   write_csv("../questions.csv")
 
-clean_responses %>% arrange(task, updatedAt)
-
 # Tasks and tracking
 tasks_tracking <- clean_responses %>%
   filter(task != "") %>%
@@ -199,15 +197,6 @@ tasks_tracking %>%
   filter(stage != "done", stage != "not started") %>% 
   arrange(desc(stage),task) %>% 
   write_csv("../mapping_progress.csv")
-
-clean_responses %>%
-  filter(task != "") %>% 
-  group_by(task, stage) %>% 
-  summarise(editors = first(editors)) %>% 
-  arrange(task, stage) %>% 
-  group_by(task) %>% 
-  summarise(stage = first(stage)) %>% 
-  
 ```
 
 ```{r}
