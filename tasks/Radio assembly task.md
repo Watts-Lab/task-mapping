@@ -8,6 +8,7 @@ Link: https://journals-sagepub-com.proxy.library.upenn.edu/doi/abs/10.1177/01461
 # Stimuli
 ## The visual components
 N/A
+
 ## Materials for the experiment 
 Kits were purchased from Tandy Corporation (Model 28-175).  Each kit contained the circuit board and dozens of mechanical and electrical components.  The circuit board was prepunched and marked with special symbols that indicated which competent should be placed in a hole.  No special tools were provided, and the task required only inserting components into the circuit board and connecting each components to each other properly.
 
@@ -23,24 +24,24 @@ Groups were first asked to recall and write down the instructions for assembling
 
 Groups were then given 30 minutes to assemble the radio.  They were asked to work as quickly as possible, but also make as few errors as possible.  They were not allowed to ask questions to the experimenter or examine their own recall sheet.  Each session was recorded with subjects permission.
 
-After assembly was complete, each participants individually completed a questionnaire asking basic biographical information questions, such as age, sex, and prior familiarity with other group members.  They were also asked about the complexity of the task, and the enjoyment of the task.  They were also asked about their group, questions included cohesion, cooperation, role differentiation and memory differentiation. 
+After assembly was complete, each participants individually completed a questionnaire asking basic biographical information questions, such as age, sex, and prior familiarity with other group members. They were also asked about the complexity of the task, and the enjoyment of the task.  They were also asked about their group, questions included cohesion, cooperation, role differentiation and memory differentiation. 
 
 ## Roles 
 Participants were all trained on how to assemble the radio, in either a group or individual setting, and then assembled the radio in a group setting.
 
 ## Instructions
-(Instructions were created by the CSS Lab)  
+(Instructions written by the CSS Lab)  
 The task is to assemble the AM side of a Tandy Corporation (Model 28-175) radio.
 Phase 1
 - individually or as a group, watch an experimenter assemble the AM said of a radio.
 - Ask any clarifying questions you may have.
 - As a group you will be given a kit to practice with.  You will have thirty minutes, and once you complete assembly an experimenter will inspect your work and give you notes on what could be improved.
-You will scheduled to return in one week.
+You are scheduled to return in one week.
 Phase 2
 - You and your group will write down all the steps you can recall to the radio assembly task.
 - Once you have finished, or after 7 minutes has elapsed, we will take the instructions you have written down, and your group will have 30 minutes to assemble the radio.
-- You are too assemble the radio as quickly and precisely as possible, ie. you want to be quick, but you should also avoid making errors where possible
-- With your permission we will record the session.
+- You are too assemble the radio as quickly and precisely as possible, i.e. you want to be quick, but you should also avoid making errors where possible.
+- With your permission, we will record the session.
 The best performing group will receive a prize of $20 each.  After the completion of phase 2, you will complete a brief questionnaire.
 
 # Criteria
@@ -48,4 +49,4 @@ The best performing group will receive a prize of $20 each.  After the completio
 Groups were judged off of however quickly and accurately they managed to assemble the radio. 
 
 ## Incentives
-The best work group would receive a prize of $20 each.
+The best group (i.e. the group which performed best on the performance metrics) would receive a prize of $20 each.
