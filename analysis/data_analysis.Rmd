@@ -222,7 +222,6 @@ mcgrath_data <- get_filtered_data_for_author(mcgrath)
 zigurs_data <- get_filtered_data_for_author(zigurs)
 steiner_data <- get_filtered_data_for_author(steiner)
 ```
-
 ## Explorations with comparing how the different authors' frameworks cluster
 ```{r}
 set.seed(123)
@@ -256,6 +255,7 @@ consolidated_clusters_by_taxonomy <- all_clusters %>% left_join(shaw_clusters, b
 # Export all the clusters into a single CSV
 write.csv(consolidated_clusters_by_taxonomy,"./analysis_experiments/consolidated_clusters_by_taxonomy.csv")
 ```
+
 
 # Clustering Algorithm Explorations
 
@@ -351,40 +351,4 @@ ggsave(
   height = 6
 )
 ```
-## Plot all taxonomies on the same axes
-Just replicates the same code as above, but generates a different file where you use the same PCA but cluster based on the selected columns
-```{r}
-all_clusters_taxonomies <- read_csv("./analysis_experiments/consolidated_clusters_by_taxonomy_renumbered.csv") %>%
-  arrange(id)
-
-# Dimension reduction using PCA
-res.pca <- prcomp(as.matrix(numerical_completed_tasks %>% select(-c(task_names))))
-# Coordinates of individuals
-ind.coord <- as.data.frame(get_pca_ind(res.pca)$coord)
-
-
-# Add clusters
-ind.coord$cluster <- factor(all_clusters_taxonomies$Shaw)
-ind.coord$lbl <- c(1:nrow(all_clusters_taxonomies))
-
-# Plot
-ggscatter(
-  ind.coord,
-  x = "Dim.1",
-  y = "Dim.2",
-  color = "cluster",
-  palette = "npg",
-  ellipse = TRUE,
-  ellipse.type = "convex",
-  label = ind.coord$lbl
-) +
-  stat_mean(aes(color = cluster), size = k)
-
-ggsave(
-  paste("./analysis_experiments/SHAW_sharedaxis_Mapped_task_PCA_Clustered_Colored_", k , ".png", sep = ""),
-  width = 7,
-  height = 6
-)
-```
-
 
