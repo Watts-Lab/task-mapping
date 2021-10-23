@@ -154,6 +154,16 @@ agreed_responses <- clean_responses %>%
 agreed_responses %>%
   write_csv("../task_map.csv")
 
+# Store the numerical response here - the csv messes up the ordinal values, so better to
+# encode before we switch over to the other file
+numerical_responses_matrix <- agreed_responses %>% 
+  select(task,ordinals$name) %>% 
+  column_to_rownames(var = "task") %>%
+  mutate(across(everything(),~ if_else(is.na(as.numeric(.)),0,as.numeric(.))))
+
+numerical_responses_matrix %>%
+  write_csv("../task_map_numeric.csv")
+
 questions %>%
   select(name, text, focus, answer_choices, answer_type, source) %>%
   arrange(name) %>%
@@ -195,3 +205,5 @@ tasks_tracking %>%
   arrange(desc(stage),task) %>% 
   write_csv("../mapping_progress.csv")
 ```
+
+
