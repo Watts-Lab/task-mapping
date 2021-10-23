@@ -1,31 +1,24 @@
 task,stage,editors,mappers
-Battle of the sexes,2 mappings,dodgehill -> KaranSampath,Karan + Dodge
 Checkers,2 mappings,bvikram03 -> sarikasu,Vikram + Sarika
 Estimating social quantity,2 mappings,bvikram03 -> katelynbottcher,Karan + Vikram
-Hidden figures in a picture,2 mappings,katelynbottcher -> ,Katelyn + Sarika
-Logic Problem,2 mappings,katelynbottcher -> sarikasu,Sarika + Sarika + Sarika + Katelyn + Katelyn + Katelyn
 Minimum-effort tacit coordination game,2 mappings,sarikasu -> vivianxdx,Sarika + Sarika
 Mock jury,2 mappings,dodgehill -> sarikasu,Sarikasu + Dodge
-Organization Game,2 mappings,dodgehill -> KaranSampath,Dodge + Karan
-Radio assembly task,2 mappings,dodgehill -> KaranSampath,Dodge + Karan
-Recall association,2 mappings,sarikasu -> katelynbottcher,Sarika + Katelyn + Andrew + Vikram
-Trivia Multiple Choice Quiz,2 mappings,sarikasu -> katelynbottcher,Sarika + Katelyn
-Blocks World for Teams,1 mapping,katelynbottcher -> sarikasu,Sarika
 Conformity game,1 mapping,paniukhina -> ,Arina
-"NASA Moon survival",1 mapping,katelynbottcher -> dodgehill,Dodge
+Intergroup Prisoner's Dilemma,1 mapping,sarikasu -> katelynbottcher,Sarika
+NASA Moon survival,1 mapping,katelynbottcher -> dodgehill,Dodge
 reproducing arts,1 mapping,katelynbottcher  -> andydrew93,Katelyn
 Visual Oddball Target,1 mapping,paniukhina -> katelynbottcher,Arina
+Word completion given starting letter,1 mapping,katelynbottcher -> sarikasu,Sarika
 Apache helicopter flight simulator (Longbow2),phase 2,bvikram03 -> KaranSampath,"NA"
 Creative uses of objects,phase 2,vivianxdx -> bvikram03,"NA"
 decrypt words/sentences,phase 2,AshleyFe -> bvikram03,"NA"
 Guessing the correlation,phase 2,bvikram03 -> KaranSampath,"NA"
-Intergroup Prisoner's Dilemma,phase 2,sarikasu -> katelynbottcher,"NA"
 Investment Game (aka Trust Game),phase 2,andydrew93 -> Rafael Gehrke,"NA"
 Public goods game,phase 2,vivianxdx -> sarikasu,"NA"
 Sender-Receiver game,phase 2,andydrew93 -> vivianxdx,"NA"
 Sub-arctic survival,phase 2,,"NA"
 Typing game,phase 2,andydrew93 -> katelynbottcher,"NA"
-Word completion given starting letter,phase 2,katelynbottcher -> sarikasu,"NA"
+5 squares problem,phase 1,dodgehill -> ,"NA"
 Arithmetic problem 1,phase 1,katelynbottcher -> ,"NA"
 Arithmetic problem 2,phase 1,katelynbottcher -> ,"NA"
 Arithmetic problem 3,phase 1,katelynbottcher -> ,"NA"

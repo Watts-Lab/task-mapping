@@ -2,7 +2,7 @@ task,stage,editors,mappers
 22 Mathematical puzzles,not started,,"NA"
 24 arithmetic problems,not started,,"NA"
 3-issue cell phone negotaition,not started,,"NA"
-5 squares problem,not started,,"NA"
+5 squares problem,phase 1,dodgehill -> ,"NA"
 9 Dot Problem,done,sarikasu -> KaranSampath,Karan | Sarika
 Abstract grid task,done,sarikasu -> katelynbottcher,Sarika | katelynnbottcher
 Advertisement writing,done,sarikasu -> katelynbottcher,Sarika | Katelyn
@@ -16,10 +16,10 @@ Arithmetic problem 3,phase 1,katelynbottcher -> ,"NA"
 Arithmetic problem 4,phase 1,katelynbottcher -> ,"NA"
 Arithmetic problem 5,not started,,"NA"
 Arithmetic problem 6,not started,,"NA"
-Battle of the sexes,2 mappings,dodgehill -> KaranSampath,Karan + Dodge
+Battle of the sexes,done,dodgehill -> KaranSampath,Dodge | Karan
 Best job candidate (hidden-profile),done,sarikasu -> katelynbottcher,Sarika | katelynnbottcher
 Biopharm Seltek,done,sarikasu -> KaranSampath,Karan | Sarika
-Blocks World for Teams,1 mapping,katelynbottcher -> sarikasu,Sarika
+Blocks World for Teams,done,katelynbottcher -> sarikasu,Sarika | Katelyn
 Brainstorming (various),not started,,"NA"
 Bullard Houses,done,dodgehill -> sarikasu,Dodge | Sarika
 Bureucratic organization simulation (subjects naive),not started,,"NA"
@@ -54,10 +54,10 @@ Graph coloring task,done,sarikasu -> katelynbottcher,Sarika | Andrew
 Guessing numbers,done,katelynbottcher -> sarikasu,Sarika | katelynnbottcher
 Guessing the correlation,phase 2,bvikram03 -> KaranSampath,"NA"
 Hearts,not started,,"NA"
-Hidden figures in a picture,2 mappings,katelynbottcher -> ,Katelyn + Sarika
+Hidden figures in a picture,done,katelynbottcher -> ,Katelyn | Sarika
 Husbands and wives transfer,done,katelynbottcher -> sarikasu,Sarika | Katelyn
 Image rating,done,sarikasu -> KaranSampath,Sarika | Karan
-Intergroup Prisoner's Dilemma,phase 2,sarikasu -> katelynbottcher,"NA"
+Intergroup Prisoner's Dilemma,1 mapping,sarikasu -> katelynbottcher,Sarika
 Intergroup Prisoner's Dilemma-Maximizing Difference,done,dodgehill -> katelynbottcher,Katelyn | Dodge
 Internation simulation,not started,,"NA"
 Investment Game (aka Trust Game),phase 2,andydrew93 -> Rafael Gehrke,"NA"
@@ -66,7 +66,7 @@ Iterated Snowdrift Game (aka Hawk-Dove game),done,sarikasu -> katelynbottcher,Ka
 Iterative lemonade stand task,done,dodgehill -> katelynbottcher,Katelyn | Dodge
 Judgment of product and slogan,done,sarikasu -> dodgehill,Dodge | Sarika
 letters-to-numbers problems (cryptography),done,sarikasu -> KaranSampath,Sarika | Karan
-Logic Problem,2 mappings,katelynbottcher -> sarikasu,Sarika + Sarika + Sarika + Katelyn + Katelyn + Katelyn
+Logic Problem,done,katelynbottcher -> sarikasu,Katelyn | Sarika + Katelyn | Sarika + Katelyn | Sarika
 Manipulation (change object to goal state),done,katelynbottcher -> andrewcullen1,Andrew | Katelyn
 Mastermind,done,katelynbottcher -> dodgehill,Katelyn | Dodge + Katelyn | Dodge
 Military negotiation similar to Vietnam,not started,,"NA"
@@ -77,11 +77,11 @@ Moms.com,not started,,"NA"
 Moral Reasoning (Disciplinary Action Case),done,sarikasu -> benjamin-manning,benjamin-manning | Sarika
 Moral reasoning dilemmas,not started,,"NA"
 Moving offices (complex task),not started,,"NA"
-"NASA Moon survival",1 mapping,katelynbottcher -> dodgehill,Dodge
+NASA Moon survival,1 mapping,katelynbottcher -> dodgehill,Dodge
 New Recruit,done,sarikasu -> KaranSampath,Karan | Sarika
 Object based generalization for reasoning (Phyre),not started,,"NA"
 Oligopoly game,done,sarikasu -> katelynbottcher,Sarika | Katelyn
-Organization Game,2 mappings,dodgehill -> KaranSampath,Dodge + Karan
+Organization Game,done,dodgehill -> KaranSampath,Dodge | Karan
 pharmaceutical company (hidden-profile),done,sarikasu -> KaranSampath,Sarika | Karan
 Pipe task,not started,,"NA"
 Prisoner's Dilemma (various versions),not started,,"NA"
@@ -89,13 +89,13 @@ Problem solving tasks (Hackman),not started,,"NA"
 Production tasks (Hackman),not started,,"NA"
 Public goods game,phase 2,vivianxdx -> sarikasu,"NA"
 Putting food into categories,done,katelynbottcher -> sarikasu,Katelyn | Sakra
-Radio assembly task,2 mappings,dodgehill -> KaranSampath,Dodge + Karan
+Radio assembly task,done,dodgehill -> KaranSampath,Dodge | Karan
 Railroad Route Construction game,done,katelynbottcher -> sarikasu,Katelyn | Sarika
 Random dot motion,done,bvikram03 -> sarikasu,bvikram03 | Karan
 "Rank cities by population, rank words by familiarity",done,katelynbottcher -> andrewcullen1,Andrew | Katelyn
 Ravens Matrices,done,katelynbottcher -> sarikasu,Sarika | Katelyn
 Reading the mind in the eyes,done,sarikasu -> dodgehill,Sarika | Dodge
-Recall association,2 mappings,sarikasu -> katelynbottcher,Sarika + Katelyn + Andrew + Vikram
+Recall association,done,sarikasu -> katelynbottcher,Katelyn | Sarika
 Recall images ,done,sarikasu -> katelynbottcher,Sarika | katelynnbottcher
 Recall stories,not started,,"NA"
 Recall videos,done,sarikasu -> katelynbottcher,Sarika | katelynnbottcher
@@ -121,7 +121,7 @@ The maximum of a function,done,katelynbottcher -> sarikasu,Sarika | katelynnbott
 The N light bulbs game,done,katelynbottcher -> benjamin-manning,benjamin-manning | Katelyn
 To evacuate or not to evacuate,done,sarikasu -> katelynbottcher,Sarika | katelynnbottcher
 TOPSIM - general mgmt business game,done,sarikasu -> dodgehill,Dodge | Sarika
-Trivia Multiple Choice Quiz,2 mappings,sarikasu -> katelynbottcher,Sarika + Katelyn
+Trivia Multiple Choice Quiz,done,sarikasu -> katelynbottcher,Katelyn | Sarika
 Typing game,phase 2,andydrew93 -> katelynbottcher,"NA"
 Ultimatum game (various versions),done,sarikasu -> andydrew93,Sarika | Andrew
 Unscramble words (anagrams),done,bvikram03 -> KaranSampath,Sarika | Karan
@@ -135,7 +135,7 @@ Wildcam Gorongosa (Zooniverse),done,sarikasu -> KaranSampath,Sarika| Karansampat
 Wildcat Wells,done,sarikasu -> KaranSampath,Sarika | Karan
 "Wolf, goat and cabbage transfer",done,sarikasu -> benjamin-manning,benjamin-manning | Sarika
 Word completion given part of word,done,sarikasu -> benjamin-manning,benjamin-manning | Sarika
-Word completion given starting letter,phase 2,katelynbottcher -> sarikasu,"NA"
+Word completion given starting letter,1 mapping,katelynbottcher -> sarikasu,Sarika
 Word construction from a subset of letters,done,katelynbottcher -> dodgehill,Katelyn | Dodge
 Word/Sentence construction,not started,,"NA"
 Writing story,done,sarikasu -> KaranSampath,Sarika | Karan
