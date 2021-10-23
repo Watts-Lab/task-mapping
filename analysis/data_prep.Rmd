@@ -3,7 +3,6 @@ title: "Task mapping data preperation"
 ---
 
 ```{r}
-library(tidyverse)
 library(irr)
 library(ggplot2)
 library(jsonlite)
@@ -14,6 +13,7 @@ library(stats)
 library(ggpubr)
 library(dbscan)
 library(dplyr)
+library(tidyverse)
 ```
 
 ```{r}
@@ -29,8 +29,6 @@ tasks <- fromJSON("https://task-robot.glitch.me/tasks/json")
 # All the questions asked in the mapping process
 questions <- fromJSON("https://task-robot.glitch.me/questions/json")
 ```
-
-
 ```{r}
 ordinals <-
   questions %>% filter(answer_type == "ordinal", focus == "task") %>%
@@ -99,6 +97,8 @@ clean_responses <- raw_responses %>%
                                                           gsub("various versions", "",
                                                                gsub(
                                                                  "hidden profile", "",
+                                                                 gsub("block world",
+                                                                   "blocks world",
                                                                  gsub("[()-]", " ",
                                                                       tolower(task))
                                                                ))
@@ -107,7 +107,7 @@ clean_responses <- raw_responses %>%
                                           ))
                                         )
                                       ))
-                               )
+                               ))
                              ))),
     performance_all = paste(performance_all, sep = ", ")
   ) %>%
@@ -140,10 +140,6 @@ clean_responses <- raw_responses %>%
 
 unrecognised_tasks <-
   clean_responses %>% select(task, name_clean) %>% filter(is.na(task)) %>% arrange(name_clean)
-
-if ((unrecognised_tasks %>% dim())[[1]] > 0)
-  stop("Error, some task names did not match:\n\n",
-       unrecognised_tasks)
 ```
 
 ```{r}
