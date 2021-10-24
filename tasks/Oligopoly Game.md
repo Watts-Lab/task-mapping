@@ -1,5 +1,5 @@
 # Summary
-The purpose of the oligopoly game is to illustrate the problem of price coordination under oligopoly. The object of the game is for players to maximize their profits over rounds of the game. Players have the coice to compete or collude with other players in each round to improve their payoffs but are not allowed to speak to other players. 
+The purpose of the oligopoly game is to illustrate the problem of price coordination under oligopoly. The object of the game is for players to maximize their profits over rounds of the game. Players have the choice to compete or collude with other players in each round to improve their payoffs but are not allowed to speak to other players. 
 
 # References
 Main Paper: https://onlinelibrary-wiley-com.proxy.library.upenn.edu/doi/pdfdirect/10.1111/j.1465-7295.1987.tb00776.x

@@ -1,0 +1,86 @@
+"","task_names","generating","choosing","negotiating","executing","num_total_labels"
+"1","9 Dot Problem",0,1,0,0,1
+"2","Abstract grid task",0,1,0,0,1
+"3","Advertisement writing",1,0,0,0,1
+"4","Aerospace Investment (Role-playing)",0,1,0,0,1
+"5","Allocating resources to programs",0,0,1,0,1
+"6","Architectural design task",0,1,0,0,1
+"7","Battle of the sexes",0,0,1,1,2
+"8","Best job candidate (hidden-profile)",0,1,0,1,2
+"9","Biopharm Seltek",0,1,0,0,1
+"10","Blocks World for Teams",0,1,0,1,2
+"11","Bullard Houses",0,1,0,0,1
+"12","Carter Racing",0,1,0,0,1
+"13","Categorization problem",0,1,0,0,1
+"14","Chicken",0,1,0,1,2
+"15","Crisis mapping",0,1,0,0,1
+"16","Desert survival",1,0,1,0,2
+"17","Dictator game and its variants",0,0,1,1,2
+"18","Divergent Association Task",1,0,0,1,2
+"19","Energetics Meets Generex",0,1,0,0,1
+"20","Estimating geological metrics",0,1,0,0,1
+"21","Estimating pages of a book",0,1,0,0,1
+"22","Euclidean traveling salesperson",0,0,0,1,1
+"23","Find the maximum",0,1,0,0,1
+"24","Forecasting and Estimation in Groups, with Confidence",0,1,0,0,1
+"25","Game of Clue - Terrorist Attack",0,1,0,1,2
+"26","Graph coloring task",0,1,0,0,1
+"27","Guessing numbers",0,1,0,1,2
+"28","Hidden figures in a picture",0,1,0,0,1
+"29","Husbands and wives transfer",0,1,0,0,1
+"30","Image rating",0,1,0,0,1
+"31","Intergroup Prisoner's Dilemma-Maximizing Difference",0,0,1,0,1
+"32","Investment game (hidden-profile)",0,1,0,0,1
+"33","Iterated Snowdrift Game (aka Hawk-Dove game)",0,0,1,1,2
+"34","Iterative lemonade stand task",0,1,0,0,1
+"35","Judgment of product and slogan",0,1,0,0,1
+"36","letters-to-numbers problems (cryptography)",0,1,0,0,1
+"37","Logic Problem",0,1,0,0,1
+"38","Manipulation (change object to goal state)",1,0,0,0,1
+"39","Mastermind",0,1,0,0,1
+"40","Minimal Group Paradigm (study diversity)",0,1,0,0,1
+"41","Moral Reasoning (Disciplinary Action Case)",0,0,1,0,1
+"42","New Recruit",0,0,1,0,1
+"43","Oligopoly game",0,1,0,1,2
+"44","Organization Game",1,0,0,0,1
+"45","pharmaceutical company (hidden-profile)",0,1,0,0,1
+"46","Putting food into categories",1,0,0,0,1
+"47","Radio assembly task",0,1,0,0,1
+"48","Railroad Route Construction game",0,1,0,1,2
+"49","Random dot motion",0,1,0,0,1
+"50","Rank cities by population, rank words by familiarity",0,1,0,0,1
+"51","Ravens Matrices",0,1,0,0,1
+"52","Reading the mind in the eyes",0,1,0,1,2
+"53","Recall association",0,1,0,1,2
+"54","Recall images ",0,1,0,0,1
+"55","Recall videos",0,1,0,0,1
+"56","Recall word lists",0,1,0,1,2
+"57","Room assignment task",0,1,0,1,2
+"58","Run a mini business",0,1,0,0,1
+"59","Search for Oil Task",0,1,0,0,1
+"60","Sequential dyadic die-rolling",0,1,0,1,2
+"61","Shopping plan",1,0,1,0,2
+"62","Space Fortress",0,1,0,1,2
+"63","Splitting a deck of cards",0,1,0,1,2
+"64","Strike Group Defender (developed by Metateq, Inc.)",0,1,0,0,1
+"65","Sudoku",0,1,0,0,1
+"66","Summarize Discussion",1,0,1,0,2
+"67","Target Search",0,1,0,0,1
+"68","The beer game",0,1,0,1,2
+"69","The Fish game",0,1,0,1,2
+"70","The maximum of a function",0,1,0,0,1
+"71","The N light bulbs game",0,1,0,1,2
+"72","To evacuate or not to evacuate",0,1,0,0,1
+"73","TOPSIM - general mgmt business game",0,1,0,0,1
+"74","Trivia Multiple Choice Quiz",0,0,1,0,1
+"75","Ultimatum game (various versions)",0,0,1,1,2
+"76","Unscramble words (anagrams)",0,1,0,1,2
+"77","Viking",0,1,0,0,1
+"78","Volunteer Investment Game",0,0,0,1,1
+"79","Whac-A-Mole",0,1,0,1,2
+"80","Wildcam Gorongosa (Zooniverse)",0,1,0,0,1
+"81","Wildcat Wells",0,1,0,0,1
+"82","Wolf, goat and cabbage transfer",0,1,0,0,1
+"83","Word completion given part of word",0,1,0,0,1
+"84","Word construction from a subset of letters",0,1,0,1,2
+"85","Writing story",1,0,0,0,1

@@ -19,6 +19,7 @@ library(tidyverse)
 # Import Data
 ```{r}
 numerical_responses_matrix <- read_csv('../task_map_numeric.csv')
+questions <- fromJSON("https://task-robot.glitch.me/questions/json")
 ```
 
 # PCA Map - Basic
@@ -222,6 +223,7 @@ mcgrath_data <- get_filtered_data_for_author(mcgrath)
 zigurs_data <- get_filtered_data_for_author(zigurs)
 steiner_data <- get_filtered_data_for_author(steiner)
 ```
+
 ## Explorations with comparing how the different authors' frameworks cluster
 ```{r}
 set.seed(123)
@@ -254,6 +256,186 @@ consolidated_clusters_by_taxonomy <- all_clusters %>% left_join(shaw_clusters, b
 
 # Export all the clusters into a single CSV
 write.csv(consolidated_clusters_by_taxonomy,"./analysis_experiments/consolidated_clusters_by_taxonomy.csv")
+```
+
+## Classification in the "old-school" way
+
+### McGrath
+```{r}
+# Get all columns needed to make McGrath Classification -----------------
+questions_for_mcgrath_circumplex <-
+    questions %>% filter(source_clean == "McGrath" | name == "solution_objectivity" | name == "solution_verifiability")
+  
+data_selected <- agreed_responses %>%
+    select(c(task, questions_for_mcgrath_circumplex$name)) %>%
+    column_to_rownames(var = "task") %>%
+    mutate(across(everything(),  ~ if_else(is.na(as.numeric(
+      .
+    )), 0, as.numeric(.)))) %>%
+    select_if(colSums(.) != 0) #I don't filter for the ordinals, so just filter out the column if it's zeroed out
+  
+# Add the task names back
+data_with_mcgrath_cols <-
+    cbind(task_names, data_selected)
+
+
+MIDDLE = 3
+
+# MANUAL CLASSIFICATION ---- what's tough about this is that things don't divide cleanly along the lines....
+
+# Identify quadrant
+
+# 1. Generating Alternatives
+mcg_generating <- data_with_mcgrath_cols %>%
+  filter(
+    (generate_plan > MIDDLE | generate_process > MIDDLE | generate_ideas > MIDDLE | generate_creativity > MIDDLE) & #  Creativity markers
+    (conflict_cooperation < MIDDLE & conflict_interests < MIDDLE) & # NOT conflict/cooperation or conflict of interests
+    (solution_objectivity < MIDDLE | solution_verifiability < MIDDLE) # NOT objective - but this is an OR because some plans are objective?
+    )
+
+# 2. Choosing Alternatives
+mgc_choosing <- data_with_mcgrath_cols %>%
+  filter(
+    (solution_objectivity > MIDDLE & solution_verifiability > MIDDLE) & # Markers of Objective Choice
+    (generate_plan < MIDDLE | generate_process < MIDDLE | generate_ideas < MIDDLE | generate_creativity < MIDDLE) #  NOT Generating markers
+    # Agnostic towards Negotiation b/c sometimes the choice is a negotiation
+    )
+
+# 3. Negotiate
+mcg_negotiating <- data_with_mcgrath_cols %>%
+  filter(
+    (resolve_opinion > MIDDLE | resolve_perspectives > MIDDLE | conflict_interests > MIDDLE | conflict_cooperation > MIDDLE) &# Negotiation markers
+     (solution_objectivity < MIDDLE | solution_verifiability < MIDDLE) & # No correct solution (excludes CHOOSE or is explicitly a conflict and cooperation game)
+     (generate_creativity < MIDDLE) # definitely NOT creativity
+    )
+
+# 4. Execute
+mcg_executing <- data_with_mcgrath_cols %>%
+  filter(
+    (external_adversary > MIDDLE | external_standard > MIDDLE | conflict_interests > MIDDLE) & # Markers of Execute
+    (generate_plan < MIDDLE | generate_process < MIDDLE | generate_ideas < MIDDLE | generate_creativity < MIDDLE) & #  NOT Generating markers
+    (resolve_opinion < MIDDLE & resolve_perspectives < MIDDLE ) # NOT Negotiation markers
+  )
+
+
+####### Generate McGrath Categorization Summary #####
+mcgrath_quadrant_labels <- data.frame(task_names)
+
+for (i in 1:nrow(data_with_mcgrath_cols)) {
+  task = data_with_mcgrath_cols$task_names[i]
+  mcgrath_quadrant_labels$generating[i] = as.numeric(task %in% mcg_generating$task_names)
+  mcgrath_quadrant_labels$choosing[i] = as.numeric(task %in% mgc_choosing$task_names)
+  mcgrath_quadrant_labels$negotiating[i] = as.numeric(task %in% mcg_negotiating$task_names)
+  mcgrath_quadrant_labels$executing[i] = as.numeric(task %in% mcg_executing$task_names)
+}
+
+mcgrath_quadrant_labels <- mcgrath_quadrant_labels %>% mutate(
+  num_total_labels = generating+choosing+negotiating+executing
+)
+table(mcgrath_quadrant_labels$num_total_labels)
+
+write.csv(mcgrath_quadrant_labels, './analysis_experiments/mcgrath-quadrant-labels.csv')
+```
+
+### Steiner
+```{r}
+# Maximizing Tasks
+steiner_maximizing <- steiner_data %>% filter(
+  goal_maximize > MIDDLE
+)
+
+# Optimizing Tasks
+steiner_optimizing <- steiner_data %>% filter(
+  goal_standard > MIDDLE |
+  goal_optimize > MIDDLE
+)
+
+# Divisible Tasks
+steiner_divisible <- steiner_data %>% filter(
+  goal_full < MIDDLE & # there is partial credit - can be divided 
+  (goal_partial > MIDDLE | # the rest of these indicate divisibility
+  task_divisibility > MIDDLE |
+  submission_separate > MIDDLE |
+  task_specialization > MIDDLE)
+)
+
+# Unitary Tasks
+steiner_unitary <- steiner_data %>% filter(
+  goal_full > MIDDLE & # there is no partial credit - can't be divided 
+  (goal_partial < MIDDLE | # the rest of these indicate divisibility
+  task_divisibility < MIDDLE |
+  submission_separate < MIDDLE |
+  task_specialization < MIDDLE)
+)
+
+# Additive Tasks
+steiner_additive <- steiner_data %>% filter(
+  (participation_equal > MIDDLE | # Additive Characteristics
+  subtasks_additive > MIDDLE |
+  performance_average > MIDDLE |
+  performance_cumulative > MIDDLE) &
+  (performance_worst < MIDDLE)  & # Conjunctive Characteristics
+  (subtasks_disjunctive < MIDDLE | # Disjunctive Characteristics
+  performance_best < MIDDLE)
+)
+
+# Conjunctive Tasks
+steiner_conjunctive <- steiner_data %>% filter(
+  (participation_equal < MIDDLE | # Additive Characteristics
+  subtasks_additive < MIDDLE |
+  performance_average < MIDDLE |
+  performance_cumulative < MIDDLE) &
+  (performance_worst > MIDDLE)  & # Conjunctive Characteristics
+  (subtasks_disjunctive < MIDDLE | # Disjunctive Characteristics
+  performance_best < MIDDLE)
+)
+
+# Disjunctive Tasks
+steiner_disjunctive <- steiner_data %>% filter(
+  (participation_equal < MIDDLE | # Additive Characteristics
+  subtasks_additive < MIDDLE |
+  performance_average < MIDDLE |
+  performance_cumulative < MIDDLE) &
+  (performance_worst < MIDDLE)  & # Conjunctive Characteristics
+  (subtasks_disjunctive > MIDDLE | # Disjunctive Characteristics
+  performance_best > MIDDLE)
+)
+
+# Discretionary Tasks
+steiner_discretionary <- steiner_data %>% filter(
+  subtasks_discretionary_weight > MIDDLE |
+  subtasks_discretionary_combination > MIDDLE
+)
+
+####### Generate Steiner Categorization Summary #####
+steiner_labels <- data.frame(task_names)
+
+for (i in 1:nrow(steiner_data)) {
+  task = steiner_data$task_names[i]
+  steiner_labels$maximizing[i] = as.numeric(task %in% steiner_maximizing$task_names)
+  steiner_labels$optimizing[i] = as.numeric(task %in% steiner_optimizing$task_names)
+  steiner_labels$divisible[i] = as.numeric(task %in% steiner_divisible$task_names)
+  steiner_labels$unitary[i] = as.numeric(task %in% steiner_unitary$task_names)
+  steiner_labels$additive[i] = as.numeric(task %in% steiner_additive$task_names)
+  steiner_labels$conjunctive[i] = as.numeric(task %in% steiner_conjunctive$task_names)
+  steiner_labels$disjunctive[i] = as.numeric(task %in% steiner_disjunctive$task_names)
+  steiner_labels$discretionary[i] = as.numeric(task %in% steiner_discretionary$task_names)
+}
+
+steiner_labels %>% mutate(
+  num_total_labels = maximizing+optimizing+divisible+unitary+additive+conjunctive+disjunctive+discretionary
+)
+
+write.csv(steiner_labels, './analysis_experiments/steiner-labels.csv')
+```
+### Zigurs
+```{r}
+# TODO
+```
+
+### Shaw
+```{r}
+# TODO
 ```
 
 
