@@ -1,5 +1,5 @@
 # Summary
-The experiment performed was designed to test the effects of group deliberation on jurors when exposed to inadmissable evidence. Speciffically the study sought to see how group deliberation would effect jurors individual ability to disregard inadmissable evidence.
+The experiment performed was designed to test the effects of group deliberation on jurors when exposed to inadmissable evidence. Specifically the study sought to see how group deliberation would effect jurors individual ability to disregard inadmissable evidence.
 In the experiment, mock jurors were exposed to highly incriminating evidence that was ruled inadmissable because of due process concerns.  After reading the case and receiving jury instructions, jurors completed a brief predeliberation questionnaire, rendering their individual verdict(guilty or not guilty) and their verdict confidence(from 0% to 100% confident).
 
 # References
