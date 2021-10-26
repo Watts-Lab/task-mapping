@@ -1,0 +1,58 @@
+# Summary
+Groups of four participants were given 16 cards with images on them.  They had to work together to group the cards into four sets of four cards based on the images.
+
+# References
+Bavelas, A. (1973). The five squares problem: An instructional aid in group cooperation. Studies in Personnel Psychology, 5(2), 29–38.
+Link: https://psycnet.apa.org/record/1974-24140-001
+
+Abimbola, Gbemisola. Effects of task structure on group problem solving. MS thesis. University of Waterloo, 2006.
+Link: https://uwspace.uwaterloo.ca/handle/10012/824
+
+Colored Broken Squares
+https://www.the-registry.org/Portals/0/Documents/Credentials/Administrator/Documents/Colored%20Broken%20Squares.pdf
+
+# Stimuli
+## The visual components
+![image]()
+
+![image]()
+
+![image]()
+
+![image]()
+
+![image]()
+
+## Materials for the experiment 
+N/A
+
+# Procedure
+## Steps
+- Upon arrival groups are introduced and name tags are given out.
+- All participants are informed that the session will be recorded, and given verbal instruction and all questions are answered.
+- The experiment then begins.
+- The first is a training session where everyone receives two of the same card as to hint towards the correct set and no barrier is placed on the table, allowing participants to see each others cards.  They are allowed to ask questions and feedback is given.
+- In the second training session the barrier is put in place, and there were no more identical cards.
+- The experimental session was conducted similar to the second training session.
+- After the experiment all participants are asked not to disclose information about the task to fellow classmates, and are given a questionnaire.  
+
+## Roles 
+Participants are to work with their group to create sets of cards based on the images on the cards
+
+## Instructions
+1. You will be performing three experiments with the potential to earn 1 bonus mark per experiment.
+2. All data collected will be used solely for research purposes.  All film and videotapes will be used in support of the data analysis, and during research presentations at conferences.
+3. A total of 16 cards will be distributed equally among 4 participants.
+4. The goal is to come up with 4 of a kind.  I will demonstrate this using sample cards, note that the sample cards are simpler than the ones you will use in the experiment.
+5. You will be awarded a half mark if you complete your set of 4 cards, and another half mark if the entire group completes their set of 4 cards.
+6. There will be a 5 minute time limit for the first task, 10 minutes for the second and 15 minutes for the third.
+7. You will then fill out a short questionnaire after the task.
+8. You are allowed to exchange and trade cards among the group to complete sets, but do not take over another participants set of cards.
+
+# Criteria
+## Performance calculation
+
+## Incentives
+Undergraduate participants were given bonus marks towards their class, while graduate students were paid.
+
+The undergraduate students were told that they would be awarded based on performance.  Specifically they were told they would be awarded 0.5 marks each time they completed their set of cards.  They were told they could earn an additional 0.5 marks every time their entire group completed their sets of cards.  However, each participant was awarded 3 bonus marks regardless of performance.
