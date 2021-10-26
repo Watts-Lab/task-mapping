@@ -21,13 +21,20 @@ library(tidyverse)
 # The server should wake up after the first call, so just running this block twice should get the data on a fresh launch.
 
 # A table of all responses to the task mapping survey (notably this includes agreement instances as well as individual responses)
-raw_responses <- fromJSON("https://task-robot.glitch.me/results/survey/json")
+raw_responses <- fromJSON("https://task-robot.glitch.me/results/survey/json") %>% 
+  rename(individual_theoretical = indvidual_theoretical)
 
 # All the tasks that are in our mapping google sheet
 tasks <- fromJSON("https://task-robot.glitch.me/tasks/json")
 
 # All the questions asked in the mapping process
-questions <- fromJSON("https://task-robot.glitch.me/questions/json")
+questions <- fromJSON("https://task-robot.glitch.me/questions/json") %>% 
+  mutate(
+    name = case_when(
+      name == "indvidual_theoretical" ~ "individual_theoretical",
+      TRUE ~ name
+    )
+  )
 ```
 
 ```{r}
@@ -128,14 +135,15 @@ clean_responses <- raw_responses %>%
                       ))
                ))
         ))
-  ))) %>% select(name, name_clean,`phase 1 editor`,`phase 2 editor`,phase)) %>%
+  ))) %>% select(name, name_clean,`phase 1 editor`,`phase 2 editor`,phase, source, implemented)) %>%
   mutate(task = name,
          editors = paste(`phase 1 editor`,`phase 2 editor`,sep = " -> "),
          stage = case_when(
            !is.na(stage) ~ stage,
            phase > 0 ~ paste("phase",phase), 
            TRUE ~ "not started"
-         )
+         ),
+         implemented = implemented == "1"
          ) %>%
   select(task, stage, user, editors, updatedAt , everything(),-`phase 1 editor`,-`phase 2 editor`)
 
@@ -143,12 +151,20 @@ unrecognised_tasks <-
   clean_responses %>% select(task, name_clean) %>% filter(is.na(task)) %>% arrange(name_clean)
 ```
 
+```{r}
+# TODO output table with individual properties + source + instructions
+clean_responses %>% 
+  filter(stage == "agreement") %>%
+  select(task,individual_theoretical,individual_practical,source,implemented)
+```
+
+
 # CSV Export
 ```{r}
 # Store the main tables to csv so other people can use them.
 agreed_responses <- clean_responses %>%
   filter(stage == "agreement") %>%
-  select(-stage, -user, -updatedAt, -editors, -name, -name_clean, -phase) %>%
+  select(-stage, -user, -updatedAt, -editors, -name, -name_clean, -phase, -source) %>%
   distinct() %>%
   arrange(task)
 
@@ -205,6 +221,27 @@ tasks_tracking %>%
   filter(stage != "done", stage != "not started") %>% 
   arrange(desc(stage),task) %>% 
   write_csv("../mapping_progress.csv")
+```
+
+# PCA Map - Basic
+```{r}
+pca = prcomp(~., data = numerical_responses_matrix, na.action = na.exclude)
+# summary(pca)
+# plot(pca)
+# biplot(pca,var.axes = FALSE,)
+
+# Methods from https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html 
+autoplot(pca,
+         data = numerical_responses_matrix,
+         shape = FALSE,
+         label.size = 3) +
+  labs(
+    title = "PCA of mapped tasks",
+    subtitle = paste("(across",dim(numerical_responses_matrix)[[2]],"task features and",dim(numerical_responses_matrix)[[1]],"tasks)",sep = " "), x = "", y = "") + 
+  ggpubr::theme_pubclean()
+ggsave("./analysis_experiments/Mapped_task_PCA.png",
+       width = 7,
+       height = 5) 
 ```
 
 

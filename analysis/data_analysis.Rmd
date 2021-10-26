@@ -22,29 +22,6 @@ numerical_responses_matrix <- read_csv('../task_map_numeric.csv')
 questions <- fromJSON("https://task-robot.glitch.me/questions/json")
 ```
 
-# PCA Map - Basic
-```{r}
-pca = prcomp(~., data = numerical_responses_matrix,na.action = na.exclude)
-# summary(pca)
-# plot(pca)
-# biplot(pca,var.axes = FALSE,)
-
-# Methods from https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html 
-autoplot(pca,
-         data = numerical_responses_matrix,
-         shape = FALSE,
-         label.size = 3) +
-  labs(title = paste("PCA of mapped tasks (across",dim(numerical_responses_matrix)[[2]],"task features and",dim(numerical_responses_matrix)[[1]],"tasks)",sep = " "), x = "", y = "") + 
-  ggpubr::theme_pubclean()
-ggsave("./analysis_experiments/Mapped_task_PCA.png",
-       width = 7,
-       height = 5) 
-```
-
-```{r}
-# helpful to get the task names
-task_names <- agreed_responses$task
-```
 
 # Addressing Github #199 - Similar Question Sanity Check
 ```{r}
