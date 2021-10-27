@@ -54,6 +54,7 @@ Participants are to work with their group to create sets of cards based on the i
 
 # Criteria
 ## Performance calculation
+Performance is calulated by the amount of time taken, the number of card exchanges and the rate of card exchanges(card exchanges per minute).  The easier the task, the less time and fewer card exchanges should be needed to complete the sets.
 
 ## Incentives
 Undergraduate participants were given bonus marks towards their class, while graduate students were paid.
