@@ -13,15 +13,18 @@ https://www.the-registry.org/Portals/0/Documents/Credentials/Administrator/Docum
 
 # Stimuli
 ## The visual components
-![image]()
+## An example of cards preseneted for the first round training:  
+![image](https://github.com/Watts-Lab/task-mapping/blob/d9b8bd21d172e60e19b38de378a58fb5ce322d13/images/five_squares_training_cards_1.png)
 
-![image]()
+## An example of cards preseneted for the second round training:  
+![image](https://github.com/Watts-Lab/task-mapping/blob/d9b8bd21d172e60e19b38de378a58fb5ce322d13/images/five_squares_training_cards_2.png)
 
-![image]()
+## An example of a card set for an experiment:  
+![image](https://github.com/Watts-Lab/task-mapping/blob/d9b8bd21d172e60e19b38de378a58fb5ce322d13/images/five_squares_sample_cards.png)
 
-![image]()
+## A top down view of the table all participants are sat around during the second training session as well as experiment:  
+![image](https://github.com/Watts-Lab/task-mapping/blob/d9b8bd21d172e60e19b38de378a58fb5ce322d13/images/five_squares_view_of_table.png)
 
-![image]()
 
 ## Materials for the experiment 
 N/A
@@ -30,7 +33,7 @@ N/A
 ## Steps
 - Upon arrival groups are introduced and name tags are given out.
 - All participants are informed that the session will be recorded, and given verbal instruction and all questions are answered.
-- The experiment then begins.
+- The experiment then begins.  Cards are distributed in envelopes.  Each participant is given an envelope containing four cards.  Participants attempt to make sets of cards based on the images on the cards.  Each card contains two images, a distraction image, and the correct image that pretains to the cards set.  In total there are 16 cards distributed and each participant must assemble their set of four cards.
 - The first is a training session where everyone receives two of the same card as to hint towards the correct set and no barrier is placed on the table, allowing participants to see each others cards.  They are allowed to ask questions and feedback is given.
 - In the second training session the barrier is put in place, and there were no more identical cards.
 - The experimental session was conducted similar to the second training session.
