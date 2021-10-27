@@ -135,7 +135,7 @@ clean_responses <- raw_responses %>%
                       ))
                ))
         ))
-  ))) %>% select(name, name_clean,`phase 1 editor`,`phase 2 editor`,phase, source, implemented)) %>%
+  ))) %>% select(name, name_clean,`phase 1 editor`,`phase 2 editor`,phase, source, implemented,`task summary url`)) %>%
   mutate(task = name,
          editors = paste(`phase 1 editor`,`phase 2 editor`,sep = " -> "),
          stage = case_when(
@@ -149,22 +149,21 @@ clean_responses <- raw_responses %>%
 
 unrecognised_tasks <-
   clean_responses %>% select(task, name_clean) %>% filter(is.na(task)) %>% arrange(name_clean)
-```
 
-```{r}
-# TODO output table with individual properties + source + instructions
 clean_responses %>% 
   filter(stage == "agreement") %>%
-  select(task,individual_theoretical,individual_practical,source,implemented)
+  select(task,individual_theoretical,individual_practical,`task summary url`,implemented,source) %>% 
+  arrange(task) %>% 
+  distinct() %>%
+  write_csv("../task_audit.csv")
 ```
-
 
 # CSV Export
 ```{r}
 # Store the main tables to csv so other people can use them.
 agreed_responses <- clean_responses %>%
   filter(stage == "agreement") %>%
-  select(-stage, -user, -updatedAt, -editors, -name, -name_clean, -phase, -source) %>%
+  select(-stage, -user, -updatedAt, -editors, -name, -name_clean, -phase, -source, -implemented, -`task summary url`) %>%
   distinct() %>%
   arrange(task)
 

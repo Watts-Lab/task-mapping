@@ -2,13 +2,13 @@ task,stage,editors,mappers
 Checkers,2 mappings,bvikram03 -> sarikasu,Vikram + Sarika
 Cheering and Clapping,2 mappings,dodgehill -> joycewang3,joycewang3 + joycewang3 + Dodge
 Estimating social quantity,2 mappings,bvikram03 -> katelynbottcher,Karan + Vikram
-Minimum-effort tacit coordination game,2 mappings,sarikasu -> vivianxdx,Sarika + Sarika
+Minimum-effort tacit coordination game,2 mappings,sarikasu -> vivianxdx,Sarika + Vikram + Sarika
 Mock jury,2 mappings,dodgehill -> sarikasu,Sarikasu + Dodge
 "NASA Moon survival",2 mappings,katelynbottcher -> dodgehill,Dodge + Katelyn
+5 squares problem,1 mapping,dodgehill -> joycewang3,Dodge
 Conformity game,1 mapping,paniukhina -> ,Arina
 reproducing arts,1 mapping,katelynbottcher  -> andydrew93,Katelyn
 Visual Oddball Target,1 mapping,paniukhina -> katelynbottcher,Arina
-5 squares problem,phase 2,dodgehill -> joycewang3,"NA"
 Apache helicopter flight simulator (Longbow2),phase 2,bvikram03 -> KaranSampath,"NA"
 Creative uses of objects,phase 2,vivianxdx -> bvikram03,"NA"
 decrypt words/sentences,phase 2,AshleyFe -> bvikram03,"NA"
@@ -23,3 +23,4 @@ Arithmetic problem 2,phase 1,katelynbottcher -> ,"NA"
 Arithmetic problem 3,phase 1,katelynbottcher -> ,"NA"
 Arithmetic problem 4,phase 1,katelynbottcher -> ,"NA"
 Computer maze,phase 1,katelynbottcher -> ,"NA"
+Prisoner's Dilemma (various versions),phase 1,dodgehill -> ,"NA"
