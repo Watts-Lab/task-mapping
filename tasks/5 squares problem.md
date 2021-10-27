@@ -1,15 +1,9 @@
 # Summary
-Groups of four participants were given 16 cards with images on them.  They had to work together to group the cards into four sets of four cards based on the images.
+Groups of four participants were given 16 cards with images on them.  Their task was to work together to group the cards into four sets of four cards based on the images.
 
 # References
-Bavelas, A. (1973). The five squares problem: An instructional aid in group cooperation. Studies in Personnel Psychology, 5(2), 29–38.
-Link: https://psycnet.apa.org/record/1974-24140-001
-
 Abimbola, Gbemisola. Effects of task structure on group problem solving. MS thesis. University of Waterloo, 2006.
 Link: https://uwspace.uwaterloo.ca/handle/10012/824
-
-Colored Broken Squares
-https://www.the-registry.org/Portals/0/Documents/Credentials/Administrator/Documents/Colored%20Broken%20Squares.pdf
 
 # Stimuli
 ## The visual components
