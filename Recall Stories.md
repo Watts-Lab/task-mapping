@@ -124,7 +124,7 @@ Please read & listen to the following story. (either in pairs or individually)
 After story complete...
 
 Please answer the following questions about the story. 
-Based on paper two: Please recall th estory as accurately as possible from beginning to end. 
+Based on paper two: Please recall the story as accurately as possible from beginning to end. 
 
 Thank you for participating in our experiment today. 
 
