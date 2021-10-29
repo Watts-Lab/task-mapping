@@ -2,7 +2,7 @@ task,stage,editors,mappers
 22 Mathematical puzzles,not started,,"NA"
 24 arithmetic problems,not started,,"NA"
 3-issue cell phone negotaition,not started,,"NA"
-5 squares problem,1 mapping,dodgehill -> joycewang3,Dodge
+5 squares problem,2 mappings,dodgehill -> joycewang3,Dodge + joycewang3
 9 Dot Problem,done,sarikasu -> KaranSampath,Karan | Sarika
 Abstract grid task,done,sarikasu -> katelynbottcher,Sarika | katelynnbottcher
 Advertisement writing,done,sarikasu -> katelynbottcher,Sarika | Katelyn
@@ -26,7 +26,7 @@ Candle task,not started,,"NA"
 Carter Racing,done,dodgehill -> sarikasu,Dodge | Sarika
 Categorization problem,done,katelynbottcher -> sarikasu,Katelyn | Sarika
 Checkers,done,bvikram03 -> sarikasu,Sarika | bvikram03
-Cheering and Clapping,2 mappings,dodgehill -> joycewang3,joycewang3 + joycewang3 + Dodge
+Cheering and Clapping,done,dodgehill -> joycewang3,Dodge | joycewang3
 Chess,not started,,"NA"
 Chicken,done,sarikasu -> andydrew93,Sarika | Andrew
 Coin task (Creativity),not started,,"NA"
@@ -84,10 +84,10 @@ Oligopoly game,done,sarikasu -> katelynbottcher,Sarika | Katelyn
 Organization Game,done,dodgehill -> KaranSampath,Dodge | Karan
 pharmaceutical company (hidden-profile),done,sarikasu -> KaranSampath,Sarika | Karan
 Pipe task,not started,,"NA"
-Prisoner's Dilemma (various versions),phase 1,dodgehill -> ,"NA"
+Prisoner's Dilemma (various versions),phase 2,dodgehill -> joycewang3,"NA"
 Problem solving tasks (Hackman),not started,,"NA"
 Production tasks (Hackman),not started,,"NA"
-Public goods game,phase 2,vivianxdx -> sarikasu,"NA"
+Public goods game,2 mappings,vivianxdx -> sarikasu dodgehill,Sarika + Dodge
 Putting food into categories,done,katelynbottcher -> sarikasu,Katelyn | Sakra
 Radio assembly task,done,dodgehill -> KaranSampath,Dodge | Karan
 Railroad Route Construction game,done,katelynbottcher -> sarikasu,Katelyn | Sarika
@@ -97,13 +97,13 @@ Ravens Matrices,done,katelynbottcher -> sarikasu,Sarika | Katelyn
 Reading the mind in the eyes,done,sarikasu -> dodgehill,Sarika | Dodge
 Recall association,done,sarikasu -> katelynbottcher,Katelyn | Sarika
 Recall images ,done,sarikasu -> katelynbottcher,Sarika | katelynnbottcher
-Recall stories,not started,,"NA"
+Recall stories,done,sarikasu -> joycewang3,Sarika | joycewang3
 Recall videos,done,sarikasu -> katelynbottcher,Sarika | katelynnbottcher
 Recall word lists,done,sarikasu -> KaranSampath,Sarika | Karan
 reproducing arts,1 mapping,katelynbottcher  -> andydrew93,Katelyn
 Room assignment task,done,katelynbottcher -> sarikasu,Katelyn | Sarika
 Run a mini business,done,katelynbottcher -> andrewcullen1,Andrew | Katelyn
-Search for Oil Task,done,katelynbottcher -> ,Sarika | katelynnbottcher
+Search for Oil Task,done,katelynbottcher -> sarikasu,Sarika | katelynnbottcher
 Sender-Receiver game,phase 2,andydrew93 -> vivianxdx,"NA"
 Sequential dyadic die-rolling,done,sarikasu -> KaranSampath,Sarika | Karan
 Shopping plan,done,katelynbottcher -> sarikasu,Katelyn | Sarika
@@ -122,7 +122,8 @@ The N light bulbs game,done,katelynbottcher -> benjamin-manning,benjamin-manning
 To evacuate or not to evacuate,done,sarikasu -> katelynbottcher,Sarika | katelynnbottcher
 TOPSIM - general mgmt business game,done,sarikasu -> dodgehill,Dodge | Sarika
 Trivia Multiple Choice Quiz,done,sarikasu -> katelynbottcher,Katelyn | Sarika
-Typing game,phase 2,andydrew93 -> katelynbottcher,"NA"
+Typing game,phase 2,"andydrew93 -> katelynbottcher
+joycewang3","NA"
 Ultimatum game (various versions),done,sarikasu -> andydrew93,Sarika | Andrew
 Unscramble words (anagrams),done,bvikram03 -> KaranSampath,Sarika | Karan
 Viking,done,sarikasu -> KaranSampath,Sarika | Karan

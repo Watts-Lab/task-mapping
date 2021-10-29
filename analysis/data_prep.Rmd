@@ -54,7 +54,6 @@ clean_responses <- raw_responses %>%
       )$levels[[1]])),
     user = trimws(gsub(
       "  ", " ",
-      
       gsub(
         "( and |, |&|\\/|;)",
         " \\| ",
@@ -93,6 +92,7 @@ clean_responses <- raw_responses %>%
                                         gsub(
                                           "finding the maximum",
                                           "find the maximum",
+                                          gsub("5 squares problems","5 squares problem",
                                           gsub(
                                             "recall associations",
                                             "recall association",
@@ -112,7 +112,7 @@ clean_responses <- raw_responses %>%
                                                                ))
                                                         ))
                                                  )))
-                                          ))
+                                          )))
                                         )
                                       ))
                                ))
@@ -149,6 +149,9 @@ clean_responses <- raw_responses %>%
 
 unrecognised_tasks <-
   clean_responses %>% select(task, name_clean) %>% filter(is.na(task)) %>% arrange(name_clean)
+
+
+if(dim(unrecognised_tasks)[1] != 0) stop(paste("Some task names do not match:",unrecognised_tasks$name_clean,unrecognised_tasks$task))
 
 clean_responses %>% 
   filter(stage == "agreement") %>%
