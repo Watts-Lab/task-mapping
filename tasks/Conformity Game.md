@@ -12,7 +12,7 @@ Paper: https://psycnet.apa.org/fulltext/1996-01769-008.html#s7
 ## Steps
 192 undergraduates who had been recruited by mail and told they would be paid for their participation completed one of two 2½-week, five-session studies via E-mail (19 additional participants started but did not complete the study). Participants were permanently assigned to membership in one of eight 24-person groups, four groups in November 1991 and four groups in March 1992. Each group played the Conformity Game four or eight times, each time with a different topic, equally often in each geometry. Thus there was a total of 48 instances in which a 24-person group discussed a topic through four rounds of electronic communication.
 
-All sessions took place in the Social Behavior Computer Laboratory at Florida Atlantic University, which at the time consisted of 12 personal computers linked in a Novell network. Participants were assigned specific times for their individual sessionsall communication was asynchronous, as it is in real-world E-mail networks. Participants were told the number of people in their electronic group and were informed that the other members in their group would come to the laboratory at different hours and the other people currently in the computer laboratory were not necessarily members of their group or even participants in the same study. They were able to send and/or receive messages among themselves at each of the five twice-weekly sessions, which were scheduled so that everyone would have finished sending their messages for a given round before anyone returned for the next session.
+All sessions took place in the Social Behavior Computer Laboratory at Florida Atlantic University, which at the time consisted of 12 personal computers linked in a Novell network. Participants were assigned specific times for their individual sessions. All communication was asynchronous, as it is in real-world E-mail networks. Participants were told the number of people in their electronic group and were informed that the other members in their group would come to the laboratory at different hours and the other people currently in the computer laboratory were not necessarily members of their group or even participants in the same study. Each participant could only communicate with four other group members, which limited the communcation to the social geometry of the group. Participants were able to send and/or receive messages among themselves at each of the five twice-weekly sessions, which were scheduled so that everyone would have finished sending their messages for a given round before anyone returned for the next session.
 
 There were four geometries of social space in the experiement:
 
@@ -25,7 +25,7 @@ There were four geometries of social space in the experiement:
 4. A control random zero-dimension structure, in which individual messages were routed to a random set of four other group members. Connections were randomly reassigned for each round of discussion. Links between members were not reciprocal.
 
 ## Roles 
-Participant were randomly distributed into groups and randomly assigned positions in each social space.
+Participants were randomly assigned groups and positions in social spaces.
 
 ## Instructions
 Most instructions were provided via computer.
@@ -67,4 +67,4 @@ Person W said “Euler ” with conviction 6
 Percent change and confidence level, from 1 to 7, were independent variables and number of opposing messages was a dependent variable. Although expressed conviction declined continuously with increased numbers of people providing an opposing message, change was much less linear. As expected, very few people (less than 3% overall) changed when 4, 3, or even 2 others agreed with their position. However, when they received three or more opposing messages, substantially higher percentages (59%) of individuals changed their choice. Although individuals were surprisingly stubborn, weighting their own opinions highly even when faced with unanimous opposition, they were generally quite responsive to social influence.
 
 ## Incentives
-Each participant recieved $1 for predicting each answer of the majority.
+Each participant recieved a base payment, and then was paid $1 for predicting each answer of the majority.
