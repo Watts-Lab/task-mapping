@@ -25,13 +25,26 @@ N/A
 
 # Procedure
 ## Steps
-- Upon arrival groups are introduced and name tags are given out.
-- All participants are informed that the session will be recorded, and given verbal instruction and all questions are answered.
-- The experiment then begins.  Cards are distributed in envelopes.  Each participant is given an envelope containing four cards.  Participants attempt to make sets of cards based on the images on the cards.  Each card contains two images, a distraction image, and the correct image that pretains to the cards set.  In total there are 16 cards distributed and each participant must assemble their set of four cards.
-- The first is a training session where everyone receives two of the same card as to hint towards the correct set and no barrier is placed on the table, allowing participants to see each others cards.  They are allowed to ask questions and feedback is given.
-- In the second training session the barrier is put in place, and there were no more identical cards.
-- The experimental session was conducted similar to the second training session.
-- After the experiment all participants are asked not to disclose information about the task to fellow classmates, and are given a questionnaire.  
+Procedures for Experiment I:
+1. Two training sessions  
+    1st Training:  
+     Cards were distributed in envelopes, each participant was given one envelope, each containing four cards. In this condition each individual was provided with two identical cards to provide a hint on how to form card categories.
+     All participants were allowed to see each others cards without any barriers on the table.
+
+    2nd Training:  
+     The experimenter introduced a barrier across the table. The barrier allowed subjects to see one another and exchange cards easily but prevented them from seeing one another’s cards. Cards were distributed using the same system as in the first training session. In the second training participants were given homogeneous, but non-identical cards. They had to describe their cards in order to find out what other group members had.
+
+2. Three experimental conditions  
+The procedure in the actual experimental conditions was identical to that used in the second training except that subjects were required to complete a questionnaire afterwards in the three actual experiments.
+
+3. Three short questionnaires (after each of the three experiments)  
+After the completion of each task, subjects were asked to fill a short questionnaire to describe some of their experiences (include rating the difficulty of the task, specifying the source of difficulty, and identifying the leader of the group if any).
+
+Procedures for Experiment II:  
+- Nine participants were selected randomly and asked if they would be willing and available to participate in a short study that would last approximately 45 minutes.
+- Once the participants' time and availability were confirmed, they were given a questionnaire and 15 envelopes. Each set of cards was placed in a separate envelope.
+- Each subject then rated the perceived similarity of the objects on the cards to the anchor object.
+- The questionnaires were returned to the researcher after completion of the rating task.
 
 ## Roles 
 Participants are to work with their group to create sets of cards based on the images on the cards
@@ -51,6 +64,10 @@ Participants are to work with their group to create sets of cards based on the i
 Performance is calulated by the amount of time taken, the number of card exchanges and the rate of card exchanges(card exchanges per minute).  The easier the task, the less time and fewer card exchanges should be needed to complete the sets.
 
 ## Incentives
+Incentives for Experiment I:  
 Undergraduate participants were given bonus marks towards their class, while graduate students were paid.
 
 The undergraduate students were told that they would be awarded based on performance.  Specifically they were told they would be awarded 0.5 marks each time they completed their set of cards.  They were told they could earn an additional 0.5 marks every time their entire group completed their sets of cards.  However, each participant was awarded 3 bonus marks regardless of performance.
+
+Incentives for Experiment II:  
+No incentives were given for this experiment.
