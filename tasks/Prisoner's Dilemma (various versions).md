@@ -69,7 +69,7 @@ Intergroup Prisoner's Dilemma-Maximizing Difference: https://github.com/Watts-La
 The performance of a group can be measured by their payout, i.e. how well they cooperate, and their ability to identify the most beneficial strategy.  The payoff in both games depends on the number of participants, and the number of cooperators/defectors.
 
 Example of calculated payouts:  
-![image]()
+![image](https://github.com/Watts-Lab/task-mapping/blob/dc22d531f99ca7ee3694d896b9e3e02d0d363c36/images/Prisoner's_Dilemma_payouts.png)
 
 
 ## Incentives
