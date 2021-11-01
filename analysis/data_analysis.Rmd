@@ -220,59 +220,137 @@ mcgrath_data <- cbind(mcgrath_data, additional_mcgrath_cols)
 ```{r}
 # MANUAL CLASSIFICATION ---- what's tough about this is that things don't divide cleanly along the lines....
 
-MIDDLE = 3
-# Identify quadrant
+MIDDLE = 3 # used to separate the types of tasks
 
-# 1. Generating Alternatives
-mcg_generating <- data_with_mcgrath_cols %>%
-  filter(
-    (generate_plan > MIDDLE | generate_process > MIDDLE | generate_ideas > MIDDLE | generate_creativity > MIDDLE) & #  Creativity markers
-    (conflict_cooperation < MIDDLE & conflict_interests < MIDDLE) & # NOT conflict/cooperation or conflict of interests
-    (solution_objectivity < MIDDLE | solution_verifiability < MIDDLE) # NOT objective - but this is an OR because some plans are objective?
-    )
+#### Execute Tasks (1,8,7,6) #### 
+physical_tasks <- mcgrath_data %>% filter(effort_mental < MIDDLE | effort_physical > MIDDLE) # there are only 4 of these
 
-# 2. Choosing Alternatives
-mgc_choosing <- data_with_mcgrath_cols %>%
-  filter(
-    (solution_objectivity > MIDDLE & solution_verifiability > MIDDLE) & # Markers of Objective Choice
-    (generate_plan < MIDDLE | generate_process < MIDDLE | generate_ideas < MIDDLE | generate_creativity < MIDDLE) #  NOT Generating markers
-    # Agnostic towards Negotiation b/c sometimes the choice is a negotiation
-    )
+# Note --- noticing that I get 0 tasks for type 7 when I filter for physical in this section; thus, I'm loosening the filtering requirements here
+# Noting that "physical" elements are not consistent across different parts of the sectors
 
-# 3. Negotiate
-mcg_negotiating <- data_with_mcgrath_cols %>%
-  filter(
-    (resolve_opinion > MIDDLE | resolve_perspectives > MIDDLE | conflict_interests > MIDDLE | conflict_cooperation > MIDDLE) &# Negotiation markers
-     (solution_objectivity < MIDDLE | solution_verifiability < MIDDLE) & # No correct solution (excludes CHOOSE or is explicitly a conflict and cooperation game)
-     (generate_creativity < MIDDLE) # definitely NOT creativity
-    )
+### Type 7: Battles
+type_7 <-
+  mcgrath_data %>% filter(conflict_cooperation > MIDDLE) %>%
+  filter(external_adversary > MIDDLE)
 
-# 4. Execute
-mcg_executing <- data_with_mcgrath_cols %>%
-  filter(
-    (external_adversary > MIDDLE | external_standard > MIDDLE | conflict_interests > MIDDLE) & # Markers of Execute
-    (generate_plan < MIDDLE | generate_process < MIDDLE | generate_ideas < MIDDLE | generate_creativity < MIDDLE) & #  NOT Generating markers
-    (resolve_opinion < MIDDLE & resolve_perspectives < MIDDLE ) # NOT Negotiation markers
+### Type 8: Performances
+type_8 <-
+  execute_tasks %>%
+  filter((conflict_cooperation < MIDDLE) &
+           !(generate_process > MIDDLE) & !(generate_plan > MIDDLE) &
+           external_standard > MIDDLE
   )
 
+# 1 and 6 ---- WEAK EXECUTE
+# Noticing that if you filter for the physical aspect, you get 0 tasks, so I got rid of it
 
-####### Generate McGrath Categorization Summary #####
+### Type 1: Planning
+type_1 <- mcgrath_data %>% filter(conflict_cooperation < MIDDLE) %>%
+  filter(generate_plan > MIDDLE | generate_process > MIDDLE)
+
+### Type 6: Mixed Motives
+type_6 <- mcgrath_data %>% filter(conflict_cooperation > MIDDLE)  %>%
+  filter(conflict_interests > MIDDLE)
+
+############ Conceptual Tasks (2,3,4,5) ############
+mental_tasks <- mcgrath_data %>% filter(effort_mental > MIDDLE | effort_physical < MIDDLE)
+
+## Cooperation (2,3)
+mental_cooperate <- mental_tasks %>%
+  filter(conflict_cooperation < MIDDLE)
+
+### Type 2: Creativity
+type_2 <- mental_cooperate %>%
+  filter(generate_ideas > MIDDLE | generate_creativity > MIDDLE)
+
+### Type 3: Intellective
+type_3 <- mental_cooperate %>%
+  filter(solution_objectivity > MIDDLE | solution_verifiability > MIDDLE | external_standard > MIDDLE)
+
+## Conflict (4,5)
+mental_conflict <-  mental_tasks %>%
+  filter(conflict_cooperation > MIDDLE)
+
+### Type 4: Decision-Making
+type_4 <- mental_conflict %>%
+  filter(solution_objectivity < MIDDLE | solution_verifiability < MIDDLE)
+
+### Type 5: Cognitive Conflict
+type_5 <- mental_conflict %>%
+  filter(resolve_opinion > MIDDLE | resolve_perspectives > MIDDLE)
+
+#### export all results
 mcgrath_quadrant_labels <- data.frame(task_names)
 
-for (i in 1:nrow(data_with_mcgrath_cols)) {
-  task = data_with_mcgrath_cols$task_names[i]
-  mcgrath_quadrant_labels$generating[i] = as.numeric(task %in% mcg_generating$task_names)
-  mcgrath_quadrant_labels$choosing[i] = as.numeric(task %in% mgc_choosing$task_names)
-  mcgrath_quadrant_labels$negotiating[i] = as.numeric(task %in% mcg_negotiating$task_names)
-  mcgrath_quadrant_labels$executing[i] = as.numeric(task %in% mcg_executing$task_names)
+for (i in 1:nrow(mcgrath_data)) {
+  task = mcgrath_data$task_names[i]
+  mcgrath_quadrant_labels$generate.planning[i] = as.numeric(task %in% type_1$task_names)
+  mcgrath_quadrant_labels$generate.creativity[i] = as.numeric(task %in% type_2$task_names)
+  
+  mcgrath_quadrant_labels$choose.intellective[i] = as.numeric(task %in% type_3$task_names)
+  mcgrath_quadrant_labels$choose.decision[i] = as.numeric(task %in% type_4$task_names)
+  
+  mcgrath_quadrant_labels$negotiate.cogconf[i] = as.numeric(task %in% type_5$task_names)
+  mcgrath_quadrant_labels$negotiate.mixmotive[i] = as.numeric(task %in% type_6$task_names)
+  
+  mcgrath_quadrant_labels$execute.contest[i] = as.numeric(task %in% type_7$task_names)
+  mcgrath_quadrant_labels$execute.performance[i] = as.numeric(task %in% type_8$task_names)
 }
 
-mcgrath_quadrant_labels <- mcgrath_quadrant_labels %>% mutate(
-  num_total_labels = generating+choosing+negotiating+executing
-)
-table(mcgrath_quadrant_labels$num_total_labels)
-
 write.csv(mcgrath_quadrant_labels, './analysis_experiments/mcgrath-quadrant-labels.csv')
+
+
+# This was Emily's first attempt at doing this - saving for posterity but redoing#
+# 
+# # 1. Generating Alternatives
+# mcg_generating <- mcgrath_data %>%
+#   filter(
+#     (generate_plan > MIDDLE | generate_process > MIDDLE | generate_ideas > MIDDLE | generate_creativity > MIDDLE) & #  Creativity markers
+#     (conflict_cooperation < MIDDLE & conflict_interests < MIDDLE) & # NOT conflict/cooperation or conflict of interests
+#     (solution_objectivity < MIDDLE | solution_verifiability < MIDDLE) # NOT objective - but this is an OR because some plans are objective?
+#     )
+# 
+# # 2. Choosing Alternatives
+# mgc_choosing <- data_with_mcgrath_cols %>%
+#   filter(
+#     (solution_objectivity > MIDDLE & solution_verifiability > MIDDLE) & # Markers of Objective Choice
+#     (generate_plan < MIDDLE | generate_process < MIDDLE | generate_ideas < MIDDLE | generate_creativity < MIDDLE) #  NOT Generating markers
+#     # Agnostic towards Negotiation b/c sometimes the choice is a negotiation
+#     )
+# 
+# # 3. Negotiate
+# mcg_negotiating <- data_with_mcgrath_cols %>%
+#   filter(
+#     (resolve_opinion > MIDDLE | resolve_perspectives > MIDDLE | conflict_interests > MIDDLE | conflict_cooperation > MIDDLE) &# Negotiation markers
+#      (solution_objectivity < MIDDLE | solution_verifiability < MIDDLE) & # No correct solution (excludes CHOOSE or is explicitly a conflict and cooperation game)
+#      (generate_creativity < MIDDLE) # definitely NOT creativity
+#     )
+# 
+# # 4. Execute
+# mcg_executing <- data_with_mcgrath_cols %>%
+#   filter(
+#     (external_adversary > MIDDLE | external_standard > MIDDLE | conflict_interests > MIDDLE) & # Markers of Execute
+#     (generate_plan < MIDDLE | generate_process < MIDDLE | generate_ideas < MIDDLE | generate_creativity < MIDDLE) & #  NOT Generating markers
+#     (resolve_opinion < MIDDLE & resolve_perspectives < MIDDLE ) # NOT Negotiation markers
+#   )
+
+####### Generate McGrath Categorization Summary #####
+# mcgrath_quadrant_labels <- data.frame(task_names)
+# 
+# for (i in 1:nrow(data_with_mcgrath_cols)) {
+#   task = data_with_mcgrath_cols$task_names[i]
+#   mcgrath_quadrant_labels$generating[i] = as.numeric(task %in% mcg_generating$task_names)
+#   mcgrath_quadrant_labels$choosing[i] = as.numeric(task %in% mgc_choosing$task_names)
+#   mcgrath_quadrant_labels$negotiating[i] = as.numeric(task %in% mcg_negotiating$task_names)
+#   mcgrath_quadrant_labels$executing[i] = as.numeric(task %in% mcg_executing$task_names)
+# }
+# 
+# mcgrath_quadrant_labels <- mcgrath_quadrant_labels %>% mutate(
+#   num_total_labels = generating+choosing+negotiating+executing
+# )
+# table(mcgrath_quadrant_labels$num_total_labels)
+# 
+# write.csv(mcgrath_quadrant_labels, './analysis_experiments/mcgrath-quadrant-labels.csv')
 ```
 
 ### Steiner
@@ -365,13 +443,6 @@ steiner_labels %>% mutate(
 )
 
 write.csv(steiner_labels, './analysis_experiments/steiner-labels.csv')
-```
-### temporary explorations
-```{r}
-intersect(
-  steiner_labels %>% filter(optimizing == 1) %>% select(task_names),
-  mcgrath_quadrant_labels %>% filter(choosing == 1) %>% select(task_names)
-)
 ```
 
 ### Zigurs
