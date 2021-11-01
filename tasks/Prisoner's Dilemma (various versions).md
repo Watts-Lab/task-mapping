@@ -34,6 +34,12 @@ General Prisonniers Dilemma
 ## Roles 
 Participants work independently within their groups, they can choose to be cooperative or act selfishly.
 
+Defectors:  
+Participants choose the dominating strategy of the game, which is to defect. They receive a higher payoff than the cooperators in the game and the highest individual payoff if no other participant defects.
+
+Cooperators:  
+Participants choose to cooperate in order to achieve universal cooperation. They will most likely receive a lower payoff than defectors if there is one.
+
 ## Instructions
 Instructions developed by CSS lab  
 
@@ -60,7 +66,11 @@ Intergroup Prisoner's Dilemma-Maximizing Difference: https://github.com/Watts-La
 
 # Criteria
 ## Performance calculation
-The performance of a group can be measured by their payout, i.e. how well they cooperate, and their ability to identify the most beneficial strategy.
+The performance of a group can be measured by their payout, i.e. how well they cooperate, and their ability to identify the most beneficial strategy.  The payoff in both games depends on the number of participants, and the number of cooperators/defectors.
+
+Example of calculated payouts:  
+![image]()
+
 
 ## Incentives
 The incentives to participate are based on the payouts in the experiments.
