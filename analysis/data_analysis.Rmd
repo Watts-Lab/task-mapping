@@ -355,22 +355,14 @@ write.csv(mcgrath_quadrant_labels, './analysis_experiments/mcgrath-quadrant-labe
 
 ### Steiner
 ```{r}
-# Maximizing Tasks
-steiner_maximizing <- steiner_data %>% filter(
-  goal_maximize > MIDDLE
-)
 
-# Optimizing Tasks
-steiner_optimizing <- steiner_data %>% filter(
-  goal_standard > MIDDLE |
-  goal_optimize > MIDDLE
-)
+### Subtask Structure
 
 # Divisible Tasks
 steiner_divisible <- steiner_data %>% filter(
   goal_full < MIDDLE & # there is partial credit - can be divided 
   (goal_partial > MIDDLE | # the rest of these indicate divisibility
-  task_divisibility > MIDDLE |
+  task_divisibility > MIDDLE | # using OR here to cast wider net / gradient
   submission_separate > MIDDLE |
   task_specialization > MIDDLE)
 )
@@ -384,35 +376,54 @@ steiner_unitary <- steiner_data %>% filter(
   task_specialization < MIDDLE)
 )
 
+
+### Nature of the Goal
+
+# Open question: is it possible to be both maximizing and optimizing?
+# Maximizing Tasks
+steiner_maximizing <- steiner_data %>% filter(
+  goal_maximize > MIDDLE
+)
+
+# Optimizing Tasks
+steiner_optimizing <- steiner_data %>% filter(
+  goal_standard > MIDDLE |
+  goal_optimize > MIDDLE
+)
+
+
+### Permitted Group Processes
+
 # Additive Tasks
 steiner_additive <- steiner_data %>% filter(
-  (participation_equal > MIDDLE | # Additive Characteristics
-  subtasks_additive > MIDDLE |
+  (subtasks_additive > MIDDLE |
   performance_average > MIDDLE |
   performance_cumulative > MIDDLE) &
   (performance_worst < MIDDLE)  & # Conjunctive Characteristics
-  (subtasks_disjunctive < MIDDLE | # Disjunctive Characteristics
-  performance_best < MIDDLE)
+  (subtasks_disjunctive < MIDDLE & # Disjunctive Characteristics - AND here because it CANNOT be either of these things
+  performance_best < MIDDLE) &
+  (subtasks_discretionary_weight < MIDDLE) & # NEED to be false for additive
+  (subtasks_discretionary_combination < MIDDLE) 
 )
 
 # Conjunctive Tasks
 steiner_conjunctive <- steiner_data %>% filter(
-  (participation_equal < MIDDLE | # Additive Characteristics
-  subtasks_additive < MIDDLE |
-  performance_average < MIDDLE |
+  (subtasks_additive < MIDDLE & # Additive Characteristics - AND because these cannot be true
+  performance_average < MIDDLE &
   performance_cumulative < MIDDLE) &
-  (performance_worst > MIDDLE)  & # Conjunctive Characteristics
-  (subtasks_disjunctive < MIDDLE | # Disjunctive Characteristics
+  (performance_worst > MIDDLE |
+     participation_equal > MIDDLE)  & # Conjunctive Characteristics
+  (subtasks_disjunctive < MIDDLE | # Disjunctive Characteristics, but keeping OR because it's possible w/ conjunctive to have one person determine the outcome ... the worst one
   performance_best < MIDDLE)
 )
 
 # Disjunctive Tasks
 steiner_disjunctive <- steiner_data %>% filter(
-  (participation_equal < MIDDLE | # Additive Characteristics
-  subtasks_additive < MIDDLE |
-  performance_average < MIDDLE |
+  (subtasks_additive < MIDDLE &# Additive Characteristics - AND because these cannot be true
+  performance_average < MIDDLE &
   performance_cumulative < MIDDLE) &
-  (performance_worst < MIDDLE)  & # Conjunctive Characteristics
+  (performance_worst < MIDDLE &
+     participation_equal < MIDDLE)  & # Conjunctive Characteristics
   (subtasks_disjunctive > MIDDLE | # Disjunctive Characteristics
   performance_best > MIDDLE)
 )
