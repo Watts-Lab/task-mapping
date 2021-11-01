@@ -463,7 +463,89 @@ write.csv(steiner_labels, './analysis_experiments/steiner-labels.csv')
 
 ### Shaw
 ```{r}
-# TODO
+shaw_processed_dimensions <- shaw_data %>%
+  mutate(
+    dim_2 =  objective_multiplicity + skills_specialization, #Task Difficulty
+    dim_4 =  solution_valid - solution_singularity, # Solution Multiplicity
+    dim_5 = solution_path,
+    dim_6 = solution_objectivity + solution_verifiability + solution_optimal,
+    dim_8 = effort_mental/effort_physical # Ratio of mental to motor
+  ) %>%
+  select(c(dim_2,dim_4,dim_5,dim_6,dim_8))
+
+# DBSCAN ---- OPTIMIZE TO IDENTIFY CLUSTERS
+
+dbscan_paramsearch_results <- data.frame(NA, NA, NA)
+names(dbscan_paramsearch_results) <- c("min.pts", "eps", "noise.pts")
+
+for(minPts in 2:20) {
+
+  print("starting search for min cluster size of...")
+  print(minPts)
+  
+  START = 0
+  STEP = 0.01
+  
+  minimum_number_of_noise_points = 10000
+  value_of_eps_at_min = 10000
+  eps = START
+  
+  repeat{
+    
+    print("eps is currently ...")
+    print(eps)
+    print(minPts)
+    
+    dbscan_result <- dbscan(shaw_processed_dimensions,
+                            eps = eps,
+                            minPts = minPts)
+    
+    current_num_clusters = length(table(dbscan_result[1]))
+    print(current_num_clusters)
+    
+    # at least 2 clusters
+    if(current_num_clusters<=2){
+      break
+    }
+    
+    cur_num_noise_points = table(dbscan_result[1])[1]
+    
+    # print the dbscan result
+    print(table(dbscan_result[1]))
+    
+    if (cur_num_noise_points < minimum_number_of_noise_points) {
+      minimum_number_of_noise_points = cur_num_noise_points
+      value_of_eps_at_min = eps
+    }
+    eps = eps + STEP
+  }
+  
+  # STORE RESULT
+  result_row <- c(minPts,value_of_eps_at_min,minimum_number_of_noise_points)
+  dbscan_paramsearch_results <-
+    rbind(dbscan_paramsearch_results,result_row)
+}
+
+# DBSCAN search results
+dbscan_paramsearch_results
+
+optimized_dbscan_result <- dbscan(shaw_processed_dimensions,
+                            eps = 3.88,
+                            minPts = 7)
+
+table(optimized_dbscan_result[1])
+
+cbind(data.frame(task_names),data.frame(optimized_dbscan_result[1])) %>% write_csv("./analysis_experiments/shaw_cluster_results.csv")
+```
+
+# Laughlin
+```{r}
+
+# Pure Laughlin
+laughlin_continuum <- numerical_responses_matrix %>%
+  select(solution_demonstrability)
+
+cbind(data.frame(task_names),data.frame(laughlin_continuum)) %>% write_csv("./analysis_experiments/laughlin_results.csv")
 ```
 
 
