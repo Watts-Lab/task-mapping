@@ -241,12 +241,12 @@ pca = prcomp(~., data = numerical_responses_matrix, na.action = na.exclude)
 autoplot(pca,
          data = numerical_responses_matrix,
          shape = FALSE,
-         label.size = 3) +
+         label.size = 2.5) +
   labs(
     title = "PCA of mapped tasks",
-    subtitle = paste("(across",dim(numerical_responses_matrix)[[2]],"task features and",dim(numerical_responses_matrix)[[1]],"tasks)",sep = " "), x = "", y = "") + 
+    subtitle = paste("(across",dim(numerical_responses_matrix)[[2]],"task features and",dim(numerical_responses_matrix)[[1]],"tasks)",sep = " ")) + 
   ggpubr::theme_pubclean()
-ggsave("./analysis_experiments/Mapped_task_PCA.png",
+ggsave("./Mapped_task_PCA.png",
        width = 7,
        height = 5) 
 ```
