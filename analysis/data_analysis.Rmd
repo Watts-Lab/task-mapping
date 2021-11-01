@@ -19,6 +19,13 @@ library(tidyverse)
 # Import Data
 ```{r}
 numerical_responses_matrix <- read_csv('../task_map_numeric.csv')
+
+ordinals <- read_csv('../ordinals.csv')
+
+clean_responses <- read_csv("../cleaned_task_responses.csv")
+
+agreed_responses <- read_csv("../task_map.csv")
+
 questions <- fromJSON("https://task-robot.glitch.me/questions/json")
 ```
 
@@ -191,71 +198,28 @@ numerical_completed_and_agreed <- filter_for_agreement(numerical_completed_tasks
 questions$source_clean = as.factor(questions$source_clean)
 questions$source = as.factor(questions$source)
 
-shaw <- "Shaw"
-mcgrath <- "McGrath"
-zigurs <- "Zigurs"
-steiner <- "Steiner"
-
-get_filtered_data_for_author <- function(source_name){
+get_filtered_data_for_author <- function(source_name) {
   filtered_questions <-
     questions %>% filter(source_clean == source_name)
   
-  data_selected <- agreed_responses %>%
-    select(c(filtered_questions$name, task))
+  filtered_colnams <-
+    as.data.frame(filtered_questions$name) %>% rename(name = `filtered_questions$name`)
   
-  numerical_responses_one_framework <- data_selected %>%
-    column_to_rownames(var = "task") %>%
-    mutate(across(everything(),  ~ if_else(is.na(as.numeric(
-      .
-    )), 0, as.numeric(.)))) %>%
-    select_if(colSums(.) != 0) #I don't filter for the ordinals, so just filter out the column if it's zeroed out
+  column_names <-
+    pull(inner_join(ordinals %>% rename(name = `ordinals$name`),
+                    filtered_colnams), name)
   
-  # Add the task names back
   numerical_responses_one_framework <-
-    cbind(task_names, numerical_responses_one_framework)
+    numerical_responses_matrix %>% select(all_of(c(column_names)))
   
-  return(numerical_responses_one_framework)
+  return(cbind(task_names,numerical_responses_one_framework))
   # note - not filtered bc the columns may not exist in there
 }
 
-shaw_data <- get_filtered_data_for_author(shaw)
-mcgrath_data <- get_filtered_data_for_author(mcgrath)
-zigurs_data <- get_filtered_data_for_author(zigurs)
-steiner_data <- get_filtered_data_for_author(steiner)
-```
-
-## Explorations with comparing how the different authors' frameworks cluster
-```{r}
-set.seed(123)
-k = 5
-
-get_k_clusters <- function (data) {
-  data <- as.matrix(data %>% select(-c(task_names)))
-  res.km <-
-    kmeans(data, k, nstart = 100)
-  # K-means clusters showing the group of each individuals
-  task_clusters <- as.data.frame(cbind(task_names, res.km$cluster))
-  return(task_clusters[order(task_clusters$V2),])
-}
-
-all_clusters <- get_k_clusters(numerical_completed_tasks) %>%
-  rename(All_Columns = V2)
-shaw_clusters <- get_k_clusters(shaw_data) %>%
-  rename(Shaw = V2)
-mcgrath_clusters <- get_k_clusters(mcgrath_data) %>%
-  rename(McGrath = V2)
-zigurs_clusters <- get_k_clusters(zigurs_data) %>%
-  rename(Zigurs = V2)
-steiner_clusters <- get_k_clusters(steiner_data) %>%
-  rename(Steiner = V2)
-
-consolidated_clusters_by_taxonomy <- all_clusters %>% left_join(shaw_clusters, by = "task_names") %>%
-  left_join(mcgrath_clusters, by = "task_names") %>%
-  left_join(zigurs_clusters, by = "task_names") %>%
-  left_join(steiner_clusters, by = "task_names")
-
-# Export all the clusters into a single CSV
-write.csv(consolidated_clusters_by_taxonomy,"./analysis_experiments/consolidated_clusters_by_taxonomy.csv")
+shaw_data <- get_filtered_data_for_author("Shaw")
+mcgrath_data <- get_filtered_data_for_author("McGrath")
+zigurs_data <- get_filtered_data_for_author("Zigurs")
+steiner_data <- get_filtered_data_for_author("Steiner")
 ```
 
 ## Classification in the "old-school" way
@@ -263,26 +227,23 @@ write.csv(consolidated_clusters_by_taxonomy,"./analysis_experiments/consolidated
 ### McGrath
 ```{r}
 # Get all columns needed to make McGrath Classification -----------------
-questions_for_mcgrath_circumplex <-
-    questions %>% filter(source_clean == "McGrath" | name == "solution_objectivity" | name == "solution_verifiability")
-  
-data_selected <- agreed_responses %>%
-    select(c(task, questions_for_mcgrath_circumplex$name)) %>%
-    column_to_rownames(var = "task") %>%
-    mutate(across(everything(),  ~ if_else(is.na(as.numeric(
-      .
-    )), 0, as.numeric(.)))) %>%
-    select_if(colSums(.) != 0) #I don't filter for the ordinals, so just filter out the column if it's zeroed out
-  
-# Add the task names back
-data_with_mcgrath_cols <-
-    cbind(task_names, data_selected)
+additional_mcgrath_cols <-
+  numerical_responses_matrix %>% select(
+    c(
+      "effort_mental",
+      "effort_physical",
+      "solution_objectivity",
+      "solution_verifiability"
+    )
+  )
 
+mcgrath_data <- cbind(mcgrath_data, additional_mcgrath_cols)
+```
 
-MIDDLE = 3
-
+```{r}
 # MANUAL CLASSIFICATION ---- what's tough about this is that things don't divide cleanly along the lines....
 
+MIDDLE = 3
 # Identify quadrant
 
 # 1. Generating Alternatives
@@ -428,6 +389,14 @@ steiner_labels %>% mutate(
 
 write.csv(steiner_labels, './analysis_experiments/steiner-labels.csv')
 ```
+### temporary explorations
+```{r}
+intersect(
+  steiner_labels %>% filter(optimizing == 1) %>% select(task_names),
+  mcgrath_quadrant_labels %>% filter(choosing == 1) %>% select(task_names)
+)
+```
+
 ### Zigurs
 ```{r}
 # TODO

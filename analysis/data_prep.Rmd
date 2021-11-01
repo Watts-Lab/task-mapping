@@ -146,6 +146,8 @@ unrecognised_tasks <-
 # CSV Export
 ```{r}
 # Store the main tables to csv so other people can use them.
+clean_responses %>% write_csv("../cleaned_task_responses.csv")
+
 agreed_responses <- clean_responses %>%
   filter(stage == "agreement") %>%
   select(-stage, -user, -updatedAt, -editors, -name, -name_clean, -phase) %>%
@@ -154,6 +156,9 @@ agreed_responses <- clean_responses %>%
 
 agreed_responses %>%
   write_csv("../task_map.csv")
+
+# Store the ordinals
+as.data.frame(ordinals$name) %>% write_csv("../ordinals.csv")
 
 # Store the numerical response here - the csv messes up the ordinal values, so better to
 # encode before we switch over to the other file

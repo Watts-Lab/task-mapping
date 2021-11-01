@@ -1,30 +1,38 @@
 "","task","raters","question1","answer1","question2","answer2"
 "1","Blocks World for Teams","Sarika | Katelyn","goal_full",1,"goal_partial",1
-"2","Divergent Association Task","Dodge | Sarika","goal_full",1,"goal_partial",4
-"3","Intergroup Prisoner's Dilemma-Maximizing Difference","Katelyn | Dodge","goal_full",1,"goal_partial",1
-"4","Railroad Route Construction game","Katelyn | Sarika","goal_full",5,"goal_partial",0
-"5","Rank cities by population, rank words by familiarity","Andrew | Katelyn","goal_full",5,"goal_partial",5
-"6","Search for Oil Task","Sarika | katelynnbottcher","goal_full",1,"goal_partial",1
-"7","Sudoku","Andrew | Sarika","goal_full",1,"goal_partial",1
-"8","Divergent Association Task","Dodge | Sarika","options_independent",1,"options_dependent",4
-"9","Hidden figures in a picture","Katelyn | Sarika","options_independent",1,"options_dependent",1
-"10","Judgment of product and slogan","Dodge | Sarika","options_independent",1,"options_dependent",4
-"11","Putting food into categories","Katelyn | Sakra","options_independent",1,"options_dependent",1
-"12","Radio assembly task","Dodge | Karan","options_independent",1,"options_dependent",4
-"13","Recall association","Katelyn | Sarika","options_independent",1,"options_dependent",1
-"14","Recall word lists","Sarika | Karan","options_independent",1,"options_dependent",1
-"15","Sequential dyadic die-rolling","Sarika | Karan","options_independent",1,"options_dependent",4
-"16","Space Fortress","Dodge | Sarika","options_independent",1,"options_dependent",1
-"17","Summarize Discussion","Sarika | Katelyn","options_independent",1,"options_dependent",1
-"18","Aerospace Investment (Role-playing)","Sarika | Andrew","outcome_certain",1,"outcome_probablistic",1
-"19","Investment game (hidden-profile)","Sarika | Katelyn","outcome_certain",1,"outcome_probablistic",1
-"20","Summarize Discussion","Sarika | Katelyn","outcome_certain",5,"outcome_probablistic",5
-"21","Run a mini business","Andrew | Katelyn","individual_theoretical",5,"individual_practical",5
-"22","Splitting a deck of cards","Dodge | Sarika","individual_theoretical",1,"individual_practical",1
-"23","Blocks World for Teams","Sarika | Katelyn","submission_together",1,"submission_separate",4
-"24","Iterated Snowdrift Game (aka Hawk-Dove game)","Katelyn | Sarika","submission_together",1,"submission_separate",1
-"25","Iterative lemonade stand task","Katelyn | Dodge","submission_together",5,"submission_separate",5
-"26","Railroad Route Construction game","Katelyn | Sarika","submission_together",5,"submission_separate",5
-"27","Recall association","Katelyn | Sarika","submission_together",5,"submission_separate",5
-"28","Sequential dyadic die-rolling","Sarika | Karan","submission_together",5,"submission_separate",5
-"29","The N light bulbs game","benjamin-manning | Katelyn","submission_together",4,"submission_separate",4
+"2","Cheering and Clapping","Dodge | joycewang3","goal_full",1,"goal_partial",1
+"3","Divergent Association Task","Dodge | Sarika","goal_full",1,"goal_partial",4
+"4","Intergroup Prisoner's Dilemma-Maximizing Difference","Katelyn | Dodge","goal_full",1,"goal_partial",1
+"5","Mock jury","Sarika | Dodge","goal_full",0,"goal_partial",0
+"6","Railroad Route Construction game","Katelyn | Sarika","goal_full",5,"goal_partial",0
+"7","Rank cities by population, rank words by familiarity","Andrew | Katelyn","goal_full",5,"goal_partial",5
+"8","Search for Oil Task","Sarika | katelynnbottcher","goal_full",1,"goal_partial",1
+"9","Sudoku","Andrew | Sarika","goal_full",1,"goal_partial",1
+"10","Cheering and Clapping","Dodge | joycewang3","options_independent",1,"options_dependent",1
+"11","Divergent Association Task","Dodge | Sarika","options_independent",1,"options_dependent",4
+"12","Hidden figures in a picture","Katelyn | Sarika","options_independent",1,"options_dependent",1
+"13","Judgment of product and slogan","Dodge | Sarika","options_independent",1,"options_dependent",4
+"14","Putting food into categories","Katelyn | Sakra","options_independent",1,"options_dependent",1
+"15","Radio assembly task","Dodge | Karan","options_independent",1,"options_dependent",4
+"16","Recall association","Katelyn | Sarika","options_independent",1,"options_dependent",1
+"17","Recall word lists","Sarika | Karan","options_independent",1,"options_dependent",1
+"18","Sequential dyadic die-rolling","Sarika | Karan","options_independent",1,"options_dependent",4
+"19","Space Fortress","Dodge | Sarika","options_independent",1,"options_dependent",1
+"20","Summarize Discussion","Sarika | Katelyn","options_independent",1,"options_dependent",1
+"21","Aerospace Investment (Role-playing)","Sarika | Andrew","outcome_certain",1,"outcome_probablistic",1
+"22","Cheering and Clapping","Dodge | joycewang3","outcome_certain",0,"outcome_probablistic",0
+"23","Investment game (hidden-profile)","Sarika | Katelyn","outcome_certain",1,"outcome_probablistic",1
+"24","Minimum-effort tacit coordination game","Sarika | bvikram03","outcome_certain",1,"outcome_probablistic",4
+"25","Summarize Discussion","Sarika | Katelyn","outcome_certain",5,"outcome_probablistic",5
+"26","Minimum-effort tacit coordination game","Sarika | bvikram03","individual_theoretical",5,"individual_practical",4
+"27","Run a mini business","Andrew | Katelyn","individual_theoretical",5,"individual_practical",5
+"28","Splitting a deck of cards","Dodge | Sarika","individual_theoretical",1,"individual_practical",1
+"29","Blocks World for Teams","Sarika | Katelyn","submission_together",1,"submission_separate",4
+"30","Intergroup Prisoner's Dilemma","Sarika | Katelyn","submission_together",1,"submission_separate",4
+"31","Iterated Snowdrift Game (aka Hawk-Dove game)","Katelyn | Sarika","submission_together",1,"submission_separate",1
+"32","Iterative lemonade stand task","Katelyn | Dodge","submission_together",5,"submission_separate",5
+"33","Minimum-effort tacit coordination game","Sarika | bvikram03","submission_together",5,"submission_separate",5
+"34","Railroad Route Construction game","Katelyn | Sarika","submission_together",5,"submission_separate",5
+"35","Recall association","Katelyn | Sarika","submission_together",5,"submission_separate",5
+"36","Sequential dyadic die-rolling","Sarika | Karan","submission_together",5,"submission_separate",5
+"37","The N light bulbs game","benjamin-manning | Katelyn","submission_together",4,"submission_separate",4
