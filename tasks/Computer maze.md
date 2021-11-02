@@ -22,7 +22,8 @@ If no visual components are provided or seem not to be needed describe an interf
 7. Following the practice period, dyads navigated two mazes. Participants were not allowed to communicate while working on Maze 1, but they were allowed to discuss the task freely for 2 min between Maze 1 and Maze 2. Dyads were mointored by 2 raters and scored on amount of discussion and details.
 
 ## Roles 
-Tagger: Tags the identical greebles using the keyboard
+Tagger: Tags the identical greebles using the keyboard 
+
 Navigagtor: Navigates through the computer maze using the joystick.
 
 ## Instructions
