@@ -1,6 +1,6 @@
 task,stage,editors,mappers
 22 Mathematical puzzles,not started,,"NA"
-24 arithmetic problems,not started,,"NA"
+24 arithmetic problems,phase 2,katelynbottcher -> dodgehill,"NA"
 3-issue cell phone negotaition,not started,,"NA"
 5 squares problem,2 mappings,dodgehill -> joycewang3,Dodge + joycewang3
 9 Dot Problem,done,sarikasu -> KaranSampath,Karan | Sarika
@@ -10,12 +10,17 @@ Aerospace Investment (Role-playing),done,andydrew93 -> sarikasu,Sarika | Andrew
 Allocating resources to programs,done,sarikasu -> katelynbottcher,Sarika | Katelyn
 Apache helicopter flight simulator (Longbow2),phase 2,bvikram03 -> KaranSampath,"NA"
 Architectural design task,done,bvikram03 -> KaranSampath,bvikram03 | Karan
-Arithmetic problem 1,phase 1,katelynbottcher -> ,"NA"
-Arithmetic problem 2,phase 1,katelynbottcher -> ,"NA"
-Arithmetic problem 3,phase 1,katelynbottcher -> ,"NA"
-Arithmetic problem 4,phase 1,katelynbottcher -> ,"NA"
-Arithmetic problem 5,not started,,"NA"
-Arithmetic problem 6,not started,,"NA"
+Arithmetic problem 1,phase 2,katelynbottcher -> dodgehill,"NA"
+Arithmetic problem 10,phase 2,katelynbottcher -> dodgehill,"NA"
+Arithmetic problem 11,phase 2,katelynbottcher -> dodgehill,"NA"
+Arithmetic problem 2,phase 2,katelynbottcher -> dodgehill,"NA"
+Arithmetic problem 3,phase 2,katelynbottcher -> dodgehill,"NA"
+Arithmetic problem 4,phase 2,katelynbottcher -> dodgehill,"NA"
+Arithmetic problem 5,phase 2,katelynbottcher -> dodgehill,"NA"
+Arithmetic problem 6,phase 2,katelynbottcher -> dodgehill,"NA"
+Arithmetic problem 7,phase 2,katelynbottcher -> dodgehill,"NA"
+Arithmetic problem 8,phase 2,katelynbottcher -> dodgehill,"NA"
+Arithmetic problem 9,phase 2,katelynbottcher -> dodgehill,"NA"
 Battle of the sexes,done,dodgehill -> KaranSampath,Dodge | Karan
 Best job candidate (hidden-profile),done,sarikasu -> katelynbottcher,Sarika | katelynnbottcher
 Biopharm Seltek,done,sarikasu -> KaranSampath,Karan | Sarika
@@ -30,9 +35,9 @@ Cheering and Clapping,done,dodgehill -> joycewang3,Dodge | joycewang3
 Chess,not started,,"NA"
 Chicken,done,sarikasu -> andydrew93,Sarika | Andrew
 Coin task (Creativity),not started,,"NA"
-Computer maze,phase 1,katelynbottcher -> ,"NA"
+Computer maze,phase 2,bvikram03 -> KaranSampath,"NA"
 Conformity game,1 mapping,paniukhina -> dodgehill,Arina
-Creative uses of objects,phase 2,vivianxdx -> bvikram03,"NA"
+Creative uses of objects,1 mapping,vivianxdx -> bvikram03,Vikram
 Crisis mapping,done,sarikasu -> KaranSampath,Sarika | Karan
 decrypt words/sentences,phase 2,AshleyFe -> bvikram03,"NA"
 Desert survival,done,sarikasu -> KaranSampath,Karan | Sarika
@@ -43,7 +48,8 @@ Do nothing,not started,,"NA"
 Energetics Meets Generex,done,sarikasu -> KaranSampath,Sarika | Karan
 Estimating geological metrics,done,sarikasu -> katelynbottcher,Sarika | Katelyn
 Estimating pages of a book,done,sarikasu -> KaranSampath,Sarika | Karan
-Estimating social quantity,2 mappings,bvikram03 -> katelynbottcher,Karan + Vikram
+Estimating social quantity,done,"bvikram03 -> 
+KaranSampath",bvikram03 | Karan
 Euclidean traveling salesperson,done,katelynbottcher -> sarikasu,Katelyn  | Sarika
 Find the common symbol,not started,,"NA"
 Find the maximum,done,sarikasu -> KaranSampath,Karan | Sarika
@@ -77,14 +83,14 @@ Moms.com,not started,,"NA"
 Moral Reasoning (Disciplinary Action Case),done,sarikasu -> benjamin-manning,benjamin-manning | Sarika
 Moral reasoning dilemmas,not started,,"NA"
 Moving offices (complex task),not started,,"NA"
-"NASA Moon survival",2 mappings,katelynbottcher -> dodgehill,Dodge + Katelyn
+"NASA Moon survival",done,katelynbottcher -> dodgehill,Katelyn | Dodge
 New Recruit,done,sarikasu -> KaranSampath,Karan | Sarika
 Object based generalization for reasoning (Phyre),not started,,"NA"
 Oligopoly game,done,sarikasu -> katelynbottcher,Sarika | Katelyn
 Organization Game,done,dodgehill -> KaranSampath,Dodge | Karan
 pharmaceutical company (hidden-profile),done,sarikasu -> KaranSampath,Sarika | Karan
 Pipe task,not started,,"NA"
-Prisoner's Dilemma (various versions),phase 2,dodgehill -> joycewang3,"NA"
+Prisoner's Dilemma (various versions),1 mapping,dodgehill -> joycewang3,Dodge
 Problem solving tasks (Hackman),not started,,"NA"
 Production tasks (Hackman),not started,,"NA"
 Public goods game,done,vivianxdx -> sarikasu dodgehill,Sarika | Dodge
@@ -126,7 +132,7 @@ Typing game,phase 2,andydrew93 -> katelynbottcher / joycewang3,"NA"
 Ultimatum game (various versions),done,sarikasu -> andydrew93,Sarika | Andrew
 Unscramble words (anagrams),done,bvikram03 -> KaranSampath,Sarika | Karan
 Viking,done,sarikasu -> KaranSampath,Sarika | Karan
-Visual Oddball Target,1 mapping,paniukhina -> katelynbottcher,Arina
+Visual Oddball Target,2 mappings,paniukhina -> katelynbottcher,Katelyn + Arina
 Volunteer Investment Game,done,andydrew93 -> sarikasu,Sarika | Andrew
 Wason’s Selection Task,not started,,"NA"
 Whac-A-Mole,done,katelynbottcher  -> sarikasu,Katelyn | Sarika

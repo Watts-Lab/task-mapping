@@ -232,7 +232,7 @@ tasks_tracking %>%
 
 # PCA Map - Basic
 ```{r}
-pca = prcomp(~., data = numerical_responses_matrix, na.action = na.exclude)
+pca = prcomp(~., data = numerical_responses_matrix, na.action = na.exclude, scale = TRUE)
 # summary(pca)
 # plot(pca)
 # biplot(pca,var.axes = FALSE,)
