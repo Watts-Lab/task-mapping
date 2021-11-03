@@ -218,88 +218,259 @@ mcgrath_data <- cbind(mcgrath_data, additional_mcgrath_cols)
 ```
 
 ```{r}
-# MANUAL CLASSIFICATION ---- what's tough about this is that things don't divide cleanly along the lines....
+# Code to make mcgrath categorizations
+make_mcgrath_categorizations <- function(MIDDLE, mcgrath_data) {
+  #### Execute Tasks (1,8,7,6) ####
+  physical_tasks <-
+    mcgrath_data %>% filter(effort_mental < MIDDLE |
+                              effort_physical > MIDDLE) # there are only 4 of these
+  
+  # Note --- noticing that I get 0 tasks for type 7 when I filter for physical in this section; thus, I'm loosening the filtering requirements here
+  # Noting that "physical" elements are not consistent across different parts of the sectors
+  
+  ### Type 7: Battles
+  type_7 <-
+    mcgrath_data %>% filter(conflict_cooperation > MIDDLE) %>%
+    filter(external_adversary > MIDDLE)
+  
+  ### Type 8: Performances
+  type_8 <-
+    execute_tasks %>%
+    filter((conflict_cooperation < MIDDLE) &
+             !(generate_process > MIDDLE) &
+             !(generate_plan > MIDDLE) &
+             external_standard > MIDDLE
+    )
+  
+  # 1 and 6 ---- WEAK EXECUTE
+  # Noticing that if you filter for the physical aspect, you get 0 tasks, so I got rid of it
+  
+  ### Type 1: Planning
+  type_1 <-
+    mcgrath_data %>% filter(conflict_cooperation < MIDDLE) %>%
+    filter(generate_plan > MIDDLE | generate_process > MIDDLE)
+  
+  ### Type 6: Mixed Motives
+  type_6 <-
+    mcgrath_data %>% filter(conflict_cooperation > MIDDLE)  %>%
+    filter(conflict_interests > MIDDLE)
+  
+  ############ Conceptual Tasks (2,3,4,5) ############
+  mental_tasks <-
+    mcgrath_data %>% filter(effort_mental > MIDDLE |
+                              effort_physical < MIDDLE)
+  
+  ## Cooperation (2,3)
+  mental_cooperate <- mental_tasks %>%
+    filter(conflict_cooperation < MIDDLE)
+  
+  ### Type 2: Creativity
+  type_2 <- mental_cooperate %>%
+    filter(generate_ideas > MIDDLE | generate_creativity > MIDDLE)
+  
+  ### Type 3: Intellective
+  type_3 <- mental_cooperate %>%
+    filter(
+      solution_objectivity > MIDDLE |
+        solution_verifiability > MIDDLE | external_standard > MIDDLE
+    )
+  
+  ## Conflict (4,5)
+  mental_conflict <-  mental_tasks %>%
+    filter(conflict_cooperation > MIDDLE)
+  
+  ### Type 4: Decision-Making
+  type_4 <- mental_conflict %>%
+    filter(solution_objectivity < MIDDLE |
+             solution_verifiability < MIDDLE)
+  
+  ### Type 5: Cognitive Conflict
+  type_5 <- mental_conflict %>%
+    filter(resolve_opinion > MIDDLE | resolve_perspectives > MIDDLE)
 
-MIDDLE = 3 # used to separate the types of tasks
+####### export the data --- currently commented out
+  mcgrath_quadrant_labels <- data.frame(task_names)
 
-#### Execute Tasks (1,8,7,6) #### 
-physical_tasks <- mcgrath_data %>% filter(effort_mental < MIDDLE | effort_physical > MIDDLE) # there are only 4 of these
+  for (i in 1:nrow(mcgrath_data)) {
+    task = mcgrath_data$task_names[i]
+    mcgrath_quadrant_labels$generate.planning[i] = as.numeric(task %in% type_1$task_names)
+    mcgrath_quadrant_labels$generate.creativity[i] = as.numeric(task %in% type_2$task_names)
 
-# Note --- noticing that I get 0 tasks for type 7 when I filter for physical in this section; thus, I'm loosening the filtering requirements here
-# Noting that "physical" elements are not consistent across different parts of the sectors
+    mcgrath_quadrant_labels$choose.intellective[i] = as.numeric(task %in% type_3$task_names)
+    mcgrath_quadrant_labels$choose.decision[i] = as.numeric(task %in% type_4$task_names)
 
-### Type 7: Battles
-type_7 <-
-  mcgrath_data %>% filter(conflict_cooperation > MIDDLE) %>%
-  filter(external_adversary > MIDDLE)
+    mcgrath_quadrant_labels$negotiate.cogconf[i] = as.numeric(task %in% type_5$task_names)
+    mcgrath_quadrant_labels$negotiate.mixmotive[i] = as.numeric(task %in% type_6$task_names)
 
-### Type 8: Performances
-type_8 <-
-  execute_tasks %>%
-  filter((conflict_cooperation < MIDDLE) &
-           !(generate_process > MIDDLE) & !(generate_plan > MIDDLE) &
-           external_standard > MIDDLE
+    mcgrath_quadrant_labels$execute.contest[i] = as.numeric(task %in% type_7$task_names)
+    mcgrath_quadrant_labels$execute.performance[i] = as.numeric(task %in% type_8$task_names)
+  }
+
+  return(mcgrath_quadrant_labels)
+  
+  # write.csv(
+  #   mcgrath_quadrant_labels,
+  #   paste(
+  #     './analysis_experiments/mcgrath-quadrant-labels-',
+  #     MIDDLE,
+  #     '.csv'
+  #   )
+  # )
+
+}
+```
+
+Actually run the McGrath categorizations
+```{r}
+for(MIDDLE in 2:4){ # MIDDLE is used to separate the types of tasks
+  make_mcgrath_categorizations(MIDDLE,mcgrath_data)
+}
+```
+
+```{r mcgrath-intensity}
+# Code to weight mcgrath categorizations
+create_weighted_mcgrath<- function(MIDDLE) {
+  print(MIDDLE)
+  
+  # Read in McGrath Categorizations
+  mcgrath_labels <-  paste('./analysis_experiments/mcgrath-quadrant-labels-',
+                           MIDDLE,
+                           '.csv') %>% read_csv()
+  REVERSE = 6
+  
+  type_1 <- mcgrath_data %>% filter(task_names %in% (mcgrath_labels %>% filter(generate.planning != 0))$task_names) %>%
+    mutate(type_1_score = 
+             (generate_plan + generate_process) / 
+             (max(generate_plan) + max(generate_process))) %>% select(task_names, type_1_score)
+  type_2 <- mcgrath_data %>% filter(task_names %in% (mcgrath_labels %>% filter(generate.creativity != 0))$task_names) %>%
+    mutate(type_2_score = (generate_ideas + generate_creativity) /
+             (max(generate_ideas) + max(generate_creativity))) %>% select(task_names, type_2_score)
+  type_3 <- mcgrath_data %>% filter(task_names %in% (mcgrath_labels %>% filter(choose.intellective != 0))$task_names) %>%
+    mutate(
+      type_3_score = (
+        solution_objectivity + solution_verifiability + external_standard) /
+        (max(solution_objectivity) + max(solution_verifiability) + max(external_standard)
+      )
+    ) %>% select(task_names, type_3_score)
+  type_4 <- mcgrath_data %>% filter(task_names %in% (mcgrath_labels %>% filter(choose.decision != 0))$task_names)%>%
+    mutate(
+      type_4_score = (
+        REVERSE - solution_objectivity + REVERSE - solution_verifiability
+      ) / (10)
+    ) %>% select(task_names, type_4_score)
+  type_5 <- mcgrath_data %>% filter(task_names %in% (mcgrath_labels %>% filter(negotiate.cogconf != 0))$task_names) %>%
+    mutate(
+      type_5_score = (
+        resolve_opinion + resolve_perspectives
+      ) / ((max(resolve_opinion) + max(resolve_perspectives)))
+    ) %>% select(task_names, type_5_score)
+  type_6 <- mcgrath_data %>% filter(task_names %in% (mcgrath_labels %>% filter(negotiate.mixmotive != 0))$task_names) %>%
+    mutate(type_6_score = (conflict_cooperation + conflict_interests) /
+             (max(conflict_cooperation) + max(conflict_interests))) %>% select(task_names, type_6_score)
+  type_7 <- mcgrath_data %>% filter(task_names %in% (mcgrath_labels %>% filter(execute.contest != 0))$task_names) %>%
+    mutate(type_7_score = (conflict_cooperation + external_adversary) /
+             (max(conflict_cooperation) + max(external_adversary))) %>% select(task_names, type_7_score)
+  type_8 <- mcgrath_data %>% filter(task_names %in% (mcgrath_labels %>% filter(execute.performance != 0))$task_names) %>%
+    mutate(type_8_score = (REVERSE - conflict_cooperation + external_standard) /
+             (10)) %>% select(task_names, type_8_score)
+
+  #### export all results as a weighted matrix instead
+  mcgrath_quadrant_labels_weighted <- data.frame(task_names)
+
+  for (i in 1:nrow(mcgrath_data)) {
+    task = mcgrath_data$task_names[i]
+    mcgrath_quadrant_labels_weighted$generate.planning[i] = ifelse(task %in% type_1$task_names,
+     (type_1 %>% filter(task_names == task))$type_1_score, 0)
+    mcgrath_quadrant_labels_weighted$generate.creativity[i] = ifelse(task %in% type_2$task_names,
+     (type_2 %>% filter(task_names == task))$type_2_score, 0)
+    mcgrath_quadrant_labels_weighted$choose.intellective[i] = ifelse(task %in% type_3$task_names,
+     (type_3 %>% filter(task_names == task))$type_3_score, 0)
+    mcgrath_quadrant_labels_weighted$choose.decision[i] = ifelse(task %in% type_4$task_names,
+     (type_4 %>% filter(task_names == task))$type_4_score, 0)
+    mcgrath_quadrant_labels_weighted$negotiate.cogconf[i] = ifelse(task %in% type_5$task_names,
+     (type_5 %>% filter(task_names == task))$type_5_score, 0)
+    mcgrath_quadrant_labels_weighted$negotiate.mixmotive[i] = ifelse(task %in% type_6$task_names,
+     (type_6 %>% filter(task_names == task))$type_6_score, 0)
+    mcgrath_quadrant_labels_weighted$execute.contest[i] = ifelse(task %in% type_7$task_names,
+     (type_7 %>% filter(task_names == task))$type_7_score, 0)
+    mcgrath_quadrant_labels_weighted$execute.performance[i] = ifelse(task %in% type_8$task_names,
+     (type_8 %>% filter(task_names == task))$type_8_score, 0)
+  }
+
+  write.csv(
+    mcgrath_quadrant_labels_weighted,
+    paste(
+      './analysis_experiments/mcgrath-quadrant-labels-weighted',
+      MIDDLE,
+      '.csv'
+    )
   )
-
-# 1 and 6 ---- WEAK EXECUTE
-# Noticing that if you filter for the physical aspect, you get 0 tasks, so I got rid of it
-
-### Type 1: Planning
-type_1 <- mcgrath_data %>% filter(conflict_cooperation < MIDDLE) %>%
-  filter(generate_plan > MIDDLE | generate_process > MIDDLE)
-
-### Type 6: Mixed Motives
-type_6 <- mcgrath_data %>% filter(conflict_cooperation > MIDDLE)  %>%
-  filter(conflict_interests > MIDDLE)
-
-############ Conceptual Tasks (2,3,4,5) ############
-mental_tasks <- mcgrath_data %>% filter(effort_mental > MIDDLE | effort_physical < MIDDLE)
-
-## Cooperation (2,3)
-mental_cooperate <- mental_tasks %>%
-  filter(conflict_cooperation < MIDDLE)
-
-### Type 2: Creativity
-type_2 <- mental_cooperate %>%
-  filter(generate_ideas > MIDDLE | generate_creativity > MIDDLE)
-
-### Type 3: Intellective
-type_3 <- mental_cooperate %>%
-  filter(solution_objectivity > MIDDLE | solution_verifiability > MIDDLE | external_standard > MIDDLE)
-
-## Conflict (4,5)
-mental_conflict <-  mental_tasks %>%
-  filter(conflict_cooperation > MIDDLE)
-
-### Type 4: Decision-Making
-type_4 <- mental_conflict %>%
-  filter(solution_objectivity < MIDDLE | solution_verifiability < MIDDLE)
-
-### Type 5: Cognitive Conflict
-type_5 <- mental_conflict %>%
-  filter(resolve_opinion > MIDDLE | resolve_perspectives > MIDDLE)
-
-#### export all results
-mcgrath_quadrant_labels <- data.frame(task_names)
-
-for (i in 1:nrow(mcgrath_data)) {
-  task = mcgrath_data$task_names[i]
-  mcgrath_quadrant_labels$generate.planning[i] = as.numeric(task %in% type_1$task_names)
-  mcgrath_quadrant_labels$generate.creativity[i] = as.numeric(task %in% type_2$task_names)
   
-  mcgrath_quadrant_labels$choose.intellective[i] = as.numeric(task %in% type_3$task_names)
-  mcgrath_quadrant_labels$choose.decision[i] = as.numeric(task %in% type_4$task_names)
+}
+```
+
+```{r}
+for(MIDDLE in 2:4){ # MIDDLE is used to separate the types of tasks
+  create_weighted_mcgrath(MIDDLE)
+}
+```
+
+#### Bootstrapping McGrath
+```{r}
+set.seed(123)
+
+# Select rows with replacement from dataframe
+MIDDLE <- 4
+N_REPS <- 1000
+N_SAMPLES <- nrow(mcgrath_data)
+
+list_num_zeroes<-c()
+list_num_above_ones<-c()
+
+for(i in 1:N_REPS){
+  sampled_mcgrath_data <- mcgrath_data[sample(nrow(mcgrath_data), N_SAMPLES, replace = T), ]
+  mcgrath_categorizations <- make_mcgrath_categorizations(MIDDLE,sampled_mcgrath_data)
   
-  mcgrath_quadrant_labels$negotiate.cogconf[i] = as.numeric(task %in% type_5$task_names)
-  mcgrath_quadrant_labels$negotiate.mixmotive[i] = as.numeric(task %in% type_6$task_names)
+  #calculate the stats: Num unmapped tasks, Num tasks mapped to more than 1 category
+  label_frequency_table <- mcgrath_categorizations %>% mutate(
+    num_labels = rowSums(across(where(is.numeric)))
+  ) %>% select(num_labels) %>% table()
   
-  mcgrath_quadrant_labels$execute.contest[i] = as.numeric(task %in% type_7$task_names)
-  mcgrath_quadrant_labels$execute.performance[i] = as.numeric(task %in% type_8$task_names)
+  num_zero <- label_frequency_table[1]
+  num_above_one <- ifelse(
+    length(label_frequency_table)==4,
+    label_frequency_table[4] + label_frequency_table[3],
+    label_frequency_table[3]
+  )
+  
+  list_num_zeroes[i] <- num_zero
+  list_num_above_ones[i] <- num_above_one
+
 }
 
-write.csv(mcgrath_quadrant_labels, './analysis_experiments/mcgrath-quadrant-labels.csv')
+sd(list_num_zeroes)
+sd(list_num_above_ones)
+```
 
+#### Identifying McGrath's Peculiarities
+```{r}
+# Check Labels
+mcgrath_labels_2 <- read_csv('./analysis_experiments/mcgrath-quadrant-labels- 2 .csv')
+mcgrath_labels_3 <- read_csv('./analysis_experiments/mcgrath-quadrant-labels- 3 .csv')
+mcgrath_labels_4 <- read_csv('./analysis_experiments/mcgrath-quadrant-labels- 4 .csv')
 
+## List of peculiar tasks that get labeled inconsistently
+union(
+  union(
+    setdiff(mcgrath_labels_2, mcgrath_labels_3)$task_names,
+    setdiff(mcgrath_labels_3, mcgrath_labels_4)$task_names
+  ),
+  setdiff(mcgrath_labels_2, mcgrath_labels_4)$task_names
+)
+
+```
+
+```{r old-mcgrath}
 # This was Emily's first attempt at doing this - saving for posterity but redoing#
 # 
 # # 1. Generating Alternatives
@@ -352,6 +523,7 @@ write.csv(mcgrath_quadrant_labels, './analysis_experiments/mcgrath-quadrant-labe
 # 
 # write.csv(mcgrath_quadrant_labels, './analysis_experiments/mcgrath-quadrant-labels.csv')
 ```
+
 
 ### Steiner
 ```{r}
