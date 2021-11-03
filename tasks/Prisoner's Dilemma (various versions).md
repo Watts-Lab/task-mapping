@@ -14,18 +14,20 @@ N/A
 
 # Procedure
 ## Steps
-The “Take Some” Game
+The “Take Some” Game  
 - Groups of three are formed.
 - Players are briefed on the rules.
 - Simultaneously each participant holds up a the blue or red poker chip.
     - For each red chip held up, the player holding the chip is awarded $3.00, but every participant in the group is penalized $1.00 (meaning if each participant holds up a red chip, the groups payout is 0).
     - For each blue chip held up, the participant holding it is awarded $1.00, and no one is penalized.
-- Scores are tallied, and this can be repeated for as many rounds as the experimenter chooses.
+- Scores are tallied, and this can be repeated for as many rounds as the experimenter chooses.  
+
 The “Give Some” Game
 - Participants are broken up into groups of five.
 - Players are briefed on the rules.
 - Each player decides whether to keep $8.00 from the experimenter, or give $3.00 to every other participant in the group.
-- This is repeated for as many rounds as the experimenter chooses.
+- This is repeated for as many rounds as the experimenter chooses.  
+
 General Prisonniers Dilemma
 - Generally played with two people, and can be played repeatedly.
 - Designed to model a scenario where where two prisoners were caught for jointly committing a felony.
