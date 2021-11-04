@@ -1,0 +1,173 @@
+---
+title: "generate_contradictory_labels"
+author: "Emily Hu"
+date: "11/4/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(irr)
+library(ggplot2)
+library(jsonlite)
+library(graphics)
+library(ggfortify)
+library(factoextra)
+library(stats)
+library(ggpubr)
+library(dbscan)
+library(ecodist)
+library(dplyr)
+library(tidyverse)
+```
+
+# Import Data
+```{r}
+numerical_responses_matrix <- read_csv('../task_map_numeric.csv')
+
+ordinals <- read_csv('../ordinals.csv')
+
+clean_responses <- read_csv("../cleaned_task_responses.csv")
+
+agreed_responses <- read_csv("../task_map.csv")
+
+questions <- fromJSON("https://task-robot.glitch.me/questions/json")
+
+task_names <- agreed_responses$task
+```
+
+
+# Addressing Github #199 - Similar Question Sanity Check
+```{r}
+# github issue 199: Add similar question sanity check in analysis
+
+# QUESTIONS THAT ARE LOGICALLY EXCLUSIONARY #
+# goal_full + goal_partial == 6, because they need to be complements
+# options_independent + options_dependent== 6, because these are also opposites
+# outcome_certain + outcome_probablistic == 6, because these are also opposites
+# individual_theoretical + individual_practical == 6, because these are also opposites
+# submission_together + submission_separate == 6, because these are also opposites
+
+numerical_completed_tasks <- cbind(task_names, numerical_responses_matrix)
+
+# Filter for questions that are logically exclusionary
+TOTAL_SCORE = 6
+
+filter_for_agreement <- function(data_table){
+  
+  data_table <- data_table %>% filter(goal_full+goal_partial == TOTAL_SCORE) %>%
+  filter(options_independent+options_dependent == TOTAL_SCORE) %>%
+  filter(outcome_certain+outcome_probablistic == TOTAL_SCORE) %>%
+  filter(individual_theoretical+individual_practical == TOTAL_SCORE) %>%
+  filter(submission_together + submission_separate == TOTAL_SCORE)
+  
+  return(data_table)
+}
+
+# Save the ones that disagree so that we can peek at them
+goal_disagreement<- numerical_completed_tasks %>%
+  filter(goal_full+goal_partial != TOTAL_SCORE) %>%
+  select(c(task_names, goal_full, goal_partial)) %>%
+  pivot_longer(c(goal_full, goal_partial), names_to = "question_name") %>%
+  rename(task = task_names) %>%
+  left_join((clean_responses %>% filter(stage == "agreement")), by = "task") %>%
+  select(c(task, user, question_name, value)) %>%
+  pivot_wider(names_from = "question_name") %>%
+  mutate(
+    question1 = "goal_full",
+    question2 = "goal_partial"
+  ) %>%
+  rename(
+    answer1 = goal_full,
+    answer2 = goal_partial,
+    raters = user
+  ) %>%
+  select(c(task, raters, question1, answer1, question2, answer2))
+
+options_disagreement<- numerical_completed_tasks %>%
+  filter(options_independent+options_dependent != TOTAL_SCORE)%>%
+  select(c(task_names, options_independent, options_dependent)) %>%
+  pivot_longer(c(options_independent, options_dependent), names_to = "question_name") %>%
+  rename(task = task_names) %>%
+  left_join((clean_responses %>% filter(stage == "agreement")), by = "task") %>%
+  select(c(task, user, question_name, value)) %>%
+  pivot_wider(names_from = "question_name") %>%
+  mutate(
+    question1 = "options_independent",
+    question2 = "options_dependent"
+  ) %>%
+  rename(
+    answer1 = options_independent,
+    answer2 = options_dependent,
+    raters = user
+  ) %>%
+  select(c(task, raters, question1, answer1, question2, answer2))
+
+outcome_disagreement<- numerical_completed_tasks %>%
+  filter(outcome_certain+outcome_probablistic != TOTAL_SCORE) %>%
+  select(c(task_names, outcome_certain, outcome_probablistic)) %>%
+  pivot_longer(c(outcome_certain, outcome_probablistic), names_to = "question_name") %>%
+  rename(task = task_names) %>%
+  left_join((clean_responses %>% filter(stage == "agreement")), by = "task") %>%
+  select(c(task, user, question_name, value)) %>%
+  pivot_wider(names_from = "question_name") %>%
+  mutate(
+    question1 = "outcome_certain",
+    question2 = "outcome_probablistic"
+  ) %>%
+  rename(
+    answer1 = outcome_certain,
+    answer2 = outcome_probablistic,
+    raters = user
+  ) %>%
+  select(c(task, raters, question1, answer1, question2, answer2))
+
+individual_disagreement<- numerical_completed_tasks %>%
+  filter(individual_theoretical+individual_practical != TOTAL_SCORE)%>%
+  select(c(task_names, individual_theoretical, individual_practical)) %>%
+  pivot_longer(c(individual_theoretical, individual_practical), names_to = "question_name") %>%
+  rename(task = task_names) %>%
+  left_join((clean_responses %>% filter(stage == "agreement")), by = "task") %>%
+  select(c(task, user, question_name, value)) %>%
+   pivot_wider(names_from = "question_name") %>%
+  mutate(
+    question1 = "individual_theoretical",
+    question2 = "individual_practical"
+  ) %>%
+  rename(
+    answer1 = individual_theoretical,
+    answer2 = individual_practical,
+    raters = user
+  ) %>%
+  select(c(task, raters, question1, answer1, question2, answer2))
+
+submission_disagreement<- numerical_completed_tasks %>%
+  filter(submission_together+submission_separate != TOTAL_SCORE)%>%
+  select(c(task_names, submission_together, submission_separate)) %>%
+  pivot_longer(c(submission_together, submission_separate), names_to = "question_name") %>%
+  rename(task = task_names) %>%
+  left_join((clean_responses %>% filter(stage == "agreement")), by = "task") %>%
+  select(c(task, user, question_name, value)) %>%
+  pivot_wider(names_from = "question_name") %>%
+  mutate(
+    question1 = "submission_together",
+    question2 = "submission_separate"
+  ) %>%
+  rename(
+    answer1 = submission_together,
+    answer2 = submission_separate,
+    raters = user
+  ) %>%
+  select(c(task, raters, question1, answer1, question2, answer2))
+
+
+## consolidate into single csv
+inconsistent_questions <- goal_disagreement %>% rbind(options_disagreement) %>%
+  rbind(outcome_disagreement) %>% rbind(individual_disagreement) %>% rbind(submission_disagreement)
+
+write.csv(inconsistent_questions,"./analysis_experiments/task_mapping_issues.csv")
+```
+
+## Save the agreed ones
+```{r}
+numerical_completed_and_agreed <- filter_for_agreement(numerical_completed_tasks)
+```
