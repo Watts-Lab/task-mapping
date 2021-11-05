@@ -60,18 +60,20 @@ clean_responses <- raw_responses %>%
         gsub(
           "(Subramaniam|Bottcher|Sampath|Cullen|Balasubramanian|Paniukhina)",
           "",
-          gsub("paniukhina","Arina",
-               gsub("dodgehill","Dodge",
-          gsub(
-            "sarikasu",
-            "Sarika",
-            gsub(
-              "(katelynbottcher|Katelynn)",
-              "Katelyn",
-              gsub("KaranSampath", "Karan", user)
-            ))
-          )
-        ))
+          gsub("paniukhina", "Arina",
+               gsub(
+                 "dodgehill", "Dodge",
+                 gsub(
+                   "sarikasu",
+                   "Sarika",
+                   gsub(
+                     "(katelynbottcher|Katelynn)",
+                     "Katelyn",
+                     gsub("KaranSampath", "Karan", user)
+                   )
+                 )
+               ))
+        )
       )
     )),
     stage = case_when(# lets us know which tasks have agreement
@@ -80,83 +82,125 @@ clean_responses <- raw_responses %>%
     name_clean = trimws(gsub("  ", " ",
                              gsub(
                                ".md", "",
-                               gsub("fishing","fish",
-                               gsub(
-                                 "contruction",
-                                 "construction",
-                                 gsub("judgement", "judgment",
+                               gsub("fishing", "fish",
+                                    gsub(
+                                      "reciever",
+                                      "receiver",
                                       gsub(
-                                        "and slogan",
-                                        "slogan",
-                                        gsub("hidden figure ", "hidden figures ",
-                                        gsub(
-                                          "finding the maximum",
-                                          "find the maximum",
-                                          gsub("5 squares problems","5 squares problem",
-                                          gsub(
-                                            "recall associations",
-                                            "recall association",
-                                            gsub("husband ", "husbands ",
+                                        "contruction",
+                                        "construction",
+                                        gsub("judgement", "judgment",
+                                             gsub(
+                                               "and slogan",
+                                               "slogan",
+                                               gsub(
+                                                 "hidden figure ",
+                                                 "hidden figures ",
                                                  gsub(
-                                                   "nine", "9",
-                                                   gsub("suduko", "sudoku",
-                                                        sub(
-                                                          "task", "",
-                                                          gsub("various versions", "",
-                                                               gsub(
-                                                                 "hidden profile", "",
-                                                                 gsub("block world",
-                                                                   "blocks world",
-                                                                 gsub("[()-]", " ",
-                                                                      tolower(task))
-                                                               ))
-                                                        ))
-                                                 )))
-                                          )))
-                                        )
-                                      ))
-                               ))
+                                                   "finding the maximum",
+                                                   "find the maximum",
+                                                   gsub(
+                                                     "5 squares problems",
+                                                     "5 squares problem",
+                                                     gsub(
+                                                       "recall associations",
+                                                       "recall association",
+                                                       gsub("husband ", "husbands ",
+                                                            gsub(
+                                                              "nine", "9",
+                                                              gsub("suduko", "sudoku",
+                                                                   sub(
+                                                                     "task", "",
+                                                                     gsub("various versions", "",
+                                                                          gsub(
+                                                                            "hidden profile", "",
+                                                                            gsub("block world",
+                                                                                 "blocks world",
+                                                                                 gsub("[()-]", " ",
+                                                                                      tolower(task)))
+                                                                          ))
+                                                                   ))
+                                                            ))
+                                                     )
+                                                   )
+                                                 )
+                                               )
+                                             ))
+                                      )
+                                    ))
                              ))),
     performance_all = paste(performance_all, sep = ", ")
   ) %>%
-  full_join(tasks %>% mutate(name_clean = trimws(gsub(
-    "  ", " ",
-    sub("(anagrams)", "",
-        sub(
-          "task", "",
-          gsub(" and its variants", "",
-               gsub(
-                 "and slogan", "slogan",
-                 gsub("various versions", "",
-                      gsub(
-                        "hidden profile", "",
-                        gsub("[\"()-]", " ",
-                             tolower(name))
-                      ))
-               ))
-        ))
-  ))) %>% select(name, name_clean,`phase 1 editor`,`phase 2 editor`,phase, source, implemented,`task summary url`)) %>%
-  mutate(task = name,
-         editors = paste(`phase 1 editor`,`phase 2 editor`,sep = " -> "),
-         stage = case_when(
-           !is.na(stage) ~ stage,
-           phase > 0 ~ paste("phase",phase), 
-           TRUE ~ "not started"
-         ),
-         implemented = implemented == "1"
-         ) %>%
-  select(task, stage, user, editors, updatedAt , everything(),-`phase 1 editor`,-`phase 2 editor`)
+  full_join(
+    tasks %>% mutate(name_clean = trimws(gsub(
+      "  ", " ",
+      sub("(anagrams)", "",
+          sub(
+            "task", "",
+            gsub(" and its variants", "",
+                 gsub(
+                   "and slogan", "slogan",
+                   gsub("various versions", "",
+                        gsub(
+                          "hidden profile", "",
+                          gsub("[\"()-]", " ",
+                               tolower(name))
+                        ))
+                 ))
+          ))
+    ))) %>% select(
+      name,
+      name_clean,
+      `phase 1 editor`,
+      `phase 2 editor`,
+      phase,
+      source,
+      implemented,
+      `task summary url`
+    )
+  ) %>%
+  mutate(
+    task = name,
+    editors = paste(`phase 1 editor`, `phase 2 editor`, sep = " -> "),
+    stage = case_when(
+      !is.na(stage) ~ stage,
+      phase > 0 ~ paste("phase", phase),
+      TRUE ~ "not started"
+    ),
+    implemented = implemented == "1"
+  ) %>%
+  select(task,
+         stage,
+         user,
+         editors,
+         updatedAt ,
+         everything(),
+         -`phase 1 editor`,
+         -`phase 2 editor`)
 
 unrecognised_tasks <-
   clean_responses %>% select(task, name_clean) %>% filter(is.na(task)) %>% arrange(name_clean)
 
+if (dim(unrecognised_tasks)[1] != 0)
+  stop(
+    paste(
+      "Some task names do not match:",
+      unrecognised_tasks$name_clean,
+      unrecognised_tasks$task
+    )
+  )
 
-if(dim(unrecognised_tasks)[1] != 0) stop(paste("Some task names do not match:",unrecognised_tasks$name_clean,unrecognised_tasks$task))
-
-clean_responses %>% 
+clean_responses %>%
   filter(stage == "agreement") %>%
-  select(task,individual_theoretical,individual_practical,`task summary url`,implemented,source) %>% 
-  arrange(task) %>% 
+  select(
+    task,
+    individual_theoretical,
+    individual_practical,
+    `task summary url`,
+    implemented,
+    source
+  ) %>%
+  arrange(task) %>%
   distinct() %>%
   write_csv("../task_audit.csv")
 ```
