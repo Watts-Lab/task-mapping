@@ -337,57 +337,49 @@ union(
 
 ### Continuous McGrath Mapping
 ```{r}
-type_7_cols <- mcgrath_data%>%select(c("conflict_cooperation","external_adversary"))
-  type_7_cols %>%
+type_7_cols <- mcgrath_data%>%select(c("conflict_cooperation","external_adversary")) %>%
     rowwise() %>%
     mutate(
       type_7 = distance(rbind(across(),c(5,5)), method="euclidean")[1]
     )
 
-  type_8_cols <- mcgrath_data%>%select(c("conflict_cooperation","generate_process","generate_plan","external_standard","effort_mental","effort_physical"))
-  type_8_cols %>%
+type_8_cols <- mcgrath_data%>%select(c("conflict_cooperation","generate_process","generate_plan","external_standard","effort_mental","effort_physical")) %>%
     rowwise() %>%
     mutate(
       type_8 = distance(rbind(across(),c(1,1,1,5,1,5)), method="euclidean")[1]
     )
 
-  type_1_cols <- mcgrath_data%>%select(c("conflict_cooperation","generate_process","generate_plan"))
-  type_1_cols %>%
+type_1_cols <- mcgrath_data%>%select(c("conflict_cooperation","generate_process","generate_plan")) %>%
     rowwise() %>%
     mutate(
       type_1 = distance(rbind(across(),c(1,5,5)), method="euclidean")[1]
     )
   
-  type_6_cols <- mcgrath_data%>%select(c("conflict_cooperation","conflict_interests"))
-  type_6_cols %>%
+type_6_cols <- mcgrath_data%>%select(c("conflict_cooperation","conflict_interests")) %>%
     rowwise() %>%
     mutate(
       type_6 = distance(rbind(across(),c(5,5)), method="euclidean")[1]
     )
   
-  type_2_cols <- mcgrath_data%>%select(c("generate_ideas","generate_creativity","effort_mental","effort_physical"))
-  type_2_cols %>%
+type_2_cols <- mcgrath_data%>%select(c("generate_ideas","generate_creativity","effort_mental","effort_physical")) %>%
     rowwise() %>%
     mutate(
       type_2 = distance(rbind(across(),c(5,5,5,1)), method="euclidean")[1]
     )
 
-  type_3_cols <- mcgrath_data%>%select(c("solution_objectivity","solution_verifiability","external_standard","effort_mental","effort_physical"))
-  type_3_cols %>%
+type_3_cols <- mcgrath_data%>%select(c("solution_objectivity","solution_verifiability","external_standard","effort_mental","effort_physical")) %>%
     rowwise() %>%
     mutate(
       type_3 = distance(rbind(across(),c(5,5,5,5,1)), method="euclidean")[1]
     )
 
-  type_4_cols <- mcgrath_data%>%select(c("solution_objectivity", "solution_verifiability", "conflict_cooperation","effort_mental","effort_physical"))
-  type_4_cols %>%
+type_4_cols <- mcgrath_data%>%select(c("solution_objectivity", "solution_verifiability", "conflict_cooperation","effort_mental","effort_physical")) %>%
     rowwise() %>%
     mutate(
       type_4 = distance(rbind(across(),c(1,1,5,5,1)), method="euclidean")[1]
   )
 
-  type_5_cols <- mcgrath_data%>%select(c("resolve_opinion", "resolve_perspectives", "conflict_cooperation","effort_mental","effort_physical"))
-  type_5_cols %>%
+type_5_cols <- mcgrath_data%>%select(c("resolve_opinion", "resolve_perspectives", "conflict_cooperation","effort_mental","effort_physical")) %>%
     rowwise() %>%
     mutate(
       type_5 = distance(rbind(across(),c(5,5,5,5,1)), method="euclidean")[1]
@@ -397,17 +389,17 @@ type_7_cols <- mcgrath_data%>%select(c("conflict_cooperation","external_adversar
 
   for (i in 1:nrow(mcgrath_data)) {
     task = mcgrath_data$task_names[i]
-    mcgrath_quadrant_labels_cont$generate.planning[i] = type_1_cols$type_1
-    mcgrath_quadrant_labels_cont$generate.creativity[i] = type_2_cols$type_2
+    mcgrath_quadrant_labels_cont$generate.planning[i] = type_1_cols$type_1[i]
+    mcgrath_quadrant_labels_cont$generate.creativity[i] = type_2_cols$type_2[i]
 
-    mcgrath_quadrant_labels_cont$choose.intellective[i] = type_3_cols$type_3
-    mcgrath_quadrant_labels_cont$choose.decision[i] = type_4_cols$type_4
+    mcgrath_quadrant_labels_cont$choose.intellective[i] = type_3_cols$type_3[i]
+    mcgrath_quadrant_labels_cont$choose.decision[i] = type_4_cols$type_4[i]
 
-    mcgrath_quadrant_labels_cont$negotiate.cogconf[i] = type_5_cols$type_5
-    mcgrath_quadrant_labels_cont$negotiate.mixmotive[i] = type_6_cols$type_6
+    mcgrath_quadrant_labels_cont$negotiate.cogconf[i] = type_5_cols$type_5[i]
+    mcgrath_quadrant_labels_cont$negotiate.mixmotive[i] = type_6_cols$type_6[i]
 
-    mcgrath_quadrant_labels_cont$execute.contest[i] = type_7_cols$type_7
-    mcgrath_quadrant_labels_cont$execute.performance[i] = type_8_cols$type_8
+    mcgrath_quadrant_labels_cont$execute.contest[i] = type_7_cols$type_7[i]
+    mcgrath_quadrant_labels_cont$execute.performance[i] = type_8_cols$type_8[i]
   }
 
 write.csv(
@@ -416,6 +408,12 @@ write.csv(
 )
 ```
 
+### How different are tasks that are all 0 for choose.intellective?
+```{r}
+intellective_tasks <- mcgrath_quadrant_labels_cont %>% filter(choose.intellective == 0) %>% select("task_names")
+numerical_completed_tasks %>%
+      filter(task_names %in% intellective_tasks$task_names) %>% select(-task_names) %>% distance() %>% c() %>% summary()
+```
 
 
 ```{r old-mcgrath}
