@@ -1,9 +1,9 @@
 # Summary
-Two experiments were carried out to investigate the difficulty of making the contrapositive inference from conditional sentences of the form, “if P then Q.” This inference, that not-P follows from not-Q, requires the transformation of the information presented in the conditional sentence.
+Two experiments were carried out to investigate the difficulty of making the contrapositive inference from conditional sentences of the form, “if P then Q.” For the selection task in experiment 1, the subjects were asked to decide which of four cards (P, P', Q, Q') would enable them to determine whether a given conditional sentence was true of false if they were to know the values on the back of the cards. In experiment 2, the subjects were asked to select a card that proves the given conditional sentence false and then select a card that proves the conditional sentence false.
 
 # References
 Reasoning about a Rule P. C. WasonFirst Published August 1, 1968: https://journals.sagepub.com/doi/10.1080/14640746808400161
-Paper: https://www.semanticscholar.org/paper/Reasoning-about-a-Rule-Wason/8f71a9729ae782fa0d3b077d8cba97fcc636e70e
+Paper link: https://www.semanticscholar.org/paper/Reasoning-about-a-Rule-Wason/8f71a9729ae782fa0d3b077d8cba97fcc636e70e
 
 # Stimuli
 ## The visual components
@@ -18,9 +18,9 @@ Four cards (2 x 2 in.) associated with the two sentences (1)(2) had the followin
 (1) D(3), 3(K), B(5), 7(D)
 (2) 3(D), K(3), 5(B), D(7)
 
-*Experiment 2 - The restricted Contingency programme*
+*Experiment 2 - The restricted contingency programme*
 
-Two conditional sentences were typed on separate cards similar to those used in Experiment I. 
+Two conditional sentences were typed on separate cards similar to those used in Experiment 1: 
 (1) “If there is a square on one side of the card, then there is a red scribble on the other side.” 
 (2) “If there is a red scribble on one side of a card, then there is a square on the other side.” 
 
@@ -41,45 +41,67 @@ Eight similar cards were prepared for the selection task, the items mentioned fi
 (h) blue scribble (square)
 
 ## Materials for alternative versions of the experiment 
-If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-
-In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
+N/A
 
 # Procedure
 ## Steps
 
-Experiment 1 - The projection of falsity
+*Experiment 1 - The projection of falsity*
 
-The subjects were allocated alternately to the groups and tested individually.
-Half the subjects in each group were tested with sentence (I) and half with sentence (2). The sentence was placed on the desk and the four test cards were placed in a line in a random order face upwards in front of the sentence. The subjects were told that cards with letters on their front had numbers on their back and vice uersa. In the selection task the experimenter pointed to each card in turn and asked the subject whether knowing what was on the other side would enable him to find out whether the sentence was true or false. During the projection of falsity, in the experimental group, the experimenter pointed to each card and asked the subject to name a letter (or number) on the other side which would make the sentence false, or to say “none,” if none would do so.
+The subjects were allocated alternately to the groups and tested individually. Half the subjects in each group were tested with sentence (1) and half with sentence (2). 
 
+1. The sentence was placed on the desk and the four test cards were placed in a line in a random order face upwards in front of the sentence. 
+2. The subjects were told that cards with letters on their front had numbers on their back and vice uersa. 
+3. In the selection task the experimenter pointed to each card in turn and asked the subject whether knowing what was on the other side would enable him to find out whether the sentence was true or false. 
+4. In the experimental group, the experimenter pointed to each card and asked the subject to name a letter (or number) on the other side which would make the sentence false, or to say “none,” if none would do so.
+
+*Experiment 2 - The restricted contingency programme*
+
+The subjects were allocated alternately to the groups and tested individually. Six subjects in the experimental group were tested with sentence (1) and seven
+with sentence (2), these proportions being reversed in the control group. 
+
+1. Before presenting the conditional sentence the subjects in both groups examined the cards briefly to familiarize them with the fact that there was always a geometric shape on one side and a coloured scribble on the other side.
+2. In the experimental group the conditional sentence was presented and the four programme cards were handed to the subjects who were asked to pick out “the one card which makes the rule false” (i.e. falsifies the conditional sentence). 
+3. They were then asked to pick out any which “prove the rule true.” It was explained to them that their decisions meant that the converse of the sentence could not be assumed - “that the rule only held one way.” 
+4. The subjects in the control group were given a similar amount of time to understand the conditional sentence without any explanation of its meaning.
+
+The selection task had three phases which were the same for both groups.
+
+**Phase I.** The eight selection task cards were placed on the desk front side up in a random array, and the subject was asked to pick out “all those cards, but only those cards, which would show you, if you knew what was on the other side, that the rule was true or false.”
+
+**Phase 2.** The subject was asked to turn over all those cards which he had selected and evaluate the conditional sentence with respect to each: “tell me whether each proves the rule true or proves it false.”
+
+**Phase 3.** The subject was invited to project falsity on to the residual cards i.e. those cards which had not been selected. Each pair of cards (representing the same value) was pointed to in turn, starting with the Q' cards, if these had not been selected: “could anything on the back of those cards make the rule false?”
 
 
 ## Roles 
 
-Experiment 1 - The projection of falsity
-
-If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
+No specific roles for both experiments. All of the participants were asked to complete the selection task following the instructions and steps.
 
 ## Instructions
 
-Experiment 1 - The projection of falsity
+*Experiment 1 - The projection of falsity*
 
-Complete instructions shown to participants at each stage of the task.  
+(pending)
 
-Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
+*Experiment 2 - The restricted contingency programme*
 
-If the instructions are not available ask the paper's authors, however and if that fails, write new ones that appear as suitable as possible.
+(pending)
+Also, refer to the three phases mentioned in Steps.
 
 # Criteria
 ## Performance calculation
-A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
 
-Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
+*Experiment 1 - The projection of falsity* 
 
-This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
+Participants are considered to be able to make the contrapositive inference from the conditional sentences if they:
+* choose Q' to determine whether a given conditional sentence was true of false if they were to know the values on the back of the cards
+
+*Experiment 2 - The restricted contingency programme*
+
+Participants are considered to correctly making the contrapositive inference from the conditional sentences if they:
+* correctly choose PQ' to prove the given conditional sentence false
+* correctly choose PQ to prove the given conditional sentence true
 
 ## Incentives
-A formal specification of the incentives for participation.   
-
-Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+No incentives were mentioned for either experiment.
