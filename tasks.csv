@@ -2,7 +2,7 @@ task,stage,editors,mappers
 22 Mathematical puzzles,not started,,"NA"
 24 arithmetic problems,phase 2,katelynbottcher -> dodgehill,"NA"
 3-issue cell phone negotaition,not started,,"NA"
-5 squares problem,2 mappings,dodgehill -> joycewang3,Dodge + joycewang3
+5 squares problem,done,dodgehill -> joycewang3,Dodge | joycewang3
 9 Dot Problem,done,sarikasu -> KaranSampath,Karan | Sarika
 Abstract grid task,done,sarikasu -> katelynbottcher,Sarika | katelynnbottcher
 Advertisement writing,done,sarikasu -> katelynbottcher,Sarika | Katelyn
@@ -26,7 +26,7 @@ Best job candidate (hidden-profile),done,sarikasu -> katelynbottcher,Sarika | ka
 Biopharm Seltek,done,sarikasu -> KaranSampath,Karan | Sarika
 Blocks World for Teams,done,katelynbottcher -> sarikasu,Sarika | Katelyn
 Bullard Houses,done,dodgehill -> sarikasu,Dodge | Sarika
-Bureucratic organization simulation (subjects naive),not started,,"NA"
+Bureucratic organization simulation (subjects naive),phase 1,paniukhina -> ,"NA"
 Candle task,not started,,"NA"
 Carter Racing,done,dodgehill -> sarikasu,Dodge | Sarika
 Categorization problem,done,katelynbottcher -> sarikasu,Katelyn | Sarika
@@ -90,7 +90,7 @@ Oligopoly game,done,sarikasu -> katelynbottcher,Sarika | Katelyn
 Organization Game,done,dodgehill -> KaranSampath,Dodge | Karan
 pharmaceutical company (hidden-profile),done,sarikasu -> KaranSampath,Sarika | Karan
 Pipe task,not started,,"NA"
-Prisoner's Dilemma (various versions),1 mapping,dodgehill -> joycewang3,Dodge
+Prisoner's Dilemma (various versions),done,dodgehill -> joycewang3,Dodge | joycewang3
 Problem solving tasks (Hackman),not started,,"NA"
 Production tasks (Hackman),not started,,"NA"
 Public goods game,done,vivianxdx -> sarikasu dodgehill,Sarika | Dodge
@@ -117,7 +117,7 @@ Shopping plan,done,katelynbottcher -> sarikasu,Katelyn | Sarika
 Space Fortress,done,dodgehill -> sarikasu,Dodge | Sarika
 Splitting a deck of cards,done,dodgehill -> sarikasu,Dodge | Sarika
 "Strike Group Defender (developed by Metateq, Inc.)",done,sarikasu -> KaranSampath,Sarika | Karan
-Sub-arctic survival,phase 2,,"NA"
+Sub-arctic survival,phase 2,katelynbottcher -> bvikram03 / joycewang3,"NA"
 Sudoku,done,sarikasu -> andydrew93,Andrew | Sarika
 Summarize Discussion,done,sarikasu -> katelynbottcher,Sarika | Katelyn
 Target Search,done,katelynbottcher -> ,Sarika | katelynnbottcher
@@ -128,13 +128,13 @@ The N light bulbs game,done,katelynbottcher -> benjamin-manning,benjamin-manning
 To evacuate or not to evacuate,done,sarikasu -> katelynbottcher,Sarika | katelynnbottcher
 TOPSIM - general mgmt business game,done,sarikasu -> dodgehill,Dodge | Sarika
 Trivia Multiple Choice Quiz,done,sarikasu -> katelynbottcher,Katelyn | Sarika
-Typing game,phase 2,andydrew93 -> katelynbottcher / joycewang3,"NA"
+Typing game,1 mapping,andydrew93 -> katelynbottcher / joycewang3,joycewang3
 Ultimatum game (various versions),done,sarikasu -> andydrew93,Sarika | Andrew
 Unscramble words (anagrams),done,bvikram03 -> KaranSampath,Sarika | Karan
 Viking,done,sarikasu -> KaranSampath,Sarika | Karan
 Visual Oddball Target,2 mappings,paniukhina -> katelynbottcher,Katelyn + Arina
 Volunteer Investment Game,done,andydrew93 -> sarikasu,Sarika | Andrew
-Wason’s Selection Task,not started,,"NA"
+Wason’s Selection Task,2 mappings,joycewang3 -> paniukhina,Arina + joycewang3
 Whac-A-Mole,done,katelynbottcher  -> sarikasu,Katelyn | Sarika
 who committed a murder (hidden-profile),phase 1,sarikasu -> ,"NA"
 Wildcam Gorongosa (Zooniverse),done,sarikasu -> KaranSampath,Sarika| Karansampath
