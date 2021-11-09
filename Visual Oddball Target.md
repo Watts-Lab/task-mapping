@@ -22,11 +22,8 @@ Supplemental Materials: https://supp.apa.org/psycarticles/supplemental/xhp000014
 Each participant was responsible for viewing the visual search display and making a decision. In the IND condition, the decision was made independently, while in the INF condition, the decision was made collectively.
 
 ## Instructions
-Complete instructions shown to participants at each stage of the task.  
-
-Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
-
-If the instructions are not available ask the paper's authors, however and if that fails, write new ones that appear as suitable as possible.
+Created by CSS Lab:
+Participants were asked to observe two arrays of gabor patches, one after the other, and had to indicate which array included an oddball - a gabor patch with different contrast than the rest. When participants' responses converged, this was the group decision. When they disagreed the participants recieved the instructions to talk to each other, and a group decision was declared by one of them (the decider was different on each turn). In the influence condition, participants did not make an initial individual decision, but moved directly to the discussion stage.
 
 # Criteria
 ## Performance calculation
