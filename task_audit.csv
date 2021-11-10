@@ -1,5 +1,5 @@
 task,individual_theoretical,individual_practical,task summary url,implemented,source
-5 squares problem,Strongly agree,Strongly disagree,https://github.com/Watts-Lab/task-mapping/blob/e358e749d3282e8d5337d6e1626b224f3e6c3970/tasks/5%20squares%20problem.md,FALSE,in Ambibola 2006; originally Alex Bavelas 1973
+5 squares problem,Strongly agree,Strongly disagree,https://github.com/Watts-Lab/task-mapping/blob/54514fd5172681ad75b293cc6b8d10542df5936c/tasks/5%20squares%20problem.md,FALSE,in Ambibola 2006; originally Alex Bavelas 1973
 9 Dot Problem,Strongly disagree,Strongly agree,https://github.com/Watts-Lab/task-mapping/blob/040dd334ce240c0103becf639855a9e194a5ff05/tasks/Nine%20Dot%20Problem.md,FALSE,Maier 1930
 Abstract grid task,Strongly disagree,Strongly agree,https://github.com/Watts-Lab/task-mapping/issues/132#issue-887315383,FALSE,https://www.nature.com/articles/s41586-021-03380-y
 Advertisement writing,Strongly disagree,Strongly agree,https://github.com/Watts-Lab/task-mapping/blob/29d07cb7799f4471cf1b5723ac2d214690c8744d/tasks/Advertisement%20Writing.md,FALSE,https://hci.stanford.edu/publications/2019/fracture/fracture-cscw2019.pdf; Iykourentzou 2016 and 2017; also originally Dow
@@ -53,7 +53,7 @@ New Recruit,Strongly agree,Strongly disagree,https://github.com/Watts-Lab/task-m
 Oligopoly game,Strongly agree,Strongly disagree,https://github.com/Watts-Lab/task-mapping/blob/b4cbfe7c3979f3cf1f39b242336a93c295f7a392/tasks/Oligopoly%20Game.md,FALSE,Hemenway Moore and Whitney
 Organization Game,Strongly agree,Strongly disagree,https://github.com/Watts-Lab/task-mapping/blob/1268e33fb640b059dfa6a04cf627008f48ed2693/tasks/Organization%20Game.md,FALSE,Miles and Randolph 1979; Krackhardt & Stern 1988 also use it
 pharmaceutical company (hidden-profile),Strongly disagree,Strongly agree,https://github.com/Watts-Lab/task-mapping/blob/master/tasks/Pharmaceutical%20Company%20(hidden-profile).md,FALSE,https://journals.sagepub.com/doi/abs/10.1177/0146167299259002?casa_token=h3dIDM80m0UAAAAA:uJX3-SjKsVXMx4ral0hG0_toJymnsRBpLEVmaiHxlIBY2RM8L3OoH_Ken5ZUNsxp_2TMXa-NeG8srw
-Prisoner's Dilemma (various versions),Strongly agree,Strongly disagree,https://github.com/Watts-Lab/task-mapping/issues/278,FALSE,Dawes 1980
+Prisoner's Dilemma (various versions),Strongly agree,Strongly disagree,https://github.com/Watts-Lab/task-mapping/blob/master/tasks/Prisoner's%20Dilemma%20(various%20versions).md,FALSE,Dawes 1980
 Public goods game,Strongly agree,Strongly disagree,https://github.com/Watts-Lab/task-mapping/blob/public_goods_task/tasks/public_goods_task.md,FALSE,https://en.wikipedia.org/wiki/Public_goods_game
 Putting food into categories,Strongly disagree,Strongly agree,https://github.com/Watts-Lab/task-mapping/pull/53 ,FALSE,Crowe and Higgins 1997; McGarth 1984; Choi & Thompson 2005
 Radio assembly task,Strongly disagree,Strongly agree,https://github.com/Watts-Lab/task-mapping/blob/1268e33fb640b059dfa6a04cf627008f48ed2693/tasks/Radio%20assembly%20task.md,FALSE,"https://journals.sagepub.com/doi/abs/10.1177/0146167295214009 
@@ -92,6 +92,7 @@ Trivia Multiple Choice Quiz,Strongly disagree,Strongly agree,https://github.com/
 Ultimatum game (various versions),Strongly agree,Strongly disagree,https://github.com/Watts-Lab/task-mapping/blob/3f20f82695837099f1584311eb57e9155b9d4830/tasks/Ultimatum%20game%20(various%20versions).md,FALSE,https://en.wikipedia.org/wiki/Ultimatum_game
 Unscramble words (anagrams),Strongly disagree,Strongly agree,https://github.com/Watts-Lab/task-mapping/blob/master/tasks/unscramble-words.md,FALSE,https://doi.org/10.1371/journal.pone.01152122
 Viking,Strongly agree,Strongly disagree,https://github.com/Watts-Lab/task-mapping/blob/master/tasks/Viking.md,FALSE, https://psycnet.apa.org/record/2007-13393-008
+Visual Oddball Target,Strongly agree,Strongly disagree,https://github.com/Watts-Lab/task-mapping/pull/230/commits/e2b1c49d7c369fb5e806c1ea16091ee4dee75ffa,FALSE,Hertz et al 2010: https://psycnet.apa.org/fulltext/2015-45614-001.html
 Volunteer Investment Game,Strongly agree,Strongly disagree,https://github.com/Watts-Lab/task-mapping/issues/37,FALSE,Babcock 2017
 Whac-A-Mole,Strongly agree,Strongly disagree,https://github.com/Watts-Lab/task-mapping/blob/master/tasks/Whac-A-Mole.md,FALSE,https://www.pnas.org/content/pnas/110/50/20046.full.pdf
 Wildcam Gorongosa (Zooniverse),Strongly disagree,Strongly agree,https://github.com/Watts-Lab/task-mapping/blob/4524eac7add1b7379902be7b95f2f0d381697edf/tasks/Wildcam%20Gorongosa%20(Zooniverse).md,FALSE,https://arxiv.org/pdf/2009.11038.pdf 
