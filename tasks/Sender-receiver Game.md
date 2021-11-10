@@ -9,22 +9,26 @@ Paper: https://www.jstor.org/stable/pdf/4132685.pdf?casa_token=hVN12rjlQK4AAAAA:
 
 # Stimuli
 ## The visual components
-There are no other visual components other than the instructions shown to participants.
+N/A
 
 ## Materials for alternative versions of the experiment 
-Would it be worthwhile to include other signaling games (ie ones with trade-offs for lying?
+N/A
 
 # Procedure
 ## Steps
-Player 1 is told to send a message to player 2 about the payoff.
-Player 2 then decides which payoff option to choose based without any additional info about the payoff.
+- Players are assigned to groups of two, and are unaware of the identity of the other player in the group.
+- Player 1 is given information about the two payout options of the game, and is then asked to send one of two messages to Player 2. One of the options is the true payout scheme, the other is a lie.  
+- Player 2 then recieves the message and decides which payoff option to choose without any additional info about the payoff.  
+- Players are then awarded their payouts based off of the option chosen by Player 2, and they are dismissed without any further information about who the other player was.
 
 ## Roles 
-This is a 2-player game where player 1 sends a message to player 2 chooses option A or B. Player 1 can choose to tell the truth or lie to player 2 and player 2 can choose to heed or ignore the advice of player 1. 
+This is a 2-player game where each player does not know the idenitity of the other.  
+- Player 1: Knows the truth of the game.  Player 1 is presented with two payout options avaiable in the game, and then chooses which message to present to player two, they can be truthful or lie.  
+- Player 2: Recieves the message from Player 1, but is aware of the nature of the game.  Player two chooses the payout option they wish to proceed with.  They can heed Player 1's information, or choose to distrust them and go against the information they are given.
 
 ## Instructions
-From the Appendix:
-Instructions for player 1
+From the Appendix:  
+Instructions for player 1:  
 This is a short experiment in decision making. In this experiment, you will be matched with another student from a different class. Neither of you will ever know the identity of the other. The money that you earn will be paid to you next week, privately and in cash.
 
 Two possible monetary payments are available to you and your counterpart in the experiment. The two payment options are:
@@ -49,7 +53,7 @@ I choose to send (please circle one option):
 
 Message 1 Message 2
 
-Instructions for player 2
+Instructions for player 2:  
 Two possible monetary payments are available to you and your counterpart in the experiment. The payments depend on the option chosen by you. We showed the two payment options to your counterpart. The only information you will have is the message your counterpart sends to you.
 
 Two possible messages could be sent:
