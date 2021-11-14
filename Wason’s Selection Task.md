@@ -1,9 +1,8 @@
 # Summary
-Two experiments were carried out to investigate the difficulty of making the contrapositive inference from conditional sentences of the form, “if P then Q.” For the selection task in experiment 1, the subjects were asked to decide which of four cards (P, P', Q, Q') would enable them to determine whether a given conditional sentence was true of false if they were to know the values on the back of the cards. In experiment 2, the subjects were asked to select a card that proves the given conditional sentence false and then select a card that proves the conditional sentence false.
+Two experiments were carried out to investigate the difficulty of making the contrapositive inference from conditional sentences of the form, “if P then Q.” For the selection task in experiment 1, the subjects were asked to decide which of four cards (P, P', Q, Q') would enable them to determine whether a given conditional sentence was true or false if they were to know the values on the back of the cards. In experiment 2, the subjects were asked to select a card that proves the given conditional sentence false and then select a card that proves the conditional sentence false.
 
 # References
-Reasoning about a Rule P. C. WasonFirst Published August 1, 1968: https://journals.sagepub.com/doi/10.1080/14640746808400161
-Paper link: https://www.semanticscholar.org/paper/Reasoning-about-a-Rule-Wason/8f71a9729ae782fa0d3b077d8cba97fcc636e70e
+Paper: https://journals.sagepub.com/doi/10.1080/14640746808400161
 
 # Stimuli
 ## The visual components
@@ -40,9 +39,6 @@ Eight similar cards were prepared for the selection task, the items mentioned fi
 (g) triangle (red scribble)
 (h) blue scribble (square)
 
-## Materials for alternative versions of the experiment 
-N/A
-
 # Procedure
 ## Steps
 
@@ -76,7 +72,7 @@ The selection task had three phases which were the same for both groups.
 
 ## Roles 
 
-No specific roles for both experiments. All of the participants were asked to complete the selection task following the instructions and steps.
+Each participant completed the same task following instructions.
 
 ## Instructions
 
@@ -92,16 +88,9 @@ Also, refer to the three phases mentioned in Steps.
 # Criteria
 ## Performance calculation
 
-*Experiment 1 - The projection of falsity* 
+In Experiment 1, participants were considered to be able to make the contrapositive inference from the conditional sentences if they choose Q' to determine whether a given conditional sentence was true of false if they were to know the values on the back of the cards. 
 
-Participants are considered to be able to make the contrapositive inference from the conditional sentences if they:
-* choose Q' to determine whether a given conditional sentence was true of false if they were to know the values on the back of the cards
-
-*Experiment 2 - The restricted contingency programme*
-
-Participants are considered to correctly making the contrapositive inference from the conditional sentences if they:
-* correctly choose PQ' to prove the given conditional sentence false
-* correctly choose PQ to prove the given conditional sentence true
+In Experiment 2, participants are considered to correctly making the contrapositive inference from the conditional sentences if they correctly choose PQ' to prove the given conditional sentence false or correctly choose PQ to prove the given conditional sentence true.
 
 ## Incentives
 No incentives were mentioned for either experiment.
