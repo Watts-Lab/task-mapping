@@ -1,46 +1,49 @@
 # Summary
-In this experiment each subject is given a card on which there appears a set of five (out of six possible) symbols. Each subject's card is different from all the others in that the symbol lacking is a different symbol in each case. Thus, in any set of five cards there is only one symbol in common. The task is for every subject to find the common symbol.
+A high level summary that presents the main idea of the task.
 
 # References
-Main paper: Leavitt, H. J. (1951). Some effects of certain communication patterns on group performance. The Journal of Abnormal and Social Psychology, 46(1), 38–50. https://doi.org/10.1037/h0057189
+Provide a full reference and link to the main paper and any subsequent papers used in the process of finding details about the task
 
 # Stimuli
 ## The visual components
-A card with a set of five out of six symbols as follows are presented to the subjects:
+Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations. 
 
-![Alt text](/images/Find the common symbol.png)
+If no visual components are provided or seem not to be needed describe an interface for executing this task in an online environment with remote participants. 
+
+## Materials for alternative versions of the experiment 
+If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
+
+In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
 
 # Procedure
 ## Steps
+A task flow describing the stages a participant goes through and a formal specification of any conditional or complex relationships therein. 
 
-1. One hundred male undergraduates of M.I.T.,8 drawn from various classes at the Institute, served as subjects for these experiments. 
-2. These 100 are split up into 20 groups of five men each. These 20 groups are then further subdivided so that five groups could be tested on each of four experimental patterns.
-3. In case the color or geographical position of one's work-space might affect one's behavior, positions are shifted for each new group. 
-4. Each group is given 15 consecutive trials on one pattern, a process which required one session of about fifty minutes. These subjects are not used again. The order in which the patterns are used is randomized.
-  - Each subject is given a card on which there appear a set of five (out of six possible) symbols. Each subject's card is different from all the others in that the symbol lacking, the sixth one, is a different symbol in each case. Thus, in any set of five cards there is only one symbol in common. 
-  - The problem is for every member to find the common symbol. To accomplish this, each member is allowed to communicate, by means of written messages, with those other members of the group to whom he has an open channel. 
-  - A subject who has discovered the answer is allowed to pass the answer along.
-5. After a group has completed its 15 trials, and before members are permitted to talk with one another, each member is asked to fill out a questionnaire.
+List the steps that make up the task. This could include a training protocol, pre and post surveys, task rounds, etc.  
+
+Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
 
 ## Roles 
-Participants were broken into groups of 5 and asked to find the common symbol on their cards.
+A description of roles if relevant to the task.  
+
+If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
 
 ## Instructions
-(pending)
+Complete instructions shown to participants at each stage of the task.  
+
+Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
+
+If the instructions are not available ask the paper's authors, however and if that fails, write new ones that appear as suitable as possible.
 
 # Criteria
 ## Performance calculation
+A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
 
-Times (Time Required for Solution):
-Group time (seconds) spent for a correct trial.
+Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
 
-Messages (Number of Communications):
-A count of the number of messages sent by each group during a given (correct) trial. Every separate written communication from one 5 (A) to another (B) is considered one message. 
-
-Errors (Number of incorrect switch):
-An error was defined as the throwing of any incorrect switch by a subject during a trial. Errors that were not corrected before
-the end of a trial are labelled "final errors"; the others are referred to as "corrected errors."
+This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
 
 ## Incentives
+A formal specification of the incentives for participation.   
 
-No incentives were mentioned
+Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
