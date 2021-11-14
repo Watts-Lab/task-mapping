@@ -76,14 +76,30 @@ Each participant completed the same task following instructions.
 
 ## Instructions
 
+Instruction written by CSSLab:
+
 *Experiment 1 - The projection of falsity*
 
-(pending)
+Thank you for participating in this experiment today. We are looking to understand how people making the contrapositive inference from conditional sentences of the form, “if P then Q.” You will be allocated alternately to a group or to work individually. The sentence placed on the desk in front of you is the conditional sentence you will analyze in this experiment. Cards on the desk with letters on their front have numbers on their back and vice versa. Your task is to determine for each of the card whether knowing what is on the other side would enable you to find out whether the conditional sentence is true or false.  
+
+(After the selection is carried out)
+
+To the experimental group:
+"What letter/number on the back of the card do you think would render the sentence false? Or none if you believe none would do so."
+"You are allowed to revise your selection now if you would like to."
+"You are now allowed to turn over each card to evaluate the sentence to true or false."
+
+To the control group:
+"Now you are given some time to think again about your selection and make any adjustment before submitting your final choices."
 
 *Experiment 2 - The restricted contingency programme*
 
-(pending)
-Also, refer to the three phases mentioned in Steps.
+Thank you for participating in this experiment today. We are looking to understand how people making the contrapositive inference from conditional sentences of the form, “if P then Q.” You will be allocated alternately to a group or to work individually. You will be presented with a conditional sentence and four cards that are with a geometric shape on one side and a coloured scribble on the other side. Your task is to select the one card which makes the rule false and any cards that make the rule true. You are allowed to examine the cards briefly before presented with the sentence you need to analyze. 
+
+To the experimental group:
+(During the selection) "Please pick out any cards that would prove the rule true. Please note that your decisions means that the rule only held one way.”
+
+*Also, refer to the three phases mentioned in Steps*
 
 # Criteria
 ## Performance calculation
