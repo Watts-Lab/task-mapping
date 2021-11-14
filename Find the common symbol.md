@@ -8,7 +8,7 @@ Main paper: Leavitt, H. J. (1951). Some effects of certain communication pattern
 ## The visual components
 A card with a set of five out of six symbols as follows are presented to the subjects:
 
-![Alt text](/images/Find the common symbol.png)
+![Alt text](/images/Find_the_common_symbol.jpg)
 
 # Procedure
 ## Steps
