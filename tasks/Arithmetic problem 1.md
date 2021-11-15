@@ -1,5 +1,5 @@
 # Summary
-The participants in this task are to imagine that you are apart of a five man team. You and your teammates operate one of five machines, and each man spends most of the time operating on their preferred machine. When each man runs on their preferred machine, the total time spent on each product is 16 minutes. The goal of this task is to find a more efficient way to complete the operation on one product by assigning each worker to a machine.
+The participants in this task are to imagine that you are apart of a five man team. You and your teammates operate one of five machines, and each man spends most of the time operating on their preferred machine. When each man runs the machine he most prefers, the total time spent on each product is 16 minutes. The goal of this task is to find a more efficient way to complete the operation on one product by assigning each worker to a machine.
 
 # References
 Main paper: http://collections.uakron.edu/digital/collection/p15960coll1/id/21257/
