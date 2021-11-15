@@ -1,5 +1,5 @@
 # Summary
-In this task, all group members receive different clues, and have to collaborate to reach a solution to the problem. The problem involves figuring out how many dependents a father should claim in order to save the maximum aount of money for two families.
+In this task, all group members receive different clues, and have to collaborate to reach a solution to the problem. The problem involves figuring out how many dependents a father should claim in order to save the maximum amount of money for two families.
 
 # References
 Main paper:http://collections.uakron.edu/digital/collection/p15960coll1/id/21257/
