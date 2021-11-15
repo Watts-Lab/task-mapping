@@ -6,7 +6,7 @@ Main paper: http://collections.uakron.edu/digital/collection/p15960coll1/id/2125
 
 # Stimuli
 ## The visual components
-Solution:
+Solution:  
 ![operationtim](/images/operationtim.png)
 
 
