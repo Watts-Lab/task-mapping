@@ -24,14 +24,16 @@ If no visual components are provided or seem not to be needed describe an interf
 ## Roles 
 Tagger: Tags the identical greebles using the keyboard 
 
-Navigagtor: Navigates through the computer maze using the joystick.
+Navigator: Navigates through the computer maze using the joystick.
 
 ## Instructions
-Complete instructions shown to participants at each stage of the task.  
+(Original instructions unavailable)
+### Pre-task
+1. Complete the surveys distributed to you.
 
-Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
-
-If the instructions are not available ask the paper's authors, however and if that fails, write new ones that appear as suitable as possible.
+### Task
+1. If you are a navigator, use the joystick to navigate the virtual maze on the monitor. 
+2. If you are the tagger, use the keyboard to tag identical objects called "greebles". Do not tag greebles if ou have not seen an identical greeble somewhere else in the maze.
 
 # Criteria
 ## Performance calculation
