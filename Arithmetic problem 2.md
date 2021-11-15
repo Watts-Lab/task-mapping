@@ -26,7 +26,7 @@ The group performance score is dependent on the speed each participant submits a
 There is an administrator of the task and the participants. Participants all have the same role.
 
 ## Instructions
-Your task is to solve the problem you have been given working together as a group. No one of you can solve the problem working alone because no one has all the information needed to solve it. You must, therfore, communicate with each other in order to reach solutions. You may communicate freely among yourselves, but you may not show each other the items of information that you have been given. The object is for every member in the group to learn the answer in the shorted possible time. When you have an answer that you are willing to accept- either your own solution or someone else's- raise you hand and I will collect your solution. The sooner each of you reports a solution, the better will be the group's performance score. Are there any questions.
+Your task is to solve the problem you have been given working together as a group. No one of you can solve the problem working alone because no one has all the information needed to solve it. You must, therfore, communicate with each other in order to reach solutions. You may communicate freely among yourselves, but you may not show each other the items of information that you have been given. The object is for every member in the group to learn the answer in the shortest possible time. When you have an answer that you are willing to accept- either your own solution or someone else's- raise you hand and I will collect your solution. The sooner each of you reports a solution, the better will be the group's performance score. Are there any questions.
 
 # Criteria
 ## Performance calculation
