@@ -22,7 +22,7 @@ Each participant can either submit their own or someone else's answer. The admin
 
 The group performance score is dependent on the speed each participant submits a solution.
 
-The correct solution is 7
+The correct solution is 7 workers
 
 ## Roles 
 There is an administrator of the task and the participants. Participants all have the same role.
