@@ -1,5 +1,5 @@
 # Summary
-In this task, all group members receive different clues, and have to collaborate to reach a solution to the problem. The problem involves figuring out what time a salesman gets home after comleting his travels.
+In this task, all group members receive different clues, and have to collaborate to reach a solution to the problem. The problem involves figuring out what time a salesman gets home after completing his travels.
 
 # References
 Main paper:http://collections.uakron.edu/digital/collection/p15960coll1/id/21257/
