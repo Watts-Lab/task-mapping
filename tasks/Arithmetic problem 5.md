@@ -27,7 +27,7 @@ Your task is to solve the problem you have been given working together as a grou
 
 # Criteria
 ## Performance calculation
-MISSING INFORMATION
+Average of individual time scores; errors (number of incorrect solutions submitted).
 
 Dimension:
 Cooperation requirements, Decision verifiability, Difficulty, Goal clarity, Goal path multiplicity, Intellectual-manipulative requirements, Intrinsic interest, Operational requirements, Population familiarity, Solution multiplicity
