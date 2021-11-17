@@ -104,7 +104,7 @@ To the experimental group:
 # Criteria
 ## Performance calculation
 
-In Experiment 1, participants were considered to be able to make the contrapositive inference from the conditional sentences if they choose Q' to determine whether a given conditional sentence was true of false if they were to know the values on the back of the cards. 
+In Experiment 1, participants are considered to be able to make the contrapositive inference from the conditional sentences if they choose Q' to determine whether a given conditional sentence was true of false if they were to know the values on the back of the cards. 
 
 In Experiment 2, participants are considered to correctly making the contrapositive inference from the conditional sentences if they correctly choose PQ' to prove the given conditional sentence false or correctly choose PQ to prove the given conditional sentence true.
 
