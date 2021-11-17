@@ -2,7 +2,7 @@
 A high level summary that presents the main idea of the task.
 
 # References
-Provide a full reference and link to the main paper and any subsequent papers used in the process of finding details about the task
+Duncker, K. (1945). On problem-solving (L. S. Lees, Trans.). Psychological Monographs, 58(5), i–113. https://doi.org/10.1037/h0093599
 
 # Stimuli
 ## The visual components
