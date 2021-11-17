@@ -1,49 +1,53 @@
 # Summary
-A high level summary that presents the main idea of the task.
+In this experiment each subject is given a card with a problem statement and a card with a piece of information needed to solve the problem. Each subject recieves different pieces of information from all the others. Subjects work in a group of 4 and are seated in circle or wheel structures of 4 positions seperated by partions. The task is for every subject to work in the group to solve the problem by exchanging information through message notes.
 
 # References
 Paper link: https://www-jstor-org.proxy.library.upenn.edu/stable/2786133?origin=crossref&seq=1#metadata_info_tab_contents
 
 # Stimuli
 ## The visual components
-Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations. 
 
-If no visual components are provided or seem not to be needed describe an interface for executing this task in an online environment with remote participants. 
+The statement of the problem is typed completely on each of four separate cards and each of the eight items of information is typed on a separate card.
 
-## Materials for alternative versions of the experiment 
-If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
+Card with the statement of the problem:
+A small company is moving from one office-building to another. It must move four kinds of equipment: (a) chairs, (b) desks, (c) filing-cabinets and (d) typewriters. How many trucks are needed to make the move in one trip? 
 
-In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
+Card with information (8 different cards):
+(1)The company owns a total of 12 desks 
+(2)The company owns a total of 48 chairs
+(3)The company owns a total of 12 typewriters
+(4)The company owns a total of 15 filing-cabinets
+(5)One truckload can take 12 typewriters
+(6)One truckload can take 3 desks 
+(7)One truckload can take 5 filing-cabinets
+(8)One truckload can take 24 chairs
 
 # Procedure
 ## Steps
-A task flow describing the stages a participant goes through and a formal specification of any conditional or complex relationships therein. 
 
-List the steps that make up the task. This could include a training protocol, pre and post surveys, task rounds, etc.  
-
-Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
+1. The subjects are told that the experiment is to investigate how fast groups can solve certain abstract problems and there are five problems to be solved.
+2. Each subject is given one of the problem cards and some information cards where the information was equally divided over the group members. For completion of the group task each subject has to know the problem solution.
+3. The subjects are seated around a circular table, so that each is separated from the next by a vertical partition from the center to the table's edge.
+4. The subjects are supplied with blank message cards whose colors matched those of their work spaces for communication to the other members of the group.
+5. When the group has solved the problems, each subject is asked to fill out a questionnaire, in which mainly measurements of satisfaction and leadership were made.
 
 ## Roles 
-A description of roles if relevant to the task.  
 
-If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
+Each participant completed the same task following instructions.
 
 ## Instructions
-Complete instructions shown to participants at each stage of the task.  
 
-Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
+Instruction written by CSSLab:
 
-If the instructions are not available ask the paper's authors, however and if that fails, write new ones that appear as suitable as possible.
+(Pending)
 
 # Criteria
 ## Performance calculation
-A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
 
-Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
-
-This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
+1. Time scores (speed): time spent on solving the problem
+2. Communication units (efficiency): number of messages cards sent to solve the problem
+3. Errors (quality): number of incorrect switches of information during a trial
 
 ## Incentives
-A formal specification of the incentives for participation.   
 
-Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+No incentives are mentioned for the experiment.
