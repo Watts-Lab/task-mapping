@@ -111,6 +111,7 @@ clean_responses <- raw_responses %>%
                                                               gsub("suduko", "sudoku",
                                                                    sub(
                                                                      "task", "",
+                                                                     gsub("arithmetic task","arithmetic problem",
                                                                      gsub("various versions", "",
                                                                           gsub(
                                                                             "hidden profile", "",
@@ -122,7 +123,7 @@ clean_responses <- raw_responses %>%
                                                                    ))
                                                             ))
                                                      )
-                                                   )
+                                                   ))
                                                  )
                                                )
                                              ))
