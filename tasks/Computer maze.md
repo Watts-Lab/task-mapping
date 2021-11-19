@@ -6,12 +6,14 @@ Aggarwal, I., & Woolley, A. W. (2013). Do you see what I see? The effect of memb
 
 # Stimuli
 ## The visual components
-Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations. 
-
-If no visual components are provided or seem not to be needed describe an interface for executing this task in an online environment with remote participants. 
-
+An interface can be constructed by initializing a maze with various greebles after giving them initial pre-screening surveys.
 
 # Procedure
+## Overview
+The task was a navigation and identification task set in a computer-based maze. The maze consisted of a long, winding corridor with many hallways branching off. The hallways were populated by complex, unfamiliar objects called “greebles”. Greebles are objects that are difficult to distinguish from one another and thus are good stimuli for tapping into object visualization. Dyads viewed the virtual maze environment on a single monitor, and had access to just one keyboard and one joystick.
+
+Each maze contained 12 greebles, including three pairs of identical greebles and six lone distractor greebles. The dyads were instructed to navigate through the entire maze and to find and tag as many of the identical greeble pairs as possible. Teams incurred penalties for tagging the wrong greebles. Teams earned a bonus for each correctly tagged greeble, lost money for each incorrectly tagged greeble, and earned a bonus for navigating enough of the maze to see all of the greebles.
+
 ## Steps
 1. Participants completed an online pre-screening composed of: (1) the Visualizer–Verbalizer Cognitive Style Questionnaire (VVCSQ), (2) the Object–Spatial Imagery and Verbal Questionnaire (OSIVQ). The goal of the screening was to select individuals from the tails of the distributions for object visualization and spatial visualization, and choose individuals who were high only on one of the two visualization cognitive styles, and not both, in order to compose maximally diverse or homogenous teams.
 2. Participants were told that they would be participating in a group collaboration study. 
@@ -27,7 +29,7 @@ Tagger: Tags the identical greebles using the keyboard
 Navigator: Navigates through the computer maze using the joystick.
 
 ## Instructions
-(Original instructions unavailable)
+(Instructions written by CSS Lab)
 ### Pre-task
 1. Complete the surveys distributed to you.
 
