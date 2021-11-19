@@ -7,9 +7,7 @@ Marks, Michelle & Sabella, Mark & Burke, Shawn & Zaccaro, Stephen. (2002). The I
 
 # Stimuli
 ## The visual components
-Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations. 
-
-If no visual components are provided or seem not to be needed describe an interface for executing this task in an online environment with remote participants. 
+In an online environment, this would require visualization of the main tank simulation as well as lag-free audio communication between to ensure the study can be conducted properly.
 
 
 # Procedure
@@ -22,13 +20,14 @@ If no visual components are provided or seem not to be needed describe an interf
 ## Roles 
 Three non-distinct roles: not all team members had the ability to shoot in the tank, and only one team member could build defense systems.
 
-
 ## Instructions
-Complete instructions shown to participants at each stage of the task.  
-
-Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
-
-If the instructions are not available ask the paper's authors, however and if that fails, write new ones that appear as suitable as possible.
+(Instructions written by the CSS Lab)
+1. Go through the training program for all tankroles. Aim to ensure you have developed a complete understanding and ease with the various roles.
+2. You will now need to sit with the experimenter to go over competency tests and check for any mistakes.
+3. You will now take part in a cross-training manipulation
+4. There will now be a 35-minute practice session. You will spend 14 minutes of this time in the other two roles of your team members (7 minutes each). You may talk to your team members only during the practice session.
+5. Complete the manipulation checks and concept maps individually.
+6. Now, you will end with a 40-minute performance session which will determine success.
 
 # Criteria
 ## Performance calculation
@@ -42,6 +41,4 @@ Coordination: The measure of team coordination used for this study was a compute
 Team performance: Teams were scored 0 to 15, gaining 1 point or every pillbox they captured and rebuilt. 
 
 ## Incentives
-A formal specification of the incentives for participation.   
-
-Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+None listed.
