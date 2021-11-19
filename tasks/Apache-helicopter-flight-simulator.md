@@ -8,9 +8,8 @@ Marks, Michelle & Sabella, Mark & Burke, Shawn & Zaccaro, Stephen. (2002). The I
 
 # Stimuli
 ## The visual components
-Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations. 
 
-If no visual components are provided or seem not to be needed describe an interface for executing this task in an online environment with remote participants. 
+In an online environment, this would require visualization of the main Apache game as well as lag-free audio communication between to ensure the study can be conducted properly.
 
 ## Materials for alternative versions of the experiment 
 
@@ -32,11 +31,14 @@ Gunner: Operates the weapons system\
 Radar Specialist: Responsible for monitoring and interpreting radar systems containing critical enemy information.
 
 ## Instructions
-Complete instructions shown to participants at each stage of the task.  
-
-Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
-
-If the instructions are not available ask the paper's authors, however and if that fails, write new ones that appear as suitable as possible.
+(Instructions written by CSS Lab)
+1. Once you received your assignment, go through the training program. Aim to ensure you have developed a complete understanding and ease with your role.
+2. Complete the three competency tests, aimed at ensuring you have competency in your skill.
+3. You will now need to sit with the experimenter to go over any mistakes.
+4. You will now watch a few cross training episodes to ensure you understand the roles of your teammmates
+5. You will now be taking part in 3 15-minute practice sessions with your teammates to help achieve your goal. Feel free to communicate in whatever manner you find best. You cannot talk to each other during the break.
+6. Complete the manipulation checks and concept maps individually.
+7. Now, you will end with 2 15-minute performance sessions which will  determine success.
 
 # Criteria
 ## Performance calculation
@@ -54,6 +56,4 @@ Task performance: A score was calculated from the sum of the number of targets a
 
 
 ## Incentives
-A formal specification of the incentives for participation.   
-
-Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+None listed.
