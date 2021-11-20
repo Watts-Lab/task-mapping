@@ -37,4 +37,4 @@ Performance is evaluated in two ways:
 (2) The pre-solutions (proposals preceeding the solutions and different from it) are counted (only with those experiments where the correct solution is found) and the total time up to the final solution. Pre-solutions count not only those actually carried out, but also proposals merely formulated and those rejected as unsuitable. Objects that are merely touched or picked up quite briefly and silently laid aside again do not count as pre-solutions.
 
 ## Incentives
-No incentives were mentioned for either experiment.
+No incentives were mentioned for the experiment.
