@@ -21,9 +21,7 @@ least importance for survival in the described scenario.
 4. They then completed the same ranking with their fellow group members; groups had 10 minutes to discuss the task and collectively complete the ranking.
 
 ## Roles 
-A description of roles if relevant to the task.  
-
-If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
+N/A, all participants did the same task 
 
 ## Instructions
 "It is approximately 10 o'clock in the morning on a mid-August day and you have just crash-landed in the Sonoran Desert in the southwestern United States."
