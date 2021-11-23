@@ -23,7 +23,7 @@ Questionnaire questions:
 # Procedure
 ## Steps
 
-1. One hundred male undergraduates of M.I.T.,8 drawn from various classes at the Institute, served as subjects for these experiments.
+1. One hundred male undergraduates of M.I.T., 8 drawn from various classes at the Institute, served as subjects for these experiments.
 
 2. These 100 are split up into 20 groups of five men each. These 20 groups are then further subdivided so that five groups could be tested on each of four experimental patterns.
 
@@ -58,11 +58,11 @@ Instruction written by CSSLab:
 
 Thank you for participating in our experiment today. We want to investigate the relationship between the behavior of small groups and the patterns of their communication. You will need to complete 15 consecutive trials in this experiment.
 
-Each of you will be given a card with a set of five out of six symbols and the symbol missing in your card is different from that of all the others'. Thus, in any five cards given to you in a trial there is only one symbol in common. The task for you is to work together to find the common symbol. In order to communicate with your fellow team members you can pass notes through slots permitting you to push written message cards to the persons on either side of of you.
+Each of you will be given a card with a set of five out of six symbols and the symbol missing in your card is different from that of all the others'. Thus, in any five cards given to you in a trial there is only one symbol in common. The task for you is to work together to find the common symbol. In order to communicate with your fellow team members you can pass notes through slots permitting you to push written message cards to the persons on either side of you.
 
 To allow for communication to the other members of the group, a five-layered pentagonal box is at the center of the table. The box was placed so that the partitions just touched each of the five points of the pentagon. Each of the five resulting work spaces was painted a different color. You have been supplied with blank message cards whose colors matched those of your work spaces. Any message sent from a booth had to be on a card of the booth's color.
 
-Each of you are allowed to pass the answer along once you get the answer. When you get the answer, please switch the light to indicate that you finished. The trial will be end once everyone lit the light.
+Each of you are allowed to pass the answer along once you get the answer. When you get the answer, please switch the light to indicate that you finished. The trial will end once everyone lit the light.
 
 When finished solving the problem:
 
