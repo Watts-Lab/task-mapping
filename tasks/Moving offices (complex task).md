@@ -39,7 +39,19 @@ Each participant completed the same task following instructions.
 
 Instruction written by CSSLab:
 
-(Pending)
+Thank you for participating in our experiment today. We want to investigate how fast groups can solve certain abstract problems. Five problems had to be solved. We would have preferred more problems, to allow for the complete development of the decision structure, but this was the maximum possible in the time that we have available.
+
+Each of you will be given a card with information on it that will help solve the problem and you will need to work together to find a solution. In order to communicate with your fellow team members you can pass notes through slots permitting you to push written message cards to the persons on either side of of you.
+
+To allow for communication to the other members of the group, a four- layered quadrilateral box is at the center of the table. The box was placed so that the partitions just touched each of the four points of the quadrangle. Each of the four resulting work spaces was painted a different color. You have been supplied with blank message cards whose colors matched those of your work spaces. Any message sent from a booth had to be on a card of the booth's color.
+
+Now for the problem:
+
+A small company is moving from one office-building to another. It must move four kinds of equipment: (a) chairs, (b) desks, (c) filing-cabinets and (d) typewriters. How many trucks are needed to make the move in one trip?
+
+When finished solving the problem:
+
+Please fill out this short questionnaire.
 
 # Criteria
 ## Performance calculation
