@@ -29,6 +29,9 @@ Questionnaire questions:
 4. Each group is given 15 consecutive trials on one pattern, a process which required one session of about fifty minutes. These subjects are not used again. The order in which the patterns are used is randomized.
   - The 5 participants were seated around a circular table so that each was separated from the next by a vertical partition from the center to six inches beyond the table's edge.
   - Partitions had slots permitting subjects to push written message cards to the men on either side of them.
+  
+  ![Alt text](/images/Find_the_common_symbol_table.png)
+  
   - To allow for communication to the other men in the group, a five-layered pentagonal box was built and placed at the center of the table. The box was placed so that the partitions just touched each of the five points of the pentagon. Each ofthe five resulting wedge-shaped work-spaces was then painted a different color.
   - The 5s were supplied with blank message cards whose colors matched that of their work spaces. Any message sent from a booth had to be on a card of the booth's color.
   - On the left wall of each partition, 16 large symbol cards, representing 16 trials, were hung in loose-leaf fashion. The cards were placed in order with numbered backs to S. At the starting signal could pull down the first card and goto work.
