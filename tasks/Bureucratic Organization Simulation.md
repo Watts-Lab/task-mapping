@@ -23,10 +23,12 @@ List the steps that make up the task. This could include a training protocol, pr
 
 Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
 
+An experiment was completed in three days during vacation so that subjects could not discuss the experiment until it was over and they returned to school.
+
 ## Roles 
 Project director:
 Coding supervisor:
-Coder:
+Coder: College students were hired who believed it was a real job.
 ## Instructions
 Complete instructions shown to participants at each stage of the task.  
 
@@ -43,4 +45,4 @@ Write out how performance is calculated for this task. There may be more than on
 This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
 
 ## Incentives
-Each participant was paid $1.25 per hour.
+Each participant was paid $1.25 per hour. Coders believed it was a real job.
