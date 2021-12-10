@@ -24,6 +24,10 @@ library(tidyverse)
 raw_responses <- fromJSON("https://task-robot.glitch.me/results/survey/json") %>% 
   rename(individual_theoretical = indvidual_theoretical)
 
+raw_responses %>% write_csv("../mapping_data/raw_responses.csv")
+
+raw_responses %>% arrange(desc(updatedAt)) %>% select(updatedAt)
+
 # All the tasks that are in our mapping google sheet
 tasks <- fromJSON("https://task-robot.glitch.me/tasks/json")
 
@@ -139,6 +143,8 @@ clean_responses <- raw_responses %>%
           sub(
             "task", "",
             gsub(" and its variants", "",
+                 gsub("(subjects naive)","",
+                      gsub("(Longbow2)","",
                  gsub(
                    "and slogan", "slogan",
                    gsub("various versions", "",
@@ -146,9 +152,9 @@ clean_responses <- raw_responses %>%
                           "hidden profile", "",
                           gsub("[^a-zA-Z0-9]", " ",
                                tolower(name))
-                        ))
+                        )))
                  ))
-          ))
+          )))
     ))) %>% select(
       name,
       name_clean,
