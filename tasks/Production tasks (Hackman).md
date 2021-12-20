@@ -20,7 +20,7 @@ N/A
 (d) Fifteen minutes of work. Time warnings given at 5-minute intervals.
 (e) Administration of a “Task Description Questionnaire”.
 (f) Repeat of steps c-e for the second, third, and fourth tasks.
-(g) Administration of posttest instruments,
+(g) Administration of post-test instruments.
 
 The 108 experimental groups produced a total of 432 different written group products. (These products were assigned random identification numbers and then typed and mimeographed onto 5 x 8-inch cards.)
 
@@ -29,7 +29,7 @@ N/A One member was designated as “leader” of the group; however, no specific
 
 ## Instructions
 Instructions developed by CSSLab:
-(pending)
+There are 4 tasks to be completed in this experiment. Your task is to work as a team to create a written product based on the task assigned. You have 15 minutes to work on the task and a time warning will be given every 5 minutes during your work. You are required to complete a questionnaire after completing each task.
 
 # Criteria
 ## Performance calculation
