@@ -1,5 +1,5 @@
 # Summary
-Participants work in a group of 3 to complete problem-solving tasks (which are tasks calling for a discussion of values or issues, usually with a requirement of group consensus) by creating a written product.
+Participants work in a group of 3 to complete problem-solving tasks (which are tasks requiring that a solution to a specific problem be worked out, usually within a set of constraints, called problem-solving tasks.) by creating a written product.
 
 # References
 J.Richard Hackman, Effects of task characteristics on group products, Journal of Experimental Social Psychology, Volume 4, Issue 2, 1968
@@ -7,7 +7,7 @@ Paper link: https://www.sciencedirect.com/science/article/pii/0022103168900401?v
 
 # Stimuli
 ## The visual components
-For discussion-type tasks, groups work with issues. Examples are “What makes for success in our culture?” or “Should birth control pills be made available without prescription?”
+For problem-solving tasks, groups deal with proposed actions or implementations. Examples are "How could a person go about attaching pictures to walls without scarring the walls?” or “How could you safely change a tire on a busy expressway at, night?”
 
 ## Materials for alternative versions of the experiment 
 N/A
