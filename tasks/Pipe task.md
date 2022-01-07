@@ -1,49 +1,48 @@
 # Summary
-A high level summary that presents the main idea of the task.
+The task investigates the effect of cultural blocks on people's thinking and problem-solving ability. In this experiment, participants work in a group of six to come up with as many ways to get a ping-pong ball out of a steel pipe without damaging the ball, tube, or floor.
 
 # References
-Provide a full reference and link to the main paper and any subsequent papers used in the process of finding details about the task
+Book: https://www.amazon.com/Conceptual-Blockbusting-Guide-Better-Ideas/dp/0738205370/ref=sr_1_1?ie=UTF8&qid=1365028089&sr=8-1&keywords=conceptual+blockbusting
+(Book at Van Palt Library: https://franklin.library.upenn.edu/catalog/FRANKLIN_9931394673503681)
 
 # Stimuli
 ## The visual components
-Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations. 
+Illustration of the problem is given to participants as below:
 
-If no visual components are provided or seem not to be needed describe an interface for executing this task in an online environment with remote participants. 
+![Alt text](/tasks/Pipe_task.png)
 
 ## Materials for alternative versions of the experiment 
-If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-
-In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
+N/A
 
 # Procedure
 ## Steps
-A task flow describing the stages a participant goes through and a formal specification of any conditional or complex relationships therein. 
-
-List the steps that make up the task. This could include a training protocol, pre and post surveys, task rounds, etc.  
-
-Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
+1. Assume that a steel pipe is imbedded in the concrete floor of a bare room. The inside diameter is .06" larger than the diameter of a ping-pong ball(1.50") that is gently at the bottom of the pipe
+2. Participants are divided into groups of six people in the room, along with the following objects:
+- 100' of clothesline
+- A carpenter's hammer
+- A chisel
+- A box of Wheaties
+- A file
+- A wire coat hanger
+- A monkey wrench
+- A light bulb
+3. Participant group is asked to list as many ways the group can think of (in five minutes) to get the ball out of the pipe without damaging the ball, tube, or floor.
 
 ## Roles 
-A description of roles if relevant to the task.  
-
-If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
+Each of the six participants had the same role.
 
 ## Instructions
-Complete instructions shown to participants at each stage of the task.  
+Instructions written by CSSLab:
 
-Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
-
-If the instructions are not available ask the paper's authors, however and if that fails, write new ones that appear as suitable as possible.
+List as many ways you can think of in five minutes to get the ball out of the pipe without damaging the ball, tube, or floor.
 
 # Criteria
 ## Performance calculation
-A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
+Fluency and flexibility of thoughts.
 
-Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
+1. Fluency (quantity of methods): refers to the number of concepts one produces in a given length of time. If you are a fluent thinker, you have a long list of methods of retrieving the ball from the pipe.
 
-This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
+2. Flexibility (creativity): refers to the diversity of the ideas generated. If you are a flexible thinker, you should have come up with a wide variety of methods. For example, if a participant group thought of smashing the handle of the hammer with the monkey wrench and using the resulting splinters to retrieve the ball, they were demonstrating a bit more flexibility of thought, since one does not usually think of using a tool as a source of splinters to do something with. 
 
 ## Incentives
-A formal specification of the incentives for participation.   
-
-Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+No incentives are mentioned.
