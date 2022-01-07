@@ -1,49 +1,60 @@
 # Summary
-A high level summary that presents the main idea of the task.
+In this task, participants were given a mathematical problem and were asked to solve the problem as a group. The problem involved figuring out the total number of chickens sent to market given the numbers sold and the numbers left.
 
 # References
-Provide a full reference and link to the main paper and any subsequent papers used in the process of finding details about the task
+Main Paper: http://collections.uakron.edu/digital/collection/p15960coll1/id/21257/
 
 # Stimuli
 ## The visual components
-Document or generate the visual stimuli seen by participants when performing this task. Provide screenshots or illustrations. 
+The following mathematical problem is provided to the participant:
 
-If no visual components are provided or seem not to be needed describe an interface for executing this task in an online environment with remote participants. 
+Farmer Jones sent his son to market with a number of chickens, telling him that he might sell any or all of them as he thought best. When the son returned he reported to his father as follows, "First, I sold Mr. Smith half of the chickens and more; then I sold Mr. Wilson a third of what remained and 1/3 of a chicken more; next I sold Mr. Thomas 1/4 of what remained and 3/4 of a chicken more; finally, I sold Mr. Norton exactly 1/5 of what I had left and gave him 1/5 of a chicken for his wife. I brought back 19 that I was unable to sell." How many chickens did Farmer Jones send to market?
 
 ## Materials for alternative versions of the experiment 
-If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-
-In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
+N/A
 
 # Procedure
 ## Steps
-A task flow describing the stages a participant goes through and a formal specification of any conditional or complex relationships therein. 
-
-List the steps that make up the task. This could include a training protocol, pre and post surveys, task rounds, etc.  
-
-Describe the relationship between the steps. By default they are assumed to be chronological and have no interdependencies, but if they are not chronological, e.g., a choice changes the order of the steps, that should be described in full detail. Similarly, if the steps are interdependent, e.g., performance on one step influences what is seen on another step, this should be described in full detail.
+1. 49 judges who sorted 104 tasks into eight categories (or piles) representing different positions on the dimension under consideration. 
+2. Each judge sorted the tasks on all dimensions, but no one sorted tasks on more than one dimension on a given day, and usually the sortings were separated by several days. 
+3. The orders in which dimensions were sorted by the various judges were random, and the set of tasks was shuffled by E before each sorting. 
+4. Each task was typed on a separate sheet which included all the information  
+5. For a given dimension, the judge was given the set of tasks, a definition of dimension (exactly as given above), and a copy of the Archives of the History of American Psychology, The Center for the History of Psychology, The University of Akron CHP Special Interest Collection 
+6. When the sorting had been completed, the judge placed each pile of tasks in an appropriately labeled manila envelope and returned them to E, who recorded the responses.
 
 ## Roles 
-A description of roles if relevant to the task.  
-
-If relevant, describe how roles are assigned and used in the task. List all roles and list how the experience for each role differs from others.
+N/A
 
 ## Instructions
-Complete instructions shown to participants at each stage of the task.  
+Overall sorting instructions: 
+1. The sheets you have been given contain information about group tasks. These have been  selected  from a variety  of  tasks  used  in  small  group research  projects  reported  in  psychological  journals.
 
-Write the complete instructions used from the start to the end of the experiment. This should include any instruction provided on each of the steps. If instructions have step interdependence, or are role specific, describe that in full detail.
+As a first step in assigning scale values to these tasks, we want  a number  of persons  to  sort  them  into  8 piles.  You  will  probably  find  it easier  to  sort  them  if you  look over  a  number  of  tasks, chosen  at random,  before  you begin  to  sort.  
 
-If the instructions are not available ask the paper's authors, however and if that fails, write new ones that appear as suitable as possible.
+2. Steps in sorting: 
+> a. You have been given 8 manila envelopes with letters on them. Please  arrange  these  before  you  in regular  order.  
+> b. Begin by sorting the tasks into four piles^ On envelope A place  those  tasks  that  you believe  are highest  with  regard  to  the dimension  (name  of  dimension).   On envelope  C  place  the  tasks  that  are  next  highest  on  this dimension;   on   envelope  E those  that  are  next highest;   and  on  envelope  G  those  that  are  lowest with  regard  to  the  dimension  (name  of  dimension).  
+> c. When you have completed step b, divide each of the piles into  two more  piles  to make  a total  of  8 piles more  or  less  evenly  distributed  T,lor)g>tho  scale.  For  example,  those  tasks  you have  placed  on  envelope  A  should  be divided  so  that  those  that  are highest  on  the dimension  in  question  are  placed  on  A  and  those  that  are next highest  are  placed  on B;   similarly,  those  on envelope  C  are  divided  and  placed  on envelopes  C  and  J; etc. 
+> d. Reconsider, look back and forth from pile to pile, reshuffle tasks  as much  as may  be  necessary  to be  sure  that  you  have  each  task  in the pile  that  you  think  it  should  be  in. 
+
+3. DO NOT TRY TO GST THE SAME NUMBER IN SACK PILE. THEY ARE NOT NECESSARILY  EVENLY DISTRIBUTED  ALONG  THE  DIMENSION.  
+
+4. In any case in which you may consider it important, you may assume  the  following  conditions: 
+>  a. The instructions listed on the task sheet are minimal; it  is  assumed  that  they  are understood  by  all  group members.
+>  b. The first of the several criteria listed is the one to be useo  in evaluating  group performance  on  the  task.  
+>  c. The size of the group is five persons. 
+>  d. Subjects are selected randomly from a population of college undergraduates. 
+>  e. The  group  is unstructured;   that  is, no  structure  is  imposed  on  the group,  no  leader  is assigned,  no restrictions  are  placed  on  communication  channels, etc., except  as  specified  on  the  task  information  sheet
+
+5. When you have completed the sorting, please place each pile in the  corresponding  envelope  and  return  to me.
+
+Mathematical puzzle 1 instructions: 
+Your task is to discuss the problem and arrive at a group decision regarding the correct solution.
 
 # Criteria
 ## Performance calculation
-A formal specification of how performance is evaluated based on the specific materials and the teams actions in a given trial.  
-
-Write out how performance is calculated for this task. There may be more than one performance metric, and in that case, list all the ones used in the reference papers. These could be simple metrics, e.g., completion time in Sudoku, while others may involve an equation, a key (e.g., RME), or an algorithm, to judge the correct answer.  
-
-This likely does not reflect details of the results of the paper but instead just how the task was designed and measured. 
+1. Time spent on solving the problem
+2. Correct/incorrect solution
 
 ## Incentives
-A formal specification of the incentives for participation.   
-
-Write how participants are incentivized (payments, or other incentives) and how these incentives are calculated for the task.
+None mentioned in the paper
