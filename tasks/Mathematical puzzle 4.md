@@ -52,11 +52,7 @@ As a first step in assigning scale values to these tasks, we want  a number  of 
 5. When you have completed the sorting, please place each pile in the  corresponding  envelope  and  return  to me.
 
 Mathematical puzzle 4 instructions: 
-group task. Work on the task cooperatively,
-trying to arrive at an answer to the quesrion posed in the
-problem statement that is agreeable to everyone. If you cannot
-agree, a minority report will be accepted along with the majority
-decision. Let me know when you have arrived at an answer."
+This is a group task. Work on the task cooperatively, trying to arrive at an answer to the quesrion posed in the problem statement that is agreeable to everyone. If you cannot agree, a minority report will be accepted along with the majority decision. Let me know when you have arrived at an answer.
 
 # Criteria
 ## Performance calculation
