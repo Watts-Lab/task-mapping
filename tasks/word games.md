@@ -9,6 +9,7 @@ Main Paper: http://collections.uakron.edu/digital/collection/p15960coll1/id/2125
 A card having different words printed on it. Words included: 
 - neurotics 
 - courtesan 
+- secondary 
 
 ## Materials for alternative versions of the experiment 
 N/A
@@ -20,6 +21,7 @@ N/A
 3. The orders in which dimensions were sorted by the various judges were random, and the set of tasks was shuffled by E before each sorting. 
 4. Each task was typed on a separate sheet which included all the information  
 5. For a given dimension, the judge was given the set of tasks, a definition of dimension (exactly as given above), and a copy of the Archives of the History of American Psychology, The Center for the History of Psychology, The University of Akron CHP Special Interest Collection 
+6. 6. When the sorting had been completed, the judge placed each pile of tasks in an appropriately labeled manila envelope and returned them to E, who recorded the responses.
 
 ## Roles 
 N/A
