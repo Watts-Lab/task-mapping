@@ -1,5 +1,5 @@
 # Summary
-In the judgment task, groups decided on disciplinaryactions in a fictitious, controversial case in which a college basketball player bribed an instructor to change his grade on an exam, to maintain his eligibility on the team.
+In the judgment task, groups decided on disciplinary actions in a fictitious, controversial case in which a college basketball player bribed an instructor to change his grade on an exam, to maintain his eligibility on the team.
 
 # References
 Main Papers:
