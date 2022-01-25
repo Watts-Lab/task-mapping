@@ -12,43 +12,43 @@ Alternative task method: http://www.craiganderson.org/wp-content/uploads/caa/Sca
 # Stimuli
 Stimuli is unavailable from researchers, stimuli developed by CSS lab 
 
-ocean: _ _ cean 
-lackadaisical: lack _ _ _ isical 
-disgusted: _ _ _ gusted 
-control: con _ _ _ l 
-color: _ _ lor 
-nonchalant : non _ _ _ lant
-punishment: _ _ nishment 
-analyze: ana _ _ ze 
-downtown: do _ _ _wn
-eatable: _ _ table 
-horrible: hor _ _ _ le 
-reaction: _ _ action 
-quirky: _ _ irky 
-punishment: pun _ _ _ ment 
-garrulous: _ _ _ rulous 
-motionless: motio_ _ ess
-domineering: d o _ _ _ neering
-driving: dri _ _ ing
-thinkable: _ _ _nkable
-grateful: gra _ _ ful 
-snails, trails: _ _ ails 
-guard: g _ _ rd
-depressed, impressed: _ _ _ ressed 
-station: _ ta _ _ on 
-identify: _ _ entif _ 
-aftermath: aft _ _ mat_ 
-acoustics: _ c _ _ stics
-judicious: ju _ _ ciou _ 
-alleged, illegal: _ lleg _ _ 
-noxious: _ _ xious 
-abashed: ab _ _ he _  
-frightening: _ _ _ ghtening 
-surprise: su _ pri _ _ 
-development: _ _ vel _ pment 
-purple: _ _ rple 
-watermelon: _ _ _ ermelon 
-elephant: ele _ _ an _ 
+- ocean: _ _ cean 
+- lackadaisical: lack _ _ _ isical 
+- disgusted: _ _ _ gusted 
+- control: con _ _ _ l 
+- color: _ _ lor 
+- nonchalant : non _ _ _ lant
+- punishment: _ _ nishment 
+- analyze: ana _ _ ze 
+- downtown: do _ _ _wn
+- eatable: _ _ table 
+- horrible: hor _ _ _ le 
+- reaction: _ _ action 
+- quirky: _ _ irky 
+- punishment: pun _ _ _ ment 
+- garrulous: _ _ _ rulous 
+- motionless: motio_ _ ess
+- domineering: d o _ _ _ neering
+- driving: dri _ _ ing
+- thinkable: _ _ _nkable
+- grateful: gra _ _ ful 
+- snails, trails: _ _ ails 
+- guard: g _ _ rd
+- depressed, impressed: _ _ _ ressed 
+- station: _ ta _ _ on 
+- identify: _ _ entif _ 
+- aftermath: aft _ _ mat_ 
+- acoustics: _ c _ _ stics
+- judicious: ju _ _ ciou _ 
+- alleged, illegal: _ lleg _ _ 
+- noxious: _ _ xious 
+- abashed: ab _ _ he _  
+- frightening: _ _ _ ghtening 
+- surprise: su _ pri _ _ 
+- development: _ _ vel _ pment 
+- purple: _ _ rple 
+- watermelon: _ _ _ ermelon 
+- elephant: ele _ _ an _ 
 
 # Procedure
 ## Steps
