@@ -21,7 +21,7 @@ None provided, but videos and handouts shown to the participants can be found [h
 4. After the video was shown, teams were given 10 minutes to work on a worksheet. The worksheet was used to decide tasks, rough-draft building structure, and a division of roles. 
 5. Teams turned the worksheet in to the experimenter.
 6. Teams were given 40 minutes to complete building task.
-7. At 20 minutes, the team was told 20 minutes had past.
+7. At 20 minutes, the team was told 20 minutes had passed.
 8. At 35 minutes, the teams were told 5 minutes were remaining.
 
 
