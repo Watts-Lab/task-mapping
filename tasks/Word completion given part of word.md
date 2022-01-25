@@ -8,46 +8,47 @@ Main Paper: https://www.science.org/doi/abs/10.1126/science.1193147
 Task Source: McGrath, Joseph Edward. Groups: Interaction and performance. Vol. 14. Englewood Cliffs, NJ: Prentice-Hall, 1984. http://users.ece.utexas.edu/~perry/education/382v-s08/papers/mcgrath84.pdf
 Supplemental Materials: https://www.science.org/doi/suppl/10.1126/science.1193147/suppl_file/woolley_som.pdf
 Alternative task method: http://www.craiganderson.org/wp-content/uploads/caa/Scales/WordComp.pdf
+
 # Stimuli
 Stimuli is unavailable from researchers, stimuli developed by CSS lab 
 
-ocean: _ _cean            
-lackadaisical: lack_ _ _isical 
-disgusted: _ _ _gusted 
-control: con_ _ _l 
+ocean: _ _ cean 
+lackadaisical: lack _ _ _ isical 
+disgusted: _ _ _ gusted 
+control: con _ _ _ l 
 color: _ _ lor 
-nonchalant : non_ _ _lant
-punishment: _ _nishment 
-analyze: ana_ _ze 
-downtown: do_ _ _wn
-eatable: _ _table 
-horrible: hor_ _ _le 
-reaction: _ _action 
-quirky: _ _irky 
-punishment: pun_ _ _ment 
-garrulous: _ _rulous 
-motionless: motio_ _ess
-domineering: _ _ _neering
-driving: dri_ _ing
+nonchalant : non _ _ _ lant
+punishment: _ _ nishment 
+analyze: ana _ _ ze 
+downtown: do _ _ _wn
+eatable: _ _ table 
+horrible: hor _ _ _ le 
+reaction: _ _ action 
+quirky: _ _ irky 
+punishment: pun _ _ _ ment 
+garrulous: _ _ _ rulous 
+motionless: motio_ _ ess
+domineering: d o _ _ _ neering
+driving: dri _ _ ing
 thinkable: _ _ _nkable
-grateful: gra_ _ful 
-snails: _ _ails 
-guard: g_ _rd
-depressed: _ _ _ressed 
-station: _ ta_ _ on 
-identify: _ _ entif_ 
-aftermath: aft_ _ mat_ 
-acoustics: _c_ _ stics
-judicious: ju_ _ ciou_ 
-alleged: _lleg_ _ 
+grateful: gra _ _ ful 
+snails, trails: _ _ ails 
+guard: g _ _ rd
+depressed, impressed: _ _ _ ressed 
+station: _ ta _ _ on 
+identify: _ _ entif _ 
+aftermath: aft _ _ mat_ 
+acoustics: _ c _ _ stics
+judicious: ju _ _ ciou _ 
+alleged, illegal: _ lleg _ _ 
 noxious: _ _ xious 
-abashed: ab_ _ he_  
+abashed: ab _ _ he _  
 frightening: _ _ _ ghtening 
-surprise: su_pri_ _ 
-development: _ _vel_pment 
+surprise: su _ pri _ _ 
+development: _ _ vel _ pment 
 purple: _ _ rple 
-watermelon: _ _ _ermelon 
-elephant: ele_ _an _ 
+watermelon: _ _ _ ermelon 
+elephant: ele _ _ an _ 
 
 # Procedure
 ## Steps
