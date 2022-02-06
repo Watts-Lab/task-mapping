@@ -32,9 +32,19 @@ N/A
 Each of the six participants had the same role.
 
 ## Instructions
-Instructions written by CSSLab:
+Assume that a steel pipe is imbedded in the concrete floor of a bare room shown below. The inside diameter is .06" larger than the diameter of a ping-pong ball(1.50") that is gently at the bottom of the pipe
+You are one of six people in the room, along with the following objects:
 
-List as many ways you can think of in five minutes to get the ball out of the pipe without damaging the ball, tube, or floor.
+- 100' of clothesline
+- A carpenter's hammer
+- A chisel
+- A box of Wheaties
+- A file
+- A wire coat hanger
+- A monkey wrench
+- A light bulb
+
+List as many ways you can think of (in five minutes) to get the ball out of the pipe without damaging the ball, tube, or floor.
 
 # Criteria
 ## Performance calculation
