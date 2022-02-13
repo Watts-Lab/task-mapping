@@ -30,7 +30,7 @@ In the first experiment, each group was randomized to one of three treatment con
 
 Experiment 2 (E2): Varies feedback; holds dynamic network
 
-In the second experiment, each group was randomized to one of four treatment conditions: a solo condition, where each individual solved the sequence of tasks in isolation, but this time they were not provided with any performance feedback; a no-feedback condition, in which participants placed in a network but were not shown any performance feedback; a self-feedback condition, in which participants were placed in a network and shown their own performance feedback; and a full-feedback condition, in which participants were placed in a network and shown performance feedback of all participants (including their own). Participants in all conditions in E2 were allowed to revise which peers to follow in subsequent rounds, except for the solo conditions, which acted as our baseline.
+In the second experiment, each group was randomized to one of four treatment conditions: a solo condition, where each individual solved the sequence of tasks in isolation, but this time they were not provided with any performance feedback; a no-feedback condition, in which participants placed in a network but were not shown any performance feedback; a self-feedback condition, in which participants were placed in a network and shown their own performance feedback; and a full-feedback condition, in which participants were placed in a network and shown performance feedback of all participants (including their own). Participants in all conditions in E2 were allowed to revise which peers to follow in subsequent rounds, except for the solo conditions, which acted as the baseline.
 
 ## Roles 
 N/A
@@ -51,11 +51,11 @@ Participants in the network condition engage in a an active social learning phas
 
 ![image](https://user-images.githubusercontent.com/74941183/153738003-bc23eafd-8e9d-438d-8e20-53e9fd317c67.png)
 
-After each task round, participants in the feedback conditions see the appropriate level of feedback for the conditions. This figure illustrates the dynamic network condition with full feedback (i.e., as opposed to no-feedback or only self-feedback). In all of our experiments, the maximum number of outgoing connections is three.
+After each task round, participants in the feedback conditions see the appropriate level of feedback for the conditions. This figure illustrates the dynamic network condition with full feedback (i.e., as opposed to no-feedback or only self-feedback). In all of the experiments, the maximum number of outgoing connections is three.
 
 # Criteria
 ## Performance calculation
 Performance is calculated based on the accuracy of the participant's final estimate.
 
 ## Incentives
-Monetary prizes (up to $10) were awarded in proportion to performance at the end of the experiment
+Monetary prizes (up to $10) were awarded in proportion to performance at the end of the experiment. Participants were recruited via a MTurk HIT, and remained anonymous for the entire study.
