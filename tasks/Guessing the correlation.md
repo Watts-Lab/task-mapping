@@ -43,15 +43,15 @@ Example of the instructions used in the experiments:
 
 ![image](https://user-images.githubusercontent.com/74941183/153737986-3997085a-044d-4f5e-90a9-8a03040210fe.png)
 
-Figure S6: Participants in all conditions make independent guesses about the correlation of two variables independently.
+Participants in all conditions make independent guesses about the correlation of two variables independently.
 
 ![image](https://user-images.githubusercontent.com/74941183/153737998-4a5f0cce-14d8-4029-b039-1a73851904ff.png)
 
-Figure S7: Participants in the network condition engage in a an active social learning phase, where they are exposed to their ego-network’s estimates in real time.
+Participants in the network condition engage in a an active social learning phase, where they are exposed to their ego-network’s estimates in real time.
 
 ![image](https://user-images.githubusercontent.com/74941183/153738003-bc23eafd-8e9d-438d-8e20-53e9fd317c67.png)
 
-Figure S8: After each task round, participants in the feedback conditions see the appropriate level of feedback for the conditions. This figure illustrates the dynamic network condition with full feedback (i.e., as opposed to no-feedback or only self-feedback). In all of our experiments, the maximum number of outgoing connections is three.
+After each task round, participants in the feedback conditions see the appropriate level of feedback for the conditions. This figure illustrates the dynamic network condition with full feedback (i.e., as opposed to no-feedback or only self-feedback). In all of our experiments, the maximum number of outgoing connections is three.
 
 # Criteria
 ## Performance calculation
