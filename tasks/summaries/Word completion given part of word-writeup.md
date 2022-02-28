@@ -15,7 +15,7 @@ The following details are not the main parts of the task, but rather additional 
 Teamwork, English words familiarity
 
 ### UI-UX Allowed Processes
-Teamwork, English words familiarity
+Entering and submitting the missing letters to fill in the word; chat to discuss with others (it could be possible to either work alone, or submit a single answer after discussing with others).
 
 ### Other Allowed Processes
 N/A
