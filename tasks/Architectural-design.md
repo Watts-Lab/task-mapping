@@ -12,9 +12,6 @@ Process derived from: Woolley (2009): https://www.researchgate.net/profile/Anita
 ## The visual components
 None provided, but videos and handouts shown to the participants can be found [here](https://drive.google.com/drive/folders/1W7pByMc7M1nKAEVNsp56huhRR7PwqHJ_?usp=sharing).
 
-## Materials for alternative versions of the experiment 
-If the task has multiple versions based on changing stimuli (e.g. the set of eyes in RME), if possible, provide a complete set, or a specification of the rules for generating that set. For example, in the RME task, provide all of the eye images, and a table of terms.  
-In the case that the complete set is not possible, provide enough unique examples that the reference version of the task experiment could be completed. If there are various levels of the task, e.g., in Sudoku, include a similarly sized sample of each level.
 
 # Procedure
 ## Steps
@@ -24,7 +21,7 @@ In the case that the complete set is not possible, provide enough unique example
 4. After the video was shown, teams were given 10 minutes to work on a worksheet. The worksheet was used to decide tasks, rough-draft building structure, and a division of roles. 
 5. Teams turned the worksheet in to the experimenter.
 6. Teams were given 40 minutes to complete building task.
-7. At 20 minutes, the team was told 20 minutes had past.
+7. At 20 minutes, the team was told 20 minutes had passed.
 8. At 35 minutes, the teams were told 5 minutes were remaining.
 
 
