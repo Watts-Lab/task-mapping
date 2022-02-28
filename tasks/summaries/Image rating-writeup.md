@@ -15,7 +15,7 @@ The following details are not the main parts of the task, but rather additional 
 none (common senses / experience)
 
 ### UI-UX Allowed Processes
-none (common senses / experience)
+Entering the ratings via an online interface
 
 ### Other Allowed Processes
 N/A
