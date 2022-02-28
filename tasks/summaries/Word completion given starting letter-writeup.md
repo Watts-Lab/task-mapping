@@ -3,10 +3,10 @@
 Mapped by: sarikasu 
 
 ## 1. Stimulus Complex 
-Participants are given a starting letter and ending letter for words
+Participants are given a starting letter and ending letter for words. For example, the start letter could be "S" and the end letter could be "N."
 
 ## 2. Goal Directives 
-The goal is to generate a list of words using the starting and ending letter provided
+The goal is to generate a list of words using the starting and ending letter provided. Using the previous example, participants could be asked to generate words like "SPIN," which starts with "S" and ends with "N." Variations of this game could ask participants to generate as many words as possible, to generate up to a certain number of words, or to generate exactly a certain number of words.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
@@ -15,7 +15,7 @@ The following details are not the main parts of the task, but rather additional 
 creative thinking, strong vocabulary, focus
 
 ### UI-UX Allowed Processes
-creative thinking, strong vocabulary, focus
+Typing interface for entering the words
 
 ### Other Allowed Processes
 NA
