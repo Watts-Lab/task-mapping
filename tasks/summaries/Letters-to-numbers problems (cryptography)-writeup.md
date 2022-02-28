@@ -3,7 +3,9 @@
 Mapped by: joycewang3 
 
 ## 1. Stimulus Complex 
-A mapping where the 10 letters, A, B, C, D, E, F, G, H, I, J, were each randomly assigned without replacement to one of the 10 numbers, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Participants are given a series of mathematical problems (for example, 3+5), except the numbers have been replaced with letters! So, instead of 3+5, users would instead see "A+B", where the letter "A" maps to "3" and "B" maps to "5".
+
+Paricipants will also have the opportunity to see the answers to certain problems. For example, 3+5 = 8; maybe the number "8" maps to the letter "C." In the case, the participant would have the information that A + B = C.
 
 ## 2. Goal Directives 
 The objective was to identify the mapping of the 10 letters to the 10 numbers in as few trials as possible.
@@ -12,13 +14,13 @@ The objective was to identify the mapping of the 10 letters to the 10 numbers in
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
 
 ### Skills 
-Math, logical reasoning, teamwork, collaboration
+Math, logical reasoning
 
 ### UI-UX Allowed Processes
-Math, logical reasoning, teamwork, collaboration
+The ability to ask for solutions to some of the equations, then enter guesses
 
 ### Other Allowed Processes
-The explanation for the second image attached below: On the first trial the person chooses the equation A + B= and the experimenter tells the person that the solution to this equation is C. This is because A=3 and B=5, which sums to 8, the letter represented by C. The person then guesses that A represents the number 1 and the experimenter indicates that this is not the case, or False. On the second trial, the person asks the solution to the equation B + C= and is told that the answer is EA. This is because B=5 and C=8, which sums to 13 or EA.
+In one version of this task, individuals could guess alone; alternatively, they could discuss their answers (via chat) with other teammates and be required to submit a single guess.
 
 ## GitHub Link 
 https://github.com/Watts-Lab/task-mapping/blob/master/tasks/letters-to-numbers%20problems%20(cryptography).md
