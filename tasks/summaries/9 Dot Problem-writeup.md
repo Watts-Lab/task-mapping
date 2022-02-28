@@ -3,19 +3,19 @@
 Mapped by: sarikasu 
 
 ## 1. Stimulus Complex 
-Participants are given a grid of nine dots
+Participants are given a 3x3 grid of nine dots.
 
 ## 2. Goal Directives 
-Participants must connect all nine dots
+Participants must connect all nine dots (e.g., draw a line that passes through them) using no more than four lines, and may not retrace any lines.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
 
 ### Skills 
-No more than four lines can be drawn, no retracing
+Analytical thinking, geometric reasoning
 
 ### UI-UX Allowed Processes
-No more than four lines can be drawn, no retracing
+Clicking and dragging the interface to "draw" lines on the screen
 
 ### Other Allowed Processes
 NA
