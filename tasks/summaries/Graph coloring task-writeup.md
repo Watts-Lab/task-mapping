@@ -3,10 +3,14 @@
 Mapped by: joycewang3 
 
 ## 1. Stimulus Complex 
-Six graph coloring problems (six different topology/network graphs)
+Participants are given one or more "graph coloring problems". These are pictures of different topology/network graphs. 
+
+For context, these look like many different nodes (points), which are connected by various edges. Imagine, for example, a picture of a social network: each person in the network is a "node," and each of their friends is an "edge."
+
+Participants will also be given a limited set of colors.
 
 ## 2. Goal Directives 
-Use the colors given to color the entire network without conflicts (edges connecting two vertices with the same color)
+The goal is to use the colors given to "color" the entire network without conflicts. This means that participants need to assign each node in the graph a color, ensuring that no two connected nodes share the same color. Using our social network example, if Person A and Person B are friends (which means they are connected), they cannot be assigned the same color.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
@@ -15,7 +19,7 @@ The following details are not the main parts of the task, but rather additional 
 coordination (without communication), understanding of the chromatic number of a network
 
 ### UI-UX Allowed Processes
-coordination (without communication), understanding of the chromatic number of a network
+Participants should be able to click on the nodes in the graph to assign them a color.
 
 ### Other Allowed Processes
 Subjects could update their colors at any time from a menu that included the fixed minimum of colors needed to solve the problem and were given different neighbor views from low view (solely subject colors and their neighbors colors), medium view (neighbors colors and labeled and number of links are visible) and high information view (entire network colors visible)
