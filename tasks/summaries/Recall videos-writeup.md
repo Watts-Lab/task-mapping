@@ -6,7 +6,7 @@ Mapped by: joycewang3
 A 90-second video
 
 ## 2. Goal Directives 
-To answer a set of questions about the video features
+To answer a set of questions about what occurred in the video
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
