@@ -3,10 +3,10 @@
 Mapped by: joycewang3 
 
 ## 1. Stimulus Complex 
-An oil well drilling game (called Wildcat Wells)
+Participants see a map of an oil well (called Wildcat Wells).
 
 ## 2. Goal Directives 
-Search for the hidden oil fields to find most oil
+The goal of the game is to "drill for oil". Participants earn points by searching for the hidden oil fields, with the goal of finding the most oil.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
@@ -15,10 +15,10 @@ The following details are not the main parts of the task, but rather additional 
 Understanding of the score diagram, prediction based on group performance
 
 ### UI-UX Allowed Processes
-Understanding of the score diagram, prediction based on group performance
+Navigating the virtual map of the oil field, clicking and selecting locations where the participant wants to drill oil.
 
 ### Other Allowed Processes
-The total number of points the players have accumulated is always displayed to them. At the end of the 15 rounds, they are shown a summary of the game as well as the total number of points they earned before advancing to the next game.
+The total number of points the players have accumulated is always displayed to them. At the end of the rounds, players are shown a summary of the game as well as the total number of points they earned before advancing to the next game.
 
 ## GitHub Link 
 https://github.com/Watts-Lab/task-mapping/blob/4524eac7add1b7379902be7b95f2f0d381697edf/tasks/Wildcat%20Wells.md
