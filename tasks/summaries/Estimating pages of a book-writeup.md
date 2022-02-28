@@ -15,10 +15,10 @@ The following details are not the main parts of the task, but rather additional 
 Judgment
 
 ### UI-UX Allowed Processes
-Judgment
+The ability to submit answers and/or discuss via chat
 
 ### Other Allowed Processes
-NA
+Variants of this task could have individuals submit separate guesses or have individuals come to a collective decision.
 
 ## GitHub Link 
 https://github.com/Watts-Lab/task-mapping/blob/master/tasks/Estimating%20pages%20of%20a%20book.md
