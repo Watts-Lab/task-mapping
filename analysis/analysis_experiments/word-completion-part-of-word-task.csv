@@ -1,0 +1,73 @@
+question,value
+task,Word completion given part of word
+instructions_understand,Strongly disagree
+instructions_execute,Strongly disagree
+instructions_replicate,Strongly disagree
+goal_maximize,Strongly agree
+goal_standard,NA
+goal_optimize,Strongly agree
+goal_full,Neither agree nor disagree
+goal_partial,Neither agree nor disagree
+measure_easy,Strongly agree
+measure_immediate,Strongly agree
+outcome_certain,Strongly agree
+outcome_probablistic,Strongly disagree
+outcome_evident,Somewhat agree
+solution_valid,Neither agree nor disagree
+solution_optimal,Somewhat agree
+solution_count,I don't know
+solution_range,At least 36! Depending on if there is more than one answer per word
+solution_singularity,Neither agree nor disagree
+solution_path,Strongly agree
+solution_objectivity,Strongly agree
+solution_verifiability,Strongly agree
+solution_demonstrability,Strongly disagree
+stakeholder_multiplicity,Strongly disagree
+metric_multiplicity,Strongly disagree
+objective_multiplicity,Strongly disagree
+solution_multiplicity,Strongly agree
+individual_theoretical,Strongly disagree
+individual_practical,Strongly agree
+group_dependencies,Strongly disagree
+participation_equal,Somewhat disagree
+conflict_cooperation,Strongly disagree
+conflict_interests,Strongly disagree
+external_adversary,Strongly disagree
+external_standard,Strongly agree
+task_divisibility,Strongly agree
+task_specialization,Strongly disagree
+skills_specialization,Strongly disagree
+subtasks_additive,Strongly agree
+subtasks_disjunctive,Strongly agree
+performance_all,"c(""Best performing member"", ""Cumulative performance"")"
+performance_worst,Strongly disagree
+performance_best,Strongly agree
+performance_random,Strongly disagree
+performance_average,Strongly disagree
+performance_cumulative,Strongly agree
+submission_together,Strongly agree
+submission_separate,Strongly disagree
+subtasks_discretionary_weight,Strongly agree
+subtasks_discretionary_combination,Strongly agree
+complexity_easier,"fewer words, that are shorter, in more time with fewer missing letters"
+complexity_harder,"more longer words, with more missing letters, and less time"
+familiarity_population,Neither agree nor disagree
+familiarity_individual,Neither agree nor disagree
+intrinsic_overall,Somewhat agree
+intrinsic_mastery,Strongly agree
+intrinsic_connectedness,Somewhat agree
+intrinsic_autonomy,Strongly agree
+effort_mental,Strongly agree
+effort_physical,Strongly disagree
+generate_plan,Strongly disagree
+generate_process,Strongly disagree
+generate_ideas,Strongly agree
+generate_creativity,Strongly disagree
+resolve_opinion,Somewhat agree
+resolve_perspectives,Strongly disagree
+resolve_information,Strongly disagree
+resolve_data,Strongly disagree
+options_evaluating,Strongly agree
+options_independent,Strongly agree
+options_dependent,Strongly disagree
+metric_multiplicity_tradeoff,Strongly disagree

@@ -46,6 +46,11 @@ task_names <- agreed_responses$task
 # outcome_certain + outcome_probablistic == 6, because these are also opposites
 # individual_theoretical + individual_practical == 6, because these are also opposites
 # submission_together + submission_separate == 6, because these are also opposites
+# effort_physical + effort_mental == 6
+
+
+# TODO - add effort_physical and effort_mental
+# and see the *distribution* of sums
 
 numerical_completed_tasks <- cbind(task_names, numerical_responses_matrix)
 
@@ -58,7 +63,8 @@ filter_for_agreement <- function(data_table){
   filter(options_independent+options_dependent == TOTAL_SCORE) %>%
   filter(outcome_certain+outcome_probablistic == TOTAL_SCORE) %>%
   filter(individual_theoretical+individual_practical == TOTAL_SCORE) %>%
-  filter(submission_together + submission_separate == TOTAL_SCORE)
+  filter(submission_together + submission_separate == TOTAL_SCORE)%>%
+  filter(effort_physical+effort_mental == TOTAL_SCORE)
   
   return(data_table)
 }
@@ -140,6 +146,25 @@ individual_disagreement<- numerical_completed_tasks %>%
   ) %>%
   select(c(task, raters, question1, answer1, question2, answer2))
 
+effort_disagreement<- numerical_completed_tasks %>%
+  filter(effort_physical+effort_mental != TOTAL_SCORE)%>%
+  select(c(task_names, effort_physical, effort_mental)) %>%
+  pivot_longer(c(effort_physical, effort_mental), names_to = "question_name") %>%
+  rename(task = task_names) %>%
+  left_join((clean_responses %>% filter(stage == "agreement")), by = "task") %>%
+  select(c(task, user, question_name, value)) %>%
+   pivot_wider(names_from = "question_name") %>%
+  mutate(
+    question1 = "effort_physical",
+    question2 = "effort_mental"
+  ) %>%
+  rename(
+    answer1 = effort_physical,
+    answer2 = effort_mental,
+    raters = user
+  ) %>%
+  select(c(task, raters, question1, answer1, question2, answer2))
+
 submission_disagreement<- numerical_completed_tasks %>%
   filter(submission_together+submission_separate != TOTAL_SCORE)%>%
   select(c(task_names, submission_together, submission_separate)) %>%
@@ -162,12 +187,59 @@ submission_disagreement<- numerical_completed_tasks %>%
 
 ## consolidate into single csv
 inconsistent_questions <- goal_disagreement %>% rbind(options_disagreement) %>%
-  rbind(outcome_disagreement) %>% rbind(individual_disagreement) %>% rbind(submission_disagreement)
+  rbind(outcome_disagreement) %>% rbind(individual_disagreement) %>% 
+  rbind(submission_disagreement) %>% rbind(effort_disagreement)
+  
 
 write.csv(inconsistent_questions,"./analysis_experiments/task_mapping_issues.csv")
+
+inconsistent_questions %>% select(task) %>% unique()
 ```
 
 ## Save the agreed ones
 ```{r}
 numerical_completed_and_agreed <- filter_for_agreement(numerical_completed_tasks)
 ```
+
+## Get some distributions of these sums
+```{r}
+numerical_tasks_with_sums <- numerical_completed_tasks %>%
+  mutate(
+    options_sum = options_independent+options_dependent,
+    outcome_sum = outcome_certain+outcome_probablistic,
+    individual_sum = individual_theoretical+individual_practical,
+    submission_sum = submission_together + submission_separate,
+    effort_sum = effort_physical+effort_mental
+  )
+
+ggplot(numerical_tasks_with_sums, aes(
+  x = options_sum
+)) +
+  geom_histogram(bins=7)+
+  xlab("options_independent+options_dependent")
+
+ggplot(numerical_tasks_with_sums, aes(
+  x = submission_sum
+)) +
+  geom_histogram(bins=7)+
+  xlab("submission_together + submission_separate")
+
+ggplot(numerical_tasks_with_sums, aes(
+  x = individual_sum
+)) +
+  geom_histogram(bins=7)+
+  xlab("individual_theoretical+individual_practical")
+
+ggplot(numerical_tasks_with_sums, aes(
+  x = outcome_sum
+)) +
+  geom_histogram(bins=7)+
+  xlab("outcome_certain+outcome_probablistic")
+
+ggplot(numerical_tasks_with_sums, aes(
+  x = effort_sum
+)) +
+  geom_histogram(bins=7)+
+  xlab("effort_physical+effort_mental")
+```
+

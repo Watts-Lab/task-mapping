@@ -1,0 +1,73 @@
+question,value
+task,Radio assembly task
+instructions_understand,Strongly disagree
+instructions_execute,Strongly disagree
+instructions_replicate,Strongly disagree
+goal_maximize,Strongly disagree
+goal_standard,Strongly disagree
+goal_optimize,Strongly agree
+goal_full,Strongly disagree
+goal_partial,Strongly agree
+measure_easy,Strongly agree
+measure_immediate,Strongly agree
+outcome_certain,Strongly agree
+outcome_probablistic,Strongly disagree
+outcome_evident,Strongly agree
+solution_valid,Strongly agree
+solution_optimal,Strongly agree
+solution_count,More than 20
+solution_range,More than 20
+solution_singularity,Strongly disagree
+solution_path,Strongly agree
+solution_objectivity,Strongly agree
+solution_verifiability,Strongly agree
+solution_demonstrability,Strongly agree
+stakeholder_multiplicity,Strongly disagree
+metric_multiplicity,Strongly agree
+objective_multiplicity,Strongly agree
+solution_multiplicity,Strongly disagree
+individual_theoretical,Strongly disagree
+individual_practical,Strongly agree
+group_dependencies,Somewhat disagree
+participation_equal,Strongly agree
+conflict_cooperation,Strongly disagree
+conflict_interests,Strongly disagree
+external_adversary,Strongly disagree
+external_standard,Strongly agree
+task_divisibility,Strongly disagree
+task_specialization,Strongly disagree
+skills_specialization,Strongly agree
+subtasks_additive,Strongly disagree
+subtasks_disjunctive,Somewhat agree
+performance_all,"c(""Best performing member"", ""Cumulative performance"")"
+performance_worst,Strongly disagree
+performance_best,Strongly agree
+performance_random,Strongly disagree
+performance_average,Strongly disagree
+performance_cumulative,Strongly agree
+submission_together,Strongly agree
+submission_separate,Strongly disagree
+subtasks_discretionary_weight,Strongly agree
+subtasks_discretionary_combination,Strongly agree
+complexity_easier,Decrease the complexity of the radio
+complexity_harder,Increase the complexity of the radio
+familiarity_population,Somewhat disagree
+familiarity_individual,Somewhat agree
+intrinsic_overall,Strongly agree
+intrinsic_mastery,Somewhat agree
+intrinsic_connectedness,Strongly agree
+intrinsic_autonomy,Strongly agree
+effort_mental,Strongly disagree
+effort_physical,Strongly disagree
+generate_plan,Strongly disagree
+generate_process,Strongly disagree
+generate_ideas,Strongly disagree
+generate_creativity,Strongly agree
+resolve_opinion,Strongly disagree
+resolve_perspectives,Somewhat agree
+resolve_information,Strongly disagree
+resolve_data,Strongly disagree
+options_evaluating,Somewhat agree
+options_independent,Strongly disagree
+options_dependent,Somewhat agree
+metric_multiplicity_tradeoff,Strongly agree

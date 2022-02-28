@@ -1,0 +1,113 @@
+task,user,physical_mental_err,generate_plan_err,generate_ideas_err,solution_objectivity_err,resolve_opinion_err,conflict_interests_err,total_err
+Euclidean traveling salesperson,Katelyn  | Sarika,0,4,4,4,0,4,16
+Allocating resources to programs,Sarika | Katelyn,0,4,4,0,0,4,12
+Manipulation (change object to goal state),Andrew | Katelyn,4,0,4,4,0,0,12
+Shopping plan,Katelyn | Sarika,0,4,4,4,0,0,12
+Wildcat Wells,Sarika | Karan,0,0,4,0,4,4,12
+Radio assembly task,Dodge | Karan,4,0,4,0,3,0,11
+Architectural design task,bvikram03 | Karan,0,0,4,0,4,0,8
+Battle of the sexes,Dodge | Karan,0,0,0,4,0,4,8
+Best job candidate (hidden-profile),Sarika | katelynnbottcher,0,4,0,0,0,4,8
+Estimating pages of a book,Sarika | Karan,0,0,4,0,4,0,8
+Husbands and wives transfer,Sarika | Katelyn,0,0,4,0,4,0,8
+Image rating,Sarika | Karan,0,0,4,0,4,0,8
+Investment game (hidden-profile),Sarika | Katelyn,0,4,0,0,0,4,8
+Recall images,Sarika | katelynnbottcher,0,0,0,0,4,4,8
+Search for Oil Task,Sarika | katelynnbottcher,0,4,0,1,1,2,8
+Ultimatum game (various versions),Sarika | Andrew,0,4,0,0,0,4,8
+Word completion given starting letter,Sarika | katelynnbottcher,0,0,4,4,0,0,8
+9 Dot Problem,Karan | Sarika,0,0,4,0,3,0,7
+Graph coloring task,Sarika | Andrew,0,0,4,0,3,0,7
+Intergroup Prisoner's Dilemma-Maximizing Difference,Katelyn | Dodge,0,0,0,0,3,4,7
+letters-to-numbers problems (cryptography),Sarika | Karan,0,0,4,0,3,0,7
+To evacuate or not to evacuate,Sarika | katelynnbottcher,0,4,0,0,3,0,7
+Word completion given part of word,benjamin-manning | Sarika,0,0,4,0,3,0,7
+Dictator game and its variants,Dodge | Sarika,0,0,0,4,0,2,6
+Moral Reasoning (Disciplinary Action Case),benjamin-manning | Sarika,0,4,0,0,0,2,6
+Organization Game,Dodge | Karan,0,0,3,0,3,0,6
+"Wolf, goat and cabbage transfer",benjamin-manning | Sarika,0,4,0,0,2,0,6
+Iterated Snowdrift Game (aka Hawk-Dove game),Katelyn | Sarika,0,0,0,0,0,5,5
+Summarize Discussion,Sarika | Katelyn,0,1,4,0,0,0,5
+TOPSIM - general mgmt business game,Dodge | Sarika,0,4,0,0,0,1,5
+Abstract grid task,Sarika | katelynnbottcher,0,0,4,0,0,0,4
+Biopharm Seltek,Karan | Sarika,0,0,0,0,0,4,4
+Categorization problem,Katelyn | Sarika,0,0,4,0,0,0,4
+Crisis mapping,Sarika | Karan,0,0,4,0,0,0,4
+Desert survival,Karan | Sarika,0,0,4,0,0,0,4
+Find the maximum,Karan | Sarika,0,0,0,0,4,0,4
+Game of Clue - Terrorist Attack,Sarika | Katelyn,0,4,0,0,0,0,4
+Guessing numbers,Sarika | katelynnbottcher,0,0,0,0,0,4,4
+Intergroup Prisoner's Dilemma,Sarika | Katelyn,0,4,0,0,0,0,4
+Mastermind,Katelyn | Dodge,0,0,0,0,0,4,4
+Mastermind,Katelyn | Dodge,0,0,0,0,0,4,4
+Mock jury,Sarika | Dodge,0,1,0,0,0,3,4
+New Recruit,Karan | Sarika,0,0,0,0,0,4,4
+Oligopoly game,Sarika | Katelyn,0,4,0,0,0,0,4
+Prisoner's Dilemma (various versions),Dodge | joycewang3,0,0,0,0,0,4,4
+Putting food into categories,Katelyn | Sakra,0,0,0,4,0,0,4
+Railroad Route Construction game,Katelyn | Sarika,0,0,4,0,0,0,4
+Random dot motion,bvikram03 | Karan,0,0,0,0,1,3,4
+"Rank cities by population, rank words by familiarity",Andrew | Katelyn,0,0,0,0,4,0,4
+Ravens Matrices,Sarika | Katelyn,0,0,4,0,0,0,4
+Reading the mind in the eyes,Sarika | Dodge,0,0,4,0,0,0,4
+Recall word lists,Sarika | Karan,0,0,4,0,0,0,4
+Room assignment task,Katelyn | Sarika,0,4,0,0,0,0,4
+Run a mini business,Andrew | Katelyn,0,0,4,0,0,0,4
+Sequential dyadic die-rolling,Sarika | Karan,0,0,0,0,0,4,4
+Sudoku,Andrew | Sarika,0,0,4,0,0,0,4
+Trivia Multiple Choice Quiz,Katelyn | Sarika,0,4,0,0,0,0,4
+Visual Oddball Target,Katelyn | Arina,0,0,0,1,0,3,4
+Whac-A-Mole,Katelyn | Sarika,4,0,0,0,0,0,4
+Writing story,Sarika | Karan,0,0,4,0,0,0,4
+Divergent Association Task,Dodge | Sarika,0,0,0,3,0,0,3
+Hidden figures in a picture,Katelyn | Sarika,0,0,0,0,3,0,3
+Judgment of product and slogan,Dodge | Sarika,0,0,0,0,3,0,3
+Minimum-effort tacit coordination game,Sarika | bvikram03,1,0,0,0,0,2,3
+pharmaceutical company (hidden-profile),Sarika | Karan,0,0,0,0,0,3,3
+Splitting a deck of cards,Dodge | Sarika,0,0,3,0,0,0,3
+The maximum of a function,Sarika | katelynnbottcher,0,0,0,0,3,0,3
+Bullard Houses,Dodge | Sarika,0,0,0,0,0,2,2
+Viking,Sarika | Karan,0,0,0,0,0,2,2
+Volunteer Investment Game,Sarika | Andrew,0,0,0,0,0,2,2
+Carter Racing,Dodge | Sarika,0,1,0,0,0,0,1
+Public goods game,Sarika | Dodge,0,0,0,1,0,0,1
+Recall stories,Sarika | joycewang3,0,0,0,0,1,0,1
+Recall videos,Sarika | katelynnbottcher,0,0,0,0,1,0,1
+Space Fortress,Dodge | Sarika,1,0,0,0,0,0,1
+"Strike Group Defender (developed by Metateq, Inc.)",Sarika | Karan,0,0,0,0,1,0,1
+Target Search,Sarika | katelynnbottcher,0,0,0,0,1,0,1
+The beer game,Sarika | DodgeHill,0,0,0,0,0,1,1
+5 squares problem,Dodge | joycewang3,0,0,0,0,0,0,0
+Advertisement writing,Sarika | Katelyn,0,0,0,0,0,0,0
+Aerospace Investment (Role-playing),Sarika | Andrew,0,0,0,0,0,0,0
+Arithmetic problem 1,Katelyn | Dodge,0,0,0,0,0,0,0
+Arithmetic problem 10,Katelyn | Dodge,0,0,0,0,0,0,0
+Arithmetic problem 11,Katelyn | Dodge,0,0,0,0,0,0,0
+Arithmetic problem 2,Katelyn | Dodge,0,0,0,0,0,0,0
+Arithmetic problem 3,Katelyn | Dodge,0,0,0,0,0,0,0
+Arithmetic problem 4,Katelyn | Dodge,0,0,0,0,0,0,0
+Arithmetic problem 5,Katelyn | Dodge,0,0,0,0,0,0,0
+Arithmetic problem 6,Katelyn | Dodge,0,0,0,0,0,0,0
+Arithmetic problem 7,Katelyn | Dodge,0,0,0,0,0,0,0
+Arithmetic problem 8,Katelyn | Dodge,0,0,0,0,0,0,0
+Arithmetic problem 9,Katelyn | Dodge,0,0,0,0,0,0,0
+Blocks World for Teams,Sarika | Katelyn,0,0,0,0,0,0,0
+Checkers,Sarika | bvikram03,0,0,0,0,0,0,0
+Cheering and Clapping,Dodge | joycewang3,0,0,0,0,0,0,0
+Chicken,Sarika | Andrew,0,0,0,0,0,0,0
+Energetics Meets Generex,Sarika | Karan,0,0,0,0,0,0,0
+Estimating geological metrics,Sarika | Katelyn,0,0,0,0,0,0,0
+Estimating social quantity,bvikram03 | Karan,0,0,0,0,0,0,0
+"Forecasting and Estimation in Groups, with Confidence",Sarika | Andrew,0,0,0,0,0,0,0
+Iterative lemonade stand task,Katelyn | Dodge,0,0,0,0,0,0,0
+Logic Problem,Katelyn | Sarika,0,0,0,0,0,0,0
+Logic Problem,Katelyn | Sarika,0,0,0,0,0,0,0
+Logic Problem,Katelyn | Sarika,0,0,0,0,0,0,0
+Minimal Group Paradigm (study diversity),Sarika | Karan,0,0,0,0,0,0,0
+NASA Moon survival,Katelyn | Dodge,0,0,0,0,0,0,0
+Recall association,Katelyn | Sarika,0,0,0,0,0,0,0
+The Fish game,Sarika | Katelynbottcher,0,0,0,0,0,0,0
+The N light bulbs game,benjamin-manning | Katelyn,0,0,0,0,0,0,0
+Unscramble words (anagrams),Sarika | Karan,0,0,0,0,0,0,0
+Wildcam Gorongosa (Zooniverse),Sarika| Karansampath,0,0,0,0,0,0,0
+Word construction from a subset of letters,Katelyn | Dodge,0,0,0,0,0,0,0

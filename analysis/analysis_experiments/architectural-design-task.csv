@@ -1,0 +1,73 @@
+question,value
+task,Architectural design task
+instructions_understand,Strongly disagree
+instructions_execute,Strongly disagree
+instructions_replicate,Strongly disagree
+goal_maximize,Strongly disagree
+goal_standard,Strongly agree
+goal_optimize,Strongly agree
+goal_full,Strongly disagree
+goal_partial,Strongly agree
+measure_easy,Strongly agree
+measure_immediate,Somewhat agree
+outcome_certain,Somewhat disagree
+outcome_probablistic,Somewhat agree
+outcome_evident,Somewhat disagree
+solution_valid,Strongly agree
+solution_optimal,Somewhat disagree
+solution_count,More than 20
+solution_range,More than 20
+solution_singularity,Strongly disagree
+solution_path,Strongly agree
+solution_objectivity,Strongly agree
+solution_verifiability,Strongly agree
+solution_demonstrability,Strongly disagree
+stakeholder_multiplicity,Somewhat disagree
+metric_multiplicity,Strongly agree
+objective_multiplicity,Strongly agree
+solution_multiplicity,Strongly agree
+individual_theoretical,Strongly disagree
+individual_practical,Strongly agree
+group_dependencies,Strongly agree
+participation_equal,Strongly agree
+conflict_cooperation,Strongly disagree
+conflict_interests,Strongly disagree
+external_adversary,Strongly disagree
+external_standard,Strongly agree
+task_divisibility,Strongly agree
+task_specialization,Strongly agree
+skills_specialization,Strongly agree
+subtasks_additive,Somewhat agree
+subtasks_disjunctive,Somewhat agree
+performance_all,"c(""Best performing member"", ""Cumulative performance"")"
+performance_worst,Strongly disagree
+performance_best,Somewhat agree
+performance_random,Strongly disagree
+performance_average,Strongly disagree
+performance_cumulative,Strongly agree
+submission_together,Strongly agree
+submission_separate,Strongly disagree
+subtasks_discretionary_weight,Strongly agree
+subtasks_discretionary_combination,Strongly agree
+complexity_easier,Remove requirements for structures and make it easier to judge on various metrics
+complexity_harder,The researcher could additional subjective metrics and requirements
+familiarity_population,Somewhat disagree
+familiarity_individual,Strongly disagree
+intrinsic_overall,Somewhat agree
+intrinsic_mastery,Somewhat agree
+intrinsic_connectedness,Somewhat agree
+intrinsic_autonomy,Strongly agree
+effort_mental,Strongly agree
+effort_physical,Strongly disagree
+generate_plan,Strongly disagree
+generate_process,Strongly disagree
+generate_ideas,Strongly disagree
+generate_creativity,Strongly agree
+resolve_opinion,Strongly agree
+resolve_perspectives,Strongly disagree
+resolve_information,Strongly disagree
+resolve_data,Strongly disagree
+options_evaluating,Strongly agree
+options_independent,Strongly disagree
+options_dependent,Strongly agree
+metric_multiplicity_tradeoff,Strongly agree

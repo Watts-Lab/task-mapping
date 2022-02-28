@@ -22,73 +22,75 @@
 "21","Energetics Meets Generex",0,0,0,0,1,1,0,0
 "22","Estimating geological metrics",0,0,1,0,0,0,0,0
 "23","Estimating pages of a book",0,1,1,0,0,0,0,0
-"24","Euclidean traveling salesperson",0,0,0,1,0,0,1,0
-"25","Find the maximum",0,0,1,0,0,0,0,0
-"26","Forecasting and Estimation in Groups, with Confidence",0,0,1,0,0,0,0,0
-"27","Game of Clue - Terrorist Attack",1,0,1,0,0,0,0,0
-"28","Graph coloring task",0,1,1,0,0,0,0,0
-"29","Guessing numbers",0,0,0,0,0,0,1,0
-"30","Hidden figures in a picture",0,0,1,0,0,0,0,0
-"31","Husbands and wives transfer",0,1,1,0,0,0,0,0
-"32","Image rating",0,1,1,0,0,0,0,0
-"33","Intergroup Prisoner's Dilemma",0,0,0,0,0,1,0,0
-"34","Intergroup Prisoner's Dilemma-Maximizing Difference",0,0,0,1,1,0,1,0
-"35","Investment game (hidden-profile)",1,0,1,0,0,0,0,0
-"36","Iterated Snowdrift Game (aka Hawk-Dove game)",0,0,1,0,0,0,0,0
-"37","Iterative lemonade stand task",0,0,1,0,0,0,0,0
-"38","Judgment of product and slogan",0,0,1,0,0,0,0,0
-"39","letters-to-numbers problems (cryptography)",0,1,1,0,0,0,0,0
-"40","Logic Problem",0,0,1,0,0,0,0,0
-"41","Manipulation (change object to goal state)",0,1,1,0,0,0,0,1
-"42","Mastermind",0,0,0,0,1,0,0,0
-"43","Minimal Group Paradigm (study diversity)",0,0,0,0,1,1,0,0
-"44","Minimum-effort tacit coordination game",0,0,0,0,0,0,0,0
-"45","Mock jury",0,0,1,0,0,0,0,0
-"46","Moral Reasoning (Disciplinary Action Case)",1,0,1,0,0,0,0,0
-"47","New Recruit",1,0,0,0,0,0,0,0
-"48","Oligopoly game",0,0,0,0,0,1,0,0
-"49","Organization Game",0,1,1,0,0,0,0,0
-"50","pharmaceutical company (hidden-profile)",1,0,1,0,0,0,0,0
-"51","Public goods game",0,0,1,0,0,0,0,0
-"52","Putting food into categories",0,1,1,0,0,0,0,0
-"53","Radio assembly task",0,1,1,0,0,0,0,1
-"54","Railroad Route Construction game",0,1,1,0,0,0,0,0
-"55","Random dot motion",0,0,0,0,1,0,0,0
-"56","Rank cities by population, rank words by familiarity",0,0,1,0,0,0,0,0
-"57","Ravens Matrices",0,1,1,0,0,0,0,0
-"58","Reading the mind in the eyes",0,1,1,0,0,0,0,0
-"59","Recall association",0,0,1,0,0,0,0,0
-"60","Recall images",0,0,1,0,0,0,0,0
-"61","Recall stories",0,0,1,0,0,0,0,0
-"62","Recall videos",0,0,1,0,0,0,0,0
-"63","Recall word lists",0,1,1,0,0,0,0,0
-"64","Room assignment task",1,0,1,0,0,0,0,0
-"65","Run a mini business",0,1,1,0,0,0,0,0
-"66","Search for Oil Task",0,0,0,0,1,0,0,0
-"67","Sequential dyadic die-rolling",0,0,0,0,0,0,0,0
-"68","Shopping plan",1,1,1,0,0,0,0,0
-"69","Space Fortress",0,0,1,0,0,0,0,0
-"70","Splitting a deck of cards",0,1,1,0,0,0,0,0
-"71","Strike Group Defender (developed by Metateq, Inc.)",0,0,1,0,0,0,0,0
-"72","Sudoku",0,1,1,0,0,0,0,0
-"73","Summarize Discussion",1,1,0,0,0,0,0,0
-"74","Target Search",0,0,1,0,0,0,0,0
-"75","The beer game",0,0,1,0,0,0,0,0
-"76","The Fish game",0,0,1,0,0,0,0,0
-"77","The maximum of a function",0,0,1,0,0,0,0,0
-"78","The N light bulbs game",0,0,1,0,0,0,0,0
-"79","To evacuate or not to evacuate",1,0,1,0,0,0,0,0
-"80","TOPSIM - general mgmt business game",1,0,1,0,0,0,0,0
-"81","Trivia Multiple Choice Quiz",0,0,0,1,1,1,0,0
-"82","Ultimatum game (various versions)",1,0,0,0,0,0,0,0
-"83","Unscramble words (anagrams)",0,1,1,0,0,0,0,0
-"84","Viking",0,0,0,0,0,0,0,0
-"85","Volunteer Investment Game",0,0,0,0,0,0,0,0
-"86","Whac-A-Mole",0,0,1,0,0,0,0,1
-"87","Wildcam Gorongosa (Zooniverse)",0,1,1,0,0,0,0,0
-"88","Wildcat Wells",0,0,0,0,1,0,0,0
-"89","Wolf, goat and cabbage transfer",1,0,1,0,0,0,0,0
-"90","Word completion given part of word",0,1,1,0,0,0,0,0
-"91","Word completion given starting letter",0,1,1,0,0,0,0,0
-"92","Word construction from a subset of letters",0,1,1,0,0,0,0,0
-"93","Writing story",0,1,1,0,0,0,0,0
+"24","Estimating social quantity",0,0,1,0,0,0,0,0
+"25","Euclidean traveling salesperson",0,0,0,1,0,0,1,0
+"26","Find the maximum",0,0,1,0,0,0,0,0
+"27","Forecasting and Estimation in Groups, with Confidence",0,0,1,0,0,0,0,0
+"28","Game of Clue - Terrorist Attack",1,0,1,0,0,0,0,0
+"29","Graph coloring task",0,1,1,0,0,0,0,0
+"30","Guessing numbers",0,0,0,0,0,0,1,0
+"31","Hidden figures in a picture",0,0,1,0,0,0,0,0
+"32","Husbands and wives transfer",0,1,1,0,0,0,0,0
+"33","Image rating",0,1,1,0,0,0,0,0
+"34","Intergroup Prisoner's Dilemma",0,0,0,0,0,1,0,0
+"35","Intergroup Prisoner's Dilemma-Maximizing Difference",0,0,0,1,1,0,1,0
+"36","Investment game (hidden-profile)",1,0,1,0,0,0,0,0
+"37","Iterated Snowdrift Game (aka Hawk-Dove game)",0,0,1,0,0,0,0,0
+"38","Iterative lemonade stand task",0,0,1,0,0,0,0,0
+"39","Judgment of product and slogan",0,0,1,0,0,0,0,0
+"40","letters-to-numbers problems (cryptography)",0,1,1,0,0,0,0,0
+"41","Logic Problem",0,0,1,0,0,0,0,0
+"42","Manipulation (change object to goal state)",0,1,1,0,0,0,0,1
+"43","Mastermind",0,0,0,0,1,0,0,0
+"44","Minimal Group Paradigm (study diversity)",0,0,0,0,1,1,0,0
+"45","Minimum-effort tacit coordination game",0,0,0,0,0,0,0,0
+"46","Mock jury",0,0,1,0,0,0,0,0
+"47","Moral Reasoning (Disciplinary Action Case)",1,0,1,0,0,0,0,0
+"48","NASA Moon survival",0,0,1,0,0,0,0,0
+"49","New Recruit",1,0,0,0,0,0,0,0
+"50","Oligopoly game",0,0,0,0,0,1,0,0
+"51","Organization Game",0,1,1,0,0,0,0,0
+"52","pharmaceutical company (hidden-profile)",1,0,1,0,0,0,0,0
+"53","Public goods game",0,0,1,0,0,0,0,0
+"54","Putting food into categories",0,1,1,0,0,0,0,0
+"55","Radio assembly task",0,1,1,0,0,0,0,1
+"56","Railroad Route Construction game",0,1,1,0,0,0,0,0
+"57","Random dot motion",0,0,0,0,1,0,0,0
+"58","Rank cities by population, rank words by familiarity",0,0,1,0,0,0,0,0
+"59","Ravens Matrices",0,1,1,0,0,0,0,0
+"60","Reading the mind in the eyes",0,1,1,0,0,0,0,0
+"61","Recall association",0,0,1,0,0,0,0,0
+"62","Recall images",0,0,1,0,0,0,0,0
+"63","Recall stories",0,0,1,0,0,0,0,0
+"64","Recall videos",0,0,1,0,0,0,0,0
+"65","Recall word lists",0,1,1,0,0,0,0,0
+"66","Room assignment task",1,0,1,0,0,0,0,0
+"67","Run a mini business",0,1,1,0,0,0,0,0
+"68","Search for Oil Task",0,0,0,0,1,0,0,0
+"69","Sequential dyadic die-rolling",0,0,0,0,0,0,0,0
+"70","Shopping plan",1,1,1,0,0,0,0,0
+"71","Space Fortress",0,0,1,0,0,0,0,0
+"72","Splitting a deck of cards",0,1,1,0,0,0,0,0
+"73","Strike Group Defender (developed by Metateq, Inc.)",0,0,1,0,0,0,0,0
+"74","Sudoku",0,1,1,0,0,0,0,0
+"75","Summarize Discussion",1,1,0,0,0,0,0,0
+"76","Target Search",0,0,1,0,0,0,0,0
+"77","The beer game",0,0,1,0,0,0,0,0
+"78","The Fish game",0,0,1,0,0,0,0,0
+"79","The maximum of a function",0,0,1,0,0,0,0,0
+"80","The N light bulbs game",0,0,1,0,0,0,0,0
+"81","To evacuate or not to evacuate",1,0,1,0,0,0,0,0
+"82","TOPSIM - general mgmt business game",1,0,1,0,0,0,0,0
+"83","Trivia Multiple Choice Quiz",0,0,0,1,1,1,0,0
+"84","Ultimatum game (various versions)",1,0,0,0,0,0,0,0
+"85","Unscramble words (anagrams)",0,1,1,0,0,0,0,0
+"86","Viking",0,0,0,0,0,0,0,0
+"87","Volunteer Investment Game",0,0,0,0,0,0,0,0
+"88","Whac-A-Mole",0,0,1,0,0,0,0,1
+"89","Wildcam Gorongosa (Zooniverse)",0,1,1,0,0,0,0,0
+"90","Wildcat Wells",0,0,0,0,1,0,0,0
+"91","Wolf, goat and cabbage transfer",1,0,1,0,0,0,0,0
+"92","Word completion given part of word",0,1,1,0,0,0,0,0
+"93","Word completion given starting letter",0,1,1,0,0,0,0,0
+"94","Word construction from a subset of letters",0,1,1,0,0,0,0,0
+"95","Writing story",0,1,1,0,0,0,0,0

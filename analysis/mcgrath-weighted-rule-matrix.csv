@@ -1,0 +1,9 @@
+﻿,generate_plan_process,generate_ideas,correct_answer,conflict_cognitive,conflict_mixed_motive,external_adversary,external_standard,effort_mental_physical
+Type 1,1,0,0,0,-1,0,0,0
+Type 2,0,1,0,0,-1,0,0,1
+Type 3,0,0,1,0,0,0,0,1
+Type 4,0,0,-1,0,1,0,0,1
+Type 5,0,0,0,1,1,0,0,1
+Type 6,0,0,0,0,1,0,0,0
+Type 7,0,0,0,0,1,1,0,-1
+Type 8,-1,0,0,0,0,-1,1,-1
