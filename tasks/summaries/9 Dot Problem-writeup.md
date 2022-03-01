@@ -15,7 +15,7 @@ The following details are not the main parts of the task, but rather additional 
 Analytical thinking, geometric reasoning
 
 ### UI-UX Allowed Processes
-Clicking and dragging the interface to "draw" lines on the screen
+Shared view of dot problem where people can see others moving/playing with lines on the grid, interface to click and drag to "draw" lines on the screen, chat box to allow for communication, error message when grid is not solved for
 
 ### Other Allowed Processes
 NA
