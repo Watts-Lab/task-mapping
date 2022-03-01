@@ -4,9 +4,10 @@ Mapped by: paniukhina
 
 ## 1. Stimulus Complex 
 Partipants are given a list of several complex social projects, along with details of those projects. The following are examples of proposed projects:
-1. To purchase a new computer system for the county government in order to hold local taxes constant.
-2. To establish a community arts program featuring art, music, and dance programs for children and adults.
-3. To establish an additional shelter for the homeless in the community.
+ 
+ (1.) To purchase a new computer system for the county government in order to hold local taxes constant.
+ (2.) To establish a community arts program featuring art, music, and dance programs for children and adults.
+ (3.) To establish an additional shelter for the homeless in the community.
 
 ## 2. Goal Directives 
 The goal is to decide how to allocate $500,000 between these competing projects.
