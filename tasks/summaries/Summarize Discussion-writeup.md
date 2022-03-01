@@ -15,7 +15,7 @@ The following details are not the main parts of the task, but rather additional 
 critical thinking, creative thinking, listening skills, reasoning skills, comprehension skills (ability to summarize key points)
 
 ### UI-UX Allowed Processes
-A group chat interface for discussion and a text box for submitting responses to the statement. In some versions of the experiment, participants could jointly edit their response (just like in a Google Doc). Alternatively, each person could subit a separate writeup. Another option is video chat.
+A group chat interface for discussion and a text box for submitting responses to the statement. In some versions of the experiment, participants could jointly edit their response (just like in a Google Doc). Alternatively, each person could subit a separate writeup. (Optional) Video chat.
 
 ### Other Allowed Processes
 The amount of time given for discussion could change.
