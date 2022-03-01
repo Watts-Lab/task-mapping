@@ -15,7 +15,7 @@ The following details are not the main parts of the task, but rather additional 
 creative thinking, strong vocabulary, focus
 
 ### UI-UX Allowed Processes
-Typing interface for entering the words
+Typing interface for entering the words (which could be a shared screen among all group members or a private screen per individual), communication via chat about viable words, deleting words, editing the list of words generated, and (optional) viewing current score 
 
 ### Other Allowed Processes
 NA
