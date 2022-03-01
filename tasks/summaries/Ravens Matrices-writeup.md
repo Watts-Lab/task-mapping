@@ -15,7 +15,7 @@ The following details are not the main parts of the task, but rather additional 
 Pattern recognition, Visual reasoning, and Spatial reasoning
 
 ### UI-UX Allowed Processes
-Pattern recognition, Visual reasoning, and Spatial reasoning
+Clicking and dragging the puzzle piece, Clicking the correct answer, (Varied) Either looking at the problems one at a time or separately, (Varied) Either having group members look at different questions, or having everyone in a group solve the same questions
 
 ### Other Allowed Processes
 The level of difficulty for the items can be manipulated.
