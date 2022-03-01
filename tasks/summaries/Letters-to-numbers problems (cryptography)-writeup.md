@@ -17,7 +17,7 @@ The following details are not the main parts of the task, but rather additional 
 Math, logical reasoning
 
 ### UI-UX Allowed Processes
-The ability to ask for solutions to some of the equations, then enter guesses
+Communicate with every group member via chat, type in equations, receive feedback on the screen (e.g., get the solutions to the equations), and submit the full correct coding.
 
 ### Other Allowed Processes
 In one version of this task, individuals could guess alone; alternatively, they could discuss their answers (via chat) with other teammates and be required to submit a single guess.
