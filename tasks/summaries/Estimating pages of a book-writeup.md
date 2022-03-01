@@ -15,7 +15,7 @@ The following details are not the main parts of the task, but rather additional 
 Judgment
 
 ### UI-UX Allowed Processes
-The ability to submit answers and/or discuss via chat
+See multiple images of book edges, type/fill in the number of pages, discuss via chat
 
 ### Other Allowed Processes
 Variants of this task could have individuals submit separate guesses or have individuals come to a collective decision.
