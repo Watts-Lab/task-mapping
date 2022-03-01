@@ -15,7 +15,7 @@ The following details are not the main parts of the task, but rather additional 
 Decision-making, basic math calculation (on probabilities and costs)
 
 ### UI-UX Allowed Processes
-Participants can use the interface to peruse the information, submit their decision, and chat.
+Participants can use the interface to peruse the information given, chat, and submit their decision (whether to stay or evacuate).
 
 ### Other Allowed Processes
 NA
