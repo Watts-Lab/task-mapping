@@ -15,7 +15,7 @@ The following details are not the main parts of the task, but rather additional 
 none (memory)
 
 ### UI-UX Allowed Processes
-none (memory)
+watching videos, seeing the question sets, click on the answer choices
 
 ### Other Allowed Processes
 N/A
