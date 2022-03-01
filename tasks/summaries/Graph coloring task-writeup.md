@@ -19,7 +19,7 @@ The following details are not the main parts of the task, but rather additional 
 coordination (without communication), understanding of the chromatic number of a network
 
 ### UI-UX Allowed Processes
-Participants should be able to click on the nodes in the graph to assign them a color.
+Participants should be able to see the networks, see the real-time coloring progress, see the colors given and choose the color, and color the assigned vertex (by clicking on the nodes in the graph to assign them a color).
 
 ### Other Allowed Processes
 Subjects could update their colors at any time from a menu that included the fixed minimum of colors needed to solve the problem and were given different neighbor views from low view (solely subject colors and their neighbors colors), medium view (neighbors colors and labeled and number of links are visible) and high information view (entire network colors visible)
