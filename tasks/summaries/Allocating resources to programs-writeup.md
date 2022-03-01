@@ -18,7 +18,7 @@ The following details are not the main parts of the task, but rather additional 
 Communication, analytical thinking, creative thinking, decision making, negotiations
 
 ### UI-UX Allowed Processes
-Participants can discuss in a chat format on the interface, and subsequent use the interface to make their decision. Variants of the interface could have individuals submit their own private proposals, or could force the group to come to consensus and submit a single allocation of funds.
+Participants can discuss the different program options via a chat interface and subsequently use the interface to make their decision. Variants of the interface could have individuals submit their own private proposals, or could force the group to come to consensus and submit a single allocation of funds. 
 
 ### Other Allowed Processes
 NA
