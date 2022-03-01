@@ -15,7 +15,7 @@ The following details are not the main parts of the task, but rather additional 
 none (common senses / experience)
 
 ### UI-UX Allowed Processes
-Entering the ratings via an online interface
+See pictures, click on choices of number 1 to 10
 
 ### Other Allowed Processes
 N/A
