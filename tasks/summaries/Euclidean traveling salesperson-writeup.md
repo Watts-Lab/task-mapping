@@ -15,7 +15,11 @@ The following details are not the main parts of the task, but rather additional 
 Creative thinking, analytical thinking
 
 ### UI-UX Allowed Processes
-Creative thinking, analytical thinking
+Clicking city icons in order select the “path,” with the ability to select the next segment only after the previous segment had been selected,
+Viewing previous solutions to the problem (optional),
+Attempting the same map multiple times (optional),
+Viewing a score of how well they are currently doing (optional),
+Attempting multiple different maps, in sequence.
 
 ### Other Allowed Processes
 In multiplayer mode, there can be multiple ways to implement the experience: it is possible for all players to look at the same map and select paths simultaneously; perhaps the system could then submit the best answer. Alternatively, only one person would be able to select the pathway at a time.
