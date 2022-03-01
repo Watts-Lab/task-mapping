@@ -71,7 +71,7 @@ for(i in 1:nrow(df.survey_results_cleaned)){
   allowed_group_processes <- "## 3. Allowed Group Processes \n" 
   group_proc_info <- "The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.\n\n"
   skills <- paste0("### Skills \n",toString(row$`skills`),"\n\n")
-  uiux <- paste0("### UI-UX Allowed Processes\n",toString(row$`skills`),"\n\n")
+  uiux <- paste0("### UI-UX Allowed Processes\n",toString(row$`ui-ux`),"\n\n")
   other_allowed_proc <- paste0("### Other Allowed Processes\n",toString(row$`allowed-gr-proc`),"\n\n")
   github <- paste0("## GitHub Link \n",toString(row$`GitHub-link`))
 
