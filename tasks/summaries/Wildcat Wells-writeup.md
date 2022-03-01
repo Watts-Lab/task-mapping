@@ -15,7 +15,7 @@ The following details are not the main parts of the task, but rather additional 
 Understanding of the score diagram, prediction based on group performance
 
 ### UI-UX Allowed Processes
-Navigating the virtual map of the oil field, clicking and selecting locations where the participant wants to drill oil.
+Navigating the virtual map of the oil field; selecting and submitting a location on a 100 × 100 grid squares as the next location to “drill”; hovering over one of the drill locations (to see the current score), hovering over a bar in the history (to show the points and the corresponding location on the landscape).
 
 ### Other Allowed Processes
 The total number of points the players have accumulated is always displayed to them. At the end of the rounds, players are shown a summary of the game as well as the total number of points they earned before advancing to the next game.
