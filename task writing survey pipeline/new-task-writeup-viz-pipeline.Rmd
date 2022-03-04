@@ -8,6 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
+library(irr)
 library(stringr)
 library(markdown)
 library(qualtRics)
@@ -138,4 +139,192 @@ for(i in 1:length(df.survey_results$`task-name`)){
 ```{r}
 df.task_map_format %>% write_csv('./html/task-htmls.csv')
 ```
+
+
+# Look at Survey Results
+
+Get a mapping of the task name to the loop numbers
+```{r}
+df.task_name_to_index <- cbind(df.survey_results$`task-name`, rep(1:length(df.survey_results$`task-name`))) %>%
+                                as.data.frame() %>%
+                                rename(
+                                  task_name = V1,
+                                  task_num = V2
+                                ) %>%
+                                mutate(
+                                  task_num = strtoi(task_num)
+                                )
+```
+
+Get survey data
+```{r}
+task_mapping_survey_id <- surveys$id[3]
+
+df.task_map <- fetch_survey(
+  surveyID = task_mapping_survey_id,
+  save_dir = ".",
+  force_request = TRUE
+)
+```
+
+Names of the questions
+```{r}
+# Question names
+main_questions <- c(
+  "Q1concept_behav",
+  "Q2intel_manip",
+  "Q3type_1_planning",
+  "Q4type_2_generate",
+  "Q5creativity_input",
+  "Q6type_5_cc",
+  "Q7type_7_battle",
+  "Q8type_8_performance",
+  "Q9divisible_unitary",
+  "Q10maximizing",
+  "Q11optimizing",
+  "Q13outcome_multip",
+  "Q14sol_scheme_mul",
+  "Q15dec_verifiability",
+  "Q16shared_knowledge",
+  "Q17within_sys_sol",
+  "Q18sol_eureka",
+  "Q19time_solvability",
+  "Q20type_3_type_4",
+  "Q21intellective_judg",
+  "Q22confl_tradeoffs",
+  "Q23ss_out_uncert"
+)
+
+feedback_questions <- c(
+  "Q1concept_beh_feedbk",
+  "Q2intel_manip_fdbk",
+  "Q3type_1_feedback",
+  "Q4type_2_feedbck",
+  "Q5creativity_feedbck",
+  "Q6type_5_feedback",
+  "Q7type_7_feedback",
+  "Q8type_8_feedback",
+  "Q9div_unitary_feedbk",
+  "Q10maximizing_feedbk",
+  "Q11optimizing_feedbk",
+  "Q13out_mult_feedbk",
+  "Q14sol_s_mult_fdbk",
+  "Q15d_verif_feedbk",
+  "Q16shared_kno_feedbk",
+  "Q17within_sys_feedbk",
+  "Q18sol_eureka_feedbk",
+  "Q19time_solv_feedbk",
+  "Q20type_3_4_feedbk",
+  "Q21int_jud_feedbk",
+  "Q22con_trade_feedbk",
+  "Q23ss_outc_u_feedbk"
+)
+
+confidence_questions <- c(
+  "Q1concept_beh_conf",
+  "Q2intel_manip_conf",
+  "Q3type_1_conf",
+  "Q4type_2_conf",
+  "Q5creativity_conf",
+  "Q6_type_5_conf",
+  "Q7type_7_conf",
+  "Q8_type_8_conf",
+  "Q9div_unitary_conf",
+  "Q10maximizing_conf",
+  "Q11optimizing_conf",
+  "Q13out_mult_conf",
+  "Q14sol_s_mult_conf",
+  "Q15d_verif_conf",
+  "Q16shared_kno_conf",
+  "Q17within_sys_conf",
+  "Q18sol_eureka_conf",
+  "Q19time_solv_conf",
+  "Q20type_3_4_conf",
+  "Q21int_jud_conf",
+  "Q22con_trade_conf",
+  "Q23ss_out_u_conf"
+)
+
+# For getting median time
+# %>% 
+#   mutate(
+#     Duration = EndDate-StartDate
+#   ) %>%
+#   summarize(
+#     medianDuration = median(Duration)
+#   )
+#   
+```
+
+Gather all of the raw ratings
+
+```{r}
+df.all_ratings_raw <- df.task_map %>%
+  select(matches('[0-9]')) %>%
+  mutate(across(everything(), as.character)) %>%
+  pivot_longer(
+    cols = everything(),
+    names_sep = 2,
+    names_to = c("task_num", "question_name")
+  ) %>%
+  mutate(
+    task_num = strtoi(gsub("[^0-9]", "", task_num)),
+    question_name = substring(question_name,2)
+  ) %>% 
+  drop_na() %>%
+  group_by(task_num) %>%
+  inner_join(df.task_name_to_index,
+            by = "task_num")
+```
+Looking at inter-rater reliability
+
+```{r}
+# main summary stats
+df.main_questions_summary <- df.all_ratings_raw %>%
+  filter(question_name %in% main_questions) %>%
+  mutate(value = recode(value, 
+                     "Mental" = 0,
+                     "Physical" = 1,
+                     "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+                     "No" = 0,
+                     "Yes" = 1
+                   )) %>%
+  filter(value != 3) %>% # remove cases in which people thought it wasn't answerable - for now
+  group_by(task_name,question_name) %>%
+  summarize(mean_rating = mean(value),
+            n_labels = agree(t(value))$raters,
+            all_values = paste(value, collapse = " & "),
+            agreement = agree(t(value))$value
+            )
+
+# krippendorfs alpha across all values with 2 labels
+df_multilabeler <- df.main_questions_summary %>%
+  filter(n_labels == 2)
+
+lbls_matrix <- matrix(nrow = 0, ncol = 2)
+for(i in 1:nrow(df_multilabeler)){
+  all_values <- df_multilabeler[i,]$all_values
+  lbls <- as.numeric(str_split(all_values, '&')[[1]])
+  lbls_matrix <- rbind(lbls_matrix,lbls)                 
+}
+kripp.alpha(t(lbls_matrix))
+```
+
+
+```{r}
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
 
