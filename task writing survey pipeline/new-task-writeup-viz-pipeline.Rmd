@@ -12,6 +12,7 @@ library(irr)
 library(stringr)
 library(markdown)
 library(qualtRics)
+library(ggplot2)
 library(dplyr)
 library(tidyverse)
 ```
@@ -27,7 +28,8 @@ task_writing_survey_id <- surveys$id[2]
 
 df.survey_results <- fetch_survey(
   surveyID = task_writing_survey_id,
-  save_dir = "."
+  save_dir = ".",
+  force_request = T
 )
 ```
 
@@ -172,10 +174,10 @@ Names of the questions
 # Question names
 main_questions <- c(
   "Q1concept_behav",
-  "Q2intel_manip",
+  "Q2intel_manip_1",
   "Q3type_1_planning",
   "Q4type_2_generate",
-  "Q5creativity_input",
+  "Q5creativity_input_1",
   "Q6type_5_cc",
   "Q7type_7_battle",
   "Q8type_8_performance",
@@ -190,7 +192,7 @@ main_questions <- c(
   "Q18sol_eureka",
   "Q19time_solvability",
   "Q20type_3_type_4",
-  "Q21intellective_judg",
+  "Q21intellective_judg_1",
   "Q22confl_tradeoffs",
   "Q23ss_out_uncert"
 )
@@ -269,19 +271,23 @@ df.all_ratings_raw <- df.task_map %>%
   ) %>%
   mutate(
     task_num = strtoi(gsub("[^0-9]", "", task_num)),
-    question_name = substring(question_name,2)
+    question_name = str_extract(question_name, "Q[0-9].*")
   ) %>% 
   drop_na() %>%
   group_by(task_num) %>%
   inner_join(df.task_name_to_index,
             by = "task_num")
 ```
+
 Looking at inter-rater reliability
 
 ```{r}
 # main summary stats
 df.main_questions_summary <- df.all_ratings_raw %>%
   filter(question_name %in% main_questions) %>%
+  filter(question_name != 'Q2intel_manip_1' & 
+            question_name != 'Q21intellective_judg_1' &
+            question_name != 'Q5creativity_input_1') %>%
   mutate(value = recode(value, 
                      "Mental" = 0,
                      "Physical" = 1,
@@ -294,27 +300,46 @@ df.main_questions_summary <- df.all_ratings_raw %>%
   summarize(mean_rating = mean(value),
             n_labels = agree(t(value))$raters,
             all_values = paste(value, collapse = " & "),
-            agreement = agree(t(value))$value
+            agreement = agree(t(value))$value,
             )
 
-# krippendorfs alpha across all values with 2 labels
-df_multilabeler <- df.main_questions_summary %>%
-  filter(n_labels == 2)
 
-lbls_matrix <- matrix(nrow = 0, ncol = 2)
-for(i in 1:nrow(df_multilabeler)){
-  all_values <- df_multilabeler[i,]$all_values
-  lbls <- as.numeric(str_split(all_values, '&')[[1]])
-  lbls_matrix <- rbind(lbls_matrix,lbls)                 
+get_all_labels_as_matrix <- function(all_values){
+  return(matrix(as.numeric(str_split(all_values, '&')[[1]])))
 }
-kripp.alpha(t(lbls_matrix))
+
+df.main_questions_summary %>%
+  filter(question_name=="Q10maximizing") %>%
+  filter(n_labels > 1) %>%
+  mutate(
+    kripp.alpha = kripp.alpha(get_all_labels_as_matrix(all_values))$value
+  )
 ```
+Look at confidence
 
+```{r, fig.width= 18}
+p <- df.all_ratings_raw %>%
+  filter(question_name %in% confidence_questions) %>%
+  mutate(
+    value = recode(value,
+                   "Not at all confident" = "1",
+                   "Not confident" = "2",
+                   "Neutral" = "3",
+                   "Confident" = "4",
+                   "Very confident" ="5"
+                   )
+  ) %>%
+  ggplot(
+    aes(
+      x = value,
+      fill = task_name
+    )
+  ) +
+  geom_bar() 
 
-```{r}
+p + facet_wrap(~question_name, scales = "free")
 
-
-
+ggsave('./question-confidence-analysis.png')
 ```
 
 
