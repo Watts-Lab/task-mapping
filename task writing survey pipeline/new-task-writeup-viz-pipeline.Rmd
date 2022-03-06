@@ -300,6 +300,8 @@ df.main_questions_summary <- df.all_ratings_raw %>%
   summarize(mean_rating = mean(value),
             n_labels = agree(t(value))$raters,
             all_values = paste(value, collapse = " & "),
+            # TODO - agreement returns 0 if 1 person out of 3 disagrees??
+            # for some reason agree is returning % of _consecutive_ agreement, not total agreement
             agreement = agree(t(value))$value,
             )
 
@@ -308,12 +310,34 @@ get_all_labels_as_matrix <- function(all_values){
   return(matrix(as.numeric(str_split(all_values, '&')[[1]])))
 }
 
-df.main_questions_summary %>%
-  filter(question_name=="Q10maximizing") %>%
-  filter(n_labels > 1) %>%
-  mutate(
-    kripp.alpha = kripp.alpha(get_all_labels_as_matrix(all_values))$value
-  )
+# TODO - this has a weird problem where it works if you filter a question and doesn't work otherwise
+# df.main_questions_summary %>%
+#   filter(n_labels > 1) %>%
+#   mutate(
+#     kripp.alpha = kripp.alpha(get_all_labels_as_matrix(all_values))$value
+#   )
+
+# Here is a hacky workaround
+df_multiple_labels_irr <- data.frame(matrix(nrow = 0, ncol = 5))
+for(i in 1:length(main_questions)){
+
+  df_for_q <- df.main_questions_summary %>%
+    filter(question_name==main_questions[i]) %>%
+    filter(n_labels > 1) 
+  
+  if(nrow(df_for_q) > 0){
+      df_for_q <- df_for_q %>%
+        mutate(
+          kripp.alpha = kripp.alpha(get_all_labels_as_matrix(all_values))$value)
+  }
+  
+  df_multiple_labels_irr <- rbind(df_multiple_labels_irr, df_for_q)
+}
+df_multiple_labels_irr
+
+
+# TODO - krippendorf's alpha is negative if even a small number of people disagree
+# e.g., kripp.alpha(matrix(c(0,0,1,0,0,0,0,0,0,0,0,0,0,0))) = -0.071
 ```
 Look at confidence
 
