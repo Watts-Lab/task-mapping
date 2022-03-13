@@ -3,9 +3,7 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-After individual participants studies a list of words, their recall in control group was compared to two collaborative group conditions:
-1. Participants took turns recalling items together in pairs.
-2. Participants took turns recalling items unaware of the items their partner recalled.
+Participants are given a list of words to study.
 
 ## 2. Goal Directives 
 Recall as many words as possible from the studied list.
@@ -17,14 +15,8 @@ The following details are not the main parts of the task, but rather additional 
 Working memory use
 
 ### UI-UX Allowed Processes
-See a word for 4 sec
-
-Nominal Condition: recall words individually
-
-Collaborative Group See Condition: take turns with partner to recall words, view the word a partner recalled
-
-Collaborative Group No See Condition: take turns with partner to recall words without knowing what partner recalls
-
+See a word for a limited amount of time, and type them into the interface to submit them.
+If participants are allowed to work with others, there could be a communication mechanism (e.g., chat) or a way to view their partners' answers.
 
 ### Other Allowed Processes
 NA
