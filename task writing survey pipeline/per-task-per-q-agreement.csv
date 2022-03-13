@@ -1,0 +1,11 @@
+task_name,Q10maximizing,Q11optimizing,Q13outcome_multip,Q14sol_scheme_mul,Q15dec_verifiability,Q16shared_knowledge,Q17within_sys_sol,Q18sol_eureka,Q19time_solvability,Q1concept_behav,Q20type_3_type_4,Q22confl_tradeoffs,Q23ss_out_uncert,Q3type_1_planning,Q4type_2_generate,Q6type_5_cc,Q7type_7_battle,Q8type_8_performance,Q9divisible_unitary
+9 Dot Problem,1,1,1,0.5,1,0.5,1,1,1,1,1,0.5,0.5,1,1,1,1,1,1
+Estimating pages of a book,1,1,1,1,1,0.5,1,1,1,1,1,1,1,1,1,1,1,1,1
+Euclidean traveling salesperson,0.75,1,0.75,0.75,0.75,1,1,0.75,0.75,1,1,0.75,0.75,0.5,1,0.75,1,1,0.5
+Graph coloring task,1,1,0.5,1,1,1,1,1,1,1,1,0.8333333333333334,0.8333333333333334,1,1,0.5,1,1,0.6666666666666667
+Moral Reasoning (Disciplinary Action Case),1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Ravens Matrices,1,0.5,1,0.5,1,0.5,1,1,1,1,1,1,0.5,1,1,1,1,0.5,0.5
+Recall videos,1,0.6666666666666666,0.6666666666666666,0.6666666666666666,1,0.6666666666666667,0.6666666666666667,1,1,1,0.6666666666666667,0.6666666666666667,1,1,1,0.6666666666666667,1,1,0.5
+Summarize Discussion,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Wildcat Wells,0.75,0.6666666666666666,0.5,1,1,0.5,1,1,0.75,1,1,0.5,1,1,1,0.75,1,0.6666666666666667,1
+Word completion given part of word,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
