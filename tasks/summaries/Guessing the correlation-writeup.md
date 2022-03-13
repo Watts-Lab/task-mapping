@@ -3,10 +3,10 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Randomized groups of 12 were assigned to one of three treatment conditions with varying network plasticity in the first 10 tasks and varying quality of feedback in the last 10 tasks, which allowed to identify the role of dynamic networks and feedback in fostering adaptive ‘wisdom of crowds.’
+Participants received a series of scatter plots (a series of points plotted on a grid).
 
 ## 2. Goal Directives 
-Estimate the correlation of a scatter plots in a sequence of 20 tasks.
+The goal was to estimate the correlation of the points on the grid. (For example, if all the dots are in a straight line pointing upwards, the correlation is 1; if the dots are completely scattered randomly with no pattern at all, the correlation is 0).
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
