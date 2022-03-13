@@ -3,7 +3,7 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Participants have to come up with 10 noun as different from each as possible.
+Participants are given a blank space to write 10 words in.
 
 ## 2. Goal Directives 
 Come up with 10 nouns as different from each other as possible in four minutes.
@@ -24,7 +24,7 @@ Rules
 3. No proper nouns (e.g., no specific people or places).
 4. No specialised vocabulary (e.g., no technical terms).
 5. Think of the words on your own (e.g., do not just look at objects in your surroundings).
-6. You will have 4 min.
+6. Time will be limited.
 
 ## GitHub Link 
 https://github.com/Watts-Lab/task-mapping/blob/master/tasks/Divergent%20Association%20Task.md
