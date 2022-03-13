@@ -2,11 +2,11 @@
 
 Mapped by: paniukhina 
 
-## 1. Stimulus Complex 
-To show that imitation exists in competitive settings, even when there was no need to follow the opponent’s actions, participants were asked to compete for money in a two-player arcade game when they quickly hit targets on a touchscreen faster than their opponent.
+## 1. Stimulus Complex
+Participants were given a screen with a bunch of colored moving targets (circles) and an ability to click or "hit" the targets as they moved around.
 
 ## 2. Goal Directives 
-Hit green and yellow targets on a large visual touchscreen before a competitor using a “rod.”
+Participants' goal was to hit targets based on their point value, thereby maximiizng their points. They also had to reach their targets more quickly than an opponent.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
