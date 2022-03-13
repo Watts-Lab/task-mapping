@@ -3,10 +3,10 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Four teammates decided which of 144 sections of land, represented by a 12 by 12 matrix on a 80-cm by 80-cm board, were suitable for drilling oil. Participants had 3, 5, or 15 minutes depending on the condition of the experiment. If the team decided correctly, one red dot out of 33 in total appeared on the reverse side oft he tab; otherwise, the tab was blank.
+Pariticipants view a grid with 144 sections of land, represented by a 12 by 12 matrix on a 80-cm by 80-cm board. Some of these grids are "suitable" for drilling oil, and others are not. During the task, participants receive feedback about their decisions to drill; if a decision was correct, a red dot will appear on the screen. Otherwise, the part of the screen remains blank.
 
 ## 2. Goal Directives 
-Decide which of 144 sections of land is suitable for drilling oil with your three teammates.
+The goal of the task is to decide which of 144 sections of land is suitable for drilling oil.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
