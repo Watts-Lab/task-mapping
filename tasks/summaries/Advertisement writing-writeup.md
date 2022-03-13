@@ -3,10 +3,10 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Participants were matched into groups of three or four people they never interacted with in previous tasks. In four 10-minute rounds, teams have to write advertisement for Kickstarter project. After each round, participants completed a 14-item viability scale.
+Participants were given the description of a product from Kickstarter.
 
 ## 2. Goal Directives 
-Co-author an online text advertisement no more than 30 characters for product campaigns from Kickstarter.
+The goal was to write an online text advertisement no more than 30 characters for product campaigns from Kickstarter.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
