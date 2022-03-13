@@ -3,7 +3,7 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Participants had to find the shortest way to carry wolf, goat, and cabbage across the river. The problem read as follows:
+The problem reads as follows:
 
 "Once upon a time a farmer went to a market and purchased a wolf, a goat, and a cabbage. On his way home, the farmer came to the bank of a river and rented a boat. But crossing the river by boat, the farmer could carry only himself and a single one of his purchases: the wolf, the goat, or the cabbage.
 
