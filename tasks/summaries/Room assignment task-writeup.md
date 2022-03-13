@@ -3,10 +3,10 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-To understand under what conditions groups outperform comparable individuals, which individual attributes best predict group performance, or how task complexity mediates these relationships, a novel two-phase experiment in which individuals were evaluated on a series of tasks of varying complexity and then randomly assigned to solve similar tasks either in groups of different compositions or as individuals was performed.
+Participants are given a set of people (students), rooms, and rules (constraining conditions).
 
 ## 2. Goal Directives 
-Assign students to rooms to maximize total student utility considering specified utilities of students for each room and the constraining conditions.
+The goal is to assign students to rooms in order to maximize the students' utility while respecting all of the constraining conditions (for example, one rule might say that certain people are not allowed to be in the same room). Students get a specified amount of utility from being assigned to a particular room.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
