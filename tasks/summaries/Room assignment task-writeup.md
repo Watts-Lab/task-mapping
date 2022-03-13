@@ -15,7 +15,7 @@ The following details are not the main parts of the task, but rather additional 
 Problem-solving, social perceptiveness, parallel thinking
 
 ### UI-UX Allowed Processes
-Phase One: View 36 pairs of eyes, choose one of four words describing emotion. Phase Two: View a utility table, submit a solution before 5-minute interval ends for the task, assign a student to a room, chat freely in in-experiment chatting system with group-mates, fill out the post-activity quiz
+View a utility table, submit a solution before time-period ends for the task, assign a student to a room (e.g., drag and drop, point and click), chat freely in in-experiment chatting system with any group-mates.
 
 ### Other Allowed Processes
 NA
