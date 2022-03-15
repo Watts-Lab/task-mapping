@@ -1,5 +1,5 @@
 question_name,num_tasks,num_raters,krippendorf_alpha
-Q1concept_behav,18,15,1
+Q1concept_behav,18,14,1
 Q4type_2_generate,18,14,1
 Q7type_7_battle,18,14,1
 Q8type_8_performance,18,14,0.5151515151515151
@@ -8,7 +8,7 @@ Q17within_sys_sol,18,14,0.46875
 Q10maximizing,18,14,0.4
 Q3type_1_planning,18,14,0.2962962962962963
 Q23ss_out_uncert,18,14,0.1648351648351648
-Q2intel_manip_1,18,15,0.06666666666666654
+Q2intel_manip_1,18,14,0.051470588235293935
 Q5creativity_input_1,18,14,0.03496503496503511
 Q16shared_knowledge,18,14,0.019841269841269882
 Q15dec_verifiability,18,14,0

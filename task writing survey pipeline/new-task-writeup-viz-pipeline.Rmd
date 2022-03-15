@@ -264,6 +264,9 @@ confidence_questions <- c(
 
 Gather all of the raw ratings
 ```{r}
+df.task_map <- df.task_map %>% # need to only filter for complete responses
+  filter(Finished == T)
+
 df.all_ratings_raw <- df.task_map %>%
   select(c(matches('[0-9]_'))) %>%
   mutate(across(everything(), as.character)) %>%
@@ -336,10 +339,32 @@ df.main_questions_summary %>%
     mean_agreement = mean(agreement),
     mean_alpha = mean(general.alpha)
   )
-
-df.main_questions_summary %>% select(task_name, question_name, agreement) %>%
+```
+Get level of agreement per task and per question
+```{r}
+df.per_task_q_agreement <-
+  df.main_questions_summary %>% filter(n_labels > 1) %>% 
+  select(task_name, question_name, agreement) %>%
   pivot_wider(names_from = question_name, values_from = agreement) %>%
-  drop_na() %>%
+  drop_na()
+
+# sort by columnns
+df.per_task_q_agreement <- df.per_task_q_agreement[,-1][,order(colSums(df.per_task_q_agreement[,-1],na.rm=T))] %>%
+  cbind(df.per_task_q_agreement$task_name) %>%
+  rename(
+    task_name = `df.per_task_q_agreement$task_name`
+  ) %>%
+  relocate(task_name)
+
+# sort by rows
+df.per_task_q_agreement <- df.per_task_q_agreement %>%
+  mutate(
+    rowsum = rowSums(across(where(is.numeric)))
+  ) %>%
+  arrange(rowsum) %>%
+  select(-rowsum)
+  
+df.per_task_q_agreement %>%
   write_csv('per-task-per-q-agreement.csv')
 ```
 
@@ -400,6 +425,7 @@ for(i in 1:length(main_questions)){
 
 kripp_alpha_per_question %>% arrange(desc(krippendorf_alpha))
 ```
+
 ```{r}
 kripp_alpha_per_question %>% arrange(desc(krippendorf_alpha)) %>% write_csv("krippendorf_alpha_per_question.csv")
 ```
