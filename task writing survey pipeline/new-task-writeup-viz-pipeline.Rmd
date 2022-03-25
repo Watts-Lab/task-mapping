@@ -2,12 +2,15 @@
 title: "new-task-writeup-viz-pipeline"
 author: "Emily Hu"
 date: "2/27/2022"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
+library(stats)
 library(corrplot)
 library(irr)
 library(icr)
@@ -24,6 +27,12 @@ library(tidyverse)
 
 # Pull in Survey Data
 ```{r}
+# Qualtrics API Access
+
+qualtrics_api_credentials(api_key = "hs4TCG4lZ0PzozF9ICTtfSApwx1LPeFHg2e5RwUo", 
+                          base_url = "upenn.co1.qualtrics.com",
+                          overwrite = TRUE)
+
 surveys <- all_surveys()
 
 task_writing_survey_id <- surveys$id[2]
@@ -37,13 +46,13 @@ df.survey_results <- fetch_survey(
 
 # Check timing
 ```{r}
-df.survey_results %>%
-  mutate(
-    Duration = EndDate-StartDate
-  ) %>%
-  summarize(
-    medianDuration = median(Duration)
-  )
+# df.survey_results %>%
+#   mutate(
+#     Duration = EndDate-StartDate
+#   ) %>%
+#   summarize(
+#     medianDuration = median(Duration)
+#   )
 ```
 
 ```{r}
@@ -252,14 +261,14 @@ confidence_questions <- c(
 )
 
 # For getting median time
-# %>% 
-#   mutate(
-#     Duration = EndDate-StartDate
-#   ) %>%
-#   summarize(
-#     medianDuration = median(Duration)
-#   )
-#   
+df.task_map%>%
+  mutate(
+    Duration = EndDate-StartDate
+  ) %>%
+  summarize(
+    medianDuration = median(Duration),
+    sdDuration = sd(Duration)/60
+  )
 ```
 
 Gather all of the raw ratings
@@ -271,7 +280,9 @@ df.all_ratings_raw <- df.task_map %>%
   select(c(matches('[0-9]_'))) %>%
   mutate(across(everything(), as.character)) %>%
   cbind(df.task_map %>%  # Get the identities of the raters; for now - use IPAddress, but eventually will use `name`
-          mutate(IPAddress = as.factor(IPAddress)) %>% select(IPAddress)) %>%
+          # Need to cleave off the last two parts of the IPAddress bc they vary too much by person
+          mutate(IPAddress = as.factor(IPAddress))%>% select(IPAddress)) %>%
+          #mutate(IPAddress = as.factor(str_extract(IPAddress, "[0-9]*\\.[0-9]*\\."))) %>% select(IPAddress)) %>%
   group_by(IPAddress) %>% # Group by the rater
   pivot_longer(
     cols = -c(IPAddress),
@@ -295,6 +306,23 @@ df.all_ratings_raw %>%
   table()
 ```
 
+```{r}
+df.all_ratings_raw %>%
+  filter(value == "Not applicable or not answerable based on the task description (Please Elaborate Below.)") %>%
+  mutate(value = 1) %>%
+  pivot_wider(names_from = "question_name", values_from = value) %>%
+  group_by(task_name) %>%
+  summarize(
+    across(matches('Q'), ~sum(., na.rm = T))
+  ) %>%
+  View()
+
+
+  # mutate(
+  #   row_sum = rowSums(across(matches('Q'))),
+  #   col_sum = colSums(across(matches('Q')))
+  # ) %>% 
+```
 
 Looking at inter-rater reliability
 
@@ -331,7 +359,7 @@ df.main_questions_summary <- df.all_ratings_raw %>%
             general.alpha = 1-((1-agreement)/(1-get_expected_agreement(n_labels)))
             )
 
-df.main_questions_summary %>%
+df.task_map_summary <- df.main_questions_summary %>%
   filter(n_labels > 1) %>%
   group_by(task_name) %>%
   summarize(
@@ -339,6 +367,8 @@ df.main_questions_summary %>%
     mean_agreement = mean(agreement),
     mean_alpha = mean(general.alpha)
   )
+
+df.task_map_summary
 ```
 Get level of agreement per task and per question
 ```{r}
@@ -383,6 +413,8 @@ for(i in 1:length(main_questions)){
   kripp_alpha_matrix <- df.all_ratings_raw %>%
   filter(question_name == q_name) %>%
   group_by(task_name) %>%
+  left_join(df.task_map_summary %>% select(task_name, n_labels)) %>% # get n_labels
+  filter(n_labels > 3) %>% # remove tasks with just 2 raters
   pivot_wider(names_from = c(IPAddress),
               values_from = c(value),
               values_fn = list) %>%
@@ -393,6 +425,7 @@ for(i in 1:length(main_questions)){
                   x == "Physical" ~ 1,
                   x == "No" ~ 0,
                   x == "Yes" ~ 1,
+                  x == "Not applicable or not answerable based on the task description (Please Elaborate Below.)" ~ 3,
                   x == "c(\"Yes\", \"Yes\")" ~ 1,
                   x == "c(\"No\", \"No\")" ~ 0,
                   !is.na(as.numeric(x)) ~ as.numeric(x)
@@ -404,12 +437,10 @@ for(i in 1:length(main_questions)){
   
     kripp_alpha <- NA
     # these are numeric
-    if(question_name == 'Q2intel_manip_1' | 
-            question_name == 'Q21intellective_judg_1' |
-            question_name == 'Q5creativity_input_1'){
-        
+    if(q_name == 'Q2intel_manip_1' | 
+            q_name == 'Q21intellective_judg_1' |
+            q_name == 'Q5creativity_input_1'){
       kripp_alpha <- kripp_alpha_matrix %>% krippalpha(metric = "interval")
-      
     }else{
       kripp_alpha <- kripp_alpha_matrix %>% krippalpha(metric = "nominal")
     }
@@ -419,7 +450,8 @@ for(i in 1:length(main_questions)){
         question_name = q_name,
         num_tasks = kripp_alpha$n_units,
         num_raters = kripp_alpha$n_coders,
-        krippendorf_alpha = kripp_alpha$alpha
+        krippendorf_alpha = kripp_alpha$alpha,
+        kripp_matrix = kripp_alpha_matrix
     ))
 }
 
@@ -460,13 +492,136 @@ ggsave('./question-confidence-analysis.png')
 ```
 
 
+Compare to the previous task map
+```{r warning=FALSE}
+df.task_map_new <- df.all_ratings_raw %>% mutate(value = recode(value, 
+                     "Mental" = 0,
+                     "Physical" = 1,
+                     "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+                     "No" = 0,
+                     "Yes" = 1
+                   )) %>%
+    filter(question_name %in% main_questions) %>%
+    filter(value != 3 && !is.na(value)) %>% # remove NA's, focus only on the task map features
+    pivot_wider(names_from = "question_name") %>% # Note that there are 2 repeated labels!
+    group_by(task_name) %>%
+    select(-c(IPAddress, task_num)) %>%
+    summarize( # note that repeated labels are just being averaged in
+      Q1concept_behav = mean(unlist(Q1concept_behav)),
+      Q3type_1_planning = mean(unlist(Q3type_1_planning)),
+      Q4type_2_generate = mean(unlist(Q4type_2_generate)),
+      Q6type_5_cc = mean(unlist(Q6type_5_cc)),
+      Q7type_7_battle = mean(unlist(Q7type_7_battle)),
+      Q8type_8_performance = mean(unlist(Q8type_8_performance)),
+      Q9divisible_unitary = mean(unlist(Q9divisible_unitary)),
+      Q10maximizing = mean(unlist(Q10maximizing)),
+      Q11optimizing = mean(unlist(Q11optimizing)),
+      Q13outcome_multip = mean(unlist(Q13outcome_multip)),
+      Q14sol_scheme_mul = mean(unlist(Q14sol_scheme_mul)),
+      Q15dec_verifiability = mean(unlist(Q15dec_verifiability)),
+      Q16shared_knowledge = mean(unlist(Q16shared_knowledge)),
+      Q17within_sys_sol = mean(unlist(Q17within_sys_sol)),
+      Q18sol_eureka = mean(unlist(Q18sol_eureka)),
+      Q19time_solvability = mean(unlist(Q19time_solvability)),
+      Q20type_3_type_4 = mean(unlist(Q20type_3_type_4)),
+      Q22confl_tradeoffs = mean(unlist(Q22confl_tradeoffs)),
+      Q23ss_out_uncert = mean(unlist(Q23ss_out_uncert))
+    )
+  
+# get old task map
+df.task_map_old_names <- read_csv('../task_map.csv')
+df.task_map_old <- cbind(df.task_map_old_names[,1],read_csv('../task_map_numeric.csv'))
+```
+```{r}
+# get them to the same dimensions :)
+df.task_map_old <- df.task_map_old %>%
+  filter(task %in% df.task_map_new$task_name) %>% arrange(task)
 
+df.task_map_new <- df.task_map_new %>%
+  filter(task_name %in% df.task_map_old$task) %>% arrange(task_name)
 
+# START WITH CORRELATIONS
 
+# Q3type_1_planning
+cor(df.task_map_new$Q3type_1_planning, df.task_map_old$generate_plan)
+cor(df.task_map_new$Q3type_1_planning, df.task_map_old$generate_process)
 
+# Q4type_2_generate
+cor(df.task_map_new$Q4type_2_generate, df.task_map_old$generate_ideas)
+cor(df.task_map_new$Q4type_2_generate, df.task_map_old$generate_creativity)
 
+# Q6type_5_cc
+cor(df.task_map_new$Q6type_5_cc, df.task_map_old$conflict_cooperation)
+cor(df.task_map_new$Q6type_5_cc, df.task_map_old$conflict_interests)
 
+# Q7type_7_battle
+cor(df.task_map_new$Q7type_7_battle, df.task_map_old$external_adversary)
 
+# Q8type_8_performance
+cor(df.task_map_new$Q8type_8_performance, df.task_map_old$external_standard)
+cor(df.task_map_new$Q8type_8_performance, df.task_map_old$goal_standard)
 
+# Q9divisible_unitary
+cor(df.task_map_new$Q9divisible_unitary, df.task_map_old$task_divisibility)
+cor(df.task_map_new$Q9divisible_unitary, df.task_map_old$skills_specialization)
+
+# Q10maximizing
+cor(df.task_map_new$Q10maximizing, df.task_map_old$goal_maximize)
+
+# Q11optimizing
+cor(df.task_map_new$Q11optimizing, df.task_map_old$goal_optimize)
+
+# Q13outcome_multip
+cor(df.task_map_new$Q13outcome_multip, df.task_map_old$solution_multiplicity)
+cor(df.task_map_new$Q13outcome_multip, df.task_map_old$solution_singularity)
+cor(df.task_map_new$Q13outcome_multip, df.task_map_old$objective_multiplicity)
+
+#Q14sol_scheme_mul
+cor(df.task_map_new$Q14sol_scheme_mul, df.task_map_old$solution_path)
+cor(df.task_map_new$Q14sol_scheme_mul, df.task_map_old$objective_multiplicity)
+
+#Q15dec_verifiability
+cor(df.task_map_new$Q15dec_verifiability, df.task_map_old$solution_verifiability)
+
+#Q16shared_knowledge
+cor(df.task_map_new$Q15dec_verifiability, df.task_map_old$solution_demonstrability)
+
+#Q17within_sys_sol
+cor(df.task_map_new$Q17within_sys_sol, df.task_map_old$solution_demonstrability)
+cor(df.task_map_new$Q17within_sys_sol, df.task_map_old$solution_valid)
+
+#Q18sol_eureka
+cor(df.task_map_new$Q18sol_eureka, df.task_map_old$solution_demonstrability)
+
+#Q19time_solvability
+cor(df.task_map_new$Q19time_solvability, df.task_map_old$individual_theoretical)
+cor(df.task_map_new$Q19time_solvability, df.task_map_old$individual_practical)
+
+#Q20type_3_type_4
+cor(df.task_map_new$Q20type_3_type_4, df.task_map_old$solution_objectivity)
+cor(df.task_map_new$Q20type_3_type_4, df.task_map_old$solution_verifiability)
+
+#Q22confl_tradeoffs
+cor(df.task_map_new$Q22confl_tradeoffs, df.task_map_old$resolve_information)
+cor(df.task_map_new$Q22confl_tradeoffs, df.task_map_old$resolve_data)
+cor(df.task_map_new$Q22confl_tradeoffs, df.task_map_old$metric_multiplicity_tradeoff)
+cor(df.task_map_new$Q22confl_tradeoffs, df.task_map_old$stakeholder_multiplicity)
+
+#Q23ss_out_uncert
+cor(df.task_map_new$Q23ss_out_uncert, df.task_map_old$measure_easy)
+cor(df.task_map_new$Q23ss_out_uncert, df.task_map_old$measure_immediate)
+
+# physical/mental
+cor(df.task_map_new$Q1concept_behav, df.task_map_old$effort_mental)
+```
+
+```{r}
+taskmap_new_mat <- as.matrix(df.task_map_new %>% select(-c(task_name)))
+taskmap_old_mat <- as.matrix(df.task_map_old %>% select(generate_plan, generate_ideas, conflict_interests, external_adversary, external_standard, goal_standard, task_divisibility, skills_specialization, goal_maximize, goal_optimize, solution_singularity, solution_path, solution_verifiability, solution_demonstrability, solution_objectivity, resolve_information, resolve_data, metric_multiplicity_tradeoff, stakeholder_multiplicity))
+taskmap_new_mat <- taskmap_new_mat[, qr(taskmap_new_mat)$pivot[seq_len(qr(taskmap_new_mat)$rank)]]
+taskmap_old_mat <- taskmap_old_mat[, qr(taskmap_old_mat)$pivot[seq_len(qr(taskmap_old_mat)$rank)]]
+
+lm(taskmap_new_mat~taskmap_old_mat) %>% summary()
+```
 
 
