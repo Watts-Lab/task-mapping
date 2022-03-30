@@ -450,8 +450,8 @@ for(i in 1:length(main_questions)){
         question_name = q_name,
         num_tasks = kripp_alpha$n_units,
         num_raters = kripp_alpha$n_coders,
-        krippendorf_alpha = kripp_alpha$alpha,
-        kripp_matrix = kripp_alpha_matrix
+        krippendorf_alpha = kripp_alpha$alpha
+        # kripp_matrix = kripp_alpha_matrix
     ))
 }
 
