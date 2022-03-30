@@ -6,7 +6,7 @@ Mapped by: paniukhina
 Participants were given a screen with a bunch of colored moving targets (circles) and an ability to click or "hit" the targets as they moved around.
 
 ## 2. Goal Directives 
-Participants' goal was to hit targets based on their point value, thereby maximiizng their points. They also had to reach their targets more quickly than an opponent (i.e., try to beat them by hitting more targets and getting more points).
+Participants' goal was to hit targets based on their point value, thereby maximizing their points. They also had to reach their targets more quickly than an opponent (i.e., try to beat them by hitting more targets and getting more points).
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
