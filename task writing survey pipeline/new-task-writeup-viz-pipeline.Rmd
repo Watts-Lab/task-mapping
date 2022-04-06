@@ -22,9 +22,6 @@ library(dplyr)
 library(tidyverse)
 ```
 
-# Basic setup
-(Not pushed to GitHub)
-
 # Pull in Survey Data
 ```{r}
 # Qualtrics API Access
@@ -35,7 +32,7 @@ qualtrics_api_credentials(api_key = "hs4TCG4lZ0PzozF9ICTtfSApwx1LPeFHg2e5RwUo",
 
 surveys <- all_surveys()
 
-task_writing_survey_id <- surveys$id[2]
+task_writing_survey_id <- surveys$id[3]
 
 df.survey_results <- fetch_survey(
   surveyID = task_writing_survey_id,
@@ -117,14 +114,31 @@ for(i in 1:nrow(df.survey_results_cleaned)){
 }
 ```
 
+# Prior to CSV generation: handle cases where we wrote new writeups but things already got rated
+Basically, we want to generate new indices for tasks where we're now explicitly saving a new version for.
+- If something hasn't been rated yet, we can go ahead and update the writeup. It's fine.
+- If something is already rated, we need to generate a new entry (new row on the CSV) for it so that we can store it as a separate ID
+- So this means that, in order to create a stable index:
+     * we will manually set the ID to a known particular ID
+     * the value of the ID will be N+1, where N is the number of tasks that are currently being actively rated in the pipeline
+     * each time this happens again, we'll have to set that manual ID again, but this will allow that ID to remain consistent throughout the process.
+```{r}
+index_in_survey_1 <- 26
+# Putting Food into Categories and Whac a Mole
+new_tasks <- c("Putting food into categories-2", "Whac-A-Mole-2")
+all_tasks <- c(df.survey_results$`task-name`[1:index_in_survey_1], new_tasks, df.survey_results$`task-name`[(index_in_survey_1+1):length(df.survey_results$`task-name`)])
+```
+
+We will use `all_tasks` moving forward to ensure both the original and the manually-added ones show up and are consistent!
+
 # Generate a CSV with task names in one column and HTML in a second column
 This will enable us to paste directly into the task mapping survey.
 ```{r}
 df.task_map_format <- data.frame(matrix(ncol = 2, nrow = 0))
 colnames(df.task_map_format) <- c('Task Name', 'Task Writeup')
 
-for(i in 1:length(df.survey_results$`task-name`)){
-  task_name <- df.survey_results$`task-name`[i]
+for(i in 1:length(all_tasks)){
+  task_name <- all_tasks[i]
   file_title <- paste0("../tasks/summaries/",task_name,"-writeup.md")
   
   txt <- read_file(file_title)
@@ -164,10 +178,10 @@ df.task_map_format %>% write_csv('./html/task-htmls.csv')
 
 Get a mapping of the task name to the loop numbers
 ```{r}
-df.task_name_to_index <- cbind(df.survey_results$`task-name`, rep(1:length(df.survey_results$`task-name`))) %>%
+df.task_name_to_index <- cbind(all_tasks, rep(1:length(all_tasks))) %>%
                                 as.data.frame() %>%
                                 rename(
-                                  task_name = V1,
+                                  task_name = all_tasks,
                                   task_num = V2
                                 ) %>%
                                 mutate(
@@ -177,7 +191,7 @@ df.task_name_to_index <- cbind(df.survey_results$`task-name`, rep(1:length(df.su
 
 Get survey data
 ```{r}
-task_mapping_survey_id <- surveys$id[3]
+task_mapping_survey_id <- surveys$id[4]
 
 df.task_map <- fetch_survey(
   surveyID = task_mapping_survey_id,
@@ -325,8 +339,10 @@ df.all_ratings_raw %>%
   group_by(task_name) %>%
   summarize(
     across(matches('Q'), ~sum(., na.rm = T))
-  ) %>%
-  View()
+  )
+
+#%>%
+ # View()
 
 
   # mutate(
@@ -381,6 +397,12 @@ df.task_map_summary <- df.main_questions_summary %>%
 
 df.task_map_summary %>% arrange(desc(mean_alpha))
 ```
+
+```{r}
+df.main_questions_summary %>% filter(question_name == "Q14sol_scheme_mul")
+```
+
+
 Try to incorporate any feedback people had about that question
 ```{r}
 df.all_ratings_raw %>%
@@ -423,8 +445,7 @@ df.per_task_q_agreement %>%
   question_name = c(),
   num_tasks = c(),
   num_raters = c(),
-  krippendorf_alpha = c(),
-  icc = c()
+  krippendorf_alpha = c()
 )
 
 for(i in 1:length(main_questions)){
@@ -477,8 +498,7 @@ for(i in 1:length(main_questions)){
         question_name = q_name,
         num_tasks = kripp_alpha$n_units,
         num_raters = kripp_alpha$n_coders,
-        krippendorf_alpha = kripp_alpha$alpha,
-        icc = icc(t(kripp_alpha_matrix), model = "oneway", type = "agreement")$value
+        krippendorf_alpha = kripp_alpha$alpha
         #kripp_matrix = kripp_alpha_matrix
     ))
 }

@@ -14,6 +14,8 @@ IPAddress,task_num,question_name,value,task_name
 165.123.225.241,8,Q11optimizing_feedbk,for some tasks,Word completion given starting letter
 68.82.12.63,2,Q11optimizing_feedbk,Only if the pattern is straightforward,Ravens Matrices
 73.81.147.146,20,Q11optimizing_feedbk,You want to maximize how many dots you hit but you also want to be strategic about the point value each dot holds so there is a level of accuracy or quality to the decisions you make in addition to wanting volume.,Whac-A-Mole
+70.16.131.195,6,Q11optimizing_feedbk,"It is unclear whether there is a certain criteria used to evaluate the responses (number of responses, quality of responses)",Summarize Discussion
+68.82.12.63,16,Q11optimizing_feedbk,"the threshold isn't clearly defined, so it's a no",Shopping plan
 96.230.197.235,12,Q13out_mult_feedbk,"I think the one best solution would be finding ALL the wells. But if you are competing with others, simply finding the most wells of the group might suffice.",Wildcat Wells
 165.123.226.19,3,Q13out_mult_feedbk,I think it is possible that there will be two shortest paths of the same length,Euclidean traveling salesperson
 96.230.197.235,4,Q13out_mult_feedbk,I think there is only one way to do this per stimulus but I suppose you could connect dots in mutliple ways?,9 Dot Problem
@@ -43,6 +45,7 @@ IPAddress,task_num,question_name,value,task_name
 71.230.175.0,14,Q16shared_kno_feedbk,I might need to know what are included in the question set to answer this question,Recall videos
 165.123.229.201,22,Q16shared_kno_feedbk,utility table would create a formal model,Room assignment task
 165.123.229.201,19,Q16shared_kno_feedbk,not sure whether this task is applicable to groups and whether any knowledge is shared,Guessing the correlation
+68.82.12.63,16,Q16shared_kno_feedbk,"Result-wise: yes, process-wise: it involves creativity rather than a formal mathematical axiom",Shopping plan
 96.230.197.235,12,Q17within_sys_feedbk,"I suppose it depends if you are looking for ALL the wells. If you run out of time and some dots are not unturned to see if a well is there, you won't know if you found all of them or not.",Wildcat Wells
 96.230.197.235,9,Q17within_sys_feedbk,"Probably not - these programs are probably lightly described, so people may have to make guesses about their worthiness when making tradeoffs.",Allocating resources to programs
 165.123.225.230,7,Q17within_sys_feedbk,"Should be ""yes"" unless someone deliberately designs this to be unsolvable",Letters-to-numbers problems (cryptography)
@@ -50,11 +53,14 @@ IPAddress,task_num,question_name,value,task_name
 96.230.197.235,2,Q17within_sys_feedbk,But note that researchers could and DO often do unsolvable ravens matrices to see if you persist on the task,Ravens Matrices
 68.82.12.63,9,Q17within_sys_feedbk,More information regarding each cause is required to arrive at an informed consensus,Allocating resources to programs
 68.82.12.63,22,Q17within_sys_feedbk,Util is not given,Room assignment task
+68.82.12.63,16,Q17within_sys_feedbk,price and quality are not given,Shopping plan
 68.83.242.219,14,Q18sol_eureka_feedbk,"Since people are recalling sections of a video, they may have different memories of what happened in the video. Some may say yes okay I remember that, while others may remember it differently and cannot identify the correct solution.",Recall videos
 96.230.197.235,4,Q18sol_eureka_feedbk,Maybe? This relates to knowing you definitely found the shortest path -- does it stand out to you as definitely correct? Im not sure! Probably depends on the complexity of the points,9 Dot Problem
 165.123.229.201,19,Q18sol_eureka_feedbk,there is no problem to solve and no way to interpret solution,Guessing the correlation
 71.230.175.0,9,Q18sol_eureka_feedbk,What's the 'correct way' of allocating the fund is not described,Allocating resources to programs
 68.82.12.63,9,Q18sol_eureka_feedbk,Unless the split criteria is preset,Allocating resources to programs
+70.16.131.195,6,Q18sol_eureka_feedbk,"This question makes me think whether ""correct"" and ""acceptable"" answer would mean the same thing for this task.",Summarize Discussion
+68.82.12.63,16,Q18sol_eureka_feedbk,as long as all data is made available,Shopping plan
 96.230.197.235,2,Q19time_solv_feedbk,"Again, unless researchers use one that is unsolveable!",Ravens Matrices
 174.252.128.127,3,Q19time_solv_feedbk,The problem is NP hard,Euclidean traveling salesperson
 73.81.149.20,25,Q19time_solv_feedbk,"There are multiple solutions of where to drill, I'm unsure if this question is referring to finding all the places to drill or just one location.",Search for Oil Task
@@ -62,6 +68,7 @@ IPAddress,task_num,question_name,value,task_name
 70.16.131.195,5,Q19time_solv_feedbk,I'm not sure whether there would be a correct answer for this task,Moral Reasoning (Disciplinary Action Case)
 71.230.175.0,13,Q1concept_beh_feedbk,No,Estimating pages of a book
 165.123.227.49,4,Q1concept_beh_feedbk,"Well, there is a physical component to it (dragging the mouse through the lines). But I guess the key word in the question is ""primarily""",9 Dot Problem
+68.82.12.63,16,Q1concept_beh_feedbk,"both physical and mental, as the goal is to also purchase, not just make a shopping plan",Shopping plan
 128.91.19.14,2,Q20type_3_4_feedbk,"I think the 'computed or calculated' part of the question sort of excludes intuition, but intuition is included in the elaboration, which feels funny to me",Ravens Matrices
 96.230.197.235,15,Q20type_3_4_feedbk,(Unless the experimenters make it impossible -- ie too few colors for available nodes),Graph coloring task
 96.230.197.235,2,Q20type_3_4_feedbk,Unless researchers include a puzzle that is by definition unsolveable,Ravens Matrices
@@ -70,6 +77,7 @@ IPAddress,task_num,question_name,value,task_name
 68.82.12.63,9,Q20type_3_4_feedbk,"It could be yes, given the parameters of success",Allocating resources to programs
 165.123.231.83,1,Q20type_3_4_feedbk,Does the description imply that there is only one correct answer?,Word completion given part of word
 70.16.131.195,11,Q20type_3_4_feedbk,"For this question, I am assuming that the decision to evaluate/not, is solely based on the cost-benefit calculations only.",To evacuate or not to evacuate
+68.82.12.63,16,Q20type_3_4_feedbk,only if all possible permutations are computed and compared,Shopping plan
 96.230.197.235,9,Q21int_jud_feedbk,"You can demonstrate pros and cons, and that you used the full funds. But I don't think you can demonstrate ""best""",Allocating resources to programs
 68.83.242.219,12,Q21int_jud_feedbk,Would you consider adding the descriptions to each end of the scale- subjective by 0 and objective/logicial by 1,Wildcat Wells
 165.123.231.83,1,Q21int_jud_feedbk,"Does ""a demonstrably correct answer"" means there is only one correct answer?",Word completion given part of word
@@ -86,18 +94,21 @@ IPAddress,task_num,question_name,value,task_name
 68.82.12.63,9,Q23ss_outc_u_feedbk,"The definition of outcome can be so broad here. When the outcome is the split each cause will receive then the answer is no, if the outcome is welfare gains, then it's a yes",Allocating resources to programs
 165.123.231.83,1,Q23ss_outc_u_feedbk,"It is unclear whether there is one single correct solution for this task or whether 2 different answers could be considered both correct. I think this piece of information would affect my answer to Q23. It also might be the case that this is not relevant for answering this question - either way, it would be good to give some guidance about this.",Word completion given part of word
 70.16.131.195,18,Q23ss_outc_u_feedbk,It is unclear how the answer will be evaluated/graded,Advertisement writing
+70.16.131.195,6,Q23ss_outc_u_feedbk,"I don't understand what the ""desired outcome"" would be for this task",Summarize Discussion
 68.83.242.219,12,Q2intel_manip_fdbk,It was unclear to me that we input answers via a slider I thought it was a long line but we type in the answer,Wildcat Wells
 71.230.175.0,13,Q2intel_manip_fdbk,no,Estimating pages of a book
 68.82.12.63,9,Q3type_1_feedback,It may involve some steps but much more fluid than a typical procedural sequence,Allocating resources to programs
 68.82.12.63,22,Q3type_1_feedback,"Yet, there're several alternative pathways",Room assignment task
 71.230.175.0,14,Q4type_2_feedbck,I might need to know more about what are in the question sets to answer the question,Recall videos
 165.123.231.83,1,Q4type_2_feedbck,"Would like some information on whether the ""ideas"" have to be the ""correct answers"" or not. Based on the current information, I am assuming no.",Word completion given part of word
+68.82.12.63,16,Q4type_2_feedbck,"based on the definition (does not suggest a coherent sequence of steps that lead toward a specific goal), this is not a brainstorming task although it involves brainstorming of some sorts",Shopping plan
 96.230.197.235,12,Q5creativity_feedbck,"Is ""creative"" inclusive of discovering and searching for something?",Wildcat Wells
 96.230.197.235,9,Q5creativity_feedbck,"You have to get creative about tradeoffs, I imagine.",Allocating resources to programs
 71.230.175.0,14,Q5creativity_feedbck,I might need to know what is included in the question set to answer this question,Recall videos
 68.82.12.63,9,Q5creativity_feedbck,"As long as the split criteria is not established, this task can go either way (creative or logical)",Allocating resources to programs
 96.230.197.235,9,Q6type_5_feedback,"Hmmm maybe? You may have differences in opinion of how to allocate. Or if we think about the various program managers whose programs you're allocating funds to, they may have different points of view.",Allocating resources to programs
 100.19.43.236,3,Q6type_5_feedback,The answers for individual mode and multiplayer mode will be different,Euclidean traveling salesperson
+70.16.131.195,6,Q6type_5_feedback,"Although it is a discussion task, it is unclear whether resolving different ideas and reaching consensus need to be reached for this task",Summarize Discussion
 96.230.197.235,12,Q7type_7_feedback,"In the writeup it is unclear whether I am competing against others -- e.g., if we're on the same map, does that mean that if I find a well first, I get that point and they don't?",Wildcat Wells
 68.82.12.63,26,Q7type_7_feedback,The answer could have been easily a Yes if the game is played by 2 competing teams. But the task per se is inherently not competing against a common opponent.,"Wolf, goat and cabbage transfer"
 96.230.197.235,12,Q8type_8_feedback,"This is going to depend on the researcher setup. Are they awarding based on total # of points on a continuous scale e.g., $1 per well? Are they rewarding for getting at least or exactly 10 wells?",Wildcat Wells
