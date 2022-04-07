@@ -24,12 +24,6 @@ library(tidyverse)
 
 # Pull in Survey Data
 ```{r}
-# Qualtrics API Access
-
-qualtrics_api_credentials(api_key = "hs4TCG4lZ0PzozF9ICTtfSApwx1LPeFHg2e5RwUo", 
-                          base_url = "upenn.co1.qualtrics.com",
-                          overwrite = TRUE)
-
 surveys <- all_surveys()
 
 task_writing_survey_id <- surveys$id[3]
@@ -200,6 +194,11 @@ df.task_map <- fetch_survey(
 )
 
 df.task_map
+```
+
+# TODO - explore shifting this to blobs instead
+```{r}
+attributes(df.task_map)$column_map
 ```
 
 # Check how many people did
@@ -540,7 +539,8 @@ ggsave('./question-confidence-analysis.png')
 ```
 
 
-Compare to the previous task map
+# Compare to the previous task map
+
 ```{r warning=FALSE}
 df.task_map_new <- df.all_ratings_raw %>% mutate(value = recode(value, 
                      "Mental" = 0,
