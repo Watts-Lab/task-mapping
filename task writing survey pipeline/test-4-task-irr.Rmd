@@ -63,12 +63,13 @@ main_questions <- c(
   "Q15dec_verifiability",
   "Q16shared_knowledge",
   "Q17within_sys_sol",
-  "Q18sol_eureka",
+  "Q18ans_recog",
   "Q19time_solvability",
   "Q20type_3_type_4",
   "Q21intellective_judg_1",
   "Q22confl_tradeoffs",
-  "Q23ss_out_uncert"
+  "Q23ss_out_uncert",
+  "Q24eureka_question"
 )
 
 feedback_questions <- c(
@@ -88,12 +89,13 @@ feedback_questions <- c(
   "Q15d_verif_feedbk",
   "Q16shared_kno_feedbk",
   "Q17within_sys_feedbk",
-  "Q18sol_eureka_feedbk",
+  "Q18ans_recog_feedbk",
   "Q19time_solv_feedbk",
   "Q20type_3_4_feedbk",
   "Q21int_jud_feedbk",
   "Q22con_trade_feedbk",
-  "Q23ss_outc_u_feedbk"
+  "Q23ss_outc_u_feedbk",
+  "Q24eureka_q_fdbk"
 )
 
 confidence_questions <- c(
@@ -113,12 +115,13 @@ confidence_questions <- c(
   "Q15d_verif_conf",
   "Q16shared_kno_conf",
   "Q17within_sys_conf",
-  "Q18sol_eureka_conf",
+  "Q18ans_recog_conf",
   "Q19time_solv_conf",
   "Q20type_3_4_conf",
   "Q21int_jud_conf",
   "Q22con_trade_conf",
-  "Q23ss_out_u_conf"
+  "Q23ss_out_u_conf",
+  "Q24eureka_q_conf"
 )
 
 df.task_map <- df.task_map %>% # need to only filter for complete responses
@@ -127,13 +130,11 @@ df.task_map <- df.task_map %>% # need to only filter for complete responses
 df.all_ratings_raw <- df.task_map %>%
   select(c(matches('[0-9]_'))) %>%
   mutate(across(everything(), as.character)) %>%
-  cbind(df.task_map %>%  # Get the identities of the raters; for now - use IPAddress, but eventually will use `name`
-          # Need to cleave off the last two parts of the IPAddress bc they vary too much by person
-          mutate(IPAddress = as.factor(IPAddress))%>% select(IPAddress)) %>%
-          #mutate(IPAddress = as.factor(str_extract(IPAddress, "[0-9]*\\.[0-9]*\\."))) %>% select(IPAddress)) %>%
-  group_by(IPAddress) %>% # Group by the rater
+  cbind(df.task_map %>% 
+          mutate(name = as.factor(name))%>% select(name)) %>%
+  group_by(name) %>% # Group by the rater
   pivot_longer(
-    cols = -c(IPAddress),
+    cols = -c(name),
     names_sep = 2,
     names_to = c("task_num", "question_name")
   ) %>%
@@ -186,7 +187,9 @@ df.task_map_summary <- df.main_questions_summary %>%
 df.task_map_summary %>% arrange(desc(mean_alpha))
 ```
 
-```{r}
+TODO > How do we handle the case where the same person labels repeatedly? I (Emily) am in the data twice, and currently it's actually throwing out both of my labels ...
+
+```{r message=FALSE, warning=FALSE}
 kripp_alpha_per_question <- data.frame(
   question_name = c(),
   num_tasks = c(),
@@ -201,24 +204,21 @@ for(i in 1:length(main_questions)){
   filter(question_name == q_name) %>%
   group_by(task_name) %>%
   left_join(df.task_map_summary %>% select(task_name, n_labels)) %>% # get n_labels
-  filter(n_labels > 3) %>% # remove tasks with just 2 raters
-  pivot_wider(names_from = c(IPAddress),
+  pivot_wider(names_from = c(name),
               values_from = c(value),
               values_fn = list) %>%
-  mutate(across(matches('[0-9]'), as.character)) %>%
-  mutate(across(matches('[0-9]'),
-                function(x) case_when( # commenting out case where someone says "maybe"
+    ungroup() %>%
+    select(-c(task_num, question_name, task_name, n_labels)) %>%
+    mutate(across(everything(), as.character)) %>%
+    mutate(across(everything(),
+                function(x) case_when(
                   x == "Mental" ~ 0,
                   x == "Physical" ~ 1,
                   x == "No" ~ 0,
                   x == "Yes" ~ 1,
-                  # x == "Not applicable or not answerable based on the task description (Please Elaborate Below.)" ~ 3,
-                  x == "c(\"Yes\", \"Yes\")" ~ 1,
-                  x == "c(\"No\", \"No\")" ~ 0,
+                  x == "Not applicable or not answerable based on the task description (Please Elaborate Below.)" ~ 3,
                   !is.na(as.numeric(x)) ~ as.numeric(x)
                 ))) %>%
-    ungroup() %>%
-    select(matches('[0-9]')) %>%
     as.matrix() %>%
     t() %>% as.data.frame()
 
@@ -249,6 +249,6 @@ for(i in 1:length(main_questions)){
     ))
 }
 
-kripp_alpha_per_question %>% arrange(desc(krippendorf_alpha)) %>% View()
+kripp_alpha_per_question %>% arrange(desc(krippendorf_alpha)) # %>% View()
 ```
 

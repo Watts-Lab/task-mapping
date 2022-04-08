@@ -10,6 +10,8 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
+library(httr)
+library(jsonlite)
 library(stats)
 library(corrplot)
 library(irr)
@@ -199,6 +201,10 @@ df.task_map
 # TODO - explore shifting this to blobs instead
 ```{r}
 attributes(df.task_map)$column_map
+
+req <- httr::GET("https://api.github.com/repos/Watts-Lab/task-mapping/git/trees/master?recursive=1")
+# jsonlite::fromJSON(content(req, "text"))$tree %>% 
+# filter(grepl("tasks/summaries/", path))
 ```
 
 # Check how many people did
@@ -502,7 +508,7 @@ for(i in 1:length(main_questions)){
     ))
 }
 
-kripp_alpha_per_question %>% arrange(desc(krippendorf_alpha)) %>% View()
+kripp_alpha_per_question %>% arrange(desc(krippendorf_alpha)) #%>% View()
 ```
 
 ```{r}
