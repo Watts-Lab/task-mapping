@@ -10,7 +10,7 @@ For context, these look like many different nodes (points), which are connected 
 Participants will also be given a limited set of colors.
 
 ## 2. Goal Directives 
-The goal is to use the colors given to "color" the entire network without conflicts. This means that participants need to assign each node in the graph a color, ensuring that no two connected nodes share the same color. Using our social network example, if Person A and Person B are friends (which means they are connected), they cannot be assigned the same color.
+The goal is to use the colors given to "color" the entire network without conflicts. This means that participants need to assign each node in the graph a color, ensuring that no two connected nodes share the same color. Using our social network example, if Person A and Person B are friends (which means they are connected), they cannot be assigned the same color. Participants must successfully color all nodes and resolve all conflicts within a specified amount of time, or receive no credit.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
