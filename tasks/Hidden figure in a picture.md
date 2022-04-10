@@ -7,6 +7,12 @@ Main paper: https://psycnet-apa-org.proxy.library.upenn.edu/fulltext/2000-12254-
 Stimuli: Wilks, M. (1993). The ultimate Noah's ark. London, England: Michael Joseph.
 > link to purcahse the book: https://www.amazon.com/Ultimate-Noahs-Ark-Mike-Wilks/dp/B0016BGWSG
 
+Word Search Puzzle: ![Blank Puzzle](https://user-images.githubusercontent.com/78745728/137641013-011f5c29-029c-480c-a0b0-68df82c22d4a.png)
+Word Search Puzzle Solutions: ![Complete Puzzle] https://user-images.githubusercontent.com/78745728/137641035-c0a0b985-89a3-4059-8af8-3658fc3a54a9.png)
+
+Letter Cancellation Image: ![Letter Cancellation](https://user-images.githubusercontent.com/78745728/137641434-18c001da-dd88-43ac-84fd-9d2a129d8b21.png)
+
+
 Criteria:
  PF: Sternberg, R. J., & Tulving, E. (1977). The measurement of subjective organization in free recall. Psychological Bulletin, 84, 539-556.
  
@@ -23,7 +29,7 @@ Participants were told that the study was concerned with processes involved in s
 
 They were presented with a sequence of 10 puzzle pictures containing hidden animals. Each picture was shown for 30s together with the names of four target animals that participants were asked to find by pointing. The order of presenting pictures was the same in all conditions
 
-After, each person worked alone for 5 minutes to solve a word search task as a distractor task (NEED TASK)
+After, each person worked alone for 5 minutes to solve a word search task as a distractor task 
 
 Then, the participants were asked for written free recall of the targets. They were given 3 minutes, and did this alone in separate rooms. 
 
@@ -31,7 +37,7 @@ Next, they were given another distractor task for 2 minutes that involved letter
 
 They then had a second recall for 3 minutes. Pairs were encouraged to collaborate. No instructions were given about how to resolve disagreements. One member of each pair acted as a scribe.
 
-Next, they were given a third distractor task for 3 minutes where they had to produce as many four letter words as possible from a given set of nine letters (NEED TASK) 
+Next, they were given a third distractor task for 3 minutes where they had to produce as many four letter words as possible from a given set of nine letters
 
 Finally, all participants were given 3 minutes to do a final recall as individuals.
 
@@ -49,17 +55,31 @@ You will now review a series of animal puzzle images, you will need to identify 
 
 After completion of task 
 
-Please work on the following word search task for five minutes (NEED TO FIND TASK)
+Please work on the following word search task for five minutes. You have five minutes to find as many words as you can in this grid.
+Write the words that you find on the sheet provided. Words may appear horizontally, vertically or along the diagonals.
+![Word Search Puzzle](https://user-images.githubusercontent.com/78745728/137640998-290bb2eb-6ec5-49e5-9ca1-2ad897a97787.png)
+
 
 Now we'd like to return to the animal puzzles, could you please write down as many of the targets that you can recall from the task. 
 
 After completion of task 
 
-Please work on the following word cancellation task. (NEED TO FIND TASK)
+Please work on the following letter cancellation task. Please cross out all the letter Bs 
+![Letter Cancellation Task ](https://user-images.githubusercontent.com/78745728/137641392-b044c706-a6a6-4867-b914-f5915a5a18fe.png)
+
 
 We are going to return to the animal puzzle task again, can you please write down targets from the puzzles reviewed earlier. If you are working in pairs, please collaborate to generate a written list of targets. 
 
-Next, we'd like to have you work on the following word puzzle, please try to produce as many four letter words as possible from this given set of nine letters. (NEED TO FIND TASK)
+Next, we'd like to have you work on the following word puzzle, please try to produce as many four letter words as possible from this given set of nine letters: 
+S
+i
+c
+o
+L
+y
+h
+e
+g
 
 We'd like to conclude with the Animal Puzzle task again, can you please work independently and write down targets from the puzzles reviewed earlier, you will have three minutes to work on this. 
 
