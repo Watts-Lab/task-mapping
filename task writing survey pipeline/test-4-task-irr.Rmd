@@ -8,16 +8,12 @@ output: pdf_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
-library(stats)
-library(corrplot)
-library(irr)
-library(icr)
-library(stringr)
-library(markdown)
-library(qualtRics)
-library(ggplot2)
-library(dplyr)
-library(tidyverse)
+# use an adjusted agreement - https://stats.stackexchange.com/questions/409279/krippendorffs-alpha-and-other-irr-stats-giving-counter-intuitive-results
+# install.packages("devtools")
+#devtools::install_github("jmgirard/agreement")
+
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(agreement,stats,corrplot,irr,stringr,markdown,ggplot2,dplyr,tidyverse,qualtRics,DescTools)
 ```
 
 # Pull in Survey Data
@@ -126,7 +122,17 @@ confidence_questions <- c(
 
 df.task_map <- df.task_map %>% # need to only filter for complete responses
   filter(Finished == T)
+```
 
+Handle the case of repeated measures --- take the last measure in case someone does it twice.
+```{r}
+df.task_map <- df.task_map %>%
+  group_by(name) %>%
+  slice(n()) %>% ungroup() %>%
+  filter()
+```
+
+```{r}
 df.all_ratings_raw <- df.task_map %>%
   select(c(matches('[0-9]_'))) %>%
   mutate(across(everything(), as.character)) %>%
@@ -172,7 +178,7 @@ df.main_questions_summary <- df.all_ratings_raw %>%
             agreement = ifelse(mean_rating > 0.5, mean_rating, 1-mean_rating),
             # TODO - this is a manual way of calculating Kripp's Alpha
             exp.prob = get_expected_agreement(n_labels),
-            general.alpha = 1-((1-agreement)/(1-get_expected_agreement(n_labels)))
+            general.alpha = (agreement-get_expected_agreement(n_labels))/(get_expected_agreement(n_labels))
             )
 
 df.task_map_summary <- df.main_questions_summary %>%
@@ -187,68 +193,188 @@ df.task_map_summary <- df.main_questions_summary %>%
 df.task_map_summary %>% arrange(desc(mean_alpha))
 ```
 
-TODO > How do we handle the case where the same person labels repeatedly? I (Emily) am in the data twice, and currently it's actually throwing out both of my labels ...
+```{r}
+task_based_summary <- df.main_questions_summary %>%
+  filter(n_labels > 1) %>%
+  group_by(question_name) %>% # can do task_name, question_name
+  summarize(
+    n_labels = round(mean(n_labels),0),
+    mean_agreement = mean(agreement),
+    mean_alpha = mean(general.alpha)
+  ) %>%
+  arrange(desc(mean_alpha))
+
+task_based_summary
+```
+Take a Look a Krippendorf's Alpha
 
 ```{r message=FALSE, warning=FALSE}
 kripp_alpha_per_question <- data.frame(
   question_name = c(),
-  num_tasks = c(),
-  num_raters = c(),
-  krippendorf_alpha = c()
+  #num_tasks = c(),
+  #num_raters = c(),
+  cat_specific = c(),
+  krippendorf_alpha = c(),
+  mean_agreement = c(),
+  mean_alpha = c()
+  #class_balance = c()
+  #kripp_matrix = c()
 )
 
-for(i in 1:length(main_questions)){
+for (i in 1:length(main_questions)) {
   q_name <- main_questions[i]
   
+  ### SET UP MATRIX OF RATERS AND RATINGS ####
   kripp_alpha_matrix <- df.all_ratings_raw %>%
-  filter(question_name == q_name) %>%
-  group_by(task_name) %>%
-  left_join(df.task_map_summary %>% select(task_name, n_labels)) %>% # get n_labels
-  pivot_wider(names_from = c(name),
-              values_from = c(value),
-              values_fn = list) %>%
+    filter(question_name == q_name) %>%
+    group_by(task_name) %>%
+    left_join(df.task_map_summary %>% select(task_name, n_labels)) %>% # get n_labels
+    pivot_wider(
+      names_from = c(name),
+      values_from = c(value),
+      values_fn = list
+    ) %>%
     ungroup() %>%
     select(-c(task_num, question_name, task_name, n_labels)) %>%
     mutate(across(everything(), as.character)) %>%
     mutate(across(everything(),
-                function(x) case_when(
-                  x == "Mental" ~ 0,
-                  x == "Physical" ~ 1,
-                  x == "No" ~ 0,
-                  x == "Yes" ~ 1,
-                  x == "Not applicable or not answerable based on the task description (Please Elaborate Below.)" ~ 3,
-                  !is.na(as.numeric(x)) ~ as.numeric(x)
-                ))) %>%
+                  function(x)
+                    case_when(
+                      x == "Mental" ~ 0,
+                      x == "Physical" ~ 1,
+                      x == "No" ~ 0,
+                      x == "Yes" ~ 1,
+                      #x == "Not applicable or not answerable based on the task description (Please Elaborate Below.)" ~ 3,!is.na(as.numeric(x)) ~ as.numeric(x)
+                    ))) %>%
     as.matrix() %>%
     t() %>% as.data.frame()
-
-    # drop all rows with only 1 non-NA value  
-    kripp_alpha_matrix$not.Na <- rowSums(!is.na(kripp_alpha_matrix))
-    kripp_alpha_matrix <- kripp_alpha_matrix %>%
-                filter(not.Na > 1) %>%
-                select(-not.Na) %>%
-                as.matrix()
   
-    kripp_alpha <- NA
-    # these are numeric
-    if(q_name == 'Q2intel_manip_1' | 
-            q_name == 'Q21intellective_judg_1' |
-            q_name == 'Q5creativity_input_1'){
-      kripp_alpha <- kripp_alpha_matrix %>% krippalpha(metric = "interval")
-    }else{
-      kripp_alpha <- kripp_alpha_matrix %>% krippalpha(metric = "nominal")
+  # drop all rows with only 1 non-NA value
+  kripp_alpha_matrix$not.Na <- rowSums(!is.na(kripp_alpha_matrix))
+  kripp_alpha_matrix <- kripp_alpha_matrix %>%
+    filter(not.Na > 1) %>%
+    select(-not.Na) %>%
+    as.matrix()
+  
+  
+  ##### IGNORE THE NUMERIC MEASURES --- NOT USEFUL FOR NOW ####
+  kripp_alpha <- NA
+  # these are numeric
+  if (q_name == 'Q2intel_manip_1' |
+      q_name == 'Q21intellective_judg_1' |
+      q_name == 'Q5creativity_input_1') {
+    # kripp_alpha <- kripp_alpha_matrix %>% kripp.alpha(method = "interval")
+    invisible()
+    
+  } else{
+    
+
+    ### GET HOW MUCH PEOPLE DISAGREE - SET UP ###
+    # figure out agreement level of people
+     # setting up for dropping raters who disagree a lot
+    # keep track of how many deviations each person has
+    num_deviations <- rep(0, length(rownames(kripp_alpha_matrix)))
+    modes <- apply(kripp_alpha_matrix, 2, Mode)
+    # handle ties
+    lengths(modes)==1
+    modes <- unlist(ifelse(lengths(modes)==1, modes, NA))
+    
+    for (person_i in 1:nrow(kripp_alpha_matrix)){
+      person_i_name <- rownames(kripp_alpha_matrix)[person_i]
+      person_resp <- kripp_alpha_matrix[person_i,]
+      person_i_sum <- sum(xor(modes,person_resp), na.rm = T)
+      num_deviations[person_i] <- person_i_sum
     }
+    
+    worst_index <- which.max(num_deviations)
+    n <- length(unique(num_deviations))
+    # NOTE - if you want to drop the N worst raters, this code can be easily be modified to do that !
+    second_worst_index <- which(num_deviations == sort(unique(num_deviations),partial=n-1)[n-1])[1]
+    
+    ### DROP THE WORST PERSON
+    # drop the worst person
+    kripp_alpha_matrix <- slice(as.data.frame(kripp_alpha_matrix),c(-worst_index)) %>% as.matrix()
+    # drop the worst TWO people
+    # kripp_alpha_matrix <-
+    #   slice(as.data.frame(kripp_alpha_matrix),
+    #         c(-worst_index, -second_worst_index)) %>% as.matrix()
 
-    kripp_alpha_per_question <- kripp_alpha_per_question %>% rbind(
-      data.frame(
-        question_name = q_name,
-        num_tasks = kripp_alpha$n_units,
-        num_raters = kripp_alpha$n_coders,
-        krippendorf_alpha = kripp_alpha$alpha
-        #kripp_matrix = kripp_alpha_matrix
-    ))
+    
+    #### CALCULATE THE IMPORTANT STUFF
+    kripp_alpha <- kripp_alpha_matrix %>% kripp.alpha(method = "nominal")
+        
+        
+    ########### TRY CATEGORY-SPECIFIC AGREEMENT ###############
+    # cat_specific <- kripp_alpha_matrix %>%
+    #   as.data.frame() %>%
+    #   rownames_to_column("Rater") %>%
+    #   pivot_longer(cols = starts_with("V"), names_to = "Object") %>%
+    #   rename(Score = value) %>%
+    #   agreement::cat_specific(bootstrap = 0)
+    # cat_specific <- cat_specific$observed
+
+    
+    ### CACLCULATE BALANCE ###
+      class_balance_1 <-
+    sum(kripp_alpha_matrix, na.rm = T) / (sum(kripp_alpha_matrix == 0, na.rm =T) + sum(kripp_alpha_matrix, na.rm = T))
+      class_balance_0 <-
+    sum(kripp_alpha_matrix == 0, na.rm = T) / (sum(kripp_alpha_matrix == 0, na.rm = T) + sum(kripp_alpha_matrix, na.rm = T))
+    
+      
+   ### CALCULATE AGREEMENT ###
+    agreements <- c()
+    alphas <- c()
+    for(task_i in 1:ncol(kripp_alpha_matrix)){
+      mean_rating = mean(kripp_alpha_matrix[,task_i], na.rm = T)
+      n_labels = length(kripp_alpha_matrix[,task_i])
+      agreement = ifelse(mean_rating > 0.5, mean_rating, 1-mean_rating)
+      general.alpha = (agreement-0.5)/0.5
+      alphas[task_i] <- general.alpha
+      agreements[task_i] <- agreement
+    }
+      
+  #### RETURN THE IMPORTANT STUFF #####
+  kripp_alpha_per_question <- kripp_alpha_per_question %>% rbind(
+    data.frame(
+      question_name = q_name,
+      #num_tasks = kripp_alpha$subjects,
+      num_raters = kripp_alpha$raters,
+      #cat_specific = cat_specific,
+      krippendorf_alpha = kripp_alpha$value,
+      class_balance = min(class_balance_1, class_balance_0, na.rm = T),
+      mean_agreement = mean(agreements),
+      mean_alpha = mean(alphas)
+      #kripp_matrix = kripp_alpha_matrix
+    )
+  )
+    
+  }
 }
-
-kripp_alpha_per_question %>% arrange(desc(krippendorf_alpha)) # %>% View()
 ```
+
+```{r}
+kripp_alpha_per_question %>% arrange(desc(mean_alpha))
+
+#%>%
+  # rownames_to_column("Category") %>%
+  # mutate(
+  #   Category = substr(Category,1,1)
+  # ) %>%
+  # pivot_wider(names_from = "Category", values_from = "cat_specific") %>% arrange(desc(krippendorf_alpha)) %>%
+  # left_join(task_based_summary, by = "question_name") %>%
+  # rename(
+  #   cat_agreement_0 = `0`,
+  #   cat_agreement_1 = `1`
+  # ) %>% write_csv('metric_comparisons.csv')
+```
+
+
+Look at qualitative feedback about questions
+```{r}
+df.all_ratings_raw %>%
+  filter(question_name %in% feedback_questions) %>%
+  arrange(question_name) #%>% View()
+```
+
+
 
