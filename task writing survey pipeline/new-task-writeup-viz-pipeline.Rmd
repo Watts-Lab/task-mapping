@@ -347,27 +347,12 @@ df.all_ratings_raw %>%
   summarize(
     across(matches('Q'), ~sum(., na.rm = T))
   )
-
-#%>%
- # View()
-
-
-  # mutate(
-  #   row_sum = rowSums(across(matches('Q'))),
-  #   col_sum = colSums(across(matches('Q')))
-  # ) %>% 
 ```
 
 Looking at inter-rater reliability
 
 1. General Agreement and Alpha Per Question, Per Task
 ```{r}
-# This is the expected level of disagreement based on the number of datapoints
-get_expected_agreement <- function(r){
-  expected_prob <- round(0.5*r)/r
-  return(ifelse(expected_prob > 0.5, expected_prob, 1-expected_prob))
-}
-
 # main summary stats
 df.main_questions_summary <- df.all_ratings_raw %>%
   filter(question_name %in% main_questions) %>%
@@ -386,11 +371,9 @@ df.main_questions_summary <- df.all_ratings_raw %>%
   summarize(mean_rating = mean(value),
             n_labels = agree(t(value))$raters,
             all_values = paste(value, collapse = " & "),
-            # TODO - this is a manual way of calculating percent agreement
             agreement = ifelse(mean_rating > 0.5, mean_rating, 1-mean_rating),
-            # TODO - this is a manual way of calculating Kripp's Alpha
             exp.prob = get_expected_agreement(n_labels),
-            general.alpha = 1-((1-agreement)/(1-get_expected_agreement(n_labels)))
+            general.alpha = (agreement-0.5)/(0.5)
             )
 
 df.task_map_summary <- df.main_questions_summary %>%
@@ -404,11 +387,6 @@ df.task_map_summary <- df.main_questions_summary %>%
 
 df.task_map_summary %>% arrange(desc(mean_alpha))
 ```
-
-```{r}
-df.main_questions_summary %>% filter(question_name == "Q14sol_scheme_mul")
-```
-
 
 Try to incorporate any feedback people had about that question
 ```{r}
@@ -443,7 +421,7 @@ df.per_task_q_agreement <- df.per_task_q_agreement %>%
   select(-rowsum)
   
 df.per_task_q_agreement %>%
-  write_csv('per-task-per-q-agreement.csv')
+  write_csv('irr-analysis/per-task-per-q-agreement.csv')
 ```
 
 2. Krippendorf's Alpha - Across the 22 questions, aggregating all questions
@@ -517,9 +495,185 @@ df.per_task_q_agreement %>%
 #kripp_alpha_per_question %>% arrange(desc(krippendorf_alpha)) %>% write_csv("krippendorf_alpha_per_question.csv")
 ```
 
+Set up to collect the task map while we run the Krippendorf loop -- that way we can leverage the data where we drop the 'worst' users
+```{r}
+df.task_map_from_filtered <-
+  data.frame(matrix(NA, nrow = 0, ncol = length(unique(
+    df.all_ratings_raw$task_name
+  ))))
+colnames(df.task_map_from_filtered) <-
+  unique(df.all_ratings_raw$task_name)
+```
 
+Leveraging the updated Krippendorf's code from IRR
+```{r}
+kripp_alpha_per_question <- data.frame(
+  question_name = c(),
+  #num_tasks = c(),
+  #num_raters = c(),
+  cat_specific = c(),
+  krippendorf_alpha = c(),
+  mean_agreement = c(),
+  mean_alpha = c()
+  #class_balance = c()
+  #kripp_matrix = c()
+)
 
-Look at confidence
+for (i in 1:length(main_questions)) {
+  q_name <- main_questions[i]
+  
+  ### SET UP MATRIX OF RATERS AND RATINGS ####
+  kripp_alpha_matrix <- df.all_ratings_raw %>%
+    filter(question_name == q_name) %>%
+    group_by(task_name) %>%
+    left_join(df.task_map_summary %>% select(task_name, n_labels)) %>% # get n_labels
+    pivot_wider(
+      names_from = c(IPAddress),
+      values_from = c(value),
+      values_fn = list
+    ) %>%
+    column_to_rownames("task_name") %>%
+    ungroup() %>%
+    select(-c(task_num, question_name, n_labels)) %>%
+    mutate(across(everything(), as.character)) %>%
+    mutate(across(everything(),
+                  function(x)
+                    case_when(
+                      x == "Mental" ~ 0,
+                      x == "Physical" ~ 1,
+                      x == "No" ~ 0,
+                      x == "Yes" ~ 1,
+                      #x == "Not applicable or not answerable based on the task description (Please Elaborate Below.)" ~ 3,!is.na(as.numeric(x)) ~ as.numeric(x)
+                    ))) %>%
+    as.matrix() %>%
+    t() %>% as.data.frame()
+
+  # drop all rows with only 1 non-NA value
+  kripp_alpha_matrix$not.Na <- rowSums(!is.na(kripp_alpha_matrix))
+  kripp_alpha_matrix <- kripp_alpha_matrix %>%
+    filter(not.Na > 1) %>%
+    select(-not.Na) %>%
+    as.matrix()
+  
+  ##### IGNORE THE NUMERIC MEASURES --- NOT USEFUL FOR NOW ####
+  kripp_alpha <- NA
+  # these are numeric
+  if (q_name == 'Q2intel_manip_1' |
+      q_name == 'Q21intellective_judg_1' |
+      q_name == 'Q5creativity_input_1') {
+    # kripp_alpha <- kripp_alpha_matrix %>% kripp.alpha(method = "interval")
+    invisible()
+    
+  } else{
+    
+
+    ### GET HOW MUCH PEOPLE DISAGREE - SET UP ###
+    # figure out agreement level of people
+     # setting up for dropping raters who disagree a lot
+    # keep track of how many deviations each person has
+    num_deviations <- rep(0, length(rownames(kripp_alpha_matrix)))
+    modes <- apply(kripp_alpha_matrix, 2, function(x) {Mode(x , na.rm = T)})
+    # handle ties
+    lengths(modes)==1
+    modes <- unlist(ifelse(lengths(modes)==1, modes, NA))
+    
+    for (person_i in 1:nrow(kripp_alpha_matrix)){
+      person_i_name <- rownames(kripp_alpha_matrix)[person_i]
+      person_resp <- kripp_alpha_matrix[person_i,]
+      person_i_sum <- sum(xor(modes,person_resp), na.rm = T)
+      num_deviations[person_i] <- person_i_sum
+    }
+
+    ### DROP THE N WORST PEOPLE
+    N_Worst <- 1 # set the number of "worst" that we want to drop
+    worst_indices <- tail(order(num_deviations), N_Worst)
+    kripp_alpha_matrix <- slice(as.data.frame(kripp_alpha_matrix),-c(worst_indices)) %>% as.matrix()
+    
+    #### CALCULATE THE IMPORTANT STUFF
+    kripp_alpha <- kripp_alpha_matrix %>% kripp.alpha(method = "nominal")
+  
+      class_balance_1 <-
+    sum(kripp_alpha_matrix, na.rm = T) / (sum(kripp_alpha_matrix == 0, na.rm =T) + sum(kripp_alpha_matrix, na.rm = T))
+      class_balance_0 <-
+    sum(kripp_alpha_matrix == 0, na.rm = T) / (sum(kripp_alpha_matrix == 0, na.rm = T) + sum(kripp_alpha_matrix, na.rm = T))
+    
+      
+   ### CALCULATE AGREEMENT ###
+    agreements <- c()
+    alphas <- c()
+    for(task_i in 1:ncol(kripp_alpha_matrix)){
+      mean_rating = mean(kripp_alpha_matrix[,task_i], na.rm = T)
+      n_labels = length(kripp_alpha_matrix[,task_i])
+      agreement = ifelse(mean_rating > 0.5, mean_rating, 1-mean_rating)
+      general.alpha = (agreement-0.5)/0.5
+      alphas[task_i] <- general.alpha
+      agreements[task_i] <- agreement
+    }
+    
+  df.curQmatrix <- data.frame(t(colMeans(kripp_alpha_matrix, na.rm = T)))
+  colnames(df.curQmatrix) <- unique(df.all_ratings_raw$task_name)
+  
+  df.task_map_from_filtered <- rbind(df.task_map_from_filtered, 
+                                     df.curQmatrix)
+    
+  #### RETURN THE IMPORTANT STUFF #####
+  kripp_alpha_per_question <- kripp_alpha_per_question %>% rbind(
+    data.frame(
+      question_name = q_name,
+      #num_tasks = kripp_alpha$subjects,
+      num_raters = kripp_alpha$raters,
+      #cat_specific = cat_specific,
+      krippendorf_alpha = kripp_alpha$value,
+      class_balance = min(class_balance_1, class_balance_0, na.rm = T),
+      mean_agreement = mean(agreements, na.rm = T),
+      mean_alpha = mean(alphas, na.rm = T)
+      #kripp_matrix = kripp_alpha_matrix
+    )
+  )
+    
+  }
+}
+```
+
+```{r}
+kripp_alpha_per_question %>% arrange(desc(mean_alpha))
+```
+
+Set up the version of the task map that is filtered (removing unreliable raters)
+
+```{r}
+df.task_map_from_filtered <- t(df.task_map_from_filtered) %>% data.frame()
+names(df.task_map_from_filtered) <- c(
+  "Q1concept_behav",
+  "Q3type_1_planning",
+  "Q4type_2_generate",
+  "Q6type_5_cc",
+  "Q7type_7_battle",
+  "Q8type_8_performance",
+  "Q9divisible_unitary",
+  "Q10maximizing",
+  "Q11optimizing",
+  "Q13outcome_multip",
+  "Q14sol_scheme_mul",
+  "Q15dec_verifiability",
+  "Q16shared_knowledge",
+  "Q17within_sys_sol",
+  "Q18sol_eureka",
+  "Q19time_solvability",
+  "Q20type_3_type_4",
+  "Q22confl_tradeoffs",
+  "Q23ss_out_uncert"
+)
+  
+df.task_map_from_filtered <- df.task_map_from_filtered %>% rownames_to_column("task_name")
+```
+
+```{r}
+df.task_map_from_filtered <- df.task_map_from_filtered %>%
+  drop_na()
+```
+
+Look at raters' confidence
 
 ```{r, fig.width= 18}
 p <- df.all_ratings_raw %>%
@@ -606,6 +760,44 @@ fviz_eig(pca)
 # abline(h=0, v=0, col="red", lwd=2)
 ```
 
+# Version of map done with the filtered data (1 unreliable rater dropped)
+```{r}
+set.seed(1)
+pca.filtered <- df.task_map_from_filtered %>%
+  select(-task_name) %>%
+  prcomp()
+
+kmeans.filtered <- pca.filtered$x %>%
+  kmeans(centers = 4, nstart = 100) 
+
+p<-cbind(df.task_map_from_filtered,
+      pca.filtered$x, factor(kmeans.filtered$cluster)) %>%
+  rename(
+    cluster = `factor(kmeans.filtered$cluster)`
+  ) %>%
+  ggplot(
+    aes(x = PC1,
+    y = PC2,
+    label = task_name,
+    fill = cluster)
+  ) + geom_point() + geom_label(nudge_y = 0.05, size = 2) 
+
+ggsave(plot = p, filename = 'task-map-filtered-irr.png')
+
+combined_data <- cbind(df.task_map_from_filtered,
+      pca.filtered$x, factor(kmeans.filtered$cluster)) %>%
+  rename(cluster = `factor(kmeans.filtered$cluster)`)
+
+plot_ly(
+  x = combined_data$PC1,
+  y = combined_data$PC2,
+  z = combined_data$PC3,
+  type = "scatter3d",
+  mode = "markers", # can use mode = "text"
+  text = combined_data$task_name,
+  color = combined_data$cluster
+)
+```
 
 
 
