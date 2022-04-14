@@ -572,6 +572,8 @@ for (i in 1:length(main_questions)) {
      # setting up for dropping raters who disagree a lot
     # keep track of how many deviations each person has
     num_deviations <- rep(0, length(rownames(kripp_alpha_matrix)))
+    num_responses <- rowSums(!is.na(kripp_alpha_matrix))
+    
     modes <- apply(kripp_alpha_matrix, 2, function(x) {Mode(x , na.rm = T)})
     # handle ties
     lengths(modes)==1
@@ -583,10 +585,12 @@ for (i in 1:length(main_questions)) {
       person_i_sum <- sum(xor(modes,person_resp), na.rm = T)
       num_deviations[person_i] <- person_i_sum
     }
+    
+    pct_deviations <- num_deviations/num_responses
 
     ### DROP THE N WORST PEOPLE
     N_Worst <- 1 # set the number of "worst" that we want to drop
-    worst_indices <- tail(order(num_deviations), N_Worst)
+    worst_indices <- tail(order(pct_deviations), N_Worst)
     kripp_alpha_matrix <- slice(as.data.frame(kripp_alpha_matrix),-c(worst_indices)) %>% as.matrix()
     
     #### CALCULATE THE IMPORTANT STUFF
@@ -705,15 +709,30 @@ ggsave('./question-confidence-analysis.png')
 
 ```{r}
 task.map.data <- df.main_questions_summary %>% select(task_name, question_name, mean_rating) %>%
-  pivot_wider(names_from = question_name, values_from = mean_rating) %>% ungroup() %>%
+  pivot_wider(names_from = question_name, values_from = mean_rating) %>% ungroup() #%>%
   #drop the less reliable cols
-  select(-c(
-    Q13outcome_multip,
-    Q10maximizing,
-    Q23ss_out_uncert,
-    Q11optimizing,
-    Q9divisible_unitary
-  ))
+  # select(-c(
+  #   Q13outcome_multip,
+  #   Q10maximizing,
+  #   Q23ss_out_uncert,
+  #   Q11optimizing,
+  #   Q9divisible_unitary
+  # ))
+  # 
+
+implemented_tasks <- c(
+  "Euclidean traveling salesperson",
+  "Allocating resources to programs",
+  "9 Dot Problem",
+  "Guessing the correlation",
+  "Abstract grid task",
+  "Advertisement writing",
+  "Whac-A-Mole",
+  "Putting food into categories",
+  "Room assignment task",
+  "Divergent Association Task",
+  "Recall association"
+)
 
 set.seed(1)
 pca <- task.map.data %>%
@@ -723,23 +742,39 @@ pca <- task.map.data %>%
 kmeans <- pca$x %>%
   kmeans(centers = 4, nstart = 100) 
 
-p<-cbind(task.map.data,
-      pca$x, factor(kmeans$cluster)) %>%
-  rename(
-    cluster = `factor(kmeans$cluster)`
-  ) %>%
-  ggplot(
-    aes(x = PC1,
-    y = PC2,
-    label = task_name,
-    fill = cluster)
-  ) + geom_point() + geom_label(nudge_y = 0.05, size = 2) 
-
-
-
 combined_data <- cbind(task.map.data,
       pca$x, factor(kmeans$cluster)) %>%
   rename(cluster = `factor(kmeans$cluster)`)
+
+p <- combined_data %>%
+  ggplot(aes(
+    x = PC1,
+    y = PC2,
+    label = task_name,
+    fill = cluster
+  )) + geom_point(alpha = 0.1) + geom_label(nudge_y = 0.1,
+                                            size = 2,
+                                            alpha = 0.05) +
+  geom_point(
+    data = subset(combined_data, task_name %in% implemented_tasks),
+    aes(
+      x = PC1,
+      y = PC2,
+    )
+  ) +
+  geom_label(
+    data = subset(combined_data, task_name %in% implemented_tasks),
+    aes(
+      x = PC1,
+      y = PC2,
+      label = task_name,
+      fill = cluster
+    ),
+    nudge_y = 0.1,
+    size = 2
+  )
+
+p
 
 plot_ly(
   x = combined_data$PC1,
@@ -751,6 +786,7 @@ plot_ly(
   color = combined_data$cluster
 )
 
+ggsave(plot = p, filename = 'task-map-standard-10-tasks-highlighted.png')
 #ggsave(plot = p, filename = 'task-map-standard.png')
 #ggsave(plot = p, filename = 'task-map-unreliable-dropped.png')
 fviz_eig(pca)
