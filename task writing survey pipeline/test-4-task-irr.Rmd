@@ -134,9 +134,9 @@ df.task_map <- df.task_map %>%
 
 Filtering out all updates after Friday - when changes were made
 ```{r}
-# df.task_map <- df.task_map %>% filter(
-#   EndDate >= "2022-04-08 18:54:32"
-# )
+df.task_map <- df.task_map %>% filter(
+  EndDate > "2022-04-07 17:58:18	"
+)
 ```
 
 ```{r}
@@ -192,6 +192,41 @@ df.task_map_summary <- df.main_questions_summary %>%
 
 df.task_map_summary %>% arrange(desc(mean_alpha))
 ```
+Export the data in a way that is useful to James -- 4/15/2022
+```{r}
+# transform the data to convert everything to ints
+df.name_lookup = data.frame(
+  name = unique(df.all_ratings_raw$name),
+  name_index = seq(1:length(unique(df.all_ratings_raw$name)))-1
+ )
+
+df.task_index = data.frame(
+  task_num = unique(df.all_ratings_raw$task_num),
+  task_index = seq(1:length(unique(df.all_ratings_raw$task_num)))-1
+)
+
+df.question_index = data.frame(
+  question_name = main_questions,
+  question_index = seq(1:length(main_questions))-1
+)
+
+df.all_ratings_raw %>%
+  mutate(value = recode(value, 
+                     "Mental" = 0,
+                     "Physical" = 1,
+                     "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+                     "No" = 0,
+                     "Yes" = 1
+                   )) %>%
+  left_join(df.name_lookup, by = "name") %>%
+  filter(
+    question_name %in% main_questions
+  ) %>%
+  left_join(df.question_index, by = "question_name") %>%
+  left_join(df.task_index, by = "task_num") %>%
+  select(task_index, question_index, name_index, value) %>% drop_na() %>% write_csv('within-lab-4-task-irr.csv')
+```
+
 
 ```{r}
 task_based_summary <- df.main_questions_summary %>%
@@ -283,7 +318,7 @@ for (i in 1:length(main_questions)) {
       num_deviations[person_i] <- person_i_sum
     }
 
-    ### DROP THE N WORST PEOPLE
+    ### DROP THE N WORST PEOPLE -- PER QUESTION
     # N_Worst <- 2 # set the number of "worst" that we want to drop
     # worst_indices <- tail(order(num_deviations), N_Worst)
     # kripp_alpha_matrix <- slice(as.data.frame(kripp_alpha_matrix),-c(worst_indices)) %>% as.matrix()

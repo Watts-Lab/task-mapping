@@ -709,16 +709,16 @@ ggsave('./question-confidence-analysis.png')
 
 ```{r}
 task.map.data <- df.main_questions_summary %>% select(task_name, question_name, mean_rating) %>%
-  pivot_wider(names_from = question_name, values_from = mean_rating) %>% ungroup() #%>%
+  pivot_wider(names_from = question_name, values_from = mean_rating) %>% ungroup() %>%
   #drop the less reliable cols
-  # select(-c(
-  #   Q13outcome_multip,
-  #   Q10maximizing,
-  #   Q23ss_out_uncert,
-  #   Q11optimizing,
-  #   Q9divisible_unitary
-  # ))
-  # 
+  select(-c(
+    Q13outcome_multip,
+    Q10maximizing,
+    Q23ss_out_uncert,
+    Q11optimizing,
+    Q9divisible_unitary
+  ))
+
 
 implemented_tasks <- c(
   "Euclidean traveling salesperson",
@@ -740,7 +740,7 @@ pca <- task.map.data %>%
   prcomp()
 
 kmeans <- pca$x %>%
-  kmeans(centers = 4, nstart = 100) 
+  kmeans(centers = 4, nstart = 100) # setting this to 10
 
 combined_data <- cbind(task.map.data,
       pca$x, factor(kmeans$cluster)) %>%
@@ -786,7 +786,7 @@ plot_ly(
   color = combined_data$cluster
 )
 
-ggsave(plot = p, filename = 'task-map-standard-10-tasks-highlighted.png')
+#ggsave(plot = p, filename = 'task-map-unreliable-dropped-10-tasks-highlighted.png')
 #ggsave(plot = p, filename = 'task-map-standard.png')
 #ggsave(plot = p, filename = 'task-map-unreliable-dropped.png')
 fviz_eig(pca)
