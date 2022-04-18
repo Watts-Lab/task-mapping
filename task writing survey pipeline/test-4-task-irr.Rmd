@@ -33,8 +33,8 @@ df.task_name_to_index <- cbind(all_tasks, rep(1:length(all_tasks))) %>%
                                   task_num = strtoi(task_num)
                                 )
 
-#task_mapping_irr_survey_id <- surveys$id[2] # 2 is the RA version of the survey
-task_mapping_irr_survey_id <- surveys$id[5] # 5 is the MTurk version of the survey
+task_mapping_irr_survey_id <- surveys$id[2] # 2 is the RA version of the survey
+#task_mapping_irr_survey_id <- surveys$id[5] # 5 is the MTurk version of the survey
 ```
 
 # Define the task map and the main questions
@@ -217,26 +217,8 @@ task_based_summary
 ```
 
 Export the data in a way that is useful to James -- 4/15/2022
-(Currently commented out)
-```{r}
-#transform the data to convert everything to ints
-
-# df.name_lookup = data.frame(
-#   name = unique(df.all_ratings_raw$name),
-#   name_index = seq(1:length(unique(df.all_ratings_raw$name)))-1
-#  )
-# 
-# df.task_index = data.frame(
-#   task_num = unique(df.all_ratings_raw$task_num),
-#   task_index = seq(1:length(unique(df.all_ratings_raw$task_num)))-1
-# )
-# 
-# df.question_index = data.frame(
-#   question_name = main_questions,
-#   question_index = seq(1:length(main_questions))-1
-# )
-
-df.all_ratings_raw %>%
+```{r warning=FALSE}
+df.james.bayesian <- df.all_ratings_raw %>%
   mutate(value = recode(value,
                      "Mental" = 0,
                      "Physical" = 1,
@@ -244,14 +226,17 @@ df.all_ratings_raw %>%
                      "No" = 0,
                      "Yes" = 1
                    )) %>%
-  #left_join(df.name_lookup, by = "name") %>%
   filter(
     question_name %in% main_questions
-  ) %>%
-  #left_join(df.question_index, by = "question_name") %>%
-  #left_join(df.task_index, by = "task_num") %>%
-  ungroup() %>%
-  select(task_name, question_name, name, value) %>% drop_na() %>% write_csv('mturk-4-task-irr.csv')
+  ) %>% ungroup() %>%
+  select(task_name, question_name, name, value) %>% drop_na() 
+
+
+if(task_mapping_irr_survey_id == surveys$id[2]){
+  df.james.bayesian %>% write_csv('within-lab-4-task-irr.csv')
+}else{
+  df.james.bayesian %>% write_csv('mturk-4-task-irr.csv')
+}
 ```
 
 # Get Main IRR Analysis
