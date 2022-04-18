@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 #devtools::install_github("jmgirard/agreement")
 
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(agreement,stats,corrplot,irr,stringr,markdown,ggplot2,dplyr,tidyverse,qualtRics,DescTools)
+pacman::p_load(agreement,stats,corrplot,irr,stringr,markdown,ggplot2,dplyr,tidyverse,qualtRics,DescTools, plotly)
 ```
 
 # Pull in Survey Data
@@ -32,8 +32,12 @@ df.task_name_to_index <- cbind(all_tasks, rep(1:length(all_tasks))) %>%
                                 mutate(
                                   task_num = strtoi(task_num)
                                 )
-task_mapping_irr_survey_id <- surveys$id[2]
+
+#task_mapping_irr_survey_id <- surveys$id[2] # 2 is the RA version of the survey
+task_mapping_irr_survey_id <- surveys$id[5] # 5 is the MTurk version of the survey
 ```
+
+# Define the task map and the main questions
 ```{r}
 df.task_map <- fetch_survey(
   surveyID = task_mapping_irr_survey_id,
@@ -124,6 +128,9 @@ df.task_map <- df.task_map %>% # need to only filter for complete responses
   filter(Finished == T)
 ```
 
+
+## Filtering out some irrelevant data
+
 Handle the case of repeated measures --- take the last measure in case someone does it twice.
 ```{r}
 df.task_map <- df.task_map %>%
@@ -138,6 +145,8 @@ df.task_map <- df.task_map %>% filter(
   EndDate > "2022-04-07 17:58:18	"
 )
 ```
+
+# Set up Summary Statistics
 
 ```{r}
 df.all_ratings_raw <- df.task_map %>%
@@ -177,7 +186,6 @@ df.main_questions_summary <- df.all_ratings_raw %>%
             n_labels = agree(t(value))$raters,
             all_values = paste(value, collapse = " & "),
             agreement = ifelse(mean_rating > 0.5, mean_rating, 1-mean_rating),
-            exp.prob = get_expected_agreement(n_labels),
             general.alpha = (agreement-0.5)/(0.5)
             )
 
@@ -192,42 +200,8 @@ df.task_map_summary <- df.main_questions_summary %>%
 
 df.task_map_summary %>% arrange(desc(mean_alpha))
 ```
-Export the data in a way that is useful to James -- 4/15/2022
-```{r}
-# transform the data to convert everything to ints
-df.name_lookup = data.frame(
-  name = unique(df.all_ratings_raw$name),
-  name_index = seq(1:length(unique(df.all_ratings_raw$name)))-1
- )
 
-df.task_index = data.frame(
-  task_num = unique(df.all_ratings_raw$task_num),
-  task_index = seq(1:length(unique(df.all_ratings_raw$task_num)))-1
-)
-
-df.question_index = data.frame(
-  question_name = main_questions,
-  question_index = seq(1:length(main_questions))-1
-)
-
-df.all_ratings_raw %>%
-  mutate(value = recode(value, 
-                     "Mental" = 0,
-                     "Physical" = 1,
-                     "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
-                     "No" = 0,
-                     "Yes" = 1
-                   )) %>%
-  left_join(df.name_lookup, by = "name") %>%
-  filter(
-    question_name %in% main_questions
-  ) %>%
-  left_join(df.question_index, by = "question_name") %>%
-  left_join(df.task_index, by = "task_num") %>%
-  select(task_index, question_index, name_index, value) %>% drop_na() %>% write_csv('within-lab-4-task-irr.csv')
-```
-
-
+Take a look at a summary by task.
 ```{r}
 task_based_summary <- df.main_questions_summary %>%
   filter(n_labels > 1) %>%
@@ -241,7 +215,48 @@ task_based_summary <- df.main_questions_summary %>%
 
 task_based_summary
 ```
-This is the large KA block, that also doubles as doing 
+
+Export the data in a way that is useful to James -- 4/15/2022
+(Currently commented out)
+```{r}
+#transform the data to convert everything to ints
+
+# df.name_lookup = data.frame(
+#   name = unique(df.all_ratings_raw$name),
+#   name_index = seq(1:length(unique(df.all_ratings_raw$name)))-1
+#  )
+# 
+# df.task_index = data.frame(
+#   task_num = unique(df.all_ratings_raw$task_num),
+#   task_index = seq(1:length(unique(df.all_ratings_raw$task_num)))-1
+# )
+# 
+# df.question_index = data.frame(
+#   question_name = main_questions,
+#   question_index = seq(1:length(main_questions))-1
+# )
+
+df.all_ratings_raw %>%
+  mutate(value = recode(value,
+                     "Mental" = 0,
+                     "Physical" = 1,
+                     "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+                     "No" = 0,
+                     "Yes" = 1
+                   )) %>%
+  #left_join(df.name_lookup, by = "name") %>%
+  filter(
+    question_name %in% main_questions
+  ) %>%
+  #left_join(df.question_index, by = "question_name") %>%
+  #left_join(df.task_index, by = "task_num") %>%
+  ungroup() %>%
+  select(task_name, question_name, name, value) %>% drop_na() %>% write_csv('mturk-4-task-irr.csv')
+```
+
+# Get Main IRR Analysis
+
+This is the large KA block, that also doubles as taking care of drops and doing other IRR measures
 
 ```{r message=FALSE, warning=FALSE}
 # Set up to look at a filtered version of the task map
@@ -372,6 +387,8 @@ for (i in 1:length(main_questions)) {
 ```{r}
 kripp_alpha_per_question %>% arrange(desc(mean_alpha))
 ```
+
+
 Set up the version of the task map that is filtered (removing unreliable raters)
 
 ```{r}
@@ -432,10 +449,6 @@ plot_ly(
   text = combined_data$task_name
 )
 ```
-
-
-
-
 
 Look at qualitative feedback about questions
 ```{r}

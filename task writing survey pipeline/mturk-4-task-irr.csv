@@ -1,0 +1,3201 @@
+task_name,question_name,name,value
+Word completion given starting letter,Q1concept_behav,A13FUEPWBCLBUY,0
+Word completion given starting letter,Q3type_1_planning,A13FUEPWBCLBUY,0
+Word completion given starting letter,Q4type_2_generate,A13FUEPWBCLBUY,1
+Word completion given starting letter,Q6type_5_cc,A13FUEPWBCLBUY,0
+Word completion given starting letter,Q7type_7_battle,A13FUEPWBCLBUY,0
+Word completion given starting letter,Q8type_8_performance,A13FUEPWBCLBUY,0
+Word completion given starting letter,Q9divisible_unitary,A13FUEPWBCLBUY,0
+Word completion given starting letter,Q10maximizing,A13FUEPWBCLBUY,1
+Word completion given starting letter,Q11optimizing,A13FUEPWBCLBUY,0
+Word completion given starting letter,Q13outcome_multip,A13FUEPWBCLBUY,0
+Word completion given starting letter,Q14sol_scheme_mul,A13FUEPWBCLBUY,0
+Word completion given starting letter,Q15dec_verifiability,A13FUEPWBCLBUY,1
+Word completion given starting letter,Q16shared_knowledge,A13FUEPWBCLBUY,0
+Word completion given starting letter,Q17within_sys_sol,A13FUEPWBCLBUY,1
+Word completion given starting letter,Q18ans_recog,A13FUEPWBCLBUY,1
+Word completion given starting letter,Q19time_solvability,A13FUEPWBCLBUY,1
+Word completion given starting letter,Q20type_3_type_4,A13FUEPWBCLBUY,1
+Word completion given starting letter,Q22confl_tradeoffs,A13FUEPWBCLBUY,0
+Word completion given starting letter,Q23ss_out_uncert,A13FUEPWBCLBUY,0
+Word completion given starting letter,Q24eureka_question,A13FUEPWBCLBUY,1
+Graph coloring task,Q1concept_behav,A13FUEPWBCLBUY,0
+Graph coloring task,Q3type_1_planning,A13FUEPWBCLBUY,1
+Graph coloring task,Q4type_2_generate,A13FUEPWBCLBUY,0
+Graph coloring task,Q6type_5_cc,A13FUEPWBCLBUY,0
+Graph coloring task,Q7type_7_battle,A13FUEPWBCLBUY,0
+Graph coloring task,Q8type_8_performance,A13FUEPWBCLBUY,1
+Graph coloring task,Q9divisible_unitary,A13FUEPWBCLBUY,0
+Graph coloring task,Q10maximizing,A13FUEPWBCLBUY,0
+Graph coloring task,Q11optimizing,A13FUEPWBCLBUY,1
+Graph coloring task,Q13outcome_multip,A13FUEPWBCLBUY,1
+Graph coloring task,Q14sol_scheme_mul,A13FUEPWBCLBUY,1
+Graph coloring task,Q15dec_verifiability,A13FUEPWBCLBUY,1
+Graph coloring task,Q16shared_knowledge,A13FUEPWBCLBUY,1
+Graph coloring task,Q17within_sys_sol,A13FUEPWBCLBUY,1
+Graph coloring task,Q18ans_recog,A13FUEPWBCLBUY,1
+Graph coloring task,Q19time_solvability,A13FUEPWBCLBUY,1
+Graph coloring task,Q20type_3_type_4,A13FUEPWBCLBUY,1
+Graph coloring task,Q22confl_tradeoffs,A13FUEPWBCLBUY,0
+Graph coloring task,Q23ss_out_uncert,A13FUEPWBCLBUY,0
+Graph coloring task,Q24eureka_question,A13FUEPWBCLBUY,1
+Shopping plan,Q1concept_behav,A13FUEPWBCLBUY,0
+Shopping plan,Q3type_1_planning,A13FUEPWBCLBUY,0
+Shopping plan,Q4type_2_generate,A13FUEPWBCLBUY,0
+Shopping plan,Q6type_5_cc,A13FUEPWBCLBUY,0
+Shopping plan,Q7type_7_battle,A13FUEPWBCLBUY,0
+Shopping plan,Q8type_8_performance,A13FUEPWBCLBUY,0
+Shopping plan,Q9divisible_unitary,A13FUEPWBCLBUY,0
+Shopping plan,Q10maximizing,A13FUEPWBCLBUY,1
+Shopping plan,Q11optimizing,A13FUEPWBCLBUY,1
+Shopping plan,Q13outcome_multip,A13FUEPWBCLBUY,1
+Shopping plan,Q14sol_scheme_mul,A13FUEPWBCLBUY,1
+Shopping plan,Q15dec_verifiability,A13FUEPWBCLBUY,1
+Shopping plan,Q16shared_knowledge,A13FUEPWBCLBUY,1
+Shopping plan,Q17within_sys_sol,A13FUEPWBCLBUY,1
+Shopping plan,Q18ans_recog,A13FUEPWBCLBUY,1
+Shopping plan,Q19time_solvability,A13FUEPWBCLBUY,1
+Shopping plan,Q20type_3_type_4,A13FUEPWBCLBUY,1
+Shopping plan,Q22confl_tradeoffs,A13FUEPWBCLBUY,1
+Shopping plan,Q23ss_out_uncert,A13FUEPWBCLBUY,1
+Shopping plan,Q24eureka_question,A13FUEPWBCLBUY,0
+Room assignment task,Q1concept_behav,A13FUEPWBCLBUY,0
+Room assignment task,Q3type_1_planning,A13FUEPWBCLBUY,0
+Room assignment task,Q4type_2_generate,A13FUEPWBCLBUY,0
+Room assignment task,Q6type_5_cc,A13FUEPWBCLBUY,0
+Room assignment task,Q7type_7_battle,A13FUEPWBCLBUY,0
+Room assignment task,Q8type_8_performance,A13FUEPWBCLBUY,0
+Room assignment task,Q9divisible_unitary,A13FUEPWBCLBUY,0
+Room assignment task,Q10maximizing,A13FUEPWBCLBUY,1
+Room assignment task,Q11optimizing,A13FUEPWBCLBUY,1
+Room assignment task,Q13outcome_multip,A13FUEPWBCLBUY,1
+Room assignment task,Q14sol_scheme_mul,A13FUEPWBCLBUY,0
+Room assignment task,Q15dec_verifiability,A13FUEPWBCLBUY,1
+Room assignment task,Q16shared_knowledge,A13FUEPWBCLBUY,1
+Room assignment task,Q17within_sys_sol,A13FUEPWBCLBUY,1
+Room assignment task,Q18ans_recog,A13FUEPWBCLBUY,1
+Room assignment task,Q19time_solvability,A13FUEPWBCLBUY,1
+Room assignment task,Q20type_3_type_4,A13FUEPWBCLBUY,1
+Room assignment task,Q22confl_tradeoffs,A13FUEPWBCLBUY,1
+Room assignment task,Q23ss_out_uncert,A13FUEPWBCLBUY,1
+Room assignment task,Q24eureka_question,A13FUEPWBCLBUY,0
+Word completion given starting letter,Q1concept_behav,A183WYXN12P2TJ,0
+Word completion given starting letter,Q3type_1_planning,A183WYXN12P2TJ,0
+Word completion given starting letter,Q4type_2_generate,A183WYXN12P2TJ,0
+Word completion given starting letter,Q6type_5_cc,A183WYXN12P2TJ,0
+Word completion given starting letter,Q7type_7_battle,A183WYXN12P2TJ,0
+Word completion given starting letter,Q8type_8_performance,A183WYXN12P2TJ,0
+Word completion given starting letter,Q9divisible_unitary,A183WYXN12P2TJ,0
+Word completion given starting letter,Q10maximizing,A183WYXN12P2TJ,1
+Word completion given starting letter,Q11optimizing,A183WYXN12P2TJ,0
+Word completion given starting letter,Q13outcome_multip,A183WYXN12P2TJ,0
+Word completion given starting letter,Q14sol_scheme_mul,A183WYXN12P2TJ,0
+Word completion given starting letter,Q15dec_verifiability,A183WYXN12P2TJ,1
+Word completion given starting letter,Q16shared_knowledge,A183WYXN12P2TJ,0
+Word completion given starting letter,Q17within_sys_sol,A183WYXN12P2TJ,0
+Word completion given starting letter,Q18ans_recog,A183WYXN12P2TJ,0
+Word completion given starting letter,Q19time_solvability,A183WYXN12P2TJ,0
+Word completion given starting letter,Q20type_3_type_4,A183WYXN12P2TJ,1
+Word completion given starting letter,Q22confl_tradeoffs,A183WYXN12P2TJ,0
+Word completion given starting letter,Q23ss_out_uncert,A183WYXN12P2TJ,0
+Word completion given starting letter,Q24eureka_question,A183WYXN12P2TJ,0
+Graph coloring task,Q1concept_behav,A183WYXN12P2TJ,0
+Graph coloring task,Q3type_1_planning,A183WYXN12P2TJ,0
+Graph coloring task,Q4type_2_generate,A183WYXN12P2TJ,0
+Graph coloring task,Q6type_5_cc,A183WYXN12P2TJ,0
+Graph coloring task,Q7type_7_battle,A183WYXN12P2TJ,0
+Graph coloring task,Q8type_8_performance,A183WYXN12P2TJ,1
+Graph coloring task,Q9divisible_unitary,A183WYXN12P2TJ,0
+Graph coloring task,Q10maximizing,A183WYXN12P2TJ,1
+Graph coloring task,Q11optimizing,A183WYXN12P2TJ,1
+Graph coloring task,Q13outcome_multip,A183WYXN12P2TJ,0
+Graph coloring task,Q14sol_scheme_mul,A183WYXN12P2TJ,0
+Graph coloring task,Q15dec_verifiability,A183WYXN12P2TJ,1
+Graph coloring task,Q16shared_knowledge,A183WYXN12P2TJ,1
+Graph coloring task,Q17within_sys_sol,A183WYXN12P2TJ,1
+Graph coloring task,Q18ans_recog,A183WYXN12P2TJ,1
+Graph coloring task,Q19time_solvability,A183WYXN12P2TJ,1
+Graph coloring task,Q20type_3_type_4,A183WYXN12P2TJ,1
+Graph coloring task,Q22confl_tradeoffs,A183WYXN12P2TJ,0
+Graph coloring task,Q23ss_out_uncert,A183WYXN12P2TJ,0
+Graph coloring task,Q24eureka_question,A183WYXN12P2TJ,0
+Shopping plan,Q1concept_behav,A183WYXN12P2TJ,0
+Shopping plan,Q3type_1_planning,A183WYXN12P2TJ,1
+Shopping plan,Q4type_2_generate,A183WYXN12P2TJ,0
+Shopping plan,Q6type_5_cc,A183WYXN12P2TJ,0
+Shopping plan,Q7type_7_battle,A183WYXN12P2TJ,0
+Shopping plan,Q8type_8_performance,A183WYXN12P2TJ,0
+Shopping plan,Q9divisible_unitary,A183WYXN12P2TJ,0
+Shopping plan,Q10maximizing,A183WYXN12P2TJ,1
+Shopping plan,Q11optimizing,A183WYXN12P2TJ,0
+Shopping plan,Q13outcome_multip,A183WYXN12P2TJ,0
+Shopping plan,Q14sol_scheme_mul,A183WYXN12P2TJ,0
+Shopping plan,Q15dec_verifiability,A183WYXN12P2TJ,0
+Shopping plan,Q16shared_knowledge,A183WYXN12P2TJ,1
+Shopping plan,Q17within_sys_sol,A183WYXN12P2TJ,0
+Shopping plan,Q18ans_recog,A183WYXN12P2TJ,0
+Shopping plan,Q19time_solvability,A183WYXN12P2TJ,0
+Shopping plan,Q20type_3_type_4,A183WYXN12P2TJ,0
+Shopping plan,Q22confl_tradeoffs,A183WYXN12P2TJ,1
+Shopping plan,Q23ss_out_uncert,A183WYXN12P2TJ,1
+Shopping plan,Q24eureka_question,A183WYXN12P2TJ,0
+Room assignment task,Q1concept_behav,A183WYXN12P2TJ,0
+Room assignment task,Q3type_1_planning,A183WYXN12P2TJ,0
+Room assignment task,Q4type_2_generate,A183WYXN12P2TJ,0
+Room assignment task,Q6type_5_cc,A183WYXN12P2TJ,0
+Room assignment task,Q7type_7_battle,A183WYXN12P2TJ,0
+Room assignment task,Q8type_8_performance,A183WYXN12P2TJ,0
+Room assignment task,Q9divisible_unitary,A183WYXN12P2TJ,0
+Room assignment task,Q10maximizing,A183WYXN12P2TJ,1
+Room assignment task,Q11optimizing,A183WYXN12P2TJ,0
+Room assignment task,Q13outcome_multip,A183WYXN12P2TJ,0
+Room assignment task,Q14sol_scheme_mul,A183WYXN12P2TJ,0
+Room assignment task,Q15dec_verifiability,A183WYXN12P2TJ,0
+Room assignment task,Q16shared_knowledge,A183WYXN12P2TJ,1
+Room assignment task,Q17within_sys_sol,A183WYXN12P2TJ,0
+Room assignment task,Q18ans_recog,A183WYXN12P2TJ,0
+Room assignment task,Q19time_solvability,A183WYXN12P2TJ,0
+Room assignment task,Q20type_3_type_4,A183WYXN12P2TJ,1
+Room assignment task,Q22confl_tradeoffs,A183WYXN12P2TJ,0
+Room assignment task,Q23ss_out_uncert,A183WYXN12P2TJ,0
+Room assignment task,Q24eureka_question,A183WYXN12P2TJ,0
+Word completion given starting letter,Q1concept_behav,A1ATL3G98SFW4V,0
+Word completion given starting letter,Q3type_1_planning,A1ATL3G98SFW4V,0
+Word completion given starting letter,Q4type_2_generate,A1ATL3G98SFW4V,1
+Word completion given starting letter,Q6type_5_cc,A1ATL3G98SFW4V,0
+Word completion given starting letter,Q7type_7_battle,A1ATL3G98SFW4V,1
+Word completion given starting letter,Q8type_8_performance,A1ATL3G98SFW4V,0
+Word completion given starting letter,Q9divisible_unitary,A1ATL3G98SFW4V,0
+Word completion given starting letter,Q10maximizing,A1ATL3G98SFW4V,1
+Word completion given starting letter,Q11optimizing,A1ATL3G98SFW4V,0
+Word completion given starting letter,Q13outcome_multip,A1ATL3G98SFW4V,0
+Word completion given starting letter,Q14sol_scheme_mul,A1ATL3G98SFW4V,0
+Word completion given starting letter,Q15dec_verifiability,A1ATL3G98SFW4V,1
+Word completion given starting letter,Q16shared_knowledge,A1ATL3G98SFW4V,0
+Word completion given starting letter,Q17within_sys_sol,A1ATL3G98SFW4V,1
+Word completion given starting letter,Q18ans_recog,A1ATL3G98SFW4V,1
+Word completion given starting letter,Q19time_solvability,A1ATL3G98SFW4V,1
+Word completion given starting letter,Q20type_3_type_4,A1ATL3G98SFW4V,1
+Word completion given starting letter,Q22confl_tradeoffs,A1ATL3G98SFW4V,0
+Word completion given starting letter,Q23ss_out_uncert,A1ATL3G98SFW4V,0
+Word completion given starting letter,Q24eureka_question,A1ATL3G98SFW4V,0
+Graph coloring task,Q1concept_behav,A1ATL3G98SFW4V,0
+Graph coloring task,Q3type_1_planning,A1ATL3G98SFW4V,1
+Graph coloring task,Q4type_2_generate,A1ATL3G98SFW4V,1
+Graph coloring task,Q6type_5_cc,A1ATL3G98SFW4V,0
+Graph coloring task,Q7type_7_battle,A1ATL3G98SFW4V,1
+Graph coloring task,Q8type_8_performance,A1ATL3G98SFW4V,1
+Graph coloring task,Q9divisible_unitary,A1ATL3G98SFW4V,1
+Graph coloring task,Q10maximizing,A1ATL3G98SFW4V,0
+Graph coloring task,Q11optimizing,A1ATL3G98SFW4V,1
+Graph coloring task,Q13outcome_multip,A1ATL3G98SFW4V,1
+Graph coloring task,Q14sol_scheme_mul,A1ATL3G98SFW4V,1
+Graph coloring task,Q15dec_verifiability,A1ATL3G98SFW4V,1
+Graph coloring task,Q16shared_knowledge,A1ATL3G98SFW4V,1
+Graph coloring task,Q17within_sys_sol,A1ATL3G98SFW4V,1
+Graph coloring task,Q18ans_recog,A1ATL3G98SFW4V,1
+Graph coloring task,Q19time_solvability,A1ATL3G98SFW4V,1
+Graph coloring task,Q20type_3_type_4,A1ATL3G98SFW4V,1
+Graph coloring task,Q22confl_tradeoffs,A1ATL3G98SFW4V,0
+Graph coloring task,Q23ss_out_uncert,A1ATL3G98SFW4V,1
+Graph coloring task,Q24eureka_question,A1ATL3G98SFW4V,0
+Shopping plan,Q1concept_behav,A1ATL3G98SFW4V,0
+Shopping plan,Q3type_1_planning,A1ATL3G98SFW4V,1
+Shopping plan,Q4type_2_generate,A1ATL3G98SFW4V,1
+Shopping plan,Q6type_5_cc,A1ATL3G98SFW4V,0
+Shopping plan,Q7type_7_battle,A1ATL3G98SFW4V,1
+Shopping plan,Q8type_8_performance,A1ATL3G98SFW4V,0
+Shopping plan,Q9divisible_unitary,A1ATL3G98SFW4V,1
+Shopping plan,Q10maximizing,A1ATL3G98SFW4V,1
+Shopping plan,Q11optimizing,A1ATL3G98SFW4V,0
+Shopping plan,Q13outcome_multip,A1ATL3G98SFW4V,0
+Shopping plan,Q14sol_scheme_mul,A1ATL3G98SFW4V,0
+Shopping plan,Q15dec_verifiability,A1ATL3G98SFW4V,1
+Shopping plan,Q16shared_knowledge,A1ATL3G98SFW4V,1
+Shopping plan,Q17within_sys_sol,A1ATL3G98SFW4V,1
+Shopping plan,Q18ans_recog,A1ATL3G98SFW4V,0
+Shopping plan,Q19time_solvability,A1ATL3G98SFW4V,1
+Shopping plan,Q20type_3_type_4,A1ATL3G98SFW4V,0
+Shopping plan,Q22confl_tradeoffs,A1ATL3G98SFW4V,1
+Shopping plan,Q23ss_out_uncert,A1ATL3G98SFW4V,1
+Shopping plan,Q24eureka_question,A1ATL3G98SFW4V,0
+Room assignment task,Q1concept_behav,A1ATL3G98SFW4V,0
+Room assignment task,Q3type_1_planning,A1ATL3G98SFW4V,1
+Room assignment task,Q4type_2_generate,A1ATL3G98SFW4V,1
+Room assignment task,Q6type_5_cc,A1ATL3G98SFW4V,0
+Room assignment task,Q7type_7_battle,A1ATL3G98SFW4V,0
+Room assignment task,Q8type_8_performance,A1ATL3G98SFW4V,0
+Room assignment task,Q9divisible_unitary,A1ATL3G98SFW4V,1
+Room assignment task,Q10maximizing,A1ATL3G98SFW4V,1
+Room assignment task,Q11optimizing,A1ATL3G98SFW4V,0
+Room assignment task,Q13outcome_multip,A1ATL3G98SFW4V,1
+Room assignment task,Q14sol_scheme_mul,A1ATL3G98SFW4V,1
+Room assignment task,Q15dec_verifiability,A1ATL3G98SFW4V,1
+Room assignment task,Q16shared_knowledge,A1ATL3G98SFW4V,1
+Room assignment task,Q17within_sys_sol,A1ATL3G98SFW4V,0
+Room assignment task,Q18ans_recog,A1ATL3G98SFW4V,0
+Room assignment task,Q19time_solvability,A1ATL3G98SFW4V,1
+Room assignment task,Q20type_3_type_4,A1ATL3G98SFW4V,1
+Room assignment task,Q22confl_tradeoffs,A1ATL3G98SFW4V,1
+Room assignment task,Q23ss_out_uncert,A1ATL3G98SFW4V,1
+Room assignment task,Q24eureka_question,A1ATL3G98SFW4V,0
+Word completion given starting letter,Q1concept_behav,A1BHR5XQ16T7LA,0
+Word completion given starting letter,Q3type_1_planning,A1BHR5XQ16T7LA,0
+Word completion given starting letter,Q4type_2_generate,A1BHR5XQ16T7LA,1
+Word completion given starting letter,Q6type_5_cc,A1BHR5XQ16T7LA,0
+Word completion given starting letter,Q7type_7_battle,A1BHR5XQ16T7LA,1
+Word completion given starting letter,Q8type_8_performance,A1BHR5XQ16T7LA,0
+Word completion given starting letter,Q9divisible_unitary,A1BHR5XQ16T7LA,1
+Word completion given starting letter,Q10maximizing,A1BHR5XQ16T7LA,1
+Word completion given starting letter,Q11optimizing,A1BHR5XQ16T7LA,0
+Word completion given starting letter,Q13outcome_multip,A1BHR5XQ16T7LA,0
+Word completion given starting letter,Q14sol_scheme_mul,A1BHR5XQ16T7LA,0
+Word completion given starting letter,Q15dec_verifiability,A1BHR5XQ16T7LA,1
+Word completion given starting letter,Q16shared_knowledge,A1BHR5XQ16T7LA,1
+Word completion given starting letter,Q17within_sys_sol,A1BHR5XQ16T7LA,1
+Word completion given starting letter,Q18ans_recog,A1BHR5XQ16T7LA,1
+Word completion given starting letter,Q19time_solvability,A1BHR5XQ16T7LA,1
+Word completion given starting letter,Q20type_3_type_4,A1BHR5XQ16T7LA,0
+Word completion given starting letter,Q22confl_tradeoffs,A1BHR5XQ16T7LA,0
+Word completion given starting letter,Q23ss_out_uncert,A1BHR5XQ16T7LA,0
+Word completion given starting letter,Q24eureka_question,A1BHR5XQ16T7LA,1
+Graph coloring task,Q1concept_behav,A1BHR5XQ16T7LA,0
+Graph coloring task,Q3type_1_planning,A1BHR5XQ16T7LA,0
+Graph coloring task,Q4type_2_generate,A1BHR5XQ16T7LA,0
+Graph coloring task,Q6type_5_cc,A1BHR5XQ16T7LA,1
+Graph coloring task,Q7type_7_battle,A1BHR5XQ16T7LA,1
+Graph coloring task,Q8type_8_performance,A1BHR5XQ16T7LA,1
+Graph coloring task,Q9divisible_unitary,A1BHR5XQ16T7LA,1
+Graph coloring task,Q10maximizing,A1BHR5XQ16T7LA,3
+Graph coloring task,Q11optimizing,A1BHR5XQ16T7LA,1
+Graph coloring task,Q13outcome_multip,A1BHR5XQ16T7LA,1
+Graph coloring task,Q14sol_scheme_mul,A1BHR5XQ16T7LA,1
+Graph coloring task,Q15dec_verifiability,A1BHR5XQ16T7LA,1
+Graph coloring task,Q16shared_knowledge,A1BHR5XQ16T7LA,1
+Graph coloring task,Q17within_sys_sol,A1BHR5XQ16T7LA,1
+Graph coloring task,Q18ans_recog,A1BHR5XQ16T7LA,1
+Graph coloring task,Q19time_solvability,A1BHR5XQ16T7LA,1
+Graph coloring task,Q20type_3_type_4,A1BHR5XQ16T7LA,1
+Graph coloring task,Q22confl_tradeoffs,A1BHR5XQ16T7LA,1
+Graph coloring task,Q23ss_out_uncert,A1BHR5XQ16T7LA,1
+Graph coloring task,Q24eureka_question,A1BHR5XQ16T7LA,0
+Shopping plan,Q1concept_behav,A1BHR5XQ16T7LA,0
+Shopping plan,Q3type_1_planning,A1BHR5XQ16T7LA,1
+Shopping plan,Q4type_2_generate,A1BHR5XQ16T7LA,0
+Shopping plan,Q6type_5_cc,A1BHR5XQ16T7LA,0
+Shopping plan,Q7type_7_battle,A1BHR5XQ16T7LA,1
+Shopping plan,Q8type_8_performance,A1BHR5XQ16T7LA,0
+Shopping plan,Q9divisible_unitary,A1BHR5XQ16T7LA,0
+Shopping plan,Q10maximizing,A1BHR5XQ16T7LA,1
+Shopping plan,Q11optimizing,A1BHR5XQ16T7LA,0
+Shopping plan,Q13outcome_multip,A1BHR5XQ16T7LA,0
+Shopping plan,Q14sol_scheme_mul,A1BHR5XQ16T7LA,0
+Shopping plan,Q15dec_verifiability,A1BHR5XQ16T7LA,1
+Shopping plan,Q16shared_knowledge,A1BHR5XQ16T7LA,1
+Shopping plan,Q17within_sys_sol,A1BHR5XQ16T7LA,1
+Shopping plan,Q18ans_recog,A1BHR5XQ16T7LA,1
+Shopping plan,Q19time_solvability,A1BHR5XQ16T7LA,1
+Shopping plan,Q20type_3_type_4,A1BHR5XQ16T7LA,1
+Shopping plan,Q22confl_tradeoffs,A1BHR5XQ16T7LA,1
+Shopping plan,Q23ss_out_uncert,A1BHR5XQ16T7LA,1
+Shopping plan,Q24eureka_question,A1BHR5XQ16T7LA,1
+Room assignment task,Q1concept_behav,A1BHR5XQ16T7LA,0
+Room assignment task,Q3type_1_planning,A1BHR5XQ16T7LA,0
+Room assignment task,Q4type_2_generate,A1BHR5XQ16T7LA,1
+Room assignment task,Q6type_5_cc,A1BHR5XQ16T7LA,1
+Room assignment task,Q7type_7_battle,A1BHR5XQ16T7LA,1
+Room assignment task,Q8type_8_performance,A1BHR5XQ16T7LA,0
+Room assignment task,Q9divisible_unitary,A1BHR5XQ16T7LA,1
+Room assignment task,Q10maximizing,A1BHR5XQ16T7LA,1
+Room assignment task,Q11optimizing,A1BHR5XQ16T7LA,0
+Room assignment task,Q13outcome_multip,A1BHR5XQ16T7LA,0
+Room assignment task,Q14sol_scheme_mul,A1BHR5XQ16T7LA,0
+Room assignment task,Q15dec_verifiability,A1BHR5XQ16T7LA,1
+Room assignment task,Q16shared_knowledge,A1BHR5XQ16T7LA,1
+Room assignment task,Q17within_sys_sol,A1BHR5XQ16T7LA,1
+Room assignment task,Q18ans_recog,A1BHR5XQ16T7LA,1
+Room assignment task,Q19time_solvability,A1BHR5XQ16T7LA,1
+Room assignment task,Q20type_3_type_4,A1BHR5XQ16T7LA,1
+Room assignment task,Q22confl_tradeoffs,A1BHR5XQ16T7LA,1
+Room assignment task,Q23ss_out_uncert,A1BHR5XQ16T7LA,1
+Room assignment task,Q24eureka_question,A1BHR5XQ16T7LA,1
+Word completion given starting letter,Q1concept_behav,A1DUPOUC9RNU4L,0
+Word completion given starting letter,Q3type_1_planning,A1DUPOUC9RNU4L,0
+Word completion given starting letter,Q4type_2_generate,A1DUPOUC9RNU4L,0
+Word completion given starting letter,Q6type_5_cc,A1DUPOUC9RNU4L,0
+Word completion given starting letter,Q7type_7_battle,A1DUPOUC9RNU4L,0
+Word completion given starting letter,Q8type_8_performance,A1DUPOUC9RNU4L,0
+Word completion given starting letter,Q9divisible_unitary,A1DUPOUC9RNU4L,1
+Word completion given starting letter,Q10maximizing,A1DUPOUC9RNU4L,1
+Word completion given starting letter,Q11optimizing,A1DUPOUC9RNU4L,1
+Word completion given starting letter,Q13outcome_multip,A1DUPOUC9RNU4L,0
+Word completion given starting letter,Q14sol_scheme_mul,A1DUPOUC9RNU4L,0
+Word completion given starting letter,Q15dec_verifiability,A1DUPOUC9RNU4L,1
+Word completion given starting letter,Q16shared_knowledge,A1DUPOUC9RNU4L,0
+Word completion given starting letter,Q17within_sys_sol,A1DUPOUC9RNU4L,1
+Word completion given starting letter,Q18ans_recog,A1DUPOUC9RNU4L,1
+Word completion given starting letter,Q19time_solvability,A1DUPOUC9RNU4L,1
+Word completion given starting letter,Q20type_3_type_4,A1DUPOUC9RNU4L,1
+Word completion given starting letter,Q22confl_tradeoffs,A1DUPOUC9RNU4L,0
+Word completion given starting letter,Q23ss_out_uncert,A1DUPOUC9RNU4L,0
+Word completion given starting letter,Q24eureka_question,A1DUPOUC9RNU4L,0
+Graph coloring task,Q1concept_behav,A1DUPOUC9RNU4L,0
+Graph coloring task,Q3type_1_planning,A1DUPOUC9RNU4L,0
+Graph coloring task,Q4type_2_generate,A1DUPOUC9RNU4L,0
+Graph coloring task,Q6type_5_cc,A1DUPOUC9RNU4L,0
+Graph coloring task,Q7type_7_battle,A1DUPOUC9RNU4L,1
+Graph coloring task,Q8type_8_performance,A1DUPOUC9RNU4L,1
+Graph coloring task,Q9divisible_unitary,A1DUPOUC9RNU4L,0
+Graph coloring task,Q10maximizing,A1DUPOUC9RNU4L,0
+Graph coloring task,Q11optimizing,A1DUPOUC9RNU4L,1
+Graph coloring task,Q13outcome_multip,A1DUPOUC9RNU4L,1
+Graph coloring task,Q14sol_scheme_mul,A1DUPOUC9RNU4L,1
+Graph coloring task,Q15dec_verifiability,A1DUPOUC9RNU4L,1
+Graph coloring task,Q16shared_knowledge,A1DUPOUC9RNU4L,1
+Graph coloring task,Q17within_sys_sol,A1DUPOUC9RNU4L,1
+Graph coloring task,Q18ans_recog,A1DUPOUC9RNU4L,1
+Graph coloring task,Q19time_solvability,A1DUPOUC9RNU4L,1
+Graph coloring task,Q20type_3_type_4,A1DUPOUC9RNU4L,1
+Graph coloring task,Q22confl_tradeoffs,A1DUPOUC9RNU4L,0
+Graph coloring task,Q23ss_out_uncert,A1DUPOUC9RNU4L,0
+Graph coloring task,Q24eureka_question,A1DUPOUC9RNU4L,0
+Shopping plan,Q1concept_behav,A1DUPOUC9RNU4L,0
+Shopping plan,Q3type_1_planning,A1DUPOUC9RNU4L,1
+Shopping plan,Q4type_2_generate,A1DUPOUC9RNU4L,0
+Shopping plan,Q6type_5_cc,A1DUPOUC9RNU4L,0
+Shopping plan,Q7type_7_battle,A1DUPOUC9RNU4L,0
+Shopping plan,Q8type_8_performance,A1DUPOUC9RNU4L,0
+Shopping plan,Q9divisible_unitary,A1DUPOUC9RNU4L,0
+Shopping plan,Q10maximizing,A1DUPOUC9RNU4L,1
+Shopping plan,Q11optimizing,A1DUPOUC9RNU4L,0
+Shopping plan,Q13outcome_multip,A1DUPOUC9RNU4L,1
+Shopping plan,Q14sol_scheme_mul,A1DUPOUC9RNU4L,0
+Shopping plan,Q15dec_verifiability,A1DUPOUC9RNU4L,1
+Shopping plan,Q16shared_knowledge,A1DUPOUC9RNU4L,1
+Shopping plan,Q17within_sys_sol,A1DUPOUC9RNU4L,1
+Shopping plan,Q18ans_recog,A1DUPOUC9RNU4L,1
+Shopping plan,Q19time_solvability,A1DUPOUC9RNU4L,1
+Shopping plan,Q20type_3_type_4,A1DUPOUC9RNU4L,1
+Shopping plan,Q22confl_tradeoffs,A1DUPOUC9RNU4L,1
+Shopping plan,Q23ss_out_uncert,A1DUPOUC9RNU4L,1
+Shopping plan,Q24eureka_question,A1DUPOUC9RNU4L,0
+Room assignment task,Q1concept_behav,A1DUPOUC9RNU4L,0
+Room assignment task,Q3type_1_planning,A1DUPOUC9RNU4L,0
+Room assignment task,Q4type_2_generate,A1DUPOUC9RNU4L,0
+Room assignment task,Q6type_5_cc,A1DUPOUC9RNU4L,0
+Room assignment task,Q7type_7_battle,A1DUPOUC9RNU4L,1
+Room assignment task,Q8type_8_performance,A1DUPOUC9RNU4L,1
+Room assignment task,Q9divisible_unitary,A1DUPOUC9RNU4L,0
+Room assignment task,Q10maximizing,A1DUPOUC9RNU4L,0
+Room assignment task,Q11optimizing,A1DUPOUC9RNU4L,1
+Room assignment task,Q13outcome_multip,A1DUPOUC9RNU4L,1
+Room assignment task,Q14sol_scheme_mul,A1DUPOUC9RNU4L,0
+Room assignment task,Q15dec_verifiability,A1DUPOUC9RNU4L,1
+Room assignment task,Q16shared_knowledge,A1DUPOUC9RNU4L,1
+Room assignment task,Q17within_sys_sol,A1DUPOUC9RNU4L,1
+Room assignment task,Q18ans_recog,A1DUPOUC9RNU4L,1
+Room assignment task,Q19time_solvability,A1DUPOUC9RNU4L,1
+Room assignment task,Q20type_3_type_4,A1DUPOUC9RNU4L,1
+Room assignment task,Q22confl_tradeoffs,A1DUPOUC9RNU4L,0
+Room assignment task,Q23ss_out_uncert,A1DUPOUC9RNU4L,1
+Room assignment task,Q24eureka_question,A1DUPOUC9RNU4L,0
+Word completion given starting letter,Q1concept_behav,A1FVXS8IM5QYO8,0
+Word completion given starting letter,Q3type_1_planning,A1FVXS8IM5QYO8,1
+Word completion given starting letter,Q4type_2_generate,A1FVXS8IM5QYO8,1
+Word completion given starting letter,Q6type_5_cc,A1FVXS8IM5QYO8,1
+Word completion given starting letter,Q7type_7_battle,A1FVXS8IM5QYO8,0
+Word completion given starting letter,Q8type_8_performance,A1FVXS8IM5QYO8,0
+Word completion given starting letter,Q9divisible_unitary,A1FVXS8IM5QYO8,1
+Word completion given starting letter,Q10maximizing,A1FVXS8IM5QYO8,1
+Word completion given starting letter,Q11optimizing,A1FVXS8IM5QYO8,0
+Word completion given starting letter,Q13outcome_multip,A1FVXS8IM5QYO8,0
+Word completion given starting letter,Q14sol_scheme_mul,A1FVXS8IM5QYO8,0
+Word completion given starting letter,Q15dec_verifiability,A1FVXS8IM5QYO8,1
+Word completion given starting letter,Q16shared_knowledge,A1FVXS8IM5QYO8,0
+Word completion given starting letter,Q17within_sys_sol,A1FVXS8IM5QYO8,1
+Word completion given starting letter,Q18ans_recog,A1FVXS8IM5QYO8,1
+Word completion given starting letter,Q19time_solvability,A1FVXS8IM5QYO8,1
+Word completion given starting letter,Q20type_3_type_4,A1FVXS8IM5QYO8,0
+Word completion given starting letter,Q22confl_tradeoffs,A1FVXS8IM5QYO8,1
+Word completion given starting letter,Q23ss_out_uncert,A1FVXS8IM5QYO8,1
+Word completion given starting letter,Q24eureka_question,A1FVXS8IM5QYO8,0
+Graph coloring task,Q1concept_behav,A1FVXS8IM5QYO8,0
+Graph coloring task,Q3type_1_planning,A1FVXS8IM5QYO8,1
+Graph coloring task,Q4type_2_generate,A1FVXS8IM5QYO8,0
+Graph coloring task,Q6type_5_cc,A1FVXS8IM5QYO8,0
+Graph coloring task,Q7type_7_battle,A1FVXS8IM5QYO8,0
+Graph coloring task,Q8type_8_performance,A1FVXS8IM5QYO8,1
+Graph coloring task,Q9divisible_unitary,A1FVXS8IM5QYO8,0
+Graph coloring task,Q10maximizing,A1FVXS8IM5QYO8,0
+Graph coloring task,Q11optimizing,A1FVXS8IM5QYO8,1
+Graph coloring task,Q13outcome_multip,A1FVXS8IM5QYO8,1
+Graph coloring task,Q14sol_scheme_mul,A1FVXS8IM5QYO8,1
+Graph coloring task,Q15dec_verifiability,A1FVXS8IM5QYO8,0
+Graph coloring task,Q16shared_knowledge,A1FVXS8IM5QYO8,1
+Graph coloring task,Q17within_sys_sol,A1FVXS8IM5QYO8,1
+Graph coloring task,Q18ans_recog,A1FVXS8IM5QYO8,1
+Graph coloring task,Q19time_solvability,A1FVXS8IM5QYO8,1
+Graph coloring task,Q20type_3_type_4,A1FVXS8IM5QYO8,1
+Graph coloring task,Q22confl_tradeoffs,A1FVXS8IM5QYO8,0
+Graph coloring task,Q23ss_out_uncert,A1FVXS8IM5QYO8,1
+Graph coloring task,Q24eureka_question,A1FVXS8IM5QYO8,0
+Shopping plan,Q1concept_behav,A1FVXS8IM5QYO8,0
+Shopping plan,Q3type_1_planning,A1FVXS8IM5QYO8,1
+Shopping plan,Q4type_2_generate,A1FVXS8IM5QYO8,1
+Shopping plan,Q6type_5_cc,A1FVXS8IM5QYO8,1
+Shopping plan,Q7type_7_battle,A1FVXS8IM5QYO8,0
+Shopping plan,Q8type_8_performance,A1FVXS8IM5QYO8,0
+Shopping plan,Q9divisible_unitary,A1FVXS8IM5QYO8,1
+Shopping plan,Q10maximizing,A1FVXS8IM5QYO8,1
+Shopping plan,Q11optimizing,A1FVXS8IM5QYO8,1
+Shopping plan,Q13outcome_multip,A1FVXS8IM5QYO8,0
+Shopping plan,Q14sol_scheme_mul,A1FVXS8IM5QYO8,0
+Shopping plan,Q15dec_verifiability,A1FVXS8IM5QYO8,1
+Shopping plan,Q16shared_knowledge,A1FVXS8IM5QYO8,0
+Shopping plan,Q17within_sys_sol,A1FVXS8IM5QYO8,1
+Shopping plan,Q18ans_recog,A1FVXS8IM5QYO8,1
+Shopping plan,Q19time_solvability,A1FVXS8IM5QYO8,1
+Shopping plan,Q20type_3_type_4,A1FVXS8IM5QYO8,1
+Shopping plan,Q22confl_tradeoffs,A1FVXS8IM5QYO8,1
+Shopping plan,Q23ss_out_uncert,A1FVXS8IM5QYO8,1
+Shopping plan,Q24eureka_question,A1FVXS8IM5QYO8,0
+Room assignment task,Q1concept_behav,A1FVXS8IM5QYO8,0
+Room assignment task,Q3type_1_planning,A1FVXS8IM5QYO8,1
+Room assignment task,Q4type_2_generate,A1FVXS8IM5QYO8,0
+Room assignment task,Q6type_5_cc,A1FVXS8IM5QYO8,1
+Room assignment task,Q7type_7_battle,A1FVXS8IM5QYO8,0
+Room assignment task,Q8type_8_performance,A1FVXS8IM5QYO8,0
+Room assignment task,Q9divisible_unitary,A1FVXS8IM5QYO8,1
+Room assignment task,Q10maximizing,A1FVXS8IM5QYO8,1
+Room assignment task,Q11optimizing,A1FVXS8IM5QYO8,1
+Room assignment task,Q13outcome_multip,A1FVXS8IM5QYO8,1
+Room assignment task,Q14sol_scheme_mul,A1FVXS8IM5QYO8,0
+Room assignment task,Q15dec_verifiability,A1FVXS8IM5QYO8,1
+Room assignment task,Q16shared_knowledge,A1FVXS8IM5QYO8,1
+Room assignment task,Q17within_sys_sol,A1FVXS8IM5QYO8,1
+Room assignment task,Q18ans_recog,A1FVXS8IM5QYO8,1
+Room assignment task,Q19time_solvability,A1FVXS8IM5QYO8,1
+Room assignment task,Q20type_3_type_4,A1FVXS8IM5QYO8,1
+Room assignment task,Q22confl_tradeoffs,A1FVXS8IM5QYO8,1
+Room assignment task,Q23ss_out_uncert,A1FVXS8IM5QYO8,1
+Room assignment task,Q24eureka_question,A1FVXS8IM5QYO8,0
+Word completion given starting letter,Q1concept_behav,A1HKYY6XI2OHO1,0
+Word completion given starting letter,Q3type_1_planning,A1HKYY6XI2OHO1,0
+Word completion given starting letter,Q4type_2_generate,A1HKYY6XI2OHO1,0
+Word completion given starting letter,Q6type_5_cc,A1HKYY6XI2OHO1,0
+Word completion given starting letter,Q7type_7_battle,A1HKYY6XI2OHO1,0
+Word completion given starting letter,Q8type_8_performance,A1HKYY6XI2OHO1,0
+Word completion given starting letter,Q9divisible_unitary,A1HKYY6XI2OHO1,1
+Word completion given starting letter,Q10maximizing,A1HKYY6XI2OHO1,1
+Word completion given starting letter,Q11optimizing,A1HKYY6XI2OHO1,1
+Word completion given starting letter,Q13outcome_multip,A1HKYY6XI2OHO1,0
+Word completion given starting letter,Q14sol_scheme_mul,A1HKYY6XI2OHO1,0
+Word completion given starting letter,Q15dec_verifiability,A1HKYY6XI2OHO1,1
+Word completion given starting letter,Q16shared_knowledge,A1HKYY6XI2OHO1,0
+Word completion given starting letter,Q17within_sys_sol,A1HKYY6XI2OHO1,1
+Word completion given starting letter,Q18ans_recog,A1HKYY6XI2OHO1,1
+Word completion given starting letter,Q19time_solvability,A1HKYY6XI2OHO1,1
+Word completion given starting letter,Q20type_3_type_4,A1HKYY6XI2OHO1,1
+Word completion given starting letter,Q22confl_tradeoffs,A1HKYY6XI2OHO1,0
+Word completion given starting letter,Q23ss_out_uncert,A1HKYY6XI2OHO1,0
+Word completion given starting letter,Q24eureka_question,A1HKYY6XI2OHO1,0
+Graph coloring task,Q1concept_behav,A1HKYY6XI2OHO1,0
+Graph coloring task,Q3type_1_planning,A1HKYY6XI2OHO1,1
+Graph coloring task,Q4type_2_generate,A1HKYY6XI2OHO1,0
+Graph coloring task,Q6type_5_cc,A1HKYY6XI2OHO1,0
+Graph coloring task,Q7type_7_battle,A1HKYY6XI2OHO1,0
+Graph coloring task,Q8type_8_performance,A1HKYY6XI2OHO1,1
+Graph coloring task,Q9divisible_unitary,A1HKYY6XI2OHO1,1
+Graph coloring task,Q10maximizing,A1HKYY6XI2OHO1,1
+Graph coloring task,Q11optimizing,A1HKYY6XI2OHO1,1
+Graph coloring task,Q13outcome_multip,A1HKYY6XI2OHO1,0
+Graph coloring task,Q14sol_scheme_mul,A1HKYY6XI2OHO1,0
+Graph coloring task,Q15dec_verifiability,A1HKYY6XI2OHO1,1
+Graph coloring task,Q16shared_knowledge,A1HKYY6XI2OHO1,1
+Graph coloring task,Q17within_sys_sol,A1HKYY6XI2OHO1,1
+Graph coloring task,Q18ans_recog,A1HKYY6XI2OHO1,1
+Graph coloring task,Q19time_solvability,A1HKYY6XI2OHO1,1
+Graph coloring task,Q20type_3_type_4,A1HKYY6XI2OHO1,1
+Graph coloring task,Q22confl_tradeoffs,A1HKYY6XI2OHO1,1
+Graph coloring task,Q23ss_out_uncert,A1HKYY6XI2OHO1,1
+Graph coloring task,Q24eureka_question,A1HKYY6XI2OHO1,0
+Shopping plan,Q1concept_behav,A1HKYY6XI2OHO1,0
+Shopping plan,Q3type_1_planning,A1HKYY6XI2OHO1,1
+Shopping plan,Q4type_2_generate,A1HKYY6XI2OHO1,0
+Shopping plan,Q6type_5_cc,A1HKYY6XI2OHO1,0
+Shopping plan,Q7type_7_battle,A1HKYY6XI2OHO1,0
+Shopping plan,Q8type_8_performance,A1HKYY6XI2OHO1,0
+Shopping plan,Q9divisible_unitary,A1HKYY6XI2OHO1,1
+Shopping plan,Q10maximizing,A1HKYY6XI2OHO1,1
+Shopping plan,Q11optimizing,A1HKYY6XI2OHO1,1
+Shopping plan,Q13outcome_multip,A1HKYY6XI2OHO1,0
+Shopping plan,Q14sol_scheme_mul,A1HKYY6XI2OHO1,0
+Shopping plan,Q15dec_verifiability,A1HKYY6XI2OHO1,1
+Shopping plan,Q16shared_knowledge,A1HKYY6XI2OHO1,1
+Shopping plan,Q17within_sys_sol,A1HKYY6XI2OHO1,1
+Shopping plan,Q18ans_recog,A1HKYY6XI2OHO1,1
+Shopping plan,Q19time_solvability,A1HKYY6XI2OHO1,1
+Shopping plan,Q20type_3_type_4,A1HKYY6XI2OHO1,0
+Shopping plan,Q22confl_tradeoffs,A1HKYY6XI2OHO1,1
+Shopping plan,Q23ss_out_uncert,A1HKYY6XI2OHO1,1
+Shopping plan,Q24eureka_question,A1HKYY6XI2OHO1,0
+Room assignment task,Q1concept_behav,A1HKYY6XI2OHO1,0
+Room assignment task,Q3type_1_planning,A1HKYY6XI2OHO1,0
+Room assignment task,Q4type_2_generate,A1HKYY6XI2OHO1,0
+Room assignment task,Q6type_5_cc,A1HKYY6XI2OHO1,0
+Room assignment task,Q7type_7_battle,A1HKYY6XI2OHO1,0
+Room assignment task,Q8type_8_performance,A1HKYY6XI2OHO1,0
+Room assignment task,Q9divisible_unitary,A1HKYY6XI2OHO1,1
+Room assignment task,Q10maximizing,A1HKYY6XI2OHO1,1
+Room assignment task,Q11optimizing,A1HKYY6XI2OHO1,1
+Room assignment task,Q13outcome_multip,A1HKYY6XI2OHO1,1
+Room assignment task,Q14sol_scheme_mul,A1HKYY6XI2OHO1,0
+Room assignment task,Q15dec_verifiability,A1HKYY6XI2OHO1,1
+Room assignment task,Q16shared_knowledge,A1HKYY6XI2OHO1,0
+Room assignment task,Q17within_sys_sol,A1HKYY6XI2OHO1,1
+Room assignment task,Q18ans_recog,A1HKYY6XI2OHO1,1
+Room assignment task,Q19time_solvability,A1HKYY6XI2OHO1,1
+Room assignment task,Q20type_3_type_4,A1HKYY6XI2OHO1,1
+Room assignment task,Q22confl_tradeoffs,A1HKYY6XI2OHO1,1
+Room assignment task,Q23ss_out_uncert,A1HKYY6XI2OHO1,1
+Room assignment task,Q24eureka_question,A1HKYY6XI2OHO1,0
+Word completion given starting letter,Q1concept_behav,A1I72NHC21347A,0
+Word completion given starting letter,Q3type_1_planning,A1I72NHC21347A,0
+Word completion given starting letter,Q4type_2_generate,A1I72NHC21347A,0
+Word completion given starting letter,Q6type_5_cc,A1I72NHC21347A,0
+Word completion given starting letter,Q7type_7_battle,A1I72NHC21347A,1
+Word completion given starting letter,Q8type_8_performance,A1I72NHC21347A,0
+Word completion given starting letter,Q9divisible_unitary,A1I72NHC21347A,0
+Word completion given starting letter,Q10maximizing,A1I72NHC21347A,1
+Word completion given starting letter,Q11optimizing,A1I72NHC21347A,1
+Word completion given starting letter,Q13outcome_multip,A1I72NHC21347A,1
+Word completion given starting letter,Q14sol_scheme_mul,A1I72NHC21347A,1
+Word completion given starting letter,Q15dec_verifiability,A1I72NHC21347A,1
+Word completion given starting letter,Q16shared_knowledge,A1I72NHC21347A,0
+Word completion given starting letter,Q17within_sys_sol,A1I72NHC21347A,1
+Word completion given starting letter,Q18ans_recog,A1I72NHC21347A,1
+Word completion given starting letter,Q19time_solvability,A1I72NHC21347A,1
+Word completion given starting letter,Q20type_3_type_4,A1I72NHC21347A,1
+Word completion given starting letter,Q22confl_tradeoffs,A1I72NHC21347A,0
+Word completion given starting letter,Q23ss_out_uncert,A1I72NHC21347A,0
+Word completion given starting letter,Q24eureka_question,A1I72NHC21347A,0
+Graph coloring task,Q1concept_behav,A1I72NHC21347A,0
+Graph coloring task,Q3type_1_planning,A1I72NHC21347A,0
+Graph coloring task,Q4type_2_generate,A1I72NHC21347A,0
+Graph coloring task,Q6type_5_cc,A1I72NHC21347A,0
+Graph coloring task,Q7type_7_battle,A1I72NHC21347A,1
+Graph coloring task,Q8type_8_performance,A1I72NHC21347A,1
+Graph coloring task,Q9divisible_unitary,A1I72NHC21347A,0
+Graph coloring task,Q10maximizing,A1I72NHC21347A,1
+Graph coloring task,Q11optimizing,A1I72NHC21347A,1
+Graph coloring task,Q13outcome_multip,A1I72NHC21347A,0
+Graph coloring task,Q14sol_scheme_mul,A1I72NHC21347A,0
+Graph coloring task,Q15dec_verifiability,A1I72NHC21347A,1
+Graph coloring task,Q16shared_knowledge,A1I72NHC21347A,0
+Graph coloring task,Q17within_sys_sol,A1I72NHC21347A,1
+Graph coloring task,Q18ans_recog,A1I72NHC21347A,1
+Graph coloring task,Q19time_solvability,A1I72NHC21347A,1
+Graph coloring task,Q20type_3_type_4,A1I72NHC21347A,1
+Graph coloring task,Q22confl_tradeoffs,A1I72NHC21347A,1
+Graph coloring task,Q23ss_out_uncert,A1I72NHC21347A,1
+Graph coloring task,Q24eureka_question,A1I72NHC21347A,0
+Shopping plan,Q1concept_behav,A1I72NHC21347A,0
+Shopping plan,Q3type_1_planning,A1I72NHC21347A,1
+Shopping plan,Q4type_2_generate,A1I72NHC21347A,0
+Shopping plan,Q6type_5_cc,A1I72NHC21347A,0
+Shopping plan,Q7type_7_battle,A1I72NHC21347A,1
+Shopping plan,Q8type_8_performance,A1I72NHC21347A,1
+Shopping plan,Q9divisible_unitary,A1I72NHC21347A,0
+Shopping plan,Q10maximizing,A1I72NHC21347A,1
+Shopping plan,Q11optimizing,A1I72NHC21347A,1
+Shopping plan,Q13outcome_multip,A1I72NHC21347A,0
+Shopping plan,Q14sol_scheme_mul,A1I72NHC21347A,0
+Shopping plan,Q15dec_verifiability,A1I72NHC21347A,1
+Shopping plan,Q16shared_knowledge,A1I72NHC21347A,0
+Shopping plan,Q17within_sys_sol,A1I72NHC21347A,1
+Shopping plan,Q18ans_recog,A1I72NHC21347A,1
+Shopping plan,Q19time_solvability,A1I72NHC21347A,1
+Shopping plan,Q20type_3_type_4,A1I72NHC21347A,0
+Shopping plan,Q22confl_tradeoffs,A1I72NHC21347A,1
+Shopping plan,Q23ss_out_uncert,A1I72NHC21347A,1
+Shopping plan,Q24eureka_question,A1I72NHC21347A,0
+Room assignment task,Q1concept_behav,A1I72NHC21347A,0
+Room assignment task,Q3type_1_planning,A1I72NHC21347A,1
+Room assignment task,Q4type_2_generate,A1I72NHC21347A,0
+Room assignment task,Q6type_5_cc,A1I72NHC21347A,0
+Room assignment task,Q7type_7_battle,A1I72NHC21347A,1
+Room assignment task,Q8type_8_performance,A1I72NHC21347A,0
+Room assignment task,Q9divisible_unitary,A1I72NHC21347A,0
+Room assignment task,Q10maximizing,A1I72NHC21347A,1
+Room assignment task,Q11optimizing,A1I72NHC21347A,1
+Room assignment task,Q13outcome_multip,A1I72NHC21347A,0
+Room assignment task,Q14sol_scheme_mul,A1I72NHC21347A,0
+Room assignment task,Q15dec_verifiability,A1I72NHC21347A,1
+Room assignment task,Q16shared_knowledge,A1I72NHC21347A,1
+Room assignment task,Q17within_sys_sol,A1I72NHC21347A,1
+Room assignment task,Q18ans_recog,A1I72NHC21347A,1
+Room assignment task,Q19time_solvability,A1I72NHC21347A,1
+Room assignment task,Q20type_3_type_4,A1I72NHC21347A,1
+Room assignment task,Q22confl_tradeoffs,A1I72NHC21347A,1
+Room assignment task,Q23ss_out_uncert,A1I72NHC21347A,1
+Room assignment task,Q24eureka_question,A1I72NHC21347A,0
+Word completion given starting letter,Q1concept_behav,A1MJVTR0PCKBWW,0
+Word completion given starting letter,Q3type_1_planning,A1MJVTR0PCKBWW,0
+Word completion given starting letter,Q4type_2_generate,A1MJVTR0PCKBWW,1
+Word completion given starting letter,Q6type_5_cc,A1MJVTR0PCKBWW,0
+Word completion given starting letter,Q7type_7_battle,A1MJVTR0PCKBWW,1
+Word completion given starting letter,Q8type_8_performance,A1MJVTR0PCKBWW,0
+Word completion given starting letter,Q9divisible_unitary,A1MJVTR0PCKBWW,0
+Word completion given starting letter,Q10maximizing,A1MJVTR0PCKBWW,1
+Word completion given starting letter,Q11optimizing,A1MJVTR0PCKBWW,0
+Word completion given starting letter,Q13outcome_multip,A1MJVTR0PCKBWW,0
+Word completion given starting letter,Q14sol_scheme_mul,A1MJVTR0PCKBWW,0
+Word completion given starting letter,Q15dec_verifiability,A1MJVTR0PCKBWW,1
+Word completion given starting letter,Q16shared_knowledge,A1MJVTR0PCKBWW,0
+Word completion given starting letter,Q17within_sys_sol,A1MJVTR0PCKBWW,1
+Word completion given starting letter,Q18ans_recog,A1MJVTR0PCKBWW,1
+Word completion given starting letter,Q19time_solvability,A1MJVTR0PCKBWW,1
+Word completion given starting letter,Q20type_3_type_4,A1MJVTR0PCKBWW,1
+Word completion given starting letter,Q22confl_tradeoffs,A1MJVTR0PCKBWW,0
+Word completion given starting letter,Q23ss_out_uncert,A1MJVTR0PCKBWW,0
+Word completion given starting letter,Q24eureka_question,A1MJVTR0PCKBWW,0
+Graph coloring task,Q1concept_behav,A1MJVTR0PCKBWW,0
+Graph coloring task,Q3type_1_planning,A1MJVTR0PCKBWW,1
+Graph coloring task,Q4type_2_generate,A1MJVTR0PCKBWW,0
+Graph coloring task,Q6type_5_cc,A1MJVTR0PCKBWW,0
+Graph coloring task,Q7type_7_battle,A1MJVTR0PCKBWW,0
+Graph coloring task,Q8type_8_performance,A1MJVTR0PCKBWW,0
+Graph coloring task,Q9divisible_unitary,A1MJVTR0PCKBWW,0
+Graph coloring task,Q10maximizing,A1MJVTR0PCKBWW,0
+Graph coloring task,Q11optimizing,A1MJVTR0PCKBWW,1
+Graph coloring task,Q13outcome_multip,A1MJVTR0PCKBWW,1
+Graph coloring task,Q14sol_scheme_mul,A1MJVTR0PCKBWW,0
+Graph coloring task,Q15dec_verifiability,A1MJVTR0PCKBWW,1
+Graph coloring task,Q16shared_knowledge,A1MJVTR0PCKBWW,1
+Graph coloring task,Q17within_sys_sol,A1MJVTR0PCKBWW,1
+Graph coloring task,Q18ans_recog,A1MJVTR0PCKBWW,1
+Graph coloring task,Q19time_solvability,A1MJVTR0PCKBWW,1
+Graph coloring task,Q20type_3_type_4,A1MJVTR0PCKBWW,1
+Graph coloring task,Q22confl_tradeoffs,A1MJVTR0PCKBWW,1
+Graph coloring task,Q23ss_out_uncert,A1MJVTR0PCKBWW,0
+Graph coloring task,Q24eureka_question,A1MJVTR0PCKBWW,0
+Shopping plan,Q1concept_behav,A1MJVTR0PCKBWW,0
+Shopping plan,Q3type_1_planning,A1MJVTR0PCKBWW,1
+Shopping plan,Q4type_2_generate,A1MJVTR0PCKBWW,0
+Shopping plan,Q6type_5_cc,A1MJVTR0PCKBWW,0
+Shopping plan,Q7type_7_battle,A1MJVTR0PCKBWW,1
+Shopping plan,Q8type_8_performance,A1MJVTR0PCKBWW,0
+Shopping plan,Q9divisible_unitary,A1MJVTR0PCKBWW,0
+Shopping plan,Q10maximizing,A1MJVTR0PCKBWW,1
+Shopping plan,Q11optimizing,A1MJVTR0PCKBWW,1
+Shopping plan,Q13outcome_multip,A1MJVTR0PCKBWW,0
+Shopping plan,Q14sol_scheme_mul,A1MJVTR0PCKBWW,0
+Shopping plan,Q15dec_verifiability,A1MJVTR0PCKBWW,1
+Shopping plan,Q16shared_knowledge,A1MJVTR0PCKBWW,1
+Shopping plan,Q17within_sys_sol,A1MJVTR0PCKBWW,1
+Shopping plan,Q18ans_recog,A1MJVTR0PCKBWW,1
+Shopping plan,Q19time_solvability,A1MJVTR0PCKBWW,1
+Shopping plan,Q20type_3_type_4,A1MJVTR0PCKBWW,1
+Shopping plan,Q22confl_tradeoffs,A1MJVTR0PCKBWW,1
+Shopping plan,Q23ss_out_uncert,A1MJVTR0PCKBWW,1
+Shopping plan,Q24eureka_question,A1MJVTR0PCKBWW,0
+Room assignment task,Q1concept_behav,A1MJVTR0PCKBWW,0
+Room assignment task,Q3type_1_planning,A1MJVTR0PCKBWW,1
+Room assignment task,Q4type_2_generate,A1MJVTR0PCKBWW,0
+Room assignment task,Q6type_5_cc,A1MJVTR0PCKBWW,0
+Room assignment task,Q7type_7_battle,A1MJVTR0PCKBWW,1
+Room assignment task,Q8type_8_performance,A1MJVTR0PCKBWW,1
+Room assignment task,Q9divisible_unitary,A1MJVTR0PCKBWW,0
+Room assignment task,Q10maximizing,A1MJVTR0PCKBWW,1
+Room assignment task,Q11optimizing,A1MJVTR0PCKBWW,0
+Room assignment task,Q13outcome_multip,A1MJVTR0PCKBWW,1
+Room assignment task,Q14sol_scheme_mul,A1MJVTR0PCKBWW,0
+Room assignment task,Q15dec_verifiability,A1MJVTR0PCKBWW,1
+Room assignment task,Q16shared_knowledge,A1MJVTR0PCKBWW,1
+Room assignment task,Q17within_sys_sol,A1MJVTR0PCKBWW,1
+Room assignment task,Q18ans_recog,A1MJVTR0PCKBWW,1
+Room assignment task,Q19time_solvability,A1MJVTR0PCKBWW,1
+Room assignment task,Q20type_3_type_4,A1MJVTR0PCKBWW,1
+Room assignment task,Q22confl_tradeoffs,A1MJVTR0PCKBWW,1
+Room assignment task,Q23ss_out_uncert,A1MJVTR0PCKBWW,1
+Room assignment task,Q24eureka_question,A1MJVTR0PCKBWW,0
+Word completion given starting letter,Q1concept_behav,A1OZPLHNIU1519,0
+Word completion given starting letter,Q3type_1_planning,A1OZPLHNIU1519,0
+Word completion given starting letter,Q4type_2_generate,A1OZPLHNIU1519,1
+Word completion given starting letter,Q6type_5_cc,A1OZPLHNIU1519,0
+Word completion given starting letter,Q7type_7_battle,A1OZPLHNIU1519,0
+Word completion given starting letter,Q8type_8_performance,A1OZPLHNIU1519,0
+Word completion given starting letter,Q9divisible_unitary,A1OZPLHNIU1519,1
+Word completion given starting letter,Q10maximizing,A1OZPLHNIU1519,1
+Word completion given starting letter,Q11optimizing,A1OZPLHNIU1519,0
+Word completion given starting letter,Q13outcome_multip,A1OZPLHNIU1519,0
+Word completion given starting letter,Q14sol_scheme_mul,A1OZPLHNIU1519,1
+Word completion given starting letter,Q15dec_verifiability,A1OZPLHNIU1519,0
+Word completion given starting letter,Q16shared_knowledge,A1OZPLHNIU1519,0
+Word completion given starting letter,Q17within_sys_sol,A1OZPLHNIU1519,1
+Word completion given starting letter,Q18ans_recog,A1OZPLHNIU1519,0
+Word completion given starting letter,Q19time_solvability,A1OZPLHNIU1519,0
+Word completion given starting letter,Q20type_3_type_4,A1OZPLHNIU1519,0
+Word completion given starting letter,Q22confl_tradeoffs,A1OZPLHNIU1519,0
+Word completion given starting letter,Q23ss_out_uncert,A1OZPLHNIU1519,0
+Word completion given starting letter,Q24eureka_question,A1OZPLHNIU1519,0
+Graph coloring task,Q1concept_behav,A1OZPLHNIU1519,0
+Graph coloring task,Q3type_1_planning,A1OZPLHNIU1519,0
+Graph coloring task,Q4type_2_generate,A1OZPLHNIU1519,1
+Graph coloring task,Q6type_5_cc,A1OZPLHNIU1519,0
+Graph coloring task,Q7type_7_battle,A1OZPLHNIU1519,0
+Graph coloring task,Q8type_8_performance,A1OZPLHNIU1519,1
+Graph coloring task,Q9divisible_unitary,A1OZPLHNIU1519,1
+Graph coloring task,Q10maximizing,A1OZPLHNIU1519,1
+Graph coloring task,Q11optimizing,A1OZPLHNIU1519,1
+Graph coloring task,Q13outcome_multip,A1OZPLHNIU1519,1
+Graph coloring task,Q14sol_scheme_mul,A1OZPLHNIU1519,0
+Graph coloring task,Q15dec_verifiability,A1OZPLHNIU1519,1
+Graph coloring task,Q16shared_knowledge,A1OZPLHNIU1519,1
+Graph coloring task,Q17within_sys_sol,A1OZPLHNIU1519,1
+Graph coloring task,Q18ans_recog,A1OZPLHNIU1519,1
+Graph coloring task,Q19time_solvability,A1OZPLHNIU1519,1
+Graph coloring task,Q20type_3_type_4,A1OZPLHNIU1519,1
+Graph coloring task,Q22confl_tradeoffs,A1OZPLHNIU1519,1
+Graph coloring task,Q23ss_out_uncert,A1OZPLHNIU1519,0
+Graph coloring task,Q24eureka_question,A1OZPLHNIU1519,1
+Shopping plan,Q1concept_behav,A1OZPLHNIU1519,0
+Shopping plan,Q3type_1_planning,A1OZPLHNIU1519,1
+Shopping plan,Q4type_2_generate,A1OZPLHNIU1519,0
+Shopping plan,Q6type_5_cc,A1OZPLHNIU1519,1
+Shopping plan,Q7type_7_battle,A1OZPLHNIU1519,0
+Shopping plan,Q8type_8_performance,A1OZPLHNIU1519,0
+Shopping plan,Q9divisible_unitary,A1OZPLHNIU1519,1
+Shopping plan,Q10maximizing,A1OZPLHNIU1519,1
+Shopping plan,Q11optimizing,A1OZPLHNIU1519,1
+Shopping plan,Q13outcome_multip,A1OZPLHNIU1519,1
+Shopping plan,Q14sol_scheme_mul,A1OZPLHNIU1519,0
+Shopping plan,Q15dec_verifiability,A1OZPLHNIU1519,1
+Shopping plan,Q16shared_knowledge,A1OZPLHNIU1519,1
+Shopping plan,Q17within_sys_sol,A1OZPLHNIU1519,1
+Shopping plan,Q18ans_recog,A1OZPLHNIU1519,1
+Shopping plan,Q19time_solvability,A1OZPLHNIU1519,1
+Shopping plan,Q20type_3_type_4,A1OZPLHNIU1519,1
+Shopping plan,Q22confl_tradeoffs,A1OZPLHNIU1519,1
+Shopping plan,Q23ss_out_uncert,A1OZPLHNIU1519,0
+Shopping plan,Q24eureka_question,A1OZPLHNIU1519,0
+Room assignment task,Q1concept_behav,A1OZPLHNIU1519,0
+Room assignment task,Q3type_1_planning,A1OZPLHNIU1519,1
+Room assignment task,Q4type_2_generate,A1OZPLHNIU1519,1
+Room assignment task,Q6type_5_cc,A1OZPLHNIU1519,0
+Room assignment task,Q7type_7_battle,A1OZPLHNIU1519,1
+Room assignment task,Q8type_8_performance,A1OZPLHNIU1519,1
+Room assignment task,Q9divisible_unitary,A1OZPLHNIU1519,0
+Room assignment task,Q10maximizing,A1OZPLHNIU1519,0
+Room assignment task,Q11optimizing,A1OZPLHNIU1519,1
+Room assignment task,Q13outcome_multip,A1OZPLHNIU1519,1
+Room assignment task,Q14sol_scheme_mul,A1OZPLHNIU1519,0
+Room assignment task,Q15dec_verifiability,A1OZPLHNIU1519,1
+Room assignment task,Q16shared_knowledge,A1OZPLHNIU1519,1
+Room assignment task,Q17within_sys_sol,A1OZPLHNIU1519,1
+Room assignment task,Q18ans_recog,A1OZPLHNIU1519,1
+Room assignment task,Q19time_solvability,A1OZPLHNIU1519,1
+Room assignment task,Q20type_3_type_4,A1OZPLHNIU1519,1
+Room assignment task,Q22confl_tradeoffs,A1OZPLHNIU1519,1
+Room assignment task,Q23ss_out_uncert,A1OZPLHNIU1519,1
+Room assignment task,Q24eureka_question,A1OZPLHNIU1519,0
+Word completion given starting letter,Q1concept_behav,A1P6OXEJ86HQRM,0
+Word completion given starting letter,Q3type_1_planning,A1P6OXEJ86HQRM,0
+Word completion given starting letter,Q4type_2_generate,A1P6OXEJ86HQRM,1
+Word completion given starting letter,Q6type_5_cc,A1P6OXEJ86HQRM,0
+Word completion given starting letter,Q7type_7_battle,A1P6OXEJ86HQRM,0
+Word completion given starting letter,Q8type_8_performance,A1P6OXEJ86HQRM,0
+Word completion given starting letter,Q9divisible_unitary,A1P6OXEJ86HQRM,0
+Word completion given starting letter,Q10maximizing,A1P6OXEJ86HQRM,1
+Word completion given starting letter,Q11optimizing,A1P6OXEJ86HQRM,0
+Word completion given starting letter,Q13outcome_multip,A1P6OXEJ86HQRM,0
+Word completion given starting letter,Q14sol_scheme_mul,A1P6OXEJ86HQRM,0
+Word completion given starting letter,Q15dec_verifiability,A1P6OXEJ86HQRM,1
+Word completion given starting letter,Q16shared_knowledge,A1P6OXEJ86HQRM,0
+Word completion given starting letter,Q17within_sys_sol,A1P6OXEJ86HQRM,1
+Word completion given starting letter,Q18ans_recog,A1P6OXEJ86HQRM,1
+Word completion given starting letter,Q19time_solvability,A1P6OXEJ86HQRM,0
+Word completion given starting letter,Q20type_3_type_4,A1P6OXEJ86HQRM,0
+Word completion given starting letter,Q22confl_tradeoffs,A1P6OXEJ86HQRM,0
+Word completion given starting letter,Q23ss_out_uncert,A1P6OXEJ86HQRM,1
+Word completion given starting letter,Q24eureka_question,A1P6OXEJ86HQRM,0
+Graph coloring task,Q1concept_behav,A1P6OXEJ86HQRM,0
+Graph coloring task,Q3type_1_planning,A1P6OXEJ86HQRM,0
+Graph coloring task,Q4type_2_generate,A1P6OXEJ86HQRM,0
+Graph coloring task,Q6type_5_cc,A1P6OXEJ86HQRM,0
+Graph coloring task,Q7type_7_battle,A1P6OXEJ86HQRM,0
+Graph coloring task,Q8type_8_performance,A1P6OXEJ86HQRM,1
+Graph coloring task,Q9divisible_unitary,A1P6OXEJ86HQRM,0
+Graph coloring task,Q10maximizing,A1P6OXEJ86HQRM,0
+Graph coloring task,Q11optimizing,A1P6OXEJ86HQRM,1
+Graph coloring task,Q13outcome_multip,A1P6OXEJ86HQRM,1
+Graph coloring task,Q14sol_scheme_mul,A1P6OXEJ86HQRM,0
+Graph coloring task,Q15dec_verifiability,A1P6OXEJ86HQRM,1
+Graph coloring task,Q16shared_knowledge,A1P6OXEJ86HQRM,1
+Graph coloring task,Q17within_sys_sol,A1P6OXEJ86HQRM,1
+Graph coloring task,Q18ans_recog,A1P6OXEJ86HQRM,1
+Graph coloring task,Q19time_solvability,A1P6OXEJ86HQRM,1
+Graph coloring task,Q20type_3_type_4,A1P6OXEJ86HQRM,1
+Graph coloring task,Q22confl_tradeoffs,A1P6OXEJ86HQRM,1
+Graph coloring task,Q23ss_out_uncert,A1P6OXEJ86HQRM,0
+Graph coloring task,Q24eureka_question,A1P6OXEJ86HQRM,0
+Shopping plan,Q1concept_behav,A1P6OXEJ86HQRM,0
+Shopping plan,Q3type_1_planning,A1P6OXEJ86HQRM,1
+Shopping plan,Q4type_2_generate,A1P6OXEJ86HQRM,0
+Shopping plan,Q6type_5_cc,A1P6OXEJ86HQRM,1
+Shopping plan,Q7type_7_battle,A1P6OXEJ86HQRM,1
+Shopping plan,Q8type_8_performance,A1P6OXEJ86HQRM,0
+Shopping plan,Q9divisible_unitary,A1P6OXEJ86HQRM,0
+Shopping plan,Q10maximizing,A1P6OXEJ86HQRM,1
+Shopping plan,Q11optimizing,A1P6OXEJ86HQRM,0
+Shopping plan,Q13outcome_multip,A1P6OXEJ86HQRM,1
+Shopping plan,Q14sol_scheme_mul,A1P6OXEJ86HQRM,0
+Shopping plan,Q15dec_verifiability,A1P6OXEJ86HQRM,1
+Shopping plan,Q16shared_knowledge,A1P6OXEJ86HQRM,1
+Shopping plan,Q17within_sys_sol,A1P6OXEJ86HQRM,1
+Shopping plan,Q18ans_recog,A1P6OXEJ86HQRM,1
+Shopping plan,Q19time_solvability,A1P6OXEJ86HQRM,1
+Shopping plan,Q20type_3_type_4,A1P6OXEJ86HQRM,1
+Shopping plan,Q22confl_tradeoffs,A1P6OXEJ86HQRM,1
+Shopping plan,Q23ss_out_uncert,A1P6OXEJ86HQRM,0
+Shopping plan,Q24eureka_question,A1P6OXEJ86HQRM,0
+Room assignment task,Q1concept_behav,A1P6OXEJ86HQRM,0
+Room assignment task,Q3type_1_planning,A1P6OXEJ86HQRM,0
+Room assignment task,Q4type_2_generate,A1P6OXEJ86HQRM,0
+Room assignment task,Q6type_5_cc,A1P6OXEJ86HQRM,1
+Room assignment task,Q7type_7_battle,A1P6OXEJ86HQRM,0
+Room assignment task,Q8type_8_performance,A1P6OXEJ86HQRM,0
+Room assignment task,Q9divisible_unitary,A1P6OXEJ86HQRM,0
+Room assignment task,Q10maximizing,A1P6OXEJ86HQRM,1
+Room assignment task,Q11optimizing,A1P6OXEJ86HQRM,0
+Room assignment task,Q13outcome_multip,A1P6OXEJ86HQRM,1
+Room assignment task,Q14sol_scheme_mul,A1P6OXEJ86HQRM,0
+Room assignment task,Q15dec_verifiability,A1P6OXEJ86HQRM,1
+Room assignment task,Q16shared_knowledge,A1P6OXEJ86HQRM,1
+Room assignment task,Q17within_sys_sol,A1P6OXEJ86HQRM,1
+Room assignment task,Q18ans_recog,A1P6OXEJ86HQRM,1
+Room assignment task,Q19time_solvability,A1P6OXEJ86HQRM,1
+Room assignment task,Q20type_3_type_4,A1P6OXEJ86HQRM,1
+Room assignment task,Q22confl_tradeoffs,A1P6OXEJ86HQRM,1
+Room assignment task,Q23ss_out_uncert,A1P6OXEJ86HQRM,0
+Room assignment task,Q24eureka_question,A1P6OXEJ86HQRM,0
+Word completion given starting letter,Q1concept_behav,A1SX8IVV82M0LW,0
+Word completion given starting letter,Q3type_1_planning,A1SX8IVV82M0LW,0
+Word completion given starting letter,Q4type_2_generate,A1SX8IVV82M0LW,1
+Word completion given starting letter,Q6type_5_cc,A1SX8IVV82M0LW,0
+Word completion given starting letter,Q7type_7_battle,A1SX8IVV82M0LW,0
+Word completion given starting letter,Q8type_8_performance,A1SX8IVV82M0LW,0
+Word completion given starting letter,Q9divisible_unitary,A1SX8IVV82M0LW,1
+Word completion given starting letter,Q10maximizing,A1SX8IVV82M0LW,1
+Word completion given starting letter,Q11optimizing,A1SX8IVV82M0LW,0
+Word completion given starting letter,Q13outcome_multip,A1SX8IVV82M0LW,0
+Word completion given starting letter,Q14sol_scheme_mul,A1SX8IVV82M0LW,0
+Word completion given starting letter,Q15dec_verifiability,A1SX8IVV82M0LW,1
+Word completion given starting letter,Q16shared_knowledge,A1SX8IVV82M0LW,0
+Word completion given starting letter,Q17within_sys_sol,A1SX8IVV82M0LW,1
+Word completion given starting letter,Q18ans_recog,A1SX8IVV82M0LW,1
+Word completion given starting letter,Q19time_solvability,A1SX8IVV82M0LW,1
+Word completion given starting letter,Q20type_3_type_4,A1SX8IVV82M0LW,1
+Word completion given starting letter,Q22confl_tradeoffs,A1SX8IVV82M0LW,0
+Word completion given starting letter,Q23ss_out_uncert,A1SX8IVV82M0LW,0
+Word completion given starting letter,Q24eureka_question,A1SX8IVV82M0LW,0
+Graph coloring task,Q1concept_behav,A1SX8IVV82M0LW,1
+Graph coloring task,Q3type_1_planning,A1SX8IVV82M0LW,1
+Graph coloring task,Q4type_2_generate,A1SX8IVV82M0LW,0
+Graph coloring task,Q6type_5_cc,A1SX8IVV82M0LW,1
+Graph coloring task,Q7type_7_battle,A1SX8IVV82M0LW,1
+Graph coloring task,Q8type_8_performance,A1SX8IVV82M0LW,1
+Graph coloring task,Q9divisible_unitary,A1SX8IVV82M0LW,1
+Graph coloring task,Q10maximizing,A1SX8IVV82M0LW,0
+Graph coloring task,Q11optimizing,A1SX8IVV82M0LW,1
+Graph coloring task,Q13outcome_multip,A1SX8IVV82M0LW,1
+Graph coloring task,Q14sol_scheme_mul,A1SX8IVV82M0LW,1
+Graph coloring task,Q15dec_verifiability,A1SX8IVV82M0LW,1
+Graph coloring task,Q16shared_knowledge,A1SX8IVV82M0LW,0
+Graph coloring task,Q17within_sys_sol,A1SX8IVV82M0LW,1
+Graph coloring task,Q18ans_recog,A1SX8IVV82M0LW,1
+Graph coloring task,Q19time_solvability,A1SX8IVV82M0LW,1
+Graph coloring task,Q20type_3_type_4,A1SX8IVV82M0LW,1
+Graph coloring task,Q22confl_tradeoffs,A1SX8IVV82M0LW,0
+Graph coloring task,Q23ss_out_uncert,A1SX8IVV82M0LW,0
+Graph coloring task,Q24eureka_question,A1SX8IVV82M0LW,1
+Shopping plan,Q1concept_behav,A1SX8IVV82M0LW,1
+Shopping plan,Q3type_1_planning,A1SX8IVV82M0LW,1
+Shopping plan,Q4type_2_generate,A1SX8IVV82M0LW,0
+Shopping plan,Q6type_5_cc,A1SX8IVV82M0LW,0
+Shopping plan,Q7type_7_battle,A1SX8IVV82M0LW,0
+Shopping plan,Q8type_8_performance,A1SX8IVV82M0LW,0
+Shopping plan,Q9divisible_unitary,A1SX8IVV82M0LW,1
+Shopping plan,Q10maximizing,A1SX8IVV82M0LW,1
+Shopping plan,Q11optimizing,A1SX8IVV82M0LW,0
+Shopping plan,Q13outcome_multip,A1SX8IVV82M0LW,0
+Shopping plan,Q14sol_scheme_mul,A1SX8IVV82M0LW,1
+Shopping plan,Q15dec_verifiability,A1SX8IVV82M0LW,0
+Shopping plan,Q16shared_knowledge,A1SX8IVV82M0LW,1
+Shopping plan,Q17within_sys_sol,A1SX8IVV82M0LW,0
+Shopping plan,Q18ans_recog,A1SX8IVV82M0LW,0
+Shopping plan,Q19time_solvability,A1SX8IVV82M0LW,0
+Shopping plan,Q20type_3_type_4,A1SX8IVV82M0LW,0
+Shopping plan,Q22confl_tradeoffs,A1SX8IVV82M0LW,1
+Shopping plan,Q23ss_out_uncert,A1SX8IVV82M0LW,1
+Shopping plan,Q24eureka_question,A1SX8IVV82M0LW,0
+Room assignment task,Q1concept_behav,A1SX8IVV82M0LW,0
+Room assignment task,Q3type_1_planning,A1SX8IVV82M0LW,1
+Room assignment task,Q4type_2_generate,A1SX8IVV82M0LW,1
+Room assignment task,Q6type_5_cc,A1SX8IVV82M0LW,0
+Room assignment task,Q7type_7_battle,A1SX8IVV82M0LW,1
+Room assignment task,Q8type_8_performance,A1SX8IVV82M0LW,0
+Room assignment task,Q9divisible_unitary,A1SX8IVV82M0LW,1
+Room assignment task,Q10maximizing,A1SX8IVV82M0LW,0
+Room assignment task,Q11optimizing,A1SX8IVV82M0LW,1
+Room assignment task,Q13outcome_multip,A1SX8IVV82M0LW,1
+Room assignment task,Q14sol_scheme_mul,A1SX8IVV82M0LW,1
+Room assignment task,Q15dec_verifiability,A1SX8IVV82M0LW,1
+Room assignment task,Q16shared_knowledge,A1SX8IVV82M0LW,1
+Room assignment task,Q17within_sys_sol,A1SX8IVV82M0LW,1
+Room assignment task,Q18ans_recog,A1SX8IVV82M0LW,1
+Room assignment task,Q19time_solvability,A1SX8IVV82M0LW,1
+Room assignment task,Q20type_3_type_4,A1SX8IVV82M0LW,1
+Room assignment task,Q22confl_tradeoffs,A1SX8IVV82M0LW,0
+Room assignment task,Q23ss_out_uncert,A1SX8IVV82M0LW,0
+Room assignment task,Q24eureka_question,A1SX8IVV82M0LW,0
+Word completion given starting letter,Q1concept_behav,A207IHY6GERCFO,0
+Word completion given starting letter,Q3type_1_planning,A207IHY6GERCFO,0
+Word completion given starting letter,Q4type_2_generate,A207IHY6GERCFO,1
+Word completion given starting letter,Q6type_5_cc,A207IHY6GERCFO,0
+Word completion given starting letter,Q7type_7_battle,A207IHY6GERCFO,1
+Word completion given starting letter,Q8type_8_performance,A207IHY6GERCFO,0
+Word completion given starting letter,Q9divisible_unitary,A207IHY6GERCFO,0
+Word completion given starting letter,Q10maximizing,A207IHY6GERCFO,1
+Word completion given starting letter,Q11optimizing,A207IHY6GERCFO,0
+Word completion given starting letter,Q13outcome_multip,A207IHY6GERCFO,1
+Word completion given starting letter,Q14sol_scheme_mul,A207IHY6GERCFO,1
+Word completion given starting letter,Q15dec_verifiability,A207IHY6GERCFO,1
+Word completion given starting letter,Q16shared_knowledge,A207IHY6GERCFO,0
+Word completion given starting letter,Q17within_sys_sol,A207IHY6GERCFO,1
+Word completion given starting letter,Q18ans_recog,A207IHY6GERCFO,1
+Word completion given starting letter,Q19time_solvability,A207IHY6GERCFO,1
+Word completion given starting letter,Q20type_3_type_4,A207IHY6GERCFO,1
+Word completion given starting letter,Q22confl_tradeoffs,A207IHY6GERCFO,0
+Word completion given starting letter,Q23ss_out_uncert,A207IHY6GERCFO,0
+Word completion given starting letter,Q24eureka_question,A207IHY6GERCFO,0
+Graph coloring task,Q1concept_behav,A207IHY6GERCFO,0
+Graph coloring task,Q3type_1_planning,A207IHY6GERCFO,1
+Graph coloring task,Q4type_2_generate,A207IHY6GERCFO,0
+Graph coloring task,Q6type_5_cc,A207IHY6GERCFO,0
+Graph coloring task,Q7type_7_battle,A207IHY6GERCFO,0
+Graph coloring task,Q8type_8_performance,A207IHY6GERCFO,1
+Graph coloring task,Q9divisible_unitary,A207IHY6GERCFO,1
+Graph coloring task,Q10maximizing,A207IHY6GERCFO,0
+Graph coloring task,Q11optimizing,A207IHY6GERCFO,1
+Graph coloring task,Q13outcome_multip,A207IHY6GERCFO,0
+Graph coloring task,Q14sol_scheme_mul,A207IHY6GERCFO,0
+Graph coloring task,Q15dec_verifiability,A207IHY6GERCFO,1
+Graph coloring task,Q16shared_knowledge,A207IHY6GERCFO,1
+Graph coloring task,Q17within_sys_sol,A207IHY6GERCFO,1
+Graph coloring task,Q18ans_recog,A207IHY6GERCFO,1
+Graph coloring task,Q19time_solvability,A207IHY6GERCFO,1
+Graph coloring task,Q20type_3_type_4,A207IHY6GERCFO,1
+Graph coloring task,Q22confl_tradeoffs,A207IHY6GERCFO,1
+Graph coloring task,Q23ss_out_uncert,A207IHY6GERCFO,0
+Graph coloring task,Q24eureka_question,A207IHY6GERCFO,0
+Shopping plan,Q1concept_behav,A207IHY6GERCFO,0
+Shopping plan,Q3type_1_planning,A207IHY6GERCFO,1
+Shopping plan,Q4type_2_generate,A207IHY6GERCFO,0
+Shopping plan,Q6type_5_cc,A207IHY6GERCFO,0
+Shopping plan,Q7type_7_battle,A207IHY6GERCFO,1
+Shopping plan,Q8type_8_performance,A207IHY6GERCFO,0
+Shopping plan,Q9divisible_unitary,A207IHY6GERCFO,1
+Shopping plan,Q10maximizing,A207IHY6GERCFO,1
+Shopping plan,Q11optimizing,A207IHY6GERCFO,1
+Shopping plan,Q13outcome_multip,A207IHY6GERCFO,0
+Shopping plan,Q14sol_scheme_mul,A207IHY6GERCFO,0
+Shopping plan,Q15dec_verifiability,A207IHY6GERCFO,1
+Shopping plan,Q16shared_knowledge,A207IHY6GERCFO,0
+Shopping plan,Q17within_sys_sol,A207IHY6GERCFO,1
+Shopping plan,Q18ans_recog,A207IHY6GERCFO,1
+Shopping plan,Q19time_solvability,A207IHY6GERCFO,1
+Shopping plan,Q20type_3_type_4,A207IHY6GERCFO,1
+Shopping plan,Q22confl_tradeoffs,A207IHY6GERCFO,1
+Shopping plan,Q23ss_out_uncert,A207IHY6GERCFO,1
+Shopping plan,Q24eureka_question,A207IHY6GERCFO,0
+Room assignment task,Q1concept_behav,A207IHY6GERCFO,0
+Room assignment task,Q3type_1_planning,A207IHY6GERCFO,1
+Room assignment task,Q4type_2_generate,A207IHY6GERCFO,0
+Room assignment task,Q6type_5_cc,A207IHY6GERCFO,0
+Room assignment task,Q7type_7_battle,A207IHY6GERCFO,0
+Room assignment task,Q8type_8_performance,A207IHY6GERCFO,0
+Room assignment task,Q9divisible_unitary,A207IHY6GERCFO,1
+Room assignment task,Q10maximizing,A207IHY6GERCFO,1
+Room assignment task,Q11optimizing,A207IHY6GERCFO,0
+Room assignment task,Q13outcome_multip,A207IHY6GERCFO,1
+Room assignment task,Q14sol_scheme_mul,A207IHY6GERCFO,1
+Room assignment task,Q15dec_verifiability,A207IHY6GERCFO,1
+Room assignment task,Q16shared_knowledge,A207IHY6GERCFO,1
+Room assignment task,Q17within_sys_sol,A207IHY6GERCFO,1
+Room assignment task,Q18ans_recog,A207IHY6GERCFO,1
+Room assignment task,Q19time_solvability,A207IHY6GERCFO,1
+Room assignment task,Q20type_3_type_4,A207IHY6GERCFO,1
+Room assignment task,Q22confl_tradeoffs,A207IHY6GERCFO,1
+Room assignment task,Q23ss_out_uncert,A207IHY6GERCFO,1
+Room assignment task,Q24eureka_question,A207IHY6GERCFO,0
+Word completion given starting letter,Q1concept_behav,A21UA6O7ZFAIQJ,0
+Word completion given starting letter,Q3type_1_planning,A21UA6O7ZFAIQJ,0
+Word completion given starting letter,Q4type_2_generate,A21UA6O7ZFAIQJ,0
+Word completion given starting letter,Q6type_5_cc,A21UA6O7ZFAIQJ,0
+Word completion given starting letter,Q7type_7_battle,A21UA6O7ZFAIQJ,3
+Word completion given starting letter,Q8type_8_performance,A21UA6O7ZFAIQJ,0
+Word completion given starting letter,Q9divisible_unitary,A21UA6O7ZFAIQJ,1
+Word completion given starting letter,Q10maximizing,A21UA6O7ZFAIQJ,1
+Word completion given starting letter,Q11optimizing,A21UA6O7ZFAIQJ,0
+Word completion given starting letter,Q13outcome_multip,A21UA6O7ZFAIQJ,0
+Word completion given starting letter,Q14sol_scheme_mul,A21UA6O7ZFAIQJ,0
+Word completion given starting letter,Q15dec_verifiability,A21UA6O7ZFAIQJ,1
+Word completion given starting letter,Q16shared_knowledge,A21UA6O7ZFAIQJ,1
+Word completion given starting letter,Q17within_sys_sol,A21UA6O7ZFAIQJ,1
+Word completion given starting letter,Q18ans_recog,A21UA6O7ZFAIQJ,1
+Word completion given starting letter,Q19time_solvability,A21UA6O7ZFAIQJ,3
+Word completion given starting letter,Q20type_3_type_4,A21UA6O7ZFAIQJ,1
+Word completion given starting letter,Q22confl_tradeoffs,A21UA6O7ZFAIQJ,0
+Word completion given starting letter,Q23ss_out_uncert,A21UA6O7ZFAIQJ,1
+Word completion given starting letter,Q24eureka_question,A21UA6O7ZFAIQJ,0
+Graph coloring task,Q1concept_behav,A21UA6O7ZFAIQJ,0
+Graph coloring task,Q3type_1_planning,A21UA6O7ZFAIQJ,1
+Graph coloring task,Q4type_2_generate,A21UA6O7ZFAIQJ,0
+Graph coloring task,Q6type_5_cc,A21UA6O7ZFAIQJ,0
+Graph coloring task,Q7type_7_battle,A21UA6O7ZFAIQJ,1
+Graph coloring task,Q8type_8_performance,A21UA6O7ZFAIQJ,1
+Graph coloring task,Q9divisible_unitary,A21UA6O7ZFAIQJ,0
+Graph coloring task,Q10maximizing,A21UA6O7ZFAIQJ,1
+Graph coloring task,Q11optimizing,A21UA6O7ZFAIQJ,1
+Graph coloring task,Q13outcome_multip,A21UA6O7ZFAIQJ,1
+Graph coloring task,Q14sol_scheme_mul,A21UA6O7ZFAIQJ,1
+Graph coloring task,Q15dec_verifiability,A21UA6O7ZFAIQJ,1
+Graph coloring task,Q16shared_knowledge,A21UA6O7ZFAIQJ,1
+Graph coloring task,Q17within_sys_sol,A21UA6O7ZFAIQJ,1
+Graph coloring task,Q18ans_recog,A21UA6O7ZFAIQJ,1
+Graph coloring task,Q19time_solvability,A21UA6O7ZFAIQJ,1
+Graph coloring task,Q20type_3_type_4,A21UA6O7ZFAIQJ,1
+Graph coloring task,Q22confl_tradeoffs,A21UA6O7ZFAIQJ,0
+Graph coloring task,Q23ss_out_uncert,A21UA6O7ZFAIQJ,1
+Graph coloring task,Q24eureka_question,A21UA6O7ZFAIQJ,0
+Shopping plan,Q1concept_behav,A21UA6O7ZFAIQJ,0
+Shopping plan,Q3type_1_planning,A21UA6O7ZFAIQJ,1
+Shopping plan,Q4type_2_generate,A21UA6O7ZFAIQJ,1
+Shopping plan,Q6type_5_cc,A21UA6O7ZFAIQJ,0
+Shopping plan,Q7type_7_battle,A21UA6O7ZFAIQJ,0
+Shopping plan,Q8type_8_performance,A21UA6O7ZFAIQJ,0
+Shopping plan,Q9divisible_unitary,A21UA6O7ZFAIQJ,0
+Shopping plan,Q10maximizing,A21UA6O7ZFAIQJ,1
+Shopping plan,Q11optimizing,A21UA6O7ZFAIQJ,1
+Shopping plan,Q13outcome_multip,A21UA6O7ZFAIQJ,1
+Shopping plan,Q14sol_scheme_mul,A21UA6O7ZFAIQJ,0
+Shopping plan,Q15dec_verifiability,A21UA6O7ZFAIQJ,1
+Shopping plan,Q16shared_knowledge,A21UA6O7ZFAIQJ,1
+Shopping plan,Q17within_sys_sol,A21UA6O7ZFAIQJ,1
+Shopping plan,Q18ans_recog,A21UA6O7ZFAIQJ,1
+Shopping plan,Q19time_solvability,A21UA6O7ZFAIQJ,1
+Shopping plan,Q20type_3_type_4,A21UA6O7ZFAIQJ,1
+Shopping plan,Q22confl_tradeoffs,A21UA6O7ZFAIQJ,1
+Shopping plan,Q23ss_out_uncert,A21UA6O7ZFAIQJ,0
+Shopping plan,Q24eureka_question,A21UA6O7ZFAIQJ,0
+Room assignment task,Q1concept_behav,A21UA6O7ZFAIQJ,0
+Room assignment task,Q3type_1_planning,A21UA6O7ZFAIQJ,1
+Room assignment task,Q4type_2_generate,A21UA6O7ZFAIQJ,0
+Room assignment task,Q6type_5_cc,A21UA6O7ZFAIQJ,0
+Room assignment task,Q7type_7_battle,A21UA6O7ZFAIQJ,1
+Room assignment task,Q8type_8_performance,A21UA6O7ZFAIQJ,0
+Room assignment task,Q9divisible_unitary,A21UA6O7ZFAIQJ,1
+Room assignment task,Q10maximizing,A21UA6O7ZFAIQJ,1
+Room assignment task,Q11optimizing,A21UA6O7ZFAIQJ,1
+Room assignment task,Q13outcome_multip,A21UA6O7ZFAIQJ,1
+Room assignment task,Q14sol_scheme_mul,A21UA6O7ZFAIQJ,0
+Room assignment task,Q15dec_verifiability,A21UA6O7ZFAIQJ,1
+Room assignment task,Q16shared_knowledge,A21UA6O7ZFAIQJ,1
+Room assignment task,Q17within_sys_sol,A21UA6O7ZFAIQJ,1
+Room assignment task,Q18ans_recog,A21UA6O7ZFAIQJ,1
+Room assignment task,Q19time_solvability,A21UA6O7ZFAIQJ,1
+Room assignment task,Q20type_3_type_4,A21UA6O7ZFAIQJ,1
+Room assignment task,Q22confl_tradeoffs,A21UA6O7ZFAIQJ,1
+Room assignment task,Q23ss_out_uncert,A21UA6O7ZFAIQJ,1
+Room assignment task,Q24eureka_question,A21UA6O7ZFAIQJ,0
+Word completion given starting letter,Q1concept_behav,A26NGLGGFTATVN,0
+Word completion given starting letter,Q3type_1_planning,A26NGLGGFTATVN,1
+Word completion given starting letter,Q4type_2_generate,A26NGLGGFTATVN,1
+Word completion given starting letter,Q6type_5_cc,A26NGLGGFTATVN,0
+Word completion given starting letter,Q7type_7_battle,A26NGLGGFTATVN,1
+Word completion given starting letter,Q8type_8_performance,A26NGLGGFTATVN,1
+Word completion given starting letter,Q9divisible_unitary,A26NGLGGFTATVN,1
+Word completion given starting letter,Q10maximizing,A26NGLGGFTATVN,1
+Word completion given starting letter,Q11optimizing,A26NGLGGFTATVN,1
+Word completion given starting letter,Q13outcome_multip,A26NGLGGFTATVN,0
+Word completion given starting letter,Q14sol_scheme_mul,A26NGLGGFTATVN,1
+Word completion given starting letter,Q15dec_verifiability,A26NGLGGFTATVN,1
+Word completion given starting letter,Q16shared_knowledge,A26NGLGGFTATVN,0
+Word completion given starting letter,Q17within_sys_sol,A26NGLGGFTATVN,1
+Word completion given starting letter,Q18ans_recog,A26NGLGGFTATVN,1
+Word completion given starting letter,Q19time_solvability,A26NGLGGFTATVN,1
+Word completion given starting letter,Q20type_3_type_4,A26NGLGGFTATVN,1
+Word completion given starting letter,Q22confl_tradeoffs,A26NGLGGFTATVN,0
+Word completion given starting letter,Q23ss_out_uncert,A26NGLGGFTATVN,0
+Word completion given starting letter,Q24eureka_question,A26NGLGGFTATVN,1
+Graph coloring task,Q1concept_behav,A26NGLGGFTATVN,0
+Graph coloring task,Q3type_1_planning,A26NGLGGFTATVN,1
+Graph coloring task,Q4type_2_generate,A26NGLGGFTATVN,0
+Graph coloring task,Q6type_5_cc,A26NGLGGFTATVN,0
+Graph coloring task,Q7type_7_battle,A26NGLGGFTATVN,1
+Graph coloring task,Q8type_8_performance,A26NGLGGFTATVN,1
+Graph coloring task,Q9divisible_unitary,A26NGLGGFTATVN,1
+Graph coloring task,Q10maximizing,A26NGLGGFTATVN,1
+Graph coloring task,Q11optimizing,A26NGLGGFTATVN,1
+Graph coloring task,Q13outcome_multip,A26NGLGGFTATVN,1
+Graph coloring task,Q14sol_scheme_mul,A26NGLGGFTATVN,1
+Graph coloring task,Q15dec_verifiability,A26NGLGGFTATVN,1
+Graph coloring task,Q16shared_knowledge,A26NGLGGFTATVN,0
+Graph coloring task,Q17within_sys_sol,A26NGLGGFTATVN,1
+Graph coloring task,Q18ans_recog,A26NGLGGFTATVN,1
+Graph coloring task,Q19time_solvability,A26NGLGGFTATVN,1
+Graph coloring task,Q20type_3_type_4,A26NGLGGFTATVN,1
+Graph coloring task,Q22confl_tradeoffs,A26NGLGGFTATVN,0
+Graph coloring task,Q23ss_out_uncert,A26NGLGGFTATVN,1
+Graph coloring task,Q24eureka_question,A26NGLGGFTATVN,0
+Shopping plan,Q1concept_behav,A26NGLGGFTATVN,0
+Shopping plan,Q3type_1_planning,A26NGLGGFTATVN,1
+Shopping plan,Q4type_2_generate,A26NGLGGFTATVN,1
+Shopping plan,Q6type_5_cc,A26NGLGGFTATVN,0
+Shopping plan,Q7type_7_battle,A26NGLGGFTATVN,1
+Shopping plan,Q8type_8_performance,A26NGLGGFTATVN,0
+Shopping plan,Q9divisible_unitary,A26NGLGGFTATVN,0
+Shopping plan,Q10maximizing,A26NGLGGFTATVN,1
+Shopping plan,Q11optimizing,A26NGLGGFTATVN,1
+Shopping plan,Q13outcome_multip,A26NGLGGFTATVN,1
+Shopping plan,Q14sol_scheme_mul,A26NGLGGFTATVN,1
+Shopping plan,Q15dec_verifiability,A26NGLGGFTATVN,1
+Shopping plan,Q16shared_knowledge,A26NGLGGFTATVN,1
+Shopping plan,Q17within_sys_sol,A26NGLGGFTATVN,1
+Shopping plan,Q18ans_recog,A26NGLGGFTATVN,1
+Shopping plan,Q19time_solvability,A26NGLGGFTATVN,1
+Shopping plan,Q20type_3_type_4,A26NGLGGFTATVN,1
+Shopping plan,Q22confl_tradeoffs,A26NGLGGFTATVN,1
+Shopping plan,Q23ss_out_uncert,A26NGLGGFTATVN,0
+Shopping plan,Q24eureka_question,A26NGLGGFTATVN,0
+Room assignment task,Q1concept_behav,A26NGLGGFTATVN,0
+Room assignment task,Q3type_1_planning,A26NGLGGFTATVN,1
+Room assignment task,Q4type_2_generate,A26NGLGGFTATVN,0
+Room assignment task,Q6type_5_cc,A26NGLGGFTATVN,0
+Room assignment task,Q7type_7_battle,A26NGLGGFTATVN,0
+Room assignment task,Q8type_8_performance,A26NGLGGFTATVN,0
+Room assignment task,Q9divisible_unitary,A26NGLGGFTATVN,1
+Room assignment task,Q10maximizing,A26NGLGGFTATVN,1
+Room assignment task,Q11optimizing,A26NGLGGFTATVN,1
+Room assignment task,Q13outcome_multip,A26NGLGGFTATVN,1
+Room assignment task,Q14sol_scheme_mul,A26NGLGGFTATVN,0
+Room assignment task,Q15dec_verifiability,A26NGLGGFTATVN,1
+Room assignment task,Q16shared_knowledge,A26NGLGGFTATVN,0
+Room assignment task,Q17within_sys_sol,A26NGLGGFTATVN,1
+Room assignment task,Q18ans_recog,A26NGLGGFTATVN,1
+Room assignment task,Q19time_solvability,A26NGLGGFTATVN,1
+Room assignment task,Q20type_3_type_4,A26NGLGGFTATVN,1
+Room assignment task,Q22confl_tradeoffs,A26NGLGGFTATVN,1
+Room assignment task,Q23ss_out_uncert,A26NGLGGFTATVN,0
+Room assignment task,Q24eureka_question,A26NGLGGFTATVN,0
+Word completion given starting letter,Q1concept_behav,A272X64FOZFYLB,0
+Word completion given starting letter,Q3type_1_planning,A272X64FOZFYLB,0
+Word completion given starting letter,Q4type_2_generate,A272X64FOZFYLB,1
+Word completion given starting letter,Q6type_5_cc,A272X64FOZFYLB,0
+Word completion given starting letter,Q7type_7_battle,A272X64FOZFYLB,0
+Word completion given starting letter,Q8type_8_performance,A272X64FOZFYLB,0
+Word completion given starting letter,Q9divisible_unitary,A272X64FOZFYLB,0
+Word completion given starting letter,Q10maximizing,A272X64FOZFYLB,1
+Word completion given starting letter,Q11optimizing,A272X64FOZFYLB,0
+Word completion given starting letter,Q13outcome_multip,A272X64FOZFYLB,0
+Word completion given starting letter,Q14sol_scheme_mul,A272X64FOZFYLB,0
+Word completion given starting letter,Q15dec_verifiability,A272X64FOZFYLB,1
+Word completion given starting letter,Q16shared_knowledge,A272X64FOZFYLB,0
+Word completion given starting letter,Q17within_sys_sol,A272X64FOZFYLB,1
+Word completion given starting letter,Q18ans_recog,A272X64FOZFYLB,1
+Word completion given starting letter,Q19time_solvability,A272X64FOZFYLB,1
+Word completion given starting letter,Q20type_3_type_4,A272X64FOZFYLB,1
+Word completion given starting letter,Q22confl_tradeoffs,A272X64FOZFYLB,0
+Word completion given starting letter,Q23ss_out_uncert,A272X64FOZFYLB,0
+Word completion given starting letter,Q24eureka_question,A272X64FOZFYLB,0
+Graph coloring task,Q1concept_behav,A272X64FOZFYLB,0
+Graph coloring task,Q3type_1_planning,A272X64FOZFYLB,0
+Graph coloring task,Q4type_2_generate,A272X64FOZFYLB,0
+Graph coloring task,Q6type_5_cc,A272X64FOZFYLB,0
+Graph coloring task,Q7type_7_battle,A272X64FOZFYLB,0
+Graph coloring task,Q8type_8_performance,A272X64FOZFYLB,1
+Graph coloring task,Q9divisible_unitary,A272X64FOZFYLB,1
+Graph coloring task,Q10maximizing,A272X64FOZFYLB,0
+Graph coloring task,Q11optimizing,A272X64FOZFYLB,1
+Graph coloring task,Q13outcome_multip,A272X64FOZFYLB,0
+Graph coloring task,Q14sol_scheme_mul,A272X64FOZFYLB,1
+Graph coloring task,Q15dec_verifiability,A272X64FOZFYLB,1
+Graph coloring task,Q16shared_knowledge,A272X64FOZFYLB,1
+Graph coloring task,Q17within_sys_sol,A272X64FOZFYLB,1
+Graph coloring task,Q18ans_recog,A272X64FOZFYLB,1
+Graph coloring task,Q19time_solvability,A272X64FOZFYLB,1
+Graph coloring task,Q20type_3_type_4,A272X64FOZFYLB,1
+Graph coloring task,Q22confl_tradeoffs,A272X64FOZFYLB,0
+Graph coloring task,Q23ss_out_uncert,A272X64FOZFYLB,0
+Graph coloring task,Q24eureka_question,A272X64FOZFYLB,0
+Shopping plan,Q1concept_behav,A272X64FOZFYLB,0
+Shopping plan,Q3type_1_planning,A272X64FOZFYLB,1
+Shopping plan,Q4type_2_generate,A272X64FOZFYLB,0
+Shopping plan,Q6type_5_cc,A272X64FOZFYLB,0
+Shopping plan,Q7type_7_battle,A272X64FOZFYLB,0
+Shopping plan,Q8type_8_performance,A272X64FOZFYLB,0
+Shopping plan,Q9divisible_unitary,A272X64FOZFYLB,1
+Shopping plan,Q10maximizing,A272X64FOZFYLB,1
+Shopping plan,Q11optimizing,A272X64FOZFYLB,0
+Shopping plan,Q13outcome_multip,A272X64FOZFYLB,1
+Shopping plan,Q14sol_scheme_mul,A272X64FOZFYLB,0
+Shopping plan,Q15dec_verifiability,A272X64FOZFYLB,1
+Shopping plan,Q16shared_knowledge,A272X64FOZFYLB,1
+Shopping plan,Q17within_sys_sol,A272X64FOZFYLB,1
+Shopping plan,Q18ans_recog,A272X64FOZFYLB,1
+Shopping plan,Q19time_solvability,A272X64FOZFYLB,1
+Shopping plan,Q20type_3_type_4,A272X64FOZFYLB,1
+Shopping plan,Q22confl_tradeoffs,A272X64FOZFYLB,1
+Shopping plan,Q23ss_out_uncert,A272X64FOZFYLB,0
+Shopping plan,Q24eureka_question,A272X64FOZFYLB,0
+Room assignment task,Q1concept_behav,A272X64FOZFYLB,0
+Room assignment task,Q3type_1_planning,A272X64FOZFYLB,0
+Room assignment task,Q4type_2_generate,A272X64FOZFYLB,0
+Room assignment task,Q6type_5_cc,A272X64FOZFYLB,0
+Room assignment task,Q7type_7_battle,A272X64FOZFYLB,0
+Room assignment task,Q8type_8_performance,A272X64FOZFYLB,0
+Room assignment task,Q9divisible_unitary,A272X64FOZFYLB,1
+Room assignment task,Q10maximizing,A272X64FOZFYLB,1
+Room assignment task,Q11optimizing,A272X64FOZFYLB,0
+Room assignment task,Q13outcome_multip,A272X64FOZFYLB,1
+Room assignment task,Q14sol_scheme_mul,A272X64FOZFYLB,0
+Room assignment task,Q15dec_verifiability,A272X64FOZFYLB,1
+Room assignment task,Q16shared_knowledge,A272X64FOZFYLB,1
+Room assignment task,Q17within_sys_sol,A272X64FOZFYLB,1
+Room assignment task,Q18ans_recog,A272X64FOZFYLB,1
+Room assignment task,Q19time_solvability,A272X64FOZFYLB,1
+Room assignment task,Q20type_3_type_4,A272X64FOZFYLB,1
+Room assignment task,Q22confl_tradeoffs,A272X64FOZFYLB,0
+Room assignment task,Q23ss_out_uncert,A272X64FOZFYLB,0
+Room assignment task,Q24eureka_question,A272X64FOZFYLB,0
+Word completion given starting letter,Q1concept_behav,A27SMEOPKV84VI,0
+Word completion given starting letter,Q3type_1_planning,A27SMEOPKV84VI,0
+Word completion given starting letter,Q4type_2_generate,A27SMEOPKV84VI,1
+Word completion given starting letter,Q6type_5_cc,A27SMEOPKV84VI,0
+Word completion given starting letter,Q7type_7_battle,A27SMEOPKV84VI,0
+Word completion given starting letter,Q8type_8_performance,A27SMEOPKV84VI,0
+Word completion given starting letter,Q9divisible_unitary,A27SMEOPKV84VI,0
+Word completion given starting letter,Q10maximizing,A27SMEOPKV84VI,1
+Word completion given starting letter,Q11optimizing,A27SMEOPKV84VI,0
+Word completion given starting letter,Q13outcome_multip,A27SMEOPKV84VI,1
+Word completion given starting letter,Q14sol_scheme_mul,A27SMEOPKV84VI,1
+Word completion given starting letter,Q15dec_verifiability,A27SMEOPKV84VI,1
+Word completion given starting letter,Q16shared_knowledge,A27SMEOPKV84VI,0
+Word completion given starting letter,Q17within_sys_sol,A27SMEOPKV84VI,1
+Word completion given starting letter,Q18ans_recog,A27SMEOPKV84VI,1
+Word completion given starting letter,Q19time_solvability,A27SMEOPKV84VI,1
+Word completion given starting letter,Q20type_3_type_4,A27SMEOPKV84VI,1
+Word completion given starting letter,Q22confl_tradeoffs,A27SMEOPKV84VI,0
+Word completion given starting letter,Q23ss_out_uncert,A27SMEOPKV84VI,0
+Word completion given starting letter,Q24eureka_question,A27SMEOPKV84VI,0
+Graph coloring task,Q1concept_behav,A27SMEOPKV84VI,0
+Graph coloring task,Q3type_1_planning,A27SMEOPKV84VI,1
+Graph coloring task,Q4type_2_generate,A27SMEOPKV84VI,0
+Graph coloring task,Q6type_5_cc,A27SMEOPKV84VI,0
+Graph coloring task,Q7type_7_battle,A27SMEOPKV84VI,1
+Graph coloring task,Q8type_8_performance,A27SMEOPKV84VI,1
+Graph coloring task,Q9divisible_unitary,A27SMEOPKV84VI,1
+Graph coloring task,Q10maximizing,A27SMEOPKV84VI,0
+Graph coloring task,Q11optimizing,A27SMEOPKV84VI,1
+Graph coloring task,Q13outcome_multip,A27SMEOPKV84VI,1
+Graph coloring task,Q14sol_scheme_mul,A27SMEOPKV84VI,0
+Graph coloring task,Q15dec_verifiability,A27SMEOPKV84VI,1
+Graph coloring task,Q16shared_knowledge,A27SMEOPKV84VI,0
+Graph coloring task,Q17within_sys_sol,A27SMEOPKV84VI,1
+Graph coloring task,Q18ans_recog,A27SMEOPKV84VI,1
+Graph coloring task,Q19time_solvability,A27SMEOPKV84VI,0
+Graph coloring task,Q20type_3_type_4,A27SMEOPKV84VI,1
+Graph coloring task,Q22confl_tradeoffs,A27SMEOPKV84VI,0
+Graph coloring task,Q23ss_out_uncert,A27SMEOPKV84VI,1
+Graph coloring task,Q24eureka_question,A27SMEOPKV84VI,1
+Shopping plan,Q1concept_behav,A27SMEOPKV84VI,0
+Shopping plan,Q3type_1_planning,A27SMEOPKV84VI,1
+Shopping plan,Q4type_2_generate,A27SMEOPKV84VI,0
+Shopping plan,Q6type_5_cc,A27SMEOPKV84VI,1
+Shopping plan,Q7type_7_battle,A27SMEOPKV84VI,0
+Shopping plan,Q8type_8_performance,A27SMEOPKV84VI,0
+Shopping plan,Q9divisible_unitary,A27SMEOPKV84VI,1
+Shopping plan,Q10maximizing,A27SMEOPKV84VI,1
+Shopping plan,Q11optimizing,A27SMEOPKV84VI,0
+Shopping plan,Q13outcome_multip,A27SMEOPKV84VI,0
+Shopping plan,Q14sol_scheme_mul,A27SMEOPKV84VI,0
+Shopping plan,Q15dec_verifiability,A27SMEOPKV84VI,1
+Shopping plan,Q16shared_knowledge,A27SMEOPKV84VI,0
+Shopping plan,Q17within_sys_sol,A27SMEOPKV84VI,1
+Shopping plan,Q18ans_recog,A27SMEOPKV84VI,0
+Shopping plan,Q19time_solvability,A27SMEOPKV84VI,1
+Shopping plan,Q20type_3_type_4,A27SMEOPKV84VI,1
+Shopping plan,Q22confl_tradeoffs,A27SMEOPKV84VI,1
+Shopping plan,Q23ss_out_uncert,A27SMEOPKV84VI,0
+Shopping plan,Q24eureka_question,A27SMEOPKV84VI,0
+Room assignment task,Q1concept_behav,A27SMEOPKV84VI,0
+Room assignment task,Q3type_1_planning,A27SMEOPKV84VI,1
+Room assignment task,Q4type_2_generate,A27SMEOPKV84VI,0
+Room assignment task,Q6type_5_cc,A27SMEOPKV84VI,0
+Room assignment task,Q7type_7_battle,A27SMEOPKV84VI,1
+Room assignment task,Q8type_8_performance,A27SMEOPKV84VI,0
+Room assignment task,Q9divisible_unitary,A27SMEOPKV84VI,0
+Room assignment task,Q10maximizing,A27SMEOPKV84VI,1
+Room assignment task,Q11optimizing,A27SMEOPKV84VI,1
+Room assignment task,Q13outcome_multip,A27SMEOPKV84VI,1
+Room assignment task,Q14sol_scheme_mul,A27SMEOPKV84VI,1
+Room assignment task,Q15dec_verifiability,A27SMEOPKV84VI,1
+Room assignment task,Q16shared_knowledge,A27SMEOPKV84VI,0
+Room assignment task,Q17within_sys_sol,A27SMEOPKV84VI,1
+Room assignment task,Q18ans_recog,A27SMEOPKV84VI,1
+Room assignment task,Q19time_solvability,A27SMEOPKV84VI,1
+Room assignment task,Q20type_3_type_4,A27SMEOPKV84VI,1
+Room assignment task,Q22confl_tradeoffs,A27SMEOPKV84VI,1
+Room assignment task,Q23ss_out_uncert,A27SMEOPKV84VI,0
+Room assignment task,Q24eureka_question,A27SMEOPKV84VI,0
+Word completion given starting letter,Q1concept_behav,A27W025UEXS1G0,0
+Word completion given starting letter,Q3type_1_planning,A27W025UEXS1G0,0
+Word completion given starting letter,Q4type_2_generate,A27W025UEXS1G0,1
+Word completion given starting letter,Q6type_5_cc,A27W025UEXS1G0,0
+Word completion given starting letter,Q7type_7_battle,A27W025UEXS1G0,0
+Word completion given starting letter,Q8type_8_performance,A27W025UEXS1G0,0
+Word completion given starting letter,Q9divisible_unitary,A27W025UEXS1G0,1
+Word completion given starting letter,Q10maximizing,A27W025UEXS1G0,1
+Word completion given starting letter,Q11optimizing,A27W025UEXS1G0,0
+Word completion given starting letter,Q13outcome_multip,A27W025UEXS1G0,1
+Word completion given starting letter,Q14sol_scheme_mul,A27W025UEXS1G0,0
+Word completion given starting letter,Q15dec_verifiability,A27W025UEXS1G0,1
+Word completion given starting letter,Q16shared_knowledge,A27W025UEXS1G0,0
+Word completion given starting letter,Q17within_sys_sol,A27W025UEXS1G0,1
+Word completion given starting letter,Q18ans_recog,A27W025UEXS1G0,1
+Word completion given starting letter,Q19time_solvability,A27W025UEXS1G0,1
+Word completion given starting letter,Q20type_3_type_4,A27W025UEXS1G0,1
+Word completion given starting letter,Q22confl_tradeoffs,A27W025UEXS1G0,0
+Word completion given starting letter,Q23ss_out_uncert,A27W025UEXS1G0,0
+Word completion given starting letter,Q24eureka_question,A27W025UEXS1G0,1
+Graph coloring task,Q1concept_behav,A27W025UEXS1G0,0
+Graph coloring task,Q3type_1_planning,A27W025UEXS1G0,0
+Graph coloring task,Q4type_2_generate,A27W025UEXS1G0,0
+Graph coloring task,Q6type_5_cc,A27W025UEXS1G0,0
+Graph coloring task,Q7type_7_battle,A27W025UEXS1G0,0
+Graph coloring task,Q8type_8_performance,A27W025UEXS1G0,1
+Graph coloring task,Q9divisible_unitary,A27W025UEXS1G0,0
+Graph coloring task,Q10maximizing,A27W025UEXS1G0,1
+Graph coloring task,Q11optimizing,A27W025UEXS1G0,1
+Graph coloring task,Q13outcome_multip,A27W025UEXS1G0,0
+Graph coloring task,Q14sol_scheme_mul,A27W025UEXS1G0,0
+Graph coloring task,Q15dec_verifiability,A27W025UEXS1G0,1
+Graph coloring task,Q16shared_knowledge,A27W025UEXS1G0,1
+Graph coloring task,Q17within_sys_sol,A27W025UEXS1G0,1
+Graph coloring task,Q18ans_recog,A27W025UEXS1G0,1
+Graph coloring task,Q19time_solvability,A27W025UEXS1G0,1
+Graph coloring task,Q20type_3_type_4,A27W025UEXS1G0,1
+Graph coloring task,Q22confl_tradeoffs,A27W025UEXS1G0,0
+Graph coloring task,Q23ss_out_uncert,A27W025UEXS1G0,0
+Graph coloring task,Q24eureka_question,A27W025UEXS1G0,0
+Shopping plan,Q1concept_behav,A27W025UEXS1G0,0
+Shopping plan,Q3type_1_planning,A27W025UEXS1G0,1
+Shopping plan,Q4type_2_generate,A27W025UEXS1G0,0
+Shopping plan,Q6type_5_cc,A27W025UEXS1G0,0
+Shopping plan,Q7type_7_battle,A27W025UEXS1G0,0
+Shopping plan,Q8type_8_performance,A27W025UEXS1G0,0
+Shopping plan,Q9divisible_unitary,A27W025UEXS1G0,0
+Shopping plan,Q10maximizing,A27W025UEXS1G0,1
+Shopping plan,Q11optimizing,A27W025UEXS1G0,0
+Shopping plan,Q13outcome_multip,A27W025UEXS1G0,1
+Shopping plan,Q14sol_scheme_mul,A27W025UEXS1G0,0
+Shopping plan,Q15dec_verifiability,A27W025UEXS1G0,1
+Shopping plan,Q16shared_knowledge,A27W025UEXS1G0,1
+Shopping plan,Q17within_sys_sol,A27W025UEXS1G0,1
+Shopping plan,Q18ans_recog,A27W025UEXS1G0,1
+Shopping plan,Q19time_solvability,A27W025UEXS1G0,1
+Shopping plan,Q20type_3_type_4,A27W025UEXS1G0,1
+Shopping plan,Q22confl_tradeoffs,A27W025UEXS1G0,1
+Shopping plan,Q23ss_out_uncert,A27W025UEXS1G0,0
+Shopping plan,Q24eureka_question,A27W025UEXS1G0,0
+Room assignment task,Q1concept_behav,A27W025UEXS1G0,0
+Room assignment task,Q3type_1_planning,A27W025UEXS1G0,1
+Room assignment task,Q4type_2_generate,A27W025UEXS1G0,0
+Room assignment task,Q6type_5_cc,A27W025UEXS1G0,0
+Room assignment task,Q7type_7_battle,A27W025UEXS1G0,1
+Room assignment task,Q8type_8_performance,A27W025UEXS1G0,0
+Room assignment task,Q9divisible_unitary,A27W025UEXS1G0,0
+Room assignment task,Q10maximizing,A27W025UEXS1G0,1
+Room assignment task,Q11optimizing,A27W025UEXS1G0,0
+Room assignment task,Q13outcome_multip,A27W025UEXS1G0,1
+Room assignment task,Q14sol_scheme_mul,A27W025UEXS1G0,0
+Room assignment task,Q15dec_verifiability,A27W025UEXS1G0,1
+Room assignment task,Q16shared_knowledge,A27W025UEXS1G0,1
+Room assignment task,Q17within_sys_sol,A27W025UEXS1G0,1
+Room assignment task,Q18ans_recog,A27W025UEXS1G0,1
+Room assignment task,Q19time_solvability,A27W025UEXS1G0,1
+Room assignment task,Q20type_3_type_4,A27W025UEXS1G0,1
+Room assignment task,Q22confl_tradeoffs,A27W025UEXS1G0,1
+Room assignment task,Q23ss_out_uncert,A27W025UEXS1G0,0
+Room assignment task,Q24eureka_question,A27W025UEXS1G0,0
+Word completion given starting letter,Q1concept_behav,A2871R3LEPWMMK,0
+Word completion given starting letter,Q3type_1_planning,A2871R3LEPWMMK,0
+Word completion given starting letter,Q4type_2_generate,A2871R3LEPWMMK,1
+Word completion given starting letter,Q6type_5_cc,A2871R3LEPWMMK,0
+Word completion given starting letter,Q7type_7_battle,A2871R3LEPWMMK,0
+Word completion given starting letter,Q8type_8_performance,A2871R3LEPWMMK,0
+Word completion given starting letter,Q9divisible_unitary,A2871R3LEPWMMK,1
+Word completion given starting letter,Q10maximizing,A2871R3LEPWMMK,1
+Word completion given starting letter,Q11optimizing,A2871R3LEPWMMK,0
+Word completion given starting letter,Q13outcome_multip,A2871R3LEPWMMK,0
+Word completion given starting letter,Q14sol_scheme_mul,A2871R3LEPWMMK,1
+Word completion given starting letter,Q15dec_verifiability,A2871R3LEPWMMK,1
+Word completion given starting letter,Q16shared_knowledge,A2871R3LEPWMMK,1
+Word completion given starting letter,Q17within_sys_sol,A2871R3LEPWMMK,1
+Word completion given starting letter,Q18ans_recog,A2871R3LEPWMMK,1
+Word completion given starting letter,Q19time_solvability,A2871R3LEPWMMK,1
+Word completion given starting letter,Q20type_3_type_4,A2871R3LEPWMMK,1
+Word completion given starting letter,Q22confl_tradeoffs,A2871R3LEPWMMK,0
+Word completion given starting letter,Q23ss_out_uncert,A2871R3LEPWMMK,0
+Word completion given starting letter,Q24eureka_question,A2871R3LEPWMMK,0
+Graph coloring task,Q1concept_behav,A2871R3LEPWMMK,0
+Graph coloring task,Q3type_1_planning,A2871R3LEPWMMK,0
+Graph coloring task,Q4type_2_generate,A2871R3LEPWMMK,0
+Graph coloring task,Q6type_5_cc,A2871R3LEPWMMK,0
+Graph coloring task,Q7type_7_battle,A2871R3LEPWMMK,0
+Graph coloring task,Q8type_8_performance,A2871R3LEPWMMK,1
+Graph coloring task,Q9divisible_unitary,A2871R3LEPWMMK,0
+Graph coloring task,Q10maximizing,A2871R3LEPWMMK,1
+Graph coloring task,Q11optimizing,A2871R3LEPWMMK,1
+Graph coloring task,Q13outcome_multip,A2871R3LEPWMMK,1
+Graph coloring task,Q14sol_scheme_mul,A2871R3LEPWMMK,1
+Graph coloring task,Q15dec_verifiability,A2871R3LEPWMMK,1
+Graph coloring task,Q16shared_knowledge,A2871R3LEPWMMK,1
+Graph coloring task,Q17within_sys_sol,A2871R3LEPWMMK,1
+Graph coloring task,Q18ans_recog,A2871R3LEPWMMK,1
+Graph coloring task,Q19time_solvability,A2871R3LEPWMMK,1
+Graph coloring task,Q20type_3_type_4,A2871R3LEPWMMK,1
+Graph coloring task,Q22confl_tradeoffs,A2871R3LEPWMMK,0
+Graph coloring task,Q23ss_out_uncert,A2871R3LEPWMMK,0
+Graph coloring task,Q24eureka_question,A2871R3LEPWMMK,0
+Shopping plan,Q1concept_behav,A2871R3LEPWMMK,0
+Shopping plan,Q3type_1_planning,A2871R3LEPWMMK,1
+Shopping plan,Q4type_2_generate,A2871R3LEPWMMK,0
+Shopping plan,Q6type_5_cc,A2871R3LEPWMMK,0
+Shopping plan,Q7type_7_battle,A2871R3LEPWMMK,0
+Shopping plan,Q8type_8_performance,A2871R3LEPWMMK,0
+Shopping plan,Q9divisible_unitary,A2871R3LEPWMMK,1
+Shopping plan,Q10maximizing,A2871R3LEPWMMK,1
+Shopping plan,Q11optimizing,A2871R3LEPWMMK,1
+Shopping plan,Q13outcome_multip,A2871R3LEPWMMK,1
+Shopping plan,Q14sol_scheme_mul,A2871R3LEPWMMK,1
+Shopping plan,Q15dec_verifiability,A2871R3LEPWMMK,1
+Shopping plan,Q16shared_knowledge,A2871R3LEPWMMK,1
+Shopping plan,Q17within_sys_sol,A2871R3LEPWMMK,1
+Shopping plan,Q18ans_recog,A2871R3LEPWMMK,1
+Shopping plan,Q19time_solvability,A2871R3LEPWMMK,1
+Shopping plan,Q20type_3_type_4,A2871R3LEPWMMK,1
+Shopping plan,Q22confl_tradeoffs,A2871R3LEPWMMK,1
+Shopping plan,Q23ss_out_uncert,A2871R3LEPWMMK,0
+Shopping plan,Q24eureka_question,A2871R3LEPWMMK,0
+Room assignment task,Q1concept_behav,A2871R3LEPWMMK,0
+Room assignment task,Q3type_1_planning,A2871R3LEPWMMK,1
+Room assignment task,Q4type_2_generate,A2871R3LEPWMMK,0
+Room assignment task,Q6type_5_cc,A2871R3LEPWMMK,0
+Room assignment task,Q7type_7_battle,A2871R3LEPWMMK,0
+Room assignment task,Q8type_8_performance,A2871R3LEPWMMK,0
+Room assignment task,Q9divisible_unitary,A2871R3LEPWMMK,0
+Room assignment task,Q10maximizing,A2871R3LEPWMMK,1
+Room assignment task,Q11optimizing,A2871R3LEPWMMK,1
+Room assignment task,Q13outcome_multip,A2871R3LEPWMMK,1
+Room assignment task,Q14sol_scheme_mul,A2871R3LEPWMMK,1
+Room assignment task,Q15dec_verifiability,A2871R3LEPWMMK,1
+Room assignment task,Q16shared_knowledge,A2871R3LEPWMMK,1
+Room assignment task,Q17within_sys_sol,A2871R3LEPWMMK,1
+Room assignment task,Q18ans_recog,A2871R3LEPWMMK,1
+Room assignment task,Q19time_solvability,A2871R3LEPWMMK,1
+Room assignment task,Q20type_3_type_4,A2871R3LEPWMMK,1
+Room assignment task,Q22confl_tradeoffs,A2871R3LEPWMMK,1
+Room assignment task,Q23ss_out_uncert,A2871R3LEPWMMK,0
+Room assignment task,Q24eureka_question,A2871R3LEPWMMK,0
+Word completion given starting letter,Q1concept_behav,A2BW6WD7LZ9EGV,0
+Word completion given starting letter,Q3type_1_planning,A2BW6WD7LZ9EGV,0
+Word completion given starting letter,Q4type_2_generate,A2BW6WD7LZ9EGV,1
+Word completion given starting letter,Q6type_5_cc,A2BW6WD7LZ9EGV,0
+Word completion given starting letter,Q7type_7_battle,A2BW6WD7LZ9EGV,0
+Word completion given starting letter,Q8type_8_performance,A2BW6WD7LZ9EGV,0
+Word completion given starting letter,Q9divisible_unitary,A2BW6WD7LZ9EGV,1
+Word completion given starting letter,Q10maximizing,A2BW6WD7LZ9EGV,1
+Word completion given starting letter,Q11optimizing,A2BW6WD7LZ9EGV,0
+Word completion given starting letter,Q13outcome_multip,A2BW6WD7LZ9EGV,1
+Word completion given starting letter,Q14sol_scheme_mul,A2BW6WD7LZ9EGV,0
+Word completion given starting letter,Q15dec_verifiability,A2BW6WD7LZ9EGV,1
+Word completion given starting letter,Q16shared_knowledge,A2BW6WD7LZ9EGV,0
+Word completion given starting letter,Q17within_sys_sol,A2BW6WD7LZ9EGV,1
+Word completion given starting letter,Q18ans_recog,A2BW6WD7LZ9EGV,1
+Word completion given starting letter,Q19time_solvability,A2BW6WD7LZ9EGV,1
+Word completion given starting letter,Q20type_3_type_4,A2BW6WD7LZ9EGV,1
+Word completion given starting letter,Q22confl_tradeoffs,A2BW6WD7LZ9EGV,0
+Word completion given starting letter,Q23ss_out_uncert,A2BW6WD7LZ9EGV,0
+Word completion given starting letter,Q24eureka_question,A2BW6WD7LZ9EGV,0
+Graph coloring task,Q1concept_behav,A2BW6WD7LZ9EGV,0
+Graph coloring task,Q3type_1_planning,A2BW6WD7LZ9EGV,0
+Graph coloring task,Q4type_2_generate,A2BW6WD7LZ9EGV,0
+Graph coloring task,Q6type_5_cc,A2BW6WD7LZ9EGV,0
+Graph coloring task,Q7type_7_battle,A2BW6WD7LZ9EGV,0
+Graph coloring task,Q8type_8_performance,A2BW6WD7LZ9EGV,1
+Graph coloring task,Q9divisible_unitary,A2BW6WD7LZ9EGV,0
+Graph coloring task,Q10maximizing,A2BW6WD7LZ9EGV,0
+Graph coloring task,Q11optimizing,A2BW6WD7LZ9EGV,1
+Graph coloring task,Q13outcome_multip,A2BW6WD7LZ9EGV,0
+Graph coloring task,Q14sol_scheme_mul,A2BW6WD7LZ9EGV,0
+Graph coloring task,Q15dec_verifiability,A2BW6WD7LZ9EGV,1
+Graph coloring task,Q16shared_knowledge,A2BW6WD7LZ9EGV,1
+Graph coloring task,Q17within_sys_sol,A2BW6WD7LZ9EGV,1
+Graph coloring task,Q18ans_recog,A2BW6WD7LZ9EGV,1
+Graph coloring task,Q19time_solvability,A2BW6WD7LZ9EGV,1
+Graph coloring task,Q20type_3_type_4,A2BW6WD7LZ9EGV,1
+Graph coloring task,Q22confl_tradeoffs,A2BW6WD7LZ9EGV,1
+Graph coloring task,Q23ss_out_uncert,A2BW6WD7LZ9EGV,0
+Graph coloring task,Q24eureka_question,A2BW6WD7LZ9EGV,0
+Shopping plan,Q1concept_behav,A2BW6WD7LZ9EGV,0
+Shopping plan,Q3type_1_planning,A2BW6WD7LZ9EGV,1
+Shopping plan,Q4type_2_generate,A2BW6WD7LZ9EGV,0
+Shopping plan,Q6type_5_cc,A2BW6WD7LZ9EGV,0
+Shopping plan,Q7type_7_battle,A2BW6WD7LZ9EGV,0
+Shopping plan,Q8type_8_performance,A2BW6WD7LZ9EGV,0
+Shopping plan,Q9divisible_unitary,A2BW6WD7LZ9EGV,1
+Shopping plan,Q10maximizing,A2BW6WD7LZ9EGV,1
+Shopping plan,Q11optimizing,A2BW6WD7LZ9EGV,0
+Shopping plan,Q13outcome_multip,A2BW6WD7LZ9EGV,1
+Shopping plan,Q14sol_scheme_mul,A2BW6WD7LZ9EGV,1
+Shopping plan,Q15dec_verifiability,A2BW6WD7LZ9EGV,1
+Shopping plan,Q16shared_knowledge,A2BW6WD7LZ9EGV,1
+Shopping plan,Q17within_sys_sol,A2BW6WD7LZ9EGV,1
+Shopping plan,Q18ans_recog,A2BW6WD7LZ9EGV,1
+Shopping plan,Q19time_solvability,A2BW6WD7LZ9EGV,1
+Shopping plan,Q20type_3_type_4,A2BW6WD7LZ9EGV,1
+Shopping plan,Q22confl_tradeoffs,A2BW6WD7LZ9EGV,1
+Shopping plan,Q23ss_out_uncert,A2BW6WD7LZ9EGV,0
+Shopping plan,Q24eureka_question,A2BW6WD7LZ9EGV,0
+Room assignment task,Q1concept_behav,A2BW6WD7LZ9EGV,0
+Room assignment task,Q3type_1_planning,A2BW6WD7LZ9EGV,0
+Room assignment task,Q4type_2_generate,A2BW6WD7LZ9EGV,0
+Room assignment task,Q6type_5_cc,A2BW6WD7LZ9EGV,0
+Room assignment task,Q7type_7_battle,A2BW6WD7LZ9EGV,0
+Room assignment task,Q8type_8_performance,A2BW6WD7LZ9EGV,0
+Room assignment task,Q9divisible_unitary,A2BW6WD7LZ9EGV,1
+Room assignment task,Q10maximizing,A2BW6WD7LZ9EGV,1
+Room assignment task,Q11optimizing,A2BW6WD7LZ9EGV,1
+Room assignment task,Q13outcome_multip,A2BW6WD7LZ9EGV,1
+Room assignment task,Q14sol_scheme_mul,A2BW6WD7LZ9EGV,0
+Room assignment task,Q15dec_verifiability,A2BW6WD7LZ9EGV,1
+Room assignment task,Q16shared_knowledge,A2BW6WD7LZ9EGV,1
+Room assignment task,Q17within_sys_sol,A2BW6WD7LZ9EGV,1
+Room assignment task,Q18ans_recog,A2BW6WD7LZ9EGV,1
+Room assignment task,Q19time_solvability,A2BW6WD7LZ9EGV,1
+Room assignment task,Q20type_3_type_4,A2BW6WD7LZ9EGV,1
+Room assignment task,Q22confl_tradeoffs,A2BW6WD7LZ9EGV,1
+Room assignment task,Q23ss_out_uncert,A2BW6WD7LZ9EGV,0
+Room assignment task,Q24eureka_question,A2BW6WD7LZ9EGV,0
+Word completion given starting letter,Q1concept_behav,A2IP3ZAFYGV8M9,0
+Word completion given starting letter,Q3type_1_planning,A2IP3ZAFYGV8M9,0
+Word completion given starting letter,Q4type_2_generate,A2IP3ZAFYGV8M9,1
+Word completion given starting letter,Q6type_5_cc,A2IP3ZAFYGV8M9,0
+Word completion given starting letter,Q7type_7_battle,A2IP3ZAFYGV8M9,0
+Word completion given starting letter,Q8type_8_performance,A2IP3ZAFYGV8M9,0
+Word completion given starting letter,Q9divisible_unitary,A2IP3ZAFYGV8M9,1
+Word completion given starting letter,Q10maximizing,A2IP3ZAFYGV8M9,1
+Word completion given starting letter,Q11optimizing,A2IP3ZAFYGV8M9,0
+Word completion given starting letter,Q13outcome_multip,A2IP3ZAFYGV8M9,1
+Word completion given starting letter,Q14sol_scheme_mul,A2IP3ZAFYGV8M9,0
+Word completion given starting letter,Q15dec_verifiability,A2IP3ZAFYGV8M9,1
+Word completion given starting letter,Q16shared_knowledge,A2IP3ZAFYGV8M9,1
+Word completion given starting letter,Q17within_sys_sol,A2IP3ZAFYGV8M9,1
+Word completion given starting letter,Q18ans_recog,A2IP3ZAFYGV8M9,1
+Word completion given starting letter,Q19time_solvability,A2IP3ZAFYGV8M9,1
+Word completion given starting letter,Q20type_3_type_4,A2IP3ZAFYGV8M9,1
+Word completion given starting letter,Q22confl_tradeoffs,A2IP3ZAFYGV8M9,0
+Word completion given starting letter,Q23ss_out_uncert,A2IP3ZAFYGV8M9,0
+Word completion given starting letter,Q24eureka_question,A2IP3ZAFYGV8M9,0
+Graph coloring task,Q1concept_behav,A2IP3ZAFYGV8M9,0
+Graph coloring task,Q3type_1_planning,A2IP3ZAFYGV8M9,0
+Graph coloring task,Q4type_2_generate,A2IP3ZAFYGV8M9,0
+Graph coloring task,Q6type_5_cc,A2IP3ZAFYGV8M9,0
+Graph coloring task,Q7type_7_battle,A2IP3ZAFYGV8M9,1
+Graph coloring task,Q8type_8_performance,A2IP3ZAFYGV8M9,1
+Graph coloring task,Q9divisible_unitary,A2IP3ZAFYGV8M9,0
+Graph coloring task,Q10maximizing,A2IP3ZAFYGV8M9,0
+Graph coloring task,Q11optimizing,A2IP3ZAFYGV8M9,1
+Graph coloring task,Q13outcome_multip,A2IP3ZAFYGV8M9,0
+Graph coloring task,Q14sol_scheme_mul,A2IP3ZAFYGV8M9,0
+Graph coloring task,Q15dec_verifiability,A2IP3ZAFYGV8M9,1
+Graph coloring task,Q16shared_knowledge,A2IP3ZAFYGV8M9,1
+Graph coloring task,Q17within_sys_sol,A2IP3ZAFYGV8M9,1
+Graph coloring task,Q18ans_recog,A2IP3ZAFYGV8M9,1
+Graph coloring task,Q19time_solvability,A2IP3ZAFYGV8M9,1
+Graph coloring task,Q20type_3_type_4,A2IP3ZAFYGV8M9,1
+Graph coloring task,Q22confl_tradeoffs,A2IP3ZAFYGV8M9,1
+Graph coloring task,Q23ss_out_uncert,A2IP3ZAFYGV8M9,1
+Graph coloring task,Q24eureka_question,A2IP3ZAFYGV8M9,0
+Shopping plan,Q1concept_behav,A2IP3ZAFYGV8M9,0
+Shopping plan,Q3type_1_planning,A2IP3ZAFYGV8M9,1
+Shopping plan,Q4type_2_generate,A2IP3ZAFYGV8M9,0
+Shopping plan,Q6type_5_cc,A2IP3ZAFYGV8M9,0
+Shopping plan,Q7type_7_battle,A2IP3ZAFYGV8M9,0
+Shopping plan,Q8type_8_performance,A2IP3ZAFYGV8M9,0
+Shopping plan,Q9divisible_unitary,A2IP3ZAFYGV8M9,0
+Shopping plan,Q10maximizing,A2IP3ZAFYGV8M9,1
+Shopping plan,Q11optimizing,A2IP3ZAFYGV8M9,0
+Shopping plan,Q13outcome_multip,A2IP3ZAFYGV8M9,0
+Shopping plan,Q14sol_scheme_mul,A2IP3ZAFYGV8M9,0
+Shopping plan,Q15dec_verifiability,A2IP3ZAFYGV8M9,0
+Shopping plan,Q16shared_knowledge,A2IP3ZAFYGV8M9,1
+Shopping plan,Q17within_sys_sol,A2IP3ZAFYGV8M9,1
+Shopping plan,Q18ans_recog,A2IP3ZAFYGV8M9,1
+Shopping plan,Q19time_solvability,A2IP3ZAFYGV8M9,1
+Shopping plan,Q20type_3_type_4,A2IP3ZAFYGV8M9,1
+Shopping plan,Q22confl_tradeoffs,A2IP3ZAFYGV8M9,1
+Shopping plan,Q23ss_out_uncert,A2IP3ZAFYGV8M9,1
+Shopping plan,Q24eureka_question,A2IP3ZAFYGV8M9,0
+Room assignment task,Q1concept_behav,A2IP3ZAFYGV8M9,0
+Room assignment task,Q3type_1_planning,A2IP3ZAFYGV8M9,0
+Room assignment task,Q4type_2_generate,A2IP3ZAFYGV8M9,0
+Room assignment task,Q6type_5_cc,A2IP3ZAFYGV8M9,0
+Room assignment task,Q7type_7_battle,A2IP3ZAFYGV8M9,0
+Room assignment task,Q8type_8_performance,A2IP3ZAFYGV8M9,0
+Room assignment task,Q9divisible_unitary,A2IP3ZAFYGV8M9,0
+Room assignment task,Q10maximizing,A2IP3ZAFYGV8M9,1
+Room assignment task,Q11optimizing,A2IP3ZAFYGV8M9,0
+Room assignment task,Q13outcome_multip,A2IP3ZAFYGV8M9,1
+Room assignment task,Q14sol_scheme_mul,A2IP3ZAFYGV8M9,0
+Room assignment task,Q15dec_verifiability,A2IP3ZAFYGV8M9,1
+Room assignment task,Q16shared_knowledge,A2IP3ZAFYGV8M9,1
+Room assignment task,Q17within_sys_sol,A2IP3ZAFYGV8M9,1
+Room assignment task,Q18ans_recog,A2IP3ZAFYGV8M9,1
+Room assignment task,Q19time_solvability,A2IP3ZAFYGV8M9,1
+Room assignment task,Q20type_3_type_4,A2IP3ZAFYGV8M9,1
+Room assignment task,Q22confl_tradeoffs,A2IP3ZAFYGV8M9,1
+Room assignment task,Q23ss_out_uncert,A2IP3ZAFYGV8M9,1
+Room assignment task,Q24eureka_question,A2IP3ZAFYGV8M9,1
+Word completion given starting letter,Q1concept_behav,A2IQ0QCTQ3KWLT,0
+Word completion given starting letter,Q3type_1_planning,A2IQ0QCTQ3KWLT,0
+Word completion given starting letter,Q4type_2_generate,A2IQ0QCTQ3KWLT,1
+Word completion given starting letter,Q6type_5_cc,A2IQ0QCTQ3KWLT,0
+Word completion given starting letter,Q7type_7_battle,A2IQ0QCTQ3KWLT,1
+Word completion given starting letter,Q8type_8_performance,A2IQ0QCTQ3KWLT,0
+Word completion given starting letter,Q9divisible_unitary,A2IQ0QCTQ3KWLT,1
+Word completion given starting letter,Q10maximizing,A2IQ0QCTQ3KWLT,1
+Word completion given starting letter,Q11optimizing,A2IQ0QCTQ3KWLT,1
+Word completion given starting letter,Q13outcome_multip,A2IQ0QCTQ3KWLT,0
+Word completion given starting letter,Q14sol_scheme_mul,A2IQ0QCTQ3KWLT,0
+Word completion given starting letter,Q15dec_verifiability,A2IQ0QCTQ3KWLT,1
+Word completion given starting letter,Q16shared_knowledge,A2IQ0QCTQ3KWLT,0
+Word completion given starting letter,Q17within_sys_sol,A2IQ0QCTQ3KWLT,1
+Word completion given starting letter,Q18ans_recog,A2IQ0QCTQ3KWLT,1
+Word completion given starting letter,Q19time_solvability,A2IQ0QCTQ3KWLT,1
+Word completion given starting letter,Q20type_3_type_4,A2IQ0QCTQ3KWLT,1
+Word completion given starting letter,Q22confl_tradeoffs,A2IQ0QCTQ3KWLT,0
+Word completion given starting letter,Q23ss_out_uncert,A2IQ0QCTQ3KWLT,0
+Word completion given starting letter,Q24eureka_question,A2IQ0QCTQ3KWLT,0
+Graph coloring task,Q1concept_behav,A2IQ0QCTQ3KWLT,0
+Graph coloring task,Q3type_1_planning,A2IQ0QCTQ3KWLT,1
+Graph coloring task,Q4type_2_generate,A2IQ0QCTQ3KWLT,0
+Graph coloring task,Q6type_5_cc,A2IQ0QCTQ3KWLT,1
+Graph coloring task,Q7type_7_battle,A2IQ0QCTQ3KWLT,0
+Graph coloring task,Q8type_8_performance,A2IQ0QCTQ3KWLT,0
+Graph coloring task,Q9divisible_unitary,A2IQ0QCTQ3KWLT,1
+Graph coloring task,Q10maximizing,A2IQ0QCTQ3KWLT,0
+Graph coloring task,Q11optimizing,A2IQ0QCTQ3KWLT,1
+Graph coloring task,Q13outcome_multip,A2IQ0QCTQ3KWLT,1
+Graph coloring task,Q14sol_scheme_mul,A2IQ0QCTQ3KWLT,0
+Graph coloring task,Q15dec_verifiability,A2IQ0QCTQ3KWLT,1
+Graph coloring task,Q16shared_knowledge,A2IQ0QCTQ3KWLT,1
+Graph coloring task,Q17within_sys_sol,A2IQ0QCTQ3KWLT,1
+Graph coloring task,Q18ans_recog,A2IQ0QCTQ3KWLT,1
+Graph coloring task,Q19time_solvability,A2IQ0QCTQ3KWLT,1
+Graph coloring task,Q20type_3_type_4,A2IQ0QCTQ3KWLT,1
+Graph coloring task,Q22confl_tradeoffs,A2IQ0QCTQ3KWLT,0
+Graph coloring task,Q23ss_out_uncert,A2IQ0QCTQ3KWLT,0
+Graph coloring task,Q24eureka_question,A2IQ0QCTQ3KWLT,1
+Shopping plan,Q1concept_behav,A2IQ0QCTQ3KWLT,0
+Shopping plan,Q3type_1_planning,A2IQ0QCTQ3KWLT,1
+Shopping plan,Q4type_2_generate,A2IQ0QCTQ3KWLT,1
+Shopping plan,Q6type_5_cc,A2IQ0QCTQ3KWLT,0
+Shopping plan,Q7type_7_battle,A2IQ0QCTQ3KWLT,0
+Shopping plan,Q8type_8_performance,A2IQ0QCTQ3KWLT,0
+Shopping plan,Q9divisible_unitary,A2IQ0QCTQ3KWLT,1
+Shopping plan,Q10maximizing,A2IQ0QCTQ3KWLT,0
+Shopping plan,Q11optimizing,A2IQ0QCTQ3KWLT,1
+Shopping plan,Q13outcome_multip,A2IQ0QCTQ3KWLT,0
+Shopping plan,Q14sol_scheme_mul,A2IQ0QCTQ3KWLT,0
+Shopping plan,Q15dec_verifiability,A2IQ0QCTQ3KWLT,1
+Shopping plan,Q16shared_knowledge,A2IQ0QCTQ3KWLT,1
+Shopping plan,Q17within_sys_sol,A2IQ0QCTQ3KWLT,1
+Shopping plan,Q18ans_recog,A2IQ0QCTQ3KWLT,1
+Shopping plan,Q19time_solvability,A2IQ0QCTQ3KWLT,1
+Shopping plan,Q20type_3_type_4,A2IQ0QCTQ3KWLT,1
+Shopping plan,Q22confl_tradeoffs,A2IQ0QCTQ3KWLT,1
+Shopping plan,Q23ss_out_uncert,A2IQ0QCTQ3KWLT,1
+Shopping plan,Q24eureka_question,A2IQ0QCTQ3KWLT,1
+Room assignment task,Q1concept_behav,A2IQ0QCTQ3KWLT,0
+Room assignment task,Q3type_1_planning,A2IQ0QCTQ3KWLT,1
+Room assignment task,Q4type_2_generate,A2IQ0QCTQ3KWLT,1
+Room assignment task,Q6type_5_cc,A2IQ0QCTQ3KWLT,0
+Room assignment task,Q7type_7_battle,A2IQ0QCTQ3KWLT,1
+Room assignment task,Q8type_8_performance,A2IQ0QCTQ3KWLT,1
+Room assignment task,Q9divisible_unitary,A2IQ0QCTQ3KWLT,0
+Room assignment task,Q10maximizing,A2IQ0QCTQ3KWLT,1
+Room assignment task,Q11optimizing,A2IQ0QCTQ3KWLT,1
+Room assignment task,Q13outcome_multip,A2IQ0QCTQ3KWLT,0
+Room assignment task,Q14sol_scheme_mul,A2IQ0QCTQ3KWLT,0
+Room assignment task,Q15dec_verifiability,A2IQ0QCTQ3KWLT,1
+Room assignment task,Q16shared_knowledge,A2IQ0QCTQ3KWLT,1
+Room assignment task,Q17within_sys_sol,A2IQ0QCTQ3KWLT,1
+Room assignment task,Q18ans_recog,A2IQ0QCTQ3KWLT,1
+Room assignment task,Q19time_solvability,A2IQ0QCTQ3KWLT,1
+Room assignment task,Q20type_3_type_4,A2IQ0QCTQ3KWLT,1
+Room assignment task,Q22confl_tradeoffs,A2IQ0QCTQ3KWLT,1
+Room assignment task,Q23ss_out_uncert,A2IQ0QCTQ3KWLT,0
+Room assignment task,Q24eureka_question,A2IQ0QCTQ3KWLT,1
+Word completion given starting letter,Q1concept_behav,A2JP9IKRHNLRPI,0
+Word completion given starting letter,Q3type_1_planning,A2JP9IKRHNLRPI,0
+Word completion given starting letter,Q4type_2_generate,A2JP9IKRHNLRPI,1
+Word completion given starting letter,Q6type_5_cc,A2JP9IKRHNLRPI,0
+Word completion given starting letter,Q7type_7_battle,A2JP9IKRHNLRPI,0
+Word completion given starting letter,Q8type_8_performance,A2JP9IKRHNLRPI,0
+Word completion given starting letter,Q9divisible_unitary,A2JP9IKRHNLRPI,0
+Word completion given starting letter,Q10maximizing,A2JP9IKRHNLRPI,1
+Word completion given starting letter,Q11optimizing,A2JP9IKRHNLRPI,0
+Word completion given starting letter,Q13outcome_multip,A2JP9IKRHNLRPI,1
+Word completion given starting letter,Q14sol_scheme_mul,A2JP9IKRHNLRPI,1
+Word completion given starting letter,Q15dec_verifiability,A2JP9IKRHNLRPI,1
+Word completion given starting letter,Q16shared_knowledge,A2JP9IKRHNLRPI,1
+Word completion given starting letter,Q17within_sys_sol,A2JP9IKRHNLRPI,1
+Word completion given starting letter,Q18ans_recog,A2JP9IKRHNLRPI,1
+Word completion given starting letter,Q19time_solvability,A2JP9IKRHNLRPI,1
+Word completion given starting letter,Q20type_3_type_4,A2JP9IKRHNLRPI,1
+Word completion given starting letter,Q22confl_tradeoffs,A2JP9IKRHNLRPI,0
+Word completion given starting letter,Q23ss_out_uncert,A2JP9IKRHNLRPI,0
+Word completion given starting letter,Q24eureka_question,A2JP9IKRHNLRPI,0
+Graph coloring task,Q1concept_behav,A2JP9IKRHNLRPI,0
+Graph coloring task,Q3type_1_planning,A2JP9IKRHNLRPI,1
+Graph coloring task,Q4type_2_generate,A2JP9IKRHNLRPI,0
+Graph coloring task,Q6type_5_cc,A2JP9IKRHNLRPI,0
+Graph coloring task,Q7type_7_battle,A2JP9IKRHNLRPI,1
+Graph coloring task,Q8type_8_performance,A2JP9IKRHNLRPI,1
+Graph coloring task,Q9divisible_unitary,A2JP9IKRHNLRPI,1
+Graph coloring task,Q10maximizing,A2JP9IKRHNLRPI,1
+Graph coloring task,Q11optimizing,A2JP9IKRHNLRPI,1
+Graph coloring task,Q13outcome_multip,A2JP9IKRHNLRPI,1
+Graph coloring task,Q14sol_scheme_mul,A2JP9IKRHNLRPI,0
+Graph coloring task,Q15dec_verifiability,A2JP9IKRHNLRPI,1
+Graph coloring task,Q16shared_knowledge,A2JP9IKRHNLRPI,1
+Graph coloring task,Q17within_sys_sol,A2JP9IKRHNLRPI,1
+Graph coloring task,Q18ans_recog,A2JP9IKRHNLRPI,1
+Graph coloring task,Q19time_solvability,A2JP9IKRHNLRPI,1
+Graph coloring task,Q20type_3_type_4,A2JP9IKRHNLRPI,1
+Graph coloring task,Q22confl_tradeoffs,A2JP9IKRHNLRPI,0
+Graph coloring task,Q23ss_out_uncert,A2JP9IKRHNLRPI,0
+Graph coloring task,Q24eureka_question,A2JP9IKRHNLRPI,0
+Shopping plan,Q1concept_behav,A2JP9IKRHNLRPI,0
+Shopping plan,Q3type_1_planning,A2JP9IKRHNLRPI,1
+Shopping plan,Q4type_2_generate,A2JP9IKRHNLRPI,0
+Shopping plan,Q6type_5_cc,A2JP9IKRHNLRPI,0
+Shopping plan,Q7type_7_battle,A2JP9IKRHNLRPI,1
+Shopping plan,Q8type_8_performance,A2JP9IKRHNLRPI,0
+Shopping plan,Q9divisible_unitary,A2JP9IKRHNLRPI,1
+Shopping plan,Q10maximizing,A2JP9IKRHNLRPI,1
+Shopping plan,Q11optimizing,A2JP9IKRHNLRPI,0
+Shopping plan,Q13outcome_multip,A2JP9IKRHNLRPI,1
+Shopping plan,Q14sol_scheme_mul,A2JP9IKRHNLRPI,1
+Shopping plan,Q15dec_verifiability,A2JP9IKRHNLRPI,1
+Shopping plan,Q16shared_knowledge,A2JP9IKRHNLRPI,1
+Shopping plan,Q17within_sys_sol,A2JP9IKRHNLRPI,1
+Shopping plan,Q18ans_recog,A2JP9IKRHNLRPI,1
+Shopping plan,Q19time_solvability,A2JP9IKRHNLRPI,1
+Shopping plan,Q20type_3_type_4,A2JP9IKRHNLRPI,1
+Shopping plan,Q22confl_tradeoffs,A2JP9IKRHNLRPI,0
+Shopping plan,Q23ss_out_uncert,A2JP9IKRHNLRPI,0
+Shopping plan,Q24eureka_question,A2JP9IKRHNLRPI,0
+Room assignment task,Q1concept_behav,A2JP9IKRHNLRPI,0
+Room assignment task,Q3type_1_planning,A2JP9IKRHNLRPI,0
+Room assignment task,Q4type_2_generate,A2JP9IKRHNLRPI,0
+Room assignment task,Q6type_5_cc,A2JP9IKRHNLRPI,0
+Room assignment task,Q7type_7_battle,A2JP9IKRHNLRPI,0
+Room assignment task,Q8type_8_performance,A2JP9IKRHNLRPI,0
+Room assignment task,Q9divisible_unitary,A2JP9IKRHNLRPI,1
+Room assignment task,Q10maximizing,A2JP9IKRHNLRPI,1
+Room assignment task,Q11optimizing,A2JP9IKRHNLRPI,0
+Room assignment task,Q13outcome_multip,A2JP9IKRHNLRPI,1
+Room assignment task,Q14sol_scheme_mul,A2JP9IKRHNLRPI,0
+Room assignment task,Q15dec_verifiability,A2JP9IKRHNLRPI,1
+Room assignment task,Q16shared_knowledge,A2JP9IKRHNLRPI,1
+Room assignment task,Q17within_sys_sol,A2JP9IKRHNLRPI,1
+Room assignment task,Q18ans_recog,A2JP9IKRHNLRPI,1
+Room assignment task,Q19time_solvability,A2JP9IKRHNLRPI,1
+Room assignment task,Q20type_3_type_4,A2JP9IKRHNLRPI,1
+Room assignment task,Q22confl_tradeoffs,A2JP9IKRHNLRPI,1
+Room assignment task,Q23ss_out_uncert,A2JP9IKRHNLRPI,0
+Room assignment task,Q24eureka_question,A2JP9IKRHNLRPI,0
+Word completion given starting letter,Q1concept_behav,A2OVX9UW5WANQE,0
+Word completion given starting letter,Q3type_1_planning,A2OVX9UW5WANQE,0
+Word completion given starting letter,Q4type_2_generate,A2OVX9UW5WANQE,1
+Word completion given starting letter,Q6type_5_cc,A2OVX9UW5WANQE,0
+Word completion given starting letter,Q7type_7_battle,A2OVX9UW5WANQE,0
+Word completion given starting letter,Q8type_8_performance,A2OVX9UW5WANQE,0
+Word completion given starting letter,Q9divisible_unitary,A2OVX9UW5WANQE,1
+Word completion given starting letter,Q10maximizing,A2OVX9UW5WANQE,1
+Word completion given starting letter,Q11optimizing,A2OVX9UW5WANQE,1
+Word completion given starting letter,Q13outcome_multip,A2OVX9UW5WANQE,0
+Word completion given starting letter,Q14sol_scheme_mul,A2OVX9UW5WANQE,1
+Word completion given starting letter,Q15dec_verifiability,A2OVX9UW5WANQE,1
+Word completion given starting letter,Q16shared_knowledge,A2OVX9UW5WANQE,1
+Word completion given starting letter,Q17within_sys_sol,A2OVX9UW5WANQE,1
+Word completion given starting letter,Q18ans_recog,A2OVX9UW5WANQE,1
+Word completion given starting letter,Q19time_solvability,A2OVX9UW5WANQE,1
+Word completion given starting letter,Q20type_3_type_4,A2OVX9UW5WANQE,1
+Word completion given starting letter,Q22confl_tradeoffs,A2OVX9UW5WANQE,0
+Word completion given starting letter,Q23ss_out_uncert,A2OVX9UW5WANQE,0
+Word completion given starting letter,Q24eureka_question,A2OVX9UW5WANQE,0
+Graph coloring task,Q1concept_behav,A2OVX9UW5WANQE,0
+Graph coloring task,Q3type_1_planning,A2OVX9UW5WANQE,1
+Graph coloring task,Q4type_2_generate,A2OVX9UW5WANQE,0
+Graph coloring task,Q6type_5_cc,A2OVX9UW5WANQE,0
+Graph coloring task,Q7type_7_battle,A2OVX9UW5WANQE,0
+Graph coloring task,Q8type_8_performance,A2OVX9UW5WANQE,0
+Graph coloring task,Q9divisible_unitary,A2OVX9UW5WANQE,0
+Graph coloring task,Q10maximizing,A2OVX9UW5WANQE,1
+Graph coloring task,Q11optimizing,A2OVX9UW5WANQE,1
+Graph coloring task,Q13outcome_multip,A2OVX9UW5WANQE,1
+Graph coloring task,Q14sol_scheme_mul,A2OVX9UW5WANQE,1
+Graph coloring task,Q15dec_verifiability,A2OVX9UW5WANQE,1
+Graph coloring task,Q16shared_knowledge,A2OVX9UW5WANQE,1
+Graph coloring task,Q17within_sys_sol,A2OVX9UW5WANQE,1
+Graph coloring task,Q18ans_recog,A2OVX9UW5WANQE,0
+Graph coloring task,Q19time_solvability,A2OVX9UW5WANQE,1
+Graph coloring task,Q20type_3_type_4,A2OVX9UW5WANQE,1
+Graph coloring task,Q22confl_tradeoffs,A2OVX9UW5WANQE,1
+Graph coloring task,Q23ss_out_uncert,A2OVX9UW5WANQE,0
+Graph coloring task,Q24eureka_question,A2OVX9UW5WANQE,1
+Shopping plan,Q1concept_behav,A2OVX9UW5WANQE,0
+Shopping plan,Q3type_1_planning,A2OVX9UW5WANQE,1
+Shopping plan,Q4type_2_generate,A2OVX9UW5WANQE,1
+Shopping plan,Q6type_5_cc,A2OVX9UW5WANQE,1
+Shopping plan,Q7type_7_battle,A2OVX9UW5WANQE,0
+Shopping plan,Q8type_8_performance,A2OVX9UW5WANQE,0
+Shopping plan,Q9divisible_unitary,A2OVX9UW5WANQE,1
+Shopping plan,Q10maximizing,A2OVX9UW5WANQE,1
+Shopping plan,Q11optimizing,A2OVX9UW5WANQE,1
+Shopping plan,Q13outcome_multip,A2OVX9UW5WANQE,1
+Shopping plan,Q14sol_scheme_mul,A2OVX9UW5WANQE,0
+Shopping plan,Q15dec_verifiability,A2OVX9UW5WANQE,1
+Shopping plan,Q16shared_knowledge,A2OVX9UW5WANQE,1
+Shopping plan,Q17within_sys_sol,A2OVX9UW5WANQE,1
+Shopping plan,Q18ans_recog,A2OVX9UW5WANQE,1
+Shopping plan,Q19time_solvability,A2OVX9UW5WANQE,1
+Shopping plan,Q20type_3_type_4,A2OVX9UW5WANQE,0
+Shopping plan,Q22confl_tradeoffs,A2OVX9UW5WANQE,1
+Shopping plan,Q23ss_out_uncert,A2OVX9UW5WANQE,1
+Shopping plan,Q24eureka_question,A2OVX9UW5WANQE,0
+Room assignment task,Q1concept_behav,A2OVX9UW5WANQE,0
+Room assignment task,Q3type_1_planning,A2OVX9UW5WANQE,1
+Room assignment task,Q4type_2_generate,A2OVX9UW5WANQE,1
+Room assignment task,Q6type_5_cc,A2OVX9UW5WANQE,0
+Room assignment task,Q7type_7_battle,A2OVX9UW5WANQE,0
+Room assignment task,Q8type_8_performance,A2OVX9UW5WANQE,0
+Room assignment task,Q9divisible_unitary,A2OVX9UW5WANQE,1
+Room assignment task,Q10maximizing,A2OVX9UW5WANQE,1
+Room assignment task,Q11optimizing,A2OVX9UW5WANQE,1
+Room assignment task,Q13outcome_multip,A2OVX9UW5WANQE,0
+Room assignment task,Q14sol_scheme_mul,A2OVX9UW5WANQE,0
+Room assignment task,Q15dec_verifiability,A2OVX9UW5WANQE,1
+Room assignment task,Q16shared_knowledge,A2OVX9UW5WANQE,0
+Room assignment task,Q17within_sys_sol,A2OVX9UW5WANQE,1
+Room assignment task,Q18ans_recog,A2OVX9UW5WANQE,0
+Room assignment task,Q19time_solvability,A2OVX9UW5WANQE,0
+Room assignment task,Q20type_3_type_4,A2OVX9UW5WANQE,0
+Room assignment task,Q22confl_tradeoffs,A2OVX9UW5WANQE,1
+Room assignment task,Q23ss_out_uncert,A2OVX9UW5WANQE,1
+Room assignment task,Q24eureka_question,A2OVX9UW5WANQE,0
+Word completion given starting letter,Q1concept_behav,A2VRDE2FHCBMF8,0
+Word completion given starting letter,Q3type_1_planning,A2VRDE2FHCBMF8,0
+Word completion given starting letter,Q4type_2_generate,A2VRDE2FHCBMF8,1
+Word completion given starting letter,Q6type_5_cc,A2VRDE2FHCBMF8,0
+Word completion given starting letter,Q7type_7_battle,A2VRDE2FHCBMF8,1
+Word completion given starting letter,Q8type_8_performance,A2VRDE2FHCBMF8,0
+Word completion given starting letter,Q9divisible_unitary,A2VRDE2FHCBMF8,1
+Word completion given starting letter,Q10maximizing,A2VRDE2FHCBMF8,1
+Word completion given starting letter,Q11optimizing,A2VRDE2FHCBMF8,0
+Word completion given starting letter,Q13outcome_multip,A2VRDE2FHCBMF8,0
+Word completion given starting letter,Q14sol_scheme_mul,A2VRDE2FHCBMF8,0
+Word completion given starting letter,Q15dec_verifiability,A2VRDE2FHCBMF8,1
+Word completion given starting letter,Q16shared_knowledge,A2VRDE2FHCBMF8,0
+Word completion given starting letter,Q17within_sys_sol,A2VRDE2FHCBMF8,1
+Word completion given starting letter,Q18ans_recog,A2VRDE2FHCBMF8,1
+Word completion given starting letter,Q19time_solvability,A2VRDE2FHCBMF8,3
+Word completion given starting letter,Q20type_3_type_4,A2VRDE2FHCBMF8,0
+Word completion given starting letter,Q22confl_tradeoffs,A2VRDE2FHCBMF8,0
+Word completion given starting letter,Q23ss_out_uncert,A2VRDE2FHCBMF8,0
+Word completion given starting letter,Q24eureka_question,A2VRDE2FHCBMF8,0
+Graph coloring task,Q1concept_behav,A2VRDE2FHCBMF8,0
+Graph coloring task,Q3type_1_planning,A2VRDE2FHCBMF8,0
+Graph coloring task,Q4type_2_generate,A2VRDE2FHCBMF8,0
+Graph coloring task,Q6type_5_cc,A2VRDE2FHCBMF8,0
+Graph coloring task,Q7type_7_battle,A2VRDE2FHCBMF8,0
+Graph coloring task,Q8type_8_performance,A2VRDE2FHCBMF8,0
+Graph coloring task,Q9divisible_unitary,A2VRDE2FHCBMF8,1
+Graph coloring task,Q10maximizing,A2VRDE2FHCBMF8,0
+Graph coloring task,Q11optimizing,A2VRDE2FHCBMF8,1
+Graph coloring task,Q13outcome_multip,A2VRDE2FHCBMF8,1
+Graph coloring task,Q14sol_scheme_mul,A2VRDE2FHCBMF8,0
+Graph coloring task,Q15dec_verifiability,A2VRDE2FHCBMF8,1
+Graph coloring task,Q16shared_knowledge,A2VRDE2FHCBMF8,1
+Graph coloring task,Q17within_sys_sol,A2VRDE2FHCBMF8,1
+Graph coloring task,Q18ans_recog,A2VRDE2FHCBMF8,1
+Graph coloring task,Q19time_solvability,A2VRDE2FHCBMF8,1
+Graph coloring task,Q20type_3_type_4,A2VRDE2FHCBMF8,1
+Graph coloring task,Q22confl_tradeoffs,A2VRDE2FHCBMF8,1
+Graph coloring task,Q23ss_out_uncert,A2VRDE2FHCBMF8,1
+Graph coloring task,Q24eureka_question,A2VRDE2FHCBMF8,1
+Shopping plan,Q1concept_behav,A2VRDE2FHCBMF8,0
+Shopping plan,Q3type_1_planning,A2VRDE2FHCBMF8,1
+Shopping plan,Q4type_2_generate,A2VRDE2FHCBMF8,0
+Shopping plan,Q6type_5_cc,A2VRDE2FHCBMF8,0
+Shopping plan,Q7type_7_battle,A2VRDE2FHCBMF8,1
+Shopping plan,Q8type_8_performance,A2VRDE2FHCBMF8,0
+Shopping plan,Q9divisible_unitary,A2VRDE2FHCBMF8,0
+Shopping plan,Q10maximizing,A2VRDE2FHCBMF8,0
+Shopping plan,Q11optimizing,A2VRDE2FHCBMF8,1
+Shopping plan,Q13outcome_multip,A2VRDE2FHCBMF8,1
+Shopping plan,Q14sol_scheme_mul,A2VRDE2FHCBMF8,1
+Shopping plan,Q15dec_verifiability,A2VRDE2FHCBMF8,1
+Shopping plan,Q16shared_knowledge,A2VRDE2FHCBMF8,1
+Shopping plan,Q17within_sys_sol,A2VRDE2FHCBMF8,1
+Shopping plan,Q18ans_recog,A2VRDE2FHCBMF8,1
+Shopping plan,Q19time_solvability,A2VRDE2FHCBMF8,1
+Shopping plan,Q20type_3_type_4,A2VRDE2FHCBMF8,1
+Shopping plan,Q22confl_tradeoffs,A2VRDE2FHCBMF8,1
+Shopping plan,Q23ss_out_uncert,A2VRDE2FHCBMF8,1
+Shopping plan,Q24eureka_question,A2VRDE2FHCBMF8,0
+Room assignment task,Q1concept_behav,A2VRDE2FHCBMF8,0
+Room assignment task,Q3type_1_planning,A2VRDE2FHCBMF8,0
+Room assignment task,Q4type_2_generate,A2VRDE2FHCBMF8,0
+Room assignment task,Q6type_5_cc,A2VRDE2FHCBMF8,1
+Room assignment task,Q7type_7_battle,A2VRDE2FHCBMF8,1
+Room assignment task,Q8type_8_performance,A2VRDE2FHCBMF8,1
+Room assignment task,Q9divisible_unitary,A2VRDE2FHCBMF8,0
+Room assignment task,Q10maximizing,A2VRDE2FHCBMF8,0
+Room assignment task,Q11optimizing,A2VRDE2FHCBMF8,1
+Room assignment task,Q13outcome_multip,A2VRDE2FHCBMF8,0
+Room assignment task,Q14sol_scheme_mul,A2VRDE2FHCBMF8,0
+Room assignment task,Q15dec_verifiability,A2VRDE2FHCBMF8,1
+Room assignment task,Q16shared_knowledge,A2VRDE2FHCBMF8,1
+Room assignment task,Q17within_sys_sol,A2VRDE2FHCBMF8,1
+Room assignment task,Q18ans_recog,A2VRDE2FHCBMF8,1
+Room assignment task,Q19time_solvability,A2VRDE2FHCBMF8,1
+Room assignment task,Q20type_3_type_4,A2VRDE2FHCBMF8,1
+Room assignment task,Q22confl_tradeoffs,A2VRDE2FHCBMF8,1
+Room assignment task,Q23ss_out_uncert,A2VRDE2FHCBMF8,1
+Room assignment task,Q24eureka_question,A2VRDE2FHCBMF8,0
+Word completion given starting letter,Q1concept_behav,A2Z6NL0CTXY0ZB,0
+Word completion given starting letter,Q3type_1_planning,A2Z6NL0CTXY0ZB,1
+Word completion given starting letter,Q4type_2_generate,A2Z6NL0CTXY0ZB,1
+Word completion given starting letter,Q6type_5_cc,A2Z6NL0CTXY0ZB,0
+Word completion given starting letter,Q7type_7_battle,A2Z6NL0CTXY0ZB,0
+Word completion given starting letter,Q8type_8_performance,A2Z6NL0CTXY0ZB,1
+Word completion given starting letter,Q9divisible_unitary,A2Z6NL0CTXY0ZB,1
+Word completion given starting letter,Q10maximizing,A2Z6NL0CTXY0ZB,0
+Word completion given starting letter,Q11optimizing,A2Z6NL0CTXY0ZB,1
+Word completion given starting letter,Q13outcome_multip,A2Z6NL0CTXY0ZB,1
+Word completion given starting letter,Q14sol_scheme_mul,A2Z6NL0CTXY0ZB,1
+Word completion given starting letter,Q15dec_verifiability,A2Z6NL0CTXY0ZB,1
+Word completion given starting letter,Q16shared_knowledge,A2Z6NL0CTXY0ZB,0
+Word completion given starting letter,Q17within_sys_sol,A2Z6NL0CTXY0ZB,1
+Word completion given starting letter,Q18ans_recog,A2Z6NL0CTXY0ZB,1
+Word completion given starting letter,Q19time_solvability,A2Z6NL0CTXY0ZB,1
+Word completion given starting letter,Q20type_3_type_4,A2Z6NL0CTXY0ZB,1
+Word completion given starting letter,Q22confl_tradeoffs,A2Z6NL0CTXY0ZB,0
+Word completion given starting letter,Q23ss_out_uncert,A2Z6NL0CTXY0ZB,0
+Word completion given starting letter,Q24eureka_question,A2Z6NL0CTXY0ZB,0
+Graph coloring task,Q1concept_behav,A2Z6NL0CTXY0ZB,0
+Graph coloring task,Q3type_1_planning,A2Z6NL0CTXY0ZB,1
+Graph coloring task,Q4type_2_generate,A2Z6NL0CTXY0ZB,0
+Graph coloring task,Q6type_5_cc,A2Z6NL0CTXY0ZB,0
+Graph coloring task,Q7type_7_battle,A2Z6NL0CTXY0ZB,0
+Graph coloring task,Q8type_8_performance,A2Z6NL0CTXY0ZB,0
+Graph coloring task,Q9divisible_unitary,A2Z6NL0CTXY0ZB,0
+Graph coloring task,Q10maximizing,A2Z6NL0CTXY0ZB,0
+Graph coloring task,Q11optimizing,A2Z6NL0CTXY0ZB,1
+Graph coloring task,Q13outcome_multip,A2Z6NL0CTXY0ZB,1
+Graph coloring task,Q14sol_scheme_mul,A2Z6NL0CTXY0ZB,0
+Graph coloring task,Q15dec_verifiability,A2Z6NL0CTXY0ZB,1
+Graph coloring task,Q16shared_knowledge,A2Z6NL0CTXY0ZB,0
+Graph coloring task,Q17within_sys_sol,A2Z6NL0CTXY0ZB,1
+Graph coloring task,Q18ans_recog,A2Z6NL0CTXY0ZB,1
+Graph coloring task,Q19time_solvability,A2Z6NL0CTXY0ZB,1
+Graph coloring task,Q20type_3_type_4,A2Z6NL0CTXY0ZB,0
+Graph coloring task,Q22confl_tradeoffs,A2Z6NL0CTXY0ZB,0
+Graph coloring task,Q23ss_out_uncert,A2Z6NL0CTXY0ZB,0
+Graph coloring task,Q24eureka_question,A2Z6NL0CTXY0ZB,0
+Shopping plan,Q1concept_behav,A2Z6NL0CTXY0ZB,1
+Shopping plan,Q3type_1_planning,A2Z6NL0CTXY0ZB,1
+Shopping plan,Q4type_2_generate,A2Z6NL0CTXY0ZB,0
+Shopping plan,Q6type_5_cc,A2Z6NL0CTXY0ZB,0
+Shopping plan,Q7type_7_battle,A2Z6NL0CTXY0ZB,0
+Shopping plan,Q8type_8_performance,A2Z6NL0CTXY0ZB,1
+Shopping plan,Q9divisible_unitary,A2Z6NL0CTXY0ZB,1
+Shopping plan,Q10maximizing,A2Z6NL0CTXY0ZB,1
+Shopping plan,Q11optimizing,A2Z6NL0CTXY0ZB,1
+Shopping plan,Q13outcome_multip,A2Z6NL0CTXY0ZB,0
+Shopping plan,Q14sol_scheme_mul,A2Z6NL0CTXY0ZB,1
+Shopping plan,Q15dec_verifiability,A2Z6NL0CTXY0ZB,0
+Shopping plan,Q16shared_knowledge,A2Z6NL0CTXY0ZB,0
+Shopping plan,Q17within_sys_sol,A2Z6NL0CTXY0ZB,1
+Shopping plan,Q18ans_recog,A2Z6NL0CTXY0ZB,1
+Shopping plan,Q19time_solvability,A2Z6NL0CTXY0ZB,0
+Shopping plan,Q20type_3_type_4,A2Z6NL0CTXY0ZB,0
+Shopping plan,Q22confl_tradeoffs,A2Z6NL0CTXY0ZB,0
+Shopping plan,Q23ss_out_uncert,A2Z6NL0CTXY0ZB,0
+Shopping plan,Q24eureka_question,A2Z6NL0CTXY0ZB,0
+Room assignment task,Q1concept_behav,A2Z6NL0CTXY0ZB,1
+Room assignment task,Q3type_1_planning,A2Z6NL0CTXY0ZB,1
+Room assignment task,Q4type_2_generate,A2Z6NL0CTXY0ZB,1
+Room assignment task,Q6type_5_cc,A2Z6NL0CTXY0ZB,0
+Room assignment task,Q7type_7_battle,A2Z6NL0CTXY0ZB,0
+Room assignment task,Q8type_8_performance,A2Z6NL0CTXY0ZB,0
+Room assignment task,Q9divisible_unitary,A2Z6NL0CTXY0ZB,1
+Room assignment task,Q10maximizing,A2Z6NL0CTXY0ZB,1
+Room assignment task,Q11optimizing,A2Z6NL0CTXY0ZB,1
+Room assignment task,Q13outcome_multip,A2Z6NL0CTXY0ZB,1
+Room assignment task,Q14sol_scheme_mul,A2Z6NL0CTXY0ZB,0
+Room assignment task,Q15dec_verifiability,A2Z6NL0CTXY0ZB,0
+Room assignment task,Q16shared_knowledge,A2Z6NL0CTXY0ZB,0
+Room assignment task,Q17within_sys_sol,A2Z6NL0CTXY0ZB,1
+Room assignment task,Q18ans_recog,A2Z6NL0CTXY0ZB,0
+Room assignment task,Q19time_solvability,A2Z6NL0CTXY0ZB,1
+Room assignment task,Q20type_3_type_4,A2Z6NL0CTXY0ZB,1
+Room assignment task,Q22confl_tradeoffs,A2Z6NL0CTXY0ZB,0
+Room assignment task,Q23ss_out_uncert,A2Z6NL0CTXY0ZB,0
+Room assignment task,Q24eureka_question,A2Z6NL0CTXY0ZB,0
+Word completion given starting letter,Q1concept_behav,A314XJY8V1YL12,0
+Word completion given starting letter,Q3type_1_planning,A314XJY8V1YL12,0
+Word completion given starting letter,Q4type_2_generate,A314XJY8V1YL12,1
+Word completion given starting letter,Q6type_5_cc,A314XJY8V1YL12,0
+Word completion given starting letter,Q7type_7_battle,A314XJY8V1YL12,1
+Word completion given starting letter,Q8type_8_performance,A314XJY8V1YL12,0
+Word completion given starting letter,Q9divisible_unitary,A314XJY8V1YL12,0
+Word completion given starting letter,Q10maximizing,A314XJY8V1YL12,1
+Word completion given starting letter,Q11optimizing,A314XJY8V1YL12,0
+Word completion given starting letter,Q13outcome_multip,A314XJY8V1YL12,0
+Word completion given starting letter,Q14sol_scheme_mul,A314XJY8V1YL12,1
+Word completion given starting letter,Q15dec_verifiability,A314XJY8V1YL12,1
+Word completion given starting letter,Q16shared_knowledge,A314XJY8V1YL12,0
+Word completion given starting letter,Q17within_sys_sol,A314XJY8V1YL12,1
+Word completion given starting letter,Q18ans_recog,A314XJY8V1YL12,1
+Word completion given starting letter,Q19time_solvability,A314XJY8V1YL12,1
+Word completion given starting letter,Q20type_3_type_4,A314XJY8V1YL12,1
+Word completion given starting letter,Q22confl_tradeoffs,A314XJY8V1YL12,0
+Word completion given starting letter,Q23ss_out_uncert,A314XJY8V1YL12,0
+Word completion given starting letter,Q24eureka_question,A314XJY8V1YL12,0
+Graph coloring task,Q1concept_behav,A314XJY8V1YL12,0
+Graph coloring task,Q3type_1_planning,A314XJY8V1YL12,0
+Graph coloring task,Q4type_2_generate,A314XJY8V1YL12,0
+Graph coloring task,Q6type_5_cc,A314XJY8V1YL12,0
+Graph coloring task,Q7type_7_battle,A314XJY8V1YL12,0
+Graph coloring task,Q8type_8_performance,A314XJY8V1YL12,1
+Graph coloring task,Q9divisible_unitary,A314XJY8V1YL12,0
+Graph coloring task,Q10maximizing,A314XJY8V1YL12,0
+Graph coloring task,Q11optimizing,A314XJY8V1YL12,1
+Graph coloring task,Q13outcome_multip,A314XJY8V1YL12,1
+Graph coloring task,Q14sol_scheme_mul,A314XJY8V1YL12,1
+Graph coloring task,Q15dec_verifiability,A314XJY8V1YL12,1
+Graph coloring task,Q16shared_knowledge,A314XJY8V1YL12,1
+Graph coloring task,Q17within_sys_sol,A314XJY8V1YL12,1
+Graph coloring task,Q18ans_recog,A314XJY8V1YL12,1
+Graph coloring task,Q19time_solvability,A314XJY8V1YL12,1
+Graph coloring task,Q20type_3_type_4,A314XJY8V1YL12,1
+Graph coloring task,Q22confl_tradeoffs,A314XJY8V1YL12,0
+Graph coloring task,Q23ss_out_uncert,A314XJY8V1YL12,1
+Graph coloring task,Q24eureka_question,A314XJY8V1YL12,0
+Shopping plan,Q1concept_behav,A314XJY8V1YL12,0
+Shopping plan,Q3type_1_planning,A314XJY8V1YL12,1
+Shopping plan,Q4type_2_generate,A314XJY8V1YL12,1
+Shopping plan,Q6type_5_cc,A314XJY8V1YL12,0
+Shopping plan,Q7type_7_battle,A314XJY8V1YL12,1
+Shopping plan,Q8type_8_performance,A314XJY8V1YL12,0
+Shopping plan,Q9divisible_unitary,A314XJY8V1YL12,1
+Shopping plan,Q10maximizing,A314XJY8V1YL12,1
+Shopping plan,Q11optimizing,A314XJY8V1YL12,1
+Shopping plan,Q13outcome_multip,A314XJY8V1YL12,0
+Shopping plan,Q14sol_scheme_mul,A314XJY8V1YL12,0
+Shopping plan,Q15dec_verifiability,A314XJY8V1YL12,1
+Shopping plan,Q16shared_knowledge,A314XJY8V1YL12,1
+Shopping plan,Q17within_sys_sol,A314XJY8V1YL12,1
+Shopping plan,Q18ans_recog,A314XJY8V1YL12,1
+Shopping plan,Q19time_solvability,A314XJY8V1YL12,1
+Shopping plan,Q20type_3_type_4,A314XJY8V1YL12,1
+Shopping plan,Q22confl_tradeoffs,A314XJY8V1YL12,1
+Shopping plan,Q23ss_out_uncert,A314XJY8V1YL12,1
+Shopping plan,Q24eureka_question,A314XJY8V1YL12,0
+Room assignment task,Q1concept_behav,A314XJY8V1YL12,0
+Room assignment task,Q3type_1_planning,A314XJY8V1YL12,1
+Room assignment task,Q4type_2_generate,A314XJY8V1YL12,1
+Room assignment task,Q6type_5_cc,A314XJY8V1YL12,1
+Room assignment task,Q7type_7_battle,A314XJY8V1YL12,1
+Room assignment task,Q8type_8_performance,A314XJY8V1YL12,1
+Room assignment task,Q9divisible_unitary,A314XJY8V1YL12,0
+Room assignment task,Q10maximizing,A314XJY8V1YL12,1
+Room assignment task,Q11optimizing,A314XJY8V1YL12,1
+Room assignment task,Q13outcome_multip,A314XJY8V1YL12,1
+Room assignment task,Q14sol_scheme_mul,A314XJY8V1YL12,0
+Room assignment task,Q15dec_verifiability,A314XJY8V1YL12,1
+Room assignment task,Q16shared_knowledge,A314XJY8V1YL12,1
+Room assignment task,Q17within_sys_sol,A314XJY8V1YL12,1
+Room assignment task,Q18ans_recog,A314XJY8V1YL12,1
+Room assignment task,Q19time_solvability,A314XJY8V1YL12,1
+Room assignment task,Q20type_3_type_4,A314XJY8V1YL12,1
+Room assignment task,Q22confl_tradeoffs,A314XJY8V1YL12,1
+Room assignment task,Q23ss_out_uncert,A314XJY8V1YL12,1
+Room assignment task,Q24eureka_question,A314XJY8V1YL12,1
+Word completion given starting letter,Q1concept_behav,A32Y2N9XYGNOJ1,0
+Word completion given starting letter,Q3type_1_planning,A32Y2N9XYGNOJ1,0
+Word completion given starting letter,Q4type_2_generate,A32Y2N9XYGNOJ1,1
+Word completion given starting letter,Q6type_5_cc,A32Y2N9XYGNOJ1,0
+Word completion given starting letter,Q7type_7_battle,A32Y2N9XYGNOJ1,0
+Word completion given starting letter,Q8type_8_performance,A32Y2N9XYGNOJ1,0
+Word completion given starting letter,Q9divisible_unitary,A32Y2N9XYGNOJ1,0
+Word completion given starting letter,Q10maximizing,A32Y2N9XYGNOJ1,1
+Word completion given starting letter,Q11optimizing,A32Y2N9XYGNOJ1,0
+Word completion given starting letter,Q13outcome_multip,A32Y2N9XYGNOJ1,0
+Word completion given starting letter,Q14sol_scheme_mul,A32Y2N9XYGNOJ1,0
+Word completion given starting letter,Q15dec_verifiability,A32Y2N9XYGNOJ1,1
+Word completion given starting letter,Q16shared_knowledge,A32Y2N9XYGNOJ1,0
+Word completion given starting letter,Q17within_sys_sol,A32Y2N9XYGNOJ1,1
+Word completion given starting letter,Q18ans_recog,A32Y2N9XYGNOJ1,1
+Word completion given starting letter,Q19time_solvability,A32Y2N9XYGNOJ1,1
+Word completion given starting letter,Q20type_3_type_4,A32Y2N9XYGNOJ1,1
+Word completion given starting letter,Q22confl_tradeoffs,A32Y2N9XYGNOJ1,0
+Word completion given starting letter,Q23ss_out_uncert,A32Y2N9XYGNOJ1,0
+Word completion given starting letter,Q24eureka_question,A32Y2N9XYGNOJ1,0
+Graph coloring task,Q1concept_behav,A32Y2N9XYGNOJ1,0
+Graph coloring task,Q3type_1_planning,A32Y2N9XYGNOJ1,0
+Graph coloring task,Q4type_2_generate,A32Y2N9XYGNOJ1,0
+Graph coloring task,Q6type_5_cc,A32Y2N9XYGNOJ1,0
+Graph coloring task,Q7type_7_battle,A32Y2N9XYGNOJ1,0
+Graph coloring task,Q8type_8_performance,A32Y2N9XYGNOJ1,1
+Graph coloring task,Q9divisible_unitary,A32Y2N9XYGNOJ1,0
+Graph coloring task,Q10maximizing,A32Y2N9XYGNOJ1,0
+Graph coloring task,Q11optimizing,A32Y2N9XYGNOJ1,1
+Graph coloring task,Q13outcome_multip,A32Y2N9XYGNOJ1,0
+Graph coloring task,Q14sol_scheme_mul,A32Y2N9XYGNOJ1,0
+Graph coloring task,Q15dec_verifiability,A32Y2N9XYGNOJ1,1
+Graph coloring task,Q16shared_knowledge,A32Y2N9XYGNOJ1,1
+Graph coloring task,Q17within_sys_sol,A32Y2N9XYGNOJ1,1
+Graph coloring task,Q18ans_recog,A32Y2N9XYGNOJ1,1
+Graph coloring task,Q19time_solvability,A32Y2N9XYGNOJ1,1
+Graph coloring task,Q20type_3_type_4,A32Y2N9XYGNOJ1,1
+Graph coloring task,Q22confl_tradeoffs,A32Y2N9XYGNOJ1,0
+Graph coloring task,Q23ss_out_uncert,A32Y2N9XYGNOJ1,0
+Graph coloring task,Q24eureka_question,A32Y2N9XYGNOJ1,0
+Shopping plan,Q1concept_behav,A32Y2N9XYGNOJ1,0
+Shopping plan,Q3type_1_planning,A32Y2N9XYGNOJ1,1
+Shopping plan,Q4type_2_generate,A32Y2N9XYGNOJ1,0
+Shopping plan,Q6type_5_cc,A32Y2N9XYGNOJ1,1
+Shopping plan,Q7type_7_battle,A32Y2N9XYGNOJ1,0
+Shopping plan,Q8type_8_performance,A32Y2N9XYGNOJ1,0
+Shopping plan,Q9divisible_unitary,A32Y2N9XYGNOJ1,1
+Shopping plan,Q10maximizing,A32Y2N9XYGNOJ1,1
+Shopping plan,Q11optimizing,A32Y2N9XYGNOJ1,0
+Shopping plan,Q13outcome_multip,A32Y2N9XYGNOJ1,1
+Shopping plan,Q14sol_scheme_mul,A32Y2N9XYGNOJ1,0
+Shopping plan,Q15dec_verifiability,A32Y2N9XYGNOJ1,1
+Shopping plan,Q16shared_knowledge,A32Y2N9XYGNOJ1,1
+Shopping plan,Q17within_sys_sol,A32Y2N9XYGNOJ1,1
+Shopping plan,Q18ans_recog,A32Y2N9XYGNOJ1,1
+Shopping plan,Q19time_solvability,A32Y2N9XYGNOJ1,1
+Shopping plan,Q20type_3_type_4,A32Y2N9XYGNOJ1,1
+Shopping plan,Q22confl_tradeoffs,A32Y2N9XYGNOJ1,1
+Shopping plan,Q23ss_out_uncert,A32Y2N9XYGNOJ1,0
+Shopping plan,Q24eureka_question,A32Y2N9XYGNOJ1,0
+Room assignment task,Q1concept_behav,A32Y2N9XYGNOJ1,0
+Room assignment task,Q3type_1_planning,A32Y2N9XYGNOJ1,1
+Room assignment task,Q4type_2_generate,A32Y2N9XYGNOJ1,0
+Room assignment task,Q6type_5_cc,A32Y2N9XYGNOJ1,0
+Room assignment task,Q7type_7_battle,A32Y2N9XYGNOJ1,1
+Room assignment task,Q8type_8_performance,A32Y2N9XYGNOJ1,0
+Room assignment task,Q9divisible_unitary,A32Y2N9XYGNOJ1,1
+Room assignment task,Q10maximizing,A32Y2N9XYGNOJ1,0
+Room assignment task,Q11optimizing,A32Y2N9XYGNOJ1,0
+Room assignment task,Q13outcome_multip,A32Y2N9XYGNOJ1,1
+Room assignment task,Q14sol_scheme_mul,A32Y2N9XYGNOJ1,0
+Room assignment task,Q15dec_verifiability,A32Y2N9XYGNOJ1,1
+Room assignment task,Q16shared_knowledge,A32Y2N9XYGNOJ1,1
+Room assignment task,Q17within_sys_sol,A32Y2N9XYGNOJ1,1
+Room assignment task,Q18ans_recog,A32Y2N9XYGNOJ1,1
+Room assignment task,Q19time_solvability,A32Y2N9XYGNOJ1,1
+Room assignment task,Q20type_3_type_4,A32Y2N9XYGNOJ1,1
+Room assignment task,Q22confl_tradeoffs,A32Y2N9XYGNOJ1,1
+Room assignment task,Q23ss_out_uncert,A32Y2N9XYGNOJ1,0
+Room assignment task,Q24eureka_question,A32Y2N9XYGNOJ1,0
+Word completion given starting letter,Q1concept_behav,A38DHLB88V8DL8,0
+Word completion given starting letter,Q3type_1_planning,A38DHLB88V8DL8,1
+Word completion given starting letter,Q4type_2_generate,A38DHLB88V8DL8,0
+Word completion given starting letter,Q6type_5_cc,A38DHLB88V8DL8,0
+Word completion given starting letter,Q7type_7_battle,A38DHLB88V8DL8,1
+Word completion given starting letter,Q8type_8_performance,A38DHLB88V8DL8,1
+Word completion given starting letter,Q9divisible_unitary,A38DHLB88V8DL8,1
+Word completion given starting letter,Q10maximizing,A38DHLB88V8DL8,1
+Word completion given starting letter,Q11optimizing,A38DHLB88V8DL8,1
+Word completion given starting letter,Q13outcome_multip,A38DHLB88V8DL8,0
+Word completion given starting letter,Q14sol_scheme_mul,A38DHLB88V8DL8,0
+Word completion given starting letter,Q15dec_verifiability,A38DHLB88V8DL8,1
+Word completion given starting letter,Q16shared_knowledge,A38DHLB88V8DL8,1
+Word completion given starting letter,Q17within_sys_sol,A38DHLB88V8DL8,1
+Word completion given starting letter,Q18ans_recog,A38DHLB88V8DL8,1
+Word completion given starting letter,Q19time_solvability,A38DHLB88V8DL8,1
+Word completion given starting letter,Q20type_3_type_4,A38DHLB88V8DL8,1
+Word completion given starting letter,Q22confl_tradeoffs,A38DHLB88V8DL8,1
+Word completion given starting letter,Q23ss_out_uncert,A38DHLB88V8DL8,1
+Word completion given starting letter,Q24eureka_question,A38DHLB88V8DL8,0
+Graph coloring task,Q1concept_behav,A38DHLB88V8DL8,0
+Graph coloring task,Q3type_1_planning,A38DHLB88V8DL8,1
+Graph coloring task,Q4type_2_generate,A38DHLB88V8DL8,0
+Graph coloring task,Q6type_5_cc,A38DHLB88V8DL8,0
+Graph coloring task,Q7type_7_battle,A38DHLB88V8DL8,0
+Graph coloring task,Q8type_8_performance,A38DHLB88V8DL8,1
+Graph coloring task,Q9divisible_unitary,A38DHLB88V8DL8,0
+Graph coloring task,Q10maximizing,A38DHLB88V8DL8,1
+Graph coloring task,Q11optimizing,A38DHLB88V8DL8,1
+Graph coloring task,Q13outcome_multip,A38DHLB88V8DL8,1
+Graph coloring task,Q14sol_scheme_mul,A38DHLB88V8DL8,1
+Graph coloring task,Q15dec_verifiability,A38DHLB88V8DL8,1
+Graph coloring task,Q16shared_knowledge,A38DHLB88V8DL8,1
+Graph coloring task,Q17within_sys_sol,A38DHLB88V8DL8,1
+Graph coloring task,Q18ans_recog,A38DHLB88V8DL8,1
+Graph coloring task,Q19time_solvability,A38DHLB88V8DL8,1
+Graph coloring task,Q20type_3_type_4,A38DHLB88V8DL8,1
+Graph coloring task,Q22confl_tradeoffs,A38DHLB88V8DL8,1
+Graph coloring task,Q23ss_out_uncert,A38DHLB88V8DL8,1
+Graph coloring task,Q24eureka_question,A38DHLB88V8DL8,0
+Shopping plan,Q1concept_behav,A38DHLB88V8DL8,0
+Shopping plan,Q3type_1_planning,A38DHLB88V8DL8,1
+Shopping plan,Q4type_2_generate,A38DHLB88V8DL8,0
+Shopping plan,Q6type_5_cc,A38DHLB88V8DL8,1
+Shopping plan,Q7type_7_battle,A38DHLB88V8DL8,1
+Shopping plan,Q8type_8_performance,A38DHLB88V8DL8,1
+Shopping plan,Q9divisible_unitary,A38DHLB88V8DL8,0
+Shopping plan,Q10maximizing,A38DHLB88V8DL8,1
+Shopping plan,Q11optimizing,A38DHLB88V8DL8,1
+Shopping plan,Q13outcome_multip,A38DHLB88V8DL8,1
+Shopping plan,Q14sol_scheme_mul,A38DHLB88V8DL8,0
+Shopping plan,Q15dec_verifiability,A38DHLB88V8DL8,1
+Shopping plan,Q16shared_knowledge,A38DHLB88V8DL8,1
+Shopping plan,Q17within_sys_sol,A38DHLB88V8DL8,1
+Shopping plan,Q18ans_recog,A38DHLB88V8DL8,1
+Shopping plan,Q19time_solvability,A38DHLB88V8DL8,1
+Shopping plan,Q20type_3_type_4,A38DHLB88V8DL8,1
+Shopping plan,Q22confl_tradeoffs,A38DHLB88V8DL8,1
+Shopping plan,Q23ss_out_uncert,A38DHLB88V8DL8,1
+Shopping plan,Q24eureka_question,A38DHLB88V8DL8,0
+Room assignment task,Q1concept_behav,A38DHLB88V8DL8,0
+Room assignment task,Q3type_1_planning,A38DHLB88V8DL8,1
+Room assignment task,Q4type_2_generate,A38DHLB88V8DL8,0
+Room assignment task,Q6type_5_cc,A38DHLB88V8DL8,1
+Room assignment task,Q7type_7_battle,A38DHLB88V8DL8,1
+Room assignment task,Q8type_8_performance,A38DHLB88V8DL8,1
+Room assignment task,Q9divisible_unitary,A38DHLB88V8DL8,1
+Room assignment task,Q10maximizing,A38DHLB88V8DL8,1
+Room assignment task,Q11optimizing,A38DHLB88V8DL8,1
+Room assignment task,Q13outcome_multip,A38DHLB88V8DL8,1
+Room assignment task,Q14sol_scheme_mul,A38DHLB88V8DL8,0
+Room assignment task,Q15dec_verifiability,A38DHLB88V8DL8,1
+Room assignment task,Q16shared_knowledge,A38DHLB88V8DL8,1
+Room assignment task,Q17within_sys_sol,A38DHLB88V8DL8,1
+Room assignment task,Q18ans_recog,A38DHLB88V8DL8,1
+Room assignment task,Q19time_solvability,A38DHLB88V8DL8,1
+Room assignment task,Q20type_3_type_4,A38DHLB88V8DL8,1
+Room assignment task,Q22confl_tradeoffs,A38DHLB88V8DL8,1
+Room assignment task,Q23ss_out_uncert,A38DHLB88V8DL8,1
+Room assignment task,Q24eureka_question,A38DHLB88V8DL8,0
+Word completion given starting letter,Q1concept_behav,A3D70ANCSMGX5F,0
+Word completion given starting letter,Q3type_1_planning,A3D70ANCSMGX5F,0
+Word completion given starting letter,Q4type_2_generate,A3D70ANCSMGX5F,1
+Word completion given starting letter,Q6type_5_cc,A3D70ANCSMGX5F,0
+Word completion given starting letter,Q7type_7_battle,A3D70ANCSMGX5F,0
+Word completion given starting letter,Q8type_8_performance,A3D70ANCSMGX5F,0
+Word completion given starting letter,Q9divisible_unitary,A3D70ANCSMGX5F,0
+Word completion given starting letter,Q10maximizing,A3D70ANCSMGX5F,1
+Word completion given starting letter,Q11optimizing,A3D70ANCSMGX5F,0
+Word completion given starting letter,Q13outcome_multip,A3D70ANCSMGX5F,0
+Word completion given starting letter,Q14sol_scheme_mul,A3D70ANCSMGX5F,0
+Word completion given starting letter,Q15dec_verifiability,A3D70ANCSMGX5F,1
+Word completion given starting letter,Q16shared_knowledge,A3D70ANCSMGX5F,0
+Word completion given starting letter,Q17within_sys_sol,A3D70ANCSMGX5F,1
+Word completion given starting letter,Q18ans_recog,A3D70ANCSMGX5F,1
+Word completion given starting letter,Q19time_solvability,A3D70ANCSMGX5F,1
+Word completion given starting letter,Q20type_3_type_4,A3D70ANCSMGX5F,1
+Word completion given starting letter,Q22confl_tradeoffs,A3D70ANCSMGX5F,0
+Word completion given starting letter,Q23ss_out_uncert,A3D70ANCSMGX5F,1
+Word completion given starting letter,Q24eureka_question,A3D70ANCSMGX5F,0
+Graph coloring task,Q1concept_behav,A3D70ANCSMGX5F,0
+Graph coloring task,Q3type_1_planning,A3D70ANCSMGX5F,1
+Graph coloring task,Q4type_2_generate,A3D70ANCSMGX5F,0
+Graph coloring task,Q6type_5_cc,A3D70ANCSMGX5F,0
+Graph coloring task,Q7type_7_battle,A3D70ANCSMGX5F,1
+Graph coloring task,Q8type_8_performance,A3D70ANCSMGX5F,1
+Graph coloring task,Q9divisible_unitary,A3D70ANCSMGX5F,1
+Graph coloring task,Q10maximizing,A3D70ANCSMGX5F,1
+Graph coloring task,Q11optimizing,A3D70ANCSMGX5F,1
+Graph coloring task,Q13outcome_multip,A3D70ANCSMGX5F,1
+Graph coloring task,Q14sol_scheme_mul,A3D70ANCSMGX5F,0
+Graph coloring task,Q15dec_verifiability,A3D70ANCSMGX5F,1
+Graph coloring task,Q16shared_knowledge,A3D70ANCSMGX5F,1
+Graph coloring task,Q17within_sys_sol,A3D70ANCSMGX5F,0
+Graph coloring task,Q18ans_recog,A3D70ANCSMGX5F,1
+Graph coloring task,Q19time_solvability,A3D70ANCSMGX5F,1
+Graph coloring task,Q20type_3_type_4,A3D70ANCSMGX5F,1
+Graph coloring task,Q22confl_tradeoffs,A3D70ANCSMGX5F,0
+Graph coloring task,Q23ss_out_uncert,A3D70ANCSMGX5F,1
+Graph coloring task,Q24eureka_question,A3D70ANCSMGX5F,1
+Shopping plan,Q1concept_behav,A3D70ANCSMGX5F,0
+Shopping plan,Q3type_1_planning,A3D70ANCSMGX5F,1
+Shopping plan,Q4type_2_generate,A3D70ANCSMGX5F,0
+Shopping plan,Q6type_5_cc,A3D70ANCSMGX5F,1
+Shopping plan,Q7type_7_battle,A3D70ANCSMGX5F,1
+Shopping plan,Q8type_8_performance,A3D70ANCSMGX5F,0
+Shopping plan,Q9divisible_unitary,A3D70ANCSMGX5F,1
+Shopping plan,Q10maximizing,A3D70ANCSMGX5F,1
+Shopping plan,Q11optimizing,A3D70ANCSMGX5F,0
+Shopping plan,Q13outcome_multip,A3D70ANCSMGX5F,0
+Shopping plan,Q14sol_scheme_mul,A3D70ANCSMGX5F,0
+Shopping plan,Q15dec_verifiability,A3D70ANCSMGX5F,0
+Shopping plan,Q16shared_knowledge,A3D70ANCSMGX5F,0
+Shopping plan,Q17within_sys_sol,A3D70ANCSMGX5F,1
+Shopping plan,Q18ans_recog,A3D70ANCSMGX5F,1
+Shopping plan,Q19time_solvability,A3D70ANCSMGX5F,1
+Shopping plan,Q20type_3_type_4,A3D70ANCSMGX5F,0
+Shopping plan,Q22confl_tradeoffs,A3D70ANCSMGX5F,1
+Shopping plan,Q23ss_out_uncert,A3D70ANCSMGX5F,0
+Shopping plan,Q24eureka_question,A3D70ANCSMGX5F,1
+Room assignment task,Q1concept_behav,A3D70ANCSMGX5F,0
+Room assignment task,Q3type_1_planning,A3D70ANCSMGX5F,1
+Room assignment task,Q4type_2_generate,A3D70ANCSMGX5F,0
+Room assignment task,Q6type_5_cc,A3D70ANCSMGX5F,1
+Room assignment task,Q7type_7_battle,A3D70ANCSMGX5F,0
+Room assignment task,Q8type_8_performance,A3D70ANCSMGX5F,0
+Room assignment task,Q9divisible_unitary,A3D70ANCSMGX5F,1
+Room assignment task,Q10maximizing,A3D70ANCSMGX5F,0
+Room assignment task,Q11optimizing,A3D70ANCSMGX5F,0
+Room assignment task,Q13outcome_multip,A3D70ANCSMGX5F,0
+Room assignment task,Q14sol_scheme_mul,A3D70ANCSMGX5F,0
+Room assignment task,Q15dec_verifiability,A3D70ANCSMGX5F,0
+Room assignment task,Q16shared_knowledge,A3D70ANCSMGX5F,1
+Room assignment task,Q17within_sys_sol,A3D70ANCSMGX5F,1
+Room assignment task,Q18ans_recog,A3D70ANCSMGX5F,0
+Room assignment task,Q19time_solvability,A3D70ANCSMGX5F,1
+Room assignment task,Q20type_3_type_4,A3D70ANCSMGX5F,0
+Room assignment task,Q22confl_tradeoffs,A3D70ANCSMGX5F,1
+Room assignment task,Q23ss_out_uncert,A3D70ANCSMGX5F,1
+Room assignment task,Q24eureka_question,A3D70ANCSMGX5F,0
+Word completion given starting letter,Q1concept_behav,A3F51C49T9A34D,0
+Word completion given starting letter,Q3type_1_planning,A3F51C49T9A34D,0
+Word completion given starting letter,Q4type_2_generate,A3F51C49T9A34D,1
+Word completion given starting letter,Q6type_5_cc,A3F51C49T9A34D,0
+Word completion given starting letter,Q7type_7_battle,A3F51C49T9A34D,0
+Word completion given starting letter,Q8type_8_performance,A3F51C49T9A34D,0
+Word completion given starting letter,Q9divisible_unitary,A3F51C49T9A34D,1
+Word completion given starting letter,Q10maximizing,A3F51C49T9A34D,1
+Word completion given starting letter,Q11optimizing,A3F51C49T9A34D,1
+Word completion given starting letter,Q13outcome_multip,A3F51C49T9A34D,0
+Word completion given starting letter,Q14sol_scheme_mul,A3F51C49T9A34D,0
+Word completion given starting letter,Q15dec_verifiability,A3F51C49T9A34D,1
+Word completion given starting letter,Q16shared_knowledge,A3F51C49T9A34D,0
+Word completion given starting letter,Q17within_sys_sol,A3F51C49T9A34D,1
+Word completion given starting letter,Q18ans_recog,A3F51C49T9A34D,1
+Word completion given starting letter,Q19time_solvability,A3F51C49T9A34D,1
+Word completion given starting letter,Q20type_3_type_4,A3F51C49T9A34D,1
+Word completion given starting letter,Q22confl_tradeoffs,A3F51C49T9A34D,0
+Word completion given starting letter,Q23ss_out_uncert,A3F51C49T9A34D,0
+Word completion given starting letter,Q24eureka_question,A3F51C49T9A34D,0
+Graph coloring task,Q1concept_behav,A3F51C49T9A34D,0
+Graph coloring task,Q3type_1_planning,A3F51C49T9A34D,1
+Graph coloring task,Q4type_2_generate,A3F51C49T9A34D,0
+Graph coloring task,Q6type_5_cc,A3F51C49T9A34D,0
+Graph coloring task,Q7type_7_battle,A3F51C49T9A34D,0
+Graph coloring task,Q8type_8_performance,A3F51C49T9A34D,1
+Graph coloring task,Q9divisible_unitary,A3F51C49T9A34D,0
+Graph coloring task,Q10maximizing,A3F51C49T9A34D,0
+Graph coloring task,Q11optimizing,A3F51C49T9A34D,1
+Graph coloring task,Q13outcome_multip,A3F51C49T9A34D,1
+Graph coloring task,Q14sol_scheme_mul,A3F51C49T9A34D,0
+Graph coloring task,Q15dec_verifiability,A3F51C49T9A34D,1
+Graph coloring task,Q16shared_knowledge,A3F51C49T9A34D,1
+Graph coloring task,Q17within_sys_sol,A3F51C49T9A34D,1
+Graph coloring task,Q18ans_recog,A3F51C49T9A34D,1
+Graph coloring task,Q19time_solvability,A3F51C49T9A34D,1
+Graph coloring task,Q20type_3_type_4,A3F51C49T9A34D,1
+Graph coloring task,Q22confl_tradeoffs,A3F51C49T9A34D,0
+Graph coloring task,Q23ss_out_uncert,A3F51C49T9A34D,1
+Graph coloring task,Q24eureka_question,A3F51C49T9A34D,1
+Shopping plan,Q1concept_behav,A3F51C49T9A34D,0
+Shopping plan,Q3type_1_planning,A3F51C49T9A34D,1
+Shopping plan,Q4type_2_generate,A3F51C49T9A34D,0
+Shopping plan,Q6type_5_cc,A3F51C49T9A34D,1
+Shopping plan,Q7type_7_battle,A3F51C49T9A34D,1
+Shopping plan,Q8type_8_performance,A3F51C49T9A34D,1
+Shopping plan,Q9divisible_unitary,A3F51C49T9A34D,1
+Shopping plan,Q10maximizing,A3F51C49T9A34D,1
+Shopping plan,Q11optimizing,A3F51C49T9A34D,1
+Shopping plan,Q13outcome_multip,A3F51C49T9A34D,1
+Shopping plan,Q14sol_scheme_mul,A3F51C49T9A34D,0
+Shopping plan,Q15dec_verifiability,A3F51C49T9A34D,1
+Shopping plan,Q16shared_knowledge,A3F51C49T9A34D,1
+Shopping plan,Q17within_sys_sol,A3F51C49T9A34D,1
+Shopping plan,Q18ans_recog,A3F51C49T9A34D,1
+Shopping plan,Q19time_solvability,A3F51C49T9A34D,1
+Shopping plan,Q20type_3_type_4,A3F51C49T9A34D,1
+Shopping plan,Q22confl_tradeoffs,A3F51C49T9A34D,1
+Shopping plan,Q23ss_out_uncert,A3F51C49T9A34D,1
+Shopping plan,Q24eureka_question,A3F51C49T9A34D,1
+Room assignment task,Q1concept_behav,A3F51C49T9A34D,0
+Room assignment task,Q3type_1_planning,A3F51C49T9A34D,1
+Room assignment task,Q4type_2_generate,A3F51C49T9A34D,0
+Room assignment task,Q6type_5_cc,A3F51C49T9A34D,0
+Room assignment task,Q7type_7_battle,A3F51C49T9A34D,0
+Room assignment task,Q8type_8_performance,A3F51C49T9A34D,1
+Room assignment task,Q9divisible_unitary,A3F51C49T9A34D,0
+Room assignment task,Q10maximizing,A3F51C49T9A34D,1
+Room assignment task,Q11optimizing,A3F51C49T9A34D,1
+Room assignment task,Q13outcome_multip,A3F51C49T9A34D,1
+Room assignment task,Q14sol_scheme_mul,A3F51C49T9A34D,1
+Room assignment task,Q15dec_verifiability,A3F51C49T9A34D,1
+Room assignment task,Q16shared_knowledge,A3F51C49T9A34D,1
+Room assignment task,Q17within_sys_sol,A3F51C49T9A34D,1
+Room assignment task,Q18ans_recog,A3F51C49T9A34D,1
+Room assignment task,Q19time_solvability,A3F51C49T9A34D,1
+Room assignment task,Q20type_3_type_4,A3F51C49T9A34D,1
+Room assignment task,Q22confl_tradeoffs,A3F51C49T9A34D,0
+Room assignment task,Q23ss_out_uncert,A3F51C49T9A34D,1
+Room assignment task,Q24eureka_question,A3F51C49T9A34D,1
+Word completion given starting letter,Q1concept_behav,A3FGT6EU39C6S4,0
+Word completion given starting letter,Q3type_1_planning,A3FGT6EU39C6S4,0
+Word completion given starting letter,Q4type_2_generate,A3FGT6EU39C6S4,1
+Word completion given starting letter,Q6type_5_cc,A3FGT6EU39C6S4,0
+Word completion given starting letter,Q7type_7_battle,A3FGT6EU39C6S4,0
+Word completion given starting letter,Q8type_8_performance,A3FGT6EU39C6S4,0
+Word completion given starting letter,Q9divisible_unitary,A3FGT6EU39C6S4,1
+Word completion given starting letter,Q10maximizing,A3FGT6EU39C6S4,1
+Word completion given starting letter,Q11optimizing,A3FGT6EU39C6S4,0
+Word completion given starting letter,Q13outcome_multip,A3FGT6EU39C6S4,1
+Word completion given starting letter,Q14sol_scheme_mul,A3FGT6EU39C6S4,0
+Word completion given starting letter,Q15dec_verifiability,A3FGT6EU39C6S4,1
+Word completion given starting letter,Q16shared_knowledge,A3FGT6EU39C6S4,0
+Word completion given starting letter,Q17within_sys_sol,A3FGT6EU39C6S4,1
+Word completion given starting letter,Q18ans_recog,A3FGT6EU39C6S4,1
+Word completion given starting letter,Q19time_solvability,A3FGT6EU39C6S4,1
+Word completion given starting letter,Q20type_3_type_4,A3FGT6EU39C6S4,1
+Word completion given starting letter,Q22confl_tradeoffs,A3FGT6EU39C6S4,0
+Word completion given starting letter,Q23ss_out_uncert,A3FGT6EU39C6S4,0
+Word completion given starting letter,Q24eureka_question,A3FGT6EU39C6S4,0
+Graph coloring task,Q1concept_behav,A3FGT6EU39C6S4,0
+Graph coloring task,Q3type_1_planning,A3FGT6EU39C6S4,1
+Graph coloring task,Q4type_2_generate,A3FGT6EU39C6S4,0
+Graph coloring task,Q6type_5_cc,A3FGT6EU39C6S4,0
+Graph coloring task,Q7type_7_battle,A3FGT6EU39C6S4,1
+Graph coloring task,Q8type_8_performance,A3FGT6EU39C6S4,1
+Graph coloring task,Q9divisible_unitary,A3FGT6EU39C6S4,1
+Graph coloring task,Q10maximizing,A3FGT6EU39C6S4,0
+Graph coloring task,Q11optimizing,A3FGT6EU39C6S4,1
+Graph coloring task,Q13outcome_multip,A3FGT6EU39C6S4,0
+Graph coloring task,Q14sol_scheme_mul,A3FGT6EU39C6S4,1
+Graph coloring task,Q15dec_verifiability,A3FGT6EU39C6S4,1
+Graph coloring task,Q16shared_knowledge,A3FGT6EU39C6S4,0
+Graph coloring task,Q17within_sys_sol,A3FGT6EU39C6S4,1
+Graph coloring task,Q18ans_recog,A3FGT6EU39C6S4,1
+Graph coloring task,Q19time_solvability,A3FGT6EU39C6S4,1
+Graph coloring task,Q20type_3_type_4,A3FGT6EU39C6S4,1
+Graph coloring task,Q22confl_tradeoffs,A3FGT6EU39C6S4,0
+Graph coloring task,Q23ss_out_uncert,A3FGT6EU39C6S4,0
+Graph coloring task,Q24eureka_question,A3FGT6EU39C6S4,1
+Shopping plan,Q1concept_behav,A3FGT6EU39C6S4,1
+Shopping plan,Q3type_1_planning,A3FGT6EU39C6S4,1
+Shopping plan,Q4type_2_generate,A3FGT6EU39C6S4,1
+Shopping plan,Q6type_5_cc,A3FGT6EU39C6S4,1
+Shopping plan,Q7type_7_battle,A3FGT6EU39C6S4,0
+Shopping plan,Q8type_8_performance,A3FGT6EU39C6S4,0
+Shopping plan,Q9divisible_unitary,A3FGT6EU39C6S4,1
+Shopping plan,Q10maximizing,A3FGT6EU39C6S4,1
+Shopping plan,Q11optimizing,A3FGT6EU39C6S4,1
+Shopping plan,Q13outcome_multip,A3FGT6EU39C6S4,0
+Shopping plan,Q14sol_scheme_mul,A3FGT6EU39C6S4,0
+Shopping plan,Q15dec_verifiability,A3FGT6EU39C6S4,1
+Shopping plan,Q16shared_knowledge,A3FGT6EU39C6S4,0
+Shopping plan,Q17within_sys_sol,A3FGT6EU39C6S4,1
+Shopping plan,Q18ans_recog,A3FGT6EU39C6S4,1
+Shopping plan,Q19time_solvability,A3FGT6EU39C6S4,1
+Shopping plan,Q20type_3_type_4,A3FGT6EU39C6S4,0
+Shopping plan,Q22confl_tradeoffs,A3FGT6EU39C6S4,1
+Shopping plan,Q23ss_out_uncert,A3FGT6EU39C6S4,1
+Shopping plan,Q24eureka_question,A3FGT6EU39C6S4,0
+Room assignment task,Q1concept_behav,A3FGT6EU39C6S4,0
+Room assignment task,Q3type_1_planning,A3FGT6EU39C6S4,1
+Room assignment task,Q4type_2_generate,A3FGT6EU39C6S4,0
+Room assignment task,Q6type_5_cc,A3FGT6EU39C6S4,0
+Room assignment task,Q7type_7_battle,A3FGT6EU39C6S4,0
+Room assignment task,Q8type_8_performance,A3FGT6EU39C6S4,0
+Room assignment task,Q9divisible_unitary,A3FGT6EU39C6S4,1
+Room assignment task,Q10maximizing,A3FGT6EU39C6S4,1
+Room assignment task,Q11optimizing,A3FGT6EU39C6S4,1
+Room assignment task,Q13outcome_multip,A3FGT6EU39C6S4,0
+Room assignment task,Q14sol_scheme_mul,A3FGT6EU39C6S4,0
+Room assignment task,Q15dec_verifiability,A3FGT6EU39C6S4,1
+Room assignment task,Q16shared_knowledge,A3FGT6EU39C6S4,0
+Room assignment task,Q17within_sys_sol,A3FGT6EU39C6S4,1
+Room assignment task,Q18ans_recog,A3FGT6EU39C6S4,1
+Room assignment task,Q19time_solvability,A3FGT6EU39C6S4,1
+Room assignment task,Q20type_3_type_4,A3FGT6EU39C6S4,1
+Room assignment task,Q22confl_tradeoffs,A3FGT6EU39C6S4,0
+Room assignment task,Q23ss_out_uncert,A3FGT6EU39C6S4,0
+Room assignment task,Q24eureka_question,A3FGT6EU39C6S4,0
+Word completion given starting letter,Q1concept_behav,A3J2UG22S8BIW4,0
+Word completion given starting letter,Q3type_1_planning,A3J2UG22S8BIW4,0
+Word completion given starting letter,Q4type_2_generate,A3J2UG22S8BIW4,1
+Word completion given starting letter,Q6type_5_cc,A3J2UG22S8BIW4,0
+Word completion given starting letter,Q7type_7_battle,A3J2UG22S8BIW4,0
+Word completion given starting letter,Q8type_8_performance,A3J2UG22S8BIW4,0
+Word completion given starting letter,Q9divisible_unitary,A3J2UG22S8BIW4,0
+Word completion given starting letter,Q10maximizing,A3J2UG22S8BIW4,1
+Word completion given starting letter,Q11optimizing,A3J2UG22S8BIW4,0
+Word completion given starting letter,Q13outcome_multip,A3J2UG22S8BIW4,1
+Word completion given starting letter,Q14sol_scheme_mul,A3J2UG22S8BIW4,0
+Word completion given starting letter,Q15dec_verifiability,A3J2UG22S8BIW4,1
+Word completion given starting letter,Q16shared_knowledge,A3J2UG22S8BIW4,0
+Word completion given starting letter,Q17within_sys_sol,A3J2UG22S8BIW4,1
+Word completion given starting letter,Q18ans_recog,A3J2UG22S8BIW4,1
+Word completion given starting letter,Q19time_solvability,A3J2UG22S8BIW4,1
+Word completion given starting letter,Q20type_3_type_4,A3J2UG22S8BIW4,1
+Word completion given starting letter,Q22confl_tradeoffs,A3J2UG22S8BIW4,0
+Word completion given starting letter,Q23ss_out_uncert,A3J2UG22S8BIW4,1
+Word completion given starting letter,Q24eureka_question,A3J2UG22S8BIW4,0
+Graph coloring task,Q1concept_behav,A3J2UG22S8BIW4,0
+Graph coloring task,Q3type_1_planning,A3J2UG22S8BIW4,1
+Graph coloring task,Q4type_2_generate,A3J2UG22S8BIW4,0
+Graph coloring task,Q6type_5_cc,A3J2UG22S8BIW4,0
+Graph coloring task,Q7type_7_battle,A3J2UG22S8BIW4,0
+Graph coloring task,Q8type_8_performance,A3J2UG22S8BIW4,1
+Graph coloring task,Q9divisible_unitary,A3J2UG22S8BIW4,0
+Graph coloring task,Q10maximizing,A3J2UG22S8BIW4,1
+Graph coloring task,Q11optimizing,A3J2UG22S8BIW4,1
+Graph coloring task,Q13outcome_multip,A3J2UG22S8BIW4,1
+Graph coloring task,Q14sol_scheme_mul,A3J2UG22S8BIW4,0
+Graph coloring task,Q15dec_verifiability,A3J2UG22S8BIW4,1
+Graph coloring task,Q16shared_knowledge,A3J2UG22S8BIW4,0
+Graph coloring task,Q17within_sys_sol,A3J2UG22S8BIW4,1
+Graph coloring task,Q18ans_recog,A3J2UG22S8BIW4,3
+Graph coloring task,Q19time_solvability,A3J2UG22S8BIW4,1
+Graph coloring task,Q20type_3_type_4,A3J2UG22S8BIW4,1
+Graph coloring task,Q22confl_tradeoffs,A3J2UG22S8BIW4,0
+Graph coloring task,Q23ss_out_uncert,A3J2UG22S8BIW4,1
+Graph coloring task,Q24eureka_question,A3J2UG22S8BIW4,0
+Shopping plan,Q1concept_behav,A3J2UG22S8BIW4,0
+Shopping plan,Q3type_1_planning,A3J2UG22S8BIW4,1
+Shopping plan,Q4type_2_generate,A3J2UG22S8BIW4,0
+Shopping plan,Q6type_5_cc,A3J2UG22S8BIW4,0
+Shopping plan,Q7type_7_battle,A3J2UG22S8BIW4,1
+Shopping plan,Q8type_8_performance,A3J2UG22S8BIW4,0
+Shopping plan,Q9divisible_unitary,A3J2UG22S8BIW4,0
+Shopping plan,Q10maximizing,A3J2UG22S8BIW4,1
+Shopping plan,Q11optimizing,A3J2UG22S8BIW4,0
+Shopping plan,Q13outcome_multip,A3J2UG22S8BIW4,0
+Shopping plan,Q14sol_scheme_mul,A3J2UG22S8BIW4,0
+Shopping plan,Q15dec_verifiability,A3J2UG22S8BIW4,1
+Shopping plan,Q16shared_knowledge,A3J2UG22S8BIW4,1
+Shopping plan,Q17within_sys_sol,A3J2UG22S8BIW4,1
+Shopping plan,Q18ans_recog,A3J2UG22S8BIW4,1
+Shopping plan,Q19time_solvability,A3J2UG22S8BIW4,1
+Shopping plan,Q20type_3_type_4,A3J2UG22S8BIW4,1
+Shopping plan,Q22confl_tradeoffs,A3J2UG22S8BIW4,1
+Shopping plan,Q23ss_out_uncert,A3J2UG22S8BIW4,1
+Shopping plan,Q24eureka_question,A3J2UG22S8BIW4,0
+Room assignment task,Q1concept_behav,A3J2UG22S8BIW4,0
+Room assignment task,Q3type_1_planning,A3J2UG22S8BIW4,1
+Room assignment task,Q4type_2_generate,A3J2UG22S8BIW4,0
+Room assignment task,Q6type_5_cc,A3J2UG22S8BIW4,0
+Room assignment task,Q7type_7_battle,A3J2UG22S8BIW4,0
+Room assignment task,Q8type_8_performance,A3J2UG22S8BIW4,0
+Room assignment task,Q9divisible_unitary,A3J2UG22S8BIW4,0
+Room assignment task,Q10maximizing,A3J2UG22S8BIW4,1
+Room assignment task,Q11optimizing,A3J2UG22S8BIW4,0
+Room assignment task,Q13outcome_multip,A3J2UG22S8BIW4,1
+Room assignment task,Q14sol_scheme_mul,A3J2UG22S8BIW4,0
+Room assignment task,Q15dec_verifiability,A3J2UG22S8BIW4,1
+Room assignment task,Q16shared_knowledge,A3J2UG22S8BIW4,1
+Room assignment task,Q17within_sys_sol,A3J2UG22S8BIW4,1
+Room assignment task,Q18ans_recog,A3J2UG22S8BIW4,1
+Room assignment task,Q19time_solvability,A3J2UG22S8BIW4,1
+Room assignment task,Q20type_3_type_4,A3J2UG22S8BIW4,1
+Room assignment task,Q22confl_tradeoffs,A3J2UG22S8BIW4,0
+Room assignment task,Q23ss_out_uncert,A3J2UG22S8BIW4,1
+Room assignment task,Q24eureka_question,A3J2UG22S8BIW4,0
+Word completion given starting letter,Q1concept_behav,A6JKKANO7F4KD,0
+Word completion given starting letter,Q3type_1_planning,A6JKKANO7F4KD,0
+Word completion given starting letter,Q4type_2_generate,A6JKKANO7F4KD,0
+Word completion given starting letter,Q6type_5_cc,A6JKKANO7F4KD,0
+Word completion given starting letter,Q7type_7_battle,A6JKKANO7F4KD,0
+Word completion given starting letter,Q8type_8_performance,A6JKKANO7F4KD,0
+Word completion given starting letter,Q9divisible_unitary,A6JKKANO7F4KD,1
+Word completion given starting letter,Q10maximizing,A6JKKANO7F4KD,1
+Word completion given starting letter,Q11optimizing,A6JKKANO7F4KD,0
+Word completion given starting letter,Q13outcome_multip,A6JKKANO7F4KD,0
+Word completion given starting letter,Q14sol_scheme_mul,A6JKKANO7F4KD,0
+Word completion given starting letter,Q15dec_verifiability,A6JKKANO7F4KD,1
+Word completion given starting letter,Q16shared_knowledge,A6JKKANO7F4KD,0
+Word completion given starting letter,Q17within_sys_sol,A6JKKANO7F4KD,1
+Word completion given starting letter,Q18ans_recog,A6JKKANO7F4KD,1
+Word completion given starting letter,Q19time_solvability,A6JKKANO7F4KD,1
+Word completion given starting letter,Q20type_3_type_4,A6JKKANO7F4KD,1
+Word completion given starting letter,Q22confl_tradeoffs,A6JKKANO7F4KD,0
+Word completion given starting letter,Q23ss_out_uncert,A6JKKANO7F4KD,0
+Word completion given starting letter,Q24eureka_question,A6JKKANO7F4KD,0
+Graph coloring task,Q1concept_behav,A6JKKANO7F4KD,0
+Graph coloring task,Q3type_1_planning,A6JKKANO7F4KD,0
+Graph coloring task,Q4type_2_generate,A6JKKANO7F4KD,0
+Graph coloring task,Q6type_5_cc,A6JKKANO7F4KD,0
+Graph coloring task,Q7type_7_battle,A6JKKANO7F4KD,0
+Graph coloring task,Q8type_8_performance,A6JKKANO7F4KD,1
+Graph coloring task,Q9divisible_unitary,A6JKKANO7F4KD,1
+Graph coloring task,Q10maximizing,A6JKKANO7F4KD,0
+Graph coloring task,Q11optimizing,A6JKKANO7F4KD,1
+Graph coloring task,Q13outcome_multip,A6JKKANO7F4KD,1
+Graph coloring task,Q14sol_scheme_mul,A6JKKANO7F4KD,0
+Graph coloring task,Q15dec_verifiability,A6JKKANO7F4KD,1
+Graph coloring task,Q16shared_knowledge,A6JKKANO7F4KD,1
+Graph coloring task,Q17within_sys_sol,A6JKKANO7F4KD,1
+Graph coloring task,Q18ans_recog,A6JKKANO7F4KD,1
+Graph coloring task,Q19time_solvability,A6JKKANO7F4KD,1
+Graph coloring task,Q20type_3_type_4,A6JKKANO7F4KD,1
+Graph coloring task,Q22confl_tradeoffs,A6JKKANO7F4KD,0
+Graph coloring task,Q23ss_out_uncert,A6JKKANO7F4KD,1
+Graph coloring task,Q24eureka_question,A6JKKANO7F4KD,0
+Shopping plan,Q1concept_behav,A6JKKANO7F4KD,0
+Shopping plan,Q3type_1_planning,A6JKKANO7F4KD,1
+Shopping plan,Q4type_2_generate,A6JKKANO7F4KD,0
+Shopping plan,Q6type_5_cc,A6JKKANO7F4KD,0
+Shopping plan,Q7type_7_battle,A6JKKANO7F4KD,0
+Shopping plan,Q8type_8_performance,A6JKKANO7F4KD,1
+Shopping plan,Q9divisible_unitary,A6JKKANO7F4KD,1
+Shopping plan,Q10maximizing,A6JKKANO7F4KD,1
+Shopping plan,Q11optimizing,A6JKKANO7F4KD,0
+Shopping plan,Q13outcome_multip,A6JKKANO7F4KD,1
+Shopping plan,Q14sol_scheme_mul,A6JKKANO7F4KD,0
+Shopping plan,Q15dec_verifiability,A6JKKANO7F4KD,1
+Shopping plan,Q16shared_knowledge,A6JKKANO7F4KD,1
+Shopping plan,Q17within_sys_sol,A6JKKANO7F4KD,1
+Shopping plan,Q18ans_recog,A6JKKANO7F4KD,1
+Shopping plan,Q19time_solvability,A6JKKANO7F4KD,1
+Shopping plan,Q20type_3_type_4,A6JKKANO7F4KD,1
+Shopping plan,Q22confl_tradeoffs,A6JKKANO7F4KD,0
+Shopping plan,Q23ss_out_uncert,A6JKKANO7F4KD,1
+Shopping plan,Q24eureka_question,A6JKKANO7F4KD,0
+Room assignment task,Q1concept_behav,A6JKKANO7F4KD,0
+Room assignment task,Q3type_1_planning,A6JKKANO7F4KD,0
+Room assignment task,Q4type_2_generate,A6JKKANO7F4KD,0
+Room assignment task,Q6type_5_cc,A6JKKANO7F4KD,0
+Room assignment task,Q7type_7_battle,A6JKKANO7F4KD,0
+Room assignment task,Q8type_8_performance,A6JKKANO7F4KD,0
+Room assignment task,Q9divisible_unitary,A6JKKANO7F4KD,1
+Room assignment task,Q10maximizing,A6JKKANO7F4KD,1
+Room assignment task,Q11optimizing,A6JKKANO7F4KD,1
+Room assignment task,Q13outcome_multip,A6JKKANO7F4KD,1
+Room assignment task,Q14sol_scheme_mul,A6JKKANO7F4KD,0
+Room assignment task,Q15dec_verifiability,A6JKKANO7F4KD,1
+Room assignment task,Q16shared_knowledge,A6JKKANO7F4KD,1
+Room assignment task,Q17within_sys_sol,A6JKKANO7F4KD,1
+Room assignment task,Q18ans_recog,A6JKKANO7F4KD,1
+Room assignment task,Q19time_solvability,A6JKKANO7F4KD,1
+Room assignment task,Q20type_3_type_4,A6JKKANO7F4KD,1
+Room assignment task,Q22confl_tradeoffs,A6JKKANO7F4KD,0
+Room assignment task,Q23ss_out_uncert,A6JKKANO7F4KD,1
+Room assignment task,Q24eureka_question,A6JKKANO7F4KD,0
+Word completion given starting letter,Q1concept_behav,ACJ6NSCIWMUZI,0
+Word completion given starting letter,Q3type_1_planning,ACJ6NSCIWMUZI,0
+Word completion given starting letter,Q4type_2_generate,ACJ6NSCIWMUZI,1
+Word completion given starting letter,Q6type_5_cc,ACJ6NSCIWMUZI,0
+Word completion given starting letter,Q7type_7_battle,ACJ6NSCIWMUZI,0
+Word completion given starting letter,Q8type_8_performance,ACJ6NSCIWMUZI,0
+Word completion given starting letter,Q9divisible_unitary,ACJ6NSCIWMUZI,1
+Word completion given starting letter,Q10maximizing,ACJ6NSCIWMUZI,1
+Word completion given starting letter,Q11optimizing,ACJ6NSCIWMUZI,1
+Word completion given starting letter,Q13outcome_multip,ACJ6NSCIWMUZI,0
+Word completion given starting letter,Q14sol_scheme_mul,ACJ6NSCIWMUZI,1
+Word completion given starting letter,Q15dec_verifiability,ACJ6NSCIWMUZI,1
+Word completion given starting letter,Q16shared_knowledge,ACJ6NSCIWMUZI,0
+Word completion given starting letter,Q17within_sys_sol,ACJ6NSCIWMUZI,1
+Word completion given starting letter,Q18ans_recog,ACJ6NSCIWMUZI,1
+Word completion given starting letter,Q19time_solvability,ACJ6NSCIWMUZI,1
+Word completion given starting letter,Q20type_3_type_4,ACJ6NSCIWMUZI,1
+Word completion given starting letter,Q22confl_tradeoffs,ACJ6NSCIWMUZI,0
+Word completion given starting letter,Q23ss_out_uncert,ACJ6NSCIWMUZI,0
+Word completion given starting letter,Q24eureka_question,ACJ6NSCIWMUZI,0
+Graph coloring task,Q1concept_behav,ACJ6NSCIWMUZI,0
+Graph coloring task,Q3type_1_planning,ACJ6NSCIWMUZI,0
+Graph coloring task,Q4type_2_generate,ACJ6NSCIWMUZI,0
+Graph coloring task,Q6type_5_cc,ACJ6NSCIWMUZI,0
+Graph coloring task,Q7type_7_battle,ACJ6NSCIWMUZI,1
+Graph coloring task,Q8type_8_performance,ACJ6NSCIWMUZI,1
+Graph coloring task,Q9divisible_unitary,ACJ6NSCIWMUZI,0
+Graph coloring task,Q10maximizing,ACJ6NSCIWMUZI,0
+Graph coloring task,Q11optimizing,ACJ6NSCIWMUZI,1
+Graph coloring task,Q13outcome_multip,ACJ6NSCIWMUZI,0
+Graph coloring task,Q14sol_scheme_mul,ACJ6NSCIWMUZI,0
+Graph coloring task,Q15dec_verifiability,ACJ6NSCIWMUZI,1
+Graph coloring task,Q16shared_knowledge,ACJ6NSCIWMUZI,0
+Graph coloring task,Q17within_sys_sol,ACJ6NSCIWMUZI,1
+Graph coloring task,Q18ans_recog,ACJ6NSCIWMUZI,1
+Graph coloring task,Q19time_solvability,ACJ6NSCIWMUZI,1
+Graph coloring task,Q20type_3_type_4,ACJ6NSCIWMUZI,1
+Graph coloring task,Q22confl_tradeoffs,ACJ6NSCIWMUZI,1
+Graph coloring task,Q23ss_out_uncert,ACJ6NSCIWMUZI,1
+Graph coloring task,Q24eureka_question,ACJ6NSCIWMUZI,0
+Shopping plan,Q1concept_behav,ACJ6NSCIWMUZI,1
+Shopping plan,Q3type_1_planning,ACJ6NSCIWMUZI,1
+Shopping plan,Q4type_2_generate,ACJ6NSCIWMUZI,1
+Shopping plan,Q6type_5_cc,ACJ6NSCIWMUZI,0
+Shopping plan,Q7type_7_battle,ACJ6NSCIWMUZI,1
+Shopping plan,Q8type_8_performance,ACJ6NSCIWMUZI,1
+Shopping plan,Q9divisible_unitary,ACJ6NSCIWMUZI,1
+Shopping plan,Q10maximizing,ACJ6NSCIWMUZI,1
+Shopping plan,Q11optimizing,ACJ6NSCIWMUZI,1
+Shopping plan,Q13outcome_multip,ACJ6NSCIWMUZI,0
+Shopping plan,Q14sol_scheme_mul,ACJ6NSCIWMUZI,0
+Shopping plan,Q15dec_verifiability,ACJ6NSCIWMUZI,1
+Shopping plan,Q16shared_knowledge,ACJ6NSCIWMUZI,1
+Shopping plan,Q17within_sys_sol,ACJ6NSCIWMUZI,1
+Shopping plan,Q18ans_recog,ACJ6NSCIWMUZI,1
+Shopping plan,Q19time_solvability,ACJ6NSCIWMUZI,1
+Shopping plan,Q20type_3_type_4,ACJ6NSCIWMUZI,1
+Shopping plan,Q22confl_tradeoffs,ACJ6NSCIWMUZI,1
+Shopping plan,Q23ss_out_uncert,ACJ6NSCIWMUZI,1
+Shopping plan,Q24eureka_question,ACJ6NSCIWMUZI,0
+Room assignment task,Q1concept_behav,ACJ6NSCIWMUZI,0
+Room assignment task,Q3type_1_planning,ACJ6NSCIWMUZI,1
+Room assignment task,Q4type_2_generate,ACJ6NSCIWMUZI,0
+Room assignment task,Q6type_5_cc,ACJ6NSCIWMUZI,0
+Room assignment task,Q7type_7_battle,ACJ6NSCIWMUZI,0
+Room assignment task,Q8type_8_performance,ACJ6NSCIWMUZI,1
+Room assignment task,Q9divisible_unitary,ACJ6NSCIWMUZI,1
+Room assignment task,Q10maximizing,ACJ6NSCIWMUZI,0
+Room assignment task,Q11optimizing,ACJ6NSCIWMUZI,1
+Room assignment task,Q13outcome_multip,ACJ6NSCIWMUZI,0
+Room assignment task,Q14sol_scheme_mul,ACJ6NSCIWMUZI,0
+Room assignment task,Q15dec_verifiability,ACJ6NSCIWMUZI,1
+Room assignment task,Q16shared_knowledge,ACJ6NSCIWMUZI,1
+Room assignment task,Q17within_sys_sol,ACJ6NSCIWMUZI,1
+Room assignment task,Q18ans_recog,ACJ6NSCIWMUZI,1
+Room assignment task,Q19time_solvability,ACJ6NSCIWMUZI,1
+Room assignment task,Q20type_3_type_4,ACJ6NSCIWMUZI,1
+Room assignment task,Q22confl_tradeoffs,ACJ6NSCIWMUZI,0
+Room assignment task,Q23ss_out_uncert,ACJ6NSCIWMUZI,1
+Room assignment task,Q24eureka_question,ACJ6NSCIWMUZI,0
+Word completion given starting letter,Q1concept_behav,AFU00NU09CFXE,0
+Word completion given starting letter,Q3type_1_planning,AFU00NU09CFXE,0
+Word completion given starting letter,Q4type_2_generate,AFU00NU09CFXE,1
+Word completion given starting letter,Q6type_5_cc,AFU00NU09CFXE,0
+Word completion given starting letter,Q7type_7_battle,AFU00NU09CFXE,1
+Word completion given starting letter,Q8type_8_performance,AFU00NU09CFXE,0
+Word completion given starting letter,Q9divisible_unitary,AFU00NU09CFXE,0
+Word completion given starting letter,Q10maximizing,AFU00NU09CFXE,1
+Word completion given starting letter,Q11optimizing,AFU00NU09CFXE,1
+Word completion given starting letter,Q13outcome_multip,AFU00NU09CFXE,0
+Word completion given starting letter,Q14sol_scheme_mul,AFU00NU09CFXE,0
+Word completion given starting letter,Q15dec_verifiability,AFU00NU09CFXE,1
+Word completion given starting letter,Q16shared_knowledge,AFU00NU09CFXE,0
+Word completion given starting letter,Q17within_sys_sol,AFU00NU09CFXE,1
+Word completion given starting letter,Q18ans_recog,AFU00NU09CFXE,1
+Word completion given starting letter,Q19time_solvability,AFU00NU09CFXE,0
+Word completion given starting letter,Q20type_3_type_4,AFU00NU09CFXE,0
+Word completion given starting letter,Q22confl_tradeoffs,AFU00NU09CFXE,0
+Word completion given starting letter,Q23ss_out_uncert,AFU00NU09CFXE,1
+Word completion given starting letter,Q24eureka_question,AFU00NU09CFXE,0
+Graph coloring task,Q1concept_behav,AFU00NU09CFXE,0
+Graph coloring task,Q3type_1_planning,AFU00NU09CFXE,1
+Graph coloring task,Q4type_2_generate,AFU00NU09CFXE,1
+Graph coloring task,Q6type_5_cc,AFU00NU09CFXE,0
+Graph coloring task,Q7type_7_battle,AFU00NU09CFXE,1
+Graph coloring task,Q8type_8_performance,AFU00NU09CFXE,1
+Graph coloring task,Q9divisible_unitary,AFU00NU09CFXE,0
+Graph coloring task,Q10maximizing,AFU00NU09CFXE,1
+Graph coloring task,Q11optimizing,AFU00NU09CFXE,1
+Graph coloring task,Q13outcome_multip,AFU00NU09CFXE,1
+Graph coloring task,Q14sol_scheme_mul,AFU00NU09CFXE,0
+Graph coloring task,Q15dec_verifiability,AFU00NU09CFXE,1
+Graph coloring task,Q16shared_knowledge,AFU00NU09CFXE,1
+Graph coloring task,Q17within_sys_sol,AFU00NU09CFXE,1
+Graph coloring task,Q18ans_recog,AFU00NU09CFXE,1
+Graph coloring task,Q19time_solvability,AFU00NU09CFXE,1
+Graph coloring task,Q20type_3_type_4,AFU00NU09CFXE,1
+Graph coloring task,Q22confl_tradeoffs,AFU00NU09CFXE,0
+Graph coloring task,Q23ss_out_uncert,AFU00NU09CFXE,1
+Graph coloring task,Q24eureka_question,AFU00NU09CFXE,1
+Shopping plan,Q1concept_behav,AFU00NU09CFXE,0
+Shopping plan,Q3type_1_planning,AFU00NU09CFXE,1
+Shopping plan,Q4type_2_generate,AFU00NU09CFXE,1
+Shopping plan,Q6type_5_cc,AFU00NU09CFXE,0
+Shopping plan,Q7type_7_battle,AFU00NU09CFXE,1
+Shopping plan,Q8type_8_performance,AFU00NU09CFXE,0
+Shopping plan,Q9divisible_unitary,AFU00NU09CFXE,1
+Shopping plan,Q10maximizing,AFU00NU09CFXE,1
+Shopping plan,Q11optimizing,AFU00NU09CFXE,1
+Shopping plan,Q13outcome_multip,AFU00NU09CFXE,0
+Shopping plan,Q14sol_scheme_mul,AFU00NU09CFXE,0
+Shopping plan,Q15dec_verifiability,AFU00NU09CFXE,1
+Shopping plan,Q16shared_knowledge,AFU00NU09CFXE,0
+Shopping plan,Q17within_sys_sol,AFU00NU09CFXE,1
+Shopping plan,Q18ans_recog,AFU00NU09CFXE,0
+Shopping plan,Q19time_solvability,AFU00NU09CFXE,1
+Shopping plan,Q20type_3_type_4,AFU00NU09CFXE,0
+Shopping plan,Q22confl_tradeoffs,AFU00NU09CFXE,1
+Shopping plan,Q23ss_out_uncert,AFU00NU09CFXE,1
+Shopping plan,Q24eureka_question,AFU00NU09CFXE,0
+Room assignment task,Q1concept_behav,AFU00NU09CFXE,0
+Room assignment task,Q3type_1_planning,AFU00NU09CFXE,1
+Room assignment task,Q4type_2_generate,AFU00NU09CFXE,1
+Room assignment task,Q6type_5_cc,AFU00NU09CFXE,0
+Room assignment task,Q7type_7_battle,AFU00NU09CFXE,0
+Room assignment task,Q8type_8_performance,AFU00NU09CFXE,1
+Room assignment task,Q9divisible_unitary,AFU00NU09CFXE,0
+Room assignment task,Q10maximizing,AFU00NU09CFXE,1
+Room assignment task,Q11optimizing,AFU00NU09CFXE,1
+Room assignment task,Q13outcome_multip,AFU00NU09CFXE,0
+Room assignment task,Q14sol_scheme_mul,AFU00NU09CFXE,0
+Room assignment task,Q15dec_verifiability,AFU00NU09CFXE,0
+Room assignment task,Q16shared_knowledge,AFU00NU09CFXE,1
+Room assignment task,Q17within_sys_sol,AFU00NU09CFXE,1
+Room assignment task,Q18ans_recog,AFU00NU09CFXE,0
+Room assignment task,Q19time_solvability,AFU00NU09CFXE,1
+Room assignment task,Q20type_3_type_4,AFU00NU09CFXE,1
+Room assignment task,Q22confl_tradeoffs,AFU00NU09CFXE,1
+Room assignment task,Q23ss_out_uncert,AFU00NU09CFXE,1
+Room assignment task,Q24eureka_question,AFU00NU09CFXE,0
+Word completion given starting letter,Q1concept_behav,AHIJACUG7ZL9B,0
+Word completion given starting letter,Q3type_1_planning,AHIJACUG7ZL9B,0
+Word completion given starting letter,Q4type_2_generate,AHIJACUG7ZL9B,1
+Word completion given starting letter,Q6type_5_cc,AHIJACUG7ZL9B,0
+Word completion given starting letter,Q7type_7_battle,AHIJACUG7ZL9B,1
+Word completion given starting letter,Q8type_8_performance,AHIJACUG7ZL9B,0
+Word completion given starting letter,Q9divisible_unitary,AHIJACUG7ZL9B,1
+Word completion given starting letter,Q10maximizing,AHIJACUG7ZL9B,1
+Word completion given starting letter,Q11optimizing,AHIJACUG7ZL9B,0
+Word completion given starting letter,Q13outcome_multip,AHIJACUG7ZL9B,0
+Word completion given starting letter,Q14sol_scheme_mul,AHIJACUG7ZL9B,0
+Word completion given starting letter,Q15dec_verifiability,AHIJACUG7ZL9B,1
+Word completion given starting letter,Q16shared_knowledge,AHIJACUG7ZL9B,0
+Word completion given starting letter,Q17within_sys_sol,AHIJACUG7ZL9B,1
+Word completion given starting letter,Q18ans_recog,AHIJACUG7ZL9B,1
+Word completion given starting letter,Q19time_solvability,AHIJACUG7ZL9B,1
+Word completion given starting letter,Q20type_3_type_4,AHIJACUG7ZL9B,0
+Word completion given starting letter,Q22confl_tradeoffs,AHIJACUG7ZL9B,0
+Word completion given starting letter,Q23ss_out_uncert,AHIJACUG7ZL9B,0
+Word completion given starting letter,Q24eureka_question,AHIJACUG7ZL9B,0
+Graph coloring task,Q1concept_behav,AHIJACUG7ZL9B,0
+Graph coloring task,Q3type_1_planning,AHIJACUG7ZL9B,1
+Graph coloring task,Q4type_2_generate,AHIJACUG7ZL9B,0
+Graph coloring task,Q6type_5_cc,AHIJACUG7ZL9B,0
+Graph coloring task,Q7type_7_battle,AHIJACUG7ZL9B,1
+Graph coloring task,Q8type_8_performance,AHIJACUG7ZL9B,1
+Graph coloring task,Q9divisible_unitary,AHIJACUG7ZL9B,0
+Graph coloring task,Q10maximizing,AHIJACUG7ZL9B,0
+Graph coloring task,Q11optimizing,AHIJACUG7ZL9B,1
+Graph coloring task,Q13outcome_multip,AHIJACUG7ZL9B,1
+Graph coloring task,Q14sol_scheme_mul,AHIJACUG7ZL9B,0
+Graph coloring task,Q15dec_verifiability,AHIJACUG7ZL9B,1
+Graph coloring task,Q16shared_knowledge,AHIJACUG7ZL9B,0
+Graph coloring task,Q17within_sys_sol,AHIJACUG7ZL9B,1
+Graph coloring task,Q18ans_recog,AHIJACUG7ZL9B,1
+Graph coloring task,Q19time_solvability,AHIJACUG7ZL9B,1
+Graph coloring task,Q20type_3_type_4,AHIJACUG7ZL9B,0
+Graph coloring task,Q22confl_tradeoffs,AHIJACUG7ZL9B,1
+Graph coloring task,Q23ss_out_uncert,AHIJACUG7ZL9B,1
+Graph coloring task,Q24eureka_question,AHIJACUG7ZL9B,0
+Shopping plan,Q1concept_behav,AHIJACUG7ZL9B,0
+Shopping plan,Q3type_1_planning,AHIJACUG7ZL9B,1
+Shopping plan,Q4type_2_generate,AHIJACUG7ZL9B,0
+Shopping plan,Q6type_5_cc,AHIJACUG7ZL9B,1
+Shopping plan,Q7type_7_battle,AHIJACUG7ZL9B,0
+Shopping plan,Q8type_8_performance,AHIJACUG7ZL9B,0
+Shopping plan,Q9divisible_unitary,AHIJACUG7ZL9B,0
+Shopping plan,Q10maximizing,AHIJACUG7ZL9B,1
+Shopping plan,Q11optimizing,AHIJACUG7ZL9B,0
+Shopping plan,Q13outcome_multip,AHIJACUG7ZL9B,0
+Shopping plan,Q14sol_scheme_mul,AHIJACUG7ZL9B,0
+Shopping plan,Q15dec_verifiability,AHIJACUG7ZL9B,1
+Shopping plan,Q16shared_knowledge,AHIJACUG7ZL9B,0
+Shopping plan,Q17within_sys_sol,AHIJACUG7ZL9B,1
+Shopping plan,Q18ans_recog,AHIJACUG7ZL9B,1
+Shopping plan,Q19time_solvability,AHIJACUG7ZL9B,1
+Shopping plan,Q20type_3_type_4,AHIJACUG7ZL9B,1
+Shopping plan,Q22confl_tradeoffs,AHIJACUG7ZL9B,1
+Shopping plan,Q23ss_out_uncert,AHIJACUG7ZL9B,1
+Shopping plan,Q24eureka_question,AHIJACUG7ZL9B,0
+Room assignment task,Q1concept_behav,AHIJACUG7ZL9B,0
+Room assignment task,Q3type_1_planning,AHIJACUG7ZL9B,1
+Room assignment task,Q4type_2_generate,AHIJACUG7ZL9B,0
+Room assignment task,Q6type_5_cc,AHIJACUG7ZL9B,0
+Room assignment task,Q7type_7_battle,AHIJACUG7ZL9B,0
+Room assignment task,Q8type_8_performance,AHIJACUG7ZL9B,0
+Room assignment task,Q9divisible_unitary,AHIJACUG7ZL9B,0
+Room assignment task,Q10maximizing,AHIJACUG7ZL9B,1
+Room assignment task,Q11optimizing,AHIJACUG7ZL9B,1
+Room assignment task,Q13outcome_multip,AHIJACUG7ZL9B,1
+Room assignment task,Q14sol_scheme_mul,AHIJACUG7ZL9B,0
+Room assignment task,Q15dec_verifiability,AHIJACUG7ZL9B,1
+Room assignment task,Q16shared_knowledge,AHIJACUG7ZL9B,0
+Room assignment task,Q17within_sys_sol,AHIJACUG7ZL9B,1
+Room assignment task,Q18ans_recog,AHIJACUG7ZL9B,1
+Room assignment task,Q19time_solvability,AHIJACUG7ZL9B,1
+Room assignment task,Q20type_3_type_4,AHIJACUG7ZL9B,1
+Room assignment task,Q22confl_tradeoffs,AHIJACUG7ZL9B,1
+Room assignment task,Q23ss_out_uncert,AHIJACUG7ZL9B,1
+Room assignment task,Q24eureka_question,AHIJACUG7ZL9B,0
+Word completion given starting letter,Q1concept_behav,AJRY9ALX8069Y,0
+Word completion given starting letter,Q3type_1_planning,AJRY9ALX8069Y,0
+Word completion given starting letter,Q4type_2_generate,AJRY9ALX8069Y,1
+Word completion given starting letter,Q6type_5_cc,AJRY9ALX8069Y,0
+Word completion given starting letter,Q7type_7_battle,AJRY9ALX8069Y,1
+Word completion given starting letter,Q8type_8_performance,AJRY9ALX8069Y,0
+Word completion given starting letter,Q9divisible_unitary,AJRY9ALX8069Y,1
+Word completion given starting letter,Q10maximizing,AJRY9ALX8069Y,1
+Word completion given starting letter,Q11optimizing,AJRY9ALX8069Y,1
+Word completion given starting letter,Q13outcome_multip,AJRY9ALX8069Y,0
+Word completion given starting letter,Q14sol_scheme_mul,AJRY9ALX8069Y,0
+Word completion given starting letter,Q15dec_verifiability,AJRY9ALX8069Y,1
+Word completion given starting letter,Q16shared_knowledge,AJRY9ALX8069Y,0
+Word completion given starting letter,Q17within_sys_sol,AJRY9ALX8069Y,1
+Word completion given starting letter,Q18ans_recog,AJRY9ALX8069Y,0
+Word completion given starting letter,Q19time_solvability,AJRY9ALX8069Y,1
+Word completion given starting letter,Q20type_3_type_4,AJRY9ALX8069Y,0
+Word completion given starting letter,Q22confl_tradeoffs,AJRY9ALX8069Y,0
+Word completion given starting letter,Q23ss_out_uncert,AJRY9ALX8069Y,1
+Word completion given starting letter,Q24eureka_question,AJRY9ALX8069Y,0
+Graph coloring task,Q1concept_behav,AJRY9ALX8069Y,0
+Graph coloring task,Q3type_1_planning,AJRY9ALX8069Y,1
+Graph coloring task,Q4type_2_generate,AJRY9ALX8069Y,0
+Graph coloring task,Q6type_5_cc,AJRY9ALX8069Y,0
+Graph coloring task,Q7type_7_battle,AJRY9ALX8069Y,1
+Graph coloring task,Q8type_8_performance,AJRY9ALX8069Y,1
+Graph coloring task,Q9divisible_unitary,AJRY9ALX8069Y,0
+Graph coloring task,Q10maximizing,AJRY9ALX8069Y,1
+Graph coloring task,Q11optimizing,AJRY9ALX8069Y,1
+Graph coloring task,Q13outcome_multip,AJRY9ALX8069Y,0
+Graph coloring task,Q14sol_scheme_mul,AJRY9ALX8069Y,0
+Graph coloring task,Q15dec_verifiability,AJRY9ALX8069Y,1
+Graph coloring task,Q16shared_knowledge,AJRY9ALX8069Y,0
+Graph coloring task,Q17within_sys_sol,AJRY9ALX8069Y,1
+Graph coloring task,Q18ans_recog,AJRY9ALX8069Y,1
+Graph coloring task,Q19time_solvability,AJRY9ALX8069Y,1
+Graph coloring task,Q20type_3_type_4,AJRY9ALX8069Y,1
+Graph coloring task,Q22confl_tradeoffs,AJRY9ALX8069Y,0
+Graph coloring task,Q23ss_out_uncert,AJRY9ALX8069Y,1
+Graph coloring task,Q24eureka_question,AJRY9ALX8069Y,1
+Shopping plan,Q1concept_behav,AJRY9ALX8069Y,0
+Shopping plan,Q3type_1_planning,AJRY9ALX8069Y,1
+Shopping plan,Q4type_2_generate,AJRY9ALX8069Y,0
+Shopping plan,Q6type_5_cc,AJRY9ALX8069Y,0
+Shopping plan,Q7type_7_battle,AJRY9ALX8069Y,1
+Shopping plan,Q8type_8_performance,AJRY9ALX8069Y,0
+Shopping plan,Q9divisible_unitary,AJRY9ALX8069Y,1
+Shopping plan,Q10maximizing,AJRY9ALX8069Y,1
+Shopping plan,Q11optimizing,AJRY9ALX8069Y,1
+Shopping plan,Q13outcome_multip,AJRY9ALX8069Y,1
+Shopping plan,Q14sol_scheme_mul,AJRY9ALX8069Y,0
+Shopping plan,Q15dec_verifiability,AJRY9ALX8069Y,1
+Shopping plan,Q16shared_knowledge,AJRY9ALX8069Y,0
+Shopping plan,Q17within_sys_sol,AJRY9ALX8069Y,0
+Shopping plan,Q18ans_recog,AJRY9ALX8069Y,0
+Shopping plan,Q19time_solvability,AJRY9ALX8069Y,1
+Shopping plan,Q20type_3_type_4,AJRY9ALX8069Y,1
+Shopping plan,Q22confl_tradeoffs,AJRY9ALX8069Y,1
+Shopping plan,Q23ss_out_uncert,AJRY9ALX8069Y,1
+Shopping plan,Q24eureka_question,AJRY9ALX8069Y,0
+Room assignment task,Q1concept_behav,AJRY9ALX8069Y,0
+Room assignment task,Q3type_1_planning,AJRY9ALX8069Y,1
+Room assignment task,Q4type_2_generate,AJRY9ALX8069Y,0
+Room assignment task,Q6type_5_cc,AJRY9ALX8069Y,0
+Room assignment task,Q7type_7_battle,AJRY9ALX8069Y,0
+Room assignment task,Q8type_8_performance,AJRY9ALX8069Y,0
+Room assignment task,Q9divisible_unitary,AJRY9ALX8069Y,0
+Room assignment task,Q10maximizing,AJRY9ALX8069Y,1
+Room assignment task,Q11optimizing,AJRY9ALX8069Y,1
+Room assignment task,Q13outcome_multip,AJRY9ALX8069Y,1
+Room assignment task,Q14sol_scheme_mul,AJRY9ALX8069Y,0
+Room assignment task,Q15dec_verifiability,AJRY9ALX8069Y,1
+Room assignment task,Q16shared_knowledge,AJRY9ALX8069Y,1
+Room assignment task,Q17within_sys_sol,AJRY9ALX8069Y,1
+Room assignment task,Q18ans_recog,AJRY9ALX8069Y,1
+Room assignment task,Q19time_solvability,AJRY9ALX8069Y,1
+Room assignment task,Q20type_3_type_4,AJRY9ALX8069Y,1
+Room assignment task,Q22confl_tradeoffs,AJRY9ALX8069Y,1
+Room assignment task,Q23ss_out_uncert,AJRY9ALX8069Y,1
+Room assignment task,Q24eureka_question,AJRY9ALX8069Y,0
+Word completion given starting letter,Q1concept_behav,APGX2WZ59OWDN,0
+Word completion given starting letter,Q3type_1_planning,APGX2WZ59OWDN,0
+Word completion given starting letter,Q4type_2_generate,APGX2WZ59OWDN,1
+Word completion given starting letter,Q6type_5_cc,APGX2WZ59OWDN,0
+Word completion given starting letter,Q7type_7_battle,APGX2WZ59OWDN,0
+Word completion given starting letter,Q8type_8_performance,APGX2WZ59OWDN,0
+Word completion given starting letter,Q9divisible_unitary,APGX2WZ59OWDN,0
+Word completion given starting letter,Q10maximizing,APGX2WZ59OWDN,1
+Word completion given starting letter,Q11optimizing,APGX2WZ59OWDN,0
+Word completion given starting letter,Q13outcome_multip,APGX2WZ59OWDN,0
+Word completion given starting letter,Q14sol_scheme_mul,APGX2WZ59OWDN,0
+Word completion given starting letter,Q15dec_verifiability,APGX2WZ59OWDN,1
+Word completion given starting letter,Q16shared_knowledge,APGX2WZ59OWDN,0
+Word completion given starting letter,Q17within_sys_sol,APGX2WZ59OWDN,1
+Word completion given starting letter,Q18ans_recog,APGX2WZ59OWDN,1
+Word completion given starting letter,Q19time_solvability,APGX2WZ59OWDN,1
+Word completion given starting letter,Q20type_3_type_4,APGX2WZ59OWDN,1
+Word completion given starting letter,Q22confl_tradeoffs,APGX2WZ59OWDN,0
+Word completion given starting letter,Q23ss_out_uncert,APGX2WZ59OWDN,0
+Word completion given starting letter,Q24eureka_question,APGX2WZ59OWDN,0
+Graph coloring task,Q1concept_behav,APGX2WZ59OWDN,0
+Graph coloring task,Q3type_1_planning,APGX2WZ59OWDN,0
+Graph coloring task,Q4type_2_generate,APGX2WZ59OWDN,0
+Graph coloring task,Q6type_5_cc,APGX2WZ59OWDN,0
+Graph coloring task,Q7type_7_battle,APGX2WZ59OWDN,0
+Graph coloring task,Q8type_8_performance,APGX2WZ59OWDN,1
+Graph coloring task,Q9divisible_unitary,APGX2WZ59OWDN,0
+Graph coloring task,Q10maximizing,APGX2WZ59OWDN,0
+Graph coloring task,Q11optimizing,APGX2WZ59OWDN,1
+Graph coloring task,Q13outcome_multip,APGX2WZ59OWDN,0
+Graph coloring task,Q14sol_scheme_mul,APGX2WZ59OWDN,0
+Graph coloring task,Q15dec_verifiability,APGX2WZ59OWDN,1
+Graph coloring task,Q16shared_knowledge,APGX2WZ59OWDN,1
+Graph coloring task,Q17within_sys_sol,APGX2WZ59OWDN,1
+Graph coloring task,Q18ans_recog,APGX2WZ59OWDN,1
+Graph coloring task,Q19time_solvability,APGX2WZ59OWDN,1
+Graph coloring task,Q20type_3_type_4,APGX2WZ59OWDN,1
+Graph coloring task,Q22confl_tradeoffs,APGX2WZ59OWDN,0
+Graph coloring task,Q23ss_out_uncert,APGX2WZ59OWDN,0
+Graph coloring task,Q24eureka_question,APGX2WZ59OWDN,0
+Shopping plan,Q1concept_behav,APGX2WZ59OWDN,0
+Shopping plan,Q3type_1_planning,APGX2WZ59OWDN,1
+Shopping plan,Q4type_2_generate,APGX2WZ59OWDN,0
+Shopping plan,Q6type_5_cc,APGX2WZ59OWDN,1
+Shopping plan,Q7type_7_battle,APGX2WZ59OWDN,0
+Shopping plan,Q8type_8_performance,APGX2WZ59OWDN,0
+Shopping plan,Q9divisible_unitary,APGX2WZ59OWDN,0
+Shopping plan,Q10maximizing,APGX2WZ59OWDN,1
+Shopping plan,Q11optimizing,APGX2WZ59OWDN,0
+Shopping plan,Q13outcome_multip,APGX2WZ59OWDN,1
+Shopping plan,Q14sol_scheme_mul,APGX2WZ59OWDN,0
+Shopping plan,Q15dec_verifiability,APGX2WZ59OWDN,1
+Shopping plan,Q16shared_knowledge,APGX2WZ59OWDN,1
+Shopping plan,Q17within_sys_sol,APGX2WZ59OWDN,1
+Shopping plan,Q18ans_recog,APGX2WZ59OWDN,1
+Shopping plan,Q19time_solvability,APGX2WZ59OWDN,1
+Shopping plan,Q20type_3_type_4,APGX2WZ59OWDN,1
+Shopping plan,Q22confl_tradeoffs,APGX2WZ59OWDN,1
+Shopping plan,Q23ss_out_uncert,APGX2WZ59OWDN,0
+Shopping plan,Q24eureka_question,APGX2WZ59OWDN,0
+Room assignment task,Q1concept_behav,APGX2WZ59OWDN,0
+Room assignment task,Q3type_1_planning,APGX2WZ59OWDN,0
+Room assignment task,Q4type_2_generate,APGX2WZ59OWDN,0
+Room assignment task,Q6type_5_cc,APGX2WZ59OWDN,0
+Room assignment task,Q7type_7_battle,APGX2WZ59OWDN,0
+Room assignment task,Q8type_8_performance,APGX2WZ59OWDN,0
+Room assignment task,Q9divisible_unitary,APGX2WZ59OWDN,1
+Room assignment task,Q10maximizing,APGX2WZ59OWDN,1
+Room assignment task,Q11optimizing,APGX2WZ59OWDN,1
+Room assignment task,Q13outcome_multip,APGX2WZ59OWDN,1
+Room assignment task,Q14sol_scheme_mul,APGX2WZ59OWDN,0
+Room assignment task,Q15dec_verifiability,APGX2WZ59OWDN,1
+Room assignment task,Q16shared_knowledge,APGX2WZ59OWDN,1
+Room assignment task,Q17within_sys_sol,APGX2WZ59OWDN,1
+Room assignment task,Q18ans_recog,APGX2WZ59OWDN,1
+Room assignment task,Q19time_solvability,APGX2WZ59OWDN,1
+Room assignment task,Q20type_3_type_4,APGX2WZ59OWDN,1
+Room assignment task,Q22confl_tradeoffs,APGX2WZ59OWDN,1
+Room assignment task,Q23ss_out_uncert,APGX2WZ59OWDN,0
+Room assignment task,Q24eureka_question,APGX2WZ59OWDN,0
+Word completion given starting letter,Q1concept_behav,AV22FQTJNBUZT,0
+Word completion given starting letter,Q3type_1_planning,AV22FQTJNBUZT,0
+Word completion given starting letter,Q4type_2_generate,AV22FQTJNBUZT,1
+Word completion given starting letter,Q6type_5_cc,AV22FQTJNBUZT,0
+Word completion given starting letter,Q7type_7_battle,AV22FQTJNBUZT,0
+Word completion given starting letter,Q8type_8_performance,AV22FQTJNBUZT,0
+Word completion given starting letter,Q9divisible_unitary,AV22FQTJNBUZT,0
+Word completion given starting letter,Q10maximizing,AV22FQTJNBUZT,1
+Word completion given starting letter,Q11optimizing,AV22FQTJNBUZT,1
+Word completion given starting letter,Q13outcome_multip,AV22FQTJNBUZT,0
+Word completion given starting letter,Q14sol_scheme_mul,AV22FQTJNBUZT,1
+Word completion given starting letter,Q15dec_verifiability,AV22FQTJNBUZT,0
+Word completion given starting letter,Q16shared_knowledge,AV22FQTJNBUZT,0
+Word completion given starting letter,Q17within_sys_sol,AV22FQTJNBUZT,1
+Word completion given starting letter,Q18ans_recog,AV22FQTJNBUZT,1
+Word completion given starting letter,Q19time_solvability,AV22FQTJNBUZT,1
+Word completion given starting letter,Q20type_3_type_4,AV22FQTJNBUZT,0
+Word completion given starting letter,Q22confl_tradeoffs,AV22FQTJNBUZT,0
+Word completion given starting letter,Q23ss_out_uncert,AV22FQTJNBUZT,0
+Word completion given starting letter,Q24eureka_question,AV22FQTJNBUZT,0
+Graph coloring task,Q1concept_behav,AV22FQTJNBUZT,0
+Graph coloring task,Q3type_1_planning,AV22FQTJNBUZT,0
+Graph coloring task,Q4type_2_generate,AV22FQTJNBUZT,0
+Graph coloring task,Q6type_5_cc,AV22FQTJNBUZT,0
+Graph coloring task,Q7type_7_battle,AV22FQTJNBUZT,0
+Graph coloring task,Q8type_8_performance,AV22FQTJNBUZT,0
+Graph coloring task,Q9divisible_unitary,AV22FQTJNBUZT,0
+Graph coloring task,Q10maximizing,AV22FQTJNBUZT,0
+Graph coloring task,Q11optimizing,AV22FQTJNBUZT,1
+Graph coloring task,Q13outcome_multip,AV22FQTJNBUZT,0
+Graph coloring task,Q14sol_scheme_mul,AV22FQTJNBUZT,0
+Graph coloring task,Q15dec_verifiability,AV22FQTJNBUZT,0
+Graph coloring task,Q16shared_knowledge,AV22FQTJNBUZT,0
+Graph coloring task,Q17within_sys_sol,AV22FQTJNBUZT,1
+Graph coloring task,Q18ans_recog,AV22FQTJNBUZT,0
+Graph coloring task,Q19time_solvability,AV22FQTJNBUZT,1
+Graph coloring task,Q20type_3_type_4,AV22FQTJNBUZT,1
+Graph coloring task,Q22confl_tradeoffs,AV22FQTJNBUZT,0
+Graph coloring task,Q23ss_out_uncert,AV22FQTJNBUZT,1
+Graph coloring task,Q24eureka_question,AV22FQTJNBUZT,0
+Shopping plan,Q1concept_behav,AV22FQTJNBUZT,0
+Shopping plan,Q3type_1_planning,AV22FQTJNBUZT,1
+Shopping plan,Q4type_2_generate,AV22FQTJNBUZT,0
+Shopping plan,Q6type_5_cc,AV22FQTJNBUZT,0
+Shopping plan,Q7type_7_battle,AV22FQTJNBUZT,0
+Shopping plan,Q8type_8_performance,AV22FQTJNBUZT,0
+Shopping plan,Q9divisible_unitary,AV22FQTJNBUZT,0
+Shopping plan,Q10maximizing,AV22FQTJNBUZT,1
+Shopping plan,Q11optimizing,AV22FQTJNBUZT,1
+Shopping plan,Q13outcome_multip,AV22FQTJNBUZT,0
+Shopping plan,Q14sol_scheme_mul,AV22FQTJNBUZT,0
+Shopping plan,Q15dec_verifiability,AV22FQTJNBUZT,0
+Shopping plan,Q16shared_knowledge,AV22FQTJNBUZT,0
+Shopping plan,Q17within_sys_sol,AV22FQTJNBUZT,1
+Shopping plan,Q18ans_recog,AV22FQTJNBUZT,1
+Shopping plan,Q19time_solvability,AV22FQTJNBUZT,1
+Shopping plan,Q20type_3_type_4,AV22FQTJNBUZT,0
+Shopping plan,Q22confl_tradeoffs,AV22FQTJNBUZT,1
+Shopping plan,Q23ss_out_uncert,AV22FQTJNBUZT,1
+Shopping plan,Q24eureka_question,AV22FQTJNBUZT,0
+Room assignment task,Q1concept_behav,AV22FQTJNBUZT,0
+Room assignment task,Q3type_1_planning,AV22FQTJNBUZT,1
+Room assignment task,Q4type_2_generate,AV22FQTJNBUZT,0
+Room assignment task,Q6type_5_cc,AV22FQTJNBUZT,0
+Room assignment task,Q7type_7_battle,AV22FQTJNBUZT,0
+Room assignment task,Q8type_8_performance,AV22FQTJNBUZT,0
+Room assignment task,Q9divisible_unitary,AV22FQTJNBUZT,0
+Room assignment task,Q10maximizing,AV22FQTJNBUZT,0
+Room assignment task,Q11optimizing,AV22FQTJNBUZT,1
+Room assignment task,Q13outcome_multip,AV22FQTJNBUZT,0
+Room assignment task,Q14sol_scheme_mul,AV22FQTJNBUZT,1
+Room assignment task,Q15dec_verifiability,AV22FQTJNBUZT,0
+Room assignment task,Q16shared_knowledge,AV22FQTJNBUZT,0
+Room assignment task,Q17within_sys_sol,AV22FQTJNBUZT,1
+Room assignment task,Q18ans_recog,AV22FQTJNBUZT,1
+Room assignment task,Q19time_solvability,AV22FQTJNBUZT,1
+Room assignment task,Q20type_3_type_4,AV22FQTJNBUZT,1
+Room assignment task,Q22confl_tradeoffs,AV22FQTJNBUZT,1
+Room assignment task,Q23ss_out_uncert,AV22FQTJNBUZT,1
+Room assignment task,Q24eureka_question,AV22FQTJNBUZT,0
