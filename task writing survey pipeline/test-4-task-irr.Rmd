@@ -33,8 +33,8 @@ df.task_name_to_index <- cbind(all_tasks, rep(1:length(all_tasks))) %>%
                                   task_num = strtoi(task_num)
                                 )
 
-task_mapping_irr_survey_id <- surveys$id[2] # 2 is the RA version of the survey
-#task_mapping_irr_survey_id <- surveys$id[5] # 5 is the MTurk version of the survey
+#task_mapping_irr_survey_id <- surveys$id[2] # 2 is the RA version of the survey
+task_mapping_irr_survey_id <- surveys$id[5] # 5 is the MTurk version of the survey
 ```
 
 # Define the task map and the main questions
@@ -230,6 +230,11 @@ df.james.bayesian <- df.all_ratings_raw %>%
     question_name %in% main_questions
   ) %>% ungroup() %>%
   select(task_name, question_name, name, value) %>% drop_na() 
+
+
+df.james.bayesian <- df.james.bayesian %>%
+  left_join(df.task_map %>% select(name, `Duration (in seconds)`),
+            by = "name")
 
 
 if(task_mapping_irr_survey_id == surveys$id[2]){
