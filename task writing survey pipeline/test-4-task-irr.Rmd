@@ -232,9 +232,9 @@ df.james.bayesian <- df.all_ratings_raw %>%
   select(task_name, question_name, name, value) %>% drop_na() 
 
 
-df.james.bayesian <- df.james.bayesian %>%
-  left_join(df.task_map %>% select(name, `Duration (in seconds)`),
-            by = "name")
+# df.james.bayesian <- df.james.bayesian %>%
+#   left_join(df.task_map %>% select(name, `Duration (in seconds)`),
+#             by = "name")
 
 
 if(task_mapping_irr_survey_id == surveys$id[2]){
@@ -244,11 +244,35 @@ if(task_mapping_irr_survey_id == surveys$id[2]){
 }
 ```
 
+Export just Emily & Linnea's "ground truth" data 
+```{r}
+if(task_mapping_irr_survey_id == surveys$id[2]){
+  df.all_ratings_raw %>% filter(name == "Emily" | name == "Linnea") %>%
+  mutate(value = recode(value,
+                     "Mental" = 0,
+                     "Physical" = 1,
+                     "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+                     "No" = 0,
+                     "Yes" = 1
+                   )) %>%
+  filter(
+    question_name %in% main_questions
+  ) %>% ungroup() %>%
+  select(task_name, question_name, name, value) %>%
+    write_csv('linnemily_ground_truth.csv')
+}
+```
+
+
+
 # Get Main IRR Analysis
 
 This is the large KA block, that also doubles as taking care of drops and doing other IRR measures
 
 ```{r message=FALSE, warning=FALSE}
+# Set up to look at the overall number of deviations per rater
+total_disagreements_by_rater <- c(unique(df.all_ratings_raw$name))
+
 # Set up to look at a filtered version of the task map
 df.task_map_from_filtered <-
   data.frame(matrix(NA, nrow = 0, ncol = length(unique(
