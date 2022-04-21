@@ -392,7 +392,7 @@ numeric <- df.all_ratings_raw %>%
   pivot_wider(values_from = c("value"), names_from = "question_name")
   
 
-inner_join(categorical, numeric, by = "task_name") %>% write_csv('../task_map_new.csv')
+inner_join(categorical, numeric, by = "task_name") %>% write_csv('../task_map.csv')
 ```
 
 
