@@ -373,10 +373,11 @@ categorical <- df.all_ratings_raw %>%
                    )) %>%
   group_by(question_name, task_name) %>%
   mutate(
-    value = mean(value)
+    value = Mode(value)[1]
   ) %>%
+  replace_na(list(value = 0.5)) %>% # these are cases where there is no mode
   select(-c(IPAddress, task_num)) %>% unique() %>%
-  pivot_wider(values_from = c("value"), names_from = "question_name")
+  pivot_wider(values_from = c("value"), names_from = "question_name") 
 
 
 numeric <- df.all_ratings_raw %>%
@@ -392,7 +393,7 @@ numeric <- df.all_ratings_raw %>%
   pivot_wider(values_from = c("value"), names_from = "question_name")
   
 
-inner_join(categorical, numeric, by = "task_name") %>% write_csv('../task_map_new.csv')
+inner_join(categorical, numeric, by = "task_name") %>% write_csv('../task_map.csv')
 ```
 
 
