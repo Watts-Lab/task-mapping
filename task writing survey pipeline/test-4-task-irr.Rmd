@@ -263,7 +263,43 @@ if(task_mapping_irr_survey_id == surveys$id[2]){
 }
 ```
 
+Export the task map
+```{r}
+categorical <- df.all_ratings_raw %>%
+  filter(question_name %in% main_questions) %>%
+  filter(question_name != 'Q2intel_manip_1' & 
+            question_name != 'Q21intellective_judg_1' &
+            question_name != 'Q5creativity_input_1') %>%
+  mutate(value = recode(value,
+                     "Mental" = 0,
+                     "Physical" = 1,
+                     "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+                     "No" = 0,
+                     "Yes" = 1
+                   )) %>%
+  group_by(question_name, task_name) %>%
+  mutate(
+    value = mean(value)
+  ) %>%
+  select(-c(name, task_num)) %>% unique() %>%
+  pivot_wider(values_from = c("value"), names_from = "question_name")
 
+
+numeric <- df.all_ratings_raw %>%
+  filter(question_name %in% main_questions) %>% 
+    filter(question_name == 'Q2intel_manip_1' | 
+            question_name == 'Q21intellective_judg_1' |
+            question_name == 'Q5creativity_input_1') %>%
+  group_by(question_name, task_name) %>%
+  mutate(
+    value = mean(as.numeric(value))
+  ) %>%
+  select(-c(name, task_num)) %>% unique() %>%
+  pivot_wider(values_from = c("value"), names_from = "question_name")
+  
+
+inner_join(categorical, numeric, by = "task_name")
+```
 
 # Get Main IRR Analysis
 
