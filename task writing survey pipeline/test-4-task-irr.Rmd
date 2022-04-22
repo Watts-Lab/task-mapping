@@ -191,14 +191,19 @@ df.main_questions_summary <- df.all_ratings_raw %>%
 
 df.task_map_summary <- df.main_questions_summary %>%
   filter(n_labels > 1) %>%
-  group_by(task_name) %>% # can do task_name, question_name
+  group_by(task_name, question_name) %>% # can do task_name, question_name
   summarize(
     n_labels = round(mean(n_labels),0),
     mean_agreement = mean(agreement),
     mean_alpha = mean(general.alpha)
   )
 
-df.task_map_summary %>% arrange(desc(mean_alpha))
+#df.task_map_summary %>% arrange(desc(mean_alpha))
+
+df.task_map_summary %>%
+  select(task_name, question_name, mean_alpha) %>%
+  pivot_wider(names_from = "question_name", values_from = "mean_alpha")# %>%
+  #write_csv("alphas_for_everything.csv")
 ```
 
 Take a look at a summary by task.
@@ -238,9 +243,9 @@ df.james.bayesian <- df.all_ratings_raw %>%
 
 
 if(task_mapping_irr_survey_id == surveys$id[2]){
-  df.james.bayesian %>% write_csv('within-lab-4-task-irr.csv')
+  df.james.bayesian %>% write_csv('/irr-analysis/within-lab-4-task-irr.csv')
 }else{
-  df.james.bayesian %>% write_csv('mturk-4-task-irr.csv')
+  df.james.bayesian %>% write_csv('/irr-analysis/mturk-4-task-irr.csv')
 }
 ```
 
@@ -299,6 +304,43 @@ numeric <- df.all_ratings_raw %>%
   
 
 inner_join(categorical, numeric, by = "task_name")
+```
+```{r}
+cat_raw <- df.all_ratings_raw %>%
+  filter(question_name %in% main_questions) %>%
+  filter(question_name != 'Q2intel_manip_1' & 
+            question_name != 'Q21intellective_judg_1' &
+            question_name != 'Q5creativity_input_1') %>%
+  mutate(value = recode(value,
+                     "Mental" = 0,
+                     "Physical" = 1,
+                     "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+                     "No" = 0,
+                     "Yes" = 1
+                   )) %>%
+  group_by(question_name, task_name)
+
+
+  cat_raw %>% filter(question_name %in% main_questions[1:11]) %>% ggplot(
+    aes(
+      x = value,
+    )
+  ) + 
+  facet_grid(rows = vars(task_name),
+             cols = vars(question_name)) +
+  geom_bar()
+```
+
+```{r}
+  cat_raw %>% filter(question_name %in% main_questions[12:23]) %>% ggplot(
+    aes(
+      x = value,
+    )
+  ) + 
+  facet_grid(rows = vars(task_name),
+             cols = vars(question_name)) +
+  geom_bar()
+
 ```
 
 # Get Main IRR Analysis
@@ -485,7 +527,7 @@ p<-cbind(df.task_map_from_filtered,
     label = task_name)
   ) + geom_point() + geom_label(nudge_y = 0.05, size = 2) 
 
-ggsave(plot = p, filename = 'task-map-filtered-irr.png')
+ggsave(plot = p, filename = '/map-visuals/task-map-filtered-irr.png')
 
 combined_data <- cbind(df.task_map_from_filtered,
       pca.filtered$x)

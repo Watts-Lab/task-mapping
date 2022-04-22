@@ -760,7 +760,7 @@ p <- df.all_ratings_raw %>%
 
 p + facet_wrap(~question_name, scales = "free")
 
-ggsave('./question-confidence-analysis.png')
+ggsave('./map-visuals/question-confidence-analysis.png')
 ```
 
 
@@ -845,9 +845,9 @@ plot_ly(
   color = combined_data$cluster
 )
 
-#ggsave(plot = p, filename = 'task-map-unreliable-dropped-10-tasks-highlighted.png')
-#ggsave(plot = p, filename = 'task-map-standard.png')
-#ggsave(plot = p, filename = 'task-map-unreliable-dropped.png')
+#ggsave(plot = p, filename = '/map-visuals/task-map-unreliable-dropped-10-tasks-highlighted.png')
+#ggsave(plot = p, filename = '/map-visuals/task-map-standard.png')
+#ggsave(plot = p, filename = '/map-visuals/task-map-unreliable-dropped.png')
 fviz_eig(pca)
 
 # biplot(pca, cex=0.5,
@@ -877,7 +877,7 @@ p<-cbind(df.task_map_from_filtered,
     fill = cluster)
   ) + geom_point() + geom_label(nudge_y = 0.05, size = 2) 
 
-ggsave(plot = p, filename = 'task-map-filtered-irr.png')
+ggsave(plot = p, filename = '/map-visuals/task-map-filtered-irr.png')
 
 combined_data <- cbind(df.task_map_from_filtered,
       pca.filtered$x, factor(kmeans.filtered$cluster)) %>%
@@ -963,7 +963,7 @@ p.old<-cbind(df.task_map_old,
     fill = cluster)
   ) + geom_point() + geom_label(nudge_y = 0.8, size = 2) 
 
-ggsave(plot = p.old, filename = 'task-map-OLD.png')
+ggsave(plot = p.old, filename = '/map-visuals/task-map-OLD.png')
 fviz_eig(pca.old)
 ```
 
