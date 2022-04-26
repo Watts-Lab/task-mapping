@@ -444,6 +444,26 @@ for (i in 1:length(main_questions)) {
 kripp_alpha_per_question %>% arrange(desc(mean_alpha))
 ```
 
+
+Export just Emily & Linnea's "ground truth" data 
+```{r}
+if(task_mapping_irr_survey_id == surveys$id[2]){
+  df.all_ratings_raw %>% filter(name == "Emily" | name == "Linnea") %>%
+  mutate(value = recode(value,
+                     "Mental" = 0,
+                     "Physical" = 1,
+                     "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+                     "No" = 0,
+                     "Yes" = 1
+                   )) %>%
+  filter(
+    question_name %in% main_questions
+  ) %>% ungroup() %>%
+  select(task_name, question_name, name, value) %>%
+    write_csv('linnemily_ground_truth.csv')
+}
+```
+
 # Implement David Karger's Algorithm
 
 ```{r}

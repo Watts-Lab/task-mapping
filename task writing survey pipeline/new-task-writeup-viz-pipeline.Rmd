@@ -10,6 +10,7 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
+library(DescTools)
 library(factoextra)
 library(httr)
 library(jsonlite)
@@ -338,25 +339,6 @@ df.all_ratings_raw %>%
   table()
 ```
 
-Export just Emily & Linnea's "ground truth" data 
-```{r}
-if(task_mapping_irr_survey_id == surveys$id[2]){
-  df.all_ratings_raw %>% filter(name == "Emily" | name == "Linnea") %>%
-  mutate(value = recode(value,
-                     "Mental" = 0,
-                     "Physical" = 1,
-                     "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
-                     "No" = 0,
-                     "Yes" = 1
-                   )) %>%
-  filter(
-    question_name %in% main_questions
-  ) %>% ungroup() %>%
-  select(task_name, question_name, name, value) %>%
-    write_csv('linnemily_ground_truth.csv')
-}
-```
-
 Export the task map
 ```{r}
 categorical <- df.all_ratings_raw %>%
@@ -432,7 +414,6 @@ df.main_questions_summary <- df.all_ratings_raw %>%
             n_labels = agree(t(value))$raters,
             all_values = paste(value, collapse = " & "),
             agreement = ifelse(mean_rating > 0.5, mean_rating, 1-mean_rating),
-            exp.prob = get_expected_agreement(n_labels),
             general.alpha = (agreement-0.5)/(0.5)
             )
 
@@ -625,8 +606,6 @@ for (i in 1:length(main_questions)) {
     invisible()
     
   } else{
-    
-
     ### GET HOW MUCH PEOPLE DISAGREE - SET UP ###
     # figure out agreement level of people
      # setting up for dropping raters who disagree a lot
@@ -635,6 +614,7 @@ for (i in 1:length(main_questions)) {
     num_responses <- rowSums(!is.na(kripp_alpha_matrix))
     
     modes <- apply(kripp_alpha_matrix, 2, function(x) {Mode(x , na.rm = T)})
+    
     # handle ties
     lengths(modes)==1
     modes <- unlist(ifelse(lengths(modes)==1, modes, NA))
@@ -846,9 +826,9 @@ plot_ly(
   color = combined_data$cluster
 )
 
-#ggsave(plot = p, filename = '/map-visuals/task-map-unreliable-dropped-10-tasks-highlighted.png')
-#ggsave(plot = p, filename = '/map-visuals/task-map-standard.png')
-#ggsave(plot = p, filename = '/map-visuals/task-map-unreliable-dropped.png')
+#ggsave(plot = p, filename = './map-visuals/task-map-unreliable-dropped-10-tasks-highlighted.png')
+#ggsave(plot = p, filename = './map-visuals/task-map-standard.png')
+#ggsave(plot = p, filename = './map-visuals/task-map-unreliable-dropped.png')
 fviz_eig(pca)
 
 # biplot(pca, cex=0.5,
@@ -878,7 +858,7 @@ p<-cbind(df.task_map_from_filtered,
     fill = cluster)
   ) + geom_point() + geom_label(nudge_y = 0.05, size = 2) 
 
-ggsave(plot = p, filename = '/map-visuals/task-map-filtered-irr.png')
+ggsave(plot = p, filename = './map-visuals/task-map-filtered-irr.png')
 
 combined_data <- cbind(df.task_map_from_filtered,
       pca.filtered$x, factor(kmeans.filtered$cluster)) %>%
@@ -935,8 +915,8 @@ df.task_map_new <- df.all_ratings_raw %>% mutate(value = recode(value,
     )
   
 # get old task map
-df.task_map_old_names <- read_csv('../task_map.csv')
-df.task_map_old <- cbind(df.task_map_old_names[,1],read_csv('../task_map_numeric.csv'))
+df.task_map_old_names <- read_csv('../archive/task_map.csv')
+df.task_map_old <- cbind(df.task_map_old_names[,1],read_csv('../archive/task_map_numeric.csv'))
 ```
 
 Let's plot the task map using the same format and see how much (qualitative) improvement there has been!
@@ -964,7 +944,7 @@ p.old<-cbind(df.task_map_old,
     fill = cluster)
   ) + geom_point() + geom_label(nudge_y = 0.8, size = 2) 
 
-ggsave(plot = p.old, filename = '/map-visuals/task-map-OLD.png')
+ggsave(plot = p.old, filename = './map-visuals/task-map-OLD.png')
 fviz_eig(pca.old)
 ```
 
