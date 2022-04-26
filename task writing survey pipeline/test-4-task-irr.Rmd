@@ -243,9 +243,9 @@ df.james.bayesian <- df.all_ratings_raw %>%
 
 
 if(task_mapping_irr_survey_id == surveys$id[2]){
-  df.james.bayesian %>% write_csv('/irr-analysis/within-lab-4-task-irr.csv')
+  df.james.bayesian %>% write_csv('./irr-analysis/within-lab-4-task-irr.csv')
 }else{
-  df.james.bayesian %>% write_csv('/irr-analysis/mturk-4-task-irr.csv')
+  df.james.bayesian %>% write_csv('./irr-analysis/mturk-4-task-irr.csv')
 }
 ```
 
@@ -305,43 +305,7 @@ numeric <- df.all_ratings_raw %>%
 
 inner_join(categorical, numeric, by = "task_name")
 ```
-```{r}
-cat_raw <- df.all_ratings_raw %>%
-  filter(question_name %in% main_questions) %>%
-  filter(question_name != 'Q2intel_manip_1' & 
-            question_name != 'Q21intellective_judg_1' &
-            question_name != 'Q5creativity_input_1') %>%
-  mutate(value = recode(value,
-                     "Mental" = 0,
-                     "Physical" = 1,
-                     "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
-                     "No" = 0,
-                     "Yes" = 1
-                   )) %>%
-  group_by(question_name, task_name)
 
-
-  cat_raw %>% filter(question_name %in% main_questions[1:11]) %>% ggplot(
-    aes(
-      x = value,
-    )
-  ) + 
-  facet_grid(rows = vars(task_name),
-             cols = vars(question_name)) +
-  geom_bar()
-```
-
-```{r}
-  cat_raw %>% filter(question_name %in% main_questions[12:23]) %>% ggplot(
-    aes(
-      x = value,
-    )
-  ) + 
-  facet_grid(rows = vars(task_name),
-             cols = vars(question_name)) +
-  geom_bar()
-
-```
 
 # Get Main IRR Analysis
 
@@ -479,6 +443,126 @@ for (i in 1:length(main_questions)) {
 ```{r}
 kripp_alpha_per_question %>% arrange(desc(mean_alpha))
 ```
+
+# Implement David Karger's Algorithm
+
+```{r}
+df.karger <- df.all_ratings_raw %>% filter(question_name  %in% main_questions) %>% filter(
+  question_name != 'Q2intel_manip_1' &
+    question_name != 'Q21intellective_judg_1' &
+    question_name != 'Q5creativity_input_1'
+) %>%
+  mutate(
+    value = recode(
+      value,
+      "Mental" = -1,
+      "Physical" = 1,
+      #"Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+      "No" = -1,
+      "Yes" = 1
+    )
+  ) %>% ungroup() %>%
+  select(name, question_name, task_name, value)
+
+df.karger
+```
+
+
+```{r}
+# Define Initial Variables
+tasks = c("Word completion given starting letter", "Graph coloring task", "Shopping plan")
+questions <- unique(df.karger$question_name)
+names <- unique(df.karger$name)
+
+K <- 100 # number of iterations
+
+# for(i in 1:length(tasks)){ # separately do this for every task --- questions are nested by task
+  i = 1 # test first task for now  
+  # INIT --- set up A, X, and Y
+  
+  # A is the question x worker matrix
+  A <- df.karger %>% filter(task_name == tasks[i]) %>% select(-task_name) %>%
+    pivot_wider(names_from = "name", values_from = "value") %>% select(-question_name)
+  X <- df.karger %>% filter(task_name == tasks[i]) %>% select(-c(task_name)) %>%
+    mutate(
+      value = recode(value, "-1" = 0)
+    ) %>% pivot_wider(names_from = "name", values_from = "value") %>% 
+    select(-question_name) %>% rowMeans(na.rm = T)
+  # X is the log likelihood of the task being positive
+  X <- log(X+0.00000000000000000001) # add a very small number in case likelihood is 0
+  # Y is the reliability of the worker
+  Y <- rnorm(length(names),1,1)
+  
+  # UPDATE THINGS!
+  
+  for(iter in 1:K){
+    print(iter)
+    
+    # update X (log likelihood of positivity)
+    for(xi in 1:length(X)){
+      
+      x_update <- c()
+      
+      for (yi in 1:length(Y)) {
+        name <- toString(names[yi])
+        
+        # get only the tasks that the worker did (neighborhood)
+        na_indices <- which(is.na(A %>% select(!!name)))
+        
+        # sum up the responses of his colleagues
+        Ai <- A
+        Yi <- Y
+        if (length(na_indices) > 0) {
+          # drop NA indices in Y so that dims match
+          Ai <- A[, -na_indices]
+          Yi <- Y[-na_indices]
+        }
+        # focus on the focal worker
+        Ai <- A %>% select(!!name) %>% as.matrix()
+        Yi <- Yi[yi]
+        
+        x_update <- c(x_update,sum(Ai*Yi, na.rm = T))
+      }
+      X[xi] <- sum(x_update, na.rm = T)
+    }
+    
+    # update Y (reliability of each worker)
+    for(yi in 1:length(X)){
+      y_update <- c()
+      for (xi in 1:length(X)) {
+        q <- toString(questions[xi])
+        
+        # get only the tasks that the worker did (neighborhood)
+        na_indices <- which(is.na((t(A) %>% as.data.frame())[,xi]))
+        
+        # sum up the responses of his colleagues
+        Ai <- (t(A) %>% as.data.frame())
+        Xi <- X
+        if (length(na_indices) > 0) {
+          # drop NA indices in Y so that dims match
+          Ai <- A[, -na_indices]
+          Xi <- X[-na_indices]
+        }
+        # focus on the focal worker
+        Ai <- A[,xi] %>% as.matrix()
+        Xi <- Xi[xi]
+        
+        y_update <- c(y_update,sum(Ai*Xi, na.rm = T))
+      }
+      
+      Y[yi] <- sum(y_update, na.rm = T)
+    }
+  }
+# }
+
+
+
+
+```
+
+
+# Plotting Task Maps
+
 
 
 Set up the version of the task map that is filtered (removing unreliable raters)
