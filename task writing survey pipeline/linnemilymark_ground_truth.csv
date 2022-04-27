@@ -1,0 +1,277 @@
+task_name,question_name,name,value
+Word completion given starting letter,Q1concept_behav,Emily,0
+Word completion given starting letter,Q2intel_manip_1,Emily,NA
+Word completion given starting letter,Q3type_1_planning,Emily,0
+Word completion given starting letter,Q4type_2_generate,Emily,1
+Word completion given starting letter,Q5creativity_input_1,Emily,NA
+Word completion given starting letter,Q6type_5_cc,Emily,0
+Word completion given starting letter,Q7type_7_battle,Emily,0
+Word completion given starting letter,Q8type_8_performance,Emily,0
+Word completion given starting letter,Q9divisible_unitary,Emily,1
+Word completion given starting letter,Q10maximizing,Emily,1
+Word completion given starting letter,Q11optimizing,Emily,0
+Word completion given starting letter,Q13outcome_multip,Emily,0
+Word completion given starting letter,Q14sol_scheme_mul,Emily,0
+Word completion given starting letter,Q15dec_verifiability,Emily,1
+Word completion given starting letter,Q16shared_knowledge,Emily,1
+Word completion given starting letter,Q17within_sys_sol,Emily,1
+Word completion given starting letter,Q18ans_recog,Emily,1
+Word completion given starting letter,Q19time_solvability,Emily,1
+Word completion given starting letter,Q20type_3_type_4,Emily,0
+Word completion given starting letter,Q21intellective_judg_1,Emily,NA
+Word completion given starting letter,Q22confl_tradeoffs,Emily,0
+Word completion given starting letter,Q23ss_out_uncert,Emily,0
+Word completion given starting letter,Q24eureka_question,Emily,0
+Graph coloring task,Q1concept_behav,Emily,0
+Graph coloring task,Q2intel_manip_1,Emily,NA
+Graph coloring task,Q3type_1_planning,Emily,0
+Graph coloring task,Q4type_2_generate,Emily,0
+Graph coloring task,Q5creativity_input_1,Emily,NA
+Graph coloring task,Q6type_5_cc,Emily,0
+Graph coloring task,Q7type_7_battle,Emily,0
+Graph coloring task,Q8type_8_performance,Emily,1
+Graph coloring task,Q9divisible_unitary,Emily,1
+Graph coloring task,Q10maximizing,Emily,0
+Graph coloring task,Q11optimizing,Emily,1
+Graph coloring task,Q13outcome_multip,Emily,0
+Graph coloring task,Q14sol_scheme_mul,Emily,0
+Graph coloring task,Q15dec_verifiability,Emily,1
+Graph coloring task,Q16shared_knowledge,Emily,1
+Graph coloring task,Q17within_sys_sol,Emily,1
+Graph coloring task,Q18ans_recog,Emily,1
+Graph coloring task,Q19time_solvability,Emily,1
+Graph coloring task,Q20type_3_type_4,Emily,1
+Graph coloring task,Q21intellective_judg_1,Emily,NA
+Graph coloring task,Q22confl_tradeoffs,Emily,0
+Graph coloring task,Q23ss_out_uncert,Emily,0
+Graph coloring task,Q24eureka_question,Emily,0
+Shopping plan,Q1concept_behav,Emily,0
+Shopping plan,Q2intel_manip_1,Emily,NA
+Shopping plan,Q3type_1_planning,Emily,1
+Shopping plan,Q4type_2_generate,Emily,0
+Shopping plan,Q5creativity_input_1,Emily,NA
+Shopping plan,Q6type_5_cc,Emily,1
+Shopping plan,Q7type_7_battle,Emily,0
+Shopping plan,Q8type_8_performance,Emily,0
+Shopping plan,Q9divisible_unitary,Emily,0
+Shopping plan,Q10maximizing,Emily,1
+Shopping plan,Q11optimizing,Emily,1
+Shopping plan,Q13outcome_multip,Emily,1
+Shopping plan,Q14sol_scheme_mul,Emily,0
+Shopping plan,Q15dec_verifiability,Emily,1
+Shopping plan,Q16shared_knowledge,Emily,1
+Shopping plan,Q17within_sys_sol,Emily,1
+Shopping plan,Q18ans_recog,Emily,1
+Shopping plan,Q19time_solvability,Emily,1
+Shopping plan,Q20type_3_type_4,Emily,1
+Shopping plan,Q21intellective_judg_1,Emily,NA
+Shopping plan,Q22confl_tradeoffs,Emily,1
+Shopping plan,Q23ss_out_uncert,Emily,1
+Shopping plan,Q24eureka_question,Emily,0
+Room assignment task,Q1concept_behav,Emily,0
+Room assignment task,Q2intel_manip_1,Emily,NA
+Room assignment task,Q3type_1_planning,Emily,0
+Room assignment task,Q4type_2_generate,Emily,0
+Room assignment task,Q5creativity_input_1,Emily,NA
+Room assignment task,Q6type_5_cc,Emily,0
+Room assignment task,Q7type_7_battle,Emily,0
+Room assignment task,Q8type_8_performance,Emily,0
+Room assignment task,Q9divisible_unitary,Emily,1
+Room assignment task,Q10maximizing,Emily,1
+Room assignment task,Q11optimizing,Emily,1
+Room assignment task,Q13outcome_multip,Emily,1
+Room assignment task,Q14sol_scheme_mul,Emily,0
+Room assignment task,Q15dec_verifiability,Emily,1
+Room assignment task,Q16shared_knowledge,Emily,1
+Room assignment task,Q17within_sys_sol,Emily,1
+Room assignment task,Q18ans_recog,Emily,1
+Room assignment task,Q19time_solvability,Emily,1
+Room assignment task,Q20type_3_type_4,Emily,1
+Room assignment task,Q21intellective_judg_1,Emily,NA
+Room assignment task,Q22confl_tradeoffs,Emily,1
+Room assignment task,Q23ss_out_uncert,Emily,1
+Room assignment task,Q24eureka_question,Emily,0
+Word completion given starting letter,Q1concept_behav,Linnea,0
+Word completion given starting letter,Q2intel_manip_1,Linnea,NA
+Word completion given starting letter,Q3type_1_planning,Linnea,0
+Word completion given starting letter,Q4type_2_generate,Linnea,1
+Word completion given starting letter,Q5creativity_input_1,Linnea,NA
+Word completion given starting letter,Q6type_5_cc,Linnea,0
+Word completion given starting letter,Q7type_7_battle,Linnea,0
+Word completion given starting letter,Q8type_8_performance,Linnea,0
+Word completion given starting letter,Q9divisible_unitary,Linnea,1
+Word completion given starting letter,Q10maximizing,Linnea,1
+Word completion given starting letter,Q11optimizing,Linnea,0
+Word completion given starting letter,Q13outcome_multip,Linnea,3
+Word completion given starting letter,Q14sol_scheme_mul,Linnea,0
+Word completion given starting letter,Q15dec_verifiability,Linnea,1
+Word completion given starting letter,Q16shared_knowledge,Linnea,1
+Word completion given starting letter,Q17within_sys_sol,Linnea,1
+Word completion given starting letter,Q18ans_recog,Linnea,1
+Word completion given starting letter,Q19time_solvability,Linnea,1
+Word completion given starting letter,Q20type_3_type_4,Linnea,1
+Word completion given starting letter,Q21intellective_judg_1,Linnea,NA
+Word completion given starting letter,Q22confl_tradeoffs,Linnea,0
+Word completion given starting letter,Q23ss_out_uncert,Linnea,1
+Word completion given starting letter,Q24eureka_question,Linnea,0
+Graph coloring task,Q1concept_behav,Linnea,0
+Graph coloring task,Q2intel_manip_1,Linnea,NA
+Graph coloring task,Q3type_1_planning,Linnea,0
+Graph coloring task,Q4type_2_generate,Linnea,0
+Graph coloring task,Q5creativity_input_1,Linnea,NA
+Graph coloring task,Q6type_5_cc,Linnea,0
+Graph coloring task,Q7type_7_battle,Linnea,0
+Graph coloring task,Q8type_8_performance,Linnea,1
+Graph coloring task,Q9divisible_unitary,Linnea,1
+Graph coloring task,Q10maximizing,Linnea,0
+Graph coloring task,Q11optimizing,Linnea,0
+Graph coloring task,Q13outcome_multip,Linnea,0
+Graph coloring task,Q14sol_scheme_mul,Linnea,0
+Graph coloring task,Q15dec_verifiability,Linnea,1
+Graph coloring task,Q16shared_knowledge,Linnea,1
+Graph coloring task,Q17within_sys_sol,Linnea,3
+Graph coloring task,Q18ans_recog,Linnea,1
+Graph coloring task,Q19time_solvability,Linnea,1
+Graph coloring task,Q20type_3_type_4,Linnea,1
+Graph coloring task,Q21intellective_judg_1,Linnea,NA
+Graph coloring task,Q22confl_tradeoffs,Linnea,1
+Graph coloring task,Q23ss_out_uncert,Linnea,0
+Graph coloring task,Q24eureka_question,Linnea,0
+Shopping plan,Q1concept_behav,Linnea,0
+Shopping plan,Q2intel_manip_1,Linnea,NA
+Shopping plan,Q3type_1_planning,Linnea,1
+Shopping plan,Q4type_2_generate,Linnea,0
+Shopping plan,Q5creativity_input_1,Linnea,NA
+Shopping plan,Q6type_5_cc,Linnea,0
+Shopping plan,Q7type_7_battle,Linnea,0
+Shopping plan,Q8type_8_performance,Linnea,0
+Shopping plan,Q9divisible_unitary,Linnea,1
+Shopping plan,Q10maximizing,Linnea,1
+Shopping plan,Q11optimizing,Linnea,0
+Shopping plan,Q13outcome_multip,Linnea,3
+Shopping plan,Q14sol_scheme_mul,Linnea,0
+Shopping plan,Q15dec_verifiability,Linnea,1
+Shopping plan,Q16shared_knowledge,Linnea,1
+Shopping plan,Q17within_sys_sol,Linnea,1
+Shopping plan,Q18ans_recog,Linnea,1
+Shopping plan,Q19time_solvability,Linnea,1
+Shopping plan,Q20type_3_type_4,Linnea,1
+Shopping plan,Q21intellective_judg_1,Linnea,NA
+Shopping plan,Q22confl_tradeoffs,Linnea,1
+Shopping plan,Q23ss_out_uncert,Linnea,0
+Shopping plan,Q24eureka_question,Linnea,0
+Room assignment task,Q1concept_behav,Linnea,0
+Room assignment task,Q2intel_manip_1,Linnea,NA
+Room assignment task,Q3type_1_planning,Linnea,0
+Room assignment task,Q4type_2_generate,Linnea,0
+Room assignment task,Q5creativity_input_1,Linnea,NA
+Room assignment task,Q6type_5_cc,Linnea,0
+Room assignment task,Q7type_7_battle,Linnea,0
+Room assignment task,Q8type_8_performance,Linnea,3
+Room assignment task,Q9divisible_unitary,Linnea,1
+Room assignment task,Q10maximizing,Linnea,3
+Room assignment task,Q11optimizing,Linnea,3
+Room assignment task,Q13outcome_multip,Linnea,3
+Room assignment task,Q14sol_scheme_mul,Linnea,0
+Room assignment task,Q15dec_verifiability,Linnea,1
+Room assignment task,Q16shared_knowledge,Linnea,1
+Room assignment task,Q17within_sys_sol,Linnea,1
+Room assignment task,Q18ans_recog,Linnea,1
+Room assignment task,Q19time_solvability,Linnea,1
+Room assignment task,Q20type_3_type_4,Linnea,1
+Room assignment task,Q21intellective_judg_1,Linnea,NA
+Room assignment task,Q22confl_tradeoffs,Linnea,1
+Room assignment task,Q23ss_out_uncert,Linnea,1
+Room assignment task,Q24eureka_question,Linnea,0
+Word completion given starting letter,Q1concept_behav,Mark,0
+Word completion given starting letter,Q2intel_manip_1,Mark,NA
+Word completion given starting letter,Q3type_1_planning,Mark,0
+Word completion given starting letter,Q4type_2_generate,Mark,1
+Word completion given starting letter,Q5creativity_input_1,Mark,NA
+Word completion given starting letter,Q6type_5_cc,Mark,0
+Word completion given starting letter,Q7type_7_battle,Mark,0
+Word completion given starting letter,Q8type_8_performance,Mark,0
+Word completion given starting letter,Q9divisible_unitary,Mark,1
+Word completion given starting letter,Q10maximizing,Mark,1
+Word completion given starting letter,Q11optimizing,Mark,0
+Word completion given starting letter,Q13outcome_multip,Mark,1
+Word completion given starting letter,Q14sol_scheme_mul,Mark,0
+Word completion given starting letter,Q15dec_verifiability,Mark,1
+Word completion given starting letter,Q16shared_knowledge,Mark,1
+Word completion given starting letter,Q17within_sys_sol,Mark,1
+Word completion given starting letter,Q18ans_recog,Mark,1
+Word completion given starting letter,Q19time_solvability,Mark,1
+Word completion given starting letter,Q20type_3_type_4,Mark,1
+Word completion given starting letter,Q21intellective_judg_1,Mark,NA
+Word completion given starting letter,Q22confl_tradeoffs,Mark,0
+Word completion given starting letter,Q23ss_out_uncert,Mark,1
+Word completion given starting letter,Q24eureka_question,Mark,0
+Graph coloring task,Q1concept_behav,Mark,0
+Graph coloring task,Q2intel_manip_1,Mark,NA
+Graph coloring task,Q3type_1_planning,Mark,0
+Graph coloring task,Q4type_2_generate,Mark,0
+Graph coloring task,Q5creativity_input_1,Mark,NA
+Graph coloring task,Q6type_5_cc,Mark,1
+Graph coloring task,Q7type_7_battle,Mark,0
+Graph coloring task,Q8type_8_performance,Mark,1
+Graph coloring task,Q9divisible_unitary,Mark,0
+Graph coloring task,Q10maximizing,Mark,0
+Graph coloring task,Q11optimizing,Mark,1
+Graph coloring task,Q13outcome_multip,Mark,0
+Graph coloring task,Q14sol_scheme_mul,Mark,0
+Graph coloring task,Q15dec_verifiability,Mark,1
+Graph coloring task,Q16shared_knowledge,Mark,1
+Graph coloring task,Q17within_sys_sol,Mark,1
+Graph coloring task,Q18ans_recog,Mark,1
+Graph coloring task,Q19time_solvability,Mark,1
+Graph coloring task,Q20type_3_type_4,Mark,1
+Graph coloring task,Q21intellective_judg_1,Mark,NA
+Graph coloring task,Q22confl_tradeoffs,Mark,1
+Graph coloring task,Q23ss_out_uncert,Mark,1
+Graph coloring task,Q24eureka_question,Mark,0
+Shopping plan,Q1concept_behav,Mark,0
+Shopping plan,Q2intel_manip_1,Mark,NA
+Shopping plan,Q3type_1_planning,Mark,1
+Shopping plan,Q4type_2_generate,Mark,0
+Shopping plan,Q5creativity_input_1,Mark,NA
+Shopping plan,Q6type_5_cc,Mark,0
+Shopping plan,Q7type_7_battle,Mark,0
+Shopping plan,Q8type_8_performance,Mark,0
+Shopping plan,Q9divisible_unitary,Mark,1
+Shopping plan,Q10maximizing,Mark,1
+Shopping plan,Q11optimizing,Mark,0
+Shopping plan,Q13outcome_multip,Mark,3
+Shopping plan,Q14sol_scheme_mul,Mark,0
+Shopping plan,Q15dec_verifiability,Mark,1
+Shopping plan,Q16shared_knowledge,Mark,1
+Shopping plan,Q17within_sys_sol,Mark,1
+Shopping plan,Q18ans_recog,Mark,0
+Shopping plan,Q19time_solvability,Mark,1
+Shopping plan,Q20type_3_type_4,Mark,1
+Shopping plan,Q21intellective_judg_1,Mark,NA
+Shopping plan,Q22confl_tradeoffs,Mark,1
+Shopping plan,Q23ss_out_uncert,Mark,1
+Shopping plan,Q24eureka_question,Mark,0
+Room assignment task,Q1concept_behav,Mark,0
+Room assignment task,Q2intel_manip_1,Mark,NA
+Room assignment task,Q3type_1_planning,Mark,1
+Room assignment task,Q4type_2_generate,Mark,0
+Room assignment task,Q5creativity_input_1,Mark,NA
+Room assignment task,Q6type_5_cc,Mark,0
+Room assignment task,Q7type_7_battle,Mark,0
+Room assignment task,Q8type_8_performance,Mark,0
+Room assignment task,Q9divisible_unitary,Mark,1
+Room assignment task,Q10maximizing,Mark,1
+Room assignment task,Q11optimizing,Mark,1
+Room assignment task,Q13outcome_multip,Mark,3
+Room assignment task,Q14sol_scheme_mul,Mark,0
+Room assignment task,Q15dec_verifiability,Mark,1
+Room assignment task,Q16shared_knowledge,Mark,1
+Room assignment task,Q17within_sys_sol,Mark,3
+Room assignment task,Q18ans_recog,Mark,1
+Room assignment task,Q19time_solvability,Mark,3
+Room assignment task,Q20type_3_type_4,Mark,3
+Room assignment task,Q21intellective_judg_1,Mark,NA
+Room assignment task,Q22confl_tradeoffs,Mark,1
+Room assignment task,Q23ss_out_uncert,Mark,1
+Room assignment task,Q24eureka_question,Mark,0
