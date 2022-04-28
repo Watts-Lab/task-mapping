@@ -36,8 +36,8 @@ df.task_name_to_index <- cbind(all_tasks, rep(1:length(all_tasks))) %>%
                                   task_num = strtoi(task_num)
                                 )
 
-task_mapping_irr_survey_id <- surveys$id[2] # 2 is the RA version of the survey
-#task_mapping_irr_survey_id <- surveys$id[5] # 5 is the MTurk version of the survey
+#task_mapping_irr_survey_id <- surveys$id[2] # 2 is the RA version of the survey
+task_mapping_irr_survey_id <- surveys$id[5] # 5 is the MTurk version of the survey
 ```
 
 # Define the task map and the main questions
@@ -463,132 +463,36 @@ if(task_mapping_irr_survey_id == surveys$id[2]){
     question_name %in% main_questions
   ) %>% ungroup() %>%
   select(task_name, question_name, name, value) %>%
-    write_csv('linnemilymark_ground_truth.csv')
+    write_csv('linnemilymabdullah_ground_truth.csv')
 }
 ```
 
-# Implement David Karger's Algorithm
+# Set up Data Export for Karger's Algo
 
 ```{r}
-# df.karger <- df.all_ratings_raw %>% filter(question_name  %in% main_questions) %>% filter(
-#   question_name != 'Q2intel_manip_1' &
-#     question_name != 'Q21intellective_judg_1' &
-#     question_name != 'Q5creativity_input_1'
-# ) %>%
-#   mutate(
-#     value = recode(
-#       value,
-#       "Mental" = -1,
-#       "Physical" = 1,
-#       #"Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
-#       "No" = -1,
-#       "Yes" = 1
-#     )
-#   ) %>% ungroup() %>%
-#   select(name, question_name, task_name, value)
-# 
-# df.karger
+df.karger <- df.all_ratings_raw %>% filter(question_name  %in% main_questions) %>% filter(
+  question_name != 'Q2intel_manip_1' &
+    question_name != 'Q21intellective_judg_1' &
+    question_name != 'Q5creativity_input_1'
+) %>%
+  mutate(
+    value = recode(
+      value,
+      "Mental" = -1,
+      "Physical" = 1,
+      #"Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+      "No" = -1,
+      "Yes" = 1
+    )
+  ) %>% ungroup() %>%
+  select(name, question_name, task_name, value)
+
+df.karger %>% write_csv('df_for_karger.csv')
 ```
 
 
-```{r}
-# # Define Initial Variables
-# tasks = c("Word completion given starting letter", "Graph coloring task", "Shopping plan", "Room assignment task")
-# questions <- unique(df.karger$question_name)
-# names <- unique(df.karger$name)
-# 
-# K <- 100 # number of iterations
-# 
-# # for(i in 1:length(tasks)){ # separately do this for every task --- questions are nested by task
-#   i = 1 # test first task for now  
-#   # INIT --- set up A, X, and Y
-#   
-#   # A is the question x worker matrix
-#   A <- df.karger %>% filter(task_name == tasks[3]) %>% select(-task_name) %>%
-#     pivot_wider(names_from = "name", values_from = "value") %>% select(-question_name)
-#   
-#   
-#   
-#   
-#   X <- df.karger %>% filter(task_name == tasks[i]) %>% select(-c(task_name)) %>%
-#     mutate(
-#       value = recode(value, "-1" = 0)
-#     ) %>% pivot_wider(names_from = "name", values_from = "value") %>% 
-#     select(-question_name) %>% rowMeans(na.rm = T)
-#   
-#   
-#   
-#   
-#   # X is the log likelihood of the task being positive
-#   X <- log(X+0.00000000000000000001) # add a very small number in case likelihood is 0
-#   
-#   
-#   # Y is the length of all unique edges -- equal to number of cells in A with no NA
-#   num_unique_edges <- dim(A)[1] * dim(A)[2] - sum(is.na(A))
-#   # Y is the reliability of the worker
-#   Y <- rnorm(num_unique_edges,1,1)
-#   
-#   # UPDATE THINGS!
-#   for(iter in 1:K){
-#     print(iter)
-#     
-#     # update X (log likelihood of positivity)
-#     for(xi in 1:length(X)){
-#       
-#       x_update <- c()
-#       
-#       for (yi in 1:length(Y)) {
-#         name <- toString(names[yi])
-#         
-#         # get only the tasks that the worker did (neighborhood)
-#         na_indices <- which(is.na(A %>% select(!!name)))
-#         
-#         # sum up the responses of his colleagues
-#         Ai <- A
-#         Yi <- Y
-#         if (length(na_indices) > 0) {
-#           # drop NA indices in Y so that dims match
-#           Ai <- A[, -na_indices]
-#           Yi <- Y[-na_indices]
-#         }
-#         # focus on the focal worker
-#         Ai <- A %>% select(!!name) %>% as.matrix()
-#         Yi <- Yi[yi]
-#         
-#         x_update <- c(x_update,sum(Ai*Yi, na.rm = T))
-#       }
-#       X[xi] <- sum(x_update, na.rm = T)
-#     }
-#     
-#     # update Y (reliability of each worker)
-#     for(yi in 1:length(X)){
-#       y_update <- c()
-#       for (xi in 1:length(X)) {
-#         q <- toString(questions[xi])
-#         
-#         # get only the tasks that the worker did (neighborhood)
-#         na_indices <- which(is.na((t(A) %>% as.data.frame())[,xi]))
-#         
-#         # sum up the responses of his colleagues
-#         Ai <- (t(A) %>% as.data.frame())
-#         Xi <- X
-#         if (length(na_indices) > 0) {
-#           # drop NA indices in Y so that dims match
-#           Ai <- A[, -na_indices]
-#           Xi <- X[-na_indices]
-#         }
-#         # focus on the focal worker
-#         Ai <- A[,xi] %>% as.matrix()
-#         Xi <- Xi[xi]
-#         
-#         y_update <- c(y_update,sum(Ai*Xi, na.rm = T))
-#       }
-#       
-#       Y[yi] <- sum(y_update, na.rm = T)
-#     }
-#   }
-# # }
-```
+
+
 
 # Look at Confidence
 ```{r, fig.width= 18}
