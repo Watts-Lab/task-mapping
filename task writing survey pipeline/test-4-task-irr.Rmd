@@ -36,8 +36,8 @@ df.task_name_to_index <- cbind(all_tasks, rep(1:length(all_tasks))) %>%
                                   task_num = strtoi(task_num)
                                 )
 
-#task_mapping_irr_survey_id <- surveys$id[2] # 2 is the RA version of the survey
-task_mapping_irr_survey_id <- surveys$id[5] # 5 is the MTurk version of the survey
+task_mapping_irr_survey_id <- surveys$id[2] # 2 is the RA version of the survey
+#task_mapping_irr_survey_id <- surveys$id[5] # 5 is the MTurk version of the survey
 ```
 
 # Define the task map and the main questions
@@ -249,25 +249,6 @@ if(task_mapping_irr_survey_id == surveys$id[2]){
   df.james.bayesian %>% write_csv('./irr-analysis/within-lab-4-task-irr.csv')
 }else{
   df.james.bayesian %>% write_csv('./irr-analysis/mturk-4-task-irr.csv')
-}
-```
-
-Export just Emily & Linnea's "ground truth" data 
-```{r}
-if(task_mapping_irr_survey_id == surveys$id[2]){
-  df.all_ratings_raw %>% filter(name == "Emily" | name == "Linnea") %>%
-  mutate(value = recode(value,
-                     "Mental" = 0,
-                     "Physical" = 1,
-                     "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
-                     "No" = 0,
-                     "Yes" = 1
-                   )) %>%
-  filter(
-    question_name %in% main_questions
-  ) %>% ungroup() %>%
-  select(task_name, question_name, name, value) %>%
-    write_csv('linnemily_ground_truth.csv')
 }
 ```
 
@@ -487,7 +468,7 @@ df.karger <- df.all_ratings_raw %>% filter(question_name  %in% main_questions) %
   ) %>% ungroup() %>%
   select(name, question_name, task_name, value)
 
-df.karger %>% write_csv('df_for_karger.csv')
+#df.karger %>% write_csv('df_for_karger.csv')
 ```
 
 
