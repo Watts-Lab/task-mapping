@@ -37,7 +37,7 @@ df.task_name_to_index <- cbind(all_tasks, rep(1:length(all_tasks))) %>%
                                 )
 
 task_mapping_irr_survey_id <- surveys$id[2] # 2 is the RA version of the survey
-#task_mapping_irr_survey_id <- surveys$id[5] # 5 is the MTurk version of the survey
+#task_mapping_irr_survey_id <- surveys$id[6] # 6 is the MTurk version of the survey
 ```
 
 # Define the task map and the main questions
@@ -567,7 +567,7 @@ Look at qualitative feedback about questions
 ```{r}
 df.all_ratings_raw %>%
   filter(question_name %in% feedback_questions) %>%
-  arrange(question_name) #%>% View()
+  arrange(question_name) #%>% write_csv("./task_mapping_feedback.csv")
 ```
 
 

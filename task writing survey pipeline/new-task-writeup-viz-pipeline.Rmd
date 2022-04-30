@@ -132,7 +132,7 @@ We will use `all_tasks` moving forward to ensure both the original and the manua
 
 # Generate a CSV with task names in one column and HTML in a second column
 This will enable us to paste directly into the task mapping survey.
-```{r}
+```{r message=FALSE, warning=FALSE}
 df.task_map_format <- data.frame(matrix(ncol = 2, nrow = 0))
 colnames(df.task_map_format) <- c('Task Name', 'Task Writeup')
 
@@ -149,6 +149,13 @@ for(i in 1:length(all_tasks)){
       str_remove("<h2>.*GitHub Link.*") %>%
       str_remove("<a href=.*</a>") %>%
       str_remove("<p></p>")
+  
+  # Replace the words "stimulus complex" and "goal directives"
+  txt_html <- str_replace_all(txt_html, "1. Stimulus Complex", "1. Set-Up") %>%
+                str_replace_all("2. Goal Directives", "2. Objective / Goal")
+  
+  # Remove the Allowed Group Processes
+  txt_html <- str_split(txt_html, "<h2>3.")[[1]][1]
   
   # remove line breaks
   txt_html <- str_replace_all(txt_html, "[\r\n]" , "")
@@ -171,6 +178,11 @@ Write mapped tasks into HTML for rating
 ```{r}
 df.task_map_format %>% write_csv('./html/task-htmls.csv')
 ```
+
+
+
+
+---------------------------------------------------------
 
 
 # Look at Survey Results for Task MAPPING
