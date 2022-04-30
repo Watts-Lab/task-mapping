@@ -3,10 +3,10 @@
 Mapped by: sarikasu 
 
 ## 1. Stimulus Complex 
-Participants are given a starting letter and ending letter for words. For example, the start letter could be "S" and the end letter could be "N."
+Participants are given a starting letter and ending letter for words. For example, the start letter could be "S" and the end letter could be "N." The starting and ending letters are selected such that there is always a nonzero set of English words that can be created.
 
 ## 2. Goal Directives 
-The goal is to generate a list of valid English words using the starting and ending letter provided. Using the previous example, participants could be asked to generate words like "SPIN," which starts with "S" and ends with "N." Participants must generate the maximum number of valid words they can within a fixed amount of time.
+The goal is to generate a list of valid English words using the starting and ending letter provided. Using the previous example, participants could be asked to generate words like "SPIN," which starts with "S" and ends with "N." Participants must generate the maximum number of valid words they can within a fixed amount of time. Nonvalid words will be rejected by the system.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
