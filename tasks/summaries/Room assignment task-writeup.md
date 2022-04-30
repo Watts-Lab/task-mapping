@@ -6,7 +6,9 @@ Mapped by: paniukhina
 Participants are given a set of people (students), rooms, and rules (constraining conditions).
 
 ## 2. Goal Directives 
-The goal is to assign students to rooms within a fixed amount of time in order to maximize the students' utility as much as possible while also respecting all of the constraining conditions (for example, one rule might say that certain people are not allowed to be in the same room). Students get a specified amount of utility from being assigned to a particular room.
+The goal is to assign students to rooms within a fixed amount of time in order to maximize the students' utility as much as possible while also respecting all of the constraining conditions (for example, one rule might say that certain people are not allowed to be in the same room). Students get a specified amount of utility from being assigned to a particular room, which translates to points in the game.
+
+Participants will be shown the running total of how many points their current submission has earned, but they will not be notified if they have achieved the optimal arrangement. If participants' submission violates some of the contraining conditions, they will receive a score penalty.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
