@@ -1,0 +1,21 @@
+question_name,Word completion given starting letter,Graph coloring task,Shopping plan,Room assignment task
+Q10maximizing,1,0,1,1
+Q11optimizing,0,1,1,1
+Q13outcome_multip,0,1,1,1
+Q14sol_scheme_mul,0,0,0,0
+Q15dec_verifiability,1,1,1,1
+Q16shared_knowledge,0,1,1,1
+Q17within_sys_sol,1,1,1,1
+Q18ans_recog,1,1,1,1
+Q19time_solvability,1,1,1,1
+Q1concept_behav,0,0,0,0
+Q20type_3_type_4,1,1,1,1
+Q22confl_tradeoffs,0,0,1,1
+Q23ss_out_uncert,0,1,1,1
+Q24eureka_question,0,0,0,0
+Q3type_1_planning,0,1,1,1
+Q4type_2_generate,1,0,0,0
+Q6type_5_cc,0,0,0,0
+Q7type_7_battle,0,0,0,0
+Q8type_8_performance,0,1,0,0
+Q9divisible_unitary,1,0,1,0
