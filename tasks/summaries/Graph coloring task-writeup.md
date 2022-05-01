@@ -7,7 +7,7 @@ Participants are given one or more "graph coloring problems". These are pictures
 
 For context, these look like many different nodes (points), which are connected by various edges. Imagine, for example, a picture of a social network: each person in the network is a "node," and each of their friends is an "edge."
 
-In this case, all participants have access to and can interact with a shared graph. Participants will also be given a limited set of colors, with a sufficient number of colors to complete the task successfully.
+In this case, all participants have access to and can interact with a shared graph. Participants will also be given a limited set of colors, with a larger number of colors than the minimum required to complete the task successfully.
 
 ## 2. Goal Directives 
 The goal is to use the colors given to "color" the entire network without conflicts. This means that participants need to assign each node in the graph a color, ensuring that no two connected nodes share the same color. Using our social network example, if Person A and Person B are friends (which means they are connected), they cannot be assigned the same color. Participants must successfully color all nodes and resolve all conflicts within a specified amount of time, or receive no credit.
