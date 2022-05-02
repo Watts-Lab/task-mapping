@@ -149,7 +149,7 @@ filter(grepl("tasks/summaries/", path))
 
 ```{r message=FALSE, warning=FALSE}
 df.task_map_format <- data.frame(matrix(ncol = 4, nrow = 0))
-colnames(df.task_map_format) <- c('Task Name', 'Task Writeup', 'GitHub Blob URL', 'Generating Script URL')
+colnames(df.task_map_format) <- c('task', 'html', 'github', 'script')
 
 for(i in 1:length(all_tasks)){
   task_name <- all_tasks[i]
@@ -186,10 +186,10 @@ for(i in 1:length(all_tasks)){
               str_replace_all("</h1>", "</h2>")
   
   new_row = data.frame(
-    'Task Name'= task_name,
-    'Task Writeup' =  txt_html,
-    'GitHub Blob URL' = blob_url,
-    'Generating Script URL' = thisscript.url
+    'task'= task_name,
+    'html' =  txt_html,
+    'github' = blob_url,
+    'script' = thisscript.url
   )
   
   df.task_map_format <- rbind(df.task_map_format, new_row)
