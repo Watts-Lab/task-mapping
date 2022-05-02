@@ -27,7 +27,7 @@ library(tidyverse)
 ```{r}
 surveys <- all_surveys()
 
-task_writing_survey_id <- surveys$id[3]
+task_mapping_irr_survey_id <- (surveys %>% filter(name == "Task Mapping Survey [NEW]"))$id
 
 df.survey_results <- fetch_survey(
   surveyID = task_writing_survey_id,
