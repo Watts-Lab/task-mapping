@@ -138,13 +138,18 @@ This will enable us to paste directly into the task mapping survey.
 
 ```{r}
 req <- httr::GET("https://api.github.com/repos/Watts-Lab/task-mapping/git/trees/master?recursive=1")
+df.thisscript <- jsonlite::fromJSON(content(req, "text"))$tree %>% 
+filter(grepl("task\ writing\ survey\ pipeline/new-task-writeup-viz-pipeline.Rmd", path))
+
+thisscript.url <- df.thisscript$url
+
 df.blobs <- jsonlite::fromJSON(content(req, "text"))$tree %>% 
 filter(grepl("tasks/summaries/", path))
 ```
 
 ```{r message=FALSE, warning=FALSE}
-df.task_map_format <- data.frame(matrix(ncol = 3, nrow = 0))
-colnames(df.task_map_format) <- c('Task Name', 'Task Writeup', 'GitHub Blob URL')
+df.task_map_format <- data.frame(matrix(ncol = 4, nrow = 0))
+colnames(df.task_map_format) <- c('Task Name', 'Task Writeup', 'GitHub Blob URL', 'Generating Script URL')
 
 for(i in 1:length(all_tasks)){
   task_name <- all_tasks[i]
@@ -183,7 +188,8 @@ for(i in 1:length(all_tasks)){
   new_row = data.frame(
     'Task Name'= task_name,
     'Task Writeup' =  txt_html,
-    'GitHub Blob URL' = blob_url
+    'GitHub Blob URL' = blob_url,
+    'Generating Script URL' = thisscript.url
   )
   
   df.task_map_format <- rbind(df.task_map_format, new_row)
