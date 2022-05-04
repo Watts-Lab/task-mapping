@@ -1,3 +1,3 @@
 ﻿question,text,answer_choices,answer_type
-elaboration,"(Optional) Did you have any trouble answering the previous question, or wish for additional clarification in order to make answering the question easier? If so, please tell us more.",,text
+elaboration,"(Optional) Did you have any trouble answering the previous question, or wish for additional clarification in order to make answering the question easier? If so, please tell us more.",text,text
 confidence,How confident do you feel in your answer?,Not at all confident | Not confident | Neutral | Confident | Very confident,ordinal
