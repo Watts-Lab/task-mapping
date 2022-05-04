@@ -1,0 +1,100 @@
+name,task_num,question_name,value,task_name
+Joshua,16,Q10maximizing_feedbk,"The nature of the task isn't the case, but the final criteria can be perceived as such",Shopping plan
+Linnea,22,Q10maximizing_feedbk,Goal directive does not specify - it could be get as many points as possible,Room assignment task
+Mark,22,Q10maximizing_feedbk,Again depends a bit how the incentives work on the specific implementation and instance.,Room assignment task
+Emily,16,Q11optimizing_feedbk,I guess the specified standard is your list --- you have to follow the constraints,Shopping plan
+Linnea,22,Q11optimizing_feedbk,Goal directive does not specify - it could be to only find the optimal exact solution or 100 points,Room assignment task
+Abdullah,8,Q11optimizing_feedbk,"I found the later parts of the elaboration ""Job assignments that make success a function of how closely the individual or group approximates a predetermined 'best' or correct outcome may be called optimizing tasks. For example, the goal may be to generate exactly 10 ideas -- no more or no less, or to exactly reproduce something (such as a task where people have to exactly copy a work of art)"" to be more useful than the earlier parts, so consider switching them.",Word completion given starting letter
+Abdullah,15,Q11optimizing_feedbk,"I found this difficult to answer. Satisfying constraints is ""achieving a specified goal""?",Graph coloring task
+Abdullah,16,Q11optimizing_feedbk,"""The goal is not to **exclusively** maximize"" as you can have tasks that are both. Also, see my comment about partial credit.",Shopping plan
+Abdullah,22,Q11optimizing_feedbk,that's why it is a constraint satisfaction and optimization problem.,Room assignment task
+Joshua,22,Q13out_mult_feedbk,In the game where all information and rules are disclosed,Room assignment task
+Jessie,8,Q13out_mult_feedbk,"The instructions on the previous page should be divided into several paragraphs, making it easier to read.",Word completion given starting letter
+Linnea,8,Q13out_mult_feedbk,Well maybe - for any letter pair there is a finite number of words to come up with. So that would be best,Word completion given starting letter
+Linnea,16,Q13out_mult_feedbk,Stimulus complex does not specify if ties are possible,Shopping plan
+Linnea,22,Q13out_mult_feedbk,Stimulus complex does not specify if there are two bests or ties,Room assignment task
+Emma,15,Q13out_mult_feedbk,I'm not sure if there is more than one correct answer that satisfies the requirements of the task.,Graph coloring task
+Emma,22,Q13out_mult_feedbk,I am not sure if there are multiple scenarios/assignments that satisfies all constraints and optimizes utility,Room assignment task
+Mark,8,Q13out_mult_feedbk,"Assuming a common dictionary
+
+It might be worth this being an aspect of the specification, i.e., what counts as a word?",Word completion given starting letter
+Mark,16,Q13out_mult_feedbk,It depends on the instance,Shopping plan
+Abdullah,8,Q13out_mult_feedbk,"I found myself re-reading the questions a couple of times to make sure that I can select the right. I think it will be helpful to make the answers more elaborate: e.g., “No, this task does not have only one “best solution”, “Yes, this task has only one best solution”",Word completion given starting letter
+Joshua,15,Q14sol_s_mult_fdbk,depending on the network,Graph coloring task
+Joshua,22,Q14sol_s_mult_fdbk,could have been also a yes depending on the possible permutation,Room assignment task
+Jessie,22,Q14sol_s_mult_fdbk,"Does the words ""a specified course of action"" mean the description of the task has to clearly state the steps of doing the task/solving the problem?",Room assignment task
+Emma,16,Q14sol_s_mult_fdbk,"I thought the use of ""Answer YES"" and ""Answer NO"" bullet points were helpful. It may be useful to include this format in other questions.",Shopping plan
+Mark,15,Q14sol_s_mult_fdbk,The examples are great here.,Graph coloring task
+Abdullah,8,Q14sol_s_mult_fdbk,"Why are we talking about ""groups"" here? In the room assignment, it could be ""resolve constraints first"" and then ""optimize students"" or vice versa, or a combination of resolving constraints while optimizing. In the world completion, it could be starting with short words and then longer ones or the other way around, etc. Individuals and groups can do all tasks, so the questions should work for both cases...",Word completion given starting letter
+Abdullah,15,Q14sol_s_mult_fdbk,"Again, why are we talking about ""Teams"".. what about if an individual is doing the task? they could color all of the nodes in the sequential matter.. start from a random coloring and then fix conflict. They can fix conflict as they go, etc. ..",Graph coloring task
+Joshua,15,Q15d_verif_feedbk,given all information and rules are given,Graph coloring task
+Joshua,22,Q15d_verif_feedbk,only if all possible solutions are shown,Room assignment task
+Emily,16,Q16shared_kno_feedbk,"Sort of: problems like the shopping plan can be FORMULATED as a formal model, but not everyone will actually do it that way (probably very few people will, in fact). Therefore, it's not clear whether the answer to this should be ""yes"" or ""no.""",Shopping plan
+Joshua,16,Q16shared_kno_feedbk,This task can be solved mathematically by listing down all possible paths & utility/tradeoffs to a given grocery store,Shopping plan
+Joshua,22,Q16shared_kno_feedbk,this problem can be solved mathematically if all data input is fed to the model,Room assignment task
+Jessie,16,Q16shared_kno_feedbk,"Does shared knowledge include getting all the same relevant materials (grocery lists, maps)?",Shopping plan
+Abdullah,8,Q16shared_kno_feedbk,"Yes, we share the formal system of alphabet",Word completion given starting letter
+Abdullah,15,Q16shared_kno_feedbk,formal system: color and sptial system,Graph coloring task
+Abdullah,22,Q16shared_kno_feedbk,"number system (for the utility), logical constraints (A & B can't be together), and spatial system (which room is ""next"" to which other room).",Room assignment task
+Joshua,15,Q17within_sys_feedbk,friendships info is not given,Graph coloring task
+Joshua,16,Q17within_sys_feedbk,quality and price aren't provided,Shopping plan
+Joshua,22,Q17within_sys_feedbk,utility and rules must be given,Room assignment task
+Linnea,15,Q17within_sys_feedbk,This depends on whether it is solvable. There may be fewer colors than possible to meet all the conditions.,Graph coloring task
+Mark,15,Q17within_sys_feedbk,This is a little tricky because it's possible to specify this problem as a trick question depending on the properties of the network and the number of colors provided. I'm assuming that is not the case.,Graph coloring task
+Mark,22,Q17within_sys_feedbk,Depends on the instance.,Room assignment task
+Joshua,15,Q18ans_recog_feedbk,but there could be more than one correct answer,Graph coloring task
+Joshua,16,Q18ans_recog_feedbk,"it's only a yes, if all possible answers and corresponding payoffs are laid out",Shopping plan
+Joshua,22,Q18ans_recog_feedbk,unless all possible answers are presented,Room assignment task
+Mark,16,Q18ans_recog_feedbk,Because suboptimal solutions may be proposed.,Shopping plan
+Joshua,15,Q19time_solv_feedbk,not all information is given,Graph coloring task
+Joshua,22,Q19time_solv_feedbk,because time is limited,Room assignment task
+Mark,15,Q19time_solv_feedbk,"Again, the task description leaves it a little hazy about if there are potential trick aspects to this question. i.e., a graph that makes it impossible to answer with any number of colors.",Graph coloring task
+Mark,22,Q19time_solv_feedbk,"Some instances may not be solvable, depending on the specifics of the incentive calculation",Room assignment task
+Mark,15,Q1concept_beh_feedbk,"This is tricky, do we consider using a mouse as mental or physical effort? If we are measuring amount of effort exerted, then of course bricks are much harder than moving a mouse, but if we are considering the abstract nature of the tasks, moving one kind of item to a simple destination, or moving another kind of item to a destination that is chosen on the fly, one could imagine that it is less clear.",Graph coloring task
+Mark,16,Q1concept_beh_feedbk,Might be worth explaining what a UX for 'go to store' might mean here. That certainly sounds very physical.,Shopping plan
+Mark,22,Q1concept_beh_feedbk,"Again, this task has a precise motor aspect, which is small in scale but required, and requires dexterity.",Room assignment task
+Joshua,16,Q21int_jud_feedbk,only if all criteria are quantitative,Shopping plan
+Joshua,22,Q21int_jud_feedbk,when all utility and rules data are given,Room assignment task
+Abdullah,16,Q21int_jud_feedbk,"Because the ""quality"" dimension might be subjective. But price and distance are objective.",Shopping plan
+Joshua,22,Q22con_trade_feedbk,"because there's only a single criterion, utility",Room assignment task
+Linnea,15,Q22con_trade_feedbk,Trade off in that if you pick color A for one node you can’t pick it for another — you have trade offs in your approach,Graph coloring task
+Mark,15,Q22con_trade_feedbk,"This is subtle, there are causal dependencies of decisions, which means that each decision is made on the basis of prior decisions made by oneself or others. e.g., changing color might break existing things, is that worth it? 
+
+That said, these don't look like traditional trade offs or like the example, so I could imagine arguing the other direction too.",Graph coloring task
+Joshua,16,Q23ss_outc_u_feedbk,Unless they compute all possible responses,Shopping plan
+Joshua,22,Q23ss_outc_u_feedbk,unless they jot down all possible permutation,Room assignment task
+Linnea,8,Q23ss_outc_u_feedbk,They might be competing against others - they won’t know if they got the max number of words,Word completion given starting letter
+Emma,8,Q23ss_outc_u_feedbk,"I can understand that there is uncertainty in not knowing if one remembered/wrote down all of the possible words, but they can be certain about the words they did write down. I had some trouble applying this question to the task because of this.",Word completion given starting letter
+Mark,15,Q23ss_outc_u_feedbk,This depends a lot on the UI and level of the task. Since its not entirely clear what they see its hard to know if they would have awareness of this type.,Graph coloring task
+Abdullah,22,Q23ss_outc_u_feedbk,hmm this one depends on whether we tell them that they found the optimal solution or not. This should be part of the stimulus complex.,Room assignment task
+Jessie,16,Q24eureka_q_fdbk,"If the task does not need a ""trick"" at all, how should we answer this question?",Shopping plan
+Emma,8,Q24eureka_q_fdbk,"It might be useful to provide an example of when someone should choose ""no"" for this question.",Word completion given starting letter
+Mark,15,Q2intel_manip_fdbk,"Its hard to know where things lie on this ratio. For example, where is moving bricks? Its certainly not 1, but is it .6 or .9 or something else? 
+
+I guess it might be valuable to have examples for low, mid (~ .5) and high.",Graph coloring task
+Mark,22,Q2intel_manip_fdbk,"Compared with other scale questions, this one is less interpretable. Others have something like ""1 is ... and 0 is ..."" as well as more examples at each end. I think it's worth adding that in here too.",Room assignment task
+Abdullah,8,Q2intel_manip_fdbk,"lol - it took me a minute to figure out that the line was for the slider, as opposed to an option for horizontal scroll.  I think this question can be simplified for the Turkers by explicitly saying that moving the brick from A to B should be 1 and calculating the top is a 0.",Word completion given starting letter
+Mark,15,Q3type_1_feedback,"I think a lot of people wouldn't think ""planning task"" exclusively means ""a task in which a plan is explicitly constructed and recorded"". If I plan a meal, but instead of writing things down I just start cooking, did I do a planning task, or just a cooking task, or something else?
+
+I know this is part of the definition as constructed, but it almost feels misleading to refer to it in this way.",Graph coloring task
+Mark,22,Q3type_1_feedback,"Again, this is a strange question. Are we creating a plan as in a proposal of where to put students? I think a literal interpretation of the question would suggest yes. But it could be read another way too.",Room assignment task
+Mark,15,Q5creativity_feedbck,"The examples here are useful, I still wonder if adding any points on the range would help?",Graph coloring task
+Abdullah,8,Q5creativity_feedbck,"I changed my mind about the ""no default value"" for the slider. Maybe we try 0.5 and it is fine if it anchors people (so they won't go to the extremes of 0 and 1 (as long as the anchoring bias is balanced across the two classes). Also, I would suggest in the elaboration to use the examples from the previous question and giving them values here.",Word completion given starting letter
+Jessie,22,Q6type_5_feedback,"I am not sure whether maximizing utility of the students could conflict with the constraining conditions. If it could, then people could have have differences in opinions.",Room assignment task
+Emma,16,Q6type_5_feedback,"In explaining the question (for example, the geological survey team), it might be good to emphasize that this resolution of different points of view can be for a collective goal (in the geological survey example, that collective goal would be to make recommendations as a group). I think it might make the ask clearer if explained as a step toward a collective goal/action.",Shopping plan
+Mark,15,Q6type_5_feedback,"This is a little tricky based only on the limited description but I think people will understand it as participants having somewhat independent viewpoints depending on the level of the task. If that feels like the wrong intuition, I think we need to adjust the task description to reinforce the goals.",Graph coloring task
+Mark,22,Q6type_5_feedback,"Might be clearer to say ""resolve participant's differences of opinion"" because the task is to resolve people's differences of opinion, just not the participants'.",Room assignment task
+Abdullah,22,Q6type_5_feedback,"Is there a way to make this question work for ""individuals"" as opposed to only the ""group"" version?",Room assignment task
+Joshua,8,Q7type_7_feedback,Unless arranged otherwise,Word completion given starting letter
+Abdullah,8,Q7type_7_feedback,"this one seems a bit tricky. Because it could be a win/lose against the researchers who will have to pay the players based on their performance (e.g., the more correct words the player generates, the more the ""game designer"" will have to pay as bonuses). Should we add to the elaboration to exclude this possible interpretation?",Word completion given starting letter
+Joshua,16,Q8type_8_feedback,Standard = highest score for all parameters,Shopping plan
+Jessie,22,Q8type_8_feedback,It's unclear whether there is a minimum threshold of total utility needed for participants to pass/be successful in the task,Room assignment task
+Linnea,22,Q8type_8_feedback,Unspecified in goal directives — do you only win if you get the optimal solution? Or are you just maximizing points?,Room assignment task
+Emma,16,Q8type_8_feedback,It may be useful to give an example of the other option of task type (the more precise task) rather than 3 examples of only the all-or-nothing task type.,Shopping plan
+Mark,22,Q8type_8_feedback,"This is unclear given the limited description, for example, if I don't assign everyone, do I get a score of 0 or do I get a score of the people who I was able to assign? 
+
+So, I think the answer is consistently no, but I'm more generally uncertain if theres a base level threshold, then should this be yes?",Room assignment task
+Abdullah,16,Q8type_8_feedback,"I am assuming you can get partial credit. I think this will need to be added to the ""goal directives"".. For example, ""The goal is to purchase as many high-quality items as possible in a fixed amount of time, and to get the highest number of points by considering tradeoffs between price, quality, and driving time... ***getting anything less than the maximum number of points will lead to partial credit*** or ***getting anything less than the maximum number of points will lead to no credit***"" We have to pick one!!",Shopping plan
+Abdullah,22,Q8type_8_feedback,"because you get partial credit for solutions that satisfy the constraints, even if not optimally optimizes the utility.",Room assignment task
+Abdullah,16,Q9div_unitary_feedbk,"I think this is really about the interdependence between task components as opposed to how people break them down (e.g., the group process).",Shopping plan
+Abdullah,22,Q9div_unitary_feedbk,highly interdependent task because of the constraints connecting different parts of the problem.,Room assignment task

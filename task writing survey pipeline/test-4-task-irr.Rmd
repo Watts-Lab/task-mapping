@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 #devtools::install_github("jmgirard/agreement")
 
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(agreement,stats,corrplot,irr,stringr,markdown,ggplot2,dplyr,tidyverse,qualtRics,DescTools, plotly)
+pacman::p_load(agreement,stats,corrplot,irr,stringr,markdown,ggplot2,dplyr,qualtRics,DescTools, plotly,tidyverse)
 ```
 
 # Pull in Survey Data
@@ -33,8 +33,8 @@ df.task_name_to_index <- cbind(all_tasks, rep(1:length(all_tasks))) %>%
                                   task_num = strtoi(task_num)
                                 )
 
-task_mapping_irr_survey_id <- (surveys %>% filter(name == "Task Mapping IRR on 4 Tasks"))$id #RA version of the survey
-#task_mapping_irr_survey_id <- (surveys %>% filter(name == "[MTURK VERSION] Task Mapping IRR on 4 Tasks"))$id #MTurk version of the survey
+#task_mapping_irr_survey_id <- (surveys %>% filter(name == "Task Mapping IRR on 4 Tasks"))$id #RA version of the survey
+task_mapping_irr_survey_id <- (surveys %>% filter(name == "[MTURK VERSION] Task Mapping IRR on 4 Tasks"))$id #MTurk version of the survey
 ```
 
 # Define the task map and the main questions
@@ -133,10 +133,10 @@ df.task_map <- df.task_map %>% # need to only filter for complete responses
 
 Handle the case of repeated measures --- take the last measure in case someone does it twice.
 ```{r}
-df.task_map <- df.task_map %>%
-  group_by(name) %>%
-  slice(n()) %>% ungroup() %>%
-  filter()
+# df.task_map <- df.task_map %>%
+#   group_by(name) %>%
+#   slice(n()) %>% ungroup() %>%
+#   filter()
 ```
 
 Filtering out all updates after Friday - when changes were made
@@ -532,39 +532,39 @@ df.task_map_from_filtered <- df.task_map_from_filtered %>% rownames_to_column("t
 
 # Version of map done with the filtered data (1 unreliable rater dropped)
 ```{r}
-set.seed(1)
-pca.filtered <- df.task_map_from_filtered %>%
-  select(-task_name) %>%
-  prcomp()
-
-p<-cbind(df.task_map_from_filtered,
-      pca.filtered$x) %>%
-  ggplot(
-    aes(x = PC1,
-    y = PC2,
-    label = task_name)
-  ) + geom_point() + geom_label(nudge_y = 0.05, size = 2) 
-
-ggsave(plot = p, filename = '/map-visuals/task-map-filtered-irr.png')
-
-combined_data <- cbind(df.task_map_from_filtered,
-      pca.filtered$x)
-
-plot_ly(
-  x = combined_data$PC1,
-  y = combined_data$PC2,
-  z = combined_data$PC3,
-  type = "scatter3d",
-  mode = "markers", # can use mode = "text"
-  text = combined_data$task_name
-)
+# set.seed(1)
+# pca.filtered <- df.task_map_from_filtered %>%
+#   select(-task_name) %>%
+#   prcomp()
+# 
+# p<-cbind(df.task_map_from_filtered,
+#       pca.filtered$x) %>%
+#   ggplot(
+#     aes(x = PC1,
+#     y = PC2,
+#     label = task_name)
+#   ) + geom_point() + geom_label(nudge_y = 0.05, size = 2) 
+# 
+# ggsave(plot = p, filename = '/map-visuals/task-map-filtered-irr.png')
+# 
+# combined_data <- cbind(df.task_map_from_filtered,
+#       pca.filtered$x)
+# 
+# plot_ly(
+#   x = combined_data$PC1,
+#   y = combined_data$PC2,
+#   z = combined_data$PC3,
+#   type = "scatter3d",
+#   mode = "markers", # can use mode = "text"
+#   text = combined_data$task_name
+# )
 ```
 
 Look at qualitative feedback about questions
 ```{r}
 df.all_ratings_raw %>%
   filter(question_name %in% feedback_questions) %>%
-  arrange(question_name) #%>% write_csv("./task_mapping_feedback.csv")
+  arrange(question_name) %>% write_csv("./task_mapping_feedback-mturk.csv")
 ```
 
 
