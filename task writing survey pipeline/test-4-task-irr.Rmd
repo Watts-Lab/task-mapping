@@ -18,13 +18,10 @@ pacman::p_load(agreement,stats,corrplot,irr,stringr,markdown,ggplot2,dplyr,tidyv
 
 # Pull in Survey Data
 ```{r}
-qualtrics_api_credentials(api_key = "91xPIrVaorSVR2vigYP4xG540WbapOLOyZoz90Ql",
-base_url = "upenn.co1.qualtrics.com",
-overwrite = TRUE)
 surveys <- all_surveys()
 
 task_htmls <- read_csv('./html/task-htmls.csv')
-all_tasks <- task_htmls$Task.Name
+all_tasks <- task_htmls$task
 
 df.task_name_to_index <- cbind(all_tasks, rep(1:length(all_tasks))) %>%
                                 as.data.frame() %>%
