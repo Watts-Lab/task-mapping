@@ -1,0 +1,121 @@
+---
+title: "pre-test-grading"
+author: "Emily Hu"
+date: "5/5/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(agreement,stats,corrplot,irr,stringr,markdown,ggplot2,dplyr,qualtRics,DescTools, plotly,tidyverse)
+```
+
+
+```{r}
+surveys <- all_surveys()
+pretest_id <- (surveys %>% filter(name == "[MTURK SCREENER] Task Mapping Pre-Test"))$id 
+```
+
+```{r}
+df.pretest <- fetch_survey(
+  surveyID = pretest_id,
+  save_dir = ".",
+  force_request = TRUE,
+  convert = FALSE,
+  label = FALSE
+)
+```
+
+
+Get a sense of how people scored
+
+```{r}
+df.pretest <- df.pretest %>%
+  mutate(
+    test1 = ifelse(Q13test1 == 1, 1, 0),
+    test2 = ifelse(Q7test2 == 0, 1, 0),
+    test3 = ifelse(Q3test3 == 1, 1, 0),
+    test4 = ifelse(Q10test4 == 1, 1,0),
+    test5 = ifelse(Q24test5 == 0, 1,0),
+    test6 = ifelse(Q11test6 == 1, 1,0),
+    test7 = ifelse(Q16test7 == 1, 1,0),
+    test8 = ifelse(Q14test8 == 0, 1,0),
+    test9 = ifelse(Q23test9 == 0, 1,0),
+    test10 = ifelse(Q1test10 == 0,1,0),
+    score = test1+test2+test3+test4+test5+test6+test7+test8+test9+test10
+  ) 
+
+df.pretest %>%
+  select(name, score) %>%
+  ggplot(aes(x = score)) +
+  geom_histogram() +
+    scale_x_discrete(limits = seq(1:10)) +
+    geom_vline(xintercept = mean(df.pretest$score), color = "red")+
+    theme_classic()
+```
+
+Get a sense of how long it took people to complete
+
+```{r}
+median(df.pretest$`Duration (in seconds)`)/60
+```
+
+
+```{r}
+mean_diff_from_truth <- df.pretest %>% select(test1,
+                      test2,
+                      test3,
+                      test4,
+                      test5,
+                      test6,
+                      test7,
+                      test8,
+                      test9,
+                      test10) %>% colMeans()
+
+1-mean_diff_from_truth
+```
+
+How did people do on these questions before?
+- Q1: 0.49
+- Q2: 0.45
+- Q3: 0.02
+- Q4: 0.27
+- Q5: 0.12
+- Q6: 0.31
+- Q7: 0.31
+- Q8: 0.33
+- Q9: 0.3
+- Q10: 0
+
+ORIGINAL AVG: 0.26
+
+```{r}
+mean(1-mean_diff_from_truth) # mean difference from truth ~ 0.2
+```
+
+How to grade this?
+1. Cutoff - 8/10 or better gets in?
+2. Cutoff + Gold (e.g., you need to have gotten the easy question (95% got it right))
+
+Number of people who pass condition 2
+```{r}
+df.pretest %>%
+  filter(score >= 8) %>%
+  filter(test10 == 1) %>%
+  select(name) %>%
+  mutate(
+    url = paste('https://task-robot.glitch.me/survey?workerID=', name, sep="")
+  ) %>% write_csv('qualified-workers.csv')
+```
+
+
+
+
+
+
+
+
+
