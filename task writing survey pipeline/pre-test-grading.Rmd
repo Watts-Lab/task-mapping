@@ -56,10 +56,32 @@ df.pretest %>%
     theme_classic()
 ```
 
+Average test score:
+```{r}
+mean(df.pretest$score)
+```
+
+
 Get a sense of how long it took people to complete
 
 ```{r}
 median(df.pretest$`Duration (in seconds)`)/60
+```
+
+
+Did people's means get to the truth?
+Correct answers: (1,0,1,1,0,1,1,0,0,0)
+```{r}
+df.pretest %>% select(Q13test1,
+                      Q7test2,
+                      Q3test3,
+                      Q10test4,
+                      Q24test5,
+                      Q11test6,
+                      Q16test7,
+                      Q14test8,
+                      Q23test9,
+                      Q1test10) %>% colMeans()
 ```
 
 
