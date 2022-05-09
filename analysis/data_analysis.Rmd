@@ -4,6 +4,8 @@ title: "Task mapping data analysis"
 
 ```{r setup, include=FALSE}
 library(irr)
+library(egg)
+library(grid)
 library(ggplot2)
 library(jsonlite)
 library(graphics)
@@ -15,7 +17,7 @@ library(dbscan)
 library(ecodist)
 library(fBasics)
 library(corrr)
-library(plyr)
+#library(plyr)
 library(cowplot)
 library(dplyr)
 library(tidyverse)
@@ -23,18 +25,196 @@ library(tidyverse)
 
 # Import Data
 ```{r}
-numerical_responses_matrix <- read_csv('../task_map_numeric.csv')
+numerical_responses_matrix <- read_csv('../archive/task_map_numeric.csv')
 
-ordinals <- read_csv('../ordinals.csv')
+ordinals <- read_csv('../archive/ordinals.csv')
 
-clean_responses <- read_csv("../cleaned_task_responses.csv")
+clean_responses <- read_csv("../archive/cleaned_task_responses.csv")
 
-agreed_responses <- read_csv("../task_map.csv")
+agreed_responses <- read_csv("../archive/task_map.csv")
 
 questions <- fromJSON("https://task-robot.glitch.me/questions/json")
 
 task_names <- agreed_responses$task
 ```
+
+# Get the original labels from individuals
+
+```{r}
+responses_clean_ind <- clean_responses %>%
+  filter(stage == "individual") %>%
+  select(c(task, user,
+           effort_mental,effort_physical,
+           generate_plan,generate_process,
+        generate_ideas,generate_creativity,resolve_opinion,resolve_perspectives,
+        resolve_information,resolve_data, 
+        conflict_cooperation,conflict_interests, 
+        external_adversary,external_standard,
+        solution_valid, solution_optimal, solution_objectivity,
+        task_divisibility, task_specialization,
+        measure_easy,measure_immediate)) %>%
+  pivot_longer(cols = -c(task, user),
+               names_to = "question") %>%
+   mutate(value = recode(value,
+                     "Strongly agree" = 5,
+                     "Somewhat agree" = 4,
+                     "Neither agree nor disagree" = 3,
+                     "Somewhat disagree" = 2,
+                     "Strongly disagree" = 1
+                   )) %>%
+  # filter(task %in%
+  #         c("9 Dot Problem",
+  #           "Abstract grid task",
+  #           "Advertisement writing",
+  #           "Allocating resources to programs",
+  #           "Divergent Association Task",
+  #           "Estimating pages of a book",
+  #           "Euclidean traveling salesperson",
+  #           "Graph coloring task",
+  #           "Guessing the correlation",
+  #           "Image rating",
+  #           "Letters-to-numbers problems (cryptography)",
+  #           "Moral Reasoning (Disciplinary Action Case)",
+  #           "Putting food into categories",
+  #           "Ravens Matrices",
+  #           "Recall association",
+  #           "Recall videos",
+  #           "Room assignment task",
+  #           "Search for Oil Task",
+  #           "Shopping plan",
+  #           "Summarize Discussion",
+  #           "To evacuate or not to evacuate",
+  #           "Whac-A-Mole",
+  #           "Wildcat Wells",
+  #           "Wolf, goat and cabbage transfer",
+  #           "Word completion given part of word",
+  #           "Word completion given starting letter")) %>%
+  group_by(task, user, question) %>%
+  summarize(value = mean(value))
+```
+
+```{r}
+responses_clean_ind %>% ungroup() %>% select(task) %>% unique()
+```
+
+
+```{r, fig.height=8, fig.width=10}
+averaged_by_task <- responses_clean_ind %>%
+  ungroup() %>%
+  group_by(task, question) %>%
+  summarize(value = mean(value, na.rm = T)) %>%
+  pivot_wider(names_from = question, values_from = value)
+
+# conflict_cooperation and conflict_interests
+p1 <- averaged_by_task %>%
+  ggplot(aes(
+    x = conflict_cooperation,
+    y = conflict_interests
+  )) + geom_count() +
+  geom_smooth(method = 'lm')+
+  labs(title = "A") +
+  annotate("text", x = 1.5, y = 4, size = 10, label = toString(round(cor(averaged_by_task$conflict_cooperation, averaged_by_task$conflict_interests, use="complete.obs"),3))) +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        plot.title = element_text(size=12, face="bold"))
+
+# generate_plan and generate_process
+p2 <- averaged_by_task %>%
+  ggplot(aes(
+    x = generate_plan,
+    y = generate_process
+  )) + geom_count() +
+  geom_smooth(method = 'lm')+
+  labs(title = "B") +
+  ylim(c(1,5)) +
+  annotate("text", x = 1.5, y = 4, size = 10, label = toString(round(cor(averaged_by_task$generate_plan, averaged_by_task$generate_process, use="complete.obs"),3))) +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        plot.title = element_text(size=12, face="bold"))
+
+# generate_ideas and generate_creativity
+p3 <- averaged_by_task %>%
+  ggplot(aes(
+    x = generate_ideas,
+    y = generate_creativity
+  )) + geom_count() +
+  geom_smooth(method = 'lm')+
+  labs(title = "C") +
+  annotate("text", x = 1.5, y = 4, size = 10, label = toString(round(cor(averaged_by_task$generate_ideas, averaged_by_task$generate_creativity, use="complete.obs"),3))) +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        plot.title = element_text(size=12, face="bold"))
+
+# resolve_opinion and resolve_perspectives
+p4 <- averaged_by_task %>%
+  ggplot(aes(
+    x = resolve_opinion,
+    y = resolve_perspectives
+  )) + geom_count() +
+  geom_smooth(method = 'lm')+
+  labs(title = "D") +
+  annotate("text", x = 1.5, y = 4, size = 10, label = toString(round(cor(averaged_by_task$resolve_opinion, averaged_by_task$resolve_perspectives, use="complete.obs"),3))) +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        plot.title = element_text(size=12, face="bold"))
+
+# resolve_information and resolve_data
+p5 <- averaged_by_task %>%
+  ggplot(aes(
+    x = resolve_information,
+    y = resolve_data
+  )) + geom_count() +
+  geom_smooth(method = 'lm')+
+  labs(title = "E") +
+  annotate("text", x = 1.5, y = 4, size = 10, label = toString(round(cor(averaged_by_task$resolve_information, averaged_by_task$resolve_data, use="complete.obs"),3))) +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        plot.title = element_text(size=12, face="bold"))
+
+# solution_objectivity and solution_optimal
+p6 <- averaged_by_task %>%
+  ggplot(aes(
+    x = solution_objectivity,
+    y = solution_optimal
+  )) + geom_count() +
+  geom_smooth(method = 'lm')+
+  labs(title = "F") +
+  annotate("text", x = 1.5, y = 4, size = 10, label = toString(round(cor(averaged_by_task$solution_objectivity, averaged_by_task$solution_optimal, use="complete.obs"),3))) +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        plot.title = element_text(size=12, face="bold"))
+
+# task_divisibility and task_specialization
+p7 <- averaged_by_task %>%
+  ggplot(aes(
+    x = task_divisibility,
+    y = task_specialization
+  )) + geom_count() +
+  geom_smooth(method = 'lm')+
+  labs(title = "G") +
+  annotate("text", x = 1.5, y = 4, size = 10, label = toString(round(cor(averaged_by_task$task_divisibility, averaged_by_task$task_specialization, use="complete.obs"),3))) +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        plot.title = element_text(size=12, face="bold"))
+
+# measure_easy and measure_immediate
+p8 <- averaged_by_task %>%
+  ggplot(aes(
+    x = measure_easy,
+    y = measure_immediate
+  )) + geom_count() +
+  geom_smooth(method = 'lm')+
+  labs(title = "H") +
+  annotate("text", x = 1.5, y = 4, size = 10, label = toString(round(cor(averaged_by_task$measure_easy, averaged_by_task$measure_immediate, use="complete.obs"),3))) +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        plot.title = element_text(size=12, face="bold"))
+
+g <- arrangeGrob(p1,p2,p3,p4,p5,p6,p7,p8, nrow = 4)
+
+ggsave("correlations_of_similar_questions.png", g)
+```
+
 
 # Distribution of Answer Choices
 ```{r}

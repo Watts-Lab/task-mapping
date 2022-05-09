@@ -27,19 +27,33 @@ library(tidyverse)
 ```{r}
 surveys <- all_surveys()
 
-task_mapping_irr_survey_id <- (surveys %>% filter(name == "Task Mapping Survey [NEW]"))$id
-
-df.survey_results <- fetch_survey(
-  surveyID = task_writing_survey_id,
-  save_dir = ".",
-  force_request = T
-)
+task_mapping_survey_id <- (surveys %>% filter(name == "Task Mapping Survey [NEW]"))$id
 ```
 
 # Look at Survey Results for Task MAPPING
 
+Get survey data
+```{r}
+df.task_map <- fetch_survey(
+  surveyID = task_mapping_survey_id,
+  save_dir = ".",
+  force_request = TRUE
+)
+
+df.task_map
+```
+
 Get a mapping of the task name to the loop numbers
 ```{r}
+df.task_writing_survey <- fetch_survey(
+  surveyID = (surveys %>% filter(name == "Task Rewriting Submission Form [NEW]"))$id,
+  save_dir = ".",
+  force_request = TRUE
+)
+
+# these are the 26 tasks
+all_tasks <- df.task_writing_survey$`task-name`
+
 df.task_name_to_index <- cbind(all_tasks, rep(1:length(all_tasks))) %>%
                                 as.data.frame() %>%
                                 rename(
@@ -50,20 +64,6 @@ df.task_name_to_index <- cbind(all_tasks, rep(1:length(all_tasks))) %>%
                                   task_num = strtoi(task_num)
                                 )
 ```
-
-Get survey data
-```{r}
-task_mapping_survey_id <- surveys$id[4]
-
-df.task_map <- fetch_survey(
-  surveyID = task_mapping_survey_id,
-  save_dir = ".",
-  force_request = TRUE
-)
-
-df.task_map
-```
-
 
 # Check how many people did
 ```{r}
@@ -191,8 +191,14 @@ df.all_ratings_raw %>%
   filter(question_name == "Q1concept_behav") %>%
   ungroup() %>%
   select(task_name) %>%
-  table()
+  table() %>% data.frame() %>% summarise(mean(Freq))
 ```
+Each task received a mean of 3.30 ratings
+
+```{r}
+df.task_map %>% select(name) %>% unique()
+```
+~ approx 10 raters in the internal pool
 
 Export the task map
 ```{r}
@@ -233,8 +239,7 @@ numeric <- df.all_ratings_raw %>%
 
 inner_join(categorical, numeric, by = "task_name") %>% write_csv('../task_map.csv')
 ```
-
-
+How many people answered NA?
 ```{r}
 df.all_ratings_raw %>%
   filter(value == "Not applicable or not answerable based on the task description (Please Elaborate Below.)") %>%
@@ -274,7 +279,7 @@ df.main_questions_summary <- df.all_ratings_raw %>%
 
 df.task_map_summary <- df.main_questions_summary %>%
   filter(n_labels > 1) %>%
-  group_by(task_name) %>% # can do task_name, question_name
+  group_by(question_name) %>% # can do task_name, question_name
   summarize(
     n_labels = round(mean(n_labels),0),
     mean_agreement = mean(agreement),
@@ -283,6 +288,8 @@ df.task_map_summary <- df.main_questions_summary %>%
 
 df.task_map_summary %>% arrange(desc(mean_alpha))
 ```
+
+
 
 Try to incorporate any feedback people had about that question
 ```{r}
@@ -391,186 +398,50 @@ df.per_task_q_agreement %>%
 #kripp_alpha_per_question %>% arrange(desc(krippendorf_alpha)) %>% write_csv("krippendorf_alpha_per_question.csv")
 ```
 
-Set up to collect the task map while we run the Krippendorf loop -- that way we can leverage the data where we drop the 'worst' users
 ```{r}
-df.task_map_from_filtered <-
-  data.frame(matrix(NA, nrow = 0, ncol = length(unique(
-    df.all_ratings_raw$task_name
-  ))))
-colnames(df.task_map_from_filtered) <-
-  unique(df.all_ratings_raw$task_name)
+# kripp_alpha_per_question %>% arrange(desc(mean_alpha))
 ```
 
-Leveraging the updated Krippendorf's code from IRR
+Look at "old taxonomies"
 ```{r}
-kripp_alpha_per_question <- data.frame(
-  question_name = c(),
-  #num_tasks = c(),
-  #num_raters = c(),
-  cat_specific = c(),
-  krippendorf_alpha = c(),
-  mean_agreement = c(),
-  mean_alpha = c()
-  #class_balance = c()
-  #kripp_matrix = c()
-)
+df.mcg <- df.main_questions_summary %>%
+  filter(!is.na(str_match(question_name, "type")) | !is.na(str_match(question_name, "behav"))) %>%
+  select(task_name, question_name, mean_rating) %>%
+  pivot_wider(names_from = question_name, values_from = mean_rating)
 
-for (i in 1:length(main_questions)) {
-  q_name <- main_questions[i]
-  
-  ### SET UP MATRIX OF RATERS AND RATINGS ####
-  kripp_alpha_matrix <- df.all_ratings_raw %>%
-    filter(question_name == q_name) %>%
-    group_by(task_name) %>%
-    left_join(df.task_map_summary %>% select(task_name, n_labels)) %>% # get n_labels
-    pivot_wider(
-      names_from = c(IPAddress),
-      values_from = c(value),
-      values_fn = list
+total_mcgrath <- rowSums(df.mcg[c(2:7)])
+
+df.mcg <- cbind(df.mcg, data.frame("total_mcgrath" = total_mcgrath))
+```
+
+```{r, fig.height = 6, fig.width= 6}
+ggplot(
+  df.mcg %>%
+    rename(
+      Physical = Q1concept_behav,
+      Intellective = Q20type_3_type_4,
+      Planning = Q3type_1_planning,
+      Creativity = Q4type_2_generate,
+      `Cognitive Conflict` = Q6type_5_cc,
+      Battle = Q7type_7_battle,
+      Performance = Q8type_8_performance
     ) %>%
-    column_to_rownames("task_name") %>%
-    ungroup() %>%
-    select(-c(task_num, question_name, n_labels)) %>%
-    mutate(across(everything(), as.character)) %>%
-    mutate(across(everything(),
-                  function(x)
-                    case_when(
-                      x == "Mental" ~ 0,
-                      x == "Physical" ~ 1,
-                      x == "No" ~ 0,
-                      x == "Yes" ~ 1,
-                      #x == "Not applicable or not answerable based on the task description (Please Elaborate Below.)" ~ 3,!is.na(as.numeric(x)) ~ as.numeric(x)
-                    ))) %>%
-    as.matrix() %>%
-    t() %>% as.data.frame()
+    select(-total_mcgrath) %>%
+    pivot_longer(cols = -task_name) %>%
+    rename(`Mean Rater Response` = value),
+  aes(x = name, y = task_name)
+) + geom_tile(aes(fill = `Mean Rater Response`)) + scale_fill_gradient(low = "#CC3363",
+                                                       high = "#07BEB8") + theme(axis.text.x = element_text(
+                                                         angle = 90,
+                                                         vjust = 0.5,
+                                                         hjust = 1
+                                                       )) + 
+  labs(x = "Dimension in McGrath's Taxonomy",
+       y = "Task Name")
 
-  # drop all rows with only 1 non-NA value
-  kripp_alpha_matrix$not.Na <- rowSums(!is.na(kripp_alpha_matrix))
-  kripp_alpha_matrix <- kripp_alpha_matrix %>%
-    filter(not.Na > 1) %>%
-    select(-not.Na) %>%
-    as.matrix()
-  
-  ##### IGNORE THE NUMERIC MEASURES --- NOT USEFUL FOR NOW ####
-  kripp_alpha <- NA
-  # these are numeric
-  if (q_name == 'Q2intel_manip_1' |
-      q_name == 'Q21intellective_judg_1' |
-      q_name == 'Q5creativity_input_1') {
-    # kripp_alpha <- kripp_alpha_matrix %>% kripp.alpha(method = "interval")
-    invisible()
-    
-  } else{
-    ### GET HOW MUCH PEOPLE DISAGREE - SET UP ###
-    # figure out agreement level of people
-     # setting up for dropping raters who disagree a lot
-    # keep track of how many deviations each person has
-    num_deviations <- rep(0, length(rownames(kripp_alpha_matrix)))
-    num_responses <- rowSums(!is.na(kripp_alpha_matrix))
-    
-    modes <- apply(kripp_alpha_matrix, 2, function(x) {Mode(x , na.rm = T)})
-    
-    # handle ties
-    lengths(modes)==1
-    modes <- unlist(ifelse(lengths(modes)==1, modes, NA))
-    
-    for (person_i in 1:nrow(kripp_alpha_matrix)){
-      person_i_name <- rownames(kripp_alpha_matrix)[person_i]
-      person_resp <- kripp_alpha_matrix[person_i,]
-      person_i_sum <- sum(xor(modes,person_resp), na.rm = T)
-      num_deviations[person_i] <- person_i_sum
-    }
-    
-    pct_deviations <- num_deviations/num_responses
-
-    ### DROP THE N WORST PEOPLE
-    N_Worst <- 1 # set the number of "worst" that we want to drop
-    worst_indices <- tail(order(pct_deviations), N_Worst)
-    kripp_alpha_matrix <- slice(as.data.frame(kripp_alpha_matrix),-c(worst_indices)) %>% as.matrix()
-    
-    #### CALCULATE THE IMPORTANT STUFF
-    kripp_alpha <- kripp_alpha_matrix %>% kripp.alpha(method = "nominal")
-  
-      class_balance_1 <-
-    sum(kripp_alpha_matrix, na.rm = T) / (sum(kripp_alpha_matrix == 0, na.rm =T) + sum(kripp_alpha_matrix, na.rm = T))
-      class_balance_0 <-
-    sum(kripp_alpha_matrix == 0, na.rm = T) / (sum(kripp_alpha_matrix == 0, na.rm = T) + sum(kripp_alpha_matrix, na.rm = T))
-    
-      
-   ### CALCULATE AGREEMENT ###
-    agreements <- c()
-    alphas <- c()
-    for(task_i in 1:ncol(kripp_alpha_matrix)){
-      mean_rating = mean(kripp_alpha_matrix[,task_i], na.rm = T)
-      n_labels = length(kripp_alpha_matrix[,task_i])
-      agreement = ifelse(mean_rating > 0.5, mean_rating, 1-mean_rating)
-      general.alpha = (agreement-0.5)/0.5
-      alphas[task_i] <- general.alpha
-      agreements[task_i] <- agreement
-    }
-    
-  df.curQmatrix <- data.frame(t(colMeans(kripp_alpha_matrix, na.rm = T)))
-  colnames(df.curQmatrix) <- unique(df.all_ratings_raw$task_name)
-  
-  df.task_map_from_filtered <- rbind(df.task_map_from_filtered, 
-                                     df.curQmatrix)
-    
-  #### RETURN THE IMPORTANT STUFF #####
-  kripp_alpha_per_question <- kripp_alpha_per_question %>% rbind(
-    data.frame(
-      question_name = q_name,
-      #num_tasks = kripp_alpha$subjects,
-      num_raters = kripp_alpha$raters,
-      #cat_specific = cat_specific,
-      krippendorf_alpha = kripp_alpha$value,
-      class_balance = min(class_balance_1, class_balance_0, na.rm = T),
-      mean_agreement = mean(agreements, na.rm = T),
-      mean_alpha = mean(alphas, na.rm = T)
-      #kripp_matrix = kripp_alpha_matrix
-    )
-  )
-    
-  }
-}
+ggsave("26task-mcgrath-ratings.png")
 ```
 
-```{r}
-kripp_alpha_per_question %>% arrange(desc(mean_alpha))
-```
-
-Set up the version of the task map that is filtered (removing unreliable raters)
-
-```{r}
-df.task_map_from_filtered <- t(df.task_map_from_filtered) %>% data.frame()
-names(df.task_map_from_filtered) <- c(
-  "Q1concept_behav",
-  "Q3type_1_planning",
-  "Q4type_2_generate",
-  "Q6type_5_cc",
-  "Q7type_7_battle",
-  "Q8type_8_performance",
-  "Q9divisible_unitary",
-  "Q10maximizing",
-  "Q11optimizing",
-  "Q13outcome_multip",
-  "Q14sol_scheme_mul",
-  "Q15dec_verifiability",
-  "Q16shared_knowledge",
-  "Q17within_sys_sol",
-  "Q18sol_eureka",
-  "Q19time_solvability",
-  "Q20type_3_type_4",
-  "Q22confl_tradeoffs",
-  "Q23ss_out_uncert"
-)
-  
-df.task_map_from_filtered <- df.task_map_from_filtered %>% rownames_to_column("task_name")
-```
-
-```{r}
-df.task_map_from_filtered <- df.task_map_from_filtered %>%
-  drop_na()
-```
 
 Look at raters' confidence
 
@@ -604,15 +475,15 @@ ggsave('./map-visuals/question-confidence-analysis.png')
 
 ```{r}
 task.map.data <- df.main_questions_summary %>% select(task_name, question_name, mean_rating) %>%
-  pivot_wider(names_from = question_name, values_from = mean_rating) %>% ungroup() %>%
+  pivot_wider(names_from = question_name, values_from = mean_rating) %>% ungroup() #%>%
   #drop the less reliable cols
-  select(-c(
-    Q13outcome_multip,
-    Q10maximizing,
-    Q23ss_out_uncert,
-    Q11optimizing,
-    Q9divisible_unitary
-  ))
+  # select(-c(
+  #   Q13outcome_multip,
+  #   Q10maximizing,
+  #   Q23ss_out_uncert,
+  #   Q11optimizing,
+  #   Q9divisible_unitary
+  # ))
 
 
 implemented_tasks <- c(
@@ -624,9 +495,15 @@ implemented_tasks <- c(
   "Advertisement writing",
   "Whac-A-Mole",
   "Putting food into categories",
-  "Room assignment task",
+  "Room assignment task" ,
   "Divergent Association Task",
   "Recall association"
+)
+
+similar_mcg_tasks <- c(
+  "Abstract grid task",
+  "Letters-to-numbers problems (cryptography)",
+  "9 Dot Problem"
 )
 
 set.seed(1)
@@ -645,24 +522,24 @@ p <- combined_data %>%
   ggplot(aes(
     x = PC1,
     y = PC2,
-    label = task_name,
+    label = task_name ,
     fill = cluster
   )) + geom_point(alpha = 0.1) + geom_label(nudge_y = 0.1,
                                             size = 2,
                                             alpha = 0.05) +
   geom_point(
-    data = subset(combined_data, task_name %in% implemented_tasks),
+    data = subset(combined_data, task_name %in% similar_mcg_tasks),
     aes(
       x = PC1,
       y = PC2,
     )
   ) +
   geom_label(
-    data = subset(combined_data, task_name %in% implemented_tasks),
+    data = subset(combined_data, task_name %in% similar_mcg_tasks),
     aes(
       x = PC1,
       y = PC2,
-      label = task_name,
+      label = task_name ,
       fill = cluster
     ),
     nudge_y = 0.1,
@@ -671,14 +548,16 @@ p <- combined_data %>%
 
 p
 
+ggsave(plot = p, filename = './map-visuals/map-experiments.png')
+
 plot_ly(
   x = combined_data$PC1,
   y = combined_data$PC2,
   z = combined_data$PC3,
   type = "scatter3d",
   mode = "markers", # can use mode = "text"
-  text = combined_data$task_name,
-  color = combined_data$cluster
+  text = combined_data$task_name #,
+  #color = combined_data$cluster
 )
 
 #ggsave(plot = p, filename = './map-visuals/task-map-unreliable-dropped-10-tasks-highlighted.png')
@@ -693,41 +572,41 @@ fviz_eig(pca)
 
 # Version of map done with the filtered data (1 unreliable rater dropped)
 ```{r}
-set.seed(1)
-pca.filtered <- df.task_map_from_filtered %>%
-  select(-task_name) %>%
-  prcomp()
-
-kmeans.filtered <- pca.filtered$x %>%
-  kmeans(centers = 4, nstart = 100) 
-
-p<-cbind(df.task_map_from_filtered,
-      pca.filtered$x, factor(kmeans.filtered$cluster)) %>%
-  rename(
-    cluster = `factor(kmeans.filtered$cluster)`
-  ) %>%
-  ggplot(
-    aes(x = PC1,
-    y = PC2,
-    label = task_name,
-    fill = cluster)
-  ) + geom_point() + geom_label(nudge_y = 0.05, size = 2) 
-
-ggsave(plot = p, filename = './map-visuals/task-map-filtered-irr.png')
-
-combined_data <- cbind(df.task_map_from_filtered,
-      pca.filtered$x, factor(kmeans.filtered$cluster)) %>%
-  rename(cluster = `factor(kmeans.filtered$cluster)`)
-
-plot_ly(
-  x = combined_data$PC1,
-  y = combined_data$PC2,
-  z = combined_data$PC3,
-  type = "scatter3d",
-  mode = "markers", # can use mode = "text"
-  text = combined_data$task_name,
-  color = combined_data$cluster
-)
+# set.seed(1)
+# pca.filtered <- df.task_map_from_filtered %>%
+#   select(-task_name) %>%
+#   prcomp()
+# 
+# kmeans.filtered <- pca.filtered$x %>%
+#   kmeans(centers = 4, nstart = 100) 
+# 
+# p<-cbind(df.task_map_from_filtered,
+#       pca.filtered$x, factor(kmeans.filtered$cluster)) %>%
+#   rename(
+#     cluster = `factor(kmeans.filtered$cluster)`
+#   ) %>%
+#   ggplot(
+#     aes(x = PC1,
+#     y = PC2,
+#     label = task_name,
+#     fill = cluster)
+#   ) + geom_point() + geom_label(nudge_y = 0.05, size = 2) 
+# 
+# ggsave(plot = p, filename = './map-visuals/task-map-filtered-irr.png')
+# 
+# combined_data <- cbind(df.task_map_from_filtered,
+#       pca.filtered$x, factor(kmeans.filtered$cluster)) %>%
+#   rename(cluster = `factor(kmeans.filtered$cluster)`)
+# 
+# plot_ly(
+#   x = combined_data$PC1,
+#   y = combined_data$PC2,
+#   z = combined_data$PC3,
+#   type = "scatter3d",
+#   mode = "markers", # can use mode = "text"
+#   text = combined_data$task_name,
+#   color = combined_data$cluster
+# )
 ```
 
 
