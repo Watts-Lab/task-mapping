@@ -250,6 +250,17 @@ for(thresh in seq(min_pct, max_pct, 0.01)){
                                   num_workers = nrow(qualified_workers)))
 }
 
+# plot fewer labels --- only plot when it changes
+critical_indices <- c()
+last <- 0
+for(i in 1:length(df.results_by_thresh$num_workers)){
+  cur <- df.results_by_thresh$num_workers[i]
+  if(cur != last){
+    critical_indices <- c(critical_indices, i)
+  }
+  last <- cur
+}
+
 # how much does error in the CSOP task go down depending on the pretest threshold?
 ggplot(df.results_by_thresh,
        aes(x = thresh,
@@ -257,12 +268,14 @@ ggplot(df.results_by_thresh,
   geom_point() + geom_line() +
   geom_hline(yintercept = mean_csop_error, color = "red") + 
   geom_errorbar(aes(ymin=ci_min, ymax=ci_max), width=.01) + 
-  geom_text(aes(label = num_workers), vjust=-5, color = "blue") +
+  geom_text(aes(label = num_workers), vjust=-10, color = "blue",
+            data = df.results_by_thresh[critical_indices,]) +
   labs(
     title = "Mean Error on CSOP Task By Pre-Test (16 Question) Theshold",
     x = "Threshold (% correct on Pre-Test)",
     y  = "Total Error of Mean Score (Difference from Gold)"
   ) +
+  ylim(c(1, 6)) + 
   theme_bw()
 ```
 
@@ -270,7 +283,7 @@ Plot how many people drop off at each threshold
 ```{r}
 ggplot(df.results_by_thresh,
        aes(x = thresh,
-           y = num_workers/nrow(df.pretest %>% select(name)))
+           y = num_workers/length(df.pretest$name))
 ) +
   geom_point() +
   geom_line() +
@@ -282,20 +295,8 @@ ggplot(df.results_by_thresh,
 
 
 # Output Workers who are qualified
-
-How to grade this?
-1. Cutoff - 8/10 or better gets in?
-2. Cutoff + Gold (e.g., you need to have gotten the easy question (95% got it right))
-
-Number of people who pass condition 2
 ```{r}
-# df.pretest %>%
-#   filter(score >= 8) %>%
-#   filter(test10 == 1) %>%
-#   select(name) %>%
-#   mutate(
-#     url = paste('https://task-robot.glitch.me/survey?workerID=', name, sep="")
-#   ) %>% write_csv('qualified-workers.csv')
+
 ```
 
 
