@@ -289,13 +289,13 @@ How to grade this?
 
 Number of people who pass condition 2
 ```{r}
-df.pretest %>%
-  filter(score >= 8) %>%
-  filter(test10 == 1) %>%
-  select(name) %>%
-  mutate(
-    url = paste('https://task-robot.glitch.me/survey?workerID=', name, sep="")
-  ) %>% write_csv('qualified-workers.csv')
+# df.pretest %>%
+#   filter(score >= 8) %>%
+#   filter(test10 == 1) %>%
+#   select(name) %>%
+#   mutate(
+#     url = paste('https://task-robot.glitch.me/survey?workerID=', name, sep="")
+#   ) %>% write_csv('qualified-workers.csv')
 ```
 
 
