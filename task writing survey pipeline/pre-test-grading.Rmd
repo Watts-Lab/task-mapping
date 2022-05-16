@@ -215,7 +215,7 @@ for(thresh in seq(min_pct, max_pct, 0.01)){
   if(nrow(qualified_workers) > 1)
   for(i in 1:100){
     randomly_selected_half_of_workers <- qualified_workers[sample(nrow(qualified_workers),
-                                                                  nrow(qualified_workers)/2), ]
+                                                                  round(nrow(qualified_workers)/2)), ]
     qualified_workers_subset <-
     df.pretest %>% filter(name %in% randomly_selected_half_of_workers$name)
     subset_worker_ans <- qualified_workers_subset %>%
