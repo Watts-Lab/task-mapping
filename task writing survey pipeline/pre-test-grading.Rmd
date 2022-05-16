@@ -212,21 +212,24 @@ for(thresh in seq(min_pct, max_pct, 0.01)){
   
   # do a quick bootstrap - 95% CI
   diffs_for_boot <- c()
-  if(nrow(qualified_workers) > 1)
-  for(i in 1:100){
-    randomly_selected_half_of_workers <- qualified_workers[sample(nrow(qualified_workers),
-                                                                  round(nrow(qualified_workers)/2)), ]
-    qualified_workers_subset <-
-    df.pretest %>% filter(name %in% randomly_selected_half_of_workers$name)
-    subset_worker_ans <- qualified_workers_subset %>%
-    select(Q10maximizing,Q11optimizing,Q13outcome_multip,Q14sol_scheme_mul,
-           Q15dec_verifiability,Q16shared_knowledge,Q17within_sys_sol,Q18ans_recog,
-           Q19time_solvability,Q1concept_behav,Q20type_3_type_4,Q22confl_tradeoffs,
-           Q23ss_out_uncert,Q24eureka_question,Q3type_1_planning,Q4type_2_generate,
-           Q6type_5_cc,Q7type_7_battle,Q8type_8_performance,Q9divisible_unitary) %>%
-    colMeans()
-    diff <- sum(abs(subset_worker_ans-gold_ans))
-    diffs_for_boot <- c(diffs_for_boot,diff)
+  if (nrow(qualified_workers) > 1) {
+    for (i in 1:100) {
+      randomly_selected_workers <- qualified_workers[sample(nrow(qualified_workers),size=nrow(qualified_workers),replace=TRUE),]
+      qualified_workers_subset <- left_join(randomly_selected_workers, df.pretest, by = "name")
+      subset_worker_ans <- qualified_workers_subset %>%
+        ungroup() %>%
+        select(
+          Q10maximizing, Q11optimizing,Q13outcome_multip, Q14sol_scheme_mul,
+          Q15dec_verifiability, Q16shared_knowledge, Q17within_sys_sol,
+          Q18ans_recog, Q19time_solvability, Q1concept_behav, Q20type_3_type_4,
+          Q22confl_tradeoffs, Q23ss_out_uncert, Q24eureka_question,
+          Q3type_1_planning, Q4type_2_generate, Q6type_5_cc, Q7type_7_battle,
+          Q8type_8_performance, Q9divisible_unitary
+        ) %>%
+        colMeans()
+      diff <- sum(abs(subset_worker_ans - gold_ans))
+      diffs_for_boot <- c(diffs_for_boot, diff)
+    }
   }
   
   qualified_workers_data <-
@@ -279,6 +282,38 @@ ggplot(df.results_by_thresh,
   theme_bw()
 ```
 
+```{r}
+critical_threshes <- c()
+last <- 0
+for(i in 1:length(df.results_by_thresh$num_workers)){
+  cur <- df.results_by_thresh$num_workers[i]
+  if(cur != last){
+    critical_threshes <- c(critical_threshes, df.results_by_thresh$thresh[i])
+  }
+  last <- cur
+}
+```
+
+```{r}
+ggplot(df.results_by_thresh,
+       aes(x = thresh,
+           y = csop_score_diff)) +
+  geom_point() + geom_line() +
+  geom_hline(yintercept = mean_csop_error, color = "red") + 
+  geom_vline(xintercept = 0.7525, color = "blue") + 
+  geom_vline(xintercept = 0.8225, color = "blue") + 
+  geom_errorbar(aes(ymin=ci_min, ymax=ci_max), width=.01) + 
+  geom_text(aes(label = num_workers), vjust=-10, color = "blue",
+            data = df.results_by_thresh[critical_indices,]) +
+  labs(
+    title = "Mean Error on CSOP Task By Pre-Test (16 Question) Theshold",
+    x = "Threshold (% correct on Pre-Test)",
+    y  = "Total Error of Mean Score (Difference from Gold)"
+  ) +
+  ylim(c(1, 6)) + 
+  theme_bw()
+```
+
 Plot how many people drop off at each threshold
 ```{r}
 ggplot(df.results_by_thresh,
@@ -287,6 +322,8 @@ ggplot(df.results_by_thresh,
 ) +
   geom_point() +
   geom_line() +
+  geom_vline(xintercept = 0.7525, color = "blue") + 
+  geom_vline(xintercept = 0.8225, color = "blue") + 
   labs(
     y = "% of Total Workers",
     x = "Pre-test threshold"
@@ -296,14 +333,83 @@ ggplot(df.results_by_thresh,
 
 # Output Workers who are qualified
 ```{r}
+thresh <- 0.8225 # replace this with the actual threshold
 
+pilot.pretest.passed <- df.pretest %>% mutate(
+  score_pct = score/16
+) %>%
+  filter(score_pct >= thresh) %>%
+  filter(`use-answers` == `random-answering`) %>%
+  select(name)
+
+pilot.pretest.passed
+```
+
+------MAIN DATA COLLECTION DATA BELOW---------
+```{r}
+surveys <- all_surveys()
+#pretest_id <- (surveys %>% filter(name == "[MTURK SCREENER] Task Mapping Pre-Test"))$id 
+pretest_id <- (surveys %>% filter(name == "Pre-Test MTurk - MAIN"))$id 
+df.pretest <- fetch_survey(
+  surveyID = pretest_id,
+  save_dir = ".",
+  force_request = TRUE,
+  convert = FALSE,
+  label = FALSE
+)
+
+# input scores
+df.pretest <- df.pretest %>%
+  mutate(
+    test1 = ifelse(test1Q3 == 1, 1, 0),
+    test2 = ifelse(test2Q19 == 1, 1, 0),
+    test3 = ifelse(test3Q7 == 0, 1, 0),
+    test4 = ifelse(test4Q10 == 1, 1,0),
+    test5 = ifelse(test5Q18 == 1, 1,0),
+    test6 = ifelse(test6Q22 == 1, 1,0),
+    test7 = ifelse(test7Q20 == 1, 1,0),
+    test8 = ifelse(test8Q23 == 1, 1,0),
+    test9 = ifelse(test9Q14 == 0, 1,0),
+    test10 = ifelse(test10Q24 == 0,1,0),
+    test11 = ifelse(test11Q4 == 0,1,0),
+    test12 = ifelse(test12Q11 == 1,1,0),
+    test13 = ifelse(test13Q15 == 1,1,0),
+    test14 = ifelse(test14Q8 == 1,1,0),
+    test15 = ifelse(test15Q16 == 1,1,0),
+    test16 = ifelse(test16Q17 == 1,1,0),
+    score = test1+test2+test3+test4+test5+test6+test7+test8+test9+test10+
+      test11+test12+test13+test14+test15+test16,
+    score_pct = score/16
+  ) 
+```
+
+Average test score (for the main pre-test):
+```{r}
+mean(df.pretest$score)
+
+mean(df.pretest$score)/16
 ```
 
 
+Get a sense of how long it took people to complete (for the main pre-test):
+```{r}
+median(df.pretest$`Duration (in seconds)`)/60
+```
 
+# Output workers from the main pre-test who are qualified
+```{r}
+main.pretest.passed <- df.pretest %>%
+  filter(score_pct >= thresh) %>%
+  filter(`use-answers` == `random-answering`) %>%
+  select(name)
+main
+```
 
+# Join everyone together
+```{r}
+pretest.passed <- rbind(pilot.pretest.passed,main.pretest.passed)
 
-
-
+pretest.passed
+```
 
 
