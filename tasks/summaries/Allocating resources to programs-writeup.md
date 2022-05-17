@@ -3,14 +3,14 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Partipants are given a list of several complex social projects, along with details of those projects. The following are examples of proposed projects:
+Partipants are given a list of complex competing programs, along with details of those programs. All participants get a list with the same programs. For example, participants could receive the following list:
  
  (1.) To purchase a new computer system for the county government in order to hold local taxes constant.
  (2.) To establish a community arts program featuring art, music, and dance programs for children and adults.
  (3.) To establish an additional shelter for the homeless in the community.
 
 ## 2. Goal Directives 
-The goal is to decide how to allocate $500,000 between these competing projects.
+The goal is to collectively decide how to allocate $500,000 between three competing programs in 10 minutes. As each program on this cognitive conflict task is designed to appeal to personal values, there is no rgiht, wrong, or optimal way of allocation. Therefore, performance on this task is not measured.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
