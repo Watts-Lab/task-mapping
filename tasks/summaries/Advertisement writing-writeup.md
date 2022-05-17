@@ -3,10 +3,10 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Participants were given the description of a product from Kickstarter.
+Participants were given the description of a product from Kickstarter. For example, they could read about "Soapstone: the Sustainable Travel Soap Dispenser," and learn about its features.
 
 ## 2. Goal Directives 
-The goal was to write an online text advertisement no more than 30 characters for product campaigns from Kickstarter.
+The goal was to write an online text advertisement of no more than 30 characters for the Kickstarter product. The advertisement had to be creative, informative, and get people to click. When working in teams, participants needed to submit a single collective writeup, produced within the time limit.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
