@@ -10,7 +10,7 @@ Partipants are given a list of complex competing programs, along with details of
  (3.) To establish an additional shelter for the homeless in the community.
 
 ## 2. Goal Directives 
-The goal is to collectively decide how to allocate $500,000 between three competing programs in 10 minutes. As each program on this cognitive conflict task is designed to appeal to personal values, there is no rgiht, wrong, or optimal way of allocation. Therefore, performance on this task is not measured.
+The goal is to collectively decide how to allocate $500,000 between three competing programs within the time limit. As each program is designed to appeal to personal values, there is no right, wrong, or optimal way of allocation, and the purpose of the task is to resolve different conflicts in people's values and interests.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
