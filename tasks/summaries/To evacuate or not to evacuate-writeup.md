@@ -10,7 +10,7 @@ Evacuating from the disaster costs money --- participants lose half their bonus 
 Participants only find out whether the disaster happened or not at the very end of the game. All participants are equally affected by the disaster, but they make their selection for evacuation individually.
 
 ## 2. Goal Directives 
-The goal is to make a decision regarding whether or not to evacuate.
+The goal is to make a decision regarding whether or not to evacuate. Participants have a limited amount of time to make their decision.
 
 Choosing NOT to evacuate means that there is high risk (you could get nothing), but potential for a high reward. On the other hand, choosing to evacuate has a low risk but a smaller reward.
 
