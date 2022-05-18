@@ -3,7 +3,7 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Participants are given a list of words to study.
+Participants are given a list of several words to study. Example words on the list include "spider," "foot," "pen," "car," etc.
 
 ## 2. Goal Directives 
 The goal is to recall as many words as possible from the studied list within a fixed amount of time. 
