@@ -3,10 +3,12 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Participants are given a blank space to write 10 words in.
+Participants are given a task sheet with instructions, a blank space to write 10 words in, and a list of rules.
 
 ## 2. Goal Directives 
-Come up with 10 nouns as different from each other as possible in four minutes.
+The goal is to come up with 10 nouns as different from each other as possible within a fixed amount of time. For example, words "cat" and "dog" are considered similar to each other because they are often used in the same context, while words "cat" and "thimble" are different because they are rarely used together.
+
+Participants are evaluated on how semantically different the words are. The minimum score occurs when all the words are the same, while the theoretical maximum score occurs when words have the least possible relation to each other. Participants maximize their score by coming up with as many the most semantically distant words as possible.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
@@ -15,7 +17,7 @@ The following details are not the main parts of the task, but rather additional 
 Creativity, quick thinking, vocabulary fluency
 
 ### UI-UX Allowed Processes
-Input a word
+Inputing a word
 
 ### Other Allowed Processes
 Rules
