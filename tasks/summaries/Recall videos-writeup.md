@@ -3,19 +3,19 @@
 Mapped by: joycewang3 
 
 ## 1. Stimulus Complex 
-A 90-second video
+Participants are shown a 90-second video several times.
 
 ## 2. Goal Directives 
-To answer a set of questions about what occurred in the video
+The goal is to correctly answer a set of questions about what occurred in the video within a fixed amount of time. Participants receive points for each correct answer and maximize their score by correctly answering as many questions as they can.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
 
 ### Skills 
-none (memory)
+Working memory
 
 ### UI-UX Allowed Processes
-watching videos, seeing the question sets, click on the answer choices
+Watching videos, seeing question sets, clicking on answer choices.
 
 ### Other Allowed Processes
 N/A
