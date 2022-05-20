@@ -7,18 +7,48 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(anytime)
 library(dplyr)
 library(tidyverse)
 ```
 
 ```{r}
-read_delim('http://task-robot.glitch.me/results/survey/csv')
+df.mapping.raw <- read_delim('http://task-robot.glitch.me/results/survey/csv')
+nrow(df.mapping.raw)
+```
+
+# Save the Raw Data
+
+```{r}
+df.mapping.raw %>% write_csv('../raw_map.csv')
+```
+
+# Create a CSV of workers to pay in `survey_workflows` with WorkerID, date, how many tasks they did, whether they've been paid for it
+
+```{r}
+df.mapping.raw %>%
+  select(
+    user, updatedAt
+  ) %>%
+  mutate(
+    pay = 3, # flat rate of $3 per task
+    paid = 0 # no one is paid -- TODO: change this to an ifelse after we have paid people
+  ) %>%
+  group_by(user) %>%
+  filter(paid == 0 ) %>% # this is where we'd filter out already-paid tasks
+  summarize(
+    lastUpdate = last(updatedAt),
+    amount_to_pay = sum(pay),
+    amount_paid = sum(paid),
+    num_tasks_completed = amount_to_pay/3
+  ) %>% write_csv('../survey_workflows/mapper_payment.csv')
 ```
 
 
+# Take a look at the Task Map Itself
+```{r}
 
-
-
+```
 
 
 
