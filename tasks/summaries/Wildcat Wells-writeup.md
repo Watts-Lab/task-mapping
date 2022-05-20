@@ -3,10 +3,10 @@
 Mapped by: joycewang3 
 
 ## 1. Stimulus Complex 
-Participants see a realistic-looking 2D desert map with dots on it that represent hidden oil fields. All dots look the same to participants but some wells are wider and deeper than others and have more oil.
+Participants see a realistic-looking 2D desert map with dots on it that represent hidden oil fields. All dots look the same to participants, but some "wells" are wider and deeper than others and contain more oil, which earns the participant more points. As they play, participants can see the total number of points that they have accumulated throughout the game.
 
 ## 2. Goal Directives 
-The goal is to drill as many oil as possible by choosing the corresponding dots within a fixed amount of time. Participants earn points proportional to the amount of oil they discover and they maximize their tradeoff by drilling wells with the most oil.
+The goal is to drill as much oil as possible within a fixed amount of time by choosing the dots corresponding to "wells" that the participant wants to select. Participants earn points proportional to the amount of oil they discover. Thus, the goal is to try to find the "wells" with the most oil before the time runs out.
 
 ## 3. Allowed Group Processes
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
