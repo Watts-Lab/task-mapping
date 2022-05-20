@@ -3,10 +3,10 @@
 Mapped by: joycewang3 
 
 ## 1. Stimulus Complex 
-Participants get a set of 36 words with 2-3 letters missing. For example, " _ ech_ _ que" would be "technique".
+Participants get a set of 36 words with 2-3 letters missing. Each word has a specific correct answer. For example, " _ ech_ _ que" would be "technique".
 
 ## 2. Goal Directives 
-The goal is to complete as many words as possible within a fixed amount of time. Participants get the maximum score for completing all words correctly and maximize their score by completing as many of the words as they can
+The goal is to complete as many words as possible within a fixed amount of time. Participants get the maximum score for completing all words correctly and maximize their score by completing as many of the words as they can.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
