@@ -423,11 +423,27 @@ main.pretest.passed
 
 # Join everyone together
 ```{r}
+old_workers <- read_csv('./temp/old-pretest-workers.csv') %>%
+  mutate(
+    score_pct = NA,
+    paid = 1,
+    payment_amount = 0,
+    `pre-test` = 0,
+    tested = 1
+  )%>%
+  filter(name != "3" & name != "emily test")
+
 pretest.passed <- rbind(pilot.pretest.passed,main.pretest.passed)
 
-pretest.passed  %>% filter(score_pct>0.85)
+pretest_workers <- pretest.passed %>%
+  mutate(
+    payment_amount = ifelse(paid==0, 5, 0),
+    `pre-test` = 1,
+    tested = 1
+  )
 
-pretest.passed %>% write_csv('all_pretested_workers_05_20_1207am.csv')
+rbind(old_workers,pretest_workers) %>%
+ %>% write_csv('temp/all_tested_and_pretested_workers_for_payment_05_20_1227pm.csv')
 ```
 
 
