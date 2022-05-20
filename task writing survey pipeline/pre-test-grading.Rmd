@@ -15,7 +15,6 @@ pacman::p_load(agreement,stats,corrplot,irr,stringr,markdown,ggplot2,dplyr,qualt
 
 ```{r}
 surveys <- all_surveys()
-#pretest_id <- (surveys %>% filter(name == "[MTURK SCREENER] Task Mapping Pre-Test"))$id 
 pretest_id <- (surveys %>% filter(name == "Pre-Test MTurk Pilot"))$id 
 ```
 
@@ -29,6 +28,22 @@ df.pretest <- fetch_survey(
 )
 ```
 
+Get total people who did the pretest
+```{r}
+pretest_id_old <- (surveys %>% filter(name == "[MTURK SCREENER] Task Mapping Pre-Test"))$id 
+
+df.pretest.old <- fetch_survey(
+  surveyID = pretest_id_old,
+  save_dir = ".",
+  force_request = TRUE,
+  convert = FALSE,
+  label = FALSE
+)
+
+df.pretest.old %>%
+  select(name) %>%
+  write_csv('old-pretest-workers.csv')
+```
 
 # Filter out people who got training wrong
 I made a mistake in which some people didn't see the appropriate feedback during the training. This is the set of people who actually did see all feedback.
@@ -43,7 +58,6 @@ df.pretest <- df.pretest %>%
     trainQ9div_uni == 1
   )
 ```
-
 
 # Get a sense of how people scored
 
@@ -333,14 +347,12 @@ ggplot(df.results_by_thresh,
 
 # Output Workers who are qualified
 ```{r}
-thresh <- 0.8225 # replace this with the actual threshold
-
 pilot.pretest.passed <- df.pretest %>% mutate(
-  score_pct = score/16
+  score_pct = score/16,
+  paid = 1
 ) %>%
-  filter(score_pct >= thresh) %>%
   filter(`use-answers` == `random-answering`) %>%
-  select(name)
+  select(name, score_pct, paid)
 
 pilot.pretest.passed
 ```
@@ -399,17 +411,23 @@ median(df.pretest$`Duration (in seconds)`)/60
 # Output workers from the main pre-test who are qualified
 ```{r}
 main.pretest.passed <- df.pretest %>%
-  filter(score_pct >= thresh) %>%
+  mutate(
+    paid = 0
+  ) %>%
   filter(`use-answers` == `random-answering`) %>%
-  select(name)
-main
+  select(name, score_pct, paid)%>%
+  arrange(desc(score_pct))
+
+main.pretest.passed
 ```
 
 # Join everyone together
 ```{r}
 pretest.passed <- rbind(pilot.pretest.passed,main.pretest.passed)
 
-pretest.passed
+pretest.passed  %>% filter(score_pct>0.85)
+
+pretest.passed %>% write_csv('all_pretested_workers_05_20_1207am.csv')
 ```
 
 

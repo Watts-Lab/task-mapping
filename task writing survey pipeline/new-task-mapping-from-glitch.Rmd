@@ -14,3 +14,11 @@ library(tidyverse)
 ```{r}
 read_delim('http://task-robot.glitch.me/results/survey/csv')
 ```
+
+
+
+
+
+
+
+

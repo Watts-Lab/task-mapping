@@ -116,23 +116,6 @@ for(i in 1:nrow(df.survey_results_cleaned)){
 }
 ```
 
-# Prior to CSV generation: handle cases where we wrote new writeups but things already got rated
-Basically, we want to generate new indices for tasks where we're now explicitly saving a new version for.
-- If something hasn't been rated yet, we can go ahead and update the writeup. It's fine.
-- If something is already rated, we need to generate a new entry (new row on the CSV) for it so that we can store it as a separate ID
-- So this means that, in order to create a stable index:
-     * we will manually set the ID to a known particular ID
-     * the value of the ID will be N+1, where N is the number of tasks that are currently being actively rated in the pipeline
-     * each time this happens again, we'll have to set that manual ID again, but this will allow that ID to remain consistent throughout the process.
-```{r}
-index_in_survey_1 <- 26
-# Putting Food into Categories and Whac a Mole
-new_tasks <- c("Putting food into categories-2", "Whac-A-Mole-2")
-all_tasks <- c(df.survey_results$`task-name`[1:index_in_survey_1], new_tasks, df.survey_results$`task-name`[(index_in_survey_1+1):length(df.survey_results$`task-name`)])
-```
-
-We will use `all_tasks` moving forward to ensure both the original and the manually-added ones show up and are consistent!
-
 # Generate a CSV with task names in one column and HTML in a second column
 This will enable us to paste directly into the task mapping survey.
 
@@ -146,17 +129,23 @@ thisscript.url <- df.thisscript$url
 df.blobs <- jsonlite::fromJSON(content(req, "text"))$tree %>% 
 filter(grepl("tasks/summaries/", path))
 ```
+These are the tasks that are successfully edited so far
+```{r}
+edited_tasks <- read_csv('./edited_tasks.csv')$edited_tasks
+```
 
 ```{r message=FALSE, warning=FALSE}
-df.task_map_format <- data.frame(matrix(ncol = 4, nrow = 0))
-colnames(df.task_map_format) <- c('task', 'html', 'github', 'script')
+df.task_map_format <- data.frame(matrix(ncol = 5, nrow = 0))
+colnames(df.task_map_format) <- c('task', 'html', 'github', 'path', 'script')
 
-for(i in 1:length(all_tasks)){
-  task_name <- all_tasks[i]
+for(i in 1:length(edited_tasks)){
+  task_name <- edited_tasks[i]
   
   blob_path <- paste0("tasks/summaries/",task_name,"-writeup.md")
   blob_url <- df.blobs %>% filter(path == blob_path) %>%
     select(url) %>% as.character()
+  path <- df.blobs %>% filter(path == blob_path) %>%
+    select(path) %>% as.character()
   
   file_title <- paste0("../tasks/summaries/",task_name,"-writeup.md")
   
@@ -189,6 +178,7 @@ for(i in 1:length(all_tasks)){
     'task'= task_name,
     'html' =  txt_html,
     'github' = blob_url,
+    'path' = path,
     'script' = thisscript.url
   )
   
