@@ -253,7 +253,7 @@ pivot_longer(cols = -task, names_to = "question_name") %>%
   drop_na() %>%
   filter(nchar(value) > 2) %>%
   filter(value != 'no problems.' & value != 'Nope') %>% # drop people who said like, 'no'
-  arrange(question_name) %>% write_csv("./task_mapping_feedback-main.csv")
+  arrange(question_name) %>% write_csv("./qual-feedbacks/task_mapping_feedback-main.csv")
 ```
 
 
