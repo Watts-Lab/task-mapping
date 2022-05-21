@@ -443,8 +443,8 @@ pretest_workers <- pretest.passed %>%
   )
 
 rbind(old_workers,pretest_workers) %>%
-  filter(`pre-test` == 1 & score_pct >= 0.75) %>% select(name, score_pct) %>% unique() # %>%
-  #filter(name == "A1NLP66FKHBS4V")
+  filter(`pre-test` == 1 & score_pct >= 0.75) %>% select(name, score_pct) %>% unique() %>%
+  filter(name == "A3CGQOJC28OVGN")
 
  # %>% write_csv('temp/all_tested_and_pretested_workers_for_payment_05_20_1227pm.csv')
 ```

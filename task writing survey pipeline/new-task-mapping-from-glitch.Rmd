@@ -7,6 +7,9 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(factoextra)
+library(plotly)
+library(irr)
 library(anytime)
 library(dplyr)
 library(tidyverse)
@@ -14,9 +17,14 @@ library(tidyverse)
 
 ```{r}
 df.mapping.raw <- read_delim('http://task-robot.glitch.me/results/survey/csv')
-nrow(df.mapping.raw)
 ```
 
+Ensure we don't have any accidental resubmissions -- sometimes the serve logs a "double click" as two separate maps!
+
+```{r}
+df.mapping.raw <- distinct(df.mapping.raw, user, task, .keep_all = T)
+nrow(df.mapping.raw)
+```
 # Save the Raw Data
 
 ```{r}
@@ -26,7 +34,7 @@ df.mapping.raw %>% write_csv('../raw_map.csv')
 # Create a CSV of workers to pay in `survey_workflows` with WorkerID, date, how many tasks they did, whether they've been paid for it
 
 ```{r}
-df.mapping.raw %>%
+df.mapping.payment <- df.mapping.raw %>%
   select(
     user, updatedAt
   ) %>%
@@ -41,14 +49,213 @@ df.mapping.raw %>%
     amount_to_pay = sum(pay),
     amount_paid = sum(paid),
     num_tasks_completed = amount_to_pay/3
-  ) %>% write_csv('../survey_workflows/mapper_payment.csv')
+  ) 
+
+df.mapping.payment %>% write_csv('../survey_workflows/mapper_payment.csv')
 ```
 
 
 # Take a look at the Task Map Itself
 ```{r}
+# Question names
+main_questions <- c(
+  "Q1concept_behav",
+  "Q2intel_manip_1",
+  "Q3type_1_planning",
+  "Q4type_2_generate",
+  "Q5creativity_input_1",
+  "Q6type_5_cc",
+  "Q7type_7_battle",
+  "Q8type_8_performance",
+  "Q9divisible_unitary",
+  "Q10maximizing",
+  "Q11optimizing",
+  "Q13outcome_multip",
+  "Q14sol_scheme_mul",
+  "Q15dec_verifiability",
+  "Q16shared_knowledge",
+  "Q17within_sys_sol",
+  "Q18ans_recog",
+  "Q19time_solvability",
+  "Q20type_3_type_4",
+  "Q21intellective_judg_1",
+  "Q22confl_tradeoffs",
+  "Q23ss_out_uncert",
+  "Q24eureka_question"
+)
 
+continuous_questions <- c('Q2intel_manip_1',
+                          'Q21intellective_judg_1','Q5creativity_input_1') 
 ```
+
+```{r}
+df.main_questions_summary <- df.mapping.raw %>%
+  select(c(main_questions, task)) %>%
+  select(-continuous_questions) %>%
+  pivot_longer(cols = -task, names_to = "question_name") %>%
+  mutate(value = recode(value, 
+                     "Mental" = 0,
+                     "Physical" = 1,
+                     "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+                     "No" = 0,
+                     "Yes" = 1
+                   )) %>%
+  filter(value != 3) %>% # remove cases in which people thought it wasn't answerable - for now
+  group_by(task,question_name) %>%
+  summarize(mean_rating = mean(value, na.rm = T),
+            n_labels = agree(t(value))$raters,
+            all_values = paste(value, collapse = " & "),
+            agreement = ifelse(mean_rating > 0.5, mean_rating, 1-mean_rating),
+            general.alpha = (agreement-0.5)/(0.5)
+            )
+```
+
+Look at at a per-question (or per-task) summary of basic agreement
+
+```{r}
+task_based_summary <- df.main_questions_summary %>%
+  filter(n_labels > 1) %>%
+  group_by(task) %>% # can do task, question_name
+  summarize(
+    n_labels = round(mean(n_labels),0),
+    mean_agreement = mean(agreement),
+    mean_alpha = mean(general.alpha)
+  ) %>%
+  arrange(desc(mean_alpha))
+
+task_based_summary
+```
+
+Export the task map
+
+```{r}
+categorical <- df.mapping.raw %>%
+  select(c(main_questions, task)) %>%
+  select(-continuous_questions) %>%
+  pivot_longer(cols = -task, names_to = "question_name") %>%
+  mutate(value = recode(value, 
+                     "Mental" = 0,
+                     "Physical" = 1,
+                    # "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+                     "No" = 0,
+                     "Yes" = 1
+                   )) %>%
+  group_by(question_name, task) %>%
+  mutate(
+    value = mean(value, na.rm = T)
+  ) %>% unique() %>%
+  pivot_wider(values_from = "value", names_from = "question_name")
+
+
+numeric <- df.mapping.raw %>%
+  select(c(continuous_questions, task)) %>%
+  pivot_longer(cols = -task, names_to = "question_name") %>%
+   group_by(question_name, task) %>%
+  mutate(
+    value = mean(as.numeric(value))
+  ) %>% unique() %>%
+  pivot_wider(values_from = c("value"), names_from = "question_name")
+  
+task_map <- inner_join(categorical, numeric, by = "task") %>% ungroup()
+
+task_map %>% write_csv('../task_map.csv')
+```
+
+Investigate specific rows of the task map
+```{r}
+task_map %>% filter(task == "Putting food into categories") %>% t()
+```
+
+
+```{r, fig.width=12, fig.height=5}
+set.seed(1)
+
+pca <- task_map %>% #select(-continuous_questions) %>%
+  select(-task) %>%
+  prcomp()
+
+kmeans <- pca$x %>%
+  kmeans(centers = 4, nstart = 100)
+
+combined_data <- cbind(task_map,
+      pca$x, factor(kmeans$cluster)) %>%
+  rename(cluster = `factor(kmeans$cluster)`)
+
+p <- combined_data %>%
+  ggplot(aes(
+    x = PC1,
+    y = PC2,
+    label = task ,
+    fill = cluster
+  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
+p
+
+plot_ly(
+  x = combined_data$PC1,
+  y = combined_data$PC2,
+  z = combined_data$PC3,
+  type = "scatter3d",
+  mode = "markers", # can use mode = "text"
+  text = combined_data$task ,
+  color = combined_data$cluster
+)
+
+fviz_eig(pca)
+ggsave(plot = p, filename = '../task-map.png')
+```
+
+# Set up Data Export for Karger's Algo
+
+```{r}
+df.karger <- df.mapping.raw %>%
+  select(c(main_questions, task, user)) %>%
+  select(-continuous_questions) %>%
+  pivot_longer(cols = -c(task,user), names_to = "question_name") %>%
+  mutate(
+    value = recode(
+      value,
+      "Mental" = -1,
+      "Physical" = 1,
+      #"Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+      "No" = -1,
+      "Yes" = 1
+    )
+  ) %>% ungroup() %>%
+  select(user, question_name, task, value)
+
+df.karger %>% write_csv('df_for_karger_MAIN.csv')
+```
+
+# How well did the people who showed up today do on the pre-test?
+```{r}
+previously_tested <- read_csv('../survey_workflows/previous_tested.csv')
+
+df.rater_distribution <- df.mapping.payment %>%
+  select(user, num_tasks_completed) %>%
+  left_join(previously_tested, by = c("user" = "name")) %>%
+  group_by(user) %>% # get rid of people who did the old pre-test
+        arrange(user, desc(score_pct)) %>% 
+        slice(1) %>%
+  select(user, num_tasks_completed, score_pct) %>% ungroup() %>%
+  group_by(score_pct) %>%
+  summarize(num_workers = sum(num_tasks_completed))
+  
+ggplot(df.rater_distribution, aes(x = score_pct, y = num_workers)) +
+  geom_bar(stat = "identity") +
+  scale_x_binned()
+```
+
+Look at qualitative feedback about questions
+```{r}
+df.mapping.raw %>%
+select(c(contains("elaboration"),task)) %>%
+pivot_longer(cols = -task, names_to = "question_name") %>%
+  drop_na() %>%
+  filter(nchar(value) > 2) %>%
+  filter(value != 'no problems.' & value != 'Nope') %>% # drop people who said like, 'no'
+  arrange(question_name) %>% write_csv("./task_mapping_feedback-main.csv")
+```
+
 
 
 
