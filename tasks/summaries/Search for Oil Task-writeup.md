@@ -12,7 +12,7 @@ After being shown the detailed information for a limited amount of time, partici
 As participants select which locations they want to drill, they are given feedback after each decision. For example, after participants pick a point on the 12x12 grid to drill oil, they will be told whether they were right or wrong about oil being there, and they will see the running total of their score.
 
 ## 2. Goal Directives 
-The goal of the task is to decide which of the 144 sections of land is suitable for drilling oil, and to do so as accurately as possible. In other words, participants have to remember and account for all the information they were provided about where oil is most likely to be found, and then decide where they want to "drill" (by clicking on the point on the map).
+The goal of the task is to decide which of the 144 sections of land is suitable for drilling oil, and to do so as accurately as possible before the game's time limit runs out. In other words, participants have to remember and account for all the information they were provided about where oil is most likely to be found, and then decide where they want to "drill" (by clicking on the point on the map).
 
 Participants aim to get the highest possible score, and they earn points for every location with oil that they successfully find. They lose points if they select locations that do not have oil. Therefore, one would get the maximum score of this game by correctly finding every point with oil without making any mistakes.
 
