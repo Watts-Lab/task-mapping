@@ -12,13 +12,13 @@ If left unattended together, the wolf would eat the goat, or the goat would eat 
 The farmer's challenge was to carry himself and his purchases to the far bank of the river, leaving each purchase intact. How did he do it?"
 
 ## 2. Goal Directives 
-Participants had to solve this problem within the time limit by devising a way to move the wolf, goat, and cabbage from one river bank to another in the fewest number of trips.
+The goal is to achieve the fewest number of trips that get the wolf, goat, and cabbage from one river bank to another, and to solve this problem within the time limit.
 
 There are a few different possible solutions that get to the lowest number. All of the solutions require the participants take the goat over first, because any other action will lead to something being eaten. Once the farmer comes back, though, there is a dilemma, because if he takes the wolf over, the wolf would eat the goat on the other side; if he takes the cabbage over, the goat would eat the cabbage on the other side.
 
 The "trick" to this problem is to realize that the farmer can actually take the goat BACK on his return trip: that is, he takes either the wolf or cabbage with him on the second trip. Then, he takes the goat BACK to the ORIGINAL side. He then picks up the remaining one of the cabbage or wolf, and finally, he goes back with the goat. Realizing that you can actually bring things back and forth (in both directions), rather than just in one direction across the river, usually requires some out-of-the-box thinking.
 
-Therefore, the focus of this task is not just to figure out the optimal lowest number of trips, but also to get participants to make a creative realization.
+Therefore, participants must satisfy the constraints of the problem while also thinking creatively. As a final piece of helpful context, this task is actually a well-known one that many people have built algorithms to solve.
 
 To summarize, the solution to this task is:
 
