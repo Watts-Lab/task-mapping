@@ -3,24 +3,24 @@
 Mapped by: joycewang3 
 
 ## 1. Stimulus Complex 
-Image test: images of target faces and sets of faces
-Word test: list of target words and sets of words 
-Story test: short paragraphs and a number of multiple-choice questions about the paragraphs
+Participants receive a certain number of images to memorize on individual screens.
 
 ## 2. Goal Directives 
-The goal of the task is to memorize different types of stimuli: words, images, and stories and identify the targets words/images/stories
+The goal is to memorize all target images within a fixed amount of time so that one can recall them in later tasks. For example, participants can be given 20 seconds to memorize six target faces and then asked to identify those target faces on presented in consecutive rounds 15 sets that consist of three faces each.
+
+Participants are evaluated on the number of correctly recalled images. The maximum score occurs when participants recall all images correctly during tasks that follow after the memorization period and the score is maximized by recalling correctly as many images as possible.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
 
 ### Skills 
-memory
+Working memory, visual memory.
 
 ### UI-UX Allowed Processes
-See the target words/images/stories for a limited amount of time, and then see the lists/sets of words/images and click on the target words/images to respond. For the story test, see the questions about the given story and click the answers to submit. There should be a communication mechanism (e.g. chat) between group members to discuss strategy
+See the target images for a limited amount of time, see the sets of images and click on the target images to respond, use a communication mechanism (e.g. chat) between group members to discuss strategies in the group communcation version of the experiment.
 
 ### Other Allowed Processes
-Participants could change the stimuli they were memorizing during the memorization period. During the memorization period, participants could change the stimulus they were viewing at any time by using the buttons in the top left of their screens.
+During the memorization period, participants could change the visual stimuli at any time by using the change button in the top left of their screen.
 
 ## GitHub Link 
 https://github.com/Watts-Lab/task-mapping/blob/master/tasks/Recall%20Images.md
