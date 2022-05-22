@@ -139,6 +139,26 @@ A1I72NHC21347A,Q20type_3_type_4,Putting food into categories,-1
 A1I72NHC21347A,Q22confl_tradeoffs,Putting food into categories,-1
 A1I72NHC21347A,Q23ss_out_uncert,Putting food into categories,-1
 A1I72NHC21347A,Q24eureka_question,Putting food into categories,-1
+A3JAM040VWXHDO,Q1concept_behav,Husbands and wives transfer,-1
+A3JAM040VWXHDO,Q3type_1_planning,Husbands and wives transfer,-1
+A3JAM040VWXHDO,Q4type_2_generate,Husbands and wives transfer,-1
+A3JAM040VWXHDO,Q6type_5_cc,Husbands and wives transfer,-1
+A3JAM040VWXHDO,Q7type_7_battle,Husbands and wives transfer,-1
+A3JAM040VWXHDO,Q8type_8_performance,Husbands and wives transfer,-1
+A3JAM040VWXHDO,Q9divisible_unitary,Husbands and wives transfer,-1
+A3JAM040VWXHDO,Q10maximizing,Husbands and wives transfer,1
+A3JAM040VWXHDO,Q11optimizing,Husbands and wives transfer,1
+A3JAM040VWXHDO,Q13outcome_multip,Husbands and wives transfer,-1
+A3JAM040VWXHDO,Q14sol_scheme_mul,Husbands and wives transfer,-1
+A3JAM040VWXHDO,Q15dec_verifiability,Husbands and wives transfer,1
+A3JAM040VWXHDO,Q16shared_knowledge,Husbands and wives transfer,1
+A3JAM040VWXHDO,Q17within_sys_sol,Husbands and wives transfer,1
+A3JAM040VWXHDO,Q18ans_recog,Husbands and wives transfer,1
+A3JAM040VWXHDO,Q19time_solvability,Husbands and wives transfer,1
+A3JAM040VWXHDO,Q20type_3_type_4,Husbands and wives transfer,1
+A3JAM040VWXHDO,Q22confl_tradeoffs,Husbands and wives transfer,-1
+A3JAM040VWXHDO,Q23ss_out_uncert,Husbands and wives transfer,-1
+A3JAM040VWXHDO,Q24eureka_question,Husbands and wives transfer,1
 AA5ZDXAA2DLY1,Q1concept_behav,Recall association,-1
 AA5ZDXAA2DLY1,Q3type_1_planning,Recall association,-1
 AA5ZDXAA2DLY1,Q4type_2_generate,Recall association,-1
@@ -259,6 +279,26 @@ A1VRG5HKZC0H0C,Q20type_3_type_4,Abstract grid task,1
 A1VRG5HKZC0H0C,Q22confl_tradeoffs,Abstract grid task,-1
 A1VRG5HKZC0H0C,Q23ss_out_uncert,Abstract grid task,1
 A1VRG5HKZC0H0C,Q24eureka_question,Abstract grid task,-1
+A3NXT3OVGL7QNR,Q1concept_behav,Search for Oil Task,-1
+A3NXT3OVGL7QNR,Q3type_1_planning,Search for Oil Task,-1
+A3NXT3OVGL7QNR,Q4type_2_generate,Search for Oil Task,-1
+A3NXT3OVGL7QNR,Q6type_5_cc,Search for Oil Task,-1
+A3NXT3OVGL7QNR,Q7type_7_battle,Search for Oil Task,1
+A3NXT3OVGL7QNR,Q8type_8_performance,Search for Oil Task,-1
+A3NXT3OVGL7QNR,Q9divisible_unitary,Search for Oil Task,1
+A3NXT3OVGL7QNR,Q10maximizing,Search for Oil Task,1
+A3NXT3OVGL7QNR,Q11optimizing,Search for Oil Task,-1
+A3NXT3OVGL7QNR,Q13outcome_multip,Search for Oil Task,-1
+A3NXT3OVGL7QNR,Q14sol_scheme_mul,Search for Oil Task,1
+A3NXT3OVGL7QNR,Q15dec_verifiability,Search for Oil Task,1
+A3NXT3OVGL7QNR,Q16shared_knowledge,Search for Oil Task,1
+A3NXT3OVGL7QNR,Q17within_sys_sol,Search for Oil Task,1
+A3NXT3OVGL7QNR,Q18ans_recog,Search for Oil Task,1
+A3NXT3OVGL7QNR,Q19time_solvability,Search for Oil Task,1
+A3NXT3OVGL7QNR,Q20type_3_type_4,Search for Oil Task,1
+A3NXT3OVGL7QNR,Q22confl_tradeoffs,Search for Oil Task,1
+A3NXT3OVGL7QNR,Q23ss_out_uncert,Search for Oil Task,1
+A3NXT3OVGL7QNR,Q24eureka_question,Search for Oil Task,-1
 A3T9WZOUQGE2UW,Q1concept_behav,Word completion given starting letter,-1
 A3T9WZOUQGE2UW,Q3type_1_planning,Word completion given starting letter,-1
 A3T9WZOUQGE2UW,Q4type_2_generate,Word completion given starting letter,1
@@ -279,6 +319,26 @@ A3T9WZOUQGE2UW,Q20type_3_type_4,Word completion given starting letter,1
 A3T9WZOUQGE2UW,Q22confl_tradeoffs,Word completion given starting letter,-1
 A3T9WZOUQGE2UW,Q23ss_out_uncert,Word completion given starting letter,-1
 A3T9WZOUQGE2UW,Q24eureka_question,Word completion given starting letter,-1
+A3EUGO4VR2N4G1,Q1concept_behav,"Wolf, goat and cabbage transfer",-1
+A3EUGO4VR2N4G1,Q3type_1_planning,"Wolf, goat and cabbage transfer",1
+A3EUGO4VR2N4G1,Q4type_2_generate,"Wolf, goat and cabbage transfer",-1
+A3EUGO4VR2N4G1,Q6type_5_cc,"Wolf, goat and cabbage transfer",-1
+A3EUGO4VR2N4G1,Q7type_7_battle,"Wolf, goat and cabbage transfer",-1
+A3EUGO4VR2N4G1,Q8type_8_performance,"Wolf, goat and cabbage transfer",1
+A3EUGO4VR2N4G1,Q9divisible_unitary,"Wolf, goat and cabbage transfer",-1
+A3EUGO4VR2N4G1,Q10maximizing,"Wolf, goat and cabbage transfer",-1
+A3EUGO4VR2N4G1,Q11optimizing,"Wolf, goat and cabbage transfer",1
+A3EUGO4VR2N4G1,Q13outcome_multip,"Wolf, goat and cabbage transfer",-1
+A3EUGO4VR2N4G1,Q14sol_scheme_mul,"Wolf, goat and cabbage transfer",1
+A3EUGO4VR2N4G1,Q15dec_verifiability,"Wolf, goat and cabbage transfer",1
+A3EUGO4VR2N4G1,Q16shared_knowledge,"Wolf, goat and cabbage transfer",-1
+A3EUGO4VR2N4G1,Q17within_sys_sol,"Wolf, goat and cabbage transfer",1
+A3EUGO4VR2N4G1,Q18ans_recog,"Wolf, goat and cabbage transfer",1
+A3EUGO4VR2N4G1,Q19time_solvability,"Wolf, goat and cabbage transfer",1
+A3EUGO4VR2N4G1,Q20type_3_type_4,"Wolf, goat and cabbage transfer",1
+A3EUGO4VR2N4G1,Q22confl_tradeoffs,"Wolf, goat and cabbage transfer",-1
+A3EUGO4VR2N4G1,Q23ss_out_uncert,"Wolf, goat and cabbage transfer",-1
+A3EUGO4VR2N4G1,Q24eureka_question,"Wolf, goat and cabbage transfer",1
 A8C3WNWRBWUXO,Q1concept_behav,Putting food into categories,-1
 A8C3WNWRBWUXO,Q3type_1_planning,Putting food into categories,-1
 A8C3WNWRBWUXO,Q4type_2_generate,Putting food into categories,1
@@ -559,6 +619,26 @@ A26GDUUFGPAYUL,Q20type_3_type_4,Word completion given part of word,NA
 A26GDUUFGPAYUL,Q22confl_tradeoffs,Word completion given part of word,-1
 A26GDUUFGPAYUL,Q23ss_out_uncert,Word completion given part of word,-1
 A26GDUUFGPAYUL,Q24eureka_question,Word completion given part of word,-1
+A2H5V1V8QIY8Y7,Q1concept_behav,Letters-to-numbers problems (cryptography),-1
+A2H5V1V8QIY8Y7,Q3type_1_planning,Letters-to-numbers problems (cryptography),-1
+A2H5V1V8QIY8Y7,Q4type_2_generate,Letters-to-numbers problems (cryptography),-1
+A2H5V1V8QIY8Y7,Q6type_5_cc,Letters-to-numbers problems (cryptography),-1
+A2H5V1V8QIY8Y7,Q7type_7_battle,Letters-to-numbers problems (cryptography),-1
+A2H5V1V8QIY8Y7,Q8type_8_performance,Letters-to-numbers problems (cryptography),-1
+A2H5V1V8QIY8Y7,Q9divisible_unitary,Letters-to-numbers problems (cryptography),1
+A2H5V1V8QIY8Y7,Q10maximizing,Letters-to-numbers problems (cryptography),1
+A2H5V1V8QIY8Y7,Q11optimizing,Letters-to-numbers problems (cryptography),-1
+A2H5V1V8QIY8Y7,Q13outcome_multip,Letters-to-numbers problems (cryptography),1
+A2H5V1V8QIY8Y7,Q14sol_scheme_mul,Letters-to-numbers problems (cryptography),1
+A2H5V1V8QIY8Y7,Q15dec_verifiability,Letters-to-numbers problems (cryptography),1
+A2H5V1V8QIY8Y7,Q16shared_knowledge,Letters-to-numbers problems (cryptography),1
+A2H5V1V8QIY8Y7,Q17within_sys_sol,Letters-to-numbers problems (cryptography),1
+A2H5V1V8QIY8Y7,Q18ans_recog,Letters-to-numbers problems (cryptography),1
+A2H5V1V8QIY8Y7,Q19time_solvability,Letters-to-numbers problems (cryptography),1
+A2H5V1V8QIY8Y7,Q20type_3_type_4,Letters-to-numbers problems (cryptography),1
+A2H5V1V8QIY8Y7,Q22confl_tradeoffs,Letters-to-numbers problems (cryptography),-1
+A2H5V1V8QIY8Y7,Q23ss_out_uncert,Letters-to-numbers problems (cryptography),-1
+A2H5V1V8QIY8Y7,Q24eureka_question,Letters-to-numbers problems (cryptography),-1
 A3T9WZOUQGE2UW,Q1concept_behav,Image rating,-1
 A3T9WZOUQGE2UW,Q3type_1_planning,Image rating,-1
 A3T9WZOUQGE2UW,Q4type_2_generate,Image rating,-1
@@ -579,6 +659,26 @@ A3T9WZOUQGE2UW,Q20type_3_type_4,Image rating,1
 A3T9WZOUQGE2UW,Q22confl_tradeoffs,Image rating,-1
 A3T9WZOUQGE2UW,Q23ss_out_uncert,Image rating,1
 A3T9WZOUQGE2UW,Q24eureka_question,Image rating,-1
+A2H5V1V8QIY8Y7,Q1concept_behav,Husbands and wives transfer,-1
+A2H5V1V8QIY8Y7,Q3type_1_planning,Husbands and wives transfer,-1
+A2H5V1V8QIY8Y7,Q4type_2_generate,Husbands and wives transfer,-1
+A2H5V1V8QIY8Y7,Q6type_5_cc,Husbands and wives transfer,-1
+A2H5V1V8QIY8Y7,Q7type_7_battle,Husbands and wives transfer,-1
+A2H5V1V8QIY8Y7,Q8type_8_performance,Husbands and wives transfer,1
+A2H5V1V8QIY8Y7,Q9divisible_unitary,Husbands and wives transfer,-1
+A2H5V1V8QIY8Y7,Q10maximizing,Husbands and wives transfer,-1
+A2H5V1V8QIY8Y7,Q11optimizing,Husbands and wives transfer,1
+A2H5V1V8QIY8Y7,Q13outcome_multip,Husbands and wives transfer,1
+A2H5V1V8QIY8Y7,Q14sol_scheme_mul,Husbands and wives transfer,-1
+A2H5V1V8QIY8Y7,Q15dec_verifiability,Husbands and wives transfer,1
+A2H5V1V8QIY8Y7,Q16shared_knowledge,Husbands and wives transfer,1
+A2H5V1V8QIY8Y7,Q17within_sys_sol,Husbands and wives transfer,1
+A2H5V1V8QIY8Y7,Q18ans_recog,Husbands and wives transfer,1
+A2H5V1V8QIY8Y7,Q19time_solvability,Husbands and wives transfer,1
+A2H5V1V8QIY8Y7,Q20type_3_type_4,Husbands and wives transfer,1
+A2H5V1V8QIY8Y7,Q22confl_tradeoffs,Husbands and wives transfer,-1
+A2H5V1V8QIY8Y7,Q23ss_out_uncert,Husbands and wives transfer,-1
+A2H5V1V8QIY8Y7,Q24eureka_question,Husbands and wives transfer,1
 A26UIS59SY4NM6,Q1concept_behav,Moral Reasoning (Disciplinary Action Case),-1
 A26UIS59SY4NM6,Q3type_1_planning,Moral Reasoning (Disciplinary Action Case),-1
 A26UIS59SY4NM6,Q4type_2_generate,Moral Reasoning (Disciplinary Action Case),-1
@@ -879,6 +979,26 @@ A1I72NHC21347A,Q20type_3_type_4,Summarize Discussion,-1
 A1I72NHC21347A,Q22confl_tradeoffs,Summarize Discussion,1
 A1I72NHC21347A,Q23ss_out_uncert,Summarize Discussion,1
 A1I72NHC21347A,Q24eureka_question,Summarize Discussion,-1
+A2S64AUN7JI7ZS,Q1concept_behav,"Wolf, goat and cabbage transfer",-1
+A2S64AUN7JI7ZS,Q3type_1_planning,"Wolf, goat and cabbage transfer",1
+A2S64AUN7JI7ZS,Q4type_2_generate,"Wolf, goat and cabbage transfer",-1
+A2S64AUN7JI7ZS,Q6type_5_cc,"Wolf, goat and cabbage transfer",-1
+A2S64AUN7JI7ZS,Q7type_7_battle,"Wolf, goat and cabbage transfer",1
+A2S64AUN7JI7ZS,Q8type_8_performance,"Wolf, goat and cabbage transfer",1
+A2S64AUN7JI7ZS,Q9divisible_unitary,"Wolf, goat and cabbage transfer",-1
+A2S64AUN7JI7ZS,Q10maximizing,"Wolf, goat and cabbage transfer",1
+A2S64AUN7JI7ZS,Q11optimizing,"Wolf, goat and cabbage transfer",1
+A2S64AUN7JI7ZS,Q13outcome_multip,"Wolf, goat and cabbage transfer",-1
+A2S64AUN7JI7ZS,Q14sol_scheme_mul,"Wolf, goat and cabbage transfer",-1
+A2S64AUN7JI7ZS,Q15dec_verifiability,"Wolf, goat and cabbage transfer",1
+A2S64AUN7JI7ZS,Q16shared_knowledge,"Wolf, goat and cabbage transfer",1
+A2S64AUN7JI7ZS,Q17within_sys_sol,"Wolf, goat and cabbage transfer",1
+A2S64AUN7JI7ZS,Q18ans_recog,"Wolf, goat and cabbage transfer",1
+A2S64AUN7JI7ZS,Q19time_solvability,"Wolf, goat and cabbage transfer",1
+A2S64AUN7JI7ZS,Q20type_3_type_4,"Wolf, goat and cabbage transfer",1
+A2S64AUN7JI7ZS,Q22confl_tradeoffs,"Wolf, goat and cabbage transfer",-1
+A2S64AUN7JI7ZS,Q23ss_out_uncert,"Wolf, goat and cabbage transfer",-1
+A2S64AUN7JI7ZS,Q24eureka_question,"Wolf, goat and cabbage transfer",1
 A3V3SQCM8QGYB7,Q1concept_behav,Guessing the correlation,-1
 A3V3SQCM8QGYB7,Q3type_1_planning,Guessing the correlation,-1
 A3V3SQCM8QGYB7,Q4type_2_generate,Guessing the correlation,-1
@@ -1219,6 +1339,26 @@ ARI1EMAHUA9PO,Q20type_3_type_4,Graph coloring task,1
 ARI1EMAHUA9PO,Q22confl_tradeoffs,Graph coloring task,1
 ARI1EMAHUA9PO,Q23ss_out_uncert,Graph coloring task,-1
 ARI1EMAHUA9PO,Q24eureka_question,Graph coloring task,-1
+A2H5V1V8QIY8Y7,Q1concept_behav,"Wolf, goat and cabbage transfer",-1
+A2H5V1V8QIY8Y7,Q3type_1_planning,"Wolf, goat and cabbage transfer",1
+A2H5V1V8QIY8Y7,Q4type_2_generate,"Wolf, goat and cabbage transfer",-1
+A2H5V1V8QIY8Y7,Q6type_5_cc,"Wolf, goat and cabbage transfer",-1
+A2H5V1V8QIY8Y7,Q7type_7_battle,"Wolf, goat and cabbage transfer",-1
+A2H5V1V8QIY8Y7,Q8type_8_performance,"Wolf, goat and cabbage transfer",1
+A2H5V1V8QIY8Y7,Q9divisible_unitary,"Wolf, goat and cabbage transfer",-1
+A2H5V1V8QIY8Y7,Q10maximizing,"Wolf, goat and cabbage transfer",-1
+A2H5V1V8QIY8Y7,Q11optimizing,"Wolf, goat and cabbage transfer",1
+A2H5V1V8QIY8Y7,Q13outcome_multip,"Wolf, goat and cabbage transfer",-1
+A2H5V1V8QIY8Y7,Q14sol_scheme_mul,"Wolf, goat and cabbage transfer",-1
+A2H5V1V8QIY8Y7,Q15dec_verifiability,"Wolf, goat and cabbage transfer",1
+A2H5V1V8QIY8Y7,Q16shared_knowledge,"Wolf, goat and cabbage transfer",1
+A2H5V1V8QIY8Y7,Q17within_sys_sol,"Wolf, goat and cabbage transfer",1
+A2H5V1V8QIY8Y7,Q18ans_recog,"Wolf, goat and cabbage transfer",1
+A2H5V1V8QIY8Y7,Q19time_solvability,"Wolf, goat and cabbage transfer",1
+A2H5V1V8QIY8Y7,Q20type_3_type_4,"Wolf, goat and cabbage transfer",1
+A2H5V1V8QIY8Y7,Q22confl_tradeoffs,"Wolf, goat and cabbage transfer",-1
+A2H5V1V8QIY8Y7,Q23ss_out_uncert,"Wolf, goat and cabbage transfer",-1
+A2H5V1V8QIY8Y7,Q24eureka_question,"Wolf, goat and cabbage transfer",1
 A6JKKANO7F4KD,Q1concept_behav,Recall videos,-1
 A6JKKANO7F4KD,Q3type_1_planning,Recall videos,-1
 A6JKKANO7F4KD,Q4type_2_generate,Recall videos,-1
@@ -1299,6 +1439,26 @@ A1VRG5HKZC0H0C,Q20type_3_type_4,Advertisement writing,-1
 A1VRG5HKZC0H0C,Q22confl_tradeoffs,Advertisement writing,1
 A1VRG5HKZC0H0C,Q23ss_out_uncert,Advertisement writing,1
 A1VRG5HKZC0H0C,Q24eureka_question,Advertisement writing,-1
+A19CB2C4GY4C60,Q1concept_behav,Husbands and wives transfer,-1
+A19CB2C4GY4C60,Q3type_1_planning,Husbands and wives transfer,-1
+A19CB2C4GY4C60,Q4type_2_generate,Husbands and wives transfer,1
+A19CB2C4GY4C60,Q6type_5_cc,Husbands and wives transfer,-1
+A19CB2C4GY4C60,Q7type_7_battle,Husbands and wives transfer,-1
+A19CB2C4GY4C60,Q8type_8_performance,Husbands and wives transfer,-1
+A19CB2C4GY4C60,Q9divisible_unitary,Husbands and wives transfer,-1
+A19CB2C4GY4C60,Q10maximizing,Husbands and wives transfer,-1
+A19CB2C4GY4C60,Q11optimizing,Husbands and wives transfer,1
+A19CB2C4GY4C60,Q13outcome_multip,Husbands and wives transfer,-1
+A19CB2C4GY4C60,Q14sol_scheme_mul,Husbands and wives transfer,-1
+A19CB2C4GY4C60,Q15dec_verifiability,Husbands and wives transfer,1
+A19CB2C4GY4C60,Q16shared_knowledge,Husbands and wives transfer,1
+A19CB2C4GY4C60,Q17within_sys_sol,Husbands and wives transfer,1
+A19CB2C4GY4C60,Q18ans_recog,Husbands and wives transfer,1
+A19CB2C4GY4C60,Q19time_solvability,Husbands and wives transfer,1
+A19CB2C4GY4C60,Q20type_3_type_4,Husbands and wives transfer,1
+A19CB2C4GY4C60,Q22confl_tradeoffs,Husbands and wives transfer,1
+A19CB2C4GY4C60,Q23ss_out_uncert,Husbands and wives transfer,-1
+A19CB2C4GY4C60,Q24eureka_question,Husbands and wives transfer,-1
 AA5ZDXAA2DLY1,Q1concept_behav,Estimating pages of a book,-1
 AA5ZDXAA2DLY1,Q3type_1_planning,Estimating pages of a book,-1
 AA5ZDXAA2DLY1,Q4type_2_generate,Estimating pages of a book,-1
@@ -1399,6 +1559,26 @@ A3I9XLIHPPWPN1,Q20type_3_type_4,Graph coloring task,1
 A3I9XLIHPPWPN1,Q22confl_tradeoffs,Graph coloring task,-1
 A3I9XLIHPPWPN1,Q23ss_out_uncert,Graph coloring task,-1
 A3I9XLIHPPWPN1,Q24eureka_question,Graph coloring task,-1
+A2615YW1YERQBO,Q1concept_behav,"Wolf, goat and cabbage transfer",-1
+A2615YW1YERQBO,Q3type_1_planning,"Wolf, goat and cabbage transfer",-1
+A2615YW1YERQBO,Q4type_2_generate,"Wolf, goat and cabbage transfer",-1
+A2615YW1YERQBO,Q6type_5_cc,"Wolf, goat and cabbage transfer",-1
+A2615YW1YERQBO,Q7type_7_battle,"Wolf, goat and cabbage transfer",-1
+A2615YW1YERQBO,Q8type_8_performance,"Wolf, goat and cabbage transfer",1
+A2615YW1YERQBO,Q9divisible_unitary,"Wolf, goat and cabbage transfer",-1
+A2615YW1YERQBO,Q10maximizing,"Wolf, goat and cabbage transfer",-1
+A2615YW1YERQBO,Q11optimizing,"Wolf, goat and cabbage transfer",-1
+A2615YW1YERQBO,Q13outcome_multip,"Wolf, goat and cabbage transfer",1
+A2615YW1YERQBO,Q14sol_scheme_mul,"Wolf, goat and cabbage transfer",-1
+A2615YW1YERQBO,Q15dec_verifiability,"Wolf, goat and cabbage transfer",1
+A2615YW1YERQBO,Q16shared_knowledge,"Wolf, goat and cabbage transfer",1
+A2615YW1YERQBO,Q17within_sys_sol,"Wolf, goat and cabbage transfer",1
+A2615YW1YERQBO,Q18ans_recog,"Wolf, goat and cabbage transfer",1
+A2615YW1YERQBO,Q19time_solvability,"Wolf, goat and cabbage transfer",1
+A2615YW1YERQBO,Q20type_3_type_4,"Wolf, goat and cabbage transfer",1
+A2615YW1YERQBO,Q22confl_tradeoffs,"Wolf, goat and cabbage transfer",1
+A2615YW1YERQBO,Q23ss_out_uncert,"Wolf, goat and cabbage transfer",-1
+A2615YW1YERQBO,Q24eureka_question,"Wolf, goat and cabbage transfer",1
 A1VRG5HKZC0H0C,Q1concept_behav,Moral Reasoning (Disciplinary Action Case),-1
 A1VRG5HKZC0H0C,Q3type_1_planning,Moral Reasoning (Disciplinary Action Case),-1
 A1VRG5HKZC0H0C,Q4type_2_generate,Moral Reasoning (Disciplinary Action Case),-1
@@ -1419,6 +1599,26 @@ A1VRG5HKZC0H0C,Q20type_3_type_4,Moral Reasoning (Disciplinary Action Case),-1
 A1VRG5HKZC0H0C,Q22confl_tradeoffs,Moral Reasoning (Disciplinary Action Case),1
 A1VRG5HKZC0H0C,Q23ss_out_uncert,Moral Reasoning (Disciplinary Action Case),-1
 A1VRG5HKZC0H0C,Q24eureka_question,Moral Reasoning (Disciplinary Action Case),-1
+A18T7E73TNGOKP,Q1concept_behav,Search for Oil Task,-1
+A18T7E73TNGOKP,Q3type_1_planning,Search for Oil Task,1
+A18T7E73TNGOKP,Q4type_2_generate,Search for Oil Task,-1
+A18T7E73TNGOKP,Q6type_5_cc,Search for Oil Task,-1
+A18T7E73TNGOKP,Q7type_7_battle,Search for Oil Task,1
+A18T7E73TNGOKP,Q8type_8_performance,Search for Oil Task,-1
+A18T7E73TNGOKP,Q9divisible_unitary,Search for Oil Task,-1
+A18T7E73TNGOKP,Q10maximizing,Search for Oil Task,1
+A18T7E73TNGOKP,Q11optimizing,Search for Oil Task,1
+A18T7E73TNGOKP,Q13outcome_multip,Search for Oil Task,1
+A18T7E73TNGOKP,Q14sol_scheme_mul,Search for Oil Task,-1
+A18T7E73TNGOKP,Q15dec_verifiability,Search for Oil Task,1
+A18T7E73TNGOKP,Q16shared_knowledge,Search for Oil Task,1
+A18T7E73TNGOKP,Q17within_sys_sol,Search for Oil Task,-1
+A18T7E73TNGOKP,Q18ans_recog,Search for Oil Task,1
+A18T7E73TNGOKP,Q19time_solvability,Search for Oil Task,1
+A18T7E73TNGOKP,Q20type_3_type_4,Search for Oil Task,1
+A18T7E73TNGOKP,Q22confl_tradeoffs,Search for Oil Task,1
+A18T7E73TNGOKP,Q23ss_out_uncert,Search for Oil Task,1
+A18T7E73TNGOKP,Q24eureka_question,Search for Oil Task,-1
 A2ONILC0LZKG6Y,Q1concept_behav,Word completion given starting letter,-1
 A2ONILC0LZKG6Y,Q3type_1_planning,Word completion given starting letter,-1
 A2ONILC0LZKG6Y,Q4type_2_generate,Word completion given starting letter,1
@@ -1459,6 +1659,26 @@ A1I72NHC21347A,Q20type_3_type_4,Estimating pages of a book,1
 A1I72NHC21347A,Q22confl_tradeoffs,Estimating pages of a book,-1
 A1I72NHC21347A,Q23ss_out_uncert,Estimating pages of a book,1
 A1I72NHC21347A,Q24eureka_question,Estimating pages of a book,-1
+A2AZYU1CT24O0K,Q1concept_behav,Search for Oil Task,-1
+A2AZYU1CT24O0K,Q3type_1_planning,Search for Oil Task,-1
+A2AZYU1CT24O0K,Q4type_2_generate,Search for Oil Task,-1
+A2AZYU1CT24O0K,Q6type_5_cc,Search for Oil Task,-1
+A2AZYU1CT24O0K,Q7type_7_battle,Search for Oil Task,-1
+A2AZYU1CT24O0K,Q8type_8_performance,Search for Oil Task,-1
+A2AZYU1CT24O0K,Q9divisible_unitary,Search for Oil Task,1
+A2AZYU1CT24O0K,Q10maximizing,Search for Oil Task,1
+A2AZYU1CT24O0K,Q11optimizing,Search for Oil Task,1
+A2AZYU1CT24O0K,Q13outcome_multip,Search for Oil Task,-1
+A2AZYU1CT24O0K,Q14sol_scheme_mul,Search for Oil Task,-1
+A2AZYU1CT24O0K,Q15dec_verifiability,Search for Oil Task,1
+A2AZYU1CT24O0K,Q16shared_knowledge,Search for Oil Task,-1
+A2AZYU1CT24O0K,Q17within_sys_sol,Search for Oil Task,1
+A2AZYU1CT24O0K,Q18ans_recog,Search for Oil Task,-1
+A2AZYU1CT24O0K,Q19time_solvability,Search for Oil Task,1
+A2AZYU1CT24O0K,Q20type_3_type_4,Search for Oil Task,1
+A2AZYU1CT24O0K,Q22confl_tradeoffs,Search for Oil Task,-1
+A2AZYU1CT24O0K,Q23ss_out_uncert,Search for Oil Task,1
+A2AZYU1CT24O0K,Q24eureka_question,Search for Oil Task,-1
 A23BWWRR7J5XLS,Q1concept_behav,To evacuate or not to evacuate,-1
 A23BWWRR7J5XLS,Q3type_1_planning,To evacuate or not to evacuate,-1
 A23BWWRR7J5XLS,Q4type_2_generate,To evacuate or not to evacuate,-1
@@ -1539,6 +1759,26 @@ A2VRDE2FHCBMF8,Q20type_3_type_4,9 Dot Problem,1
 A2VRDE2FHCBMF8,Q22confl_tradeoffs,9 Dot Problem,-1
 A2VRDE2FHCBMF8,Q23ss_out_uncert,9 Dot Problem,1
 A2VRDE2FHCBMF8,Q24eureka_question,9 Dot Problem,1
+A18T7E73TNGOKP,Q1concept_behav,"Wolf, goat and cabbage transfer",-1
+A18T7E73TNGOKP,Q3type_1_planning,"Wolf, goat and cabbage transfer",1
+A18T7E73TNGOKP,Q4type_2_generate,"Wolf, goat and cabbage transfer",1
+A18T7E73TNGOKP,Q6type_5_cc,"Wolf, goat and cabbage transfer",-1
+A18T7E73TNGOKP,Q7type_7_battle,"Wolf, goat and cabbage transfer",-1
+A18T7E73TNGOKP,Q8type_8_performance,"Wolf, goat and cabbage transfer",1
+A18T7E73TNGOKP,Q9divisible_unitary,"Wolf, goat and cabbage transfer",-1
+A18T7E73TNGOKP,Q10maximizing,"Wolf, goat and cabbage transfer",-1
+A18T7E73TNGOKP,Q11optimizing,"Wolf, goat and cabbage transfer",1
+A18T7E73TNGOKP,Q13outcome_multip,"Wolf, goat and cabbage transfer",-1
+A18T7E73TNGOKP,Q14sol_scheme_mul,"Wolf, goat and cabbage transfer",-1
+A18T7E73TNGOKP,Q15dec_verifiability,"Wolf, goat and cabbage transfer",1
+A18T7E73TNGOKP,Q16shared_knowledge,"Wolf, goat and cabbage transfer",-1
+A18T7E73TNGOKP,Q17within_sys_sol,"Wolf, goat and cabbage transfer",1
+A18T7E73TNGOKP,Q18ans_recog,"Wolf, goat and cabbage transfer",1
+A18T7E73TNGOKP,Q19time_solvability,"Wolf, goat and cabbage transfer",1
+A18T7E73TNGOKP,Q20type_3_type_4,"Wolf, goat and cabbage transfer",1
+A18T7E73TNGOKP,Q22confl_tradeoffs,"Wolf, goat and cabbage transfer",-1
+A18T7E73TNGOKP,Q23ss_out_uncert,"Wolf, goat and cabbage transfer",-1
+A18T7E73TNGOKP,Q24eureka_question,"Wolf, goat and cabbage transfer",1
 A1I72NHC21347A,Q1concept_behav,Shopping plan,-1
 A1I72NHC21347A,Q3type_1_planning,Shopping plan,1
 A1I72NHC21347A,Q4type_2_generate,Shopping plan,-1
@@ -1639,6 +1879,86 @@ A1JED1RJM2C9MS,Q20type_3_type_4,9 Dot Problem,1
 A1JED1RJM2C9MS,Q22confl_tradeoffs,9 Dot Problem,-1
 A1JED1RJM2C9MS,Q23ss_out_uncert,9 Dot Problem,-1
 A1JED1RJM2C9MS,Q24eureka_question,9 Dot Problem,1
+A2WZTMXWD20NYE,Q1concept_behav,Search for Oil Task,-1
+A2WZTMXWD20NYE,Q3type_1_planning,Search for Oil Task,-1
+A2WZTMXWD20NYE,Q4type_2_generate,Search for Oil Task,-1
+A2WZTMXWD20NYE,Q6type_5_cc,Search for Oil Task,-1
+A2WZTMXWD20NYE,Q7type_7_battle,Search for Oil Task,-1
+A2WZTMXWD20NYE,Q8type_8_performance,Search for Oil Task,-1
+A2WZTMXWD20NYE,Q9divisible_unitary,Search for Oil Task,NA
+A2WZTMXWD20NYE,Q10maximizing,Search for Oil Task,1
+A2WZTMXWD20NYE,Q11optimizing,Search for Oil Task,1
+A2WZTMXWD20NYE,Q13outcome_multip,Search for Oil Task,1
+A2WZTMXWD20NYE,Q14sol_scheme_mul,Search for Oil Task,1
+A2WZTMXWD20NYE,Q15dec_verifiability,Search for Oil Task,1
+A2WZTMXWD20NYE,Q16shared_knowledge,Search for Oil Task,1
+A2WZTMXWD20NYE,Q17within_sys_sol,Search for Oil Task,1
+A2WZTMXWD20NYE,Q18ans_recog,Search for Oil Task,1
+A2WZTMXWD20NYE,Q19time_solvability,Search for Oil Task,1
+A2WZTMXWD20NYE,Q20type_3_type_4,Search for Oil Task,1
+A2WZTMXWD20NYE,Q22confl_tradeoffs,Search for Oil Task,-1
+A2WZTMXWD20NYE,Q23ss_out_uncert,Search for Oil Task,1
+A2WZTMXWD20NYE,Q24eureka_question,Search for Oil Task,-1
+A18T7E73TNGOKP,Q1concept_behav,Letters-to-numbers problems (cryptography),-1
+A18T7E73TNGOKP,Q3type_1_planning,Letters-to-numbers problems (cryptography),1
+A18T7E73TNGOKP,Q4type_2_generate,Letters-to-numbers problems (cryptography),-1
+A18T7E73TNGOKP,Q6type_5_cc,Letters-to-numbers problems (cryptography),-1
+A18T7E73TNGOKP,Q7type_7_battle,Letters-to-numbers problems (cryptography),-1
+A18T7E73TNGOKP,Q8type_8_performance,Letters-to-numbers problems (cryptography),-1
+A18T7E73TNGOKP,Q9divisible_unitary,Letters-to-numbers problems (cryptography),-1
+A18T7E73TNGOKP,Q10maximizing,Letters-to-numbers problems (cryptography),1
+A18T7E73TNGOKP,Q11optimizing,Letters-to-numbers problems (cryptography),1
+A18T7E73TNGOKP,Q13outcome_multip,Letters-to-numbers problems (cryptography),1
+A18T7E73TNGOKP,Q14sol_scheme_mul,Letters-to-numbers problems (cryptography),-1
+A18T7E73TNGOKP,Q15dec_verifiability,Letters-to-numbers problems (cryptography),1
+A18T7E73TNGOKP,Q16shared_knowledge,Letters-to-numbers problems (cryptography),1
+A18T7E73TNGOKP,Q17within_sys_sol,Letters-to-numbers problems (cryptography),-1
+A18T7E73TNGOKP,Q18ans_recog,Letters-to-numbers problems (cryptography),-1
+A18T7E73TNGOKP,Q19time_solvability,Letters-to-numbers problems (cryptography),-1
+A18T7E73TNGOKP,Q20type_3_type_4,Letters-to-numbers problems (cryptography),1
+A18T7E73TNGOKP,Q22confl_tradeoffs,Letters-to-numbers problems (cryptography),-1
+A18T7E73TNGOKP,Q23ss_out_uncert,Letters-to-numbers problems (cryptography),NA
+A18T7E73TNGOKP,Q24eureka_question,Letters-to-numbers problems (cryptography),-1
+A3JAM040VWXHDO,Q1concept_behav,Letters-to-numbers problems (cryptography),-1
+A3JAM040VWXHDO,Q3type_1_planning,Letters-to-numbers problems (cryptography),-1
+A3JAM040VWXHDO,Q4type_2_generate,Letters-to-numbers problems (cryptography),-1
+A3JAM040VWXHDO,Q6type_5_cc,Letters-to-numbers problems (cryptography),-1
+A3JAM040VWXHDO,Q7type_7_battle,Letters-to-numbers problems (cryptography),-1
+A3JAM040VWXHDO,Q8type_8_performance,Letters-to-numbers problems (cryptography),-1
+A3JAM040VWXHDO,Q9divisible_unitary,Letters-to-numbers problems (cryptography),-1
+A3JAM040VWXHDO,Q10maximizing,Letters-to-numbers problems (cryptography),1
+A3JAM040VWXHDO,Q11optimizing,Letters-to-numbers problems (cryptography),1
+A3JAM040VWXHDO,Q13outcome_multip,Letters-to-numbers problems (cryptography),1
+A3JAM040VWXHDO,Q14sol_scheme_mul,Letters-to-numbers problems (cryptography),-1
+A3JAM040VWXHDO,Q15dec_verifiability,Letters-to-numbers problems (cryptography),1
+A3JAM040VWXHDO,Q16shared_knowledge,Letters-to-numbers problems (cryptography),1
+A3JAM040VWXHDO,Q17within_sys_sol,Letters-to-numbers problems (cryptography),1
+A3JAM040VWXHDO,Q18ans_recog,Letters-to-numbers problems (cryptography),1
+A3JAM040VWXHDO,Q19time_solvability,Letters-to-numbers problems (cryptography),1
+A3JAM040VWXHDO,Q20type_3_type_4,Letters-to-numbers problems (cryptography),1
+A3JAM040VWXHDO,Q22confl_tradeoffs,Letters-to-numbers problems (cryptography),-1
+A3JAM040VWXHDO,Q23ss_out_uncert,Letters-to-numbers problems (cryptography),-1
+A3JAM040VWXHDO,Q24eureka_question,Letters-to-numbers problems (cryptography),1
+A2S64AUN7JI7ZS,Q1concept_behav,Search for Oil Task,-1
+A2S64AUN7JI7ZS,Q3type_1_planning,Search for Oil Task,1
+A2S64AUN7JI7ZS,Q4type_2_generate,Search for Oil Task,-1
+A2S64AUN7JI7ZS,Q6type_5_cc,Search for Oil Task,-1
+A2S64AUN7JI7ZS,Q7type_7_battle,Search for Oil Task,1
+A2S64AUN7JI7ZS,Q8type_8_performance,Search for Oil Task,-1
+A2S64AUN7JI7ZS,Q9divisible_unitary,Search for Oil Task,-1
+A2S64AUN7JI7ZS,Q10maximizing,Search for Oil Task,1
+A2S64AUN7JI7ZS,Q11optimizing,Search for Oil Task,-1
+A2S64AUN7JI7ZS,Q13outcome_multip,Search for Oil Task,1
+A2S64AUN7JI7ZS,Q14sol_scheme_mul,Search for Oil Task,-1
+A2S64AUN7JI7ZS,Q15dec_verifiability,Search for Oil Task,1
+A2S64AUN7JI7ZS,Q16shared_knowledge,Search for Oil Task,1
+A2S64AUN7JI7ZS,Q17within_sys_sol,Search for Oil Task,1
+A2S64AUN7JI7ZS,Q18ans_recog,Search for Oil Task,1
+A2S64AUN7JI7ZS,Q19time_solvability,Search for Oil Task,-1
+A2S64AUN7JI7ZS,Q20type_3_type_4,Search for Oil Task,1
+A2S64AUN7JI7ZS,Q22confl_tradeoffs,Search for Oil Task,-1
+A2S64AUN7JI7ZS,Q23ss_out_uncert,Search for Oil Task,-1
+A2S64AUN7JI7ZS,Q24eureka_question,Search for Oil Task,-1
 A27W025UEXS1G0,Q1concept_behav,Allocating resources to programs,-1
 A27W025UEXS1G0,Q3type_1_planning,Allocating resources to programs,-1
 A27W025UEXS1G0,Q4type_2_generate,Allocating resources to programs,1
@@ -1739,6 +2059,26 @@ A3HGZDLMCKGPSE,Q20type_3_type_4,Advertisement writing,-1
 A3HGZDLMCKGPSE,Q22confl_tradeoffs,Advertisement writing,-1
 A3HGZDLMCKGPSE,Q23ss_out_uncert,Advertisement writing,-1
 A3HGZDLMCKGPSE,Q24eureka_question,Advertisement writing,-1
+A2AZYU1CT24O0K,Q1concept_behav,Letters-to-numbers problems (cryptography),-1
+A2AZYU1CT24O0K,Q3type_1_planning,Letters-to-numbers problems (cryptography),-1
+A2AZYU1CT24O0K,Q4type_2_generate,Letters-to-numbers problems (cryptography),-1
+A2AZYU1CT24O0K,Q6type_5_cc,Letters-to-numbers problems (cryptography),-1
+A2AZYU1CT24O0K,Q7type_7_battle,Letters-to-numbers problems (cryptography),-1
+A2AZYU1CT24O0K,Q8type_8_performance,Letters-to-numbers problems (cryptography),-1
+A2AZYU1CT24O0K,Q9divisible_unitary,Letters-to-numbers problems (cryptography),-1
+A2AZYU1CT24O0K,Q10maximizing,Letters-to-numbers problems (cryptography),1
+A2AZYU1CT24O0K,Q11optimizing,Letters-to-numbers problems (cryptography),-1
+A2AZYU1CT24O0K,Q13outcome_multip,Letters-to-numbers problems (cryptography),1
+A2AZYU1CT24O0K,Q14sol_scheme_mul,Letters-to-numbers problems (cryptography),1
+A2AZYU1CT24O0K,Q15dec_verifiability,Letters-to-numbers problems (cryptography),1
+A2AZYU1CT24O0K,Q16shared_knowledge,Letters-to-numbers problems (cryptography),1
+A2AZYU1CT24O0K,Q17within_sys_sol,Letters-to-numbers problems (cryptography),1
+A2AZYU1CT24O0K,Q18ans_recog,Letters-to-numbers problems (cryptography),1
+A2AZYU1CT24O0K,Q19time_solvability,Letters-to-numbers problems (cryptography),1
+A2AZYU1CT24O0K,Q20type_3_type_4,Letters-to-numbers problems (cryptography),1
+A2AZYU1CT24O0K,Q22confl_tradeoffs,Letters-to-numbers problems (cryptography),-1
+A2AZYU1CT24O0K,Q23ss_out_uncert,Letters-to-numbers problems (cryptography),-1
+A2AZYU1CT24O0K,Q24eureka_question,Letters-to-numbers problems (cryptography),-1
 AKQAI78JTXXC9,Q1concept_behav,Guessing the correlation,-1
 AKQAI78JTXXC9,Q3type_1_planning,Guessing the correlation,-1
 AKQAI78JTXXC9,Q4type_2_generate,Guessing the correlation,-1
@@ -1839,6 +2179,26 @@ A2VRDE2FHCBMF8,Q20type_3_type_4,Estimating pages of a book,1
 A2VRDE2FHCBMF8,Q22confl_tradeoffs,Estimating pages of a book,-1
 A2VRDE2FHCBMF8,Q23ss_out_uncert,Estimating pages of a book,1
 A2VRDE2FHCBMF8,Q24eureka_question,Estimating pages of a book,-1
+A3HL2LL0LEPZT8,Q1concept_behav,Search for Oil Task,-1
+A3HL2LL0LEPZT8,Q3type_1_planning,Search for Oil Task,-1
+A3HL2LL0LEPZT8,Q4type_2_generate,Search for Oil Task,-1
+A3HL2LL0LEPZT8,Q6type_5_cc,Search for Oil Task,-1
+A3HL2LL0LEPZT8,Q7type_7_battle,Search for Oil Task,-1
+A3HL2LL0LEPZT8,Q8type_8_performance,Search for Oil Task,-1
+A3HL2LL0LEPZT8,Q9divisible_unitary,Search for Oil Task,1
+A3HL2LL0LEPZT8,Q10maximizing,Search for Oil Task,1
+A3HL2LL0LEPZT8,Q11optimizing,Search for Oil Task,-1
+A3HL2LL0LEPZT8,Q13outcome_multip,Search for Oil Task,-1
+A3HL2LL0LEPZT8,Q14sol_scheme_mul,Search for Oil Task,-1
+A3HL2LL0LEPZT8,Q15dec_verifiability,Search for Oil Task,1
+A3HL2LL0LEPZT8,Q16shared_knowledge,Search for Oil Task,-1
+A3HL2LL0LEPZT8,Q17within_sys_sol,Search for Oil Task,1
+A3HL2LL0LEPZT8,Q18ans_recog,Search for Oil Task,1
+A3HL2LL0LEPZT8,Q19time_solvability,Search for Oil Task,1
+A3HL2LL0LEPZT8,Q20type_3_type_4,Search for Oil Task,1
+A3HL2LL0LEPZT8,Q22confl_tradeoffs,Search for Oil Task,1
+A3HL2LL0LEPZT8,Q23ss_out_uncert,Search for Oil Task,1
+A3HL2LL0LEPZT8,Q24eureka_question,Search for Oil Task,-1
 A17KN7NAP48L4B,Q1concept_behav,Putting food into categories,-1
 A17KN7NAP48L4B,Q3type_1_planning,Putting food into categories,-1
 A17KN7NAP48L4B,Q4type_2_generate,Putting food into categories,1
@@ -1859,6 +2219,26 @@ A17KN7NAP48L4B,Q20type_3_type_4,Putting food into categories,1
 A17KN7NAP48L4B,Q22confl_tradeoffs,Putting food into categories,1
 A17KN7NAP48L4B,Q23ss_out_uncert,Putting food into categories,-1
 A17KN7NAP48L4B,Q24eureka_question,Putting food into categories,-1
+A2S64AUN7JI7ZS,Q1concept_behav,Letters-to-numbers problems (cryptography),-1
+A2S64AUN7JI7ZS,Q3type_1_planning,Letters-to-numbers problems (cryptography),-1
+A2S64AUN7JI7ZS,Q4type_2_generate,Letters-to-numbers problems (cryptography),1
+A2S64AUN7JI7ZS,Q6type_5_cc,Letters-to-numbers problems (cryptography),-1
+A2S64AUN7JI7ZS,Q7type_7_battle,Letters-to-numbers problems (cryptography),1
+A2S64AUN7JI7ZS,Q8type_8_performance,Letters-to-numbers problems (cryptography),-1
+A2S64AUN7JI7ZS,Q9divisible_unitary,Letters-to-numbers problems (cryptography),-1
+A2S64AUN7JI7ZS,Q10maximizing,Letters-to-numbers problems (cryptography),1
+A2S64AUN7JI7ZS,Q11optimizing,Letters-to-numbers problems (cryptography),-1
+A2S64AUN7JI7ZS,Q13outcome_multip,Letters-to-numbers problems (cryptography),1
+A2S64AUN7JI7ZS,Q14sol_scheme_mul,Letters-to-numbers problems (cryptography),1
+A2S64AUN7JI7ZS,Q15dec_verifiability,Letters-to-numbers problems (cryptography),1
+A2S64AUN7JI7ZS,Q16shared_knowledge,Letters-to-numbers problems (cryptography),1
+A2S64AUN7JI7ZS,Q17within_sys_sol,Letters-to-numbers problems (cryptography),1
+A2S64AUN7JI7ZS,Q18ans_recog,Letters-to-numbers problems (cryptography),1
+A2S64AUN7JI7ZS,Q19time_solvability,Letters-to-numbers problems (cryptography),1
+A2S64AUN7JI7ZS,Q20type_3_type_4,Letters-to-numbers problems (cryptography),1
+A2S64AUN7JI7ZS,Q22confl_tradeoffs,Letters-to-numbers problems (cryptography),-1
+A2S64AUN7JI7ZS,Q23ss_out_uncert,Letters-to-numbers problems (cryptography),-1
+A2S64AUN7JI7ZS,Q24eureka_question,Letters-to-numbers problems (cryptography),-1
 A1VRG5HKZC0H0C,Q1concept_behav,Room assignment task,-1
 A1VRG5HKZC0H0C,Q3type_1_planning,Room assignment task,-1
 A1VRG5HKZC0H0C,Q4type_2_generate,Room assignment task,-1
@@ -1999,6 +2379,26 @@ A26UIS59SY4NM6,Q20type_3_type_4,Room assignment task,1
 A26UIS59SY4NM6,Q22confl_tradeoffs,Room assignment task,1
 A26UIS59SY4NM6,Q23ss_out_uncert,Room assignment task,1
 A26UIS59SY4NM6,Q24eureka_question,Room assignment task,-1
+A18T7E73TNGOKP,Q1concept_behav,Husbands and wives transfer,-1
+A18T7E73TNGOKP,Q3type_1_planning,Husbands and wives transfer,1
+A18T7E73TNGOKP,Q4type_2_generate,Husbands and wives transfer,-1
+A18T7E73TNGOKP,Q6type_5_cc,Husbands and wives transfer,-1
+A18T7E73TNGOKP,Q7type_7_battle,Husbands and wives transfer,1
+A18T7E73TNGOKP,Q8type_8_performance,Husbands and wives transfer,1
+A18T7E73TNGOKP,Q9divisible_unitary,Husbands and wives transfer,-1
+A18T7E73TNGOKP,Q10maximizing,Husbands and wives transfer,1
+A18T7E73TNGOKP,Q11optimizing,Husbands and wives transfer,-1
+A18T7E73TNGOKP,Q13outcome_multip,Husbands and wives transfer,1
+A18T7E73TNGOKP,Q14sol_scheme_mul,Husbands and wives transfer,-1
+A18T7E73TNGOKP,Q15dec_verifiability,Husbands and wives transfer,1
+A18T7E73TNGOKP,Q16shared_knowledge,Husbands and wives transfer,1
+A18T7E73TNGOKP,Q17within_sys_sol,Husbands and wives transfer,-1
+A18T7E73TNGOKP,Q18ans_recog,Husbands and wives transfer,-1
+A18T7E73TNGOKP,Q19time_solvability,Husbands and wives transfer,-1
+A18T7E73TNGOKP,Q20type_3_type_4,Husbands and wives transfer,1
+A18T7E73TNGOKP,Q22confl_tradeoffs,Husbands and wives transfer,-1
+A18T7E73TNGOKP,Q23ss_out_uncert,Husbands and wives transfer,-1
+A18T7E73TNGOKP,Q24eureka_question,Husbands and wives transfer,-1
 A2WZTMXWD20NYE,Q1concept_behav,Divergent Association Task,-1
 A2WZTMXWD20NYE,Q3type_1_planning,Divergent Association Task,-1
 A2WZTMXWD20NYE,Q4type_2_generate,Divergent Association Task,1
@@ -2299,6 +2699,26 @@ A1NLP66FKHBS4V,Q20type_3_type_4,Recall videos,1
 A1NLP66FKHBS4V,Q22confl_tradeoffs,Recall videos,-1
 A1NLP66FKHBS4V,Q23ss_out_uncert,Recall videos,1
 A1NLP66FKHBS4V,Q24eureka_question,Recall videos,-1
+A2H5V1V8QIY8Y7,Q1concept_behav,Search for Oil Task,-1
+A2H5V1V8QIY8Y7,Q3type_1_planning,Search for Oil Task,-1
+A2H5V1V8QIY8Y7,Q4type_2_generate,Search for Oil Task,-1
+A2H5V1V8QIY8Y7,Q6type_5_cc,Search for Oil Task,-1
+A2H5V1V8QIY8Y7,Q7type_7_battle,Search for Oil Task,1
+A2H5V1V8QIY8Y7,Q8type_8_performance,Search for Oil Task,-1
+A2H5V1V8QIY8Y7,Q9divisible_unitary,Search for Oil Task,1
+A2H5V1V8QIY8Y7,Q10maximizing,Search for Oil Task,1
+A2H5V1V8QIY8Y7,Q11optimizing,Search for Oil Task,-1
+A2H5V1V8QIY8Y7,Q13outcome_multip,Search for Oil Task,1
+A2H5V1V8QIY8Y7,Q14sol_scheme_mul,Search for Oil Task,-1
+A2H5V1V8QIY8Y7,Q15dec_verifiability,Search for Oil Task,1
+A2H5V1V8QIY8Y7,Q16shared_knowledge,Search for Oil Task,1
+A2H5V1V8QIY8Y7,Q17within_sys_sol,Search for Oil Task,1
+A2H5V1V8QIY8Y7,Q18ans_recog,Search for Oil Task,1
+A2H5V1V8QIY8Y7,Q19time_solvability,Search for Oil Task,1
+A2H5V1V8QIY8Y7,Q20type_3_type_4,Search for Oil Task,1
+A2H5V1V8QIY8Y7,Q22confl_tradeoffs,Search for Oil Task,-1
+A2H5V1V8QIY8Y7,Q23ss_out_uncert,Search for Oil Task,1
+A2H5V1V8QIY8Y7,Q24eureka_question,Search for Oil Task,-1
 A3CGQOJC28OVGN,Q1concept_behav,Wildcat Wells,-1
 A3CGQOJC28OVGN,Q3type_1_planning,Wildcat Wells,1
 A3CGQOJC28OVGN,Q4type_2_generate,Wildcat Wells,-1
@@ -2379,6 +2799,26 @@ ARYL3C6N9SVV1,Q20type_3_type_4,Allocating resources to programs,1
 ARYL3C6N9SVV1,Q22confl_tradeoffs,Allocating resources to programs,1
 ARYL3C6N9SVV1,Q23ss_out_uncert,Allocating resources to programs,-1
 ARYL3C6N9SVV1,Q24eureka_question,Allocating resources to programs,-1
+A2AZYU1CT24O0K,Q1concept_behav,"Wolf, goat and cabbage transfer",-1
+A2AZYU1CT24O0K,Q3type_1_planning,"Wolf, goat and cabbage transfer",1
+A2AZYU1CT24O0K,Q4type_2_generate,"Wolf, goat and cabbage transfer",1
+A2AZYU1CT24O0K,Q6type_5_cc,"Wolf, goat and cabbage transfer",-1
+A2AZYU1CT24O0K,Q7type_7_battle,"Wolf, goat and cabbage transfer",1
+A2AZYU1CT24O0K,Q8type_8_performance,"Wolf, goat and cabbage transfer",1
+A2AZYU1CT24O0K,Q9divisible_unitary,"Wolf, goat and cabbage transfer",1
+A2AZYU1CT24O0K,Q10maximizing,"Wolf, goat and cabbage transfer",-1
+A2AZYU1CT24O0K,Q11optimizing,"Wolf, goat and cabbage transfer",1
+A2AZYU1CT24O0K,Q13outcome_multip,"Wolf, goat and cabbage transfer",1
+A2AZYU1CT24O0K,Q14sol_scheme_mul,"Wolf, goat and cabbage transfer",1
+A2AZYU1CT24O0K,Q15dec_verifiability,"Wolf, goat and cabbage transfer",1
+A2AZYU1CT24O0K,Q16shared_knowledge,"Wolf, goat and cabbage transfer",1
+A2AZYU1CT24O0K,Q17within_sys_sol,"Wolf, goat and cabbage transfer",1
+A2AZYU1CT24O0K,Q18ans_recog,"Wolf, goat and cabbage transfer",1
+A2AZYU1CT24O0K,Q19time_solvability,"Wolf, goat and cabbage transfer",1
+A2AZYU1CT24O0K,Q20type_3_type_4,"Wolf, goat and cabbage transfer",1
+A2AZYU1CT24O0K,Q22confl_tradeoffs,"Wolf, goat and cabbage transfer",-1
+A2AZYU1CT24O0K,Q23ss_out_uncert,"Wolf, goat and cabbage transfer",1
+A2AZYU1CT24O0K,Q24eureka_question,"Wolf, goat and cabbage transfer",1
 A2IFHU3P1MF54K,Q1concept_behav,Recall association,-1
 A2IFHU3P1MF54K,Q3type_1_planning,Recall association,1
 A2IFHU3P1MF54K,Q4type_2_generate,Recall association,1
@@ -2399,6 +2839,26 @@ A2IFHU3P1MF54K,Q20type_3_type_4,Recall association,1
 A2IFHU3P1MF54K,Q22confl_tradeoffs,Recall association,1
 A2IFHU3P1MF54K,Q23ss_out_uncert,Recall association,-1
 A2IFHU3P1MF54K,Q24eureka_question,Recall association,1
+A230VUDYOCRZ4N,Q1concept_behav,"Wolf, goat and cabbage transfer",-1
+A230VUDYOCRZ4N,Q3type_1_planning,"Wolf, goat and cabbage transfer",1
+A230VUDYOCRZ4N,Q4type_2_generate,"Wolf, goat and cabbage transfer",1
+A230VUDYOCRZ4N,Q6type_5_cc,"Wolf, goat and cabbage transfer",-1
+A230VUDYOCRZ4N,Q7type_7_battle,"Wolf, goat and cabbage transfer",-1
+A230VUDYOCRZ4N,Q8type_8_performance,"Wolf, goat and cabbage transfer",-1
+A230VUDYOCRZ4N,Q9divisible_unitary,"Wolf, goat and cabbage transfer",-1
+A230VUDYOCRZ4N,Q10maximizing,"Wolf, goat and cabbage transfer",1
+A230VUDYOCRZ4N,Q11optimizing,"Wolf, goat and cabbage transfer",1
+A230VUDYOCRZ4N,Q13outcome_multip,"Wolf, goat and cabbage transfer",-1
+A230VUDYOCRZ4N,Q14sol_scheme_mul,"Wolf, goat and cabbage transfer",-1
+A230VUDYOCRZ4N,Q15dec_verifiability,"Wolf, goat and cabbage transfer",1
+A230VUDYOCRZ4N,Q16shared_knowledge,"Wolf, goat and cabbage transfer",1
+A230VUDYOCRZ4N,Q17within_sys_sol,"Wolf, goat and cabbage transfer",1
+A230VUDYOCRZ4N,Q18ans_recog,"Wolf, goat and cabbage transfer",1
+A230VUDYOCRZ4N,Q19time_solvability,"Wolf, goat and cabbage transfer",-1
+A230VUDYOCRZ4N,Q20type_3_type_4,"Wolf, goat and cabbage transfer",1
+A230VUDYOCRZ4N,Q22confl_tradeoffs,"Wolf, goat and cabbage transfer",-1
+A230VUDYOCRZ4N,Q23ss_out_uncert,"Wolf, goat and cabbage transfer",-1
+A230VUDYOCRZ4N,Q24eureka_question,"Wolf, goat and cabbage transfer",1
 A2TLN8489YGY81,Q1concept_behav,Word completion given part of word,-1
 A2TLN8489YGY81,Q3type_1_planning,Word completion given part of word,-1
 A2TLN8489YGY81,Q4type_2_generate,Word completion given part of word,1
@@ -2499,6 +2959,26 @@ A3NXT3OVGL7QNR,Q20type_3_type_4,Moral Reasoning (Disciplinary Action Case),-1
 A3NXT3OVGL7QNR,Q22confl_tradeoffs,Moral Reasoning (Disciplinary Action Case),1
 A3NXT3OVGL7QNR,Q23ss_out_uncert,Moral Reasoning (Disciplinary Action Case),1
 A3NXT3OVGL7QNR,Q24eureka_question,Moral Reasoning (Disciplinary Action Case),-1
+A2S64AUN7JI7ZS,Q1concept_behav,Husbands and wives transfer,-1
+A2S64AUN7JI7ZS,Q3type_1_planning,Husbands and wives transfer,1
+A2S64AUN7JI7ZS,Q4type_2_generate,Husbands and wives transfer,-1
+A2S64AUN7JI7ZS,Q6type_5_cc,Husbands and wives transfer,-1
+A2S64AUN7JI7ZS,Q7type_7_battle,Husbands and wives transfer,1
+A2S64AUN7JI7ZS,Q8type_8_performance,Husbands and wives transfer,1
+A2S64AUN7JI7ZS,Q9divisible_unitary,Husbands and wives transfer,-1
+A2S64AUN7JI7ZS,Q10maximizing,Husbands and wives transfer,1
+A2S64AUN7JI7ZS,Q11optimizing,Husbands and wives transfer,-1
+A2S64AUN7JI7ZS,Q13outcome_multip,Husbands and wives transfer,1
+A2S64AUN7JI7ZS,Q14sol_scheme_mul,Husbands and wives transfer,1
+A2S64AUN7JI7ZS,Q15dec_verifiability,Husbands and wives transfer,1
+A2S64AUN7JI7ZS,Q16shared_knowledge,Husbands and wives transfer,1
+A2S64AUN7JI7ZS,Q17within_sys_sol,Husbands and wives transfer,1
+A2S64AUN7JI7ZS,Q18ans_recog,Husbands and wives transfer,1
+A2S64AUN7JI7ZS,Q19time_solvability,Husbands and wives transfer,1
+A2S64AUN7JI7ZS,Q20type_3_type_4,Husbands and wives transfer,1
+A2S64AUN7JI7ZS,Q22confl_tradeoffs,Husbands and wives transfer,-1
+A2S64AUN7JI7ZS,Q23ss_out_uncert,Husbands and wives transfer,-1
+A2S64AUN7JI7ZS,Q24eureka_question,Husbands and wives transfer,1
 A2WDF40FA670T9,Q1concept_behav,Putting food into categories,-1
 A2WDF40FA670T9,Q3type_1_planning,Putting food into categories,-1
 A2WDF40FA670T9,Q4type_2_generate,Putting food into categories,1

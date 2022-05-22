@@ -1,38 +1,58 @@
 task,question_name,value
+Husbands and wives transfer,Q10maximizing_elaboration,As many and as few seem like the same general concept so I said yes because the goal is to make as few trips as possible.
 Abstract grid task,Q10maximizing_elaboration,It's the opposite with performing the task in fewest clicks but it is the same general idea.
 Recall videos,Q10maximizing_elaboration,"I take ""maximizing the score"" and ""answering as many correct as possible"" to say yes to this question"
 Advertisement writing,Q10maximizing_elaboration,"there is a time limit but, doesn't seem very relevant"
+"Wolf, goat and cabbage transfer",Q10maximizing_elaboration,Because you're trying to accomplish the task in as few trips as possible
 To evacuate or not to evacuate,Q10maximizing_elaboration,"I assume my answer is correct as it would not require 'more' of anything, except luck maybe."
+Search for Oil Task,Q10maximizing_elaboration,Memorizing your drill points and drilling in the actual game are both timed. 
+Letters-to-numbers problems (cryptography),Q10maximizing_elaboration,IT's a timed task
+Husbands and wives transfer,Q10maximizing_elaboration,as fewest trips
+Husbands and wives transfer,Q10maximizing_elaboration,Because you're trying to accomplish the task in as few trips as possible
 9 Dot Problem,Q10maximizing_elaboration,"Pretty confident on this one, even though they are fighting against the clock."
 Estimating pages of a book,Q10maximizing_elaboration,"The way I understand it, the limiting factor is the time - work as quickly as [possible top get as closely as possible, so I said yes."
 Recall videos,Q11optimizing_elaboration,"This one was hard, depending on definitions. There is one correct answer to each question, so in that sense the outcome is precise."
 9 Dot Problem,Q11optimizing_elaboration,"Instructions say up to 4 lines, but it would take the full 4 lines to achieve the goal."
 Allocating resources to programs,Q11optimizing_elaboration,"I took the precision as the $500,000 that must be allocated."
 To evacuate or not to evacuate,Q11optimizing_elaboration,"I took the goal as precise, to avoid the disaster."
+Search for Oil Task,Q11optimizing_elaboration,"if they find all of 144 oil locations, that is precise"
+Search for Oil Task,Q11optimizing_elaboration,I think because there isn't a set number to achieve the goal is just to outperform the others the answer to this one would be no.
 Abstract grid task,Q11optimizing_elaboration,"There is an image that must be recreated, so I consider that a precise outcome."
 Putting food into categories,Q11optimizing_elaboration,"I'm am wobbling on this one because of the word ""maximum"". I feel like there is an absolute goal, but the rest of the language of the goal does not speak to precision, so it appears as if there is not a known amount of categories"
 Putting food into categories,Q13outcome_multip_elaboration,It feels like it is hard to know a precise number of subgroups prior.
+"Wolf, goat and cabbage transfer",Q13outcome_multip_elaboration,there are a few different scenarios that will accomplish the task but not many
 To evacuate or not to evacuate,Q13outcome_multip_elaboration,"I went back and forth on this one, I could see it going either way but if someone wants to avoid risk, the best solution might be evacuating even if a disaster does not strike."
 Word completion given starting letter,Q13outcome_multip_elaboration,"I wasn't entirely clear if I should account for whether it is reasonable or not. There are only so many words in the English language, and so I finite numbr of words that start and end with 2 given letter. So there is a theoretical maximum number of words and with enough time time a group could get them all. But it is very unlikely, especially not in a reasonable time limit. So..."
 To evacuate or not to evacuate,Q13outcome_multip_elaboration,There would be a 'best' solution but it wouldn't be know until afterwards.
 Recall videos,Q13outcome_multip_elaboration,It's possible the questions could have more than one correct answer.
+"Wolf, goat and cabbage transfer",Q13outcome_multip_elaboration,there are 2 solutions
 Advertisement writing,Q13outcome_multip_elaboration,It's a judgment call and many offerings could be suitable.
+Letters-to-numbers problems (cryptography),Q13outcome_multip_elaboration,Get to the answer in the fewest attempts
 Wildcat Wells,Q13outcome_multip_elaboration,It really depends on what the mao shows you as to how you go about completing the task
+Husbands and wives transfer,Q13outcome_multip_elaboration,Get to the answer in the fewest attempts
 Putting food into categories,Q13outcome_multip_elaboration,"Again, this is a grey area because the word maximum is implying a known quantity, but also can refer to just ""as many as possible in time allowed"" I left it as a no because of this and the open question about abstract categories"
 Room assignment task,Q14sol_scheme_mul_elaboration,"There is an optimal arrangement, so a ""best"" way"
 Advertisement writing,Q14sol_scheme_mul_elaboration,"hard to say, it could not applicable"
+"Wolf, goat and cabbage transfer",Q14sol_scheme_mul_elaboration,There aren't a huge amount of way to do it but there's more than one
 Recall videos,Q14sol_scheme_mul_elaboration,I feel like there could be different ways to pay attention to the video. I just don't know them all. 
 Recall association,Q14sol_scheme_mul_elaboration,There are likely many different methods used to recall words.
+Search for Oil Task,Q14sol_scheme_mul_elaboration,different places to click on map 
 To evacuate or not to evacuate,Q14sol_scheme_mul_elaboration,"There is only one way of clicking a button, but more than one way of thinking about risk"
+"Wolf, goat and cabbage transfer",Q14sol_scheme_mul_elaboration,"2 ways to solve, so, not ""many"" and not one"
+Letters-to-numbers problems (cryptography),Q14sol_scheme_mul_elaboration,I think because you can try to figure out different parts of the equations to figure out the solution there isn't a concrete way to solve.
 Abstract grid task,Q14sol_scheme_mul_elaboration,"There is one best, but that isnt what is being judged. Basically, completion is being judged, even if it takes a 1000 steps."
 Wildcat Wells,Q14sol_scheme_mul_elaboration,"The only way to ""win"" is to find the most. There might be different algorithms to it, but the goal is most"
 Allocating resources to programs,Q14sol_scheme_mul_elaboration,"Since the 500K can be distributed in different amounts, I would say that there are several (3) ways to distribute the funds."
+Husbands and wives transfer,Q14sol_scheme_mul_elaboration,There aren't a huge amount of way to do it but there's more than one
 Estimating pages of a book,Q14sol_scheme_mul_elaboration,"I think there are a lot of ways this could be done - having everyomne guess and taking the average, using a magnifying glass on the picture, etc."
 Advertisement writing,Q15dec_verifiability_elaboration,"possible could be yes, however, the best blurb for the kickstarter product could be subjective to the kickstarter's products creator"
 Word completion given starting letter,Q15dec_verifiability_elaboration,"is this question asking if one specific solution (word here) can be judged as correct, or whether the group of words as a whole can be judged as correct? As in, is the group all possible words matching the ruleset?"
 Divergent Association Task,Q15dec_verifiability_elaboration,I believe a word expert could determine semantic distance
 To evacuate or not to evacuate,Q16shared_knowledge_elaboration,I think an algorithm could be set up here to choose whether to evacuate or stay based on the risk level.
 Image rating,Q16shared_knowledge_elaboration,Unless the algorithm already knows the poll answers they could not solve
+Search for Oil Task,Q16shared_knowledge_elaboration,"If the algorithm can identify the correct squares before the start of the task, they could get pick them all."
+Search for Oil Task,Q16shared_knowledge_elaboration,I think given the rules and map an algorithm could be written to achieve the best outcome
+Letters-to-numbers problems (cryptography),Q16shared_knowledge_elaboration,I would assume that an algorithm could solve this 
 Guessing the correlation,Q16shared_knowledge_elaboration,"You could train a model to get as precise as possible, so there must be some algorithmic way."
 Divergent Association Task,Q16shared_knowledge_elaboration,This is assuming there are defined scores attached to words.
 Estimating pages of a book,Q16shared_knowledge_elaboration,"The objective is precise, but I wouldnt think there is an absolute, verifiable, solution. You could guess and get the right answer. A reasonable, educated guess, like guessing beans in a jar."
@@ -41,11 +61,14 @@ Estimating pages of a book,Q17within_sys_sol_elaboration,"I think that checking 
 Allocating resources to programs,Q17within_sys_sol_elaboration,"Yes because you have 500K and you must distribute the funds among 3 social/government programs and you get to decide how to allocate the funds. So, as long as the whole 500K are distributed, you have found a solution."
 Divergent Association Task,Q17within_sys_sol_elaboration,"There is no mention of looking up answers online but if allowed, it would be an advantage here."
 Word completion given starting letter,Q18ans_recog_elaboration,"Again, are you asking about one answer within the group of answers, the group as a whole being all of the possible words that match the rules. Because, yes, you can know one word fits, but you can't know if all of the words have been found..."
+Search for Oil Task,Q18ans_recog_elaboration,I believe this task is either you choose correctly or not.
+Letters-to-numbers problems (cryptography),Q18ans_recog_elaboration,1 by 1 you correct
 Divergent Association Task,Q18ans_recog_elaboration,I think different people could argue semantic distance based on their own perceptions
 Allocating resources to programs,Q18ans_recog_elaboration,"The goal here is to distribute 500K not whether the way the funds were distributed is correct. So, an outside party would simply have to evaluate if the whole 500K were distributed among the 3 programs."
 Moral Reasoning (Disciplinary Action Case),Q18ans_recog_elaboration,It states in problem no correct solution
 Allocating resources to programs,Q19time_solvability_elaboration,I chose no as I think there would still be subjectivity as to whether the solution was correct.
 To evacuate or not to evacuate,Q19time_solvability_elaboration,"I assume no, as there is the element of chance"
+Search for Oil Task,Q19time_solvability_elaboration,"I think because this is mostly a memory task it can't just be explained as a ""best"" solution"
 Wildcat Wells,Q19time_solvability_elaboration,"I THINK you could do that, but the set up is a little ambiguous, so its hard to be very confident in my answer"
 Allocating resources to programs,Q19time_solvability_elaboration,"Again, in this scenario, the solution is to distribute 500K among 3 programs. That is what is evaluated. What is not evaluated is how the funds were distributed or why one program received more funds over another program."
 Divergent Association Task,Q19time_solvability_elaboration,The solution has a subjective element attached to it.
@@ -59,26 +82,36 @@ Allocating resources to programs,Q20type_3_type_4_elaboration,"If a participant 
 To evacuate or not to evacuate,Q21intellective_judg_1_elaboration,I think there is an element of a participant's risk tolerance in coming up with the best solution.
 Divergent Association Task,Q21intellective_judg_1_elaboration,"Again, unless there are predetermined semantic distance scores I think you could make arguments for or against"
 Allocating resources to programs,Q21intellective_judg_1_elaboration,"I hope I have understood the instructions correctly. 1.) The set-up describes 3 programs that require funding. 2.) The participant's job is to allocate 500K dollars among the 3 programs as he/she sees fit. So, as long as the 500k were distributed, the goal has been achieved."
+"Wolf, goat and cabbage transfer",Q22confl_tradeoffs_elaboration,Once you understand the rules I don't think they conflict
 Wildcat Wells,Q22confl_tradeoffs_elaboration,it's tough to definitively answer this with such a brief description
+"Wolf, goat and cabbage transfer",Q22confl_tradeoffs_elaboration,"the elaboration here is unclear. there are literally ""tradeoffs"" here."
 Allocating resources to programs,Q22confl_tradeoffs_elaboration,"There are tradeoffs because some programs will not receive the same amount of money even if you wanted them to and as such, you have to decide which of the 3 programs would be more beneficial."
+Husbands and wives transfer,Q22confl_tradeoffs_elaboration,Once you understand the rules I don't think they conflict
 Recall videos,Q23ss_out_uncert_elaboration,"assuming they're told after each question whether they're correct, then no.  if they wait till the end to be graded, then yes"
 Recall association,Q23ss_out_uncert_elaboration,Participants might not be sure if they recalled the correct words. The wording does not specify if participate score is shown live or at the end.
 Moral Reasoning (Disciplinary Action Case),Q23ss_out_uncert_elaboration,I could see this one going either way but ultimately chose no since there would be uncertainty that selected action was successful.
+Letters-to-numbers problems (cryptography),Q23ss_out_uncert_elaboration,they will know correct answer but if thei method  was most efficient
 Divergent Association Task,Q23ss_out_uncert_elaboration,Without knowing semantic distance scores they won't know until they are scored
+"Wolf, goat and cabbage transfer",Q24eureka_question_elaboration,"the ""aha"" or ""trick"" is explained in the objective/goal"
 Recall association,Q24eureka_question_elaboration,"The trouble here is I am answering it using face value of just hard memorization. However, an agreement can be made that there is a trick by using grouping or association or making a story out of the words which is considered a memory trick. If I was to teach someone how to memorize fast using a memorization strategy, it may be considered an ""aha"" moment as well.  "
 Wildcat Wells,Q24eureka_question_elaboration,"I would assume yes, that there is an algorithm, but it is hard to tell from the description."
 Advertisement writing,Q2intel_manip_1_elaboration,The actual writing and/or drawing of the ad is physical
 Recall videos,Q2intel_manip_1_elaboration,There could be some eye strain which I would consider physical effort.
 Putting food into categories,Q2intel_manip_1_elaboration,Knowing how the criteria were entered and if list items were added to them by workers.
 Room assignment task,Q3type_1_planning_elaboration,"This is an optimization problem, I would not count it as planning."
+"Wolf, goat and cabbage transfer",Q3type_1_planning_elaboration,"It is ""planning"", but there's not any writing, really"
 Advertisement writing,Q3type_1_planning_elaboration,"Since it involves multiple people chipping in, i think it is a planning task."
 Abstract grid task,Q3type_1_planning_elaboration,"There is a series of clicks, leading to an optimal lowest number, but the actual goal is just to produce the image and complete it."
 Allocating resources to programs,Q3type_1_planning_elaboration,I feel this is a planning task because you have been allocated a sum of money and you must plan on how to distribute the funds among various programs.
 Putting food into categories,Q3type_1_planning_elaboration,"It is not explicitly stated, but the objective goal said ""that could be used to divide the food items"" which is a planning goal."
+"Wolf, goat and cabbage transfer",Q4type_2_generate_elaboration,Although it does involve planning I'm not sure there would be so many variations on the answer that it would qualify as a brainstorming task. 
 Moral Reasoning (Disciplinary Action Case),Q4type_2_generate_elaboration,I chose no since there is already a list of punishments.
+Husbands and wives transfer,Q4type_2_generate_elaboration,Although it does involve planning I'm not sure there would be so many variations on the answer that it would qualify as a brainstorming task. 
 Allocating resources to programs,Q5creativity_input_1_elaboration,It is an allocation task but I still think some creativity is required in how to allocate.
 Recall videos,Q5creativity_input_1_elaboration,I am not exactly clear on what is being asked about in the video so I assumed it is straightforward.
 Recall association,Q5creativity_input_1_elaboration,"The trouble here is that one memorization strategy includes making a story with the words which in a way can be said to have some creativity involved. However, purely on the task instead, one can argue there is no creativity as well.   "
+Search for Oil Task,Q5creativity_input_1_elaboration,"I feel it's mostly a memory game, you have to remember the rules and try and member and recall the points of the map that contain the oil."
+Letters-to-numbers problems (cryptography),Q5creativity_input_1_elaboration,"It seems like a process of elimination game, nothing to do with creativity "
 Abstract grid task,Q5creativity_input_1_elaboration,"There could be a creative way to solve this, as opposed to just brute force."
 Putting food into categories,Q5creativity_input_1_elaboration,The objective did not state if the criteria could be abstract. That would effect the degree of creativity.
 9 Dot Problem,Q5creativity_input_1_elaboration,"Its mostly logical, but the main, one, answer sounds like it needs creativity to figure out."
@@ -89,9 +122,15 @@ Allocating resources to programs,Q6type_5_cc_elaboration,The group must work tog
 Shopping plan,Q7type_7_battle_elaboration,"You are fighting against a maximum point value, not other people/ Thats how I interopreted the objective.,"
 Whac-A-Mole,Q7type_7_battle_elaboration,"The wording is vague as stated in ""thereby maximizing their points"". It doesn't say their own points or if it is referring to their team."
 Recall videos,Q7type_7_battle_elaboration,The instructions do not provide the incentive for maximizing points.
+Letters-to-numbers problems (cryptography),Q7type_7_battle_elaboration,Must complete in the fewest attempts possible
+Husbands and wives transfer,Q7type_7_battle_elaboration,Must complete in the fewest attempts possible
 Putting food into categories,Q7type_7_battle_elaboration,"The phrase ""non-redundant"" could refer to external ideas. It could be more clearly identified to be non-redundant in their own list."
+"Wolf, goat and cabbage transfer",Q8type_8_performance_elaboration,"There is only a few ways to accomplish the task, and it either works or you fail"
 Graph coloring task,Q8type_8_performance_elaboration,I presume this because it is completed correctly or it isn't
+Search for Oil Task,Q8type_8_performance_elaboration,Because you can obtain points and beat out others without winning the game it doesn't seem like an all or nothing game
+Letters-to-numbers problems (cryptography),Q8type_8_performance_elaboration,It's based on the highest score not pass/fail
 Wildcat Wells,Q8type_8_performance_elaboration,"There is no info in the description about most points. It sounds like the winner is the winner and everyone else looses. Nothing about points or anything, just find the most oil"
+Husbands and wives transfer,Q8type_8_performance_elaboration,"There is only a few ways to accomplish the task, and it either works or you fail"
 Guessing the correlation,Q8type_8_performance_elaboration,"They are ""evaluated on accuracy"" I take to mean thqat there is some partial crediut or percebnt score they are given. They dont have to be 100% precise"
 Recall association,Q9divisible_unitary_elaboration,not sure if it is possible for different participants in a group to be given different words and then they come together.
 Moral Reasoning (Disciplinary Action Case),Q9divisible_unitary_elaboration,"I assumed it was a group task, but I don't think this suites this group task. "
@@ -99,6 +138,7 @@ Recall videos,Q9divisible_unitary_elaboration,"theoretically if the video could 
 Guessing the correlation,Q9divisible_unitary_elaboration,"Since it is a series of scatter plots, participants could divide those up."
 Recall association,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Image rating,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
+Search for Oil Task,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Divergent Association Task,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Abstract grid task,Q9divisible_unitary_elaboration,"Theres too many interconnecting steps, as each step affects the rest."
 9 Dot Problem,Q9divisible_unitary_elaboration,"This one was difficult to answer, I could see both sides, dividing and not diving."
