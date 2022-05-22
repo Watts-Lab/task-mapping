@@ -6,9 +6,11 @@ Mapped by: joycewang3
 Participants receive a certain number of images to memorize on individual screens.
 
 ## 2. Goal Directives 
-The goal is to memorize all target images within a fixed amount of time so that one can recall them in later tasks. For example, participants can be given 20 seconds to memorize six target faces and then asked to identify those target faces on presented in consecutive rounds 15 sets that consist of three faces each.
+The goal is to memorize all target images within a fixed amount of time and to be able to identify them later from a lineup of old and new images.
 
-Participants are evaluated on the number of correctly recalled images. The maximum score occurs when participants recall all images correctly during tasks that follow after the memorization period and the score is maximized by recalling correctly as many images as possible.
+For example, participants can be given 20 seconds to memorize six target faces and then asked to identify those target faces at a later time. At the later time period, they could be consecutively shown 15 sets of three faces (6 previously seen, and 39 new), and asked to pick out which faces were the images that they had previously seen before.
+
+Participants are evaluated on the number of correctly recalled images. They earn the maximum score when they recall all images correctly (e.g., select the 6 original faces out of 45). This means they need to correctly identify all the images that they had seen before, and avoid mis-identifying a new image as something they had previously seen.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
