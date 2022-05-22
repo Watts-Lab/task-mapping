@@ -122,7 +122,7 @@ This will enable us to paste directly into the task mapping survey.
 ```{r}
 req <- httr::GET("https://api.github.com/repos/Watts-Lab/task-mapping/git/trees/master?recursive=1")
 df.thisscript <- jsonlite::fromJSON(content(req, "text"))$tree %>% 
-filter(grepl("task\ writing\ survey\ pipeline/new-task-writeup-viz-pipeline.Rmd", path))
+filter(grepl("writeup\ to\ html\ pipeline/new-task-writeup-viz-pipeline.Rmd", path))
 
 thisscript.url <- df.thisscript$url
 
