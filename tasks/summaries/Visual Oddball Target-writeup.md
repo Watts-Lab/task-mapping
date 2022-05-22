@@ -13,6 +13,7 @@ The goal is to visually identify when there is an oddball versus when there is n
 The task is focused on visual perception: participants see a grouping, and then need to decide whether one patch looks different than all the others.  They submit their decision by pressing a button using their mouse or a keyboard within a fixed amount of time.
 
 For example, if participants see a group of 6 Gabor patches, they would press a mouse or a keyboard button when there is an oddball and press nothing when all patches in the group look the same.
+
 There are only two possible outcomes of task performance. Participants can either correctly identify the oddball or not.
 
 ## 3. Allowed Group Processes 
