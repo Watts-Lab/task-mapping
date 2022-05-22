@@ -54,6 +54,7 @@ Estimating pages of a book,Q14sol_scheme_mul_elaboration,"I think there are a lo
 Advertisement writing,Q15dec_verifiability_elaboration,"possible could be yes, however, the best blurb for the kickstarter product could be subjective to the kickstarter's products creator"
 Word completion given starting letter,Q15dec_verifiability_elaboration,"is this question asking if one specific solution (word here) can be judged as correct, or whether the group of words as a whole can be judged as correct? As in, is the group all possible words matching the ruleset?"
 Divergent Association Task,Q15dec_verifiability_elaboration,I believe a word expert could determine semantic distance
+Recall images,Q16shared_knowledge_elaboration,If the algorithm knows the correct images ahead of time they would be able to identify assuming it has face detection features.
 To evacuate or not to evacuate,Q16shared_knowledge_elaboration,I think an algorithm could be set up here to choose whether to evacuate or stay based on the risk level.
 Image rating,Q16shared_knowledge_elaboration,Unless the algorithm already knows the poll answers they could not solve
 Search for Oil Task,Q16shared_knowledge_elaboration,"If the algorithm can identify the correct squares before the start of the task, they could get pick them all."
@@ -146,6 +147,7 @@ Guessing the correlation,Q8type_8_performance_elaboration,"They are ""evaluated 
 Recall association,Q9divisible_unitary_elaboration,not sure if it is possible for different participants in a group to be given different words and then they come together.
 Moral Reasoning (Disciplinary Action Case),Q9divisible_unitary_elaboration,"I assumed it was a group task, but I don't think this suites this group task. "
 Recall videos,Q9divisible_unitary_elaboration,"theoretically if the video could be split in segments and each participant only given questions based on that segment, than yes.  not sure if this is possible with the given description"
+Recall images,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Guessing the correlation,Q9divisible_unitary_elaboration,"Since it is a series of scatter plots, participants could divide those up."
 Recall association,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Image rating,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.

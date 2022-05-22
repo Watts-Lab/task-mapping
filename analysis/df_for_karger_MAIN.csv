@@ -1079,6 +1079,46 @@ A1VRG5HKZC0H0C,Q20type_3_type_4,Allocating resources to programs,-1
 A1VRG5HKZC0H0C,Q22confl_tradeoffs,Allocating resources to programs,1
 A1VRG5HKZC0H0C,Q23ss_out_uncert,Allocating resources to programs,-1
 A1VRG5HKZC0H0C,Q24eureka_question,Allocating resources to programs,-1
+A2WZTMXWD20NYE,Q1concept_behav,Recall images,-1
+A2WZTMXWD20NYE,Q3type_1_planning,Recall images,-1
+A2WZTMXWD20NYE,Q4type_2_generate,Recall images,-1
+A2WZTMXWD20NYE,Q6type_5_cc,Recall images,-1
+A2WZTMXWD20NYE,Q7type_7_battle,Recall images,-1
+A2WZTMXWD20NYE,Q8type_8_performance,Recall images,-1
+A2WZTMXWD20NYE,Q9divisible_unitary,Recall images,NA
+A2WZTMXWD20NYE,Q10maximizing,Recall images,1
+A2WZTMXWD20NYE,Q11optimizing,Recall images,-1
+A2WZTMXWD20NYE,Q13outcome_multip,Recall images,1
+A2WZTMXWD20NYE,Q14sol_scheme_mul,Recall images,1
+A2WZTMXWD20NYE,Q15dec_verifiability,Recall images,1
+A2WZTMXWD20NYE,Q16shared_knowledge,Recall images,1
+A2WZTMXWD20NYE,Q17within_sys_sol,Recall images,1
+A2WZTMXWD20NYE,Q18ans_recog,Recall images,1
+A2WZTMXWD20NYE,Q19time_solvability,Recall images,1
+A2WZTMXWD20NYE,Q20type_3_type_4,Recall images,1
+A2WZTMXWD20NYE,Q22confl_tradeoffs,Recall images,-1
+A2WZTMXWD20NYE,Q23ss_out_uncert,Recall images,1
+A2WZTMXWD20NYE,Q24eureka_question,Recall images,-1
+A3V3SQCM8QGYB7,Q1concept_behav,Recall images,-1
+A3V3SQCM8QGYB7,Q3type_1_planning,Recall images,-1
+A3V3SQCM8QGYB7,Q4type_2_generate,Recall images,-1
+A3V3SQCM8QGYB7,Q6type_5_cc,Recall images,1
+A3V3SQCM8QGYB7,Q7type_7_battle,Recall images,-1
+A3V3SQCM8QGYB7,Q8type_8_performance,Recall images,-1
+A3V3SQCM8QGYB7,Q9divisible_unitary,Recall images,1
+A3V3SQCM8QGYB7,Q10maximizing,Recall images,-1
+A3V3SQCM8QGYB7,Q11optimizing,Recall images,1
+A3V3SQCM8QGYB7,Q13outcome_multip,Recall images,1
+A3V3SQCM8QGYB7,Q14sol_scheme_mul,Recall images,-1
+A3V3SQCM8QGYB7,Q15dec_verifiability,Recall images,1
+A3V3SQCM8QGYB7,Q16shared_knowledge,Recall images,1
+A3V3SQCM8QGYB7,Q17within_sys_sol,Recall images,1
+A3V3SQCM8QGYB7,Q18ans_recog,Recall images,1
+A3V3SQCM8QGYB7,Q19time_solvability,Recall images,1
+A3V3SQCM8QGYB7,Q20type_3_type_4,Recall images,1
+A3V3SQCM8QGYB7,Q22confl_tradeoffs,Recall images,1
+A3V3SQCM8QGYB7,Q23ss_out_uncert,Recall images,1
+A3V3SQCM8QGYB7,Q24eureka_question,Recall images,-1
 A1VRG5HKZC0H0C,Q1concept_behav,Guessing the correlation,-1
 A1VRG5HKZC0H0C,Q3type_1_planning,Guessing the correlation,-1
 A1VRG5HKZC0H0C,Q4type_2_generate,Guessing the correlation,-1
