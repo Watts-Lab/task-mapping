@@ -43,6 +43,7 @@ Putting food into categories,Q13outcome_multip_elaboration,"Again, this is a gre
 Recall images,Q13outcome_multip_elaboration,Remembering every item I would assume is the best outcome
 Room assignment task,Q14sol_scheme_mul_elaboration,"There is an optimal arrangement, so a ""best"" way"
 Advertisement writing,Q14sol_scheme_mul_elaboration,"hard to say, it could not applicable"
+Railroad Route Construction game (Impossible Version),Q14sol_scheme_mul_elaboration,"Seeing as how there is no way to win, there is no way to achieve the actual task/goal."
 "Wolf, goat and cabbage transfer",Q14sol_scheme_mul_elaboration,There aren't a huge amount of way to do it but there's more than one
 Search for Oil Task,Q14sol_scheme_mul_elaboration,each person will have their own way of remember points on the map with the best chance of finding oil
 Recall videos,Q14sol_scheme_mul_elaboration,I feel like there could be different ways to pay attention to the video. I just don't know them all. 
@@ -72,17 +73,20 @@ Image rating,Q16shared_knowledge_elaboration,Unless the algorithm already knows 
 Search for Oil Task,Q16shared_knowledge_elaboration,"If the algorithm can identify the correct squares before the start of the task, they could get pick them all."
 Search for Oil Task,Q16shared_knowledge_elaboration,I think given the rules and map an algorithm could be written to achieve the best outcome
 Letters-to-numbers problems (cryptography),Q16shared_knowledge_elaboration,I would assume that an algorithm could solve this 
+Estimating social quantity,Q16shared_knowledge_elaboration,"I think it really depends on what the algorithm has been learning. If it's learned about this specific topic, then I would yes, it could probably solve this. But if it's just an algorithm that hasn't been learning anything about this phenomena, then probably not. However, it may still be able to give estimates comparable to that of human participants, especially if they're just guessing."
 Railroad Route Construction game,Q16shared_knowledge_elaboration,No trouble.
 Guessing the correlation,Q16shared_knowledge_elaboration,"You could train a model to get as precise as possible, so there must be some algorithmic way."
 Recall images,Q16shared_knowledge_elaboration,Because it's a memory task I would assume it's purely a human task
 Divergent Association Task,Q16shared_knowledge_elaboration,This is assuming there are defined scores attached to words.
 Estimating pages of a book,Q16shared_knowledge_elaboration,"The objective is precise, but I wouldnt think there is an absolute, verifiable, solution. You could guess and get the right answer. A reasonable, educated guess, like guessing beans in a jar."
+Railroad Route Construction game (Impossible Version),Q17within_sys_sol_elaboration,"There is enough, but it doesn't matter, as there is no way to finish or win the game."
 Estimating pages of a book,Q17within_sys_sol_elaboration,"To get the exact number I don't think there's enough info, you're making an educated guess"
 Divergent Association Task,Q17within_sys_sol_elaboration,If there were semantic rules already established then there could be a solution based on that data
 Estimating pages of a book,Q17within_sys_sol_elaboration,"I think that checking the number of pages in the book would be ""outside"" the system but I'm not sure."
 Allocating resources to programs,Q17within_sys_sol_elaboration,"Yes because you have 500K and you must distribute the funds among 3 social/government programs and you get to decide how to allocate the funds. So, as long as the whole 500K are distributed, you have found a solution."
 Railroad Route Construction game,Q17within_sys_sol_elaboration,No trouble.
 Divergent Association Task,Q17within_sys_sol_elaboration,"There is no mention of looking up answers online but if allowed, it would be an advantage here."
+Railroad Route Construction game (Impossible Version),Q18ans_recog_elaboration,"This goal is made to be unsolvable, so there really is no correct solution."
 Estimating pages of a book,Q18ans_recog_elaboration,"I don't think an outsider would know the answer for sure, only the person that created the problem"
 Railroad Route Construction game (Impossible Version),Q18ans_recog_elaboration,Not applicable as impossible to solve
 Word completion given starting letter,Q18ans_recog_elaboration,"Again, are you asking about one answer within the group of answers, the group as a whole being all of the possible words that match the rules. Because, yes, you can know one word fits, but you can't know if all of the words have been found..."
@@ -168,6 +172,7 @@ Railroad Route Construction game,Q6type_5_cc_elaboration,No trouble.
 Allocating resources to programs,Q6type_5_cc_elaboration,The group must work together to determine how to spend the money across different programs
 Shopping plan,Q7type_7_battle_elaboration,"You are fighting against a maximum point value, not other people/ Thats how I interopreted the objective.,"
 Whac-A-Mole,Q7type_7_battle_elaboration,"The wording is vague as stated in ""thereby maximizing their points"". It doesn't say their own points or if it is referring to their team."
+Railroad Route Construction game (Impossible Version),Q7type_7_battle_elaboration,"If you could win this game, it would likely be a yes, but since there is no way to win the game, I would say it's not truly answerable."
 Estimating pages of a book,Q7type_7_battle_elaboration,It's more of a judgement task than a win/lose task
 Recall videos,Q7type_7_battle_elaboration,The instructions do not provide the incentive for maximizing points.
 Letters-to-numbers problems (cryptography),Q7type_7_battle_elaboration,Must complete in the fewest attempts possible
