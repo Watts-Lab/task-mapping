@@ -4,6 +4,7 @@ Abstract grid task,Q10maximizing_elaboration,It's the opposite with performing t
 Recall videos,Q10maximizing_elaboration,"I take ""maximizing the score"" and ""answering as many correct as possible"" to say yes to this question"
 Advertisement writing,Q10maximizing_elaboration,"there is a time limit but, doesn't seem very relevant"
 "Wolf, goat and cabbage transfer",Q10maximizing_elaboration,Because you're trying to accomplish the task in as few trips as possible
+Estimating pages of a book,Q10maximizing_elaboration,It is a timed task
 To evacuate or not to evacuate,Q10maximizing_elaboration,"I assume my answer is correct as it would not require 'more' of anything, except luck maybe."
 Search for Oil Task,Q10maximizing_elaboration,Memorizing your drill points and drilling in the actual game are both timed. 
 Letters-to-numbers problems (cryptography),Q10maximizing_elaboration,IT's a timed task
@@ -17,6 +18,7 @@ Recall videos,Q11optimizing_elaboration,"This one was hard, depending on definit
 Allocating resources to programs,Q11optimizing_elaboration,"I took the precision as the $500,000 that must be allocated."
 Search for Oil Task,Q11optimizing_elaboration,"goal is to find exact locations, not the number of exact locations"
 To evacuate or not to evacuate,Q11optimizing_elaboration,"I took the goal as precise, to avoid the disaster."
+Estimating pages of a book,Q11optimizing_elaboration,"There is a precise number you're wanting to get, but it is graded on a gradient scale"
 Search for Oil Task,Q11optimizing_elaboration,"if they find all of 144 oil locations, that is precise"
 Recall images,Q11optimizing_elaboration,"I think there is supposed to be ""precision"" in that the participants need to identify only the faces they've previously seen and avoid ""mis-identifying"" faces they haven't seen. "
 Search for Oil Task,Q11optimizing_elaboration,I think because there isn't a set number to achieve the goal is just to outperform the others the answer to this one would be no.
@@ -25,6 +27,7 @@ Putting food into categories,Q11optimizing_elaboration,"I'm am wobbling on this 
 Putting food into categories,Q13outcome_multip_elaboration,It feels like it is hard to know a precise number of subgroups prior.
 "Wolf, goat and cabbage transfer",Q13outcome_multip_elaboration,there are a few different scenarios that will accomplish the task but not many
 To evacuate or not to evacuate,Q13outcome_multip_elaboration,"I went back and forth on this one, I could see it going either way but if someone wants to avoid risk, the best solution might be evacuating even if a disaster does not strike."
+Estimating pages of a book,Q13outcome_multip_elaboration,Guessing exactly right would be difficult but it's the best solution
 Word completion given starting letter,Q13outcome_multip_elaboration,"I wasn't entirely clear if I should account for whether it is reasonable or not. There are only so many words in the English language, and so I finite numbr of words that start and end with 2 given letter. So there is a theoretical maximum number of words and with enough time time a group could get them all. But it is very unlikely, especially not in a reasonable time limit. So..."
 To evacuate or not to evacuate,Q13outcome_multip_elaboration,There would be a 'best' solution but it wouldn't be know until afterwards.
 Recall videos,Q13outcome_multip_elaboration,It's possible the questions could have more than one correct answer.
@@ -40,6 +43,7 @@ Advertisement writing,Q14sol_scheme_mul_elaboration,"hard to say, it could not a
 "Wolf, goat and cabbage transfer",Q14sol_scheme_mul_elaboration,There aren't a huge amount of way to do it but there's more than one
 Search for Oil Task,Q14sol_scheme_mul_elaboration,each person will have their own way of remember points on the map with the best chance of finding oil
 Recall videos,Q14sol_scheme_mul_elaboration,I feel like there could be different ways to pay attention to the video. I just don't know them all. 
+Estimating pages of a book,Q14sol_scheme_mul_elaboration,To guess exactly right would be the only correct way 
 Recall association,Q14sol_scheme_mul_elaboration,There are likely many different methods used to recall words.
 Search for Oil Task,Q14sol_scheme_mul_elaboration,different places to click on map 
 To evacuate or not to evacuate,Q14sol_scheme_mul_elaboration,"There is only one way of clicking a button, but more than one way of thinking about risk"
@@ -56,6 +60,7 @@ Word completion given starting letter,Q15dec_verifiability_elaboration,"is this 
 Divergent Association Task,Q15dec_verifiability_elaboration,I believe a word expert could determine semantic distance
 Recall images,Q16shared_knowledge_elaboration,If the algorithm knows the correct images ahead of time they would be able to identify assuming it has face detection features.
 To evacuate or not to evacuate,Q16shared_knowledge_elaboration,I think an algorithm could be set up here to choose whether to evacuate or stay based on the risk level.
+Estimating pages of a book,Q16shared_knowledge_elaboration,"Since it's about being given a total number of pages and guessing about what the thickness equals to, there could be an algorithm that could be written to solve it"
 Image rating,Q16shared_knowledge_elaboration,Unless the algorithm already knows the poll answers they could not solve
 Search for Oil Task,Q16shared_knowledge_elaboration,"If the algorithm can identify the correct squares before the start of the task, they could get pick them all."
 Search for Oil Task,Q16shared_knowledge_elaboration,I think given the rules and map an algorithm could be written to achieve the best outcome
@@ -64,10 +69,12 @@ Guessing the correlation,Q16shared_knowledge_elaboration,"You could train a mode
 Recall images,Q16shared_knowledge_elaboration,Because it's a memory task I would assume it's purely a human task
 Divergent Association Task,Q16shared_knowledge_elaboration,This is assuming there are defined scores attached to words.
 Estimating pages of a book,Q16shared_knowledge_elaboration,"The objective is precise, but I wouldnt think there is an absolute, verifiable, solution. You could guess and get the right answer. A reasonable, educated guess, like guessing beans in a jar."
+Estimating pages of a book,Q17within_sys_sol_elaboration,"To get the exact number I don't think there's enough info, you're making an educated guess"
 Divergent Association Task,Q17within_sys_sol_elaboration,If there were semantic rules already established then there could be a solution based on that data
 Estimating pages of a book,Q17within_sys_sol_elaboration,"I think that checking the number of pages in the book would be ""outside"" the system but I'm not sure."
 Allocating resources to programs,Q17within_sys_sol_elaboration,"Yes because you have 500K and you must distribute the funds among 3 social/government programs and you get to decide how to allocate the funds. So, as long as the whole 500K are distributed, you have found a solution."
 Divergent Association Task,Q17within_sys_sol_elaboration,"There is no mention of looking up answers online but if allowed, it would be an advantage here."
+Estimating pages of a book,Q18ans_recog_elaboration,"I don't think an outsider would know the answer for sure, only the person that created the problem"
 Word completion given starting letter,Q18ans_recog_elaboration,"Again, are you asking about one answer within the group of answers, the group as a whole being all of the possible words that match the rules. Because, yes, you can know one word fits, but you can't know if all of the words have been found..."
 Search for Oil Task,Q18ans_recog_elaboration,I believe this task is either you choose correctly or not.
 Letters-to-numbers problems (cryptography),Q18ans_recog_elaboration,1 by 1 you correct
@@ -89,6 +96,7 @@ Allocating resources to programs,Q20type_3_type_4_elaboration,The allocation wil
 Recall videos,Q20type_3_type_4_elaboration,I think I picked the right thing. Because subjective is based on people's thoughts. 
 Allocating resources to programs,Q20type_3_type_4_elaboration,"If a participant completed the objective of distributing the whole 500K, then I could objectively say that the goal was accomplished."
 To evacuate or not to evacuate,Q21intellective_judg_1_elaboration,I think there is an element of a participant's risk tolerance in coming up with the best solution.
+Estimating pages of a book,Q21intellective_judg_1_elaboration,Since you're making an educated guess it's a little subjective
 Divergent Association Task,Q21intellective_judg_1_elaboration,"Again, unless there are predetermined semantic distance scores I think you could make arguments for or against"
 Allocating resources to programs,Q21intellective_judg_1_elaboration,"I hope I have understood the instructions correctly. 1.) The set-up describes 3 programs that require funding. 2.) The participant's job is to allocate 500K dollars among the 3 programs as he/she sees fit. So, as long as the 500k were distributed, the goal has been achieved."
 "Wolf, goat and cabbage transfer",Q22confl_tradeoffs_elaboration,Once you understand the rules I don't think they conflict
@@ -97,6 +105,7 @@ Wildcat Wells,Q22confl_tradeoffs_elaboration,it's tough to definitively answer t
 Allocating resources to programs,Q22confl_tradeoffs_elaboration,"There are tradeoffs because some programs will not receive the same amount of money even if you wanted them to and as such, you have to decide which of the 3 programs would be more beneficial."
 Husbands and wives transfer,Q22confl_tradeoffs_elaboration,Once you understand the rules I don't think they conflict
 Recall videos,Q23ss_out_uncert_elaboration,"assuming they're told after each question whether they're correct, then no.  if they wait till the end to be graded, then yes"
+Estimating pages of a book,Q23ss_out_uncert_elaboration,Since they're not being told if they were correct or not I would say they're unsure
 Recall association,Q23ss_out_uncert_elaboration,Participants might not be sure if they recalled the correct words. The wording does not specify if participate score is shown live or at the end.
 Moral Reasoning (Disciplinary Action Case),Q23ss_out_uncert_elaboration,I could see this one going either way but ultimately chose no since there would be uncertainty that selected action was successful.
 Letters-to-numbers problems (cryptography),Q23ss_out_uncert_elaboration,they will know correct answer but if thei method  was most efficient
@@ -106,6 +115,7 @@ Recall images,Q23ss_out_uncert_elaboration,It seems unclear if the participants 
 Recall association,Q24eureka_question_elaboration,"The trouble here is I am answering it using face value of just hard memorization. However, an agreement can be made that there is a trick by using grouping or association or making a story out of the words which is considered a memory trick. If I was to teach someone how to memorize fast using a memorization strategy, it may be considered an ""aha"" moment as well.  "
 Wildcat Wells,Q24eureka_question_elaboration,"I would assume yes, that there is an algorithm, but it is hard to tell from the description."
 Advertisement writing,Q2intel_manip_1_elaboration,The actual writing and/or drawing of the ad is physical
+Estimating pages of a book,Q2intel_manip_1_elaboration,You do have to make a physical appearance judgement 
 Recall videos,Q2intel_manip_1_elaboration,There could be some eye strain which I would consider physical effort.
 Putting food into categories,Q2intel_manip_1_elaboration,Knowing how the criteria were entered and if list items were added to them by workers.
 Room assignment task,Q3type_1_planning_elaboration,"This is an optimization problem, I would not count it as planning."
@@ -132,6 +142,7 @@ Advertisement writing,Q6type_5_cc_elaboration,I would think part of the task wou
 Allocating resources to programs,Q6type_5_cc_elaboration,The group must work together to determine how to spend the money across different programs
 Shopping plan,Q7type_7_battle_elaboration,"You are fighting against a maximum point value, not other people/ Thats how I interopreted the objective.,"
 Whac-A-Mole,Q7type_7_battle_elaboration,"The wording is vague as stated in ""thereby maximizing their points"". It doesn't say their own points or if it is referring to their team."
+Estimating pages of a book,Q7type_7_battle_elaboration,It's more of a judgement task than a win/lose task
 Recall videos,Q7type_7_battle_elaboration,The instructions do not provide the incentive for maximizing points.
 Letters-to-numbers problems (cryptography),Q7type_7_battle_elaboration,Must complete in the fewest attempts possible
 Husbands and wives transfer,Q7type_7_battle_elaboration,Must complete in the fewest attempts possible
