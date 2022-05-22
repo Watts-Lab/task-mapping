@@ -3,18 +3,20 @@
 Mapped by: joycewang3 
 
 ## 1. Stimulus Complex 
-Participants are given a series of mathematical problems (for example, 3+5), except the numbers have been replaced with letters! So, instead of 3+5, users would instead see "A+B", where the letter "A" maps to "3" and "B" maps to "5".
-
-Paricipants will also have the opportunity to see the answers to certain problems. For example, 3+5 = 8; maybe the number "8" maps to the letter "C." In the case, the participant would have the information that A + B = C.
+Participants are given instructions to map letters A, B, C, D, E, F, G, H, I, and J, which have been initially randomly assigned without replacement, to one of the 10 digits (0 through 9). For example, because letter "A" maps onto digit "3" and letter "B" maps onto digit "5", an operation "A + B" would correspond to "3 + 5". If letter "C" would map onto digit "8", then A + B = C.
 
 ## 2. Goal Directives 
-The objective was to identify the mapping of the 10 letters to the 10 numbers in as few trials as possible.
+The goal is to identify the mapping of the 10 letters to the 10 numbers in as few trials as possible within a fixed amount of time and limited number of trials. Participants must also get the correct answer as quickly as possible.
+
+There is a specific process participants have to follow to map letters onto numbers. Participants are first asked to come up with addition or subtraction operation (e.g., "A + B") and then given an answer in the letter form (e.g., "A + B = C"). Then participants propose a mapping for a letter (e.g., "A = 3") and receive feedback (e.g., "True, A = 3"). Participants have to follow this process in proposing the mapping of all letters to all digits. To submit their final answer, participants have to indicate which digits each of the letters correspond to.
+
+Participants are evaluated based on several criteria, such as the number of trials they used, letters identified per trial, and letters used per equation. There is a theoretical maximum score, and participants get the highest score by finding the correct mapping as fast as they can, with as few trials as possible.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
 
 ### Skills 
-Math, logical reasoning
+Logical reasoning
 
 ### UI-UX Allowed Processes
 Communicate with every group member via chat, type in equations, receive feedback on the screen (e.g., get the solutions to the equations), and submit the full correct coding.
