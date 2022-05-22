@@ -259,6 +259,26 @@ A3CGQOJC28OVGN,Q20type_3_type_4,Shopping plan,1
 A3CGQOJC28OVGN,Q22confl_tradeoffs,Shopping plan,-1
 A3CGQOJC28OVGN,Q23ss_out_uncert,Shopping plan,1
 A3CGQOJC28OVGN,Q24eureka_question,Shopping plan,-1
+A1VRG5HKZC0H0C,Q1concept_behav,Estimating geological metrics,-1
+A1VRG5HKZC0H0C,Q3type_1_planning,Estimating geological metrics,-1
+A1VRG5HKZC0H0C,Q4type_2_generate,Estimating geological metrics,-1
+A1VRG5HKZC0H0C,Q6type_5_cc,Estimating geological metrics,-1
+A1VRG5HKZC0H0C,Q7type_7_battle,Estimating geological metrics,-1
+A1VRG5HKZC0H0C,Q8type_8_performance,Estimating geological metrics,-1
+A1VRG5HKZC0H0C,Q9divisible_unitary,Estimating geological metrics,1
+A1VRG5HKZC0H0C,Q10maximizing,Estimating geological metrics,1
+A1VRG5HKZC0H0C,Q11optimizing,Estimating geological metrics,1
+A1VRG5HKZC0H0C,Q13outcome_multip,Estimating geological metrics,1
+A1VRG5HKZC0H0C,Q14sol_scheme_mul,Estimating geological metrics,-1
+A1VRG5HKZC0H0C,Q15dec_verifiability,Estimating geological metrics,1
+A1VRG5HKZC0H0C,Q16shared_knowledge,Estimating geological metrics,1
+A1VRG5HKZC0H0C,Q17within_sys_sol,Estimating geological metrics,1
+A1VRG5HKZC0H0C,Q18ans_recog,Estimating geological metrics,1
+A1VRG5HKZC0H0C,Q19time_solvability,Estimating geological metrics,1
+A1VRG5HKZC0H0C,Q20type_3_type_4,Estimating geological metrics,1
+A1VRG5HKZC0H0C,Q22confl_tradeoffs,Estimating geological metrics,-1
+A1VRG5HKZC0H0C,Q23ss_out_uncert,Estimating geological metrics,1
+A1VRG5HKZC0H0C,Q24eureka_question,Estimating geological metrics,-1
 A1VRG5HKZC0H0C,Q1concept_behav,Abstract grid task,-1
 A1VRG5HKZC0H0C,Q3type_1_planning,Abstract grid task,-1
 A1VRG5HKZC0H0C,Q4type_2_generate,Abstract grid task,-1
@@ -359,6 +379,26 @@ A8C3WNWRBWUXO,Q20type_3_type_4,Putting food into categories,-1
 A8C3WNWRBWUXO,Q22confl_tradeoffs,Putting food into categories,1
 A8C3WNWRBWUXO,Q23ss_out_uncert,Putting food into categories,1
 A8C3WNWRBWUXO,Q24eureka_question,Putting food into categories,-1
+AKQAI78JTXXC9,Q1concept_behav,Estimating geological metrics,-1
+AKQAI78JTXXC9,Q3type_1_planning,Estimating geological metrics,-1
+AKQAI78JTXXC9,Q4type_2_generate,Estimating geological metrics,-1
+AKQAI78JTXXC9,Q6type_5_cc,Estimating geological metrics,-1
+AKQAI78JTXXC9,Q7type_7_battle,Estimating geological metrics,-1
+AKQAI78JTXXC9,Q8type_8_performance,Estimating geological metrics,-1
+AKQAI78JTXXC9,Q9divisible_unitary,Estimating geological metrics,-1
+AKQAI78JTXXC9,Q10maximizing,Estimating geological metrics,-1
+AKQAI78JTXXC9,Q11optimizing,Estimating geological metrics,1
+AKQAI78JTXXC9,Q13outcome_multip,Estimating geological metrics,1
+AKQAI78JTXXC9,Q14sol_scheme_mul,Estimating geological metrics,-1
+AKQAI78JTXXC9,Q15dec_verifiability,Estimating geological metrics,1
+AKQAI78JTXXC9,Q16shared_knowledge,Estimating geological metrics,1
+AKQAI78JTXXC9,Q17within_sys_sol,Estimating geological metrics,-1
+AKQAI78JTXXC9,Q18ans_recog,Estimating geological metrics,1
+AKQAI78JTXXC9,Q19time_solvability,Estimating geological metrics,1
+AKQAI78JTXXC9,Q20type_3_type_4,Estimating geological metrics,1
+AKQAI78JTXXC9,Q22confl_tradeoffs,Estimating geological metrics,-1
+AKQAI78JTXXC9,Q23ss_out_uncert,Estimating geological metrics,1
+AKQAI78JTXXC9,Q24eureka_question,Estimating geological metrics,-1
 A3I9XLIHPPWPN1,Q1concept_behav,Putting food into categories,-1
 A3I9XLIHPPWPN1,Q3type_1_planning,Putting food into categories,1
 A3I9XLIHPPWPN1,Q4type_2_generate,Putting food into categories,1
@@ -519,6 +559,26 @@ A15F2JTVAJXITI,Q20type_3_type_4,Estimating pages of a book,1
 A15F2JTVAJXITI,Q22confl_tradeoffs,Estimating pages of a book,-1
 A15F2JTVAJXITI,Q23ss_out_uncert,Estimating pages of a book,1
 A15F2JTVAJXITI,Q24eureka_question,Estimating pages of a book,-1
+A15WCNO32MHBAF,Q1concept_behav,The Fish game,-1
+A15WCNO32MHBAF,Q3type_1_planning,The Fish game,1
+A15WCNO32MHBAF,Q4type_2_generate,The Fish game,-1
+A15WCNO32MHBAF,Q6type_5_cc,The Fish game,-1
+A15WCNO32MHBAF,Q7type_7_battle,The Fish game,1
+A15WCNO32MHBAF,Q8type_8_performance,The Fish game,-1
+A15WCNO32MHBAF,Q9divisible_unitary,The Fish game,1
+A15WCNO32MHBAF,Q10maximizing,The Fish game,1
+A15WCNO32MHBAF,Q11optimizing,The Fish game,-1
+A15WCNO32MHBAF,Q13outcome_multip,The Fish game,-1
+A15WCNO32MHBAF,Q14sol_scheme_mul,The Fish game,-1
+A15WCNO32MHBAF,Q15dec_verifiability,The Fish game,-1
+A15WCNO32MHBAF,Q16shared_knowledge,The Fish game,-1
+A15WCNO32MHBAF,Q17within_sys_sol,The Fish game,-1
+A15WCNO32MHBAF,Q18ans_recog,The Fish game,-1
+A15WCNO32MHBAF,Q19time_solvability,The Fish game,-1
+A15WCNO32MHBAF,Q20type_3_type_4,The Fish game,-1
+A15WCNO32MHBAF,Q22confl_tradeoffs,The Fish game,1
+A15WCNO32MHBAF,Q23ss_out_uncert,The Fish game,1
+A15WCNO32MHBAF,Q24eureka_question,The Fish game,-1
 ARI1EMAHUA9PO,Q1concept_behav,Image rating,-1
 ARI1EMAHUA9PO,Q3type_1_planning,Image rating,-1
 ARI1EMAHUA9PO,Q4type_2_generate,Image rating,-1
@@ -599,6 +659,26 @@ A17KN7NAP48L4B,Q20type_3_type_4,Euclidean traveling salesperson,1
 A17KN7NAP48L4B,Q22confl_tradeoffs,Euclidean traveling salesperson,-1
 A17KN7NAP48L4B,Q23ss_out_uncert,Euclidean traveling salesperson,1
 A17KN7NAP48L4B,Q24eureka_question,Euclidean traveling salesperson,-1
+ARI1EMAHUA9PO,Q1concept_behav,Estimating geological metrics,-1
+ARI1EMAHUA9PO,Q3type_1_planning,Estimating geological metrics,-1
+ARI1EMAHUA9PO,Q4type_2_generate,Estimating geological metrics,-1
+ARI1EMAHUA9PO,Q6type_5_cc,Estimating geological metrics,-1
+ARI1EMAHUA9PO,Q7type_7_battle,Estimating geological metrics,1
+ARI1EMAHUA9PO,Q8type_8_performance,Estimating geological metrics,-1
+ARI1EMAHUA9PO,Q9divisible_unitary,Estimating geological metrics,-1
+ARI1EMAHUA9PO,Q10maximizing,Estimating geological metrics,1
+ARI1EMAHUA9PO,Q11optimizing,Estimating geological metrics,-1
+ARI1EMAHUA9PO,Q13outcome_multip,Estimating geological metrics,-1
+ARI1EMAHUA9PO,Q14sol_scheme_mul,Estimating geological metrics,1
+ARI1EMAHUA9PO,Q15dec_verifiability,Estimating geological metrics,1
+ARI1EMAHUA9PO,Q16shared_knowledge,Estimating geological metrics,1
+ARI1EMAHUA9PO,Q17within_sys_sol,Estimating geological metrics,-1
+ARI1EMAHUA9PO,Q18ans_recog,Estimating geological metrics,-1
+ARI1EMAHUA9PO,Q19time_solvability,Estimating geological metrics,1
+ARI1EMAHUA9PO,Q20type_3_type_4,Estimating geological metrics,1
+ARI1EMAHUA9PO,Q22confl_tradeoffs,Estimating geological metrics,-1
+ARI1EMAHUA9PO,Q23ss_out_uncert,Estimating geological metrics,1
+ARI1EMAHUA9PO,Q24eureka_question,Estimating geological metrics,-1
 A26GDUUFGPAYUL,Q1concept_behav,Word completion given part of word,-1
 A26GDUUFGPAYUL,Q3type_1_planning,Word completion given part of word,-1
 A26GDUUFGPAYUL,Q4type_2_generate,Word completion given part of word,1
@@ -779,6 +859,26 @@ AHUNR2YEZW58R,Q20type_3_type_4,9 Dot Problem,1
 AHUNR2YEZW58R,Q22confl_tradeoffs,9 Dot Problem,-1
 AHUNR2YEZW58R,Q23ss_out_uncert,9 Dot Problem,-1
 AHUNR2YEZW58R,Q24eureka_question,9 Dot Problem,1
+AKQAI78JTXXC9,Q1concept_behav,Railroad Route Construction game (Impossible Version),1
+AKQAI78JTXXC9,Q3type_1_planning,Railroad Route Construction game (Impossible Version),-1
+AKQAI78JTXXC9,Q4type_2_generate,Railroad Route Construction game (Impossible Version),-1
+AKQAI78JTXXC9,Q6type_5_cc,Railroad Route Construction game (Impossible Version),-1
+AKQAI78JTXXC9,Q7type_7_battle,Railroad Route Construction game (Impossible Version),1
+AKQAI78JTXXC9,Q8type_8_performance,Railroad Route Construction game (Impossible Version),1
+AKQAI78JTXXC9,Q9divisible_unitary,Railroad Route Construction game (Impossible Version),-1
+AKQAI78JTXXC9,Q10maximizing,Railroad Route Construction game (Impossible Version),-1
+AKQAI78JTXXC9,Q11optimizing,Railroad Route Construction game (Impossible Version),-1
+AKQAI78JTXXC9,Q13outcome_multip,Railroad Route Construction game (Impossible Version),-1
+AKQAI78JTXXC9,Q14sol_scheme_mul,Railroad Route Construction game (Impossible Version),-1
+AKQAI78JTXXC9,Q15dec_verifiability,Railroad Route Construction game (Impossible Version),1
+AKQAI78JTXXC9,Q16shared_knowledge,Railroad Route Construction game (Impossible Version),-1
+AKQAI78JTXXC9,Q17within_sys_sol,Railroad Route Construction game (Impossible Version),-1
+AKQAI78JTXXC9,Q18ans_recog,Railroad Route Construction game (Impossible Version),1
+AKQAI78JTXXC9,Q19time_solvability,Railroad Route Construction game (Impossible Version),-1
+AKQAI78JTXXC9,Q20type_3_type_4,Railroad Route Construction game (Impossible Version),-1
+AKQAI78JTXXC9,Q22confl_tradeoffs,Railroad Route Construction game (Impossible Version),1
+AKQAI78JTXXC9,Q23ss_out_uncert,Railroad Route Construction game (Impossible Version),1
+AKQAI78JTXXC9,Q24eureka_question,Railroad Route Construction game (Impossible Version),-1
 A1I72NHC21347A,Q1concept_behav,Whac-A-Mole,-1
 A1I72NHC21347A,Q3type_1_planning,Whac-A-Mole,-1
 A1I72NHC21347A,Q4type_2_generate,Whac-A-Mole,-1
@@ -859,6 +959,26 @@ AXPZAP62ZYWP8,Q20type_3_type_4,Moral Reasoning (Disciplinary Action Case),-1
 AXPZAP62ZYWP8,Q22confl_tradeoffs,Moral Reasoning (Disciplinary Action Case),1
 AXPZAP62ZYWP8,Q23ss_out_uncert,Moral Reasoning (Disciplinary Action Case),1
 AXPZAP62ZYWP8,Q24eureka_question,Moral Reasoning (Disciplinary Action Case),-1
+A1ZE87WEYCA44A,Q1concept_behav,Railroad Route Construction game (Impossible Version),-1
+A1ZE87WEYCA44A,Q3type_1_planning,Railroad Route Construction game (Impossible Version),1
+A1ZE87WEYCA44A,Q4type_2_generate,Railroad Route Construction game (Impossible Version),-1
+A1ZE87WEYCA44A,Q6type_5_cc,Railroad Route Construction game (Impossible Version),-1
+A1ZE87WEYCA44A,Q7type_7_battle,Railroad Route Construction game (Impossible Version),1
+A1ZE87WEYCA44A,Q8type_8_performance,Railroad Route Construction game (Impossible Version),1
+A1ZE87WEYCA44A,Q9divisible_unitary,Railroad Route Construction game (Impossible Version),-1
+A1ZE87WEYCA44A,Q10maximizing,Railroad Route Construction game (Impossible Version),-1
+A1ZE87WEYCA44A,Q11optimizing,Railroad Route Construction game (Impossible Version),1
+A1ZE87WEYCA44A,Q13outcome_multip,Railroad Route Construction game (Impossible Version),-1
+A1ZE87WEYCA44A,Q14sol_scheme_mul,Railroad Route Construction game (Impossible Version),-1
+A1ZE87WEYCA44A,Q15dec_verifiability,Railroad Route Construction game (Impossible Version),-1
+A1ZE87WEYCA44A,Q16shared_knowledge,Railroad Route Construction game (Impossible Version),-1
+A1ZE87WEYCA44A,Q17within_sys_sol,Railroad Route Construction game (Impossible Version),-1
+A1ZE87WEYCA44A,Q18ans_recog,Railroad Route Construction game (Impossible Version),-1
+A1ZE87WEYCA44A,Q19time_solvability,Railroad Route Construction game (Impossible Version),-1
+A1ZE87WEYCA44A,Q20type_3_type_4,Railroad Route Construction game (Impossible Version),-1
+A1ZE87WEYCA44A,Q22confl_tradeoffs,Railroad Route Construction game (Impossible Version),1
+A1ZE87WEYCA44A,Q23ss_out_uncert,Railroad Route Construction game (Impossible Version),1
+A1ZE87WEYCA44A,Q24eureka_question,Railroad Route Construction game (Impossible Version),-1
 A18T7E73TNGOKP,Q1concept_behav,Advertisement writing,-1
 A18T7E73TNGOKP,Q3type_1_planning,Advertisement writing,1
 A18T7E73TNGOKP,Q4type_2_generate,Advertisement writing,1
@@ -899,6 +1019,26 @@ A3I9XLIHPPWPN1,Q20type_3_type_4,Whac-A-Mole,1
 A3I9XLIHPPWPN1,Q22confl_tradeoffs,Whac-A-Mole,-1
 A3I9XLIHPPWPN1,Q23ss_out_uncert,Whac-A-Mole,1
 A3I9XLIHPPWPN1,Q24eureka_question,Whac-A-Mole,-1
+A76WEZ9QGREEM,Q1concept_behav,Estimating geological metrics,-1
+A76WEZ9QGREEM,Q3type_1_planning,Estimating geological metrics,-1
+A76WEZ9QGREEM,Q4type_2_generate,Estimating geological metrics,-1
+A76WEZ9QGREEM,Q6type_5_cc,Estimating geological metrics,-1
+A76WEZ9QGREEM,Q7type_7_battle,Estimating geological metrics,1
+A76WEZ9QGREEM,Q8type_8_performance,Estimating geological metrics,-1
+A76WEZ9QGREEM,Q9divisible_unitary,Estimating geological metrics,-1
+A76WEZ9QGREEM,Q10maximizing,Estimating geological metrics,1
+A76WEZ9QGREEM,Q11optimizing,Estimating geological metrics,1
+A76WEZ9QGREEM,Q13outcome_multip,Estimating geological metrics,1
+A76WEZ9QGREEM,Q14sol_scheme_mul,Estimating geological metrics,1
+A76WEZ9QGREEM,Q15dec_verifiability,Estimating geological metrics,1
+A76WEZ9QGREEM,Q16shared_knowledge,Estimating geological metrics,1
+A76WEZ9QGREEM,Q17within_sys_sol,Estimating geological metrics,-1
+A76WEZ9QGREEM,Q18ans_recog,Estimating geological metrics,1
+A76WEZ9QGREEM,Q19time_solvability,Estimating geological metrics,1
+A76WEZ9QGREEM,Q20type_3_type_4,Estimating geological metrics,1
+A76WEZ9QGREEM,Q22confl_tradeoffs,Estimating geological metrics,-1
+A76WEZ9QGREEM,Q23ss_out_uncert,Estimating geological metrics,-1
+A76WEZ9QGREEM,Q24eureka_question,Estimating geological metrics,-1
 A3T9WZOUQGE2UW,Q1concept_behav,Wildcat Wells,1
 A3T9WZOUQGE2UW,Q3type_1_planning,Wildcat Wells,1
 A3T9WZOUQGE2UW,Q4type_2_generate,Wildcat Wells,-1
@@ -939,6 +1079,26 @@ AKQAI78JTXXC9,Q20type_3_type_4,Recall videos,1
 AKQAI78JTXXC9,Q22confl_tradeoffs,Recall videos,-1
 AKQAI78JTXXC9,Q23ss_out_uncert,Recall videos,-1
 AKQAI78JTXXC9,Q24eureka_question,Recall videos,-1
+AKQAI78JTXXC9,Q1concept_behav,Railroad Route Construction game,-1
+AKQAI78JTXXC9,Q3type_1_planning,Railroad Route Construction game,-1
+AKQAI78JTXXC9,Q4type_2_generate,Railroad Route Construction game,-1
+AKQAI78JTXXC9,Q6type_5_cc,Railroad Route Construction game,-1
+AKQAI78JTXXC9,Q7type_7_battle,Railroad Route Construction game,-1
+AKQAI78JTXXC9,Q8type_8_performance,Railroad Route Construction game,1
+AKQAI78JTXXC9,Q9divisible_unitary,Railroad Route Construction game,-1
+AKQAI78JTXXC9,Q10maximizing,Railroad Route Construction game,-1
+AKQAI78JTXXC9,Q11optimizing,Railroad Route Construction game,-1
+AKQAI78JTXXC9,Q13outcome_multip,Railroad Route Construction game,-1
+AKQAI78JTXXC9,Q14sol_scheme_mul,Railroad Route Construction game,-1
+AKQAI78JTXXC9,Q15dec_verifiability,Railroad Route Construction game,1
+AKQAI78JTXXC9,Q16shared_knowledge,Railroad Route Construction game,1
+AKQAI78JTXXC9,Q17within_sys_sol,Railroad Route Construction game,1
+AKQAI78JTXXC9,Q18ans_recog,Railroad Route Construction game,1
+AKQAI78JTXXC9,Q19time_solvability,Railroad Route Construction game,1
+AKQAI78JTXXC9,Q20type_3_type_4,Railroad Route Construction game,1
+AKQAI78JTXXC9,Q22confl_tradeoffs,Railroad Route Construction game,1
+AKQAI78JTXXC9,Q23ss_out_uncert,Railroad Route Construction game,-1
+AKQAI78JTXXC9,Q24eureka_question,Railroad Route Construction game,-1
 A2TLN8489YGY81,Q1concept_behav,To evacuate or not to evacuate,-1
 A2TLN8489YGY81,Q3type_1_planning,To evacuate or not to evacuate,-1
 A2TLN8489YGY81,Q4type_2_generate,To evacuate or not to evacuate,-1
@@ -1039,6 +1199,26 @@ A3V3SQCM8QGYB7,Q20type_3_type_4,Guessing the correlation,1
 A3V3SQCM8QGYB7,Q22confl_tradeoffs,Guessing the correlation,-1
 A3V3SQCM8QGYB7,Q23ss_out_uncert,Guessing the correlation,-1
 A3V3SQCM8QGYB7,Q24eureka_question,Guessing the correlation,-1
+A1VRG5HKZC0H0C,Q1concept_behav,Railroad Route Construction game,-1
+A1VRG5HKZC0H0C,Q3type_1_planning,Railroad Route Construction game,-1
+A1VRG5HKZC0H0C,Q4type_2_generate,Railroad Route Construction game,-1
+A1VRG5HKZC0H0C,Q6type_5_cc,Railroad Route Construction game,-1
+A1VRG5HKZC0H0C,Q7type_7_battle,Railroad Route Construction game,-1
+A1VRG5HKZC0H0C,Q8type_8_performance,Railroad Route Construction game,1
+A1VRG5HKZC0H0C,Q9divisible_unitary,Railroad Route Construction game,-1
+A1VRG5HKZC0H0C,Q10maximizing,Railroad Route Construction game,-1
+A1VRG5HKZC0H0C,Q11optimizing,Railroad Route Construction game,-1
+A1VRG5HKZC0H0C,Q13outcome_multip,Railroad Route Construction game,-1
+A1VRG5HKZC0H0C,Q14sol_scheme_mul,Railroad Route Construction game,-1
+A1VRG5HKZC0H0C,Q15dec_verifiability,Railroad Route Construction game,1
+A1VRG5HKZC0H0C,Q16shared_knowledge,Railroad Route Construction game,1
+A1VRG5HKZC0H0C,Q17within_sys_sol,Railroad Route Construction game,1
+A1VRG5HKZC0H0C,Q18ans_recog,Railroad Route Construction game,1
+A1VRG5HKZC0H0C,Q19time_solvability,Railroad Route Construction game,1
+A1VRG5HKZC0H0C,Q20type_3_type_4,Railroad Route Construction game,1
+A1VRG5HKZC0H0C,Q22confl_tradeoffs,Railroad Route Construction game,1
+A1VRG5HKZC0H0C,Q23ss_out_uncert,Railroad Route Construction game,-1
+A1VRG5HKZC0H0C,Q24eureka_question,Railroad Route Construction game,-1
 A1VRG5HKZC0H0C,Q1concept_behav,9 Dot Problem,-1
 A1VRG5HKZC0H0C,Q3type_1_planning,9 Dot Problem,-1
 A1VRG5HKZC0H0C,Q4type_2_generate,9 Dot Problem,-1
@@ -1319,6 +1499,26 @@ A3I9XLIHPPWPN1,Q20type_3_type_4,Word completion given starting letter,1
 A3I9XLIHPPWPN1,Q22confl_tradeoffs,Word completion given starting letter,-1
 A3I9XLIHPPWPN1,Q23ss_out_uncert,Word completion given starting letter,-1
 A3I9XLIHPPWPN1,Q24eureka_question,Word completion given starting letter,-1
+ARI1EMAHUA9PO,Q1concept_behav,The Fish game,-1
+ARI1EMAHUA9PO,Q3type_1_planning,The Fish game,-1
+ARI1EMAHUA9PO,Q4type_2_generate,The Fish game,-1
+ARI1EMAHUA9PO,Q6type_5_cc,The Fish game,-1
+ARI1EMAHUA9PO,Q7type_7_battle,The Fish game,-1
+ARI1EMAHUA9PO,Q8type_8_performance,The Fish game,-1
+ARI1EMAHUA9PO,Q9divisible_unitary,The Fish game,-1
+ARI1EMAHUA9PO,Q10maximizing,The Fish game,1
+ARI1EMAHUA9PO,Q11optimizing,The Fish game,-1
+ARI1EMAHUA9PO,Q13outcome_multip,The Fish game,-1
+ARI1EMAHUA9PO,Q14sol_scheme_mul,The Fish game,-1
+ARI1EMAHUA9PO,Q15dec_verifiability,The Fish game,1
+ARI1EMAHUA9PO,Q16shared_knowledge,The Fish game,1
+ARI1EMAHUA9PO,Q17within_sys_sol,The Fish game,-1
+ARI1EMAHUA9PO,Q18ans_recog,The Fish game,1
+ARI1EMAHUA9PO,Q19time_solvability,The Fish game,1
+ARI1EMAHUA9PO,Q20type_3_type_4,The Fish game,1
+ARI1EMAHUA9PO,Q22confl_tradeoffs,The Fish game,1
+ARI1EMAHUA9PO,Q23ss_out_uncert,The Fish game,1
+ARI1EMAHUA9PO,Q24eureka_question,The Fish game,-1
 A2TLN8489YGY81,Q1concept_behav,Recall association,-1
 A2TLN8489YGY81,Q3type_1_planning,Recall association,-1
 A2TLN8489YGY81,Q4type_2_generate,Recall association,-1
@@ -1399,6 +1599,26 @@ AA5ZDXAA2DLY1,Q20type_3_type_4,To evacuate or not to evacuate,1
 AA5ZDXAA2DLY1,Q22confl_tradeoffs,To evacuate or not to evacuate,1
 AA5ZDXAA2DLY1,Q23ss_out_uncert,To evacuate or not to evacuate,1
 AA5ZDXAA2DLY1,Q24eureka_question,To evacuate or not to evacuate,-1
+A76WEZ9QGREEM,Q1concept_behav,Railroad Route Construction game (Impossible Version),-1
+A76WEZ9QGREEM,Q3type_1_planning,Railroad Route Construction game (Impossible Version),1
+A76WEZ9QGREEM,Q4type_2_generate,Railroad Route Construction game (Impossible Version),1
+A76WEZ9QGREEM,Q6type_5_cc,Railroad Route Construction game (Impossible Version),-1
+A76WEZ9QGREEM,Q7type_7_battle,Railroad Route Construction game (Impossible Version),-1
+A76WEZ9QGREEM,Q8type_8_performance,Railroad Route Construction game (Impossible Version),1
+A76WEZ9QGREEM,Q9divisible_unitary,Railroad Route Construction game (Impossible Version),1
+A76WEZ9QGREEM,Q10maximizing,Railroad Route Construction game (Impossible Version),-1
+A76WEZ9QGREEM,Q11optimizing,Railroad Route Construction game (Impossible Version),1
+A76WEZ9QGREEM,Q13outcome_multip,Railroad Route Construction game (Impossible Version),-1
+A76WEZ9QGREEM,Q14sol_scheme_mul,Railroad Route Construction game (Impossible Version),-1
+A76WEZ9QGREEM,Q15dec_verifiability,Railroad Route Construction game (Impossible Version),1
+A76WEZ9QGREEM,Q16shared_knowledge,Railroad Route Construction game (Impossible Version),-1
+A76WEZ9QGREEM,Q17within_sys_sol,Railroad Route Construction game (Impossible Version),1
+A76WEZ9QGREEM,Q18ans_recog,Railroad Route Construction game (Impossible Version),1
+A76WEZ9QGREEM,Q19time_solvability,Railroad Route Construction game (Impossible Version),-1
+A76WEZ9QGREEM,Q20type_3_type_4,Railroad Route Construction game (Impossible Version),-1
+A76WEZ9QGREEM,Q22confl_tradeoffs,Railroad Route Construction game (Impossible Version),-1
+A76WEZ9QGREEM,Q23ss_out_uncert,Railroad Route Construction game (Impossible Version),-1
+A76WEZ9QGREEM,Q24eureka_question,Railroad Route Construction game (Impossible Version),-1
 AA5ZDXAA2DLY1,Q1concept_behav,Guessing the correlation,-1
 AA5ZDXAA2DLY1,Q3type_1_planning,Guessing the correlation,-1
 AA5ZDXAA2DLY1,Q4type_2_generate,Guessing the correlation,-1
@@ -1499,6 +1719,26 @@ A2615YW1YERQBO,Q20type_3_type_4,Graph coloring task,1
 A2615YW1YERQBO,Q22confl_tradeoffs,Graph coloring task,1
 A2615YW1YERQBO,Q23ss_out_uncert,Graph coloring task,-1
 A2615YW1YERQBO,Q24eureka_question,Graph coloring task,-1
+A1VRG5HKZC0H0C,Q1concept_behav,Railroad Route Construction game (Impossible Version),-1
+A1VRG5HKZC0H0C,Q3type_1_planning,Railroad Route Construction game (Impossible Version),-1
+A1VRG5HKZC0H0C,Q4type_2_generate,Railroad Route Construction game (Impossible Version),-1
+A1VRG5HKZC0H0C,Q6type_5_cc,Railroad Route Construction game (Impossible Version),-1
+A1VRG5HKZC0H0C,Q7type_7_battle,Railroad Route Construction game (Impossible Version),-1
+A1VRG5HKZC0H0C,Q8type_8_performance,Railroad Route Construction game (Impossible Version),1
+A1VRG5HKZC0H0C,Q9divisible_unitary,Railroad Route Construction game (Impossible Version),-1
+A1VRG5HKZC0H0C,Q10maximizing,Railroad Route Construction game (Impossible Version),-1
+A1VRG5HKZC0H0C,Q11optimizing,Railroad Route Construction game (Impossible Version),-1
+A1VRG5HKZC0H0C,Q13outcome_multip,Railroad Route Construction game (Impossible Version),-1
+A1VRG5HKZC0H0C,Q14sol_scheme_mul,Railroad Route Construction game (Impossible Version),NA
+A1VRG5HKZC0H0C,Q15dec_verifiability,Railroad Route Construction game (Impossible Version),-1
+A1VRG5HKZC0H0C,Q16shared_knowledge,Railroad Route Construction game (Impossible Version),-1
+A1VRG5HKZC0H0C,Q17within_sys_sol,Railroad Route Construction game (Impossible Version),-1
+A1VRG5HKZC0H0C,Q18ans_recog,Railroad Route Construction game (Impossible Version),NA
+A1VRG5HKZC0H0C,Q19time_solvability,Railroad Route Construction game (Impossible Version),-1
+A1VRG5HKZC0H0C,Q20type_3_type_4,Railroad Route Construction game (Impossible Version),-1
+A1VRG5HKZC0H0C,Q22confl_tradeoffs,Railroad Route Construction game (Impossible Version),1
+A1VRG5HKZC0H0C,Q23ss_out_uncert,Railroad Route Construction game (Impossible Version),1
+A1VRG5HKZC0H0C,Q24eureka_question,Railroad Route Construction game (Impossible Version),-1
 A3UJSDFJ9LBQ6Z,Q1concept_behav,Graph coloring task,-1
 A3UJSDFJ9LBQ6Z,Q3type_1_planning,Graph coloring task,-1
 A3UJSDFJ9LBQ6Z,Q4type_2_generate,Graph coloring task,-1
@@ -1599,6 +1839,26 @@ A2WZTMXWD20NYE,Q20type_3_type_4,Image rating,-1
 A2WZTMXWD20NYE,Q22confl_tradeoffs,Image rating,-1
 A2WZTMXWD20NYE,Q23ss_out_uncert,Image rating,1
 A2WZTMXWD20NYE,Q24eureka_question,Image rating,-1
+A26UIS59SY4NM6,Q1concept_behav,Estimating geological metrics,-1
+A26UIS59SY4NM6,Q3type_1_planning,Estimating geological metrics,-1
+A26UIS59SY4NM6,Q4type_2_generate,Estimating geological metrics,-1
+A26UIS59SY4NM6,Q6type_5_cc,Estimating geological metrics,-1
+A26UIS59SY4NM6,Q7type_7_battle,Estimating geological metrics,-1
+A26UIS59SY4NM6,Q8type_8_performance,Estimating geological metrics,-1
+A26UIS59SY4NM6,Q9divisible_unitary,Estimating geological metrics,-1
+A26UIS59SY4NM6,Q10maximizing,Estimating geological metrics,-1
+A26UIS59SY4NM6,Q11optimizing,Estimating geological metrics,1
+A26UIS59SY4NM6,Q13outcome_multip,Estimating geological metrics,-1
+A26UIS59SY4NM6,Q14sol_scheme_mul,Estimating geological metrics,-1
+A26UIS59SY4NM6,Q15dec_verifiability,Estimating geological metrics,1
+A26UIS59SY4NM6,Q16shared_knowledge,Estimating geological metrics,-1
+A26UIS59SY4NM6,Q17within_sys_sol,Estimating geological metrics,-1
+A26UIS59SY4NM6,Q18ans_recog,Estimating geological metrics,1
+A26UIS59SY4NM6,Q19time_solvability,Estimating geological metrics,1
+A26UIS59SY4NM6,Q20type_3_type_4,Estimating geological metrics,1
+A26UIS59SY4NM6,Q22confl_tradeoffs,Estimating geological metrics,-1
+A26UIS59SY4NM6,Q23ss_out_uncert,Estimating geological metrics,1
+A26UIS59SY4NM6,Q24eureka_question,Estimating geological metrics,-1
 A1I72NHC21347A,Q1concept_behav,Divergent Association Task,-1
 A1I72NHC21347A,Q3type_1_planning,Divergent Association Task,-1
 A1I72NHC21347A,Q4type_2_generate,Divergent Association Task,-1
@@ -1859,6 +2119,26 @@ A2YW35WSBU88O0,Q20type_3_type_4,Recall images,1
 A2YW35WSBU88O0,Q22confl_tradeoffs,Recall images,-1
 A2YW35WSBU88O0,Q23ss_out_uncert,Recall images,1
 A2YW35WSBU88O0,Q24eureka_question,Recall images,-1
+AXPZAP62ZYWP8,Q1concept_behav,Railroad Route Construction game,-1
+AXPZAP62ZYWP8,Q3type_1_planning,Railroad Route Construction game,1
+AXPZAP62ZYWP8,Q4type_2_generate,Railroad Route Construction game,1
+AXPZAP62ZYWP8,Q6type_5_cc,Railroad Route Construction game,-1
+AXPZAP62ZYWP8,Q7type_7_battle,Railroad Route Construction game,1
+AXPZAP62ZYWP8,Q8type_8_performance,Railroad Route Construction game,-1
+AXPZAP62ZYWP8,Q9divisible_unitary,Railroad Route Construction game,-1
+AXPZAP62ZYWP8,Q10maximizing,Railroad Route Construction game,1
+AXPZAP62ZYWP8,Q11optimizing,Railroad Route Construction game,-1
+AXPZAP62ZYWP8,Q13outcome_multip,Railroad Route Construction game,-1
+AXPZAP62ZYWP8,Q14sol_scheme_mul,Railroad Route Construction game,-1
+AXPZAP62ZYWP8,Q15dec_verifiability,Railroad Route Construction game,1
+AXPZAP62ZYWP8,Q16shared_knowledge,Railroad Route Construction game,1
+AXPZAP62ZYWP8,Q17within_sys_sol,Railroad Route Construction game,1
+AXPZAP62ZYWP8,Q18ans_recog,Railroad Route Construction game,1
+AXPZAP62ZYWP8,Q19time_solvability,Railroad Route Construction game,1
+AXPZAP62ZYWP8,Q20type_3_type_4,Railroad Route Construction game,1
+AXPZAP62ZYWP8,Q22confl_tradeoffs,Railroad Route Construction game,1
+AXPZAP62ZYWP8,Q23ss_out_uncert,Railroad Route Construction game,-1
+AXPZAP62ZYWP8,Q24eureka_question,Railroad Route Construction game,-1
 A2VRDE2FHCBMF8,Q1concept_behav,9 Dot Problem,-1
 A2VRDE2FHCBMF8,Q3type_1_planning,9 Dot Problem,-1
 A2VRDE2FHCBMF8,Q4type_2_generate,9 Dot Problem,-1
@@ -1899,6 +2179,26 @@ A18T7E73TNGOKP,Q20type_3_type_4,"Wolf, goat and cabbage transfer",1
 A18T7E73TNGOKP,Q22confl_tradeoffs,"Wolf, goat and cabbage transfer",-1
 A18T7E73TNGOKP,Q23ss_out_uncert,"Wolf, goat and cabbage transfer",-1
 A18T7E73TNGOKP,Q24eureka_question,"Wolf, goat and cabbage transfer",1
+A76WEZ9QGREEM,Q1concept_behav,The Fish game,-1
+A76WEZ9QGREEM,Q3type_1_planning,The Fish game,-1
+A76WEZ9QGREEM,Q4type_2_generate,The Fish game,-1
+A76WEZ9QGREEM,Q6type_5_cc,The Fish game,-1
+A76WEZ9QGREEM,Q7type_7_battle,The Fish game,1
+A76WEZ9QGREEM,Q8type_8_performance,The Fish game,-1
+A76WEZ9QGREEM,Q9divisible_unitary,The Fish game,-1
+A76WEZ9QGREEM,Q10maximizing,The Fish game,1
+A76WEZ9QGREEM,Q11optimizing,The Fish game,-1
+A76WEZ9QGREEM,Q13outcome_multip,The Fish game,-1
+A76WEZ9QGREEM,Q14sol_scheme_mul,The Fish game,-1
+A76WEZ9QGREEM,Q15dec_verifiability,The Fish game,1
+A76WEZ9QGREEM,Q16shared_knowledge,The Fish game,-1
+A76WEZ9QGREEM,Q17within_sys_sol,The Fish game,1
+A76WEZ9QGREEM,Q18ans_recog,The Fish game,1
+A76WEZ9QGREEM,Q19time_solvability,The Fish game,1
+A76WEZ9QGREEM,Q20type_3_type_4,The Fish game,1
+A76WEZ9QGREEM,Q22confl_tradeoffs,The Fish game,-1
+A76WEZ9QGREEM,Q23ss_out_uncert,The Fish game,-1
+A76WEZ9QGREEM,Q24eureka_question,The Fish game,-1
 A1I72NHC21347A,Q1concept_behav,Shopping plan,-1
 A1I72NHC21347A,Q3type_1_planning,Shopping plan,1
 A1I72NHC21347A,Q4type_2_generate,Shopping plan,-1
@@ -2139,6 +2439,26 @@ A2531UD0IGT731,Q20type_3_type_4,Divergent Association Task,1
 A2531UD0IGT731,Q22confl_tradeoffs,Divergent Association Task,-1
 A2531UD0IGT731,Q23ss_out_uncert,Divergent Association Task,1
 A2531UD0IGT731,Q24eureka_question,Divergent Association Task,-1
+A1ZE87WEYCA44A,Q1concept_behav,Estimating geological metrics,-1
+A1ZE87WEYCA44A,Q3type_1_planning,Estimating geological metrics,-1
+A1ZE87WEYCA44A,Q4type_2_generate,Estimating geological metrics,-1
+A1ZE87WEYCA44A,Q6type_5_cc,Estimating geological metrics,-1
+A1ZE87WEYCA44A,Q7type_7_battle,Estimating geological metrics,-1
+A1ZE87WEYCA44A,Q8type_8_performance,Estimating geological metrics,-1
+A1ZE87WEYCA44A,Q9divisible_unitary,Estimating geological metrics,-1
+A1ZE87WEYCA44A,Q10maximizing,Estimating geological metrics,-1
+A1ZE87WEYCA44A,Q11optimizing,Estimating geological metrics,1
+A1ZE87WEYCA44A,Q13outcome_multip,Estimating geological metrics,1
+A1ZE87WEYCA44A,Q14sol_scheme_mul,Estimating geological metrics,1
+A1ZE87WEYCA44A,Q15dec_verifiability,Estimating geological metrics,1
+A1ZE87WEYCA44A,Q16shared_knowledge,Estimating geological metrics,1
+A1ZE87WEYCA44A,Q17within_sys_sol,Estimating geological metrics,1
+A1ZE87WEYCA44A,Q18ans_recog,Estimating geological metrics,1
+A1ZE87WEYCA44A,Q19time_solvability,Estimating geological metrics,1
+A1ZE87WEYCA44A,Q20type_3_type_4,Estimating geological metrics,1
+A1ZE87WEYCA44A,Q22confl_tradeoffs,Estimating geological metrics,-1
+A1ZE87WEYCA44A,Q23ss_out_uncert,Estimating geological metrics,1
+A1ZE87WEYCA44A,Q24eureka_question,Estimating geological metrics,-1
 A2TLN8489YGY81,Q1concept_behav,Euclidean traveling salesperson,-1
 A2TLN8489YGY81,Q3type_1_planning,Euclidean traveling salesperson,1
 A2TLN8489YGY81,Q4type_2_generate,Euclidean traveling salesperson,-1
@@ -2199,6 +2519,26 @@ A2AZYU1CT24O0K,Q20type_3_type_4,Letters-to-numbers problems (cryptography),1
 A2AZYU1CT24O0K,Q22confl_tradeoffs,Letters-to-numbers problems (cryptography),-1
 A2AZYU1CT24O0K,Q23ss_out_uncert,Letters-to-numbers problems (cryptography),-1
 A2AZYU1CT24O0K,Q24eureka_question,Letters-to-numbers problems (cryptography),-1
+A3JAM040VWXHDO,Q1concept_behav,Railroad Route Construction game (Impossible Version),-1
+A3JAM040VWXHDO,Q3type_1_planning,Railroad Route Construction game (Impossible Version),-1
+A3JAM040VWXHDO,Q4type_2_generate,Railroad Route Construction game (Impossible Version),-1
+A3JAM040VWXHDO,Q6type_5_cc,Railroad Route Construction game (Impossible Version),-1
+A3JAM040VWXHDO,Q7type_7_battle,Railroad Route Construction game (Impossible Version),-1
+A3JAM040VWXHDO,Q8type_8_performance,Railroad Route Construction game (Impossible Version),1
+A3JAM040VWXHDO,Q9divisible_unitary,Railroad Route Construction game (Impossible Version),-1
+A3JAM040VWXHDO,Q10maximizing,Railroad Route Construction game (Impossible Version),1
+A3JAM040VWXHDO,Q11optimizing,Railroad Route Construction game (Impossible Version),1
+A3JAM040VWXHDO,Q13outcome_multip,Railroad Route Construction game (Impossible Version),-1
+A3JAM040VWXHDO,Q14sol_scheme_mul,Railroad Route Construction game (Impossible Version),-1
+A3JAM040VWXHDO,Q15dec_verifiability,Railroad Route Construction game (Impossible Version),1
+A3JAM040VWXHDO,Q16shared_knowledge,Railroad Route Construction game (Impossible Version),1
+A3JAM040VWXHDO,Q17within_sys_sol,Railroad Route Construction game (Impossible Version),-1
+A3JAM040VWXHDO,Q18ans_recog,Railroad Route Construction game (Impossible Version),1
+A3JAM040VWXHDO,Q19time_solvability,Railroad Route Construction game (Impossible Version),-1
+A3JAM040VWXHDO,Q20type_3_type_4,Railroad Route Construction game (Impossible Version),1
+A3JAM040VWXHDO,Q22confl_tradeoffs,Railroad Route Construction game (Impossible Version),-1
+A3JAM040VWXHDO,Q23ss_out_uncert,Railroad Route Construction game (Impossible Version),-1
+A3JAM040VWXHDO,Q24eureka_question,Railroad Route Construction game (Impossible Version),-1
 AKQAI78JTXXC9,Q1concept_behav,Guessing the correlation,-1
 AKQAI78JTXXC9,Q3type_1_planning,Guessing the correlation,-1
 AKQAI78JTXXC9,Q4type_2_generate,Guessing the correlation,-1
@@ -2539,6 +2879,26 @@ A2WZTMXWD20NYE,Q20type_3_type_4,Divergent Association Task,-1
 A2WZTMXWD20NYE,Q22confl_tradeoffs,Divergent Association Task,-1
 A2WZTMXWD20NYE,Q23ss_out_uncert,Divergent Association Task,1
 A2WZTMXWD20NYE,Q24eureka_question,Divergent Association Task,-1
+A1ZE87WEYCA44A,Q1concept_behav,Railroad Route Construction game,-1
+A1ZE87WEYCA44A,Q3type_1_planning,Railroad Route Construction game,-1
+A1ZE87WEYCA44A,Q4type_2_generate,Railroad Route Construction game,-1
+A1ZE87WEYCA44A,Q6type_5_cc,Railroad Route Construction game,-1
+A1ZE87WEYCA44A,Q7type_7_battle,Railroad Route Construction game,1
+A1ZE87WEYCA44A,Q8type_8_performance,Railroad Route Construction game,1
+A1ZE87WEYCA44A,Q9divisible_unitary,Railroad Route Construction game,-1
+A1ZE87WEYCA44A,Q10maximizing,Railroad Route Construction game,1
+A1ZE87WEYCA44A,Q11optimizing,Railroad Route Construction game,1
+A1ZE87WEYCA44A,Q13outcome_multip,Railroad Route Construction game,-1
+A1ZE87WEYCA44A,Q14sol_scheme_mul,Railroad Route Construction game,-1
+A1ZE87WEYCA44A,Q15dec_verifiability,Railroad Route Construction game,1
+A1ZE87WEYCA44A,Q16shared_knowledge,Railroad Route Construction game,-1
+A1ZE87WEYCA44A,Q17within_sys_sol,Railroad Route Construction game,1
+A1ZE87WEYCA44A,Q18ans_recog,Railroad Route Construction game,1
+A1ZE87WEYCA44A,Q19time_solvability,Railroad Route Construction game,1
+A1ZE87WEYCA44A,Q20type_3_type_4,Railroad Route Construction game,1
+A1ZE87WEYCA44A,Q22confl_tradeoffs,Railroad Route Construction game,1
+A1ZE87WEYCA44A,Q23ss_out_uncert,Railroad Route Construction game,1
+A1ZE87WEYCA44A,Q24eureka_question,Railroad Route Construction game,-1
 A17KN7NAP48L4B,Q1concept_behav,Summarize Discussion,-1
 A17KN7NAP48L4B,Q3type_1_planning,Summarize Discussion,-1
 A17KN7NAP48L4B,Q4type_2_generate,Summarize Discussion,-1
@@ -2879,6 +3239,26 @@ A3CGQOJC28OVGN,Q20type_3_type_4,Wildcat Wells,1
 A3CGQOJC28OVGN,Q22confl_tradeoffs,Wildcat Wells,-1
 A3CGQOJC28OVGN,Q23ss_out_uncert,Wildcat Wells,1
 A3CGQOJC28OVGN,Q24eureka_question,Wildcat Wells,1
+AXPZAP62ZYWP8,Q1concept_behav,Estimating geological metrics,-1
+AXPZAP62ZYWP8,Q3type_1_planning,Estimating geological metrics,-1
+AXPZAP62ZYWP8,Q4type_2_generate,Estimating geological metrics,-1
+AXPZAP62ZYWP8,Q6type_5_cc,Estimating geological metrics,1
+AXPZAP62ZYWP8,Q7type_7_battle,Estimating geological metrics,1
+AXPZAP62ZYWP8,Q8type_8_performance,Estimating geological metrics,1
+AXPZAP62ZYWP8,Q9divisible_unitary,Estimating geological metrics,1
+AXPZAP62ZYWP8,Q10maximizing,Estimating geological metrics,1
+AXPZAP62ZYWP8,Q11optimizing,Estimating geological metrics,1
+AXPZAP62ZYWP8,Q13outcome_multip,Estimating geological metrics,1
+AXPZAP62ZYWP8,Q14sol_scheme_mul,Estimating geological metrics,-1
+AXPZAP62ZYWP8,Q15dec_verifiability,Estimating geological metrics,1
+AXPZAP62ZYWP8,Q16shared_knowledge,Estimating geological metrics,1
+AXPZAP62ZYWP8,Q17within_sys_sol,Estimating geological metrics,1
+AXPZAP62ZYWP8,Q18ans_recog,Estimating geological metrics,1
+AXPZAP62ZYWP8,Q19time_solvability,Estimating geological metrics,1
+AXPZAP62ZYWP8,Q20type_3_type_4,Estimating geological metrics,1
+AXPZAP62ZYWP8,Q22confl_tradeoffs,Estimating geological metrics,1
+AXPZAP62ZYWP8,Q23ss_out_uncert,Estimating geological metrics,1
+AXPZAP62ZYWP8,Q24eureka_question,Estimating geological metrics,1
 A5NE8TWS8ZV7B,Q1concept_behav,Whac-A-Mole,-1
 A5NE8TWS8ZV7B,Q3type_1_planning,Whac-A-Mole,-1
 A5NE8TWS8ZV7B,Q4type_2_generate,Whac-A-Mole,-1
@@ -2919,6 +3299,26 @@ AA5ZDXAA2DLY1,Q20type_3_type_4,Euclidean traveling salesperson,1
 AA5ZDXAA2DLY1,Q22confl_tradeoffs,Euclidean traveling salesperson,1
 AA5ZDXAA2DLY1,Q23ss_out_uncert,Euclidean traveling salesperson,1
 AA5ZDXAA2DLY1,Q24eureka_question,Euclidean traveling salesperson,-1
+A1ZE87WEYCA44A,Q1concept_behav,The Fish game,-1
+A1ZE87WEYCA44A,Q3type_1_planning,The Fish game,-1
+A1ZE87WEYCA44A,Q4type_2_generate,The Fish game,-1
+A1ZE87WEYCA44A,Q6type_5_cc,The Fish game,-1
+A1ZE87WEYCA44A,Q7type_7_battle,The Fish game,1
+A1ZE87WEYCA44A,Q8type_8_performance,The Fish game,-1
+A1ZE87WEYCA44A,Q9divisible_unitary,The Fish game,-1
+A1ZE87WEYCA44A,Q10maximizing,The Fish game,1
+A1ZE87WEYCA44A,Q11optimizing,The Fish game,-1
+A1ZE87WEYCA44A,Q13outcome_multip,The Fish game,-1
+A1ZE87WEYCA44A,Q14sol_scheme_mul,The Fish game,-1
+A1ZE87WEYCA44A,Q15dec_verifiability,The Fish game,1
+A1ZE87WEYCA44A,Q16shared_knowledge,The Fish game,-1
+A1ZE87WEYCA44A,Q17within_sys_sol,The Fish game,1
+A1ZE87WEYCA44A,Q18ans_recog,The Fish game,-1
+A1ZE87WEYCA44A,Q19time_solvability,The Fish game,-1
+A1ZE87WEYCA44A,Q20type_3_type_4,The Fish game,-1
+A1ZE87WEYCA44A,Q22confl_tradeoffs,The Fish game,1
+A1ZE87WEYCA44A,Q23ss_out_uncert,The Fish game,1
+A1ZE87WEYCA44A,Q24eureka_question,The Fish game,-1
 ARYL3C6N9SVV1,Q1concept_behav,Allocating resources to programs,-1
 ARYL3C6N9SVV1,Q3type_1_planning,Allocating resources to programs,1
 ARYL3C6N9SVV1,Q4type_2_generate,Allocating resources to programs,1
@@ -2999,6 +3399,26 @@ A230VUDYOCRZ4N,Q20type_3_type_4,"Wolf, goat and cabbage transfer",1
 A230VUDYOCRZ4N,Q22confl_tradeoffs,"Wolf, goat and cabbage transfer",-1
 A230VUDYOCRZ4N,Q23ss_out_uncert,"Wolf, goat and cabbage transfer",-1
 A230VUDYOCRZ4N,Q24eureka_question,"Wolf, goat and cabbage transfer",1
+A2078XQX9ZSWBC,Q1concept_behav,Railroad Route Construction game,-1
+A2078XQX9ZSWBC,Q3type_1_planning,Railroad Route Construction game,1
+A2078XQX9ZSWBC,Q4type_2_generate,Railroad Route Construction game,-1
+A2078XQX9ZSWBC,Q6type_5_cc,Railroad Route Construction game,-1
+A2078XQX9ZSWBC,Q7type_7_battle,Railroad Route Construction game,1
+A2078XQX9ZSWBC,Q8type_8_performance,Railroad Route Construction game,1
+A2078XQX9ZSWBC,Q9divisible_unitary,Railroad Route Construction game,-1
+A2078XQX9ZSWBC,Q10maximizing,Railroad Route Construction game,-1
+A2078XQX9ZSWBC,Q11optimizing,Railroad Route Construction game,-1
+A2078XQX9ZSWBC,Q13outcome_multip,Railroad Route Construction game,-1
+A2078XQX9ZSWBC,Q14sol_scheme_mul,Railroad Route Construction game,-1
+A2078XQX9ZSWBC,Q15dec_verifiability,Railroad Route Construction game,1
+A2078XQX9ZSWBC,Q16shared_knowledge,Railroad Route Construction game,1
+A2078XQX9ZSWBC,Q17within_sys_sol,Railroad Route Construction game,1
+A2078XQX9ZSWBC,Q18ans_recog,Railroad Route Construction game,1
+A2078XQX9ZSWBC,Q19time_solvability,Railroad Route Construction game,1
+A2078XQX9ZSWBC,Q20type_3_type_4,Railroad Route Construction game,1
+A2078XQX9ZSWBC,Q22confl_tradeoffs,Railroad Route Construction game,-1
+A2078XQX9ZSWBC,Q23ss_out_uncert,Railroad Route Construction game,-1
+A2078XQX9ZSWBC,Q24eureka_question,Railroad Route Construction game,-1
 A2TLN8489YGY81,Q1concept_behav,Word completion given part of word,-1
 A2TLN8489YGY81,Q3type_1_planning,Word completion given part of word,-1
 A2TLN8489YGY81,Q4type_2_generate,Word completion given part of word,1
@@ -3099,6 +3519,26 @@ A3NXT3OVGL7QNR,Q20type_3_type_4,Moral Reasoning (Disciplinary Action Case),-1
 A3NXT3OVGL7QNR,Q22confl_tradeoffs,Moral Reasoning (Disciplinary Action Case),1
 A3NXT3OVGL7QNR,Q23ss_out_uncert,Moral Reasoning (Disciplinary Action Case),1
 A3NXT3OVGL7QNR,Q24eureka_question,Moral Reasoning (Disciplinary Action Case),-1
+A33PHCBUOD4WKD,Q1concept_behav,Railroad Route Construction game,-1
+A33PHCBUOD4WKD,Q3type_1_planning,Railroad Route Construction game,1
+A33PHCBUOD4WKD,Q4type_2_generate,Railroad Route Construction game,-1
+A33PHCBUOD4WKD,Q6type_5_cc,Railroad Route Construction game,-1
+A33PHCBUOD4WKD,Q7type_7_battle,Railroad Route Construction game,-1
+A33PHCBUOD4WKD,Q8type_8_performance,Railroad Route Construction game,1
+A33PHCBUOD4WKD,Q9divisible_unitary,Railroad Route Construction game,1
+A33PHCBUOD4WKD,Q10maximizing,Railroad Route Construction game,-1
+A33PHCBUOD4WKD,Q11optimizing,Railroad Route Construction game,-1
+A33PHCBUOD4WKD,Q13outcome_multip,Railroad Route Construction game,1
+A33PHCBUOD4WKD,Q14sol_scheme_mul,Railroad Route Construction game,-1
+A33PHCBUOD4WKD,Q15dec_verifiability,Railroad Route Construction game,1
+A33PHCBUOD4WKD,Q16shared_knowledge,Railroad Route Construction game,1
+A33PHCBUOD4WKD,Q17within_sys_sol,Railroad Route Construction game,1
+A33PHCBUOD4WKD,Q18ans_recog,Railroad Route Construction game,1
+A33PHCBUOD4WKD,Q19time_solvability,Railroad Route Construction game,1
+A33PHCBUOD4WKD,Q20type_3_type_4,Railroad Route Construction game,-1
+A33PHCBUOD4WKD,Q22confl_tradeoffs,Railroad Route Construction game,1
+A33PHCBUOD4WKD,Q23ss_out_uncert,Railroad Route Construction game,1
+A33PHCBUOD4WKD,Q24eureka_question,Railroad Route Construction game,-1
 A2S64AUN7JI7ZS,Q1concept_behav,Husbands and wives transfer,-1
 A2S64AUN7JI7ZS,Q3type_1_planning,Husbands and wives transfer,1
 A2S64AUN7JI7ZS,Q4type_2_generate,Husbands and wives transfer,-1
@@ -3159,6 +3599,26 @@ AA5ZDXAA2DLY1,Q20type_3_type_4,9 Dot Problem,1
 AA5ZDXAA2DLY1,Q22confl_tradeoffs,9 Dot Problem,1
 AA5ZDXAA2DLY1,Q23ss_out_uncert,9 Dot Problem,-1
 AA5ZDXAA2DLY1,Q24eureka_question,9 Dot Problem,1
+A1VRG5HKZC0H0C,Q1concept_behav,The Fish game,-1
+A1VRG5HKZC0H0C,Q3type_1_planning,The Fish game,-1
+A1VRG5HKZC0H0C,Q4type_2_generate,The Fish game,-1
+A1VRG5HKZC0H0C,Q6type_5_cc,The Fish game,-1
+A1VRG5HKZC0H0C,Q7type_7_battle,The Fish game,-1
+A1VRG5HKZC0H0C,Q8type_8_performance,The Fish game,-1
+A1VRG5HKZC0H0C,Q9divisible_unitary,The Fish game,-1
+A1VRG5HKZC0H0C,Q10maximizing,The Fish game,1
+A1VRG5HKZC0H0C,Q11optimizing,The Fish game,-1
+A1VRG5HKZC0H0C,Q13outcome_multip,The Fish game,1
+A1VRG5HKZC0H0C,Q14sol_scheme_mul,The Fish game,-1
+A1VRG5HKZC0H0C,Q15dec_verifiability,The Fish game,1
+A1VRG5HKZC0H0C,Q16shared_knowledge,The Fish game,1
+A1VRG5HKZC0H0C,Q17within_sys_sol,The Fish game,1
+A1VRG5HKZC0H0C,Q18ans_recog,The Fish game,1
+A1VRG5HKZC0H0C,Q19time_solvability,The Fish game,1
+A1VRG5HKZC0H0C,Q20type_3_type_4,The Fish game,1
+A1VRG5HKZC0H0C,Q22confl_tradeoffs,The Fish game,1
+A1VRG5HKZC0H0C,Q23ss_out_uncert,The Fish game,1
+A1VRG5HKZC0H0C,Q24eureka_question,The Fish game,-1
 A3I9XLIHPPWPN1,Q1concept_behav,To evacuate or not to evacuate,-1
 A3I9XLIHPPWPN1,Q3type_1_planning,To evacuate or not to evacuate,-1
 A3I9XLIHPPWPN1,Q4type_2_generate,To evacuate or not to evacuate,-1
@@ -3179,6 +3639,26 @@ A3I9XLIHPPWPN1,Q20type_3_type_4,To evacuate or not to evacuate,-1
 A3I9XLIHPPWPN1,Q22confl_tradeoffs,To evacuate or not to evacuate,1
 A3I9XLIHPPWPN1,Q23ss_out_uncert,To evacuate or not to evacuate,1
 A3I9XLIHPPWPN1,Q24eureka_question,To evacuate or not to evacuate,-1
+ARI1EMAHUA9PO,Q1concept_behav,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q3type_1_planning,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q4type_2_generate,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q6type_5_cc,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q7type_7_battle,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q8type_8_performance,Railroad Route Construction game (Impossible Version),1
+ARI1EMAHUA9PO,Q9divisible_unitary,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q10maximizing,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q11optimizing,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q13outcome_multip,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q14sol_scheme_mul,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q15dec_verifiability,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q16shared_knowledge,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q17within_sys_sol,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q18ans_recog,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q19time_solvability,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q20type_3_type_4,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q22confl_tradeoffs,Railroad Route Construction game (Impossible Version),1
+ARI1EMAHUA9PO,Q23ss_out_uncert,Railroad Route Construction game (Impossible Version),-1
+ARI1EMAHUA9PO,Q24eureka_question,Railroad Route Construction game (Impossible Version),-1
 A2WZTMXWD20NYE,Q1concept_behav,Allocating resources to programs,-1
 A2WZTMXWD20NYE,Q3type_1_planning,Allocating resources to programs,1
 A2WZTMXWD20NYE,Q4type_2_generate,Allocating resources to programs,-1
