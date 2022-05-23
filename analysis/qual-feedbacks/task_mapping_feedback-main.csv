@@ -1,9 +1,11 @@
 task,question_name,value
 Abstract grid task,Q10maximizing_elaboration,It's the opposite with performing the task in fewest clicks but it is the same general idea.
+Computer maze,Q10maximizing_elaboration,No I didn't have trouble.
 Recall videos,Q10maximizing_elaboration,"I take ""maximizing the score"" and ""answering as many correct as possible"" to say yes to this question"
 Advertisement writing,Q10maximizing_elaboration,"there is a time limit but, doesn't seem very relevant"
 "Wolf, goat and cabbage transfer",Q10maximizing_elaboration,Because you're trying to accomplish the task in as few trips as possible
 Estimating pages of a book,Q10maximizing_elaboration,It is a timed task
+Computer maze,Q10maximizing_elaboration,"no, you have to pair as much greebles as possible in certain amount of time "
 Visual Oddball Target,Q10maximizing_elaboration,It is a timed task
 To evacuate or not to evacuate,Q10maximizing_elaboration,"I assume my answer is correct as it would not require 'more' of anything, except luck maybe."
 Search for Oil Task,Q10maximizing_elaboration,Memorizing your drill points and drilling in the actual game are both timed. 
@@ -12,6 +14,7 @@ Putting food into categories,Q10maximizing_elaboration,no because in this case t
 Railroad Route Construction game,Q10maximizing_elaboration,No trouble.
 9 Dot Problem,Q10maximizing_elaboration,"Pretty confident on this one, even though they are fighting against the clock."
 Recall images,Q10maximizing_elaboration,The memory game is timed
+Reproducing arts,Q10maximizing_elaboration,It is a timed task
 Estimating pages of a book,Q10maximizing_elaboration,"The way I understand it, the limiting factor is the time - work as quickly as [possible top get as closely as possible, so I said yes."
 Visual Oddball Target,Q11optimizing_elaboration,"I struggled somewhat with this one because there is only one correct answer to each grouping, however it isn't possible to get close to the correct answer without actually being correct, so it doesn't seem like precision is the right concept to describe it"
 Recall videos,Q11optimizing_elaboration,"This one was hard, depending on definitions. There is one correct answer to each question, so in that sense the outcome is precise."
@@ -20,17 +23,21 @@ Allocating resources to programs,Q11optimizing_elaboration,"I took the precision
 Search for Oil Task,Q11optimizing_elaboration,"goal is to find exact locations, not the number of exact locations"
 To evacuate or not to evacuate,Q11optimizing_elaboration,"I took the goal as precise, to avoid the disaster."
 Estimating pages of a book,Q11optimizing_elaboration,"There is a precise number you're wanting to get, but it is graded on a gradient scale"
+Computer maze,Q11optimizing_elaboration,"no, you have to achieve the goal of pairing all of the identical greebles correctly"
 Visual Oddball Target,Q11optimizing_elaboration,"You have to identify the oddball or you lose, the outcome is precise"
 Search for Oil Task,Q11optimizing_elaboration,"if they find all of 144 oil locations, that is precise"
 Recall images,Q11optimizing_elaboration,"I think there is supposed to be ""precision"" in that the participants need to identify only the faces they've previously seen and avoid ""mis-identifying"" faces they haven't seen. "
 Search for Oil Task,Q11optimizing_elaboration,I think because there isn't a set number to achieve the goal is just to outperform the others the answer to this one would be no.
+Computer maze,Q11optimizing_elaboration,"The player has to complete the maze, but only receives reduced score for less than maximum.  It would be clearer if I knew how the greebles scoring worked."
 Abstract grid task,Q11optimizing_elaboration,"There is an image that must be recreated, so I consider that a precise outcome."
 Putting food into categories,Q11optimizing_elaboration,no because they are not asking for a specific amount of ideas in this case they are asking for as many ideas as possible 
 Railroad Route Construction game,Q11optimizing_elaboration,No trouble.
+Reproducing arts,Q11optimizing_elaboration,The goal is to make you're spreadsheet look exactly like the target. 
 Checkers,Q13outcome_multip_elaboration,"Technically, checkers is a solved game, so in my opinion there is always a ""best solution"" for it."
 "Wolf, goat and cabbage transfer",Q13outcome_multip_elaboration,there are a few different scenarios that will accomplish the task but not many
 To evacuate or not to evacuate,Q13outcome_multip_elaboration,"I went back and forth on this one, I could see it going either way but if someone wants to avoid risk, the best solution might be evacuating even if a disaster does not strike."
 Estimating pages of a book,Q13outcome_multip_elaboration,Guessing exactly right would be difficult but it's the best solution
+Computer maze,Q13outcome_multip_elaboration,"no, because the best solution is the one that tags all the greeble pairs  correctly "
 Word completion given starting letter,Q13outcome_multip_elaboration,"I wasn't entirely clear if I should account for whether it is reasonable or not. There are only so many words in the English language, and so I finite numbr of words that start and end with 2 given letter. So there is a theoretical maximum number of words and with enough time time a group could get them all. But it is very unlikely, especially not in a reasonable time limit. So..."
 To evacuate or not to evacuate,Q13outcome_multip_elaboration,There would be a 'best' solution but it wouldn't be know until afterwards.
 Recall videos,Q13outcome_multip_elaboration,It's possible the questions could have more than one correct answer.
@@ -60,16 +67,20 @@ Wildcat Wells,Q14sol_scheme_mul_elaboration,"The only way to ""win"" is to find 
 Allocating resources to programs,Q14sol_scheme_mul_elaboration,"Since the 500K can be distributed in different amounts, I would say that there are several (3) ways to distribute the funds."
 Railroad Route Construction game,Q14sol_scheme_mul_elaboration,No trouble.
 Recall images,Q14sol_scheme_mul_elaboration,I think there would be different methods to try to remember what is asked of you
+Reproducing arts,Q14sol_scheme_mul_elaboration,It has to look exactly like the target spreadsheet
 Estimating pages of a book,Q14sol_scheme_mul_elaboration,"I think there are a lot of ways this could be done - having everyomne guess and taking the average, using a magnifying glass on the picture, etc."
 Advertisement writing,Q15dec_verifiability_elaboration,"possible could be yes, however, the best blurb for the kickstarter product could be subjective to the kickstarter's products creator"
+Computer maze,Q15dec_verifiability_elaboration,"no , you can verify if all of the pairs were tagged correctly"
 Railroad Route Construction game (Impossible Version),Q15dec_verifiability_elaboration,No solutions
 Word completion given starting letter,Q15dec_verifiability_elaboration,"is this question asking if one specific solution (word here) can be judged as correct, or whether the group of words as a whole can be judged as correct? As in, is the group all possible words matching the ruleset?"
 Divergent Association Task,Q15dec_verifiability_elaboration,I believe a word expert could determine semantic distance
 Putting food into categories,Q15dec_verifiability_elaboration,no because in the cases you can not measure if the creativeness of those ideas are very creative or less creative
 Railroad Route Construction game,Q15dec_verifiability_elaboration,No trouble.
+Reproducing arts,Q15dec_verifiability_elaboration,"If it looks like a 1:1 copy, then it's correct"
 Recall images,Q16shared_knowledge_elaboration,If the algorithm knows the correct images ahead of time they would be able to identify assuming it has face detection features.
 To evacuate or not to evacuate,Q16shared_knowledge_elaboration,I think an algorithm could be set up here to choose whether to evacuate or stay based on the risk level.
 Estimating pages of a book,Q16shared_knowledge_elaboration,"Since it's about being given a total number of pages and guessing about what the thickness equals to, there could be an algorithm that could be written to solve it"
+Computer maze,Q16shared_knowledge_elaboration,"no, because there are specific set rules to follow and certain outcomes"
 Image rating,Q16shared_knowledge_elaboration,Unless the algorithm already knows the poll answers they could not solve
 Visual Oddball Target,Q16shared_knowledge_elaboration,Because it's a visual task I would assume it's purely a human task
 Search for Oil Task,Q16shared_knowledge_elaboration,"If the algorithm can identify the correct squares before the start of the task, they could get pick them all."
@@ -81,6 +92,7 @@ Railroad Route Construction game,Q16shared_knowledge_elaboration,No trouble.
 Guessing the correlation,Q16shared_knowledge_elaboration,"You could train a model to get as precise as possible, so there must be some algorithmic way."
 Recall images,Q16shared_knowledge_elaboration,Because it's a memory task I would assume it's purely a human task
 Divergent Association Task,Q16shared_knowledge_elaboration,This is assuming there are defined scores attached to words.
+Reproducing arts,Q16shared_knowledge_elaboration,I don't think an algorithm would be needed to make a copy
 Estimating pages of a book,Q16shared_knowledge_elaboration,"The objective is precise, but I wouldnt think there is an absolute, verifiable, solution. You could guess and get the right answer. A reasonable, educated guess, like guessing beans in a jar."
 Railroad Route Construction game (Impossible Version),Q17within_sys_sol_elaboration,"There is enough, but it doesn't matter, as there is no way to finish or win the game."
 Estimating pages of a book,Q17within_sys_sol_elaboration,"To get the exact number I don't think there's enough info, you're making an educated guess"
@@ -99,20 +111,25 @@ Search for Oil Task,Q18ans_recog_elaboration,I believe this task is either you c
 Letters-to-numbers problems (cryptography),Q18ans_recog_elaboration,1 by 1 you correct
 Divergent Association Task,Q18ans_recog_elaboration,I think different people could argue semantic distance based on their own perceptions
 Putting food into categories,Q18ans_recog_elaboration,no because in this case you can see the right answer once you see how they have divided the items
+Reproducing arts,Q18ans_recog_elaboration,Participants won't know the answer for sure until after the end of the task
 Allocating resources to programs,Q18ans_recog_elaboration,"The goal here is to distribute 500K not whether the way the funds were distributed is correct. So, an outside party would simply have to evaluate if the whole 500K were distributed among the 3 programs."
 Railroad Route Construction game,Q18ans_recog_elaboration,No trouble.
 Recall images,Q18ans_recog_elaboration,Either you remember or you don't
 Moral Reasoning (Disciplinary Action Case),Q18ans_recog_elaboration,It states in problem no correct solution
+Reproducing arts,Q18ans_recog_elaboration,Either you copy it without mistakes or you don't
 Estimating geological metrics,Q19time_solvability_elaboration,"Yes, since only restraint is not looking up solutions online. Other resources could be used. "
 Allocating resources to programs,Q19time_solvability_elaboration,I chose no as I think there would still be subjectivity as to whether the solution was correct.
 To evacuate or not to evacuate,Q19time_solvability_elaboration,"I assume no, as there is the element of chance"
 Search for Oil Task,Q19time_solvability_elaboration,"I think because this is mostly a memory task it can't just be explained as a ""best"" solution"
 Putting food into categories,Q19time_solvability_elaboration,no because in this case the participant can come up with the dividing ideas and show others that it would be a different way to do it 
 Wildcat Wells,Q19time_solvability_elaboration,"I THINK you could do that, but the set up is a little ambiguous, so its hard to be very confident in my answer"
+Reproducing arts,Q19time_solvability_elaboration,If someone is able to perfectly remember the original pattern they could explain their method to others
 Allocating resources to programs,Q19time_solvability_elaboration,"Again, in this scenario, the solution is to distribute 500K among 3 programs. That is what is evaluated. What is not evaluated is how the funds were distributed or why one program received more funds over another program."
 Railroad Route Construction game,Q19time_solvability_elaboration,No trouble.
 Divergent Association Task,Q19time_solvability_elaboration,The solution has a subjective element attached to it.
+Computer maze,Q1concept_behav_elaboration,No I didn't have trouble.
 Visual Oddball Target,Q1concept_behav_elaboration,There is a physiological aspect to visual perception - someone with poor vision due to a physical ailment may struggle more with this visual perception task - so it was a little harder to define for me.
+Computer maze,Q1concept_behav_elaboration,no because in this task you have to pairs the most amount of greebles as soon as possible
 Wildcat Wells,Q1concept_behav_elaboration,"i assume this is a game map, not a map of an actual area where they drill for wells but this may need to be specified if people are being anal about the details"
 Shopping plan,Q1concept_behav_elaboration,"I'm assuming this is a theoretical trip to a grocery and not an actual trip to the store, which is why I'm answering 'mental' here."
 Advertisement writing,Q1concept_behav_elaboration,I thought it would take more time coming up with an answer than writing it.
@@ -136,10 +153,12 @@ Railroad Route Construction game,Q21intellective_judg_1_elaboration,No trouble.
 Railroad Route Construction game,Q22confl_tradeoffs_elaboration,"Yes, since there are different tracks to choose from."
 Wildcat Wells,Q22confl_tradeoffs_elaboration,it's tough to definitively answer this with such a brief description
 "Wolf, goat and cabbage transfer",Q22confl_tradeoffs_elaboration,"the elaboration here is unclear. there are literally ""tradeoffs"" here."
+Computer maze,Q22confl_tradeoffs_elaboration,Incorrectly tagging greebles can be seen as a tradeoff to failing to tag at all.
 Putting food into categories,Q22confl_tradeoffs_elaboration,no because in this cases the ideas can or can not be able to divide the items there would be no trade offs in the brainstorming
 Allocating resources to programs,Q22confl_tradeoffs_elaboration,"There are tradeoffs because some programs will not receive the same amount of money even if you wanted them to and as such, you have to decide which of the 3 programs would be more beneficial."
 Railroad Route Construction game,Q22confl_tradeoffs_elaboration,No trouble.
 Visual Oddball Target,Q23ss_out_uncert_elaboration,It is not clear whether participants get feedback on their responses immediately or not
+Computer maze,Q23ss_out_uncert_elaboration,Participants may not know if they've correctly identified matches until the end.
 Recall videos,Q23ss_out_uncert_elaboration,"assuming they're told after each question whether they're correct, then no.  if they wait till the end to be graded, then yes"
 Estimating pages of a book,Q23ss_out_uncert_elaboration,Since they're not being told if they were correct or not I would say they're unsure
 Recall association,Q23ss_out_uncert_elaboration,Participants might not be sure if they recalled the correct words. The wording does not specify if participate score is shown live or at the end.
@@ -150,32 +169,45 @@ Divergent Association Task,Q23ss_out_uncert_elaboration,Without knowing semantic
 Putting food into categories,Q23ss_out_uncert_elaboration,no because the goal is just to do your best and have an acceptable answer
 Railroad Route Construction game,Q23ss_out_uncert_elaboration,No trouble.
 Recall images,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the recall correct or not
+Reproducing arts,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the spreadsheet is correct or not right after they finish
+Computer maze,Q24eureka_question_elaboration,When you fiqure ot the differences in the greebies you will do better
 "Wolf, goat and cabbage transfer",Q24eureka_question_elaboration,"the ""aha"" or ""trick"" is explained in the objective/goal"
 Recall association,Q24eureka_question_elaboration,"The trouble here is I am answering it using face value of just hard memorization. However, an agreement can be made that there is a trick by using grouping or association or making a story out of the words which is considered a memory trick. If I was to teach someone how to memorize fast using a memorization strategy, it may be considered an ""aha"" moment as well.  "
 Putting food into categories,Q24eureka_question_elaboration,"no because the solution is obvious once it proposed, in this case you will know how to divide the items as soon as you propose the way to do it"
 Wildcat Wells,Q24eureka_question_elaboration,"I would assume yes, that there is an algorithm, but it is hard to tell from the description."
 Railroad Route Construction game,Q24eureka_question_elaboration,No trouble.
 Advertisement writing,Q2intel_manip_1_elaboration,The actual writing and/or drawing of the ad is physical
+Computer maze,Q2intel_manip_1_elaboration,No I didn't have trouble.
 Estimating pages of a book,Q2intel_manip_1_elaboration,You do have to make a physical appearance judgement 
+Computer maze,Q2intel_manip_1_elaboration,"no, needed no more clarification"
 Recall videos,Q2intel_manip_1_elaboration,There could be some eye strain which I would consider physical effort.
 Putting food into categories,Q2intel_manip_1_elaboration,"no, because the main purpose is to think of different strategies on how to classify the fooditems"
 Railroad Route Construction game,Q2intel_manip_1_elaboration,No trouble.
 Room assignment task,Q3type_1_planning_elaboration,"This is an optimization problem, I would not count it as planning."
+Computer maze,Q3type_1_planning_elaboration,No I didn't have trouble.
+Computer maze,Q3type_1_planning_elaboration,"no, no following steps involves no planning is needed"
 "Wolf, goat and cabbage transfer",Q3type_1_planning_elaboration,"It is ""planning"", but there's not any writing, really"
 Advertisement writing,Q3type_1_planning_elaboration,"Since it involves multiple people chipping in, i think it is a planning task."
 Abstract grid task,Q3type_1_planning_elaboration,"There is a series of clicks, leading to an optimal lowest number, but the actual goal is just to produce the image and complete it."
 Putting food into categories,Q3type_1_planning_elaboration,"no, because you have to sort out the ideas and that takes planning"
 Allocating resources to programs,Q3type_1_planning_elaboration,I feel this is a planning task because you have been allocated a sum of money and you must plan on how to distribute the funds among various programs.
 Railroad Route Construction game,Q3type_1_planning_elaboration,No trouble.
+Reproducing arts,Q3type_1_planning_elaboration,"This is creating an exact copy, no planning required"
+Computer maze,Q4type_2_generate_elaboration,No I didn't have trouble.
 "Wolf, goat and cabbage transfer",Q4type_2_generate_elaboration,Although it does involve planning I'm not sure there would be so many variations on the answer that it would qualify as a brainstorming task. 
+Computer maze,Q4type_2_generate_elaboration,"no, it doesn't need brainstorming ,you just have to pair some greebles"
 Moral Reasoning (Disciplinary Action Case),Q4type_2_generate_elaboration,I chose no since there is already a list of punishments.
 Putting food into categories,Q4type_2_generate_elaboration,no trouble because in order to come up with different ways of dividing the items with repeating ideas you have to brainstorm
 Railroad Route Construction game,Q4type_2_generate_elaboration,No trouble.
+Reproducing arts,Q4type_2_generate_elaboration,"This is creating an exact copy, no brainstorming required"
+Computer maze,Q5creativity_input_1_elaboration,No I didn't have trouble.
 Allocating resources to programs,Q5creativity_input_1_elaboration,It is an allocation task but I still think some creativity is required in how to allocate.
+Computer maze,Q5creativity_input_1_elaboration,no because it is a grouping greebles task
 Visual Oddball Target,Q5creativity_input_1_elaboration,Because there's some visualization required there may be a fraction of creativity needed. 
 Recall videos,Q5creativity_input_1_elaboration,I am not exactly clear on what is being asked about in the video so I assumed it is straightforward.
 Recall association,Q5creativity_input_1_elaboration,"The trouble here is that one memorization strategy includes making a story with the words which in a way can be said to have some creativity involved. However, purely on the task instead, one can argue there is no creativity as well.   "
 Search for Oil Task,Q5creativity_input_1_elaboration,"I feel it's mostly a memory game, you have to remember the rules and try and member and recall the points of the map that contain the oil."
+Computer maze,Q5creativity_input_1_elaboration,It's hard to know exactly what is involved with navigating the maze or why this would required thought or creative thinking.
 Letters-to-numbers problems (cryptography),Q5creativity_input_1_elaboration,"It seems like a process of elimination game, nothing to do with creativity "
 Abstract grid task,Q5creativity_input_1_elaboration,"There could be a creative way to solve this, as opposed to just brute force."
 Putting food into categories,Q5creativity_input_1_elaboration,no because you have to be creative to come up with different ways to divide the items in a different way each time
@@ -184,30 +216,40 @@ Railroad Route Construction game,Q5creativity_input_1_elaboration,No trouble.
 Guessing the correlation,Q5creativity_input_1_elaboration,"I didnt evaluate it as a purely mental task. Seeing the scatterplot and estimating the correlation is mathematical, but there is some creativity to estimations. Without know the actual point's coordinates, it isnt algorthmic."
 Recall images,Q5creativity_input_1_elaboration,"This is a memory game, you have to remember and recall "
 Advertisement writing,Q6type_5_cc_elaboration,I would think part of the task would be to take different perspectives on what should be submitted and build a cohesiove ad.
+Computer maze,Q6type_5_cc_elaboration,No I didn't have trouble.
 Putting food into categories,Q6type_5_cc_elaboration,no because the purpose of this is not to resolve difference of opinion but to stablish as many different ways to divide the items as possible not who is right or wrong
+Reproducing arts,Q6type_5_cc_elaboration,I think group members may disagree on which cells are correct
 Railroad Route Construction game,Q6type_5_cc_elaboration,No trouble.
 Allocating resources to programs,Q6type_5_cc_elaboration,The group must work together to determine how to spend the money across different programs
 Shopping plan,Q7type_7_battle_elaboration,"You are fighting against a maximum point value, not other people/ Thats how I interopreted the objective.,"
 Whac-A-Mole,Q7type_7_battle_elaboration,"The wording is vague as stated in ""thereby maximizing their points"". It doesn't say their own points or if it is referring to their team."
+Computer maze,Q7type_7_battle_elaboration,No I didn't have trouble.
 Railroad Route Construction game (Impossible Version),Q7type_7_battle_elaboration,"If you could win this game, it would likely be a yes, but since there is no way to win the game, I would say it's not truly answerable."
 Estimating pages of a book,Q7type_7_battle_elaboration,It's more of a judgement task than a win/lose task
+Computer maze,Q7type_7_battle_elaboration,"no, it only needs to pair all of the identical greebles together"
 Recall videos,Q7type_7_battle_elaboration,The instructions do not provide the incentive for maximizing points.
 Letters-to-numbers problems (cryptography),Q7type_7_battle_elaboration,Must complete in the fewest attempts possible
 Putting food into categories,Q7type_7_battle_elaboration,no because it is a matter of getting credit or not not a winning team
 Railroad Route Construction game,Q7type_7_battle_elaboration,No trouble.
 Recall images,Q7type_7_battle_elaboration,"It doesn't seems like a competition, just a goal to remember as many items as possible"
+Reproducing arts,Q7type_7_battle_elaboration,"It doesn't seems like a competition, just a goal to recreate the spreadsheet as closely as possible"
+Computer maze,Q8type_8_performance_elaboration,No I didn't have trouble.
 "Wolf, goat and cabbage transfer",Q8type_8_performance_elaboration,"There is only a few ways to accomplish the task, and it either works or you fail"
+Computer maze,Q8type_8_performance_elaboration,"no,"
 Graph coloring task,Q8type_8_performance_elaboration,I presume this because it is completed correctly or it isn't
 Visual Oddball Target,Q8type_8_performance_elaboration,Since you either identify the oddball or not I think it's an all or nothing task
 Search for Oil Task,Q8type_8_performance_elaboration,Because you can obtain points and beat out others without winning the game it doesn't seem like an all or nothing game
+Computer maze,Q8type_8_performance_elaboration,"The navigation portion IS all or nothing, but the tagging is not, so overall, the task is NOT all or nothing, but a component is."
 Letters-to-numbers problems (cryptography),Q8type_8_performance_elaboration,It's based on the highest score not pass/fail
 Putting food into categories,Q8type_8_performance_elaboration,no because its a matter of ending up with a certain amount of ideas not all or nothing
 Wildcat Wells,Q8type_8_performance_elaboration,"There is no info in the description about most points. It sounds like the winner is the winner and everyone else looses. Nothing about points or anything, just find the most oil"
 Railroad Route Construction game,Q8type_8_performance_elaboration,No trouble.
 Checkers,Q8type_8_performance_elaboration,I'm not really sure if you have all of the computer's pieces just on a technicality because you can block them in and win the game when they have a piece left.
 Guessing the correlation,Q8type_8_performance_elaboration,"They are ""evaluated on accuracy"" I take to mean thqat there is some partial crediut or percebnt score they are given. They dont have to be 100% precise"
+Reproducing arts,Q8type_8_performance_elaboration,"You're looking to get the maximum amount of point, it's not pass/fail"
 Recall association,Q9divisible_unitary_elaboration,not sure if it is possible for different participants in a group to be given different words and then they come together.
 Moral Reasoning (Disciplinary Action Case),Q9divisible_unitary_elaboration,"I assumed it was a group task, but I don't think this suites this group task. "
+Computer maze,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Recall videos,Q9divisible_unitary_elaboration,"theoretically if the video could be split in segments and each participant only given questions based on that segment, than yes.  not sure if this is possible with the given description"
 Recall images,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Guessing the correlation,Q9divisible_unitary_elaboration,"Since it is a series of scatter plots, participants could divide those up."
@@ -218,6 +260,7 @@ Search for Oil Task,Q9divisible_unitary_elaboration,Based on the instructions I 
 Divergent Association Task,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Abstract grid task,Q9divisible_unitary_elaboration,"Theres too many interconnecting steps, as each step affects the rest."
 Putting food into categories,Q9divisible_unitary_elaboration,no because one parts does not depend on the order to be able to come up with more ideas
+Reproducing arts,Q9divisible_unitary_elaboration,I think if different members remember certain quadrants it could make the task more accurate
 Railroad Route Construction game,Q9divisible_unitary_elaboration,No trouble.
 The Fish game,Q9divisible_unitary_elaboration,There is nothing to divide since each participant is playing separately
 9 Dot Problem,Q9divisible_unitary_elaboration,"This one was difficult to answer, I could see both sides, dividing and not diving."

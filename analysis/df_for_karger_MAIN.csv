@@ -239,6 +239,26 @@ A3CGQOJC28OVGN,Q20type_3_type_4,Shopping plan,1
 A3CGQOJC28OVGN,Q22confl_tradeoffs,Shopping plan,-1
 A3CGQOJC28OVGN,Q23ss_out_uncert,Shopping plan,1
 A3CGQOJC28OVGN,Q24eureka_question,Shopping plan,-1
+AXPZAP62ZYWP8,Q1concept_behav,Reproducing arts,1
+AXPZAP62ZYWP8,Q3type_1_planning,Reproducing arts,-1
+AXPZAP62ZYWP8,Q4type_2_generate,Reproducing arts,-1
+AXPZAP62ZYWP8,Q6type_5_cc,Reproducing arts,-1
+AXPZAP62ZYWP8,Q7type_7_battle,Reproducing arts,1
+AXPZAP62ZYWP8,Q8type_8_performance,Reproducing arts,1
+AXPZAP62ZYWP8,Q9divisible_unitary,Reproducing arts,1
+AXPZAP62ZYWP8,Q10maximizing,Reproducing arts,1
+AXPZAP62ZYWP8,Q11optimizing,Reproducing arts,1
+AXPZAP62ZYWP8,Q13outcome_multip,Reproducing arts,1
+AXPZAP62ZYWP8,Q14sol_scheme_mul,Reproducing arts,-1
+AXPZAP62ZYWP8,Q15dec_verifiability,Reproducing arts,1
+AXPZAP62ZYWP8,Q16shared_knowledge,Reproducing arts,1
+AXPZAP62ZYWP8,Q17within_sys_sol,Reproducing arts,1
+AXPZAP62ZYWP8,Q18ans_recog,Reproducing arts,1
+AXPZAP62ZYWP8,Q19time_solvability,Reproducing arts,1
+AXPZAP62ZYWP8,Q20type_3_type_4,Reproducing arts,1
+AXPZAP62ZYWP8,Q22confl_tradeoffs,Reproducing arts,-1
+AXPZAP62ZYWP8,Q23ss_out_uncert,Reproducing arts,-1
+AXPZAP62ZYWP8,Q24eureka_question,Reproducing arts,-1
 A1VRG5HKZC0H0C,Q1concept_behav,Estimating geological metrics,-1
 A1VRG5HKZC0H0C,Q3type_1_planning,Estimating geological metrics,-1
 A1VRG5HKZC0H0C,Q4type_2_generate,Estimating geological metrics,-1
@@ -379,6 +399,26 @@ A3CGQOJC28OVGN,Q20type_3_type_4,Advertisement writing,-1
 A3CGQOJC28OVGN,Q22confl_tradeoffs,Advertisement writing,1
 A3CGQOJC28OVGN,Q23ss_out_uncert,Advertisement writing,1
 A3CGQOJC28OVGN,Q24eureka_question,Advertisement writing,-1
+A17FGZ1I5P9RZA,Q1concept_behav,Reproducing arts,-1
+A17FGZ1I5P9RZA,Q3type_1_planning,Reproducing arts,-1
+A17FGZ1I5P9RZA,Q4type_2_generate,Reproducing arts,1
+A17FGZ1I5P9RZA,Q6type_5_cc,Reproducing arts,-1
+A17FGZ1I5P9RZA,Q7type_7_battle,Reproducing arts,-1
+A17FGZ1I5P9RZA,Q8type_8_performance,Reproducing arts,-1
+A17FGZ1I5P9RZA,Q9divisible_unitary,Reproducing arts,1
+A17FGZ1I5P9RZA,Q10maximizing,Reproducing arts,1
+A17FGZ1I5P9RZA,Q11optimizing,Reproducing arts,1
+A17FGZ1I5P9RZA,Q13outcome_multip,Reproducing arts,1
+A17FGZ1I5P9RZA,Q14sol_scheme_mul,Reproducing arts,1
+A17FGZ1I5P9RZA,Q15dec_verifiability,Reproducing arts,1
+A17FGZ1I5P9RZA,Q16shared_knowledge,Reproducing arts,1
+A17FGZ1I5P9RZA,Q17within_sys_sol,Reproducing arts,1
+A17FGZ1I5P9RZA,Q18ans_recog,Reproducing arts,1
+A17FGZ1I5P9RZA,Q19time_solvability,Reproducing arts,1
+A17FGZ1I5P9RZA,Q20type_3_type_4,Reproducing arts,1
+A17FGZ1I5P9RZA,Q22confl_tradeoffs,Reproducing arts,-1
+A17FGZ1I5P9RZA,Q23ss_out_uncert,Reproducing arts,1
+A17FGZ1I5P9RZA,Q24eureka_question,Reproducing arts,-1
 AL51KTD0WITH9,Q1concept_behav,Husbands and wives transfer,-1
 AL51KTD0WITH9,Q3type_1_planning,Husbands and wives transfer,1
 AL51KTD0WITH9,Q4type_2_generate,Husbands and wives transfer,-1
@@ -559,6 +599,26 @@ ARI1EMAHUA9PO,Q20type_3_type_4,Image rating,1
 ARI1EMAHUA9PO,Q22confl_tradeoffs,Image rating,-1
 ARI1EMAHUA9PO,Q23ss_out_uncert,Image rating,1
 ARI1EMAHUA9PO,Q24eureka_question,Image rating,-1
+A1YSYI926BBOHW,Q1concept_behav,Computer maze,-1
+A1YSYI926BBOHW,Q3type_1_planning,Computer maze,1
+A1YSYI926BBOHW,Q4type_2_generate,Computer maze,-1
+A1YSYI926BBOHW,Q6type_5_cc,Computer maze,-1
+A1YSYI926BBOHW,Q7type_7_battle,Computer maze,-1
+A1YSYI926BBOHW,Q8type_8_performance,Computer maze,-1
+A1YSYI926BBOHW,Q9divisible_unitary,Computer maze,-1
+A1YSYI926BBOHW,Q10maximizing,Computer maze,-1
+A1YSYI926BBOHW,Q11optimizing,Computer maze,1
+A1YSYI926BBOHW,Q13outcome_multip,Computer maze,1
+A1YSYI926BBOHW,Q14sol_scheme_mul,Computer maze,1
+A1YSYI926BBOHW,Q15dec_verifiability,Computer maze,1
+A1YSYI926BBOHW,Q16shared_knowledge,Computer maze,1
+A1YSYI926BBOHW,Q17within_sys_sol,Computer maze,-1
+A1YSYI926BBOHW,Q18ans_recog,Computer maze,1
+A1YSYI926BBOHW,Q19time_solvability,Computer maze,1
+A1YSYI926BBOHW,Q20type_3_type_4,Computer maze,1
+A1YSYI926BBOHW,Q22confl_tradeoffs,Computer maze,-1
+A1YSYI926BBOHW,Q23ss_out_uncert,Computer maze,-1
+A1YSYI926BBOHW,Q24eureka_question,Computer maze,-1
 A3HL2LL0LEPZT8,Q1concept_behav,Advertisement writing,-1
 A3HL2LL0LEPZT8,Q3type_1_planning,Advertisement writing,-1
 A3HL2LL0LEPZT8,Q4type_2_generate,Advertisement writing,1
@@ -699,6 +759,26 @@ A3T9WZOUQGE2UW,Q20type_3_type_4,Image rating,1
 A3T9WZOUQGE2UW,Q22confl_tradeoffs,Image rating,-1
 A3T9WZOUQGE2UW,Q23ss_out_uncert,Image rating,1
 A3T9WZOUQGE2UW,Q24eureka_question,Image rating,-1
+A38I0E8UK53ME5,Q1concept_behav,Computer maze,-1
+A38I0E8UK53ME5,Q3type_1_planning,Computer maze,-1
+A38I0E8UK53ME5,Q4type_2_generate,Computer maze,-1
+A38I0E8UK53ME5,Q6type_5_cc,Computer maze,-1
+A38I0E8UK53ME5,Q7type_7_battle,Computer maze,-1
+A38I0E8UK53ME5,Q8type_8_performance,Computer maze,-1
+A38I0E8UK53ME5,Q9divisible_unitary,Computer maze,1
+A38I0E8UK53ME5,Q10maximizing,Computer maze,1
+A38I0E8UK53ME5,Q11optimizing,Computer maze,1
+A38I0E8UK53ME5,Q13outcome_multip,Computer maze,1
+A38I0E8UK53ME5,Q14sol_scheme_mul,Computer maze,-1
+A38I0E8UK53ME5,Q15dec_verifiability,Computer maze,1
+A38I0E8UK53ME5,Q16shared_knowledge,Computer maze,1
+A38I0E8UK53ME5,Q17within_sys_sol,Computer maze,1
+A38I0E8UK53ME5,Q18ans_recog,Computer maze,1
+A38I0E8UK53ME5,Q19time_solvability,Computer maze,1
+A38I0E8UK53ME5,Q20type_3_type_4,Computer maze,1
+A38I0E8UK53ME5,Q22confl_tradeoffs,Computer maze,-1
+A38I0E8UK53ME5,Q23ss_out_uncert,Computer maze,1
+A38I0E8UK53ME5,Q24eureka_question,Computer maze,1
 A26UIS59SY4NM6,Q1concept_behav,Moral Reasoning (Disciplinary Action Case),-1
 A26UIS59SY4NM6,Q3type_1_planning,Moral Reasoning (Disciplinary Action Case),-1
 A26UIS59SY4NM6,Q4type_2_generate,Moral Reasoning (Disciplinary Action Case),-1
@@ -779,6 +859,26 @@ A3EUGO4VR2N4G1,Q20type_3_type_4,Search for Oil Task,1
 A3EUGO4VR2N4G1,Q22confl_tradeoffs,Search for Oil Task,1
 A3EUGO4VR2N4G1,Q23ss_out_uncert,Search for Oil Task,1
 A3EUGO4VR2N4G1,Q24eureka_question,Search for Oil Task,-1
+A2WZTMXWD20NYE,Q1concept_behav,Computer maze,-1
+A2WZTMXWD20NYE,Q3type_1_planning,Computer maze,-1
+A2WZTMXWD20NYE,Q4type_2_generate,Computer maze,-1
+A2WZTMXWD20NYE,Q6type_5_cc,Computer maze,-1
+A2WZTMXWD20NYE,Q7type_7_battle,Computer maze,-1
+A2WZTMXWD20NYE,Q8type_8_performance,Computer maze,-1
+A2WZTMXWD20NYE,Q9divisible_unitary,Computer maze,NA
+A2WZTMXWD20NYE,Q10maximizing,Computer maze,1
+A2WZTMXWD20NYE,Q11optimizing,Computer maze,-1
+A2WZTMXWD20NYE,Q13outcome_multip,Computer maze,1
+A2WZTMXWD20NYE,Q14sol_scheme_mul,Computer maze,1
+A2WZTMXWD20NYE,Q15dec_verifiability,Computer maze,1
+A2WZTMXWD20NYE,Q16shared_knowledge,Computer maze,1
+A2WZTMXWD20NYE,Q17within_sys_sol,Computer maze,-1
+A2WZTMXWD20NYE,Q18ans_recog,Computer maze,1
+A2WZTMXWD20NYE,Q19time_solvability,Computer maze,1
+A2WZTMXWD20NYE,Q20type_3_type_4,Computer maze,1
+A2WZTMXWD20NYE,Q22confl_tradeoffs,Computer maze,-1
+A2WZTMXWD20NYE,Q23ss_out_uncert,Computer maze,1
+A2WZTMXWD20NYE,Q24eureka_question,Computer maze,-1
 A3CGQOJC28OVGN,Q1concept_behav,Recall videos,-1
 A3CGQOJC28OVGN,Q3type_1_planning,Recall videos,-1
 A3CGQOJC28OVGN,Q4type_2_generate,Recall videos,-1
@@ -1019,6 +1119,26 @@ A3EUGO4VR2N4G1,Q20type_3_type_4,Checkers,1
 A3EUGO4VR2N4G1,Q22confl_tradeoffs,Checkers,-1
 A3EUGO4VR2N4G1,Q23ss_out_uncert,Checkers,-1
 A3EUGO4VR2N4G1,Q24eureka_question,Checkers,-1
+AA5ZDXAA2DLY1,Q1concept_behav,Reproducing arts,-1
+AA5ZDXAA2DLY1,Q3type_1_planning,Reproducing arts,-1
+AA5ZDXAA2DLY1,Q4type_2_generate,Reproducing arts,-1
+AA5ZDXAA2DLY1,Q6type_5_cc,Reproducing arts,-1
+AA5ZDXAA2DLY1,Q7type_7_battle,Reproducing arts,-1
+AA5ZDXAA2DLY1,Q8type_8_performance,Reproducing arts,-1
+AA5ZDXAA2DLY1,Q9divisible_unitary,Reproducing arts,1
+AA5ZDXAA2DLY1,Q10maximizing,Reproducing arts,1
+AA5ZDXAA2DLY1,Q11optimizing,Reproducing arts,1
+AA5ZDXAA2DLY1,Q13outcome_multip,Reproducing arts,1
+AA5ZDXAA2DLY1,Q14sol_scheme_mul,Reproducing arts,-1
+AA5ZDXAA2DLY1,Q15dec_verifiability,Reproducing arts,1
+AA5ZDXAA2DLY1,Q16shared_knowledge,Reproducing arts,-1
+AA5ZDXAA2DLY1,Q17within_sys_sol,Reproducing arts,1
+AA5ZDXAA2DLY1,Q18ans_recog,Reproducing arts,1
+AA5ZDXAA2DLY1,Q19time_solvability,Reproducing arts,1
+AA5ZDXAA2DLY1,Q20type_3_type_4,Reproducing arts,1
+AA5ZDXAA2DLY1,Q22confl_tradeoffs,Reproducing arts,-1
+AA5ZDXAA2DLY1,Q23ss_out_uncert,Reproducing arts,1
+AA5ZDXAA2DLY1,Q24eureka_question,Reproducing arts,-1
 A3I9XLIHPPWPN1,Q1concept_behav,Whac-A-Mole,-1
 A3I9XLIHPPWPN1,Q3type_1_planning,Whac-A-Mole,-1
 A3I9XLIHPPWPN1,Q4type_2_generate,Whac-A-Mole,-1
@@ -1259,6 +1379,26 @@ A3EUGO4VR2N4G1,Q20type_3_type_4,Putting food into categories,-1
 A3EUGO4VR2N4G1,Q22confl_tradeoffs,Putting food into categories,1
 A3EUGO4VR2N4G1,Q23ss_out_uncert,Putting food into categories,1
 A3EUGO4VR2N4G1,Q24eureka_question,Putting food into categories,-1
+A38I0E8UK53ME5,Q1concept_behav,Reproducing arts,-1
+A38I0E8UK53ME5,Q3type_1_planning,Reproducing arts,-1
+A38I0E8UK53ME5,Q4type_2_generate,Reproducing arts,-1
+A38I0E8UK53ME5,Q6type_5_cc,Reproducing arts,-1
+A38I0E8UK53ME5,Q7type_7_battle,Reproducing arts,-1
+A38I0E8UK53ME5,Q8type_8_performance,Reproducing arts,-1
+A38I0E8UK53ME5,Q9divisible_unitary,Reproducing arts,1
+A38I0E8UK53ME5,Q10maximizing,Reproducing arts,1
+A38I0E8UK53ME5,Q11optimizing,Reproducing arts,1
+A38I0E8UK53ME5,Q13outcome_multip,Reproducing arts,1
+A38I0E8UK53ME5,Q14sol_scheme_mul,Reproducing arts,1
+A38I0E8UK53ME5,Q15dec_verifiability,Reproducing arts,1
+A38I0E8UK53ME5,Q16shared_knowledge,Reproducing arts,1
+A38I0E8UK53ME5,Q17within_sys_sol,Reproducing arts,1
+A38I0E8UK53ME5,Q18ans_recog,Reproducing arts,1
+A38I0E8UK53ME5,Q19time_solvability,Reproducing arts,1
+A38I0E8UK53ME5,Q20type_3_type_4,Reproducing arts,1
+A38I0E8UK53ME5,Q22confl_tradeoffs,Reproducing arts,-1
+A38I0E8UK53ME5,Q23ss_out_uncert,Reproducing arts,1
+A38I0E8UK53ME5,Q24eureka_question,Reproducing arts,1
 A2S64AUN7JI7ZS,Q1concept_behav,"Wolf, goat and cabbage transfer",-1
 A2S64AUN7JI7ZS,Q3type_1_planning,"Wolf, goat and cabbage transfer",1
 A2S64AUN7JI7ZS,Q4type_2_generate,"Wolf, goat and cabbage transfer",-1
@@ -1379,6 +1519,46 @@ A2WZTMXWD20NYE,Q20type_3_type_4,Recall images,1
 A2WZTMXWD20NYE,Q22confl_tradeoffs,Recall images,-1
 A2WZTMXWD20NYE,Q23ss_out_uncert,Recall images,1
 A2WZTMXWD20NYE,Q24eureka_question,Recall images,-1
+AW5O1RK3W60FC,Q1concept_behav,Computer maze,-1
+AW5O1RK3W60FC,Q3type_1_planning,Computer maze,-1
+AW5O1RK3W60FC,Q4type_2_generate,Computer maze,-1
+AW5O1RK3W60FC,Q6type_5_cc,Computer maze,-1
+AW5O1RK3W60FC,Q7type_7_battle,Computer maze,-1
+AW5O1RK3W60FC,Q8type_8_performance,Computer maze,-1
+AW5O1RK3W60FC,Q9divisible_unitary,Computer maze,-1
+AW5O1RK3W60FC,Q10maximizing,Computer maze,1
+AW5O1RK3W60FC,Q11optimizing,Computer maze,1
+AW5O1RK3W60FC,Q13outcome_multip,Computer maze,1
+AW5O1RK3W60FC,Q14sol_scheme_mul,Computer maze,-1
+AW5O1RK3W60FC,Q15dec_verifiability,Computer maze,1
+AW5O1RK3W60FC,Q16shared_knowledge,Computer maze,1
+AW5O1RK3W60FC,Q17within_sys_sol,Computer maze,1
+AW5O1RK3W60FC,Q18ans_recog,Computer maze,1
+AW5O1RK3W60FC,Q19time_solvability,Computer maze,1
+AW5O1RK3W60FC,Q20type_3_type_4,Computer maze,1
+AW5O1RK3W60FC,Q22confl_tradeoffs,Computer maze,1
+AW5O1RK3W60FC,Q23ss_out_uncert,Computer maze,1
+AW5O1RK3W60FC,Q24eureka_question,Computer maze,-1
+ARI1EMAHUA9PO,Q1concept_behav,Computer maze,-1
+ARI1EMAHUA9PO,Q3type_1_planning,Computer maze,-1
+ARI1EMAHUA9PO,Q4type_2_generate,Computer maze,-1
+ARI1EMAHUA9PO,Q6type_5_cc,Computer maze,-1
+ARI1EMAHUA9PO,Q7type_7_battle,Computer maze,-1
+ARI1EMAHUA9PO,Q8type_8_performance,Computer maze,-1
+ARI1EMAHUA9PO,Q9divisible_unitary,Computer maze,-1
+ARI1EMAHUA9PO,Q10maximizing,Computer maze,1
+ARI1EMAHUA9PO,Q11optimizing,Computer maze,-1
+ARI1EMAHUA9PO,Q13outcome_multip,Computer maze,1
+ARI1EMAHUA9PO,Q14sol_scheme_mul,Computer maze,-1
+ARI1EMAHUA9PO,Q15dec_verifiability,Computer maze,1
+ARI1EMAHUA9PO,Q16shared_knowledge,Computer maze,1
+ARI1EMAHUA9PO,Q17within_sys_sol,Computer maze,1
+ARI1EMAHUA9PO,Q18ans_recog,Computer maze,1
+ARI1EMAHUA9PO,Q19time_solvability,Computer maze,1
+ARI1EMAHUA9PO,Q20type_3_type_4,Computer maze,1
+ARI1EMAHUA9PO,Q22confl_tradeoffs,Computer maze,1
+ARI1EMAHUA9PO,Q23ss_out_uncert,Computer maze,-1
+ARI1EMAHUA9PO,Q24eureka_question,Computer maze,-1
 A3V3SQCM8QGYB7,Q1concept_behav,Recall images,-1
 A3V3SQCM8QGYB7,Q3type_1_planning,Recall images,-1
 A3V3SQCM8QGYB7,Q4type_2_generate,Recall images,-1
@@ -1619,6 +1799,26 @@ A2S64AUN7JI7ZS,Q20type_3_type_4,Estimating pages of a book,1
 A2S64AUN7JI7ZS,Q22confl_tradeoffs,Estimating pages of a book,-1
 A2S64AUN7JI7ZS,Q23ss_out_uncert,Estimating pages of a book,1
 A2S64AUN7JI7ZS,Q24eureka_question,Estimating pages of a book,-1
+A1PZIN8H1VI6SY,Q1concept_behav,Computer maze,1
+A1PZIN8H1VI6SY,Q3type_1_planning,Computer maze,-1
+A1PZIN8H1VI6SY,Q4type_2_generate,Computer maze,-1
+A1PZIN8H1VI6SY,Q6type_5_cc,Computer maze,-1
+A1PZIN8H1VI6SY,Q7type_7_battle,Computer maze,-1
+A1PZIN8H1VI6SY,Q8type_8_performance,Computer maze,-1
+A1PZIN8H1VI6SY,Q9divisible_unitary,Computer maze,-1
+A1PZIN8H1VI6SY,Q10maximizing,Computer maze,1
+A1PZIN8H1VI6SY,Q11optimizing,Computer maze,1
+A1PZIN8H1VI6SY,Q13outcome_multip,Computer maze,1
+A1PZIN8H1VI6SY,Q14sol_scheme_mul,Computer maze,1
+A1PZIN8H1VI6SY,Q15dec_verifiability,Computer maze,1
+A1PZIN8H1VI6SY,Q16shared_knowledge,Computer maze,1
+A1PZIN8H1VI6SY,Q17within_sys_sol,Computer maze,1
+A1PZIN8H1VI6SY,Q18ans_recog,Computer maze,1
+A1PZIN8H1VI6SY,Q19time_solvability,Computer maze,1
+A1PZIN8H1VI6SY,Q20type_3_type_4,Computer maze,1
+A1PZIN8H1VI6SY,Q22confl_tradeoffs,Computer maze,-1
+A1PZIN8H1VI6SY,Q23ss_out_uncert,Computer maze,-1
+A1PZIN8H1VI6SY,Q24eureka_question,Computer maze,1
 A3I9XLIHPPWPN1,Q1concept_behav,Word completion given starting letter,-1
 A3I9XLIHPPWPN1,Q3type_1_planning,Word completion given starting letter,1
 A3I9XLIHPPWPN1,Q4type_2_generate,Word completion given starting letter,1
@@ -1779,6 +1979,26 @@ A76WEZ9QGREEM,Q20type_3_type_4,Railroad Route Construction game (Impossible Vers
 A76WEZ9QGREEM,Q22confl_tradeoffs,Railroad Route Construction game (Impossible Version),-1
 A76WEZ9QGREEM,Q23ss_out_uncert,Railroad Route Construction game (Impossible Version),-1
 A76WEZ9QGREEM,Q24eureka_question,Railroad Route Construction game (Impossible Version),-1
+A17FGZ1I5P9RZA,Q1concept_behav,Computer maze,-1
+A17FGZ1I5P9RZA,Q3type_1_planning,Computer maze,-1
+A17FGZ1I5P9RZA,Q4type_2_generate,Computer maze,1
+A17FGZ1I5P9RZA,Q6type_5_cc,Computer maze,-1
+A17FGZ1I5P9RZA,Q7type_7_battle,Computer maze,-1
+A17FGZ1I5P9RZA,Q8type_8_performance,Computer maze,-1
+A17FGZ1I5P9RZA,Q9divisible_unitary,Computer maze,-1
+A17FGZ1I5P9RZA,Q10maximizing,Computer maze,1
+A17FGZ1I5P9RZA,Q11optimizing,Computer maze,1
+A17FGZ1I5P9RZA,Q13outcome_multip,Computer maze,-1
+A17FGZ1I5P9RZA,Q14sol_scheme_mul,Computer maze,1
+A17FGZ1I5P9RZA,Q15dec_verifiability,Computer maze,1
+A17FGZ1I5P9RZA,Q16shared_knowledge,Computer maze,1
+A17FGZ1I5P9RZA,Q17within_sys_sol,Computer maze,1
+A17FGZ1I5P9RZA,Q18ans_recog,Computer maze,1
+A17FGZ1I5P9RZA,Q19time_solvability,Computer maze,1
+A17FGZ1I5P9RZA,Q20type_3_type_4,Computer maze,1
+A17FGZ1I5P9RZA,Q22confl_tradeoffs,Computer maze,1
+A17FGZ1I5P9RZA,Q23ss_out_uncert,Computer maze,-1
+A17FGZ1I5P9RZA,Q24eureka_question,Computer maze,1
 AA5ZDXAA2DLY1,Q1concept_behav,Guessing the correlation,-1
 AA5ZDXAA2DLY1,Q3type_1_planning,Guessing the correlation,-1
 AA5ZDXAA2DLY1,Q4type_2_generate,Guessing the correlation,-1
@@ -1959,6 +2179,26 @@ A1VRG5HKZC0H0C,Q20type_3_type_4,Advertisement writing,-1
 A1VRG5HKZC0H0C,Q22confl_tradeoffs,Advertisement writing,1
 A1VRG5HKZC0H0C,Q23ss_out_uncert,Advertisement writing,1
 A1VRG5HKZC0H0C,Q24eureka_question,Advertisement writing,-1
+ARI1EMAHUA9PO,Q1concept_behav,Reproducing arts,-1
+ARI1EMAHUA9PO,Q3type_1_planning,Reproducing arts,-1
+ARI1EMAHUA9PO,Q4type_2_generate,Reproducing arts,-1
+ARI1EMAHUA9PO,Q6type_5_cc,Reproducing arts,-1
+ARI1EMAHUA9PO,Q7type_7_battle,Reproducing arts,-1
+ARI1EMAHUA9PO,Q8type_8_performance,Reproducing arts,-1
+ARI1EMAHUA9PO,Q9divisible_unitary,Reproducing arts,-1
+ARI1EMAHUA9PO,Q10maximizing,Reproducing arts,1
+ARI1EMAHUA9PO,Q11optimizing,Reproducing arts,1
+ARI1EMAHUA9PO,Q13outcome_multip,Reproducing arts,1
+ARI1EMAHUA9PO,Q14sol_scheme_mul,Reproducing arts,-1
+ARI1EMAHUA9PO,Q15dec_verifiability,Reproducing arts,1
+ARI1EMAHUA9PO,Q16shared_knowledge,Reproducing arts,1
+ARI1EMAHUA9PO,Q17within_sys_sol,Reproducing arts,1
+ARI1EMAHUA9PO,Q18ans_recog,Reproducing arts,1
+ARI1EMAHUA9PO,Q19time_solvability,Reproducing arts,1
+ARI1EMAHUA9PO,Q20type_3_type_4,Reproducing arts,1
+ARI1EMAHUA9PO,Q22confl_tradeoffs,Reproducing arts,-1
+ARI1EMAHUA9PO,Q23ss_out_uncert,Reproducing arts,-1
+ARI1EMAHUA9PO,Q24eureka_question,Reproducing arts,-1
 AA5ZDXAA2DLY1,Q1concept_behav,Estimating pages of a book,-1
 AA5ZDXAA2DLY1,Q3type_1_planning,Estimating pages of a book,-1
 AA5ZDXAA2DLY1,Q4type_2_generate,Estimating pages of a book,-1
@@ -2199,6 +2439,26 @@ A1VRG5HKZC0H0C,Q20type_3_type_4,Moral Reasoning (Disciplinary Action Case),-1
 A1VRG5HKZC0H0C,Q22confl_tradeoffs,Moral Reasoning (Disciplinary Action Case),1
 A1VRG5HKZC0H0C,Q23ss_out_uncert,Moral Reasoning (Disciplinary Action Case),-1
 A1VRG5HKZC0H0C,Q24eureka_question,Moral Reasoning (Disciplinary Action Case),-1
+AA5ZDXAA2DLY1,Q1concept_behav,Computer maze,-1
+AA5ZDXAA2DLY1,Q3type_1_planning,Computer maze,-1
+AA5ZDXAA2DLY1,Q4type_2_generate,Computer maze,-1
+AA5ZDXAA2DLY1,Q6type_5_cc,Computer maze,-1
+AA5ZDXAA2DLY1,Q7type_7_battle,Computer maze,-1
+AA5ZDXAA2DLY1,Q8type_8_performance,Computer maze,-1
+AA5ZDXAA2DLY1,Q9divisible_unitary,Computer maze,-1
+AA5ZDXAA2DLY1,Q10maximizing,Computer maze,1
+AA5ZDXAA2DLY1,Q11optimizing,Computer maze,1
+AA5ZDXAA2DLY1,Q13outcome_multip,Computer maze,1
+AA5ZDXAA2DLY1,Q14sol_scheme_mul,Computer maze,-1
+AA5ZDXAA2DLY1,Q15dec_verifiability,Computer maze,1
+AA5ZDXAA2DLY1,Q16shared_knowledge,Computer maze,1
+AA5ZDXAA2DLY1,Q17within_sys_sol,Computer maze,1
+AA5ZDXAA2DLY1,Q18ans_recog,Computer maze,1
+AA5ZDXAA2DLY1,Q19time_solvability,Computer maze,1
+AA5ZDXAA2DLY1,Q20type_3_type_4,Computer maze,1
+AA5ZDXAA2DLY1,Q22confl_tradeoffs,Computer maze,-1
+AA5ZDXAA2DLY1,Q23ss_out_uncert,Computer maze,1
+AA5ZDXAA2DLY1,Q24eureka_question,Computer maze,-1
 A2S64AUN7JI7ZS,Q1concept_behav,Visual Oddball Target,-1
 A2S64AUN7JI7ZS,Q3type_1_planning,Visual Oddball Target,-1
 A2S64AUN7JI7ZS,Q4type_2_generate,Visual Oddball Target,-1
@@ -2279,6 +2539,26 @@ A5NE8TWS8ZV7B,Q20type_3_type_4,Euclidean traveling salesperson,1
 A5NE8TWS8ZV7B,Q22confl_tradeoffs,Euclidean traveling salesperson,1
 A5NE8TWS8ZV7B,Q23ss_out_uncert,Euclidean traveling salesperson,1
 A5NE8TWS8ZV7B,Q24eureka_question,Euclidean traveling salesperson,-1
+AW5O1RK3W60FC,Q1concept_behav,Reproducing arts,-1
+AW5O1RK3W60FC,Q3type_1_planning,Reproducing arts,-1
+AW5O1RK3W60FC,Q4type_2_generate,Reproducing arts,-1
+AW5O1RK3W60FC,Q6type_5_cc,Reproducing arts,-1
+AW5O1RK3W60FC,Q7type_7_battle,Reproducing arts,-1
+AW5O1RK3W60FC,Q8type_8_performance,Reproducing arts,-1
+AW5O1RK3W60FC,Q9divisible_unitary,Reproducing arts,1
+AW5O1RK3W60FC,Q10maximizing,Reproducing arts,1
+AW5O1RK3W60FC,Q11optimizing,Reproducing arts,1
+AW5O1RK3W60FC,Q13outcome_multip,Reproducing arts,1
+AW5O1RK3W60FC,Q14sol_scheme_mul,Reproducing arts,-1
+AW5O1RK3W60FC,Q15dec_verifiability,Reproducing arts,1
+AW5O1RK3W60FC,Q16shared_knowledge,Reproducing arts,1
+AW5O1RK3W60FC,Q17within_sys_sol,Reproducing arts,1
+AW5O1RK3W60FC,Q18ans_recog,Reproducing arts,1
+AW5O1RK3W60FC,Q19time_solvability,Reproducing arts,1
+AW5O1RK3W60FC,Q20type_3_type_4,Reproducing arts,1
+AW5O1RK3W60FC,Q22confl_tradeoffs,Reproducing arts,-1
+AW5O1RK3W60FC,Q23ss_out_uncert,Reproducing arts,-1
+AW5O1RK3W60FC,Q24eureka_question,Reproducing arts,-1
 A1I72NHC21347A,Q1concept_behav,Estimating pages of a book,-1
 A1I72NHC21347A,Q3type_1_planning,Estimating pages of a book,-1
 A1I72NHC21347A,Q4type_2_generate,Estimating pages of a book,-1
@@ -2719,6 +2999,26 @@ A3V3SQCM8QGYB7,Q20type_3_type_4,Estimating pages of a book,1
 A3V3SQCM8QGYB7,Q22confl_tradeoffs,Estimating pages of a book,-1
 A3V3SQCM8QGYB7,Q23ss_out_uncert,Estimating pages of a book,1
 A3V3SQCM8QGYB7,Q24eureka_question,Estimating pages of a book,-1
+A2WDF40FA670T9,Q1concept_behav,Computer maze,1
+A2WDF40FA670T9,Q3type_1_planning,Computer maze,-1
+A2WDF40FA670T9,Q4type_2_generate,Computer maze,-1
+A2WDF40FA670T9,Q6type_5_cc,Computer maze,-1
+A2WDF40FA670T9,Q7type_7_battle,Computer maze,-1
+A2WDF40FA670T9,Q8type_8_performance,Computer maze,-1
+A2WDF40FA670T9,Q9divisible_unitary,Computer maze,-1
+A2WDF40FA670T9,Q10maximizing,Computer maze,1
+A2WDF40FA670T9,Q11optimizing,Computer maze,1
+A2WDF40FA670T9,Q13outcome_multip,Computer maze,1
+A2WDF40FA670T9,Q14sol_scheme_mul,Computer maze,-1
+A2WDF40FA670T9,Q15dec_verifiability,Computer maze,1
+A2WDF40FA670T9,Q16shared_knowledge,Computer maze,1
+A2WDF40FA670T9,Q17within_sys_sol,Computer maze,1
+A2WDF40FA670T9,Q18ans_recog,Computer maze,-1
+A2WDF40FA670T9,Q19time_solvability,Computer maze,1
+A2WDF40FA670T9,Q20type_3_type_4,Computer maze,1
+A2WDF40FA670T9,Q22confl_tradeoffs,Computer maze,1
+A2WDF40FA670T9,Q23ss_out_uncert,Computer maze,1
+A2WDF40FA670T9,Q24eureka_question,Computer maze,-1
 A2531UD0IGT731,Q1concept_behav,Divergent Association Task,-1
 A2531UD0IGT731,Q3type_1_planning,Divergent Association Task,-1
 A2531UD0IGT731,Q4type_2_generate,Divergent Association Task,1
@@ -2959,6 +3259,26 @@ A3JAM040VWXHDO,Q20type_3_type_4,Estimating social quantity,1
 A3JAM040VWXHDO,Q22confl_tradeoffs,Estimating social quantity,-1
 A3JAM040VWXHDO,Q23ss_out_uncert,Estimating social quantity,-1
 A3JAM040VWXHDO,Q24eureka_question,Estimating social quantity,-1
+AXPZAP62ZYWP8,Q1concept_behav,Computer maze,-1
+AXPZAP62ZYWP8,Q3type_1_planning,Computer maze,1
+AXPZAP62ZYWP8,Q4type_2_generate,Computer maze,-1
+AXPZAP62ZYWP8,Q6type_5_cc,Computer maze,-1
+AXPZAP62ZYWP8,Q7type_7_battle,Computer maze,1
+AXPZAP62ZYWP8,Q8type_8_performance,Computer maze,1
+AXPZAP62ZYWP8,Q9divisible_unitary,Computer maze,1
+AXPZAP62ZYWP8,Q10maximizing,Computer maze,1
+AXPZAP62ZYWP8,Q11optimizing,Computer maze,-1
+AXPZAP62ZYWP8,Q13outcome_multip,Computer maze,1
+AXPZAP62ZYWP8,Q14sol_scheme_mul,Computer maze,-1
+AXPZAP62ZYWP8,Q15dec_verifiability,Computer maze,1
+AXPZAP62ZYWP8,Q16shared_knowledge,Computer maze,1
+AXPZAP62ZYWP8,Q17within_sys_sol,Computer maze,1
+AXPZAP62ZYWP8,Q18ans_recog,Computer maze,1
+AXPZAP62ZYWP8,Q19time_solvability,Computer maze,1
+AXPZAP62ZYWP8,Q20type_3_type_4,Computer maze,1
+AXPZAP62ZYWP8,Q22confl_tradeoffs,Computer maze,-1
+AXPZAP62ZYWP8,Q23ss_out_uncert,Computer maze,1
+AXPZAP62ZYWP8,Q24eureka_question,Computer maze,-1
 AKQAI78JTXXC9,Q1concept_behav,Estimating social quantity,-1
 AKQAI78JTXXC9,Q3type_1_planning,Estimating social quantity,-1
 AKQAI78JTXXC9,Q4type_2_generate,Estimating social quantity,-1
@@ -3259,6 +3579,26 @@ A3HL2LL0LEPZT8,Q20type_3_type_4,Abstract grid task,1
 A3HL2LL0LEPZT8,Q22confl_tradeoffs,Abstract grid task,-1
 A3HL2LL0LEPZT8,Q23ss_out_uncert,Abstract grid task,1
 A3HL2LL0LEPZT8,Q24eureka_question,Abstract grid task,-1
+A15WCNO32MHBAF,Q1concept_behav,Computer maze,-1
+A15WCNO32MHBAF,Q3type_1_planning,Computer maze,-1
+A15WCNO32MHBAF,Q4type_2_generate,Computer maze,-1
+A15WCNO32MHBAF,Q6type_5_cc,Computer maze,-1
+A15WCNO32MHBAF,Q7type_7_battle,Computer maze,-1
+A15WCNO32MHBAF,Q8type_8_performance,Computer maze,-1
+A15WCNO32MHBAF,Q9divisible_unitary,Computer maze,-1
+A15WCNO32MHBAF,Q10maximizing,Computer maze,1
+A15WCNO32MHBAF,Q11optimizing,Computer maze,-1
+A15WCNO32MHBAF,Q13outcome_multip,Computer maze,1
+A15WCNO32MHBAF,Q14sol_scheme_mul,Computer maze,1
+A15WCNO32MHBAF,Q15dec_verifiability,Computer maze,1
+A15WCNO32MHBAF,Q16shared_knowledge,Computer maze,1
+A15WCNO32MHBAF,Q17within_sys_sol,Computer maze,1
+A15WCNO32MHBAF,Q18ans_recog,Computer maze,1
+A15WCNO32MHBAF,Q19time_solvability,Computer maze,1
+A15WCNO32MHBAF,Q20type_3_type_4,Computer maze,1
+A15WCNO32MHBAF,Q22confl_tradeoffs,Computer maze,-1
+A15WCNO32MHBAF,Q23ss_out_uncert,Computer maze,1
+A15WCNO32MHBAF,Q24eureka_question,Computer maze,-1
 A26UIS59SY4NM6,Q1concept_behav,Recall images,-1
 A26UIS59SY4NM6,Q3type_1_planning,Recall images,-1
 A26UIS59SY4NM6,Q4type_2_generate,Recall images,-1
@@ -3679,6 +4019,46 @@ A5NE8TWS8ZV7B,Q20type_3_type_4,Whac-A-Mole,-1
 A5NE8TWS8ZV7B,Q22confl_tradeoffs,Whac-A-Mole,-1
 A5NE8TWS8ZV7B,Q23ss_out_uncert,Whac-A-Mole,1
 A5NE8TWS8ZV7B,Q24eureka_question,Whac-A-Mole,-1
+AWAW665TQQP2F,Q1concept_behav,Reproducing arts,-1
+AWAW665TQQP2F,Q3type_1_planning,Reproducing arts,-1
+AWAW665TQQP2F,Q4type_2_generate,Reproducing arts,-1
+AWAW665TQQP2F,Q6type_5_cc,Reproducing arts,-1
+AWAW665TQQP2F,Q7type_7_battle,Reproducing arts,-1
+AWAW665TQQP2F,Q8type_8_performance,Reproducing arts,-1
+AWAW665TQQP2F,Q9divisible_unitary,Reproducing arts,1
+AWAW665TQQP2F,Q10maximizing,Reproducing arts,1
+AWAW665TQQP2F,Q11optimizing,Reproducing arts,1
+AWAW665TQQP2F,Q13outcome_multip,Reproducing arts,1
+AWAW665TQQP2F,Q14sol_scheme_mul,Reproducing arts,1
+AWAW665TQQP2F,Q15dec_verifiability,Reproducing arts,1
+AWAW665TQQP2F,Q16shared_knowledge,Reproducing arts,1
+AWAW665TQQP2F,Q17within_sys_sol,Reproducing arts,1
+AWAW665TQQP2F,Q18ans_recog,Reproducing arts,1
+AWAW665TQQP2F,Q19time_solvability,Reproducing arts,1
+AWAW665TQQP2F,Q20type_3_type_4,Reproducing arts,1
+AWAW665TQQP2F,Q22confl_tradeoffs,Reproducing arts,-1
+AWAW665TQQP2F,Q23ss_out_uncert,Reproducing arts,1
+AWAW665TQQP2F,Q24eureka_question,Reproducing arts,1
+A2WZTMXWD20NYE,Q1concept_behav,Reproducing arts,-1
+A2WZTMXWD20NYE,Q3type_1_planning,Reproducing arts,-1
+A2WZTMXWD20NYE,Q4type_2_generate,Reproducing arts,-1
+A2WZTMXWD20NYE,Q6type_5_cc,Reproducing arts,1
+A2WZTMXWD20NYE,Q7type_7_battle,Reproducing arts,-1
+A2WZTMXWD20NYE,Q8type_8_performance,Reproducing arts,-1
+A2WZTMXWD20NYE,Q9divisible_unitary,Reproducing arts,1
+A2WZTMXWD20NYE,Q10maximizing,Reproducing arts,1
+A2WZTMXWD20NYE,Q11optimizing,Reproducing arts,1
+A2WZTMXWD20NYE,Q13outcome_multip,Reproducing arts,1
+A2WZTMXWD20NYE,Q14sol_scheme_mul,Reproducing arts,1
+A2WZTMXWD20NYE,Q15dec_verifiability,Reproducing arts,1
+A2WZTMXWD20NYE,Q16shared_knowledge,Reproducing arts,1
+A2WZTMXWD20NYE,Q17within_sys_sol,Reproducing arts,1
+A2WZTMXWD20NYE,Q18ans_recog,Reproducing arts,-1
+A2WZTMXWD20NYE,Q19time_solvability,Reproducing arts,1
+A2WZTMXWD20NYE,Q20type_3_type_4,Reproducing arts,1
+A2WZTMXWD20NYE,Q22confl_tradeoffs,Reproducing arts,-1
+A2WZTMXWD20NYE,Q23ss_out_uncert,Reproducing arts,1
+A2WZTMXWD20NYE,Q24eureka_question,Reproducing arts,-1
 A1ZE87WEYCA44A,Q1concept_behav,The Fish game,-1
 A1ZE87WEYCA44A,Q3type_1_planning,The Fish game,-1
 A1ZE87WEYCA44A,Q4type_2_generate,The Fish game,-1
@@ -4259,6 +4639,26 @@ A2TLN8489YGY81,Q20type_3_type_4,Divergent Association Task,1
 A2TLN8489YGY81,Q22confl_tradeoffs,Divergent Association Task,1
 A2TLN8489YGY81,Q23ss_out_uncert,Divergent Association Task,1
 A2TLN8489YGY81,Q24eureka_question,Divergent Association Task,-1
+A2S64AUN7JI7ZS,Q1concept_behav,Reproducing arts,-1
+A2S64AUN7JI7ZS,Q3type_1_planning,Reproducing arts,-1
+A2S64AUN7JI7ZS,Q4type_2_generate,Reproducing arts,-1
+A2S64AUN7JI7ZS,Q6type_5_cc,Reproducing arts,-1
+A2S64AUN7JI7ZS,Q7type_7_battle,Reproducing arts,-1
+A2S64AUN7JI7ZS,Q8type_8_performance,Reproducing arts,-1
+A2S64AUN7JI7ZS,Q9divisible_unitary,Reproducing arts,-1
+A2S64AUN7JI7ZS,Q10maximizing,Reproducing arts,1
+A2S64AUN7JI7ZS,Q11optimizing,Reproducing arts,1
+A2S64AUN7JI7ZS,Q13outcome_multip,Reproducing arts,1
+A2S64AUN7JI7ZS,Q14sol_scheme_mul,Reproducing arts,1
+A2S64AUN7JI7ZS,Q15dec_verifiability,Reproducing arts,1
+A2S64AUN7JI7ZS,Q16shared_knowledge,Reproducing arts,-1
+A2S64AUN7JI7ZS,Q17within_sys_sol,Reproducing arts,1
+A2S64AUN7JI7ZS,Q18ans_recog,Reproducing arts,1
+A2S64AUN7JI7ZS,Q19time_solvability,Reproducing arts,1
+A2S64AUN7JI7ZS,Q20type_3_type_4,Reproducing arts,1
+A2S64AUN7JI7ZS,Q22confl_tradeoffs,Reproducing arts,-1
+A2S64AUN7JI7ZS,Q23ss_out_uncert,Reproducing arts,-1
+A2S64AUN7JI7ZS,Q24eureka_question,Reproducing arts,-1
 A3CGQOJC28OVGN,Q1concept_behav,Estimating pages of a book,-1
 A3CGQOJC28OVGN,Q3type_1_planning,Estimating pages of a book,-1
 A3CGQOJC28OVGN,Q4type_2_generate,Estimating pages of a book,-1
