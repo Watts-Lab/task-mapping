@@ -79,6 +79,26 @@ A5NE8TWS8ZV7B,Q20type_3_type_4,Recall videos,1
 A5NE8TWS8ZV7B,Q22confl_tradeoffs,Recall videos,-1
 A5NE8TWS8ZV7B,Q23ss_out_uncert,Recall videos,1
 A5NE8TWS8ZV7B,Q24eureka_question,Recall videos,-1
+A272X64FOZFYLB,Q1concept_behav,Estimating social quantity,-1
+A272X64FOZFYLB,Q3type_1_planning,Estimating social quantity,-1
+A272X64FOZFYLB,Q4type_2_generate,Estimating social quantity,-1
+A272X64FOZFYLB,Q6type_5_cc,Estimating social quantity,-1
+A272X64FOZFYLB,Q7type_7_battle,Estimating social quantity,-1
+A272X64FOZFYLB,Q8type_8_performance,Estimating social quantity,-1
+A272X64FOZFYLB,Q9divisible_unitary,Estimating social quantity,1
+A272X64FOZFYLB,Q10maximizing,Estimating social quantity,1
+A272X64FOZFYLB,Q11optimizing,Estimating social quantity,1
+A272X64FOZFYLB,Q13outcome_multip,Estimating social quantity,1
+A272X64FOZFYLB,Q14sol_scheme_mul,Estimating social quantity,-1
+A272X64FOZFYLB,Q15dec_verifiability,Estimating social quantity,1
+A272X64FOZFYLB,Q16shared_knowledge,Estimating social quantity,-1
+A272X64FOZFYLB,Q17within_sys_sol,Estimating social quantity,-1
+A272X64FOZFYLB,Q18ans_recog,Estimating social quantity,-1
+A272X64FOZFYLB,Q19time_solvability,Estimating social quantity,1
+A272X64FOZFYLB,Q20type_3_type_4,Estimating social quantity,1
+A272X64FOZFYLB,Q22confl_tradeoffs,Estimating social quantity,-1
+A272X64FOZFYLB,Q23ss_out_uncert,Estimating social quantity,1
+A272X64FOZFYLB,Q24eureka_question,Estimating social quantity,-1
 A2VRDE2FHCBMF8,Q1concept_behav,Abstract grid task,-1
 A2VRDE2FHCBMF8,Q3type_1_planning,Abstract grid task,-1
 A2VRDE2FHCBMF8,Q4type_2_generate,Abstract grid task,-1
@@ -1879,6 +1899,26 @@ A26UIS59SY4NM6,Q20type_3_type_4,Estimating geological metrics,1
 A26UIS59SY4NM6,Q22confl_tradeoffs,Estimating geological metrics,-1
 A26UIS59SY4NM6,Q23ss_out_uncert,Estimating geological metrics,1
 A26UIS59SY4NM6,Q24eureka_question,Estimating geological metrics,-1
+A272X64FOZFYLB,Q1concept_behav,Visual Oddball Target,1
+A272X64FOZFYLB,Q3type_1_planning,Visual Oddball Target,-1
+A272X64FOZFYLB,Q4type_2_generate,Visual Oddball Target,-1
+A272X64FOZFYLB,Q6type_5_cc,Visual Oddball Target,-1
+A272X64FOZFYLB,Q7type_7_battle,Visual Oddball Target,-1
+A272X64FOZFYLB,Q8type_8_performance,Visual Oddball Target,1
+A272X64FOZFYLB,Q9divisible_unitary,Visual Oddball Target,-1
+A272X64FOZFYLB,Q10maximizing,Visual Oddball Target,-1
+A272X64FOZFYLB,Q11optimizing,Visual Oddball Target,-1
+A272X64FOZFYLB,Q13outcome_multip,Visual Oddball Target,1
+A272X64FOZFYLB,Q14sol_scheme_mul,Visual Oddball Target,1
+A272X64FOZFYLB,Q15dec_verifiability,Visual Oddball Target,1
+A272X64FOZFYLB,Q16shared_knowledge,Visual Oddball Target,1
+A272X64FOZFYLB,Q17within_sys_sol,Visual Oddball Target,1
+A272X64FOZFYLB,Q18ans_recog,Visual Oddball Target,1
+A272X64FOZFYLB,Q19time_solvability,Visual Oddball Target,1
+A272X64FOZFYLB,Q20type_3_type_4,Visual Oddball Target,1
+A272X64FOZFYLB,Q22confl_tradeoffs,Visual Oddball Target,-1
+A272X64FOZFYLB,Q23ss_out_uncert,Visual Oddball Target,-1
+A272X64FOZFYLB,Q24eureka_question,Visual Oddball Target,-1
 A1I72NHC21347A,Q1concept_behav,Divergent Association Task,-1
 A1I72NHC21347A,Q3type_1_planning,Divergent Association Task,-1
 A1I72NHC21347A,Q4type_2_generate,Divergent Association Task,-1
@@ -1959,6 +1999,26 @@ A3I9XLIHPPWPN1,Q20type_3_type_4,Graph coloring task,1
 A3I9XLIHPPWPN1,Q22confl_tradeoffs,Graph coloring task,-1
 A3I9XLIHPPWPN1,Q23ss_out_uncert,Graph coloring task,-1
 A3I9XLIHPPWPN1,Q24eureka_question,Graph coloring task,-1
+AKQAI78JTXXC9,Q1concept_behav,Visual Oddball Target,-1
+AKQAI78JTXXC9,Q3type_1_planning,Visual Oddball Target,-1
+AKQAI78JTXXC9,Q4type_2_generate,Visual Oddball Target,-1
+AKQAI78JTXXC9,Q6type_5_cc,Visual Oddball Target,-1
+AKQAI78JTXXC9,Q7type_7_battle,Visual Oddball Target,-1
+AKQAI78JTXXC9,Q8type_8_performance,Visual Oddball Target,1
+AKQAI78JTXXC9,Q9divisible_unitary,Visual Oddball Target,-1
+AKQAI78JTXXC9,Q10maximizing,Visual Oddball Target,-1
+AKQAI78JTXXC9,Q11optimizing,Visual Oddball Target,-1
+AKQAI78JTXXC9,Q13outcome_multip,Visual Oddball Target,1
+AKQAI78JTXXC9,Q14sol_scheme_mul,Visual Oddball Target,-1
+AKQAI78JTXXC9,Q15dec_verifiability,Visual Oddball Target,1
+AKQAI78JTXXC9,Q16shared_knowledge,Visual Oddball Target,-1
+AKQAI78JTXXC9,Q17within_sys_sol,Visual Oddball Target,1
+AKQAI78JTXXC9,Q18ans_recog,Visual Oddball Target,1
+AKQAI78JTXXC9,Q19time_solvability,Visual Oddball Target,1
+AKQAI78JTXXC9,Q20type_3_type_4,Visual Oddball Target,1
+AKQAI78JTXXC9,Q22confl_tradeoffs,Visual Oddball Target,-1
+AKQAI78JTXXC9,Q23ss_out_uncert,Visual Oddball Target,1
+AKQAI78JTXXC9,Q24eureka_question,Visual Oddball Target,-1
 A2615YW1YERQBO,Q1concept_behav,"Wolf, goat and cabbage transfer",-1
 A2615YW1YERQBO,Q3type_1_planning,"Wolf, goat and cabbage transfer",-1
 A2615YW1YERQBO,Q4type_2_generate,"Wolf, goat and cabbage transfer",-1
@@ -3459,6 +3519,26 @@ ARYL3C6N9SVV1,Q20type_3_type_4,Allocating resources to programs,1
 ARYL3C6N9SVV1,Q22confl_tradeoffs,Allocating resources to programs,1
 ARYL3C6N9SVV1,Q23ss_out_uncert,Allocating resources to programs,-1
 ARYL3C6N9SVV1,Q24eureka_question,Allocating resources to programs,-1
+A1YSYI926BBOHW,Q1concept_behav,Visual Oddball Target,-1
+A1YSYI926BBOHW,Q3type_1_planning,Visual Oddball Target,-1
+A1YSYI926BBOHW,Q4type_2_generate,Visual Oddball Target,-1
+A1YSYI926BBOHW,Q6type_5_cc,Visual Oddball Target,-1
+A1YSYI926BBOHW,Q7type_7_battle,Visual Oddball Target,-1
+A1YSYI926BBOHW,Q8type_8_performance,Visual Oddball Target,-1
+A1YSYI926BBOHW,Q9divisible_unitary,Visual Oddball Target,-1
+A1YSYI926BBOHW,Q10maximizing,Visual Oddball Target,-1
+A1YSYI926BBOHW,Q11optimizing,Visual Oddball Target,1
+A1YSYI926BBOHW,Q13outcome_multip,Visual Oddball Target,1
+A1YSYI926BBOHW,Q14sol_scheme_mul,Visual Oddball Target,-1
+A1YSYI926BBOHW,Q15dec_verifiability,Visual Oddball Target,1
+A1YSYI926BBOHW,Q16shared_knowledge,Visual Oddball Target,1
+A1YSYI926BBOHW,Q17within_sys_sol,Visual Oddball Target,-1
+A1YSYI926BBOHW,Q18ans_recog,Visual Oddball Target,1
+A1YSYI926BBOHW,Q19time_solvability,Visual Oddball Target,1
+A1YSYI926BBOHW,Q20type_3_type_4,Visual Oddball Target,1
+A1YSYI926BBOHW,Q22confl_tradeoffs,Visual Oddball Target,-1
+A1YSYI926BBOHW,Q23ss_out_uncert,Visual Oddball Target,-1
+A1YSYI926BBOHW,Q24eureka_question,Visual Oddball Target,1
 A2AZYU1CT24O0K,Q1concept_behav,"Wolf, goat and cabbage transfer",-1
 A2AZYU1CT24O0K,Q3type_1_planning,"Wolf, goat and cabbage transfer",1
 A2AZYU1CT24O0K,Q4type_2_generate,"Wolf, goat and cabbage transfer",1
@@ -3699,6 +3779,26 @@ A2WDF40FA670T9,Q20type_3_type_4,Putting food into categories,1
 A2WDF40FA670T9,Q22confl_tradeoffs,Putting food into categories,-1
 A2WDF40FA670T9,Q23ss_out_uncert,Putting food into categories,-1
 A2WDF40FA670T9,Q24eureka_question,Putting food into categories,-1
+A3JAM040VWXHDO,Q1concept_behav,Visual Oddball Target,-1
+A3JAM040VWXHDO,Q3type_1_planning,Visual Oddball Target,-1
+A3JAM040VWXHDO,Q4type_2_generate,Visual Oddball Target,-1
+A3JAM040VWXHDO,Q6type_5_cc,Visual Oddball Target,-1
+A3JAM040VWXHDO,Q7type_7_battle,Visual Oddball Target,-1
+A3JAM040VWXHDO,Q8type_8_performance,Visual Oddball Target,1
+A3JAM040VWXHDO,Q9divisible_unitary,Visual Oddball Target,-1
+A3JAM040VWXHDO,Q10maximizing,Visual Oddball Target,-1
+A3JAM040VWXHDO,Q11optimizing,Visual Oddball Target,-1
+A3JAM040VWXHDO,Q13outcome_multip,Visual Oddball Target,1
+A3JAM040VWXHDO,Q14sol_scheme_mul,Visual Oddball Target,1
+A3JAM040VWXHDO,Q15dec_verifiability,Visual Oddball Target,1
+A3JAM040VWXHDO,Q16shared_knowledge,Visual Oddball Target,1
+A3JAM040VWXHDO,Q17within_sys_sol,Visual Oddball Target,1
+A3JAM040VWXHDO,Q18ans_recog,Visual Oddball Target,1
+A3JAM040VWXHDO,Q19time_solvability,Visual Oddball Target,1
+A3JAM040VWXHDO,Q20type_3_type_4,Visual Oddball Target,1
+A3JAM040VWXHDO,Q22confl_tradeoffs,Visual Oddball Target,-1
+A3JAM040VWXHDO,Q23ss_out_uncert,Visual Oddball Target,1
+A3JAM040VWXHDO,Q24eureka_question,Visual Oddball Target,-1
 AA5ZDXAA2DLY1,Q1concept_behav,9 Dot Problem,-1
 AA5ZDXAA2DLY1,Q3type_1_planning,9 Dot Problem,-1
 AA5ZDXAA2DLY1,Q4type_2_generate,9 Dot Problem,-1
@@ -3779,6 +3879,26 @@ ARI1EMAHUA9PO,Q20type_3_type_4,Railroad Route Construction game (Impossible Vers
 ARI1EMAHUA9PO,Q22confl_tradeoffs,Railroad Route Construction game (Impossible Version),1
 ARI1EMAHUA9PO,Q23ss_out_uncert,Railroad Route Construction game (Impossible Version),-1
 ARI1EMAHUA9PO,Q24eureka_question,Railroad Route Construction game (Impossible Version),-1
+A3NXT3OVGL7QNR,Q1concept_behav,Visual Oddball Target,-1
+A3NXT3OVGL7QNR,Q3type_1_planning,Visual Oddball Target,-1
+A3NXT3OVGL7QNR,Q4type_2_generate,Visual Oddball Target,-1
+A3NXT3OVGL7QNR,Q6type_5_cc,Visual Oddball Target,-1
+A3NXT3OVGL7QNR,Q7type_7_battle,Visual Oddball Target,-1
+A3NXT3OVGL7QNR,Q8type_8_performance,Visual Oddball Target,1
+A3NXT3OVGL7QNR,Q9divisible_unitary,Visual Oddball Target,1
+A3NXT3OVGL7QNR,Q10maximizing,Visual Oddball Target,-1
+A3NXT3OVGL7QNR,Q11optimizing,Visual Oddball Target,1
+A3NXT3OVGL7QNR,Q13outcome_multip,Visual Oddball Target,1
+A3NXT3OVGL7QNR,Q14sol_scheme_mul,Visual Oddball Target,1
+A3NXT3OVGL7QNR,Q15dec_verifiability,Visual Oddball Target,1
+A3NXT3OVGL7QNR,Q16shared_knowledge,Visual Oddball Target,1
+A3NXT3OVGL7QNR,Q17within_sys_sol,Visual Oddball Target,1
+A3NXT3OVGL7QNR,Q18ans_recog,Visual Oddball Target,1
+A3NXT3OVGL7QNR,Q19time_solvability,Visual Oddball Target,1
+A3NXT3OVGL7QNR,Q20type_3_type_4,Visual Oddball Target,1
+A3NXT3OVGL7QNR,Q22confl_tradeoffs,Visual Oddball Target,-1
+A3NXT3OVGL7QNR,Q23ss_out_uncert,Visual Oddball Target,-1
+A3NXT3OVGL7QNR,Q24eureka_question,Visual Oddball Target,1
 A2WZTMXWD20NYE,Q1concept_behav,Allocating resources to programs,-1
 A2WZTMXWD20NYE,Q3type_1_planning,Allocating resources to programs,1
 A2WZTMXWD20NYE,Q4type_2_generate,Allocating resources to programs,-1
@@ -3899,6 +4019,26 @@ A3CGQOJC28OVGN,Q20type_3_type_4,Moral Reasoning (Disciplinary Action Case),-1
 A3CGQOJC28OVGN,Q22confl_tradeoffs,Moral Reasoning (Disciplinary Action Case),1
 A3CGQOJC28OVGN,Q23ss_out_uncert,Moral Reasoning (Disciplinary Action Case),-1
 A3CGQOJC28OVGN,Q24eureka_question,Moral Reasoning (Disciplinary Action Case),-1
+AHUNR2YEZW58R,Q1concept_behav,Visual Oddball Target,1
+AHUNR2YEZW58R,Q3type_1_planning,Visual Oddball Target,-1
+AHUNR2YEZW58R,Q4type_2_generate,Visual Oddball Target,-1
+AHUNR2YEZW58R,Q6type_5_cc,Visual Oddball Target,-1
+AHUNR2YEZW58R,Q7type_7_battle,Visual Oddball Target,-1
+AHUNR2YEZW58R,Q8type_8_performance,Visual Oddball Target,1
+AHUNR2YEZW58R,Q9divisible_unitary,Visual Oddball Target,NA
+AHUNR2YEZW58R,Q10maximizing,Visual Oddball Target,-1
+AHUNR2YEZW58R,Q11optimizing,Visual Oddball Target,1
+AHUNR2YEZW58R,Q13outcome_multip,Visual Oddball Target,1
+AHUNR2YEZW58R,Q14sol_scheme_mul,Visual Oddball Target,1
+AHUNR2YEZW58R,Q15dec_verifiability,Visual Oddball Target,1
+AHUNR2YEZW58R,Q16shared_knowledge,Visual Oddball Target,-1
+AHUNR2YEZW58R,Q17within_sys_sol,Visual Oddball Target,1
+AHUNR2YEZW58R,Q18ans_recog,Visual Oddball Target,1
+AHUNR2YEZW58R,Q19time_solvability,Visual Oddball Target,1
+AHUNR2YEZW58R,Q20type_3_type_4,Visual Oddball Target,1
+AHUNR2YEZW58R,Q22confl_tradeoffs,Visual Oddball Target,-1
+AHUNR2YEZW58R,Q23ss_out_uncert,Visual Oddball Target,1
+AHUNR2YEZW58R,Q24eureka_question,Visual Oddball Target,-1
 A2TLN8489YGY81,Q1concept_behav,Divergent Association Task,-1
 A2TLN8489YGY81,Q3type_1_planning,Divergent Association Task,-1
 A2TLN8489YGY81,Q4type_2_generate,Divergent Association Task,1
