@@ -3,12 +3,12 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Participants are given a shared online spreadsheet tool and a hard copy of a colored spreadsheet.
+Participants are given a shared online spreadsheet tool that can be edited, as well as a shared, static copy of a spreadsheet with each cell colored in a different way (the "target" spreadsheet).
 
 ## 2. Goal Directives 
-The goal is to reproduce a paper colored spreadsheet in an online tool as accurately as possible within a fixed amount of time.
+The goal is to reproduce the "target" spreadsheet in the editable spreadsheet. That is, within a fixed amount of time, participants have to make the shared, editable spreadsheet look like an exact copy of the pattern of colors in the "target" spreadsheet.
 
-Participants receive points for coloring a cell correctly and don't receive points for coloring a cell incorrectlly. They get the maximim score on the task if they reproduce the exact copy of a paper colored spreadsheet and they maximize the score by coloring correctly as many cells as they can.
+Participants receive points for coloring a cell correctly and don't receive points for coloring a cell incorrectlly. They get the maximum score on the task if they reproduce the exact copy of the "target" spreadsheet and they try to get the highest score by correctly coloring as many cells as they can.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
