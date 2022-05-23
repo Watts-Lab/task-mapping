@@ -23,28 +23,14 @@
       ))$token
       
       #--- PREVIOUS Pre-Testing Data ----
-      previous_tested<- read_csv("previous_tested.csv")%>% 
+      previous_tested<- read_csv("previous_tested.csv")%>%
         rename(WorkerId = name) %>% 
         group_by(WorkerId) %>% 
         arrange(WorkerId, desc(score_pct)) %>% 
         slice(1) 
       
       #--- GET Panel ----
-      get_workers <- GET(
-        "https://watts.turk-interface.com/workers",
-        add_headers(`Authorization` = paste0(
-          "Bearer ", token
-        ), encode = "json"),
-        accept_json())
-      
-      workers <-  fromJSON(content(
-        get_workers,
-        "text"
-      ))$workers %>%
-        filter(Active == TRUE)
-      
-      panel_individuals <- read_csv("https://raw.githubusercontent.com/Watts-Lab/individual-mapping/main/clean_data/individuals.csv?token=GHSAT0AAAAAABNZCBBVIR3LXHXRYM6CSK46YUH2J7A") %>%
-        right_join(workers)
+      panel_individuals <- read_csv("https://raw.githubusercontent.com/Watts-Lab/individual-mapping/main/panel.csv?token=GHSAT0AAAAAABNZCBBVD7P6RNFM2G4375GMYUK3PEQ")
       
       our_panel <- panel_individuals %>% 
         left_join(previous_tested) %>%
@@ -178,4 +164,11 @@
         post_pay,
         "text"
       ))
+      
+      our_panel <- our_panel %>%
+        filter(tested == 1) %>% 
+        mutate(
+          paid = ifelse(WorkerId %in% unpaid_people$WorkerId, 1, paid)) %>% 
+          write_csv("our_panel.csv")
+      
       
