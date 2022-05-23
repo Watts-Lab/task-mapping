@@ -9,7 +9,7 @@ Participants are given a computer monitor with a virtual maze environment and ei
 ## 2. Goal Directives 
 The goal is to navigate through the entire maze and tag as many identical greeble pairs as possible within a fixed amount of time. 
 
-Participants are evaluated based on maze navigating and greebles tagging. Participants receive points for navigating through the entire maze and don't receive, but also don't lose, any points for not going through the entire maze. Participants get points for tagging identical greeble pairs and lose points for tagging distracing greebles or mixing greebles from other pairs. The maximum score occurs when participants navigate through the entire maze and tag all greeble pairs correctly.
+Participants are evaluated based on maze navigating and greebles tagging. Participants receive points for navigating through the entire maze and don't receive, but also don't lose, any points for not going through the entire maze. Participants get points for tagging identical greeble pairs and lose points for tagging distracing greebles or mixing greebles from other pairs. The maximum score occurs when participants both navigate through the entire maze and tag all greeble pairs correctly.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
