@@ -3,7 +3,7 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Participants are given a computer monitor with a virtual maze environment and either a keyboard or a joystick. The maze consists of a long winding corridor with many hallways branching off. The hallways are populated by complex unfamiliar objects called “greebles,” which are difficult to distinguish from one another. A maze contains a certain number of pairs of identical greebles and a certain number of distractor greebles.
+Participants are given a computer monitor with a virtual maze environment and either a keyboard or a joystick. The maze consists of a long winding corridor with many hallways branching off. The hallways are populated by complex unfamiliar objects called "greebles," which are difficult to distinguish from one another. A maze contains a certain number of pairs of identical greebles and a certain number of distractor greebles.
 
 
 ## 2. Goal Directives 
