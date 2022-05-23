@@ -6,6 +6,7 @@ Mapped by: paniukhina
 Participants are given an online checkers board. This is an 8x8 board, in which the squares are colored dark and white in alternating colors. Participants start out with 12 round, flat pieces on each side; these are placed on the dark squares on their side of the board.
 
 The rules of checkers are as follows: 
+
 1. The two sides take turns playing. One side completes a move, and then the other side plays.
 2. You can only move a piece diagonally across the board (the game uses only the dark squares). 
 3. A piece can only move diagonally into a square where there are no existing pieces.
