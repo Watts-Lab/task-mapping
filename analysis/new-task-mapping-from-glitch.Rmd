@@ -90,9 +90,9 @@ continuous_questions <- c('Q2intel_manip_1',
 
 ```{r}
 df.main_questions_summary <- df.mapping.raw %>%
-  select(c(main_questions, task)) %>%
+  select(c(main_questions, task, task_blob_url)) %>%
   select(-continuous_questions) %>%
-  pivot_longer(cols = -task, names_to = "question_name") %>%
+  pivot_longer(cols = -c(task,task_blob_url), names_to = "question_name") %>%
   mutate(value = recode(value, 
                      "Mental" = 0,
                      "Physical" = 1,
@@ -101,7 +101,7 @@ df.main_questions_summary <- df.mapping.raw %>%
                      "Yes" = 1
                    )) %>%
   filter(value != 3) %>% # remove cases in which people thought it wasn't answerable - for now
-  group_by(task,question_name) %>%
+  group_by(task, task_blob_url, question_name) %>%
   summarize(mean_rating = mean(value, na.rm = T),
             n_labels = agree(t(value))$raters,
             all_values = paste(value, collapse = " & "),
@@ -115,7 +115,7 @@ Look at at a per-question (or per-task) summary of basic agreement
 ```{r}
 task_based_summary <- df.main_questions_summary %>%
   filter(n_labels > 1) %>%
-  group_by(task) %>% # can do task, question_name
+  group_by(task, task_blob_url) %>% # can do task, question_name
   summarize(
     n_labels = round(mean(n_labels),0),
     mean_agreement = mean(agreement),
@@ -129,10 +129,23 @@ task_based_summary
 Export the task map
 
 ```{r}
+# Before mapping the tasks, filter to ONLY the most recent blob
+# If checking BETWEEN blobs, comment this out
+tasks_blobs_and_ids <- df.mapping.raw %>%
+  select(task, task_blob_url, updatedAt) %>%
+  arrange(desc(updatedAt))
+  
+most_recent_blob_urls <- tasks_blobs_and_ids %>% distinct(task, .keep_all = T)
+  
+df.mapping.raw <- df.mapping.raw %>%
+  filter(task_blob_url %in% most_recent_blob_urls$task_blob_url)
+```
+
+```{r}
 categorical <- df.mapping.raw %>%
-  select(c(main_questions, task)) %>%
+  select(c(main_questions, task, task_blob_url)) %>%
   select(-continuous_questions) %>%
-  pivot_longer(cols = -task, names_to = "question_name") %>%
+  pivot_longer(cols = -c(task, task_blob_url), names_to = "question_name") %>%
   mutate(value = recode(value, 
                      "Mental" = 0,
                      "Physical" = 1,
@@ -140,7 +153,7 @@ categorical <- df.mapping.raw %>%
                      "No" = 0,
                      "Yes" = 1
                    )) %>%
-  group_by(question_name, task) %>%
+  group_by(question_name, task, task_blob_url) %>%
   mutate(
     value = mean(value, na.rm = T)
   ) %>% unique() %>%
@@ -148,24 +161,34 @@ categorical <- df.mapping.raw %>%
 
 
 numeric <- df.mapping.raw %>%
-  select(c(continuous_questions, task)) %>%
-  pivot_longer(cols = -task, names_to = "question_name") %>%
-   group_by(question_name, task) %>%
+  select(c(continuous_questions, task, task_blob_url)) %>%
+  pivot_longer(cols = -c(task, task_blob_url), names_to = "question_name") %>%
+   group_by(question_name, task, task_blob_url) %>%
   mutate(
-    value = mean(as.numeric(value))
+    value = mean(as.numeric(value), na.rm = T)
   ) %>% unique() %>%
   pivot_wider(values_from = c("value"), names_from = "question_name")
   
-task_map <- inner_join(categorical, numeric, by = "task") %>% ungroup()
+task_map <- inner_join(categorical, numeric, by = c("task", "task_blob_url")) %>% ungroup() %>%
+  select(-task_blob_url) # remove task blob for main task map export
 
 task_map %>% write_csv('../task_map.csv')
 ```
 
-Investigate specific rows of the task map
-```{r}
-task_map %>% filter(task == "Putting food into categories") %>% t()
-```
+Special investigation into whether the (second) rewrite of Putting Food Into Categories helped
 
+```{r}
+# Commented this out because I've set the task map to take the most recent blob.
+
+# new.writeup <- task_map %>%
+#   filter(task_blob_url == "https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/18f592c297a321002458953433b2e96117c99ae7") %>% t()
+# 
+# old.writeup <- task_map %>%
+#   filter(task_blob_url == "https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/871175e24910d4800931dd2e8bfbe14475b86343") %>% t()
+# 
+# new.writeup
+# old.writeup
+```
 
 ```{r, fig.width=12, fig.height=5}
 set.seed(1)
