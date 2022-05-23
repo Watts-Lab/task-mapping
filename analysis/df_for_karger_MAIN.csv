@@ -799,6 +799,46 @@ A26UIS59SY4NM6,Q20type_3_type_4,Moral Reasoning (Disciplinary Action Case),-1
 A26UIS59SY4NM6,Q22confl_tradeoffs,Moral Reasoning (Disciplinary Action Case),1
 A26UIS59SY4NM6,Q23ss_out_uncert,Moral Reasoning (Disciplinary Action Case),1
 A26UIS59SY4NM6,Q24eureka_question,Moral Reasoning (Disciplinary Action Case),-1
+A272X64FOZFYLB,Q1concept_behav,Checkers,-1
+A272X64FOZFYLB,Q3type_1_planning,Checkers,-1
+A272X64FOZFYLB,Q4type_2_generate,Checkers,-1
+A272X64FOZFYLB,Q6type_5_cc,Checkers,-1
+A272X64FOZFYLB,Q7type_7_battle,Checkers,1
+A272X64FOZFYLB,Q8type_8_performance,Checkers,1
+A272X64FOZFYLB,Q9divisible_unitary,Checkers,-1
+A272X64FOZFYLB,Q10maximizing,Checkers,-1
+A272X64FOZFYLB,Q11optimizing,Checkers,-1
+A272X64FOZFYLB,Q13outcome_multip,Checkers,1
+A272X64FOZFYLB,Q14sol_scheme_mul,Checkers,-1
+A272X64FOZFYLB,Q15dec_verifiability,Checkers,1
+A272X64FOZFYLB,Q16shared_knowledge,Checkers,1
+A272X64FOZFYLB,Q17within_sys_sol,Checkers,1
+A272X64FOZFYLB,Q18ans_recog,Checkers,-1
+A272X64FOZFYLB,Q19time_solvability,Checkers,1
+A272X64FOZFYLB,Q20type_3_type_4,Checkers,1
+A272X64FOZFYLB,Q22confl_tradeoffs,Checkers,-1
+A272X64FOZFYLB,Q23ss_out_uncert,Checkers,1
+A272X64FOZFYLB,Q24eureka_question,Checkers,-1
+A2N9Q1IHLP4LGI,Q1concept_behav,Visual Oddball Target,-1
+A2N9Q1IHLP4LGI,Q3type_1_planning,Visual Oddball Target,-1
+A2N9Q1IHLP4LGI,Q4type_2_generate,Visual Oddball Target,-1
+A2N9Q1IHLP4LGI,Q6type_5_cc,Visual Oddball Target,-1
+A2N9Q1IHLP4LGI,Q7type_7_battle,Visual Oddball Target,-1
+A2N9Q1IHLP4LGI,Q8type_8_performance,Visual Oddball Target,1
+A2N9Q1IHLP4LGI,Q9divisible_unitary,Visual Oddball Target,-1
+A2N9Q1IHLP4LGI,Q10maximizing,Visual Oddball Target,-1
+A2N9Q1IHLP4LGI,Q11optimizing,Visual Oddball Target,-1
+A2N9Q1IHLP4LGI,Q13outcome_multip,Visual Oddball Target,1
+A2N9Q1IHLP4LGI,Q14sol_scheme_mul,Visual Oddball Target,-1
+A2N9Q1IHLP4LGI,Q15dec_verifiability,Visual Oddball Target,1
+A2N9Q1IHLP4LGI,Q16shared_knowledge,Visual Oddball Target,1
+A2N9Q1IHLP4LGI,Q17within_sys_sol,Visual Oddball Target,1
+A2N9Q1IHLP4LGI,Q18ans_recog,Visual Oddball Target,1
+A2N9Q1IHLP4LGI,Q19time_solvability,Visual Oddball Target,1
+A2N9Q1IHLP4LGI,Q20type_3_type_4,Visual Oddball Target,1
+A2N9Q1IHLP4LGI,Q22confl_tradeoffs,Visual Oddball Target,-1
+A2N9Q1IHLP4LGI,Q23ss_out_uncert,Visual Oddball Target,NA
+A2N9Q1IHLP4LGI,Q24eureka_question,Visual Oddball Target,-1
 A3EUGO4VR2N4G1,Q1concept_behav,Search for Oil Task,-1
 A3EUGO4VR2N4G1,Q3type_1_planning,Search for Oil Task,-1
 A3EUGO4VR2N4G1,Q4type_2_generate,Search for Oil Task,-1
@@ -1019,6 +1059,26 @@ A18T7E73TNGOKP,Q20type_3_type_4,Advertisement writing,-1
 A18T7E73TNGOKP,Q22confl_tradeoffs,Advertisement writing,-1
 A18T7E73TNGOKP,Q23ss_out_uncert,Advertisement writing,1
 A18T7E73TNGOKP,Q24eureka_question,Advertisement writing,-1
+A3EUGO4VR2N4G1,Q1concept_behav,Checkers,-1
+A3EUGO4VR2N4G1,Q3type_1_planning,Checkers,-1
+A3EUGO4VR2N4G1,Q4type_2_generate,Checkers,-1
+A3EUGO4VR2N4G1,Q6type_5_cc,Checkers,-1
+A3EUGO4VR2N4G1,Q7type_7_battle,Checkers,1
+A3EUGO4VR2N4G1,Q8type_8_performance,Checkers,1
+A3EUGO4VR2N4G1,Q9divisible_unitary,Checkers,-1
+A3EUGO4VR2N4G1,Q10maximizing,Checkers,-1
+A3EUGO4VR2N4G1,Q11optimizing,Checkers,1
+A3EUGO4VR2N4G1,Q13outcome_multip,Checkers,-1
+A3EUGO4VR2N4G1,Q14sol_scheme_mul,Checkers,-1
+A3EUGO4VR2N4G1,Q15dec_verifiability,Checkers,1
+A3EUGO4VR2N4G1,Q16shared_knowledge,Checkers,1
+A3EUGO4VR2N4G1,Q17within_sys_sol,Checkers,1
+A3EUGO4VR2N4G1,Q18ans_recog,Checkers,1
+A3EUGO4VR2N4G1,Q19time_solvability,Checkers,1
+A3EUGO4VR2N4G1,Q20type_3_type_4,Checkers,1
+A3EUGO4VR2N4G1,Q22confl_tradeoffs,Checkers,-1
+A3EUGO4VR2N4G1,Q23ss_out_uncert,Checkers,-1
+A3EUGO4VR2N4G1,Q24eureka_question,Checkers,-1
 A3I9XLIHPPWPN1,Q1concept_behav,Whac-A-Mole,-1
 A3I9XLIHPPWPN1,Q3type_1_planning,Whac-A-Mole,-1
 A3I9XLIHPPWPN1,Q4type_2_generate,Whac-A-Mole,-1
@@ -1679,6 +1739,26 @@ AA5ZDXAA2DLY1,Q20type_3_type_4,Guessing the correlation,1
 AA5ZDXAA2DLY1,Q22confl_tradeoffs,Guessing the correlation,-1
 AA5ZDXAA2DLY1,Q23ss_out_uncert,Guessing the correlation,1
 AA5ZDXAA2DLY1,Q24eureka_question,Guessing the correlation,-1
+AKQAI78JTXXC9,Q1concept_behav,Checkers,-1
+AKQAI78JTXXC9,Q3type_1_planning,Checkers,-1
+AKQAI78JTXXC9,Q4type_2_generate,Checkers,-1
+AKQAI78JTXXC9,Q6type_5_cc,Checkers,1
+AKQAI78JTXXC9,Q7type_7_battle,Checkers,1
+AKQAI78JTXXC9,Q8type_8_performance,Checkers,1
+AKQAI78JTXXC9,Q9divisible_unitary,Checkers,-1
+AKQAI78JTXXC9,Q10maximizing,Checkers,-1
+AKQAI78JTXXC9,Q11optimizing,Checkers,-1
+AKQAI78JTXXC9,Q13outcome_multip,Checkers,-1
+AKQAI78JTXXC9,Q14sol_scheme_mul,Checkers,-1
+AKQAI78JTXXC9,Q15dec_verifiability,Checkers,1
+AKQAI78JTXXC9,Q16shared_knowledge,Checkers,1
+AKQAI78JTXXC9,Q17within_sys_sol,Checkers,1
+AKQAI78JTXXC9,Q18ans_recog,Checkers,1
+AKQAI78JTXXC9,Q19time_solvability,Checkers,1
+AKQAI78JTXXC9,Q20type_3_type_4,Checkers,1
+AKQAI78JTXXC9,Q22confl_tradeoffs,Checkers,-1
+AKQAI78JTXXC9,Q23ss_out_uncert,Checkers,1
+AKQAI78JTXXC9,Q24eureka_question,Checkers,-1
 ARI1EMAHUA9PO,Q1concept_behav,Graph coloring task,-1
 ARI1EMAHUA9PO,Q3type_1_planning,Graph coloring task,-1
 ARI1EMAHUA9PO,Q4type_2_generate,Graph coloring task,-1
@@ -2179,6 +2259,26 @@ A1VRG5HKZC0H0C,Q20type_3_type_4,Word completion given starting letter,1
 A1VRG5HKZC0H0C,Q22confl_tradeoffs,Word completion given starting letter,-1
 A1VRG5HKZC0H0C,Q23ss_out_uncert,Word completion given starting letter,-1
 A1VRG5HKZC0H0C,Q24eureka_question,Word completion given starting letter,-1
+A2531UD0IGT731,Q1concept_behav,Checkers,-1
+A2531UD0IGT731,Q3type_1_planning,Checkers,1
+A2531UD0IGT731,Q4type_2_generate,Checkers,-1
+A2531UD0IGT731,Q6type_5_cc,Checkers,-1
+A2531UD0IGT731,Q7type_7_battle,Checkers,1
+A2531UD0IGT731,Q8type_8_performance,Checkers,1
+A2531UD0IGT731,Q9divisible_unitary,Checkers,-1
+A2531UD0IGT731,Q10maximizing,Checkers,-1
+A2531UD0IGT731,Q11optimizing,Checkers,1
+A2531UD0IGT731,Q13outcome_multip,Checkers,-1
+A2531UD0IGT731,Q14sol_scheme_mul,Checkers,-1
+A2531UD0IGT731,Q15dec_verifiability,Checkers,1
+A2531UD0IGT731,Q16shared_knowledge,Checkers,1
+A2531UD0IGT731,Q17within_sys_sol,Checkers,1
+A2531UD0IGT731,Q18ans_recog,Checkers,1
+A2531UD0IGT731,Q19time_solvability,Checkers,1
+A2531UD0IGT731,Q20type_3_type_4,Checkers,NA
+A2531UD0IGT731,Q22confl_tradeoffs,Checkers,1
+A2531UD0IGT731,Q23ss_out_uncert,Checkers,1
+A2531UD0IGT731,Q24eureka_question,Checkers,-1
 A1VRG5HKZC0H0C,Q1concept_behav,Recall videos,-1
 A1VRG5HKZC0H0C,Q3type_1_planning,Recall videos,-1
 A1VRG5HKZC0H0C,Q4type_2_generate,Recall videos,-1
@@ -3399,6 +3499,26 @@ A3NXT3OVGL7QNR,Q20type_3_type_4,Estimating social quantity,1
 A3NXT3OVGL7QNR,Q22confl_tradeoffs,Estimating social quantity,-1
 A3NXT3OVGL7QNR,Q23ss_out_uncert,Estimating social quantity,1
 A3NXT3OVGL7QNR,Q24eureka_question,Estimating social quantity,-1
+A2VRDE2FHCBMF8,Q1concept_behav,Checkers,-1
+A2VRDE2FHCBMF8,Q3type_1_planning,Checkers,-1
+A2VRDE2FHCBMF8,Q4type_2_generate,Checkers,-1
+A2VRDE2FHCBMF8,Q6type_5_cc,Checkers,-1
+A2VRDE2FHCBMF8,Q7type_7_battle,Checkers,1
+A2VRDE2FHCBMF8,Q8type_8_performance,Checkers,1
+A2VRDE2FHCBMF8,Q9divisible_unitary,Checkers,-1
+A2VRDE2FHCBMF8,Q10maximizing,Checkers,-1
+A2VRDE2FHCBMF8,Q11optimizing,Checkers,1
+A2VRDE2FHCBMF8,Q13outcome_multip,Checkers,-1
+A2VRDE2FHCBMF8,Q14sol_scheme_mul,Checkers,-1
+A2VRDE2FHCBMF8,Q15dec_verifiability,Checkers,1
+A2VRDE2FHCBMF8,Q16shared_knowledge,Checkers,1
+A2VRDE2FHCBMF8,Q17within_sys_sol,Checkers,1
+A2VRDE2FHCBMF8,Q18ans_recog,Checkers,1
+A2VRDE2FHCBMF8,Q19time_solvability,Checkers,1
+A2VRDE2FHCBMF8,Q20type_3_type_4,Checkers,NA
+A2VRDE2FHCBMF8,Q22confl_tradeoffs,Checkers,-1
+A2VRDE2FHCBMF8,Q23ss_out_uncert,Checkers,1
+A2VRDE2FHCBMF8,Q24eureka_question,Checkers,-1
 A3CGQOJC28OVGN,Q1concept_behav,Wildcat Wells,-1
 A3CGQOJC28OVGN,Q3type_1_planning,Wildcat Wells,1
 A3CGQOJC28OVGN,Q4type_2_generate,Wildcat Wells,-1
@@ -3739,6 +3859,26 @@ A33PHCBUOD4WKD,Q20type_3_type_4,Railroad Route Construction game,-1
 A33PHCBUOD4WKD,Q22confl_tradeoffs,Railroad Route Construction game,1
 A33PHCBUOD4WKD,Q23ss_out_uncert,Railroad Route Construction game,1
 A33PHCBUOD4WKD,Q24eureka_question,Railroad Route Construction game,-1
+AWAW665TQQP2F,Q1concept_behav,Checkers,1
+AWAW665TQQP2F,Q3type_1_planning,Checkers,-1
+AWAW665TQQP2F,Q4type_2_generate,Checkers,-1
+AWAW665TQQP2F,Q6type_5_cc,Checkers,-1
+AWAW665TQQP2F,Q7type_7_battle,Checkers,1
+AWAW665TQQP2F,Q8type_8_performance,Checkers,1
+AWAW665TQQP2F,Q9divisible_unitary,Checkers,-1
+AWAW665TQQP2F,Q10maximizing,Checkers,1
+AWAW665TQQP2F,Q11optimizing,Checkers,1
+AWAW665TQQP2F,Q13outcome_multip,Checkers,1
+AWAW665TQQP2F,Q14sol_scheme_mul,Checkers,-1
+AWAW665TQQP2F,Q15dec_verifiability,Checkers,1
+AWAW665TQQP2F,Q16shared_knowledge,Checkers,1
+AWAW665TQQP2F,Q17within_sys_sol,Checkers,1
+AWAW665TQQP2F,Q18ans_recog,Checkers,1
+AWAW665TQQP2F,Q19time_solvability,Checkers,1
+AWAW665TQQP2F,Q20type_3_type_4,Checkers,1
+AWAW665TQQP2F,Q22confl_tradeoffs,Checkers,-1
+AWAW665TQQP2F,Q23ss_out_uncert,Checkers,1
+AWAW665TQQP2F,Q24eureka_question,Checkers,-1
 A2S64AUN7JI7ZS,Q1concept_behav,Husbands and wives transfer,-1
 A2S64AUN7JI7ZS,Q3type_1_planning,Husbands and wives transfer,1
 A2S64AUN7JI7ZS,Q4type_2_generate,Husbands and wives transfer,-1

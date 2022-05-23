@@ -14,6 +14,7 @@ Husbands and wives transfer,Q10maximizing_elaboration,Because you're trying to a
 9 Dot Problem,Q10maximizing_elaboration,"Pretty confident on this one, even though they are fighting against the clock."
 Recall images,Q10maximizing_elaboration,The memory game is timed
 Estimating pages of a book,Q10maximizing_elaboration,"The way I understand it, the limiting factor is the time - work as quickly as [possible top get as closely as possible, so I said yes."
+Visual Oddball Target,Q11optimizing_elaboration,"I struggled somewhat with this one because there is only one correct answer to each grouping, however it isn't possible to get close to the correct answer without actually being correct, so it doesn't seem like precision is the right concept to describe it"
 Recall videos,Q11optimizing_elaboration,"This one was hard, depending on definitions. There is one correct answer to each question, so in that sense the outcome is precise."
 9 Dot Problem,Q11optimizing_elaboration,"Instructions say up to 4 lines, but it would take the full 4 lines to achieve the goal."
 Allocating resources to programs,Q11optimizing_elaboration,"I took the precision as the $500,000 that must be allocated."
@@ -27,6 +28,7 @@ Abstract grid task,Q11optimizing_elaboration,"There is an image that must be rec
 Railroad Route Construction game,Q11optimizing_elaboration,No trouble.
 Putting food into categories,Q11optimizing_elaboration,"I'm am wobbling on this one because of the word ""maximum"". I feel like there is an absolute goal, but the rest of the language of the goal does not speak to precision, so it appears as if there is not a known amount of categories"
 Putting food into categories,Q13outcome_multip_elaboration,It feels like it is hard to know a precise number of subgroups prior.
+Checkers,Q13outcome_multip_elaboration,"Technically, checkers is a solved game, so in my opinion there is always a ""best solution"" for it."
 "Wolf, goat and cabbage transfer",Q13outcome_multip_elaboration,there are a few different scenarios that will accomplish the task but not many
 To evacuate or not to evacuate,Q13outcome_multip_elaboration,"I went back and forth on this one, I could see it going either way but if someone wants to avoid risk, the best solution might be evacuating even if a disaster does not strike."
 Estimating pages of a book,Q13outcome_multip_elaboration,Guessing exactly right would be difficult but it's the best solution
@@ -105,13 +107,16 @@ Wildcat Wells,Q19time_solvability_elaboration,"I THINK you could do that, but th
 Allocating resources to programs,Q19time_solvability_elaboration,"Again, in this scenario, the solution is to distribute 500K among 3 programs. That is what is evaluated. What is not evaluated is how the funds were distributed or why one program received more funds over another program."
 Railroad Route Construction game,Q19time_solvability_elaboration,No trouble.
 Divergent Association Task,Q19time_solvability_elaboration,The solution has a subjective element attached to it.
+Visual Oddball Target,Q1concept_behav_elaboration,There is a physiological aspect to visual perception - someone with poor vision due to a physical ailment may struggle more with this visual perception task - so it was a little harder to define for me.
 Wildcat Wells,Q1concept_behav_elaboration,"i assume this is a game map, not a map of an actual area where they drill for wells but this may need to be specified if people are being anal about the details"
 Shopping plan,Q1concept_behav_elaboration,"I'm assuming this is a theoretical trip to a grocery and not an actual trip to the store, which is why I'm answering 'mental' here."
 Advertisement writing,Q1concept_behav_elaboration,I thought it would take more time coming up with an answer than writing it.
 Railroad Route Construction game,Q1concept_behav_elaboration,No trouble.
+Checkers,Q1concept_behav_elaboration,I had no issue answering this question.
 Putting food into categories,Q1concept_behav_elaboration,"The goal does not specify the worker mechanic to create the criteria (i.e. fill-in blank, choose with mouse)"
 Allocating resources to programs,Q20type_3_type_4_elaboration,The allocation will be determined by consensus.
 Recall videos,Q20type_3_type_4_elaboration,I think I picked the right thing. Because subjective is based on people's thoughts. 
+Checkers,Q20type_3_type_4_elaboration,"Playing this game and winning it's not an operation that can be calculated or selected, and there are many, many ways to reach the final goal of removing all the opponent's rounds"
 Allocating resources to programs,Q20type_3_type_4_elaboration,"If a participant completed the objective of distributing the whole 500K, then I could objectively say that the goal was accomplished."
 Railroad Route Construction game,Q20type_3_type_4_elaboration,No trouble.
 To evacuate or not to evacuate,Q21intellective_judg_1_elaboration,I think there is an element of a participant's risk tolerance in coming up with the best solution.
@@ -127,6 +132,7 @@ Wildcat Wells,Q22confl_tradeoffs_elaboration,it's tough to definitively answer t
 Allocating resources to programs,Q22confl_tradeoffs_elaboration,"There are tradeoffs because some programs will not receive the same amount of money even if you wanted them to and as such, you have to decide which of the 3 programs would be more beneficial."
 Railroad Route Construction game,Q22confl_tradeoffs_elaboration,No trouble.
 Husbands and wives transfer,Q22confl_tradeoffs_elaboration,Once you understand the rules I don't think they conflict
+Visual Oddball Target,Q23ss_out_uncert_elaboration,It is not clear whether participants get feedback on their responses immediately or not
 Recall videos,Q23ss_out_uncert_elaboration,"assuming they're told after each question whether they're correct, then no.  if they wait till the end to be graded, then yes"
 Estimating pages of a book,Q23ss_out_uncert_elaboration,Since they're not being told if they were correct or not I would say they're unsure
 Recall association,Q23ss_out_uncert_elaboration,Participants might not be sure if they recalled the correct words. The wording does not specify if participate score is shown live or at the end.
@@ -186,6 +192,7 @@ Search for Oil Task,Q8type_8_performance_elaboration,Because you can obtain poin
 Letters-to-numbers problems (cryptography),Q8type_8_performance_elaboration,It's based on the highest score not pass/fail
 Wildcat Wells,Q8type_8_performance_elaboration,"There is no info in the description about most points. It sounds like the winner is the winner and everyone else looses. Nothing about points or anything, just find the most oil"
 Railroad Route Construction game,Q8type_8_performance_elaboration,No trouble.
+Checkers,Q8type_8_performance_elaboration,I'm not really sure if you have all of the computer's pieces just on a technicality because you can block them in and win the game when they have a piece left.
 Husbands and wives transfer,Q8type_8_performance_elaboration,"There is only a few ways to accomplish the task, and it either works or you fail"
 Guessing the correlation,Q8type_8_performance_elaboration,"They are ""evaluated on accuracy"" I take to mean thqat there is some partial crediut or percebnt score they are given. They dont have to be 100% precise"
 Recall association,Q9divisible_unitary_elaboration,not sure if it is possible for different participants in a group to be given different words and then they come together.
