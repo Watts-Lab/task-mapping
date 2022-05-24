@@ -265,12 +265,12 @@ df.karger %>% write_csv('df_for_karger_MAIN.csv')
 previously_tested <- read_csv('../survey_workflows/previous_tested.csv')
 
 df.rater_distribution <- df.mapping.payment %>%
-  select(user, num_tasks_completed) %>%
-  left_join(previously_tested, by = c("user" = "name")) %>%
-  group_by(user) %>% # get rid of people who did the old pre-test
-        arrange(user, desc(score_pct)) %>% 
+  select(WorkerId, num_tasks_completed) %>%
+  left_join(previously_tested, by = c("WorkerId" = "name")) %>%
+  group_by(WorkerId) %>% # get rid of people who did the old pre-test
+        arrange(WorkerId, desc(score_pct)) %>% 
         slice(1) %>%
-  select(user, num_tasks_completed, score_pct) %>% ungroup() %>%
+  select(WorkerId, num_tasks_completed, score_pct) %>% ungroup() %>%
   group_by(score_pct) %>%
   summarize(num_workers = sum(num_tasks_completed))
   
