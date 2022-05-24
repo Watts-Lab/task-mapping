@@ -19,7 +19,7 @@ library(tidyverse)
 df.mapping.raw <- read_delim('http://task-robot.glitch.me/results/survey/csv')
 ```
 
-Ensure we don't have any accidental resubmissions -- sometimes the serve logs a "double click" as two separate maps!
+Ensure we don't have any accidental resubmissions -- sometimes the server logs a "double click" as two separate maps!
 
 ```{r}
 df.mapping.raw <- distinct(df.mapping.raw, user, task, .keep_all = T)
@@ -34,26 +34,34 @@ df.mapping.raw %>% write_csv('../raw_map.csv')
 # Create a CSV of workers to pay in `survey_workflows` with WorkerID, date, how many tasks they did, whether they've been paid for it
 
 ```{r}
+# The same spreadsheet logs how much we previously paid; we read this in and update
+df.payment.prev <- read_csv('../survey_workflows/mapper_payment.csv') %>% 
+  select(user, amount_paid, last_payment_date)
+
+# First, we keep track of everyone's cumulative payments
 df.mapping.payment <- df.mapping.raw %>%
   select(
     user, updatedAt
   ) %>%
   mutate(
     pay = 3, # flat rate of $3 per task
-    paid = 0 # no one is paid -- TODO: change this to an ifelse after we have paid people
+    paid = 0
   ) %>%
   group_by(user) %>%
-  filter(paid == 0 ) %>% # this is where we'd filter out already-paid tasks
   summarize(
     lastUpdate = last(updatedAt),
-    amount_to_pay = sum(pay),
-    amount_paid = sum(paid),
+    payment = sum(pay),
     num_tasks_completed = amount_to_pay/3
   ) 
 
+# Then we subtract off how much they have already been paid
+df.mapping.payment <- df.mapping.payment %>% inner_join(df.payment.prev, by = "user") %>%
+  mutate(
+    amount_to_pay = payment - amount_paid
+  )
+
 df.mapping.payment %>% write_csv('../survey_workflows/mapper_payment.csv')
 ```
-
 
 # Take a look at the Task Map Itself
 ```{r}
