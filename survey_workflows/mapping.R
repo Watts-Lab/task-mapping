@@ -94,7 +94,7 @@
       
       #--- HIGH SCORING People : Preparing + Sending Surveys ----
       #--- PAYING People ----
-      unpaid_people <- read_csv("mapper_payment.csv")%>% 
+      unpaid_people <- read_csv("mapper_payment.csv")%>%
         mutate(amount_to_pay = payment - amount_paid)
       
       #--- REGISTERING Payments (complete surveys)---
@@ -143,7 +143,9 @@
       payments <- tibble(WorkerId = unpaid_people$WorkerId, 
                          paid = unpaid_people$amount_to_pay, 
                          last_payment_date = 
-                           with_tz(now(), "America/New_York"))
+                           with_tz(
+                             as.POSIXct(now()), "America/New_York"
+                           ))
       
       #--- Registering CSV ---- 
       final_mapping_csv <- unpaid_people %>% 
