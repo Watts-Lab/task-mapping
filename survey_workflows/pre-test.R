@@ -118,7 +118,12 @@
         "text"
       ))
       
-      
+      failed_workers <- send$failed_workers
+      panel <- our_panel %>%
+        mutate(
+          Active = ifelse(WorkerId %in% failed_workers, FALSE, Active)
+        ) %>% 
+        write_csv("our_panel.csv")
       #--- PAYING People ----
       unpaid_people <- our_panel %>% 
         filter(paid == 0 & `pre-test` == 1)
