@@ -3919,6 +3919,26 @@ A2H5V1V8QIY8Y7,Q20type_3_type_4,Search for Oil Task,1
 A2H5V1V8QIY8Y7,Q22confl_tradeoffs,Search for Oil Task,-1
 A2H5V1V8QIY8Y7,Q23ss_out_uncert,Search for Oil Task,1
 A2H5V1V8QIY8Y7,Q24eureka_question,Search for Oil Task,-1
+A3NXT3OVGL7QNR,Q1concept_behav,Computer maze,-1
+A3NXT3OVGL7QNR,Q3type_1_planning,Computer maze,-1
+A3NXT3OVGL7QNR,Q4type_2_generate,Computer maze,-1
+A3NXT3OVGL7QNR,Q6type_5_cc,Computer maze,-1
+A3NXT3OVGL7QNR,Q7type_7_battle,Computer maze,-1
+A3NXT3OVGL7QNR,Q8type_8_performance,Computer maze,-1
+A3NXT3OVGL7QNR,Q9divisible_unitary,Computer maze,1
+A3NXT3OVGL7QNR,Q10maximizing,Computer maze,1
+A3NXT3OVGL7QNR,Q11optimizing,Computer maze,-1
+A3NXT3OVGL7QNR,Q13outcome_multip,Computer maze,-1
+A3NXT3OVGL7QNR,Q14sol_scheme_mul,Computer maze,1
+A3NXT3OVGL7QNR,Q15dec_verifiability,Computer maze,1
+A3NXT3OVGL7QNR,Q16shared_knowledge,Computer maze,1
+A3NXT3OVGL7QNR,Q17within_sys_sol,Computer maze,1
+A3NXT3OVGL7QNR,Q18ans_recog,Computer maze,1
+A3NXT3OVGL7QNR,Q19time_solvability,Computer maze,1
+A3NXT3OVGL7QNR,Q20type_3_type_4,Computer maze,1
+A3NXT3OVGL7QNR,Q22confl_tradeoffs,Computer maze,-1
+A3NXT3OVGL7QNR,Q23ss_out_uncert,Computer maze,-1
+A3NXT3OVGL7QNR,Q24eureka_question,Computer maze,-1
 A3NXT3OVGL7QNR,Q1concept_behav,Estimating social quantity,-1
 A3NXT3OVGL7QNR,Q3type_1_planning,Estimating social quantity,-1
 A3NXT3OVGL7QNR,Q4type_2_generate,Estimating social quantity,-1

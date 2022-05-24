@@ -36,7 +36,7 @@ df.mapping.raw %>% write_csv('../raw_map.csv')
 ```{r}
 # The same spreadsheet logs how much we previously paid; we read this in and update
 df.payment.prev <- read_csv('../survey_workflows/mapper_payment.csv') %>% 
-  select(user, amount_paid, last_payment_date)
+  select(WorkerId, amount_paid, last_payment_date)
 
 # First, we keep track of everyone's cumulative payments
 df.mapping.payment <- df.mapping.raw %>%
@@ -51,16 +51,19 @@ df.mapping.payment <- df.mapping.raw %>%
   summarize(
     lastUpdate = last(updatedAt),
     payment = sum(pay),
-    num_tasks_completed = amount_to_pay/3
-  ) 
+    num_tasks_completed = payment/3
+  ) %>% rename(WorkerId = user)
 
 # Then we subtract off how much they have already been paid
-df.mapping.payment <- df.mapping.payment %>% inner_join(df.payment.prev, by = "user") %>%
+df.mapping.payment.new <- df.mapping.payment %>% left_join(df.payment.prev, by = "WorkerId") %>%
+   mutate(
+     amount_paid = ifelse(is.na(amount_paid), 0, amount_paid)
+   ) %>%
   mutate(
     amount_to_pay = payment - amount_paid
   )
 
-df.mapping.payment %>% write_csv('../survey_workflows/mapper_payment.csv')
+df.mapping.payment.new %>% write_csv('../survey_workflows/mapper_payment.csv')
 ```
 
 # Take a look at the Task Map Itself
