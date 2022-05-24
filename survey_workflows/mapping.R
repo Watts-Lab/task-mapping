@@ -94,15 +94,14 @@
       
       #--- HIGH SCORING People : Preparing + Sending Surveys ----
       #--- PAYING People ----
-      unpaid_people <- read_csv("mapper_payment.csv")%>%
-        mutate(amount_to_pay = payment - amount_paid)
+      mapper_payment <- read_csv("mapper_payment.csv")
       
       #--- REGISTERING Payments (complete surveys)---
       body <- list(
-        "bonuses" = unpaid_people$amount_to_pay, 
+        "bonuses" = mapper_payment$amount_to_pay, 
         "comment" = paste0("Task-Mapping Mapping round 1"),
         "project" = "Task Mapping",
-        "worker_ids" = unpaid_people$WorkerId
+        "worker_ids" = mapper_payment$WorkerId
       )
       
       post_register_pay <- POST(
@@ -123,7 +122,7 @@
   
       
       #--- PAYING People (complete surveys)---
-      payment_token <- "4fkrFF8tSYN7pg"
+      payment_token <- "O88EyaBGwbphcw"
       
       body <- list(payment_token = payment_token)
       
@@ -140,18 +139,17 @@
         "text"
       ))
       
-      payments <- tibble(WorkerId = unpaid_people$WorkerId, 
-                         paid = unpaid_people$amount_to_pay, 
-                         last_payment_date = 
-                           with_tz(
-                             as.POSIXct(now()), "America/New_York"
-                           ))
+      payments <- tibble(WorkerId = mapper_payment$WorkerId, 
+                         paid = mapper_payment$amount_to_pay, 
+                         last_payment_date = with_tz(now(), "America/New_York"))
       
       #--- Registering CSV ---- 
-      final_mapping_csv <- unpaid_people %>% 
-        left_join(payments) %>% 
-        mutate(amount_paid = amount_paid + paid, 
-               amount_to_pay = payment - amount_paid) %>% 
-        select(-paid) %>% 
+      final_mapping_csv <- mapper_payment %>% 
+        select(-last_payment_date) %>% 
+        left_join(payments) %>%
+        mutate(
+          amount_paid = amount_paid + paid, 
+          amount_to_pay = payment - amount_paid) %>%
+        select(-paid) %>%
         write_csv("mapper_payment.csv")
       
