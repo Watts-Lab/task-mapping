@@ -18,7 +18,7 @@ Every problem has an objectively correct answer --- the mathematical maximum of 
 
 Participants are scored based on how close their final guess is to the true maximum. If the answer is 0, then the participant gets the highest possible number of points if they guess 0; a participant who guesses 2 will get a higher score than someone whose final guess is 10. Participants aim to get as close as possible to the correct answer.
 
-Finally, if participants are working together, each participant gets a limited number of guesses, and then they decide their final guess as a team.
+Finally, if participants are working together, each one gets a limited number of guesses, and then they decide their final guess as a team.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
