@@ -19,7 +19,7 @@ The following details are not the main parts of the task, but rather additional 
 Quick eye (observation)
 
 ### UI-UX Allowed Processes
-Receive instructions, complete distractor task (solve a word search task, freely recall targets, letter cancellation), work alone or in pairs, finally recall task as individuals.
+Click on targets
 
 ### Other Allowed Processes
 NA
