@@ -1,6 +1,6 @@
 # Hidden figures in a picture (Recall Task)
 
-Mapped by: paniukhina 
+Mapped by: xehu 
 
 ## 1. Stimulus Complex 
 Participants see an incredibly busy and complex image that contains many hidden animals. Imagine a picture that looks like "Where's Waldo" --- with lots of people and animals in one detailed, colorful image. Participants are then given a list of animals that they are supposed to find in the picture: for example, lion, penguin, dolphin, elephant.
@@ -25,7 +25,7 @@ The following details are not the main parts of the task, but rather additional 
 Quick eye (observation)
 
 ### UI-UX Allowed Processes
-Receive instructions, complete distractor task (solve a word search task, freely recall targets, letter cancellation), work alone or in pairs, finally recall task as individuals.
+Type responses and submit
 
 ### Other Allowed Processes
 NA
