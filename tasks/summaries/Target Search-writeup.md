@@ -14,11 +14,11 @@ Of course, since the participants do not see the target, they have no idea how m
 ## 2. Goal Directives 
 The goal is to get the most points. In other words, participants need to find the coordinates of as many high-value cells as they can within a fixed amount of time and under a limited number of allowed guesses.
 
-For each guess, participants submit the coordinate of a blank cell (e.g., A5) and then get feedback about how many points they received. Based on feedback, they would try to figure out where the the experimenter's underlying "target" is and look for the high-scoring cells. 
+For each guess, participants submit the coordinate of a blank cell (e.g., A5) and then get feedback about how many points they received. Based on feedback, they would try to figure out where the the experimenter's underlying "target" is and look for the high-scoring cells. If they are working in teams, participants work together to determine their next guess.
 
 After a few guesses, participants can often "decipher" the logic of the sheet and will then be able to name the cells corresponding to the largest values. This is why this game is called "target search" --- participants are using each guess to learn about where the target is, and to search for the highest-value cells.
 
-Participants are evaluated based on the values of the cells they name. The score is maximized by naming as many cells with as large values as possible. Theoretically, it is possible to find the center of the target on your first try and then only name the highest-value cells, but this is not likely to happen; most participants will experience some trial and error. If they are working in teams, participants work together to determine their next guess.
+Participants are evaluated based on the values of the cells they name. The score is maximized by naming as many cells with as large values as possible. Theoretically, the best possible score would be to find the center of the target on your first try and then only name the highest-value cells, but this is not likely to happen; most participants will experience some trial and error.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
