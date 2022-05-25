@@ -779,6 +779,26 @@ A1YSYI926BBOHW,Q20type_3_type_4,Categorization problem,1
 A1YSYI926BBOHW,Q22confl_tradeoffs,Categorization problem,-1
 A1YSYI926BBOHW,Q23ss_out_uncert,Categorization problem,-1
 A1YSYI926BBOHW,Q24eureka_question,Categorization problem,-1
+A3JAM040VWXHDO,Q1concept_behav,Target Search,-1
+A3JAM040VWXHDO,Q3type_1_planning,Target Search,-1
+A3JAM040VWXHDO,Q4type_2_generate,Target Search,-1
+A3JAM040VWXHDO,Q6type_5_cc,Target Search,-1
+A3JAM040VWXHDO,Q7type_7_battle,Target Search,-1
+A3JAM040VWXHDO,Q8type_8_performance,Target Search,-1
+A3JAM040VWXHDO,Q9divisible_unitary,Target Search,-1
+A3JAM040VWXHDO,Q10maximizing,Target Search,-1
+A3JAM040VWXHDO,Q11optimizing,Target Search,-1
+A3JAM040VWXHDO,Q13outcome_multip,Target Search,1
+A3JAM040VWXHDO,Q14sol_scheme_mul,Target Search,-1
+A3JAM040VWXHDO,Q15dec_verifiability,Target Search,1
+A3JAM040VWXHDO,Q16shared_knowledge,Target Search,1
+A3JAM040VWXHDO,Q17within_sys_sol,Target Search,1
+A3JAM040VWXHDO,Q18ans_recog,Target Search,1
+A3JAM040VWXHDO,Q19time_solvability,Target Search,1
+A3JAM040VWXHDO,Q20type_3_type_4,Target Search,1
+A3JAM040VWXHDO,Q22confl_tradeoffs,Target Search,1
+A3JAM040VWXHDO,Q23ss_out_uncert,Target Search,1
+A3JAM040VWXHDO,Q24eureka_question,Target Search,-1
 A1YSYI926BBOHW,Q1concept_behav,Find the maximum,-1
 A1YSYI926BBOHW,Q3type_1_planning,Find the maximum,-1
 A1YSYI926BBOHW,Q4type_2_generate,Find the maximum,1
@@ -839,6 +859,26 @@ A1I72NHC21347A,Q20type_3_type_4,Recall association,1
 A1I72NHC21347A,Q22confl_tradeoffs,Recall association,-1
 A1I72NHC21347A,Q23ss_out_uncert,Recall association,-1
 A1I72NHC21347A,Q24eureka_question,Recall association,-1
+A3S5ZB4D98JWT1,Q1concept_behav,Reading the mind in the eyes,-1
+A3S5ZB4D98JWT1,Q3type_1_planning,Reading the mind in the eyes,-1
+A3S5ZB4D98JWT1,Q4type_2_generate,Reading the mind in the eyes,-1
+A3S5ZB4D98JWT1,Q6type_5_cc,Reading the mind in the eyes,-1
+A3S5ZB4D98JWT1,Q7type_7_battle,Reading the mind in the eyes,1
+A3S5ZB4D98JWT1,Q8type_8_performance,Reading the mind in the eyes,-1
+A3S5ZB4D98JWT1,Q9divisible_unitary,Reading the mind in the eyes,-1
+A3S5ZB4D98JWT1,Q10maximizing,Reading the mind in the eyes,1
+A3S5ZB4D98JWT1,Q11optimizing,Reading the mind in the eyes,-1
+A3S5ZB4D98JWT1,Q13outcome_multip,Reading the mind in the eyes,1
+A3S5ZB4D98JWT1,Q14sol_scheme_mul,Reading the mind in the eyes,1
+A3S5ZB4D98JWT1,Q15dec_verifiability,Reading the mind in the eyes,1
+A3S5ZB4D98JWT1,Q16shared_knowledge,Reading the mind in the eyes,1
+A3S5ZB4D98JWT1,Q17within_sys_sol,Reading the mind in the eyes,1
+A3S5ZB4D98JWT1,Q18ans_recog,Reading the mind in the eyes,1
+A3S5ZB4D98JWT1,Q19time_solvability,Reading the mind in the eyes,1
+A3S5ZB4D98JWT1,Q20type_3_type_4,Reading the mind in the eyes,1
+A3S5ZB4D98JWT1,Q22confl_tradeoffs,Reading the mind in the eyes,-1
+A3S5ZB4D98JWT1,Q23ss_out_uncert,Reading the mind in the eyes,1
+A3S5ZB4D98JWT1,Q24eureka_question,Reading the mind in the eyes,-1
 AXPZAP62ZYWP8,Q1concept_behav,Desert survival,-1
 AXPZAP62ZYWP8,Q3type_1_planning,Desert survival,1
 AXPZAP62ZYWP8,Q4type_2_generate,Desert survival,1
@@ -1519,6 +1559,26 @@ AA5ZDXAA2DLY1,Q20type_3_type_4,Reproducing arts,1
 AA5ZDXAA2DLY1,Q22confl_tradeoffs,Reproducing arts,-1
 AA5ZDXAA2DLY1,Q23ss_out_uncert,Reproducing arts,1
 AA5ZDXAA2DLY1,Q24eureka_question,Reproducing arts,-1
+A3JAM040VWXHDO,Q1concept_behav,The N light bulbs game,-1
+A3JAM040VWXHDO,Q3type_1_planning,The N light bulbs game,-1
+A3JAM040VWXHDO,Q4type_2_generate,The N light bulbs game,-1
+A3JAM040VWXHDO,Q6type_5_cc,The N light bulbs game,-1
+A3JAM040VWXHDO,Q7type_7_battle,The N light bulbs game,-1
+A3JAM040VWXHDO,Q8type_8_performance,The N light bulbs game,-1
+A3JAM040VWXHDO,Q9divisible_unitary,The N light bulbs game,-1
+A3JAM040VWXHDO,Q10maximizing,The N light bulbs game,-1
+A3JAM040VWXHDO,Q11optimizing,The N light bulbs game,-1
+A3JAM040VWXHDO,Q13outcome_multip,The N light bulbs game,1
+A3JAM040VWXHDO,Q14sol_scheme_mul,The N light bulbs game,-1
+A3JAM040VWXHDO,Q15dec_verifiability,The N light bulbs game,1
+A3JAM040VWXHDO,Q16shared_knowledge,The N light bulbs game,1
+A3JAM040VWXHDO,Q17within_sys_sol,The N light bulbs game,1
+A3JAM040VWXHDO,Q18ans_recog,The N light bulbs game,1
+A3JAM040VWXHDO,Q19time_solvability,The N light bulbs game,1
+A3JAM040VWXHDO,Q20type_3_type_4,The N light bulbs game,1
+A3JAM040VWXHDO,Q22confl_tradeoffs,The N light bulbs game,1
+A3JAM040VWXHDO,Q23ss_out_uncert,The N light bulbs game,1
+A3JAM040VWXHDO,Q24eureka_question,The N light bulbs game,-1
 A3I9XLIHPPWPN1,Q1concept_behav,Whac-A-Mole,-1
 A3I9XLIHPPWPN1,Q3type_1_planning,Whac-A-Mole,-1
 A3I9XLIHPPWPN1,Q4type_2_generate,Whac-A-Mole,-1
@@ -1619,6 +1679,26 @@ AKQAI78JTXXC9,Q20type_3_type_4,Recall videos,1
 AKQAI78JTXXC9,Q22confl_tradeoffs,Recall videos,-1
 AKQAI78JTXXC9,Q23ss_out_uncert,Recall videos,-1
 AKQAI78JTXXC9,Q24eureka_question,Recall videos,-1
+A5NE8TWS8ZV7B,Q1concept_behav,Target Search,-1
+A5NE8TWS8ZV7B,Q3type_1_planning,Target Search,-1
+A5NE8TWS8ZV7B,Q4type_2_generate,Target Search,-1
+A5NE8TWS8ZV7B,Q6type_5_cc,Target Search,1
+A5NE8TWS8ZV7B,Q7type_7_battle,Target Search,-1
+A5NE8TWS8ZV7B,Q8type_8_performance,Target Search,-1
+A5NE8TWS8ZV7B,Q9divisible_unitary,Target Search,-1
+A5NE8TWS8ZV7B,Q10maximizing,Target Search,1
+A5NE8TWS8ZV7B,Q11optimizing,Target Search,1
+A5NE8TWS8ZV7B,Q13outcome_multip,Target Search,1
+A5NE8TWS8ZV7B,Q14sol_scheme_mul,Target Search,-1
+A5NE8TWS8ZV7B,Q15dec_verifiability,Target Search,1
+A5NE8TWS8ZV7B,Q16shared_knowledge,Target Search,1
+A5NE8TWS8ZV7B,Q17within_sys_sol,Target Search,1
+A5NE8TWS8ZV7B,Q18ans_recog,Target Search,1
+A5NE8TWS8ZV7B,Q19time_solvability,Target Search,1
+A5NE8TWS8ZV7B,Q20type_3_type_4,Target Search,1
+A5NE8TWS8ZV7B,Q22confl_tradeoffs,Target Search,-1
+A5NE8TWS8ZV7B,Q23ss_out_uncert,Target Search,1
+A5NE8TWS8ZV7B,Q24eureka_question,Target Search,1
 AKQAI78JTXXC9,Q1concept_behav,Railroad Route Construction game,-1
 AKQAI78JTXXC9,Q3type_1_planning,Railroad Route Construction game,-1
 AKQAI78JTXXC9,Q4type_2_generate,Railroad Route Construction game,-1
@@ -1699,6 +1779,26 @@ A2TLN8489YGY81,Q20type_3_type_4,To evacuate or not to evacuate,1
 A2TLN8489YGY81,Q22confl_tradeoffs,To evacuate or not to evacuate,1
 A2TLN8489YGY81,Q23ss_out_uncert,To evacuate or not to evacuate,1
 A2TLN8489YGY81,Q24eureka_question,To evacuate or not to evacuate,-1
+A3JAM040VWXHDO,Q1concept_behav,Reading the mind in the eyes,-1
+A3JAM040VWXHDO,Q3type_1_planning,Reading the mind in the eyes,-1
+A3JAM040VWXHDO,Q4type_2_generate,Reading the mind in the eyes,-1
+A3JAM040VWXHDO,Q6type_5_cc,Reading the mind in the eyes,-1
+A3JAM040VWXHDO,Q7type_7_battle,Reading the mind in the eyes,-1
+A3JAM040VWXHDO,Q8type_8_performance,Reading the mind in the eyes,-1
+A3JAM040VWXHDO,Q9divisible_unitary,Reading the mind in the eyes,-1
+A3JAM040VWXHDO,Q10maximizing,Reading the mind in the eyes,-1
+A3JAM040VWXHDO,Q11optimizing,Reading the mind in the eyes,-1
+A3JAM040VWXHDO,Q13outcome_multip,Reading the mind in the eyes,1
+A3JAM040VWXHDO,Q14sol_scheme_mul,Reading the mind in the eyes,-1
+A3JAM040VWXHDO,Q15dec_verifiability,Reading the mind in the eyes,1
+A3JAM040VWXHDO,Q16shared_knowledge,Reading the mind in the eyes,1
+A3JAM040VWXHDO,Q17within_sys_sol,Reading the mind in the eyes,1
+A3JAM040VWXHDO,Q18ans_recog,Reading the mind in the eyes,1
+A3JAM040VWXHDO,Q19time_solvability,Reading the mind in the eyes,1
+A3JAM040VWXHDO,Q20type_3_type_4,Reading the mind in the eyes,1
+A3JAM040VWXHDO,Q22confl_tradeoffs,Reading the mind in the eyes,-1
+A3JAM040VWXHDO,Q23ss_out_uncert,Reading the mind in the eyes,-1
+A3JAM040VWXHDO,Q24eureka_question,Reading the mind in the eyes,-1
 A3NXT3OVGL7QNR,Q1concept_behav,Railroad Route Construction game (Impossible Version),-1
 A3NXT3OVGL7QNR,Q3type_1_planning,Railroad Route Construction game (Impossible Version),1
 A3NXT3OVGL7QNR,Q4type_2_generate,Railroad Route Construction game (Impossible Version),-1
@@ -2239,6 +2339,26 @@ A3EUGO4VR2N4G1,Q20type_3_type_4,Categorization problem,1
 A3EUGO4VR2N4G1,Q22confl_tradeoffs,Categorization problem,1
 A3EUGO4VR2N4G1,Q23ss_out_uncert,Categorization problem,-1
 A3EUGO4VR2N4G1,Q24eureka_question,Categorization problem,-1
+A1VRG5HKZC0H0C,Q1concept_behav,The N light bulbs game,-1
+A1VRG5HKZC0H0C,Q3type_1_planning,The N light bulbs game,-1
+A1VRG5HKZC0H0C,Q4type_2_generate,The N light bulbs game,-1
+A1VRG5HKZC0H0C,Q6type_5_cc,The N light bulbs game,-1
+A1VRG5HKZC0H0C,Q7type_7_battle,The N light bulbs game,-1
+A1VRG5HKZC0H0C,Q8type_8_performance,The N light bulbs game,-1
+A1VRG5HKZC0H0C,Q9divisible_unitary,The N light bulbs game,-1
+A1VRG5HKZC0H0C,Q10maximizing,The N light bulbs game,1
+A1VRG5HKZC0H0C,Q11optimizing,The N light bulbs game,-1
+A1VRG5HKZC0H0C,Q13outcome_multip,The N light bulbs game,1
+A1VRG5HKZC0H0C,Q14sol_scheme_mul,The N light bulbs game,-1
+A1VRG5HKZC0H0C,Q15dec_verifiability,The N light bulbs game,1
+A1VRG5HKZC0H0C,Q16shared_knowledge,The N light bulbs game,1
+A1VRG5HKZC0H0C,Q17within_sys_sol,The N light bulbs game,1
+A1VRG5HKZC0H0C,Q18ans_recog,The N light bulbs game,1
+A1VRG5HKZC0H0C,Q19time_solvability,The N light bulbs game,1
+A1VRG5HKZC0H0C,Q20type_3_type_4,The N light bulbs game,1
+A1VRG5HKZC0H0C,Q22confl_tradeoffs,The N light bulbs game,1
+A1VRG5HKZC0H0C,Q23ss_out_uncert,The N light bulbs game,1
+A1VRG5HKZC0H0C,Q24eureka_question,The N light bulbs game,-1
 A1VRG5HKZC0H0C,Q1concept_behav,To evacuate or not to evacuate,-1
 A1VRG5HKZC0H0C,Q3type_1_planning,To evacuate or not to evacuate,-1
 A1VRG5HKZC0H0C,Q4type_2_generate,To evacuate or not to evacuate,-1
@@ -2459,6 +2579,26 @@ A2TLN8489YGY81,Q20type_3_type_4,Recall association,1
 A2TLN8489YGY81,Q22confl_tradeoffs,Recall association,-1
 A2TLN8489YGY81,Q23ss_out_uncert,Recall association,1
 A2TLN8489YGY81,Q24eureka_question,Recall association,-1
+A3HL2LL0LEPZT8,Q1concept_behav,Target Search,-1
+A3HL2LL0LEPZT8,Q3type_1_planning,Target Search,-1
+A3HL2LL0LEPZT8,Q4type_2_generate,Target Search,-1
+A3HL2LL0LEPZT8,Q6type_5_cc,Target Search,-1
+A3HL2LL0LEPZT8,Q7type_7_battle,Target Search,-1
+A3HL2LL0LEPZT8,Q8type_8_performance,Target Search,-1
+A3HL2LL0LEPZT8,Q9divisible_unitary,Target Search,-1
+A3HL2LL0LEPZT8,Q10maximizing,Target Search,-1
+A3HL2LL0LEPZT8,Q11optimizing,Target Search,-1
+A3HL2LL0LEPZT8,Q13outcome_multip,Target Search,1
+A3HL2LL0LEPZT8,Q14sol_scheme_mul,Target Search,1
+A3HL2LL0LEPZT8,Q15dec_verifiability,Target Search,1
+A3HL2LL0LEPZT8,Q16shared_knowledge,Target Search,1
+A3HL2LL0LEPZT8,Q17within_sys_sol,Target Search,1
+A3HL2LL0LEPZT8,Q18ans_recog,Target Search,1
+A3HL2LL0LEPZT8,Q19time_solvability,Target Search,1
+A3HL2LL0LEPZT8,Q20type_3_type_4,Target Search,1
+A3HL2LL0LEPZT8,Q22confl_tradeoffs,Target Search,-1
+A3HL2LL0LEPZT8,Q23ss_out_uncert,Target Search,1
+A3HL2LL0LEPZT8,Q24eureka_question,Target Search,1
 A1JED1RJM2C9MS,Q1concept_behav,Summarize Discussion,-1
 A1JED1RJM2C9MS,Q3type_1_planning,Summarize Discussion,-1
 A1JED1RJM2C9MS,Q4type_2_generate,Summarize Discussion,-1
@@ -2659,6 +2799,26 @@ A3S5ZB4D98JWT1,Q20type_3_type_4,Logic Problem,1
 A3S5ZB4D98JWT1,Q22confl_tradeoffs,Logic Problem,1
 A3S5ZB4D98JWT1,Q23ss_out_uncert,Logic Problem,1
 A3S5ZB4D98JWT1,Q24eureka_question,Logic Problem,1
+A2TVG2HLMKVMSL,Q1concept_behav,Target Search,-1
+A2TVG2HLMKVMSL,Q3type_1_planning,Target Search,-1
+A2TVG2HLMKVMSL,Q4type_2_generate,Target Search,-1
+A2TVG2HLMKVMSL,Q6type_5_cc,Target Search,-1
+A2TVG2HLMKVMSL,Q7type_7_battle,Target Search,-1
+A2TVG2HLMKVMSL,Q8type_8_performance,Target Search,-1
+A2TVG2HLMKVMSL,Q9divisible_unitary,Target Search,-1
+A2TVG2HLMKVMSL,Q10maximizing,Target Search,-1
+A2TVG2HLMKVMSL,Q11optimizing,Target Search,-1
+A2TVG2HLMKVMSL,Q13outcome_multip,Target Search,-1
+A2TVG2HLMKVMSL,Q14sol_scheme_mul,Target Search,1
+A2TVG2HLMKVMSL,Q15dec_verifiability,Target Search,1
+A2TVG2HLMKVMSL,Q16shared_knowledge,Target Search,1
+A2TVG2HLMKVMSL,Q17within_sys_sol,Target Search,1
+A2TVG2HLMKVMSL,Q18ans_recog,Target Search,1
+A2TVG2HLMKVMSL,Q19time_solvability,Target Search,1
+A2TVG2HLMKVMSL,Q20type_3_type_4,Target Search,1
+A2TVG2HLMKVMSL,Q22confl_tradeoffs,Target Search,-1
+A2TVG2HLMKVMSL,Q23ss_out_uncert,Target Search,-1
+A2TVG2HLMKVMSL,Q24eureka_question,Target Search,-1
 A1YSYI926BBOHW,Q1concept_behav,Trivia Multiple Choice Quiz,-1
 A1YSYI926BBOHW,Q3type_1_planning,Trivia Multiple Choice Quiz,-1
 A1YSYI926BBOHW,Q4type_2_generate,Trivia Multiple Choice Quiz,-1
@@ -2839,6 +2999,26 @@ A1VRG5HKZC0H0C,Q20type_3_type_4,Advertisement writing,-1
 A1VRG5HKZC0H0C,Q22confl_tradeoffs,Advertisement writing,1
 A1VRG5HKZC0H0C,Q23ss_out_uncert,Advertisement writing,1
 A1VRG5HKZC0H0C,Q24eureka_question,Advertisement writing,-1
+A2WZTMXWD20NYE,Q1concept_behav,Target Search,-1
+A2WZTMXWD20NYE,Q3type_1_planning,Target Search,-1
+A2WZTMXWD20NYE,Q4type_2_generate,Target Search,-1
+A2WZTMXWD20NYE,Q6type_5_cc,Target Search,-1
+A2WZTMXWD20NYE,Q7type_7_battle,Target Search,-1
+A2WZTMXWD20NYE,Q8type_8_performance,Target Search,-1
+A2WZTMXWD20NYE,Q9divisible_unitary,Target Search,NA
+A2WZTMXWD20NYE,Q10maximizing,Target Search,1
+A2WZTMXWD20NYE,Q11optimizing,Target Search,1
+A2WZTMXWD20NYE,Q13outcome_multip,Target Search,1
+A2WZTMXWD20NYE,Q14sol_scheme_mul,Target Search,1
+A2WZTMXWD20NYE,Q15dec_verifiability,Target Search,1
+A2WZTMXWD20NYE,Q16shared_knowledge,Target Search,1
+A2WZTMXWD20NYE,Q17within_sys_sol,Target Search,1
+A2WZTMXWD20NYE,Q18ans_recog,Target Search,1
+A2WZTMXWD20NYE,Q19time_solvability,Target Search,1
+A2WZTMXWD20NYE,Q20type_3_type_4,Target Search,1
+A2WZTMXWD20NYE,Q22confl_tradeoffs,Target Search,-1
+A2WZTMXWD20NYE,Q23ss_out_uncert,Target Search,-1
+A2WZTMXWD20NYE,Q24eureka_question,Target Search,1
 ARI1EMAHUA9PO,Q1concept_behav,Reproducing arts,-1
 ARI1EMAHUA9PO,Q3type_1_planning,Reproducing arts,-1
 ARI1EMAHUA9PO,Q4type_2_generate,Reproducing arts,-1
@@ -3059,6 +3239,26 @@ A5NE8TWS8ZV7B,Q20type_3_type_4,Find the maximum,1
 A5NE8TWS8ZV7B,Q22confl_tradeoffs,Find the maximum,-1
 A5NE8TWS8ZV7B,Q23ss_out_uncert,Find the maximum,1
 A5NE8TWS8ZV7B,Q24eureka_question,Find the maximum,-1
+A1VRG5HKZC0H0C,Q1concept_behav,Target Search,-1
+A1VRG5HKZC0H0C,Q3type_1_planning,Target Search,-1
+A1VRG5HKZC0H0C,Q4type_2_generate,Target Search,-1
+A1VRG5HKZC0H0C,Q6type_5_cc,Target Search,-1
+A1VRG5HKZC0H0C,Q7type_7_battle,Target Search,-1
+A1VRG5HKZC0H0C,Q8type_8_performance,Target Search,-1
+A1VRG5HKZC0H0C,Q9divisible_unitary,Target Search,-1
+A1VRG5HKZC0H0C,Q10maximizing,Target Search,1
+A1VRG5HKZC0H0C,Q11optimizing,Target Search,-1
+A1VRG5HKZC0H0C,Q13outcome_multip,Target Search,1
+A1VRG5HKZC0H0C,Q14sol_scheme_mul,Target Search,-1
+A1VRG5HKZC0H0C,Q15dec_verifiability,Target Search,1
+A1VRG5HKZC0H0C,Q16shared_knowledge,Target Search,1
+A1VRG5HKZC0H0C,Q17within_sys_sol,Target Search,-1
+A1VRG5HKZC0H0C,Q18ans_recog,Target Search,1
+A1VRG5HKZC0H0C,Q19time_solvability,Target Search,1
+A1VRG5HKZC0H0C,Q20type_3_type_4,Target Search,1
+A1VRG5HKZC0H0C,Q22confl_tradeoffs,Target Search,-1
+A1VRG5HKZC0H0C,Q23ss_out_uncert,Target Search,-1
+A1VRG5HKZC0H0C,Q24eureka_question,Target Search,-1
 A3EUGO4VR2N4G1,Q1concept_behav,Writing story,-1
 A3EUGO4VR2N4G1,Q3type_1_planning,Writing story,1
 A3EUGO4VR2N4G1,Q4type_2_generate,Writing story,-1
@@ -3539,6 +3739,26 @@ A3JAM040VWXHDO,Q20type_3_type_4,Writing story,-1
 A3JAM040VWXHDO,Q22confl_tradeoffs,Writing story,1
 A3JAM040VWXHDO,Q23ss_out_uncert,Writing story,-1
 A3JAM040VWXHDO,Q24eureka_question,Writing story,-1
+A3EUGO4VR2N4G1,Q1concept_behav,The N light bulbs game,-1
+A3EUGO4VR2N4G1,Q3type_1_planning,The N light bulbs game,-1
+A3EUGO4VR2N4G1,Q4type_2_generate,The N light bulbs game,-1
+A3EUGO4VR2N4G1,Q6type_5_cc,The N light bulbs game,-1
+A3EUGO4VR2N4G1,Q7type_7_battle,The N light bulbs game,-1
+A3EUGO4VR2N4G1,Q8type_8_performance,The N light bulbs game,-1
+A3EUGO4VR2N4G1,Q9divisible_unitary,The N light bulbs game,-1
+A3EUGO4VR2N4G1,Q10maximizing,The N light bulbs game,1
+A3EUGO4VR2N4G1,Q11optimizing,The N light bulbs game,-1
+A3EUGO4VR2N4G1,Q13outcome_multip,The N light bulbs game,1
+A3EUGO4VR2N4G1,Q14sol_scheme_mul,The N light bulbs game,-1
+A3EUGO4VR2N4G1,Q15dec_verifiability,The N light bulbs game,1
+A3EUGO4VR2N4G1,Q16shared_knowledge,The N light bulbs game,1
+A3EUGO4VR2N4G1,Q17within_sys_sol,The N light bulbs game,-1
+A3EUGO4VR2N4G1,Q18ans_recog,The N light bulbs game,-1
+A3EUGO4VR2N4G1,Q19time_solvability,The N light bulbs game,1
+A3EUGO4VR2N4G1,Q20type_3_type_4,The N light bulbs game,1
+A3EUGO4VR2N4G1,Q22confl_tradeoffs,The N light bulbs game,1
+A3EUGO4VR2N4G1,Q23ss_out_uncert,The N light bulbs game,1
+A3EUGO4VR2N4G1,Q24eureka_question,The N light bulbs game,-1
 A2YW35WSBU88O0,Q1concept_behav,Recall images,-1
 A2YW35WSBU88O0,Q3type_1_planning,Recall images,-1
 A2YW35WSBU88O0,Q4type_2_generate,Recall images,-1
@@ -3639,6 +3859,26 @@ A76WEZ9QGREEM,Q20type_3_type_4,The Fish game,1
 A76WEZ9QGREEM,Q22confl_tradeoffs,The Fish game,-1
 A76WEZ9QGREEM,Q23ss_out_uncert,The Fish game,-1
 A76WEZ9QGREEM,Q24eureka_question,The Fish game,-1
+AA5ZDXAA2DLY1,Q1concept_behav,Reading the mind in the eyes,-1
+AA5ZDXAA2DLY1,Q3type_1_planning,Reading the mind in the eyes,-1
+AA5ZDXAA2DLY1,Q4type_2_generate,Reading the mind in the eyes,-1
+AA5ZDXAA2DLY1,Q6type_5_cc,Reading the mind in the eyes,-1
+AA5ZDXAA2DLY1,Q7type_7_battle,Reading the mind in the eyes,-1
+AA5ZDXAA2DLY1,Q8type_8_performance,Reading the mind in the eyes,-1
+AA5ZDXAA2DLY1,Q9divisible_unitary,Reading the mind in the eyes,-1
+AA5ZDXAA2DLY1,Q10maximizing,Reading the mind in the eyes,1
+AA5ZDXAA2DLY1,Q11optimizing,Reading the mind in the eyes,1
+AA5ZDXAA2DLY1,Q13outcome_multip,Reading the mind in the eyes,1
+AA5ZDXAA2DLY1,Q14sol_scheme_mul,Reading the mind in the eyes,1
+AA5ZDXAA2DLY1,Q15dec_verifiability,Reading the mind in the eyes,1
+AA5ZDXAA2DLY1,Q16shared_knowledge,Reading the mind in the eyes,1
+AA5ZDXAA2DLY1,Q17within_sys_sol,Reading the mind in the eyes,1
+AA5ZDXAA2DLY1,Q18ans_recog,Reading the mind in the eyes,1
+AA5ZDXAA2DLY1,Q19time_solvability,Reading the mind in the eyes,1
+AA5ZDXAA2DLY1,Q20type_3_type_4,Reading the mind in the eyes,1
+AA5ZDXAA2DLY1,Q22confl_tradeoffs,Reading the mind in the eyes,-1
+AA5ZDXAA2DLY1,Q23ss_out_uncert,Reading the mind in the eyes,1
+AA5ZDXAA2DLY1,Q24eureka_question,Reading the mind in the eyes,-1
 A1I72NHC21347A,Q1concept_behav,Shopping plan,-1
 A1I72NHC21347A,Q3type_1_planning,Shopping plan,1
 A1I72NHC21347A,Q4type_2_generate,Shopping plan,-1
@@ -3959,6 +4199,26 @@ AWAW665TQQP2F,Q20type_3_type_4,Categorization problem,1
 AWAW665TQQP2F,Q22confl_tradeoffs,Categorization problem,1
 AWAW665TQQP2F,Q23ss_out_uncert,Categorization problem,1
 AWAW665TQQP2F,Q24eureka_question,Categorization problem,1
+A3S5ZB4D98JWT1,Q1concept_behav,Target Search,-1
+A3S5ZB4D98JWT1,Q3type_1_planning,Target Search,-1
+A3S5ZB4D98JWT1,Q4type_2_generate,Target Search,-1
+A3S5ZB4D98JWT1,Q6type_5_cc,Target Search,-1
+A3S5ZB4D98JWT1,Q7type_7_battle,Target Search,1
+A3S5ZB4D98JWT1,Q8type_8_performance,Target Search,-1
+A3S5ZB4D98JWT1,Q9divisible_unitary,Target Search,-1
+A3S5ZB4D98JWT1,Q10maximizing,Target Search,1
+A3S5ZB4D98JWT1,Q11optimizing,Target Search,-1
+A3S5ZB4D98JWT1,Q13outcome_multip,Target Search,1
+A3S5ZB4D98JWT1,Q14sol_scheme_mul,Target Search,-1
+A3S5ZB4D98JWT1,Q15dec_verifiability,Target Search,1
+A3S5ZB4D98JWT1,Q16shared_knowledge,Target Search,1
+A3S5ZB4D98JWT1,Q17within_sys_sol,Target Search,1
+A3S5ZB4D98JWT1,Q18ans_recog,Target Search,1
+A3S5ZB4D98JWT1,Q19time_solvability,Target Search,1
+A3S5ZB4D98JWT1,Q20type_3_type_4,Target Search,1
+A3S5ZB4D98JWT1,Q22confl_tradeoffs,Target Search,-1
+A3S5ZB4D98JWT1,Q23ss_out_uncert,Target Search,1
+A3S5ZB4D98JWT1,Q24eureka_question,Target Search,1
 A1ZE87WEYCA44A,Q1concept_behav,Estimating geological metrics,-1
 A1ZE87WEYCA44A,Q3type_1_planning,Estimating geological metrics,-1
 A1ZE87WEYCA44A,Q4type_2_generate,Estimating geological metrics,-1
@@ -4039,6 +4299,26 @@ A3JAM040VWXHDO,Q20type_3_type_4,Railroad Route Construction game (Impossible Ver
 A3JAM040VWXHDO,Q22confl_tradeoffs,Railroad Route Construction game (Impossible Version),-1
 A3JAM040VWXHDO,Q23ss_out_uncert,Railroad Route Construction game (Impossible Version),-1
 A3JAM040VWXHDO,Q24eureka_question,Railroad Route Construction game (Impossible Version),-1
+A2WZTMXWD20NYE,Q1concept_behav,Reading the mind in the eyes,-1
+A2WZTMXWD20NYE,Q3type_1_planning,Reading the mind in the eyes,-1
+A2WZTMXWD20NYE,Q4type_2_generate,Reading the mind in the eyes,-1
+A2WZTMXWD20NYE,Q6type_5_cc,Reading the mind in the eyes,-1
+A2WZTMXWD20NYE,Q7type_7_battle,Reading the mind in the eyes,-1
+A2WZTMXWD20NYE,Q8type_8_performance,Reading the mind in the eyes,-1
+A2WZTMXWD20NYE,Q9divisible_unitary,Reading the mind in the eyes,NA
+A2WZTMXWD20NYE,Q10maximizing,Reading the mind in the eyes,1
+A2WZTMXWD20NYE,Q11optimizing,Reading the mind in the eyes,-1
+A2WZTMXWD20NYE,Q13outcome_multip,Reading the mind in the eyes,1
+A2WZTMXWD20NYE,Q14sol_scheme_mul,Reading the mind in the eyes,1
+A2WZTMXWD20NYE,Q15dec_verifiability,Reading the mind in the eyes,1
+A2WZTMXWD20NYE,Q16shared_knowledge,Reading the mind in the eyes,-1
+A2WZTMXWD20NYE,Q17within_sys_sol,Reading the mind in the eyes,1
+A2WZTMXWD20NYE,Q18ans_recog,Reading the mind in the eyes,-1
+A2WZTMXWD20NYE,Q19time_solvability,Reading the mind in the eyes,-1
+A2WZTMXWD20NYE,Q20type_3_type_4,Reading the mind in the eyes,1
+A2WZTMXWD20NYE,Q22confl_tradeoffs,Reading the mind in the eyes,-1
+A2WZTMXWD20NYE,Q23ss_out_uncert,Reading the mind in the eyes,1
+A2WZTMXWD20NYE,Q24eureka_question,Reading the mind in the eyes,-1
 AKQAI78JTXXC9,Q1concept_behav,Guessing the correlation,-1
 AKQAI78JTXXC9,Q3type_1_planning,Guessing the correlation,-1
 AKQAI78JTXXC9,Q4type_2_generate,Guessing the correlation,-1
@@ -4059,6 +4339,26 @@ AKQAI78JTXXC9,Q20type_3_type_4,Guessing the correlation,1
 AKQAI78JTXXC9,Q22confl_tradeoffs,Guessing the correlation,-1
 AKQAI78JTXXC9,Q23ss_out_uncert,Guessing the correlation,1
 AKQAI78JTXXC9,Q24eureka_question,Guessing the correlation,-1
+A2TVG2HLMKVMSL,Q1concept_behav,Reading the mind in the eyes,-1
+A2TVG2HLMKVMSL,Q3type_1_planning,Reading the mind in the eyes,-1
+A2TVG2HLMKVMSL,Q4type_2_generate,Reading the mind in the eyes,-1
+A2TVG2HLMKVMSL,Q6type_5_cc,Reading the mind in the eyes,-1
+A2TVG2HLMKVMSL,Q7type_7_battle,Reading the mind in the eyes,-1
+A2TVG2HLMKVMSL,Q8type_8_performance,Reading the mind in the eyes,-1
+A2TVG2HLMKVMSL,Q9divisible_unitary,Reading the mind in the eyes,-1
+A2TVG2HLMKVMSL,Q10maximizing,Reading the mind in the eyes,-1
+A2TVG2HLMKVMSL,Q11optimizing,Reading the mind in the eyes,1
+A2TVG2HLMKVMSL,Q13outcome_multip,Reading the mind in the eyes,1
+A2TVG2HLMKVMSL,Q14sol_scheme_mul,Reading the mind in the eyes,-1
+A2TVG2HLMKVMSL,Q15dec_verifiability,Reading the mind in the eyes,-1
+A2TVG2HLMKVMSL,Q16shared_knowledge,Reading the mind in the eyes,-1
+A2TVG2HLMKVMSL,Q17within_sys_sol,Reading the mind in the eyes,1
+A2TVG2HLMKVMSL,Q18ans_recog,Reading the mind in the eyes,1
+A2TVG2HLMKVMSL,Q19time_solvability,Reading the mind in the eyes,1
+A2TVG2HLMKVMSL,Q20type_3_type_4,Reading the mind in the eyes,1
+A2TVG2HLMKVMSL,Q22confl_tradeoffs,Reading the mind in the eyes,-1
+A2TVG2HLMKVMSL,Q23ss_out_uncert,Reading the mind in the eyes,1
+A2TVG2HLMKVMSL,Q24eureka_question,Reading the mind in the eyes,-1
 A1ZE87WEYCA44A,Q1concept_behav,Word completion given part of word,-1
 A1ZE87WEYCA44A,Q3type_1_planning,Word completion given part of word,-1
 A1ZE87WEYCA44A,Q4type_2_generate,Word completion given part of word,-1
@@ -4219,6 +4519,26 @@ A3JAM040VWXHDO,Q20type_3_type_4,Estimating social quantity,1
 A3JAM040VWXHDO,Q22confl_tradeoffs,Estimating social quantity,-1
 A3JAM040VWXHDO,Q23ss_out_uncert,Estimating social quantity,-1
 A3JAM040VWXHDO,Q24eureka_question,Estimating social quantity,-1
+A5NE8TWS8ZV7B,Q1concept_behav,Reading the mind in the eyes,-1
+A5NE8TWS8ZV7B,Q3type_1_planning,Reading the mind in the eyes,-1
+A5NE8TWS8ZV7B,Q4type_2_generate,Reading the mind in the eyes,-1
+A5NE8TWS8ZV7B,Q6type_5_cc,Reading the mind in the eyes,-1
+A5NE8TWS8ZV7B,Q7type_7_battle,Reading the mind in the eyes,-1
+A5NE8TWS8ZV7B,Q8type_8_performance,Reading the mind in the eyes,-1
+A5NE8TWS8ZV7B,Q9divisible_unitary,Reading the mind in the eyes,-1
+A5NE8TWS8ZV7B,Q10maximizing,Reading the mind in the eyes,1
+A5NE8TWS8ZV7B,Q11optimizing,Reading the mind in the eyes,1
+A5NE8TWS8ZV7B,Q13outcome_multip,Reading the mind in the eyes,1
+A5NE8TWS8ZV7B,Q14sol_scheme_mul,Reading the mind in the eyes,-1
+A5NE8TWS8ZV7B,Q15dec_verifiability,Reading the mind in the eyes,1
+A5NE8TWS8ZV7B,Q16shared_knowledge,Reading the mind in the eyes,1
+A5NE8TWS8ZV7B,Q17within_sys_sol,Reading the mind in the eyes,1
+A5NE8TWS8ZV7B,Q18ans_recog,Reading the mind in the eyes,1
+A5NE8TWS8ZV7B,Q19time_solvability,Reading the mind in the eyes,1
+A5NE8TWS8ZV7B,Q20type_3_type_4,Reading the mind in the eyes,1
+A5NE8TWS8ZV7B,Q22confl_tradeoffs,Reading the mind in the eyes,-1
+A5NE8TWS8ZV7B,Q23ss_out_uncert,Reading the mind in the eyes,1
+A5NE8TWS8ZV7B,Q24eureka_question,Reading the mind in the eyes,1
 AXPZAP62ZYWP8,Q1concept_behav,Find the maximum,-1
 AXPZAP62ZYWP8,Q3type_1_planning,Find the maximum,-1
 AXPZAP62ZYWP8,Q4type_2_generate,Find the maximum,-1
@@ -4519,6 +4839,26 @@ AXPZAP62ZYWP8,Q20type_3_type_4,Room assignment task,1
 AXPZAP62ZYWP8,Q22confl_tradeoffs,Room assignment task,1
 AXPZAP62ZYWP8,Q23ss_out_uncert,Room assignment task,1
 AXPZAP62ZYWP8,Q24eureka_question,Room assignment task,-1
+A1VRG5HKZC0H0C,Q1concept_behav,Reading the mind in the eyes,-1
+A1VRG5HKZC0H0C,Q3type_1_planning,Reading the mind in the eyes,-1
+A1VRG5HKZC0H0C,Q4type_2_generate,Reading the mind in the eyes,-1
+A1VRG5HKZC0H0C,Q6type_5_cc,Reading the mind in the eyes,-1
+A1VRG5HKZC0H0C,Q7type_7_battle,Reading the mind in the eyes,-1
+A1VRG5HKZC0H0C,Q8type_8_performance,Reading the mind in the eyes,1
+A1VRG5HKZC0H0C,Q9divisible_unitary,Reading the mind in the eyes,1
+A1VRG5HKZC0H0C,Q10maximizing,Reading the mind in the eyes,1
+A1VRG5HKZC0H0C,Q11optimizing,Reading the mind in the eyes,1
+A1VRG5HKZC0H0C,Q13outcome_multip,Reading the mind in the eyes,1
+A1VRG5HKZC0H0C,Q14sol_scheme_mul,Reading the mind in the eyes,-1
+A1VRG5HKZC0H0C,Q15dec_verifiability,Reading the mind in the eyes,1
+A1VRG5HKZC0H0C,Q16shared_knowledge,Reading the mind in the eyes,1
+A1VRG5HKZC0H0C,Q17within_sys_sol,Reading the mind in the eyes,1
+A1VRG5HKZC0H0C,Q18ans_recog,Reading the mind in the eyes,1
+A1VRG5HKZC0H0C,Q19time_solvability,Reading the mind in the eyes,1
+A1VRG5HKZC0H0C,Q20type_3_type_4,Reading the mind in the eyes,1
+A1VRG5HKZC0H0C,Q22confl_tradeoffs,Reading the mind in the eyes,-1
+A1VRG5HKZC0H0C,Q23ss_out_uncert,Reading the mind in the eyes,NA
+A1VRG5HKZC0H0C,Q24eureka_question,Reading the mind in the eyes,-1
 A26UIS59SY4NM6,Q1concept_behav,Room assignment task,-1
 A26UIS59SY4NM6,Q3type_1_planning,Room assignment task,-1
 A26UIS59SY4NM6,Q4type_2_generate,Room assignment task,-1
@@ -4599,6 +4939,26 @@ AL51KTD0WITH9,Q20type_3_type_4,Euclidean traveling salesperson,1
 AL51KTD0WITH9,Q22confl_tradeoffs,Euclidean traveling salesperson,-1
 AL51KTD0WITH9,Q23ss_out_uncert,Euclidean traveling salesperson,1
 AL51KTD0WITH9,Q24eureka_question,Euclidean traveling salesperson,-1
+A3S5ZB4D98JWT1,Q1concept_behav,The N light bulbs game,-1
+A3S5ZB4D98JWT1,Q3type_1_planning,The N light bulbs game,-1
+A3S5ZB4D98JWT1,Q4type_2_generate,The N light bulbs game,-1
+A3S5ZB4D98JWT1,Q6type_5_cc,The N light bulbs game,-1
+A3S5ZB4D98JWT1,Q7type_7_battle,The N light bulbs game,1
+A3S5ZB4D98JWT1,Q8type_8_performance,The N light bulbs game,-1
+A3S5ZB4D98JWT1,Q9divisible_unitary,The N light bulbs game,-1
+A3S5ZB4D98JWT1,Q10maximizing,The N light bulbs game,-1
+A3S5ZB4D98JWT1,Q11optimizing,The N light bulbs game,-1
+A3S5ZB4D98JWT1,Q13outcome_multip,The N light bulbs game,1
+A3S5ZB4D98JWT1,Q14sol_scheme_mul,The N light bulbs game,-1
+A3S5ZB4D98JWT1,Q15dec_verifiability,The N light bulbs game,1
+A3S5ZB4D98JWT1,Q16shared_knowledge,The N light bulbs game,1
+A3S5ZB4D98JWT1,Q17within_sys_sol,The N light bulbs game,1
+A3S5ZB4D98JWT1,Q18ans_recog,The N light bulbs game,1
+A3S5ZB4D98JWT1,Q19time_solvability,The N light bulbs game,1
+A3S5ZB4D98JWT1,Q20type_3_type_4,The N light bulbs game,1
+A3S5ZB4D98JWT1,Q22confl_tradeoffs,The N light bulbs game,1
+A3S5ZB4D98JWT1,Q23ss_out_uncert,The N light bulbs game,1
+A3S5ZB4D98JWT1,Q24eureka_question,The N light bulbs game,1
 A1ZE87WEYCA44A,Q1concept_behav,Railroad Route Construction game,-1
 A1ZE87WEYCA44A,Q3type_1_planning,Railroad Route Construction game,-1
 A1ZE87WEYCA44A,Q4type_2_generate,Railroad Route Construction game,-1
