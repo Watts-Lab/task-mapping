@@ -9,6 +9,8 @@ Here is an example to help you imagine what the pattern might look like. Partici
 
 Participants would then see a few multiple-choice options for what could fill the blank space. For example, they could choose between a square with one, two, three, or four pieces filled in.
 
+All participants working together see the same pattern.
+
 ## 2. Goal Directives 
 The goal is to complete the pattern by identifying what the missing piece should be. 
 
