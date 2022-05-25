@@ -94,6 +94,7 @@ Recall images,Q16shared_knowledge_elaboration,Because it's a memory task I would
 Divergent Association Task,Q16shared_knowledge_elaboration,This is assuming there are defined scores attached to words.
 Reproducing arts,Q16shared_knowledge_elaboration,I don't think an algorithm would be needed to make a copy
 Estimating pages of a book,Q16shared_knowledge_elaboration,"The objective is precise, but I wouldnt think there is an absolute, verifiable, solution. You could guess and get the right answer. A reasonable, educated guess, like guessing beans in a jar."
+Writing story,Q17within_sys_sol_elaboration,there is no solution as there is not a problem.
 Railroad Route Construction game (Impossible Version),Q17within_sys_sol_elaboration,"There is enough, but it doesn't matter, as there is no way to finish or win the game."
 Estimating pages of a book,Q17within_sys_sol_elaboration,"To get the exact number I don't think there's enough info, you're making an educated guess"
 Divergent Association Task,Q17within_sys_sol_elaboration,If there were semantic rules already established then there could be a solution based on that data
@@ -102,6 +103,7 @@ Estimating pages of a book,Q17within_sys_sol_elaboration,"I think that checking 
 Allocating resources to programs,Q17within_sys_sol_elaboration,"Yes because you have 500K and you must distribute the funds among 3 social/government programs and you get to decide how to allocate the funds. So, as long as the whole 500K are distributed, you have found a solution."
 Railroad Route Construction game,Q17within_sys_sol_elaboration,No trouble.
 Divergent Association Task,Q17within_sys_sol_elaboration,"There is no mention of looking up answers online but if allowed, it would be an advantage here."
+Writing story,Q18ans_recog_elaboration,There is no answer to be had. This is just a creative writing.
 Railroad Route Construction game (Impossible Version),Q18ans_recog_elaboration,"This goal is made to be unsolvable, so there really is no correct solution."
 Estimating pages of a book,Q18ans_recog_elaboration,"I don't think an outsider would know the answer for sure, only the person that created the problem"
 Railroad Route Construction game (Impossible Version),Q18ans_recog_elaboration,Not applicable as impossible to solve
@@ -157,6 +159,7 @@ Computer maze,Q22confl_tradeoffs_elaboration,Incorrectly tagging greebles can be
 Putting food into categories,Q22confl_tradeoffs_elaboration,no because in this cases the ideas can or can not be able to divide the items there would be no trade offs in the brainstorming
 Allocating resources to programs,Q22confl_tradeoffs_elaboration,"There are tradeoffs because some programs will not receive the same amount of money even if you wanted them to and as such, you have to decide which of the 3 programs would be more beneficial."
 Railroad Route Construction game,Q22confl_tradeoffs_elaboration,No trouble.
+Writing story,Q23ss_out_uncert_elaboration,There is no correct answers so no one will feel right or wrong
 Visual Oddball Target,Q23ss_out_uncert_elaboration,It is not clear whether participants get feedback on their responses immediately or not
 Computer maze,Q23ss_out_uncert_elaboration,Participants may not know if they've correctly identified matches until the end.
 Recall videos,Q23ss_out_uncert_elaboration,"assuming they're told after each question whether they're correct, then no.  if they wait till the end to be graded, then yes"

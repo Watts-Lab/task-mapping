@@ -99,6 +99,26 @@ A272X64FOZFYLB,Q20type_3_type_4,Estimating social quantity,1
 A272X64FOZFYLB,Q22confl_tradeoffs,Estimating social quantity,-1
 A272X64FOZFYLB,Q23ss_out_uncert,Estimating social quantity,1
 A272X64FOZFYLB,Q24eureka_question,Estimating social quantity,-1
+A3JAM040VWXHDO,Q1concept_behav,Hidden figures in a picture (Searching Task),-1
+A3JAM040VWXHDO,Q3type_1_planning,Hidden figures in a picture (Searching Task),-1
+A3JAM040VWXHDO,Q4type_2_generate,Hidden figures in a picture (Searching Task),-1
+A3JAM040VWXHDO,Q6type_5_cc,Hidden figures in a picture (Searching Task),-1
+A3JAM040VWXHDO,Q7type_7_battle,Hidden figures in a picture (Searching Task),-1
+A3JAM040VWXHDO,Q8type_8_performance,Hidden figures in a picture (Searching Task),-1
+A3JAM040VWXHDO,Q9divisible_unitary,Hidden figures in a picture (Searching Task),1
+A3JAM040VWXHDO,Q10maximizing,Hidden figures in a picture (Searching Task),1
+A3JAM040VWXHDO,Q11optimizing,Hidden figures in a picture (Searching Task),-1
+A3JAM040VWXHDO,Q13outcome_multip,Hidden figures in a picture (Searching Task),1
+A3JAM040VWXHDO,Q14sol_scheme_mul,Hidden figures in a picture (Searching Task),-1
+A3JAM040VWXHDO,Q15dec_verifiability,Hidden figures in a picture (Searching Task),1
+A3JAM040VWXHDO,Q16shared_knowledge,Hidden figures in a picture (Searching Task),1
+A3JAM040VWXHDO,Q17within_sys_sol,Hidden figures in a picture (Searching Task),1
+A3JAM040VWXHDO,Q18ans_recog,Hidden figures in a picture (Searching Task),1
+A3JAM040VWXHDO,Q19time_solvability,Hidden figures in a picture (Searching Task),1
+A3JAM040VWXHDO,Q20type_3_type_4,Hidden figures in a picture (Searching Task),1
+A3JAM040VWXHDO,Q22confl_tradeoffs,Hidden figures in a picture (Searching Task),-1
+A3JAM040VWXHDO,Q23ss_out_uncert,Hidden figures in a picture (Searching Task),-1
+A3JAM040VWXHDO,Q24eureka_question,Hidden figures in a picture (Searching Task),-1
 A2VRDE2FHCBMF8,Q1concept_behav,Abstract grid task,-1
 A2VRDE2FHCBMF8,Q3type_1_planning,Abstract grid task,-1
 A2VRDE2FHCBMF8,Q4type_2_generate,Abstract grid task,-1
@@ -299,6 +319,26 @@ A1VRG5HKZC0H0C,Q20type_3_type_4,Abstract grid task,1
 A1VRG5HKZC0H0C,Q22confl_tradeoffs,Abstract grid task,-1
 A1VRG5HKZC0H0C,Q23ss_out_uncert,Abstract grid task,1
 A1VRG5HKZC0H0C,Q24eureka_question,Abstract grid task,-1
+AWAW665TQQP2F,Q1concept_behav,Logic Problem,-1
+AWAW665TQQP2F,Q3type_1_planning,Logic Problem,1
+AWAW665TQQP2F,Q4type_2_generate,Logic Problem,-1
+AWAW665TQQP2F,Q6type_5_cc,Logic Problem,-1
+AWAW665TQQP2F,Q7type_7_battle,Logic Problem,1
+AWAW665TQQP2F,Q8type_8_performance,Logic Problem,-1
+AWAW665TQQP2F,Q9divisible_unitary,Logic Problem,1
+AWAW665TQQP2F,Q10maximizing,Logic Problem,1
+AWAW665TQQP2F,Q11optimizing,Logic Problem,1
+AWAW665TQQP2F,Q13outcome_multip,Logic Problem,1
+AWAW665TQQP2F,Q14sol_scheme_mul,Logic Problem,1
+AWAW665TQQP2F,Q15dec_verifiability,Logic Problem,1
+AWAW665TQQP2F,Q16shared_knowledge,Logic Problem,1
+AWAW665TQQP2F,Q17within_sys_sol,Logic Problem,1
+AWAW665TQQP2F,Q18ans_recog,Logic Problem,1
+AWAW665TQQP2F,Q19time_solvability,Logic Problem,1
+AWAW665TQQP2F,Q20type_3_type_4,Logic Problem,1
+AWAW665TQQP2F,Q22confl_tradeoffs,Logic Problem,1
+AWAW665TQQP2F,Q23ss_out_uncert,Logic Problem,1
+AWAW665TQQP2F,Q24eureka_question,Logic Problem,-1
 A3NXT3OVGL7QNR,Q1concept_behav,Search for Oil Task,-1
 A3NXT3OVGL7QNR,Q3type_1_planning,Search for Oil Task,-1
 A3NXT3OVGL7QNR,Q4type_2_generate,Search for Oil Task,-1
@@ -319,6 +359,26 @@ A3NXT3OVGL7QNR,Q20type_3_type_4,Search for Oil Task,1
 A3NXT3OVGL7QNR,Q22confl_tradeoffs,Search for Oil Task,1
 A3NXT3OVGL7QNR,Q23ss_out_uncert,Search for Oil Task,1
 A3NXT3OVGL7QNR,Q24eureka_question,Search for Oil Task,-1
+A3S5ZB4D98JWT1,Q1concept_behav,Categorization problem,-1
+A3S5ZB4D98JWT1,Q3type_1_planning,Categorization problem,-1
+A3S5ZB4D98JWT1,Q4type_2_generate,Categorization problem,-1
+A3S5ZB4D98JWT1,Q6type_5_cc,Categorization problem,-1
+A3S5ZB4D98JWT1,Q7type_7_battle,Categorization problem,1
+A3S5ZB4D98JWT1,Q8type_8_performance,Categorization problem,1
+A3S5ZB4D98JWT1,Q9divisible_unitary,Categorization problem,-1
+A3S5ZB4D98JWT1,Q10maximizing,Categorization problem,-1
+A3S5ZB4D98JWT1,Q11optimizing,Categorization problem,1
+A3S5ZB4D98JWT1,Q13outcome_multip,Categorization problem,1
+A3S5ZB4D98JWT1,Q14sol_scheme_mul,Categorization problem,1
+A3S5ZB4D98JWT1,Q15dec_verifiability,Categorization problem,1
+A3S5ZB4D98JWT1,Q16shared_knowledge,Categorization problem,-1
+A3S5ZB4D98JWT1,Q17within_sys_sol,Categorization problem,-1
+A3S5ZB4D98JWT1,Q18ans_recog,Categorization problem,1
+A3S5ZB4D98JWT1,Q19time_solvability,Categorization problem,1
+A3S5ZB4D98JWT1,Q20type_3_type_4,Categorization problem,1
+A3S5ZB4D98JWT1,Q22confl_tradeoffs,Categorization problem,1
+A3S5ZB4D98JWT1,Q23ss_out_uncert,Categorization problem,1
+A3S5ZB4D98JWT1,Q24eureka_question,Categorization problem,1
 A3T9WZOUQGE2UW,Q1concept_behav,Word completion given starting letter,-1
 A3T9WZOUQGE2UW,Q3type_1_planning,Word completion given starting letter,-1
 A3T9WZOUQGE2UW,Q4type_2_generate,Word completion given starting letter,1
@@ -339,6 +399,26 @@ A3T9WZOUQGE2UW,Q20type_3_type_4,Word completion given starting letter,1
 A3T9WZOUQGE2UW,Q22confl_tradeoffs,Word completion given starting letter,-1
 A3T9WZOUQGE2UW,Q23ss_out_uncert,Word completion given starting letter,-1
 A3T9WZOUQGE2UW,Q24eureka_question,Word completion given starting letter,-1
+A3S5ZB4D98JWT1,Q1concept_behav,Recall stories,-1
+A3S5ZB4D98JWT1,Q3type_1_planning,Recall stories,-1
+A3S5ZB4D98JWT1,Q4type_2_generate,Recall stories,-1
+A3S5ZB4D98JWT1,Q6type_5_cc,Recall stories,-1
+A3S5ZB4D98JWT1,Q7type_7_battle,Recall stories,1
+A3S5ZB4D98JWT1,Q8type_8_performance,Recall stories,-1
+A3S5ZB4D98JWT1,Q9divisible_unitary,Recall stories,-1
+A3S5ZB4D98JWT1,Q10maximizing,Recall stories,1
+A3S5ZB4D98JWT1,Q11optimizing,Recall stories,1
+A3S5ZB4D98JWT1,Q13outcome_multip,Recall stories,1
+A3S5ZB4D98JWT1,Q14sol_scheme_mul,Recall stories,1
+A3S5ZB4D98JWT1,Q15dec_verifiability,Recall stories,1
+A3S5ZB4D98JWT1,Q16shared_knowledge,Recall stories,1
+A3S5ZB4D98JWT1,Q17within_sys_sol,Recall stories,1
+A3S5ZB4D98JWT1,Q18ans_recog,Recall stories,1
+A3S5ZB4D98JWT1,Q19time_solvability,Recall stories,1
+A3S5ZB4D98JWT1,Q20type_3_type_4,Recall stories,1
+A3S5ZB4D98JWT1,Q22confl_tradeoffs,Recall stories,1
+A3S5ZB4D98JWT1,Q23ss_out_uncert,Recall stories,1
+A3S5ZB4D98JWT1,Q24eureka_question,Recall stories,-1
 A3EUGO4VR2N4G1,Q1concept_behav,"Wolf, goat and cabbage transfer",-1
 A3EUGO4VR2N4G1,Q3type_1_planning,"Wolf, goat and cabbage transfer",1
 A3EUGO4VR2N4G1,Q4type_2_generate,"Wolf, goat and cabbage transfer",-1
@@ -359,6 +439,26 @@ A3EUGO4VR2N4G1,Q20type_3_type_4,"Wolf, goat and cabbage transfer",1
 A3EUGO4VR2N4G1,Q22confl_tradeoffs,"Wolf, goat and cabbage transfer",-1
 A3EUGO4VR2N4G1,Q23ss_out_uncert,"Wolf, goat and cabbage transfer",-1
 A3EUGO4VR2N4G1,Q24eureka_question,"Wolf, goat and cabbage transfer",1
+AWAW665TQQP2F,Q1concept_behav,Hidden figures in a picture (Recall Task),-1
+AWAW665TQQP2F,Q3type_1_planning,Hidden figures in a picture (Recall Task),-1
+AWAW665TQQP2F,Q4type_2_generate,Hidden figures in a picture (Recall Task),-1
+AWAW665TQQP2F,Q6type_5_cc,Hidden figures in a picture (Recall Task),-1
+AWAW665TQQP2F,Q7type_7_battle,Hidden figures in a picture (Recall Task),-1
+AWAW665TQQP2F,Q8type_8_performance,Hidden figures in a picture (Recall Task),-1
+AWAW665TQQP2F,Q9divisible_unitary,Hidden figures in a picture (Recall Task),1
+AWAW665TQQP2F,Q10maximizing,Hidden figures in a picture (Recall Task),1
+AWAW665TQQP2F,Q11optimizing,Hidden figures in a picture (Recall Task),1
+AWAW665TQQP2F,Q13outcome_multip,Hidden figures in a picture (Recall Task),1
+AWAW665TQQP2F,Q14sol_scheme_mul,Hidden figures in a picture (Recall Task),-1
+AWAW665TQQP2F,Q15dec_verifiability,Hidden figures in a picture (Recall Task),1
+AWAW665TQQP2F,Q16shared_knowledge,Hidden figures in a picture (Recall Task),1
+AWAW665TQQP2F,Q17within_sys_sol,Hidden figures in a picture (Recall Task),1
+AWAW665TQQP2F,Q18ans_recog,Hidden figures in a picture (Recall Task),1
+AWAW665TQQP2F,Q19time_solvability,Hidden figures in a picture (Recall Task),1
+AWAW665TQQP2F,Q20type_3_type_4,Hidden figures in a picture (Recall Task),1
+AWAW665TQQP2F,Q22confl_tradeoffs,Hidden figures in a picture (Recall Task),-1
+AWAW665TQQP2F,Q23ss_out_uncert,Hidden figures in a picture (Recall Task),1
+AWAW665TQQP2F,Q24eureka_question,Hidden figures in a picture (Recall Task),-1
 AKQAI78JTXXC9,Q1concept_behav,Estimating geological metrics,-1
 AKQAI78JTXXC9,Q3type_1_planning,Estimating geological metrics,-1
 AKQAI78JTXXC9,Q4type_2_generate,Estimating geological metrics,-1
@@ -379,6 +479,26 @@ AKQAI78JTXXC9,Q20type_3_type_4,Estimating geological metrics,1
 AKQAI78JTXXC9,Q22confl_tradeoffs,Estimating geological metrics,-1
 AKQAI78JTXXC9,Q23ss_out_uncert,Estimating geological metrics,1
 AKQAI78JTXXC9,Q24eureka_question,Estimating geological metrics,-1
+A3S5ZB4D98JWT1,Q1concept_behav,Hidden figures in a picture (Recall Task),-1
+A3S5ZB4D98JWT1,Q3type_1_planning,Hidden figures in a picture (Recall Task),-1
+A3S5ZB4D98JWT1,Q4type_2_generate,Hidden figures in a picture (Recall Task),-1
+A3S5ZB4D98JWT1,Q6type_5_cc,Hidden figures in a picture (Recall Task),-1
+A3S5ZB4D98JWT1,Q7type_7_battle,Hidden figures in a picture (Recall Task),1
+A3S5ZB4D98JWT1,Q8type_8_performance,Hidden figures in a picture (Recall Task),-1
+A3S5ZB4D98JWT1,Q9divisible_unitary,Hidden figures in a picture (Recall Task),1
+A3S5ZB4D98JWT1,Q10maximizing,Hidden figures in a picture (Recall Task),1
+A3S5ZB4D98JWT1,Q11optimizing,Hidden figures in a picture (Recall Task),1
+A3S5ZB4D98JWT1,Q13outcome_multip,Hidden figures in a picture (Recall Task),1
+A3S5ZB4D98JWT1,Q14sol_scheme_mul,Hidden figures in a picture (Recall Task),1
+A3S5ZB4D98JWT1,Q15dec_verifiability,Hidden figures in a picture (Recall Task),1
+A3S5ZB4D98JWT1,Q16shared_knowledge,Hidden figures in a picture (Recall Task),-1
+A3S5ZB4D98JWT1,Q17within_sys_sol,Hidden figures in a picture (Recall Task),1
+A3S5ZB4D98JWT1,Q18ans_recog,Hidden figures in a picture (Recall Task),1
+A3S5ZB4D98JWT1,Q19time_solvability,Hidden figures in a picture (Recall Task),1
+A3S5ZB4D98JWT1,Q20type_3_type_4,Hidden figures in a picture (Recall Task),1
+A3S5ZB4D98JWT1,Q22confl_tradeoffs,Hidden figures in a picture (Recall Task),-1
+A3S5ZB4D98JWT1,Q23ss_out_uncert,Hidden figures in a picture (Recall Task),1
+A3S5ZB4D98JWT1,Q24eureka_question,Hidden figures in a picture (Recall Task),-1
 A3CGQOJC28OVGN,Q1concept_behav,Advertisement writing,-1
 A3CGQOJC28OVGN,Q3type_1_planning,Advertisement writing,-1
 A3CGQOJC28OVGN,Q4type_2_generate,Advertisement writing,-1
@@ -619,6 +739,26 @@ A1YSYI926BBOHW,Q20type_3_type_4,Computer maze,1
 A1YSYI926BBOHW,Q22confl_tradeoffs,Computer maze,-1
 A1YSYI926BBOHW,Q23ss_out_uncert,Computer maze,-1
 A1YSYI926BBOHW,Q24eureka_question,Computer maze,-1
+A1YSYI926BBOHW,Q1concept_behav,Categorization problem,-1
+A1YSYI926BBOHW,Q3type_1_planning,Categorization problem,-1
+A1YSYI926BBOHW,Q4type_2_generate,Categorization problem,-1
+A1YSYI926BBOHW,Q6type_5_cc,Categorization problem,-1
+A1YSYI926BBOHW,Q7type_7_battle,Categorization problem,-1
+A1YSYI926BBOHW,Q8type_8_performance,Categorization problem,1
+A1YSYI926BBOHW,Q9divisible_unitary,Categorization problem,-1
+A1YSYI926BBOHW,Q10maximizing,Categorization problem,1
+A1YSYI926BBOHW,Q11optimizing,Categorization problem,1
+A1YSYI926BBOHW,Q13outcome_multip,Categorization problem,1
+A1YSYI926BBOHW,Q14sol_scheme_mul,Categorization problem,1
+A1YSYI926BBOHW,Q15dec_verifiability,Categorization problem,1
+A1YSYI926BBOHW,Q16shared_knowledge,Categorization problem,1
+A1YSYI926BBOHW,Q17within_sys_sol,Categorization problem,1
+A1YSYI926BBOHW,Q18ans_recog,Categorization problem,-1
+A1YSYI926BBOHW,Q19time_solvability,Categorization problem,1
+A1YSYI926BBOHW,Q20type_3_type_4,Categorization problem,1
+A1YSYI926BBOHW,Q22confl_tradeoffs,Categorization problem,-1
+A1YSYI926BBOHW,Q23ss_out_uncert,Categorization problem,-1
+A1YSYI926BBOHW,Q24eureka_question,Categorization problem,-1
 A3HL2LL0LEPZT8,Q1concept_behav,Advertisement writing,-1
 A3HL2LL0LEPZT8,Q3type_1_planning,Advertisement writing,-1
 A3HL2LL0LEPZT8,Q4type_2_generate,Advertisement writing,1
@@ -659,6 +799,26 @@ A1I72NHC21347A,Q20type_3_type_4,Recall association,1
 A1I72NHC21347A,Q22confl_tradeoffs,Recall association,-1
 A1I72NHC21347A,Q23ss_out_uncert,Recall association,-1
 A1I72NHC21347A,Q24eureka_question,Recall association,-1
+A3EUGO4VR2N4G1,Q1concept_behav,Ravens Matrices,-1
+A3EUGO4VR2N4G1,Q3type_1_planning,Ravens Matrices,-1
+A3EUGO4VR2N4G1,Q4type_2_generate,Ravens Matrices,-1
+A3EUGO4VR2N4G1,Q6type_5_cc,Ravens Matrices,-1
+A3EUGO4VR2N4G1,Q7type_7_battle,Ravens Matrices,-1
+A3EUGO4VR2N4G1,Q8type_8_performance,Ravens Matrices,-1
+A3EUGO4VR2N4G1,Q9divisible_unitary,Ravens Matrices,-1
+A3EUGO4VR2N4G1,Q10maximizing,Ravens Matrices,-1
+A3EUGO4VR2N4G1,Q11optimizing,Ravens Matrices,1
+A3EUGO4VR2N4G1,Q13outcome_multip,Ravens Matrices,1
+A3EUGO4VR2N4G1,Q14sol_scheme_mul,Ravens Matrices,1
+A3EUGO4VR2N4G1,Q15dec_verifiability,Ravens Matrices,1
+A3EUGO4VR2N4G1,Q16shared_knowledge,Ravens Matrices,1
+A3EUGO4VR2N4G1,Q17within_sys_sol,Ravens Matrices,1
+A3EUGO4VR2N4G1,Q18ans_recog,Ravens Matrices,1
+A3EUGO4VR2N4G1,Q19time_solvability,Ravens Matrices,1
+A3EUGO4VR2N4G1,Q20type_3_type_4,Ravens Matrices,1
+A3EUGO4VR2N4G1,Q22confl_tradeoffs,Ravens Matrices,1
+A3EUGO4VR2N4G1,Q23ss_out_uncert,Ravens Matrices,1
+A3EUGO4VR2N4G1,Q24eureka_question,Ravens Matrices,-1
 A3HL2LL0LEPZT8,Q1concept_behav,Husbands and wives transfer,-1
 A3HL2LL0LEPZT8,Q3type_1_planning,Husbands and wives transfer,-1
 A3HL2LL0LEPZT8,Q4type_2_generate,Husbands and wives transfer,-1
@@ -759,6 +919,26 @@ A3T9WZOUQGE2UW,Q20type_3_type_4,Image rating,1
 A3T9WZOUQGE2UW,Q22confl_tradeoffs,Image rating,-1
 A3T9WZOUQGE2UW,Q23ss_out_uncert,Image rating,1
 A3T9WZOUQGE2UW,Q24eureka_question,Image rating,-1
+A1YSYI926BBOHW,Q1concept_behav,Writing story,-1
+A1YSYI926BBOHW,Q3type_1_planning,Writing story,-1
+A1YSYI926BBOHW,Q4type_2_generate,Writing story,1
+A1YSYI926BBOHW,Q6type_5_cc,Writing story,-1
+A1YSYI926BBOHW,Q7type_7_battle,Writing story,-1
+A1YSYI926BBOHW,Q8type_8_performance,Writing story,-1
+A1YSYI926BBOHW,Q9divisible_unitary,Writing story,-1
+A1YSYI926BBOHW,Q10maximizing,Writing story,-1
+A1YSYI926BBOHW,Q11optimizing,Writing story,-1
+A1YSYI926BBOHW,Q13outcome_multip,Writing story,-1
+A1YSYI926BBOHW,Q14sol_scheme_mul,Writing story,-1
+A1YSYI926BBOHW,Q15dec_verifiability,Writing story,-1
+A1YSYI926BBOHW,Q16shared_knowledge,Writing story,-1
+A1YSYI926BBOHW,Q17within_sys_sol,Writing story,NA
+A1YSYI926BBOHW,Q18ans_recog,Writing story,NA
+A1YSYI926BBOHW,Q19time_solvability,Writing story,-1
+A1YSYI926BBOHW,Q20type_3_type_4,Writing story,-1
+A1YSYI926BBOHW,Q22confl_tradeoffs,Writing story,-1
+A1YSYI926BBOHW,Q23ss_out_uncert,Writing story,NA
+A1YSYI926BBOHW,Q24eureka_question,Writing story,-1
 A38I0E8UK53ME5,Q1concept_behav,Computer maze,-1
 A38I0E8UK53ME5,Q3type_1_planning,Computer maze,-1
 A38I0E8UK53ME5,Q4type_2_generate,Computer maze,-1
@@ -799,6 +979,26 @@ A26UIS59SY4NM6,Q20type_3_type_4,Moral Reasoning (Disciplinary Action Case),-1
 A26UIS59SY4NM6,Q22confl_tradeoffs,Moral Reasoning (Disciplinary Action Case),1
 A26UIS59SY4NM6,Q23ss_out_uncert,Moral Reasoning (Disciplinary Action Case),1
 A26UIS59SY4NM6,Q24eureka_question,Moral Reasoning (Disciplinary Action Case),-1
+A3HL2LL0LEPZT8,Q1concept_behav,Hidden figures in a picture (Searching Task),-1
+A3HL2LL0LEPZT8,Q3type_1_planning,Hidden figures in a picture (Searching Task),-1
+A3HL2LL0LEPZT8,Q4type_2_generate,Hidden figures in a picture (Searching Task),-1
+A3HL2LL0LEPZT8,Q6type_5_cc,Hidden figures in a picture (Searching Task),-1
+A3HL2LL0LEPZT8,Q7type_7_battle,Hidden figures in a picture (Searching Task),-1
+A3HL2LL0LEPZT8,Q8type_8_performance,Hidden figures in a picture (Searching Task),-1
+A3HL2LL0LEPZT8,Q9divisible_unitary,Hidden figures in a picture (Searching Task),1
+A3HL2LL0LEPZT8,Q10maximizing,Hidden figures in a picture (Searching Task),1
+A3HL2LL0LEPZT8,Q11optimizing,Hidden figures in a picture (Searching Task),-1
+A3HL2LL0LEPZT8,Q13outcome_multip,Hidden figures in a picture (Searching Task),1
+A3HL2LL0LEPZT8,Q14sol_scheme_mul,Hidden figures in a picture (Searching Task),-1
+A3HL2LL0LEPZT8,Q15dec_verifiability,Hidden figures in a picture (Searching Task),1
+A3HL2LL0LEPZT8,Q16shared_knowledge,Hidden figures in a picture (Searching Task),1
+A3HL2LL0LEPZT8,Q17within_sys_sol,Hidden figures in a picture (Searching Task),1
+A3HL2LL0LEPZT8,Q18ans_recog,Hidden figures in a picture (Searching Task),1
+A3HL2LL0LEPZT8,Q19time_solvability,Hidden figures in a picture (Searching Task),1
+A3HL2LL0LEPZT8,Q20type_3_type_4,Hidden figures in a picture (Searching Task),1
+A3HL2LL0LEPZT8,Q22confl_tradeoffs,Hidden figures in a picture (Searching Task),-1
+A3HL2LL0LEPZT8,Q23ss_out_uncert,Hidden figures in a picture (Searching Task),-1
+A3HL2LL0LEPZT8,Q24eureka_question,Hidden figures in a picture (Searching Task),-1
 A272X64FOZFYLB,Q1concept_behav,Checkers,-1
 A272X64FOZFYLB,Q3type_1_planning,Checkers,-1
 A272X64FOZFYLB,Q4type_2_generate,Checkers,-1
@@ -819,6 +1019,26 @@ A272X64FOZFYLB,Q20type_3_type_4,Checkers,1
 A272X64FOZFYLB,Q22confl_tradeoffs,Checkers,-1
 A272X64FOZFYLB,Q23ss_out_uncert,Checkers,1
 A272X64FOZFYLB,Q24eureka_question,Checkers,-1
+A3JAM040VWXHDO,Q1concept_behav,Recall stories,-1
+A3JAM040VWXHDO,Q3type_1_planning,Recall stories,-1
+A3JAM040VWXHDO,Q4type_2_generate,Recall stories,-1
+A3JAM040VWXHDO,Q6type_5_cc,Recall stories,-1
+A3JAM040VWXHDO,Q7type_7_battle,Recall stories,-1
+A3JAM040VWXHDO,Q8type_8_performance,Recall stories,-1
+A3JAM040VWXHDO,Q9divisible_unitary,Recall stories,1
+A3JAM040VWXHDO,Q10maximizing,Recall stories,-1
+A3JAM040VWXHDO,Q11optimizing,Recall stories,-1
+A3JAM040VWXHDO,Q13outcome_multip,Recall stories,1
+A3JAM040VWXHDO,Q14sol_scheme_mul,Recall stories,-1
+A3JAM040VWXHDO,Q15dec_verifiability,Recall stories,1
+A3JAM040VWXHDO,Q16shared_knowledge,Recall stories,1
+A3JAM040VWXHDO,Q17within_sys_sol,Recall stories,1
+A3JAM040VWXHDO,Q18ans_recog,Recall stories,1
+A3JAM040VWXHDO,Q19time_solvability,Recall stories,1
+A3JAM040VWXHDO,Q20type_3_type_4,Recall stories,1
+A3JAM040VWXHDO,Q22confl_tradeoffs,Recall stories,-1
+A3JAM040VWXHDO,Q23ss_out_uncert,Recall stories,-1
+A3JAM040VWXHDO,Q24eureka_question,Recall stories,-1
 A2N9Q1IHLP4LGI,Q1concept_behav,Visual Oddball Target,-1
 A2N9Q1IHLP4LGI,Q3type_1_planning,Visual Oddball Target,-1
 A2N9Q1IHLP4LGI,Q4type_2_generate,Visual Oddball Target,-1
@@ -959,6 +1179,46 @@ AHUNR2YEZW58R,Q20type_3_type_4,9 Dot Problem,1
 AHUNR2YEZW58R,Q22confl_tradeoffs,9 Dot Problem,-1
 AHUNR2YEZW58R,Q23ss_out_uncert,9 Dot Problem,-1
 AHUNR2YEZW58R,Q24eureka_question,9 Dot Problem,1
+A3NXT3OVGL7QNR,Q1concept_behav,Hidden figures in a picture (Searching Task),-1
+A3NXT3OVGL7QNR,Q3type_1_planning,Hidden figures in a picture (Searching Task),-1
+A3NXT3OVGL7QNR,Q4type_2_generate,Hidden figures in a picture (Searching Task),-1
+A3NXT3OVGL7QNR,Q6type_5_cc,Hidden figures in a picture (Searching Task),-1
+A3NXT3OVGL7QNR,Q7type_7_battle,Hidden figures in a picture (Searching Task),-1
+A3NXT3OVGL7QNR,Q8type_8_performance,Hidden figures in a picture (Searching Task),-1
+A3NXT3OVGL7QNR,Q9divisible_unitary,Hidden figures in a picture (Searching Task),1
+A3NXT3OVGL7QNR,Q10maximizing,Hidden figures in a picture (Searching Task),1
+A3NXT3OVGL7QNR,Q11optimizing,Hidden figures in a picture (Searching Task),-1
+A3NXT3OVGL7QNR,Q13outcome_multip,Hidden figures in a picture (Searching Task),1
+A3NXT3OVGL7QNR,Q14sol_scheme_mul,Hidden figures in a picture (Searching Task),1
+A3NXT3OVGL7QNR,Q15dec_verifiability,Hidden figures in a picture (Searching Task),-1
+A3NXT3OVGL7QNR,Q16shared_knowledge,Hidden figures in a picture (Searching Task),-1
+A3NXT3OVGL7QNR,Q17within_sys_sol,Hidden figures in a picture (Searching Task),1
+A3NXT3OVGL7QNR,Q18ans_recog,Hidden figures in a picture (Searching Task),1
+A3NXT3OVGL7QNR,Q19time_solvability,Hidden figures in a picture (Searching Task),-1
+A3NXT3OVGL7QNR,Q20type_3_type_4,Hidden figures in a picture (Searching Task),-1
+A3NXT3OVGL7QNR,Q22confl_tradeoffs,Hidden figures in a picture (Searching Task),-1
+A3NXT3OVGL7QNR,Q23ss_out_uncert,Hidden figures in a picture (Searching Task),-1
+A3NXT3OVGL7QNR,Q24eureka_question,Hidden figures in a picture (Searching Task),-1
+A3HL2LL0LEPZT8,Q1concept_behav,Recall stories,-1
+A3HL2LL0LEPZT8,Q3type_1_planning,Recall stories,-1
+A3HL2LL0LEPZT8,Q4type_2_generate,Recall stories,-1
+A3HL2LL0LEPZT8,Q6type_5_cc,Recall stories,-1
+A3HL2LL0LEPZT8,Q7type_7_battle,Recall stories,-1
+A3HL2LL0LEPZT8,Q8type_8_performance,Recall stories,-1
+A3HL2LL0LEPZT8,Q9divisible_unitary,Recall stories,1
+A3HL2LL0LEPZT8,Q10maximizing,Recall stories,-1
+A3HL2LL0LEPZT8,Q11optimizing,Recall stories,-1
+A3HL2LL0LEPZT8,Q13outcome_multip,Recall stories,1
+A3HL2LL0LEPZT8,Q14sol_scheme_mul,Recall stories,1
+A3HL2LL0LEPZT8,Q15dec_verifiability,Recall stories,1
+A3HL2LL0LEPZT8,Q16shared_knowledge,Recall stories,1
+A3HL2LL0LEPZT8,Q17within_sys_sol,Recall stories,1
+A3HL2LL0LEPZT8,Q18ans_recog,Recall stories,1
+A3HL2LL0LEPZT8,Q19time_solvability,Recall stories,1
+A3HL2LL0LEPZT8,Q20type_3_type_4,Recall stories,1
+A3HL2LL0LEPZT8,Q22confl_tradeoffs,Recall stories,-1
+A3HL2LL0LEPZT8,Q23ss_out_uncert,Recall stories,1
+A3HL2LL0LEPZT8,Q24eureka_question,Recall stories,-1
 AKQAI78JTXXC9,Q1concept_behav,Railroad Route Construction game (Impossible Version),1
 AKQAI78JTXXC9,Q3type_1_planning,Railroad Route Construction game (Impossible Version),-1
 AKQAI78JTXXC9,Q4type_2_generate,Railroad Route Construction game (Impossible Version),-1
@@ -1419,6 +1679,26 @@ A2S64AUN7JI7ZS,Q20type_3_type_4,"Wolf, goat and cabbage transfer",1
 A2S64AUN7JI7ZS,Q22confl_tradeoffs,"Wolf, goat and cabbage transfer",-1
 A2S64AUN7JI7ZS,Q23ss_out_uncert,"Wolf, goat and cabbage transfer",-1
 A2S64AUN7JI7ZS,Q24eureka_question,"Wolf, goat and cabbage transfer",1
+A1YSYI926BBOHW,Q1concept_behav,Hidden figures in a picture (Searching Task),-1
+A1YSYI926BBOHW,Q3type_1_planning,Hidden figures in a picture (Searching Task),1
+A1YSYI926BBOHW,Q4type_2_generate,Hidden figures in a picture (Searching Task),-1
+A1YSYI926BBOHW,Q6type_5_cc,Hidden figures in a picture (Searching Task),-1
+A1YSYI926BBOHW,Q7type_7_battle,Hidden figures in a picture (Searching Task),-1
+A1YSYI926BBOHW,Q8type_8_performance,Hidden figures in a picture (Searching Task),-1
+A1YSYI926BBOHW,Q9divisible_unitary,Hidden figures in a picture (Searching Task),1
+A1YSYI926BBOHW,Q10maximizing,Hidden figures in a picture (Searching Task),-1
+A1YSYI926BBOHW,Q11optimizing,Hidden figures in a picture (Searching Task),1
+A1YSYI926BBOHW,Q13outcome_multip,Hidden figures in a picture (Searching Task),1
+A1YSYI926BBOHW,Q14sol_scheme_mul,Hidden figures in a picture (Searching Task),-1
+A1YSYI926BBOHW,Q15dec_verifiability,Hidden figures in a picture (Searching Task),1
+A1YSYI926BBOHW,Q16shared_knowledge,Hidden figures in a picture (Searching Task),-1
+A1YSYI926BBOHW,Q17within_sys_sol,Hidden figures in a picture (Searching Task),-1
+A1YSYI926BBOHW,Q18ans_recog,Hidden figures in a picture (Searching Task),1
+A1YSYI926BBOHW,Q19time_solvability,Hidden figures in a picture (Searching Task),-1
+A1YSYI926BBOHW,Q20type_3_type_4,Hidden figures in a picture (Searching Task),1
+A1YSYI926BBOHW,Q22confl_tradeoffs,Hidden figures in a picture (Searching Task),-1
+A1YSYI926BBOHW,Q23ss_out_uncert,Hidden figures in a picture (Searching Task),-1
+A1YSYI926BBOHW,Q24eureka_question,Hidden figures in a picture (Searching Task),-1
 A3V3SQCM8QGYB7,Q1concept_behav,Guessing the correlation,-1
 A3V3SQCM8QGYB7,Q3type_1_planning,Guessing the correlation,-1
 A3V3SQCM8QGYB7,Q4type_2_generate,Guessing the correlation,-1
@@ -1439,6 +1719,26 @@ A3V3SQCM8QGYB7,Q20type_3_type_4,Guessing the correlation,1
 A3V3SQCM8QGYB7,Q22confl_tradeoffs,Guessing the correlation,-1
 A3V3SQCM8QGYB7,Q23ss_out_uncert,Guessing the correlation,-1
 A3V3SQCM8QGYB7,Q24eureka_question,Guessing the correlation,-1
+A3JAM040VWXHDO,Q1concept_behav,Hidden figures in a picture (Recall Task),-1
+A3JAM040VWXHDO,Q3type_1_planning,Hidden figures in a picture (Recall Task),-1
+A3JAM040VWXHDO,Q4type_2_generate,Hidden figures in a picture (Recall Task),-1
+A3JAM040VWXHDO,Q6type_5_cc,Hidden figures in a picture (Recall Task),-1
+A3JAM040VWXHDO,Q7type_7_battle,Hidden figures in a picture (Recall Task),-1
+A3JAM040VWXHDO,Q8type_8_performance,Hidden figures in a picture (Recall Task),-1
+A3JAM040VWXHDO,Q9divisible_unitary,Hidden figures in a picture (Recall Task),1
+A3JAM040VWXHDO,Q10maximizing,Hidden figures in a picture (Recall Task),-1
+A3JAM040VWXHDO,Q11optimizing,Hidden figures in a picture (Recall Task),-1
+A3JAM040VWXHDO,Q13outcome_multip,Hidden figures in a picture (Recall Task),1
+A3JAM040VWXHDO,Q14sol_scheme_mul,Hidden figures in a picture (Recall Task),-1
+A3JAM040VWXHDO,Q15dec_verifiability,Hidden figures in a picture (Recall Task),1
+A3JAM040VWXHDO,Q16shared_knowledge,Hidden figures in a picture (Recall Task),1
+A3JAM040VWXHDO,Q17within_sys_sol,Hidden figures in a picture (Recall Task),1
+A3JAM040VWXHDO,Q18ans_recog,Hidden figures in a picture (Recall Task),1
+A3JAM040VWXHDO,Q19time_solvability,Hidden figures in a picture (Recall Task),1
+A3JAM040VWXHDO,Q20type_3_type_4,Hidden figures in a picture (Recall Task),1
+A3JAM040VWXHDO,Q22confl_tradeoffs,Hidden figures in a picture (Recall Task),-1
+A3JAM040VWXHDO,Q23ss_out_uncert,Hidden figures in a picture (Recall Task),-1
+A3JAM040VWXHDO,Q24eureka_question,Hidden figures in a picture (Recall Task),-1
 A1VRG5HKZC0H0C,Q1concept_behav,Railroad Route Construction game,-1
 A1VRG5HKZC0H0C,Q3type_1_planning,Railroad Route Construction game,-1
 A1VRG5HKZC0H0C,Q4type_2_generate,Railroad Route Construction game,-1
@@ -1499,6 +1799,26 @@ A1VRG5HKZC0H0C,Q20type_3_type_4,Allocating resources to programs,-1
 A1VRG5HKZC0H0C,Q22confl_tradeoffs,Allocating resources to programs,1
 A1VRG5HKZC0H0C,Q23ss_out_uncert,Allocating resources to programs,-1
 A1VRG5HKZC0H0C,Q24eureka_question,Allocating resources to programs,-1
+A3S5ZB4D98JWT1,Q1concept_behav,Writing story,-1
+A3S5ZB4D98JWT1,Q3type_1_planning,Writing story,-1
+A3S5ZB4D98JWT1,Q4type_2_generate,Writing story,-1
+A3S5ZB4D98JWT1,Q6type_5_cc,Writing story,-1
+A3S5ZB4D98JWT1,Q7type_7_battle,Writing story,1
+A3S5ZB4D98JWT1,Q8type_8_performance,Writing story,-1
+A3S5ZB4D98JWT1,Q9divisible_unitary,Writing story,-1
+A3S5ZB4D98JWT1,Q10maximizing,Writing story,-1
+A3S5ZB4D98JWT1,Q11optimizing,Writing story,-1
+A3S5ZB4D98JWT1,Q13outcome_multip,Writing story,-1
+A3S5ZB4D98JWT1,Q14sol_scheme_mul,Writing story,-1
+A3S5ZB4D98JWT1,Q15dec_verifiability,Writing story,-1
+A3S5ZB4D98JWT1,Q16shared_knowledge,Writing story,-1
+A3S5ZB4D98JWT1,Q17within_sys_sol,Writing story,1
+A3S5ZB4D98JWT1,Q18ans_recog,Writing story,-1
+A3S5ZB4D98JWT1,Q19time_solvability,Writing story,1
+A3S5ZB4D98JWT1,Q20type_3_type_4,Writing story,-1
+A3S5ZB4D98JWT1,Q22confl_tradeoffs,Writing story,-1
+A3S5ZB4D98JWT1,Q23ss_out_uncert,Writing story,1
+A3S5ZB4D98JWT1,Q24eureka_question,Writing story,-1
 A2WZTMXWD20NYE,Q1concept_behav,Recall images,-1
 A2WZTMXWD20NYE,Q3type_1_planning,Recall images,-1
 A2WZTMXWD20NYE,Q4type_2_generate,Recall images,-1
@@ -1639,6 +1959,26 @@ A2WZTMXWD20NYE,Q20type_3_type_4,Recall association,1
 A2WZTMXWD20NYE,Q22confl_tradeoffs,Recall association,-1
 A2WZTMXWD20NYE,Q23ss_out_uncert,Recall association,-1
 A2WZTMXWD20NYE,Q24eureka_question,Recall association,-1
+A1YSYI926BBOHW,Q1concept_behav,Recall stories,-1
+A1YSYI926BBOHW,Q3type_1_planning,Recall stories,-1
+A1YSYI926BBOHW,Q4type_2_generate,Recall stories,-1
+A1YSYI926BBOHW,Q6type_5_cc,Recall stories,-1
+A1YSYI926BBOHW,Q7type_7_battle,Recall stories,-1
+A1YSYI926BBOHW,Q8type_8_performance,Recall stories,-1
+A1YSYI926BBOHW,Q9divisible_unitary,Recall stories,-1
+A1YSYI926BBOHW,Q10maximizing,Recall stories,1
+A1YSYI926BBOHW,Q11optimizing,Recall stories,1
+A1YSYI926BBOHW,Q13outcome_multip,Recall stories,1
+A1YSYI926BBOHW,Q14sol_scheme_mul,Recall stories,1
+A1YSYI926BBOHW,Q15dec_verifiability,Recall stories,1
+A1YSYI926BBOHW,Q16shared_knowledge,Recall stories,-1
+A1YSYI926BBOHW,Q17within_sys_sol,Recall stories,1
+A1YSYI926BBOHW,Q18ans_recog,Recall stories,-1
+A1YSYI926BBOHW,Q19time_solvability,Recall stories,-1
+A1YSYI926BBOHW,Q20type_3_type_4,Recall stories,1
+A1YSYI926BBOHW,Q22confl_tradeoffs,Recall stories,-1
+A1YSYI926BBOHW,Q23ss_out_uncert,Recall stories,1
+A1YSYI926BBOHW,Q24eureka_question,Recall stories,-1
 A2LSX4F8D3Z0OR,Q1concept_behav,Search for Oil Task,-1
 A2LSX4F8D3Z0OR,Q3type_1_planning,Search for Oil Task,-1
 A2LSX4F8D3Z0OR,Q4type_2_generate,Search for Oil Task,-1
@@ -1679,6 +2019,26 @@ A3S5ZB4D98JWT1,Q20type_3_type_4,Euclidean traveling salesperson,1
 A3S5ZB4D98JWT1,Q22confl_tradeoffs,Euclidean traveling salesperson,1
 A3S5ZB4D98JWT1,Q23ss_out_uncert,Euclidean traveling salesperson,-1
 A3S5ZB4D98JWT1,Q24eureka_question,Euclidean traveling salesperson,-1
+A3EUGO4VR2N4G1,Q1concept_behav,Categorization problem,-1
+A3EUGO4VR2N4G1,Q3type_1_planning,Categorization problem,1
+A3EUGO4VR2N4G1,Q4type_2_generate,Categorization problem,-1
+A3EUGO4VR2N4G1,Q6type_5_cc,Categorization problem,-1
+A3EUGO4VR2N4G1,Q7type_7_battle,Categorization problem,1
+A3EUGO4VR2N4G1,Q8type_8_performance,Categorization problem,1
+A3EUGO4VR2N4G1,Q9divisible_unitary,Categorization problem,-1
+A3EUGO4VR2N4G1,Q10maximizing,Categorization problem,-1
+A3EUGO4VR2N4G1,Q11optimizing,Categorization problem,1
+A3EUGO4VR2N4G1,Q13outcome_multip,Categorization problem,1
+A3EUGO4VR2N4G1,Q14sol_scheme_mul,Categorization problem,1
+A3EUGO4VR2N4G1,Q15dec_verifiability,Categorization problem,1
+A3EUGO4VR2N4G1,Q16shared_knowledge,Categorization problem,1
+A3EUGO4VR2N4G1,Q17within_sys_sol,Categorization problem,1
+A3EUGO4VR2N4G1,Q18ans_recog,Categorization problem,1
+A3EUGO4VR2N4G1,Q19time_solvability,Categorization problem,1
+A3EUGO4VR2N4G1,Q20type_3_type_4,Categorization problem,1
+A3EUGO4VR2N4G1,Q22confl_tradeoffs,Categorization problem,1
+A3EUGO4VR2N4G1,Q23ss_out_uncert,Categorization problem,-1
+A3EUGO4VR2N4G1,Q24eureka_question,Categorization problem,-1
 A1VRG5HKZC0H0C,Q1concept_behav,To evacuate or not to evacuate,-1
 A1VRG5HKZC0H0C,Q3type_1_planning,To evacuate or not to evacuate,-1
 A1VRG5HKZC0H0C,Q4type_2_generate,To evacuate or not to evacuate,-1
@@ -1779,6 +2139,26 @@ A3NXT3OVGL7QNR,Q20type_3_type_4,Word completion given starting letter,1
 A3NXT3OVGL7QNR,Q22confl_tradeoffs,Word completion given starting letter,-1
 A3NXT3OVGL7QNR,Q23ss_out_uncert,Word completion given starting letter,-1
 A3NXT3OVGL7QNR,Q24eureka_question,Word completion given starting letter,-1
+A3HL2LL0LEPZT8,Q1concept_behav,Ravens Matrices,-1
+A3HL2LL0LEPZT8,Q3type_1_planning,Ravens Matrices,-1
+A3HL2LL0LEPZT8,Q4type_2_generate,Ravens Matrices,-1
+A3HL2LL0LEPZT8,Q6type_5_cc,Ravens Matrices,-1
+A3HL2LL0LEPZT8,Q7type_7_battle,Ravens Matrices,-1
+A3HL2LL0LEPZT8,Q8type_8_performance,Ravens Matrices,-1
+A3HL2LL0LEPZT8,Q9divisible_unitary,Ravens Matrices,-1
+A3HL2LL0LEPZT8,Q10maximizing,Ravens Matrices,-1
+A3HL2LL0LEPZT8,Q11optimizing,Ravens Matrices,-1
+A3HL2LL0LEPZT8,Q13outcome_multip,Ravens Matrices,1
+A3HL2LL0LEPZT8,Q14sol_scheme_mul,Ravens Matrices,1
+A3HL2LL0LEPZT8,Q15dec_verifiability,Ravens Matrices,1
+A3HL2LL0LEPZT8,Q16shared_knowledge,Ravens Matrices,1
+A3HL2LL0LEPZT8,Q17within_sys_sol,Ravens Matrices,1
+A3HL2LL0LEPZT8,Q18ans_recog,Ravens Matrices,1
+A3HL2LL0LEPZT8,Q19time_solvability,Ravens Matrices,1
+A3HL2LL0LEPZT8,Q20type_3_type_4,Ravens Matrices,1
+A3HL2LL0LEPZT8,Q22confl_tradeoffs,Ravens Matrices,-1
+A3HL2LL0LEPZT8,Q23ss_out_uncert,Ravens Matrices,1
+A3HL2LL0LEPZT8,Q24eureka_question,Ravens Matrices,1
 A2S64AUN7JI7ZS,Q1concept_behav,Estimating pages of a book,-1
 A2S64AUN7JI7ZS,Q3type_1_planning,Estimating pages of a book,-1
 A2S64AUN7JI7ZS,Q4type_2_generate,Estimating pages of a book,-1
@@ -1919,6 +2299,26 @@ AWAW665TQQP2F,Q20type_3_type_4,Husbands and wives transfer,1
 AWAW665TQQP2F,Q22confl_tradeoffs,Husbands and wives transfer,1
 AWAW665TQQP2F,Q23ss_out_uncert,Husbands and wives transfer,1
 AWAW665TQQP2F,Q24eureka_question,Husbands and wives transfer,-1
+A3EUGO4VR2N4G1,Q1concept_behav,Logic Problem,-1
+A3EUGO4VR2N4G1,Q3type_1_planning,Logic Problem,1
+A3EUGO4VR2N4G1,Q4type_2_generate,Logic Problem,-1
+A3EUGO4VR2N4G1,Q6type_5_cc,Logic Problem,-1
+A3EUGO4VR2N4G1,Q7type_7_battle,Logic Problem,-1
+A3EUGO4VR2N4G1,Q8type_8_performance,Logic Problem,-1
+A3EUGO4VR2N4G1,Q9divisible_unitary,Logic Problem,1
+A3EUGO4VR2N4G1,Q10maximizing,Logic Problem,1
+A3EUGO4VR2N4G1,Q11optimizing,Logic Problem,1
+A3EUGO4VR2N4G1,Q13outcome_multip,Logic Problem,1
+A3EUGO4VR2N4G1,Q14sol_scheme_mul,Logic Problem,-1
+A3EUGO4VR2N4G1,Q15dec_verifiability,Logic Problem,1
+A3EUGO4VR2N4G1,Q16shared_knowledge,Logic Problem,1
+A3EUGO4VR2N4G1,Q17within_sys_sol,Logic Problem,1
+A3EUGO4VR2N4G1,Q18ans_recog,Logic Problem,1
+A3EUGO4VR2N4G1,Q19time_solvability,Logic Problem,1
+A3EUGO4VR2N4G1,Q20type_3_type_4,Logic Problem,1
+A3EUGO4VR2N4G1,Q22confl_tradeoffs,Logic Problem,1
+A3EUGO4VR2N4G1,Q23ss_out_uncert,Logic Problem,-1
+A3EUGO4VR2N4G1,Q24eureka_question,Logic Problem,-1
 AKQAI78JTXXC9,Q1concept_behav,Wildcat Wells,-1
 AKQAI78JTXXC9,Q3type_1_planning,Wildcat Wells,-1
 AKQAI78JTXXC9,Q4type_2_generate,Wildcat Wells,-1
@@ -2019,6 +2419,26 @@ AA5ZDXAA2DLY1,Q20type_3_type_4,Guessing the correlation,1
 AA5ZDXAA2DLY1,Q22confl_tradeoffs,Guessing the correlation,-1
 AA5ZDXAA2DLY1,Q23ss_out_uncert,Guessing the correlation,1
 AA5ZDXAA2DLY1,Q24eureka_question,Guessing the correlation,-1
+A3S5ZB4D98JWT1,Q1concept_behav,Logic Problem,-1
+A3S5ZB4D98JWT1,Q3type_1_planning,Logic Problem,-1
+A3S5ZB4D98JWT1,Q4type_2_generate,Logic Problem,-1
+A3S5ZB4D98JWT1,Q6type_5_cc,Logic Problem,-1
+A3S5ZB4D98JWT1,Q7type_7_battle,Logic Problem,1
+A3S5ZB4D98JWT1,Q8type_8_performance,Logic Problem,-1
+A3S5ZB4D98JWT1,Q9divisible_unitary,Logic Problem,-1
+A3S5ZB4D98JWT1,Q10maximizing,Logic Problem,1
+A3S5ZB4D98JWT1,Q11optimizing,Logic Problem,1
+A3S5ZB4D98JWT1,Q13outcome_multip,Logic Problem,1
+A3S5ZB4D98JWT1,Q14sol_scheme_mul,Logic Problem,1
+A3S5ZB4D98JWT1,Q15dec_verifiability,Logic Problem,1
+A3S5ZB4D98JWT1,Q16shared_knowledge,Logic Problem,1
+A3S5ZB4D98JWT1,Q17within_sys_sol,Logic Problem,1
+A3S5ZB4D98JWT1,Q18ans_recog,Logic Problem,1
+A3S5ZB4D98JWT1,Q19time_solvability,Logic Problem,1
+A3S5ZB4D98JWT1,Q20type_3_type_4,Logic Problem,1
+A3S5ZB4D98JWT1,Q22confl_tradeoffs,Logic Problem,1
+A3S5ZB4D98JWT1,Q23ss_out_uncert,Logic Problem,1
+A3S5ZB4D98JWT1,Q24eureka_question,Logic Problem,1
 AKQAI78JTXXC9,Q1concept_behav,Checkers,-1
 AKQAI78JTXXC9,Q3type_1_planning,Checkers,-1
 AKQAI78JTXXC9,Q4type_2_generate,Checkers,-1
@@ -2339,6 +2759,26 @@ A2TVG2HLMKVMSL,Q20type_3_type_4,Estimating pages of a book,1
 A2TVG2HLMKVMSL,Q22confl_tradeoffs,Estimating pages of a book,-1
 A2TVG2HLMKVMSL,Q23ss_out_uncert,Estimating pages of a book,1
 A2TVG2HLMKVMSL,Q24eureka_question,Estimating pages of a book,-1
+A3EUGO4VR2N4G1,Q1concept_behav,Writing story,-1
+A3EUGO4VR2N4G1,Q3type_1_planning,Writing story,1
+A3EUGO4VR2N4G1,Q4type_2_generate,Writing story,-1
+A3EUGO4VR2N4G1,Q6type_5_cc,Writing story,1
+A3EUGO4VR2N4G1,Q7type_7_battle,Writing story,-1
+A3EUGO4VR2N4G1,Q8type_8_performance,Writing story,-1
+A3EUGO4VR2N4G1,Q9divisible_unitary,Writing story,1
+A3EUGO4VR2N4G1,Q10maximizing,Writing story,-1
+A3EUGO4VR2N4G1,Q11optimizing,Writing story,-1
+A3EUGO4VR2N4G1,Q13outcome_multip,Writing story,-1
+A3EUGO4VR2N4G1,Q14sol_scheme_mul,Writing story,-1
+A3EUGO4VR2N4G1,Q15dec_verifiability,Writing story,-1
+A3EUGO4VR2N4G1,Q16shared_knowledge,Writing story,-1
+A3EUGO4VR2N4G1,Q17within_sys_sol,Writing story,1
+A3EUGO4VR2N4G1,Q18ans_recog,Writing story,-1
+A3EUGO4VR2N4G1,Q19time_solvability,Writing story,-1
+A3EUGO4VR2N4G1,Q20type_3_type_4,Writing story,-1
+A3EUGO4VR2N4G1,Q22confl_tradeoffs,Writing story,-1
+A3EUGO4VR2N4G1,Q23ss_out_uncert,Writing story,-1
+A3EUGO4VR2N4G1,Q24eureka_question,Writing story,-1
 ARI1EMAHUA9PO,Q1concept_behav,Estimating social quantity,-1
 ARI1EMAHUA9PO,Q3type_1_planning,Estimating social quantity,-1
 ARI1EMAHUA9PO,Q4type_2_generate,Estimating social quantity,-1
@@ -2439,6 +2879,26 @@ A1VRG5HKZC0H0C,Q20type_3_type_4,Moral Reasoning (Disciplinary Action Case),-1
 A1VRG5HKZC0H0C,Q22confl_tradeoffs,Moral Reasoning (Disciplinary Action Case),1
 A1VRG5HKZC0H0C,Q23ss_out_uncert,Moral Reasoning (Disciplinary Action Case),-1
 A1VRG5HKZC0H0C,Q24eureka_question,Moral Reasoning (Disciplinary Action Case),-1
+AWAW665TQQP2F,Q1concept_behav,Hidden figures in a picture (Searching Task),-1
+AWAW665TQQP2F,Q3type_1_planning,Hidden figures in a picture (Searching Task),-1
+AWAW665TQQP2F,Q4type_2_generate,Hidden figures in a picture (Searching Task),-1
+AWAW665TQQP2F,Q6type_5_cc,Hidden figures in a picture (Searching Task),-1
+AWAW665TQQP2F,Q7type_7_battle,Hidden figures in a picture (Searching Task),1
+AWAW665TQQP2F,Q8type_8_performance,Hidden figures in a picture (Searching Task),-1
+AWAW665TQQP2F,Q9divisible_unitary,Hidden figures in a picture (Searching Task),1
+AWAW665TQQP2F,Q10maximizing,Hidden figures in a picture (Searching Task),1
+AWAW665TQQP2F,Q11optimizing,Hidden figures in a picture (Searching Task),1
+AWAW665TQQP2F,Q13outcome_multip,Hidden figures in a picture (Searching Task),1
+AWAW665TQQP2F,Q14sol_scheme_mul,Hidden figures in a picture (Searching Task),1
+AWAW665TQQP2F,Q15dec_verifiability,Hidden figures in a picture (Searching Task),1
+AWAW665TQQP2F,Q16shared_knowledge,Hidden figures in a picture (Searching Task),1
+AWAW665TQQP2F,Q17within_sys_sol,Hidden figures in a picture (Searching Task),1
+AWAW665TQQP2F,Q18ans_recog,Hidden figures in a picture (Searching Task),1
+AWAW665TQQP2F,Q19time_solvability,Hidden figures in a picture (Searching Task),1
+AWAW665TQQP2F,Q20type_3_type_4,Hidden figures in a picture (Searching Task),1
+AWAW665TQQP2F,Q22confl_tradeoffs,Hidden figures in a picture (Searching Task),-1
+AWAW665TQQP2F,Q23ss_out_uncert,Hidden figures in a picture (Searching Task),-1
+AWAW665TQQP2F,Q24eureka_question,Hidden figures in a picture (Searching Task),1
 AA5ZDXAA2DLY1,Q1concept_behav,Computer maze,-1
 AA5ZDXAA2DLY1,Q3type_1_planning,Computer maze,-1
 AA5ZDXAA2DLY1,Q4type_2_generate,Computer maze,-1
@@ -2599,6 +3059,26 @@ A2AZYU1CT24O0K,Q20type_3_type_4,Search for Oil Task,1
 A2AZYU1CT24O0K,Q22confl_tradeoffs,Search for Oil Task,-1
 A2AZYU1CT24O0K,Q23ss_out_uncert,Search for Oil Task,1
 A2AZYU1CT24O0K,Q24eureka_question,Search for Oil Task,-1
+A3HL2LL0LEPZT8,Q1concept_behav,Categorization problem,-1
+A3HL2LL0LEPZT8,Q3type_1_planning,Categorization problem,-1
+A3HL2LL0LEPZT8,Q4type_2_generate,Categorization problem,-1
+A3HL2LL0LEPZT8,Q6type_5_cc,Categorization problem,-1
+A3HL2LL0LEPZT8,Q7type_7_battle,Categorization problem,-1
+A3HL2LL0LEPZT8,Q8type_8_performance,Categorization problem,1
+A3HL2LL0LEPZT8,Q9divisible_unitary,Categorization problem,-1
+A3HL2LL0LEPZT8,Q10maximizing,Categorization problem,-1
+A3HL2LL0LEPZT8,Q11optimizing,Categorization problem,1
+A3HL2LL0LEPZT8,Q13outcome_multip,Categorization problem,1
+A3HL2LL0LEPZT8,Q14sol_scheme_mul,Categorization problem,1
+A3HL2LL0LEPZT8,Q15dec_verifiability,Categorization problem,1
+A3HL2LL0LEPZT8,Q16shared_knowledge,Categorization problem,1
+A3HL2LL0LEPZT8,Q17within_sys_sol,Categorization problem,1
+A3HL2LL0LEPZT8,Q18ans_recog,Categorization problem,1
+A3HL2LL0LEPZT8,Q19time_solvability,Categorization problem,1
+A3HL2LL0LEPZT8,Q20type_3_type_4,Categorization problem,1
+A3HL2LL0LEPZT8,Q22confl_tradeoffs,Categorization problem,-1
+A3HL2LL0LEPZT8,Q23ss_out_uncert,Categorization problem,1
+A3HL2LL0LEPZT8,Q24eureka_question,Categorization problem,-1
 A23BWWRR7J5XLS,Q1concept_behav,To evacuate or not to evacuate,-1
 A23BWWRR7J5XLS,Q3type_1_planning,To evacuate or not to evacuate,-1
 A23BWWRR7J5XLS,Q4type_2_generate,To evacuate or not to evacuate,-1
@@ -2679,6 +3159,46 @@ A1VRG5HKZC0H0C,Q20type_3_type_4,Recall videos,1
 A1VRG5HKZC0H0C,Q22confl_tradeoffs,Recall videos,-1
 A1VRG5HKZC0H0C,Q23ss_out_uncert,Recall videos,1
 A1VRG5HKZC0H0C,Q24eureka_question,Recall videos,-1
+A3S5ZB4D98JWT1,Q1concept_behav,Hidden figures in a picture (Searching Task),-1
+A3S5ZB4D98JWT1,Q3type_1_planning,Hidden figures in a picture (Searching Task),-1
+A3S5ZB4D98JWT1,Q4type_2_generate,Hidden figures in a picture (Searching Task),-1
+A3S5ZB4D98JWT1,Q6type_5_cc,Hidden figures in a picture (Searching Task),-1
+A3S5ZB4D98JWT1,Q7type_7_battle,Hidden figures in a picture (Searching Task),1
+A3S5ZB4D98JWT1,Q8type_8_performance,Hidden figures in a picture (Searching Task),-1
+A3S5ZB4D98JWT1,Q9divisible_unitary,Hidden figures in a picture (Searching Task),1
+A3S5ZB4D98JWT1,Q10maximizing,Hidden figures in a picture (Searching Task),1
+A3S5ZB4D98JWT1,Q11optimizing,Hidden figures in a picture (Searching Task),-1
+A3S5ZB4D98JWT1,Q13outcome_multip,Hidden figures in a picture (Searching Task),1
+A3S5ZB4D98JWT1,Q14sol_scheme_mul,Hidden figures in a picture (Searching Task),1
+A3S5ZB4D98JWT1,Q15dec_verifiability,Hidden figures in a picture (Searching Task),1
+A3S5ZB4D98JWT1,Q16shared_knowledge,Hidden figures in a picture (Searching Task),-1
+A3S5ZB4D98JWT1,Q17within_sys_sol,Hidden figures in a picture (Searching Task),1
+A3S5ZB4D98JWT1,Q18ans_recog,Hidden figures in a picture (Searching Task),1
+A3S5ZB4D98JWT1,Q19time_solvability,Hidden figures in a picture (Searching Task),1
+A3S5ZB4D98JWT1,Q20type_3_type_4,Hidden figures in a picture (Searching Task),1
+A3S5ZB4D98JWT1,Q22confl_tradeoffs,Hidden figures in a picture (Searching Task),-1
+A3S5ZB4D98JWT1,Q23ss_out_uncert,Hidden figures in a picture (Searching Task),1
+A3S5ZB4D98JWT1,Q24eureka_question,Hidden figures in a picture (Searching Task),-1
+A3JAM040VWXHDO,Q1concept_behav,Writing story,-1
+A3JAM040VWXHDO,Q3type_1_planning,Writing story,-1
+A3JAM040VWXHDO,Q4type_2_generate,Writing story,-1
+A3JAM040VWXHDO,Q6type_5_cc,Writing story,-1
+A3JAM040VWXHDO,Q7type_7_battle,Writing story,-1
+A3JAM040VWXHDO,Q8type_8_performance,Writing story,-1
+A3JAM040VWXHDO,Q9divisible_unitary,Writing story,-1
+A3JAM040VWXHDO,Q10maximizing,Writing story,-1
+A3JAM040VWXHDO,Q11optimizing,Writing story,-1
+A3JAM040VWXHDO,Q13outcome_multip,Writing story,-1
+A3JAM040VWXHDO,Q14sol_scheme_mul,Writing story,-1
+A3JAM040VWXHDO,Q15dec_verifiability,Writing story,-1
+A3JAM040VWXHDO,Q16shared_knowledge,Writing story,-1
+A3JAM040VWXHDO,Q17within_sys_sol,Writing story,1
+A3JAM040VWXHDO,Q18ans_recog,Writing story,-1
+A3JAM040VWXHDO,Q19time_solvability,Writing story,-1
+A3JAM040VWXHDO,Q20type_3_type_4,Writing story,-1
+A3JAM040VWXHDO,Q22confl_tradeoffs,Writing story,1
+A3JAM040VWXHDO,Q23ss_out_uncert,Writing story,-1
+A3JAM040VWXHDO,Q24eureka_question,Writing story,-1
 A2YW35WSBU88O0,Q1concept_behav,Recall images,-1
 A2YW35WSBU88O0,Q3type_1_planning,Recall images,-1
 A2YW35WSBU88O0,Q4type_2_generate,Recall images,-1
@@ -2799,6 +3319,26 @@ A1I72NHC21347A,Q20type_3_type_4,Shopping plan,1
 A1I72NHC21347A,Q22confl_tradeoffs,Shopping plan,-1
 A1I72NHC21347A,Q23ss_out_uncert,Shopping plan,1
 A1I72NHC21347A,Q24eureka_question,Shopping plan,-1
+AWAW665TQQP2F,Q1concept_behav,Recall stories,-1
+AWAW665TQQP2F,Q3type_1_planning,Recall stories,-1
+AWAW665TQQP2F,Q4type_2_generate,Recall stories,1
+AWAW665TQQP2F,Q6type_5_cc,Recall stories,-1
+AWAW665TQQP2F,Q7type_7_battle,Recall stories,-1
+AWAW665TQQP2F,Q8type_8_performance,Recall stories,-1
+AWAW665TQQP2F,Q9divisible_unitary,Recall stories,-1
+AWAW665TQQP2F,Q10maximizing,Recall stories,1
+AWAW665TQQP2F,Q11optimizing,Recall stories,-1
+AWAW665TQQP2F,Q13outcome_multip,Recall stories,1
+AWAW665TQQP2F,Q14sol_scheme_mul,Recall stories,1
+AWAW665TQQP2F,Q15dec_verifiability,Recall stories,1
+AWAW665TQQP2F,Q16shared_knowledge,Recall stories,1
+AWAW665TQQP2F,Q17within_sys_sol,Recall stories,1
+AWAW665TQQP2F,Q18ans_recog,Recall stories,1
+AWAW665TQQP2F,Q19time_solvability,Recall stories,1
+AWAW665TQQP2F,Q20type_3_type_4,Recall stories,1
+AWAW665TQQP2F,Q22confl_tradeoffs,Recall stories,-1
+AWAW665TQQP2F,Q23ss_out_uncert,Recall stories,1
+AWAW665TQQP2F,Q24eureka_question,Recall stories,-1
 ARI1EMAHUA9PO,Q1concept_behav,Shopping plan,-1
 ARI1EMAHUA9PO,Q3type_1_planning,Shopping plan,1
 ARI1EMAHUA9PO,Q4type_2_generate,Shopping plan,-1
@@ -2979,6 +3519,26 @@ A27W025UEXS1G0,Q20type_3_type_4,Allocating resources to programs,-1
 A27W025UEXS1G0,Q22confl_tradeoffs,Allocating resources to programs,1
 A27W025UEXS1G0,Q23ss_out_uncert,Allocating resources to programs,-1
 A27W025UEXS1G0,Q24eureka_question,Allocating resources to programs,-1
+AWAW665TQQP2F,Q1concept_behav,Writing story,-1
+AWAW665TQQP2F,Q3type_1_planning,Writing story,-1
+AWAW665TQQP2F,Q4type_2_generate,Writing story,1
+AWAW665TQQP2F,Q6type_5_cc,Writing story,1
+AWAW665TQQP2F,Q7type_7_battle,Writing story,-1
+AWAW665TQQP2F,Q8type_8_performance,Writing story,-1
+AWAW665TQQP2F,Q9divisible_unitary,Writing story,-1
+AWAW665TQQP2F,Q10maximizing,Writing story,-1
+AWAW665TQQP2F,Q11optimizing,Writing story,-1
+AWAW665TQQP2F,Q13outcome_multip,Writing story,-1
+AWAW665TQQP2F,Q14sol_scheme_mul,Writing story,-1
+AWAW665TQQP2F,Q15dec_verifiability,Writing story,1
+AWAW665TQQP2F,Q16shared_knowledge,Writing story,-1
+AWAW665TQQP2F,Q17within_sys_sol,Writing story,1
+AWAW665TQQP2F,Q18ans_recog,Writing story,-1
+AWAW665TQQP2F,Q19time_solvability,Writing story,1
+AWAW665TQQP2F,Q20type_3_type_4,Writing story,1
+AWAW665TQQP2F,Q22confl_tradeoffs,Writing story,-1
+AWAW665TQQP2F,Q23ss_out_uncert,Writing story,-1
+AWAW665TQQP2F,Q24eureka_question,Writing story,-1
 A3V3SQCM8QGYB7,Q1concept_behav,Estimating pages of a book,-1
 A3V3SQCM8QGYB7,Q3type_1_planning,Estimating pages of a book,-1
 A3V3SQCM8QGYB7,Q4type_2_generate,Estimating pages of a book,-1
@@ -3039,6 +3599,26 @@ A2531UD0IGT731,Q20type_3_type_4,Divergent Association Task,1
 A2531UD0IGT731,Q22confl_tradeoffs,Divergent Association Task,-1
 A2531UD0IGT731,Q23ss_out_uncert,Divergent Association Task,1
 A2531UD0IGT731,Q24eureka_question,Divergent Association Task,-1
+AWAW665TQQP2F,Q1concept_behav,Categorization problem,-1
+AWAW665TQQP2F,Q3type_1_planning,Categorization problem,-1
+AWAW665TQQP2F,Q4type_2_generate,Categorization problem,1
+AWAW665TQQP2F,Q6type_5_cc,Categorization problem,1
+AWAW665TQQP2F,Q7type_7_battle,Categorization problem,1
+AWAW665TQQP2F,Q8type_8_performance,Categorization problem,1
+AWAW665TQQP2F,Q9divisible_unitary,Categorization problem,-1
+AWAW665TQQP2F,Q10maximizing,Categorization problem,1
+AWAW665TQQP2F,Q11optimizing,Categorization problem,1
+AWAW665TQQP2F,Q13outcome_multip,Categorization problem,1
+AWAW665TQQP2F,Q14sol_scheme_mul,Categorization problem,1
+AWAW665TQQP2F,Q15dec_verifiability,Categorization problem,1
+AWAW665TQQP2F,Q16shared_knowledge,Categorization problem,1
+AWAW665TQQP2F,Q17within_sys_sol,Categorization problem,1
+AWAW665TQQP2F,Q18ans_recog,Categorization problem,1
+AWAW665TQQP2F,Q19time_solvability,Categorization problem,1
+AWAW665TQQP2F,Q20type_3_type_4,Categorization problem,1
+AWAW665TQQP2F,Q22confl_tradeoffs,Categorization problem,1
+AWAW665TQQP2F,Q23ss_out_uncert,Categorization problem,1
+AWAW665TQQP2F,Q24eureka_question,Categorization problem,1
 A1ZE87WEYCA44A,Q1concept_behav,Estimating geological metrics,-1
 A1ZE87WEYCA44A,Q3type_1_planning,Estimating geological metrics,-1
 A1ZE87WEYCA44A,Q4type_2_generate,Estimating geological metrics,-1
@@ -3179,6 +3759,46 @@ A1JED1RJM2C9MS,Q20type_3_type_4,Image rating,-1
 A1JED1RJM2C9MS,Q22confl_tradeoffs,Image rating,-1
 A1JED1RJM2C9MS,Q23ss_out_uncert,Image rating,1
 A1JED1RJM2C9MS,Q24eureka_question,Image rating,-1
+A3HL2LL0LEPZT8,Q1concept_behav,Logic Problem,-1
+A3HL2LL0LEPZT8,Q3type_1_planning,Logic Problem,-1
+A3HL2LL0LEPZT8,Q4type_2_generate,Logic Problem,-1
+A3HL2LL0LEPZT8,Q6type_5_cc,Logic Problem,-1
+A3HL2LL0LEPZT8,Q7type_7_battle,Logic Problem,-1
+A3HL2LL0LEPZT8,Q8type_8_performance,Logic Problem,-1
+A3HL2LL0LEPZT8,Q9divisible_unitary,Logic Problem,-1
+A3HL2LL0LEPZT8,Q10maximizing,Logic Problem,-1
+A3HL2LL0LEPZT8,Q11optimizing,Logic Problem,-1
+A3HL2LL0LEPZT8,Q13outcome_multip,Logic Problem,1
+A3HL2LL0LEPZT8,Q14sol_scheme_mul,Logic Problem,-1
+A3HL2LL0LEPZT8,Q15dec_verifiability,Logic Problem,1
+A3HL2LL0LEPZT8,Q16shared_knowledge,Logic Problem,1
+A3HL2LL0LEPZT8,Q17within_sys_sol,Logic Problem,1
+A3HL2LL0LEPZT8,Q18ans_recog,Logic Problem,1
+A3HL2LL0LEPZT8,Q19time_solvability,Logic Problem,1
+A3HL2LL0LEPZT8,Q20type_3_type_4,Logic Problem,1
+A3HL2LL0LEPZT8,Q22confl_tradeoffs,Logic Problem,-1
+A3HL2LL0LEPZT8,Q23ss_out_uncert,Logic Problem,1
+A3HL2LL0LEPZT8,Q24eureka_question,Logic Problem,-1
+A1YSYI926BBOHW,Q1concept_behav,Ravens Matrices,-1
+A1YSYI926BBOHW,Q3type_1_planning,Ravens Matrices,-1
+A1YSYI926BBOHW,Q4type_2_generate,Ravens Matrices,-1
+A1YSYI926BBOHW,Q6type_5_cc,Ravens Matrices,-1
+A1YSYI926BBOHW,Q7type_7_battle,Ravens Matrices,-1
+A1YSYI926BBOHW,Q8type_8_performance,Ravens Matrices,1
+A1YSYI926BBOHW,Q9divisible_unitary,Ravens Matrices,-1
+A1YSYI926BBOHW,Q10maximizing,Ravens Matrices,-1
+A1YSYI926BBOHW,Q11optimizing,Ravens Matrices,-1
+A1YSYI926BBOHW,Q13outcome_multip,Ravens Matrices,1
+A1YSYI926BBOHW,Q14sol_scheme_mul,Ravens Matrices,-1
+A1YSYI926BBOHW,Q15dec_verifiability,Ravens Matrices,1
+A1YSYI926BBOHW,Q16shared_knowledge,Ravens Matrices,1
+A1YSYI926BBOHW,Q17within_sys_sol,Ravens Matrices,1
+A1YSYI926BBOHW,Q18ans_recog,Ravens Matrices,1
+A1YSYI926BBOHW,Q19time_solvability,Ravens Matrices,1
+A1YSYI926BBOHW,Q20type_3_type_4,Ravens Matrices,1
+A1YSYI926BBOHW,Q22confl_tradeoffs,Ravens Matrices,-1
+A1YSYI926BBOHW,Q23ss_out_uncert,Ravens Matrices,-1
+A1YSYI926BBOHW,Q24eureka_question,Ravens Matrices,1
 A17KN7NAP48L4B,Q1concept_behav,Abstract grid task,-1
 A17KN7NAP48L4B,Q3type_1_planning,Abstract grid task,-1
 A17KN7NAP48L4B,Q4type_2_generate,Abstract grid task,-1
@@ -3399,6 +4019,26 @@ A1VRG5HKZC0H0C,Q20type_3_type_4,Shopping plan,1
 A1VRG5HKZC0H0C,Q22confl_tradeoffs,Shopping plan,1
 A1VRG5HKZC0H0C,Q23ss_out_uncert,Shopping plan,1
 A1VRG5HKZC0H0C,Q24eureka_question,Shopping plan,-1
+A3HL2LL0LEPZT8,Q1concept_behav,Hidden figures in a picture (Recall Task),-1
+A3HL2LL0LEPZT8,Q3type_1_planning,Hidden figures in a picture (Recall Task),-1
+A3HL2LL0LEPZT8,Q4type_2_generate,Hidden figures in a picture (Recall Task),1
+A3HL2LL0LEPZT8,Q6type_5_cc,Hidden figures in a picture (Recall Task),-1
+A3HL2LL0LEPZT8,Q7type_7_battle,Hidden figures in a picture (Recall Task),-1
+A3HL2LL0LEPZT8,Q8type_8_performance,Hidden figures in a picture (Recall Task),-1
+A3HL2LL0LEPZT8,Q9divisible_unitary,Hidden figures in a picture (Recall Task),1
+A3HL2LL0LEPZT8,Q10maximizing,Hidden figures in a picture (Recall Task),1
+A3HL2LL0LEPZT8,Q11optimizing,Hidden figures in a picture (Recall Task),-1
+A3HL2LL0LEPZT8,Q13outcome_multip,Hidden figures in a picture (Recall Task),1
+A3HL2LL0LEPZT8,Q14sol_scheme_mul,Hidden figures in a picture (Recall Task),1
+A3HL2LL0LEPZT8,Q15dec_verifiability,Hidden figures in a picture (Recall Task),1
+A3HL2LL0LEPZT8,Q16shared_knowledge,Hidden figures in a picture (Recall Task),1
+A3HL2LL0LEPZT8,Q17within_sys_sol,Hidden figures in a picture (Recall Task),1
+A3HL2LL0LEPZT8,Q18ans_recog,Hidden figures in a picture (Recall Task),1
+A3HL2LL0LEPZT8,Q19time_solvability,Hidden figures in a picture (Recall Task),1
+A3HL2LL0LEPZT8,Q20type_3_type_4,Hidden figures in a picture (Recall Task),1
+A3HL2LL0LEPZT8,Q22confl_tradeoffs,Hidden figures in a picture (Recall Task),-1
+A3HL2LL0LEPZT8,Q23ss_out_uncert,Hidden figures in a picture (Recall Task),1
+A3HL2LL0LEPZT8,Q24eureka_question,Hidden figures in a picture (Recall Task),-1
 A17KN7NAP48L4B,Q1concept_behav,Graph coloring task,-1
 A17KN7NAP48L4B,Q3type_1_planning,Graph coloring task,-1
 A17KN7NAP48L4B,Q4type_2_generate,Graph coloring task,-1
@@ -3419,6 +4059,26 @@ A17KN7NAP48L4B,Q20type_3_type_4,Graph coloring task,1
 A17KN7NAP48L4B,Q22confl_tradeoffs,Graph coloring task,1
 A17KN7NAP48L4B,Q23ss_out_uncert,Graph coloring task,-1
 A17KN7NAP48L4B,Q24eureka_question,Graph coloring task,-1
+A3HL2LL0LEPZT8,Q1concept_behav,Writing story,-1
+A3HL2LL0LEPZT8,Q3type_1_planning,Writing story,-1
+A3HL2LL0LEPZT8,Q4type_2_generate,Writing story,-1
+A3HL2LL0LEPZT8,Q6type_5_cc,Writing story,-1
+A3HL2LL0LEPZT8,Q7type_7_battle,Writing story,-1
+A3HL2LL0LEPZT8,Q8type_8_performance,Writing story,-1
+A3HL2LL0LEPZT8,Q9divisible_unitary,Writing story,-1
+A3HL2LL0LEPZT8,Q10maximizing,Writing story,-1
+A3HL2LL0LEPZT8,Q11optimizing,Writing story,-1
+A3HL2LL0LEPZT8,Q13outcome_multip,Writing story,-1
+A3HL2LL0LEPZT8,Q14sol_scheme_mul,Writing story,-1
+A3HL2LL0LEPZT8,Q15dec_verifiability,Writing story,-1
+A3HL2LL0LEPZT8,Q16shared_knowledge,Writing story,-1
+A3HL2LL0LEPZT8,Q17within_sys_sol,Writing story,1
+A3HL2LL0LEPZT8,Q18ans_recog,Writing story,-1
+A3HL2LL0LEPZT8,Q19time_solvability,Writing story,-1
+A3HL2LL0LEPZT8,Q20type_3_type_4,Writing story,-1
+A3HL2LL0LEPZT8,Q22confl_tradeoffs,Writing story,-1
+A3HL2LL0LEPZT8,Q23ss_out_uncert,Writing story,-1
+A3HL2LL0LEPZT8,Q24eureka_question,Writing story,-1
 AXPZAP62ZYWP8,Q1concept_behav,Image rating,-1
 AXPZAP62ZYWP8,Q3type_1_planning,Image rating,-1
 AXPZAP62ZYWP8,Q4type_2_generate,Image rating,-1
@@ -3719,6 +4379,46 @@ A3CGQOJC28OVGN,Q20type_3_type_4,Abstract grid task,1
 A3CGQOJC28OVGN,Q22confl_tradeoffs,Abstract grid task,-1
 A3CGQOJC28OVGN,Q23ss_out_uncert,Abstract grid task,-1
 A3CGQOJC28OVGN,Q24eureka_question,Abstract grid task,-1
+A1YSYI926BBOHW,Q1concept_behav,Logic Problem,-1
+A1YSYI926BBOHW,Q3type_1_planning,Logic Problem,1
+A1YSYI926BBOHW,Q4type_2_generate,Logic Problem,1
+A1YSYI926BBOHW,Q6type_5_cc,Logic Problem,-1
+A1YSYI926BBOHW,Q7type_7_battle,Logic Problem,-1
+A1YSYI926BBOHW,Q8type_8_performance,Logic Problem,-1
+A1YSYI926BBOHW,Q9divisible_unitary,Logic Problem,-1
+A1YSYI926BBOHW,Q10maximizing,Logic Problem,-1
+A1YSYI926BBOHW,Q11optimizing,Logic Problem,1
+A1YSYI926BBOHW,Q13outcome_multip,Logic Problem,1
+A1YSYI926BBOHW,Q14sol_scheme_mul,Logic Problem,1
+A1YSYI926BBOHW,Q15dec_verifiability,Logic Problem,1
+A1YSYI926BBOHW,Q16shared_knowledge,Logic Problem,1
+A1YSYI926BBOHW,Q17within_sys_sol,Logic Problem,1
+A1YSYI926BBOHW,Q18ans_recog,Logic Problem,1
+A1YSYI926BBOHW,Q19time_solvability,Logic Problem,1
+A1YSYI926BBOHW,Q20type_3_type_4,Logic Problem,1
+A1YSYI926BBOHW,Q22confl_tradeoffs,Logic Problem,1
+A1YSYI926BBOHW,Q23ss_out_uncert,Logic Problem,1
+A1YSYI926BBOHW,Q24eureka_question,Logic Problem,1
+AWAW665TQQP2F,Q1concept_behav,Ravens Matrices,-1
+AWAW665TQQP2F,Q3type_1_planning,Ravens Matrices,-1
+AWAW665TQQP2F,Q4type_2_generate,Ravens Matrices,-1
+AWAW665TQQP2F,Q6type_5_cc,Ravens Matrices,-1
+AWAW665TQQP2F,Q7type_7_battle,Ravens Matrices,-1
+AWAW665TQQP2F,Q8type_8_performance,Ravens Matrices,-1
+AWAW665TQQP2F,Q9divisible_unitary,Ravens Matrices,1
+AWAW665TQQP2F,Q10maximizing,Ravens Matrices,1
+AWAW665TQQP2F,Q11optimizing,Ravens Matrices,-1
+AWAW665TQQP2F,Q13outcome_multip,Ravens Matrices,1
+AWAW665TQQP2F,Q14sol_scheme_mul,Ravens Matrices,1
+AWAW665TQQP2F,Q15dec_verifiability,Ravens Matrices,1
+AWAW665TQQP2F,Q16shared_knowledge,Ravens Matrices,1
+AWAW665TQQP2F,Q17within_sys_sol,Ravens Matrices,1
+AWAW665TQQP2F,Q18ans_recog,Ravens Matrices,1
+AWAW665TQQP2F,Q19time_solvability,Ravens Matrices,1
+AWAW665TQQP2F,Q20type_3_type_4,Ravens Matrices,1
+AWAW665TQQP2F,Q22confl_tradeoffs,Ravens Matrices,1
+AWAW665TQQP2F,Q23ss_out_uncert,Ravens Matrices,1
+AWAW665TQQP2F,Q24eureka_question,Ravens Matrices,1
 AKQAI78JTXXC9,Q1concept_behav,Summarize Discussion,-1
 AKQAI78JTXXC9,Q3type_1_planning,Summarize Discussion,-1
 AKQAI78JTXXC9,Q4type_2_generate,Summarize Discussion,1
@@ -3879,6 +4579,26 @@ AA5ZDXAA2DLY1,Q20type_3_type_4,Whac-A-Mole,-1
 AA5ZDXAA2DLY1,Q22confl_tradeoffs,Whac-A-Mole,1
 AA5ZDXAA2DLY1,Q23ss_out_uncert,Whac-A-Mole,1
 AA5ZDXAA2DLY1,Q24eureka_question,Whac-A-Mole,-1
+A3S5ZB4D98JWT1,Q1concept_behav,Ravens Matrices,-1
+A3S5ZB4D98JWT1,Q3type_1_planning,Ravens Matrices,-1
+A3S5ZB4D98JWT1,Q4type_2_generate,Ravens Matrices,-1
+A3S5ZB4D98JWT1,Q6type_5_cc,Ravens Matrices,-1
+A3S5ZB4D98JWT1,Q7type_7_battle,Ravens Matrices,1
+A3S5ZB4D98JWT1,Q8type_8_performance,Ravens Matrices,1
+A3S5ZB4D98JWT1,Q9divisible_unitary,Ravens Matrices,-1
+A3S5ZB4D98JWT1,Q10maximizing,Ravens Matrices,1
+A3S5ZB4D98JWT1,Q11optimizing,Ravens Matrices,1
+A3S5ZB4D98JWT1,Q13outcome_multip,Ravens Matrices,1
+A3S5ZB4D98JWT1,Q14sol_scheme_mul,Ravens Matrices,1
+A3S5ZB4D98JWT1,Q15dec_verifiability,Ravens Matrices,1
+A3S5ZB4D98JWT1,Q16shared_knowledge,Ravens Matrices,1
+A3S5ZB4D98JWT1,Q17within_sys_sol,Ravens Matrices,1
+A3S5ZB4D98JWT1,Q18ans_recog,Ravens Matrices,1
+A3S5ZB4D98JWT1,Q19time_solvability,Ravens Matrices,1
+A3S5ZB4D98JWT1,Q20type_3_type_4,Ravens Matrices,1
+A3S5ZB4D98JWT1,Q22confl_tradeoffs,Ravens Matrices,-1
+A3S5ZB4D98JWT1,Q23ss_out_uncert,Ravens Matrices,1
+A3S5ZB4D98JWT1,Q24eureka_question,Ravens Matrices,1
 A1NLP66FKHBS4V,Q1concept_behav,Recall videos,-1
 A1NLP66FKHBS4V,Q3type_1_planning,Recall videos,-1
 A1NLP66FKHBS4V,Q4type_2_generate,Recall videos,-1
@@ -4459,6 +5179,26 @@ A3HL2LL0LEPZT8,Q20type_3_type_4,Putting food into categories,-1
 A3HL2LL0LEPZT8,Q22confl_tradeoffs,Putting food into categories,-1
 A3HL2LL0LEPZT8,Q23ss_out_uncert,Putting food into categories,-1
 A3HL2LL0LEPZT8,Q24eureka_question,Putting food into categories,-1
+A1YSYI926BBOHW,Q1concept_behav,Hidden figures in a picture (Recall Task),-1
+A1YSYI926BBOHW,Q3type_1_planning,Hidden figures in a picture (Recall Task),1
+A1YSYI926BBOHW,Q4type_2_generate,Hidden figures in a picture (Recall Task),-1
+A1YSYI926BBOHW,Q6type_5_cc,Hidden figures in a picture (Recall Task),-1
+A1YSYI926BBOHW,Q7type_7_battle,Hidden figures in a picture (Recall Task),-1
+A1YSYI926BBOHW,Q8type_8_performance,Hidden figures in a picture (Recall Task),-1
+A1YSYI926BBOHW,Q9divisible_unitary,Hidden figures in a picture (Recall Task),1
+A1YSYI926BBOHW,Q10maximizing,Hidden figures in a picture (Recall Task),-1
+A1YSYI926BBOHW,Q11optimizing,Hidden figures in a picture (Recall Task),1
+A1YSYI926BBOHW,Q13outcome_multip,Hidden figures in a picture (Recall Task),1
+A1YSYI926BBOHW,Q14sol_scheme_mul,Hidden figures in a picture (Recall Task),-1
+A1YSYI926BBOHW,Q15dec_verifiability,Hidden figures in a picture (Recall Task),1
+A1YSYI926BBOHW,Q16shared_knowledge,Hidden figures in a picture (Recall Task),-1
+A1YSYI926BBOHW,Q17within_sys_sol,Hidden figures in a picture (Recall Task),-1
+A1YSYI926BBOHW,Q18ans_recog,Hidden figures in a picture (Recall Task),1
+A1YSYI926BBOHW,Q19time_solvability,Hidden figures in a picture (Recall Task),1
+A1YSYI926BBOHW,Q20type_3_type_4,Hidden figures in a picture (Recall Task),1
+A1YSYI926BBOHW,Q22confl_tradeoffs,Hidden figures in a picture (Recall Task),-1
+A1YSYI926BBOHW,Q23ss_out_uncert,Hidden figures in a picture (Recall Task),-1
+A1YSYI926BBOHW,Q24eureka_question,Hidden figures in a picture (Recall Task),-1
 A3I9XLIHPPWPN1,Q1concept_behav,To evacuate or not to evacuate,-1
 A3I9XLIHPPWPN1,Q3type_1_planning,To evacuate or not to evacuate,-1
 A3I9XLIHPPWPN1,Q4type_2_generate,To evacuate or not to evacuate,-1
