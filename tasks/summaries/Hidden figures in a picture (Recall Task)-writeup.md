@@ -12,7 +12,7 @@ Participants then engage in a task in which everyone working together attempts t
 After a delay, participants are taken to a page where they can type and submit words.
 
 ## 2. Goal Directives 
-The goal of the task is to be able to recall as many animals as they can the original list. Participants type and submit the words online. They have a limited amount of time to submit all the words that they can remember.
+The goal of the task is to be able to recall as many animals as they can from the original list. Participants type and submit the words using the webpage. They have a limited amount of time to submit all the words that they can remember.
 
 If working together, only one participant on a team needs to remember the word in order for everyone to receive credit.
 
