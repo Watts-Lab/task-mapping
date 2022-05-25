@@ -3,10 +3,12 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Participants received a writing prompt.
+Participants received a writing prompt. Examples include, "Write a story about this inkblot," or "Describe this mountain scene." Everyone in the same team gets the same writing prompt.
 
 ## 2. Goal Directives 
-The goal was to write a response to a question in the group.
+The goal was to write a response to the prompt. If working in teams, participants discuss and collectively produce the same story. The work must be submitted online within a fixed time period.
+
+Since this is an open-ended writing task, there are no right or wrong answers, and anything that addresses the writing prompt is a valid answer. Participants were evaluated based on the quality of their responses (for example, the length, writing quality, and level of creativity).
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
