@@ -3,10 +3,10 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Participants were presented with nine letters.
+Participants are presented with nine letters. For example: A, F, H, B, E, J, N, K, D.
 
 ## 2. Goal Directives 
-The goal was to produce as many four letter words as possible from a given set of nine letters.
+The goal is to produce as many four-letter words as possible from a given set of nine letters within a fixed amount of time. For example, out of the set of letters above, such words as "bean," "head,", "khan," "dean" and many others can be formed. Although there is a theoretical maximum score if participants exhaust all the possible combinations of letters to form four-letter words, the goal is simply to form as many words as participants can staying within a time limit.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
