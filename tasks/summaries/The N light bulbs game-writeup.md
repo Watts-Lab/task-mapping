@@ -14,7 +14,7 @@ The goal is to get the most points by setting the lightbulbs to a pattern that m
 
 This means participants have to switch the light bulbs (that are not stuck) on and off to try to figure out which configurations have the highest payoff. For each guess, participants only get to change one light bulb (turn it "on" or "off") at a time. There are a limited number of guesses. If working in teams, everyone collectively determines the next guess.
 
-The computer will give feedback and tell the participant how many points they earned after each guess. While there is a theoretical "best" configuration,  participants will not be told if they have achieved it. It's possible, for example, that they make a guess that gets to the optimal point value, but then make another guess that performs worse. Participants also have the option to end the round early if they are happy with their guess.
+The computer will give feedback and tell the participant how many points they earned after each guess. While there is a theoretical "best" configuration,  participants will not be told if they have achieved it; they only know how many points the guess is worth. It's possible, for example, that they make a guess that gets to the optimal point value, but then make another guess that performs worse. Participants also have the option to end the round early if they are happy with their guess.
 
 A final useful piece of information is that the lightbulbs can be thought of as binary variables (a 0 or 1), which would then allow this game to be played by an algorithm.
 
