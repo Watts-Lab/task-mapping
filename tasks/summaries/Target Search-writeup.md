@@ -3,7 +3,7 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Participants view a labeled spreadsheet with 100 squares on it. The columns are given letters and the rows are given numbers (so, each blank cell has a leter-number coordinate, like A5, E10, etc.).
+Participants view a labeled spreadsheet with 100 squares on it. The columns are given letters and the rows are given numbers (so, each blank cell has a letter-number coordinate, like A5, E10, etc.).
 
 While these cells on the spreadsheet appear blank to the participant, each one is actually connected behind the scenes to a specific value that only the experimenter can see. On the experimenter's side, there is essentially an invisible "target" --- the cells are grouped into concentric circles. This "target" shape determines the point value of each cell. Cells located in the middle of the target are worth more points than cells near the edges of the target. The closer to the center of the target a cell is, the more points it is worth. If a cell is outside of the target entirely, it is worth 0 points.
 
