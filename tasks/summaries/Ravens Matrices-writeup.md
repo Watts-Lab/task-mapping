@@ -12,9 +12,9 @@ Participants would then see a few multiple-choice options for what could fill th
 ## 2. Goal Directives 
 The goal is to complete the pattern by identifying what the missing piece should be. 
 
-In the example above, the correct answer is that the fourth space should have a square with four pieces colored in.
+In the example above, the correct answer is that the fourth space should have a square with four pieces colored in. (That is, successful participants would notice that the first square had one piece colored in; the second had two colored in; the third had three colored in; so, naturally, the fourth should have four colored in.)
 
-The problem is multiple-choice, so participants will choose just one correct answer from a variety of options. There is always exactly one correct answer in the multiple-choice problem.
+The problem is multiple-choice, so participants will choose just one correct answer from a variety of options. There is always exactly one correct answer in the multiple-choice problem. Participants must make their selection within the time limit.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
