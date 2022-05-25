@@ -3,10 +3,14 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Participants receive 16 cards with two objects on each one. Half of the objects on cards can be grouped into four categories. That is, for example, there can be categories like "vehicles," "animals," "furniture" and "shapes" that include four objects each. Participants see all objects depicted on cards in a mixed random order. Only one object on each card is used in category formation while most other objects are distractor pairs that are meant to complicate the task and that participants have to avoid, using the second object in the card instead to form a category. For example, a category of furniture can contain armchair, bar stool, office chair and hanger, while alarm clock and wall clack would be a distractor pair and other objects on these cards should be used to form categories.
+Participants receive 16 cards with pictures of two objects on each one (32 total objects). Half of the objects (16) on the cards are related to each other, and can be grouped into four categories. For example, the categories could be "vehicles," "animals," "furniture," and "shapes." There are four objects per category. The remaining 16 objects are distractors. There is one category object and one distractor on each card.
+
+Participants see all the objects depicted on the cards in a random order. They do not know which objects on the cards belong to the four categories and which are distractors, which makes this task difficult. For example, "furniture" may be one of the categories, and participants' cards may include a picture of an armchair, bar stool, office chair and table. However, there may also be distractors, such as an alarm clock and wall clock, which could "throw off" someone attempting to figure out the categories --- they may think that the alarm clock, wall clock, and office chair are all related to a category of going to work, and therefore miss the true category of "furniture."
 
 ## 2. Goal Directives 
-The goal is to form four groups of items with no cards left unused wihtin a fixed amount of time. The task is designed in such a way that four categories cannot be formed if participants start using distractor pairs because there is only one objective way of forming categories so that all cards are used. Participants either complete a task by forming four objectively coherent categories or not.
+The goal is to identify the 16 cards belonging to categories, and correctly form four categories with them, within a fixed amount of time. 
+
+The task is designed in such a way that it is impossible to form four categories if participants start using distractor objects; there is only one objective way of forming categories so that all cards are used. Participants either complete this task by forming the four objectively correct categories, or they fail.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
