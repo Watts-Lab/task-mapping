@@ -22,7 +22,7 @@ Participants are scored based on the number of animals from the original list th
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
 
 ### Skills 
-Quick eye (observation)
+Quick eye (observation), memory
 
 ### UI-UX Allowed Processes
 Type responses and submit
