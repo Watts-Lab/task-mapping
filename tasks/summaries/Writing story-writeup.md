@@ -3,7 +3,7 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Participants received a writing prompt. Examples include, "Write a story about this inkblot," or "Describe this mountain scene." Everyone in the same team gets the same writing prompt.
+Participants receive a writing prompt. Examples include, "Write a story about this inkblot," or "Describe this mountain scene." Everyone in the same team gets the same writing prompt.
 
 ## 2. Goal Directives 
 The goal is to write a response to the prompt. If working in teams, participants discuss and collectively produce the same story. The work must be submitted online within a fixed time period.
