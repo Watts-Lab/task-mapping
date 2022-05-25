@@ -126,7 +126,8 @@ Look at at a per-question (or per-task) summary of basic agreement
 ```{r}
 task_based_summary <- df.main_questions_summary %>%
   filter(n_labels > 1) %>%
-  group_by(task, task_blob_url) %>% # can do task, question_name
+  group_by(question_name) %>%
+  #group_by(task, task_blob_url) %>% # can do task, question_name
   summarize(
     n_labels = round(mean(n_labels),0),
     mean_agreement = mean(agreement),
