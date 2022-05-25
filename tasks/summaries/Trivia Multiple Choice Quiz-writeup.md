@@ -3,10 +3,10 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Participants received a series of multiple choice trivia questions.
+Participants receive a series of multiple choice trivia questions. For example, participants can be asked about the average weight of an elephant and be given options of 9,000 lbs, 5,000 lbs, and 15,000 lbs.
 
 ## 2. Goal Directives 
-The goal was to correctly answer a series of multiple choice questions without looking them up online.
+The goal is to correctly answer as many qestions as possible from a multiple choice trivia quiz within a fixed amount of time and without looking up the solutions online. Participants don't get any points if they answer a question incorrectly and they get points for choosing the correct answer. Participants maximize their score by answering as many questions correctly as they can and get the maximum score if they answer all questions correctly.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
