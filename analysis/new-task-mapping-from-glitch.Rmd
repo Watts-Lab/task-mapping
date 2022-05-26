@@ -207,7 +207,7 @@ set.seed(1)
 
 pca <- task_map %>% #select(-continuous_questions) %>%
   select(-task) %>%
-  prcomp()
+  prcomp(center = T, scale = T) # should we center and scale? makes no big difference because everything is already 0-1
 
 kmeans <- pca$x %>%
   kmeans(centers = 4, nstart = 100)

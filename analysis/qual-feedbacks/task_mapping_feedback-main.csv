@@ -82,6 +82,9 @@ Computer maze,Q5creativity_input_1_elaboration,It's hard to know exactly what is
 Computer maze,Q8type_8_performance_elaboration,"The navigation portion IS all or nothing, but the tagging is not, so overall, the task is NOT all or nothing, but a component is."
 Computer maze,Q11optimizing_elaboration,"The player has to complete the maze, but only receives reduced score for less than maximum.  It would be clearer if I knew how the greebles scoring worked."
 Computer maze,Q22confl_tradeoffs_elaboration,Incorrectly tagging greebles can be seen as a tradeoff to failing to tag at all.
+Desert survival,Q10maximizing_elaboration,most points
+Desert survival,Q11optimizing_elaboration,the goal is to be exact or as clost as possible to the experts
+Desert survival,Q13outcome_multip_elaboration,there is a perfect answer but it is not necessary
 Divergent Association Task,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Divergent Association Task,Q15dec_verifiability_elaboration,I believe a word expert could determine semantic distance
 Divergent Association Task,Q17within_sys_sol_elaboration,If there were semantic rules already established then there could be a solution based on that data
@@ -157,6 +160,7 @@ Image rating,Q21intellective_judg_1_elaboration,Since you're making an educated 
 Image rating,Q23ss_out_uncert_elaboration,Participants aren't told if they guessed correct or not
 Image rating,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Image rating,Q16shared_knowledge_elaboration,Unless the algorithm already knows the poll answers they could not solve
+Image rating,Q23ss_out_uncert_elaboration,They dont know how many points
 Letters-to-numbers problems (cryptography),Q5creativity_input_1_elaboration,I think this is a mix between creativity and logic
 Letters-to-numbers problems (cryptography),Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Letters-to-numbers problems (cryptography),Q23ss_out_uncert_elaboration,they may have done their math and mapping wrong
@@ -208,6 +212,7 @@ Putting food into categories,Q22confl_tradeoffs_elaboration,no because in this c
 Putting food into categories,Q23ss_out_uncert_elaboration,no because the goal is just to do your best and have an acceptable answer
 Putting food into categories,Q24eureka_question_elaboration,"no because the solution is obvious once it proposed, in this case you will know how to divide the items as soon as you propose the way to do it"
 Railroad Route Construction game,Q22confl_tradeoffs_elaboration,"Yes, since there are different tracks to choose from."
+Railroad Route Construction game,Q9divisible_unitary_elaboration,No team work
 Railroad Route Construction game (Impossible Version),Q7type_7_battle_elaboration,"If you could win this game, it would likely be a yes, but since there is no way to win the game, I would say it's not truly answerable."
 Railroad Route Construction game (Impossible Version),Q14sol_scheme_mul_elaboration,"Seeing as how there is no way to win, there is no way to achieve the actual task/goal."
 Railroad Route Construction game (Impossible Version),Q17within_sys_sol_elaboration,"There is enough, but it doesn't matter, as there is no way to finish or win the game."
@@ -222,6 +227,7 @@ Railroad Route Construction game (Impossible Version),Q13outcome_multip_elaborat
 Railroad Route Construction game (Impossible Version),Q14sol_scheme_mul_elaboration,Technically there is no solution
 Railroad Route Construction game (Impossible Version),Q15dec_verifiability_elaboration,There is no verifiable solution
 Railroad Route Construction game (Impossible Version),Q22confl_tradeoffs_elaboration,Participants must try to move the pieces around to find a solution
+Ravens Matrices,Q9divisible_unitary_elaboration,No team work
 Ravens Matrices,Q6type_5_cc_elaboration,"The instructions stated all participants work together, so I think there would be some conflicting answers"
 Ravens Matrices,Q16shared_knowledge_elaboration,If the algorithm can identify the correct patterns then yes
 Ravens Matrices,Q24eureka_question_elaboration,"I think with pattern tasks, there is an ""aha"" moment when you recognize the pattern itself"
