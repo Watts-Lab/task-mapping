@@ -10,7 +10,7 @@ The percentage of dots moving in the same direction varies, which makes the task
 ## 2. Goal Directives 
 The goal is to correctly determine the direction that the correlated dots are moving in. 
 
-Participants submit their answer by using their mouse to place an arrow that points in the main direction of motion.
+Participants submit their answer by using their mouse to place an arrow that points in the main direction of motion. They must submit their answer in a limited amount of time.
 
 There is an objectively correct answer, since the system is designed for the correlated dots to be moving in a specific direction. Participants are evaluated based on how close they are to the objectively correct direction. Their score is calculated based on the angle that their direction forms with the true direction; if they get the direction exactly right, then the angle is 0 degrees, so they would get the highest possible score. If they are off by a small amount (e.g., the angle is 10 degrees), they would get more points than if the participants are off by a significant amount (e.g., the angle is 90 degrees).
 
