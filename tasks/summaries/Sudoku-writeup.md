@@ -8,7 +8,7 @@ Participants see a shared online system that displays a Sudoku puzzle.
 Sudoku is a logic puzzle, in which there is a 9x9 grid, which is divided into nine 3x3 subgrids (also known as "boxes" or "regions"). Each cell in a region has a true underlying value from 1-9; however, most of the cells appear empty to the player, and only a few of them have the correct numbers filled in.
 
 ## 2. Goal Directives 
-The goal is to solve the Sudoku puzzle. This means that participants need to fill in each blank cell with the correct underlying number from 1-9; in addition, they must satisfy the constraint that every row, every column, and every 3x3 region can only show each digit from 1-9 exactly once.
+The goal is to solve the Sudoku puzzle within a limited amount of time. This means that participants need to fill in each blank cell with the correct underlying number from 1-9; in addition, they must satisfy the constraint that every row, every column, and every 3x3 region can only show each digit from 1-9 exactly once.
 
 For a given Sudoku puzzle, there is only one correct answer. Participants either correctly identify the underlying value for every cell, or they fail the Sudoku game.
 
