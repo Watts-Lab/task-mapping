@@ -94,10 +94,13 @@
       
       #--- HIGH SCORING People : Preparing + Sending Surveys ----
       #--- PAYING People ----
-      mapper_payment <- read_csv("mapper_payment.csv")
+      mapper_payment <- read_csv("mapper_payment.csv")%>% 
+        mutate(
+          amount_to_pay = payment - amount_paid
+        )
       
       #--- REGISTERING Payments (complete surveys)---
-      body <- list(
+      payments_body <- list(
         "bonuses" = mapper_payment$amount_to_pay, 
         "comment" = paste0("Task-Mapping Mapping round 1"),
         "project" = "Task Mapping",
@@ -106,7 +109,7 @@
       
       post_register_pay <- POST(
         "https://watts.turk-interface.com/payments/register",
-        body = jsonlite::toJSON(body, auto_unbox =TRUE),
+        body = jsonlite::toJSON(payments_body, auto_unbox =TRUE),
         add_headers(.headers = c(`Authorization`= paste0(
           "Bearer ", token
         ))),
@@ -122,7 +125,7 @@
   
       
       #--- PAYING People (complete surveys)---
-      payment_token <- "O88EyaBGwbphcw"
+      payment_token <- "0kQfS6XjlqMKqA"
       
       body <- list(payment_token = payment_token)
       
@@ -139,12 +142,12 @@
         "text"
       ))
       
-      payments <- tibble(WorkerId = mapper_payment$WorkerId, 
-                         paid = mapper_payment$amount_to_pay, 
-                         last_payment_date = with_tz(now(), "America/New_York"))
+      payments <- tibble(WorkerId = payments_body$worker_ids, 
+                         paid = payments_body$bonuses, 
+                         last_payment_date = with_tz(Sys.time(), "America/New_York"))
       
       #--- Registering CSV ---- 
-      final_mapping_csv <- mapper_payment %>% 
+      final_payment_csv <- mapper_payment %>% 
         select(-last_payment_date) %>% 
         left_join(payments) %>%
         mutate(
