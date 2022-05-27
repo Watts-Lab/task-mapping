@@ -28,7 +28,7 @@ This means that if there is a card with D on one side, and something other than 
 
 Selecting Card #1 is an easy decision: since it has a D on the front, it is easy to see that we should check for a 3 on the other side. However, some of the other choices are more difficult and require skillfully applying logic: for example, participants may not notice that they need to check Card #4 to make sure there is not a D on the other side. Participants may also mistakenly choose cards #2 or #3.
 
-For each of the sentences, there is a single correct solution (in the example above, choosing both #1 and #4). If participants correctly select exactly the right cards, then they solve the task correctly. If they do not select enough cards (e.g., picking #1 without picking #4) or if they select too many cards (e.g., picking #1, #2, and #4), then they fail the task.
+For a given sentence, there is a single correct solution (in the example above, choosing both #1 and #4). If participants correctly select exactly the right cards, then they solve the task correctly. If they do not select enough cards (e.g., picking #1 without picking #4) or if they select too many cards (e.g., picking #1, #2, and #4), then they fail the task.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
