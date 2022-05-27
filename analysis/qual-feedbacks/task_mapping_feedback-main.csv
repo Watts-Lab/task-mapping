@@ -289,6 +289,16 @@ Railroad Route Construction game (Impossible Version),Q13outcome_multip_elaborat
 Railroad Route Construction game (Impossible Version),Q14sol_scheme_mul_elaboration,Technically there is no solution
 Railroad Route Construction game (Impossible Version),Q15dec_verifiability_elaboration,There is no verifiable solution
 Railroad Route Construction game (Impossible Version),Q22confl_tradeoffs_elaboration,Participants must try to move the pieces around to find a solution
+Ravens Matrices,Q5creativity_input_1_elaboration,"You have to visualize the image and try to determine the missing piece, requires some creativity to imagine that"
+Ravens Matrices,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, but you're trying to get as many multiple choice questions correct as possible"
+Ravens Matrices,Q8type_8_performance_elaboration,You either get the answer correct or not.
+Ravens Matrices,Q10maximizing_elaboration,It is a timed task
+Ravens Matrices,Q11optimizing_elaboration,There is only one correct answer
+Ravens Matrices,Q13outcome_multip_elaboration,There is only one correct answer
+Ravens Matrices,Q15dec_verifiability_elaboration,It's unclear if they inform you whether you got the correct answer after you make your choice
+Ravens Matrices,Q16shared_knowledge_elaboration,Because it's a visual task I would assume it's purely a human task
+Ravens Matrices,Q18ans_recog_elaboration,It's unclear if they inform you whether you're correct or not
+Ravens Matrices,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the answers correct or not
 Ravens Matrices,Q9divisible_unitary_elaboration,No team work
 Ravens Matrices,Q6type_5_cc_elaboration,"The instructions stated all participants work together, so I think there would be some conflicting answers"
 Ravens Matrices,Q16shared_knowledge_elaboration,If the algorithm can identify the correct patterns then yes
@@ -479,6 +489,7 @@ Visual Oddball Target,Q16shared_knowledge_elaboration,Because it's a visual task
 Visual Oddball Target,Q18ans_recog_elaboration,I think once you identify it you know whether it's correct or not
 Visual Oddball Target,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the pattern correct or not
 Visual Oddball Target,Q9divisible_unitary_elaboration,Set Up and Objective did not disclose any group information
+Wason's Selection Task,Q9divisible_unitary_elaboration,"If a team, the most intelligent should do all of the work, or at least help the others understand it."
 Whac-A-Mole,Q7type_7_battle_elaboration,"The wording is vague as stated in ""thereby maximizing their points"". It doesn't say their own points or if it is referring to their team."
 Whac-A-Mole,Q9divisible_unitary_elaboration,No discrete parts.
 Whac-A-Mole,Q15dec_verifiability_elaboration,I am not sure how this would be done based on the instructions so lean towards no.

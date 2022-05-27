@@ -207,7 +207,7 @@ set.seed(1)
 
 pca <- task_map %>% #select(-continuous_questions) %>%
   select(-task) %>%
-  prcomp(center = T, scale = T) # should we center and scale? makes no big difference because everything is already 0-1
+  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
 
 kmeans <- pca$x %>%
   kmeans(centers = 4, nstart = 100)
@@ -238,6 +238,11 @@ plot_ly(
 fviz_eig(pca)
 ggsave(plot = p, filename = '../task-map.png')
 ```
+
+```{r}
+pca$rotation
+```
+
 
 # Set up Data Export for Karger's Algo
 
