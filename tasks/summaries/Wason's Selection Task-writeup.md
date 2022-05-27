@@ -1,11 +1,11 @@
-# Wason’s Selection Task
+# Wason's Selection Task
 
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
 Participants are given a conditional sentence in the form of, "If X, then Y." They also see four cards, which have either a letter or a number on the front. The cards are double-sided; those with a letter on the front have a number on the back, and vice versa.
 
-As an example, imagine that the conditional sentence says the following: “If there is a D on one side of any card, then there is a 3 on its other side."
+As an example, imagine that the conditional sentence says the following: "If there is a D on one side of any card, then there is a 3 on its other side."
 
 Then, imagine that the four cards are:
 
@@ -17,7 +17,7 @@ Then, imagine that the four cards are:
 ## 2. Goal Directives 
 The goal is to identify which cards, if turned over, would allow the participant to determine if the conditional sentence is true or false. Participants make the selection by clicking on the appopriate cards on the interface.
 
-Consider the example above: “If there is a D on one side of any card, then there is a 3 on its other side.”
+Consider the example above: "If there is a D on one side of any card, then there is a 3 on its other side."
 
 This means that if there is a card with D on one side, and something other than 3 on the other side, it would make the sentence false. Thus, the answer for each card is as follows:
 
