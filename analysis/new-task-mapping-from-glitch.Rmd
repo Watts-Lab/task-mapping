@@ -21,8 +21,15 @@ df.mapping.raw <- read_delim('http://task-robot.glitch.me/results/survey/csv')
 
 Ensure we don't have any accidental resubmissions -- sometimes the server logs a "double click" as two separate maps!
 
+Also ensure we don't have anyone submitting without a workerID
+
 ```{r}
+# distinct submissions
 df.mapping.raw <- distinct(df.mapping.raw, user, task, .keep_all = T)
+
+# no non-Turkers --- your userID needs to start with A
+df.mapping.raw <- df.mapping.raw %>% filter(startsWith(user, "A"))
+
 nrow(df.mapping.raw)
 ```
 # Save the Raw Data

@@ -2039,6 +2039,26 @@ A3I9XLIHPPWPN1,Q20type_3_type_4,Allocating resources to programs,1
 A3I9XLIHPPWPN1,Q22confl_tradeoffs,Allocating resources to programs,1
 A3I9XLIHPPWPN1,Q23ss_out_uncert,Allocating resources to programs,1
 A3I9XLIHPPWPN1,Q24eureka_question,Allocating resources to programs,-1
+A18T7E73TNGOKP,Q1concept_behav,Room assignment task,-1
+A18T7E73TNGOKP,Q3type_1_planning,Room assignment task,1
+A18T7E73TNGOKP,Q4type_2_generate,Room assignment task,-1
+A18T7E73TNGOKP,Q6type_5_cc,Room assignment task,-1
+A18T7E73TNGOKP,Q7type_7_battle,Room assignment task,1
+A18T7E73TNGOKP,Q8type_8_performance,Room assignment task,-1
+A18T7E73TNGOKP,Q9divisible_unitary,Room assignment task,-1
+A18T7E73TNGOKP,Q10maximizing,Room assignment task,1
+A18T7E73TNGOKP,Q11optimizing,Room assignment task,1
+A18T7E73TNGOKP,Q13outcome_multip,Room assignment task,1
+A18T7E73TNGOKP,Q14sol_scheme_mul,Room assignment task,1
+A18T7E73TNGOKP,Q15dec_verifiability,Room assignment task,1
+A18T7E73TNGOKP,Q16shared_knowledge,Room assignment task,1
+A18T7E73TNGOKP,Q17within_sys_sol,Room assignment task,-1
+A18T7E73TNGOKP,Q18ans_recog,Room assignment task,-1
+A18T7E73TNGOKP,Q19time_solvability,Room assignment task,1
+A18T7E73TNGOKP,Q20type_3_type_4,Room assignment task,1
+A18T7E73TNGOKP,Q22confl_tradeoffs,Room assignment task,1
+A18T7E73TNGOKP,Q23ss_out_uncert,Room assignment task,1
+A18T7E73TNGOKP,Q24eureka_question,Room assignment task,-1
 A2WDF40FA670T9,Q1concept_behav,Summarize Discussion,-1
 A2WDF40FA670T9,Q3type_1_planning,Summarize Discussion,-1
 A2WDF40FA670T9,Q4type_2_generate,Summarize Discussion,-1
@@ -2579,26 +2599,6 @@ A18T7E73TNGOKP,Q20type_3_type_4,Wason's Selection Task,1
 A18T7E73TNGOKP,Q22confl_tradeoffs,Wason's Selection Task,1
 A18T7E73TNGOKP,Q23ss_out_uncert,Wason's Selection Task,-1
 A18T7E73TNGOKP,Q24eureka_question,Wason's Selection Task,1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q1concept_behav,Crisis mapping,-1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q3type_1_planning,Crisis mapping,-1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q4type_2_generate,Crisis mapping,-1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q6type_5_cc,Crisis mapping,-1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q7type_7_battle,Crisis mapping,-1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q8type_8_performance,Crisis mapping,-1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q9divisible_unitary,Crisis mapping,-1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q10maximizing,Crisis mapping,-1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q11optimizing,Crisis mapping,-1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q13outcome_multip,Crisis mapping,1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q14sol_scheme_mul,Crisis mapping,1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q15dec_verifiability,Crisis mapping,1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q16shared_knowledge,Crisis mapping,1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q17within_sys_sol,Crisis mapping,1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q18ans_recog,Crisis mapping,-1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q19time_solvability,Crisis mapping,1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q20type_3_type_4,Crisis mapping,1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q22confl_tradeoffs,Crisis mapping,-1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q23ss_out_uncert,Crisis mapping,1
-WkqIXptcR3NoYTsuc0p7TIlfUBknouQU,Q24eureka_question,Crisis mapping,-1
 A1I72NHC21347A,Q1concept_behav,Search for Oil Task,-1
 A1I72NHC21347A,Q3type_1_planning,Search for Oil Task,-1
 A1I72NHC21347A,Q4type_2_generate,Search for Oil Task,-1
@@ -4679,6 +4679,26 @@ A5NE8TWS8ZV7B,Q20type_3_type_4,Estimating social quantity,1
 A5NE8TWS8ZV7B,Q22confl_tradeoffs,Estimating social quantity,-1
 A5NE8TWS8ZV7B,Q23ss_out_uncert,Estimating social quantity,1
 A5NE8TWS8ZV7B,Q24eureka_question,Estimating social quantity,-1
+AWAW665TQQP2F,Q1concept_behav,Crisis mapping,-1
+AWAW665TQQP2F,Q3type_1_planning,Crisis mapping,1
+AWAW665TQQP2F,Q4type_2_generate,Crisis mapping,-1
+AWAW665TQQP2F,Q6type_5_cc,Crisis mapping,1
+AWAW665TQQP2F,Q7type_7_battle,Crisis mapping,-1
+AWAW665TQQP2F,Q8type_8_performance,Crisis mapping,1
+AWAW665TQQP2F,Q9divisible_unitary,Crisis mapping,-1
+AWAW665TQQP2F,Q10maximizing,Crisis mapping,-1
+AWAW665TQQP2F,Q11optimizing,Crisis mapping,1
+AWAW665TQQP2F,Q13outcome_multip,Crisis mapping,1
+AWAW665TQQP2F,Q14sol_scheme_mul,Crisis mapping,1
+AWAW665TQQP2F,Q15dec_verifiability,Crisis mapping,1
+AWAW665TQQP2F,Q16shared_knowledge,Crisis mapping,-1
+AWAW665TQQP2F,Q17within_sys_sol,Crisis mapping,1
+AWAW665TQQP2F,Q18ans_recog,Crisis mapping,1
+AWAW665TQQP2F,Q19time_solvability,Crisis mapping,1
+AWAW665TQQP2F,Q20type_3_type_4,Crisis mapping,1
+AWAW665TQQP2F,Q22confl_tradeoffs,Crisis mapping,1
+AWAW665TQQP2F,Q23ss_out_uncert,Crisis mapping,1
+AWAW665TQQP2F,Q24eureka_question,Crisis mapping,-1
 AXPZAP62ZYWP8,Q1concept_behav,Random dot motion,-1
 AXPZAP62ZYWP8,Q3type_1_planning,Random dot motion,-1
 AXPZAP62ZYWP8,Q4type_2_generate,Random dot motion,-1
