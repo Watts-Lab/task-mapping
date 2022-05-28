@@ -140,6 +140,7 @@ Crisis mapping,Q9divisible_unitary_elaboration,"Since there is a fixed amount of
 Crisis mapping,Q9divisible_unitary_elaboration,If this was a group task it would make sense to divide the work between the group
 Crisis mapping,Q18ans_recog_elaboration,"It would depend if the person you're explaining it to had access to the right, pre-defined map/correct answers."
 Crisis mapping,Q10maximizing_elaboration,It says a fixed amount of time in the instructions.
+Crisis mapping,Q23ss_out_uncert_elaboration,"depends entirely on when the feedback on whether they chose correctly is provided, which isn't mentioned in the description.  "
 Desert survival,Q10maximizing_elaboration,most points
 Desert survival,Q11optimizing_elaboration,the goal is to be exact or as clost as possible to the experts
 Desert survival,Q13outcome_multip_elaboration,there is a perfect answer but it is not necessary
@@ -321,6 +322,7 @@ Image rating,Q9divisible_unitary_elaboration,All participants are working on ind
 Iterative lemonade stand task,Q10maximizing_elaboration,Goal is to maximize profit.
 Iterative lemonade stand task,Q13outcome_multip_elaboration,It is not clear if there are multiple solutions to reach the max profit.
 Iterative lemonade stand task,Q13outcome_multip_elaboration,"not sure, maybe more than one set of choices will lead to the highest profit"
+Iterative lemonade stand task,Q18ans_recog_elaboration,You don't know the maximum possible profit.
 Iterative lemonade stand task,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Letters-to-numbers problems (cryptography),Q5creativity_input_1_elaboration,I think this is a mix between creativity and logic
 Letters-to-numbers problems (cryptography),Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
@@ -502,6 +504,8 @@ Ravens Matrices,Q16shared_knowledge_elaboration,If the algorithm can identify th
 Ravens Matrices,Q24eureka_question_elaboration,"I think with pattern tasks, there is an ""aha"" moment when you recognize the pattern itself"
 Ravens Matrices,Q9divisible_unitary_elaboration,All participants are working on individual screens
 Reading the mind in the eyes,Q23ss_out_uncert_elaboration,"depends entirely on when the feedback on whether they chose correctly is provided, which isn't mentioned in the description.  "
+Reading the mind in the eyes,Q21intellective_judg_1_elaboration,"While there is an objectively correct label, the participant is making decisions in part by making subjective judgements."
+Reading the mind in the eyes,Q24eureka_question_elaboration,There is no trick involved in this solution.
 Reading the mind in the eyes,Q9divisible_unitary_elaboration,"Participants have a limited amount of time to finish the test, but everyone is on their own"
 Reading the mind in the eyes,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Reading the mind in the eyes,Q15dec_verifiability_elaboration,"If an expert can explain the detail in the eyes associated with an emotion, yes."
@@ -603,6 +607,7 @@ Recall word lists,Q22confl_tradeoffs_elaboration,I'm not sure if people's own wo
 Recall word lists,Q5creativity_input_1_elaboration,memory tricks like word association or using the words to create a story do in a way take some form of creativity
 Recall word lists,Q8type_8_performance_elaboration,"It is not all or nothing. However, if participant does not start the first word with the last word, then it becomes all or nothing. Therefore, I believe both can be applicable. "
 Recall word lists,Q11optimizing_elaboration,"The closer to the maximum, the better."
+Reproducing arts,Q9divisible_unitary_elaboration,One participant can work on one half of the spreadsheet and another on the other half.
 Reproducing arts,Q23ss_out_uncert_elaboration,They can compare to the target spreadsheet.
 Reproducing arts,Q2intel_manip_1_elaboration,"you have to do a lot of clicking and selecting, etc."
 Reproducing arts,Q18ans_recog_elaboration,"There is no real ""problem"", it's just copying"
@@ -610,6 +615,7 @@ Reproducing arts,Q6type_5_cc_elaboration,I think group members may disagree on w
 Reproducing arts,Q9divisible_unitary_elaboration,I think if different members remember certain quadrants it could make the task more accurate
 Reproducing arts,Q18ans_recog_elaboration,Participants won't know the answer for sure until after the end of the task
 Reproducing arts,Q19time_solvability_elaboration,If someone is able to perfectly remember the original pattern they could explain their method to others
+Reproducing arts,Q7type_7_battle_elaboration,it seems like threre is only one team 
 Reproducing arts,Q3type_1_planning_elaboration,"This is creating an exact copy, no planning required"
 Reproducing arts,Q4type_2_generate_elaboration,"This is creating an exact copy, no brainstorming required"
 Reproducing arts,Q7type_7_battle_elaboration,"It doesn't seems like a competition, just a goal to recreate the spreadsheet as closely as possible"
@@ -666,6 +672,66 @@ Shopping plan,Q10maximizing_elaboration,There is a time limit so participants wo
 Shopping plan,Q1concept_behav_elaboration,"I'm assuming this is a theoretical trip to a grocery and not an actual trip to the store, which is why I'm answering 'mental' here."
 Shopping plan,Q9divisible_unitary_elaboration,No team work
 Shopping plan,Q23ss_out_uncert_elaboration,Does not say when they see results
+Space Fortress,Q1concept_behav_elaboration,Video games are complex and require both mental and physical energy.  Which requires more can vary by the game.
+Space Fortress,Q2intel_manip_1_elaboration,It is hard to know the answer without actually playing or at least watching the game.
+Space Fortress,Q3type_1_planning_elaboration,"Generally, people don't write down a plan for a video game - they just play it!"
+Space Fortress,Q4type_2_generate_elaboration,Some thought goes into it but it's not the main purpose
+Space Fortress,Q5creativity_input_1_elaboration,One could create different strategies to win the game
+Space Fortress,Q6type_5_cc_elaboration,"If playing in a group, you could resolve differences in strategy but it's not necessary."
+Space Fortress,Q8type_8_performance_elaboration,"The main objective is points, although their is a goal of destroying the space fortress"
+Space Fortress,Q9divisible_unitary_elaboration,"If playing in a group, it would be useful to have a strategy and divide up parts"
+Space Fortress,Q11optimizing_elaboration,It's unclear what the maximum number of points to be earned is
+Space Fortress,Q14sol_scheme_mul_elaboration,There could be different strategies to win the game
+Space Fortress,Q15dec_verifiability_elaboration,The game is too complex to find a best solution
+Space Fortress,Q17within_sys_sol_elaboration,"It is hard to know the maximum number of points, but one can destroy the space fortress."
+Space Fortress,Q21intellective_judg_1_elaboration,"Again, there are 2 objectives, to maximize points and destroy the space fortress"
+Space Fortress,Q22confl_tradeoffs_elaboration,There could be different strategies used with tradeoffs
+Space Fortress,Q24eureka_question_elaboration,It is hard to know for sure without playing the game
+Space Fortress,Q17within_sys_sol_elaboration,There isn't really a solution or answer.
+Space Fortress,Q9divisible_unitary_elaboration,"Going to say no, mainly because the goal for everyone would be to attack the fortress.  It's possible that maybe someone could be designated to help destroy or neutralize the mines, so that other players could attack the fortress more freely, but I don't think that would help as much and don't see that happening."
+Space Fortress,Q14sol_scheme_mul_elaboration,"The goal is to maximize points by damaging the fortress, and the only way to do that is by hitting it."
+Space Fortress,Q18ans_recog_elaboration,"There really isn't a problem to solve, it's merely an action that players must take."
+Space Fortress,Q19time_solvability_elaboration,"There really isn't a problem to solve, it's merely an action that players must take."
+Space Fortress,Q1concept_behav_elaboration,"Yes, this is tricky.  While the object is to attack as much as possible, there is a mental side that requires strategy.  Neither physical nor mental actions alone will result in best performance."
+Space Fortress,Q3type_1_planning_elaboration,No.  There is a best strategy for success in this task.  There is possibly more than one best strategy.
+Space Fortress,Q5creativity_input_1_elaboration,"Yes, because the creativity required is intermixed with the physical effort to do repeated damage to the fortress."
+Space Fortress,Q7type_7_battle_elaboration,"A little trouble, yes.  But the instructions do indicate an evaluation if performance at the conclusion of the task.  So, a comparison to others seems to happen."
+Space Fortress,Q8type_8_performance_elaboration,No.  Points are earned during the task and total scores are evaluated.  This means that any points earned may be used to determine payout.
+Space Fortress,Q9divisible_unitary_elaboration,"No.  Multiple players have an overall advantage, so the help is appreciated."
+Space Fortress,Q10maximizing_elaboration,No.  There is no mention of a time limit here.  The goal is to destroy the fortress.  The game will end when that happens or if your own ship is destroyed.
+Space Fortress,Q11optimizing_elaboration,No.  There is an outcome to be achieved but it is not a precision task.
+Space Fortress,Q13outcome_multip_elaboration,"No.  Although the best solution is to destroy the fortress, there could be many ways to achieve this."
+Space Fortress,Q14sol_scheme_mul_elaboration,No.
+Space Fortress,Q15dec_verifiability_elaboration,No.  The solution will be evident to all once achieved.
+Space Fortress,Q16shared_knowledge_elaboration,No.  This is a video game that responds to programmed stimuli.  An algorithm is often designed to achieve success in these situations.
+Space Fortress,Q17within_sys_sol_elaboration,"No.  There is a finite number of obstructions to tend to, so it seems nothing more is needed."
+Space Fortress,Q18ans_recog_elaboration,"No.  If one is successful with this task, it could be explained how each obstacle was overcome."
+Space Fortress,Q20type_3_type_4_elaboration,"No, although a""objectively correct solution"" may not be the normal wording for this type of task."
+Space Fortress,Q21intellective_judg_1_elaboration,No.  This is an objective task.
+Space Fortress,Q22confl_tradeoffs_elaboration,"No.  Points are important, but the real goal is to destroy the fortress.  That is the object.  Any lesser achievement is objectively not as good and can be easily graded.  So, room for compromises are extremely limited."
+Space Fortress,Q23ss_out_uncert_elaboration,"No.  Any new participants to this task will not be absolutely sure their strategy will be successful.  However, experienced participants will at least know what did not work well in past attempts."
+Space Fortress,Q24eureka_question_elaboration,"Yes, this is tricky so let me explain.  There are many obstacles, some of them move and we do not know the speed of the task items.  Unknowns are a real problem.  A plan of action could arise after experimentation where outer mines are dealt with first.  Or, the plan may be to ignore the mines and concentrate on the fortress while taking evasive action.  In either case, skill and dexterity become essential.  Therefore, I'd say the many approaches to this task are more important to realize than trying to discover an ""aha"" moment where one strategy will win all or most of the time."
+Space Fortress,Q1concept_behav_elaboration,"The set-up and object do not describe how participants navigate, either through keyboard, joystick or perhaps mental telepathy."
+Space Fortress,Q2intel_manip_1_elaboration,I don't have a sense of the degree of planning or strategy involved to avoid mines and take down the fortress.
+Space Fortress,Q5creativity_input_1_elaboration,It's unclear how much of the success depends on strategy or luck or finger twitches.
+Space Fortress,Q24eureka_question_elaboration,I'm not sure if there is a trick to this game basedon the information providedl
+Space Fortress,Q11optimizing_elaboration,"There are different ways to achieve the outcome, but the goal is to destroy the fortress, which is a precise outcome, right?"
+Space Fortress,Q15dec_verifiability_elaboration,"Doing this in this case would be tedious, but it could be done, couldn't it?"
+Space Fortress,Q16shared_knowledge_elaboration,"I don't really know what robots or algorithms can do, but since this isn't a creative task, this seems like something they can be programmed to accomplish.  "
+Space Fortress,Q18ans_recog_elaboration,Hmmm.  I'm not 100% sure on this one.
+Space Fortress,Q20type_3_type_4_elaboration,"There are multiple ways to accomplish the goal, but each one can be proven to be successful (although it would be laborious)."
+Space Fortress,Q13outcome_multip_elaboration,"I don't think questions regarding ""solutions"" are applicable to this task, since it's just a video game where you try to score the most points."
+Space Fortress,Q15dec_verifiability_elaboration,"I don't think questions regarding ""solutions"" are applicable to this task, since it's just a video game where you try to score the most points."
+Space Fortress,Q17within_sys_sol_elaboration,"I don't think questions regarding ""solutions"" are applicable to this task, since it's just a video game where you try to score the most points."
+Space Fortress,Q18ans_recog_elaboration,"I don't think questions regarding ""solutions"" are applicable to this task, since it's just a video game where you try to score the most points."
+Space Fortress,Q19time_solvability_elaboration,"I don't think questions regarding ""solutions"" are applicable to this task, since it's just a video game where you try to score the most points."
+Space Fortress,Q20type_3_type_4_elaboration,"I don't think questions regarding ""solutions"" are applicable to this task, since it's just a video game where you try to score the most points."
+Space Fortress,Q21intellective_judg_1_elaboration,"I don't think this question applies given the task, so I left the answer in the middle."
+Space Fortress,Q2intel_manip_1_elaboration,Some physically in using the controls for the game.
+Space Fortress,Q9divisible_unitary_elaboration,Participants can divide which sides of the ship to attack from.
+Space Fortress,Q18ans_recog_elaboration,"Destroying the fortress would be the ""correct"" answer."
+Space Fortress,Q2intel_manip_1_elaboration,This task requires good eye-hand coordination.
+Space Fortress,Q16shared_knowledge_elaboration,There is a single player and multi-player version so it depends on which one
 Sudoku,Q10maximizing_elaboration,Still unsure if time limit alone is enough to make this a yes answer or not.
 Sudoku,Q22confl_tradeoffs_elaboration,They are working e=with chat box and may recieve different information from others but I dont think there is a trade off
 Summarize Discussion,Q22confl_tradeoffs_elaboration,"It's a fine line and I'm not sure about this answer.  There are conflicting solutions and pieces of information that come from the participants, not necessarily from the task."
@@ -794,6 +860,7 @@ Trivia Multiple Choice Quiz,Q13outcome_multip_elaboration,"Technically getting a
 Trivia Multiple Choice Quiz,Q16shared_knowledge_elaboration,"Assuming a bot isn't preprogrammed with all of the knowledge in the world, I think this is no"
 Trivia Multiple Choice Quiz,Q18ans_recog_elaboration,I assume you wouldn't be allowed to look up the correct answer as part of the knowing it when you see it
 Trivia Multiple Choice Quiz,Q19time_solvability_elaboration,"I wasn't sure if the ""infinite resources"" part meant that a person could look up authoritative answers and show them to someone as proof that the solution was right. That would break the rules of the task, but maybe could be done as part of the scoring/explanation process after the task?  It wasn't clear if this question referred to the task itself or was just asking in general."
+Trivia Multiple Choice Quiz,Q17within_sys_sol_elaboration,One of the multiple choice answers is correct.
 Trivia Multiple Choice Quiz,Q9divisible_unitary_elaboration,No team work
 Trivia Multiple Choice Quiz,Q23ss_out_uncert_elaboration,"depends on whether the questions get graded 1 by 1 or only at the end.  answered assuming the latter, if the former than no"
 Trivia Multiple Choice Quiz,Q9divisible_unitary_elaboration,All participants are working on individual screens
@@ -845,6 +912,7 @@ Visual Oddball Target,Q18ans_recog_elaboration,I think once you identify it you 
 Visual Oddball Target,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the pattern correct or not
 Visual Oddball Target,Q9divisible_unitary_elaboration,No team work
 Visual Oddball Target,Q9divisible_unitary_elaboration,Set Up and Objective did not disclose any group information
+Wason's Selection Task,Q8type_8_performance_elaboration,"If they do not select enough cards or if they select too many cards, then they fail the task."
 Wason's Selection Task,Q9divisible_unitary_elaboration,No team work
 Wason's Selection Task,Q9divisible_unitary_elaboration,"If a team, the most intelligent should do all of the work, or at least help the others understand it."
 Whac-A-Mole,Q7type_7_battle_elaboration,"The wording is vague as stated in ""thereby maximizing their points"". It doesn't say their own points or if it is referring to their team."
