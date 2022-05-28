@@ -140,6 +140,11 @@ Crisis mapping,Q9divisible_unitary_elaboration,"Since there is a fixed amount of
 Crisis mapping,Q9divisible_unitary_elaboration,If this was a group task it would make sense to divide the work between the group
 Crisis mapping,Q18ans_recog_elaboration,"It would depend if the person you're explaining it to had access to the right, pre-defined map/correct answers."
 Crisis mapping,Q10maximizing_elaboration,It says a fixed amount of time in the instructions.
+Crisis mapping,Q9divisible_unitary_elaboration,"I suppose you could ""gang up "" on this task"
+Crisis mapping,Q10maximizing_elaboration,there is a time limit and a gold standard
+Crisis mapping,Q15dec_verifiability_elaboration,There is a subjective quality to this task
+Crisis mapping,Q19time_solvability_elaboration,"The subjectivity of the task makes me say ""no"" on this one."
+Crisis mapping,Q20type_3_type_4_elaboration,"The subjectivity of the task makes me say ""no"" on this one."
 Crisis mapping,Q23ss_out_uncert_elaboration,"depends entirely on when the feedback on whether they chose correctly is provided, which isn't mentioned in the description.  "
 Desert survival,Q10maximizing_elaboration,most points
 Desert survival,Q11optimizing_elaboration,the goal is to be exact or as clost as possible to the experts
@@ -387,6 +392,25 @@ Moral Reasoning (Disciplinary Action Case),Q4type_2_generate_elaboration,I chose
 Moral Reasoning (Disciplinary Action Case),Q23ss_out_uncert_elaboration,I could see this one going either way but ultimately chose no since there would be uncertainty that selected action was successful.
 Moral Reasoning (Disciplinary Action Case),Q23ss_out_uncert_elaboration,There is no right or wrong outcome so there is no way to know if what you chose was either correct or incorrect during or after the task.
 Moral Reasoning (Disciplinary Action Case),Q18ans_recog_elaboration,It states in problem no correct solution
+"NASA Moon survival",Q3type_1_planning_elaboration,You're planning for a 200 mile trek and which items are most important
+"NASA Moon survival",Q4type_2_generate_elaboration,You're group is brainstorming to determine the best items to carry
+"NASA Moon survival",Q6type_5_cc_elaboration,In groups there will be several differing viewpoints and the list has to be agreed upon 
+"NASA Moon survival",Q7type_7_battle_elaboration,"It doesn't seems like a competition, just a goal to match the list of the experts"
+"NASA Moon survival",Q8type_8_performance_elaboration,It's based on the highest score not pass/fail
+"NASA Moon survival",Q10maximizing_elaboration,It doesn't state anywhere that the task is timed
+"NASA Moon survival",Q11optimizing_elaboration,You're trying to match the list of the experts
+"NASA Moon survival",Q15dec_verifiability_elaboration,It's unclear if they inform you whether you got the correct answer after you make your choice
+"NASA Moon survival",Q19time_solvability_elaboration,It's unclear on if they let you know how close to the experts you are
+"NASA Moon survival",Q21intellective_judg_1_elaboration,"There is a purely objective correct answer to match the experts, but you can still subjectively arrive at a different answer and score high points. "
+"NASA Moon survival",Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the answers correct or not
+"NASA Moon survival",Q4type_2_generate_elaboration,"No, since it just ranking existing items."
+"NASA Moon survival",Q5creativity_input_1_elaboration,Creativity involved in imagining the scenario.
+"NASA Moon survival",Q16shared_knowledge_elaboration,A programmer can assign values to the items for the algorithm to rank.
+"NASA Moon survival",Q2intel_manip_1_elaboration,This task requires mental effort and physical labor for the gathering of items and the 200 mile trek.
+"NASA Moon survival",Q6type_5_cc_elaboration,Participants must come to a consensus after discussing different viewpoints.
+"NASA Moon survival",Q9divisible_unitary_elaboration,The team should collaborate as a group.
+"NASA Moon survival",Q18ans_recog_elaboration,"Here, participants will only know how close to the actual answer they came when an independent person judges the answers."
+"NASA Moon survival",Q7type_7_battle_elaboration,"It depends on if they're working on individuals or as a team. If individually, you could say that the person who got closest to the expert's answer was the winner."
 Putting food into categories,Q6type_5_cc_elaboration,Different group members may have different ideas on categories
 Putting food into categories,Q19time_solvability_elaboration,"There is not a solvable problem, fully subjective"
 Putting food into categories,Q9divisible_unitary_elaboration,Divide and conquer wouldn't work well with the non-redundancy requirement.
@@ -601,6 +625,7 @@ Recall videos,Q7type_7_battle_elaboration,The instructions do not provide the in
 Recall videos,Q13outcome_multip_elaboration,It's possible the questions could have more than one correct answer.
 Recall word lists,Q18ans_recog_elaboration,only if you hear the recording the recording while reading the list
 Recall word lists,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
+Recall word lists,Q9divisible_unitary_elaboration,This looks like it is just for one person not a group
 Recall word lists,Q18ans_recog_elaboration,"I am not sure unless the third parties who are being asked to ""recognize it"" have a list of the original words to know if the memorizers have gotten them correct. If they don't have that info, then they won't know if the participants are right or not. "
 Recall word lists,Q16shared_knowledge_elaboration,The algorithm would be penalized for wrong answers.
 Recall word lists,Q22confl_tradeoffs_elaboration,I'm not sure if people's own words that they think they remember counts as conflicting information.
