@@ -10,7 +10,7 @@ The goal is to remember the list of words and then write down as many words from
 
 Participants are required to start their list with the last word they heard, or else it is not counted. Otherwise, words can be written in any order. Participants have a limited amount of time to recall all the words they can.
 
-The maximum score occurrs if participants recall all words correctly and they get zero points for recalling none, or for failing to start the list with the final word. Participants lose points for incorrectly recalling words that were not on the list. If working in a team, participants can collaborate to submit the final list of recalled words.
+The maximum score occurs if participants recall all words correctly. They get zero points for recalling no words, or for failing to start the list with the final word. Participants lose points for incorrectly recalling words that were not on the list. If working in a team, participants can collaborate to submit the final list of recalled words.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
