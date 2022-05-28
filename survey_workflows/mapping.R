@@ -49,28 +49,31 @@
       
       #--- Sending Surveys ---
       header_msg = "
-          Hi — you signed up to be part of our ongoing projects.
+          Hi — you signed up to be part of our ongoing projects, and we reached out last week about your qualification to do our task (Answering 23 questions about a group or individual activity).
 
-          SUMMARY: Please visit your unique personal link as soon as possible to work on tasks! 
-          ---
+          SUMMARY: Our study is ongoing, and we are releasing more tasks today! Come do tasks with us!
           
-          You recently completed a qualification task that involves reading about a task (to be completed by an individual or a group) and answering 23 questions about it. We are pleased to inform you that you have passed the pre-test for this task, and you have earned a qualification — Congratulations!
+          Especially if you have not gotten the chance to do a task yet, please come! We would love your help.
           
-          You will now have a UNIQUE PERSONAL LINK, which you can visit to receive more tasks. Each time you visit this link, you will receive a DIFFERENT task. You can visit this link as many times as you wish, and submit as many surveys as you are able. You will be paid $3 per survey (approximately 12 minutes / survey, paid at $15/hr). 
+          As a reminder, you should visit your personal link (included in this email) to start doing tasks. 
+
+          To avoid spamming your inboxes, we plan to post major updates on Fridays, and we will release the largest batches of tasks then. 
+          We will also post some tasks throughout the week, as quickly we are able to add them to the database. 
           
-          We will continuously add more tasks to the database, and we hope you will visit this link as often as possible. There is no limit to the number of tasks that you can do, although you may see a waiting page if there are no tasks at the moment.
-            "
-      
+          In this past week, we have seen very high demand, and the daily tasks have generally been completed within an hour of being posted — thank you for your hard work and dedication! 
+          However, because of this demand, and because creating tasks takes time, please do not be alarmed if you do not see any postings when you visit the site. 
+         "
       footer_msg = "
-          Your responses at this link will be evaluated and paid within 3-4 business days. You do NOT need to email us a completion code; if you reach the page with the code, this means that you have completed the survey.
+          We will pay you $3 per completed survey ($15/hr rate), and you will receive the bonus within 3-4 business days. 
+          You do NOT need to email us a completion code; if you reach the page with the code, this means that you have completed the survey.
 
-          We look forward to you working with us soon!
+          We hope to see you again soon.
             "
       
       json_body = list(
         "worker_ids" = worker_ids, 
         "links_group" = links,
-        "subject" = "[Ongoing Paid Activity] You Earned a Qualification for an Ongoing Project about Answering Questions about Tasks!",
+        "subject" = "[UPDATES:Ongoing Paid Activity] 23 questions about a task",
         "comments" = comments, 
         "footer_msg" = footer_msg,
         "header_msg" = header_msg
@@ -146,7 +149,7 @@
                          paid = payments_body$bonuses, 
                          last_payment_date = with_tz(Sys.time(), "America/New_York"))
       
-      #--- Registering CSV ---- 
+      #--- Registering Final CSV ---
       final_payment_csv <- mapper_payment %>% 
         select(-last_payment_date) %>% 
         left_join(payments) %>%
