@@ -16,6 +16,7 @@ Abstract grid task,Q14sol_scheme_mul_elaboration,"There is one best, but that is
 Abstract grid task,Q9divisible_unitary_elaboration,No team work
 Advertisement writing,Q2intel_manip_1_elaboration,The actual writing and/or drawing of the ad is physical
 Advertisement writing,Q6type_5_cc_elaboration,I would think part of the task would be to take different perspectives on what should be submitted and build a cohesiove ad.
+Advertisement writing,Q23ss_out_uncert_elaboration,Doesn't say there is a way to win or earn points
 Advertisement writing,Q10maximizing_elaboration,"there is a time limit but, doesn't seem very relevant"
 Advertisement writing,Q14sol_scheme_mul_elaboration,"hard to say, it could not applicable"
 Advertisement writing,Q15dec_verifiability_elaboration,"possible could be yes, however, the best blurb for the kickstarter product could be subjective to the kickstarter's products creator"
@@ -24,6 +25,7 @@ Advertisement writing,Q10maximizing_elaboration,Timed
 Advertisement writing,Q1concept_behav_elaboration,I thought it would take more time coming up with an answer than writing it.
 Advertisement writing,Q3type_1_planning_elaboration,"Since it involves multiple people chipping in, i think it is a planning task."
 Advertisement writing,Q13outcome_multip_elaboration,It's a judgment call and many offerings could be suitable.
+Advertisement writing,Q6type_5_cc_elaboration,"I think it's possible that people might have to resolve differences in opinion if they were working in teams but based on the information provided, it can't be described as a ""main purpose."""
 Allocating resources to programs,Q17within_sys_sol_elaboration,"N/A: there is no right, wrong, or optimal way of allocation"
 Allocating resources to programs,Q18ans_recog_elaboration,"N/A: there is no right, wrong, or optimal way of allocation"
 Allocating resources to programs,Q17within_sys_sol_elaboration,there is no right or wrong solution
@@ -87,6 +89,8 @@ Checkers,Q16shared_knowledge_elaboration,I think most computers could beat a hum
 Checkers,Q19time_solvability_elaboration,n/a it's a game between 2 people
 Checkers,Q20type_3_type_4_elaboration,"not sure if this applies here, but you either win or lose"
 Checkers,Q13outcome_multip_elaboration,"Technically, checkers is a solved game, so in my opinion there is always a ""best solution"" for it."
+Checkers,Q3type_1_planning_elaboration,"In checkers, one must always plan the initial move and subsequent moves based on the opponent's moves."
+Checkers,Q16shared_knowledge_elaboration,"Since an algorithm cannot anticipate the opponent's moves, it would not be effective in this scenario."
 Checkers,Q11optimizing_elaboration,To capture all 12 of the opponent's pieces.
 Checkers,Q22confl_tradeoffs_elaboration,Multiple moves to choose from each turn.
 Checkers,Q20type_3_type_4_elaboration,"Playing this game and winning it's not an operation that can be calculated or selected, and there are many, many ways to reach the final goal of removing all the opponent's rounds"
@@ -132,6 +136,10 @@ Computer maze,Q9divisible_unitary_elaboration,All participants are working on in
 Computer maze,Q5creativity_input_1_elaboration,"There could be a lot of creativity involved, as far as identifying the distracting greebies"
 Computer maze,Q11optimizing_elaboration,"There is a max amount of points, so there is a precise outcome - finishing maze and making no mistakes in greebie identifications "
 Computer maze,Q14sol_scheme_mul_elaboration,"There is one “correct answer” but partial credit, "
+Crisis mapping,Q9divisible_unitary_elaboration,"Since there is a fixed amount of time, participants may want to divide the tweets."
+Crisis mapping,Q9divisible_unitary_elaboration,If this was a group task it would make sense to divide the work between the group
+Crisis mapping,Q18ans_recog_elaboration,"It would depend if the person you're explaining it to had access to the right, pre-defined map/correct answers."
+Crisis mapping,Q10maximizing_elaboration,It says a fixed amount of time in the instructions.
 Desert survival,Q10maximizing_elaboration,most points
 Desert survival,Q11optimizing_elaboration,the goal is to be exact or as clost as possible to the experts
 Desert survival,Q13outcome_multip_elaboration,there is a perfect answer but it is not necessary
@@ -143,6 +151,7 @@ Desert survival,Q18ans_recog_elaboration,I think different people can have diffe
 Desert survival,Q20type_3_type_4_elaboration,The group does not know the final list so must come up with a consensus.
 Desert survival,Q21intellective_judg_1_elaboration,This is a mix of logic (what makes sense) vs. subjective (what feels right)
 Divergent Association Task,Q9divisible_unitary_elaboration,No team work
+Divergent Association Task,Q24eureka_question_elaboration,There is no trick involved in this solution.
 Divergent Association Task,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Divergent Association Task,Q15dec_verifiability_elaboration,I believe a word expert could determine semantic distance
 Divergent Association Task,Q17within_sys_sol_elaboration,If there were semantic rules already established then there could be a solution based on that data
@@ -181,6 +190,7 @@ Estimating pages of a book,Q17within_sys_sol_elaboration,"To get the exact numbe
 Estimating pages of a book,Q18ans_recog_elaboration,"I don't think an outsider would know the answer for sure, only the person that created the problem"
 Estimating pages of a book,Q21intellective_judg_1_elaboration,Since you're making an educated guess it's a little subjective
 Estimating pages of a book,Q23ss_out_uncert_elaboration,Since they're not being told if they were correct or not I would say they're unsure
+Estimating pages of a book,Q24eureka_question_elaboration,The answer here is objective and there is no trickery involved.
 Estimating pages of a book,Q17within_sys_sol_elaboration,"I think that checking the number of pages in the book would be ""outside"" the system but I'm not sure."
 Estimating pages of a book,Q10maximizing_elaboration,"The way I understand it, the limiting factor is the time - work as quickly as [possible top get as closely as possible, so I said yes."
 Estimating pages of a book,Q14sol_scheme_mul_elaboration,"I think there are a lot of ways this could be done - having everyomne guess and taking the average, using a magnifying glass on the picture, etc."
@@ -221,6 +231,14 @@ Find the maximum,Q5creativity_input_1_elaboration,There would be creativity in h
 Find the maximum,Q16shared_knowledge_elaboration,"I’m Not sure this is possible. It seems like it it, but I can’t tell from the instructions "
 Find the maximum,Q9divisible_unitary_elaboration,Seems like they make individual guesses then come together at the end.
 Find the maximum,Q10maximizing_elaboration,They are trying to maximize points.
+Game of Clue - Terrorist Attack,Q16shared_knowledge_elaboration,"Just not sure on this one, but leaning no."
+Game of Clue - Terrorist Attack,Q5creativity_input_1_elaboration,This depends on the difficulty of the puzzle and how creativity you need to think.
+Game of Clue - Terrorist Attack,Q9divisible_unitary_elaboration,By default everyone is already dividing and conquering since they get their own list of facts and clues.
+Game of Clue - Terrorist Attack,Q13outcome_multip_elaboration,There are static goals with static solutions but you also earn more score the faster you work.
+Game of Clue - Terrorist Attack,Q16shared_knowledge_elaboration,There are likely too much social dynamics involved in understanding clues and solving mysteries.
+Game of Clue - Terrorist Attack,Q24eureka_question_elaboration,There are usually 'aha' moments in solving mysteries.
+Game of Clue - Terrorist Attack,Q8type_8_performance_elaboration,"The notes did not clarify, but it appears you get points only if you get all 4 facts correctly."
+Game of Clue - Terrorist Attack,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Graph coloring task,Q9divisible_unitary_elaboration,If it is done in groups.
 Graph coloring task,Q8type_8_performance_elaboration,I presume this because it is completed correctly or it isn't
 Graph coloring task,Q22confl_tradeoffs_elaboration,you have to correct others mistakes if there are any on the shared screen
@@ -234,6 +252,8 @@ Guessing the correlation,Q9divisible_unitary_elaboration,No team work
 Guessing the correlation,Q5creativity_input_1_elaboration,"I didnt evaluate it as a purely mental task. Seeing the scatterplot and estimating the correlation is mathematical, but there is some creativity to estimations. Without know the actual point's coordinates, it isnt algorthmic."
 Guessing the correlation,Q8type_8_performance_elaboration,"They are ""evaluated on accuracy"" I take to mean thqat there is some partial crediut or percebnt score they are given. They dont have to be 100% precise"
 Guessing the correlation,Q16shared_knowledge_elaboration,"You could train a model to get as precise as possible, so there must be some algorithmic way."
+Hidden figures in a picture (Recall Task),Q2intel_manip_1_elaboration,Some physical due to the eye strain involved.
+Hidden figures in a picture (Recall Task),Q11optimizing_elaboration,Since there is a maximum based on the number of animals on the list.
 Hidden figures in a picture (Recall Task),Q24eureka_question_elaboration,"There is no aha moment. The participants find the objects as they see them on the image. I would like to call out an error on this particular assignment. In the ""Set-Up"" it states participants are given a list of images to discover in a picture and then ""click on it."" In the Objective-Goal, it states that participants must recall as many animals as they can from the original list. Participants type and submit the words using the webpage NOT ""click on it."" So there are conflicting instructions here."
 Hidden figures in a picture (Recall Task),Q11optimizing_elaboration,"unless by ""precise"" you mean ""maximum score if they recall all 10"""
 Hidden figures in a picture (Recall Task),Q9divisible_unitary_elaboration,"can be divided, some people could remember a portion of the animals"
@@ -289,22 +309,19 @@ Image rating,Q18ans_recog_elaboration,"It states ""Participants are NOT told whe
 Image rating,Q19time_solvability_elaboration,The participants don't know whether their guesses are correct or not
 Image rating,Q21intellective_judg_1_elaboration,Since you're making an educated guess it's a little subjective
 Image rating,Q23ss_out_uncert_elaboration,Participants aren't told if they guessed correct or not
+Image rating,Q24eureka_question_elaboration,There is no trick involved in this solution.
 Image rating,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Image rating,Q16shared_knowledge_elaboration,Unless the algorithm already knows the poll answers they could not solve
 Image rating,Q9divisible_unitary_elaboration,It could be argued that its useful to get a consensus
 Image rating,Q19time_solvability_elaboration,"It could be argued that if one had access to the polling data, then it could be done."
 Image rating,Q21intellective_judg_1_elaboration," you are ""objectively"" trying to guess the ""objective"" opinions"
 Image rating,Q22confl_tradeoffs_elaboration,this question is confusing.
-Image rating,Q11optimizing_elaboration,The challenge is to be exact in predicting how other Americans think.
-Image rating,Q16shared_knowledge_elaboration,"Participants are NOT told whether their guesses are correct or how many points they earned so naturally, an algorithm participating in this task would not be told if its estimations are correct."
-Image rating,Q17within_sys_sol_elaboration,"Because participants are being asked to estimate what 100 random Americans think, they can only estimate."
-Image rating,Q19time_solvability_elaboration,Participants are NOT told whether their guesses are correct or how many points they earned.
-Image rating,Q20type_3_type_4_elaboration,"While the 100 polled Americans rated the products subjectively, the results of the poll are objective."
-Image rating,Q21intellective_judg_1_elaboration,"The poll of the 100 Americans is based on personal or subjective preferences, the actual poll results are objective. "
-Image rating,Q23ss_out_uncert_elaboration,Participants are NOT told whether their guesses are correct or how many points they earned.
-Image rating,Q24eureka_question_elaboration,"Participants are NOT told whether their guesses are correct or how many points they earned so they never see the ""trick."""
 Image rating,Q23ss_out_uncert_elaboration,They dont know how many points
 Image rating,Q9divisible_unitary_elaboration,All participants are working on individual screens
+Iterative lemonade stand task,Q10maximizing_elaboration,Goal is to maximize profit.
+Iterative lemonade stand task,Q13outcome_multip_elaboration,It is not clear if there are multiple solutions to reach the max profit.
+Iterative lemonade stand task,Q13outcome_multip_elaboration,"not sure, maybe more than one set of choices will lead to the highest profit"
+Iterative lemonade stand task,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Letters-to-numbers problems (cryptography),Q5creativity_input_1_elaboration,I think this is a mix between creativity and logic
 Letters-to-numbers problems (cryptography),Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Letters-to-numbers problems (cryptography),Q23ss_out_uncert_elaboration,they may have done their math and mapping wrong
@@ -347,6 +364,7 @@ Moral Reasoning (Disciplinary Action Case),Q21intellective_judg_1_elaboration,"Y
 Moral Reasoning (Disciplinary Action Case),Q22confl_tradeoffs_elaboration,No.  Conflicts of interest arise here and there will undoubtedly be tradeoffs.
 Moral Reasoning (Disciplinary Action Case),Q23ss_out_uncert_elaboration,No.  Enough information is offered in the instructions to let us know that the participants will not know if there resolution will be accepted until after the task is complete.
 Moral Reasoning (Disciplinary Action Case),Q24eureka_question_elaboration,No.
+Moral Reasoning (Disciplinary Action Case),Q24eureka_question_elaboration,There is no trick involved in this solution.
 Moral Reasoning (Disciplinary Action Case),Q9divisible_unitary_elaboration,"Participants had to try to make sense of the different stakeholders' conflicting interests, get agreement from team members, and make a final choice about how to handle the disciplinary situation"
 Moral Reasoning (Disciplinary Action Case),Q18ans_recog_elaboration,"Although there is no right or wrong course of action among the options, the goal is to select one of the courses of action."
 Moral Reasoning (Disciplinary Action Case),Q23ss_out_uncert_elaboration,"Although there is no right or wrong course of action among the options, the goal is to select one of the courses of action."
@@ -404,6 +422,15 @@ Railroad Route Construction game (Impossible Version),Q7type_7_battle_elaboratio
 Railroad Route Construction game (Impossible Version),Q14sol_scheme_mul_elaboration,"Seeing as how there is no way to win, there is no way to achieve the actual task/goal."
 Railroad Route Construction game (Impossible Version),Q17within_sys_sol_elaboration,"There is enough, but it doesn't matter, as there is no way to finish or win the game."
 Railroad Route Construction game (Impossible Version),Q18ans_recog_elaboration,"This goal is made to be unsolvable, so there really is no correct solution."
+Railroad Route Construction game (Impossible Version),Q14sol_scheme_mul_elaboration,Question seems not applicable given there are no ways to achieve the task.
+Railroad Route Construction game (Impossible Version),Q15dec_verifiability_elaboration,Question seems not applicable given the task intentionally has no acceptable solution.
+Railroad Route Construction game (Impossible Version),Q16shared_knowledge_elaboration,The question seems not applicable given the task is intentionally impossible to solve for any entity.
+Railroad Route Construction game (Impossible Version),Q18ans_recog_elaboration,The question seems not applicable because no one would be able to solve the problem.
+Railroad Route Construction game (Impossible Version),Q20type_3_type_4_elaboration,The question seems not applicable given the task is intentionally impossible to solve.
+Railroad Route Construction game (Impossible Version),Q21intellective_judg_1_elaboration,The question seems not applicable since the task intentionally has no solution.
+Railroad Route Construction game (Impossible Version),Q15dec_verifiability_elaboration,hard to say because there is no way to solve it
+Railroad Route Construction game (Impossible Version),Q16shared_knowledge_elaboration,"hard to say because there is no way to solve it, the algorithim could solve that it's impossible to solve, so i'm unsure"
+Railroad Route Construction game (Impossible Version),Q20type_3_type_4_elaboration,hard to say because there is no way to solve it
 Railroad Route Construction game (Impossible Version),Q14sol_scheme_mul_elaboration,There are no methods to achieve the task since it is impossible.
 Railroad Route Construction game (Impossible Version),Q15dec_verifiability_elaboration,No solutions
 Railroad Route Construction game (Impossible Version),Q18ans_recog_elaboration,Not applicable as impossible to solve
@@ -413,6 +440,7 @@ Railroad Route Construction game (Impossible Version),Q8type_8_performance_elabo
 Railroad Route Construction game (Impossible Version),Q9divisible_unitary_elaboration,No team work
 Railroad Route Construction game (Impossible Version),Q13outcome_multip_elaboration,No way to win
 Railroad Route Construction game (Impossible Version),Q14sol_scheme_mul_elaboration,No way to acheive this task
+Railroad Route Construction game (Impossible Version),Q7type_7_battle_elaboration,There is no way to win.
 Railroad Route Construction game (Impossible Version),Q22confl_tradeoffs_elaboration,no solution since missing piece
 Railroad Route Construction game (Impossible Version),Q14sol_scheme_mul_elaboration,There is no way to achieve this task.
 Railroad Route Construction game (Impossible Version),Q9divisible_unitary_elaboration,All participants are working individually
@@ -488,6 +516,7 @@ Reading the mind in the eyes,Q16shared_knowledge_elaboration,"I am not sure if t
 Reading the mind in the eyes,Q20type_3_type_4_elaboration,"There is a right and wrong answer, but it could be subjective."
 Reading the mind in the eyes,Q21intellective_judg_1_elaboration,"It seems subjective, but the outline says that there is a true answer for each set of eyes."
 Reading the mind in the eyes,Q9divisible_unitary_elaboration,No team work
+Recall association,Q22confl_tradeoffs_elaboration,The tradeoff here is that maybe a participant's memory is not as accurate as required to remember all the words.
 Recall association,Q9divisible_unitary_elaboration,not sure if it is possible for different participants in a group to be given different words and then they come together.
 Recall association,Q13outcome_multip_elaboration,recalling every single word is the best solution
 Recall association,Q18ans_recog_elaboration,if you remember then their is a right answer when you see it
@@ -497,6 +526,7 @@ Recall association,Q9divisible_unitary_elaboration,No team work
 Recall association,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Recall association,Q14sol_scheme_mul_elaboration,There are likely many different methods used to recall words.
 Recall association,Q23ss_out_uncert_elaboration,Participants might not be sure if they recalled the correct words. The wording does not specify if participate score is shown live or at the end.
+Recall association,Q7type_7_battle_elaboration,does not mention another player / AI 
 Recall association,Q9divisible_unitary_elaboration,"All participants are working individually, otherwise ""yes"""
 Recall association,Q16shared_knowledge_elaboration,"That would be toooo easy for an algorithm, but still ""yes"""
 Recall association,Q5creativity_input_1_elaboration,"The trouble here is that one memorization strategy includes making a story with the words which in a way can be said to have some creativity involved. However, purely on the task instead, one can argue there is no creativity as well.   "
@@ -524,6 +554,9 @@ Recall images,Q14sol_scheme_mul_elaboration,I think there would be different met
 Recall images,Q16shared_knowledge_elaboration,Because it's a memory task I would assume it's purely a human task
 Recall images,Q18ans_recog_elaboration,Either you remember or you don't
 Recall images,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the recall correct or not
+Recall stories,Q11optimizing_elaboration,I think it’s precise. The goal is to answer 12 questions correcly
+Recall stories,Q14sol_scheme_mul_elaboration,"I would say yes - to answer the questions correctly. There are different ways of doing that, but only one way to get max points"
+Recall stories,Q16shared_knowledge_elaboration,"I don’t see how you could teach a machine to “read” the story, then understand context, in an algorithmic way"
 Recall stories,Q3type_1_planning_elaboration,"they can't write down anything, they have to use memory"
 Recall stories,Q5creativity_input_1_elaboration,"no creativity, all objective and all memory"
 Recall stories,Q6type_5_cc_elaboration,"all objective and memory, no opinions."
@@ -538,8 +571,15 @@ Recall stories,Q15dec_verifiability_elaboration,the answer to the question is ei
 Recall stories,Q17within_sys_sol_elaboration,someone can be unsure of the answer but there is still a correct answer regardless.
 Recall stories,Q23ss_out_uncert_elaboration,depends on how good their memory is on whether they answered the question correctly.
 Recall stories,Q24eureka_question_elaboration,you either remember the story and get the answer right or you don't. no tricks.
+Recall stories,Q9divisible_unitary_elaboration,A group could possibly assign one page to four participants to read which would likely lead to a better outcome.
+Recall stories,Q11optimizing_elaboration,The goal is to try to answer all 12 questions correctly but still receive points if they only answer some correctly.
+Recall stories,Q24eureka_question_elaboration,There is no trick involved in this solution.
+Recall stories,Q9divisible_unitary_elaboration,"Since there is a time limit, I chose yes."
+Recall stories,Q11optimizing_elaboration,"Yes, since there will be a maximum number of questions the participant will try to answer."
+Recall stories,Q16shared_knowledge_elaboration,"No, under the premise that the model would be too advanced (machine learning)."
 Recall stories,Q9divisible_unitary_elaboration,"All participants are working individually, otherwise ""yes"""
 Recall stories,Q16shared_knowledge_elaboration,"Yes, but that would have to be a very ""smart"" algorithm/AI"
+Recall stories,Q10maximizing_elaboration,"""within a fixed amount of time"""
 Recall videos,Q9divisible_unitary_elaboration,"All participants are working individually, otherwise ""yes"""
 Recall videos,Q14sol_scheme_mul_elaboration,Depends on various memorization techniques.
 Recall videos,Q16shared_knowledge_elaboration,The algorithm would need to understand what is happening in the video.
@@ -555,6 +595,14 @@ Recall videos,Q2intel_manip_1_elaboration,There could be some eye strain which I
 Recall videos,Q5creativity_input_1_elaboration,I am not exactly clear on what is being asked about in the video so I assumed it is straightforward.
 Recall videos,Q7type_7_battle_elaboration,The instructions do not provide the incentive for maximizing points.
 Recall videos,Q13outcome_multip_elaboration,It's possible the questions could have more than one correct answer.
+Recall word lists,Q18ans_recog_elaboration,only if you hear the recording the recording while reading the list
+Recall word lists,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
+Recall word lists,Q18ans_recog_elaboration,"I am not sure unless the third parties who are being asked to ""recognize it"" have a list of the original words to know if the memorizers have gotten them correct. If they don't have that info, then they won't know if the participants are right or not. "
+Recall word lists,Q16shared_knowledge_elaboration,The algorithm would be penalized for wrong answers.
+Recall word lists,Q22confl_tradeoffs_elaboration,I'm not sure if people's own words that they think they remember counts as conflicting information.
+Recall word lists,Q5creativity_input_1_elaboration,memory tricks like word association or using the words to create a story do in a way take some form of creativity
+Recall word lists,Q8type_8_performance_elaboration,"It is not all or nothing. However, if participant does not start the first word with the last word, then it becomes all or nothing. Therefore, I believe both can be applicable. "
+Recall word lists,Q11optimizing_elaboration,"The closer to the maximum, the better."
 Reproducing arts,Q23ss_out_uncert_elaboration,They can compare to the target spreadsheet.
 Reproducing arts,Q2intel_manip_1_elaboration,"you have to do a lot of clicking and selecting, etc."
 Reproducing arts,Q18ans_recog_elaboration,"There is no real ""problem"", it's just copying"
@@ -608,6 +656,11 @@ Search for Oil Task,Q23ss_out_uncert_elaboration,"depends entirely on when the p
 Shopping plan,Q8type_8_performance_elaboration,It is stated that any score less than max number of points result in partial credit.
 Shopping plan,Q13outcome_multip_elaboration,It is not too clear if there are multiple optimal solutions.
 Shopping plan,Q7type_7_battle_elaboration,"You are fighting against a maximum point value, not other people/ Thats how I interopreted the objective.,"
+Shopping plan,Q1concept_behav_elaboration,This task requires both mental effort by planning the shopping trip and items to purchase as well as physical effort by actually going and making the purchases.
+Shopping plan,Q2intel_manip_1_elaboration,This task requires both mental effort by planning the shopping trip and items to purchase as well as physical effort by actually going and making the purchases.
+Shopping plan,Q6type_5_cc_elaboration,Participants are all from the same house and may have differing opinions on which items to buy.
+Shopping plan,Q10maximizing_elaboration,The goal is to purchase as many high-quality items as possible.
+Shopping plan,Q11optimizing_elaboration,The goal is to purchase as many high-quality items as possible.
 Shopping plan,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Shopping plan,Q10maximizing_elaboration,There is a time limit so participants would need to work as quickly as possible
 Shopping plan,Q1concept_behav_elaboration,"I'm assuming this is a theoretical trip to a grocery and not an actual trip to the store, which is why I'm answering 'mental' here."
@@ -703,6 +756,7 @@ The N light bulbs game,Q16shared_knowledge_elaboration,"the lightbulbs can be th
 The N light bulbs game,Q18ans_recog_elaboration,They aren't informed if they achieved the most possible points for the light
 The N light bulbs game,Q22confl_tradeoffs_elaboration,The players won't know if the points shown could be improved or are the maximum allowable. 
 The N light bulbs game,Q23ss_out_uncert_elaboration,"While there is a theoretical “best” configuration, participants will not be told if they have achieved it"
+The N light bulbs game,Q3type_1_planning_elaboration,"If working in teams, everyone collectively determines the next guess."
 To evacuate or not to evacuate,Q1concept_behav_elaboration,This is purely a decision of whether to evacuate or not given the information provided.
 To evacuate or not to evacuate,Q8type_8_performance_elaboration,"This task has an all-or-nothing element. If you choose not to evacuate and disaster strikes, you lose everything."
 To evacuate or not to evacuate,Q9divisible_unitary_elaboration,They make their selection for evacuation individually.
@@ -762,6 +816,10 @@ Unscramble words (anagrams),Q21intellective_judg_1_elaboration,No.  This is clea
 Unscramble words (anagrams),Q22confl_tradeoffs_elaboration,"No.  Conflicts can only appear if the participant enters an incorrect solution (one that is not a real word).  In this case, overall knowledge of the language is the culprit, not conflicting answers."
 Unscramble words (anagrams),Q23ss_out_uncert_elaboration,"No.  Some participants will not arrive at the correct solution immediately yet insert a likely answer out of desperation or ""best guess"".  They may hope it is right, but will need to wait for verification."
 Unscramble words (anagrams),Q24eureka_question_elaboration,No.  This is a type of task where every component (each of the 24 words) will be unique and looking for a pattern is quite difficult.
+Unscramble words (anagrams),Q11optimizing_elaboration,The goal is to unscramble as many words from the list as possible.
+Unscramble words (anagrams),Q13outcome_multip_elaboration,The best solution is to unscramble all 24 anagrams.
+Unscramble words (anagrams),Q14sol_scheme_mul_elaboration,There are many ways to unscramble a sequence of letters. Some might start at the beginning of the letters and work forward while others may start at the end.
+Unscramble words (anagrams),Q24eureka_question_elaboration,There is no trick involved in this solution.
 Unscramble words (anagrams),Q9divisible_unitary_elaboration,I am not sure based on the instructions if participants have to go one word at time.
 Unscramble words (anagrams),Q11optimizing_elaboration,"The closer to solving all 24 words, the better."
 Unscramble words (anagrams),Q13outcome_multip_elaboration,proper spelling is critical to complete the task
@@ -814,13 +872,18 @@ Whac-A-Mole,Q16shared_knowledge_elaboration,if you program the algorithm to play
 Whac-A-Mole,Q17within_sys_sol_elaboration,"there is no solution, it's just gaining points"
 Whac-A-Mole,Q19time_solvability_elaboration,if there is no time limit then you can gain indefinate points
 Whac-A-Mole,Q23ss_out_uncert_elaboration,they won't know how many points gained unless it is displayed.
-Whac-A-Mole,Q2intel_manip_1_elaboration,"I feel like it may be physical because of hand eye coordination, speed, etc"
-Whac-A-Mole,Q16shared_knowledge_elaboration,algorithim could be programmed to HIT the highest circles extremely fast
 Whac-A-Mole,Q17within_sys_sol_elaboration,there is no solution to find
 Whac-A-Mole,Q18ans_recog_elaboration,there is no solution to find
 Whac-A-Mole,Q19time_solvability_elaboration,there is no solution to find
 Whac-A-Mole,Q17within_sys_sol_elaboration,Not a actual solution
 Whac-A-Mole,Q18ans_recog_elaboration,No correct answer
+Whac-A-Mole,Q10maximizing_elaboration,"""They have a limited amount of time to get as many points as possible."" Does this meet the criteria?"
+Whac-A-Mole,Q15dec_verifiability_elaboration,No solution possible as it is only a task.
+Whac-A-Mole,Q17within_sys_sol_elaboration,No solution possible as it is only a task.
+Whac-A-Mole,Q18ans_recog_elaboration,There is no problem to solve.
+Whac-A-Mole,Q19time_solvability_elaboration,No solution possible as it is only a task.
+Whac-A-Mole,Q20type_3_type_4_elaboration,No solution possible as it is only a task.
+Whac-A-Mole,Q21intellective_judg_1_elaboration,No solution possible as it is only a task.
 Wildcat Wells,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Wildcat Wells,Q13outcome_multip_elaboration,If the participant somehow guesses randomly all best oil fields they could achieve the best solution.  Unlikely but technically possible.
 Wildcat Wells,Q17within_sys_sol_elaboration,Sounds like more of a hunting and guessing task.
