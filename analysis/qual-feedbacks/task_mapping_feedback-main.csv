@@ -49,6 +49,46 @@ Allocating resources to programs,Q21intellective_judg_1_elaboration,"I hope I ha
 Allocating resources to programs,Q22confl_tradeoffs_elaboration,"There are tradeoffs because some programs will not receive the same amount of money even if you wanted them to and as such, you have to decide which of the 3 programs would be more beneficial."
 Allocating resources to programs,Q6type_5_cc_elaboration,"when they say ""resolve different conflicts in people's values and interests"" do they mean there is a team resolving it, or do they mean the hypothetical people in the hypothetical government?"
 Allocating resources to programs,Q6type_5_cc_elaboration,The group must work together to determine how to spend the money across different programs
+Arithmetic problem 1,Q4type_2_generate_elaboration,There is exactly one right answer hence it the aim is not generation of ideas or brainstorming.
+Arithmetic problem 1,Q5creativity_input_1_elaboration,"The problem is logical but a bit of creative thinking cannot hurt. Since people work in groups, they may create ideas before applying logic to arrive at the correct solution."
+Arithmetic problem 1,Q7type_7_battle_elaboration,Task graded based on how close a submission is to the true minimum time. Hence not a win/lose situation.
+Arithmetic problem 1,Q9divisible_unitary_elaboration,"It says people can work in groups and discuss their answers, so it can be a divide and conquer task."
+Arithmetic problem 1,Q14sol_scheme_mul_elaboration,"There is only one right answer which is optimal. However several ways do exist and that is the reason why the task is graded on how close a submission is to the ideal. Hence highest score for correct answers, but others are given reduced points based on its closeness to the optimal."
+Arithmetic problem 1,Q2intel_manip_1_elaboration,"Yes, I wish the divisions on the line above were smaller (the line would be divided into smaller sections) so I could indicate that this is even more mental than physical.  The only physical portion of this task is to write or type the notes required."
+Arithmetic problem 1,Q4type_2_generate_elaboration,"No, the math will show the solution to this task."
+Arithmetic problem 1,Q5creativity_input_1_elaboration,"No, there are solutions that will reduce the current production time, but only one solution will minimize the time the most."
+Arithmetic problem 1,Q7type_7_battle_elaboration,"No.  This task is a win/lose situation relative to other participants, although since there is one best answer then there may be multiple winners."
+Arithmetic problem 1,Q8type_8_performance_elaboration,No.  Points are awarded according to the degree of success participants advance to the goal.  This means points are good and a reward is forthcoming for most.  Some players will likely gain more points than others.
+Arithmetic problem 1,Q9divisible_unitary_elaboration,"No.  Five decisions need to be made and each decision will affect the other decisions.  The decisions are too linked to each other, none are independent."
+Arithmetic problem 1,Q10maximizing_elaboration,"No.  The task is timed, but no one sub-task is repetetive in nature."
+Arithmetic problem 1,Q11optimizing_elaboration,No.  The precise outcome is to report how the maximum production can be attained.
+Arithmetic problem 1,Q13outcome_multip_elaboration,No.  This is outlined in the instructions.
+Arithmetic problem 1,Q14sol_scheme_mul_elaboration,No.  There may be more than one way to achieve the same desired outcome.
+Arithmetic problem 1,Q15dec_verifiability_elaboration,No.  This is mostly a math problem.
+Arithmetic problem 1,Q16shared_knowledge_elaboration,"No.  Since this is a math problem, an algorithm can be developed to determine the best solution."
+Arithmetic problem 1,Q17within_sys_sol_elaboration,"Yes, I had trouble with this question.  The instructions included each man's time for only 3 of the 5 machines.  The data for the remaining 2 machines (4 and 5) were not included.  This missing information makes the task much more difficult.  If I am wrong here and the data given in the instructions are meant to be simply a partial example of what the particpants can expect to see, then I would change my answer to ""Yes, there is enough information""."
+Arithmetic problem 1,Q18ans_recog_elaboration,No.  Number can easily explain the best solution.
+Arithmetic problem 1,Q21intellective_judg_1_elaboration,"No.  The best answer will not be an opinion, it will be demostrated objectively."
+Arithmetic problem 1,Q23ss_out_uncert_elaboration,"Yes, this question requires clarification.  If the participants are given the desired result of 10 minutes, then they have something to shoot for and they will know if they achieved this before sumbitting their answer.  If, however, the participants are not given the 10 minute goal, then this is where to task time limit comes in.  Participants must arrive at any pairing of man and machine to reduce production time, then they have the rest of their time to try to improve on that."
+Arithmetic problem 1,Q24eureka_question_elaboration,"Yes, this is tricky.  I would need to perform this task to be sure if there is or is not an ""aha"" moment.  If I'm right, I would be able to do this within the given time, but an ""aha"" moment probably not appear."
+Arithmetic problem 1,Q4type_2_generate_elaboration,"since there's a time limit, maybe it is ....?"
+Arithmetic problem 1,Q9divisible_unitary_elaboration,"""Those working in groups can discuss their answers before submitting in an online portal"""
+Arithmetic problem 1,Q17within_sys_sol_elaboration,"It depends here on whether the hints provided in the Objective / Goal are divulged to the participant. Specifically: ""In the optimal answer, the total time to create the product is 10 minutes."""
+Arithmetic problem 1,Q18ans_recog_elaboration,"again, same as above"
+Arithmetic problem 1,Q23ss_out_uncert_elaboration,"Again, this depends on whether the participant knows what the optimal answer is : ""In the optimal answer, the total time to create the product is 10 minutes."""
+Arithmetic problem 1,Q5creativity_input_1_elaboration,This scenario requires creativity and logic.
+Arithmetic problem 1,Q23ss_out_uncert_elaboration,"Since score is based on the timer closest to the true minimum time, this tells me that it is only until the end that the participants will know the outcome. Therefore, they will feel unsure. "
+Arithmetic problem 1,Q3type_1_planning_elaboration,You have to plan out the best order of machine placement for each person
+Arithmetic problem 1,Q5creativity_input_1_elaboration,Trying to figure out the best configuration would take some out of the box thinking
+Arithmetic problem 1,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, since the goal is to maximize points I assume it's against another person or team"
+Arithmetic problem 1,Q8type_8_performance_elaboration,It's based on the highest score not pass/fail
+Arithmetic problem 1,Q10maximizing_elaboration,It is a timed task
+Arithmetic problem 1,Q11optimizing_elaboration,"In the optimal answer, the total time to create the product is 10 minutes"
+Arithmetic problem 1,Q13outcome_multip_elaboration,"In the optimal answer, the total time to create the product is 10 minutes"
+Arithmetic problem 1,Q16shared_knowledge_elaboration,I would assume that an algorithm could solve this 
+Arithmetic problem 1,Q18ans_recog_elaboration,"I don't think an outsider would know the best possible answer for sure, only the person that created the problem"
+Arithmetic problem 1,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the answers correct or not
+Arithmetic problem 1,Q23ss_out_uncert_elaboration,"I'm answering this in this way because I make the assumption that disclosure of the 10 minute time, with correct machine assignment is for the researcher and not made available to participants."
 Categorization problem,Q9divisible_unitary_elaboration,it doesn't say you can't work in groups but it doesn't say you can
 Categorization problem,Q10maximizing_elaboration,there is a fixed amount of time
 Categorization problem,Q22confl_tradeoffs_elaboration,the distractor cards that are conflicting.
@@ -403,6 +443,15 @@ Moral Reasoning (Disciplinary Action Case),Q18ans_recog_elaboration,It states in
 "NASA Moon survival",Q19time_solvability_elaboration,It's unclear on if they let you know how close to the experts you are
 "NASA Moon survival",Q21intellective_judg_1_elaboration,"There is a purely objective correct answer to match the experts, but you can still subjectively arrive at a different answer and score high points. "
 "NASA Moon survival",Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the answers correct or not
+"NASA Moon survival",Q9divisible_unitary_elaboration,"Depending on how a team decides this, it could be beneficial to break up some things"
+"NASA Moon survival",Q10maximizing_elaboration,To get as many points/as close to the expert list as possible
+"NASA Moon survival",Q16shared_knowledge_elaboration,"This one is a little difficult to answer. It is a creative task, but there is a best. Without access to the master list, a computer couldn’t solve it, so I put no"
+"NASA Moon survival",Q18ans_recog_elaboration,This answer is assuming we could compare it to the list afterwards 
+"NASA Moon survival",Q16shared_knowledge_elaboration,The best solution is one that is subjectively ranked by a panel of experts
+"NASA Moon survival",Q19time_solvability_elaboration,I'm not sure here. Someone could contact NASA.
+"NASA Moon survival",Q21intellective_judg_1_elaboration,"Again, Not sure"
+"NASA Moon survival",Q23ss_out_uncert_elaboration,"On the answer, what does ""..until the end"" mean? the end of what?"
+"NASA Moon survival",Q6type_5_cc_elaboration,no because what may be needed for one person may not be need
 "NASA Moon survival",Q4type_2_generate_elaboration,"No, since it just ranking existing items."
 "NASA Moon survival",Q5creativity_input_1_elaboration,Creativity involved in imagining the scenario.
 "NASA Moon survival",Q16shared_knowledge_elaboration,A programmer can assign values to the items for the algorithm to rank.
@@ -411,6 +460,11 @@ Moral Reasoning (Disciplinary Action Case),Q18ans_recog_elaboration,It states in
 "NASA Moon survival",Q9divisible_unitary_elaboration,The team should collaborate as a group.
 "NASA Moon survival",Q18ans_recog_elaboration,"Here, participants will only know how close to the actual answer they came when an independent person judges the answers."
 "NASA Moon survival",Q7type_7_battle_elaboration,"It depends on if they're working on individuals or as a team. If individually, you could say that the person who got closest to the expert's answer was the winner."
+"NASA Moon survival",Q2intel_manip_1_elaboration,The task instructions do not indicate if there is actual transport of goods to the moonbase.
+"NASA Moon survival",Q3type_1_planning_elaboration,It is unclear if the simulation runs with the Astronauts attempting to travel with the ranked items.
+"NASA Moon survival",Q5creativity_input_1_elaboration,It is unclear how much information the participant has about each item in the list.
+"NASA Moon survival",Q11optimizing_elaboration,"I base this on the language in the Objective referring to the ""true"" answer."
+"NASA Moon survival",Q13outcome_multip_elaboration,"I base this on the language in the Objective referring to the ""true"" answer."
 Putting food into categories,Q6type_5_cc_elaboration,Different group members may have different ideas on categories
 Putting food into categories,Q19time_solvability_elaboration,"There is not a solvable problem, fully subjective"
 Putting food into categories,Q9divisible_unitary_elaboration,Divide and conquer wouldn't work well with the non-redundancy requirement.
@@ -745,6 +799,8 @@ Space Fortress,Q15dec_verifiability_elaboration,"Doing this in this case would b
 Space Fortress,Q16shared_knowledge_elaboration,"I don't really know what robots or algorithms can do, but since this isn't a creative task, this seems like something they can be programmed to accomplish.  "
 Space Fortress,Q18ans_recog_elaboration,Hmmm.  I'm not 100% sure on this one.
 Space Fortress,Q20type_3_type_4_elaboration,"There are multiple ways to accomplish the goal, but each one can be proven to be successful (although it would be laborious)."
+Space Fortress,Q9divisible_unitary_elaboration,"Since it can be played either single-player or multiplayer, I think this question is not answerable, unless we know if it's gonna be single or multi. If multi, then the answer would be yes and if single, then no. So it all depends on the mode."
+Space Fortress,Q16shared_knowledge_elaboration,"Not too sure this is applicable. It's a video game and while I suppose it could be written, I'll just go with it not being answerable."
 Space Fortress,Q13outcome_multip_elaboration,"I don't think questions regarding ""solutions"" are applicable to this task, since it's just a video game where you try to score the most points."
 Space Fortress,Q15dec_verifiability_elaboration,"I don't think questions regarding ""solutions"" are applicable to this task, since it's just a video game where you try to score the most points."
 Space Fortress,Q17within_sys_sol_elaboration,"I don't think questions regarding ""solutions"" are applicable to this task, since it's just a video game where you try to score the most points."
@@ -891,6 +947,26 @@ Trivia Multiple Choice Quiz,Q23ss_out_uncert_elaboration,"depends on whether the
 Trivia Multiple Choice Quiz,Q9divisible_unitary_elaboration,All participants are working on individual screens
 Trivia Multiple Choice Quiz,Q18ans_recog_elaboration,This is a trivia quiz so entirely depends on the individual.
 Trivia Multiple Choice Quiz,Q9divisible_unitary_elaboration,It would depend on how the multiple choice questions are administered. Are they given in random order? Is the question order static? 
+Typing game,Q10maximizing_elaboration,"there is a time limit and a gold standard, I suppose"
+Typing game,Q2intel_manip_1_elaboration,This task requires both mental fortitude and physical movement.
+Typing game,Q3type_1_planning_elaboration,"If working in teams, participants must plan out which part of the image to type each will be working on to avoid redundancy. "
+Typing game,Q13outcome_multip_elaboration,"In general, every problem or task tends to have a ""best solution."" In this case, the best solution is to type out the whole text in the image without any errors."
+Typing game,Q14sol_scheme_mul_elaboration,"If working alone, I could decide to start with the longest paragraphs working down to the shortest, I could start from ending to beginning or beginning to end and so forth."
+Typing game,Q24eureka_question_elaboration,There is no trickery involved in this task.
+Typing game,Q7type_7_battle_elaboration,"I'm assuming that this is a competition, either between individuals or groups, since points are awarded and the goal is to get as many points as possible. It would be helpful if the Objective/Goal section stated if the highest point total wins"
+Typing game,Q1concept_behav_elaboration,"Since it's a copy typing task I chose physical. The grey area comes with the group task of coordination, but overall seems a physical task."
+Typing game,Q10maximizing_elaboration,Basing it on the time limit and the direction to type as many words as they can.
+Typing game,Q16shared_knowledge_elaboration,I don't know an algo that can read graphical text files.
+Typing game,Q2intel_manip_1_elaboration,Typing can be labor intensive 
+Typing game,Q3type_1_planning_elaboration,"If in a group and users are dividing the task, you must plan to ensure nothing is being duplicated or missed"
+Typing game,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, since the goal is to maximize points I assume it's against another person or team"
+Typing game,Q8type_8_performance_elaboration,It's based on the highest score not pass/fail
+Typing game,Q9divisible_unitary_elaboration,If in a group it would be wise to coordinate and break up the task
+Typing game,Q10maximizing_elaboration,It is a timed task
+Typing game,Q11optimizing_elaboration,The goal is to make your document look exactly like the target. 
+Typing game,Q14sol_scheme_mul_elaboration,It has to look exactly like the target document
+Typing game,Q23ss_out_uncert_elaboration,"It seems unclear if the participants will be notified if they got the answers correct or not (typos, mistakes, etc)"
+Typing game,Q23ss_out_uncert_elaboration,depends on if one person or a team
 Unscramble words (anagrams),Q2intel_manip_1_elaboration,"No. There is a wee bit of physical typing of each unscrambled word.  So, I brought the slider down to one tick above entirely mental effort."
 Unscramble words (anagrams),Q3type_1_planning_elaboration,"Yes, I pondered this for a while.  The task requires one answer and there is only one answer.  So, the answer needs to come from what words you already know.  This task comes from your knowledge of the English language, which is not really planning."
 Unscramble words (anagrams),Q5creativity_input_1_elaboration,"No, creativity comes into play here with regularity.  But that creativity is somewhat mixed with real knowledge as well."
