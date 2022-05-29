@@ -3,16 +3,18 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Participants get a series of pegs, or points, of different colors to use in a logic game played on computer. For example, participants can get 6 colors to use during the game: blue, red, green, orange, yellow, and purple.
+Participants get a series of pegs, or points, of different colors to use in a logic game played on the computer. For example, participants can get 6 colors to use during the game: blue, red, green, orange, yellow, and purple.
 
-As game begins, an algorithm randomly designates a color pattern as a correct answer to  the game. For example, a correct pattern to the game can consist of 4 colors: yellow, orange, yellow, red.
+As the game begins, an algorithm randomly designates a color pattern as the correct answer to the game. For example, the correct pattern to the game can consist of 4 colors, in this order: yellow, orange, yellow, red.
 
 ## 2. Goal Directives 
-The goal is to identify as many colors and their places from the correct pattern in as few trials as possible within a fixed amount of time.
+The goal is to identify all the colors and their positions from the correct pattern, using as few trials as possible and within a fixed amount of time.
 
-As the game begins, participants have a limited number of trials to propose color patterns. Participants receive immediate feedback in the form of black and white pegs after each trial regarding how many colors (white peg) and both colors and their positions (black peg) they got right. For example, if the correct pattern includes yellow, orange, yellow, red, and a participant proposes blue, green, orange, red, then this participants correctly identifies two colors from the pattern and a position of one of them correctly and, therefore, receives a white peg for orange and a black peg for red. Participants don't know from the feedback exactly which color and position they identified correctly but they have to try to deduce it from feedback for each trial.
+As the game begins, participants have a limited number of trials to propose color patterns. Participants receive immediate feedback in the form of black and white pegs after each trial. A white peg means that one of the colors they chose is in the pattern (but in the wrong position); a black peg means that one of the colors they chose has both the color and the position correct.
 
-In other words, the score is maximized by receiving as many pegs, especially black ones, as early in the game as possible.
+For example, if the correct pattern is yellow, orange, yellow, red, and a participant proposes blue, green, orange, red, then this participants correctly identifies two colors from the pattern and a position of one of them correctly. Therefore, they would receive a white peg for orange (correct color, wrong position) and a black peg for red (correct color, correct position). However, participants don't know from the feedback exactly which color and position they identified correctly; instead, they have to try to deduce it from feedback for each trial.
+
+Participants try to guess the pattern using as few tries as possible, and get the highest score by receiving as many pegs, especially black ones, as early in the game as possible.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
