@@ -1819,6 +1819,26 @@ AKQAI78JTXXC9,Q20type_3_type_4,The Fish game,-1
 AKQAI78JTXXC9,Q22confl_tradeoffs,The Fish game,1
 AKQAI78JTXXC9,Q23ss_out_uncert,The Fish game,1
 AKQAI78JTXXC9,Q24eureka_question,The Fish game,-1
+A2531UD0IGT731,Q1concept_behav,Carter Racing,-1
+A2531UD0IGT731,Q3type_1_planning,Carter Racing,-1
+A2531UD0IGT731,Q4type_2_generate,Carter Racing,-1
+A2531UD0IGT731,Q6type_5_cc,Carter Racing,-1
+A2531UD0IGT731,Q7type_7_battle,Carter Racing,-1
+A2531UD0IGT731,Q8type_8_performance,Carter Racing,1
+A2531UD0IGT731,Q9divisible_unitary,Carter Racing,-1
+A2531UD0IGT731,Q10maximizing,Carter Racing,-1
+A2531UD0IGT731,Q11optimizing,Carter Racing,1
+A2531UD0IGT731,Q13outcome_multip,Carter Racing,1
+A2531UD0IGT731,Q14sol_scheme_mul,Carter Racing,-1
+A2531UD0IGT731,Q15dec_verifiability,Carter Racing,1
+A2531UD0IGT731,Q16shared_knowledge,Carter Racing,1
+A2531UD0IGT731,Q17within_sys_sol,Carter Racing,-1
+A2531UD0IGT731,Q18ans_recog,Carter Racing,1
+A2531UD0IGT731,Q19time_solvability,Carter Racing,1
+A2531UD0IGT731,Q20type_3_type_4,Carter Racing,1
+A2531UD0IGT731,Q22confl_tradeoffs,Carter Racing,-1
+A2531UD0IGT731,Q23ss_out_uncert,Carter Racing,1
+A2531UD0IGT731,Q24eureka_question,Carter Racing,-1
 A1VRG5HKZC0H0C,Q1concept_behav,Abstract grid task,-1
 A1VRG5HKZC0H0C,Q3type_1_planning,Abstract grid task,-1
 A1VRG5HKZC0H0C,Q4type_2_generate,Abstract grid task,-1
@@ -1939,6 +1959,26 @@ AKQAI78JTXXC9,Q20type_3_type_4,Computer maze,1
 AKQAI78JTXXC9,Q22confl_tradeoffs,Computer maze,-1
 AKQAI78JTXXC9,Q23ss_out_uncert,Computer maze,1
 AKQAI78JTXXC9,Q24eureka_question,Computer maze,-1
+A2531UD0IGT731,Q1concept_behav,Splitting a deck of cards,-1
+A2531UD0IGT731,Q3type_1_planning,Splitting a deck of cards,-1
+A2531UD0IGT731,Q4type_2_generate,Splitting a deck of cards,-1
+A2531UD0IGT731,Q6type_5_cc,Splitting a deck of cards,-1
+A2531UD0IGT731,Q7type_7_battle,Splitting a deck of cards,-1
+A2531UD0IGT731,Q8type_8_performance,Splitting a deck of cards,1
+A2531UD0IGT731,Q9divisible_unitary,Splitting a deck of cards,-1
+A2531UD0IGT731,Q10maximizing,Splitting a deck of cards,1
+A2531UD0IGT731,Q11optimizing,Splitting a deck of cards,1
+A2531UD0IGT731,Q13outcome_multip,Splitting a deck of cards,1
+A2531UD0IGT731,Q14sol_scheme_mul,Splitting a deck of cards,1
+A2531UD0IGT731,Q15dec_verifiability,Splitting a deck of cards,1
+A2531UD0IGT731,Q16shared_knowledge,Splitting a deck of cards,1
+A2531UD0IGT731,Q17within_sys_sol,Splitting a deck of cards,1
+A2531UD0IGT731,Q18ans_recog,Splitting a deck of cards,1
+A2531UD0IGT731,Q19time_solvability,Splitting a deck of cards,1
+A2531UD0IGT731,Q20type_3_type_4,Splitting a deck of cards,1
+A2531UD0IGT731,Q22confl_tradeoffs,Splitting a deck of cards,-1
+A2531UD0IGT731,Q23ss_out_uncert,Splitting a deck of cards,1
+A2531UD0IGT731,Q24eureka_question,Splitting a deck of cards,1
 A1YSYI926BBOHW,Q1concept_behav,Moral Reasoning (Disciplinary Action Case),-1
 A1YSYI926BBOHW,Q3type_1_planning,Moral Reasoning (Disciplinary Action Case),-1
 A1YSYI926BBOHW,Q4type_2_generate,Moral Reasoning (Disciplinary Action Case),-1
@@ -8519,6 +8559,26 @@ ARI1EMAHUA9PO,Q20type_3_type_4,Allocating resources to programs,-1
 ARI1EMAHUA9PO,Q22confl_tradeoffs,Allocating resources to programs,1
 ARI1EMAHUA9PO,Q23ss_out_uncert,Allocating resources to programs,-1
 ARI1EMAHUA9PO,Q24eureka_question,Allocating resources to programs,-1
+A3I9XLIHPPWPN1,Q1concept_behav,Carter Racing,-1
+A3I9XLIHPPWPN1,Q3type_1_planning,Carter Racing,1
+A3I9XLIHPPWPN1,Q4type_2_generate,Carter Racing,1
+A3I9XLIHPPWPN1,Q6type_5_cc,Carter Racing,-1
+A3I9XLIHPPWPN1,Q7type_7_battle,Carter Racing,-1
+A3I9XLIHPPWPN1,Q8type_8_performance,Carter Racing,1
+A3I9XLIHPPWPN1,Q9divisible_unitary,Carter Racing,1
+A3I9XLIHPPWPN1,Q10maximizing,Carter Racing,1
+A3I9XLIHPPWPN1,Q11optimizing,Carter Racing,1
+A3I9XLIHPPWPN1,Q13outcome_multip,Carter Racing,-1
+A3I9XLIHPPWPN1,Q14sol_scheme_mul,Carter Racing,1
+A3I9XLIHPPWPN1,Q15dec_verifiability,Carter Racing,-1
+A3I9XLIHPPWPN1,Q16shared_knowledge,Carter Racing,-1
+A3I9XLIHPPWPN1,Q17within_sys_sol,Carter Racing,1
+A3I9XLIHPPWPN1,Q18ans_recog,Carter Racing,1
+A3I9XLIHPPWPN1,Q19time_solvability,Carter Racing,1
+A3I9XLIHPPWPN1,Q20type_3_type_4,Carter Racing,1
+A3I9XLIHPPWPN1,Q22confl_tradeoffs,Carter Racing,1
+A3I9XLIHPPWPN1,Q23ss_out_uncert,Carter Racing,1
+A3I9XLIHPPWPN1,Q24eureka_question,Carter Racing,-1
 A6JKKANO7F4KD,Q1concept_behav,Sudoku,-1
 A6JKKANO7F4KD,Q3type_1_planning,Sudoku,-1
 A6JKKANO7F4KD,Q4type_2_generate,Sudoku,-1
@@ -9839,6 +9899,26 @@ A17FGZ1I5P9RZA,Q20type_3_type_4,Husbands and wives transfer,1
 A17FGZ1I5P9RZA,Q22confl_tradeoffs,Husbands and wives transfer,1
 A17FGZ1I5P9RZA,Q23ss_out_uncert,Husbands and wives transfer,-1
 A17FGZ1I5P9RZA,Q24eureka_question,Husbands and wives transfer,-1
+A2AZYU1CT24O0K,Q1concept_behav,Carter Racing,-1
+A2AZYU1CT24O0K,Q3type_1_planning,Carter Racing,-1
+A2AZYU1CT24O0K,Q4type_2_generate,Carter Racing,-1
+A2AZYU1CT24O0K,Q6type_5_cc,Carter Racing,-1
+A2AZYU1CT24O0K,Q7type_7_battle,Carter Racing,-1
+A2AZYU1CT24O0K,Q8type_8_performance,Carter Racing,1
+A2AZYU1CT24O0K,Q9divisible_unitary,Carter Racing,-1
+A2AZYU1CT24O0K,Q10maximizing,Carter Racing,1
+A2AZYU1CT24O0K,Q11optimizing,Carter Racing,1
+A2AZYU1CT24O0K,Q13outcome_multip,Carter Racing,1
+A2AZYU1CT24O0K,Q14sol_scheme_mul,Carter Racing,1
+A2AZYU1CT24O0K,Q15dec_verifiability,Carter Racing,1
+A2AZYU1CT24O0K,Q16shared_knowledge,Carter Racing,1
+A2AZYU1CT24O0K,Q17within_sys_sol,Carter Racing,1
+A2AZYU1CT24O0K,Q18ans_recog,Carter Racing,1
+A2AZYU1CT24O0K,Q19time_solvability,Carter Racing,1
+A2AZYU1CT24O0K,Q20type_3_type_4,Carter Racing,1
+A2AZYU1CT24O0K,Q22confl_tradeoffs,Carter Racing,-1
+A2AZYU1CT24O0K,Q23ss_out_uncert,Carter Racing,1
+A2AZYU1CT24O0K,Q24eureka_question,Carter Racing,-1
 ARYL3C6N9SVV1,Q1concept_behav,Hidden figures in a picture (Searching Task),-1
 ARYL3C6N9SVV1,Q3type_1_planning,Hidden figures in a picture (Searching Task),-1
 ARYL3C6N9SVV1,Q4type_2_generate,Hidden figures in a picture (Searching Task),-1
@@ -22119,6 +22199,26 @@ A17FGZ1I5P9RZA,Q20type_3_type_4,Guessing the correlation,1
 A17FGZ1I5P9RZA,Q22confl_tradeoffs,Guessing the correlation,-1
 A17FGZ1I5P9RZA,Q23ss_out_uncert,Guessing the correlation,-1
 A17FGZ1I5P9RZA,Q24eureka_question,Guessing the correlation,-1
+ARYL3C6N9SVV1,Q1concept_behav,Carter Racing,-1
+ARYL3C6N9SVV1,Q3type_1_planning,Carter Racing,-1
+ARYL3C6N9SVV1,Q4type_2_generate,Carter Racing,-1
+ARYL3C6N9SVV1,Q6type_5_cc,Carter Racing,1
+ARYL3C6N9SVV1,Q7type_7_battle,Carter Racing,-1
+ARYL3C6N9SVV1,Q8type_8_performance,Carter Racing,1
+ARYL3C6N9SVV1,Q9divisible_unitary,Carter Racing,1
+ARYL3C6N9SVV1,Q10maximizing,Carter Racing,-1
+ARYL3C6N9SVV1,Q11optimizing,Carter Racing,1
+ARYL3C6N9SVV1,Q13outcome_multip,Carter Racing,1
+ARYL3C6N9SVV1,Q14sol_scheme_mul,Carter Racing,1
+ARYL3C6N9SVV1,Q15dec_verifiability,Carter Racing,1
+ARYL3C6N9SVV1,Q16shared_knowledge,Carter Racing,-1
+ARYL3C6N9SVV1,Q17within_sys_sol,Carter Racing,1
+ARYL3C6N9SVV1,Q18ans_recog,Carter Racing,-1
+ARYL3C6N9SVV1,Q19time_solvability,Carter Racing,-1
+ARYL3C6N9SVV1,Q20type_3_type_4,Carter Racing,1
+ARYL3C6N9SVV1,Q22confl_tradeoffs,Carter Racing,1
+ARYL3C6N9SVV1,Q23ss_out_uncert,Carter Racing,1
+ARYL3C6N9SVV1,Q24eureka_question,Carter Racing,1
 A3HL2LL0LEPZT8,Q1concept_behav,Trivia Multiple Choice Quiz,-1
 A3HL2LL0LEPZT8,Q3type_1_planning,Trivia Multiple Choice Quiz,-1
 A3HL2LL0LEPZT8,Q4type_2_generate,Trivia Multiple Choice Quiz,-1
@@ -22359,6 +22459,26 @@ A2WZTMXWD20NYE,Q20type_3_type_4,Reading the mind in the eyes,1
 A2WZTMXWD20NYE,Q22confl_tradeoffs,Reading the mind in the eyes,-1
 A2WZTMXWD20NYE,Q23ss_out_uncert,Reading the mind in the eyes,1
 A2WZTMXWD20NYE,Q24eureka_question,Reading the mind in the eyes,-1
+AKQAI78JTXXC9,Q1concept_behav,Carter Racing,-1
+AKQAI78JTXXC9,Q3type_1_planning,Carter Racing,-1
+AKQAI78JTXXC9,Q4type_2_generate,Carter Racing,-1
+AKQAI78JTXXC9,Q6type_5_cc,Carter Racing,-1
+AKQAI78JTXXC9,Q7type_7_battle,Carter Racing,-1
+AKQAI78JTXXC9,Q8type_8_performance,Carter Racing,1
+AKQAI78JTXXC9,Q9divisible_unitary,Carter Racing,-1
+AKQAI78JTXXC9,Q10maximizing,Carter Racing,-1
+AKQAI78JTXXC9,Q11optimizing,Carter Racing,1
+AKQAI78JTXXC9,Q13outcome_multip,Carter Racing,1
+AKQAI78JTXXC9,Q14sol_scheme_mul,Carter Racing,-1
+AKQAI78JTXXC9,Q15dec_verifiability,Carter Racing,1
+AKQAI78JTXXC9,Q16shared_knowledge,Carter Racing,1
+AKQAI78JTXXC9,Q17within_sys_sol,Carter Racing,1
+AKQAI78JTXXC9,Q18ans_recog,Carter Racing,1
+AKQAI78JTXXC9,Q19time_solvability,Carter Racing,1
+AKQAI78JTXXC9,Q20type_3_type_4,Carter Racing,1
+AKQAI78JTXXC9,Q22confl_tradeoffs,Carter Racing,1
+AKQAI78JTXXC9,Q23ss_out_uncert,Carter Racing,1
+AKQAI78JTXXC9,Q24eureka_question,Carter Racing,1
 A33PHCBUOD4WKD,Q1concept_behav,Graph coloring task,-1
 A33PHCBUOD4WKD,Q3type_1_planning,Graph coloring task,-1
 A33PHCBUOD4WKD,Q4type_2_generate,Graph coloring task,-1
