@@ -3,11 +3,11 @@
 Mapped by: paniukhina 
 
 ## 1. Stimulus Complex 
-Participants get several pages of description about the dilemma facing the race team, which involves deciding whether to go ahead with the race that would begin in the immediate future. The description mentions that the team has been experiencing a series of engine failures and that an engine failure during this race on national television will present a danger to the driver and team's sponsorship. However, if the team does well on the race, it will get a lucrative sponsorship deal.
+Participants get several pages of description about a dilemma facing a racecar team, which involves deciding whether to go ahead with the race that would begin in the immediate future. The description mentions that the team has been experiencing a series of engine failures and that an engine failure during this race on national television will present a danger to the driver and team's sponsorship. However, if the team does well on the race, it will get a lucrative sponsorship deal.
 
-Participants are given a chart with information about the temperatures during the last 7 engine failures, which shows a range of temperatures 53–75° and a mean temperature of 64°. The chart is misleading because it does not contain information about the air temperature when the car does not experience an engine failure.
+Participants are given a chart with information about the temperatures during the last 7 engine failures, which shows a range of temperatures 53–75° and a mean temperature of 64°. The chart is misleading because it does not contain information about the air temperature when the car does NOT experience an engine failure (therefore, the information is biased).
 
-Participants are also given instructions that mention that they can ask for any additional information during the task but that the request must be precise.
+Participants are also given instructions that mention that they can ask for any additional information during the task, but that the request must be precise.
 
 ## 2. Goal Directives 
 The goal is to come up with reasons and ultimately decide to terminate the participation in the race within a fixed amount of time.
