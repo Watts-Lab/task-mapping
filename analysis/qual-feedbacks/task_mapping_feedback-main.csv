@@ -111,6 +111,17 @@ Arithmetic problem 1,Q16shared_knowledge_elaboration,I would assume that an algo
 Arithmetic problem 1,Q18ans_recog_elaboration,"I don't think an outsider would know the best possible answer for sure, only the person that created the problem"
 Arithmetic problem 1,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the answers correct or not
 Arithmetic problem 1,Q23ss_out_uncert_elaboration,"I'm answering this in this way because I make the assumption that disclosure of the 10 minute time, with correct machine assignment is for the researcher and not made available to participants."
+Carter Racing,Q3type_1_planning_elaboration,They will be taking in information and planning to proceed with the race or back out
+Carter Racing,Q7type_7_battle_elaboration,You only lose if you decide to race as you are doomed to fail
+Carter Racing,Q8type_8_performance_elaboration,"The only correct and precise solution to the task is not to proceed with the race,"
+Carter Racing,Q10maximizing_elaboration,It doesn't state anywhere that the task is timed
+Carter Racing,Q13outcome_multip_elaboration,The only correct and precise solution to the task is not to proceed with the race
+Carter Racing,Q14sol_scheme_mul_elaboration,You ask can more data by asking precise questions that can help you to arrive and the correct answer
+Carter Racing,Q15dec_verifiability_elaboration,It's unclear if they inform you whether you get informed that once you start the race you will fail
+Carter Racing,Q16shared_knowledge_elaboration,I would assume that an algorithm could solve this 
+Carter Racing,Q17within_sys_sol_elaboration,There's only enough info if you ask the correct questions. 
+Carter Racing,Q22confl_tradeoffs_elaboration,There are factors about the decision you are not given unless you ask for them
+Carter Racing,Q24eureka_question_elaboration,Once you ask for information about the air temperature when the car does NOT experience an engine failure there should be an aha moment causing you to back out of the race
 Carter Racing,Q5creativity_input_1_elaboration,"they can ask for info, but it has to be ""precise"", thus my ranking this in the middle."
 Carter Racing,Q16shared_knowledge_elaboration,This is a judgment call that the participant must make (about the data being non-conclusive)
 Carter Racing,Q11optimizing_elaboration,The only correct and precise solution to the task is not to proceed with the race.
@@ -258,7 +269,11 @@ Divergent Association Task,Q17within_sys_sol_elaboration,"There is no mention of
 Divergent Association Task,Q19time_solvability_elaboration,The solution has a subjective element attached to it.
 Estimating Factual Quantities,Q16shared_knowledge_elaboration,"There's really no steps involved in which an algorithm could be programmed to come up with a correct answer, either the answer is known or it isn't"
 Estimating Factual Quantities,Q14sol_scheme_mul_elaboration,It is just answering about factual quantities so you kind of have to come up with certain amounts 
+Estimating Factual Quantities,Q16shared_knowledge_elaboration,Only if it had the answers to begin with
 Estimating Factual Quantities,Q23ss_out_uncert_elaboration,"depends entirely on when the feedback on whether they chose correctly is provided, which isn't mentioned in the description.  "
+Estimating Factual Quantities,Q14sol_scheme_mul_elaboration,"""Yes"" if that one way is to make an educated guess."
+Estimating Factual Quantities,Q16shared_knowledge_elaboration,"By virtue of the objective, using AI would be cheating."
+Estimating Factual Quantities,Q19time_solvability_elaboration,"Yes, but Not without cheating"
 Estimating geological metrics,Q16shared_knowledge_elaboration,Depends on how well the algorithm answers trivia.
 Estimating geological metrics,Q19time_solvability_elaboration,"Yes, since only restraint is not looking up solutions online. Other resources could be used. "
 Estimating geological metrics,Q7type_7_battle_elaboration,The participant who comes closest to the actual numbers receives the maximum score and wins.
@@ -567,6 +582,8 @@ Moral Reasoning (Disciplinary Action Case),Q18ans_recog_elaboration,It states in
 "NASA Moon survival",Q5creativity_input_1_elaboration,It is unclear how much information the participant has about each item in the list.
 "NASA Moon survival",Q11optimizing_elaboration,"I base this on the language in the Objective referring to the ""true"" answer."
 "NASA Moon survival",Q13outcome_multip_elaboration,"I base this on the language in the Objective referring to the ""true"" answer."
+Object based generalization for reasoning (Phyre),Q8type_8_performance_elaboration,You have to keep trying the same puzzle until successful
+Object based generalization for reasoning (Phyre),Q15dec_verifiability_elaboration,When the balls touch
 Putting food into categories,Q6type_5_cc_elaboration,Different group members may have different ideas on categories
 Putting food into categories,Q19time_solvability_elaboration,"There is not a solvable problem, fully subjective"
 Putting food into categories,Q3type_1_planning_elaboration,Once you see your list of foods you would plan how to divide them
@@ -700,6 +717,9 @@ Random dot motion,Q9divisible_unitary_elaboration,All participants are working o
 "Rank cities by population, rank words by familiarity",Q9divisible_unitary_elaboration,I don't think it applies since it's delivered to individuals on a computer.
 "Rank cities by population, rank words by familiarity",Q16shared_knowledge_elaboration,I assume doing it by trial and error won't work. Like there is no live feedback to let the algorithm grind out the right answer.
 "Rank cities by population, rank words by familiarity",Q18ans_recog_elaboration,I feel like you can see the order and numbers and tell it is right
+"Rank cities by population, rank words by familiarity",Q16shared_knowledge_elaboration,"If the algorithm had the ""ground data"""
+"Rank cities by population, rank words by familiarity",Q10maximizing_elaboration,"""correctly and accurately as possible and within a fixed amount of time."""
+"Rank cities by population, rank words by familiarity",Q16shared_knowledge_elaboration,"AI use here is cheating, I am assuming."
 Ravens Matrices,Q5creativity_input_1_elaboration,"You have to visualize the image and try to determine the missing piece, requires some creativity to imagine that"
 Ravens Matrices,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, but you're trying to get as many multiple choice questions correct as possible"
 Ravens Matrices,Q8type_8_performance_elaboration,You either get the answer correct or not.
@@ -875,10 +895,14 @@ Room assignment task,Q22confl_tradeoffs_elaboration,There are constraints that h
 Room assignment task,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the answers correct or not
 Room assignment task,Q2intel_manip_1_elaboration,"assuming these are imaginary rooms and not physical ones, otherwise it's probably an even split"
 Room assignment task,Q9divisible_unitary_elaboration,No team work
+Run a mini business,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Run a mini business,Q15dec_verifiability_elaboration,Whoever has the most money.
 Run a mini business,Q19time_solvability_elaboration,I assume there must be an absolute maximum amount that can be earned in the narrow confines of the game.
 Run a mini business,Q13outcome_multip_elaboration,depends on if the largest profit can be made in more than one way
 Run a mini business,Q14sol_scheme_mul_elaboration,depends on if the largest profit can be made in more than one way
+Run a mini business,Q6type_5_cc_elaboration,"haggling on prices may put this in the ""Yes"" column"
+Run a mini business,Q17within_sys_sol_elaboration,"there is no real ""problem"""
+Run a mini business,Q18ans_recog_elaboration,"there is no real ""problem"" in this context"
 Search for Oil Task,Q9divisible_unitary_elaboration,This would easily be great for divide and conquer if it was explicitly stated to be team based.
 Search for Oil Task,Q11optimizing_elaboration,"goal is to find exact locations, not the number of exact locations"
 Search for Oil Task,Q14sol_scheme_mul_elaboration,each person will have their own way of remember points on the map with the best chance of finding oil
@@ -972,6 +996,15 @@ Space Fortress,Q2intel_manip_1_elaboration,This task requires good eye-hand coor
 Space Fortress,Q16shared_knowledge_elaboration,There is a single player and multi-player version so it depends on which one
 Splitting a deck of cards,Q23ss_out_uncert_elaboration,You can have a good idea that you're right
 Splitting a deck of cards,Q10maximizing_elaboration,"To get a better score on the task, participants have to understand what the pattern is as fast as they can."
+Splitting a deck of cards,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, since the goal is to maximize points I assume it's against another person or team"
+Splitting a deck of cards,Q8type_8_performance_elaboration,"You're looking to get the maximum amount of point, it's not pass/fail"
+Splitting a deck of cards,Q10maximizing_elaboration,It is timed and you're trying to guess the rules in as few turns as possible
+Splitting a deck of cards,Q11optimizing_elaboration,"You have to identify the rules or you lose, the outcome is precise"
+Splitting a deck of cards,Q14sol_scheme_mul_elaboration,To guess exactly right in the fewest amount of turns possible would be the best way 
+Splitting a deck of cards,Q16shared_knowledge_elaboration,I would assume that an algorithm could solve this 
+Splitting a deck of cards,Q17within_sys_sol_elaboration,There are exemplars that are an example of the rule
+Splitting a deck of cards,Q22confl_tradeoffs_elaboration,Some cards displayed are non-exemplars which don't follow the rules to throw you off
+Splitting a deck of cards,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the answers correct or not
 Sudoku,Q10maximizing_elaboration,Still unsure if time limit alone is enough to make this a yes answer or not.
 Sudoku,Q3type_1_planning_elaboration,You have to coordinate the number so they don't conflict between the rows/columns  
 Sudoku,Q4type_2_generate_elaboration,You may want to brainstorm how the numbers laid out on the puzzle before filling them in

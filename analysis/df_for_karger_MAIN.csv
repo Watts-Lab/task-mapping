@@ -699,6 +699,26 @@ A31BA1WLSWUSY1,Q20type_3_type_4,Moral Reasoning (Disciplinary Action Case),1
 A31BA1WLSWUSY1,Q22confl_tradeoffs,Moral Reasoning (Disciplinary Action Case),1
 A31BA1WLSWUSY1,Q23ss_out_uncert,Moral Reasoning (Disciplinary Action Case),-1
 A31BA1WLSWUSY1,Q24eureka_question,Moral Reasoning (Disciplinary Action Case),-1
+A272X64FOZFYLB,Q1concept_behav,Run a mini business,-1
+A272X64FOZFYLB,Q3type_1_planning,Run a mini business,-1
+A272X64FOZFYLB,Q4type_2_generate,Run a mini business,-1
+A272X64FOZFYLB,Q6type_5_cc,Run a mini business,-1
+A272X64FOZFYLB,Q7type_7_battle,Run a mini business,-1
+A272X64FOZFYLB,Q8type_8_performance,Run a mini business,-1
+A272X64FOZFYLB,Q9divisible_unitary,Run a mini business,1
+A272X64FOZFYLB,Q10maximizing,Run a mini business,1
+A272X64FOZFYLB,Q11optimizing,Run a mini business,-1
+A272X64FOZFYLB,Q13outcome_multip,Run a mini business,-1
+A272X64FOZFYLB,Q14sol_scheme_mul,Run a mini business,-1
+A272X64FOZFYLB,Q15dec_verifiability,Run a mini business,1
+A272X64FOZFYLB,Q16shared_knowledge,Run a mini business,1
+A272X64FOZFYLB,Q17within_sys_sol,Run a mini business,1
+A272X64FOZFYLB,Q18ans_recog,Run a mini business,-1
+A272X64FOZFYLB,Q19time_solvability,Run a mini business,-1
+A272X64FOZFYLB,Q20type_3_type_4,Run a mini business,-1
+A272X64FOZFYLB,Q22confl_tradeoffs,Run a mini business,1
+A272X64FOZFYLB,Q23ss_out_uncert,Run a mini business,-1
+A272X64FOZFYLB,Q24eureka_question,Run a mini business,-1
 A5NE8TWS8ZV7B,Q1concept_behav,Recall videos,-1
 A5NE8TWS8ZV7B,Q3type_1_planning,Recall videos,1
 A5NE8TWS8ZV7B,Q4type_2_generate,Recall videos,-1
@@ -2679,6 +2699,26 @@ AKQAI78JTXXC9,Q20type_3_type_4,"Wolf, goat and cabbage transfer",1
 AKQAI78JTXXC9,Q22confl_tradeoffs,"Wolf, goat and cabbage transfer",-1
 AKQAI78JTXXC9,Q23ss_out_uncert,"Wolf, goat and cabbage transfer",1
 AKQAI78JTXXC9,Q24eureka_question,"Wolf, goat and cabbage transfer",1
+A2S64AUN7JI7ZS,Q1concept_behav,Carter Racing,-1
+A2S64AUN7JI7ZS,Q3type_1_planning,Carter Racing,1
+A2S64AUN7JI7ZS,Q4type_2_generate,Carter Racing,-1
+A2S64AUN7JI7ZS,Q6type_5_cc,Carter Racing,-1
+A2S64AUN7JI7ZS,Q7type_7_battle,Carter Racing,-1
+A2S64AUN7JI7ZS,Q8type_8_performance,Carter Racing,1
+A2S64AUN7JI7ZS,Q9divisible_unitary,Carter Racing,-1
+A2S64AUN7JI7ZS,Q10maximizing,Carter Racing,-1
+A2S64AUN7JI7ZS,Q11optimizing,Carter Racing,1
+A2S64AUN7JI7ZS,Q13outcome_multip,Carter Racing,1
+A2S64AUN7JI7ZS,Q14sol_scheme_mul,Carter Racing,-1
+A2S64AUN7JI7ZS,Q15dec_verifiability,Carter Racing,-1
+A2S64AUN7JI7ZS,Q16shared_knowledge,Carter Racing,1
+A2S64AUN7JI7ZS,Q17within_sys_sol,Carter Racing,1
+A2S64AUN7JI7ZS,Q18ans_recog,Carter Racing,1
+A2S64AUN7JI7ZS,Q19time_solvability,Carter Racing,1
+A2S64AUN7JI7ZS,Q20type_3_type_4,Carter Racing,1
+A2S64AUN7JI7ZS,Q22confl_tradeoffs,Carter Racing,1
+A2S64AUN7JI7ZS,Q23ss_out_uncert,Carter Racing,1
+A2S64AUN7JI7ZS,Q24eureka_question,Carter Racing,1
 A33PHCBUOD4WKD,Q1concept_behav,Recall videos,-1
 A33PHCBUOD4WKD,Q3type_1_planning,Recall videos,-1
 A33PHCBUOD4WKD,Q4type_2_generate,Recall videos,-1
@@ -7159,6 +7199,26 @@ A2TVG2HLMKVMSL,Q20type_3_type_4,Letters-to-numbers problems (cryptography),1
 A2TVG2HLMKVMSL,Q22confl_tradeoffs,Letters-to-numbers problems (cryptography),-1
 A2TVG2HLMKVMSL,Q23ss_out_uncert,Letters-to-numbers problems (cryptography),1
 A2TVG2HLMKVMSL,Q24eureka_question,Letters-to-numbers problems (cryptography),-1
+A2WZTMXWD20NYE,Q1concept_behav,Run a mini business,-1
+A2WZTMXWD20NYE,Q3type_1_planning,Run a mini business,1
+A2WZTMXWD20NYE,Q4type_2_generate,Run a mini business,-1
+A2WZTMXWD20NYE,Q6type_5_cc,Run a mini business,-1
+A2WZTMXWD20NYE,Q7type_7_battle,Run a mini business,-1
+A2WZTMXWD20NYE,Q8type_8_performance,Run a mini business,-1
+A2WZTMXWD20NYE,Q9divisible_unitary,Run a mini business,NA
+A2WZTMXWD20NYE,Q10maximizing,Run a mini business,1
+A2WZTMXWD20NYE,Q11optimizing,Run a mini business,-1
+A2WZTMXWD20NYE,Q13outcome_multip,Run a mini business,-1
+A2WZTMXWD20NYE,Q14sol_scheme_mul,Run a mini business,-1
+A2WZTMXWD20NYE,Q15dec_verifiability,Run a mini business,1
+A2WZTMXWD20NYE,Q16shared_knowledge,Run a mini business,1
+A2WZTMXWD20NYE,Q17within_sys_sol,Run a mini business,1
+A2WZTMXWD20NYE,Q18ans_recog,Run a mini business,1
+A2WZTMXWD20NYE,Q19time_solvability,Run a mini business,1
+A2WZTMXWD20NYE,Q20type_3_type_4,Run a mini business,1
+A2WZTMXWD20NYE,Q22confl_tradeoffs,Run a mini business,1
+A2WZTMXWD20NYE,Q23ss_out_uncert,Run a mini business,1
+A2WZTMXWD20NYE,Q24eureka_question,Run a mini business,-1
 A3JAM040VWXHDO,Q1concept_behav,Recall stories,-1
 A3JAM040VWXHDO,Q3type_1_planning,Recall stories,-1
 A3JAM040VWXHDO,Q4type_2_generate,Recall stories,-1
@@ -14659,6 +14719,26 @@ A3I9XLIHPPWPN1,Q20type_3_type_4,Divergent Association Task,1
 A3I9XLIHPPWPN1,Q22confl_tradeoffs,Divergent Association Task,-1
 A3I9XLIHPPWPN1,Q23ss_out_uncert,Divergent Association Task,1
 A3I9XLIHPPWPN1,Q24eureka_question,Divergent Association Task,-1
+A3CGQOJC28OVGN,Q1concept_behav,Estimating Factual Quantities,-1
+A3CGQOJC28OVGN,Q3type_1_planning,Estimating Factual Quantities,-1
+A3CGQOJC28OVGN,Q4type_2_generate,Estimating Factual Quantities,-1
+A3CGQOJC28OVGN,Q6type_5_cc,Estimating Factual Quantities,-1
+A3CGQOJC28OVGN,Q7type_7_battle,Estimating Factual Quantities,-1
+A3CGQOJC28OVGN,Q8type_8_performance,Estimating Factual Quantities,-1
+A3CGQOJC28OVGN,Q9divisible_unitary,Estimating Factual Quantities,-1
+A3CGQOJC28OVGN,Q10maximizing,Estimating Factual Quantities,1
+A3CGQOJC28OVGN,Q11optimizing,Estimating Factual Quantities,1
+A3CGQOJC28OVGN,Q13outcome_multip,Estimating Factual Quantities,1
+A3CGQOJC28OVGN,Q14sol_scheme_mul,Estimating Factual Quantities,1
+A3CGQOJC28OVGN,Q15dec_verifiability,Estimating Factual Quantities,1
+A3CGQOJC28OVGN,Q16shared_knowledge,Estimating Factual Quantities,-1
+A3CGQOJC28OVGN,Q17within_sys_sol,Estimating Factual Quantities,1
+A3CGQOJC28OVGN,Q18ans_recog,Estimating Factual Quantities,1
+A3CGQOJC28OVGN,Q19time_solvability,Estimating Factual Quantities,1
+A3CGQOJC28OVGN,Q20type_3_type_4,Estimating Factual Quantities,1
+A3CGQOJC28OVGN,Q22confl_tradeoffs,Estimating Factual Quantities,1
+A3CGQOJC28OVGN,Q23ss_out_uncert,Estimating Factual Quantities,1
+A3CGQOJC28OVGN,Q24eureka_question,Estimating Factual Quantities,-1
 A5NE8TWS8ZV7B,Q1concept_behav,Recall association,-1
 A5NE8TWS8ZV7B,Q3type_1_planning,Recall association,-1
 A5NE8TWS8ZV7B,Q4type_2_generate,Recall association,-1
@@ -18739,6 +18819,26 @@ A2AZYU1CT24O0K,Q20type_3_type_4,Search for Oil Task,1
 A2AZYU1CT24O0K,Q22confl_tradeoffs,Search for Oil Task,-1
 A2AZYU1CT24O0K,Q23ss_out_uncert,Search for Oil Task,1
 A2AZYU1CT24O0K,Q24eureka_question,Search for Oil Task,-1
+A38I0E8UK53ME5,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+A38I0E8UK53ME5,Q3type_1_planning,Object based generalization for reasoning (Phyre),-1
+A38I0E8UK53ME5,Q4type_2_generate,Object based generalization for reasoning (Phyre),-1
+A38I0E8UK53ME5,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+A38I0E8UK53ME5,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+A38I0E8UK53ME5,Q8type_8_performance,Object based generalization for reasoning (Phyre),1
+A38I0E8UK53ME5,Q9divisible_unitary,Object based generalization for reasoning (Phyre),-1
+A38I0E8UK53ME5,Q10maximizing,Object based generalization for reasoning (Phyre),1
+A38I0E8UK53ME5,Q11optimizing,Object based generalization for reasoning (Phyre),1
+A38I0E8UK53ME5,Q13outcome_multip,Object based generalization for reasoning (Phyre),1
+A38I0E8UK53ME5,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+A38I0E8UK53ME5,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+A38I0E8UK53ME5,Q16shared_knowledge,Object based generalization for reasoning (Phyre),1
+A38I0E8UK53ME5,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+A38I0E8UK53ME5,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+A38I0E8UK53ME5,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+A38I0E8UK53ME5,Q20type_3_type_4,Object based generalization for reasoning (Phyre),1
+A38I0E8UK53ME5,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),-1
+A38I0E8UK53ME5,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),-1
+A38I0E8UK53ME5,Q24eureka_question,Object based generalization for reasoning (Phyre),-1
 A272X64FOZFYLB,Q1concept_behav,Recall images,-1
 A272X64FOZFYLB,Q3type_1_planning,Recall images,-1
 A272X64FOZFYLB,Q4type_2_generate,Recall images,-1
@@ -20459,6 +20559,26 @@ A1I72NHC21347A,Q20type_3_type_4,Wason's Selection Task,1
 A1I72NHC21347A,Q22confl_tradeoffs,Wason's Selection Task,1
 A1I72NHC21347A,Q23ss_out_uncert,Wason's Selection Task,1
 A1I72NHC21347A,Q24eureka_question,Wason's Selection Task,-1
+A15F2JTVAJXITI,Q1concept_behav,Putting food into categories,-1
+A15F2JTVAJXITI,Q3type_1_planning,Putting food into categories,-1
+A15F2JTVAJXITI,Q4type_2_generate,Putting food into categories,1
+A15F2JTVAJXITI,Q6type_5_cc,Putting food into categories,-1
+A15F2JTVAJXITI,Q7type_7_battle,Putting food into categories,1
+A15F2JTVAJXITI,Q8type_8_performance,Putting food into categories,1
+A15F2JTVAJXITI,Q9divisible_unitary,Putting food into categories,-1
+A15F2JTVAJXITI,Q10maximizing,Putting food into categories,1
+A15F2JTVAJXITI,Q11optimizing,Putting food into categories,-1
+A15F2JTVAJXITI,Q13outcome_multip,Putting food into categories,1
+A15F2JTVAJXITI,Q14sol_scheme_mul,Putting food into categories,-1
+A15F2JTVAJXITI,Q15dec_verifiability,Putting food into categories,1
+A15F2JTVAJXITI,Q16shared_knowledge,Putting food into categories,-1
+A15F2JTVAJXITI,Q17within_sys_sol,Putting food into categories,1
+A15F2JTVAJXITI,Q18ans_recog,Putting food into categories,1
+A15F2JTVAJXITI,Q19time_solvability,Putting food into categories,1
+A15F2JTVAJXITI,Q20type_3_type_4,Putting food into categories,1
+A15F2JTVAJXITI,Q22confl_tradeoffs,Putting food into categories,-1
+A15F2JTVAJXITI,Q23ss_out_uncert,Putting food into categories,1
+A15F2JTVAJXITI,Q24eureka_question,Putting food into categories,-1
 A2TVG2HLMKVMSL,Q1concept_behav,Word construction from a subset of letters,-1
 A2TVG2HLMKVMSL,Q3type_1_planning,Word construction from a subset of letters,-1
 A2TVG2HLMKVMSL,Q4type_2_generate,Word construction from a subset of letters,1
@@ -23779,6 +23899,26 @@ A17FGZ1I5P9RZA,Q20type_3_type_4,Shopping plan,1
 A17FGZ1I5P9RZA,Q22confl_tradeoffs,Shopping plan,1
 A17FGZ1I5P9RZA,Q23ss_out_uncert,Shopping plan,NA
 A17FGZ1I5P9RZA,Q24eureka_question,Shopping plan,-1
+AKQAI78JTXXC9,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+AKQAI78JTXXC9,Q3type_1_planning,Object based generalization for reasoning (Phyre),-1
+AKQAI78JTXXC9,Q4type_2_generate,Object based generalization for reasoning (Phyre),-1
+AKQAI78JTXXC9,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+AKQAI78JTXXC9,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+AKQAI78JTXXC9,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+AKQAI78JTXXC9,Q9divisible_unitary,Object based generalization for reasoning (Phyre),-1
+AKQAI78JTXXC9,Q10maximizing,Object based generalization for reasoning (Phyre),1
+AKQAI78JTXXC9,Q11optimizing,Object based generalization for reasoning (Phyre),-1
+AKQAI78JTXXC9,Q13outcome_multip,Object based generalization for reasoning (Phyre),-1
+AKQAI78JTXXC9,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+AKQAI78JTXXC9,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+AKQAI78JTXXC9,Q16shared_knowledge,Object based generalization for reasoning (Phyre),1
+AKQAI78JTXXC9,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+AKQAI78JTXXC9,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+AKQAI78JTXXC9,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+AKQAI78JTXXC9,Q20type_3_type_4,Object based generalization for reasoning (Phyre),1
+AKQAI78JTXXC9,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),-1
+AKQAI78JTXXC9,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),1
+AKQAI78JTXXC9,Q24eureka_question,Object based generalization for reasoning (Phyre),1
 A1VRG5HKZC0H0C,Q1concept_behav,Space Fortress,-1
 A1VRG5HKZC0H0C,Q3type_1_planning,Space Fortress,-1
 A1VRG5HKZC0H0C,Q4type_2_generate,Space Fortress,-1
@@ -25159,6 +25299,26 @@ A1I72NHC21347A,Q20type_3_type_4,Reproducing arts,1
 A1I72NHC21347A,Q22confl_tradeoffs,Reproducing arts,-1
 A1I72NHC21347A,Q23ss_out_uncert,Reproducing arts,-1
 A1I72NHC21347A,Q24eureka_question,Reproducing arts,-1
+AURYD2FH3FUOQ,Q1concept_behav,Estimating Factual Quantities,-1
+AURYD2FH3FUOQ,Q3type_1_planning,Estimating Factual Quantities,-1
+AURYD2FH3FUOQ,Q4type_2_generate,Estimating Factual Quantities,-1
+AURYD2FH3FUOQ,Q6type_5_cc,Estimating Factual Quantities,-1
+AURYD2FH3FUOQ,Q7type_7_battle,Estimating Factual Quantities,-1
+AURYD2FH3FUOQ,Q8type_8_performance,Estimating Factual Quantities,-1
+AURYD2FH3FUOQ,Q9divisible_unitary,Estimating Factual Quantities,1
+AURYD2FH3FUOQ,Q10maximizing,Estimating Factual Quantities,1
+AURYD2FH3FUOQ,Q11optimizing,Estimating Factual Quantities,-1
+AURYD2FH3FUOQ,Q13outcome_multip,Estimating Factual Quantities,1
+AURYD2FH3FUOQ,Q14sol_scheme_mul,Estimating Factual Quantities,1
+AURYD2FH3FUOQ,Q15dec_verifiability,Estimating Factual Quantities,1
+AURYD2FH3FUOQ,Q16shared_knowledge,Estimating Factual Quantities,-1
+AURYD2FH3FUOQ,Q17within_sys_sol,Estimating Factual Quantities,-1
+AURYD2FH3FUOQ,Q18ans_recog,Estimating Factual Quantities,-1
+AURYD2FH3FUOQ,Q19time_solvability,Estimating Factual Quantities,1
+AURYD2FH3FUOQ,Q20type_3_type_4,Estimating Factual Quantities,1
+AURYD2FH3FUOQ,Q22confl_tradeoffs,Estimating Factual Quantities,-1
+AURYD2FH3FUOQ,Q23ss_out_uncert,Estimating Factual Quantities,1
+AURYD2FH3FUOQ,Q24eureka_question,Estimating Factual Quantities,-1
 AIHHRINW9IN1I,Q1concept_behav,Recall word lists,-1
 AIHHRINW9IN1I,Q3type_1_planning,Recall word lists,-1
 AIHHRINW9IN1I,Q4type_2_generate,Recall word lists,-1
@@ -25779,6 +25939,26 @@ A3HL2LL0LEPZT8,Q20type_3_type_4,The Fish game,1
 A3HL2LL0LEPZT8,Q22confl_tradeoffs,The Fish game,1
 A3HL2LL0LEPZT8,Q23ss_out_uncert,The Fish game,1
 A3HL2LL0LEPZT8,Q24eureka_question,The Fish game,-1
+A3CGQOJC28OVGN,Q1concept_behav,"Rank cities by population, rank words by familiarity",-1
+A3CGQOJC28OVGN,Q3type_1_planning,"Rank cities by population, rank words by familiarity",-1
+A3CGQOJC28OVGN,Q4type_2_generate,"Rank cities by population, rank words by familiarity",-1
+A3CGQOJC28OVGN,Q6type_5_cc,"Rank cities by population, rank words by familiarity",-1
+A3CGQOJC28OVGN,Q7type_7_battle,"Rank cities by population, rank words by familiarity",-1
+A3CGQOJC28OVGN,Q8type_8_performance,"Rank cities by population, rank words by familiarity",-1
+A3CGQOJC28OVGN,Q9divisible_unitary,"Rank cities by population, rank words by familiarity",-1
+A3CGQOJC28OVGN,Q10maximizing,"Rank cities by population, rank words by familiarity",1
+A3CGQOJC28OVGN,Q11optimizing,"Rank cities by population, rank words by familiarity",1
+A3CGQOJC28OVGN,Q13outcome_multip,"Rank cities by population, rank words by familiarity",1
+A3CGQOJC28OVGN,Q14sol_scheme_mul,"Rank cities by population, rank words by familiarity",1
+A3CGQOJC28OVGN,Q15dec_verifiability,"Rank cities by population, rank words by familiarity",1
+A3CGQOJC28OVGN,Q16shared_knowledge,"Rank cities by population, rank words by familiarity",1
+A3CGQOJC28OVGN,Q17within_sys_sol,"Rank cities by population, rank words by familiarity",1
+A3CGQOJC28OVGN,Q18ans_recog,"Rank cities by population, rank words by familiarity",1
+A3CGQOJC28OVGN,Q19time_solvability,"Rank cities by population, rank words by familiarity",1
+A3CGQOJC28OVGN,Q20type_3_type_4,"Rank cities by population, rank words by familiarity",1
+A3CGQOJC28OVGN,Q22confl_tradeoffs,"Rank cities by population, rank words by familiarity",-1
+A3CGQOJC28OVGN,Q23ss_out_uncert,"Rank cities by population, rank words by familiarity",1
+A3CGQOJC28OVGN,Q24eureka_question,"Rank cities by population, rank words by familiarity",-1
 A2WZTMXWD20NYE,Q1concept_behav,Divergent Association Task,-1
 A2WZTMXWD20NYE,Q3type_1_planning,Divergent Association Task,-1
 A2WZTMXWD20NYE,Q4type_2_generate,Divergent Association Task,1
@@ -25839,6 +26019,26 @@ A2AZYU1CT24O0K,Q20type_3_type_4,Railroad Route Construction game,1
 A2AZYU1CT24O0K,Q22confl_tradeoffs,Railroad Route Construction game,-1
 A2AZYU1CT24O0K,Q23ss_out_uncert,Railroad Route Construction game,1
 A2AZYU1CT24O0K,Q24eureka_question,Railroad Route Construction game,-1
+A2615YW1YERQBO,Q1concept_behav,Estimating Factual Quantities,-1
+A2615YW1YERQBO,Q3type_1_planning,Estimating Factual Quantities,-1
+A2615YW1YERQBO,Q4type_2_generate,Estimating Factual Quantities,-1
+A2615YW1YERQBO,Q6type_5_cc,Estimating Factual Quantities,-1
+A2615YW1YERQBO,Q7type_7_battle,Estimating Factual Quantities,-1
+A2615YW1YERQBO,Q8type_8_performance,Estimating Factual Quantities,-1
+A2615YW1YERQBO,Q9divisible_unitary,Estimating Factual Quantities,-1
+A2615YW1YERQBO,Q10maximizing,Estimating Factual Quantities,-1
+A2615YW1YERQBO,Q11optimizing,Estimating Factual Quantities,1
+A2615YW1YERQBO,Q13outcome_multip,Estimating Factual Quantities,1
+A2615YW1YERQBO,Q14sol_scheme_mul,Estimating Factual Quantities,1
+A2615YW1YERQBO,Q15dec_verifiability,Estimating Factual Quantities,1
+A2615YW1YERQBO,Q16shared_knowledge,Estimating Factual Quantities,NA
+A2615YW1YERQBO,Q17within_sys_sol,Estimating Factual Quantities,-1
+A2615YW1YERQBO,Q18ans_recog,Estimating Factual Quantities,1
+A2615YW1YERQBO,Q19time_solvability,Estimating Factual Quantities,1
+A2615YW1YERQBO,Q20type_3_type_4,Estimating Factual Quantities,1
+A2615YW1YERQBO,Q22confl_tradeoffs,Estimating Factual Quantities,-1
+A2615YW1YERQBO,Q23ss_out_uncert,Estimating Factual Quantities,1
+A2615YW1YERQBO,Q24eureka_question,Estimating Factual Quantities,-1
 A1YSYI926BBOHW,Q1concept_behav,Railroad Route Construction game,-1
 A1YSYI926BBOHW,Q3type_1_planning,Railroad Route Construction game,1
 A1YSYI926BBOHW,Q4type_2_generate,Railroad Route Construction game,-1
@@ -26879,6 +27079,26 @@ A33PHCBUOD4WKD,Q20type_3_type_4,Divergent Association Task,-1
 A33PHCBUOD4WKD,Q22confl_tradeoffs,Divergent Association Task,-1
 A33PHCBUOD4WKD,Q23ss_out_uncert,Divergent Association Task,1
 A33PHCBUOD4WKD,Q24eureka_question,Divergent Association Task,-1
+AXPZAP62ZYWP8,Q1concept_behav,Object based generalization for reasoning (Phyre),1
+AXPZAP62ZYWP8,Q3type_1_planning,Object based generalization for reasoning (Phyre),-1
+AXPZAP62ZYWP8,Q4type_2_generate,Object based generalization for reasoning (Phyre),-1
+AXPZAP62ZYWP8,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+AXPZAP62ZYWP8,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+AXPZAP62ZYWP8,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+AXPZAP62ZYWP8,Q9divisible_unitary,Object based generalization for reasoning (Phyre),1
+AXPZAP62ZYWP8,Q10maximizing,Object based generalization for reasoning (Phyre),1
+AXPZAP62ZYWP8,Q11optimizing,Object based generalization for reasoning (Phyre),-1
+AXPZAP62ZYWP8,Q13outcome_multip,Object based generalization for reasoning (Phyre),-1
+AXPZAP62ZYWP8,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+AXPZAP62ZYWP8,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+AXPZAP62ZYWP8,Q16shared_knowledge,Object based generalization for reasoning (Phyre),1
+AXPZAP62ZYWP8,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+AXPZAP62ZYWP8,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+AXPZAP62ZYWP8,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+AXPZAP62ZYWP8,Q20type_3_type_4,Object based generalization for reasoning (Phyre),1
+AXPZAP62ZYWP8,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),-1
+AXPZAP62ZYWP8,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),-1
+AXPZAP62ZYWP8,Q24eureka_question,Object based generalization for reasoning (Phyre),-1
 AONSG5WOC3OX0,Q1concept_behav,Typing game,1
 AONSG5WOC3OX0,Q3type_1_planning,Typing game,-1
 AONSG5WOC3OX0,Q4type_2_generate,Typing game,-1
@@ -27979,6 +28199,26 @@ A3V3SQCM8QGYB7,Q20type_3_type_4,To evacuate or not to evacuate,1
 A3V3SQCM8QGYB7,Q22confl_tradeoffs,To evacuate or not to evacuate,1
 A3V3SQCM8QGYB7,Q23ss_out_uncert,To evacuate or not to evacuate,1
 A3V3SQCM8QGYB7,Q24eureka_question,To evacuate or not to evacuate,-1
+A2615YW1YERQBO,Q1concept_behav,Run a mini business,-1
+A2615YW1YERQBO,Q3type_1_planning,Run a mini business,1
+A2615YW1YERQBO,Q4type_2_generate,Run a mini business,-1
+A2615YW1YERQBO,Q6type_5_cc,Run a mini business,1
+A2615YW1YERQBO,Q7type_7_battle,Run a mini business,-1
+A2615YW1YERQBO,Q8type_8_performance,Run a mini business,-1
+A2615YW1YERQBO,Q9divisible_unitary,Run a mini business,-1
+A2615YW1YERQBO,Q10maximizing,Run a mini business,1
+A2615YW1YERQBO,Q11optimizing,Run a mini business,-1
+A2615YW1YERQBO,Q13outcome_multip,Run a mini business,-1
+A2615YW1YERQBO,Q14sol_scheme_mul,Run a mini business,-1
+A2615YW1YERQBO,Q15dec_verifiability,Run a mini business,-1
+A2615YW1YERQBO,Q16shared_knowledge,Run a mini business,-1
+A2615YW1YERQBO,Q17within_sys_sol,Run a mini business,NA
+A2615YW1YERQBO,Q18ans_recog,Run a mini business,NA
+A2615YW1YERQBO,Q19time_solvability,Run a mini business,-1
+A2615YW1YERQBO,Q20type_3_type_4,Run a mini business,-1
+A2615YW1YERQBO,Q22confl_tradeoffs,Run a mini business,1
+A2615YW1YERQBO,Q23ss_out_uncert,Run a mini business,1
+A2615YW1YERQBO,Q24eureka_question,Run a mini business,-1
 A2OVX9UW5WANQE,Q1concept_behav,Computer maze,-1
 A2OVX9UW5WANQE,Q3type_1_planning,Computer maze,-1
 A2OVX9UW5WANQE,Q4type_2_generate,Computer maze,-1
@@ -28699,6 +28939,26 @@ A1YSYI926BBOHW,Q20type_3_type_4,Estimating geological metrics,1
 A1YSYI926BBOHW,Q22confl_tradeoffs,Estimating geological metrics,-1
 A1YSYI926BBOHW,Q23ss_out_uncert,Estimating geological metrics,1
 A1YSYI926BBOHW,Q24eureka_question,Estimating geological metrics,-1
+A15F2JTVAJXITI,Q1concept_behav,Wason's Selection Task,-1
+A15F2JTVAJXITI,Q3type_1_planning,Wason's Selection Task,-1
+A15F2JTVAJXITI,Q4type_2_generate,Wason's Selection Task,-1
+A15F2JTVAJXITI,Q6type_5_cc,Wason's Selection Task,-1
+A15F2JTVAJXITI,Q7type_7_battle,Wason's Selection Task,1
+A15F2JTVAJXITI,Q8type_8_performance,Wason's Selection Task,1
+A15F2JTVAJXITI,Q9divisible_unitary,Wason's Selection Task,-1
+A15F2JTVAJXITI,Q10maximizing,Wason's Selection Task,-1
+A15F2JTVAJXITI,Q11optimizing,Wason's Selection Task,1
+A15F2JTVAJXITI,Q13outcome_multip,Wason's Selection Task,1
+A15F2JTVAJXITI,Q14sol_scheme_mul,Wason's Selection Task,1
+A15F2JTVAJXITI,Q15dec_verifiability,Wason's Selection Task,1
+A15F2JTVAJXITI,Q16shared_knowledge,Wason's Selection Task,1
+A15F2JTVAJXITI,Q17within_sys_sol,Wason's Selection Task,1
+A15F2JTVAJXITI,Q18ans_recog,Wason's Selection Task,1
+A15F2JTVAJXITI,Q19time_solvability,Wason's Selection Task,1
+A15F2JTVAJXITI,Q20type_3_type_4,Wason's Selection Task,1
+A15F2JTVAJXITI,Q22confl_tradeoffs,Wason's Selection Task,-1
+A15F2JTVAJXITI,Q23ss_out_uncert,Wason's Selection Task,1
+A15F2JTVAJXITI,Q24eureka_question,Wason's Selection Task,1
 A5NE8TWS8ZV7B,Q1concept_behav,Whac-A-Mole,-1
 A5NE8TWS8ZV7B,Q3type_1_planning,Whac-A-Mole,-1
 A5NE8TWS8ZV7B,Q4type_2_generate,Whac-A-Mole,-1
@@ -30279,6 +30539,26 @@ AWAW665TQQP2F,Q20type_3_type_4,Checkers,1
 AWAW665TQQP2F,Q22confl_tradeoffs,Checkers,-1
 AWAW665TQQP2F,Q23ss_out_uncert,Checkers,1
 AWAW665TQQP2F,Q24eureka_question,Checkers,-1
+A3NXT3OVGL7QNR,Q1concept_behav,Run a mini business,-1
+A3NXT3OVGL7QNR,Q3type_1_planning,Run a mini business,1
+A3NXT3OVGL7QNR,Q4type_2_generate,Run a mini business,-1
+A3NXT3OVGL7QNR,Q6type_5_cc,Run a mini business,-1
+A3NXT3OVGL7QNR,Q7type_7_battle,Run a mini business,-1
+A3NXT3OVGL7QNR,Q8type_8_performance,Run a mini business,-1
+A3NXT3OVGL7QNR,Q9divisible_unitary,Run a mini business,1
+A3NXT3OVGL7QNR,Q10maximizing,Run a mini business,1
+A3NXT3OVGL7QNR,Q11optimizing,Run a mini business,-1
+A3NXT3OVGL7QNR,Q13outcome_multip,Run a mini business,-1
+A3NXT3OVGL7QNR,Q14sol_scheme_mul,Run a mini business,-1
+A3NXT3OVGL7QNR,Q15dec_verifiability,Run a mini business,-1
+A3NXT3OVGL7QNR,Q16shared_knowledge,Run a mini business,-1
+A3NXT3OVGL7QNR,Q17within_sys_sol,Run a mini business,1
+A3NXT3OVGL7QNR,Q18ans_recog,Run a mini business,-1
+A3NXT3OVGL7QNR,Q19time_solvability,Run a mini business,-1
+A3NXT3OVGL7QNR,Q20type_3_type_4,Run a mini business,-1
+A3NXT3OVGL7QNR,Q22confl_tradeoffs,Run a mini business,1
+A3NXT3OVGL7QNR,Q23ss_out_uncert,Run a mini business,1
+A3NXT3OVGL7QNR,Q24eureka_question,Run a mini business,-1
 A1ZE87WEYCA44A,Q1concept_behav,Carter Racing,-1
 A1ZE87WEYCA44A,Q3type_1_planning,Carter Racing,-1
 A1ZE87WEYCA44A,Q4type_2_generate,Carter Racing,-1
@@ -30439,6 +30719,26 @@ A2VRDE2FHCBMF8,Q20type_3_type_4,Wason's Selection Task,1
 A2VRDE2FHCBMF8,Q22confl_tradeoffs,Wason's Selection Task,-1
 A2VRDE2FHCBMF8,Q23ss_out_uncert,Wason's Selection Task,1
 A2VRDE2FHCBMF8,Q24eureka_question,Wason's Selection Task,-1
+A2S64AUN7JI7ZS,Q1concept_behav,Splitting a deck of cards,-1
+A2S64AUN7JI7ZS,Q3type_1_planning,Splitting a deck of cards,-1
+A2S64AUN7JI7ZS,Q4type_2_generate,Splitting a deck of cards,-1
+A2S64AUN7JI7ZS,Q6type_5_cc,Splitting a deck of cards,-1
+A2S64AUN7JI7ZS,Q7type_7_battle,Splitting a deck of cards,1
+A2S64AUN7JI7ZS,Q8type_8_performance,Splitting a deck of cards,-1
+A2S64AUN7JI7ZS,Q9divisible_unitary,Splitting a deck of cards,-1
+A2S64AUN7JI7ZS,Q10maximizing,Splitting a deck of cards,1
+A2S64AUN7JI7ZS,Q11optimizing,Splitting a deck of cards,1
+A2S64AUN7JI7ZS,Q13outcome_multip,Splitting a deck of cards,1
+A2S64AUN7JI7ZS,Q14sol_scheme_mul,Splitting a deck of cards,1
+A2S64AUN7JI7ZS,Q15dec_verifiability,Splitting a deck of cards,1
+A2S64AUN7JI7ZS,Q16shared_knowledge,Splitting a deck of cards,1
+A2S64AUN7JI7ZS,Q17within_sys_sol,Splitting a deck of cards,1
+A2S64AUN7JI7ZS,Q18ans_recog,Splitting a deck of cards,1
+A2S64AUN7JI7ZS,Q19time_solvability,Splitting a deck of cards,1
+A2S64AUN7JI7ZS,Q20type_3_type_4,Splitting a deck of cards,1
+A2S64AUN7JI7ZS,Q22confl_tradeoffs,Splitting a deck of cards,1
+A2S64AUN7JI7ZS,Q23ss_out_uncert,Splitting a deck of cards,1
+A2S64AUN7JI7ZS,Q24eureka_question,Splitting a deck of cards,-1
 A17KN7NAP48L4B,Q1concept_behav,Estimating geological metrics,-1
 A17KN7NAP48L4B,Q3type_1_planning,Estimating geological metrics,-1
 A17KN7NAP48L4B,Q4type_2_generate,Estimating geological metrics,-1
@@ -31199,6 +31499,26 @@ A3S5ZB4D98JWT1,Q20type_3_type_4,Desert survival,1
 A3S5ZB4D98JWT1,Q22confl_tradeoffs,Desert survival,1
 A3S5ZB4D98JWT1,Q23ss_out_uncert,Desert survival,1
 A3S5ZB4D98JWT1,Q24eureka_question,Desert survival,-1
+A2615YW1YERQBO,Q1concept_behav,"Rank cities by population, rank words by familiarity",-1
+A2615YW1YERQBO,Q3type_1_planning,"Rank cities by population, rank words by familiarity",-1
+A2615YW1YERQBO,Q4type_2_generate,"Rank cities by population, rank words by familiarity",-1
+A2615YW1YERQBO,Q6type_5_cc,"Rank cities by population, rank words by familiarity",-1
+A2615YW1YERQBO,Q7type_7_battle,"Rank cities by population, rank words by familiarity",-1
+A2615YW1YERQBO,Q8type_8_performance,"Rank cities by population, rank words by familiarity",-1
+A2615YW1YERQBO,Q9divisible_unitary,"Rank cities by population, rank words by familiarity",-1
+A2615YW1YERQBO,Q10maximizing,"Rank cities by population, rank words by familiarity",1
+A2615YW1YERQBO,Q11optimizing,"Rank cities by population, rank words by familiarity",1
+A2615YW1YERQBO,Q13outcome_multip,"Rank cities by population, rank words by familiarity",1
+A2615YW1YERQBO,Q14sol_scheme_mul,"Rank cities by population, rank words by familiarity",-1
+A2615YW1YERQBO,Q15dec_verifiability,"Rank cities by population, rank words by familiarity",1
+A2615YW1YERQBO,Q16shared_knowledge,"Rank cities by population, rank words by familiarity",1
+A2615YW1YERQBO,Q17within_sys_sol,"Rank cities by population, rank words by familiarity",-1
+A2615YW1YERQBO,Q18ans_recog,"Rank cities by population, rank words by familiarity",1
+A2615YW1YERQBO,Q19time_solvability,"Rank cities by population, rank words by familiarity",1
+A2615YW1YERQBO,Q20type_3_type_4,"Rank cities by population, rank words by familiarity",1
+A2615YW1YERQBO,Q22confl_tradeoffs,"Rank cities by population, rank words by familiarity",-1
+A2615YW1YERQBO,Q23ss_out_uncert,"Rank cities by population, rank words by familiarity",1
+A2615YW1YERQBO,Q24eureka_question,"Rank cities by population, rank words by familiarity",-1
 A3HL2LL0LEPZT8,Q1concept_behav,Putting food into categories,-1
 A3HL2LL0LEPZT8,Q3type_1_planning,Putting food into categories,-1
 A3HL2LL0LEPZT8,Q4type_2_generate,Putting food into categories,1
