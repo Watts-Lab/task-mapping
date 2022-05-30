@@ -116,6 +116,15 @@ Carter Racing,Q16shared_knowledge_elaboration,This is a judgment call that the p
 Carter Racing,Q11optimizing_elaboration,The only correct and precise solution to the task is not to proceed with the race.
 Carter Racing,Q22confl_tradeoffs_elaboration,The relationship between ambient temperature and O-ring failure is disguised as the relationship between air temperature and car engine failures.
 Carter Racing,Q24eureka_question_elaboration,The relationship between ambient temperature and O-ring failure is disguised as the relationship between air temperature and car engine failures.
+Carter Racing,Q16shared_knowledge_elaboration,It's a yes/no question. It's comparing a life or death event with one that isn't. 
+Carter Racing,Q17within_sys_sol_elaboration,This seems an arbitrary decision. It's comparing something life and death with something about money and equating it. 
+Carter Racing,Q19time_solvability_elaboration,I guess in the context of the study.
+Carter Racing,Q20type_3_type_4_elaboration,I don't think this is objective in real life. 
+Carter Racing,Q3type_1_planning_elaboration,"I had trouble, but I don't know if more info would help. One main point of the task is to pick an action that should/should have been taken. But the underlying task is to figure out why, not the actual plan.  So I think it is not a planning task, but a ""figureing out"" task?"
+Carter Racing,Q5creativity_input_1_elaboration,I wasn't sure - in some ways it is creative thinking - seeing what is not there and figureing out what is not there that you need. But that is also very much a logical process and part of a scientific method...
+Carter Racing,Q14sol_scheme_mul_elaboration,"There are lots of ways to think and talk about possibilities, so I went with ""No"" But really the only way to achieve the task is to ask for additional info in a precise way, so maybe it should be a yes? "
+Carter Racing,Q18ans_recog_elaboration,"Seeing the right answer means they also get the additional info that had to be requested to get the right answer, right? Because then, yes. But if the explanation is worded in such a way that the additional info isn't revealed and they also don't get to see that additional info, then it would be a no (based only on the info in the task itself)"
+Carter Racing,Q24eureka_question_elaboration,"I'm not sure if figuring out the right question to ask here is a ""trick"" or not?"
 Carter Racing,Q17within_sys_sol_elaboration,Not sure as it said you could ask for more information so I said yes
 Carter Racing,Q23ss_out_uncert_elaboration,They don't know if they get scholarship
 Categorization problem,Q9divisible_unitary_elaboration,it doesn't say you can't work in groups but it doesn't say you can
@@ -247,6 +256,9 @@ Divergent Association Task,Q23ss_out_uncert_elaboration,Without knowing semantic
 Divergent Association Task,Q16shared_knowledge_elaboration,This is assuming there are defined scores attached to words.
 Divergent Association Task,Q17within_sys_sol_elaboration,"There is no mention of looking up answers online but if allowed, it would be an advantage here."
 Divergent Association Task,Q19time_solvability_elaboration,The solution has a subjective element attached to it.
+Estimating Factual Quantities,Q16shared_knowledge_elaboration,"There's really no steps involved in which an algorithm could be programmed to come up with a correct answer, either the answer is known or it isn't"
+Estimating Factual Quantities,Q14sol_scheme_mul_elaboration,It is just answering about factual quantities so you kind of have to come up with certain amounts 
+Estimating Factual Quantities,Q23ss_out_uncert_elaboration,"depends entirely on when the feedback on whether they chose correctly is provided, which isn't mentioned in the description.  "
 Estimating geological metrics,Q16shared_knowledge_elaboration,Depends on how well the algorithm answers trivia.
 Estimating geological metrics,Q19time_solvability_elaboration,"Yes, since only restraint is not looking up solutions online. Other resources could be used. "
 Estimating geological metrics,Q7type_7_battle_elaboration,The participant who comes closest to the actual numbers receives the maximum score and wins.
@@ -684,6 +696,10 @@ Random dot motion,Q9divisible_unitary_elaboration,"I'm not clear on how many ima
 Random dot motion,Q11optimizing_elaboration,There is a precise outcome participants are trying to achieve.
 Random dot motion,Q18ans_recog_elaboration,Could be difficult based on the number of correlated dots in the image.
 Random dot motion,Q9divisible_unitary_elaboration,All participants are working on individual screens
+"Rank cities by population, rank words by familiarity",Q23ss_out_uncert_elaboration,"depends entirely on when the feedback on whether they chose correctly is provided, which isn't mentioned in the description.  "
+"Rank cities by population, rank words by familiarity",Q9divisible_unitary_elaboration,I don't think it applies since it's delivered to individuals on a computer.
+"Rank cities by population, rank words by familiarity",Q16shared_knowledge_elaboration,I assume doing it by trial and error won't work. Like there is no live feedback to let the algorithm grind out the right answer.
+"Rank cities by population, rank words by familiarity",Q18ans_recog_elaboration,I feel like you can see the order and numbers and tell it is right
 Ravens Matrices,Q5creativity_input_1_elaboration,"You have to visualize the image and try to determine the missing piece, requires some creativity to imagine that"
 Ravens Matrices,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, but you're trying to get as many multiple choice questions correct as possible"
 Ravens Matrices,Q8type_8_performance_elaboration,You either get the answer correct or not.
@@ -859,6 +875,10 @@ Room assignment task,Q22confl_tradeoffs_elaboration,There are constraints that h
 Room assignment task,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the answers correct or not
 Room assignment task,Q2intel_manip_1_elaboration,"assuming these are imaginary rooms and not physical ones, otherwise it's probably an even split"
 Room assignment task,Q9divisible_unitary_elaboration,No team work
+Run a mini business,Q15dec_verifiability_elaboration,Whoever has the most money.
+Run a mini business,Q19time_solvability_elaboration,I assume there must be an absolute maximum amount that can be earned in the narrow confines of the game.
+Run a mini business,Q13outcome_multip_elaboration,depends on if the largest profit can be made in more than one way
+Run a mini business,Q14sol_scheme_mul_elaboration,depends on if the largest profit can be made in more than one way
 Search for Oil Task,Q9divisible_unitary_elaboration,This would easily be great for divide and conquer if it was explicitly stated to be team based.
 Search for Oil Task,Q11optimizing_elaboration,"goal is to find exact locations, not the number of exact locations"
 Search for Oil Task,Q14sol_scheme_mul_elaboration,each person will have their own way of remember points on the map with the best chance of finding oil

@@ -231,8 +231,8 @@ fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "silhouette") +
   labs(subtitle = "Silhouette method")
 
 # get optimal number of clusters -- "wss" elbow method
-# fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "wss") +
-#   labs(subtitle = "Elbow method")
+fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "wss") +
+  labs(subtitle = "Elbow method")
 
 kmeans_output <- pca$x %>%
   kmeans(centers = 4, nstart = 100)
