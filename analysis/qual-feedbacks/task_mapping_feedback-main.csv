@@ -584,6 +584,16 @@ Moral Reasoning (Disciplinary Action Case),Q18ans_recog_elaboration,It states in
 "NASA Moon survival",Q13outcome_multip_elaboration,"I base this on the language in the Objective referring to the ""true"" answer."
 Object based generalization for reasoning (Phyre),Q8type_8_performance_elaboration,You have to keep trying the same puzzle until successful
 Object based generalization for reasoning (Phyre),Q15dec_verifiability_elaboration,When the balls touch
+Object based generalization for reasoning (Phyre),Q22confl_tradeoffs_elaboration,"Different objects cause different actions, but the description doesnt rrally talk about ""conflict"" but I can imagine there could be"
+Object based generalization for reasoning (Phyre),Q20type_3_type_4_elaboration,"I suppose there could be a objectively correct answer, but I think I'm gonna have to put this one in the middle."
+Object based generalization for reasoning (Phyre),Q3type_1_planning_elaboration,"According to the elaboration, the answer is ""no"",but it could be argued that ""planning"" is part of this."
+Object based generalization for reasoning (Phyre),Q10maximizing_elaboration,"""many puzzles in as few attempts as possible within a fixed amount of time."""
+Object based generalization for reasoning (Phyre),Q5creativity_input_1_elaboration,There are many ways to creatively add objects to the environment and cause different physical consequences.
+Object based generalization for reasoning (Phyre),Q10maximizing_elaboration,The goal is to solve as many puzzles in as few attempts as possible within a fixed amount of time.
+Object based generalization for reasoning (Phyre),Q20type_3_type_4_elaboration,"While participant can use creativity/subjectivity in how they go about solving the puzzle, the answer/goal is still objective."
+Object based generalization for reasoning (Phyre),Q21intellective_judg_1_elaboration,"While participant can use creativity/subjectivity in how they go about solving the puzzle, the answer/goal is still objective."
+Object based generalization for reasoning (Phyre),Q16shared_knowledge_elaboration,Some creativity is likely necessary here.
+Object based generalization for reasoning (Phyre),Q24eureka_question_elaboration,Some puzzles might have 'aha' moments but instructions do not specify enough.
 Putting food into categories,Q6type_5_cc_elaboration,Different group members may have different ideas on categories
 Putting food into categories,Q19time_solvability_elaboration,"There is not a solvable problem, fully subjective"
 Putting food into categories,Q3type_1_planning_elaboration,Once you see your list of foods you would plan how to divide them
@@ -1276,6 +1286,9 @@ Whac-A-Mole,Q18ans_recog_elaboration,There is no problem to solve.
 Whac-A-Mole,Q19time_solvability_elaboration,No solution possible as it is only a task.
 Whac-A-Mole,Q20type_3_type_4_elaboration,No solution possible as it is only a task.
 Whac-A-Mole,Q21intellective_judg_1_elaboration,No solution possible as it is only a task.
+Wildcam Gorongosa (Zooniverse),Q9divisible_unitary_elaboration,"I suppose somebody ""could"" divide and conquer on this...then vote on it?"
+Wildcam Gorongosa (Zooniverse),Q21intellective_judg_1_elaboration,"interacting, standing, moving could be subjective."
+Wildcam Gorongosa (Zooniverse),Q13outcome_multip_elaboration,This one was hard because I feel like it is subjective based on how many you do. 
 Wildcat Wells,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Wildcat Wells,Q13outcome_multip_elaboration,If the participant somehow guesses randomly all best oil fields they could achieve the best solution.  Unlikely but technically possible.
 Wildcat Wells,Q17within_sys_sol_elaboration,Sounds like more of a hunting and guessing task.

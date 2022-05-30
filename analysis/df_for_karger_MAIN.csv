@@ -1359,6 +1359,26 @@ A1I72NHC21347A,Q20type_3_type_4,Find the maximum,1
 A1I72NHC21347A,Q22confl_tradeoffs,Find the maximum,-1
 A1I72NHC21347A,Q23ss_out_uncert,Find the maximum,1
 A1I72NHC21347A,Q24eureka_question,Find the maximum,-1
+A26UIS59SY4NM6,Q1concept_behav,Wildcam Gorongosa (Zooniverse),-1
+A26UIS59SY4NM6,Q3type_1_planning,Wildcam Gorongosa (Zooniverse),-1
+A26UIS59SY4NM6,Q4type_2_generate,Wildcam Gorongosa (Zooniverse),-1
+A26UIS59SY4NM6,Q6type_5_cc,Wildcam Gorongosa (Zooniverse),-1
+A26UIS59SY4NM6,Q7type_7_battle,Wildcam Gorongosa (Zooniverse),-1
+A26UIS59SY4NM6,Q8type_8_performance,Wildcam Gorongosa (Zooniverse),-1
+A26UIS59SY4NM6,Q9divisible_unitary,Wildcam Gorongosa (Zooniverse),1
+A26UIS59SY4NM6,Q10maximizing,Wildcam Gorongosa (Zooniverse),1
+A26UIS59SY4NM6,Q11optimizing,Wildcam Gorongosa (Zooniverse),-1
+A26UIS59SY4NM6,Q13outcome_multip,Wildcam Gorongosa (Zooniverse),1
+A26UIS59SY4NM6,Q14sol_scheme_mul,Wildcam Gorongosa (Zooniverse),-1
+A26UIS59SY4NM6,Q15dec_verifiability,Wildcam Gorongosa (Zooniverse),1
+A26UIS59SY4NM6,Q16shared_knowledge,Wildcam Gorongosa (Zooniverse),-1
+A26UIS59SY4NM6,Q17within_sys_sol,Wildcam Gorongosa (Zooniverse),-1
+A26UIS59SY4NM6,Q18ans_recog,Wildcam Gorongosa (Zooniverse),-1
+A26UIS59SY4NM6,Q19time_solvability,Wildcam Gorongosa (Zooniverse),1
+A26UIS59SY4NM6,Q20type_3_type_4,Wildcam Gorongosa (Zooniverse),1
+A26UIS59SY4NM6,Q22confl_tradeoffs,Wildcam Gorongosa (Zooniverse),-1
+A26UIS59SY4NM6,Q23ss_out_uncert,Wildcam Gorongosa (Zooniverse),1
+A26UIS59SY4NM6,Q24eureka_question,Wildcam Gorongosa (Zooniverse),-1
 AXPZAP62ZYWP8,Q1concept_behav,Recall stories,-1
 AXPZAP62ZYWP8,Q3type_1_planning,Recall stories,-1
 AXPZAP62ZYWP8,Q4type_2_generate,Recall stories,-1
@@ -2339,6 +2359,46 @@ A3S5ZB4D98JWT1,Q20type_3_type_4,Categorization problem,1
 A3S5ZB4D98JWT1,Q22confl_tradeoffs,Categorization problem,1
 A3S5ZB4D98JWT1,Q23ss_out_uncert,Categorization problem,1
 A3S5ZB4D98JWT1,Q24eureka_question,Categorization problem,1
+A1I72NHC21347A,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+A1I72NHC21347A,Q3type_1_planning,Object based generalization for reasoning (Phyre),-1
+A1I72NHC21347A,Q4type_2_generate,Object based generalization for reasoning (Phyre),-1
+A1I72NHC21347A,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+A1I72NHC21347A,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+A1I72NHC21347A,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+A1I72NHC21347A,Q9divisible_unitary,Object based generalization for reasoning (Phyre),-1
+A1I72NHC21347A,Q10maximizing,Object based generalization for reasoning (Phyre),1
+A1I72NHC21347A,Q11optimizing,Object based generalization for reasoning (Phyre),1
+A1I72NHC21347A,Q13outcome_multip,Object based generalization for reasoning (Phyre),1
+A1I72NHC21347A,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),1
+A1I72NHC21347A,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+A1I72NHC21347A,Q16shared_knowledge,Object based generalization for reasoning (Phyre),1
+A1I72NHC21347A,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+A1I72NHC21347A,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+A1I72NHC21347A,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+A1I72NHC21347A,Q20type_3_type_4,Object based generalization for reasoning (Phyre),1
+A1I72NHC21347A,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),1
+A1I72NHC21347A,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),1
+A1I72NHC21347A,Q24eureka_question,Object based generalization for reasoning (Phyre),-1
+A2615YW1YERQBO,Q1concept_behav,Wildcam Gorongosa (Zooniverse),-1
+A2615YW1YERQBO,Q3type_1_planning,Wildcam Gorongosa (Zooniverse),-1
+A2615YW1YERQBO,Q4type_2_generate,Wildcam Gorongosa (Zooniverse),-1
+A2615YW1YERQBO,Q6type_5_cc,Wildcam Gorongosa (Zooniverse),-1
+A2615YW1YERQBO,Q7type_7_battle,Wildcam Gorongosa (Zooniverse),-1
+A2615YW1YERQBO,Q8type_8_performance,Wildcam Gorongosa (Zooniverse),-1
+A2615YW1YERQBO,Q9divisible_unitary,Wildcam Gorongosa (Zooniverse),1
+A2615YW1YERQBO,Q10maximizing,Wildcam Gorongosa (Zooniverse),1
+A2615YW1YERQBO,Q11optimizing,Wildcam Gorongosa (Zooniverse),1
+A2615YW1YERQBO,Q13outcome_multip,Wildcam Gorongosa (Zooniverse),1
+A2615YW1YERQBO,Q14sol_scheme_mul,Wildcam Gorongosa (Zooniverse),1
+A2615YW1YERQBO,Q15dec_verifiability,Wildcam Gorongosa (Zooniverse),1
+A2615YW1YERQBO,Q16shared_knowledge,Wildcam Gorongosa (Zooniverse),1
+A2615YW1YERQBO,Q17within_sys_sol,Wildcam Gorongosa (Zooniverse),1
+A2615YW1YERQBO,Q18ans_recog,Wildcam Gorongosa (Zooniverse),1
+A2615YW1YERQBO,Q19time_solvability,Wildcam Gorongosa (Zooniverse),1
+A2615YW1YERQBO,Q20type_3_type_4,Wildcam Gorongosa (Zooniverse),1
+A2615YW1YERQBO,Q22confl_tradeoffs,Wildcam Gorongosa (Zooniverse),-1
+A2615YW1YERQBO,Q23ss_out_uncert,Wildcam Gorongosa (Zooniverse),1
+A2615YW1YERQBO,Q24eureka_question,Wildcam Gorongosa (Zooniverse),-1
 A38I0E8UK53ME5,Q1concept_behav,Categorization problem,-1
 A38I0E8UK53ME5,Q3type_1_planning,Categorization problem,-1
 A38I0E8UK53ME5,Q4type_2_generate,Categorization problem,-1
@@ -3859,6 +3919,26 @@ AE1YA7Q3UKPRI,Q20type_3_type_4,To evacuate or not to evacuate,-1
 AE1YA7Q3UKPRI,Q22confl_tradeoffs,To evacuate or not to evacuate,1
 AE1YA7Q3UKPRI,Q23ss_out_uncert,To evacuate or not to evacuate,1
 AE1YA7Q3UKPRI,Q24eureka_question,To evacuate or not to evacuate,-1
+AE1YA7Q3UKPRI,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+AE1YA7Q3UKPRI,Q3type_1_planning,Object based generalization for reasoning (Phyre),-1
+AE1YA7Q3UKPRI,Q4type_2_generate,Object based generalization for reasoning (Phyre),-1
+AE1YA7Q3UKPRI,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+AE1YA7Q3UKPRI,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+AE1YA7Q3UKPRI,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+AE1YA7Q3UKPRI,Q9divisible_unitary,Object based generalization for reasoning (Phyre),-1
+AE1YA7Q3UKPRI,Q10maximizing,Object based generalization for reasoning (Phyre),1
+AE1YA7Q3UKPRI,Q11optimizing,Object based generalization for reasoning (Phyre),-1
+AE1YA7Q3UKPRI,Q13outcome_multip,Object based generalization for reasoning (Phyre),-1
+AE1YA7Q3UKPRI,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+AE1YA7Q3UKPRI,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+AE1YA7Q3UKPRI,Q16shared_knowledge,Object based generalization for reasoning (Phyre),-1
+AE1YA7Q3UKPRI,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+AE1YA7Q3UKPRI,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+AE1YA7Q3UKPRI,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+AE1YA7Q3UKPRI,Q20type_3_type_4,Object based generalization for reasoning (Phyre),-1
+AE1YA7Q3UKPRI,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),1
+AE1YA7Q3UKPRI,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),-1
+AE1YA7Q3UKPRI,Q24eureka_question,Object based generalization for reasoning (Phyre),-1
 A2WZTMXWD20NYE,Q1concept_behav,Crisis mapping,-1
 A2WZTMXWD20NYE,Q3type_1_planning,Crisis mapping,-1
 A2WZTMXWD20NYE,Q4type_2_generate,Crisis mapping,-1
@@ -4739,6 +4819,26 @@ A3JAM040VWXHDO,Q20type_3_type_4,Target Search,1
 A3JAM040VWXHDO,Q22confl_tradeoffs,Target Search,1
 A3JAM040VWXHDO,Q23ss_out_uncert,Target Search,1
 A3JAM040VWXHDO,Q24eureka_question,Target Search,-1
+AURYD2FH3FUOQ,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+AURYD2FH3FUOQ,Q3type_1_planning,Object based generalization for reasoning (Phyre),-1
+AURYD2FH3FUOQ,Q4type_2_generate,Object based generalization for reasoning (Phyre),-1
+AURYD2FH3FUOQ,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+AURYD2FH3FUOQ,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+AURYD2FH3FUOQ,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+AURYD2FH3FUOQ,Q9divisible_unitary,Object based generalization for reasoning (Phyre),-1
+AURYD2FH3FUOQ,Q10maximizing,Object based generalization for reasoning (Phyre),1
+AURYD2FH3FUOQ,Q11optimizing,Object based generalization for reasoning (Phyre),-1
+AURYD2FH3FUOQ,Q13outcome_multip,Object based generalization for reasoning (Phyre),1
+AURYD2FH3FUOQ,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+AURYD2FH3FUOQ,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+AURYD2FH3FUOQ,Q16shared_knowledge,Object based generalization for reasoning (Phyre),-1
+AURYD2FH3FUOQ,Q17within_sys_sol,Object based generalization for reasoning (Phyre),-1
+AURYD2FH3FUOQ,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+AURYD2FH3FUOQ,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+AURYD2FH3FUOQ,Q20type_3_type_4,Object based generalization for reasoning (Phyre),-1
+AURYD2FH3FUOQ,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),-1
+AURYD2FH3FUOQ,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),1
+AURYD2FH3FUOQ,Q24eureka_question,Object based generalization for reasoning (Phyre),-1
 A3T9WZOUQGE2UW,Q1concept_behav,Recall images,-1
 A3T9WZOUQGE2UW,Q3type_1_planning,Recall images,-1
 A3T9WZOUQGE2UW,Q4type_2_generate,Recall images,-1
@@ -4799,6 +4899,26 @@ AE1YA7Q3UKPRI,Q20type_3_type_4,Typing game,-1
 AE1YA7Q3UKPRI,Q22confl_tradeoffs,Typing game,-1
 AE1YA7Q3UKPRI,Q23ss_out_uncert,Typing game,-1
 AE1YA7Q3UKPRI,Q24eureka_question,Typing game,NA
+A1I72NHC21347A,Q1concept_behav,Wildcam Gorongosa (Zooniverse),-1
+A1I72NHC21347A,Q3type_1_planning,Wildcam Gorongosa (Zooniverse),-1
+A1I72NHC21347A,Q4type_2_generate,Wildcam Gorongosa (Zooniverse),-1
+A1I72NHC21347A,Q6type_5_cc,Wildcam Gorongosa (Zooniverse),-1
+A1I72NHC21347A,Q7type_7_battle,Wildcam Gorongosa (Zooniverse),-1
+A1I72NHC21347A,Q8type_8_performance,Wildcam Gorongosa (Zooniverse),-1
+A1I72NHC21347A,Q9divisible_unitary,Wildcam Gorongosa (Zooniverse),-1
+A1I72NHC21347A,Q10maximizing,Wildcam Gorongosa (Zooniverse),1
+A1I72NHC21347A,Q11optimizing,Wildcam Gorongosa (Zooniverse),1
+A1I72NHC21347A,Q13outcome_multip,Wildcam Gorongosa (Zooniverse),1
+A1I72NHC21347A,Q14sol_scheme_mul,Wildcam Gorongosa (Zooniverse),1
+A1I72NHC21347A,Q15dec_verifiability,Wildcam Gorongosa (Zooniverse),1
+A1I72NHC21347A,Q16shared_knowledge,Wildcam Gorongosa (Zooniverse),-1
+A1I72NHC21347A,Q17within_sys_sol,Wildcam Gorongosa (Zooniverse),1
+A1I72NHC21347A,Q18ans_recog,Wildcam Gorongosa (Zooniverse),1
+A1I72NHC21347A,Q19time_solvability,Wildcam Gorongosa (Zooniverse),1
+A1I72NHC21347A,Q20type_3_type_4,Wildcam Gorongosa (Zooniverse),1
+A1I72NHC21347A,Q22confl_tradeoffs,Wildcam Gorongosa (Zooniverse),-1
+A1I72NHC21347A,Q23ss_out_uncert,Wildcam Gorongosa (Zooniverse),-1
+A1I72NHC21347A,Q24eureka_question,Wildcam Gorongosa (Zooniverse),-1
 A33PHCBUOD4WKD,Q1concept_behav,Categorization problem,-1
 A33PHCBUOD4WKD,Q3type_1_planning,Categorization problem,-1
 A33PHCBUOD4WKD,Q4type_2_generate,Categorization problem,-1
@@ -6919,6 +7039,26 @@ A38I0E8UK53ME5,Q20type_3_type_4,Computer maze,1
 A38I0E8UK53ME5,Q22confl_tradeoffs,Computer maze,-1
 A38I0E8UK53ME5,Q23ss_out_uncert,Computer maze,1
 A38I0E8UK53ME5,Q24eureka_question,Computer maze,1
+A6JKKANO7F4KD,Q1concept_behav,Wildcam Gorongosa (Zooniverse),-1
+A6JKKANO7F4KD,Q3type_1_planning,Wildcam Gorongosa (Zooniverse),-1
+A6JKKANO7F4KD,Q4type_2_generate,Wildcam Gorongosa (Zooniverse),-1
+A6JKKANO7F4KD,Q6type_5_cc,Wildcam Gorongosa (Zooniverse),-1
+A6JKKANO7F4KD,Q7type_7_battle,Wildcam Gorongosa (Zooniverse),-1
+A6JKKANO7F4KD,Q8type_8_performance,Wildcam Gorongosa (Zooniverse),-1
+A6JKKANO7F4KD,Q9divisible_unitary,Wildcam Gorongosa (Zooniverse),1
+A6JKKANO7F4KD,Q10maximizing,Wildcam Gorongosa (Zooniverse),1
+A6JKKANO7F4KD,Q11optimizing,Wildcam Gorongosa (Zooniverse),1
+A6JKKANO7F4KD,Q13outcome_multip,Wildcam Gorongosa (Zooniverse),1
+A6JKKANO7F4KD,Q14sol_scheme_mul,Wildcam Gorongosa (Zooniverse),-1
+A6JKKANO7F4KD,Q15dec_verifiability,Wildcam Gorongosa (Zooniverse),1
+A6JKKANO7F4KD,Q16shared_knowledge,Wildcam Gorongosa (Zooniverse),-1
+A6JKKANO7F4KD,Q17within_sys_sol,Wildcam Gorongosa (Zooniverse),1
+A6JKKANO7F4KD,Q18ans_recog,Wildcam Gorongosa (Zooniverse),1
+A6JKKANO7F4KD,Q19time_solvability,Wildcam Gorongosa (Zooniverse),1
+A6JKKANO7F4KD,Q20type_3_type_4,Wildcam Gorongosa (Zooniverse),1
+A6JKKANO7F4KD,Q22confl_tradeoffs,Wildcam Gorongosa (Zooniverse),-1
+A6JKKANO7F4KD,Q23ss_out_uncert,Wildcam Gorongosa (Zooniverse),1
+A6JKKANO7F4KD,Q24eureka_question,Wildcam Gorongosa (Zooniverse),-1
 ARYL3C6N9SVV1,Q1concept_behav,To evacuate or not to evacuate,-1
 ARYL3C6N9SVV1,Q3type_1_planning,To evacuate or not to evacuate,-1
 ARYL3C6N9SVV1,Q4type_2_generate,To evacuate or not to evacuate,-1
@@ -7239,6 +7379,26 @@ A3JAM040VWXHDO,Q20type_3_type_4,Recall stories,1
 A3JAM040VWXHDO,Q22confl_tradeoffs,Recall stories,-1
 A3JAM040VWXHDO,Q23ss_out_uncert,Recall stories,-1
 A3JAM040VWXHDO,Q24eureka_question,Recall stories,-1
+AL51KTD0WITH9,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+AL51KTD0WITH9,Q3type_1_planning,Object based generalization for reasoning (Phyre),-1
+AL51KTD0WITH9,Q4type_2_generate,Object based generalization for reasoning (Phyre),-1
+AL51KTD0WITH9,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+AL51KTD0WITH9,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+AL51KTD0WITH9,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+AL51KTD0WITH9,Q9divisible_unitary,Object based generalization for reasoning (Phyre),-1
+AL51KTD0WITH9,Q10maximizing,Object based generalization for reasoning (Phyre),1
+AL51KTD0WITH9,Q11optimizing,Object based generalization for reasoning (Phyre),1
+AL51KTD0WITH9,Q13outcome_multip,Object based generalization for reasoning (Phyre),1
+AL51KTD0WITH9,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+AL51KTD0WITH9,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+AL51KTD0WITH9,Q16shared_knowledge,Object based generalization for reasoning (Phyre),-1
+AL51KTD0WITH9,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+AL51KTD0WITH9,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+AL51KTD0WITH9,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+AL51KTD0WITH9,Q20type_3_type_4,Object based generalization for reasoning (Phyre),1
+AL51KTD0WITH9,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),-1
+AL51KTD0WITH9,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),1
+AL51KTD0WITH9,Q24eureka_question,Object based generalization for reasoning (Phyre),-1
 A38I0E8UK53ME5,Q1concept_behav,Recall stories,-1
 A38I0E8UK53ME5,Q3type_1_planning,Recall stories,-1
 A38I0E8UK53ME5,Q4type_2_generate,Recall stories,-1
@@ -14659,6 +14819,26 @@ A3EUGO4VR2N4G1,Q20type_3_type_4,Logic Problem,1
 A3EUGO4VR2N4G1,Q22confl_tradeoffs,Logic Problem,1
 A3EUGO4VR2N4G1,Q23ss_out_uncert,Logic Problem,-1
 A3EUGO4VR2N4G1,Q24eureka_question,Logic Problem,-1
+A26UIS59SY4NM6,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+A26UIS59SY4NM6,Q3type_1_planning,Object based generalization for reasoning (Phyre),-1
+A26UIS59SY4NM6,Q4type_2_generate,Object based generalization for reasoning (Phyre),-1
+A26UIS59SY4NM6,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+A26UIS59SY4NM6,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+A26UIS59SY4NM6,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+A26UIS59SY4NM6,Q9divisible_unitary,Object based generalization for reasoning (Phyre),-1
+A26UIS59SY4NM6,Q10maximizing,Object based generalization for reasoning (Phyre),-1
+A26UIS59SY4NM6,Q11optimizing,Object based generalization for reasoning (Phyre),-1
+A26UIS59SY4NM6,Q13outcome_multip,Object based generalization for reasoning (Phyre),-1
+A26UIS59SY4NM6,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+A26UIS59SY4NM6,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+A26UIS59SY4NM6,Q16shared_knowledge,Object based generalization for reasoning (Phyre),-1
+A26UIS59SY4NM6,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+A26UIS59SY4NM6,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+A26UIS59SY4NM6,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+A26UIS59SY4NM6,Q20type_3_type_4,Object based generalization for reasoning (Phyre),1
+A26UIS59SY4NM6,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),-1
+A26UIS59SY4NM6,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),-1
+A26UIS59SY4NM6,Q24eureka_question,Object based generalization for reasoning (Phyre),-1
 A17FGZ1I5P9RZA,Q1concept_behav,Euclidean traveling salesperson,-1
 A17FGZ1I5P9RZA,Q3type_1_planning,Euclidean traveling salesperson,-1
 A17FGZ1I5P9RZA,Q4type_2_generate,Euclidean traveling salesperson,-1
@@ -16519,6 +16699,26 @@ ARI1EMAHUA9PO,Q20type_3_type_4,Reproducing arts,1
 ARI1EMAHUA9PO,Q22confl_tradeoffs,Reproducing arts,-1
 ARI1EMAHUA9PO,Q23ss_out_uncert,Reproducing arts,-1
 ARI1EMAHUA9PO,Q24eureka_question,Reproducing arts,-1
+AXPZAP62ZYWP8,Q1concept_behav,Wildcam Gorongosa (Zooniverse),-1
+AXPZAP62ZYWP8,Q3type_1_planning,Wildcam Gorongosa (Zooniverse),-1
+AXPZAP62ZYWP8,Q4type_2_generate,Wildcam Gorongosa (Zooniverse),-1
+AXPZAP62ZYWP8,Q6type_5_cc,Wildcam Gorongosa (Zooniverse),-1
+AXPZAP62ZYWP8,Q7type_7_battle,Wildcam Gorongosa (Zooniverse),-1
+AXPZAP62ZYWP8,Q8type_8_performance,Wildcam Gorongosa (Zooniverse),-1
+AXPZAP62ZYWP8,Q9divisible_unitary,Wildcam Gorongosa (Zooniverse),1
+AXPZAP62ZYWP8,Q10maximizing,Wildcam Gorongosa (Zooniverse),1
+AXPZAP62ZYWP8,Q11optimizing,Wildcam Gorongosa (Zooniverse),-1
+AXPZAP62ZYWP8,Q13outcome_multip,Wildcam Gorongosa (Zooniverse),-1
+AXPZAP62ZYWP8,Q14sol_scheme_mul,Wildcam Gorongosa (Zooniverse),-1
+AXPZAP62ZYWP8,Q15dec_verifiability,Wildcam Gorongosa (Zooniverse),1
+AXPZAP62ZYWP8,Q16shared_knowledge,Wildcam Gorongosa (Zooniverse),1
+AXPZAP62ZYWP8,Q17within_sys_sol,Wildcam Gorongosa (Zooniverse),1
+AXPZAP62ZYWP8,Q18ans_recog,Wildcam Gorongosa (Zooniverse),1
+AXPZAP62ZYWP8,Q19time_solvability,Wildcam Gorongosa (Zooniverse),1
+AXPZAP62ZYWP8,Q20type_3_type_4,Wildcam Gorongosa (Zooniverse),1
+AXPZAP62ZYWP8,Q22confl_tradeoffs,Wildcam Gorongosa (Zooniverse),-1
+AXPZAP62ZYWP8,Q23ss_out_uncert,Wildcam Gorongosa (Zooniverse),-1
+AXPZAP62ZYWP8,Q24eureka_question,Wildcam Gorongosa (Zooniverse),-1
 A1I72NHC21347A,Q1concept_behav,Wildcat Wells,-1
 A1I72NHC21347A,Q3type_1_planning,Wildcat Wells,-1
 A1I72NHC21347A,Q4type_2_generate,Wildcat Wells,-1
@@ -16679,6 +16879,26 @@ A2WZTMXWD20NYE,Q20type_3_type_4,Image rating,-1
 A2WZTMXWD20NYE,Q22confl_tradeoffs,Image rating,-1
 A2WZTMXWD20NYE,Q23ss_out_uncert,Image rating,1
 A2WZTMXWD20NYE,Q24eureka_question,Image rating,-1
+A1PZIN8H1VI6SY,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+A1PZIN8H1VI6SY,Q3type_1_planning,Object based generalization for reasoning (Phyre),1
+A1PZIN8H1VI6SY,Q4type_2_generate,Object based generalization for reasoning (Phyre),1
+A1PZIN8H1VI6SY,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+A1PZIN8H1VI6SY,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+A1PZIN8H1VI6SY,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+A1PZIN8H1VI6SY,Q9divisible_unitary,Object based generalization for reasoning (Phyre),1
+A1PZIN8H1VI6SY,Q10maximizing,Object based generalization for reasoning (Phyre),1
+A1PZIN8H1VI6SY,Q11optimizing,Object based generalization for reasoning (Phyre),1
+A1PZIN8H1VI6SY,Q13outcome_multip,Object based generalization for reasoning (Phyre),-1
+A1PZIN8H1VI6SY,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+A1PZIN8H1VI6SY,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+A1PZIN8H1VI6SY,Q16shared_knowledge,Object based generalization for reasoning (Phyre),-1
+A1PZIN8H1VI6SY,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+A1PZIN8H1VI6SY,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+A1PZIN8H1VI6SY,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+A1PZIN8H1VI6SY,Q20type_3_type_4,Object based generalization for reasoning (Phyre),1
+A1PZIN8H1VI6SY,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),-1
+A1PZIN8H1VI6SY,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),-1
+A1PZIN8H1VI6SY,Q24eureka_question,Object based generalization for reasoning (Phyre),-1
 A2H5V1V8QIY8Y7,Q1concept_behav,Putting food into categories,-1
 A2H5V1V8QIY8Y7,Q3type_1_planning,Putting food into categories,-1
 A2H5V1V8QIY8Y7,Q4type_2_generate,Putting food into categories,1
@@ -17219,6 +17439,26 @@ ARYL3C6N9SVV1,Q20type_3_type_4,Wildcat Wells,1
 ARYL3C6N9SVV1,Q22confl_tradeoffs,Wildcat Wells,1
 ARYL3C6N9SVV1,Q23ss_out_uncert,Wildcat Wells,1
 ARYL3C6N9SVV1,Q24eureka_question,Wildcat Wells,-1
+AONSG5WOC3OX0,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+AONSG5WOC3OX0,Q3type_1_planning,Object based generalization for reasoning (Phyre),-1
+AONSG5WOC3OX0,Q4type_2_generate,Object based generalization for reasoning (Phyre),-1
+AONSG5WOC3OX0,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+AONSG5WOC3OX0,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+AONSG5WOC3OX0,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+AONSG5WOC3OX0,Q9divisible_unitary,Object based generalization for reasoning (Phyre),1
+AONSG5WOC3OX0,Q10maximizing,Object based generalization for reasoning (Phyre),1
+AONSG5WOC3OX0,Q11optimizing,Object based generalization for reasoning (Phyre),1
+AONSG5WOC3OX0,Q13outcome_multip,Object based generalization for reasoning (Phyre),1
+AONSG5WOC3OX0,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+AONSG5WOC3OX0,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+AONSG5WOC3OX0,Q16shared_knowledge,Object based generalization for reasoning (Phyre),1
+AONSG5WOC3OX0,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+AONSG5WOC3OX0,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+AONSG5WOC3OX0,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+AONSG5WOC3OX0,Q20type_3_type_4,Object based generalization for reasoning (Phyre),1
+AONSG5WOC3OX0,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),-1
+AONSG5WOC3OX0,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),1
+AONSG5WOC3OX0,Q24eureka_question,Object based generalization for reasoning (Phyre),1
 A3S5ZB4D98JWT1,Q1concept_behav,Shopping plan,-1
 A3S5ZB4D98JWT1,Q3type_1_planning,Shopping plan,1
 A3S5ZB4D98JWT1,Q4type_2_generate,Shopping plan,-1
@@ -20239,6 +20479,26 @@ A18T7E73TNGOKP,Q20type_3_type_4,Image rating,1
 A18T7E73TNGOKP,Q22confl_tradeoffs,Image rating,-1
 A18T7E73TNGOKP,Q23ss_out_uncert,Image rating,1
 A18T7E73TNGOKP,Q24eureka_question,Image rating,-1
+AL51KTD0WITH9,Q1concept_behav,Wildcam Gorongosa (Zooniverse),-1
+AL51KTD0WITH9,Q3type_1_planning,Wildcam Gorongosa (Zooniverse),-1
+AL51KTD0WITH9,Q4type_2_generate,Wildcam Gorongosa (Zooniverse),-1
+AL51KTD0WITH9,Q6type_5_cc,Wildcam Gorongosa (Zooniverse),-1
+AL51KTD0WITH9,Q7type_7_battle,Wildcam Gorongosa (Zooniverse),-1
+AL51KTD0WITH9,Q8type_8_performance,Wildcam Gorongosa (Zooniverse),-1
+AL51KTD0WITH9,Q9divisible_unitary,Wildcam Gorongosa (Zooniverse),1
+AL51KTD0WITH9,Q10maximizing,Wildcam Gorongosa (Zooniverse),-1
+AL51KTD0WITH9,Q11optimizing,Wildcam Gorongosa (Zooniverse),1
+AL51KTD0WITH9,Q13outcome_multip,Wildcam Gorongosa (Zooniverse),1
+AL51KTD0WITH9,Q14sol_scheme_mul,Wildcam Gorongosa (Zooniverse),-1
+AL51KTD0WITH9,Q15dec_verifiability,Wildcam Gorongosa (Zooniverse),1
+AL51KTD0WITH9,Q16shared_knowledge,Wildcam Gorongosa (Zooniverse),-1
+AL51KTD0WITH9,Q17within_sys_sol,Wildcam Gorongosa (Zooniverse),1
+AL51KTD0WITH9,Q18ans_recog,Wildcam Gorongosa (Zooniverse),1
+AL51KTD0WITH9,Q19time_solvability,Wildcam Gorongosa (Zooniverse),1
+AL51KTD0WITH9,Q20type_3_type_4,Wildcam Gorongosa (Zooniverse),1
+AL51KTD0WITH9,Q22confl_tradeoffs,Wildcam Gorongosa (Zooniverse),-1
+AL51KTD0WITH9,Q23ss_out_uncert,Wildcam Gorongosa (Zooniverse),1
+AL51KTD0WITH9,Q24eureka_question,Wildcam Gorongosa (Zooniverse),-1
 AXPZAP62ZYWP8,Q1concept_behav,Estimating social quantity,-1
 AXPZAP62ZYWP8,Q3type_1_planning,Estimating social quantity,-1
 AXPZAP62ZYWP8,Q4type_2_generate,Estimating social quantity,-1
@@ -20759,6 +21019,26 @@ A5NE8TWS8ZV7B,Q20type_3_type_4,Sudoku,1
 A5NE8TWS8ZV7B,Q22confl_tradeoffs,Sudoku,1
 A5NE8TWS8ZV7B,Q23ss_out_uncert,Sudoku,-1
 A5NE8TWS8ZV7B,Q24eureka_question,Sudoku,1
+AE1YA7Q3UKPRI,Q1concept_behav,Wildcam Gorongosa (Zooniverse),-1
+AE1YA7Q3UKPRI,Q3type_1_planning,Wildcam Gorongosa (Zooniverse),-1
+AE1YA7Q3UKPRI,Q4type_2_generate,Wildcam Gorongosa (Zooniverse),-1
+AE1YA7Q3UKPRI,Q6type_5_cc,Wildcam Gorongosa (Zooniverse),-1
+AE1YA7Q3UKPRI,Q7type_7_battle,Wildcam Gorongosa (Zooniverse),-1
+AE1YA7Q3UKPRI,Q8type_8_performance,Wildcam Gorongosa (Zooniverse),-1
+AE1YA7Q3UKPRI,Q9divisible_unitary,Wildcam Gorongosa (Zooniverse),1
+AE1YA7Q3UKPRI,Q10maximizing,Wildcam Gorongosa (Zooniverse),1
+AE1YA7Q3UKPRI,Q11optimizing,Wildcam Gorongosa (Zooniverse),-1
+AE1YA7Q3UKPRI,Q13outcome_multip,Wildcam Gorongosa (Zooniverse),-1
+AE1YA7Q3UKPRI,Q14sol_scheme_mul,Wildcam Gorongosa (Zooniverse),1
+AE1YA7Q3UKPRI,Q15dec_verifiability,Wildcam Gorongosa (Zooniverse),1
+AE1YA7Q3UKPRI,Q16shared_knowledge,Wildcam Gorongosa (Zooniverse),-1
+AE1YA7Q3UKPRI,Q17within_sys_sol,Wildcam Gorongosa (Zooniverse),1
+AE1YA7Q3UKPRI,Q18ans_recog,Wildcam Gorongosa (Zooniverse),1
+AE1YA7Q3UKPRI,Q19time_solvability,Wildcam Gorongosa (Zooniverse),1
+AE1YA7Q3UKPRI,Q20type_3_type_4,Wildcam Gorongosa (Zooniverse),1
+AE1YA7Q3UKPRI,Q22confl_tradeoffs,Wildcam Gorongosa (Zooniverse),-1
+AE1YA7Q3UKPRI,Q23ss_out_uncert,Wildcam Gorongosa (Zooniverse),1
+AE1YA7Q3UKPRI,Q24eureka_question,Wildcam Gorongosa (Zooniverse),-1
 AWAW665TQQP2F,Q1concept_behav,Recall stories,-1
 AWAW665TQQP2F,Q3type_1_planning,Recall stories,-1
 AWAW665TQQP2F,Q4type_2_generate,Recall stories,1
@@ -21119,6 +21399,26 @@ A1JED1RJM2C9MS,Q20type_3_type_4,9 Dot Problem,1
 A1JED1RJM2C9MS,Q22confl_tradeoffs,9 Dot Problem,-1
 A1JED1RJM2C9MS,Q23ss_out_uncert,9 Dot Problem,-1
 A1JED1RJM2C9MS,Q24eureka_question,9 Dot Problem,1
+A17KN7NAP48L4B,Q1concept_behav,Wildcam Gorongosa (Zooniverse),-1
+A17KN7NAP48L4B,Q3type_1_planning,Wildcam Gorongosa (Zooniverse),-1
+A17KN7NAP48L4B,Q4type_2_generate,Wildcam Gorongosa (Zooniverse),-1
+A17KN7NAP48L4B,Q6type_5_cc,Wildcam Gorongosa (Zooniverse),-1
+A17KN7NAP48L4B,Q7type_7_battle,Wildcam Gorongosa (Zooniverse),-1
+A17KN7NAP48L4B,Q8type_8_performance,Wildcam Gorongosa (Zooniverse),-1
+A17KN7NAP48L4B,Q9divisible_unitary,Wildcam Gorongosa (Zooniverse),1
+A17KN7NAP48L4B,Q10maximizing,Wildcam Gorongosa (Zooniverse),1
+A17KN7NAP48L4B,Q11optimizing,Wildcam Gorongosa (Zooniverse),1
+A17KN7NAP48L4B,Q13outcome_multip,Wildcam Gorongosa (Zooniverse),1
+A17KN7NAP48L4B,Q14sol_scheme_mul,Wildcam Gorongosa (Zooniverse),1
+A17KN7NAP48L4B,Q15dec_verifiability,Wildcam Gorongosa (Zooniverse),1
+A17KN7NAP48L4B,Q16shared_knowledge,Wildcam Gorongosa (Zooniverse),1
+A17KN7NAP48L4B,Q17within_sys_sol,Wildcam Gorongosa (Zooniverse),1
+A17KN7NAP48L4B,Q18ans_recog,Wildcam Gorongosa (Zooniverse),1
+A17KN7NAP48L4B,Q19time_solvability,Wildcam Gorongosa (Zooniverse),1
+A17KN7NAP48L4B,Q20type_3_type_4,Wildcam Gorongosa (Zooniverse),1
+A17KN7NAP48L4B,Q22confl_tradeoffs,Wildcam Gorongosa (Zooniverse),-1
+A17KN7NAP48L4B,Q23ss_out_uncert,Wildcam Gorongosa (Zooniverse),1
+A17KN7NAP48L4B,Q24eureka_question,Wildcam Gorongosa (Zooniverse),-1
 A17FGZ1I5P9RZA,Q1concept_behav,Visual Oddball Target,-1
 A17FGZ1I5P9RZA,Q3type_1_planning,Visual Oddball Target,-1
 A17FGZ1I5P9RZA,Q4type_2_generate,Visual Oddball Target,-1
@@ -21939,6 +22239,26 @@ A3HL2LL0LEPZT8,Q20type_3_type_4,Letters-to-numbers problems (cryptography),1
 A3HL2LL0LEPZT8,Q22confl_tradeoffs,Letters-to-numbers problems (cryptography),-1
 A3HL2LL0LEPZT8,Q23ss_out_uncert,Letters-to-numbers problems (cryptography),1
 A3HL2LL0LEPZT8,Q24eureka_question,Letters-to-numbers problems (cryptography),1
+A3CGQOJC28OVGN,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+A3CGQOJC28OVGN,Q3type_1_planning,Object based generalization for reasoning (Phyre),-1
+A3CGQOJC28OVGN,Q4type_2_generate,Object based generalization for reasoning (Phyre),-1
+A3CGQOJC28OVGN,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+A3CGQOJC28OVGN,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+A3CGQOJC28OVGN,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+A3CGQOJC28OVGN,Q9divisible_unitary,Object based generalization for reasoning (Phyre),-1
+A3CGQOJC28OVGN,Q10maximizing,Object based generalization for reasoning (Phyre),1
+A3CGQOJC28OVGN,Q11optimizing,Object based generalization for reasoning (Phyre),1
+A3CGQOJC28OVGN,Q13outcome_multip,Object based generalization for reasoning (Phyre),-1
+A3CGQOJC28OVGN,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+A3CGQOJC28OVGN,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+A3CGQOJC28OVGN,Q16shared_knowledge,Object based generalization for reasoning (Phyre),-1
+A3CGQOJC28OVGN,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+A3CGQOJC28OVGN,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+A3CGQOJC28OVGN,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+A3CGQOJC28OVGN,Q20type_3_type_4,Object based generalization for reasoning (Phyre),1
+A3CGQOJC28OVGN,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),1
+A3CGQOJC28OVGN,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),-1
+A3CGQOJC28OVGN,Q24eureka_question,Object based generalization for reasoning (Phyre),-1
 A33PHCBUOD4WKD,Q1concept_behav,"Rank cities by population, rank words by familiarity",-1
 A33PHCBUOD4WKD,Q3type_1_planning,"Rank cities by population, rank words by familiarity",-1
 A33PHCBUOD4WKD,Q4type_2_generate,"Rank cities by population, rank words by familiarity",-1
@@ -22919,6 +23239,26 @@ A3S5ZB4D98JWT1,Q20type_3_type_4,Find the maximum,1
 A3S5ZB4D98JWT1,Q22confl_tradeoffs,Find the maximum,-1
 A3S5ZB4D98JWT1,Q23ss_out_uncert,Find the maximum,1
 A3S5ZB4D98JWT1,Q24eureka_question,Find the maximum,-1
+AONSG5WOC3OX0,Q1concept_behav,Wildcam Gorongosa (Zooniverse),-1
+AONSG5WOC3OX0,Q3type_1_planning,Wildcam Gorongosa (Zooniverse),-1
+AONSG5WOC3OX0,Q4type_2_generate,Wildcam Gorongosa (Zooniverse),-1
+AONSG5WOC3OX0,Q6type_5_cc,Wildcam Gorongosa (Zooniverse),-1
+AONSG5WOC3OX0,Q7type_7_battle,Wildcam Gorongosa (Zooniverse),-1
+AONSG5WOC3OX0,Q8type_8_performance,Wildcam Gorongosa (Zooniverse),-1
+AONSG5WOC3OX0,Q9divisible_unitary,Wildcam Gorongosa (Zooniverse),1
+AONSG5WOC3OX0,Q10maximizing,Wildcam Gorongosa (Zooniverse),1
+AONSG5WOC3OX0,Q11optimizing,Wildcam Gorongosa (Zooniverse),1
+AONSG5WOC3OX0,Q13outcome_multip,Wildcam Gorongosa (Zooniverse),1
+AONSG5WOC3OX0,Q14sol_scheme_mul,Wildcam Gorongosa (Zooniverse),1
+AONSG5WOC3OX0,Q15dec_verifiability,Wildcam Gorongosa (Zooniverse),1
+AONSG5WOC3OX0,Q16shared_knowledge,Wildcam Gorongosa (Zooniverse),1
+AONSG5WOC3OX0,Q17within_sys_sol,Wildcam Gorongosa (Zooniverse),1
+AONSG5WOC3OX0,Q18ans_recog,Wildcam Gorongosa (Zooniverse),1
+AONSG5WOC3OX0,Q19time_solvability,Wildcam Gorongosa (Zooniverse),-1
+AONSG5WOC3OX0,Q20type_3_type_4,Wildcam Gorongosa (Zooniverse),1
+AONSG5WOC3OX0,Q22confl_tradeoffs,Wildcam Gorongosa (Zooniverse),-1
+AONSG5WOC3OX0,Q23ss_out_uncert,Wildcam Gorongosa (Zooniverse),-1
+AONSG5WOC3OX0,Q24eureka_question,Wildcam Gorongosa (Zooniverse),-1
 A1I72NHC21347A,Q1concept_behav,Carter Racing,-1
 A1I72NHC21347A,Q3type_1_planning,Carter Racing,-1
 A1I72NHC21347A,Q4type_2_generate,Carter Racing,-1
@@ -26099,6 +26439,26 @@ A2S64AUN7JI7ZS,Q20type_3_type_4,Word construction from a subset of letters,1
 A2S64AUN7JI7ZS,Q22confl_tradeoffs,Word construction from a subset of letters,-1
 A2S64AUN7JI7ZS,Q23ss_out_uncert,Word construction from a subset of letters,1
 A2S64AUN7JI7ZS,Q24eureka_question,Word construction from a subset of letters,-1
+A3NXT3OVGL7QNR,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+A3NXT3OVGL7QNR,Q3type_1_planning,Object based generalization for reasoning (Phyre),-1
+A3NXT3OVGL7QNR,Q4type_2_generate,Object based generalization for reasoning (Phyre),1
+A3NXT3OVGL7QNR,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+A3NXT3OVGL7QNR,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+A3NXT3OVGL7QNR,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+A3NXT3OVGL7QNR,Q9divisible_unitary,Object based generalization for reasoning (Phyre),1
+A3NXT3OVGL7QNR,Q10maximizing,Object based generalization for reasoning (Phyre),1
+A3NXT3OVGL7QNR,Q11optimizing,Object based generalization for reasoning (Phyre),-1
+A3NXT3OVGL7QNR,Q13outcome_multip,Object based generalization for reasoning (Phyre),1
+A3NXT3OVGL7QNR,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+A3NXT3OVGL7QNR,Q15dec_verifiability,Object based generalization for reasoning (Phyre),-1
+A3NXT3OVGL7QNR,Q16shared_knowledge,Object based generalization for reasoning (Phyre),-1
+A3NXT3OVGL7QNR,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+A3NXT3OVGL7QNR,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+A3NXT3OVGL7QNR,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+A3NXT3OVGL7QNR,Q20type_3_type_4,Object based generalization for reasoning (Phyre),NA
+A3NXT3OVGL7QNR,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),1
+A3NXT3OVGL7QNR,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),-1
+A3NXT3OVGL7QNR,Q24eureka_question,Object based generalization for reasoning (Phyre),-1
 A3EUGO4VR2N4G1,Q1concept_behav,Game of Clue - Terrorist Attack,-1
 A3EUGO4VR2N4G1,Q3type_1_planning,Game of Clue - Terrorist Attack,1
 A3EUGO4VR2N4G1,Q4type_2_generate,Game of Clue - Terrorist Attack,1
@@ -26499,6 +26859,26 @@ A18T7E73TNGOKP,Q20type_3_type_4,Recall videos,1
 A18T7E73TNGOKP,Q22confl_tradeoffs,Recall videos,-1
 A18T7E73TNGOKP,Q23ss_out_uncert,Recall videos,1
 A18T7E73TNGOKP,Q24eureka_question,Recall videos,-1
+A2615YW1YERQBO,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+A2615YW1YERQBO,Q3type_1_planning,Object based generalization for reasoning (Phyre),-1
+A2615YW1YERQBO,Q4type_2_generate,Object based generalization for reasoning (Phyre),-1
+A2615YW1YERQBO,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+A2615YW1YERQBO,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+A2615YW1YERQBO,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+A2615YW1YERQBO,Q9divisible_unitary,Object based generalization for reasoning (Phyre),-1
+A2615YW1YERQBO,Q10maximizing,Object based generalization for reasoning (Phyre),1
+A2615YW1YERQBO,Q11optimizing,Object based generalization for reasoning (Phyre),-1
+A2615YW1YERQBO,Q13outcome_multip,Object based generalization for reasoning (Phyre),1
+A2615YW1YERQBO,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+A2615YW1YERQBO,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+A2615YW1YERQBO,Q16shared_knowledge,Object based generalization for reasoning (Phyre),1
+A2615YW1YERQBO,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+A2615YW1YERQBO,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+A2615YW1YERQBO,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+A2615YW1YERQBO,Q20type_3_type_4,Object based generalization for reasoning (Phyre),1
+A2615YW1YERQBO,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),-1
+A2615YW1YERQBO,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),-1
+A2615YW1YERQBO,Q24eureka_question,Object based generalization for reasoning (Phyre),-1
 A17KN7NAP48L4B,Q1concept_behav,Summarize Discussion,-1
 A17KN7NAP48L4B,Q3type_1_planning,Summarize Discussion,-1
 A17KN7NAP48L4B,Q4type_2_generate,Summarize Discussion,-1
@@ -27979,6 +28359,26 @@ A2OVX9UW5WANQE,Q20type_3_type_4,Word completion given starting letter,1
 A2OVX9UW5WANQE,Q22confl_tradeoffs,Word completion given starting letter,-1
 A2OVX9UW5WANQE,Q23ss_out_uncert,Word completion given starting letter,-1
 A2OVX9UW5WANQE,Q24eureka_question,Word completion given starting letter,-1
+A230VUDYOCRZ4N,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+A230VUDYOCRZ4N,Q3type_1_planning,Object based generalization for reasoning (Phyre),1
+A230VUDYOCRZ4N,Q4type_2_generate,Object based generalization for reasoning (Phyre),1
+A230VUDYOCRZ4N,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+A230VUDYOCRZ4N,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+A230VUDYOCRZ4N,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+A230VUDYOCRZ4N,Q9divisible_unitary,Object based generalization for reasoning (Phyre),-1
+A230VUDYOCRZ4N,Q10maximizing,Object based generalization for reasoning (Phyre),1
+A230VUDYOCRZ4N,Q11optimizing,Object based generalization for reasoning (Phyre),1
+A230VUDYOCRZ4N,Q13outcome_multip,Object based generalization for reasoning (Phyre),1
+A230VUDYOCRZ4N,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),1
+A230VUDYOCRZ4N,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+A230VUDYOCRZ4N,Q16shared_knowledge,Object based generalization for reasoning (Phyre),1
+A230VUDYOCRZ4N,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+A230VUDYOCRZ4N,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+A230VUDYOCRZ4N,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+A230VUDYOCRZ4N,Q20type_3_type_4,Object based generalization for reasoning (Phyre),1
+A230VUDYOCRZ4N,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),-1
+A230VUDYOCRZ4N,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),1
+A230VUDYOCRZ4N,Q24eureka_question,Object based generalization for reasoning (Phyre),1
 A1ZE87WEYCA44A,Q1concept_behav,Room assignment task,-1
 A1ZE87WEYCA44A,Q3type_1_planning,Room assignment task,1
 A1ZE87WEYCA44A,Q4type_2_generate,Room assignment task,-1
@@ -28119,6 +28519,26 @@ A2UKCO1M1MEMZW,Q20type_3_type_4,Word construction from a subset of letters,1
 A2UKCO1M1MEMZW,Q22confl_tradeoffs,Word construction from a subset of letters,-1
 A2UKCO1M1MEMZW,Q23ss_out_uncert,Word construction from a subset of letters,NA
 A2UKCO1M1MEMZW,Q24eureka_question,Word construction from a subset of letters,NA
+AW5O1RK3W60FC,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+AW5O1RK3W60FC,Q3type_1_planning,Object based generalization for reasoning (Phyre),-1
+AW5O1RK3W60FC,Q4type_2_generate,Object based generalization for reasoning (Phyre),-1
+AW5O1RK3W60FC,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+AW5O1RK3W60FC,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+AW5O1RK3W60FC,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+AW5O1RK3W60FC,Q9divisible_unitary,Object based generalization for reasoning (Phyre),1
+AW5O1RK3W60FC,Q10maximizing,Object based generalization for reasoning (Phyre),1
+AW5O1RK3W60FC,Q11optimizing,Object based generalization for reasoning (Phyre),1
+AW5O1RK3W60FC,Q13outcome_multip,Object based generalization for reasoning (Phyre),1
+AW5O1RK3W60FC,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+AW5O1RK3W60FC,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+AW5O1RK3W60FC,Q16shared_knowledge,Object based generalization for reasoning (Phyre),-1
+AW5O1RK3W60FC,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+AW5O1RK3W60FC,Q18ans_recog,Object based generalization for reasoning (Phyre),-1
+AW5O1RK3W60FC,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+AW5O1RK3W60FC,Q20type_3_type_4,Object based generalization for reasoning (Phyre),1
+AW5O1RK3W60FC,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),-1
+AW5O1RK3W60FC,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),1
+AW5O1RK3W60FC,Q24eureka_question,Object based generalization for reasoning (Phyre),-1
 A1X9RXT7MI571,Q1concept_behav,Target Search,-1
 A1X9RXT7MI571,Q3type_1_planning,Target Search,-1
 A1X9RXT7MI571,Q4type_2_generate,Target Search,-1
@@ -29639,6 +30059,26 @@ AONSG5WOC3OX0,Q20type_3_type_4,Find the maximum,1
 AONSG5WOC3OX0,Q22confl_tradeoffs,Find the maximum,-1
 AONSG5WOC3OX0,Q23ss_out_uncert,Find the maximum,1
 AONSG5WOC3OX0,Q24eureka_question,Find the maximum,-1
+ARYL3C6N9SVV1,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+ARYL3C6N9SVV1,Q3type_1_planning,Object based generalization for reasoning (Phyre),-1
+ARYL3C6N9SVV1,Q4type_2_generate,Object based generalization for reasoning (Phyre),-1
+ARYL3C6N9SVV1,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+ARYL3C6N9SVV1,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+ARYL3C6N9SVV1,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+ARYL3C6N9SVV1,Q9divisible_unitary,Object based generalization for reasoning (Phyre),1
+ARYL3C6N9SVV1,Q10maximizing,Object based generalization for reasoning (Phyre),1
+ARYL3C6N9SVV1,Q11optimizing,Object based generalization for reasoning (Phyre),1
+ARYL3C6N9SVV1,Q13outcome_multip,Object based generalization for reasoning (Phyre),1
+ARYL3C6N9SVV1,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+ARYL3C6N9SVV1,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+ARYL3C6N9SVV1,Q16shared_knowledge,Object based generalization for reasoning (Phyre),-1
+ARYL3C6N9SVV1,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+ARYL3C6N9SVV1,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+ARYL3C6N9SVV1,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+ARYL3C6N9SVV1,Q20type_3_type_4,Object based generalization for reasoning (Phyre),1
+ARYL3C6N9SVV1,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),1
+ARYL3C6N9SVV1,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),-1
+ARYL3C6N9SVV1,Q24eureka_question,Object based generalization for reasoning (Phyre),-1
 A230VUDYOCRZ4N,Q1concept_behav,"Wolf, goat and cabbage transfer",-1
 A230VUDYOCRZ4N,Q3type_1_planning,"Wolf, goat and cabbage transfer",1
 A230VUDYOCRZ4N,Q4type_2_generate,"Wolf, goat and cabbage transfer",1
@@ -30879,6 +31319,26 @@ A32YYM8WVR8B7S,Q20type_3_type_4,Word completion given part of word,1
 A32YYM8WVR8B7S,Q22confl_tradeoffs,Word completion given part of word,-1
 A32YYM8WVR8B7S,Q23ss_out_uncert,Word completion given part of word,-1
 A32YYM8WVR8B7S,Q24eureka_question,Word completion given part of word,-1
+A2TLN8489YGY81,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+A2TLN8489YGY81,Q3type_1_planning,Object based generalization for reasoning (Phyre),-1
+A2TLN8489YGY81,Q4type_2_generate,Object based generalization for reasoning (Phyre),-1
+A2TLN8489YGY81,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+A2TLN8489YGY81,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+A2TLN8489YGY81,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+A2TLN8489YGY81,Q9divisible_unitary,Object based generalization for reasoning (Phyre),1
+A2TLN8489YGY81,Q10maximizing,Object based generalization for reasoning (Phyre),1
+A2TLN8489YGY81,Q11optimizing,Object based generalization for reasoning (Phyre),1
+A2TLN8489YGY81,Q13outcome_multip,Object based generalization for reasoning (Phyre),1
+A2TLN8489YGY81,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+A2TLN8489YGY81,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+A2TLN8489YGY81,Q16shared_knowledge,Object based generalization for reasoning (Phyre),-1
+A2TLN8489YGY81,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+A2TLN8489YGY81,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+A2TLN8489YGY81,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+A2TLN8489YGY81,Q20type_3_type_4,Object based generalization for reasoning (Phyre),1
+A2TLN8489YGY81,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),-1
+A2TLN8489YGY81,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),-1
+A2TLN8489YGY81,Q24eureka_question,Object based generalization for reasoning (Phyre),1
 A1NLP66FKHBS4V,Q1concept_behav,Trivia Multiple Choice Quiz,-1
 A1NLP66FKHBS4V,Q3type_1_planning,Trivia Multiple Choice Quiz,-1
 A1NLP66FKHBS4V,Q4type_2_generate,Trivia Multiple Choice Quiz,-1
@@ -31339,6 +31799,26 @@ A2OVX9UW5WANQE,Q20type_3_type_4,Search for Oil Task,1
 A2OVX9UW5WANQE,Q22confl_tradeoffs,Search for Oil Task,-1
 A2OVX9UW5WANQE,Q23ss_out_uncert,Search for Oil Task,-1
 A2OVX9UW5WANQE,Q24eureka_question,Search for Oil Task,-1
+A6JKKANO7F4KD,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+A6JKKANO7F4KD,Q3type_1_planning,Object based generalization for reasoning (Phyre),-1
+A6JKKANO7F4KD,Q4type_2_generate,Object based generalization for reasoning (Phyre),-1
+A6JKKANO7F4KD,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+A6JKKANO7F4KD,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+A6JKKANO7F4KD,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+A6JKKANO7F4KD,Q9divisible_unitary,Object based generalization for reasoning (Phyre),-1
+A6JKKANO7F4KD,Q10maximizing,Object based generalization for reasoning (Phyre),1
+A6JKKANO7F4KD,Q11optimizing,Object based generalization for reasoning (Phyre),-1
+A6JKKANO7F4KD,Q13outcome_multip,Object based generalization for reasoning (Phyre),1
+A6JKKANO7F4KD,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+A6JKKANO7F4KD,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+A6JKKANO7F4KD,Q16shared_knowledge,Object based generalization for reasoning (Phyre),-1
+A6JKKANO7F4KD,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+A6JKKANO7F4KD,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+A6JKKANO7F4KD,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+A6JKKANO7F4KD,Q20type_3_type_4,Object based generalization for reasoning (Phyre),1
+A6JKKANO7F4KD,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),-1
+A6JKKANO7F4KD,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),-1
+A6JKKANO7F4KD,Q24eureka_question,Object based generalization for reasoning (Phyre),-1
 A17KN7NAP48L4B,Q1concept_behav,Crisis mapping,-1
 A17KN7NAP48L4B,Q3type_1_planning,Crisis mapping,-1
 A17KN7NAP48L4B,Q4type_2_generate,Crisis mapping,-1
@@ -31379,6 +31859,26 @@ A5NE8TWS8ZV7B,Q20type_3_type_4,Trivia Multiple Choice Quiz,1
 A5NE8TWS8ZV7B,Q22confl_tradeoffs,Trivia Multiple Choice Quiz,-1
 A5NE8TWS8ZV7B,Q23ss_out_uncert,Trivia Multiple Choice Quiz,1
 A5NE8TWS8ZV7B,Q24eureka_question,Trivia Multiple Choice Quiz,-1
+A1YSYI926BBOHW,Q1concept_behav,Object based generalization for reasoning (Phyre),-1
+A1YSYI926BBOHW,Q3type_1_planning,Object based generalization for reasoning (Phyre),1
+A1YSYI926BBOHW,Q4type_2_generate,Object based generalization for reasoning (Phyre),-1
+A1YSYI926BBOHW,Q6type_5_cc,Object based generalization for reasoning (Phyre),-1
+A1YSYI926BBOHW,Q7type_7_battle,Object based generalization for reasoning (Phyre),-1
+A1YSYI926BBOHW,Q8type_8_performance,Object based generalization for reasoning (Phyre),-1
+A1YSYI926BBOHW,Q9divisible_unitary,Object based generalization for reasoning (Phyre),-1
+A1YSYI926BBOHW,Q10maximizing,Object based generalization for reasoning (Phyre),-1
+A1YSYI926BBOHW,Q11optimizing,Object based generalization for reasoning (Phyre),-1
+A1YSYI926BBOHW,Q13outcome_multip,Object based generalization for reasoning (Phyre),1
+A1YSYI926BBOHW,Q14sol_scheme_mul,Object based generalization for reasoning (Phyre),-1
+A1YSYI926BBOHW,Q15dec_verifiability,Object based generalization for reasoning (Phyre),1
+A1YSYI926BBOHW,Q16shared_knowledge,Object based generalization for reasoning (Phyre),-1
+A1YSYI926BBOHW,Q17within_sys_sol,Object based generalization for reasoning (Phyre),1
+A1YSYI926BBOHW,Q18ans_recog,Object based generalization for reasoning (Phyre),1
+A1YSYI926BBOHW,Q19time_solvability,Object based generalization for reasoning (Phyre),1
+A1YSYI926BBOHW,Q20type_3_type_4,Object based generalization for reasoning (Phyre),1
+A1YSYI926BBOHW,Q22confl_tradeoffs,Object based generalization for reasoning (Phyre),-1
+A1YSYI926BBOHW,Q23ss_out_uncert,Object based generalization for reasoning (Phyre),-1
+A1YSYI926BBOHW,Q24eureka_question,Object based generalization for reasoning (Phyre),-1
 A1VRG5HKZC0H0C,Q1concept_behav,The Fish game,-1
 A1VRG5HKZC0H0C,Q3type_1_planning,The Fish game,-1
 A1VRG5HKZC0H0C,Q4type_2_generate,The Fish game,-1
