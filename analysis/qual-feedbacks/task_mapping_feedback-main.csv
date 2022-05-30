@@ -220,6 +220,17 @@ Desert survival,Q20type_3_type_4_elaboration,The group does not know the final l
 Desert survival,Q21intellective_judg_1_elaboration,This is a mix of logic (what makes sense) vs. subjective (what feels right)
 Divergent Association Task,Q9divisible_unitary_elaboration,No team work
 Divergent Association Task,Q24eureka_question_elaboration,There is no trick involved in this solution.
+Divergent Association Task,Q4type_2_generate_elaboration,You are possibly brainstorming to determine which words are different in your list
+Divergent Association Task,Q5creativity_input_1_elaboration,Coming up with 10 different nouns requires a certain level of creativity 
+Divergent Association Task,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, since the goal is to maximize points I assume it's against another person or team"
+Divergent Association Task,Q8type_8_performance_elaboration,It's based on the highest score not pass/fail
+Divergent Association Task,Q10maximizing_elaboration,It is a timed task
+Divergent Association Task,Q13outcome_multip_elaboration,The best solution would be a maximum score where words have the least possible relation to each other
+Divergent Association Task,Q15dec_verifiability_elaboration,I would assume you could verify that the nouns are different
+Divergent Association Task,Q16shared_knowledge_elaboration,I would assume that an algorithm could solve this 
+Divergent Association Task,Q17within_sys_sol_elaboration,"It's more of a subjective list with one rule, I'm not sure that it's an information based task"
+Divergent Association Task,Q19time_solvability_elaboration,You should be able to show that the nouns are different
+Divergent Association Task,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the answers correct or not
 Divergent Association Task,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Divergent Association Task,Q15dec_verifiability_elaboration,I believe a word expert could determine semantic distance
 Divergent Association Task,Q17within_sys_sol_elaboration,If there were semantic rules already established then there could be a solution based on that data
@@ -272,6 +283,10 @@ Estimating social quantity,Q9divisible_unitary_elaboration,No team work
 Estimating social quantity,Q17within_sys_sol_elaboration,They need to use the knowledge they know and may or may not know this information since they cant look it up
 Estimating social quantity,Q23ss_out_uncert_elaboration,Does not say when they see results
 Estimating social quantity,Q16shared_knowledge_elaboration,"I think it really depends on what the algorithm has been learning. If it's learned about this specific topic, then I would yes, it could probably solve this. But if it's just an algorithm that hasn't been learning anything about this phenomena, then probably not. However, it may still be able to give estimates comparable to that of human participants, especially if they're just guessing."
+Euclidean traveling salesperson,Q5creativity_input_1_elaboration,"I don’t see much creativity possible, almost purely logical"
+Euclidean traveling salesperson,Q10maximizing_elaboration,"As short as possible, in this case "
+Euclidean traveling salesperson,Q14sol_scheme_mul_elaboration,"There is only one optimal path, but lost of paths that will give points, so this question was a little hard to answer"
+Euclidean traveling salesperson,Q16shared_knowledge_elaboration,I THINK this can be solved algorithically
 Euclidean traveling salesperson,Q9divisible_unitary_elaboration,All participants are working on individual screens
 Euclidean traveling salesperson,Q3type_1_planning_elaboration,Seems more like actively participating than planning.
 Euclidean traveling salesperson,Q10maximizing_elaboration,Goal is to find the shortest path which is similar to as rapidly as possible.
@@ -290,13 +305,27 @@ Euclidean traveling salesperson,Q15dec_verifiability_elaboration,There is a quic
 Euclidean traveling salesperson,Q16shared_knowledge_elaboration,I would assume that an algorithm could solve this 
 Euclidean traveling salesperson,Q18ans_recog_elaboration,"It states "" they will not be told that they have reached the optimum"""
 Euclidean traveling salesperson,Q23ss_out_uncert_elaboration,"It states "" they will not be told that they have reached the optimum"""
+Euclidean traveling salesperson,Q18ans_recog_elaboration,"The fact that ""but they will not be told that they have reached the optimum."" compels me to say ""No"""
 Find the maximum,Q13outcome_multip_elaboration,The participant is not being told everything
+Find the maximum,Q4type_2_generate_elaboration,There may be brainstorming involved as they interpret the feedback 
+Find the maximum,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, since the goal is to maximize points I assume it's against another person or team"
+Find the maximum,Q8type_8_performance_elaboration,It's based on the highest score not pass/fail
+Find the maximum,Q10maximizing_elaboration,There are a limited number of guesses but it doesn't state that it's timed
+Find the maximum,Q15dec_verifiability_elaboration,They will not be told what the correct answer is until afterwards
+Find the maximum,Q16shared_knowledge_elaboration,I would assume that an algorithm could solve this 
+Find the maximum,Q17within_sys_sol_elaboration,"You receive feedback to help find the answer, but even if you guess correctly you won't know"
+Find the maximum,Q18ans_recog_elaboration,"It states ""participants are not told that they have found the correct answer even when they submit it as their guess. """
+Find the maximum,Q19time_solvability_elaboration,"It states ""participants are not told that they have found the correct answer even when they submit it as their guess. """
+Find the maximum,Q23ss_out_uncert_elaboration,"It states ""participants are not told that they have found the correct answer even when they submit it as their guess. """
 Find the maximum,Q6type_5_cc_elaboration,If working with other participants they will need to agree on a strategy
 Find the maximum,Q9divisible_unitary_elaboration,It is stated that participants working together each gets a limited number of guesses.
 Find the maximum,Q18ans_recog_elaboration,Participants are not told the correct answer but there is an objective answer.
 Find the maximum,Q23ss_out_uncert_elaboration,This depends on individual math ability.
 Find the maximum,Q5creativity_input_1_elaboration,There would be creativity in how to structure your guesses
 Find the maximum,Q16shared_knowledge_elaboration,"I’m Not sure this is possible. It seems like it it, but I can’t tell from the instructions "
+Find the maximum,Q15dec_verifiability_elaboration,"""Participants will not be told that this is the true maximum"". Therefore, a solution cannot be proven correct even if they find the maximum."
+Find the maximum,Q16shared_knowledge_elaboration,"""Participants will not be told that this is the true maximum"". Therefore, a solution cannot be proven correct even if they find the maximum and because the algo would not know this either, it cannot be solved by an algorithm."
+Find the maximum,Q17within_sys_sol_elaboration,"Because the task does not tell a participant that they correctly reach the true maximum, there is not enough information for the problem to be solved."
 Find the maximum,Q9divisible_unitary_elaboration,Seems like they make individual guesses then come together at the end.
 Find the maximum,Q10maximizing_elaboration,They are trying to maximize points.
 Game of Clue - Terrorist Attack,Q16shared_knowledge_elaboration,"Just not sure on this one, but leaning no."
@@ -413,8 +442,35 @@ Logic Problem,Q7type_7_battle_elaboration,Everyone working together.
 Logic Problem,Q8type_8_performance_elaboration,They still get point for only getting 3 couples right.
 Logic Problem,Q9divisible_unitary_elaboration,Together in this task
 Logic Problem,Q14sol_scheme_mul_elaboration,"This one is tricky, however I feel like there are normally many ways to solve these kinds of logic problems in that the order you use the clues can change as well as using the process of elimination. "
+Logic Problem,Q4type_2_generate_elaboration,It is a group based logic problem so I would assume there would be brainstorming
+Logic Problem,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, since the goal is to maximize points I assume it's against another person or team"
+Logic Problem,Q8type_8_performance_elaboration,It's based on the highest score not pass/fail
+Logic Problem,Q10maximizing_elaboration,It is a timed task
+Logic Problem,Q11optimizing_elaboration,The goal is to get all matched correctly
+Logic Problem,Q14sol_scheme_mul_elaboration,"Either you know the answer and select it, or you can use the process of elimination to arrive at the correct answer"
+Logic Problem,Q15dec_verifiability_elaboration,It's unclear if they inform you whether you got the correct answer after you make your choice
+Logic Problem,Q22confl_tradeoffs_elaboration,It is a logic problem that seems like it tries to intentionally trick you
+Logic Problem,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the answers correct or not
 Logic Problem,Q10maximizing_elaboration,Timed 
 Logic Problem,Q11optimizing_elaboration,"In the example, there is a precise goal of 5, but that does not mean every logic problem is the same."
+Logic Problem,Q16shared_knowledge_elaboration,Not sure. I think they can't come to a logical conclusion from text.
+Logic Problem,Q22confl_tradeoffs_elaboration,I'm assuming the info only leads you to the answer.
+Mastermind,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
+Mastermind,Q7type_7_battle_elaboration,"It's sort of implied, but I'm not sure. "
+Mastermind,Q16shared_knowledge_elaboration,"There's an element of luck here, so an AI could very easily lose or get a bad score even though the AI is playing mathematically correct."
+Mastermind,Q17within_sys_sol_elaboration,Participants can get feedback until they figure it out.
+Mastermind,Q5creativity_input_1_elaboration,Id say it is a good mixture of both creative and logic
+Mastermind,Q16shared_knowledge_elaboration,I cant imagine an algorithm but I think there IS one.
+Mastermind,Q22confl_tradeoffs_elaboration,"Since they are up against a clock thee could be tradeoffs - One way could lead to the correct answer 100% of the time, but take a long time."
+Mastermind,Q10maximizing_elaboration,It says to do it within a certain amount of time and steps.
+Mastermind,Q4type_2_generate_elaboration,You are possibly brainstorming to determine which colors and the order to begin with
+Mastermind,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, since the goal is to maximize points I assume it's against another person or team"
+Mastermind,Q8type_8_performance_elaboration,It's based on the highest score not pass/fail
+Mastermind,Q10maximizing_elaboration,"It doesn’t state that it’s a timed task, but you are trying to reach your goal in the fewest amount of moves possible"
+Mastermind,Q13outcome_multip_elaboration,If you guess all of the colors correctly and in the correct order that would be the best possible solution
+Mastermind,Q15dec_verifiability_elaboration,Participants will receive feedback immediately after to inform them how correct they were before their next turn
+Mastermind,Q18ans_recog_elaboration,Participants receive feedback after each turn
+Mastermind,Q23ss_out_uncert_elaboration,Because participants receive feedback after each turn they don’t have to wait until the game is finished to know how they did
 Moral Reasoning (Disciplinary Action Case),Q3type_1_planning_elaboration,"Yes, this is a complicated process and planning seems important.  The final part of the instructions explains what you need to looks at to arrive at a solution, so planning is involved to appease all the different members of the college and team."
 Moral Reasoning (Disciplinary Action Case),Q5creativity_input_1_elaboration,"No, yet there is likely some creativity involved in the final outcome of the task."
 Moral Reasoning (Disciplinary Action Case),Q6type_5_cc_elaboration,"No, there will be many differences of opinion regarding how to resolve this situation."
@@ -433,6 +489,7 @@ Moral Reasoning (Disciplinary Action Case),Q21intellective_judg_1_elaboration,"Y
 Moral Reasoning (Disciplinary Action Case),Q22confl_tradeoffs_elaboration,No.  Conflicts of interest arise here and there will undoubtedly be tradeoffs.
 Moral Reasoning (Disciplinary Action Case),Q23ss_out_uncert_elaboration,No.  Enough information is offered in the instructions to let us know that the participants will not know if there resolution will be accepted until after the task is complete.
 Moral Reasoning (Disciplinary Action Case),Q24eureka_question_elaboration,No.
+Moral Reasoning (Disciplinary Action Case),Q9divisible_unitary_elaboration,"It doesn't seem possible to really ""divide"" this task."
 Moral Reasoning (Disciplinary Action Case),Q24eureka_question_elaboration,There is no trick involved in this solution.
 Moral Reasoning (Disciplinary Action Case),Q9divisible_unitary_elaboration,"Participants had to try to make sense of the different stakeholders' conflicting interests, get agreement from team members, and make a final choice about how to handle the disciplinary situation"
 Moral Reasoning (Disciplinary Action Case),Q18ans_recog_elaboration,"Although there is no right or wrong course of action among the options, the goal is to select one of the courses of action."
@@ -489,6 +546,17 @@ Moral Reasoning (Disciplinary Action Case),Q18ans_recog_elaboration,It states in
 "NASA Moon survival",Q13outcome_multip_elaboration,"I base this on the language in the Objective referring to the ""true"" answer."
 Putting food into categories,Q6type_5_cc_elaboration,Different group members may have different ideas on categories
 Putting food into categories,Q19time_solvability_elaboration,"There is not a solvable problem, fully subjective"
+Putting food into categories,Q3type_1_planning_elaboration,Once you see your list of foods you would plan how to divide them
+Putting food into categories,Q4type_2_generate_elaboration,Since it's in groups I would assume there would be brainstorming
+Putting food into categories,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, since the goal is to maximize points I assume it's against another person or team"
+Putting food into categories,Q8type_8_performance_elaboration,It's based on the highest score not pass/fail
+Putting food into categories,Q9divisible_unitary_elaboration,Since it's in a group it would be wise to coordinate and break up the task
+Putting food into categories,Q10maximizing_elaboration,It is a timed task
+Putting food into categories,Q15dec_verifiability_elaboration,"Since it's a creative task there's no right or wrong answers, it's only wrong if it's a duplicate "
+Putting food into categories,Q16shared_knowledge_elaboration,I guess that an algorithm could solve this 
+Putting food into categories,Q17within_sys_sol_elaboration,"It's a creative exercise, not a right or wrong task"
+Putting food into categories,Q18ans_recog_elaboration,"It's a creative exercise, not a right or wrong task"
+Putting food into categories,Q19time_solvability_elaboration,"It's a creative exercise, not a right or wrong task"
 Putting food into categories,Q9divisible_unitary_elaboration,Divide and conquer wouldn't work well with the non-redundancy requirement.
 Putting food into categories,Q1concept_behav_elaboration,I did not need additional clarification because we are talking about ideas 
 Putting food into categories,Q2intel_manip_1_elaboration,"no, because the main purpose is to think of different strategies on how to classify the fooditems"
@@ -518,6 +586,8 @@ Railroad Route Construction game,Q22confl_tradeoffs_elaboration,"Yes, since ther
 Railroad Route Construction game,Q10maximizing_elaboration,The team is not scored based on speed but there is a strict time limit.
 Railroad Route Construction game,Q22confl_tradeoffs_elaboration,Participants seem to have limited railroad pieces and will have to decide which piece to use in certain spots.
 Railroad Route Construction game,Q9divisible_unitary_elaboration,No team work
+Railroad Route Construction game (Impossible Version),Q14sol_scheme_mul_elaboration,No one can win so not just one way to do it
+Railroad Route Construction game (Impossible Version),Q15dec_verifiability_elaboration,There is no correct way to do the task so can't show it
 Railroad Route Construction game (Impossible Version),Q14sol_scheme_mul_elaboration,"There is NO answer, so there is no way to achieve it"
 Railroad Route Construction game (Impossible Version),Q23ss_out_uncert_elaboration,"There is no solution, "
 Railroad Route Construction game (Impossible Version),Q7type_7_battle_elaboration,"If you could win this game, it would likely be a yes, but since there is no way to win the game, I would say it's not truly answerable."
@@ -530,6 +600,10 @@ Railroad Route Construction game (Impossible Version),Q16shared_knowledge_elabor
 Railroad Route Construction game (Impossible Version),Q18ans_recog_elaboration,The question seems not applicable because no one would be able to solve the problem.
 Railroad Route Construction game (Impossible Version),Q20type_3_type_4_elaboration,The question seems not applicable given the task is intentionally impossible to solve.
 Railroad Route Construction game (Impossible Version),Q21intellective_judg_1_elaboration,The question seems not applicable since the task intentionally has no solution.
+Railroad Route Construction game (Impossible Version),Q13outcome_multip_elaboration,"I said no because of the missing piece, but I suppose even with the missing piece there might be a partial pathway that is more successful than another."
+Railroad Route Construction game (Impossible Version),Q14sol_scheme_mul_elaboration,"Unclear about this, since the task cannot actually be achieved."
+Railroad Route Construction game (Impossible Version),Q16shared_knowledge_elaboration,"I said no since this problem can't be solved due to the missing piece, but in general, an algorithm could solve this type of pathway problem."
+Railroad Route Construction game (Impossible Version),Q19time_solvability_elaboration,"Again, said no because you can't solve this problem...but in theory with a pathway problem you could do both...so unsure if my answer is correct here."
 Railroad Route Construction game (Impossible Version),Q15dec_verifiability_elaboration,hard to say because there is no way to solve it
 Railroad Route Construction game (Impossible Version),Q16shared_knowledge_elaboration,"hard to say because there is no way to solve it, the algorithim could solve that it's impossible to solve, so i'm unsure"
 Railroad Route Construction game (Impossible Version),Q20type_3_type_4_elaboration,hard to say because there is no way to solve it
@@ -580,9 +654,20 @@ Railroad Route Construction game (Impossible Version),Q23ss_out_uncert_elaborati
 Railroad Route Construction game (Impossible Version),Q24eureka_question_elaboration,Once you run out of pieces and realize it can't be finished there might be an aha moment. 
 Random dot motion,Q9divisible_unitary_elaboration,No team work
 Random dot motion,Q23ss_out_uncert_elaboration,Does not say when they see results
+Random dot motion,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Random dot motion,Q2intel_manip_1_elaboration,"Though this is mainly a mental effort, eye and hand movement is require."
 Random dot motion,Q15dec_verifiability_elaboration,"There is an objectively correct answer, since the system is designed for the correlated dots to be moving in a specific direction."
 Random dot motion,Q22confl_tradeoffs_elaboration,There are correlated dots and random dots which conflict with each other.
+Random dot motion,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, since the goal is to maximize points I assume it's against another person or team"
+Random dot motion,Q8type_8_performance_elaboration,It's based on the highest score not pass/fail
+Random dot motion,Q10maximizing_elaboration,The dots are only displayed for a short amount of time
+Random dot motion,Q14sol_scheme_mul_elaboration,Observed the dots and determine the direction
+Random dot motion,Q15dec_verifiability_elaboration,It's unclear if they inform you whether you got the correct answer after you make your choice
+Random dot motion,Q16shared_knowledge_elaboration,I would assume that an algorithm could solve this 
+Random dot motion,Q18ans_recog_elaboration,It doesn't state if you receive feedback to let you know if you were right.
+Random dot motion,Q20type_3_type_4_elaboration,"It states ""There is an objectively correct answer"""
+Random dot motion,Q22confl_tradeoffs_elaboration,"Since some dots don't ""flow"" they trying to trick your eyes"
+Random dot motion,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the answers correct or not
 Random dot motion,Q2intel_manip_1_elaboration,Did not put entirely mental as task could cause some eye strain.
 Random dot motion,Q9divisible_unitary_elaboration,"I'm not clear on how many images are part of the task. If it is just the one, the answer would be no."
 Random dot motion,Q11optimizing_elaboration,There is a precise outcome participants are trying to achieve.
@@ -681,6 +766,18 @@ Recall stories,Q24eureka_question_elaboration,There is no trick involved in this
 Recall stories,Q9divisible_unitary_elaboration,"Since there is a time limit, I chose yes."
 Recall stories,Q11optimizing_elaboration,"Yes, since there will be a maximum number of questions the participant will try to answer."
 Recall stories,Q16shared_knowledge_elaboration,"No, under the premise that the model would be too advanced (machine learning)."
+Recall stories,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, since the goal is to maximize points I assume it's against another person or team"
+Recall stories,Q8type_8_performance_elaboration,It's based on the highest score not pass/fail
+Recall stories,Q10maximizing_elaboration,It is a timed task
+Recall stories,Q13outcome_multip_elaboration,Correctly answering all questions right would be difficult but it's the best solution
+Recall stories,Q14sol_scheme_mul_elaboration,Try to recall the details of the story
+Recall stories,Q15dec_verifiability_elaboration,It's unclear if they inform you whether you got the correct answer after you make your choice
+Recall stories,Q16shared_knowledge_elaboration,Because it's a memory task I would assume it's purely a human task
+Recall stories,Q18ans_recog_elaboration,It's unclear if they inform you whether you're correct or not
+Recall stories,Q19time_solvability_elaboration,It's not clear if the participants know whether their guesses are correct or not
+Recall stories,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the answers correct or not
+Recall stories,Q14sol_scheme_mul_elaboration,Depends on various memorization techniques.
+Recall stories,Q23ss_out_uncert_elaboration,Varies with memory of participants.
 Recall stories,Q9divisible_unitary_elaboration,"All participants are working individually, otherwise ""yes"""
 Recall stories,Q16shared_knowledge_elaboration,"Yes, but that would have to be a very ""smart"" algorithm/AI"
 Recall stories,Q10maximizing_elaboration,"""within a fixed amount of time"""
@@ -695,6 +792,9 @@ Recall videos,Q9divisible_unitary_elaboration,"theoretically if the video could 
 Recall videos,Q23ss_out_uncert_elaboration,"assuming they're told after each question whether they're correct, then no.  if they wait till the end to be graded, then yes"
 Recall videos,Q14sol_scheme_mul_elaboration,I feel like there could be different ways to pay attention to the video. I just don't know them all. 
 Recall videos,Q20type_3_type_4_elaboration,I think I picked the right thing. Because subjective is based on people's thoughts. 
+Recall videos,Q9divisible_unitary_elaboration,"I suppose somebody ""could"" divide and conquer on this...then vote on it?"
+Recall videos,Q16shared_knowledge_elaboration,It depends here on the video being about social dynamics or not.
+Recall videos,Q21intellective_judg_1_elaboration,"Again, depends on the content of the video."
 Recall videos,Q2intel_manip_1_elaboration,There could be some eye strain which I would consider physical effort.
 Recall videos,Q5creativity_input_1_elaboration,I am not exactly clear on what is being asked about in the video so I assumed it is straightforward.
 Recall videos,Q7type_7_battle_elaboration,The instructions do not provide the incentive for maximizing points.
@@ -712,6 +812,7 @@ Reproducing arts,Q9divisible_unitary_elaboration,One participant can work on one
 Reproducing arts,Q23ss_out_uncert_elaboration,They can compare to the target spreadsheet.
 Reproducing arts,Q2intel_manip_1_elaboration,"you have to do a lot of clicking and selecting, etc."
 Reproducing arts,Q18ans_recog_elaboration,"There is no real ""problem"", it's just copying"
+Reproducing arts,Q19time_solvability_elaboration,"Since coloring cells does not required a provable solution, I feel it's not applicable for this question. It's either you color the individual cells right or you colored it wrong. Therefore, no solution/methods to prove. "
 Reproducing arts,Q6type_5_cc_elaboration,I think group members may disagree on which cells are correct
 Reproducing arts,Q9divisible_unitary_elaboration,I think if different members remember certain quadrants it could make the task more accurate
 Reproducing arts,Q18ans_recog_elaboration,Participants won't know the answer for sure until after the end of the task
@@ -730,6 +831,8 @@ Reproducing arts,Q18ans_recog_elaboration,Either you copy it without mistakes or
 Reproducing arts,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the spreadsheet is correct or not right after they finish
 Room assignment task,Q3type_1_planning_elaboration,"This is an optimization problem, I would not count it as planning."
 Room assignment task,Q14sol_scheme_mul_elaboration,"There is an optimal arrangement, so a ""best"" way"
+Room assignment task,Q2intel_manip_1_elaboration,"Though this is mainly a mental effort, there is physical interaction required."
+Room assignment task,Q14sol_scheme_mul_elaboration,The only was to the optimal solution is by doing the task one way.
 Room assignment task,Q6type_5_cc_elaboration,"Not sure if people are performing this alone, or in groups, I assume individually."
 Room assignment task,Q9divisible_unitary_elaboration,"Hard to say, if participants mean a group of people, then yes"
 Room assignment task,Q3type_1_planning_elaboration,You have to know the rules and plan to assign students without breaking the rules
@@ -770,6 +873,7 @@ Shopping plan,Q10maximizing_elaboration,The goal is to purchase as many high-qua
 Shopping plan,Q11optimizing_elaboration,The goal is to purchase as many high-quality items as possible.
 Shopping plan,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Shopping plan,Q10maximizing_elaboration,There is a time limit so participants would need to work as quickly as possible
+Shopping plan,Q10maximizing_elaboration,"Since it is a planning task, I answered no, but if the task were enacted, maybe it would be a yes?"
 Shopping plan,Q1concept_behav_elaboration,"I'm assuming this is a theoretical trip to a grocery and not an actual trip to the store, which is why I'm answering 'mental' here."
 Shopping plan,Q9divisible_unitary_elaboration,No team work
 Shopping plan,Q23ss_out_uncert_elaboration,Does not say when they see results
@@ -836,6 +940,17 @@ Space Fortress,Q18ans_recog_elaboration,"Destroying the fortress would be the ""
 Space Fortress,Q2intel_manip_1_elaboration,This task requires good eye-hand coordination.
 Space Fortress,Q16shared_knowledge_elaboration,There is a single player and multi-player version so it depends on which one
 Sudoku,Q10maximizing_elaboration,Still unsure if time limit alone is enough to make this a yes answer or not.
+Sudoku,Q3type_1_planning_elaboration,You have to coordinate the number so they don't conflict between the rows/columns  
+Sudoku,Q4type_2_generate_elaboration,You may want to brainstorm how the numbers laid out on the puzzle before filling them in
+Sudoku,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, since the goal is to maximize points I assume it's against another person or team"
+Sudoku,Q8type_8_performance_elaboration,"For a given Sudoku puzzle, there is only one correct answer."
+Sudoku,Q10maximizing_elaboration,It doesn't state anywhere that the task is timed
+Sudoku,Q11optimizing_elaboration,"For a given Sudoku puzzle, there is only one correct answer."
+Sudoku,Q13outcome_multip_elaboration,"For a given Sudoku puzzle, there is only one correct answer."
+Sudoku,Q14sol_scheme_mul_elaboration,"For a given Sudoku puzzle, there is only one correct answer."
+Sudoku,Q16shared_knowledge_elaboration,I would assume that an algorithm could solve this 
+Sudoku,Q18ans_recog_elaboration,You should be able to see if the numbers conflict between the rows/columns 
+Sudoku,Q22confl_tradeoffs_elaboration,You may think a number works for a row but conflicts with another column
 Sudoku,Q22confl_tradeoffs_elaboration,They are working e=with chat box and may recieve different information from others but I dont think there is a trade off
 Summarize Discussion,Q22confl_tradeoffs_elaboration,"It's a fine line and I'm not sure about this answer.  There are conflicting solutions and pieces of information that come from the participants, not necessarily from the task."
 Summarize Discussion,Q23ss_out_uncert_elaboration,"Since there is no objective answer, the issue of uncertainty is really around whether they have written a quality argument."
@@ -853,6 +968,8 @@ Summarize Discussion,Q9divisible_unitary_elaboration,I think they all have to wo
 Summarize Discussion,Q10maximizing_elaboration,Timed 
 Summarize Discussion,Q18ans_recog_elaboration,graded on quality
 Summarize Discussion,Q15dec_verifiability_elaboration,this is a subjective task
+Summarize Discussion,Q17within_sys_sol_elaboration,Given the question one would have the information they needed to research
+Summarize Discussion,Q18ans_recog_elaboration,This could be opnion based- answers could vary in thr task
 Target Search,Q5creativity_input_1_elaboration,There is some creativity in the first guess then how to proceed based on feedback
 Target Search,Q9divisible_unitary_elaboration,I couldn’t even think how you would break this into independent subparts
 Target Search,Q13outcome_multip_elaboration,"There is a “max” or best, but VERY unlikely"
@@ -891,6 +1008,8 @@ The Fish game,Q8type_8_performance_elaboration,"Touching the wall means you lose
 The Fish game,Q10maximizing_elaboration,Participants try to get as many points as possible before the time limit expires.
 The Fish game,Q17within_sys_sol_elaboration,This game is by trial and error. You try to find the room offering the highest rewards.
 The Fish game,Q22confl_tradeoffs_elaboration,Participants can explore other locations in the same room and possibly not get any points or they can explore other areas for higher points or possibly zero points.
+The Fish game,Q15dec_verifiability_elaboration,I suppose in theory there is a solution where there is a maximized number of points that could be achieved in the playing field but it was not completely clear from the description
+The Fish game,Q20type_3_type_4_elaboration,"I suppose there is an outcome that would objectively have the highest score possible in the field, but I wasn't certain of this based on the information."
 The Fish game,Q9divisible_unitary_elaboration,no teams
 The Fish game,Q2intel_manip_1_elaboration,"It's not clear how much clicking is involved or what it takes to move from one location to another. This isn't a straight clicking task, but requires thinking about where to go more than actual movement."
 The Fish game,Q9divisible_unitary_elaboration,Each participant controls their own cursor
@@ -926,6 +1045,8 @@ The N light bulbs game,Q18ans_recog_elaboration,They aren't informed if they ach
 The N light bulbs game,Q22confl_tradeoffs_elaboration,The players won't know if the points shown could be improved or are the maximum allowable. 
 The N light bulbs game,Q23ss_out_uncert_elaboration,"While there is a theoretical “best” configuration, participants will not be told if they have achieved it"
 The N light bulbs game,Q3type_1_planning_elaboration,"If working in teams, everyone collectively determines the next guess."
+To evacuate or not to evacuate,Q13outcome_multip_elaboration,Kind of confusing but I guess the best solution is to not have disaster strike but you don't know
+To evacuate or not to evacuate,Q17within_sys_sol_elaboration,It doesn't tell you until the end of the game- it is just us guessing. 
 To evacuate or not to evacuate,Q1concept_behav_elaboration,This is purely a decision of whether to evacuate or not given the information provided.
 To evacuate or not to evacuate,Q8type_8_performance_elaboration,"This task has an all-or-nothing element. If you choose not to evacuate and disaster strikes, you lose everything."
 To evacuate or not to evacuate,Q9divisible_unitary_elaboration,They make their selection for evacuation individually.
@@ -968,6 +1089,7 @@ Trivia Multiple Choice Quiz,Q9divisible_unitary_elaboration,No team work
 Trivia Multiple Choice Quiz,Q23ss_out_uncert_elaboration,"depends on whether the questions get graded 1 by 1 or only at the end.  answered assuming the latter, if the former than no"
 Trivia Multiple Choice Quiz,Q9divisible_unitary_elaboration,All participants are working on individual screens
 Trivia Multiple Choice Quiz,Q18ans_recog_elaboration,This is a trivia quiz so entirely depends on the individual.
+Trivia Multiple Choice Quiz,Q5creativity_input_1_elaboration,"I think the logic of the test writer plays into these a lot. I am saying more creativity because once you ""get"" the writer of the trivia questions you can get correct answers without having even hears of the question subject."
 Trivia Multiple Choice Quiz,Q9divisible_unitary_elaboration,It would depend on how the multiple choice questions are administered. Are they given in random order? Is the question order static? 
 Typing game,Q10maximizing_elaboration,"there is a time limit and a gold standard, I suppose"
 Typing game,Q2intel_manip_1_elaboration,This task requires both mental fortitude and physical movement.
@@ -976,6 +1098,7 @@ Typing game,Q13outcome_multip_elaboration,"In general, every problem or task ten
 Typing game,Q14sol_scheme_mul_elaboration,"If working alone, I could decide to start with the longest paragraphs working down to the shortest, I could start from ending to beginning or beginning to end and so forth."
 Typing game,Q24eureka_question_elaboration,There is no trickery involved in this task.
 Typing game,Q7type_7_battle_elaboration,"I'm assuming that this is a competition, either between individuals or groups, since points are awarded and the goal is to get as many points as possible. It would be helpful if the Objective/Goal section stated if the highest point total wins"
+Typing game,Q9divisible_unitary_elaboration,Requires extra coordination if working as a team.
 Typing game,Q1concept_behav_elaboration,"Since it's a copy typing task I chose physical. The grey area comes with the group task of coordination, but overall seems a physical task."
 Typing game,Q10maximizing_elaboration,Basing it on the time limit and the direction to type as many words as they can.
 Typing game,Q16shared_knowledge_elaboration,I don't know an algo that can read graphical text files.
@@ -1022,6 +1145,8 @@ Visual Oddball Target,Q14sol_scheme_mul_elaboration,"They have to decide in a fi
 Visual Oddball Target,Q22confl_tradeoffs_elaboration,Other than working against the clock
 Visual Oddball Target,Q23ss_out_uncert_elaboration,It is not clear whether they are given immediate feedback
 Visual Oddball Target,Q23ss_out_uncert_elaboration,This depends on the participant's ability to correctly identify objects.
+Visual Oddball Target,Q8type_8_performance_elaboration,"Each visual presentation has an all or nothing answer. However, the whole task does not. For example, if a participant is presented with 6 stimuli and he gets 3 right, then, it is not all or nothing."
+Visual Oddball Target,Q23ss_out_uncert_elaboration,"In this scenario, the participant could be certain if he sees an oddball Gabor patch or he could not so, I believe this question is NA."
 Visual Oddball Target,Q9divisible_unitary_elaboration,"All participants are working individually, otherwise ""yes"""
 Visual Oddball Target,Q1concept_behav_elaboration,There is a physiological aspect to visual perception - someone with poor vision due to a physical ailment may struggle more with this visual perception task - so it was a little harder to define for me.
 Visual Oddball Target,Q11optimizing_elaboration,"I struggled somewhat with this one because there is only one correct answer to each grouping, however it isn't possible to get close to the correct answer without actually being correct, so it doesn't seem like precision is the right concept to describe it"
@@ -1038,6 +1163,7 @@ Visual Oddball Target,Q9divisible_unitary_elaboration,Set Up and Objective did n
 Wason's Selection Task,Q8type_8_performance_elaboration,"If they do not select enough cards or if they select too many cards, then they fail the task."
 Wason's Selection Task,Q9divisible_unitary_elaboration,No team work
 Wason's Selection Task,Q9divisible_unitary_elaboration,"If a team, the most intelligent should do all of the work, or at least help the others understand it."
+Wason's Selection Task,Q8type_8_performance_elaboration,It doesn't say who you are competing against or even if you are competing. 
 Whac-A-Mole,Q7type_7_battle_elaboration,"The wording is vague as stated in ""thereby maximizing their points"". It doesn't say their own points or if it is referring to their team."
 Whac-A-Mole,Q9divisible_unitary_elaboration,No discrete parts.
 Whac-A-Mole,Q15dec_verifiability_elaboration,I am not sure how this would be done based on the instructions so lean towards no.
@@ -1183,3 +1309,4 @@ Writing story,Q17within_sys_sol_elaboration,This assignment is purely subjective
 Writing story,Q22confl_tradeoffs_elaboration,"In this scenario, participants will come up with different results. Some participants will omit information to shorten response while others will include more information and will be a longer response."
 Writing story,Q23ss_out_uncert_elaboration,There is no right answer. This is purely subjective task.
 Writing story,Q24eureka_question_elaboration,There is no trick or formula here. It is purely subjective.
+Writing story,Q11optimizing_elaboration,"no, because there are no right or wrong answers"

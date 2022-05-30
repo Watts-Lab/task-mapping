@@ -1,4 +1,64 @@
 user,question_name,task,value
+A1PZIN8H1VI6SY,Q1concept_behav,Categorization problem,-1
+A1PZIN8H1VI6SY,Q3type_1_planning,Categorization problem,-1
+A1PZIN8H1VI6SY,Q4type_2_generate,Categorization problem,-1
+A1PZIN8H1VI6SY,Q6type_5_cc,Categorization problem,-1
+A1PZIN8H1VI6SY,Q7type_7_battle,Categorization problem,-1
+A1PZIN8H1VI6SY,Q8type_8_performance,Categorization problem,1
+A1PZIN8H1VI6SY,Q9divisible_unitary,Categorization problem,-1
+A1PZIN8H1VI6SY,Q10maximizing,Categorization problem,1
+A1PZIN8H1VI6SY,Q11optimizing,Categorization problem,1
+A1PZIN8H1VI6SY,Q13outcome_multip,Categorization problem,1
+A1PZIN8H1VI6SY,Q14sol_scheme_mul,Categorization problem,1
+A1PZIN8H1VI6SY,Q15dec_verifiability,Categorization problem,1
+A1PZIN8H1VI6SY,Q16shared_knowledge,Categorization problem,-1
+A1PZIN8H1VI6SY,Q17within_sys_sol,Categorization problem,1
+A1PZIN8H1VI6SY,Q18ans_recog,Categorization problem,-1
+A1PZIN8H1VI6SY,Q19time_solvability,Categorization problem,1
+A1PZIN8H1VI6SY,Q20type_3_type_4,Categorization problem,1
+A1PZIN8H1VI6SY,Q22confl_tradeoffs,Categorization problem,-1
+A1PZIN8H1VI6SY,Q23ss_out_uncert,Categorization problem,1
+A1PZIN8H1VI6SY,Q24eureka_question,Categorization problem,-1
+A2WZTMXWD20NYE,Q1concept_behav,Mastermind,-1
+A2WZTMXWD20NYE,Q3type_1_planning,Mastermind,-1
+A2WZTMXWD20NYE,Q4type_2_generate,Mastermind,-1
+A2WZTMXWD20NYE,Q6type_5_cc,Mastermind,-1
+A2WZTMXWD20NYE,Q7type_7_battle,Mastermind,-1
+A2WZTMXWD20NYE,Q8type_8_performance,Mastermind,-1
+A2WZTMXWD20NYE,Q9divisible_unitary,Mastermind,NA
+A2WZTMXWD20NYE,Q10maximizing,Mastermind,1
+A2WZTMXWD20NYE,Q11optimizing,Mastermind,1
+A2WZTMXWD20NYE,Q13outcome_multip,Mastermind,1
+A2WZTMXWD20NYE,Q14sol_scheme_mul,Mastermind,1
+A2WZTMXWD20NYE,Q15dec_verifiability,Mastermind,1
+A2WZTMXWD20NYE,Q16shared_knowledge,Mastermind,1
+A2WZTMXWD20NYE,Q17within_sys_sol,Mastermind,1
+A2WZTMXWD20NYE,Q18ans_recog,Mastermind,1
+A2WZTMXWD20NYE,Q19time_solvability,Mastermind,1
+A2WZTMXWD20NYE,Q20type_3_type_4,Mastermind,1
+A2WZTMXWD20NYE,Q22confl_tradeoffs,Mastermind,-1
+A2WZTMXWD20NYE,Q23ss_out_uncert,Mastermind,-1
+A2WZTMXWD20NYE,Q24eureka_question,Mastermind,-1
+A272X64FOZFYLB,Q1concept_behav,Logic Problem,-1
+A272X64FOZFYLB,Q3type_1_planning,Logic Problem,-1
+A272X64FOZFYLB,Q4type_2_generate,Logic Problem,-1
+A272X64FOZFYLB,Q6type_5_cc,Logic Problem,-1
+A272X64FOZFYLB,Q7type_7_battle,Logic Problem,-1
+A272X64FOZFYLB,Q8type_8_performance,Logic Problem,-1
+A272X64FOZFYLB,Q9divisible_unitary,Logic Problem,1
+A272X64FOZFYLB,Q10maximizing,Logic Problem,-1
+A272X64FOZFYLB,Q11optimizing,Logic Problem,1
+A272X64FOZFYLB,Q13outcome_multip,Logic Problem,1
+A272X64FOZFYLB,Q14sol_scheme_mul,Logic Problem,-1
+A272X64FOZFYLB,Q15dec_verifiability,Logic Problem,1
+A272X64FOZFYLB,Q16shared_knowledge,Logic Problem,1
+A272X64FOZFYLB,Q17within_sys_sol,Logic Problem,1
+A272X64FOZFYLB,Q18ans_recog,Logic Problem,1
+A272X64FOZFYLB,Q19time_solvability,Logic Problem,1
+A272X64FOZFYLB,Q20type_3_type_4,Logic Problem,1
+A272X64FOZFYLB,Q22confl_tradeoffs,Logic Problem,-1
+A272X64FOZFYLB,Q23ss_out_uncert,Logic Problem,1
+A272X64FOZFYLB,Q24eureka_question,Logic Problem,-1
 ARYL3C6N9SVV1,Q1concept_behav,Sudoku,-1
 ARYL3C6N9SVV1,Q3type_1_planning,Sudoku,-1
 ARYL3C6N9SVV1,Q4type_2_generate,Sudoku,-1
@@ -79,6 +139,26 @@ A31BA1WLSWUSY1,Q20type_3_type_4,Reading the mind in the eyes,1
 A31BA1WLSWUSY1,Q22confl_tradeoffs,Reading the mind in the eyes,-1
 A31BA1WLSWUSY1,Q23ss_out_uncert,Reading the mind in the eyes,1
 A31BA1WLSWUSY1,Q24eureka_question,Reading the mind in the eyes,-1
+AL51KTD0WITH9,Q1concept_behav,Writing story,-1
+AL51KTD0WITH9,Q3type_1_planning,Writing story,-1
+AL51KTD0WITH9,Q4type_2_generate,Writing story,-1
+AL51KTD0WITH9,Q6type_5_cc,Writing story,-1
+AL51KTD0WITH9,Q7type_7_battle,Writing story,-1
+AL51KTD0WITH9,Q8type_8_performance,Writing story,-1
+AL51KTD0WITH9,Q9divisible_unitary,Writing story,-1
+AL51KTD0WITH9,Q10maximizing,Writing story,-1
+AL51KTD0WITH9,Q11optimizing,Writing story,-1
+AL51KTD0WITH9,Q13outcome_multip,Writing story,-1
+AL51KTD0WITH9,Q14sol_scheme_mul,Writing story,-1
+AL51KTD0WITH9,Q15dec_verifiability,Writing story,-1
+AL51KTD0WITH9,Q16shared_knowledge,Writing story,-1
+AL51KTD0WITH9,Q17within_sys_sol,Writing story,-1
+AL51KTD0WITH9,Q18ans_recog,Writing story,-1
+AL51KTD0WITH9,Q19time_solvability,Writing story,-1
+AL51KTD0WITH9,Q20type_3_type_4,Writing story,-1
+AL51KTD0WITH9,Q22confl_tradeoffs,Writing story,-1
+AL51KTD0WITH9,Q23ss_out_uncert,Writing story,-1
+AL51KTD0WITH9,Q24eureka_question,Writing story,-1
 ARYL3C6N9SVV1,Q1concept_behav,Word construction from a subset of letters,-1
 ARYL3C6N9SVV1,Q3type_1_planning,Word construction from a subset of letters,1
 ARYL3C6N9SVV1,Q4type_2_generate,Word construction from a subset of letters,1
@@ -159,6 +239,26 @@ A3CGQOJC28OVGN,Q20type_3_type_4,Room assignment task,1
 A3CGQOJC28OVGN,Q22confl_tradeoffs,Room assignment task,-1
 A3CGQOJC28OVGN,Q23ss_out_uncert,Room assignment task,1
 A3CGQOJC28OVGN,Q24eureka_question,Room assignment task,-1
+A26UIS59SY4NM6,Q1concept_behav,Arithmetic problem 1,-1
+A26UIS59SY4NM6,Q3type_1_planning,Arithmetic problem 1,-1
+A26UIS59SY4NM6,Q4type_2_generate,Arithmetic problem 1,-1
+A26UIS59SY4NM6,Q6type_5_cc,Arithmetic problem 1,-1
+A26UIS59SY4NM6,Q7type_7_battle,Arithmetic problem 1,-1
+A26UIS59SY4NM6,Q8type_8_performance,Arithmetic problem 1,-1
+A26UIS59SY4NM6,Q9divisible_unitary,Arithmetic problem 1,-1
+A26UIS59SY4NM6,Q10maximizing,Arithmetic problem 1,-1
+A26UIS59SY4NM6,Q11optimizing,Arithmetic problem 1,1
+A26UIS59SY4NM6,Q13outcome_multip,Arithmetic problem 1,1
+A26UIS59SY4NM6,Q14sol_scheme_mul,Arithmetic problem 1,-1
+A26UIS59SY4NM6,Q15dec_verifiability,Arithmetic problem 1,1
+A26UIS59SY4NM6,Q16shared_knowledge,Arithmetic problem 1,1
+A26UIS59SY4NM6,Q17within_sys_sol,Arithmetic problem 1,1
+A26UIS59SY4NM6,Q18ans_recog,Arithmetic problem 1,1
+A26UIS59SY4NM6,Q19time_solvability,Arithmetic problem 1,1
+A26UIS59SY4NM6,Q20type_3_type_4,Arithmetic problem 1,1
+A26UIS59SY4NM6,Q22confl_tradeoffs,Arithmetic problem 1,-1
+A26UIS59SY4NM6,Q23ss_out_uncert,Arithmetic problem 1,-1
+A26UIS59SY4NM6,Q24eureka_question,Arithmetic problem 1,-1
 A21VSWO39YO5KM,Q1concept_behav,Space Fortress,-1
 A21VSWO39YO5KM,Q3type_1_planning,Space Fortress,-1
 A21VSWO39YO5KM,Q4type_2_generate,Space Fortress,-1
@@ -319,6 +419,26 @@ AXPZAP62ZYWP8,Q20type_3_type_4,Allocating resources to programs,-1
 AXPZAP62ZYWP8,Q22confl_tradeoffs,Allocating resources to programs,1
 AXPZAP62ZYWP8,Q23ss_out_uncert,Allocating resources to programs,1
 AXPZAP62ZYWP8,Q24eureka_question,Allocating resources to programs,-1
+A1PZIN8H1VI6SY,Q1concept_behav,Iterative lemonade stand task,-1
+A1PZIN8H1VI6SY,Q3type_1_planning,Iterative lemonade stand task,1
+A1PZIN8H1VI6SY,Q4type_2_generate,Iterative lemonade stand task,1
+A1PZIN8H1VI6SY,Q6type_5_cc,Iterative lemonade stand task,-1
+A1PZIN8H1VI6SY,Q7type_7_battle,Iterative lemonade stand task,-1
+A1PZIN8H1VI6SY,Q8type_8_performance,Iterative lemonade stand task,-1
+A1PZIN8H1VI6SY,Q9divisible_unitary,Iterative lemonade stand task,-1
+A1PZIN8H1VI6SY,Q10maximizing,Iterative lemonade stand task,1
+A1PZIN8H1VI6SY,Q11optimizing,Iterative lemonade stand task,1
+A1PZIN8H1VI6SY,Q13outcome_multip,Iterative lemonade stand task,-1
+A1PZIN8H1VI6SY,Q14sol_scheme_mul,Iterative lemonade stand task,-1
+A1PZIN8H1VI6SY,Q15dec_verifiability,Iterative lemonade stand task,-1
+A1PZIN8H1VI6SY,Q16shared_knowledge,Iterative lemonade stand task,1
+A1PZIN8H1VI6SY,Q17within_sys_sol,Iterative lemonade stand task,1
+A1PZIN8H1VI6SY,Q18ans_recog,Iterative lemonade stand task,-1
+A1PZIN8H1VI6SY,Q19time_solvability,Iterative lemonade stand task,1
+A1PZIN8H1VI6SY,Q20type_3_type_4,Iterative lemonade stand task,-1
+A1PZIN8H1VI6SY,Q22confl_tradeoffs,Iterative lemonade stand task,1
+A1PZIN8H1VI6SY,Q23ss_out_uncert,Iterative lemonade stand task,1
+A1PZIN8H1VI6SY,Q24eureka_question,Iterative lemonade stand task,-1
 A5NE8TWS8ZV7B,Q1concept_behav,Game of Clue - Terrorist Attack,-1
 A5NE8TWS8ZV7B,Q3type_1_planning,Game of Clue - Terrorist Attack,-1
 A5NE8TWS8ZV7B,Q4type_2_generate,Game of Clue - Terrorist Attack,-1
@@ -459,6 +579,26 @@ A3I9XLIHPPWPN1,Q20type_3_type_4,Image rating,1
 A3I9XLIHPPWPN1,Q22confl_tradeoffs,Image rating,-1
 A3I9XLIHPPWPN1,Q23ss_out_uncert,Image rating,1
 A3I9XLIHPPWPN1,Q24eureka_question,Image rating,-1
+A272X64FOZFYLB,Q1concept_behav,Shopping plan,-1
+A272X64FOZFYLB,Q3type_1_planning,Shopping plan,1
+A272X64FOZFYLB,Q4type_2_generate,Shopping plan,-1
+A272X64FOZFYLB,Q6type_5_cc,Shopping plan,-1
+A272X64FOZFYLB,Q7type_7_battle,Shopping plan,-1
+A272X64FOZFYLB,Q8type_8_performance,Shopping plan,-1
+A272X64FOZFYLB,Q9divisible_unitary,Shopping plan,-1
+A272X64FOZFYLB,Q10maximizing,Shopping plan,1
+A272X64FOZFYLB,Q11optimizing,Shopping plan,1
+A272X64FOZFYLB,Q13outcome_multip,Shopping plan,1
+A272X64FOZFYLB,Q14sol_scheme_mul,Shopping plan,-1
+A272X64FOZFYLB,Q15dec_verifiability,Shopping plan,1
+A272X64FOZFYLB,Q16shared_knowledge,Shopping plan,1
+A272X64FOZFYLB,Q17within_sys_sol,Shopping plan,1
+A272X64FOZFYLB,Q18ans_recog,Shopping plan,1
+A272X64FOZFYLB,Q19time_solvability,Shopping plan,1
+A272X64FOZFYLB,Q20type_3_type_4,Shopping plan,1
+A272X64FOZFYLB,Q22confl_tradeoffs,Shopping plan,1
+A272X64FOZFYLB,Q23ss_out_uncert,Shopping plan,1
+A272X64FOZFYLB,Q24eureka_question,Shopping plan,-1
 A31BA1WLSWUSY1,Q1concept_behav,Moral Reasoning (Disciplinary Action Case),-1
 A31BA1WLSWUSY1,Q3type_1_planning,Moral Reasoning (Disciplinary Action Case),-1
 A31BA1WLSWUSY1,Q4type_2_generate,Moral Reasoning (Disciplinary Action Case),-1
@@ -519,6 +659,26 @@ AKQAI78JTXXC9,Q20type_3_type_4,Shopping plan,1
 AKQAI78JTXXC9,Q22confl_tradeoffs,Shopping plan,1
 AKQAI78JTXXC9,Q23ss_out_uncert,Shopping plan,-1
 AKQAI78JTXXC9,Q24eureka_question,Shopping plan,-1
+A26UIS59SY4NM6,Q1concept_behav,Search for Oil Task,-1
+A26UIS59SY4NM6,Q3type_1_planning,Search for Oil Task,-1
+A26UIS59SY4NM6,Q4type_2_generate,Search for Oil Task,-1
+A26UIS59SY4NM6,Q6type_5_cc,Search for Oil Task,-1
+A26UIS59SY4NM6,Q7type_7_battle,Search for Oil Task,-1
+A26UIS59SY4NM6,Q8type_8_performance,Search for Oil Task,-1
+A26UIS59SY4NM6,Q9divisible_unitary,Search for Oil Task,-1
+A26UIS59SY4NM6,Q10maximizing,Search for Oil Task,-1
+A26UIS59SY4NM6,Q11optimizing,Search for Oil Task,-1
+A26UIS59SY4NM6,Q13outcome_multip,Search for Oil Task,1
+A26UIS59SY4NM6,Q14sol_scheme_mul,Search for Oil Task,-1
+A26UIS59SY4NM6,Q15dec_verifiability,Search for Oil Task,1
+A26UIS59SY4NM6,Q16shared_knowledge,Search for Oil Task,-1
+A26UIS59SY4NM6,Q17within_sys_sol,Search for Oil Task,-1
+A26UIS59SY4NM6,Q18ans_recog,Search for Oil Task,1
+A26UIS59SY4NM6,Q19time_solvability,Search for Oil Task,1
+A26UIS59SY4NM6,Q20type_3_type_4,Search for Oil Task,1
+A26UIS59SY4NM6,Q22confl_tradeoffs,Search for Oil Task,-1
+A26UIS59SY4NM6,Q23ss_out_uncert,Search for Oil Task,1
+A26UIS59SY4NM6,Q24eureka_question,Search for Oil Task,-1
 A3HL2LL0LEPZT8,Q1concept_behav,To evacuate or not to evacuate,-1
 A3HL2LL0LEPZT8,Q3type_1_planning,To evacuate or not to evacuate,-1
 A3HL2LL0LEPZT8,Q4type_2_generate,To evacuate or not to evacuate,-1
@@ -559,6 +719,26 @@ A2TLN8489YGY81,Q20type_3_type_4,Estimating geological metrics,1
 A2TLN8489YGY81,Q22confl_tradeoffs,Estimating geological metrics,-1
 A2TLN8489YGY81,Q23ss_out_uncert,Estimating geological metrics,1
 A2TLN8489YGY81,Q24eureka_question,Estimating geological metrics,-1
+A3CGQOJC28OVGN,Q1concept_behav,Euclidean traveling salesperson,-1
+A3CGQOJC28OVGN,Q3type_1_planning,Euclidean traveling salesperson,-1
+A3CGQOJC28OVGN,Q4type_2_generate,Euclidean traveling salesperson,-1
+A3CGQOJC28OVGN,Q6type_5_cc,Euclidean traveling salesperson,-1
+A3CGQOJC28OVGN,Q7type_7_battle,Euclidean traveling salesperson,-1
+A3CGQOJC28OVGN,Q8type_8_performance,Euclidean traveling salesperson,-1
+A3CGQOJC28OVGN,Q9divisible_unitary,Euclidean traveling salesperson,-1
+A3CGQOJC28OVGN,Q10maximizing,Euclidean traveling salesperson,1
+A3CGQOJC28OVGN,Q11optimizing,Euclidean traveling salesperson,1
+A3CGQOJC28OVGN,Q13outcome_multip,Euclidean traveling salesperson,1
+A3CGQOJC28OVGN,Q14sol_scheme_mul,Euclidean traveling salesperson,1
+A3CGQOJC28OVGN,Q15dec_verifiability,Euclidean traveling salesperson,1
+A3CGQOJC28OVGN,Q16shared_knowledge,Euclidean traveling salesperson,1
+A3CGQOJC28OVGN,Q17within_sys_sol,Euclidean traveling salesperson,1
+A3CGQOJC28OVGN,Q18ans_recog,Euclidean traveling salesperson,1
+A3CGQOJC28OVGN,Q19time_solvability,Euclidean traveling salesperson,1
+A3CGQOJC28OVGN,Q20type_3_type_4,Euclidean traveling salesperson,1
+A3CGQOJC28OVGN,Q22confl_tradeoffs,Euclidean traveling salesperson,-1
+A3CGQOJC28OVGN,Q23ss_out_uncert,Euclidean traveling salesperson,1
+A3CGQOJC28OVGN,Q24eureka_question,Euclidean traveling salesperson,-1
 A3T9WZOUQGE2UW,Q1concept_behav,Logic Problem,-1
 A3T9WZOUQGE2UW,Q3type_1_planning,Logic Problem,-1
 A3T9WZOUQGE2UW,Q4type_2_generate,Logic Problem,-1
@@ -599,6 +779,26 @@ A1X9RXT7MI571,Q20type_3_type_4,Estimating geological metrics,1
 A1X9RXT7MI571,Q22confl_tradeoffs,Estimating geological metrics,-1
 A1X9RXT7MI571,Q23ss_out_uncert,Estimating geological metrics,1
 A1X9RXT7MI571,Q24eureka_question,Estimating geological metrics,-1
+A2TLN8489YGY81,Q1concept_behav,Arithmetic problem 1,-1
+A2TLN8489YGY81,Q3type_1_planning,Arithmetic problem 1,-1
+A2TLN8489YGY81,Q4type_2_generate,Arithmetic problem 1,-1
+A2TLN8489YGY81,Q6type_5_cc,Arithmetic problem 1,-1
+A2TLN8489YGY81,Q7type_7_battle,Arithmetic problem 1,-1
+A2TLN8489YGY81,Q8type_8_performance,Arithmetic problem 1,-1
+A2TLN8489YGY81,Q9divisible_unitary,Arithmetic problem 1,-1
+A2TLN8489YGY81,Q10maximizing,Arithmetic problem 1,1
+A2TLN8489YGY81,Q11optimizing,Arithmetic problem 1,1
+A2TLN8489YGY81,Q13outcome_multip,Arithmetic problem 1,1
+A2TLN8489YGY81,Q14sol_scheme_mul,Arithmetic problem 1,1
+A2TLN8489YGY81,Q15dec_verifiability,Arithmetic problem 1,1
+A2TLN8489YGY81,Q16shared_knowledge,Arithmetic problem 1,1
+A2TLN8489YGY81,Q17within_sys_sol,Arithmetic problem 1,1
+A2TLN8489YGY81,Q18ans_recog,Arithmetic problem 1,1
+A2TLN8489YGY81,Q19time_solvability,Arithmetic problem 1,1
+A2TLN8489YGY81,Q20type_3_type_4,Arithmetic problem 1,1
+A2TLN8489YGY81,Q22confl_tradeoffs,Arithmetic problem 1,-1
+A2TLN8489YGY81,Q23ss_out_uncert,Arithmetic problem 1,-1
+A2TLN8489YGY81,Q24eureka_question,Arithmetic problem 1,-1
 A1YSYI926BBOHW,Q1concept_behav,"Wolf, goat and cabbage transfer",-1
 A1YSYI926BBOHW,Q3type_1_planning,"Wolf, goat and cabbage transfer",1
 A1YSYI926BBOHW,Q4type_2_generate,"Wolf, goat and cabbage transfer",1
@@ -819,6 +1019,26 @@ A23BWWRR7J5XLS,Q20type_3_type_4,Hidden figures in a picture (Searching Task),1
 A23BWWRR7J5XLS,Q22confl_tradeoffs,Hidden figures in a picture (Searching Task),-1
 A23BWWRR7J5XLS,Q23ss_out_uncert,Hidden figures in a picture (Searching Task),-1
 A23BWWRR7J5XLS,Q24eureka_question,Hidden figures in a picture (Searching Task),-1
+A6JKKANO7F4KD,Q1concept_behav,Mastermind,-1
+A6JKKANO7F4KD,Q3type_1_planning,Mastermind,-1
+A6JKKANO7F4KD,Q4type_2_generate,Mastermind,-1
+A6JKKANO7F4KD,Q6type_5_cc,Mastermind,-1
+A6JKKANO7F4KD,Q7type_7_battle,Mastermind,1
+A6JKKANO7F4KD,Q8type_8_performance,Mastermind,-1
+A6JKKANO7F4KD,Q9divisible_unitary,Mastermind,-1
+A6JKKANO7F4KD,Q10maximizing,Mastermind,1
+A6JKKANO7F4KD,Q11optimizing,Mastermind,1
+A6JKKANO7F4KD,Q13outcome_multip,Mastermind,1
+A6JKKANO7F4KD,Q14sol_scheme_mul,Mastermind,-1
+A6JKKANO7F4KD,Q15dec_verifiability,Mastermind,1
+A6JKKANO7F4KD,Q16shared_knowledge,Mastermind,1
+A6JKKANO7F4KD,Q17within_sys_sol,Mastermind,1
+A6JKKANO7F4KD,Q18ans_recog,Mastermind,1
+A6JKKANO7F4KD,Q19time_solvability,Mastermind,1
+A6JKKANO7F4KD,Q20type_3_type_4,Mastermind,1
+A6JKKANO7F4KD,Q22confl_tradeoffs,Mastermind,-1
+A6JKKANO7F4KD,Q23ss_out_uncert,Mastermind,-1
+A6JKKANO7F4KD,Q24eureka_question,Mastermind,-1
 A272X64FOZFYLB,Q1concept_behav,Reproducing arts,1
 A272X64FOZFYLB,Q3type_1_planning,Reproducing arts,-1
 A272X64FOZFYLB,Q4type_2_generate,Reproducing arts,-1
@@ -879,6 +1099,26 @@ AXPZAP62ZYWP8,Q20type_3_type_4,Recall videos,1
 AXPZAP62ZYWP8,Q22confl_tradeoffs,Recall videos,-1
 AXPZAP62ZYWP8,Q23ss_out_uncert,Recall videos,1
 AXPZAP62ZYWP8,Q24eureka_question,Recall videos,-1
+AA5ZDXAA2DLY1,Q1concept_behav,Mastermind,-1
+AA5ZDXAA2DLY1,Q3type_1_planning,Mastermind,-1
+AA5ZDXAA2DLY1,Q4type_2_generate,Mastermind,-1
+AA5ZDXAA2DLY1,Q6type_5_cc,Mastermind,-1
+AA5ZDXAA2DLY1,Q7type_7_battle,Mastermind,-1
+AA5ZDXAA2DLY1,Q8type_8_performance,Mastermind,-1
+AA5ZDXAA2DLY1,Q9divisible_unitary,Mastermind,-1
+AA5ZDXAA2DLY1,Q10maximizing,Mastermind,1
+AA5ZDXAA2DLY1,Q11optimizing,Mastermind,1
+AA5ZDXAA2DLY1,Q13outcome_multip,Mastermind,1
+AA5ZDXAA2DLY1,Q14sol_scheme_mul,Mastermind,-1
+AA5ZDXAA2DLY1,Q15dec_verifiability,Mastermind,1
+AA5ZDXAA2DLY1,Q16shared_knowledge,Mastermind,1
+AA5ZDXAA2DLY1,Q17within_sys_sol,Mastermind,1
+AA5ZDXAA2DLY1,Q18ans_recog,Mastermind,1
+AA5ZDXAA2DLY1,Q19time_solvability,Mastermind,1
+AA5ZDXAA2DLY1,Q20type_3_type_4,Mastermind,1
+AA5ZDXAA2DLY1,Q22confl_tradeoffs,Mastermind,1
+AA5ZDXAA2DLY1,Q23ss_out_uncert,Mastermind,1
+AA5ZDXAA2DLY1,Q24eureka_question,Mastermind,-1
 AKQAI78JTXXC9,Q1concept_behav,Writing story,-1
 AKQAI78JTXXC9,Q3type_1_planning,Writing story,-1
 AKQAI78JTXXC9,Q4type_2_generate,Writing story,-1
@@ -1719,6 +1959,46 @@ ARI1EMAHUA9PO,Q20type_3_type_4,To evacuate or not to evacuate,-1
 ARI1EMAHUA9PO,Q22confl_tradeoffs,To evacuate or not to evacuate,1
 ARI1EMAHUA9PO,Q23ss_out_uncert,To evacuate or not to evacuate,1
 ARI1EMAHUA9PO,Q24eureka_question,To evacuate or not to evacuate,-1
+A1PZIN8H1VI6SY,Q1concept_behav,Mastermind,-1
+A1PZIN8H1VI6SY,Q3type_1_planning,Mastermind,1
+A1PZIN8H1VI6SY,Q4type_2_generate,Mastermind,1
+A1PZIN8H1VI6SY,Q6type_5_cc,Mastermind,-1
+A1PZIN8H1VI6SY,Q7type_7_battle,Mastermind,-1
+A1PZIN8H1VI6SY,Q8type_8_performance,Mastermind,-1
+A1PZIN8H1VI6SY,Q9divisible_unitary,Mastermind,-1
+A1PZIN8H1VI6SY,Q10maximizing,Mastermind,1
+A1PZIN8H1VI6SY,Q11optimizing,Mastermind,1
+A1PZIN8H1VI6SY,Q13outcome_multip,Mastermind,1
+A1PZIN8H1VI6SY,Q14sol_scheme_mul,Mastermind,-1
+A1PZIN8H1VI6SY,Q15dec_verifiability,Mastermind,1
+A1PZIN8H1VI6SY,Q16shared_knowledge,Mastermind,1
+A1PZIN8H1VI6SY,Q17within_sys_sol,Mastermind,1
+A1PZIN8H1VI6SY,Q18ans_recog,Mastermind,-1
+A1PZIN8H1VI6SY,Q19time_solvability,Mastermind,1
+A1PZIN8H1VI6SY,Q20type_3_type_4,Mastermind,1
+A1PZIN8H1VI6SY,Q22confl_tradeoffs,Mastermind,1
+A1PZIN8H1VI6SY,Q23ss_out_uncert,Mastermind,1
+A1PZIN8H1VI6SY,Q24eureka_question,Mastermind,-1
+ARYL3C6N9SVV1,Q1concept_behav,Visual Oddball Target,-1
+ARYL3C6N9SVV1,Q3type_1_planning,Visual Oddball Target,-1
+ARYL3C6N9SVV1,Q4type_2_generate,Visual Oddball Target,-1
+ARYL3C6N9SVV1,Q6type_5_cc,Visual Oddball Target,-1
+ARYL3C6N9SVV1,Q7type_7_battle,Visual Oddball Target,-1
+ARYL3C6N9SVV1,Q8type_8_performance,Visual Oddball Target,1
+ARYL3C6N9SVV1,Q9divisible_unitary,Visual Oddball Target,-1
+ARYL3C6N9SVV1,Q10maximizing,Visual Oddball Target,-1
+ARYL3C6N9SVV1,Q11optimizing,Visual Oddball Target,1
+ARYL3C6N9SVV1,Q13outcome_multip,Visual Oddball Target,1
+ARYL3C6N9SVV1,Q14sol_scheme_mul,Visual Oddball Target,1
+ARYL3C6N9SVV1,Q15dec_verifiability,Visual Oddball Target,1
+ARYL3C6N9SVV1,Q16shared_knowledge,Visual Oddball Target,1
+ARYL3C6N9SVV1,Q17within_sys_sol,Visual Oddball Target,1
+ARYL3C6N9SVV1,Q18ans_recog,Visual Oddball Target,1
+ARYL3C6N9SVV1,Q19time_solvability,Visual Oddball Target,NA
+ARYL3C6N9SVV1,Q20type_3_type_4,Visual Oddball Target,1
+ARYL3C6N9SVV1,Q22confl_tradeoffs,Visual Oddball Target,1
+ARYL3C6N9SVV1,Q23ss_out_uncert,Visual Oddball Target,NA
+ARYL3C6N9SVV1,Q24eureka_question,Visual Oddball Target,-1
 A18T7E73TNGOKP,Q1concept_behav,Word completion given part of word,-1
 A18T7E73TNGOKP,Q3type_1_planning,Word completion given part of word,-1
 A18T7E73TNGOKP,Q4type_2_generate,Word completion given part of word,-1
@@ -1779,6 +2059,26 @@ AWAW665TQQP2F,Q20type_3_type_4,Logic Problem,1
 AWAW665TQQP2F,Q22confl_tradeoffs,Logic Problem,1
 AWAW665TQQP2F,Q23ss_out_uncert,Logic Problem,1
 AWAW665TQQP2F,Q24eureka_question,Logic Problem,-1
+A2TLN8489YGY81,Q1concept_behav,Guessing the correlation,-1
+A2TLN8489YGY81,Q3type_1_planning,Guessing the correlation,-1
+A2TLN8489YGY81,Q4type_2_generate,Guessing the correlation,-1
+A2TLN8489YGY81,Q6type_5_cc,Guessing the correlation,-1
+A2TLN8489YGY81,Q7type_7_battle,Guessing the correlation,-1
+A2TLN8489YGY81,Q8type_8_performance,Guessing the correlation,-1
+A2TLN8489YGY81,Q9divisible_unitary,Guessing the correlation,-1
+A2TLN8489YGY81,Q10maximizing,Guessing the correlation,1
+A2TLN8489YGY81,Q11optimizing,Guessing the correlation,1
+A2TLN8489YGY81,Q13outcome_multip,Guessing the correlation,1
+A2TLN8489YGY81,Q14sol_scheme_mul,Guessing the correlation,1
+A2TLN8489YGY81,Q15dec_verifiability,Guessing the correlation,1
+A2TLN8489YGY81,Q16shared_knowledge,Guessing the correlation,1
+A2TLN8489YGY81,Q17within_sys_sol,Guessing the correlation,1
+A2TLN8489YGY81,Q18ans_recog,Guessing the correlation,1
+A2TLN8489YGY81,Q19time_solvability,Guessing the correlation,1
+A2TLN8489YGY81,Q20type_3_type_4,Guessing the correlation,1
+A2TLN8489YGY81,Q22confl_tradeoffs,Guessing the correlation,-1
+A2TLN8489YGY81,Q23ss_out_uncert,Guessing the correlation,1
+A2TLN8489YGY81,Q24eureka_question,Guessing the correlation,-1
 AURYD2FH3FUOQ,Q1concept_behav,Random dot motion,-1
 AURYD2FH3FUOQ,Q3type_1_planning,Random dot motion,-1
 AURYD2FH3FUOQ,Q4type_2_generate,Random dot motion,-1
@@ -2139,6 +2439,26 @@ A3EUGO4VR2N4G1,Q20type_3_type_4,"Wolf, goat and cabbage transfer",1
 A3EUGO4VR2N4G1,Q22confl_tradeoffs,"Wolf, goat and cabbage transfer",-1
 A3EUGO4VR2N4G1,Q23ss_out_uncert,"Wolf, goat and cabbage transfer",-1
 A3EUGO4VR2N4G1,Q24eureka_question,"Wolf, goat and cabbage transfer",1
+AE1YA7Q3UKPRI,Q1concept_behav,Railroad Route Construction game (Impossible Version),-1
+AE1YA7Q3UKPRI,Q3type_1_planning,Railroad Route Construction game (Impossible Version),-1
+AE1YA7Q3UKPRI,Q4type_2_generate,Railroad Route Construction game (Impossible Version),-1
+AE1YA7Q3UKPRI,Q6type_5_cc,Railroad Route Construction game (Impossible Version),-1
+AE1YA7Q3UKPRI,Q7type_7_battle,Railroad Route Construction game (Impossible Version),1
+AE1YA7Q3UKPRI,Q8type_8_performance,Railroad Route Construction game (Impossible Version),1
+AE1YA7Q3UKPRI,Q9divisible_unitary,Railroad Route Construction game (Impossible Version),-1
+AE1YA7Q3UKPRI,Q10maximizing,Railroad Route Construction game (Impossible Version),-1
+AE1YA7Q3UKPRI,Q11optimizing,Railroad Route Construction game (Impossible Version),1
+AE1YA7Q3UKPRI,Q13outcome_multip,Railroad Route Construction game (Impossible Version),-1
+AE1YA7Q3UKPRI,Q14sol_scheme_mul,Railroad Route Construction game (Impossible Version),NA
+AE1YA7Q3UKPRI,Q15dec_verifiability,Railroad Route Construction game (Impossible Version),NA
+AE1YA7Q3UKPRI,Q16shared_knowledge,Railroad Route Construction game (Impossible Version),-1
+AE1YA7Q3UKPRI,Q17within_sys_sol,Railroad Route Construction game (Impossible Version),-1
+AE1YA7Q3UKPRI,Q18ans_recog,Railroad Route Construction game (Impossible Version),-1
+AE1YA7Q3UKPRI,Q19time_solvability,Railroad Route Construction game (Impossible Version),-1
+AE1YA7Q3UKPRI,Q20type_3_type_4,Railroad Route Construction game (Impossible Version),-1
+AE1YA7Q3UKPRI,Q22confl_tradeoffs,Railroad Route Construction game (Impossible Version),-1
+AE1YA7Q3UKPRI,Q23ss_out_uncert,Railroad Route Construction game (Impossible Version),-1
+AE1YA7Q3UKPRI,Q24eureka_question,Railroad Route Construction game (Impossible Version),1
 A33PHCBUOD4WKD,Q1concept_behav,Desert survival,-1
 A33PHCBUOD4WKD,Q3type_1_planning,Desert survival,-1
 A33PHCBUOD4WKD,Q4type_2_generate,Desert survival,-1
@@ -2299,6 +2619,26 @@ A2VRDE2FHCBMF8,Q20type_3_type_4,Visual Oddball Target,1
 A2VRDE2FHCBMF8,Q22confl_tradeoffs,Visual Oddball Target,-1
 A2VRDE2FHCBMF8,Q23ss_out_uncert,Visual Oddball Target,-1
 A2VRDE2FHCBMF8,Q24eureka_question,Visual Oddball Target,-1
+ARYL3C6N9SVV1,Q1concept_behav,Room assignment task,-1
+ARYL3C6N9SVV1,Q3type_1_planning,Room assignment task,1
+ARYL3C6N9SVV1,Q4type_2_generate,Room assignment task,-1
+ARYL3C6N9SVV1,Q6type_5_cc,Room assignment task,-1
+ARYL3C6N9SVV1,Q7type_7_battle,Room assignment task,-1
+ARYL3C6N9SVV1,Q8type_8_performance,Room assignment task,-1
+ARYL3C6N9SVV1,Q9divisible_unitary,Room assignment task,-1
+ARYL3C6N9SVV1,Q10maximizing,Room assignment task,-1
+ARYL3C6N9SVV1,Q11optimizing,Room assignment task,1
+ARYL3C6N9SVV1,Q13outcome_multip,Room assignment task,1
+ARYL3C6N9SVV1,Q14sol_scheme_mul,Room assignment task,1
+ARYL3C6N9SVV1,Q15dec_verifiability,Room assignment task,1
+ARYL3C6N9SVV1,Q16shared_knowledge,Room assignment task,1
+ARYL3C6N9SVV1,Q17within_sys_sol,Room assignment task,-1
+ARYL3C6N9SVV1,Q18ans_recog,Room assignment task,-1
+ARYL3C6N9SVV1,Q19time_solvability,Room assignment task,-1
+ARYL3C6N9SVV1,Q20type_3_type_4,Room assignment task,1
+ARYL3C6N9SVV1,Q22confl_tradeoffs,Room assignment task,1
+ARYL3C6N9SVV1,Q23ss_out_uncert,Room assignment task,1
+ARYL3C6N9SVV1,Q24eureka_question,Room assignment task,1
 A3I9XLIHPPWPN1,Q1concept_behav,Allocating resources to programs,-1
 A3I9XLIHPPWPN1,Q3type_1_planning,Allocating resources to programs,1
 A3I9XLIHPPWPN1,Q4type_2_generate,Allocating resources to programs,1
@@ -2839,6 +3179,26 @@ A5NE8TWS8ZV7B,Q20type_3_type_4,"NASA Moon survival",1
 A5NE8TWS8ZV7B,Q22confl_tradeoffs,"NASA Moon survival",-1
 A5NE8TWS8ZV7B,Q23ss_out_uncert,"NASA Moon survival",1
 A5NE8TWS8ZV7B,Q24eureka_question,"NASA Moon survival",-1
+ARI1EMAHUA9PO,Q1concept_behav,Word completion given starting letter,-1
+ARI1EMAHUA9PO,Q3type_1_planning,Word completion given starting letter,-1
+ARI1EMAHUA9PO,Q4type_2_generate,Word completion given starting letter,1
+ARI1EMAHUA9PO,Q6type_5_cc,Word completion given starting letter,-1
+ARI1EMAHUA9PO,Q7type_7_battle,Word completion given starting letter,-1
+ARI1EMAHUA9PO,Q8type_8_performance,Word completion given starting letter,-1
+ARI1EMAHUA9PO,Q9divisible_unitary,Word completion given starting letter,1
+ARI1EMAHUA9PO,Q10maximizing,Word completion given starting letter,1
+ARI1EMAHUA9PO,Q11optimizing,Word completion given starting letter,-1
+ARI1EMAHUA9PO,Q13outcome_multip,Word completion given starting letter,-1
+ARI1EMAHUA9PO,Q14sol_scheme_mul,Word completion given starting letter,-1
+ARI1EMAHUA9PO,Q15dec_verifiability,Word completion given starting letter,1
+ARI1EMAHUA9PO,Q16shared_knowledge,Word completion given starting letter,1
+ARI1EMAHUA9PO,Q17within_sys_sol,Word completion given starting letter,-1
+ARI1EMAHUA9PO,Q18ans_recog,Word completion given starting letter,1
+ARI1EMAHUA9PO,Q19time_solvability,Word completion given starting letter,-1
+ARI1EMAHUA9PO,Q20type_3_type_4,Word completion given starting letter,1
+ARI1EMAHUA9PO,Q22confl_tradeoffs,Word completion given starting letter,-1
+ARI1EMAHUA9PO,Q23ss_out_uncert,Word completion given starting letter,1
+ARI1EMAHUA9PO,Q24eureka_question,Word completion given starting letter,-1
 A17FGZ1I5P9RZA,Q1concept_behav,Reproducing arts,-1
 A17FGZ1I5P9RZA,Q3type_1_planning,Reproducing arts,-1
 A17FGZ1I5P9RZA,Q4type_2_generate,Reproducing arts,1
@@ -3059,6 +3419,26 @@ ARI1EMAHUA9PO,Q20type_3_type_4,Sudoku,1
 ARI1EMAHUA9PO,Q22confl_tradeoffs,Sudoku,-1
 ARI1EMAHUA9PO,Q23ss_out_uncert,Sudoku,-1
 ARI1EMAHUA9PO,Q24eureka_question,Sudoku,-1
+A1I72NHC21347A,Q1concept_behav,Mastermind,-1
+A1I72NHC21347A,Q3type_1_planning,Mastermind,-1
+A1I72NHC21347A,Q4type_2_generate,Mastermind,-1
+A1I72NHC21347A,Q6type_5_cc,Mastermind,-1
+A1I72NHC21347A,Q7type_7_battle,Mastermind,-1
+A1I72NHC21347A,Q8type_8_performance,Mastermind,-1
+A1I72NHC21347A,Q9divisible_unitary,Mastermind,-1
+A1I72NHC21347A,Q10maximizing,Mastermind,1
+A1I72NHC21347A,Q11optimizing,Mastermind,1
+A1I72NHC21347A,Q13outcome_multip,Mastermind,1
+A1I72NHC21347A,Q14sol_scheme_mul,Mastermind,1
+A1I72NHC21347A,Q15dec_verifiability,Mastermind,1
+A1I72NHC21347A,Q16shared_knowledge,Mastermind,1
+A1I72NHC21347A,Q17within_sys_sol,Mastermind,1
+A1I72NHC21347A,Q18ans_recog,Mastermind,1
+A1I72NHC21347A,Q19time_solvability,Mastermind,1
+A1I72NHC21347A,Q20type_3_type_4,Mastermind,1
+A1I72NHC21347A,Q22confl_tradeoffs,Mastermind,1
+A1I72NHC21347A,Q23ss_out_uncert,Mastermind,1
+A1I72NHC21347A,Q24eureka_question,Mastermind,-1
 ARI1EMAHUA9PO,Q1concept_behav,Euclidean traveling salesperson,-1
 ARI1EMAHUA9PO,Q3type_1_planning,Euclidean traveling salesperson,1
 ARI1EMAHUA9PO,Q4type_2_generate,Euclidean traveling salesperson,-1
@@ -3199,6 +3579,26 @@ AKQAI78JTXXC9,Q20type_3_type_4,Advertisement writing,-1
 AKQAI78JTXXC9,Q22confl_tradeoffs,Advertisement writing,1
 AKQAI78JTXXC9,Q23ss_out_uncert,Advertisement writing,-1
 AKQAI78JTXXC9,Q24eureka_question,Advertisement writing,-1
+AE1YA7Q3UKPRI,Q1concept_behav,To evacuate or not to evacuate,-1
+AE1YA7Q3UKPRI,Q3type_1_planning,To evacuate or not to evacuate,-1
+AE1YA7Q3UKPRI,Q4type_2_generate,To evacuate or not to evacuate,-1
+AE1YA7Q3UKPRI,Q6type_5_cc,To evacuate or not to evacuate,-1
+AE1YA7Q3UKPRI,Q7type_7_battle,To evacuate or not to evacuate,1
+AE1YA7Q3UKPRI,Q8type_8_performance,To evacuate or not to evacuate,1
+AE1YA7Q3UKPRI,Q9divisible_unitary,To evacuate or not to evacuate,-1
+AE1YA7Q3UKPRI,Q10maximizing,To evacuate or not to evacuate,-1
+AE1YA7Q3UKPRI,Q11optimizing,To evacuate or not to evacuate,-1
+AE1YA7Q3UKPRI,Q13outcome_multip,To evacuate or not to evacuate,1
+AE1YA7Q3UKPRI,Q14sol_scheme_mul,To evacuate or not to evacuate,-1
+AE1YA7Q3UKPRI,Q15dec_verifiability,To evacuate or not to evacuate,1
+AE1YA7Q3UKPRI,Q16shared_knowledge,To evacuate or not to evacuate,-1
+AE1YA7Q3UKPRI,Q17within_sys_sol,To evacuate or not to evacuate,-1
+AE1YA7Q3UKPRI,Q18ans_recog,To evacuate or not to evacuate,-1
+AE1YA7Q3UKPRI,Q19time_solvability,To evacuate or not to evacuate,-1
+AE1YA7Q3UKPRI,Q20type_3_type_4,To evacuate or not to evacuate,-1
+AE1YA7Q3UKPRI,Q22confl_tradeoffs,To evacuate or not to evacuate,1
+AE1YA7Q3UKPRI,Q23ss_out_uncert,To evacuate or not to evacuate,1
+AE1YA7Q3UKPRI,Q24eureka_question,To evacuate or not to evacuate,-1
 A2WZTMXWD20NYE,Q1concept_behav,Crisis mapping,-1
 A2WZTMXWD20NYE,Q3type_1_planning,Crisis mapping,-1
 A2WZTMXWD20NYE,Q4type_2_generate,Crisis mapping,-1
@@ -3499,6 +3899,26 @@ AKQAI78JTXXC9,Q20type_3_type_4,Allocating resources to programs,-1
 AKQAI78JTXXC9,Q22confl_tradeoffs,Allocating resources to programs,1
 AKQAI78JTXXC9,Q23ss_out_uncert,Allocating resources to programs,-1
 AKQAI78JTXXC9,Q24eureka_question,Allocating resources to programs,-1
+A272X64FOZFYLB,Q1concept_behav,Moral Reasoning (Disciplinary Action Case),-1
+A272X64FOZFYLB,Q3type_1_planning,Moral Reasoning (Disciplinary Action Case),-1
+A272X64FOZFYLB,Q4type_2_generate,Moral Reasoning (Disciplinary Action Case),-1
+A272X64FOZFYLB,Q6type_5_cc,Moral Reasoning (Disciplinary Action Case),1
+A272X64FOZFYLB,Q7type_7_battle,Moral Reasoning (Disciplinary Action Case),-1
+A272X64FOZFYLB,Q8type_8_performance,Moral Reasoning (Disciplinary Action Case),1
+A272X64FOZFYLB,Q9divisible_unitary,Moral Reasoning (Disciplinary Action Case),NA
+A272X64FOZFYLB,Q10maximizing,Moral Reasoning (Disciplinary Action Case),-1
+A272X64FOZFYLB,Q11optimizing,Moral Reasoning (Disciplinary Action Case),-1
+A272X64FOZFYLB,Q13outcome_multip,Moral Reasoning (Disciplinary Action Case),-1
+A272X64FOZFYLB,Q14sol_scheme_mul,Moral Reasoning (Disciplinary Action Case),-1
+A272X64FOZFYLB,Q15dec_verifiability,Moral Reasoning (Disciplinary Action Case),-1
+A272X64FOZFYLB,Q16shared_knowledge,Moral Reasoning (Disciplinary Action Case),-1
+A272X64FOZFYLB,Q17within_sys_sol,Moral Reasoning (Disciplinary Action Case),1
+A272X64FOZFYLB,Q18ans_recog,Moral Reasoning (Disciplinary Action Case),-1
+A272X64FOZFYLB,Q19time_solvability,Moral Reasoning (Disciplinary Action Case),-1
+A272X64FOZFYLB,Q20type_3_type_4,Moral Reasoning (Disciplinary Action Case),-1
+A272X64FOZFYLB,Q22confl_tradeoffs,Moral Reasoning (Disciplinary Action Case),1
+A272X64FOZFYLB,Q23ss_out_uncert,Moral Reasoning (Disciplinary Action Case),-1
+A272X64FOZFYLB,Q24eureka_question,Moral Reasoning (Disciplinary Action Case),-1
 A26UIS59SY4NM6,Q1concept_behav,Game of Clue - Terrorist Attack,-1
 A26UIS59SY4NM6,Q3type_1_planning,Game of Clue - Terrorist Attack,-1
 A26UIS59SY4NM6,Q4type_2_generate,Game of Clue - Terrorist Attack,-1
@@ -3799,6 +4219,26 @@ A2S64AUN7JI7ZS,Q20type_3_type_4,"NASA Moon survival",-1
 A2S64AUN7JI7ZS,Q22confl_tradeoffs,"NASA Moon survival",-1
 A2S64AUN7JI7ZS,Q23ss_out_uncert,"NASA Moon survival",1
 A2S64AUN7JI7ZS,Q24eureka_question,"NASA Moon survival",-1
+AL51KTD0WITH9,Q1concept_behav,Desert survival,-1
+AL51KTD0WITH9,Q3type_1_planning,Desert survival,-1
+AL51KTD0WITH9,Q4type_2_generate,Desert survival,-1
+AL51KTD0WITH9,Q6type_5_cc,Desert survival,-1
+AL51KTD0WITH9,Q7type_7_battle,Desert survival,-1
+AL51KTD0WITH9,Q8type_8_performance,Desert survival,-1
+AL51KTD0WITH9,Q9divisible_unitary,Desert survival,-1
+AL51KTD0WITH9,Q10maximizing,Desert survival,-1
+AL51KTD0WITH9,Q11optimizing,Desert survival,-1
+AL51KTD0WITH9,Q13outcome_multip,Desert survival,1
+AL51KTD0WITH9,Q14sol_scheme_mul,Desert survival,-1
+AL51KTD0WITH9,Q15dec_verifiability,Desert survival,1
+AL51KTD0WITH9,Q16shared_knowledge,Desert survival,1
+AL51KTD0WITH9,Q17within_sys_sol,Desert survival,1
+AL51KTD0WITH9,Q18ans_recog,Desert survival,1
+AL51KTD0WITH9,Q19time_solvability,Desert survival,1
+AL51KTD0WITH9,Q20type_3_type_4,Desert survival,1
+AL51KTD0WITH9,Q22confl_tradeoffs,Desert survival,-1
+AL51KTD0WITH9,Q23ss_out_uncert,Desert survival,1
+AL51KTD0WITH9,Q24eureka_question,Desert survival,-1
 A1I72NHC21347A,Q1concept_behav,"Wolf, goat and cabbage transfer",-1
 A1I72NHC21347A,Q3type_1_planning,"Wolf, goat and cabbage transfer",1
 A1I72NHC21347A,Q4type_2_generate,"Wolf, goat and cabbage transfer",-1
@@ -4019,6 +4459,26 @@ AE1YA7Q3UKPRI,Q20type_3_type_4,Typing game,-1
 AE1YA7Q3UKPRI,Q22confl_tradeoffs,Typing game,-1
 AE1YA7Q3UKPRI,Q23ss_out_uncert,Typing game,-1
 AE1YA7Q3UKPRI,Q24eureka_question,Typing game,NA
+A33PHCBUOD4WKD,Q1concept_behav,Categorization problem,-1
+A33PHCBUOD4WKD,Q3type_1_planning,Categorization problem,-1
+A33PHCBUOD4WKD,Q4type_2_generate,Categorization problem,-1
+A33PHCBUOD4WKD,Q6type_5_cc,Categorization problem,-1
+A33PHCBUOD4WKD,Q7type_7_battle,Categorization problem,-1
+A33PHCBUOD4WKD,Q8type_8_performance,Categorization problem,-1
+A33PHCBUOD4WKD,Q9divisible_unitary,Categorization problem,-1
+A33PHCBUOD4WKD,Q10maximizing,Categorization problem,-1
+A33PHCBUOD4WKD,Q11optimizing,Categorization problem,1
+A33PHCBUOD4WKD,Q13outcome_multip,Categorization problem,1
+A33PHCBUOD4WKD,Q14sol_scheme_mul,Categorization problem,1
+A33PHCBUOD4WKD,Q15dec_verifiability,Categorization problem,1
+A33PHCBUOD4WKD,Q16shared_knowledge,Categorization problem,1
+A33PHCBUOD4WKD,Q17within_sys_sol,Categorization problem,1
+A33PHCBUOD4WKD,Q18ans_recog,Categorization problem,1
+A33PHCBUOD4WKD,Q19time_solvability,Categorization problem,1
+A33PHCBUOD4WKD,Q20type_3_type_4,Categorization problem,1
+A33PHCBUOD4WKD,Q22confl_tradeoffs,Categorization problem,1
+A33PHCBUOD4WKD,Q23ss_out_uncert,Categorization problem,1
+A33PHCBUOD4WKD,Q24eureka_question,Categorization problem,1
 A3CGQOJC28OVGN,Q1concept_behav,The N light bulbs game,-1
 A3CGQOJC28OVGN,Q3type_1_planning,The N light bulbs game,-1
 A3CGQOJC28OVGN,Q4type_2_generate,The N light bulbs game,-1
@@ -4199,6 +4659,26 @@ A33PHCBUOD4WKD,Q20type_3_type_4,To evacuate or not to evacuate,1
 A33PHCBUOD4WKD,Q22confl_tradeoffs,To evacuate or not to evacuate,1
 A33PHCBUOD4WKD,Q23ss_out_uncert,To evacuate or not to evacuate,1
 A33PHCBUOD4WKD,Q24eureka_question,To evacuate or not to evacuate,-1
+A2S64AUN7JI7ZS,Q1concept_behav,Divergent Association Task,-1
+A2S64AUN7JI7ZS,Q3type_1_planning,Divergent Association Task,-1
+A2S64AUN7JI7ZS,Q4type_2_generate,Divergent Association Task,1
+A2S64AUN7JI7ZS,Q6type_5_cc,Divergent Association Task,-1
+A2S64AUN7JI7ZS,Q7type_7_battle,Divergent Association Task,1
+A2S64AUN7JI7ZS,Q8type_8_performance,Divergent Association Task,-1
+A2S64AUN7JI7ZS,Q9divisible_unitary,Divergent Association Task,-1
+A2S64AUN7JI7ZS,Q10maximizing,Divergent Association Task,1
+A2S64AUN7JI7ZS,Q11optimizing,Divergent Association Task,-1
+A2S64AUN7JI7ZS,Q13outcome_multip,Divergent Association Task,1
+A2S64AUN7JI7ZS,Q14sol_scheme_mul,Divergent Association Task,-1
+A2S64AUN7JI7ZS,Q15dec_verifiability,Divergent Association Task,1
+A2S64AUN7JI7ZS,Q16shared_knowledge,Divergent Association Task,1
+A2S64AUN7JI7ZS,Q17within_sys_sol,Divergent Association Task,NA
+A2S64AUN7JI7ZS,Q18ans_recog,Divergent Association Task,1
+A2S64AUN7JI7ZS,Q19time_solvability,Divergent Association Task,1
+A2S64AUN7JI7ZS,Q20type_3_type_4,Divergent Association Task,-1
+A2S64AUN7JI7ZS,Q22confl_tradeoffs,Divergent Association Task,-1
+A2S64AUN7JI7ZS,Q23ss_out_uncert,Divergent Association Task,1
+A2S64AUN7JI7ZS,Q24eureka_question,Divergent Association Task,-1
 A1I72NHC21347A,Q1concept_behav,The Fish game,-1
 A1I72NHC21347A,Q3type_1_planning,The Fish game,-1
 A1I72NHC21347A,Q4type_2_generate,The Fish game,-1
@@ -4519,6 +4999,46 @@ ARYL3C6N9SVV1,Q20type_3_type_4,Estimating social quantity,1
 ARYL3C6N9SVV1,Q22confl_tradeoffs,Estimating social quantity,-1
 ARYL3C6N9SVV1,Q23ss_out_uncert,Estimating social quantity,1
 ARYL3C6N9SVV1,Q24eureka_question,Estimating social quantity,NA
+A26UIS59SY4NM6,Q1concept_behav,Mastermind,-1
+A26UIS59SY4NM6,Q3type_1_planning,Mastermind,-1
+A26UIS59SY4NM6,Q4type_2_generate,Mastermind,-1
+A26UIS59SY4NM6,Q6type_5_cc,Mastermind,-1
+A26UIS59SY4NM6,Q7type_7_battle,Mastermind,-1
+A26UIS59SY4NM6,Q8type_8_performance,Mastermind,-1
+A26UIS59SY4NM6,Q9divisible_unitary,Mastermind,1
+A26UIS59SY4NM6,Q10maximizing,Mastermind,1
+A26UIS59SY4NM6,Q11optimizing,Mastermind,1
+A26UIS59SY4NM6,Q13outcome_multip,Mastermind,1
+A26UIS59SY4NM6,Q14sol_scheme_mul,Mastermind,-1
+A26UIS59SY4NM6,Q15dec_verifiability,Mastermind,1
+A26UIS59SY4NM6,Q16shared_knowledge,Mastermind,1
+A26UIS59SY4NM6,Q17within_sys_sol,Mastermind,1
+A26UIS59SY4NM6,Q18ans_recog,Mastermind,1
+A26UIS59SY4NM6,Q19time_solvability,Mastermind,1
+A26UIS59SY4NM6,Q20type_3_type_4,Mastermind,1
+A26UIS59SY4NM6,Q22confl_tradeoffs,Mastermind,-1
+A26UIS59SY4NM6,Q23ss_out_uncert,Mastermind,-1
+A26UIS59SY4NM6,Q24eureka_question,Mastermind,-1
+AE1YA7Q3UKPRI,Q1concept_behav,Euclidean traveling salesperson,-1
+AE1YA7Q3UKPRI,Q3type_1_planning,Euclidean traveling salesperson,-1
+AE1YA7Q3UKPRI,Q4type_2_generate,Euclidean traveling salesperson,-1
+AE1YA7Q3UKPRI,Q6type_5_cc,Euclidean traveling salesperson,-1
+AE1YA7Q3UKPRI,Q7type_7_battle,Euclidean traveling salesperson,-1
+AE1YA7Q3UKPRI,Q8type_8_performance,Euclidean traveling salesperson,1
+AE1YA7Q3UKPRI,Q9divisible_unitary,Euclidean traveling salesperson,-1
+AE1YA7Q3UKPRI,Q10maximizing,Euclidean traveling salesperson,1
+AE1YA7Q3UKPRI,Q11optimizing,Euclidean traveling salesperson,1
+AE1YA7Q3UKPRI,Q13outcome_multip,Euclidean traveling salesperson,1
+AE1YA7Q3UKPRI,Q14sol_scheme_mul,Euclidean traveling salesperson,-1
+AE1YA7Q3UKPRI,Q15dec_verifiability,Euclidean traveling salesperson,1
+AE1YA7Q3UKPRI,Q16shared_knowledge,Euclidean traveling salesperson,1
+AE1YA7Q3UKPRI,Q17within_sys_sol,Euclidean traveling salesperson,1
+AE1YA7Q3UKPRI,Q18ans_recog,Euclidean traveling salesperson,1
+AE1YA7Q3UKPRI,Q19time_solvability,Euclidean traveling salesperson,1
+AE1YA7Q3UKPRI,Q20type_3_type_4,Euclidean traveling salesperson,1
+AE1YA7Q3UKPRI,Q22confl_tradeoffs,Euclidean traveling salesperson,-1
+AE1YA7Q3UKPRI,Q23ss_out_uncert,Euclidean traveling salesperson,-1
+AE1YA7Q3UKPRI,Q24eureka_question,Euclidean traveling salesperson,-1
 AXPZAP62ZYWP8,Q1concept_behav,Desert survival,-1
 AXPZAP62ZYWP8,Q3type_1_planning,Desert survival,1
 AXPZAP62ZYWP8,Q4type_2_generate,Desert survival,1
@@ -4879,6 +5399,26 @@ A1VRG5HKZC0H0C,Q20type_3_type_4,Writing story,1
 A1VRG5HKZC0H0C,Q22confl_tradeoffs,Writing story,-1
 A1VRG5HKZC0H0C,Q23ss_out_uncert,Writing story,-1
 A1VRG5HKZC0H0C,Q24eureka_question,Writing story,-1
+A272X64FOZFYLB,Q1concept_behav,Husbands and wives transfer,-1
+A272X64FOZFYLB,Q3type_1_planning,Husbands and wives transfer,-1
+A272X64FOZFYLB,Q4type_2_generate,Husbands and wives transfer,-1
+A272X64FOZFYLB,Q6type_5_cc,Husbands and wives transfer,-1
+A272X64FOZFYLB,Q7type_7_battle,Husbands and wives transfer,-1
+A272X64FOZFYLB,Q8type_8_performance,Husbands and wives transfer,-1
+A272X64FOZFYLB,Q9divisible_unitary,Husbands and wives transfer,-1
+A272X64FOZFYLB,Q10maximizing,Husbands and wives transfer,-1
+A272X64FOZFYLB,Q11optimizing,Husbands and wives transfer,1
+A272X64FOZFYLB,Q13outcome_multip,Husbands and wives transfer,1
+A272X64FOZFYLB,Q14sol_scheme_mul,Husbands and wives transfer,-1
+A272X64FOZFYLB,Q15dec_verifiability,Husbands and wives transfer,1
+A272X64FOZFYLB,Q16shared_knowledge,Husbands and wives transfer,1
+A272X64FOZFYLB,Q17within_sys_sol,Husbands and wives transfer,1
+A272X64FOZFYLB,Q18ans_recog,Husbands and wives transfer,1
+A272X64FOZFYLB,Q19time_solvability,Husbands and wives transfer,1
+A272X64FOZFYLB,Q20type_3_type_4,Husbands and wives transfer,1
+A272X64FOZFYLB,Q22confl_tradeoffs,Husbands and wives transfer,-1
+A272X64FOZFYLB,Q23ss_out_uncert,Husbands and wives transfer,1
+A272X64FOZFYLB,Q24eureka_question,Husbands and wives transfer,1
 A2H5V1V8QIY8Y7,Q1concept_behav,Find the maximum,-1
 A2H5V1V8QIY8Y7,Q3type_1_planning,Find the maximum,-1
 A2H5V1V8QIY8Y7,Q4type_2_generate,Find the maximum,-1
@@ -5239,6 +5779,26 @@ A3CGQOJC28OVGN,Q20type_3_type_4,Railroad Route Construction game (Impossible Ver
 A3CGQOJC28OVGN,Q22confl_tradeoffs,Railroad Route Construction game (Impossible Version),-1
 A3CGQOJC28OVGN,Q23ss_out_uncert,Railroad Route Construction game (Impossible Version),1
 A3CGQOJC28OVGN,Q24eureka_question,Railroad Route Construction game (Impossible Version),1
+AONSG5WOC3OX0,Q1concept_behav,Mastermind,-1
+AONSG5WOC3OX0,Q3type_1_planning,Mastermind,-1
+AONSG5WOC3OX0,Q4type_2_generate,Mastermind,-1
+AONSG5WOC3OX0,Q6type_5_cc,Mastermind,-1
+AONSG5WOC3OX0,Q7type_7_battle,Mastermind,-1
+AONSG5WOC3OX0,Q8type_8_performance,Mastermind,-1
+AONSG5WOC3OX0,Q9divisible_unitary,Mastermind,-1
+AONSG5WOC3OX0,Q10maximizing,Mastermind,-1
+AONSG5WOC3OX0,Q11optimizing,Mastermind,1
+AONSG5WOC3OX0,Q13outcome_multip,Mastermind,1
+AONSG5WOC3OX0,Q14sol_scheme_mul,Mastermind,1
+AONSG5WOC3OX0,Q15dec_verifiability,Mastermind,1
+AONSG5WOC3OX0,Q16shared_knowledge,Mastermind,1
+AONSG5WOC3OX0,Q17within_sys_sol,Mastermind,1
+AONSG5WOC3OX0,Q18ans_recog,Mastermind,1
+AONSG5WOC3OX0,Q19time_solvability,Mastermind,1
+AONSG5WOC3OX0,Q20type_3_type_4,Mastermind,1
+AONSG5WOC3OX0,Q22confl_tradeoffs,Mastermind,-1
+AONSG5WOC3OX0,Q23ss_out_uncert,Mastermind,-1
+AONSG5WOC3OX0,Q24eureka_question,Mastermind,-1
 A26GDUUFGPAYUL,Q1concept_behav,Word completion given part of word,-1
 A26GDUUFGPAYUL,Q3type_1_planning,Word completion given part of word,-1
 A26GDUUFGPAYUL,Q4type_2_generate,Word completion given part of word,1
@@ -5479,6 +6039,26 @@ AURYD2FH3FUOQ,Q20type_3_type_4,Divergent Association Task,-1
 AURYD2FH3FUOQ,Q22confl_tradeoffs,Divergent Association Task,-1
 AURYD2FH3FUOQ,Q23ss_out_uncert,Divergent Association Task,1
 AURYD2FH3FUOQ,Q24eureka_question,Divergent Association Task,-1
+A1BHR5XQ16T7LA,Q1concept_behav,Moral Reasoning (Disciplinary Action Case),-1
+A1BHR5XQ16T7LA,Q3type_1_planning,Moral Reasoning (Disciplinary Action Case),-1
+A1BHR5XQ16T7LA,Q4type_2_generate,Moral Reasoning (Disciplinary Action Case),1
+A1BHR5XQ16T7LA,Q6type_5_cc,Moral Reasoning (Disciplinary Action Case),1
+A1BHR5XQ16T7LA,Q7type_7_battle,Moral Reasoning (Disciplinary Action Case),-1
+A1BHR5XQ16T7LA,Q8type_8_performance,Moral Reasoning (Disciplinary Action Case),-1
+A1BHR5XQ16T7LA,Q9divisible_unitary,Moral Reasoning (Disciplinary Action Case),-1
+A1BHR5XQ16T7LA,Q10maximizing,Moral Reasoning (Disciplinary Action Case),-1
+A1BHR5XQ16T7LA,Q11optimizing,Moral Reasoning (Disciplinary Action Case),1
+A1BHR5XQ16T7LA,Q13outcome_multip,Moral Reasoning (Disciplinary Action Case),-1
+A1BHR5XQ16T7LA,Q14sol_scheme_mul,Moral Reasoning (Disciplinary Action Case),-1
+A1BHR5XQ16T7LA,Q15dec_verifiability,Moral Reasoning (Disciplinary Action Case),-1
+A1BHR5XQ16T7LA,Q16shared_knowledge,Moral Reasoning (Disciplinary Action Case),-1
+A1BHR5XQ16T7LA,Q17within_sys_sol,Moral Reasoning (Disciplinary Action Case),1
+A1BHR5XQ16T7LA,Q18ans_recog,Moral Reasoning (Disciplinary Action Case),1
+A1BHR5XQ16T7LA,Q19time_solvability,Moral Reasoning (Disciplinary Action Case),1
+A1BHR5XQ16T7LA,Q20type_3_type_4,Moral Reasoning (Disciplinary Action Case),-1
+A1BHR5XQ16T7LA,Q22confl_tradeoffs,Moral Reasoning (Disciplinary Action Case),1
+A1BHR5XQ16T7LA,Q23ss_out_uncert,Moral Reasoning (Disciplinary Action Case),-1
+A1BHR5XQ16T7LA,Q24eureka_question,Moral Reasoning (Disciplinary Action Case),-1
 A2VRDE2FHCBMF8,Q1concept_behav,Moral Reasoning (Disciplinary Action Case),-1
 A2VRDE2FHCBMF8,Q3type_1_planning,Moral Reasoning (Disciplinary Action Case),-1
 A2VRDE2FHCBMF8,Q4type_2_generate,Moral Reasoning (Disciplinary Action Case),1
@@ -5839,6 +6419,26 @@ A3T9WZOUQGE2UW,Q20type_3_type_4,Image rating,1
 A3T9WZOUQGE2UW,Q22confl_tradeoffs,Image rating,-1
 A3T9WZOUQGE2UW,Q23ss_out_uncert,Image rating,1
 A3T9WZOUQGE2UW,Q24eureka_question,Image rating,-1
+AA5ZDXAA2DLY1,Q1concept_behav,Unscramble words (anagrams),-1
+AA5ZDXAA2DLY1,Q3type_1_planning,Unscramble words (anagrams),-1
+AA5ZDXAA2DLY1,Q4type_2_generate,Unscramble words (anagrams),1
+AA5ZDXAA2DLY1,Q6type_5_cc,Unscramble words (anagrams),-1
+AA5ZDXAA2DLY1,Q7type_7_battle,Unscramble words (anagrams),-1
+AA5ZDXAA2DLY1,Q8type_8_performance,Unscramble words (anagrams),-1
+AA5ZDXAA2DLY1,Q9divisible_unitary,Unscramble words (anagrams),1
+AA5ZDXAA2DLY1,Q10maximizing,Unscramble words (anagrams),1
+AA5ZDXAA2DLY1,Q11optimizing,Unscramble words (anagrams),1
+AA5ZDXAA2DLY1,Q13outcome_multip,Unscramble words (anagrams),1
+AA5ZDXAA2DLY1,Q14sol_scheme_mul,Unscramble words (anagrams),-1
+AA5ZDXAA2DLY1,Q15dec_verifiability,Unscramble words (anagrams),1
+AA5ZDXAA2DLY1,Q16shared_knowledge,Unscramble words (anagrams),1
+AA5ZDXAA2DLY1,Q17within_sys_sol,Unscramble words (anagrams),1
+AA5ZDXAA2DLY1,Q18ans_recog,Unscramble words (anagrams),1
+AA5ZDXAA2DLY1,Q19time_solvability,Unscramble words (anagrams),1
+AA5ZDXAA2DLY1,Q20type_3_type_4,Unscramble words (anagrams),1
+AA5ZDXAA2DLY1,Q22confl_tradeoffs,Unscramble words (anagrams),-1
+AA5ZDXAA2DLY1,Q23ss_out_uncert,Unscramble words (anagrams),1
+AA5ZDXAA2DLY1,Q24eureka_question,Unscramble words (anagrams),-1
 A17FGZ1I5P9RZA,Q1concept_behav,Find the maximum,-1
 A17FGZ1I5P9RZA,Q3type_1_planning,Find the maximum,-1
 A17FGZ1I5P9RZA,Q4type_2_generate,Find the maximum,-1
@@ -6959,6 +7559,26 @@ A18T7E73TNGOKP,Q20type_3_type_4,Recall stories,1
 A18T7E73TNGOKP,Q22confl_tradeoffs,Recall stories,-1
 A18T7E73TNGOKP,Q23ss_out_uncert,Recall stories,-1
 A18T7E73TNGOKP,Q24eureka_question,Recall stories,-1
+A2WZTMXWD20NYE,Q1concept_behav,Random dot motion,-1
+A2WZTMXWD20NYE,Q3type_1_planning,Random dot motion,-1
+A2WZTMXWD20NYE,Q4type_2_generate,Random dot motion,-1
+A2WZTMXWD20NYE,Q6type_5_cc,Random dot motion,-1
+A2WZTMXWD20NYE,Q7type_7_battle,Random dot motion,-1
+A2WZTMXWD20NYE,Q8type_8_performance,Random dot motion,-1
+A2WZTMXWD20NYE,Q9divisible_unitary,Random dot motion,NA
+A2WZTMXWD20NYE,Q10maximizing,Random dot motion,-1
+A2WZTMXWD20NYE,Q11optimizing,Random dot motion,1
+A2WZTMXWD20NYE,Q13outcome_multip,Random dot motion,1
+A2WZTMXWD20NYE,Q14sol_scheme_mul,Random dot motion,1
+A2WZTMXWD20NYE,Q15dec_verifiability,Random dot motion,1
+A2WZTMXWD20NYE,Q16shared_knowledge,Random dot motion,1
+A2WZTMXWD20NYE,Q17within_sys_sol,Random dot motion,1
+A2WZTMXWD20NYE,Q18ans_recog,Random dot motion,1
+A2WZTMXWD20NYE,Q19time_solvability,Random dot motion,1
+A2WZTMXWD20NYE,Q20type_3_type_4,Random dot motion,1
+A2WZTMXWD20NYE,Q22confl_tradeoffs,Random dot motion,-1
+A2WZTMXWD20NYE,Q23ss_out_uncert,Random dot motion,1
+A2WZTMXWD20NYE,Q24eureka_question,Random dot motion,-1
 ARYL3C6N9SVV1,Q1concept_behav,Typing game,-1
 ARYL3C6N9SVV1,Q3type_1_planning,Typing game,1
 ARYL3C6N9SVV1,Q4type_2_generate,Typing game,-1
@@ -6979,6 +7599,26 @@ ARYL3C6N9SVV1,Q20type_3_type_4,Typing game,1
 ARYL3C6N9SVV1,Q22confl_tradeoffs,Typing game,-1
 ARYL3C6N9SVV1,Q23ss_out_uncert,Typing game,-1
 ARYL3C6N9SVV1,Q24eureka_question,Typing game,NA
+ARI1EMAHUA9PO,Q1concept_behav,Hidden figures in a picture (Searching Task),-1
+ARI1EMAHUA9PO,Q3type_1_planning,Hidden figures in a picture (Searching Task),-1
+ARI1EMAHUA9PO,Q4type_2_generate,Hidden figures in a picture (Searching Task),-1
+ARI1EMAHUA9PO,Q6type_5_cc,Hidden figures in a picture (Searching Task),-1
+ARI1EMAHUA9PO,Q7type_7_battle,Hidden figures in a picture (Searching Task),-1
+ARI1EMAHUA9PO,Q8type_8_performance,Hidden figures in a picture (Searching Task),-1
+ARI1EMAHUA9PO,Q9divisible_unitary,Hidden figures in a picture (Searching Task),1
+ARI1EMAHUA9PO,Q10maximizing,Hidden figures in a picture (Searching Task),-1
+ARI1EMAHUA9PO,Q11optimizing,Hidden figures in a picture (Searching Task),-1
+ARI1EMAHUA9PO,Q13outcome_multip,Hidden figures in a picture (Searching Task),1
+ARI1EMAHUA9PO,Q14sol_scheme_mul,Hidden figures in a picture (Searching Task),-1
+ARI1EMAHUA9PO,Q15dec_verifiability,Hidden figures in a picture (Searching Task),1
+ARI1EMAHUA9PO,Q16shared_knowledge,Hidden figures in a picture (Searching Task),1
+ARI1EMAHUA9PO,Q17within_sys_sol,Hidden figures in a picture (Searching Task),1
+ARI1EMAHUA9PO,Q18ans_recog,Hidden figures in a picture (Searching Task),1
+ARI1EMAHUA9PO,Q19time_solvability,Hidden figures in a picture (Searching Task),1
+ARI1EMAHUA9PO,Q20type_3_type_4,Hidden figures in a picture (Searching Task),1
+ARI1EMAHUA9PO,Q22confl_tradeoffs,Hidden figures in a picture (Searching Task),-1
+ARI1EMAHUA9PO,Q23ss_out_uncert,Hidden figures in a picture (Searching Task),-1
+ARI1EMAHUA9PO,Q24eureka_question,Hidden figures in a picture (Searching Task),-1
 A8C3WNWRBWUXO,Q1concept_behav,Summarize Discussion,-1
 A8C3WNWRBWUXO,Q3type_1_planning,Summarize Discussion,-1
 A8C3WNWRBWUXO,Q4type_2_generate,Summarize Discussion,1
@@ -7199,6 +7839,26 @@ AKQAI78JTXXC9,Q20type_3_type_4,Railroad Route Construction game (Impossible Vers
 AKQAI78JTXXC9,Q22confl_tradeoffs,Railroad Route Construction game (Impossible Version),1
 AKQAI78JTXXC9,Q23ss_out_uncert,Railroad Route Construction game (Impossible Version),1
 AKQAI78JTXXC9,Q24eureka_question,Railroad Route Construction game (Impossible Version),-1
+AL51KTD0WITH9,Q1concept_behav,Allocating resources to programs,-1
+AL51KTD0WITH9,Q3type_1_planning,Allocating resources to programs,1
+AL51KTD0WITH9,Q4type_2_generate,Allocating resources to programs,1
+AL51KTD0WITH9,Q6type_5_cc,Allocating resources to programs,1
+AL51KTD0WITH9,Q7type_7_battle,Allocating resources to programs,-1
+AL51KTD0WITH9,Q8type_8_performance,Allocating resources to programs,-1
+AL51KTD0WITH9,Q9divisible_unitary,Allocating resources to programs,-1
+AL51KTD0WITH9,Q10maximizing,Allocating resources to programs,-1
+AL51KTD0WITH9,Q11optimizing,Allocating resources to programs,-1
+AL51KTD0WITH9,Q13outcome_multip,Allocating resources to programs,-1
+AL51KTD0WITH9,Q14sol_scheme_mul,Allocating resources to programs,-1
+AL51KTD0WITH9,Q15dec_verifiability,Allocating resources to programs,-1
+AL51KTD0WITH9,Q16shared_knowledge,Allocating resources to programs,-1
+AL51KTD0WITH9,Q17within_sys_sol,Allocating resources to programs,1
+AL51KTD0WITH9,Q18ans_recog,Allocating resources to programs,-1
+AL51KTD0WITH9,Q19time_solvability,Allocating resources to programs,-1
+AL51KTD0WITH9,Q20type_3_type_4,Allocating resources to programs,-1
+AL51KTD0WITH9,Q22confl_tradeoffs,Allocating resources to programs,1
+AL51KTD0WITH9,Q23ss_out_uncert,Allocating resources to programs,-1
+AL51KTD0WITH9,Q24eureka_question,Allocating resources to programs,-1
 A1PZIN8H1VI6SY,Q1concept_behav,"Wolf, goat and cabbage transfer",-1
 A1PZIN8H1VI6SY,Q3type_1_planning,"Wolf, goat and cabbage transfer",1
 A1PZIN8H1VI6SY,Q4type_2_generate,"Wolf, goat and cabbage transfer",1
@@ -7579,6 +8239,26 @@ A5NE8TWS8ZV7B,Q20type_3_type_4,Writing story,-1
 A5NE8TWS8ZV7B,Q22confl_tradeoffs,Writing story,-1
 A5NE8TWS8ZV7B,Q23ss_out_uncert,Writing story,-1
 A5NE8TWS8ZV7B,Q24eureka_question,Writing story,-1
+AE1YA7Q3UKPRI,Q1concept_behav,Mastermind,-1
+AE1YA7Q3UKPRI,Q3type_1_planning,Mastermind,-1
+AE1YA7Q3UKPRI,Q4type_2_generate,Mastermind,-1
+AE1YA7Q3UKPRI,Q6type_5_cc,Mastermind,-1
+AE1YA7Q3UKPRI,Q7type_7_battle,Mastermind,1
+AE1YA7Q3UKPRI,Q8type_8_performance,Mastermind,1
+AE1YA7Q3UKPRI,Q9divisible_unitary,Mastermind,-1
+AE1YA7Q3UKPRI,Q10maximizing,Mastermind,-1
+AE1YA7Q3UKPRI,Q11optimizing,Mastermind,1
+AE1YA7Q3UKPRI,Q13outcome_multip,Mastermind,1
+AE1YA7Q3UKPRI,Q14sol_scheme_mul,Mastermind,1
+AE1YA7Q3UKPRI,Q15dec_verifiability,Mastermind,1
+AE1YA7Q3UKPRI,Q16shared_knowledge,Mastermind,-1
+AE1YA7Q3UKPRI,Q17within_sys_sol,Mastermind,1
+AE1YA7Q3UKPRI,Q18ans_recog,Mastermind,-1
+AE1YA7Q3UKPRI,Q19time_solvability,Mastermind,1
+AE1YA7Q3UKPRI,Q20type_3_type_4,Mastermind,1
+AE1YA7Q3UKPRI,Q22confl_tradeoffs,Mastermind,1
+AE1YA7Q3UKPRI,Q23ss_out_uncert,Mastermind,-1
+AE1YA7Q3UKPRI,Q24eureka_question,Mastermind,-1
 A2TLN8489YGY81,Q1concept_behav,Search for Oil Task,-1
 A2TLN8489YGY81,Q3type_1_planning,Search for Oil Task,-1
 A2TLN8489YGY81,Q4type_2_generate,Search for Oil Task,-1
@@ -7619,6 +8299,26 @@ A2S64AUN7JI7ZS,Q20type_3_type_4,Hidden figures in a picture (Searching Task),1
 A2S64AUN7JI7ZS,Q22confl_tradeoffs,Hidden figures in a picture (Searching Task),-1
 A2S64AUN7JI7ZS,Q23ss_out_uncert,Hidden figures in a picture (Searching Task),-1
 A2S64AUN7JI7ZS,Q24eureka_question,Hidden figures in a picture (Searching Task),1
+A2AZYU1CT24O0K,Q1concept_behav,Recall videos,-1
+A2AZYU1CT24O0K,Q3type_1_planning,Recall videos,-1
+A2AZYU1CT24O0K,Q4type_2_generate,Recall videos,-1
+A2AZYU1CT24O0K,Q6type_5_cc,Recall videos,-1
+A2AZYU1CT24O0K,Q7type_7_battle,Recall videos,-1
+A2AZYU1CT24O0K,Q8type_8_performance,Recall videos,-1
+A2AZYU1CT24O0K,Q9divisible_unitary,Recall videos,1
+A2AZYU1CT24O0K,Q10maximizing,Recall videos,1
+A2AZYU1CT24O0K,Q11optimizing,Recall videos,1
+A2AZYU1CT24O0K,Q13outcome_multip,Recall videos,1
+A2AZYU1CT24O0K,Q14sol_scheme_mul,Recall videos,1
+A2AZYU1CT24O0K,Q15dec_verifiability,Recall videos,1
+A2AZYU1CT24O0K,Q16shared_knowledge,Recall videos,1
+A2AZYU1CT24O0K,Q17within_sys_sol,Recall videos,1
+A2AZYU1CT24O0K,Q18ans_recog,Recall videos,1
+A2AZYU1CT24O0K,Q19time_solvability,Recall videos,1
+A2AZYU1CT24O0K,Q20type_3_type_4,Recall videos,1
+A2AZYU1CT24O0K,Q22confl_tradeoffs,Recall videos,-1
+A2AZYU1CT24O0K,Q23ss_out_uncert,Recall videos,-1
+A2AZYU1CT24O0K,Q24eureka_question,Recall videos,-1
 A18T7E73TNGOKP,Q1concept_behav,Target Search,-1
 A18T7E73TNGOKP,Q3type_1_planning,Target Search,-1
 A18T7E73TNGOKP,Q4type_2_generate,Target Search,-1
@@ -7919,6 +8619,26 @@ ARYL3C6N9SVV1,Q20type_3_type_4,Architectural design task,1
 ARYL3C6N9SVV1,Q22confl_tradeoffs,Architectural design task,1
 ARYL3C6N9SVV1,Q23ss_out_uncert,Architectural design task,1
 ARYL3C6N9SVV1,Q24eureka_question,Architectural design task,-1
+AKQAI78JTXXC9,Q1concept_behav,Mastermind,-1
+AKQAI78JTXXC9,Q3type_1_planning,Mastermind,-1
+AKQAI78JTXXC9,Q4type_2_generate,Mastermind,-1
+AKQAI78JTXXC9,Q6type_5_cc,Mastermind,-1
+AKQAI78JTXXC9,Q7type_7_battle,Mastermind,-1
+AKQAI78JTXXC9,Q8type_8_performance,Mastermind,-1
+AKQAI78JTXXC9,Q9divisible_unitary,Mastermind,-1
+AKQAI78JTXXC9,Q10maximizing,Mastermind,1
+AKQAI78JTXXC9,Q11optimizing,Mastermind,1
+AKQAI78JTXXC9,Q13outcome_multip,Mastermind,1
+AKQAI78JTXXC9,Q14sol_scheme_mul,Mastermind,1
+AKQAI78JTXXC9,Q15dec_verifiability,Mastermind,1
+AKQAI78JTXXC9,Q16shared_knowledge,Mastermind,1
+AKQAI78JTXXC9,Q17within_sys_sol,Mastermind,1
+AKQAI78JTXXC9,Q18ans_recog,Mastermind,1
+AKQAI78JTXXC9,Q19time_solvability,Mastermind,1
+AKQAI78JTXXC9,Q20type_3_type_4,Mastermind,1
+AKQAI78JTXXC9,Q22confl_tradeoffs,Mastermind,-1
+AKQAI78JTXXC9,Q23ss_out_uncert,Mastermind,-1
+AKQAI78JTXXC9,Q24eureka_question,Mastermind,-1
 A5NE8TWS8ZV7B,Q1concept_behav,Wason's Selection Task,-1
 A5NE8TWS8ZV7B,Q3type_1_planning,Wason's Selection Task,-1
 A5NE8TWS8ZV7B,Q4type_2_generate,Wason's Selection Task,-1
@@ -8339,6 +9059,26 @@ A17FGZ1I5P9RZA,Q20type_3_type_4,Hidden figures in a picture (Recall Task),1
 A17FGZ1I5P9RZA,Q22confl_tradeoffs,Hidden figures in a picture (Recall Task),-1
 A17FGZ1I5P9RZA,Q23ss_out_uncert,Hidden figures in a picture (Recall Task),1
 A17FGZ1I5P9RZA,Q24eureka_question,Hidden figures in a picture (Recall Task),-1
+A2S64AUN7JI7ZS,Q1concept_behav,Find the maximum,-1
+A2S64AUN7JI7ZS,Q3type_1_planning,Find the maximum,-1
+A2S64AUN7JI7ZS,Q4type_2_generate,Find the maximum,1
+A2S64AUN7JI7ZS,Q6type_5_cc,Find the maximum,-1
+A2S64AUN7JI7ZS,Q7type_7_battle,Find the maximum,1
+A2S64AUN7JI7ZS,Q8type_8_performance,Find the maximum,-1
+A2S64AUN7JI7ZS,Q9divisible_unitary,Find the maximum,-1
+A2S64AUN7JI7ZS,Q10maximizing,Find the maximum,1
+A2S64AUN7JI7ZS,Q11optimizing,Find the maximum,1
+A2S64AUN7JI7ZS,Q13outcome_multip,Find the maximum,1
+A2S64AUN7JI7ZS,Q14sol_scheme_mul,Find the maximum,1
+A2S64AUN7JI7ZS,Q15dec_verifiability,Find the maximum,-1
+A2S64AUN7JI7ZS,Q16shared_knowledge,Find the maximum,1
+A2S64AUN7JI7ZS,Q17within_sys_sol,Find the maximum,-1
+A2S64AUN7JI7ZS,Q18ans_recog,Find the maximum,-1
+A2S64AUN7JI7ZS,Q19time_solvability,Find the maximum,-1
+A2S64AUN7JI7ZS,Q20type_3_type_4,Find the maximum,1
+A2S64AUN7JI7ZS,Q22confl_tradeoffs,Find the maximum,-1
+A2S64AUN7JI7ZS,Q23ss_out_uncert,Find the maximum,1
+A2S64AUN7JI7ZS,Q24eureka_question,Find the maximum,-1
 A5NE8TWS8ZV7B,Q1concept_behav,Target Search,-1
 A5NE8TWS8ZV7B,Q3type_1_planning,Target Search,-1
 A5NE8TWS8ZV7B,Q4type_2_generate,Target Search,-1
@@ -8399,6 +9139,26 @@ A5NE8TWS8ZV7B,Q20type_3_type_4,Image rating,-1
 A5NE8TWS8ZV7B,Q22confl_tradeoffs,Image rating,-1
 A5NE8TWS8ZV7B,Q23ss_out_uncert,Image rating,1
 A5NE8TWS8ZV7B,Q24eureka_question,Image rating,-1
+AL51KTD0WITH9,Q1concept_behav,To evacuate or not to evacuate,-1
+AL51KTD0WITH9,Q3type_1_planning,To evacuate or not to evacuate,-1
+AL51KTD0WITH9,Q4type_2_generate,To evacuate or not to evacuate,-1
+AL51KTD0WITH9,Q6type_5_cc,To evacuate or not to evacuate,-1
+AL51KTD0WITH9,Q7type_7_battle,To evacuate or not to evacuate,-1
+AL51KTD0WITH9,Q8type_8_performance,To evacuate or not to evacuate,-1
+AL51KTD0WITH9,Q9divisible_unitary,To evacuate or not to evacuate,-1
+AL51KTD0WITH9,Q10maximizing,To evacuate or not to evacuate,-1
+AL51KTD0WITH9,Q11optimizing,To evacuate or not to evacuate,1
+AL51KTD0WITH9,Q13outcome_multip,To evacuate or not to evacuate,1
+AL51KTD0WITH9,Q14sol_scheme_mul,To evacuate or not to evacuate,1
+AL51KTD0WITH9,Q15dec_verifiability,To evacuate or not to evacuate,1
+AL51KTD0WITH9,Q16shared_knowledge,To evacuate or not to evacuate,-1
+AL51KTD0WITH9,Q17within_sys_sol,To evacuate or not to evacuate,1
+AL51KTD0WITH9,Q18ans_recog,To evacuate or not to evacuate,1
+AL51KTD0WITH9,Q19time_solvability,To evacuate or not to evacuate,1
+AL51KTD0WITH9,Q20type_3_type_4,To evacuate or not to evacuate,1
+AL51KTD0WITH9,Q22confl_tradeoffs,To evacuate or not to evacuate,-1
+AL51KTD0WITH9,Q23ss_out_uncert,To evacuate or not to evacuate,1
+AL51KTD0WITH9,Q24eureka_question,To evacuate or not to evacuate,-1
 AKQAI78JTXXC9,Q1concept_behav,Railroad Route Construction game,-1
 AKQAI78JTXXC9,Q3type_1_planning,Railroad Route Construction game,-1
 AKQAI78JTXXC9,Q4type_2_generate,Railroad Route Construction game,-1
@@ -8959,6 +9719,26 @@ A3NXT3OVGL7QNR,Q20type_3_type_4,Railroad Route Construction game (Impossible Ver
 A3NXT3OVGL7QNR,Q22confl_tradeoffs,Railroad Route Construction game (Impossible Version),-1
 A3NXT3OVGL7QNR,Q23ss_out_uncert,Railroad Route Construction game (Impossible Version),-1
 A3NXT3OVGL7QNR,Q24eureka_question,Railroad Route Construction game (Impossible Version),-1
+A1PZIN8H1VI6SY,Q1concept_behav,Euclidean traveling salesperson,-1
+A1PZIN8H1VI6SY,Q3type_1_planning,Euclidean traveling salesperson,1
+A1PZIN8H1VI6SY,Q4type_2_generate,Euclidean traveling salesperson,-1
+A1PZIN8H1VI6SY,Q6type_5_cc,Euclidean traveling salesperson,-1
+A1PZIN8H1VI6SY,Q7type_7_battle,Euclidean traveling salesperson,-1
+A1PZIN8H1VI6SY,Q8type_8_performance,Euclidean traveling salesperson,-1
+A1PZIN8H1VI6SY,Q9divisible_unitary,Euclidean traveling salesperson,-1
+A1PZIN8H1VI6SY,Q10maximizing,Euclidean traveling salesperson,1
+A1PZIN8H1VI6SY,Q11optimizing,Euclidean traveling salesperson,1
+A1PZIN8H1VI6SY,Q13outcome_multip,Euclidean traveling salesperson,-1
+A1PZIN8H1VI6SY,Q14sol_scheme_mul,Euclidean traveling salesperson,1
+A1PZIN8H1VI6SY,Q15dec_verifiability,Euclidean traveling salesperson,1
+A1PZIN8H1VI6SY,Q16shared_knowledge,Euclidean traveling salesperson,1
+A1PZIN8H1VI6SY,Q17within_sys_sol,Euclidean traveling salesperson,1
+A1PZIN8H1VI6SY,Q18ans_recog,Euclidean traveling salesperson,-1
+A1PZIN8H1VI6SY,Q19time_solvability,Euclidean traveling salesperson,-1
+A1PZIN8H1VI6SY,Q20type_3_type_4,Euclidean traveling salesperson,1
+A1PZIN8H1VI6SY,Q22confl_tradeoffs,Euclidean traveling salesperson,-1
+A1PZIN8H1VI6SY,Q23ss_out_uncert,Euclidean traveling salesperson,1
+A1PZIN8H1VI6SY,Q24eureka_question,Euclidean traveling salesperson,-1
 A2OVX9UW5WANQE,Q1concept_behav,Space Fortress,-1
 A2OVX9UW5WANQE,Q3type_1_planning,Space Fortress,-1
 A2OVX9UW5WANQE,Q4type_2_generate,Space Fortress,-1
@@ -9019,6 +9799,26 @@ A1I72NHC21347A,Q20type_3_type_4,Allocating resources to programs,-1
 A1I72NHC21347A,Q22confl_tradeoffs,Allocating resources to programs,1
 A1I72NHC21347A,Q23ss_out_uncert,Allocating resources to programs,1
 A1I72NHC21347A,Q24eureka_question,Allocating resources to programs,-1
+A5NE8TWS8ZV7B,Q1concept_behav,Mastermind,-1
+A5NE8TWS8ZV7B,Q3type_1_planning,Mastermind,-1
+A5NE8TWS8ZV7B,Q4type_2_generate,Mastermind,-1
+A5NE8TWS8ZV7B,Q6type_5_cc,Mastermind,1
+A5NE8TWS8ZV7B,Q7type_7_battle,Mastermind,-1
+A5NE8TWS8ZV7B,Q8type_8_performance,Mastermind,-1
+A5NE8TWS8ZV7B,Q9divisible_unitary,Mastermind,-1
+A5NE8TWS8ZV7B,Q10maximizing,Mastermind,1
+A5NE8TWS8ZV7B,Q11optimizing,Mastermind,1
+A5NE8TWS8ZV7B,Q13outcome_multip,Mastermind,1
+A5NE8TWS8ZV7B,Q14sol_scheme_mul,Mastermind,-1
+A5NE8TWS8ZV7B,Q15dec_verifiability,Mastermind,1
+A5NE8TWS8ZV7B,Q16shared_knowledge,Mastermind,1
+A5NE8TWS8ZV7B,Q17within_sys_sol,Mastermind,1
+A5NE8TWS8ZV7B,Q18ans_recog,Mastermind,1
+A5NE8TWS8ZV7B,Q19time_solvability,Mastermind,1
+A5NE8TWS8ZV7B,Q20type_3_type_4,Mastermind,1
+A5NE8TWS8ZV7B,Q22confl_tradeoffs,Mastermind,-1
+A5NE8TWS8ZV7B,Q23ss_out_uncert,Mastermind,1
+A5NE8TWS8ZV7B,Q24eureka_question,Mastermind,-1
 A272X64FOZFYLB,Q1concept_behav,Typing game,1
 A272X64FOZFYLB,Q3type_1_planning,Typing game,-1
 A272X64FOZFYLB,Q4type_2_generate,Typing game,-1
@@ -9279,6 +10079,26 @@ A1YSYI926BBOHW,Q20type_3_type_4,The N light bulbs game,1
 A1YSYI926BBOHW,Q22confl_tradeoffs,The N light bulbs game,-1
 A1YSYI926BBOHW,Q23ss_out_uncert,The N light bulbs game,1
 A1YSYI926BBOHW,Q24eureka_question,The N light bulbs game,-1
+A17KN7NAP48L4B,Q1concept_behav,Estimating social quantity,-1
+A17KN7NAP48L4B,Q3type_1_planning,Estimating social quantity,-1
+A17KN7NAP48L4B,Q4type_2_generate,Estimating social quantity,-1
+A17KN7NAP48L4B,Q6type_5_cc,Estimating social quantity,-1
+A17KN7NAP48L4B,Q7type_7_battle,Estimating social quantity,-1
+A17KN7NAP48L4B,Q8type_8_performance,Estimating social quantity,-1
+A17KN7NAP48L4B,Q9divisible_unitary,Estimating social quantity,1
+A17KN7NAP48L4B,Q10maximizing,Estimating social quantity,1
+A17KN7NAP48L4B,Q11optimizing,Estimating social quantity,1
+A17KN7NAP48L4B,Q13outcome_multip,Estimating social quantity,1
+A17KN7NAP48L4B,Q14sol_scheme_mul,Estimating social quantity,1
+A17KN7NAP48L4B,Q15dec_verifiability,Estimating social quantity,1
+A17KN7NAP48L4B,Q16shared_knowledge,Estimating social quantity,1
+A17KN7NAP48L4B,Q17within_sys_sol,Estimating social quantity,1
+A17KN7NAP48L4B,Q18ans_recog,Estimating social quantity,1
+A17KN7NAP48L4B,Q19time_solvability,Estimating social quantity,1
+A17KN7NAP48L4B,Q20type_3_type_4,Estimating social quantity,1
+A17KN7NAP48L4B,Q22confl_tradeoffs,Estimating social quantity,-1
+A17KN7NAP48L4B,Q23ss_out_uncert,Estimating social quantity,1
+A17KN7NAP48L4B,Q24eureka_question,Estimating social quantity,-1
 A1VRG5HKZC0H0C,Q1concept_behav,Reproducing arts,-1
 A1VRG5HKZC0H0C,Q3type_1_planning,Reproducing arts,-1
 A1VRG5HKZC0H0C,Q4type_2_generate,Reproducing arts,-1
@@ -9559,6 +10379,66 @@ A17KN7NAP48L4B,Q20type_3_type_4,Recall word lists,1
 A17KN7NAP48L4B,Q22confl_tradeoffs,Recall word lists,-1
 A17KN7NAP48L4B,Q23ss_out_uncert,Recall word lists,-1
 A17KN7NAP48L4B,Q24eureka_question,Recall word lists,-1
+A17KN7NAP48L4B,Q1concept_behav,The Fish game,1
+A17KN7NAP48L4B,Q3type_1_planning,The Fish game,-1
+A17KN7NAP48L4B,Q4type_2_generate,The Fish game,-1
+A17KN7NAP48L4B,Q6type_5_cc,The Fish game,-1
+A17KN7NAP48L4B,Q7type_7_battle,The Fish game,-1
+A17KN7NAP48L4B,Q8type_8_performance,The Fish game,-1
+A17KN7NAP48L4B,Q9divisible_unitary,The Fish game,-1
+A17KN7NAP48L4B,Q10maximizing,The Fish game,1
+A17KN7NAP48L4B,Q11optimizing,The Fish game,-1
+A17KN7NAP48L4B,Q13outcome_multip,The Fish game,-1
+A17KN7NAP48L4B,Q14sol_scheme_mul,The Fish game,-1
+A17KN7NAP48L4B,Q15dec_verifiability,The Fish game,1
+A17KN7NAP48L4B,Q16shared_knowledge,The Fish game,1
+A17KN7NAP48L4B,Q17within_sys_sol,The Fish game,1
+A17KN7NAP48L4B,Q18ans_recog,The Fish game,-1
+A17KN7NAP48L4B,Q19time_solvability,The Fish game,-1
+A17KN7NAP48L4B,Q20type_3_type_4,The Fish game,1
+A17KN7NAP48L4B,Q22confl_tradeoffs,The Fish game,1
+A17KN7NAP48L4B,Q23ss_out_uncert,The Fish game,1
+A17KN7NAP48L4B,Q24eureka_question,The Fish game,-1
+AXPZAP62ZYWP8,Q1concept_behav,Mastermind,-1
+AXPZAP62ZYWP8,Q3type_1_planning,Mastermind,-1
+AXPZAP62ZYWP8,Q4type_2_generate,Mastermind,-1
+AXPZAP62ZYWP8,Q6type_5_cc,Mastermind,1
+AXPZAP62ZYWP8,Q7type_7_battle,Mastermind,-1
+AXPZAP62ZYWP8,Q8type_8_performance,Mastermind,1
+AXPZAP62ZYWP8,Q9divisible_unitary,Mastermind,1
+AXPZAP62ZYWP8,Q10maximizing,Mastermind,1
+AXPZAP62ZYWP8,Q11optimizing,Mastermind,-1
+AXPZAP62ZYWP8,Q13outcome_multip,Mastermind,-1
+AXPZAP62ZYWP8,Q14sol_scheme_mul,Mastermind,-1
+AXPZAP62ZYWP8,Q15dec_verifiability,Mastermind,-1
+AXPZAP62ZYWP8,Q16shared_knowledge,Mastermind,1
+AXPZAP62ZYWP8,Q17within_sys_sol,Mastermind,1
+AXPZAP62ZYWP8,Q18ans_recog,Mastermind,1
+AXPZAP62ZYWP8,Q19time_solvability,Mastermind,1
+AXPZAP62ZYWP8,Q20type_3_type_4,Mastermind,1
+AXPZAP62ZYWP8,Q22confl_tradeoffs,Mastermind,1
+AXPZAP62ZYWP8,Q23ss_out_uncert,Mastermind,1
+AXPZAP62ZYWP8,Q24eureka_question,Mastermind,1
+A33PHCBUOD4WKD,Q1concept_behav,Target Search,-1
+A33PHCBUOD4WKD,Q3type_1_planning,Target Search,-1
+A33PHCBUOD4WKD,Q4type_2_generate,Target Search,-1
+A33PHCBUOD4WKD,Q6type_5_cc,Target Search,-1
+A33PHCBUOD4WKD,Q7type_7_battle,Target Search,-1
+A33PHCBUOD4WKD,Q8type_8_performance,Target Search,-1
+A33PHCBUOD4WKD,Q9divisible_unitary,Target Search,-1
+A33PHCBUOD4WKD,Q10maximizing,Target Search,1
+A33PHCBUOD4WKD,Q11optimizing,Target Search,-1
+A33PHCBUOD4WKD,Q13outcome_multip,Target Search,1
+A33PHCBUOD4WKD,Q14sol_scheme_mul,Target Search,1
+A33PHCBUOD4WKD,Q15dec_verifiability,Target Search,1
+A33PHCBUOD4WKD,Q16shared_knowledge,Target Search,1
+A33PHCBUOD4WKD,Q17within_sys_sol,Target Search,1
+A33PHCBUOD4WKD,Q18ans_recog,Target Search,1
+A33PHCBUOD4WKD,Q19time_solvability,Target Search,1
+A33PHCBUOD4WKD,Q20type_3_type_4,Target Search,1
+A33PHCBUOD4WKD,Q22confl_tradeoffs,Target Search,1
+A33PHCBUOD4WKD,Q23ss_out_uncert,Target Search,1
+A33PHCBUOD4WKD,Q24eureka_question,Target Search,-1
 AKQAI78JTXXC9,Q1concept_behav,Trivia Multiple Choice Quiz,-1
 AKQAI78JTXXC9,Q3type_1_planning,Trivia Multiple Choice Quiz,-1
 AKQAI78JTXXC9,Q4type_2_generate,Trivia Multiple Choice Quiz,-1
@@ -9659,6 +10539,26 @@ A272X64FOZFYLB,Q20type_3_type_4,Recall videos,1
 A272X64FOZFYLB,Q22confl_tradeoffs,Recall videos,-1
 A272X64FOZFYLB,Q23ss_out_uncert,Recall videos,1
 A272X64FOZFYLB,Q24eureka_question,Recall videos,-1
+AL51KTD0WITH9,Q1concept_behav,Search for Oil Task,-1
+AL51KTD0WITH9,Q3type_1_planning,Search for Oil Task,-1
+AL51KTD0WITH9,Q4type_2_generate,Search for Oil Task,-1
+AL51KTD0WITH9,Q6type_5_cc,Search for Oil Task,-1
+AL51KTD0WITH9,Q7type_7_battle,Search for Oil Task,-1
+AL51KTD0WITH9,Q8type_8_performance,Search for Oil Task,-1
+AL51KTD0WITH9,Q9divisible_unitary,Search for Oil Task,-1
+AL51KTD0WITH9,Q10maximizing,Search for Oil Task,-1
+AL51KTD0WITH9,Q11optimizing,Search for Oil Task,1
+AL51KTD0WITH9,Q13outcome_multip,Search for Oil Task,1
+AL51KTD0WITH9,Q14sol_scheme_mul,Search for Oil Task,1
+AL51KTD0WITH9,Q15dec_verifiability,Search for Oil Task,1
+AL51KTD0WITH9,Q16shared_knowledge,Search for Oil Task,1
+AL51KTD0WITH9,Q17within_sys_sol,Search for Oil Task,1
+AL51KTD0WITH9,Q18ans_recog,Search for Oil Task,1
+AL51KTD0WITH9,Q19time_solvability,Search for Oil Task,1
+AL51KTD0WITH9,Q20type_3_type_4,Search for Oil Task,1
+AL51KTD0WITH9,Q22confl_tradeoffs,Search for Oil Task,-1
+AL51KTD0WITH9,Q23ss_out_uncert,Search for Oil Task,1
+AL51KTD0WITH9,Q24eureka_question,Search for Oil Task,-1
 A38I0E8UK53ME5,Q1concept_behav,Find the maximum,-1
 A38I0E8UK53ME5,Q3type_1_planning,Find the maximum,-1
 A38I0E8UK53ME5,Q4type_2_generate,Find the maximum,-1
@@ -9939,6 +10839,26 @@ A31BA1WLSWUSY1,Q20type_3_type_4,Checkers,1
 A31BA1WLSWUSY1,Q22confl_tradeoffs,Checkers,-1
 A31BA1WLSWUSY1,Q23ss_out_uncert,Checkers,-1
 A31BA1WLSWUSY1,Q24eureka_question,Checkers,-1
+A1PZIN8H1VI6SY,Q1concept_behav,Railroad Route Construction game,-1
+A1PZIN8H1VI6SY,Q3type_1_planning,Railroad Route Construction game,-1
+A1PZIN8H1VI6SY,Q4type_2_generate,Railroad Route Construction game,-1
+A1PZIN8H1VI6SY,Q6type_5_cc,Railroad Route Construction game,-1
+A1PZIN8H1VI6SY,Q7type_7_battle,Railroad Route Construction game,-1
+A1PZIN8H1VI6SY,Q8type_8_performance,Railroad Route Construction game,1
+A1PZIN8H1VI6SY,Q9divisible_unitary,Railroad Route Construction game,-1
+A1PZIN8H1VI6SY,Q10maximizing,Railroad Route Construction game,1
+A1PZIN8H1VI6SY,Q11optimizing,Railroad Route Construction game,1
+A1PZIN8H1VI6SY,Q13outcome_multip,Railroad Route Construction game,-1
+A1PZIN8H1VI6SY,Q14sol_scheme_mul,Railroad Route Construction game,-1
+A1PZIN8H1VI6SY,Q15dec_verifiability,Railroad Route Construction game,1
+A1PZIN8H1VI6SY,Q16shared_knowledge,Railroad Route Construction game,1
+A1PZIN8H1VI6SY,Q17within_sys_sol,Railroad Route Construction game,1
+A1PZIN8H1VI6SY,Q18ans_recog,Railroad Route Construction game,1
+A1PZIN8H1VI6SY,Q19time_solvability,Railroad Route Construction game,1
+A1PZIN8H1VI6SY,Q20type_3_type_4,Railroad Route Construction game,1
+A1PZIN8H1VI6SY,Q22confl_tradeoffs,Railroad Route Construction game,1
+A1PZIN8H1VI6SY,Q23ss_out_uncert,Railroad Route Construction game,-1
+A1PZIN8H1VI6SY,Q24eureka_question,Railroad Route Construction game,1
 A1VRG5HKZC0H0C,Q1concept_behav,Allocating resources to programs,-1
 A1VRG5HKZC0H0C,Q3type_1_planning,Allocating resources to programs,-1
 A1VRG5HKZC0H0C,Q4type_2_generate,Allocating resources to programs,-1
@@ -9999,6 +10919,26 @@ A3HL2LL0LEPZT8,Q20type_3_type_4,Recall association,1
 A3HL2LL0LEPZT8,Q22confl_tradeoffs,Recall association,-1
 A3HL2LL0LEPZT8,Q23ss_out_uncert,Recall association,1
 A3HL2LL0LEPZT8,Q24eureka_question,Recall association,-1
+AL51KTD0WITH9,Q1concept_behav,Estimating geological metrics,-1
+AL51KTD0WITH9,Q3type_1_planning,Estimating geological metrics,-1
+AL51KTD0WITH9,Q4type_2_generate,Estimating geological metrics,-1
+AL51KTD0WITH9,Q6type_5_cc,Estimating geological metrics,-1
+AL51KTD0WITH9,Q7type_7_battle,Estimating geological metrics,-1
+AL51KTD0WITH9,Q8type_8_performance,Estimating geological metrics,-1
+AL51KTD0WITH9,Q9divisible_unitary,Estimating geological metrics,-1
+AL51KTD0WITH9,Q10maximizing,Estimating geological metrics,-1
+AL51KTD0WITH9,Q11optimizing,Estimating geological metrics,1
+AL51KTD0WITH9,Q13outcome_multip,Estimating geological metrics,1
+AL51KTD0WITH9,Q14sol_scheme_mul,Estimating geological metrics,1
+AL51KTD0WITH9,Q15dec_verifiability,Estimating geological metrics,1
+AL51KTD0WITH9,Q16shared_knowledge,Estimating geological metrics,1
+AL51KTD0WITH9,Q17within_sys_sol,Estimating geological metrics,1
+AL51KTD0WITH9,Q18ans_recog,Estimating geological metrics,1
+AL51KTD0WITH9,Q19time_solvability,Estimating geological metrics,1
+AL51KTD0WITH9,Q20type_3_type_4,Estimating geological metrics,1
+AL51KTD0WITH9,Q22confl_tradeoffs,Estimating geological metrics,-1
+AL51KTD0WITH9,Q23ss_out_uncert,Estimating geological metrics,-1
+AL51KTD0WITH9,Q24eureka_question,Estimating geological metrics,-1
 A8C3WNWRBWUXO,Q1concept_behav,Desert survival,-1
 A8C3WNWRBWUXO,Q3type_1_planning,Desert survival,1
 A8C3WNWRBWUXO,Q4type_2_generate,Desert survival,1
@@ -10319,6 +11259,26 @@ A2078XQX9ZSWBC,Q20type_3_type_4,Wildcat Wells,1
 A2078XQX9ZSWBC,Q22confl_tradeoffs,Wildcat Wells,-1
 A2078XQX9ZSWBC,Q23ss_out_uncert,Wildcat Wells,1
 A2078XQX9ZSWBC,Q24eureka_question,Wildcat Wells,-1
+AA5ZDXAA2DLY1,Q1concept_behav,Game of Clue - Terrorist Attack,-1
+AA5ZDXAA2DLY1,Q3type_1_planning,Game of Clue - Terrorist Attack,-1
+AA5ZDXAA2DLY1,Q4type_2_generate,Game of Clue - Terrorist Attack,-1
+AA5ZDXAA2DLY1,Q6type_5_cc,Game of Clue - Terrorist Attack,-1
+AA5ZDXAA2DLY1,Q7type_7_battle,Game of Clue - Terrorist Attack,-1
+AA5ZDXAA2DLY1,Q8type_8_performance,Game of Clue - Terrorist Attack,-1
+AA5ZDXAA2DLY1,Q9divisible_unitary,Game of Clue - Terrorist Attack,1
+AA5ZDXAA2DLY1,Q10maximizing,Game of Clue - Terrorist Attack,1
+AA5ZDXAA2DLY1,Q11optimizing,Game of Clue - Terrorist Attack,1
+AA5ZDXAA2DLY1,Q13outcome_multip,Game of Clue - Terrorist Attack,1
+AA5ZDXAA2DLY1,Q14sol_scheme_mul,Game of Clue - Terrorist Attack,-1
+AA5ZDXAA2DLY1,Q15dec_verifiability,Game of Clue - Terrorist Attack,1
+AA5ZDXAA2DLY1,Q16shared_knowledge,Game of Clue - Terrorist Attack,1
+AA5ZDXAA2DLY1,Q17within_sys_sol,Game of Clue - Terrorist Attack,1
+AA5ZDXAA2DLY1,Q18ans_recog,Game of Clue - Terrorist Attack,1
+AA5ZDXAA2DLY1,Q19time_solvability,Game of Clue - Terrorist Attack,1
+AA5ZDXAA2DLY1,Q20type_3_type_4,Game of Clue - Terrorist Attack,1
+AA5ZDXAA2DLY1,Q22confl_tradeoffs,Game of Clue - Terrorist Attack,1
+AA5ZDXAA2DLY1,Q23ss_out_uncert,Game of Clue - Terrorist Attack,1
+AA5ZDXAA2DLY1,Q24eureka_question,Game of Clue - Terrorist Attack,-1
 AURYD2FH3FUOQ,Q1concept_behav,Crisis mapping,-1
 AURYD2FH3FUOQ,Q3type_1_planning,Crisis mapping,-1
 AURYD2FH3FUOQ,Q4type_2_generate,Crisis mapping,-1
@@ -10499,6 +11459,26 @@ A3V3SQCM8QGYB7,Q20type_3_type_4,Visual Oddball Target,1
 A3V3SQCM8QGYB7,Q22confl_tradeoffs,Visual Oddball Target,1
 A3V3SQCM8QGYB7,Q23ss_out_uncert,Visual Oddball Target,1
 A3V3SQCM8QGYB7,Q24eureka_question,Visual Oddball Target,-1
+A33PHCBUOD4WKD,Q1concept_behav,Railroad Route Construction game (Impossible Version),-1
+A33PHCBUOD4WKD,Q3type_1_planning,Railroad Route Construction game (Impossible Version),-1
+A33PHCBUOD4WKD,Q4type_2_generate,Railroad Route Construction game (Impossible Version),-1
+A33PHCBUOD4WKD,Q6type_5_cc,Railroad Route Construction game (Impossible Version),-1
+A33PHCBUOD4WKD,Q7type_7_battle,Railroad Route Construction game (Impossible Version),-1
+A33PHCBUOD4WKD,Q8type_8_performance,Railroad Route Construction game (Impossible Version),1
+A33PHCBUOD4WKD,Q9divisible_unitary,Railroad Route Construction game (Impossible Version),-1
+A33PHCBUOD4WKD,Q10maximizing,Railroad Route Construction game (Impossible Version),1
+A33PHCBUOD4WKD,Q11optimizing,Railroad Route Construction game (Impossible Version),1
+A33PHCBUOD4WKD,Q13outcome_multip,Railroad Route Construction game (Impossible Version),-1
+A33PHCBUOD4WKD,Q14sol_scheme_mul,Railroad Route Construction game (Impossible Version),1
+A33PHCBUOD4WKD,Q15dec_verifiability,Railroad Route Construction game (Impossible Version),1
+A33PHCBUOD4WKD,Q16shared_knowledge,Railroad Route Construction game (Impossible Version),-1
+A33PHCBUOD4WKD,Q17within_sys_sol,Railroad Route Construction game (Impossible Version),-1
+A33PHCBUOD4WKD,Q18ans_recog,Railroad Route Construction game (Impossible Version),1
+A33PHCBUOD4WKD,Q19time_solvability,Railroad Route Construction game (Impossible Version),-1
+A33PHCBUOD4WKD,Q20type_3_type_4,Railroad Route Construction game (Impossible Version),-1
+A33PHCBUOD4WKD,Q22confl_tradeoffs,Railroad Route Construction game (Impossible Version),-1
+A33PHCBUOD4WKD,Q23ss_out_uncert,Railroad Route Construction game (Impossible Version),1
+A33PHCBUOD4WKD,Q24eureka_question,Railroad Route Construction game (Impossible Version),-1
 A2615YW1YERQBO,Q1concept_behav,Arithmetic problem 1,-1
 A2615YW1YERQBO,Q3type_1_planning,Arithmetic problem 1,1
 A2615YW1YERQBO,Q4type_2_generate,Arithmetic problem 1,-1
@@ -10779,6 +11759,26 @@ A18T7E73TNGOKP,Q20type_3_type_4,Categorization problem,1
 A18T7E73TNGOKP,Q22confl_tradeoffs,Categorization problem,1
 A18T7E73TNGOKP,Q23ss_out_uncert,Categorization problem,1
 A18T7E73TNGOKP,Q24eureka_question,Categorization problem,-1
+A33PHCBUOD4WKD,Q1concept_behav,The Fish game,-1
+A33PHCBUOD4WKD,Q3type_1_planning,The Fish game,-1
+A33PHCBUOD4WKD,Q4type_2_generate,The Fish game,-1
+A33PHCBUOD4WKD,Q6type_5_cc,The Fish game,-1
+A33PHCBUOD4WKD,Q7type_7_battle,The Fish game,1
+A33PHCBUOD4WKD,Q8type_8_performance,The Fish game,-1
+A33PHCBUOD4WKD,Q9divisible_unitary,The Fish game,-1
+A33PHCBUOD4WKD,Q10maximizing,The Fish game,1
+A33PHCBUOD4WKD,Q11optimizing,The Fish game,-1
+A33PHCBUOD4WKD,Q13outcome_multip,The Fish game,-1
+A33PHCBUOD4WKD,Q14sol_scheme_mul,The Fish game,1
+A33PHCBUOD4WKD,Q15dec_verifiability,The Fish game,1
+A33PHCBUOD4WKD,Q16shared_knowledge,The Fish game,1
+A33PHCBUOD4WKD,Q17within_sys_sol,The Fish game,1
+A33PHCBUOD4WKD,Q18ans_recog,The Fish game,1
+A33PHCBUOD4WKD,Q19time_solvability,The Fish game,1
+A33PHCBUOD4WKD,Q20type_3_type_4,The Fish game,1
+A33PHCBUOD4WKD,Q22confl_tradeoffs,The Fish game,1
+A33PHCBUOD4WKD,Q23ss_out_uncert,The Fish game,1
+A33PHCBUOD4WKD,Q24eureka_question,The Fish game,-1
 A2615YW1YERQBO,Q1concept_behav,Reproducing arts,-1
 A2615YW1YERQBO,Q3type_1_planning,Reproducing arts,-1
 A2615YW1YERQBO,Q4type_2_generate,Reproducing arts,-1
@@ -10799,6 +11799,26 @@ A2615YW1YERQBO,Q20type_3_type_4,Reproducing arts,1
 A2615YW1YERQBO,Q22confl_tradeoffs,Reproducing arts,-1
 A2615YW1YERQBO,Q23ss_out_uncert,Reproducing arts,-1
 A2615YW1YERQBO,Q24eureka_question,Reproducing arts,-1
+A272X64FOZFYLB,Q1concept_behav,Railroad Route Construction game,-1
+A272X64FOZFYLB,Q3type_1_planning,Railroad Route Construction game,-1
+A272X64FOZFYLB,Q4type_2_generate,Railroad Route Construction game,-1
+A272X64FOZFYLB,Q6type_5_cc,Railroad Route Construction game,-1
+A272X64FOZFYLB,Q7type_7_battle,Railroad Route Construction game,-1
+A272X64FOZFYLB,Q8type_8_performance,Railroad Route Construction game,1
+A272X64FOZFYLB,Q9divisible_unitary,Railroad Route Construction game,1
+A272X64FOZFYLB,Q10maximizing,Railroad Route Construction game,-1
+A272X64FOZFYLB,Q11optimizing,Railroad Route Construction game,-1
+A272X64FOZFYLB,Q13outcome_multip,Railroad Route Construction game,-1
+A272X64FOZFYLB,Q14sol_scheme_mul,Railroad Route Construction game,-1
+A272X64FOZFYLB,Q15dec_verifiability,Railroad Route Construction game,1
+A272X64FOZFYLB,Q16shared_knowledge,Railroad Route Construction game,1
+A272X64FOZFYLB,Q17within_sys_sol,Railroad Route Construction game,1
+A272X64FOZFYLB,Q18ans_recog,Railroad Route Construction game,1
+A272X64FOZFYLB,Q19time_solvability,Railroad Route Construction game,1
+A272X64FOZFYLB,Q20type_3_type_4,Railroad Route Construction game,1
+A272X64FOZFYLB,Q22confl_tradeoffs,Railroad Route Construction game,-1
+A272X64FOZFYLB,Q23ss_out_uncert,Railroad Route Construction game,-1
+A272X64FOZFYLB,Q24eureka_question,Railroad Route Construction game,-1
 A2WDF40FA670T9,Q1concept_behav,Space Fortress,1
 A2WDF40FA670T9,Q3type_1_planning,Space Fortress,-1
 A2WDF40FA670T9,Q4type_2_generate,Space Fortress,-1
@@ -10979,6 +11999,46 @@ A3HL2LL0LEPZT8,Q20type_3_type_4,Unscramble words (anagrams),1
 A3HL2LL0LEPZT8,Q22confl_tradeoffs,Unscramble words (anagrams),-1
 A3HL2LL0LEPZT8,Q23ss_out_uncert,Unscramble words (anagrams),-1
 A3HL2LL0LEPZT8,Q24eureka_question,Unscramble words (anagrams),-1
+A272X64FOZFYLB,Q1concept_behav,Guessing the correlation,-1
+A272X64FOZFYLB,Q3type_1_planning,Guessing the correlation,-1
+A272X64FOZFYLB,Q4type_2_generate,Guessing the correlation,-1
+A272X64FOZFYLB,Q6type_5_cc,Guessing the correlation,-1
+A272X64FOZFYLB,Q7type_7_battle,Guessing the correlation,-1
+A272X64FOZFYLB,Q8type_8_performance,Guessing the correlation,-1
+A272X64FOZFYLB,Q9divisible_unitary,Guessing the correlation,-1
+A272X64FOZFYLB,Q10maximizing,Guessing the correlation,-1
+A272X64FOZFYLB,Q11optimizing,Guessing the correlation,1
+A272X64FOZFYLB,Q13outcome_multip,Guessing the correlation,1
+A272X64FOZFYLB,Q14sol_scheme_mul,Guessing the correlation,-1
+A272X64FOZFYLB,Q15dec_verifiability,Guessing the correlation,1
+A272X64FOZFYLB,Q16shared_knowledge,Guessing the correlation,1
+A272X64FOZFYLB,Q17within_sys_sol,Guessing the correlation,1
+A272X64FOZFYLB,Q18ans_recog,Guessing the correlation,-1
+A272X64FOZFYLB,Q19time_solvability,Guessing the correlation,1
+A272X64FOZFYLB,Q20type_3_type_4,Guessing the correlation,1
+A272X64FOZFYLB,Q22confl_tradeoffs,Guessing the correlation,-1
+A272X64FOZFYLB,Q23ss_out_uncert,Guessing the correlation,1
+A272X64FOZFYLB,Q24eureka_question,Guessing the correlation,-1
+A2S64AUN7JI7ZS,Q1concept_behav,Random dot motion,-1
+A2S64AUN7JI7ZS,Q3type_1_planning,Random dot motion,-1
+A2S64AUN7JI7ZS,Q4type_2_generate,Random dot motion,-1
+A2S64AUN7JI7ZS,Q6type_5_cc,Random dot motion,-1
+A2S64AUN7JI7ZS,Q7type_7_battle,Random dot motion,1
+A2S64AUN7JI7ZS,Q8type_8_performance,Random dot motion,-1
+A2S64AUN7JI7ZS,Q9divisible_unitary,Random dot motion,-1
+A2S64AUN7JI7ZS,Q10maximizing,Random dot motion,1
+A2S64AUN7JI7ZS,Q11optimizing,Random dot motion,1
+A2S64AUN7JI7ZS,Q13outcome_multip,Random dot motion,1
+A2S64AUN7JI7ZS,Q14sol_scheme_mul,Random dot motion,1
+A2S64AUN7JI7ZS,Q15dec_verifiability,Random dot motion,-1
+A2S64AUN7JI7ZS,Q16shared_knowledge,Random dot motion,1
+A2S64AUN7JI7ZS,Q17within_sys_sol,Random dot motion,1
+A2S64AUN7JI7ZS,Q18ans_recog,Random dot motion,-1
+A2S64AUN7JI7ZS,Q19time_solvability,Random dot motion,-1
+A2S64AUN7JI7ZS,Q20type_3_type_4,Random dot motion,1
+A2S64AUN7JI7ZS,Q22confl_tradeoffs,Random dot motion,1
+A2S64AUN7JI7ZS,Q23ss_out_uncert,Random dot motion,1
+A2S64AUN7JI7ZS,Q24eureka_question,Random dot motion,-1
 AKQAI78JTXXC9,Q1concept_behav,Logic Problem,-1
 AKQAI78JTXXC9,Q3type_1_planning,Logic Problem,-1
 AKQAI78JTXXC9,Q4type_2_generate,Logic Problem,-1
@@ -11619,6 +12679,26 @@ AA5ZDXAA2DLY1,Q20type_3_type_4,Word completion given part of word,1
 AA5ZDXAA2DLY1,Q22confl_tradeoffs,Word completion given part of word,-1
 AA5ZDXAA2DLY1,Q23ss_out_uncert,Word completion given part of word,-1
 AA5ZDXAA2DLY1,Q24eureka_question,Word completion given part of word,-1
+A26UIS59SY4NM6,Q1concept_behav,Railroad Route Construction game,-1
+A26UIS59SY4NM6,Q3type_1_planning,Railroad Route Construction game,-1
+A26UIS59SY4NM6,Q4type_2_generate,Railroad Route Construction game,-1
+A26UIS59SY4NM6,Q6type_5_cc,Railroad Route Construction game,-1
+A26UIS59SY4NM6,Q7type_7_battle,Railroad Route Construction game,-1
+A26UIS59SY4NM6,Q8type_8_performance,Railroad Route Construction game,1
+A26UIS59SY4NM6,Q9divisible_unitary,Railroad Route Construction game,-1
+A26UIS59SY4NM6,Q10maximizing,Railroad Route Construction game,-1
+A26UIS59SY4NM6,Q11optimizing,Railroad Route Construction game,-1
+A26UIS59SY4NM6,Q13outcome_multip,Railroad Route Construction game,-1
+A26UIS59SY4NM6,Q14sol_scheme_mul,Railroad Route Construction game,-1
+A26UIS59SY4NM6,Q15dec_verifiability,Railroad Route Construction game,1
+A26UIS59SY4NM6,Q16shared_knowledge,Railroad Route Construction game,1
+A26UIS59SY4NM6,Q17within_sys_sol,Railroad Route Construction game,1
+A26UIS59SY4NM6,Q18ans_recog,Railroad Route Construction game,1
+A26UIS59SY4NM6,Q19time_solvability,Railroad Route Construction game,1
+A26UIS59SY4NM6,Q20type_3_type_4,Railroad Route Construction game,1
+A26UIS59SY4NM6,Q22confl_tradeoffs,Railroad Route Construction game,-1
+A26UIS59SY4NM6,Q23ss_out_uncert,Railroad Route Construction game,-1
+A26UIS59SY4NM6,Q24eureka_question,Railroad Route Construction game,-1
 A31BA1WLSWUSY1,Q1concept_behav,Crisis mapping,-1
 A31BA1WLSWUSY1,Q3type_1_planning,Crisis mapping,-1
 A31BA1WLSWUSY1,Q4type_2_generate,Crisis mapping,-1
@@ -11819,6 +12899,26 @@ AWAW665TQQP2F,Q20type_3_type_4,Iterative lemonade stand task,1
 AWAW665TQQP2F,Q22confl_tradeoffs,Iterative lemonade stand task,1
 AWAW665TQQP2F,Q23ss_out_uncert,Iterative lemonade stand task,-1
 AWAW665TQQP2F,Q24eureka_question,Iterative lemonade stand task,1
+AXPZAP62ZYWP8,Q1concept_behav,Iterative lemonade stand task,1
+AXPZAP62ZYWP8,Q3type_1_planning,Iterative lemonade stand task,1
+AXPZAP62ZYWP8,Q4type_2_generate,Iterative lemonade stand task,1
+AXPZAP62ZYWP8,Q6type_5_cc,Iterative lemonade stand task,-1
+AXPZAP62ZYWP8,Q7type_7_battle,Iterative lemonade stand task,-1
+AXPZAP62ZYWP8,Q8type_8_performance,Iterative lemonade stand task,-1
+AXPZAP62ZYWP8,Q9divisible_unitary,Iterative lemonade stand task,1
+AXPZAP62ZYWP8,Q10maximizing,Iterative lemonade stand task,1
+AXPZAP62ZYWP8,Q11optimizing,Iterative lemonade stand task,-1
+AXPZAP62ZYWP8,Q13outcome_multip,Iterative lemonade stand task,-1
+AXPZAP62ZYWP8,Q14sol_scheme_mul,Iterative lemonade stand task,-1
+AXPZAP62ZYWP8,Q15dec_verifiability,Iterative lemonade stand task,1
+AXPZAP62ZYWP8,Q16shared_knowledge,Iterative lemonade stand task,1
+AXPZAP62ZYWP8,Q17within_sys_sol,Iterative lemonade stand task,1
+AXPZAP62ZYWP8,Q18ans_recog,Iterative lemonade stand task,1
+AXPZAP62ZYWP8,Q19time_solvability,Iterative lemonade stand task,1
+AXPZAP62ZYWP8,Q20type_3_type_4,Iterative lemonade stand task,1
+AXPZAP62ZYWP8,Q22confl_tradeoffs,Iterative lemonade stand task,-1
+AXPZAP62ZYWP8,Q23ss_out_uncert,Iterative lemonade stand task,1
+AXPZAP62ZYWP8,Q24eureka_question,Iterative lemonade stand task,-1
 A1NLP66FKHBS4V,Q1concept_behav,Wildcat Wells,-1
 A1NLP66FKHBS4V,Q3type_1_planning,Wildcat Wells,-1
 A1NLP66FKHBS4V,Q4type_2_generate,Wildcat Wells,-1
@@ -12159,6 +13259,26 @@ A272X64FOZFYLB,Q20type_3_type_4,Word completion given starting letter,1
 A272X64FOZFYLB,Q22confl_tradeoffs,Word completion given starting letter,-1
 A272X64FOZFYLB,Q23ss_out_uncert,Word completion given starting letter,-1
 A272X64FOZFYLB,Q24eureka_question,Word completion given starting letter,-1
+AE1YA7Q3UKPRI,Q1concept_behav,Game of Clue - Terrorist Attack,-1
+AE1YA7Q3UKPRI,Q3type_1_planning,Game of Clue - Terrorist Attack,-1
+AE1YA7Q3UKPRI,Q4type_2_generate,Game of Clue - Terrorist Attack,-1
+AE1YA7Q3UKPRI,Q6type_5_cc,Game of Clue - Terrorist Attack,-1
+AE1YA7Q3UKPRI,Q7type_7_battle,Game of Clue - Terrorist Attack,1
+AE1YA7Q3UKPRI,Q8type_8_performance,Game of Clue - Terrorist Attack,-1
+AE1YA7Q3UKPRI,Q9divisible_unitary,Game of Clue - Terrorist Attack,1
+AE1YA7Q3UKPRI,Q10maximizing,Game of Clue - Terrorist Attack,1
+AE1YA7Q3UKPRI,Q11optimizing,Game of Clue - Terrorist Attack,-1
+AE1YA7Q3UKPRI,Q13outcome_multip,Game of Clue - Terrorist Attack,1
+AE1YA7Q3UKPRI,Q14sol_scheme_mul,Game of Clue - Terrorist Attack,-1
+AE1YA7Q3UKPRI,Q15dec_verifiability,Game of Clue - Terrorist Attack,1
+AE1YA7Q3UKPRI,Q16shared_knowledge,Game of Clue - Terrorist Attack,-1
+AE1YA7Q3UKPRI,Q17within_sys_sol,Game of Clue - Terrorist Attack,1
+AE1YA7Q3UKPRI,Q18ans_recog,Game of Clue - Terrorist Attack,1
+AE1YA7Q3UKPRI,Q19time_solvability,Game of Clue - Terrorist Attack,1
+AE1YA7Q3UKPRI,Q20type_3_type_4,Game of Clue - Terrorist Attack,1
+AE1YA7Q3UKPRI,Q22confl_tradeoffs,Game of Clue - Terrorist Attack,1
+AE1YA7Q3UKPRI,Q23ss_out_uncert,Game of Clue - Terrorist Attack,1
+AE1YA7Q3UKPRI,Q24eureka_question,Game of Clue - Terrorist Attack,1
 A3CGQOJC28OVGN,Q1concept_behav,To evacuate or not to evacuate,-1
 A3CGQOJC28OVGN,Q3type_1_planning,To evacuate or not to evacuate,-1
 A3CGQOJC28OVGN,Q4type_2_generate,To evacuate or not to evacuate,-1
@@ -12339,6 +13459,26 @@ A3JAM040VWXHDO,Q20type_3_type_4,To evacuate or not to evacuate,1
 A3JAM040VWXHDO,Q22confl_tradeoffs,To evacuate or not to evacuate,1
 A3JAM040VWXHDO,Q23ss_out_uncert,To evacuate or not to evacuate,1
 A3JAM040VWXHDO,Q24eureka_question,To evacuate or not to evacuate,-1
+A2615YW1YERQBO,Q1concept_behav,Mastermind,-1
+A2615YW1YERQBO,Q3type_1_planning,Mastermind,-1
+A2615YW1YERQBO,Q4type_2_generate,Mastermind,-1
+A2615YW1YERQBO,Q6type_5_cc,Mastermind,-1
+A2615YW1YERQBO,Q7type_7_battle,Mastermind,NA
+A2615YW1YERQBO,Q8type_8_performance,Mastermind,-1
+A2615YW1YERQBO,Q9divisible_unitary,Mastermind,-1
+A2615YW1YERQBO,Q10maximizing,Mastermind,-1
+A2615YW1YERQBO,Q11optimizing,Mastermind,1
+A2615YW1YERQBO,Q13outcome_multip,Mastermind,1
+A2615YW1YERQBO,Q14sol_scheme_mul,Mastermind,1
+A2615YW1YERQBO,Q15dec_verifiability,Mastermind,1
+A2615YW1YERQBO,Q16shared_knowledge,Mastermind,1
+A2615YW1YERQBO,Q17within_sys_sol,Mastermind,1
+A2615YW1YERQBO,Q18ans_recog,Mastermind,1
+A2615YW1YERQBO,Q19time_solvability,Mastermind,-1
+A2615YW1YERQBO,Q20type_3_type_4,Mastermind,1
+A2615YW1YERQBO,Q22confl_tradeoffs,Mastermind,-1
+A2615YW1YERQBO,Q23ss_out_uncert,Mastermind,1
+A2615YW1YERQBO,Q24eureka_question,Mastermind,-1
 A2TLN8489YGY81,Q1concept_behav,Recall association,-1
 A2TLN8489YGY81,Q3type_1_planning,Recall association,-1
 A2TLN8489YGY81,Q4type_2_generate,Recall association,-1
@@ -12599,6 +13739,26 @@ A17FGZ1I5P9RZA,Q20type_3_type_4,Euclidean traveling salesperson,1
 A17FGZ1I5P9RZA,Q22confl_tradeoffs,Euclidean traveling salesperson,-1
 A17FGZ1I5P9RZA,Q23ss_out_uncert,Euclidean traveling salesperson,1
 A17FGZ1I5P9RZA,Q24eureka_question,Euclidean traveling salesperson,-1
+A2S64AUN7JI7ZS,Q1concept_behav,Logic Problem,-1
+A2S64AUN7JI7ZS,Q3type_1_planning,Logic Problem,-1
+A2S64AUN7JI7ZS,Q4type_2_generate,Logic Problem,1
+A2S64AUN7JI7ZS,Q6type_5_cc,Logic Problem,-1
+A2S64AUN7JI7ZS,Q7type_7_battle,Logic Problem,1
+A2S64AUN7JI7ZS,Q8type_8_performance,Logic Problem,-1
+A2S64AUN7JI7ZS,Q9divisible_unitary,Logic Problem,-1
+A2S64AUN7JI7ZS,Q10maximizing,Logic Problem,1
+A2S64AUN7JI7ZS,Q11optimizing,Logic Problem,1
+A2S64AUN7JI7ZS,Q13outcome_multip,Logic Problem,1
+A2S64AUN7JI7ZS,Q14sol_scheme_mul,Logic Problem,-1
+A2S64AUN7JI7ZS,Q15dec_verifiability,Logic Problem,-1
+A2S64AUN7JI7ZS,Q16shared_knowledge,Logic Problem,1
+A2S64AUN7JI7ZS,Q17within_sys_sol,Logic Problem,1
+A2S64AUN7JI7ZS,Q18ans_recog,Logic Problem,1
+A2S64AUN7JI7ZS,Q19time_solvability,Logic Problem,1
+A2S64AUN7JI7ZS,Q20type_3_type_4,Logic Problem,1
+A2S64AUN7JI7ZS,Q22confl_tradeoffs,Logic Problem,1
+A2S64AUN7JI7ZS,Q23ss_out_uncert,Logic Problem,1
+A2S64AUN7JI7ZS,Q24eureka_question,Logic Problem,-1
 A3I9XLIHPPWPN1,Q1concept_behav,Divergent Association Task,-1
 A3I9XLIHPPWPN1,Q3type_1_planning,Divergent Association Task,1
 A3I9XLIHPPWPN1,Q4type_2_generate,Divergent Association Task,1
@@ -12799,6 +13959,26 @@ AKQAI78JTXXC9,Q20type_3_type_4,Wildcat Wells,-1
 AKQAI78JTXXC9,Q22confl_tradeoffs,Wildcat Wells,NA
 AKQAI78JTXXC9,Q23ss_out_uncert,Wildcat Wells,1
 AKQAI78JTXXC9,Q24eureka_question,Wildcat Wells,-1
+A1YSYI926BBOHW,Q1concept_behav,Reproducing arts,1
+A1YSYI926BBOHW,Q3type_1_planning,Reproducing arts,-1
+A1YSYI926BBOHW,Q4type_2_generate,Reproducing arts,-1
+A1YSYI926BBOHW,Q6type_5_cc,Reproducing arts,-1
+A1YSYI926BBOHW,Q7type_7_battle,Reproducing arts,-1
+A1YSYI926BBOHW,Q8type_8_performance,Reproducing arts,-1
+A1YSYI926BBOHW,Q9divisible_unitary,Reproducing arts,1
+A1YSYI926BBOHW,Q10maximizing,Reproducing arts,1
+A1YSYI926BBOHW,Q11optimizing,Reproducing arts,-1
+A1YSYI926BBOHW,Q13outcome_multip,Reproducing arts,1
+A1YSYI926BBOHW,Q14sol_scheme_mul,Reproducing arts,-1
+A1YSYI926BBOHW,Q15dec_verifiability,Reproducing arts,1
+A1YSYI926BBOHW,Q16shared_knowledge,Reproducing arts,1
+A1YSYI926BBOHW,Q17within_sys_sol,Reproducing arts,1
+A1YSYI926BBOHW,Q18ans_recog,Reproducing arts,1
+A1YSYI926BBOHW,Q19time_solvability,Reproducing arts,1
+A1YSYI926BBOHW,Q20type_3_type_4,Reproducing arts,-1
+A1YSYI926BBOHW,Q22confl_tradeoffs,Reproducing arts,-1
+A1YSYI926BBOHW,Q23ss_out_uncert,Reproducing arts,-1
+A1YSYI926BBOHW,Q24eureka_question,Reproducing arts,-1
 ARI1EMAHUA9PO,Q1concept_behav,Desert survival,-1
 ARI1EMAHUA9PO,Q3type_1_planning,Desert survival,-1
 ARI1EMAHUA9PO,Q4type_2_generate,Desert survival,-1
@@ -12819,6 +13999,46 @@ ARI1EMAHUA9PO,Q20type_3_type_4,Desert survival,1
 ARI1EMAHUA9PO,Q22confl_tradeoffs,Desert survival,-1
 ARI1EMAHUA9PO,Q23ss_out_uncert,Desert survival,1
 ARI1EMAHUA9PO,Q24eureka_question,Desert survival,-1
+A33PHCBUOD4WKD,Q1concept_behav,Abstract grid task,-1
+A33PHCBUOD4WKD,Q3type_1_planning,Abstract grid task,-1
+A33PHCBUOD4WKD,Q4type_2_generate,Abstract grid task,-1
+A33PHCBUOD4WKD,Q6type_5_cc,Abstract grid task,-1
+A33PHCBUOD4WKD,Q7type_7_battle,Abstract grid task,-1
+A33PHCBUOD4WKD,Q8type_8_performance,Abstract grid task,-1
+A33PHCBUOD4WKD,Q9divisible_unitary,Abstract grid task,-1
+A33PHCBUOD4WKD,Q10maximizing,Abstract grid task,-1
+A33PHCBUOD4WKD,Q11optimizing,Abstract grid task,1
+A33PHCBUOD4WKD,Q13outcome_multip,Abstract grid task,1
+A33PHCBUOD4WKD,Q14sol_scheme_mul,Abstract grid task,1
+A33PHCBUOD4WKD,Q15dec_verifiability,Abstract grid task,1
+A33PHCBUOD4WKD,Q16shared_knowledge,Abstract grid task,1
+A33PHCBUOD4WKD,Q17within_sys_sol,Abstract grid task,1
+A33PHCBUOD4WKD,Q18ans_recog,Abstract grid task,1
+A33PHCBUOD4WKD,Q19time_solvability,Abstract grid task,1
+A33PHCBUOD4WKD,Q20type_3_type_4,Abstract grid task,1
+A33PHCBUOD4WKD,Q22confl_tradeoffs,Abstract grid task,-1
+A33PHCBUOD4WKD,Q23ss_out_uncert,Abstract grid task,1
+A33PHCBUOD4WKD,Q24eureka_question,Abstract grid task,-1
+A26UIS59SY4NM6,Q1concept_behav,Euclidean traveling salesperson,-1
+A26UIS59SY4NM6,Q3type_1_planning,Euclidean traveling salesperson,-1
+A26UIS59SY4NM6,Q4type_2_generate,Euclidean traveling salesperson,-1
+A26UIS59SY4NM6,Q6type_5_cc,Euclidean traveling salesperson,-1
+A26UIS59SY4NM6,Q7type_7_battle,Euclidean traveling salesperson,-1
+A26UIS59SY4NM6,Q8type_8_performance,Euclidean traveling salesperson,-1
+A26UIS59SY4NM6,Q9divisible_unitary,Euclidean traveling salesperson,-1
+A26UIS59SY4NM6,Q10maximizing,Euclidean traveling salesperson,-1
+A26UIS59SY4NM6,Q11optimizing,Euclidean traveling salesperson,1
+A26UIS59SY4NM6,Q13outcome_multip,Euclidean traveling salesperson,1
+A26UIS59SY4NM6,Q14sol_scheme_mul,Euclidean traveling salesperson,-1
+A26UIS59SY4NM6,Q15dec_verifiability,Euclidean traveling salesperson,1
+A26UIS59SY4NM6,Q16shared_knowledge,Euclidean traveling salesperson,1
+A26UIS59SY4NM6,Q17within_sys_sol,Euclidean traveling salesperson,1
+A26UIS59SY4NM6,Q18ans_recog,Euclidean traveling salesperson,1
+A26UIS59SY4NM6,Q19time_solvability,Euclidean traveling salesperson,1
+A26UIS59SY4NM6,Q20type_3_type_4,Euclidean traveling salesperson,1
+A26UIS59SY4NM6,Q22confl_tradeoffs,Euclidean traveling salesperson,-1
+A26UIS59SY4NM6,Q23ss_out_uncert,Euclidean traveling salesperson,1
+A26UIS59SY4NM6,Q24eureka_question,Euclidean traveling salesperson,-1
 A31BA1WLSWUSY1,Q1concept_behav,Iterative lemonade stand task,-1
 A31BA1WLSWUSY1,Q3type_1_planning,Iterative lemonade stand task,-1
 A31BA1WLSWUSY1,Q4type_2_generate,Iterative lemonade stand task,-1
@@ -12979,6 +14199,26 @@ AONSG5WOC3OX0,Q20type_3_type_4,Summarize Discussion,-1
 AONSG5WOC3OX0,Q22confl_tradeoffs,Summarize Discussion,1
 AONSG5WOC3OX0,Q23ss_out_uncert,Summarize Discussion,1
 AONSG5WOC3OX0,Q24eureka_question,Summarize Discussion,-1
+ARI1EMAHUA9PO,Q1concept_behav,Mastermind,-1
+ARI1EMAHUA9PO,Q3type_1_planning,Mastermind,-1
+ARI1EMAHUA9PO,Q4type_2_generate,Mastermind,-1
+ARI1EMAHUA9PO,Q6type_5_cc,Mastermind,-1
+ARI1EMAHUA9PO,Q7type_7_battle,Mastermind,1
+ARI1EMAHUA9PO,Q8type_8_performance,Mastermind,-1
+ARI1EMAHUA9PO,Q9divisible_unitary,Mastermind,-1
+ARI1EMAHUA9PO,Q10maximizing,Mastermind,1
+ARI1EMAHUA9PO,Q11optimizing,Mastermind,1
+ARI1EMAHUA9PO,Q13outcome_multip,Mastermind,1
+ARI1EMAHUA9PO,Q14sol_scheme_mul,Mastermind,1
+ARI1EMAHUA9PO,Q15dec_verifiability,Mastermind,1
+ARI1EMAHUA9PO,Q16shared_knowledge,Mastermind,1
+ARI1EMAHUA9PO,Q17within_sys_sol,Mastermind,1
+ARI1EMAHUA9PO,Q18ans_recog,Mastermind,1
+ARI1EMAHUA9PO,Q19time_solvability,Mastermind,1
+ARI1EMAHUA9PO,Q20type_3_type_4,Mastermind,1
+ARI1EMAHUA9PO,Q22confl_tradeoffs,Mastermind,-1
+ARI1EMAHUA9PO,Q23ss_out_uncert,Mastermind,-1
+ARI1EMAHUA9PO,Q24eureka_question,Mastermind,-1
 A17FGZ1I5P9RZA,Q1concept_behav,Ravens Matrices,-1
 A17FGZ1I5P9RZA,Q3type_1_planning,Ravens Matrices,-1
 A17FGZ1I5P9RZA,Q4type_2_generate,Ravens Matrices,-1
@@ -13259,6 +14499,26 @@ A3S5ZB4D98JWT1,Q20type_3_type_4,Logic Problem,1
 A3S5ZB4D98JWT1,Q22confl_tradeoffs,Logic Problem,1
 A3S5ZB4D98JWT1,Q23ss_out_uncert,Logic Problem,1
 A3S5ZB4D98JWT1,Q24eureka_question,Logic Problem,1
+AONSG5WOC3OX0,Q1concept_behav,Writing story,-1
+AONSG5WOC3OX0,Q3type_1_planning,Writing story,1
+AONSG5WOC3OX0,Q4type_2_generate,Writing story,-1
+AONSG5WOC3OX0,Q6type_5_cc,Writing story,-1
+AONSG5WOC3OX0,Q7type_7_battle,Writing story,-1
+AONSG5WOC3OX0,Q8type_8_performance,Writing story,-1
+AONSG5WOC3OX0,Q9divisible_unitary,Writing story,1
+AONSG5WOC3OX0,Q10maximizing,Writing story,-1
+AONSG5WOC3OX0,Q11optimizing,Writing story,-1
+AONSG5WOC3OX0,Q13outcome_multip,Writing story,-1
+AONSG5WOC3OX0,Q14sol_scheme_mul,Writing story,-1
+AONSG5WOC3OX0,Q15dec_verifiability,Writing story,-1
+AONSG5WOC3OX0,Q16shared_knowledge,Writing story,-1
+AONSG5WOC3OX0,Q17within_sys_sol,Writing story,1
+AONSG5WOC3OX0,Q18ans_recog,Writing story,-1
+AONSG5WOC3OX0,Q19time_solvability,Writing story,-1
+AONSG5WOC3OX0,Q20type_3_type_4,Writing story,-1
+AONSG5WOC3OX0,Q22confl_tradeoffs,Writing story,-1
+AONSG5WOC3OX0,Q23ss_out_uncert,Writing story,-1
+AONSG5WOC3OX0,Q24eureka_question,Writing story,-1
 A1I72NHC21347A,Q1concept_behav,Checkers,-1
 A1I72NHC21347A,Q3type_1_planning,Checkers,-1
 A1I72NHC21347A,Q4type_2_generate,Checkers,-1
@@ -14539,6 +15799,26 @@ A8C3WNWRBWUXO,Q20type_3_type_4,Allocating resources to programs,-1
 A8C3WNWRBWUXO,Q22confl_tradeoffs,Allocating resources to programs,1
 A8C3WNWRBWUXO,Q23ss_out_uncert,Allocating resources to programs,-1
 A8C3WNWRBWUXO,Q24eureka_question,Allocating resources to programs,-1
+A33PHCBUOD4WKD,Q1concept_behav,Ravens Matrices,-1
+A33PHCBUOD4WKD,Q3type_1_planning,Ravens Matrices,-1
+A33PHCBUOD4WKD,Q4type_2_generate,Ravens Matrices,-1
+A33PHCBUOD4WKD,Q6type_5_cc,Ravens Matrices,-1
+A33PHCBUOD4WKD,Q7type_7_battle,Ravens Matrices,-1
+A33PHCBUOD4WKD,Q8type_8_performance,Ravens Matrices,1
+A33PHCBUOD4WKD,Q9divisible_unitary,Ravens Matrices,-1
+A33PHCBUOD4WKD,Q10maximizing,Ravens Matrices,-1
+A33PHCBUOD4WKD,Q11optimizing,Ravens Matrices,1
+A33PHCBUOD4WKD,Q13outcome_multip,Ravens Matrices,1
+A33PHCBUOD4WKD,Q14sol_scheme_mul,Ravens Matrices,1
+A33PHCBUOD4WKD,Q15dec_verifiability,Ravens Matrices,1
+A33PHCBUOD4WKD,Q16shared_knowledge,Ravens Matrices,1
+A33PHCBUOD4WKD,Q17within_sys_sol,Ravens Matrices,1
+A33PHCBUOD4WKD,Q18ans_recog,Ravens Matrices,1
+A33PHCBUOD4WKD,Q19time_solvability,Ravens Matrices,1
+A33PHCBUOD4WKD,Q20type_3_type_4,Ravens Matrices,1
+A33PHCBUOD4WKD,Q22confl_tradeoffs,Ravens Matrices,-1
+A33PHCBUOD4WKD,Q23ss_out_uncert,Ravens Matrices,-1
+A33PHCBUOD4WKD,Q24eureka_question,Ravens Matrices,-1
 A37EV8RZ82WT8E,Q1concept_behav,Moral Reasoning (Disciplinary Action Case),-1
 A37EV8RZ82WT8E,Q3type_1_planning,Moral Reasoning (Disciplinary Action Case),-1
 A37EV8RZ82WT8E,Q4type_2_generate,Moral Reasoning (Disciplinary Action Case),1
@@ -15339,6 +16619,26 @@ AL51KTD0WITH9,Q20type_3_type_4,Game of Clue - Terrorist Attack,1
 AL51KTD0WITH9,Q22confl_tradeoffs,Game of Clue - Terrorist Attack,1
 AL51KTD0WITH9,Q23ss_out_uncert,Game of Clue - Terrorist Attack,1
 AL51KTD0WITH9,Q24eureka_question,Game of Clue - Terrorist Attack,-1
+A2615YW1YERQBO,Q1concept_behav,Recall videos,-1
+A2615YW1YERQBO,Q3type_1_planning,Recall videos,-1
+A2615YW1YERQBO,Q4type_2_generate,Recall videos,-1
+A2615YW1YERQBO,Q6type_5_cc,Recall videos,-1
+A2615YW1YERQBO,Q7type_7_battle,Recall videos,-1
+A2615YW1YERQBO,Q8type_8_performance,Recall videos,-1
+A2615YW1YERQBO,Q9divisible_unitary,Recall videos,-1
+A2615YW1YERQBO,Q10maximizing,Recall videos,-1
+A2615YW1YERQBO,Q11optimizing,Recall videos,-1
+A2615YW1YERQBO,Q13outcome_multip,Recall videos,1
+A2615YW1YERQBO,Q14sol_scheme_mul,Recall videos,1
+A2615YW1YERQBO,Q15dec_verifiability,Recall videos,1
+A2615YW1YERQBO,Q16shared_knowledge,Recall videos,NA
+A2615YW1YERQBO,Q17within_sys_sol,Recall videos,1
+A2615YW1YERQBO,Q18ans_recog,Recall videos,1
+A2615YW1YERQBO,Q19time_solvability,Recall videos,1
+A2615YW1YERQBO,Q20type_3_type_4,Recall videos,1
+A2615YW1YERQBO,Q22confl_tradeoffs,Recall videos,-1
+A2615YW1YERQBO,Q23ss_out_uncert,Recall videos,1
+A2615YW1YERQBO,Q24eureka_question,Recall videos,-1
 ARI1EMAHUA9PO,Q1concept_behav,Recall videos,-1
 ARI1EMAHUA9PO,Q3type_1_planning,Recall videos,-1
 ARI1EMAHUA9PO,Q4type_2_generate,Recall videos,-1
@@ -16179,6 +17479,26 @@ A2ONILC0LZKG6Y,Q20type_3_type_4,Word completion given starting letter,1
 A2ONILC0LZKG6Y,Q22confl_tradeoffs,Word completion given starting letter,-1
 A2ONILC0LZKG6Y,Q23ss_out_uncert,Word completion given starting letter,-1
 A2ONILC0LZKG6Y,Q24eureka_question,Word completion given starting letter,-1
+A26UIS59SY4NM6,Q1concept_behav,Logic Problem,-1
+A26UIS59SY4NM6,Q3type_1_planning,Logic Problem,-1
+A26UIS59SY4NM6,Q4type_2_generate,Logic Problem,-1
+A26UIS59SY4NM6,Q6type_5_cc,Logic Problem,-1
+A26UIS59SY4NM6,Q7type_7_battle,Logic Problem,-1
+A26UIS59SY4NM6,Q8type_8_performance,Logic Problem,-1
+A26UIS59SY4NM6,Q9divisible_unitary,Logic Problem,1
+A26UIS59SY4NM6,Q10maximizing,Logic Problem,-1
+A26UIS59SY4NM6,Q11optimizing,Logic Problem,1
+A26UIS59SY4NM6,Q13outcome_multip,Logic Problem,1
+A26UIS59SY4NM6,Q14sol_scheme_mul,Logic Problem,-1
+A26UIS59SY4NM6,Q15dec_verifiability,Logic Problem,1
+A26UIS59SY4NM6,Q16shared_knowledge,Logic Problem,-1
+A26UIS59SY4NM6,Q17within_sys_sol,Logic Problem,1
+A26UIS59SY4NM6,Q18ans_recog,Logic Problem,1
+A26UIS59SY4NM6,Q19time_solvability,Logic Problem,1
+A26UIS59SY4NM6,Q20type_3_type_4,Logic Problem,1
+A26UIS59SY4NM6,Q22confl_tradeoffs,Logic Problem,-1
+A26UIS59SY4NM6,Q23ss_out_uncert,Logic Problem,-1
+A26UIS59SY4NM6,Q24eureka_question,Logic Problem,-1
 A5NE8TWS8ZV7B,Q1concept_behav,Euclidean traveling salesperson,-1
 A5NE8TWS8ZV7B,Q3type_1_planning,Euclidean traveling salesperson,1
 A5NE8TWS8ZV7B,Q4type_2_generate,Euclidean traveling salesperson,-1
@@ -16699,6 +18019,26 @@ AXPZAP62ZYWP8,Q20type_3_type_4,Putting food into categories,1
 AXPZAP62ZYWP8,Q22confl_tradeoffs,Putting food into categories,1
 AXPZAP62ZYWP8,Q23ss_out_uncert,Putting food into categories,1
 AXPZAP62ZYWP8,Q24eureka_question,Putting food into categories,-1
+A2AZYU1CT24O0K,Q1concept_behav,Husbands and wives transfer,-1
+A2AZYU1CT24O0K,Q3type_1_planning,Husbands and wives transfer,1
+A2AZYU1CT24O0K,Q4type_2_generate,Husbands and wives transfer,-1
+A2AZYU1CT24O0K,Q6type_5_cc,Husbands and wives transfer,1
+A2AZYU1CT24O0K,Q7type_7_battle,Husbands and wives transfer,-1
+A2AZYU1CT24O0K,Q8type_8_performance,Husbands and wives transfer,-1
+A2AZYU1CT24O0K,Q9divisible_unitary,Husbands and wives transfer,-1
+A2AZYU1CT24O0K,Q10maximizing,Husbands and wives transfer,1
+A2AZYU1CT24O0K,Q11optimizing,Husbands and wives transfer,1
+A2AZYU1CT24O0K,Q13outcome_multip,Husbands and wives transfer,1
+A2AZYU1CT24O0K,Q14sol_scheme_mul,Husbands and wives transfer,1
+A2AZYU1CT24O0K,Q15dec_verifiability,Husbands and wives transfer,1
+A2AZYU1CT24O0K,Q16shared_knowledge,Husbands and wives transfer,1
+A2AZYU1CT24O0K,Q17within_sys_sol,Husbands and wives transfer,1
+A2AZYU1CT24O0K,Q18ans_recog,Husbands and wives transfer,-1
+A2AZYU1CT24O0K,Q19time_solvability,Husbands and wives transfer,1
+A2AZYU1CT24O0K,Q20type_3_type_4,Husbands and wives transfer,1
+A2AZYU1CT24O0K,Q22confl_tradeoffs,Husbands and wives transfer,1
+A2AZYU1CT24O0K,Q23ss_out_uncert,Husbands and wives transfer,1
+A2AZYU1CT24O0K,Q24eureka_question,Husbands and wives transfer,-1
 A1ZE87WEYCA44A,Q1concept_behav,Recall images,-1
 A1ZE87WEYCA44A,Q3type_1_planning,Recall images,-1
 A1ZE87WEYCA44A,Q4type_2_generate,Recall images,-1
@@ -16879,6 +18219,26 @@ A1PZIN8H1VI6SY,Q20type_3_type_4,Architectural design task,1
 A1PZIN8H1VI6SY,Q22confl_tradeoffs,Architectural design task,1
 A1PZIN8H1VI6SY,Q23ss_out_uncert,Architectural design task,1
 A1PZIN8H1VI6SY,Q24eureka_question,Architectural design task,-1
+AL51KTD0WITH9,Q1concept_behav,Recall videos,-1
+AL51KTD0WITH9,Q3type_1_planning,Recall videos,-1
+AL51KTD0WITH9,Q4type_2_generate,Recall videos,-1
+AL51KTD0WITH9,Q6type_5_cc,Recall videos,-1
+AL51KTD0WITH9,Q7type_7_battle,Recall videos,-1
+AL51KTD0WITH9,Q8type_8_performance,Recall videos,1
+AL51KTD0WITH9,Q9divisible_unitary,Recall videos,-1
+AL51KTD0WITH9,Q10maximizing,Recall videos,-1
+AL51KTD0WITH9,Q11optimizing,Recall videos,1
+AL51KTD0WITH9,Q13outcome_multip,Recall videos,1
+AL51KTD0WITH9,Q14sol_scheme_mul,Recall videos,1
+AL51KTD0WITH9,Q15dec_verifiability,Recall videos,1
+AL51KTD0WITH9,Q16shared_knowledge,Recall videos,1
+AL51KTD0WITH9,Q17within_sys_sol,Recall videos,1
+AL51KTD0WITH9,Q18ans_recog,Recall videos,1
+AL51KTD0WITH9,Q19time_solvability,Recall videos,1
+AL51KTD0WITH9,Q20type_3_type_4,Recall videos,1
+AL51KTD0WITH9,Q22confl_tradeoffs,Recall videos,-1
+AL51KTD0WITH9,Q23ss_out_uncert,Recall videos,1
+AL51KTD0WITH9,Q24eureka_question,Recall videos,-1
 A2WDF40FA670T9,Q1concept_behav,The Fish game,-1
 A2WDF40FA670T9,Q3type_1_planning,The Fish game,-1
 A2WDF40FA670T9,Q4type_2_generate,The Fish game,-1
@@ -16959,6 +18319,26 @@ AHUNR2YEZW58R,Q20type_3_type_4,Logic Problem,1
 AHUNR2YEZW58R,Q22confl_tradeoffs,Logic Problem,1
 AHUNR2YEZW58R,Q23ss_out_uncert,Logic Problem,-1
 AHUNR2YEZW58R,Q24eureka_question,Logic Problem,1
+AL51KTD0WITH9,Q1concept_behav,Hidden figures in a picture (Recall Task),-1
+AL51KTD0WITH9,Q3type_1_planning,Hidden figures in a picture (Recall Task),-1
+AL51KTD0WITH9,Q4type_2_generate,Hidden figures in a picture (Recall Task),-1
+AL51KTD0WITH9,Q6type_5_cc,Hidden figures in a picture (Recall Task),-1
+AL51KTD0WITH9,Q7type_7_battle,Hidden figures in a picture (Recall Task),-1
+AL51KTD0WITH9,Q8type_8_performance,Hidden figures in a picture (Recall Task),-1
+AL51KTD0WITH9,Q9divisible_unitary,Hidden figures in a picture (Recall Task),1
+AL51KTD0WITH9,Q10maximizing,Hidden figures in a picture (Recall Task),-1
+AL51KTD0WITH9,Q11optimizing,Hidden figures in a picture (Recall Task),1
+AL51KTD0WITH9,Q13outcome_multip,Hidden figures in a picture (Recall Task),1
+AL51KTD0WITH9,Q14sol_scheme_mul,Hidden figures in a picture (Recall Task),1
+AL51KTD0WITH9,Q15dec_verifiability,Hidden figures in a picture (Recall Task),1
+AL51KTD0WITH9,Q16shared_knowledge,Hidden figures in a picture (Recall Task),1
+AL51KTD0WITH9,Q17within_sys_sol,Hidden figures in a picture (Recall Task),1
+AL51KTD0WITH9,Q18ans_recog,Hidden figures in a picture (Recall Task),1
+AL51KTD0WITH9,Q19time_solvability,Hidden figures in a picture (Recall Task),1
+AL51KTD0WITH9,Q20type_3_type_4,Hidden figures in a picture (Recall Task),1
+AL51KTD0WITH9,Q22confl_tradeoffs,Hidden figures in a picture (Recall Task),-1
+AL51KTD0WITH9,Q23ss_out_uncert,Hidden figures in a picture (Recall Task),-1
+AL51KTD0WITH9,Q24eureka_question,Hidden figures in a picture (Recall Task),-1
 A272X64FOZFYLB,Q1concept_behav,Architectural design task,-1
 A272X64FOZFYLB,Q3type_1_planning,Architectural design task,-1
 A272X64FOZFYLB,Q4type_2_generate,Architectural design task,-1
@@ -17059,6 +18439,26 @@ AXPZAP62ZYWP8,Q20type_3_type_4,Railroad Route Construction game,1
 AXPZAP62ZYWP8,Q22confl_tradeoffs,Railroad Route Construction game,1
 AXPZAP62ZYWP8,Q23ss_out_uncert,Railroad Route Construction game,-1
 AXPZAP62ZYWP8,Q24eureka_question,Railroad Route Construction game,-1
+A33PHCBUOD4WKD,Q1concept_behav,Shopping plan,-1
+A33PHCBUOD4WKD,Q3type_1_planning,Shopping plan,1
+A33PHCBUOD4WKD,Q4type_2_generate,Shopping plan,-1
+A33PHCBUOD4WKD,Q6type_5_cc,Shopping plan,-1
+A33PHCBUOD4WKD,Q7type_7_battle,Shopping plan,-1
+A33PHCBUOD4WKD,Q8type_8_performance,Shopping plan,-1
+A33PHCBUOD4WKD,Q9divisible_unitary,Shopping plan,-1
+A33PHCBUOD4WKD,Q10maximizing,Shopping plan,-1
+A33PHCBUOD4WKD,Q11optimizing,Shopping plan,-1
+A33PHCBUOD4WKD,Q13outcome_multip,Shopping plan,1
+A33PHCBUOD4WKD,Q14sol_scheme_mul,Shopping plan,1
+A33PHCBUOD4WKD,Q15dec_verifiability,Shopping plan,1
+A33PHCBUOD4WKD,Q16shared_knowledge,Shopping plan,1
+A33PHCBUOD4WKD,Q17within_sys_sol,Shopping plan,1
+A33PHCBUOD4WKD,Q18ans_recog,Shopping plan,1
+A33PHCBUOD4WKD,Q19time_solvability,Shopping plan,1
+A33PHCBUOD4WKD,Q20type_3_type_4,Shopping plan,1
+A33PHCBUOD4WKD,Q22confl_tradeoffs,Shopping plan,1
+A33PHCBUOD4WKD,Q23ss_out_uncert,Shopping plan,1
+A33PHCBUOD4WKD,Q24eureka_question,Shopping plan,-1
 A2VRDE2FHCBMF8,Q1concept_behav,9 Dot Problem,-1
 A2VRDE2FHCBMF8,Q3type_1_planning,9 Dot Problem,-1
 A2VRDE2FHCBMF8,Q4type_2_generate,9 Dot Problem,-1
@@ -17199,6 +18599,26 @@ A2TLN8489YGY81,Q20type_3_type_4,Random dot motion,1
 A2TLN8489YGY81,Q22confl_tradeoffs,Random dot motion,1
 A2TLN8489YGY81,Q23ss_out_uncert,Random dot motion,-1
 A2TLN8489YGY81,Q24eureka_question,Random dot motion,-1
+A1BHR5XQ16T7LA,Q1concept_behav,Mastermind,-1
+A1BHR5XQ16T7LA,Q3type_1_planning,Mastermind,-1
+A1BHR5XQ16T7LA,Q4type_2_generate,Mastermind,-1
+A1BHR5XQ16T7LA,Q6type_5_cc,Mastermind,-1
+A1BHR5XQ16T7LA,Q7type_7_battle,Mastermind,-1
+A1BHR5XQ16T7LA,Q8type_8_performance,Mastermind,-1
+A1BHR5XQ16T7LA,Q9divisible_unitary,Mastermind,-1
+A1BHR5XQ16T7LA,Q10maximizing,Mastermind,1
+A1BHR5XQ16T7LA,Q11optimizing,Mastermind,1
+A1BHR5XQ16T7LA,Q13outcome_multip,Mastermind,1
+A1BHR5XQ16T7LA,Q14sol_scheme_mul,Mastermind,-1
+A1BHR5XQ16T7LA,Q15dec_verifiability,Mastermind,1
+A1BHR5XQ16T7LA,Q16shared_knowledge,Mastermind,1
+A1BHR5XQ16T7LA,Q17within_sys_sol,Mastermind,1
+A1BHR5XQ16T7LA,Q18ans_recog,Mastermind,1
+A1BHR5XQ16T7LA,Q19time_solvability,Mastermind,1
+A1BHR5XQ16T7LA,Q20type_3_type_4,Mastermind,1
+A1BHR5XQ16T7LA,Q22confl_tradeoffs,Mastermind,-1
+A1BHR5XQ16T7LA,Q23ss_out_uncert,Mastermind,-1
+A1BHR5XQ16T7LA,Q24eureka_question,Mastermind,1
 A31BA1WLSWUSY1,Q1concept_behav,Sudoku,-1
 A31BA1WLSWUSY1,Q3type_1_planning,Sudoku,-1
 A31BA1WLSWUSY1,Q4type_2_generate,Sudoku,-1
@@ -17239,6 +18659,26 @@ A1I72NHC21347A,Q20type_3_type_4,Ravens Matrices,1
 A1I72NHC21347A,Q22confl_tradeoffs,Ravens Matrices,-1
 A1I72NHC21347A,Q23ss_out_uncert,Ravens Matrices,1
 A1I72NHC21347A,Q24eureka_question,Ravens Matrices,-1
+A272X64FOZFYLB,Q1concept_behav,Allocating resources to programs,-1
+A272X64FOZFYLB,Q3type_1_planning,Allocating resources to programs,-1
+A272X64FOZFYLB,Q4type_2_generate,Allocating resources to programs,-1
+A272X64FOZFYLB,Q6type_5_cc,Allocating resources to programs,1
+A272X64FOZFYLB,Q7type_7_battle,Allocating resources to programs,-1
+A272X64FOZFYLB,Q8type_8_performance,Allocating resources to programs,-1
+A272X64FOZFYLB,Q9divisible_unitary,Allocating resources to programs,-1
+A272X64FOZFYLB,Q10maximizing,Allocating resources to programs,-1
+A272X64FOZFYLB,Q11optimizing,Allocating resources to programs,-1
+A272X64FOZFYLB,Q13outcome_multip,Allocating resources to programs,-1
+A272X64FOZFYLB,Q14sol_scheme_mul,Allocating resources to programs,-1
+A272X64FOZFYLB,Q15dec_verifiability,Allocating resources to programs,-1
+A272X64FOZFYLB,Q16shared_knowledge,Allocating resources to programs,-1
+A272X64FOZFYLB,Q17within_sys_sol,Allocating resources to programs,1
+A272X64FOZFYLB,Q18ans_recog,Allocating resources to programs,-1
+A272X64FOZFYLB,Q19time_solvability,Allocating resources to programs,-1
+A272X64FOZFYLB,Q20type_3_type_4,Allocating resources to programs,-1
+A272X64FOZFYLB,Q22confl_tradeoffs,Allocating resources to programs,-1
+A272X64FOZFYLB,Q23ss_out_uncert,Allocating resources to programs,-1
+A272X64FOZFYLB,Q24eureka_question,Allocating resources to programs,-1
 A272X64FOZFYLB,Q1concept_behav,Word completion given part of word,-1
 A272X64FOZFYLB,Q3type_1_planning,Word completion given part of word,-1
 A272X64FOZFYLB,Q4type_2_generate,Word completion given part of word,-1
@@ -17499,6 +18939,26 @@ AXPZAP62ZYWP8,Q20type_3_type_4,Estimating social quantity,1
 AXPZAP62ZYWP8,Q22confl_tradeoffs,Estimating social quantity,-1
 AXPZAP62ZYWP8,Q23ss_out_uncert,Estimating social quantity,-1
 AXPZAP62ZYWP8,Q24eureka_question,Estimating social quantity,1
+A33PHCBUOD4WKD,Q1concept_behav,Guessing the correlation,-1
+A33PHCBUOD4WKD,Q3type_1_planning,Guessing the correlation,-1
+A33PHCBUOD4WKD,Q4type_2_generate,Guessing the correlation,-1
+A33PHCBUOD4WKD,Q6type_5_cc,Guessing the correlation,-1
+A33PHCBUOD4WKD,Q7type_7_battle,Guessing the correlation,-1
+A33PHCBUOD4WKD,Q8type_8_performance,Guessing the correlation,-1
+A33PHCBUOD4WKD,Q9divisible_unitary,Guessing the correlation,-1
+A33PHCBUOD4WKD,Q10maximizing,Guessing the correlation,-1
+A33PHCBUOD4WKD,Q11optimizing,Guessing the correlation,1
+A33PHCBUOD4WKD,Q13outcome_multip,Guessing the correlation,1
+A33PHCBUOD4WKD,Q14sol_scheme_mul,Guessing the correlation,1
+A33PHCBUOD4WKD,Q15dec_verifiability,Guessing the correlation,1
+A33PHCBUOD4WKD,Q16shared_knowledge,Guessing the correlation,1
+A33PHCBUOD4WKD,Q17within_sys_sol,Guessing the correlation,1
+A33PHCBUOD4WKD,Q18ans_recog,Guessing the correlation,1
+A33PHCBUOD4WKD,Q19time_solvability,Guessing the correlation,1
+A33PHCBUOD4WKD,Q20type_3_type_4,Guessing the correlation,1
+A33PHCBUOD4WKD,Q22confl_tradeoffs,Guessing the correlation,-1
+A33PHCBUOD4WKD,Q23ss_out_uncert,Guessing the correlation,1
+A33PHCBUOD4WKD,Q24eureka_question,Guessing the correlation,-1
 A33PHCBUOD4WKD,Q1concept_behav,Crisis mapping,-1
 A33PHCBUOD4WKD,Q3type_1_planning,Crisis mapping,-1
 A33PHCBUOD4WKD,Q4type_2_generate,Crisis mapping,-1
@@ -17619,6 +19079,26 @@ AA5ZDXAA2DLY1,Q20type_3_type_4,Reading the mind in the eyes,1
 AA5ZDXAA2DLY1,Q22confl_tradeoffs,Reading the mind in the eyes,-1
 AA5ZDXAA2DLY1,Q23ss_out_uncert,Reading the mind in the eyes,1
 AA5ZDXAA2DLY1,Q24eureka_question,Reading the mind in the eyes,-1
+AL51KTD0WITH9,Q1concept_behav,Visual Oddball Target,-1
+AL51KTD0WITH9,Q3type_1_planning,Visual Oddball Target,-1
+AL51KTD0WITH9,Q4type_2_generate,Visual Oddball Target,-1
+AL51KTD0WITH9,Q6type_5_cc,Visual Oddball Target,-1
+AL51KTD0WITH9,Q7type_7_battle,Visual Oddball Target,-1
+AL51KTD0WITH9,Q8type_8_performance,Visual Oddball Target,1
+AL51KTD0WITH9,Q9divisible_unitary,Visual Oddball Target,-1
+AL51KTD0WITH9,Q10maximizing,Visual Oddball Target,-1
+AL51KTD0WITH9,Q11optimizing,Visual Oddball Target,1
+AL51KTD0WITH9,Q13outcome_multip,Visual Oddball Target,1
+AL51KTD0WITH9,Q14sol_scheme_mul,Visual Oddball Target,1
+AL51KTD0WITH9,Q15dec_verifiability,Visual Oddball Target,1
+AL51KTD0WITH9,Q16shared_knowledge,Visual Oddball Target,1
+AL51KTD0WITH9,Q17within_sys_sol,Visual Oddball Target,1
+AL51KTD0WITH9,Q18ans_recog,Visual Oddball Target,1
+AL51KTD0WITH9,Q19time_solvability,Visual Oddball Target,1
+AL51KTD0WITH9,Q20type_3_type_4,Visual Oddball Target,1
+AL51KTD0WITH9,Q22confl_tradeoffs,Visual Oddball Target,-1
+AL51KTD0WITH9,Q23ss_out_uncert,Visual Oddball Target,1
+AL51KTD0WITH9,Q24eureka_question,Visual Oddball Target,-1
 A17FGZ1I5P9RZA,Q1concept_behav,9 Dot Problem,-1
 A17FGZ1I5P9RZA,Q3type_1_planning,9 Dot Problem,-1
 A17FGZ1I5P9RZA,Q4type_2_generate,9 Dot Problem,-1
@@ -17999,6 +19479,26 @@ AXPZAP62ZYWP8,Q20type_3_type_4,"NASA Moon survival",1
 AXPZAP62ZYWP8,Q22confl_tradeoffs,"NASA Moon survival",1
 AXPZAP62ZYWP8,Q23ss_out_uncert,"NASA Moon survival",1
 AXPZAP62ZYWP8,Q24eureka_question,"NASA Moon survival",-1
+ARYL3C6N9SVV1,Q1concept_behav,Mastermind,-1
+ARYL3C6N9SVV1,Q3type_1_planning,Mastermind,1
+ARYL3C6N9SVV1,Q4type_2_generate,Mastermind,-1
+ARYL3C6N9SVV1,Q6type_5_cc,Mastermind,-1
+ARYL3C6N9SVV1,Q7type_7_battle,Mastermind,1
+ARYL3C6N9SVV1,Q8type_8_performance,Mastermind,-1
+ARYL3C6N9SVV1,Q9divisible_unitary,Mastermind,-1
+ARYL3C6N9SVV1,Q10maximizing,Mastermind,-1
+ARYL3C6N9SVV1,Q11optimizing,Mastermind,1
+ARYL3C6N9SVV1,Q13outcome_multip,Mastermind,1
+ARYL3C6N9SVV1,Q14sol_scheme_mul,Mastermind,1
+ARYL3C6N9SVV1,Q15dec_verifiability,Mastermind,1
+ARYL3C6N9SVV1,Q16shared_knowledge,Mastermind,1
+ARYL3C6N9SVV1,Q17within_sys_sol,Mastermind,1
+ARYL3C6N9SVV1,Q18ans_recog,Mastermind,-1
+ARYL3C6N9SVV1,Q19time_solvability,Mastermind,1
+ARYL3C6N9SVV1,Q20type_3_type_4,Mastermind,1
+ARYL3C6N9SVV1,Q22confl_tradeoffs,Mastermind,-1
+ARYL3C6N9SVV1,Q23ss_out_uncert,Mastermind,1
+ARYL3C6N9SVV1,Q24eureka_question,Mastermind,1
 AXPZAP62ZYWP8,Q1concept_behav,Letters-to-numbers problems (cryptography),-1
 AXPZAP62ZYWP8,Q3type_1_planning,Letters-to-numbers problems (cryptography),1
 AXPZAP62ZYWP8,Q4type_2_generate,Letters-to-numbers problems (cryptography),1
@@ -18079,6 +19579,26 @@ A1ZE87WEYCA44A,Q20type_3_type_4,Wildcat Wells,1
 A1ZE87WEYCA44A,Q22confl_tradeoffs,Wildcat Wells,-1
 A1ZE87WEYCA44A,Q23ss_out_uncert,Wildcat Wells,-1
 A1ZE87WEYCA44A,Q24eureka_question,Wildcat Wells,-1
+AL51KTD0WITH9,Q1concept_behav,Sudoku,-1
+AL51KTD0WITH9,Q3type_1_planning,Sudoku,-1
+AL51KTD0WITH9,Q4type_2_generate,Sudoku,-1
+AL51KTD0WITH9,Q6type_5_cc,Sudoku,-1
+AL51KTD0WITH9,Q7type_7_battle,Sudoku,1
+AL51KTD0WITH9,Q8type_8_performance,Sudoku,1
+AL51KTD0WITH9,Q9divisible_unitary,Sudoku,-1
+AL51KTD0WITH9,Q10maximizing,Sudoku,-1
+AL51KTD0WITH9,Q11optimizing,Sudoku,1
+AL51KTD0WITH9,Q13outcome_multip,Sudoku,1
+AL51KTD0WITH9,Q14sol_scheme_mul,Sudoku,1
+AL51KTD0WITH9,Q15dec_verifiability,Sudoku,1
+AL51KTD0WITH9,Q16shared_knowledge,Sudoku,1
+AL51KTD0WITH9,Q17within_sys_sol,Sudoku,1
+AL51KTD0WITH9,Q18ans_recog,Sudoku,1
+AL51KTD0WITH9,Q19time_solvability,Sudoku,1
+AL51KTD0WITH9,Q20type_3_type_4,Sudoku,1
+AL51KTD0WITH9,Q22confl_tradeoffs,Sudoku,-1
+AL51KTD0WITH9,Q23ss_out_uncert,Sudoku,-1
+AL51KTD0WITH9,Q24eureka_question,Sudoku,-1
 A18T7E73TNGOKP,Q1concept_behav,Iterative lemonade stand task,-1
 A18T7E73TNGOKP,Q3type_1_planning,Iterative lemonade stand task,-1
 A18T7E73TNGOKP,Q4type_2_generate,Iterative lemonade stand task,-1
@@ -18099,6 +19619,26 @@ A18T7E73TNGOKP,Q20type_3_type_4,Iterative lemonade stand task,1
 A18T7E73TNGOKP,Q22confl_tradeoffs,Iterative lemonade stand task,1
 A18T7E73TNGOKP,Q23ss_out_uncert,Iterative lemonade stand task,1
 A18T7E73TNGOKP,Q24eureka_question,Iterative lemonade stand task,-1
+A1YSYI926BBOHW,Q1concept_behav,Mastermind,-1
+A1YSYI926BBOHW,Q3type_1_planning,Mastermind,-1
+A1YSYI926BBOHW,Q4type_2_generate,Mastermind,-1
+A1YSYI926BBOHW,Q6type_5_cc,Mastermind,-1
+A1YSYI926BBOHW,Q7type_7_battle,Mastermind,-1
+A1YSYI926BBOHW,Q8type_8_performance,Mastermind,-1
+A1YSYI926BBOHW,Q9divisible_unitary,Mastermind,-1
+A1YSYI926BBOHW,Q10maximizing,Mastermind,-1
+A1YSYI926BBOHW,Q11optimizing,Mastermind,1
+A1YSYI926BBOHW,Q13outcome_multip,Mastermind,1
+A1YSYI926BBOHW,Q14sol_scheme_mul,Mastermind,-1
+A1YSYI926BBOHW,Q15dec_verifiability,Mastermind,1
+A1YSYI926BBOHW,Q16shared_knowledge,Mastermind,1
+A1YSYI926BBOHW,Q17within_sys_sol,Mastermind,1
+A1YSYI926BBOHW,Q18ans_recog,Mastermind,1
+A1YSYI926BBOHW,Q19time_solvability,Mastermind,1
+A1YSYI926BBOHW,Q20type_3_type_4,Mastermind,1
+A1YSYI926BBOHW,Q22confl_tradeoffs,Mastermind,-1
+A1YSYI926BBOHW,Q23ss_out_uncert,Mastermind,-1
+A1YSYI926BBOHW,Q24eureka_question,Mastermind,-1
 AURYD2FH3FUOQ,Q1concept_behav,Categorization problem,-1
 AURYD2FH3FUOQ,Q3type_1_planning,Categorization problem,-1
 AURYD2FH3FUOQ,Q4type_2_generate,Categorization problem,1
@@ -18239,6 +19779,26 @@ A17FGZ1I5P9RZA,Q20type_3_type_4,Visual Oddball Target,1
 A17FGZ1I5P9RZA,Q22confl_tradeoffs,Visual Oddball Target,-1
 A17FGZ1I5P9RZA,Q23ss_out_uncert,Visual Oddball Target,1
 A17FGZ1I5P9RZA,Q24eureka_question,Visual Oddball Target,-1
+A2S64AUN7JI7ZS,Q1concept_behav,Sudoku,-1
+A2S64AUN7JI7ZS,Q3type_1_planning,Sudoku,1
+A2S64AUN7JI7ZS,Q4type_2_generate,Sudoku,1
+A2S64AUN7JI7ZS,Q6type_5_cc,Sudoku,-1
+A2S64AUN7JI7ZS,Q7type_7_battle,Sudoku,1
+A2S64AUN7JI7ZS,Q8type_8_performance,Sudoku,1
+A2S64AUN7JI7ZS,Q9divisible_unitary,Sudoku,-1
+A2S64AUN7JI7ZS,Q10maximizing,Sudoku,-1
+A2S64AUN7JI7ZS,Q11optimizing,Sudoku,1
+A2S64AUN7JI7ZS,Q13outcome_multip,Sudoku,1
+A2S64AUN7JI7ZS,Q14sol_scheme_mul,Sudoku,1
+A2S64AUN7JI7ZS,Q15dec_verifiability,Sudoku,1
+A2S64AUN7JI7ZS,Q16shared_knowledge,Sudoku,1
+A2S64AUN7JI7ZS,Q17within_sys_sol,Sudoku,1
+A2S64AUN7JI7ZS,Q18ans_recog,Sudoku,1
+A2S64AUN7JI7ZS,Q19time_solvability,Sudoku,1
+A2S64AUN7JI7ZS,Q20type_3_type_4,Sudoku,1
+A2S64AUN7JI7ZS,Q22confl_tradeoffs,Sudoku,1
+A2S64AUN7JI7ZS,Q23ss_out_uncert,Sudoku,-1
+A2S64AUN7JI7ZS,Q24eureka_question,Sudoku,-1
 AONSG5WOC3OX0,Q1concept_behav,Arithmetic problem 1,-1
 AONSG5WOC3OX0,Q3type_1_planning,Arithmetic problem 1,-1
 AONSG5WOC3OX0,Q4type_2_generate,Arithmetic problem 1,-1
@@ -18259,6 +19819,26 @@ AONSG5WOC3OX0,Q20type_3_type_4,Arithmetic problem 1,1
 AONSG5WOC3OX0,Q22confl_tradeoffs,Arithmetic problem 1,-1
 AONSG5WOC3OX0,Q23ss_out_uncert,Arithmetic problem 1,1
 AONSG5WOC3OX0,Q24eureka_question,Arithmetic problem 1,-1
+A272X64FOZFYLB,Q1concept_behav,Mastermind,-1
+A272X64FOZFYLB,Q3type_1_planning,Mastermind,-1
+A272X64FOZFYLB,Q4type_2_generate,Mastermind,-1
+A272X64FOZFYLB,Q6type_5_cc,Mastermind,-1
+A272X64FOZFYLB,Q7type_7_battle,Mastermind,-1
+A272X64FOZFYLB,Q8type_8_performance,Mastermind,-1
+A272X64FOZFYLB,Q9divisible_unitary,Mastermind,-1
+A272X64FOZFYLB,Q10maximizing,Mastermind,-1
+A272X64FOZFYLB,Q11optimizing,Mastermind,1
+A272X64FOZFYLB,Q13outcome_multip,Mastermind,1
+A272X64FOZFYLB,Q14sol_scheme_mul,Mastermind,-1
+A272X64FOZFYLB,Q15dec_verifiability,Mastermind,1
+A272X64FOZFYLB,Q16shared_knowledge,Mastermind,1
+A272X64FOZFYLB,Q17within_sys_sol,Mastermind,1
+A272X64FOZFYLB,Q18ans_recog,Mastermind,1
+A272X64FOZFYLB,Q19time_solvability,Mastermind,1
+A272X64FOZFYLB,Q20type_3_type_4,Mastermind,1
+A272X64FOZFYLB,Q22confl_tradeoffs,Mastermind,-1
+A272X64FOZFYLB,Q23ss_out_uncert,Mastermind,-1
+A272X64FOZFYLB,Q24eureka_question,Mastermind,-1
 A8C3WNWRBWUXO,Q1concept_behav,Advertisement writing,-1
 A8C3WNWRBWUXO,Q3type_1_planning,Advertisement writing,1
 A8C3WNWRBWUXO,Q4type_2_generate,Advertisement writing,1
@@ -18399,6 +19979,26 @@ A2615YW1YERQBO,Q20type_3_type_4,9 Dot Problem,1
 A2615YW1YERQBO,Q22confl_tradeoffs,9 Dot Problem,-1
 A2615YW1YERQBO,Q23ss_out_uncert,9 Dot Problem,-1
 A2615YW1YERQBO,Q24eureka_question,9 Dot Problem,1
+A2S64AUN7JI7ZS,Q1concept_behav,Putting food into categories,-1
+A2S64AUN7JI7ZS,Q3type_1_planning,Putting food into categories,1
+A2S64AUN7JI7ZS,Q4type_2_generate,Putting food into categories,1
+A2S64AUN7JI7ZS,Q6type_5_cc,Putting food into categories,-1
+A2S64AUN7JI7ZS,Q7type_7_battle,Putting food into categories,1
+A2S64AUN7JI7ZS,Q8type_8_performance,Putting food into categories,-1
+A2S64AUN7JI7ZS,Q9divisible_unitary,Putting food into categories,1
+A2S64AUN7JI7ZS,Q10maximizing,Putting food into categories,1
+A2S64AUN7JI7ZS,Q11optimizing,Putting food into categories,-1
+A2S64AUN7JI7ZS,Q13outcome_multip,Putting food into categories,-1
+A2S64AUN7JI7ZS,Q14sol_scheme_mul,Putting food into categories,-1
+A2S64AUN7JI7ZS,Q15dec_verifiability,Putting food into categories,NA
+A2S64AUN7JI7ZS,Q16shared_knowledge,Putting food into categories,1
+A2S64AUN7JI7ZS,Q17within_sys_sol,Putting food into categories,NA
+A2S64AUN7JI7ZS,Q18ans_recog,Putting food into categories,NA
+A2S64AUN7JI7ZS,Q19time_solvability,Putting food into categories,NA
+A2S64AUN7JI7ZS,Q20type_3_type_4,Putting food into categories,-1
+A2S64AUN7JI7ZS,Q22confl_tradeoffs,Putting food into categories,-1
+A2S64AUN7JI7ZS,Q23ss_out_uncert,Putting food into categories,-1
+A2S64AUN7JI7ZS,Q24eureka_question,Putting food into categories,-1
 A3EUGO4VR2N4G1,Q1concept_behav,Random dot motion,-1
 A3EUGO4VR2N4G1,Q3type_1_planning,Random dot motion,-1
 A3EUGO4VR2N4G1,Q4type_2_generate,Random dot motion,-1
@@ -18479,6 +20079,26 @@ A5NE8TWS8ZV7B,Q20type_3_type_4,Categorization problem,1
 A5NE8TWS8ZV7B,Q22confl_tradeoffs,Categorization problem,1
 A5NE8TWS8ZV7B,Q23ss_out_uncert,Categorization problem,1
 A5NE8TWS8ZV7B,Q24eureka_question,Categorization problem,1
+AA5ZDXAA2DLY1,Q1concept_behav,Estimating social quantity,-1
+AA5ZDXAA2DLY1,Q3type_1_planning,Estimating social quantity,-1
+AA5ZDXAA2DLY1,Q4type_2_generate,Estimating social quantity,-1
+AA5ZDXAA2DLY1,Q6type_5_cc,Estimating social quantity,-1
+AA5ZDXAA2DLY1,Q7type_7_battle,Estimating social quantity,-1
+AA5ZDXAA2DLY1,Q8type_8_performance,Estimating social quantity,-1
+AA5ZDXAA2DLY1,Q9divisible_unitary,Estimating social quantity,-1
+AA5ZDXAA2DLY1,Q10maximizing,Estimating social quantity,1
+AA5ZDXAA2DLY1,Q11optimizing,Estimating social quantity,1
+AA5ZDXAA2DLY1,Q13outcome_multip,Estimating social quantity,1
+AA5ZDXAA2DLY1,Q14sol_scheme_mul,Estimating social quantity,1
+AA5ZDXAA2DLY1,Q15dec_verifiability,Estimating social quantity,1
+AA5ZDXAA2DLY1,Q16shared_knowledge,Estimating social quantity,1
+AA5ZDXAA2DLY1,Q17within_sys_sol,Estimating social quantity,-1
+AA5ZDXAA2DLY1,Q18ans_recog,Estimating social quantity,1
+AA5ZDXAA2DLY1,Q19time_solvability,Estimating social quantity,1
+AA5ZDXAA2DLY1,Q20type_3_type_4,Estimating social quantity,1
+AA5ZDXAA2DLY1,Q22confl_tradeoffs,Estimating social quantity,-1
+AA5ZDXAA2DLY1,Q23ss_out_uncert,Estimating social quantity,1
+AA5ZDXAA2DLY1,Q24eureka_question,Estimating social quantity,-1
 A3CGQOJC28OVGN,Q1concept_behav,Word completion given starting letter,-1
 A3CGQOJC28OVGN,Q3type_1_planning,Word completion given starting letter,-1
 A3CGQOJC28OVGN,Q4type_2_generate,Word completion given starting letter,1
@@ -18499,6 +20119,26 @@ A3CGQOJC28OVGN,Q20type_3_type_4,Word completion given starting letter,1
 A3CGQOJC28OVGN,Q22confl_tradeoffs,Word completion given starting letter,-1
 A3CGQOJC28OVGN,Q23ss_out_uncert,Word completion given starting letter,-1
 A3CGQOJC28OVGN,Q24eureka_question,Word completion given starting letter,-1
+A2TLN8489YGY81,Q1concept_behav,Typing game,1
+A2TLN8489YGY81,Q3type_1_planning,Typing game,-1
+A2TLN8489YGY81,Q4type_2_generate,Typing game,-1
+A2TLN8489YGY81,Q6type_5_cc,Typing game,-1
+A2TLN8489YGY81,Q7type_7_battle,Typing game,-1
+A2TLN8489YGY81,Q8type_8_performance,Typing game,-1
+A2TLN8489YGY81,Q9divisible_unitary,Typing game,-1
+A2TLN8489YGY81,Q10maximizing,Typing game,1
+A2TLN8489YGY81,Q11optimizing,Typing game,1
+A2TLN8489YGY81,Q13outcome_multip,Typing game,1
+A2TLN8489YGY81,Q14sol_scheme_mul,Typing game,1
+A2TLN8489YGY81,Q15dec_verifiability,Typing game,1
+A2TLN8489YGY81,Q16shared_knowledge,Typing game,1
+A2TLN8489YGY81,Q17within_sys_sol,Typing game,1
+A2TLN8489YGY81,Q18ans_recog,Typing game,1
+A2TLN8489YGY81,Q19time_solvability,Typing game,1
+A2TLN8489YGY81,Q20type_3_type_4,Typing game,1
+A2TLN8489YGY81,Q22confl_tradeoffs,Typing game,-1
+A2TLN8489YGY81,Q23ss_out_uncert,Typing game,-1
+A2TLN8489YGY81,Q24eureka_question,Typing game,-1
 A18T7E73TNGOKP,Q1concept_behav,Letters-to-numbers problems (cryptography),-1
 A18T7E73TNGOKP,Q3type_1_planning,Letters-to-numbers problems (cryptography),1
 A18T7E73TNGOKP,Q4type_2_generate,Letters-to-numbers problems (cryptography),-1
@@ -19019,6 +20659,26 @@ A6JKKANO7F4KD,Q20type_3_type_4,Unscramble words (anagrams),1
 A6JKKANO7F4KD,Q22confl_tradeoffs,Unscramble words (anagrams),-1
 A6JKKANO7F4KD,Q23ss_out_uncert,Unscramble words (anagrams),-1
 A6JKKANO7F4KD,Q24eureka_question,Unscramble words (anagrams),-1
+A2S64AUN7JI7ZS,Q1concept_behav,Recall stories,-1
+A2S64AUN7JI7ZS,Q3type_1_planning,Recall stories,-1
+A2S64AUN7JI7ZS,Q4type_2_generate,Recall stories,-1
+A2S64AUN7JI7ZS,Q6type_5_cc,Recall stories,-1
+A2S64AUN7JI7ZS,Q7type_7_battle,Recall stories,1
+A2S64AUN7JI7ZS,Q8type_8_performance,Recall stories,-1
+A2S64AUN7JI7ZS,Q9divisible_unitary,Recall stories,-1
+A2S64AUN7JI7ZS,Q10maximizing,Recall stories,1
+A2S64AUN7JI7ZS,Q11optimizing,Recall stories,1
+A2S64AUN7JI7ZS,Q13outcome_multip,Recall stories,1
+A2S64AUN7JI7ZS,Q14sol_scheme_mul,Recall stories,1
+A2S64AUN7JI7ZS,Q15dec_verifiability,Recall stories,1
+A2S64AUN7JI7ZS,Q16shared_knowledge,Recall stories,NA
+A2S64AUN7JI7ZS,Q17within_sys_sol,Recall stories,1
+A2S64AUN7JI7ZS,Q18ans_recog,Recall stories,-1
+A2S64AUN7JI7ZS,Q19time_solvability,Recall stories,-1
+A2S64AUN7JI7ZS,Q20type_3_type_4,Recall stories,1
+A2S64AUN7JI7ZS,Q22confl_tradeoffs,Recall stories,-1
+A2S64AUN7JI7ZS,Q23ss_out_uncert,Recall stories,1
+A2S64AUN7JI7ZS,Q24eureka_question,Recall stories,-1
 A31BA1WLSWUSY1,Q1concept_behav,Logic Problem,-1
 A31BA1WLSWUSY1,Q3type_1_planning,Logic Problem,-1
 A31BA1WLSWUSY1,Q4type_2_generate,Logic Problem,-1
@@ -19319,6 +20979,26 @@ A1I72NHC21347A,Q20type_3_type_4,Image rating,-1
 A1I72NHC21347A,Q22confl_tradeoffs,Image rating,-1
 A1I72NHC21347A,Q23ss_out_uncert,Image rating,1
 A1I72NHC21347A,Q24eureka_question,Image rating,-1
+A2AZYU1CT24O0K,Q1concept_behav,Mastermind,-1
+A2AZYU1CT24O0K,Q3type_1_planning,Mastermind,-1
+A2AZYU1CT24O0K,Q4type_2_generate,Mastermind,-1
+A2AZYU1CT24O0K,Q6type_5_cc,Mastermind,-1
+A2AZYU1CT24O0K,Q7type_7_battle,Mastermind,-1
+A2AZYU1CT24O0K,Q8type_8_performance,Mastermind,-1
+A2AZYU1CT24O0K,Q9divisible_unitary,Mastermind,-1
+A2AZYU1CT24O0K,Q10maximizing,Mastermind,1
+A2AZYU1CT24O0K,Q11optimizing,Mastermind,1
+A2AZYU1CT24O0K,Q13outcome_multip,Mastermind,1
+A2AZYU1CT24O0K,Q14sol_scheme_mul,Mastermind,1
+A2AZYU1CT24O0K,Q15dec_verifiability,Mastermind,1
+A2AZYU1CT24O0K,Q16shared_knowledge,Mastermind,1
+A2AZYU1CT24O0K,Q17within_sys_sol,Mastermind,1
+A2AZYU1CT24O0K,Q18ans_recog,Mastermind,1
+A2AZYU1CT24O0K,Q19time_solvability,Mastermind,1
+A2AZYU1CT24O0K,Q20type_3_type_4,Mastermind,1
+A2AZYU1CT24O0K,Q22confl_tradeoffs,Mastermind,-1
+A2AZYU1CT24O0K,Q23ss_out_uncert,Mastermind,-1
+A2AZYU1CT24O0K,Q24eureka_question,Mastermind,-1
 A3HL2LL0LEPZT8,Q1concept_behav,Word completion given starting letter,-1
 A3HL2LL0LEPZT8,Q3type_1_planning,Word completion given starting letter,-1
 A3HL2LL0LEPZT8,Q4type_2_generate,Word completion given starting letter,1
@@ -19499,6 +21179,26 @@ A5NE8TWS8ZV7B,Q20type_3_type_4,Search for Oil Task,1
 A5NE8TWS8ZV7B,Q22confl_tradeoffs,Search for Oil Task,1
 A5NE8TWS8ZV7B,Q23ss_out_uncert,Search for Oil Task,1
 A5NE8TWS8ZV7B,Q24eureka_question,Search for Oil Task,1
+A3CGQOJC28OVGN,Q1concept_behav,Mastermind,-1
+A3CGQOJC28OVGN,Q3type_1_planning,Mastermind,-1
+A3CGQOJC28OVGN,Q4type_2_generate,Mastermind,-1
+A3CGQOJC28OVGN,Q6type_5_cc,Mastermind,-1
+A3CGQOJC28OVGN,Q7type_7_battle,Mastermind,-1
+A3CGQOJC28OVGN,Q8type_8_performance,Mastermind,-1
+A3CGQOJC28OVGN,Q9divisible_unitary,Mastermind,-1
+A3CGQOJC28OVGN,Q10maximizing,Mastermind,1
+A3CGQOJC28OVGN,Q11optimizing,Mastermind,1
+A3CGQOJC28OVGN,Q13outcome_multip,Mastermind,1
+A3CGQOJC28OVGN,Q14sol_scheme_mul,Mastermind,-1
+A3CGQOJC28OVGN,Q15dec_verifiability,Mastermind,1
+A3CGQOJC28OVGN,Q16shared_knowledge,Mastermind,1
+A3CGQOJC28OVGN,Q17within_sys_sol,Mastermind,1
+A3CGQOJC28OVGN,Q18ans_recog,Mastermind,1
+A3CGQOJC28OVGN,Q19time_solvability,Mastermind,1
+A3CGQOJC28OVGN,Q20type_3_type_4,Mastermind,1
+A3CGQOJC28OVGN,Q22confl_tradeoffs,Mastermind,1
+A3CGQOJC28OVGN,Q23ss_out_uncert,Mastermind,-1
+A3CGQOJC28OVGN,Q24eureka_question,Mastermind,-1
 A272X64FOZFYLB,Q1concept_behav,The N light bulbs game,-1
 A272X64FOZFYLB,Q3type_1_planning,The N light bulbs game,-1
 A272X64FOZFYLB,Q4type_2_generate,The N light bulbs game,-1
@@ -19719,6 +21419,26 @@ A2TLN8489YGY81,Q20type_3_type_4,Railroad Route Construction game,1
 A2TLN8489YGY81,Q22confl_tradeoffs,Railroad Route Construction game,1
 A2TLN8489YGY81,Q23ss_out_uncert,Railroad Route Construction game,-1
 A2TLN8489YGY81,Q24eureka_question,Railroad Route Construction game,-1
+AL51KTD0WITH9,Q1concept_behav,Railroad Route Construction game,-1
+AL51KTD0WITH9,Q3type_1_planning,Railroad Route Construction game,-1
+AL51KTD0WITH9,Q4type_2_generate,Railroad Route Construction game,-1
+AL51KTD0WITH9,Q6type_5_cc,Railroad Route Construction game,-1
+AL51KTD0WITH9,Q7type_7_battle,Railroad Route Construction game,-1
+AL51KTD0WITH9,Q8type_8_performance,Railroad Route Construction game,1
+AL51KTD0WITH9,Q9divisible_unitary,Railroad Route Construction game,-1
+AL51KTD0WITH9,Q10maximizing,Railroad Route Construction game,-1
+AL51KTD0WITH9,Q11optimizing,Railroad Route Construction game,1
+AL51KTD0WITH9,Q13outcome_multip,Railroad Route Construction game,-1
+AL51KTD0WITH9,Q14sol_scheme_mul,Railroad Route Construction game,-1
+AL51KTD0WITH9,Q15dec_verifiability,Railroad Route Construction game,1
+AL51KTD0WITH9,Q16shared_knowledge,Railroad Route Construction game,1
+AL51KTD0WITH9,Q17within_sys_sol,Railroad Route Construction game,1
+AL51KTD0WITH9,Q18ans_recog,Railroad Route Construction game,1
+AL51KTD0WITH9,Q19time_solvability,Railroad Route Construction game,1
+AL51KTD0WITH9,Q20type_3_type_4,Railroad Route Construction game,1
+AL51KTD0WITH9,Q22confl_tradeoffs,Railroad Route Construction game,-1
+AL51KTD0WITH9,Q23ss_out_uncert,Railroad Route Construction game,-1
+AL51KTD0WITH9,Q24eureka_question,Railroad Route Construction game,-1
 AKQAI78JTXXC9,Q1concept_behav,Search for Oil Task,-1
 AKQAI78JTXXC9,Q3type_1_planning,Search for Oil Task,-1
 AKQAI78JTXXC9,Q4type_2_generate,Search for Oil Task,-1
@@ -19799,6 +21519,26 @@ A5NE8TWS8ZV7B,Q20type_3_type_4,Architectural design task,1
 A5NE8TWS8ZV7B,Q22confl_tradeoffs,Architectural design task,1
 A5NE8TWS8ZV7B,Q23ss_out_uncert,Architectural design task,1
 A5NE8TWS8ZV7B,Q24eureka_question,Architectural design task,-1
+AONSG5WOC3OX0,Q1concept_behav,Reproducing arts,-1
+AONSG5WOC3OX0,Q3type_1_planning,Reproducing arts,-1
+AONSG5WOC3OX0,Q4type_2_generate,Reproducing arts,-1
+AONSG5WOC3OX0,Q6type_5_cc,Reproducing arts,-1
+AONSG5WOC3OX0,Q7type_7_battle,Reproducing arts,-1
+AONSG5WOC3OX0,Q8type_8_performance,Reproducing arts,-1
+AONSG5WOC3OX0,Q9divisible_unitary,Reproducing arts,1
+AONSG5WOC3OX0,Q10maximizing,Reproducing arts,-1
+AONSG5WOC3OX0,Q11optimizing,Reproducing arts,1
+AONSG5WOC3OX0,Q13outcome_multip,Reproducing arts,1
+AONSG5WOC3OX0,Q14sol_scheme_mul,Reproducing arts,1
+AONSG5WOC3OX0,Q15dec_verifiability,Reproducing arts,1
+AONSG5WOC3OX0,Q16shared_knowledge,Reproducing arts,1
+AONSG5WOC3OX0,Q17within_sys_sol,Reproducing arts,1
+AONSG5WOC3OX0,Q18ans_recog,Reproducing arts,1
+AONSG5WOC3OX0,Q19time_solvability,Reproducing arts,NA
+AONSG5WOC3OX0,Q20type_3_type_4,Reproducing arts,1
+AONSG5WOC3OX0,Q22confl_tradeoffs,Reproducing arts,-1
+AONSG5WOC3OX0,Q23ss_out_uncert,Reproducing arts,-1
+AONSG5WOC3OX0,Q24eureka_question,Reproducing arts,-1
 A5NE8TWS8ZV7B,Q1concept_behav,Room assignment task,-1
 A5NE8TWS8ZV7B,Q3type_1_planning,Room assignment task,-1
 A5NE8TWS8ZV7B,Q4type_2_generate,Room assignment task,-1
@@ -19959,6 +21699,26 @@ AL51KTD0WITH9,Q20type_3_type_4,Wason's Selection Task,1
 AL51KTD0WITH9,Q22confl_tradeoffs,Wason's Selection Task,-1
 AL51KTD0WITH9,Q23ss_out_uncert,Wason's Selection Task,-1
 AL51KTD0WITH9,Q24eureka_question,Wason's Selection Task,-1
+A5NE8TWS8ZV7B,Q1concept_behav,Word completion given starting letter,-1
+A5NE8TWS8ZV7B,Q3type_1_planning,Word completion given starting letter,-1
+A5NE8TWS8ZV7B,Q4type_2_generate,Word completion given starting letter,1
+A5NE8TWS8ZV7B,Q6type_5_cc,Word completion given starting letter,-1
+A5NE8TWS8ZV7B,Q7type_7_battle,Word completion given starting letter,-1
+A5NE8TWS8ZV7B,Q8type_8_performance,Word completion given starting letter,-1
+A5NE8TWS8ZV7B,Q9divisible_unitary,Word completion given starting letter,1
+A5NE8TWS8ZV7B,Q10maximizing,Word completion given starting letter,1
+A5NE8TWS8ZV7B,Q11optimizing,Word completion given starting letter,-1
+A5NE8TWS8ZV7B,Q13outcome_multip,Word completion given starting letter,1
+A5NE8TWS8ZV7B,Q14sol_scheme_mul,Word completion given starting letter,-1
+A5NE8TWS8ZV7B,Q15dec_verifiability,Word completion given starting letter,1
+A5NE8TWS8ZV7B,Q16shared_knowledge,Word completion given starting letter,1
+A5NE8TWS8ZV7B,Q17within_sys_sol,Word completion given starting letter,1
+A5NE8TWS8ZV7B,Q18ans_recog,Word completion given starting letter,1
+A5NE8TWS8ZV7B,Q19time_solvability,Word completion given starting letter,1
+A5NE8TWS8ZV7B,Q20type_3_type_4,Word completion given starting letter,1
+A5NE8TWS8ZV7B,Q22confl_tradeoffs,Word completion given starting letter,-1
+A5NE8TWS8ZV7B,Q23ss_out_uncert,Word completion given starting letter,-1
+A5NE8TWS8ZV7B,Q24eureka_question,Word completion given starting letter,-1
 A2TLN8489YGY81,Q1concept_behav,Putting food into categories,-1
 A2TLN8489YGY81,Q3type_1_planning,Putting food into categories,-1
 A2TLN8489YGY81,Q4type_2_generate,Putting food into categories,1
@@ -20879,6 +22639,26 @@ A2WDF40FA670T9,Q20type_3_type_4,"NASA Moon survival",1
 A2WDF40FA670T9,Q22confl_tradeoffs,"NASA Moon survival",1
 A2WDF40FA670T9,Q23ss_out_uncert,"NASA Moon survival",1
 A2WDF40FA670T9,Q24eureka_question,"NASA Moon survival",-1
+A2TLN8489YGY81,Q1concept_behav,Recall stories,-1
+A2TLN8489YGY81,Q3type_1_planning,Recall stories,-1
+A2TLN8489YGY81,Q4type_2_generate,Recall stories,-1
+A2TLN8489YGY81,Q6type_5_cc,Recall stories,-1
+A2TLN8489YGY81,Q7type_7_battle,Recall stories,-1
+A2TLN8489YGY81,Q8type_8_performance,Recall stories,-1
+A2TLN8489YGY81,Q9divisible_unitary,Recall stories,-1
+A2TLN8489YGY81,Q10maximizing,Recall stories,1
+A2TLN8489YGY81,Q11optimizing,Recall stories,1
+A2TLN8489YGY81,Q13outcome_multip,Recall stories,1
+A2TLN8489YGY81,Q14sol_scheme_mul,Recall stories,-1
+A2TLN8489YGY81,Q15dec_verifiability,Recall stories,1
+A2TLN8489YGY81,Q16shared_knowledge,Recall stories,1
+A2TLN8489YGY81,Q17within_sys_sol,Recall stories,1
+A2TLN8489YGY81,Q18ans_recog,Recall stories,1
+A2TLN8489YGY81,Q19time_solvability,Recall stories,1
+A2TLN8489YGY81,Q20type_3_type_4,Recall stories,1
+A2TLN8489YGY81,Q22confl_tradeoffs,Recall stories,-1
+A2TLN8489YGY81,Q23ss_out_uncert,Recall stories,-1
+A2TLN8489YGY81,Q24eureka_question,Recall stories,-1
 A3S5ZB4D98JWT1,Q1concept_behav,Estimating geological metrics,-1
 A3S5ZB4D98JWT1,Q3type_1_planning,Estimating geological metrics,-1
 A3S5ZB4D98JWT1,Q4type_2_generate,Estimating geological metrics,-1
@@ -21019,6 +22799,26 @@ A5NE8TWS8ZV7B,Q20type_3_type_4,Ravens Matrices,1
 A5NE8TWS8ZV7B,Q22confl_tradeoffs,Ravens Matrices,-1
 A5NE8TWS8ZV7B,Q23ss_out_uncert,Ravens Matrices,1
 A5NE8TWS8ZV7B,Q24eureka_question,Ravens Matrices,1
+AL51KTD0WITH9,Q1concept_behav,Moral Reasoning (Disciplinary Action Case),-1
+AL51KTD0WITH9,Q3type_1_planning,Moral Reasoning (Disciplinary Action Case),-1
+AL51KTD0WITH9,Q4type_2_generate,Moral Reasoning (Disciplinary Action Case),-1
+AL51KTD0WITH9,Q6type_5_cc,Moral Reasoning (Disciplinary Action Case),1
+AL51KTD0WITH9,Q7type_7_battle,Moral Reasoning (Disciplinary Action Case),-1
+AL51KTD0WITH9,Q8type_8_performance,Moral Reasoning (Disciplinary Action Case),-1
+AL51KTD0WITH9,Q9divisible_unitary,Moral Reasoning (Disciplinary Action Case),-1
+AL51KTD0WITH9,Q10maximizing,Moral Reasoning (Disciplinary Action Case),-1
+AL51KTD0WITH9,Q11optimizing,Moral Reasoning (Disciplinary Action Case),-1
+AL51KTD0WITH9,Q13outcome_multip,Moral Reasoning (Disciplinary Action Case),-1
+AL51KTD0WITH9,Q14sol_scheme_mul,Moral Reasoning (Disciplinary Action Case),-1
+AL51KTD0WITH9,Q15dec_verifiability,Moral Reasoning (Disciplinary Action Case),-1
+AL51KTD0WITH9,Q16shared_knowledge,Moral Reasoning (Disciplinary Action Case),-1
+AL51KTD0WITH9,Q17within_sys_sol,Moral Reasoning (Disciplinary Action Case),1
+AL51KTD0WITH9,Q18ans_recog,Moral Reasoning (Disciplinary Action Case),-1
+AL51KTD0WITH9,Q19time_solvability,Moral Reasoning (Disciplinary Action Case),-1
+AL51KTD0WITH9,Q20type_3_type_4,Moral Reasoning (Disciplinary Action Case),-1
+AL51KTD0WITH9,Q22confl_tradeoffs,Moral Reasoning (Disciplinary Action Case),1
+AL51KTD0WITH9,Q23ss_out_uncert,Moral Reasoning (Disciplinary Action Case),-1
+AL51KTD0WITH9,Q24eureka_question,Moral Reasoning (Disciplinary Action Case),-1
 A2OVX9UW5WANQE,Q1concept_behav,Husbands and wives transfer,1
 A2OVX9UW5WANQE,Q3type_1_planning,Husbands and wives transfer,-1
 A2OVX9UW5WANQE,Q4type_2_generate,Husbands and wives transfer,-1
@@ -21059,6 +22859,26 @@ A1VRG5HKZC0H0C,Q20type_3_type_4,Room assignment task,1
 A1VRG5HKZC0H0C,Q22confl_tradeoffs,Room assignment task,1
 A1VRG5HKZC0H0C,Q23ss_out_uncert,Room assignment task,1
 A1VRG5HKZC0H0C,Q24eureka_question,Room assignment task,-1
+A3HGZDLMCKGPSE,Q1concept_behav,Mastermind,-1
+A3HGZDLMCKGPSE,Q3type_1_planning,Mastermind,1
+A3HGZDLMCKGPSE,Q4type_2_generate,Mastermind,1
+A3HGZDLMCKGPSE,Q6type_5_cc,Mastermind,-1
+A3HGZDLMCKGPSE,Q7type_7_battle,Mastermind,-1
+A3HGZDLMCKGPSE,Q8type_8_performance,Mastermind,-1
+A3HGZDLMCKGPSE,Q9divisible_unitary,Mastermind,1
+A3HGZDLMCKGPSE,Q10maximizing,Mastermind,1
+A3HGZDLMCKGPSE,Q11optimizing,Mastermind,-1
+A3HGZDLMCKGPSE,Q13outcome_multip,Mastermind,-1
+A3HGZDLMCKGPSE,Q14sol_scheme_mul,Mastermind,-1
+A3HGZDLMCKGPSE,Q15dec_verifiability,Mastermind,1
+A3HGZDLMCKGPSE,Q16shared_knowledge,Mastermind,1
+A3HGZDLMCKGPSE,Q17within_sys_sol,Mastermind,1
+A3HGZDLMCKGPSE,Q18ans_recog,Mastermind,-1
+A3HGZDLMCKGPSE,Q19time_solvability,Mastermind,1
+A3HGZDLMCKGPSE,Q20type_3_type_4,Mastermind,1
+A3HGZDLMCKGPSE,Q22confl_tradeoffs,Mastermind,-1
+A3HGZDLMCKGPSE,Q23ss_out_uncert,Mastermind,1
+A3HGZDLMCKGPSE,Q24eureka_question,Mastermind,-1
 A17FGZ1I5P9RZA,Q1concept_behav,The Fish game,-1
 A17FGZ1I5P9RZA,Q3type_1_planning,The Fish game,-1
 A17FGZ1I5P9RZA,Q4type_2_generate,The Fish game,-1
@@ -21219,6 +23039,26 @@ A3S5ZB4D98JWT1,Q20type_3_type_4,Divergent Association Task,-1
 A3S5ZB4D98JWT1,Q22confl_tradeoffs,Divergent Association Task,-1
 A3S5ZB4D98JWT1,Q23ss_out_uncert,Divergent Association Task,1
 A3S5ZB4D98JWT1,Q24eureka_question,Divergent Association Task,-1
+A33PHCBUOD4WKD,Q1concept_behav,Reproducing arts,-1
+A33PHCBUOD4WKD,Q3type_1_planning,Reproducing arts,-1
+A33PHCBUOD4WKD,Q4type_2_generate,Reproducing arts,-1
+A33PHCBUOD4WKD,Q6type_5_cc,Reproducing arts,-1
+A33PHCBUOD4WKD,Q7type_7_battle,Reproducing arts,-1
+A33PHCBUOD4WKD,Q8type_8_performance,Reproducing arts,-1
+A33PHCBUOD4WKD,Q9divisible_unitary,Reproducing arts,1
+A33PHCBUOD4WKD,Q10maximizing,Reproducing arts,1
+A33PHCBUOD4WKD,Q11optimizing,Reproducing arts,1
+A33PHCBUOD4WKD,Q13outcome_multip,Reproducing arts,1
+A33PHCBUOD4WKD,Q14sol_scheme_mul,Reproducing arts,1
+A33PHCBUOD4WKD,Q15dec_verifiability,Reproducing arts,1
+A33PHCBUOD4WKD,Q16shared_knowledge,Reproducing arts,1
+A33PHCBUOD4WKD,Q17within_sys_sol,Reproducing arts,1
+A33PHCBUOD4WKD,Q18ans_recog,Reproducing arts,1
+A33PHCBUOD4WKD,Q19time_solvability,Reproducing arts,1
+A33PHCBUOD4WKD,Q20type_3_type_4,Reproducing arts,1
+A33PHCBUOD4WKD,Q22confl_tradeoffs,Reproducing arts,-1
+A33PHCBUOD4WKD,Q23ss_out_uncert,Reproducing arts,-1
+A33PHCBUOD4WKD,Q24eureka_question,Reproducing arts,-1
 AONSG5WOC3OX0,Q1concept_behav,Divergent Association Task,-1
 AONSG5WOC3OX0,Q3type_1_planning,Divergent Association Task,-1
 AONSG5WOC3OX0,Q4type_2_generate,Divergent Association Task,-1
@@ -21839,6 +23679,26 @@ A1I72NHC21347A,Q20type_3_type_4,The N light bulbs game,1
 A1I72NHC21347A,Q22confl_tradeoffs,The N light bulbs game,1
 A1I72NHC21347A,Q23ss_out_uncert,The N light bulbs game,1
 A1I72NHC21347A,Q24eureka_question,The N light bulbs game,-1
+A1YSYI926BBOHW,Q1concept_behav,Shopping plan,-1
+A1YSYI926BBOHW,Q3type_1_planning,Shopping plan,1
+A1YSYI926BBOHW,Q4type_2_generate,Shopping plan,-1
+A1YSYI926BBOHW,Q6type_5_cc,Shopping plan,-1
+A1YSYI926BBOHW,Q7type_7_battle,Shopping plan,-1
+A1YSYI926BBOHW,Q8type_8_performance,Shopping plan,-1
+A1YSYI926BBOHW,Q9divisible_unitary,Shopping plan,1
+A1YSYI926BBOHW,Q10maximizing,Shopping plan,-1
+A1YSYI926BBOHW,Q11optimizing,Shopping plan,-1
+A1YSYI926BBOHW,Q13outcome_multip,Shopping plan,1
+A1YSYI926BBOHW,Q14sol_scheme_mul,Shopping plan,-1
+A1YSYI926BBOHW,Q15dec_verifiability,Shopping plan,1
+A1YSYI926BBOHW,Q16shared_knowledge,Shopping plan,1
+A1YSYI926BBOHW,Q17within_sys_sol,Shopping plan,1
+A1YSYI926BBOHW,Q18ans_recog,Shopping plan,1
+A1YSYI926BBOHW,Q19time_solvability,Shopping plan,1
+A1YSYI926BBOHW,Q20type_3_type_4,Shopping plan,1
+A1YSYI926BBOHW,Q22confl_tradeoffs,Shopping plan,1
+A1YSYI926BBOHW,Q23ss_out_uncert,Shopping plan,-1
+A1YSYI926BBOHW,Q24eureka_question,Shopping plan,-1
 A3S5ZB4D98JWT1,Q1concept_behav,Letters-to-numbers problems (cryptography),-1
 A3S5ZB4D98JWT1,Q3type_1_planning,Letters-to-numbers problems (cryptography),-1
 A3S5ZB4D98JWT1,Q4type_2_generate,Letters-to-numbers problems (cryptography),-1
@@ -22379,6 +24239,26 @@ A3NXT3OVGL7QNR,Q20type_3_type_4,Recall word lists,1
 A3NXT3OVGL7QNR,Q22confl_tradeoffs,Recall word lists,-1
 A3NXT3OVGL7QNR,Q23ss_out_uncert,Recall word lists,1
 A3NXT3OVGL7QNR,Q24eureka_question,Recall word lists,-1
+AL51KTD0WITH9,Q1concept_behav,Room assignment task,-1
+AL51KTD0WITH9,Q3type_1_planning,Room assignment task,-1
+AL51KTD0WITH9,Q4type_2_generate,Room assignment task,-1
+AL51KTD0WITH9,Q6type_5_cc,Room assignment task,-1
+AL51KTD0WITH9,Q7type_7_battle,Room assignment task,-1
+AL51KTD0WITH9,Q8type_8_performance,Room assignment task,1
+AL51KTD0WITH9,Q9divisible_unitary,Room assignment task,-1
+AL51KTD0WITH9,Q10maximizing,Room assignment task,-1
+AL51KTD0WITH9,Q11optimizing,Room assignment task,1
+AL51KTD0WITH9,Q13outcome_multip,Room assignment task,1
+AL51KTD0WITH9,Q14sol_scheme_mul,Room assignment task,1
+AL51KTD0WITH9,Q15dec_verifiability,Room assignment task,1
+AL51KTD0WITH9,Q16shared_knowledge,Room assignment task,1
+AL51KTD0WITH9,Q17within_sys_sol,Room assignment task,1
+AL51KTD0WITH9,Q18ans_recog,Room assignment task,1
+AL51KTD0WITH9,Q19time_solvability,Room assignment task,1
+AL51KTD0WITH9,Q20type_3_type_4,Room assignment task,1
+AL51KTD0WITH9,Q22confl_tradeoffs,Room assignment task,1
+AL51KTD0WITH9,Q23ss_out_uncert,Room assignment task,1
+AL51KTD0WITH9,Q24eureka_question,Room assignment task,-1
 A17KN7NAP48L4B,Q1concept_behav,Game of Clue - Terrorist Attack,-1
 A17KN7NAP48L4B,Q3type_1_planning,Game of Clue - Terrorist Attack,-1
 A17KN7NAP48L4B,Q4type_2_generate,Game of Clue - Terrorist Attack,-1
@@ -22479,6 +24359,26 @@ AURYD2FH3FUOQ,Q20type_3_type_4,Wason's Selection Task,1
 AURYD2FH3FUOQ,Q22confl_tradeoffs,Wason's Selection Task,-1
 AURYD2FH3FUOQ,Q23ss_out_uncert,Wason's Selection Task,-1
 AURYD2FH3FUOQ,Q24eureka_question,Wason's Selection Task,1
+A2TLN8489YGY81,Q1concept_behav,Mastermind,-1
+A2TLN8489YGY81,Q3type_1_planning,Mastermind,-1
+A2TLN8489YGY81,Q4type_2_generate,Mastermind,-1
+A2TLN8489YGY81,Q6type_5_cc,Mastermind,-1
+A2TLN8489YGY81,Q7type_7_battle,Mastermind,-1
+A2TLN8489YGY81,Q8type_8_performance,Mastermind,-1
+A2TLN8489YGY81,Q9divisible_unitary,Mastermind,-1
+A2TLN8489YGY81,Q10maximizing,Mastermind,1
+A2TLN8489YGY81,Q11optimizing,Mastermind,1
+A2TLN8489YGY81,Q13outcome_multip,Mastermind,1
+A2TLN8489YGY81,Q14sol_scheme_mul,Mastermind,1
+A2TLN8489YGY81,Q15dec_verifiability,Mastermind,1
+A2TLN8489YGY81,Q16shared_knowledge,Mastermind,1
+A2TLN8489YGY81,Q17within_sys_sol,Mastermind,1
+A2TLN8489YGY81,Q18ans_recog,Mastermind,1
+A2TLN8489YGY81,Q19time_solvability,Mastermind,1
+A2TLN8489YGY81,Q20type_3_type_4,Mastermind,1
+A2TLN8489YGY81,Q22confl_tradeoffs,Mastermind,-1
+A2TLN8489YGY81,Q23ss_out_uncert,Mastermind,1
+A2TLN8489YGY81,Q24eureka_question,Mastermind,-1
 A18T7E73TNGOKP,Q1concept_behav,Random dot motion,-1
 A18T7E73TNGOKP,Q3type_1_planning,Random dot motion,-1
 A18T7E73TNGOKP,Q4type_2_generate,Random dot motion,-1
@@ -23179,6 +25079,26 @@ A3V3SQCM8QGYB7,Q20type_3_type_4,Word completion given part of word,1
 A3V3SQCM8QGYB7,Q22confl_tradeoffs,Word completion given part of word,-1
 A3V3SQCM8QGYB7,Q23ss_out_uncert,Word completion given part of word,-1
 A3V3SQCM8QGYB7,Q24eureka_question,Word completion given part of word,1
+A33PHCBUOD4WKD,Q1concept_behav,Divergent Association Task,-1
+A33PHCBUOD4WKD,Q3type_1_planning,Divergent Association Task,-1
+A33PHCBUOD4WKD,Q4type_2_generate,Divergent Association Task,1
+A33PHCBUOD4WKD,Q6type_5_cc,Divergent Association Task,-1
+A33PHCBUOD4WKD,Q7type_7_battle,Divergent Association Task,-1
+A33PHCBUOD4WKD,Q8type_8_performance,Divergent Association Task,-1
+A33PHCBUOD4WKD,Q9divisible_unitary,Divergent Association Task,-1
+A33PHCBUOD4WKD,Q10maximizing,Divergent Association Task,-1
+A33PHCBUOD4WKD,Q11optimizing,Divergent Association Task,-1
+A33PHCBUOD4WKD,Q13outcome_multip,Divergent Association Task,1
+A33PHCBUOD4WKD,Q14sol_scheme_mul,Divergent Association Task,1
+A33PHCBUOD4WKD,Q15dec_verifiability,Divergent Association Task,1
+A33PHCBUOD4WKD,Q16shared_knowledge,Divergent Association Task,1
+A33PHCBUOD4WKD,Q17within_sys_sol,Divergent Association Task,1
+A33PHCBUOD4WKD,Q18ans_recog,Divergent Association Task,1
+A33PHCBUOD4WKD,Q19time_solvability,Divergent Association Task,1
+A33PHCBUOD4WKD,Q20type_3_type_4,Divergent Association Task,-1
+A33PHCBUOD4WKD,Q22confl_tradeoffs,Divergent Association Task,-1
+A33PHCBUOD4WKD,Q23ss_out_uncert,Divergent Association Task,1
+A33PHCBUOD4WKD,Q24eureka_question,Divergent Association Task,-1
 AONSG5WOC3OX0,Q1concept_behav,Typing game,1
 AONSG5WOC3OX0,Q3type_1_planning,Typing game,-1
 AONSG5WOC3OX0,Q4type_2_generate,Typing game,-1
@@ -23319,6 +25239,26 @@ A3HL2LL0LEPZT8,Q20type_3_type_4,Summarize Discussion,-1
 A3HL2LL0LEPZT8,Q22confl_tradeoffs,Summarize Discussion,1
 A3HL2LL0LEPZT8,Q23ss_out_uncert,Summarize Discussion,1
 A3HL2LL0LEPZT8,Q24eureka_question,Summarize Discussion,-1
+AE1YA7Q3UKPRI,Q1concept_behav,Find the maximum,-1
+AE1YA7Q3UKPRI,Q3type_1_planning,Find the maximum,-1
+AE1YA7Q3UKPRI,Q4type_2_generate,Find the maximum,-1
+AE1YA7Q3UKPRI,Q6type_5_cc,Find the maximum,-1
+AE1YA7Q3UKPRI,Q7type_7_battle,Find the maximum,1
+AE1YA7Q3UKPRI,Q8type_8_performance,Find the maximum,1
+AE1YA7Q3UKPRI,Q9divisible_unitary,Find the maximum,1
+AE1YA7Q3UKPRI,Q10maximizing,Find the maximum,-1
+AE1YA7Q3UKPRI,Q11optimizing,Find the maximum,1
+AE1YA7Q3UKPRI,Q13outcome_multip,Find the maximum,-1
+AE1YA7Q3UKPRI,Q14sol_scheme_mul,Find the maximum,1
+AE1YA7Q3UKPRI,Q15dec_verifiability,Find the maximum,1
+AE1YA7Q3UKPRI,Q16shared_knowledge,Find the maximum,1
+AE1YA7Q3UKPRI,Q17within_sys_sol,Find the maximum,1
+AE1YA7Q3UKPRI,Q18ans_recog,Find the maximum,1
+AE1YA7Q3UKPRI,Q19time_solvability,Find the maximum,1
+AE1YA7Q3UKPRI,Q20type_3_type_4,Find the maximum,1
+AE1YA7Q3UKPRI,Q22confl_tradeoffs,Find the maximum,-1
+AE1YA7Q3UKPRI,Q23ss_out_uncert,Find the maximum,1
+AE1YA7Q3UKPRI,Q24eureka_question,Find the maximum,-1
 A3JAM040VWXHDO,Q1concept_behav,Estimating pages of a book,-1
 A3JAM040VWXHDO,Q3type_1_planning,Estimating pages of a book,-1
 A3JAM040VWXHDO,Q4type_2_generate,Estimating pages of a book,-1
@@ -23859,6 +25799,26 @@ AONSG5WOC3OX0,Q20type_3_type_4,Recall word lists,1
 AONSG5WOC3OX0,Q22confl_tradeoffs,Recall word lists,-1
 AONSG5WOC3OX0,Q23ss_out_uncert,Recall word lists,1
 AONSG5WOC3OX0,Q24eureka_question,Recall word lists,-1
+AONSG5WOC3OX0,Q1concept_behav,Putting food into categories,-1
+AONSG5WOC3OX0,Q3type_1_planning,Putting food into categories,-1
+AONSG5WOC3OX0,Q4type_2_generate,Putting food into categories,1
+AONSG5WOC3OX0,Q6type_5_cc,Putting food into categories,-1
+AONSG5WOC3OX0,Q7type_7_battle,Putting food into categories,-1
+AONSG5WOC3OX0,Q8type_8_performance,Putting food into categories,-1
+AONSG5WOC3OX0,Q9divisible_unitary,Putting food into categories,1
+AONSG5WOC3OX0,Q10maximizing,Putting food into categories,1
+AONSG5WOC3OX0,Q11optimizing,Putting food into categories,-1
+AONSG5WOC3OX0,Q13outcome_multip,Putting food into categories,-1
+AONSG5WOC3OX0,Q14sol_scheme_mul,Putting food into categories,-1
+AONSG5WOC3OX0,Q15dec_verifiability,Putting food into categories,1
+AONSG5WOC3OX0,Q16shared_knowledge,Putting food into categories,1
+AONSG5WOC3OX0,Q17within_sys_sol,Putting food into categories,1
+AONSG5WOC3OX0,Q18ans_recog,Putting food into categories,1
+AONSG5WOC3OX0,Q19time_solvability,Putting food into categories,1
+AONSG5WOC3OX0,Q20type_3_type_4,Putting food into categories,1
+AONSG5WOC3OX0,Q22confl_tradeoffs,Putting food into categories,-1
+AONSG5WOC3OX0,Q23ss_out_uncert,Putting food into categories,-1
+AONSG5WOC3OX0,Q24eureka_question,Putting food into categories,-1
 AKQAI78JTXXC9,Q1concept_behav,Graph coloring task,-1
 AKQAI78JTXXC9,Q3type_1_planning,Graph coloring task,-1
 AKQAI78JTXXC9,Q4type_2_generate,Graph coloring task,-1
@@ -24339,6 +26299,26 @@ A3S5ZB4D98JWT1,Q20type_3_type_4,Graph coloring task,1
 A3S5ZB4D98JWT1,Q22confl_tradeoffs,Graph coloring task,1
 A3S5ZB4D98JWT1,Q23ss_out_uncert,Graph coloring task,1
 A3S5ZB4D98JWT1,Q24eureka_question,Graph coloring task,-1
+A33PHCBUOD4WKD,Q1concept_behav,Recall images,-1
+A33PHCBUOD4WKD,Q3type_1_planning,Recall images,-1
+A33PHCBUOD4WKD,Q4type_2_generate,Recall images,-1
+A33PHCBUOD4WKD,Q6type_5_cc,Recall images,-1
+A33PHCBUOD4WKD,Q7type_7_battle,Recall images,-1
+A33PHCBUOD4WKD,Q8type_8_performance,Recall images,-1
+A33PHCBUOD4WKD,Q9divisible_unitary,Recall images,-1
+A33PHCBUOD4WKD,Q10maximizing,Recall images,-1
+A33PHCBUOD4WKD,Q11optimizing,Recall images,1
+A33PHCBUOD4WKD,Q13outcome_multip,Recall images,1
+A33PHCBUOD4WKD,Q14sol_scheme_mul,Recall images,1
+A33PHCBUOD4WKD,Q15dec_verifiability,Recall images,1
+A33PHCBUOD4WKD,Q16shared_knowledge,Recall images,1
+A33PHCBUOD4WKD,Q17within_sys_sol,Recall images,1
+A33PHCBUOD4WKD,Q18ans_recog,Recall images,1
+A33PHCBUOD4WKD,Q19time_solvability,Recall images,1
+A33PHCBUOD4WKD,Q20type_3_type_4,Recall images,1
+A33PHCBUOD4WKD,Q22confl_tradeoffs,Recall images,-1
+A33PHCBUOD4WKD,Q23ss_out_uncert,Recall images,-1
+A33PHCBUOD4WKD,Q24eureka_question,Recall images,-1
 A1YSYI926BBOHW,Q1concept_behav,Husbands and wives transfer,-1
 A1YSYI926BBOHW,Q3type_1_planning,Husbands and wives transfer,1
 A1YSYI926BBOHW,Q4type_2_generate,Husbands and wives transfer,-1
@@ -24379,6 +26359,46 @@ ARYL3C6N9SVV1,Q20type_3_type_4,Writing story,-1
 ARYL3C6N9SVV1,Q22confl_tradeoffs,Writing story,1
 ARYL3C6N9SVV1,Q23ss_out_uncert,Writing story,NA
 ARYL3C6N9SVV1,Q24eureka_question,Writing story,NA
+A2S64AUN7JI7ZS,Q1concept_behav,Mastermind,-1
+A2S64AUN7JI7ZS,Q3type_1_planning,Mastermind,-1
+A2S64AUN7JI7ZS,Q4type_2_generate,Mastermind,1
+A2S64AUN7JI7ZS,Q6type_5_cc,Mastermind,-1
+A2S64AUN7JI7ZS,Q7type_7_battle,Mastermind,1
+A2S64AUN7JI7ZS,Q8type_8_performance,Mastermind,-1
+A2S64AUN7JI7ZS,Q9divisible_unitary,Mastermind,-1
+A2S64AUN7JI7ZS,Q10maximizing,Mastermind,-1
+A2S64AUN7JI7ZS,Q11optimizing,Mastermind,1
+A2S64AUN7JI7ZS,Q13outcome_multip,Mastermind,1
+A2S64AUN7JI7ZS,Q14sol_scheme_mul,Mastermind,-1
+A2S64AUN7JI7ZS,Q15dec_verifiability,Mastermind,1
+A2S64AUN7JI7ZS,Q16shared_knowledge,Mastermind,1
+A2S64AUN7JI7ZS,Q17within_sys_sol,Mastermind,1
+A2S64AUN7JI7ZS,Q18ans_recog,Mastermind,1
+A2S64AUN7JI7ZS,Q19time_solvability,Mastermind,1
+A2S64AUN7JI7ZS,Q20type_3_type_4,Mastermind,1
+A2S64AUN7JI7ZS,Q22confl_tradeoffs,Mastermind,-1
+A2S64AUN7JI7ZS,Q23ss_out_uncert,Mastermind,-1
+A2S64AUN7JI7ZS,Q24eureka_question,Mastermind,-1
+A3JAM040VWXHDO,Q1concept_behav,Mastermind,-1
+A3JAM040VWXHDO,Q3type_1_planning,Mastermind,-1
+A3JAM040VWXHDO,Q4type_2_generate,Mastermind,-1
+A3JAM040VWXHDO,Q6type_5_cc,Mastermind,-1
+A3JAM040VWXHDO,Q7type_7_battle,Mastermind,-1
+A3JAM040VWXHDO,Q8type_8_performance,Mastermind,-1
+A3JAM040VWXHDO,Q9divisible_unitary,Mastermind,-1
+A3JAM040VWXHDO,Q10maximizing,Mastermind,-1
+A3JAM040VWXHDO,Q11optimizing,Mastermind,-1
+A3JAM040VWXHDO,Q13outcome_multip,Mastermind,1
+A3JAM040VWXHDO,Q14sol_scheme_mul,Mastermind,-1
+A3JAM040VWXHDO,Q15dec_verifiability,Mastermind,1
+A3JAM040VWXHDO,Q16shared_knowledge,Mastermind,1
+A3JAM040VWXHDO,Q17within_sys_sol,Mastermind,1
+A3JAM040VWXHDO,Q18ans_recog,Mastermind,1
+A3JAM040VWXHDO,Q19time_solvability,Mastermind,1
+A3JAM040VWXHDO,Q20type_3_type_4,Mastermind,1
+A3JAM040VWXHDO,Q22confl_tradeoffs,Mastermind,-1
+A3JAM040VWXHDO,Q23ss_out_uncert,Mastermind,-1
+A3JAM040VWXHDO,Q24eureka_question,Mastermind,-1
 A3HL2LL0LEPZT8,Q1concept_behav,Allocating resources to programs,-1
 A3HL2LL0LEPZT8,Q3type_1_planning,Allocating resources to programs,-1
 A3HL2LL0LEPZT8,Q4type_2_generate,Allocating resources to programs,-1
@@ -24639,6 +26659,26 @@ AXPZAP62ZYWP8,Q20type_3_type_4,Estimating geological metrics,1
 AXPZAP62ZYWP8,Q22confl_tradeoffs,Estimating geological metrics,1
 AXPZAP62ZYWP8,Q23ss_out_uncert,Estimating geological metrics,1
 AXPZAP62ZYWP8,Q24eureka_question,Estimating geological metrics,1
+A26UIS59SY4NM6,Q1concept_behav,Computer maze,-1
+A26UIS59SY4NM6,Q3type_1_planning,Computer maze,-1
+A26UIS59SY4NM6,Q4type_2_generate,Computer maze,-1
+A26UIS59SY4NM6,Q6type_5_cc,Computer maze,-1
+A26UIS59SY4NM6,Q7type_7_battle,Computer maze,-1
+A26UIS59SY4NM6,Q8type_8_performance,Computer maze,-1
+A26UIS59SY4NM6,Q9divisible_unitary,Computer maze,1
+A26UIS59SY4NM6,Q10maximizing,Computer maze,1
+A26UIS59SY4NM6,Q11optimizing,Computer maze,1
+A26UIS59SY4NM6,Q13outcome_multip,Computer maze,-1
+A26UIS59SY4NM6,Q14sol_scheme_mul,Computer maze,-1
+A26UIS59SY4NM6,Q15dec_verifiability,Computer maze,1
+A26UIS59SY4NM6,Q16shared_knowledge,Computer maze,1
+A26UIS59SY4NM6,Q17within_sys_sol,Computer maze,1
+A26UIS59SY4NM6,Q18ans_recog,Computer maze,1
+A26UIS59SY4NM6,Q19time_solvability,Computer maze,1
+A26UIS59SY4NM6,Q20type_3_type_4,Computer maze,1
+A26UIS59SY4NM6,Q22confl_tradeoffs,Computer maze,1
+A26UIS59SY4NM6,Q23ss_out_uncert,Computer maze,1
+A26UIS59SY4NM6,Q24eureka_question,Computer maze,-1
 A3HL2LL0LEPZT8,Q1concept_behav,Room assignment task,-1
 A3HL2LL0LEPZT8,Q3type_1_planning,Room assignment task,-1
 A3HL2LL0LEPZT8,Q4type_2_generate,Room assignment task,-1
@@ -24659,6 +26699,26 @@ A3HL2LL0LEPZT8,Q20type_3_type_4,Room assignment task,1
 A3HL2LL0LEPZT8,Q22confl_tradeoffs,Room assignment task,1
 A3HL2LL0LEPZT8,Q23ss_out_uncert,Room assignment task,1
 A3HL2LL0LEPZT8,Q24eureka_question,Room assignment task,-1
+AE1YA7Q3UKPRI,Q1concept_behav,Summarize Discussion,-1
+AE1YA7Q3UKPRI,Q3type_1_planning,Summarize Discussion,-1
+AE1YA7Q3UKPRI,Q4type_2_generate,Summarize Discussion,1
+AE1YA7Q3UKPRI,Q6type_5_cc,Summarize Discussion,-1
+AE1YA7Q3UKPRI,Q7type_7_battle,Summarize Discussion,-1
+AE1YA7Q3UKPRI,Q8type_8_performance,Summarize Discussion,-1
+AE1YA7Q3UKPRI,Q9divisible_unitary,Summarize Discussion,1
+AE1YA7Q3UKPRI,Q10maximizing,Summarize Discussion,-1
+AE1YA7Q3UKPRI,Q11optimizing,Summarize Discussion,-1
+AE1YA7Q3UKPRI,Q13outcome_multip,Summarize Discussion,-1
+AE1YA7Q3UKPRI,Q14sol_scheme_mul,Summarize Discussion,-1
+AE1YA7Q3UKPRI,Q15dec_verifiability,Summarize Discussion,-1
+AE1YA7Q3UKPRI,Q16shared_knowledge,Summarize Discussion,-1
+AE1YA7Q3UKPRI,Q17within_sys_sol,Summarize Discussion,1
+AE1YA7Q3UKPRI,Q18ans_recog,Summarize Discussion,NA
+AE1YA7Q3UKPRI,Q19time_solvability,Summarize Discussion,-1
+AE1YA7Q3UKPRI,Q20type_3_type_4,Summarize Discussion,-1
+AE1YA7Q3UKPRI,Q22confl_tradeoffs,Summarize Discussion,1
+AE1YA7Q3UKPRI,Q23ss_out_uncert,Summarize Discussion,1
+AE1YA7Q3UKPRI,Q24eureka_question,Summarize Discussion,-1
 A17FGZ1I5P9RZA,Q1concept_behav,Railroad Route Construction game,-1
 A17FGZ1I5P9RZA,Q3type_1_planning,Railroad Route Construction game,-1
 A17FGZ1I5P9RZA,Q4type_2_generate,Railroad Route Construction game,-1
@@ -24859,6 +26919,26 @@ A2WZTMXWD20NYE,Q20type_3_type_4,Reproducing arts,1
 A2WZTMXWD20NYE,Q22confl_tradeoffs,Reproducing arts,-1
 A2WZTMXWD20NYE,Q23ss_out_uncert,Reproducing arts,1
 A2WZTMXWD20NYE,Q24eureka_question,Reproducing arts,-1
+A26UIS59SY4NM6,Q1concept_behav,Trivia Multiple Choice Quiz,-1
+A26UIS59SY4NM6,Q3type_1_planning,Trivia Multiple Choice Quiz,-1
+A26UIS59SY4NM6,Q4type_2_generate,Trivia Multiple Choice Quiz,-1
+A26UIS59SY4NM6,Q6type_5_cc,Trivia Multiple Choice Quiz,-1
+A26UIS59SY4NM6,Q7type_7_battle,Trivia Multiple Choice Quiz,-1
+A26UIS59SY4NM6,Q8type_8_performance,Trivia Multiple Choice Quiz,-1
+A26UIS59SY4NM6,Q9divisible_unitary,Trivia Multiple Choice Quiz,1
+A26UIS59SY4NM6,Q10maximizing,Trivia Multiple Choice Quiz,-1
+A26UIS59SY4NM6,Q11optimizing,Trivia Multiple Choice Quiz,1
+A26UIS59SY4NM6,Q13outcome_multip,Trivia Multiple Choice Quiz,1
+A26UIS59SY4NM6,Q14sol_scheme_mul,Trivia Multiple Choice Quiz,-1
+A26UIS59SY4NM6,Q15dec_verifiability,Trivia Multiple Choice Quiz,1
+A26UIS59SY4NM6,Q16shared_knowledge,Trivia Multiple Choice Quiz,-1
+A26UIS59SY4NM6,Q17within_sys_sol,Trivia Multiple Choice Quiz,-1
+A26UIS59SY4NM6,Q18ans_recog,Trivia Multiple Choice Quiz,1
+A26UIS59SY4NM6,Q19time_solvability,Trivia Multiple Choice Quiz,1
+A26UIS59SY4NM6,Q20type_3_type_4,Trivia Multiple Choice Quiz,1
+A26UIS59SY4NM6,Q22confl_tradeoffs,Trivia Multiple Choice Quiz,-1
+A26UIS59SY4NM6,Q23ss_out_uncert,Trivia Multiple Choice Quiz,1
+A26UIS59SY4NM6,Q24eureka_question,Trivia Multiple Choice Quiz,-1
 A3HL2LL0LEPZT8,Q1concept_behav,Reproducing arts,-1
 A3HL2LL0LEPZT8,Q3type_1_planning,Reproducing arts,-1
 A3HL2LL0LEPZT8,Q4type_2_generate,Reproducing arts,-1
@@ -24959,6 +27039,26 @@ A1ZE87WEYCA44A,Q20type_3_type_4,The Fish game,-1
 A1ZE87WEYCA44A,Q22confl_tradeoffs,The Fish game,1
 A1ZE87WEYCA44A,Q23ss_out_uncert,The Fish game,1
 A1ZE87WEYCA44A,Q24eureka_question,The Fish game,-1
+A2615YW1YERQBO,Q1concept_behav,Euclidean traveling salesperson,-1
+A2615YW1YERQBO,Q3type_1_planning,Euclidean traveling salesperson,1
+A2615YW1YERQBO,Q4type_2_generate,Euclidean traveling salesperson,-1
+A2615YW1YERQBO,Q6type_5_cc,Euclidean traveling salesperson,-1
+A2615YW1YERQBO,Q7type_7_battle,Euclidean traveling salesperson,-1
+A2615YW1YERQBO,Q8type_8_performance,Euclidean traveling salesperson,-1
+A2615YW1YERQBO,Q9divisible_unitary,Euclidean traveling salesperson,-1
+A2615YW1YERQBO,Q10maximizing,Euclidean traveling salesperson,-1
+A2615YW1YERQBO,Q11optimizing,Euclidean traveling salesperson,1
+A2615YW1YERQBO,Q13outcome_multip,Euclidean traveling salesperson,1
+A2615YW1YERQBO,Q14sol_scheme_mul,Euclidean traveling salesperson,1
+A2615YW1YERQBO,Q15dec_verifiability,Euclidean traveling salesperson,1
+A2615YW1YERQBO,Q16shared_knowledge,Euclidean traveling salesperson,1
+A2615YW1YERQBO,Q17within_sys_sol,Euclidean traveling salesperson,1
+A2615YW1YERQBO,Q18ans_recog,Euclidean traveling salesperson,-1
+A2615YW1YERQBO,Q19time_solvability,Euclidean traveling salesperson,1
+A2615YW1YERQBO,Q20type_3_type_4,Euclidean traveling salesperson,1
+A2615YW1YERQBO,Q22confl_tradeoffs,Euclidean traveling salesperson,-1
+A2615YW1YERQBO,Q23ss_out_uncert,Euclidean traveling salesperson,1
+A2615YW1YERQBO,Q24eureka_question,Euclidean traveling salesperson,-1
 A5NE8TWS8ZV7B,Q1concept_behav,Estimating pages of a book,-1
 A5NE8TWS8ZV7B,Q3type_1_planning,Estimating pages of a book,-1
 A5NE8TWS8ZV7B,Q4type_2_generate,Estimating pages of a book,-1
@@ -25319,6 +27419,26 @@ A3JAM040VWXHDO,Q20type_3_type_4,Arithmetic problem 1,1
 A3JAM040VWXHDO,Q22confl_tradeoffs,Arithmetic problem 1,-1
 A3JAM040VWXHDO,Q23ss_out_uncert,Arithmetic problem 1,1
 A3JAM040VWXHDO,Q24eureka_question,Arithmetic problem 1,-1
+AONSG5WOC3OX0,Q1concept_behav,Find the maximum,-1
+AONSG5WOC3OX0,Q3type_1_planning,Find the maximum,-1
+AONSG5WOC3OX0,Q4type_2_generate,Find the maximum,-1
+AONSG5WOC3OX0,Q6type_5_cc,Find the maximum,-1
+AONSG5WOC3OX0,Q7type_7_battle,Find the maximum,-1
+AONSG5WOC3OX0,Q8type_8_performance,Find the maximum,-1
+AONSG5WOC3OX0,Q9divisible_unitary,Find the maximum,1
+AONSG5WOC3OX0,Q10maximizing,Find the maximum,-1
+AONSG5WOC3OX0,Q11optimizing,Find the maximum,1
+AONSG5WOC3OX0,Q13outcome_multip,Find the maximum,1
+AONSG5WOC3OX0,Q14sol_scheme_mul,Find the maximum,1
+AONSG5WOC3OX0,Q15dec_verifiability,Find the maximum,-1
+AONSG5WOC3OX0,Q16shared_knowledge,Find the maximum,-1
+AONSG5WOC3OX0,Q17within_sys_sol,Find the maximum,-1
+AONSG5WOC3OX0,Q18ans_recog,Find the maximum,-1
+AONSG5WOC3OX0,Q19time_solvability,Find the maximum,-1
+AONSG5WOC3OX0,Q20type_3_type_4,Find the maximum,1
+AONSG5WOC3OX0,Q22confl_tradeoffs,Find the maximum,-1
+AONSG5WOC3OX0,Q23ss_out_uncert,Find the maximum,1
+AONSG5WOC3OX0,Q24eureka_question,Find the maximum,-1
 A230VUDYOCRZ4N,Q1concept_behav,"Wolf, goat and cabbage transfer",-1
 A230VUDYOCRZ4N,Q3type_1_planning,"Wolf, goat and cabbage transfer",1
 A230VUDYOCRZ4N,Q4type_2_generate,"Wolf, goat and cabbage transfer",1
@@ -25819,6 +27939,26 @@ A1I72NHC21347A,Q20type_3_type_4,Guessing the correlation,1
 A1I72NHC21347A,Q22confl_tradeoffs,Guessing the correlation,-1
 A1I72NHC21347A,Q23ss_out_uncert,Guessing the correlation,1
 A1I72NHC21347A,Q24eureka_question,Guessing the correlation,-1
+AONSG5WOC3OX0,Q1concept_behav,Railroad Route Construction game (Impossible Version),-1
+AONSG5WOC3OX0,Q3type_1_planning,Railroad Route Construction game (Impossible Version),-1
+AONSG5WOC3OX0,Q4type_2_generate,Railroad Route Construction game (Impossible Version),-1
+AONSG5WOC3OX0,Q6type_5_cc,Railroad Route Construction game (Impossible Version),-1
+AONSG5WOC3OX0,Q7type_7_battle,Railroad Route Construction game (Impossible Version),-1
+AONSG5WOC3OX0,Q8type_8_performance,Railroad Route Construction game (Impossible Version),1
+AONSG5WOC3OX0,Q9divisible_unitary,Railroad Route Construction game (Impossible Version),1
+AONSG5WOC3OX0,Q10maximizing,Railroad Route Construction game (Impossible Version),-1
+AONSG5WOC3OX0,Q11optimizing,Railroad Route Construction game (Impossible Version),1
+AONSG5WOC3OX0,Q13outcome_multip,Railroad Route Construction game (Impossible Version),-1
+AONSG5WOC3OX0,Q14sol_scheme_mul,Railroad Route Construction game (Impossible Version),-1
+AONSG5WOC3OX0,Q15dec_verifiability,Railroad Route Construction game (Impossible Version),-1
+AONSG5WOC3OX0,Q16shared_knowledge,Railroad Route Construction game (Impossible Version),-1
+AONSG5WOC3OX0,Q17within_sys_sol,Railroad Route Construction game (Impossible Version),-1
+AONSG5WOC3OX0,Q18ans_recog,Railroad Route Construction game (Impossible Version),-1
+AONSG5WOC3OX0,Q19time_solvability,Railroad Route Construction game (Impossible Version),-1
+AONSG5WOC3OX0,Q20type_3_type_4,Railroad Route Construction game (Impossible Version),1
+AONSG5WOC3OX0,Q22confl_tradeoffs,Railroad Route Construction game (Impossible Version),-1
+AONSG5WOC3OX0,Q23ss_out_uncert,Railroad Route Construction game (Impossible Version),-1
+AONSG5WOC3OX0,Q24eureka_question,Railroad Route Construction game (Impossible Version),-1
 A17KN7NAP48L4B,Q1concept_behav,Guessing the correlation,-1
 A17KN7NAP48L4B,Q3type_1_planning,Guessing the correlation,-1
 A17KN7NAP48L4B,Q4type_2_generate,Guessing the correlation,-1
@@ -26219,6 +28359,26 @@ A2VRDE2FHCBMF8,Q20type_3_type_4,Wason's Selection Task,1
 A2VRDE2FHCBMF8,Q22confl_tradeoffs,Wason's Selection Task,-1
 A2VRDE2FHCBMF8,Q23ss_out_uncert,Wason's Selection Task,1
 A2VRDE2FHCBMF8,Q24eureka_question,Wason's Selection Task,-1
+A17KN7NAP48L4B,Q1concept_behav,Estimating geological metrics,-1
+A17KN7NAP48L4B,Q3type_1_planning,Estimating geological metrics,-1
+A17KN7NAP48L4B,Q4type_2_generate,Estimating geological metrics,-1
+A17KN7NAP48L4B,Q6type_5_cc,Estimating geological metrics,-1
+A17KN7NAP48L4B,Q7type_7_battle,Estimating geological metrics,-1
+A17KN7NAP48L4B,Q8type_8_performance,Estimating geological metrics,-1
+A17KN7NAP48L4B,Q9divisible_unitary,Estimating geological metrics,1
+A17KN7NAP48L4B,Q10maximizing,Estimating geological metrics,1
+A17KN7NAP48L4B,Q11optimizing,Estimating geological metrics,-1
+A17KN7NAP48L4B,Q13outcome_multip,Estimating geological metrics,1
+A17KN7NAP48L4B,Q14sol_scheme_mul,Estimating geological metrics,-1
+A17KN7NAP48L4B,Q15dec_verifiability,Estimating geological metrics,1
+A17KN7NAP48L4B,Q16shared_knowledge,Estimating geological metrics,1
+A17KN7NAP48L4B,Q17within_sys_sol,Estimating geological metrics,1
+A17KN7NAP48L4B,Q18ans_recog,Estimating geological metrics,1
+A17KN7NAP48L4B,Q19time_solvability,Estimating geological metrics,1
+A17KN7NAP48L4B,Q20type_3_type_4,Estimating geological metrics,1
+A17KN7NAP48L4B,Q22confl_tradeoffs,Estimating geological metrics,-1
+A17KN7NAP48L4B,Q23ss_out_uncert,Estimating geological metrics,1
+A17KN7NAP48L4B,Q24eureka_question,Estimating geological metrics,-1
 A3HL2LL0LEPZT8,Q1concept_behav,Game of Clue - Terrorist Attack,-1
 A3HL2LL0LEPZT8,Q3type_1_planning,Game of Clue - Terrorist Attack,-1
 A3HL2LL0LEPZT8,Q4type_2_generate,Game of Clue - Terrorist Attack,-1
@@ -26359,6 +28519,26 @@ A1NLP66FKHBS4V,Q20type_3_type_4,Trivia Multiple Choice Quiz,1
 A1NLP66FKHBS4V,Q22confl_tradeoffs,Trivia Multiple Choice Quiz,-1
 A1NLP66FKHBS4V,Q23ss_out_uncert,Trivia Multiple Choice Quiz,1
 A1NLP66FKHBS4V,Q24eureka_question,Trivia Multiple Choice Quiz,-1
+AL51KTD0WITH9,Q1concept_behav,Mastermind,-1
+AL51KTD0WITH9,Q3type_1_planning,Mastermind,-1
+AL51KTD0WITH9,Q4type_2_generate,Mastermind,-1
+AL51KTD0WITH9,Q6type_5_cc,Mastermind,-1
+AL51KTD0WITH9,Q7type_7_battle,Mastermind,-1
+AL51KTD0WITH9,Q8type_8_performance,Mastermind,-1
+AL51KTD0WITH9,Q9divisible_unitary,Mastermind,-1
+AL51KTD0WITH9,Q10maximizing,Mastermind,-1
+AL51KTD0WITH9,Q11optimizing,Mastermind,1
+AL51KTD0WITH9,Q13outcome_multip,Mastermind,1
+AL51KTD0WITH9,Q14sol_scheme_mul,Mastermind,-1
+AL51KTD0WITH9,Q15dec_verifiability,Mastermind,1
+AL51KTD0WITH9,Q16shared_knowledge,Mastermind,1
+AL51KTD0WITH9,Q17within_sys_sol,Mastermind,1
+AL51KTD0WITH9,Q18ans_recog,Mastermind,1
+AL51KTD0WITH9,Q19time_solvability,Mastermind,1
+AL51KTD0WITH9,Q20type_3_type_4,Mastermind,1
+AL51KTD0WITH9,Q22confl_tradeoffs,Mastermind,-1
+AL51KTD0WITH9,Q23ss_out_uncert,Mastermind,1
+AL51KTD0WITH9,Q24eureka_question,Mastermind,-1
 A3CGQOJC28OVGN,Q1concept_behav,Computer maze,-1
 A3CGQOJC28OVGN,Q3type_1_planning,Computer maze,-1
 A3CGQOJC28OVGN,Q4type_2_generate,Computer maze,-1
@@ -27079,6 +29259,26 @@ A1I72NHC21347A,Q20type_3_type_4,Logic Problem,1
 A1I72NHC21347A,Q22confl_tradeoffs,Logic Problem,1
 A1I72NHC21347A,Q23ss_out_uncert,Logic Problem,1
 A1I72NHC21347A,Q24eureka_question,Logic Problem,-1
+AE1YA7Q3UKPRI,Q1concept_behav,Trivia Multiple Choice Quiz,-1
+AE1YA7Q3UKPRI,Q3type_1_planning,Trivia Multiple Choice Quiz,-1
+AE1YA7Q3UKPRI,Q4type_2_generate,Trivia Multiple Choice Quiz,-1
+AE1YA7Q3UKPRI,Q6type_5_cc,Trivia Multiple Choice Quiz,-1
+AE1YA7Q3UKPRI,Q7type_7_battle,Trivia Multiple Choice Quiz,1
+AE1YA7Q3UKPRI,Q8type_8_performance,Trivia Multiple Choice Quiz,1
+AE1YA7Q3UKPRI,Q9divisible_unitary,Trivia Multiple Choice Quiz,-1
+AE1YA7Q3UKPRI,Q10maximizing,Trivia Multiple Choice Quiz,-1
+AE1YA7Q3UKPRI,Q11optimizing,Trivia Multiple Choice Quiz,-1
+AE1YA7Q3UKPRI,Q13outcome_multip,Trivia Multiple Choice Quiz,1
+AE1YA7Q3UKPRI,Q14sol_scheme_mul,Trivia Multiple Choice Quiz,1
+AE1YA7Q3UKPRI,Q15dec_verifiability,Trivia Multiple Choice Quiz,1
+AE1YA7Q3UKPRI,Q16shared_knowledge,Trivia Multiple Choice Quiz,1
+AE1YA7Q3UKPRI,Q17within_sys_sol,Trivia Multiple Choice Quiz,-1
+AE1YA7Q3UKPRI,Q18ans_recog,Trivia Multiple Choice Quiz,1
+AE1YA7Q3UKPRI,Q19time_solvability,Trivia Multiple Choice Quiz,1
+AE1YA7Q3UKPRI,Q20type_3_type_4,Trivia Multiple Choice Quiz,1
+AE1YA7Q3UKPRI,Q22confl_tradeoffs,Trivia Multiple Choice Quiz,-1
+AE1YA7Q3UKPRI,Q23ss_out_uncert,Trivia Multiple Choice Quiz,1
+AE1YA7Q3UKPRI,Q24eureka_question,Trivia Multiple Choice Quiz,-1
 A3NXT3OVGL7QNR,Q1concept_behav,Visual Oddball Target,-1
 A3NXT3OVGL7QNR,Q3type_1_planning,Visual Oddball Target,-1
 A3NXT3OVGL7QNR,Q4type_2_generate,Visual Oddball Target,-1
@@ -27179,6 +29379,46 @@ A18T7E73TNGOKP,Q20type_3_type_4,Reproducing arts,1
 A18T7E73TNGOKP,Q22confl_tradeoffs,Reproducing arts,-1
 A18T7E73TNGOKP,Q23ss_out_uncert,Reproducing arts,-1
 A18T7E73TNGOKP,Q24eureka_question,Reproducing arts,-1
+A1PZIN8H1VI6SY,Q1concept_behav,Writing story,-1
+A1PZIN8H1VI6SY,Q3type_1_planning,Writing story,1
+A1PZIN8H1VI6SY,Q4type_2_generate,Writing story,1
+A1PZIN8H1VI6SY,Q6type_5_cc,Writing story,-1
+A1PZIN8H1VI6SY,Q7type_7_battle,Writing story,-1
+A1PZIN8H1VI6SY,Q8type_8_performance,Writing story,-1
+A1PZIN8H1VI6SY,Q9divisible_unitary,Writing story,1
+A1PZIN8H1VI6SY,Q10maximizing,Writing story,1
+A1PZIN8H1VI6SY,Q11optimizing,Writing story,-1
+A1PZIN8H1VI6SY,Q13outcome_multip,Writing story,-1
+A1PZIN8H1VI6SY,Q14sol_scheme_mul,Writing story,-1
+A1PZIN8H1VI6SY,Q15dec_verifiability,Writing story,-1
+A1PZIN8H1VI6SY,Q16shared_knowledge,Writing story,-1
+A1PZIN8H1VI6SY,Q17within_sys_sol,Writing story,1
+A1PZIN8H1VI6SY,Q18ans_recog,Writing story,-1
+A1PZIN8H1VI6SY,Q19time_solvability,Writing story,1
+A1PZIN8H1VI6SY,Q20type_3_type_4,Writing story,-1
+A1PZIN8H1VI6SY,Q22confl_tradeoffs,Writing story,-1
+A1PZIN8H1VI6SY,Q23ss_out_uncert,Writing story,1
+A1PZIN8H1VI6SY,Q24eureka_question,Writing story,-1
+AE1YA7Q3UKPRI,Q1concept_behav,Wason's Selection Task,-1
+AE1YA7Q3UKPRI,Q3type_1_planning,Wason's Selection Task,-1
+AE1YA7Q3UKPRI,Q4type_2_generate,Wason's Selection Task,-1
+AE1YA7Q3UKPRI,Q6type_5_cc,Wason's Selection Task,-1
+AE1YA7Q3UKPRI,Q7type_7_battle,Wason's Selection Task,-1
+AE1YA7Q3UKPRI,Q8type_8_performance,Wason's Selection Task,NA
+AE1YA7Q3UKPRI,Q9divisible_unitary,Wason's Selection Task,-1
+AE1YA7Q3UKPRI,Q10maximizing,Wason's Selection Task,-1
+AE1YA7Q3UKPRI,Q11optimizing,Wason's Selection Task,1
+AE1YA7Q3UKPRI,Q13outcome_multip,Wason's Selection Task,1
+AE1YA7Q3UKPRI,Q14sol_scheme_mul,Wason's Selection Task,-1
+AE1YA7Q3UKPRI,Q15dec_verifiability,Wason's Selection Task,1
+AE1YA7Q3UKPRI,Q16shared_knowledge,Wason's Selection Task,-1
+AE1YA7Q3UKPRI,Q17within_sys_sol,Wason's Selection Task,1
+AE1YA7Q3UKPRI,Q18ans_recog,Wason's Selection Task,1
+AE1YA7Q3UKPRI,Q19time_solvability,Wason's Selection Task,1
+AE1YA7Q3UKPRI,Q20type_3_type_4,Wason's Selection Task,1
+AE1YA7Q3UKPRI,Q22confl_tradeoffs,Wason's Selection Task,1
+AE1YA7Q3UKPRI,Q23ss_out_uncert,Wason's Selection Task,1
+AE1YA7Q3UKPRI,Q24eureka_question,Wason's Selection Task,-1
 A2VRDE2FHCBMF8,Q1concept_behav,Reproducing arts,1
 A2VRDE2FHCBMF8,Q3type_1_planning,Reproducing arts,-1
 A2VRDE2FHCBMF8,Q4type_2_generate,Reproducing arts,-1
@@ -27339,6 +29579,26 @@ A8C3WNWRBWUXO,Q20type_3_type_4,Recall images,1
 A8C3WNWRBWUXO,Q22confl_tradeoffs,Recall images,-1
 A8C3WNWRBWUXO,Q23ss_out_uncert,Recall images,1
 A8C3WNWRBWUXO,Q24eureka_question,Recall images,-1
+AL51KTD0WITH9,Q1concept_behav,Computer maze,-1
+AL51KTD0WITH9,Q3type_1_planning,Computer maze,-1
+AL51KTD0WITH9,Q4type_2_generate,Computer maze,-1
+AL51KTD0WITH9,Q6type_5_cc,Computer maze,-1
+AL51KTD0WITH9,Q7type_7_battle,Computer maze,-1
+AL51KTD0WITH9,Q8type_8_performance,Computer maze,-1
+AL51KTD0WITH9,Q9divisible_unitary,Computer maze,-1
+AL51KTD0WITH9,Q10maximizing,Computer maze,-1
+AL51KTD0WITH9,Q11optimizing,Computer maze,-1
+AL51KTD0WITH9,Q13outcome_multip,Computer maze,1
+AL51KTD0WITH9,Q14sol_scheme_mul,Computer maze,1
+AL51KTD0WITH9,Q15dec_verifiability,Computer maze,1
+AL51KTD0WITH9,Q16shared_knowledge,Computer maze,1
+AL51KTD0WITH9,Q17within_sys_sol,Computer maze,1
+AL51KTD0WITH9,Q18ans_recog,Computer maze,1
+AL51KTD0WITH9,Q19time_solvability,Computer maze,1
+AL51KTD0WITH9,Q20type_3_type_4,Computer maze,1
+AL51KTD0WITH9,Q22confl_tradeoffs,Computer maze,-1
+AL51KTD0WITH9,Q23ss_out_uncert,Computer maze,1
+AL51KTD0WITH9,Q24eureka_question,Computer maze,-1
 AKQAI78JTXXC9,Q1concept_behav,Sudoku,-1
 AKQAI78JTXXC9,Q3type_1_planning,Sudoku,-1
 AKQAI78JTXXC9,Q4type_2_generate,Sudoku,-1
@@ -27639,6 +29899,26 @@ A1VRG5HKZC0H0C,Q20type_3_type_4,Find the maximum,1
 A1VRG5HKZC0H0C,Q22confl_tradeoffs,Find the maximum,-1
 A1VRG5HKZC0H0C,Q23ss_out_uncert,Find the maximum,1
 A1VRG5HKZC0H0C,Q24eureka_question,Find the maximum,-1
+AXPZAP62ZYWP8,Q1concept_behav,Game of Clue - Terrorist Attack,-1
+AXPZAP62ZYWP8,Q3type_1_planning,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q4type_2_generate,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q6type_5_cc,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q7type_7_battle,Game of Clue - Terrorist Attack,-1
+AXPZAP62ZYWP8,Q8type_8_performance,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q9divisible_unitary,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q10maximizing,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q11optimizing,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q13outcome_multip,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q14sol_scheme_mul,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q15dec_verifiability,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q16shared_knowledge,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q17within_sys_sol,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q18ans_recog,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q19time_solvability,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q20type_3_type_4,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q22confl_tradeoffs,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q23ss_out_uncert,Game of Clue - Terrorist Attack,1
+AXPZAP62ZYWP8,Q24eureka_question,Game of Clue - Terrorist Attack,-1
 A2S64AUN7JI7ZS,Q1concept_behav,Recall images,-1
 A2S64AUN7JI7ZS,Q3type_1_planning,Recall images,-1
 A2S64AUN7JI7ZS,Q4type_2_generate,Recall images,-1
@@ -28079,3 +30359,23 @@ ARI1EMAHUA9PO,Q20type_3_type_4,Typing game,1
 ARI1EMAHUA9PO,Q22confl_tradeoffs,Typing game,-1
 ARI1EMAHUA9PO,Q23ss_out_uncert,Typing game,1
 ARI1EMAHUA9PO,Q24eureka_question,Typing game,-1
+AL51KTD0WITH9,Q1concept_behav,Abstract grid task,-1
+AL51KTD0WITH9,Q3type_1_planning,Abstract grid task,-1
+AL51KTD0WITH9,Q4type_2_generate,Abstract grid task,-1
+AL51KTD0WITH9,Q6type_5_cc,Abstract grid task,-1
+AL51KTD0WITH9,Q7type_7_battle,Abstract grid task,-1
+AL51KTD0WITH9,Q8type_8_performance,Abstract grid task,-1
+AL51KTD0WITH9,Q9divisible_unitary,Abstract grid task,-1
+AL51KTD0WITH9,Q10maximizing,Abstract grid task,-1
+AL51KTD0WITH9,Q11optimizing,Abstract grid task,1
+AL51KTD0WITH9,Q13outcome_multip,Abstract grid task,1
+AL51KTD0WITH9,Q14sol_scheme_mul,Abstract grid task,1
+AL51KTD0WITH9,Q15dec_verifiability,Abstract grid task,1
+AL51KTD0WITH9,Q16shared_knowledge,Abstract grid task,1
+AL51KTD0WITH9,Q17within_sys_sol,Abstract grid task,1
+AL51KTD0WITH9,Q18ans_recog,Abstract grid task,1
+AL51KTD0WITH9,Q19time_solvability,Abstract grid task,1
+AL51KTD0WITH9,Q20type_3_type_4,Abstract grid task,1
+AL51KTD0WITH9,Q22confl_tradeoffs,Abstract grid task,-1
+AL51KTD0WITH9,Q23ss_out_uncert,Abstract grid task,1
+AL51KTD0WITH9,Q24eureka_question,Abstract grid task,-1
