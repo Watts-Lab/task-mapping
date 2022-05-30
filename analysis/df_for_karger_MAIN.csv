@@ -199,6 +199,26 @@ ARYL3C6N9SVV1,Q20type_3_type_4,Word construction from a subset of letters,1
 ARYL3C6N9SVV1,Q22confl_tradeoffs,Word construction from a subset of letters,-1
 ARYL3C6N9SVV1,Q23ss_out_uncert,Word construction from a subset of letters,-1
 ARYL3C6N9SVV1,Q24eureka_question,Word construction from a subset of letters,NA
+A1YSYI926BBOHW,Q1concept_behav,Carter Racing,-1
+A1YSYI926BBOHW,Q3type_1_planning,Carter Racing,-1
+A1YSYI926BBOHW,Q4type_2_generate,Carter Racing,1
+A1YSYI926BBOHW,Q6type_5_cc,Carter Racing,-1
+A1YSYI926BBOHW,Q7type_7_battle,Carter Racing,-1
+A1YSYI926BBOHW,Q8type_8_performance,Carter Racing,1
+A1YSYI926BBOHW,Q9divisible_unitary,Carter Racing,-1
+A1YSYI926BBOHW,Q10maximizing,Carter Racing,-1
+A1YSYI926BBOHW,Q11optimizing,Carter Racing,-1
+A1YSYI926BBOHW,Q13outcome_multip,Carter Racing,1
+A1YSYI926BBOHW,Q14sol_scheme_mul,Carter Racing,-1
+A1YSYI926BBOHW,Q15dec_verifiability,Carter Racing,-1
+A1YSYI926BBOHW,Q16shared_knowledge,Carter Racing,-1
+A1YSYI926BBOHW,Q17within_sys_sol,Carter Racing,-1
+A1YSYI926BBOHW,Q18ans_recog,Carter Racing,1
+A1YSYI926BBOHW,Q19time_solvability,Carter Racing,-1
+A1YSYI926BBOHW,Q20type_3_type_4,Carter Racing,1
+A1YSYI926BBOHW,Q22confl_tradeoffs,Carter Racing,1
+A1YSYI926BBOHW,Q23ss_out_uncert,Carter Racing,1
+A1YSYI926BBOHW,Q24eureka_question,Carter Racing,1
 A8C3WNWRBWUXO,Q1concept_behav,Guessing the correlation,-1
 A8C3WNWRBWUXO,Q3type_1_planning,Guessing the correlation,1
 A8C3WNWRBWUXO,Q4type_2_generate,Guessing the correlation,-1
@@ -2559,6 +2579,26 @@ A17FGZ1I5P9RZA,Q20type_3_type_4,Divergent Association Task,1
 A17FGZ1I5P9RZA,Q22confl_tradeoffs,Divergent Association Task,-1
 A17FGZ1I5P9RZA,Q23ss_out_uncert,Divergent Association Task,1
 A17FGZ1I5P9RZA,Q24eureka_question,Divergent Association Task,-1
+A38I0E8UK53ME5,Q1concept_behav,Carter Racing,-1
+A38I0E8UK53ME5,Q3type_1_planning,Carter Racing,1
+A38I0E8UK53ME5,Q4type_2_generate,Carter Racing,-1
+A38I0E8UK53ME5,Q6type_5_cc,Carter Racing,-1
+A38I0E8UK53ME5,Q7type_7_battle,Carter Racing,-1
+A38I0E8UK53ME5,Q8type_8_performance,Carter Racing,1
+A38I0E8UK53ME5,Q9divisible_unitary,Carter Racing,1
+A38I0E8UK53ME5,Q10maximizing,Carter Racing,1
+A38I0E8UK53ME5,Q11optimizing,Carter Racing,1
+A38I0E8UK53ME5,Q13outcome_multip,Carter Racing,1
+A38I0E8UK53ME5,Q14sol_scheme_mul,Carter Racing,-1
+A38I0E8UK53ME5,Q15dec_verifiability,Carter Racing,1
+A38I0E8UK53ME5,Q16shared_knowledge,Carter Racing,1
+A38I0E8UK53ME5,Q17within_sys_sol,Carter Racing,1
+A38I0E8UK53ME5,Q18ans_recog,Carter Racing,-1
+A38I0E8UK53ME5,Q19time_solvability,Carter Racing,1
+A38I0E8UK53ME5,Q20type_3_type_4,Carter Racing,1
+A38I0E8UK53ME5,Q22confl_tradeoffs,Carter Racing,1
+A38I0E8UK53ME5,Q23ss_out_uncert,Carter Racing,1
+A38I0E8UK53ME5,Q24eureka_question,Carter Racing,-1
 AWAW665TQQP2F,Q1concept_behav,Hidden figures in a picture (Recall Task),-1
 AWAW665TQQP2F,Q3type_1_planning,Hidden figures in a picture (Recall Task),-1
 AWAW665TQQP2F,Q4type_2_generate,Hidden figures in a picture (Recall Task),-1
@@ -5139,6 +5179,26 @@ A3HL2LL0LEPZT8,Q20type_3_type_4,Sudoku,1
 A3HL2LL0LEPZT8,Q22confl_tradeoffs,Sudoku,-1
 A3HL2LL0LEPZT8,Q23ss_out_uncert,Sudoku,-1
 A3HL2LL0LEPZT8,Q24eureka_question,Sudoku,-1
+A272X64FOZFYLB,Q1concept_behav,Carter Racing,-1
+A272X64FOZFYLB,Q3type_1_planning,Carter Racing,-1
+A272X64FOZFYLB,Q4type_2_generate,Carter Racing,-1
+A272X64FOZFYLB,Q6type_5_cc,Carter Racing,-1
+A272X64FOZFYLB,Q7type_7_battle,Carter Racing,-1
+A272X64FOZFYLB,Q8type_8_performance,Carter Racing,1
+A272X64FOZFYLB,Q9divisible_unitary,Carter Racing,-1
+A272X64FOZFYLB,Q10maximizing,Carter Racing,-1
+A272X64FOZFYLB,Q11optimizing,Carter Racing,1
+A272X64FOZFYLB,Q13outcome_multip,Carter Racing,1
+A272X64FOZFYLB,Q14sol_scheme_mul,Carter Racing,-1
+A272X64FOZFYLB,Q15dec_verifiability,Carter Racing,1
+A272X64FOZFYLB,Q16shared_knowledge,Carter Racing,-1
+A272X64FOZFYLB,Q17within_sys_sol,Carter Racing,1
+A272X64FOZFYLB,Q18ans_recog,Carter Racing,1
+A272X64FOZFYLB,Q19time_solvability,Carter Racing,1
+A272X64FOZFYLB,Q20type_3_type_4,Carter Racing,1
+A272X64FOZFYLB,Q22confl_tradeoffs,Carter Racing,1
+A272X64FOZFYLB,Q23ss_out_uncert,Carter Racing,1
+A272X64FOZFYLB,Q24eureka_question,Carter Racing,1
 A272X64FOZFYLB,Q1concept_behav,Random dot motion,-1
 A272X64FOZFYLB,Q3type_1_planning,Random dot motion,-1
 A272X64FOZFYLB,Q4type_2_generate,Random dot motion,-1
@@ -7479,6 +7539,26 @@ A1NLP66FKHBS4V,Q20type_3_type_4,Estimating social quantity,1
 A1NLP66FKHBS4V,Q22confl_tradeoffs,Estimating social quantity,-1
 A1NLP66FKHBS4V,Q23ss_out_uncert,Estimating social quantity,1
 A1NLP66FKHBS4V,Q24eureka_question,Estimating social quantity,-1
+A3I9XLIHPPWPN1,Q1concept_behav,Splitting a deck of cards,-1
+A3I9XLIHPPWPN1,Q3type_1_planning,Splitting a deck of cards,-1
+A3I9XLIHPPWPN1,Q4type_2_generate,Splitting a deck of cards,-1
+A3I9XLIHPPWPN1,Q6type_5_cc,Splitting a deck of cards,-1
+A3I9XLIHPPWPN1,Q7type_7_battle,Splitting a deck of cards,-1
+A3I9XLIHPPWPN1,Q8type_8_performance,Splitting a deck of cards,-1
+A3I9XLIHPPWPN1,Q9divisible_unitary,Splitting a deck of cards,-1
+A3I9XLIHPPWPN1,Q10maximizing,Splitting a deck of cards,1
+A3I9XLIHPPWPN1,Q11optimizing,Splitting a deck of cards,1
+A3I9XLIHPPWPN1,Q13outcome_multip,Splitting a deck of cards,1
+A3I9XLIHPPWPN1,Q14sol_scheme_mul,Splitting a deck of cards,1
+A3I9XLIHPPWPN1,Q15dec_verifiability,Splitting a deck of cards,1
+A3I9XLIHPPWPN1,Q16shared_knowledge,Splitting a deck of cards,1
+A3I9XLIHPPWPN1,Q17within_sys_sol,Splitting a deck of cards,1
+A3I9XLIHPPWPN1,Q18ans_recog,Splitting a deck of cards,1
+A3I9XLIHPPWPN1,Q19time_solvability,Splitting a deck of cards,1
+A3I9XLIHPPWPN1,Q20type_3_type_4,Splitting a deck of cards,1
+A3I9XLIHPPWPN1,Q22confl_tradeoffs,Splitting a deck of cards,-1
+A3I9XLIHPPWPN1,Q23ss_out_uncert,Splitting a deck of cards,1
+A3I9XLIHPPWPN1,Q24eureka_question,Splitting a deck of cards,-1
 A6JKKANO7F4KD,Q1concept_behav,Arithmetic problem 1,-1
 A6JKKANO7F4KD,Q3type_1_planning,Arithmetic problem 1,-1
 A6JKKANO7F4KD,Q4type_2_generate,Arithmetic problem 1,-1
@@ -8599,6 +8679,26 @@ A2OVX9UW5WANQE,Q20type_3_type_4,Desert survival,1
 A2OVX9UW5WANQE,Q22confl_tradeoffs,Desert survival,1
 A2OVX9UW5WANQE,Q23ss_out_uncert,Desert survival,1
 A2OVX9UW5WANQE,Q24eureka_question,Desert survival,-1
+A2AZYU1CT24O0K,Q1concept_behav,Splitting a deck of cards,-1
+A2AZYU1CT24O0K,Q3type_1_planning,Splitting a deck of cards,-1
+A2AZYU1CT24O0K,Q4type_2_generate,Splitting a deck of cards,-1
+A2AZYU1CT24O0K,Q6type_5_cc,Splitting a deck of cards,-1
+A2AZYU1CT24O0K,Q7type_7_battle,Splitting a deck of cards,-1
+A2AZYU1CT24O0K,Q8type_8_performance,Splitting a deck of cards,-1
+A2AZYU1CT24O0K,Q9divisible_unitary,Splitting a deck of cards,-1
+A2AZYU1CT24O0K,Q10maximizing,Splitting a deck of cards,1
+A2AZYU1CT24O0K,Q11optimizing,Splitting a deck of cards,1
+A2AZYU1CT24O0K,Q13outcome_multip,Splitting a deck of cards,1
+A2AZYU1CT24O0K,Q14sol_scheme_mul,Splitting a deck of cards,1
+A2AZYU1CT24O0K,Q15dec_verifiability,Splitting a deck of cards,1
+A2AZYU1CT24O0K,Q16shared_knowledge,Splitting a deck of cards,1
+A2AZYU1CT24O0K,Q17within_sys_sol,Splitting a deck of cards,1
+A2AZYU1CT24O0K,Q18ans_recog,Splitting a deck of cards,1
+A2AZYU1CT24O0K,Q19time_solvability,Splitting a deck of cards,1
+A2AZYU1CT24O0K,Q20type_3_type_4,Splitting a deck of cards,1
+A2AZYU1CT24O0K,Q22confl_tradeoffs,Splitting a deck of cards,-1
+A2AZYU1CT24O0K,Q23ss_out_uncert,Splitting a deck of cards,-1
+A2AZYU1CT24O0K,Q24eureka_question,Splitting a deck of cards,1
 AXPZAP62ZYWP8,Q1concept_behav,Moral Reasoning (Disciplinary Action Case),-1
 AXPZAP62ZYWP8,Q3type_1_planning,Moral Reasoning (Disciplinary Action Case),1
 AXPZAP62ZYWP8,Q4type_2_generate,Moral Reasoning (Disciplinary Action Case),1
@@ -12699,6 +12799,26 @@ A3HL2LL0LEPZT8,Q20type_3_type_4,Word completion given part of word,1
 A3HL2LL0LEPZT8,Q22confl_tradeoffs,Word completion given part of word,-1
 A3HL2LL0LEPZT8,Q23ss_out_uncert,Word completion given part of word,-1
 A3HL2LL0LEPZT8,Q24eureka_question,Word completion given part of word,-1
+AE1YA7Q3UKPRI,Q1concept_behav,Splitting a deck of cards,-1
+AE1YA7Q3UKPRI,Q3type_1_planning,Splitting a deck of cards,-1
+AE1YA7Q3UKPRI,Q4type_2_generate,Splitting a deck of cards,-1
+AE1YA7Q3UKPRI,Q6type_5_cc,Splitting a deck of cards,-1
+AE1YA7Q3UKPRI,Q7type_7_battle,Splitting a deck of cards,-1
+AE1YA7Q3UKPRI,Q8type_8_performance,Splitting a deck of cards,-1
+AE1YA7Q3UKPRI,Q9divisible_unitary,Splitting a deck of cards,-1
+AE1YA7Q3UKPRI,Q10maximizing,Splitting a deck of cards,1
+AE1YA7Q3UKPRI,Q11optimizing,Splitting a deck of cards,1
+AE1YA7Q3UKPRI,Q13outcome_multip,Splitting a deck of cards,-1
+AE1YA7Q3UKPRI,Q14sol_scheme_mul,Splitting a deck of cards,-1
+AE1YA7Q3UKPRI,Q15dec_verifiability,Splitting a deck of cards,1
+AE1YA7Q3UKPRI,Q16shared_knowledge,Splitting a deck of cards,-1
+AE1YA7Q3UKPRI,Q17within_sys_sol,Splitting a deck of cards,1
+AE1YA7Q3UKPRI,Q18ans_recog,Splitting a deck of cards,1
+AE1YA7Q3UKPRI,Q19time_solvability,Splitting a deck of cards,1
+AE1YA7Q3UKPRI,Q20type_3_type_4,Splitting a deck of cards,1
+AE1YA7Q3UKPRI,Q22confl_tradeoffs,Splitting a deck of cards,-1
+AE1YA7Q3UKPRI,Q23ss_out_uncert,Splitting a deck of cards,1
+AE1YA7Q3UKPRI,Q24eureka_question,Splitting a deck of cards,-1
 A2TLN8489YGY81,Q1concept_behav,Recall images,-1
 A2TLN8489YGY81,Q3type_1_planning,Recall images,-1
 A2TLN8489YGY81,Q4type_2_generate,Recall images,-1
@@ -15279,6 +15399,26 @@ A2615YW1YERQBO,Q20type_3_type_4,Graph coloring task,1
 A2615YW1YERQBO,Q22confl_tradeoffs,Graph coloring task,1
 A2615YW1YERQBO,Q23ss_out_uncert,Graph coloring task,-1
 A2615YW1YERQBO,Q24eureka_question,Graph coloring task,-1
+A1YSYI926BBOHW,Q1concept_behav,Splitting a deck of cards,-1
+A1YSYI926BBOHW,Q3type_1_planning,Splitting a deck of cards,-1
+A1YSYI926BBOHW,Q4type_2_generate,Splitting a deck of cards,1
+A1YSYI926BBOHW,Q6type_5_cc,Splitting a deck of cards,-1
+A1YSYI926BBOHW,Q7type_7_battle,Splitting a deck of cards,-1
+A1YSYI926BBOHW,Q8type_8_performance,Splitting a deck of cards,-1
+A1YSYI926BBOHW,Q9divisible_unitary,Splitting a deck of cards,-1
+A1YSYI926BBOHW,Q10maximizing,Splitting a deck of cards,1
+A1YSYI926BBOHW,Q11optimizing,Splitting a deck of cards,-1
+A1YSYI926BBOHW,Q13outcome_multip,Splitting a deck of cards,1
+A1YSYI926BBOHW,Q14sol_scheme_mul,Splitting a deck of cards,-1
+A1YSYI926BBOHW,Q15dec_verifiability,Splitting a deck of cards,1
+A1YSYI926BBOHW,Q16shared_knowledge,Splitting a deck of cards,1
+A1YSYI926BBOHW,Q17within_sys_sol,Splitting a deck of cards,1
+A1YSYI926BBOHW,Q18ans_recog,Splitting a deck of cards,1
+A1YSYI926BBOHW,Q19time_solvability,Splitting a deck of cards,1
+A1YSYI926BBOHW,Q20type_3_type_4,Splitting a deck of cards,1
+A1YSYI926BBOHW,Q22confl_tradeoffs,Splitting a deck of cards,-1
+A1YSYI926BBOHW,Q23ss_out_uncert,Splitting a deck of cards,-1
+A1YSYI926BBOHW,Q24eureka_question,Splitting a deck of cards,1
 A3HL2LL0LEPZT8,Q1concept_behav,Checkers,-1
 A3HL2LL0LEPZT8,Q3type_1_planning,Checkers,-1
 A3HL2LL0LEPZT8,Q4type_2_generate,Checkers,-1
@@ -22739,6 +22879,26 @@ A1ZE87WEYCA44A,Q20type_3_type_4,Word construction from a subset of letters,1
 A1ZE87WEYCA44A,Q22confl_tradeoffs,Word construction from a subset of letters,-1
 A1ZE87WEYCA44A,Q23ss_out_uncert,Word construction from a subset of letters,-1
 A1ZE87WEYCA44A,Q24eureka_question,Word construction from a subset of letters,-1
+ARYL3C6N9SVV1,Q1concept_behav,Splitting a deck of cards,-1
+ARYL3C6N9SVV1,Q3type_1_planning,Splitting a deck of cards,-1
+ARYL3C6N9SVV1,Q4type_2_generate,Splitting a deck of cards,-1
+ARYL3C6N9SVV1,Q6type_5_cc,Splitting a deck of cards,-1
+ARYL3C6N9SVV1,Q7type_7_battle,Splitting a deck of cards,-1
+ARYL3C6N9SVV1,Q8type_8_performance,Splitting a deck of cards,-1
+ARYL3C6N9SVV1,Q9divisible_unitary,Splitting a deck of cards,-1
+ARYL3C6N9SVV1,Q10maximizing,Splitting a deck of cards,1
+ARYL3C6N9SVV1,Q11optimizing,Splitting a deck of cards,1
+ARYL3C6N9SVV1,Q13outcome_multip,Splitting a deck of cards,1
+ARYL3C6N9SVV1,Q14sol_scheme_mul,Splitting a deck of cards,1
+ARYL3C6N9SVV1,Q15dec_verifiability,Splitting a deck of cards,1
+ARYL3C6N9SVV1,Q16shared_knowledge,Splitting a deck of cards,-1
+ARYL3C6N9SVV1,Q17within_sys_sol,Splitting a deck of cards,-1
+ARYL3C6N9SVV1,Q18ans_recog,Splitting a deck of cards,-1
+ARYL3C6N9SVV1,Q19time_solvability,Splitting a deck of cards,1
+ARYL3C6N9SVV1,Q20type_3_type_4,Splitting a deck of cards,1
+ARYL3C6N9SVV1,Q22confl_tradeoffs,Splitting a deck of cards,-1
+ARYL3C6N9SVV1,Q23ss_out_uncert,Splitting a deck of cards,1
+ARYL3C6N9SVV1,Q24eureka_question,Splitting a deck of cards,1
 A1I72NHC21347A,Q1concept_behav,Reading the mind in the eyes,-1
 A1I72NHC21347A,Q3type_1_planning,Reading the mind in the eyes,-1
 A1I72NHC21347A,Q4type_2_generate,Reading the mind in the eyes,-1
@@ -24139,6 +24299,26 @@ A1I72NHC21347A,Q20type_3_type_4,Categorization problem,1
 A1I72NHC21347A,Q22confl_tradeoffs,Categorization problem,1
 A1I72NHC21347A,Q23ss_out_uncert,Categorization problem,1
 A1I72NHC21347A,Q24eureka_question,Categorization problem,-1
+A272X64FOZFYLB,Q1concept_behav,Splitting a deck of cards,-1
+A272X64FOZFYLB,Q3type_1_planning,Splitting a deck of cards,-1
+A272X64FOZFYLB,Q4type_2_generate,Splitting a deck of cards,-1
+A272X64FOZFYLB,Q6type_5_cc,Splitting a deck of cards,-1
+A272X64FOZFYLB,Q7type_7_battle,Splitting a deck of cards,-1
+A272X64FOZFYLB,Q8type_8_performance,Splitting a deck of cards,-1
+A272X64FOZFYLB,Q9divisible_unitary,Splitting a deck of cards,-1
+A272X64FOZFYLB,Q10maximizing,Splitting a deck of cards,1
+A272X64FOZFYLB,Q11optimizing,Splitting a deck of cards,1
+A272X64FOZFYLB,Q13outcome_multip,Splitting a deck of cards,1
+A272X64FOZFYLB,Q14sol_scheme_mul,Splitting a deck of cards,-1
+A272X64FOZFYLB,Q15dec_verifiability,Splitting a deck of cards,1
+A272X64FOZFYLB,Q16shared_knowledge,Splitting a deck of cards,1
+A272X64FOZFYLB,Q17within_sys_sol,Splitting a deck of cards,1
+A272X64FOZFYLB,Q18ans_recog,Splitting a deck of cards,1
+A272X64FOZFYLB,Q19time_solvability,Splitting a deck of cards,1
+A272X64FOZFYLB,Q20type_3_type_4,Splitting a deck of cards,1
+A272X64FOZFYLB,Q22confl_tradeoffs,Splitting a deck of cards,-1
+A272X64FOZFYLB,Q23ss_out_uncert,Splitting a deck of cards,-1
+A272X64FOZFYLB,Q24eureka_question,Splitting a deck of cards,-1
 A3V3SQCM8QGYB7,Q1concept_behav,Checkers,-1
 A3V3SQCM8QGYB7,Q3type_1_planning,Checkers,-1
 A3V3SQCM8QGYB7,Q4type_2_generate,Checkers,-1
@@ -28659,6 +28839,26 @@ AXPZAP62ZYWP8,Q20type_3_type_4,Advertisement writing,-1
 AXPZAP62ZYWP8,Q22confl_tradeoffs,Advertisement writing,1
 AXPZAP62ZYWP8,Q23ss_out_uncert,Advertisement writing,1
 AXPZAP62ZYWP8,Q24eureka_question,Advertisement writing,-1
+AE1YA7Q3UKPRI,Q1concept_behav,Carter Racing,-1
+AE1YA7Q3UKPRI,Q3type_1_planning,Carter Racing,-1
+AE1YA7Q3UKPRI,Q4type_2_generate,Carter Racing,-1
+AE1YA7Q3UKPRI,Q6type_5_cc,Carter Racing,-1
+AE1YA7Q3UKPRI,Q7type_7_battle,Carter Racing,1
+AE1YA7Q3UKPRI,Q8type_8_performance,Carter Racing,1
+AE1YA7Q3UKPRI,Q9divisible_unitary,Carter Racing,-1
+AE1YA7Q3UKPRI,Q10maximizing,Carter Racing,-1
+AE1YA7Q3UKPRI,Q11optimizing,Carter Racing,1
+AE1YA7Q3UKPRI,Q13outcome_multip,Carter Racing,1
+AE1YA7Q3UKPRI,Q14sol_scheme_mul,Carter Racing,-1
+AE1YA7Q3UKPRI,Q15dec_verifiability,Carter Racing,1
+AE1YA7Q3UKPRI,Q16shared_knowledge,Carter Racing,-1
+AE1YA7Q3UKPRI,Q17within_sys_sol,Carter Racing,1
+AE1YA7Q3UKPRI,Q18ans_recog,Carter Racing,-1
+AE1YA7Q3UKPRI,Q19time_solvability,Carter Racing,1
+AE1YA7Q3UKPRI,Q20type_3_type_4,Carter Racing,1
+AE1YA7Q3UKPRI,Q22confl_tradeoffs,Carter Racing,1
+AE1YA7Q3UKPRI,Q23ss_out_uncert,Carter Racing,1
+AE1YA7Q3UKPRI,Q24eureka_question,Carter Racing,-1
 A272X64FOZFYLB,Q1concept_behav,Search for Oil Task,-1
 A272X64FOZFYLB,Q3type_1_planning,Search for Oil Task,-1
 A272X64FOZFYLB,Q4type_2_generate,Search for Oil Task,-1
