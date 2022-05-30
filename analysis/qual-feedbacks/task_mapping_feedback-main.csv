@@ -582,6 +582,9 @@ Moral Reasoning (Disciplinary Action Case),Q18ans_recog_elaboration,It states in
 "NASA Moon survival",Q5creativity_input_1_elaboration,It is unclear how much information the participant has about each item in the list.
 "NASA Moon survival",Q11optimizing_elaboration,"I base this on the language in the Objective referring to the ""true"" answer."
 "NASA Moon survival",Q13outcome_multip_elaboration,"I base this on the language in the Objective referring to the ""true"" answer."
+Object based generalization for reasoning (Phyre),Q8type_8_performance_elaboration,"Seems like subsequent attempts earn fewer points, (max points when solved on first attempt) so that makes me think this answer is NO, but the fact that any puzzle can either be solved or not makes me think YES. So, unclear."
+Object based generalization for reasoning (Phyre),Q13outcome_multip_elaboration,"I mean, the best solution is solving on the first attempt...however, it seems like there could be many solutions that result in this end result, so unsure about my answer on this one."
+Object based generalization for reasoning (Phyre),Q20type_3_type_4_elaboration,"Solving the puzzle is the objective answer, but there might be many possible combinations of objects that result in this answer, so not sure."
 Object based generalization for reasoning (Phyre),Q8type_8_performance_elaboration,You have to keep trying the same puzzle until successful
 Object based generalization for reasoning (Phyre),Q15dec_verifiability_elaboration,When the balls touch
 Object based generalization for reasoning (Phyre),Q22confl_tradeoffs_elaboration,"Different objects cause different actions, but the description doesnt rrally talk about ""conflict"" but I can imagine there could be"
@@ -1286,8 +1289,14 @@ Whac-A-Mole,Q18ans_recog_elaboration,There is no problem to solve.
 Whac-A-Mole,Q19time_solvability_elaboration,No solution possible as it is only a task.
 Whac-A-Mole,Q20type_3_type_4_elaboration,No solution possible as it is only a task.
 Whac-A-Mole,Q21intellective_judg_1_elaboration,No solution possible as it is only a task.
+Wildcam Gorongosa (Zooniverse),Q13outcome_multip_elaboration,"This one was a little harder to decide upon because I would think it would depend based on the picture. Some pictures may only have one correct answer, but others may have more than one answer."
+Wildcam Gorongosa (Zooniverse),Q15dec_verifiability_elaboration,"I found this a little hard to answer as some people may say an animal is sleeping when it is lying down, but maybe if is really awake and the answer should have just been lying down? Again, I think it would depend on the picture."
+Wildcam Gorongosa (Zooniverse),Q19time_solvability_elaboration,"I would ""think"" a person could prove why they answered like they did."
 Wildcam Gorongosa (Zooniverse),Q9divisible_unitary_elaboration,"I suppose somebody ""could"" divide and conquer on this...then vote on it?"
 Wildcam Gorongosa (Zooniverse),Q21intellective_judg_1_elaboration,"interacting, standing, moving could be subjective."
+Wildcam Gorongosa (Zooniverse),Q10maximizing_elaboration,Participants maximize their score by classifying as many pictures as correctly as they can.
+Wildcam Gorongosa (Zooniverse),Q11optimizing_elaboration,"Each picture has a “ground truth” classification done by scientists, which is used to calculate correctness."
+Wildcam Gorongosa (Zooniverse),Q24eureka_question_elaboration,"Each picture has a “ground truth” classification done by scientists, which is used to calculate correctness."
 Wildcam Gorongosa (Zooniverse),Q13outcome_multip_elaboration,This one was hard because I feel like it is subjective based on how many you do. 
 Wildcat Wells,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Wildcat Wells,Q13outcome_multip_elaboration,If the participant somehow guesses randomly all best oil fields they could achieve the best solution.  Unlikely but technically possible.

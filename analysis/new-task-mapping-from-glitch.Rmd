@@ -149,7 +149,8 @@ task_based_summary <- df.main_questions_summary %>%
   ) %>%
   arrange(desc(mean_alpha))
 
-task_based_summary
+task_based_summary %>% filter(n_labels > 10) %>% #remove old versions that were labeled <10x
+  select(-task_blob_url)
 ```
 
 Export the task map
