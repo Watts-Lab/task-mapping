@@ -159,6 +159,26 @@ AL51KTD0WITH9,Q20type_3_type_4,Writing story,-1
 AL51KTD0WITH9,Q22confl_tradeoffs,Writing story,-1
 AL51KTD0WITH9,Q23ss_out_uncert,Writing story,-1
 AL51KTD0WITH9,Q24eureka_question,Writing story,-1
+AONSG5WOC3OX0,Q1concept_behav,Moral Reasoning (Disciplinary Action Case),-1
+AONSG5WOC3OX0,Q3type_1_planning,Moral Reasoning (Disciplinary Action Case),-1
+AONSG5WOC3OX0,Q4type_2_generate,Moral Reasoning (Disciplinary Action Case),-1
+AONSG5WOC3OX0,Q6type_5_cc,Moral Reasoning (Disciplinary Action Case),-1
+AONSG5WOC3OX0,Q7type_7_battle,Moral Reasoning (Disciplinary Action Case),-1
+AONSG5WOC3OX0,Q8type_8_performance,Moral Reasoning (Disciplinary Action Case),-1
+AONSG5WOC3OX0,Q9divisible_unitary,Moral Reasoning (Disciplinary Action Case),-1
+AONSG5WOC3OX0,Q10maximizing,Moral Reasoning (Disciplinary Action Case),-1
+AONSG5WOC3OX0,Q11optimizing,Moral Reasoning (Disciplinary Action Case),-1
+AONSG5WOC3OX0,Q13outcome_multip,Moral Reasoning (Disciplinary Action Case),-1
+AONSG5WOC3OX0,Q14sol_scheme_mul,Moral Reasoning (Disciplinary Action Case),1
+AONSG5WOC3OX0,Q15dec_verifiability,Moral Reasoning (Disciplinary Action Case),-1
+AONSG5WOC3OX0,Q16shared_knowledge,Moral Reasoning (Disciplinary Action Case),-1
+AONSG5WOC3OX0,Q17within_sys_sol,Moral Reasoning (Disciplinary Action Case),1
+AONSG5WOC3OX0,Q18ans_recog,Moral Reasoning (Disciplinary Action Case),-1
+AONSG5WOC3OX0,Q19time_solvability,Moral Reasoning (Disciplinary Action Case),-1
+AONSG5WOC3OX0,Q20type_3_type_4,Moral Reasoning (Disciplinary Action Case),-1
+AONSG5WOC3OX0,Q22confl_tradeoffs,Moral Reasoning (Disciplinary Action Case),1
+AONSG5WOC3OX0,Q23ss_out_uncert,Moral Reasoning (Disciplinary Action Case),1
+AONSG5WOC3OX0,Q24eureka_question,Moral Reasoning (Disciplinary Action Case),-1
 ARYL3C6N9SVV1,Q1concept_behav,Word construction from a subset of letters,-1
 ARYL3C6N9SVV1,Q3type_1_planning,Word construction from a subset of letters,1
 ARYL3C6N9SVV1,Q4type_2_generate,Word construction from a subset of letters,1
@@ -8999,6 +9019,26 @@ AURYD2FH3FUOQ,Q20type_3_type_4,Space Fortress,-1
 AURYD2FH3FUOQ,Q22confl_tradeoffs,Space Fortress,-1
 AURYD2FH3FUOQ,Q23ss_out_uncert,Space Fortress,1
 AURYD2FH3FUOQ,Q24eureka_question,Space Fortress,-1
+A3EUGO4VR2N4G1,Q1concept_behav,Visual Oddball Target,-1
+A3EUGO4VR2N4G1,Q3type_1_planning,Visual Oddball Target,-1
+A3EUGO4VR2N4G1,Q4type_2_generate,Visual Oddball Target,-1
+A3EUGO4VR2N4G1,Q6type_5_cc,Visual Oddball Target,-1
+A3EUGO4VR2N4G1,Q7type_7_battle,Visual Oddball Target,-1
+A3EUGO4VR2N4G1,Q8type_8_performance,Visual Oddball Target,1
+A3EUGO4VR2N4G1,Q9divisible_unitary,Visual Oddball Target,-1
+A3EUGO4VR2N4G1,Q10maximizing,Visual Oddball Target,1
+A3EUGO4VR2N4G1,Q11optimizing,Visual Oddball Target,1
+A3EUGO4VR2N4G1,Q13outcome_multip,Visual Oddball Target,1
+A3EUGO4VR2N4G1,Q14sol_scheme_mul,Visual Oddball Target,1
+A3EUGO4VR2N4G1,Q15dec_verifiability,Visual Oddball Target,1
+A3EUGO4VR2N4G1,Q16shared_knowledge,Visual Oddball Target,1
+A3EUGO4VR2N4G1,Q17within_sys_sol,Visual Oddball Target,1
+A3EUGO4VR2N4G1,Q18ans_recog,Visual Oddball Target,1
+A3EUGO4VR2N4G1,Q19time_solvability,Visual Oddball Target,1
+A3EUGO4VR2N4G1,Q20type_3_type_4,Visual Oddball Target,1
+A3EUGO4VR2N4G1,Q22confl_tradeoffs,Visual Oddball Target,1
+A3EUGO4VR2N4G1,Q23ss_out_uncert,Visual Oddball Target,-1
+A3EUGO4VR2N4G1,Q24eureka_question,Visual Oddball Target,-1
 AKQAI78JTXXC9,Q1concept_behav,Recall videos,-1
 AKQAI78JTXXC9,Q3type_1_planning,Recall videos,-1
 AKQAI78JTXXC9,Q4type_2_generate,Recall videos,-1
@@ -9739,6 +9779,26 @@ A1PZIN8H1VI6SY,Q20type_3_type_4,Euclidean traveling salesperson,1
 A1PZIN8H1VI6SY,Q22confl_tradeoffs,Euclidean traveling salesperson,-1
 A1PZIN8H1VI6SY,Q23ss_out_uncert,Euclidean traveling salesperson,1
 A1PZIN8H1VI6SY,Q24eureka_question,Euclidean traveling salesperson,-1
+AONSG5WOC3OX0,Q1concept_behav,To evacuate or not to evacuate,-1
+AONSG5WOC3OX0,Q3type_1_planning,To evacuate or not to evacuate,-1
+AONSG5WOC3OX0,Q4type_2_generate,To evacuate or not to evacuate,-1
+AONSG5WOC3OX0,Q6type_5_cc,To evacuate or not to evacuate,-1
+AONSG5WOC3OX0,Q7type_7_battle,To evacuate or not to evacuate,-1
+AONSG5WOC3OX0,Q8type_8_performance,To evacuate or not to evacuate,NA
+AONSG5WOC3OX0,Q9divisible_unitary,To evacuate or not to evacuate,-1
+AONSG5WOC3OX0,Q10maximizing,To evacuate or not to evacuate,-1
+AONSG5WOC3OX0,Q11optimizing,To evacuate or not to evacuate,NA
+AONSG5WOC3OX0,Q13outcome_multip,To evacuate or not to evacuate,NA
+AONSG5WOC3OX0,Q14sol_scheme_mul,To evacuate or not to evacuate,1
+AONSG5WOC3OX0,Q15dec_verifiability,To evacuate or not to evacuate,-1
+AONSG5WOC3OX0,Q16shared_knowledge,To evacuate or not to evacuate,NA
+AONSG5WOC3OX0,Q17within_sys_sol,To evacuate or not to evacuate,NA
+AONSG5WOC3OX0,Q18ans_recog,To evacuate or not to evacuate,-1
+AONSG5WOC3OX0,Q19time_solvability,To evacuate or not to evacuate,-1
+AONSG5WOC3OX0,Q20type_3_type_4,To evacuate or not to evacuate,1
+AONSG5WOC3OX0,Q22confl_tradeoffs,To evacuate or not to evacuate,-1
+AONSG5WOC3OX0,Q23ss_out_uncert,To evacuate or not to evacuate,1
+AONSG5WOC3OX0,Q24eureka_question,To evacuate or not to evacuate,-1
 A2OVX9UW5WANQE,Q1concept_behav,Space Fortress,-1
 A2OVX9UW5WANQE,Q3type_1_planning,Space Fortress,-1
 A2OVX9UW5WANQE,Q4type_2_generate,Space Fortress,-1
@@ -16639,6 +16699,26 @@ A2615YW1YERQBO,Q20type_3_type_4,Recall videos,1
 A2615YW1YERQBO,Q22confl_tradeoffs,Recall videos,-1
 A2615YW1YERQBO,Q23ss_out_uncert,Recall videos,1
 A2615YW1YERQBO,Q24eureka_question,Recall videos,-1
+A230VUDYOCRZ4N,Q1concept_behav,Mastermind,-1
+A230VUDYOCRZ4N,Q3type_1_planning,Mastermind,-1
+A230VUDYOCRZ4N,Q4type_2_generate,Mastermind,-1
+A230VUDYOCRZ4N,Q6type_5_cc,Mastermind,-1
+A230VUDYOCRZ4N,Q7type_7_battle,Mastermind,-1
+A230VUDYOCRZ4N,Q8type_8_performance,Mastermind,-1
+A230VUDYOCRZ4N,Q9divisible_unitary,Mastermind,-1
+A230VUDYOCRZ4N,Q10maximizing,Mastermind,NA
+A230VUDYOCRZ4N,Q11optimizing,Mastermind,1
+A230VUDYOCRZ4N,Q13outcome_multip,Mastermind,1
+A230VUDYOCRZ4N,Q14sol_scheme_mul,Mastermind,1
+A230VUDYOCRZ4N,Q15dec_verifiability,Mastermind,1
+A230VUDYOCRZ4N,Q16shared_knowledge,Mastermind,1
+A230VUDYOCRZ4N,Q17within_sys_sol,Mastermind,1
+A230VUDYOCRZ4N,Q18ans_recog,Mastermind,1
+A230VUDYOCRZ4N,Q19time_solvability,Mastermind,1
+A230VUDYOCRZ4N,Q20type_3_type_4,Mastermind,1
+A230VUDYOCRZ4N,Q22confl_tradeoffs,Mastermind,-1
+A230VUDYOCRZ4N,Q23ss_out_uncert,Mastermind,1
+A230VUDYOCRZ4N,Q24eureka_question,Mastermind,-1
 ARI1EMAHUA9PO,Q1concept_behav,Recall videos,-1
 ARI1EMAHUA9PO,Q3type_1_planning,Recall videos,-1
 ARI1EMAHUA9PO,Q4type_2_generate,Recall videos,-1
@@ -17519,6 +17599,26 @@ A5NE8TWS8ZV7B,Q20type_3_type_4,Euclidean traveling salesperson,1
 A5NE8TWS8ZV7B,Q22confl_tradeoffs,Euclidean traveling salesperson,1
 A5NE8TWS8ZV7B,Q23ss_out_uncert,Euclidean traveling salesperson,1
 A5NE8TWS8ZV7B,Q24eureka_question,Euclidean traveling salesperson,-1
+AONSG5WOC3OX0,Q1concept_behav,Guessing the correlation,-1
+AONSG5WOC3OX0,Q3type_1_planning,Guessing the correlation,-1
+AONSG5WOC3OX0,Q4type_2_generate,Guessing the correlation,-1
+AONSG5WOC3OX0,Q6type_5_cc,Guessing the correlation,-1
+AONSG5WOC3OX0,Q7type_7_battle,Guessing the correlation,-1
+AONSG5WOC3OX0,Q8type_8_performance,Guessing the correlation,-1
+AONSG5WOC3OX0,Q9divisible_unitary,Guessing the correlation,-1
+AONSG5WOC3OX0,Q10maximizing,Guessing the correlation,-1
+AONSG5WOC3OX0,Q11optimizing,Guessing the correlation,1
+AONSG5WOC3OX0,Q13outcome_multip,Guessing the correlation,-1
+AONSG5WOC3OX0,Q14sol_scheme_mul,Guessing the correlation,1
+AONSG5WOC3OX0,Q15dec_verifiability,Guessing the correlation,-1
+AONSG5WOC3OX0,Q16shared_knowledge,Guessing the correlation,1
+AONSG5WOC3OX0,Q17within_sys_sol,Guessing the correlation,1
+AONSG5WOC3OX0,Q18ans_recog,Guessing the correlation,1
+AONSG5WOC3OX0,Q19time_solvability,Guessing the correlation,1
+AONSG5WOC3OX0,Q20type_3_type_4,Guessing the correlation,1
+AONSG5WOC3OX0,Q22confl_tradeoffs,Guessing the correlation,-1
+AONSG5WOC3OX0,Q23ss_out_uncert,Guessing the correlation,1
+AONSG5WOC3OX0,Q24eureka_question,Guessing the correlation,-1
 A2TVG2HLMKVMSL,Q1concept_behav,Recall stories,-1
 A2TVG2HLMKVMSL,Q3type_1_planning,Recall stories,-1
 A2TVG2HLMKVMSL,Q4type_2_generate,Recall stories,-1
@@ -25659,6 +25759,26 @@ A18T7E73TNGOKP,Q20type_3_type_4,Hidden figures in a picture (Searching Task),-1
 A18T7E73TNGOKP,Q22confl_tradeoffs,Hidden figures in a picture (Searching Task),1
 A18T7E73TNGOKP,Q23ss_out_uncert,Hidden figures in a picture (Searching Task),1
 A18T7E73TNGOKP,Q24eureka_question,Hidden figures in a picture (Searching Task),-1
+A272X64FOZFYLB,Q1concept_behav,Wason's Selection Task,-1
+A272X64FOZFYLB,Q3type_1_planning,Wason's Selection Task,-1
+A272X64FOZFYLB,Q4type_2_generate,Wason's Selection Task,-1
+A272X64FOZFYLB,Q6type_5_cc,Wason's Selection Task,-1
+A272X64FOZFYLB,Q7type_7_battle,Wason's Selection Task,-1
+A272X64FOZFYLB,Q8type_8_performance,Wason's Selection Task,1
+A272X64FOZFYLB,Q9divisible_unitary,Wason's Selection Task,-1
+A272X64FOZFYLB,Q10maximizing,Wason's Selection Task,-1
+A272X64FOZFYLB,Q11optimizing,Wason's Selection Task,1
+A272X64FOZFYLB,Q13outcome_multip,Wason's Selection Task,1
+A272X64FOZFYLB,Q14sol_scheme_mul,Wason's Selection Task,-1
+A272X64FOZFYLB,Q15dec_verifiability,Wason's Selection Task,1
+A272X64FOZFYLB,Q16shared_knowledge,Wason's Selection Task,1
+A272X64FOZFYLB,Q17within_sys_sol,Wason's Selection Task,1
+A272X64FOZFYLB,Q18ans_recog,Wason's Selection Task,1
+A272X64FOZFYLB,Q19time_solvability,Wason's Selection Task,1
+A272X64FOZFYLB,Q20type_3_type_4,Wason's Selection Task,1
+A272X64FOZFYLB,Q22confl_tradeoffs,Wason's Selection Task,-1
+A272X64FOZFYLB,Q23ss_out_uncert,Wason's Selection Task,1
+A272X64FOZFYLB,Q24eureka_question,Wason's Selection Task,-1
 A2531UD0IGT731,Q1concept_behav,Recall word lists,-1
 A2531UD0IGT731,Q3type_1_planning,Recall word lists,-1
 A2531UD0IGT731,Q4type_2_generate,Recall word lists,1
@@ -29359,6 +29479,26 @@ A18T7E73TNGOKP,Q20type_3_type_4,Estimating geological metrics,1
 A18T7E73TNGOKP,Q22confl_tradeoffs,Estimating geological metrics,-1
 A18T7E73TNGOKP,Q23ss_out_uncert,Estimating geological metrics,1
 A18T7E73TNGOKP,Q24eureka_question,Estimating geological metrics,-1
+A272X64FOZFYLB,Q1concept_behav,To evacuate or not to evacuate,-1
+A272X64FOZFYLB,Q3type_1_planning,To evacuate or not to evacuate,-1
+A272X64FOZFYLB,Q4type_2_generate,To evacuate or not to evacuate,-1
+A272X64FOZFYLB,Q6type_5_cc,To evacuate or not to evacuate,-1
+A272X64FOZFYLB,Q7type_7_battle,To evacuate or not to evacuate,-1
+A272X64FOZFYLB,Q8type_8_performance,To evacuate or not to evacuate,-1
+A272X64FOZFYLB,Q9divisible_unitary,To evacuate or not to evacuate,NA
+A272X64FOZFYLB,Q10maximizing,To evacuate or not to evacuate,-1
+A272X64FOZFYLB,Q11optimizing,To evacuate or not to evacuate,-1
+A272X64FOZFYLB,Q13outcome_multip,To evacuate or not to evacuate,1
+A272X64FOZFYLB,Q14sol_scheme_mul,To evacuate or not to evacuate,-1
+A272X64FOZFYLB,Q15dec_verifiability,To evacuate or not to evacuate,1
+A272X64FOZFYLB,Q16shared_knowledge,To evacuate or not to evacuate,1
+A272X64FOZFYLB,Q17within_sys_sol,To evacuate or not to evacuate,1
+A272X64FOZFYLB,Q18ans_recog,To evacuate or not to evacuate,1
+A272X64FOZFYLB,Q19time_solvability,To evacuate or not to evacuate,1
+A272X64FOZFYLB,Q20type_3_type_4,To evacuate or not to evacuate,1
+A272X64FOZFYLB,Q22confl_tradeoffs,To evacuate or not to evacuate,1
+A272X64FOZFYLB,Q23ss_out_uncert,To evacuate or not to evacuate,1
+A272X64FOZFYLB,Q24eureka_question,To evacuate or not to evacuate,-1
 A18T7E73TNGOKP,Q1concept_behav,Reproducing arts,-1
 A18T7E73TNGOKP,Q3type_1_planning,Reproducing arts,-1
 A18T7E73TNGOKP,Q4type_2_generate,Reproducing arts,-1

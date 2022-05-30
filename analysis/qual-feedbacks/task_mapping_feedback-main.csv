@@ -458,6 +458,7 @@ Logic Problem,Q22confl_tradeoffs_elaboration,I'm assuming the info only leads yo
 Mastermind,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Mastermind,Q7type_7_battle_elaboration,"It's sort of implied, but I'm not sure. "
 Mastermind,Q16shared_knowledge_elaboration,"There's an element of luck here, so an AI could very easily lose or get a bad score even though the AI is playing mathematically correct."
+Mastermind,Q10maximizing_elaboration,As few trials as possible/fixed amount of time doesn't apply to the previous question. 
 Mastermind,Q17within_sys_sol_elaboration,Participants can get feedback until they figure it out.
 Mastermind,Q5creativity_input_1_elaboration,Id say it is a good mixture of both creative and logic
 Mastermind,Q16shared_knowledge_elaboration,I cant imagine an algorithm but I think there IS one.
@@ -471,6 +472,9 @@ Mastermind,Q13outcome_multip_elaboration,If you guess all of the colors correctl
 Mastermind,Q15dec_verifiability_elaboration,Participants will receive feedback immediately after to inform them how correct they were before their next turn
 Mastermind,Q18ans_recog_elaboration,Participants receive feedback after each turn
 Mastermind,Q23ss_out_uncert_elaboration,Because participants receive feedback after each turn they don’t have to wait until the game is finished to know how they did
+Moral Reasoning (Disciplinary Action Case),Q11optimizing_elaboration," There is no right or wrong course of action among the options, the goal is to select one of the courses of action."
+Moral Reasoning (Disciplinary Action Case),Q13outcome_multip_elaboration," There is no right or wrong course of action among the options, the goal is to select one of the courses of action."
+Moral Reasoning (Disciplinary Action Case),Q14sol_scheme_mul_elaboration,"It appears that since the goal is to select one of the courses of action, this is the only ""process"" in this task. "
 Moral Reasoning (Disciplinary Action Case),Q3type_1_planning_elaboration,"Yes, this is a complicated process and planning seems important.  The final part of the instructions explains what you need to looks at to arrive at a solution, so planning is involved to appease all the different members of the college and team."
 Moral Reasoning (Disciplinary Action Case),Q5creativity_input_1_elaboration,"No, yet there is likely some creativity involved in the final outcome of the task."
 Moral Reasoning (Disciplinary Action Case),Q6type_5_cc_elaboration,"No, there will be many differences of opinion regarding how to resolve this situation."
@@ -1053,6 +1057,14 @@ To evacuate or not to evacuate,Q9divisible_unitary_elaboration,They make their s
 To evacuate or not to evacuate,Q11optimizing_elaboration,The goal here is to choose or not to choose to evacuate. It is either or so the participants are asked to choose between two precise outcomes.
 To evacuate or not to evacuate,Q13outcome_multip_elaboration,The best solution here is to choose not to evacuate and avert disaster to earn a high reward.
 To evacuate or not to evacuate,Q14sol_scheme_mul_elaboration,This is a binary choice...yes or no.
+To evacuate or not to evacuate,Q8type_8_performance_elaboration,"Task only states bonus/rewards are managed based on evacuate decision. Does participant start off with a certain amount of points? Also, it can be argue that both yes and no are applicable due to player having a choice to how the bonus is earning. In order words lets assuming the player decides to play it safe and evacuate every time, will the participant still walk away with something? "
+To evacuate or not to evacuate,Q11optimizing_elaboration," We don't know if the risk level of the disaster is guarantee a disaster or not. Even at 90% risk, there is still 10% chance that a disaster won't happen and the system may go with the 10%"
+To evacuate or not to evacuate,Q13outcome_multip_elaboration,risk vs reward. Participant is trying to make a calculated guess that may or may not result in the expect answer. 
+To evacuate or not to evacuate,Q15dec_verifiability_elaboration,risk vs reward. Participant is trying to make a calculated guess that may or may not result in the expect answer. 
+To evacuate or not to evacuate,Q16shared_knowledge_elaboration," We don't know if the risk level of the disaster is guarantee a disaster or not. Even at 90% risk, there is still 10% chance that a disaster won't happen. Therefore, an algo cannot solve this at 100% accuracy. "
+To evacuate or not to evacuate,Q17within_sys_sol_elaboration," We don't know if the risk level of the disaster is guarantee a disaster or not. Even at 90% risk, there is still 10% chance that a disaster won't happen. "
+To evacuate or not to evacuate,Q18ans_recog_elaboration," We don't know if the risk level of the disaster is guarantee a disaster or not. Even at 90% risk, there is still 10% chance that a disaster won't happen and the system may go with the 10%"
+To evacuate or not to evacuate,Q21intellective_judg_1_elaboration,"This task is more of a educated guess on probability. Therefore, it has a bit of both. But since there are information to help with the estimate, I would say it still has a little more objectiveness over subjectiveness.  "
 To evacuate or not to evacuate,Q11optimizing_elaboration,"I took the goal as precise, to avoid the disaster."
 To evacuate or not to evacuate,Q13outcome_multip_elaboration,"I went back and forth on this one, I could see it going either way but if someone wants to avoid risk, the best solution might be evacuating even if a disaster does not strike."
 To evacuate or not to evacuate,Q16shared_knowledge_elaboration,I think an algorithm could be set up here to choose whether to evacuate or stay based on the risk level.
@@ -1065,6 +1077,7 @@ To evacuate or not to evacuate,Q10maximizing_elaboration,"I assume my answer is 
 To evacuate or not to evacuate,Q13outcome_multip_elaboration,There would be a 'best' solution but it wouldn't be know until afterwards.
 To evacuate or not to evacuate,Q14sol_scheme_mul_elaboration,"There is only one way of clicking a button, but more than one way of thinking about risk"
 To evacuate or not to evacuate,Q19time_solvability_elaboration,"I assume no, as there is the element of chance"
+To evacuate or not to evacuate,Q9divisible_unitary_elaboration,"It doesn't seem possible to really ""divide"" this task."
 Trivia Multiple Choice Quiz,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Trivia Multiple Choice Quiz,Q18ans_recog_elaboration,I think different people can have different justifications for their answers
 Trivia Multiple Choice Quiz,Q4type_2_generate_elaboration,Could be a brainstorming task if you're using the process of elimination to arrive at the correct answer.
