@@ -7859,6 +7859,26 @@ A2WZTMXWD20NYE,Q20type_3_type_4,Computer maze,1
 A2WZTMXWD20NYE,Q22confl_tradeoffs,Computer maze,-1
 A2WZTMXWD20NYE,Q23ss_out_uncert,Computer maze,1
 A2WZTMXWD20NYE,Q24eureka_question,Computer maze,-1
+A15F2JTVAJXITI,Q1concept_behav,Estimating Factual Quantities,-1
+A15F2JTVAJXITI,Q3type_1_planning,Estimating Factual Quantities,-1
+A15F2JTVAJXITI,Q4type_2_generate,Estimating Factual Quantities,-1
+A15F2JTVAJXITI,Q6type_5_cc,Estimating Factual Quantities,-1
+A15F2JTVAJXITI,Q7type_7_battle,Estimating Factual Quantities,1
+A15F2JTVAJXITI,Q8type_8_performance,Estimating Factual Quantities,-1
+A15F2JTVAJXITI,Q9divisible_unitary,Estimating Factual Quantities,-1
+A15F2JTVAJXITI,Q10maximizing,Estimating Factual Quantities,1
+A15F2JTVAJXITI,Q11optimizing,Estimating Factual Quantities,1
+A15F2JTVAJXITI,Q13outcome_multip,Estimating Factual Quantities,1
+A15F2JTVAJXITI,Q14sol_scheme_mul,Estimating Factual Quantities,1
+A15F2JTVAJXITI,Q15dec_verifiability,Estimating Factual Quantities,1
+A15F2JTVAJXITI,Q16shared_knowledge,Estimating Factual Quantities,1
+A15F2JTVAJXITI,Q17within_sys_sol,Estimating Factual Quantities,1
+A15F2JTVAJXITI,Q18ans_recog,Estimating Factual Quantities,1
+A15F2JTVAJXITI,Q19time_solvability,Estimating Factual Quantities,1
+A15F2JTVAJXITI,Q20type_3_type_4,Estimating Factual Quantities,1
+A15F2JTVAJXITI,Q22confl_tradeoffs,Estimating Factual Quantities,-1
+A15F2JTVAJXITI,Q23ss_out_uncert,Estimating Factual Quantities,1
+A15F2JTVAJXITI,Q24eureka_question,Estimating Factual Quantities,-1
 A3EUGO4VR2N4G1,Q1concept_behav,Word construction from a subset of letters,-1
 A3EUGO4VR2N4G1,Q3type_1_planning,Word construction from a subset of letters,-1
 A3EUGO4VR2N4G1,Q4type_2_generate,Word construction from a subset of letters,1
@@ -8999,6 +9019,26 @@ A5NE8TWS8ZV7B,Q20type_3_type_4,Writing story,-1
 A5NE8TWS8ZV7B,Q22confl_tradeoffs,Writing story,-1
 A5NE8TWS8ZV7B,Q23ss_out_uncert,Writing story,-1
 A5NE8TWS8ZV7B,Q24eureka_question,Writing story,-1
+A3EUGO4VR2N4G1,Q1concept_behav,Wildcam Gorongosa (Zooniverse),-1
+A3EUGO4VR2N4G1,Q3type_1_planning,Wildcam Gorongosa (Zooniverse),-1
+A3EUGO4VR2N4G1,Q4type_2_generate,Wildcam Gorongosa (Zooniverse),-1
+A3EUGO4VR2N4G1,Q6type_5_cc,Wildcam Gorongosa (Zooniverse),-1
+A3EUGO4VR2N4G1,Q7type_7_battle,Wildcam Gorongosa (Zooniverse),-1
+A3EUGO4VR2N4G1,Q8type_8_performance,Wildcam Gorongosa (Zooniverse),-1
+A3EUGO4VR2N4G1,Q9divisible_unitary,Wildcam Gorongosa (Zooniverse),1
+A3EUGO4VR2N4G1,Q10maximizing,Wildcam Gorongosa (Zooniverse),1
+A3EUGO4VR2N4G1,Q11optimizing,Wildcam Gorongosa (Zooniverse),1
+A3EUGO4VR2N4G1,Q13outcome_multip,Wildcam Gorongosa (Zooniverse),1
+A3EUGO4VR2N4G1,Q14sol_scheme_mul,Wildcam Gorongosa (Zooniverse),1
+A3EUGO4VR2N4G1,Q15dec_verifiability,Wildcam Gorongosa (Zooniverse),1
+A3EUGO4VR2N4G1,Q16shared_knowledge,Wildcam Gorongosa (Zooniverse),1
+A3EUGO4VR2N4G1,Q17within_sys_sol,Wildcam Gorongosa (Zooniverse),1
+A3EUGO4VR2N4G1,Q18ans_recog,Wildcam Gorongosa (Zooniverse),1
+A3EUGO4VR2N4G1,Q19time_solvability,Wildcam Gorongosa (Zooniverse),1
+A3EUGO4VR2N4G1,Q20type_3_type_4,Wildcam Gorongosa (Zooniverse),1
+A3EUGO4VR2N4G1,Q22confl_tradeoffs,Wildcam Gorongosa (Zooniverse),1
+A3EUGO4VR2N4G1,Q23ss_out_uncert,Wildcam Gorongosa (Zooniverse),-1
+A3EUGO4VR2N4G1,Q24eureka_question,Wildcam Gorongosa (Zooniverse),-1
 AE1YA7Q3UKPRI,Q1concept_behav,Mastermind,-1
 AE1YA7Q3UKPRI,Q3type_1_planning,Mastermind,-1
 AE1YA7Q3UKPRI,Q4type_2_generate,Mastermind,-1
@@ -30819,6 +30859,26 @@ A2UKCO1M1MEMZW,Q20type_3_type_4,Unscramble words (anagrams),1
 A2UKCO1M1MEMZW,Q22confl_tradeoffs,Unscramble words (anagrams),-1
 A2UKCO1M1MEMZW,Q23ss_out_uncert,Unscramble words (anagrams),-1
 A2UKCO1M1MEMZW,Q24eureka_question,Unscramble words (anagrams),-1
+A15F2JTVAJXITI,Q1concept_behav,"Rank cities by population, rank words by familiarity",-1
+A15F2JTVAJXITI,Q3type_1_planning,"Rank cities by population, rank words by familiarity",-1
+A15F2JTVAJXITI,Q4type_2_generate,"Rank cities by population, rank words by familiarity",-1
+A15F2JTVAJXITI,Q6type_5_cc,"Rank cities by population, rank words by familiarity",-1
+A15F2JTVAJXITI,Q7type_7_battle,"Rank cities by population, rank words by familiarity",1
+A15F2JTVAJXITI,Q8type_8_performance,"Rank cities by population, rank words by familiarity",-1
+A15F2JTVAJXITI,Q9divisible_unitary,"Rank cities by population, rank words by familiarity",-1
+A15F2JTVAJXITI,Q10maximizing,"Rank cities by population, rank words by familiarity",1
+A15F2JTVAJXITI,Q11optimizing,"Rank cities by population, rank words by familiarity",-1
+A15F2JTVAJXITI,Q13outcome_multip,"Rank cities by population, rank words by familiarity",1
+A15F2JTVAJXITI,Q14sol_scheme_mul,"Rank cities by population, rank words by familiarity",-1
+A15F2JTVAJXITI,Q15dec_verifiability,"Rank cities by population, rank words by familiarity",1
+A15F2JTVAJXITI,Q16shared_knowledge,"Rank cities by population, rank words by familiarity",-1
+A15F2JTVAJXITI,Q17within_sys_sol,"Rank cities by population, rank words by familiarity",1
+A15F2JTVAJXITI,Q18ans_recog,"Rank cities by population, rank words by familiarity",-1
+A15F2JTVAJXITI,Q19time_solvability,"Rank cities by population, rank words by familiarity",1
+A15F2JTVAJXITI,Q20type_3_type_4,"Rank cities by population, rank words by familiarity",1
+A15F2JTVAJXITI,Q22confl_tradeoffs,"Rank cities by population, rank words by familiarity",-1
+A15F2JTVAJXITI,Q23ss_out_uncert,"Rank cities by population, rank words by familiarity",1
+A15F2JTVAJXITI,Q24eureka_question,"Rank cities by population, rank words by familiarity",-1
 A5NE8TWS8ZV7B,Q1concept_behav,Guessing the correlation,-1
 A5NE8TWS8ZV7B,Q3type_1_planning,Guessing the correlation,-1
 A5NE8TWS8ZV7B,Q4type_2_generate,Guessing the correlation,-1
