@@ -128,7 +128,7 @@
   
       
       #--- PAYING People (complete surveys)---
-      payment_token <- "0kQfS6XjlqMKqA"
+      payment_token <- "m3XHcqD5KXjT8w"
       
       body <- list(payment_token = payment_token)
       
