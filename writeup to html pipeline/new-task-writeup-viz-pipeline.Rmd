@@ -29,8 +29,6 @@ library(tidyverse)
 
 # Pull in Survey Data
 ```{r}
-surveys <- all_surveys()
-
 task_writing_survey_id <- (surveys %>% filter(name == "Task Rewriting Submission Form [NEW]"))$id
 
 df.survey_results <- fetch_survey(
