@@ -151,7 +151,7 @@
       #--- REGISTERING Payments (complete surveys)---
       payments_body <- list(
         "bonuses" = mapper_payment$amount_to_pay, 
-        "comment" = paste0("Task-Mapping Mapping round 1"),
+        "comment" = paste0("Task-Mapping Mapping Last Round"),
         "project" = "Task Mapping",
         "worker_ids" = mapper_payment$WorkerId
       )
@@ -174,7 +174,7 @@
   
       
       #--- PAYING People (complete surveys)---
-      payment_token <- "m3XHcqD5KXjT8w"
+      payment_token <- "YVmkvFotPVy0WQ"
       
       body <- list(payment_token = payment_token)
       
