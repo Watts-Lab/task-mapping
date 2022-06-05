@@ -47,7 +47,7 @@
       links <- link_groups$links
       comments <- link_groups$comments
       
-      #--- Sending Surveys ---
+      #--- Sending Surveys ----
       header_msg = "
           Hi — you signed up to be part of our ongoing projects, and we reached out last week about your qualification to do our task (Answering 23 questions about a group or individual activity).
 
@@ -95,6 +95,52 @@
         "text"
       ))
       
+      #--- Sending Surveys (Last Hooray!) ----
+      header_msg = "
+          Hi — you're on our list of workers who qualified to answer 23 questions about a task.
+
+          We are writing to let you know that the project will be wrapping up early, in part because all of you have been so eager, efficient, and high-quality in your work. 
+          We have received all the data that we need for this stage.
+          
+          Together, we managed to label more than 70 tasks in just a few weeks. We received nearly 2000 responses to our survey, and finished the data collection process significantly faster than expected. 
+          
+          We are currently wrapping up with this stage of our project. 
+          While it is possible that we will eventually add new tasks and require you to work again, in the foreseeable future, we will be closing this phase. 
+          If you visit your personal link, you will be redirected to a page with a similar message to this one.
+          
+          Thank you so much for participating; this work could not be possible without you, and on behalf of our entire team, we are very grateful for your work. 
+          We will keep you posted about updates to this project via email. 
+          If you have any outstanding payments, they will be paid within this week.
+         "
+      
+      
+      first <- qualified$WorkerId[1:57]
+      second <- qualified$WorkerId[58:114]
+      
+      
+      json_body = list(
+        "worker_ids" = second, 
+        "subject" = "[UPDATES:No More Tasks!] Answer 23 Questions about a Task Survey Has Completed Data Collection",
+        "comment" = "Task Mapping: Final message", 
+        "msg" = header_msg
+      )
+      
+      post_send <- POST(
+        "https://watts.turk-interface.com/workers/notify",
+        body = jsonlite::toJSON(json_body, auto_unbox =TRUE),
+        add_headers(.headers = c(`Authorization`= paste0(
+          "Bearer ", token
+        ))),
+        verbose(),
+        encode = "json",
+        content_type_json()
+      )
+      
+      send <- fromJSON(content(
+        post_send,
+        "text"
+      ))
+      
       #--- HIGH SCORING People : Preparing + Sending Surveys ----
       #--- PAYING People ----
       mapper_payment <- read_csv("mapper_payment.csv")%>% 
@@ -105,7 +151,7 @@
       #--- REGISTERING Payments (complete surveys)---
       payments_body <- list(
         "bonuses" = mapper_payment$amount_to_pay, 
-        "comment" = paste0("Task-Mapping Mapping round 1"),
+        "comment" = paste0("Task-Mapping Mapping Last Round"),
         "project" = "Task Mapping",
         "worker_ids" = mapper_payment$WorkerId
       )
@@ -128,7 +174,7 @@
   
       
       #--- PAYING People (complete surveys)---
-      payment_token <- "m3XHcqD5KXjT8w"
+      payment_token <- "YVmkvFotPVy0WQ"
       
       body <- list(payment_token = payment_token)
       
