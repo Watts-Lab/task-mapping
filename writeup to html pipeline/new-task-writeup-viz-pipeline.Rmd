@@ -186,5 +186,14 @@ Write mapped tasks into HTML for rating
 df.task_map_format %>% write_csv('./html/task-htmls.csv')
 ```
 
+Remove all other summaries
+```{r}
+for(i in 1:length(df.blobs$path)){
+  file_path <- df.blobs$path[i]
+  if(!(file_path %in% df.task_map_format$path)){
+    file.remove(paste0("../",file_path))
+  }
+}
+```
 
 ---------------------------------------------------------
