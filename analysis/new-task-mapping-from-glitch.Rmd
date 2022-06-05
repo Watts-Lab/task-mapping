@@ -242,13 +242,49 @@ combined_data <- cbind(task_map,
       pca$x, factor(kmeans_output$cluster)) %>%
   rename(cluster = `factor(kmeans_output$cluster)`)
 
+james_set <- c('Writing story',
+ '9 Dot Problem',
+ 'Word construction from a subset of letters',
+ 'Image rating',
+ 'Checkers',
+ 'Run a mini business',
+ 'Typing game',
+ 'Whac-A-Mole',
+ 'Divergent Association Task',
+ 'Carter Racing',
+ 'Object based generalization for reasoning (Phyre)')
+
+ apricot_set <- c('Search for Oil Task',
+ 'Advertisement writing',
+ "Wason's Selection Task",
+ 'To evacuate or not to evacuate',
+ 'Space Fortress',
+ 'Word completion given part of word',
+ 'Graph coloring task',
+ 'Estimating social quantity',
+ 'Logic Problem',
+ 'Divergent Association Task')
+
+
 p <- combined_data %>%
   ggplot(aes(
     x = PC1,
     y = PC2,
     label = task ,
     fill = cluster
-  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
+  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2, alpha=0.05) #+
+  # geom_label(
+  #   data = subset(combined_data, task %in% apricot_set),
+  #   aes(
+  #     x = PC1,
+  #     y = PC2,
+  #     label = task ,
+  #     fill = cluster
+  #   ),
+  #   nudge_y = 0.1,
+  #   size = 2
+  # )
+
 p
 
 plot_ly(
