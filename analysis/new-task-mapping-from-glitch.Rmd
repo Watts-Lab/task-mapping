@@ -272,18 +272,18 @@ p <- combined_data %>%
     y = PC2,
     label = task ,
     fill = cluster
-  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2, alpha=0.05) #+
-  # geom_label(
-  #   data = subset(combined_data, task %in% apricot_set),
-  #   aes(
-  #     x = PC1,
-  #     y = PC2,
-  #     label = task ,
-  #     fill = cluster
-  #   ),
-  #   nudge_y = 0.1,
-  #   size = 2
-  # )
+  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2, alpha=0.05) +
+  geom_label(
+    data = subset(combined_data, task %in% james_set),
+    aes(
+      x = PC1,
+      y = PC2,
+      label = task ,
+      fill = cluster
+    ),
+    nudge_y = 0.1,
+    size = 2
+  )
 
 p
 
@@ -380,6 +380,46 @@ pivot_longer(cols = -task, names_to = "question_name") %>%
   arrange(task) %>% write_csv("./qual-feedbacks/task_mapping_feedback-main.csv")
 ```
 
+Look at "old taxonomies"
+```{r}
+df.mcg <- df.main_questions_summary %>%
+  filter(n_labels > 10) %>%
+  ungroup() %>%
+  filter(!is.na(str_match(question_name, "type")) | !is.na(str_match(question_name, "behav"))) %>%
+  select(task, question_name, mean_rating) %>%
+  pivot_wider(names_from = question_name, values_from = mean_rating)
 
+total_mcgrath <- rowSums(df.mcg[c(2:7)])
+
+df.mcg <- cbind(df.mcg, data.frame("total_mcgrath" = total_mcgrath))
+```
+
+```{r, fig.height = 8, fig.width= 4}
+ggplot(
+  df.mcg %>%
+    rename(
+      Physical = Q1concept_behav,
+      Intellective = Q20type_3_type_4,
+      Planning = Q3type_1_planning,
+      Generative = Q4type_2_generate,
+      `Cognitive Conflict` = Q6type_5_cc,
+      Battle = Q7type_7_battle,
+      Performance = Q8type_8_performance
+    ) %>%
+    select(-total_mcgrath) %>%
+    pivot_longer(cols = -task) %>%
+    rename(`Mean Rater Response` = value),
+  aes(x = name, y = task)
+) + geom_tile(aes(fill = `Mean Rater Response`)) + scale_fill_gradient(low = "#CC3363",
+                                                       high = "#07BEB8") + theme(axis.text.x = element_text(
+                                                         angle = 90,
+                                                         vjust = 0.5,
+                                                         hjust = 1
+                                                       )) + 
+  labs(x = "Dimension in McGrath's Taxonomy",
+       y = "Task Name")
+
+ggsave("26task-mcgrath-ratings.png")
+```
 
 
