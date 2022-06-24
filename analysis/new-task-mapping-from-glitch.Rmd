@@ -135,13 +135,77 @@ df.main_questions_summary <- df.mapping.raw %>%
             )
 ```
 
+Select 2 raters at random and bootstrap a situation where we have only 2 -- this will mimic stage 1
+
+```{r}
+# set.seed(1)
+# 
+# N_ITER <- 10000
+# task_agr_mean <- c()
+# q_agr_mean <- c()
+# 
+# for(i in 1:N_ITER){
+#   print(i)
+#   dataframe_resampled <- df.mapping.raw %>%
+#     group_by(task_blob_url) %>%
+#     filter(n() >= 10) %>%
+#     slice_sample(n = 2) %>%
+#     select(c(main_questions, task, task_blob_url)) %>%
+#     select(-continuous_questions) %>%
+#     pivot_longer(cols = -c(task, task_blob_url), names_to = "question_name") %>%
+#     mutate(
+#       value = recode(
+#         value,
+#         "Mental" = 0,
+#         "Physical" = 1,
+#         "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+#         "No" = 0,
+#         "Yes" = 1
+#       )
+#     ) %>%
+#     group_by(task, task_blob_url, question_name) %>%
+#   summarize(mean_rating = mean(value, na.rm = T),
+#             n_labels = agree(t(value))$raters,
+#             all_values = paste(value, collapse = " & "),
+#             agreement = ifelse(mean_rating > 0.5, mean_rating, 1-mean_rating),
+#             general.alpha = (agreement-0.5)/(0.5)
+#             )
+#   
+#   task_summary <- dataframe_resampled %>%
+#     group_by(task, task_blob_url) %>%
+#   summarize(
+#     n_labels = round(mean(n_labels),0),
+#     mean_agreement = mean(agreement),
+#     mean_alpha = mean(general.alpha)
+#   ) %>%
+#   arrange(desc(mean_alpha))
+# 
+#   task_agr_mean <- c(task_agr_mean, mean(task_summary$mean_agreement))
+# 
+#   question_summary <- dataframe_resampled %>%
+#   group_by(question_name) %>%
+#   summarize(
+#     n_labels = round(mean(n_labels),0),
+#     mean_agreement = mean(agreement),
+#     mean_alpha = mean(general.alpha)
+#   ) %>%
+#   arrange(desc(mean_alpha))
+#   
+#   q_agr_mean <- c(q_agr_mean, mean(question_summary$mean_agreement))
+#   
+# }
+# 
+# quantile(task_agr_mean, c(0.025, 0.9725))
+# quantile(q_agr_mean, c(0.025, 0.9725))
+```
+
 Look at at a per-question (or per-task) summary of basic agreement
 
 ```{r}
 task_based_summary <- df.main_questions_summary %>%
-  filter(n_labels > 1) %>%
-  group_by(question_name) %>%
-  #group_by(task, task_blob_url) %>% # can do task, question_name
+  filter(n_labels > 10) %>%
+  #group_by(question_name) %>%
+  group_by(task, task_blob_url) %>% # can do task, question_name
   summarize(
     n_labels = round(mean(n_labels),0),
     mean_agreement = mean(agreement),
@@ -149,8 +213,94 @@ task_based_summary <- df.main_questions_summary %>%
   ) %>%
   arrange(desc(mean_alpha))
 
-task_based_summary %>% filter(n_labels > 10) #%>% #remove old versions that were labeled <10x
-  #select(-task_blob_url)
+task_based_summary
+
+mean(task_based_summary$mean_agreement)
+sd(task_based_summary$mean_agreement)
+quantile(task_based_summary$mean_agreement, c(0.025, 0.9725))
+
+question_based_summary <- df.main_questions_summary %>%
+  filter(n_labels > 10) %>%
+  group_by(question_name) %>%
+  summarize(
+    n_labels = round(mean(n_labels),0),
+    mean_agreement = mean(agreement),
+    mean_alpha = mean(general.alpha)
+  ) %>%
+  arrange(desc(mean_alpha))
+
+question_based_summary
+
+mean(question_based_summary$mean_agreement)
+sd(question_based_summary$mean_agreement)
+quantile(question_based_summary$mean_agreement, c(0.025, 0.9725))
+```
+
+IRR - KA
+
+KA by task
+```{r}
+# kripp.alpha.by.task <- data.frame(matrix(nrow = 0, ncol = 2))
+# 
+# for(task_blob in task_based_summary$task_blob_url){
+#   long_tbl_q_ans <- df.mapping.raw %>% select(c(main_questions, task, task_blob_url, user)) %>%
+#   select(-continuous_questions) %>%
+#   pivot_longer(cols = -c(task,task_blob_url, user), names_to = "question_name") %>%
+#   mutate(value = recode(value, 
+#                      "Mental" = 0,
+#                      "Physical" = 1,
+#                      "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+#                      "No" = 0,
+#                      "Yes" = 1,
+#                    )) %>% filter(task_blob_url == task_blob) %>%
+#     pivot_wider(names_from = question_name, values_from = value)
+# 
+#   task_name <- long_tbl_q_ans$task[1]
+#   
+#   ka <- long_tbl_q_ans %>%
+#   select(-c(task, task_blob_url, user)) %>% 
+#   as.matrix() %>% kripp.alpha("ordinal")
+#   
+#   new_row = data.frame(
+#     task = task_name,
+#     k.alpha = ka$value
+#   )
+#   
+#   kripp.alpha.by.task <- rbind(kripp.alpha.by.task, new_row)
+# }
+# 
+# kripp.alpha.by.task %>% arrange(desc(k.alpha))
+```
+KA by question
+```{r}
+# kripp.alpha.by.question <- data.frame(matrix(nrow = 0, ncol = 2))
+# 
+# for(q in question_based_summary$question_name){
+#   long_tbl_q_ans <- df.mapping.raw %>% select(c(main_questions,task_blob_url, user)) %>%
+#   select(-continuous_questions) %>%
+#   pivot_longer(cols = -c(task_blob_url, user), names_to = "question_name") %>%
+#   mutate(value = recode(value, 
+#                      "Mental" = 0,
+#                      "Physical" = 1,
+#                      "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+#                      "No" = 0,
+#                      "Yes" = 1,
+#                    )) %>% filter(question_name == q) %>%
+#     pivot_wider(names_from = task_blob_url, values_from = value)
+# 
+#   ka <- long_tbl_q_ans %>%
+#   select(-c(user, question_name)) %>% 
+#   as.matrix() %>% kripp.alpha("ordinal")
+#   
+#   new_row = data.frame(
+#     question = q,
+#     k.alpha = ka$value
+#   )
+#   
+#   kripp.alpha.by.question <- rbind(kripp.alpha.by.question, new_row)
+# }
+# 
+# kripp.alpha.by.question %>% arrange(desc(k.alpha))
 ```
 
 Export the task map
@@ -270,20 +420,35 @@ p <- combined_data %>%
   ggplot(aes(
     x = PC1,
     y = PC2,
-    label = task ,
+    label = task,
     fill = cluster
-  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2, alpha=0.05) +
-  geom_label(
-    data = subset(combined_data, task %in% james_set),
-    aes(
-      x = PC1,
-      y = PC2,
-      label = task ,
-      fill = cluster
-    ),
-    nudge_y = 0.1,
-    size = 2
-  )
+  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2) #+ , alpha=0.05) +
+
+  # geom_label(
+  #   data = subset(combined_data, task %in% c("NASA Moon survival", "Desert survival")),
+  #   aes(
+  #     x = PC1,
+  #     y = PC2,
+  #     label = task ,
+  #     fill = cluster
+  #   ),
+  #   nudge_y = 0.1,
+  #   size = 2
+  # )
+
+  # highlights only the ones in the selected set
+
+  # geom_label(
+  #   data = subset(combined_data, task %in% james_set),
+  #   aes(
+  #     x = PC1,
+  #     y = PC2,
+  #     label = task ,
+  #     fill = cluster
+  #   ),
+  #   nudge_y = 0.1,
+  #   size = 2
+  # )
 
 p
 
@@ -380,6 +545,62 @@ pivot_longer(cols = -task, names_to = "question_name") %>%
   arrange(task) %>% write_csv("./qual-feedbacks/task_mapping_feedback-main.csv")
 ```
 
+Visualize the original map (Stage 1)
+```{r}
+# get old task map
+df.task_map_old_names <- read_csv('../archive/task_map.csv')
+df.task_map_old <- cbind(df.task_map_old_names[,1],read_csv('../archive/task_map_numeric.csv'))
+
+df.task_map_old <- df.task_map_old %>%
+  filter(task %in% combined_data$task)
+
+set.seed(1)
+pca.old <- df.task_map_old %>%
+  select(-task) %>%
+  select(-effort_physical) %>% # no variation in this column
+  prcomp(scale = T)
+
+# get optimal number of clusters -- "silhouette" method
+fviz_nbclust(x = pca.old$x, FUNcluster = stats::kmeans, method = "silhouette") +
+  labs(subtitle = "Silhouette method")
+
+kmeans.old <- pca.old$x %>%
+  kmeans(centers = 2, nstart = 100) 
+
+combined_old <- cbind(df.task_map_old,
+      pca.old$x, factor(kmeans.old$cluster)) %>%
+  rename(
+    cluster = `factor(kmeans.old$cluster)`
+  )
+
+p.old<- combined_old  %>%
+  ggplot(
+    aes(x = PC1,
+    y = PC2,
+    label = task,
+    fill = cluster
+    )
+  ) + geom_point() + geom_label(nudge_y = 0.8, size = 2) # +
+# 
+#   #highlight similar tasks for sanity check
+#   geom_label(
+#     data = subset(combined_old, task %in% c("NASA Moon survival", "Desert survival")),
+#     aes(
+#       x = PC1,
+#       y = PC2,
+#       label = task ,
+#       fill = cluster
+#     ),
+#     nudge_y = 0.8,
+#     size = 2
+#   )
+
+
+p.old
+ggsave(plot = p.old, filename = './map-visuals/task-map-OLD.png')
+fviz_eig(pca.old)
+```
+
 Look at "old taxonomies"
 ```{r}
 df.mcg <- df.main_questions_summary %>%
@@ -420,6 +641,62 @@ ggplot(
        y = "Task Name")
 
 ggsave("26task-mcgrath-ratings.png")
+```
+
+McGrath - within v. between-category variance
+```
+      Physical = Q1concept_behav,
+      Intellective = Q20type_3_type_4,
+      Planning = Q3type_1_planning,
+      Generative = Q4type_2_generate,
+      `Cognitive Conflict` = Q6type_5_cc,
+      Battle = Q7type_7_battle,
+      Performance = Q8type_8_performance
+```
+
+```{r}
+# get total sum of squares
+mcg_colmeans <- df.mcg %>% select(-c(task, total_mcgrath)) %>% colMeans()
+total_sum_squares <- (((df.mcg %>% select(-c(task, total_mcgrath)))-mcg_colmeans) %>%
+  abs())^2 %>% colSums() %>% sum()
+
+# within category
+physical_category <- df.mcg %>% filter(Q1concept_behav > mean(df.mcg$Q1concept_behav))
+intellective_category <- df.mcg %>% filter(Q20type_3_type_4 > mean(df.mcg$Q20type_3_type_4))
+planning_category <- df.mcg %>% filter(Q3type_1_planning > mean(df.mcg$Q3type_1_planning))
+generative_category <- df.mcg %>% filter(Q4type_2_generate > mean(df.mcg$Q4type_2_generate))
+cc_category <- df.mcg %>% filter(Q6type_5_cc > mean(df.mcg$Q6type_5_cc))
+battle_category <- df.mcg %>% filter(Q7type_7_battle > mean(df.mcg$Q7type_7_battle))
+performance_category <- df.mcg %>% filter(Q8type_8_performance > mean(df.mcg$Q8type_8_performance))
+
+# within-category sum of squares
+calc_SS <- function(df) sum(as.matrix(dist(df)^2)) / (2 * nrow(df))
+
+total_within_ss <- sum(
+  calc_SS(physical_category %>% select(-c(task, total_mcgrath))),
+  calc_SS(intellective_category %>% select(-c(task, total_mcgrath))),
+  calc_SS(planning_category %>% select(-c(task, total_mcgrath))),
+  calc_SS(generative_category %>% select(-c(task, total_mcgrath))),
+  calc_SS(cc_category %>% select(-c(task, total_mcgrath))),
+  calc_SS(battle_category %>% select(-c(task, total_mcgrath))),
+  calc_SS(performance_category %>% select(-c(task, total_mcgrath)))
+)
+
+between_ss <- total_sum_squares-total_within_ss
+```
+
+```{r}
+print("Within SS:")
+calc_SS(physical_category %>% select(-c(task, total_mcgrath)))
+calc_SS(intellective_category %>% select(-c(task, total_mcgrath)))
+calc_SS(planning_category %>% select(-c(task, total_mcgrath)))
+calc_SS(generative_category %>% select(-c(task, total_mcgrath)))
+calc_SS(cc_category %>% select(-c(task, total_mcgrath)))
+calc_SS(battle_category %>% select(-c(task, total_mcgrath)))
+calc_SS(performance_category %>% select(-c(task, total_mcgrath)))
+
+print("Between SS:")
+between_ss
 ```
 
 

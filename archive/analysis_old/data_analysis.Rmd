@@ -25,15 +25,15 @@ library(tidyverse)
 
 # Import Data
 ```{r}
-numerical_responses_matrix <- read_csv('../archive/task_map_numeric.csv')
+numerical_responses_matrix <- read_csv('../../archive/task_map_numeric.csv')
 
-ordinals <- read_csv('../archive/ordinals.csv')
+ordinals <- read_csv('../../archive/ordinals.csv')
 
-clean_responses <- read_csv("../archive/cleaned_task_responses.csv")
+clean_responses <- read_csv("../../archive/cleaned_task_responses.csv")
 
-agreed_responses <- read_csv("../archive/task_map.csv")
+agreed_responses <- read_csv("../../archive/task_map.csv")
 
-questions <- fromJSON("https://task-robot.glitch.me/questions/json")
+#questions <- fromJSON("https://task-robot.glitch.me/questions/json")
 
 task_names <- agreed_responses$task
 ```
@@ -43,16 +43,7 @@ task_names <- agreed_responses$task
 ```{r}
 responses_clean_ind <- clean_responses %>%
   filter(stage == "individual") %>%
-  select(c(task, user,
-           effort_mental,effort_physical,
-           generate_plan,generate_process,
-        generate_ideas,generate_creativity,resolve_opinion,resolve_perspectives,
-        resolve_information,resolve_data, 
-        conflict_cooperation,conflict_interests, 
-        external_adversary,external_standard,
-        solution_valid, solution_optimal, solution_objectivity,
-        task_divisibility, task_specialization,
-        measure_easy,measure_immediate)) %>%
+  select(c(task, user, ordinals$`ordinals$name`)) %>%
   pivot_longer(cols = -c(task, user),
                names_to = "question") %>%
    mutate(value = recode(value,
@@ -94,9 +85,80 @@ responses_clean_ind <- clean_responses %>%
 ```
 
 ```{r}
-responses_clean_ind %>% ungroup() %>% select(task) %>% unique()
+tasks <- responses_clean_ind %>% ungroup() %>% select(task) %>% unique()
 ```
 
+Get a sense of inter-rater reliability
+
+```{r}
+task_response_summary <- responses_clean_ind %>%
+  group_by(task, question) %>%
+  # set NA to 0
+  mutate_all(funs(ifelse(is.na(.), 0, .))) %>% 
+  summarize(mean_rating = mean(value, na.rm = T),
+            agreement = ifelse(abs(value-mean(value))==0, 1, 0),
+            n_labels = agree(t(value))$raters,
+            all_values = paste(value, collapse = " & ")) %>%
+  ungroup()%>%
+  group_by(task) %>%
+  summarize(
+    n_labels = round(mean(n_labels),0),
+    mean_agreement = mean(agreement)
+  ) %>%
+  arrange(desc(mean_agreement)) %>%
+  filter(n_labels > 1)
+
+task_response_summary
+
+mean(task_response_summary$mean_agreement)
+sd(task_response_summary$mean_agreement)
+quantile(task_response_summary$mean_agreement, c(0.025, 0.9725))
+
+question_response_summary <- responses_clean_ind %>%
+  group_by(task, question) %>%
+  # set NA to 0
+  mutate_all(funs(ifelse(is.na(.), 0, .))) %>% 
+  summarize(mean_rating = mean(value, na.rm = T),
+            agreement = ifelse(abs(value-mean(value))==0, 1, 0),
+            n_labels = agree(t(value))$raters,
+            all_values = paste(value, collapse = " & ")) %>%
+  ungroup()%>%
+  group_by(question) %>%
+  summarize(
+    n_labels = round(mean(n_labels),0),
+    mean_agreement = mean(agreement)
+  ) %>%
+  arrange(desc(mean_agreement)) %>%
+  filter(n_labels > 1)
+
+question_response_summary
+
+mean(question_response_summary$mean_agreement)
+sd(question_response_summary$mean_agreement)
+quantile(question_response_summary$mean_agreement, c(0.025, 0.9725))
+
+
+kripp.alpha.by.task <- data.frame(matrix(nrow = 0, ncol = 2))
+
+for(task_name in task_response_summary$task){
+  ka <- responses_clean_ind %>% filter(task == task_name) %>%
+  pivot_wider(names_from = question, values_from = value) %>% ungroup() %>%
+  select(-c(task, user)) %>%
+  as.matrix() %>% kripp.alpha("ordinal")
+  
+  newrow = data.frame(
+    task = task_name,
+    k.alpha = ka$value
+  )
+  
+  kripp.alpha.by.task <- rbind(kripp.alpha.by.task, newrow)
+}
+
+kripp.alpha.by.task %>% arrange(desc(k.alpha))
+```
+
+
+Look at correlations of similar questions
 
 ```{r, fig.height=8, fig.width=10}
 averaged_by_task <- responses_clean_ind %>%
@@ -210,7 +272,21 @@ p8 <- averaged_by_task %>%
         axis.title.y = element_blank(),
         plot.title = element_text(size=12, face="bold"))
 
-g <- arrangeGrob(p1,p2,p3,p4,p5,p6,p7,p8, nrow = 4)
+
+# performance_cumulative and subtasks_additive
+p9 <- averaged_by_task %>%
+  ggplot(aes(
+    x = performance_cumulative,
+    y = subtasks_additive
+  )) + geom_count() +
+  geom_smooth(method = 'lm')+
+  labs(title = "I") +
+  annotate("text", x = 1.5, y = 4, size = 10, label = toString(round(cor(averaged_by_task$performance_cumulative, averaged_by_task$subtasks_additive, use="complete.obs"),3))) +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        plot.title = element_text(size=12, face="bold"))
+
+g <- arrangeGrob(p1,p2,p3,p4,p5,p6,p7,p8,p9, nrow = 5)
 
 ggsave("correlations_of_similar_questions.png", g)
 ```
