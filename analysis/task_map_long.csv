@@ -1,4 +1,4 @@
-user,question_name,task,value
+name,question_name,task_name,value
 A1PZIN8H1VI6SY,Q1concept_behav,Categorization problem,0
 A1PZIN8H1VI6SY,Q3type_1_planning,Categorization problem,0
 A1PZIN8H1VI6SY,Q4type_2_generate,Categorization problem,0

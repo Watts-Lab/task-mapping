@@ -396,7 +396,9 @@ df.karger <- df.mapping.raw %>%
       "Yes" = 1
     )
   ) %>% ungroup() %>%
-  select(user, question_name, task, value)
+  select(user, question_name, task, value) %>%
+  rename(task_name = task,
+         name = user)
 
 df.karger %>% write_csv('task_map_long.csv')
 ```
