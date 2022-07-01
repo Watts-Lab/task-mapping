@@ -138,21 +138,68 @@ df.main_questions_summary <- df.mapping.raw %>%
 df.main_questions_summary %>% write_csv('../main_question_summary.csv')
 ```
 
-Look at at a per-question (or per-task) summary of basic agreement
+Select 2 raters at random and bootstrap a situation where we have only 2 -- this will mimic stage 1
 
 ```{r}
-task_based_summary <- df.main_questions_summary %>%
-  filter(n_labels > 109) %>%
-  #group_by(question_name) %>%
-  group_by(task, task_blob_url) %>% # can do task, question_name
-  summarize(
-    n_labels = round(mean(n_labels),0),
-    mean_agreement = mean(agreement),
-    mean_alpha = mean(general.alpha)
-  ) %>%
-  arrange(desc(mean_alpha))
-
-task_based_summary
+# set.seed(1)
+# 
+# N_ITER <- 10000
+# task_agr_mean <- c()
+# q_agr_mean <- c()
+# 
+# for(i in 1:N_ITER){
+#   print(i)
+#   dataframe_resampled <- df.mapping.raw %>%
+#     group_by(task_blob_url) %>%
+#     filter(n() >= 10) %>%
+#     slice_sample(n = 2) %>%
+#     select(c(main_questions, task, task_blob_url)) %>%
+#     select(-continuous_questions) %>%
+#     pivot_longer(cols = -c(task, task_blob_url), names_to = "question_name") %>%
+#     mutate(
+#       value = recode(
+#         value,
+#         "Mental" = 0,
+#         "Physical" = 1,
+#         "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+#         "No" = 0,
+#         "Yes" = 1
+#       )
+#     ) %>%
+#     group_by(task, task_blob_url, question_name) %>%
+#   summarize(mean_rating = mean(value, na.rm = T),
+#             n_labels = agree(t(value))$raters,
+#             all_values = paste(value, collapse = " & "),
+#             agreement = ifelse(mean_rating > 0.5, mean_rating, 1-mean_rating),
+#             general.alpha = (agreement-0.5)/(0.5)
+#             )
+#   
+#   task_summary <- dataframe_resampled %>%
+#     group_by(task, task_blob_url) %>%
+#   summarize(
+#     n_labels = round(mean(n_labels),0),
+#     mean_agreement = mean(agreement),
+#     mean_alpha = mean(general.alpha)
+#   ) %>%
+#   arrange(desc(mean_alpha))
+# 
+#   task_agr_mean <- c(task_agr_mean, mean(task_summary$mean_agreement))
+# 
+#   question_summary <- dataframe_resampled %>%
+#   group_by(question_name) %>%
+#   summarize(
+#     n_labels = round(mean(n_labels),0),
+#     mean_agreement = mean(agreement),
+#     mean_alpha = mean(general.alpha)
+#   ) %>%
+#   arrange(desc(mean_alpha))
+#   
+#   q_agr_mean <- c(q_agr_mean, mean(question_summary$mean_agreement))
+#   
+# }
+# 
+# quantile(task_agr_mean, c(0.025, 0.9725))
+# quantile(q_agr_mean, c(0.025, 0.9725))
 ```
 
 Export the task map
@@ -272,11 +319,12 @@ p <- combined_data %>%
   ggplot(aes(
     x = PC1,
     y = PC2,
-    label = task ,
+    label = task,
     fill = cluster
-  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)#, alpha=0.05) +
+  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2) #+ , alpha=0.05) +
+# highlights only the ones in the selected set
   # geom_label(
-  #   data = subset(combined_data, task %in% james_set),
+  #   data = subset(combined_data, task %in% c("NASA Moon survival", "Desert survival")),
   #   aes(
   #     x = PC1,
   #     y = PC2,
@@ -286,7 +334,6 @@ p <- combined_data %>%
   #   nudge_y = 0.1,
   #   size = 2
   # )
-
 p
 
 plot_ly(
@@ -302,6 +349,7 @@ plot_ly(
 fviz_eig(pca)
 ggsave(plot = p, filename = '../task-map.png')
 ```
+
 Analysis of what the first three PC's mean
 ```{r}
 # non-absolute value version
@@ -380,4 +428,60 @@ pivot_longer(cols = -task, names_to = "question_name") %>%
   # drop people who said like, 'no'
   filter(value != 'no problems.' & value != 'Nope' & value != 'No trouble.') %>% 
   arrange(task) %>% write_csv("./qual-feedbacks/task_mapping_feedback-main.csv")
+```
+
+Visualize the original map (Stage 1)
+```{r}
+# get old task map
+df.task_map_old_names <- read_csv('../archive/task_map.csv')
+df.task_map_old <- cbind(df.task_map_old_names[,1],read_csv('../archive/task_map_numeric.csv'))
+
+df.task_map_old <- df.task_map_old %>%
+  filter(task %in% combined_data$task)
+
+set.seed(1)
+pca.old <- df.task_map_old %>%
+  select(-task) %>%
+  select(-effort_physical) %>% # no variation in this column
+  prcomp(scale = T)
+
+# get optimal number of clusters -- "silhouette" method
+fviz_nbclust(x = pca.old$x, FUNcluster = stats::kmeans, method = "silhouette") +
+  labs(subtitle = "Silhouette method")
+
+kmeans.old <- pca.old$x %>%
+  kmeans(centers = 2, nstart = 100) 
+
+combined_old <- cbind(df.task_map_old,
+      pca.old$x, factor(kmeans.old$cluster)) %>%
+  rename(
+    cluster = `factor(kmeans.old$cluster)`
+  )
+
+p.old<- combined_old  %>%
+  ggplot(
+    aes(x = PC1,
+    y = PC2,
+    label = task,
+    fill = cluster
+    )
+  ) + geom_point() + geom_label(nudge_y = 0.8, size = 2) # +
+# 
+#   #highlight similar tasks for sanity check
+#   geom_label(
+#     data = subset(combined_old, task %in% c("NASA Moon survival", "Desert survival")),
+#     aes(
+#       x = PC1,
+#       y = PC2,
+#       label = task ,
+#       fill = cluster
+#     ),
+#     nudge_y = 0.8,
+#     size = 2
+#   )
+
+
+p.old
+ggsave(plot = p.old, filename = './map-visuals/task-map-OLD.png')
+fviz_eig(pca.old)
 ```

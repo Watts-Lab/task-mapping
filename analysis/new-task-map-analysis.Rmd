@@ -127,6 +127,65 @@ ggplot(
 ggsave("26task-mcgrath-ratings.png")
 ```
 
+McGrath - within v. between-category variance
+```
+      Physical = Q1concept_behav,
+      Intellective = Q20type_3_type_4,
+      Planning = Q3type_1_planning,
+      Generative = Q4type_2_generate,
+      `Cognitive Conflict` = Q6type_5_cc,
+      Battle = Q7type_7_battle,
+      Performance = Q8type_8_performance
+```
+
+```{r}
+# get total sum of squares
+mcg_colmeans <- df.mcg %>% select(-c(task, total_mcgrath)) %>% colMeans()
+total_sum_squares <- (((df.mcg %>% select(-c(task, total_mcgrath)))-mcg_colmeans) %>%
+  abs())^2 %>% colSums() %>% sum()
+
+# within category
+physical_category <- df.mcg %>% filter(Q1concept_behav > mean(df.mcg$Q1concept_behav))
+intellective_category <- df.mcg %>% filter(Q20type_3_type_4 > mean(df.mcg$Q20type_3_type_4))
+planning_category <- df.mcg %>% filter(Q3type_1_planning > mean(df.mcg$Q3type_1_planning))
+generative_category <- df.mcg %>% filter(Q4type_2_generate > mean(df.mcg$Q4type_2_generate))
+cc_category <- df.mcg %>% filter(Q6type_5_cc > mean(df.mcg$Q6type_5_cc))
+battle_category <- df.mcg %>% filter(Q7type_7_battle > mean(df.mcg$Q7type_7_battle))
+performance_category <- df.mcg %>% filter(Q8type_8_performance > mean(df.mcg$Q8type_8_performance))
+
+# within-category sum of squares
+calc_SS <- function(df) sum(as.matrix(dist(df)^2)) / (2 * nrow(df))
+
+total_within_ss <- sum(
+  calc_SS(physical_category %>% select(-c(task, total_mcgrath))),
+  calc_SS(intellective_category %>% select(-c(task, total_mcgrath))),
+  calc_SS(planning_category %>% select(-c(task, total_mcgrath))),
+  calc_SS(generative_category %>% select(-c(task, total_mcgrath))),
+  calc_SS(cc_category %>% select(-c(task, total_mcgrath))),
+  calc_SS(battle_category %>% select(-c(task, total_mcgrath))),
+  calc_SS(performance_category %>% select(-c(task, total_mcgrath)))
+)
+
+between_ss <- total_sum_squares-total_within_ss
+```
+
+```{r}
+print("Within SS:")
+calc_SS(physical_category %>% select(-c(task, total_mcgrath)))
+calc_SS(intellective_category %>% select(-c(task, total_mcgrath)))
+calc_SS(planning_category %>% select(-c(task, total_mcgrath)))
+calc_SS(generative_category %>% select(-c(task, total_mcgrath)))
+calc_SS(cc_category %>% select(-c(task, total_mcgrath)))
+calc_SS(battle_category %>% select(-c(task, total_mcgrath)))
+calc_SS(performance_category %>% select(-c(task, total_mcgrath)))
+
+print("Between SS:")
+between_ss
+```
+
+
+# Plotting individual taxonomies
+
 The world according to McGrath
 ```{r}
 set.seed(1)
