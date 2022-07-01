@@ -1,0 +1,346 @@
+---
+title: "new-task-map-analysis"
+output: html_notebook
+---
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+library(factoextra)
+library(NbClust)
+library(cluster)
+library(plotly)
+library(irr)
+library(anytime)
+library(dplyr)
+library(tidyverse)
+```
+
+Read in the Data
+```{r}
+df.mapping.raw <- read_csv('../raw_map.csv')
+task_map <- read_csv('../task_map.csv')
+df.main_questions_summary <- read_csv('../main_question_summary.csv')
+
+task_based_summary <- df.main_questions_summary %>%
+  filter(n_labels > 10) %>%
+  group_by(task, task_blob_url) %>%
+  summarize(
+    n_labels = round(mean(n_labels),0),
+    mean_agreement = mean(agreement),
+    mean_alpha = mean(general.alpha)
+  ) %>%
+  arrange(desc(mean_alpha))
+
+question_based_summary <- df.main_questions_summary %>%
+  filter(n_labels > 10) %>%
+  group_by(question_name) %>%
+  summarize(
+    n_labels = round(mean(n_labels),0),
+    mean_agreement = mean(agreement),
+    mean_alpha = mean(general.alpha)
+  )
+```
+
+Hierarchical Clustering
+```{r, fig.height=8}
+set.seed(1)
+
+# DF of data
+task_PCs <- combined_data %>% select(
+ task, grep("PC", names(combined_data))
+) %>%
+  column_to_rownames("task")
+
+# Find best way to cluster
+# methods to assess
+m <- c( "average", "single", "complete", "ward")
+names(m) <- c( "average", "single", "complete", "ward")
+
+# function to compute coefficient
+ac <- function(x) {
+  agnes(task_PCs, method = x)$ac
+}
+
+map_dbl(m, ac)
+
+
+# Dissimilarity matrix
+d <- dist(task_PCs, method = "euclidean")
+
+# Hierarchical clustering using Complete Linkage
+# Ward's method
+hc5 <- hclust(d, method = "ward.D2" )
+
+# Cut tree into 4 groups
+sub_grp <- cutree(hc5, k = 4)
+
+pdf(file = "task_dendrogram.pdf",
+    height = 6)
+
+# Plot the obtained dendrogram
+plot(hc5, cex = 0.6)
+rect.hclust(hc5, k = 4, border = 2:5)
+
+dev.off()
+```
+
+# Look at "old taxonomies"
+
+```{r}
+df.mcg <- df.main_questions_summary %>%
+  filter(n_labels > 10) %>%
+  ungroup() %>%
+  filter(!is.na(str_match(question_name, "type")) | !is.na(str_match(question_name, "behav"))) %>%
+  select(task, question_name, mean_rating) %>%
+  pivot_wider(names_from = question_name, values_from = mean_rating)
+
+total_mcgrath <- rowSums(df.mcg[c(2:7)])
+
+df.mcg <- cbind(df.mcg, data.frame("total_mcgrath" = total_mcgrath))
+```
+
+```{r fig.height=9, fig.width=7}
+ggplot(
+  df.mcg %>%
+    rename(
+      Physical = Q1concept_behav,
+      Intellective = Q20type_3_type_4,
+      Planning = Q3type_1_planning,
+      Generative = Q4type_2_generate,
+      `Cognitive Conflict` = Q6type_5_cc,
+      Battle = Q7type_7_battle,
+      Performance = Q8type_8_performance
+    ) %>%
+    select(-total_mcgrath) %>%
+    pivot_longer(cols = -task) %>%
+    rename(`Mean Rater Response` = value),
+  aes(x = name, y = task)
+) + geom_tile(aes(fill = `Mean Rater Response`)) + scale_fill_gradient(low = "#CC3363",
+                                                       high = "#07BEB8") + theme(axis.text.x = element_text(
+                                                         angle = 90,
+                                                         vjust = 0.5,
+                                                         hjust = 1
+                                                       )) + 
+  labs(x = "Dimension in McGrath's Taxonomy",
+       y = "Task Name")
+
+ggsave("26task-mcgrath-ratings.png")
+```
+
+The world according to McGrath
+```{r}
+set.seed(1)
+
+pca <- df.mcg %>% #select(-continuous_questions) %>%
+  select(-task, -total_mcgrath) %>%
+  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
+
+# get optimal number of clusters -- "silhouette" method
+fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "silhouette") +
+  labs(subtitle = "Silhouette method")
+
+# get optimal number of clusters -- "wss" elbow method
+fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "wss") +
+  labs(subtitle = "Elbow method")
+
+kmeans_output <- pca$x %>% # 2 is the optimal number
+  kmeans(centers = 2, nstart = 100)
+
+combined_data <- cbind(df.mcg,
+      pca$x, factor(kmeans_output$cluster)) %>%
+  rename(cluster = `factor(kmeans_output$cluster)`)
+ 
+p <- combined_data %>%
+  ggplot(aes(
+    x = PC1,
+    y = PC2,
+    label = task ,
+    fill = cluster
+  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
+p
+```
+
+The world according to Laughlin
+```{r}
+set.seed(1)
+
+df.laughlin <- df.main_questions_summary %>%
+  filter(n_labels > 10) %>%
+  ungroup() %>%
+  filter(
+    question_name %in% c(
+      "Q15dec_verifiability",
+      "Q16shared_knowledge",
+      "Q17within_sys_sol",
+      "Q18ans_recog",
+      "Q19time_solvability",
+      "Q21intellective_judg_1",
+      "Q24eureka_question"
+    )
+  ) %>%  select(task, question_name, mean_rating) %>%
+  pivot_wider(names_from = question_name, values_from = mean_rating)
+
+pca <- df.laughlin %>% #select(-continuous_questions) %>%
+  select(-task) %>%
+  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
+
+# get optimal number of clusters -- "silhouette" method
+fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "silhouette") +
+  labs(subtitle = "Silhouette method")
+
+# get optimal number of clusters -- "wss" elbow method
+fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "wss") +
+  labs(subtitle = "Elbow method")
+
+kmeans_output <- pca$x %>% # 2 is the optimal number
+  kmeans(centers = 2, nstart = 100)
+
+combined_data <- cbind(df.laughlin,
+      pca$x, factor(kmeans_output$cluster)) %>%
+  rename(cluster = `factor(kmeans_output$cluster)`)
+ 
+p <- combined_data %>%
+  ggplot(aes(
+    x = PC1,
+    y = PC2,
+    label = task ,
+    fill = cluster
+  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
+p
+```
+
+The world according to Shaw
+```{r}
+set.seed(1)
+
+df.shaw <- df.main_questions_summary %>%
+  filter(n_labels > 10) %>%
+  ungroup() %>%
+  filter(
+    question_name %in% c(
+      "Q2intel_manip_1",
+      "Q13outcome_multip",
+      "Q14sol_scheme_mul"
+    )
+  ) %>%  select(task, question_name, mean_rating) %>%
+  pivot_wider(names_from = question_name, values_from = mean_rating)
+
+pca <- df.shaw %>% #select(-continuous_questions) %>%
+  select(-task) %>%
+  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
+
+# get optimal number of clusters -- "silhouette" method
+fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "silhouette") +
+  labs(subtitle = "Silhouette method")
+
+# get optimal number of clusters -- "wss" elbow method
+fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "wss") +
+  labs(subtitle = "Elbow method")
+
+kmeans_output <- pca$x %>% # 2 is the optimal number
+  kmeans(centers = 2, nstart = 100)
+
+combined_data <- cbind(df.shaw,
+      pca$x, factor(kmeans_output$cluster)) %>%
+  rename(cluster = `factor(kmeans_output$cluster)`)
+ 
+p <- combined_data %>%
+  ggplot(aes(
+    x = PC1,
+    y = PC2,
+    label = task ,
+    fill = cluster
+  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
+p
+```
+The world according to Steiner
+```{r}
+set.seed(1)
+
+df.steiner <- df.main_questions_summary %>%
+  filter(n_labels > 10) %>%
+  ungroup() %>%
+  filter(
+    question_name %in% c(
+      "Q9divisible_unitary",
+      "Q10maximizing",
+      "Q11optimizing"
+    )
+  ) %>%  select(task, question_name, mean_rating) %>%
+  pivot_wider(names_from = question_name, values_from = mean_rating)
+
+pca <- df.steiner %>% #select(-continuous_questions) %>%
+  select(-task) %>%
+  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
+
+# get optimal number of clusters -- "silhouette" method
+fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "silhouette") +
+  labs(subtitle = "Silhouette method")
+
+# get optimal number of clusters -- "wss" elbow method
+fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "wss") +
+  labs(subtitle = "Elbow method")
+
+kmeans_output <- pca$x %>% # 2 is the optimal number
+  kmeans(centers = 3, nstart = 100)
+
+combined_data <- cbind(df.steiner,
+      pca$x, factor(kmeans_output$cluster)) %>%
+  rename(cluster = `factor(kmeans_output$cluster)`)
+ 
+p <- combined_data %>%
+  ggplot(aes(
+    x = PC1,
+    y = PC2,
+    label = task ,
+    fill = cluster
+  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
+p
+```
+
+The world according to Zigurs
+```{r}
+set.seed(1)
+
+df.zigurs <- df.main_questions_summary %>%
+  filter(n_labels > 10) %>%
+  ungroup() %>%
+  filter(
+    question_name %in% c(
+      "Q13outcome_multip",
+      "Q14sol_scheme_mul",
+      "Q22confl_tradeoffs",
+      "Q23ss_out_uncert"
+    )
+  ) %>%  select(task, question_name, mean_rating) %>%
+  pivot_wider(names_from = question_name, values_from = mean_rating)
+
+pca <- df.zigurs %>% #select(-continuous_questions) %>%
+  select(-task) %>%
+  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
+
+# get optimal number of clusters -- "silhouette" method
+fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "silhouette") +
+  labs(subtitle = "Silhouette method")
+
+# get optimal number of clusters -- "wss" elbow method
+fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "wss") +
+  labs(subtitle = "Elbow method")
+
+kmeans_output <- pca$x %>% # 2 is the optimal number
+  kmeans(centers = 2, nstart = 100)
+
+combined_data <- cbind(df.zigurs,
+      pca$x, factor(kmeans_output$cluster)) %>%
+  rename(cluster = `factor(kmeans_output$cluster)`)
+ 
+p <- combined_data %>%
+  ggplot(aes(
+    x = PC1,
+    y = PC2,
+    label = task ,
+    fill = cluster
+  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
+p
+```
+
