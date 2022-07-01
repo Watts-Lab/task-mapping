@@ -138,6 +138,7 @@ df.main_questions_summary <- df.mapping.raw %>%
 df.main_questions_summary %>% write_csv('../main_question_summary.csv')
 ```
 
+Inter-Rater Reliability:
 Select 2 raters at random and bootstrap a situation where we have only 2 -- this will mimic stage 1
 
 ```{r}
@@ -378,6 +379,7 @@ PC3:
 - Whether you can know you're right before the game ends / whether there are many possible solutions
 
 # Set up Data Export for Karger's Algo
+Currently renamed this to `task_map_long`
 
 ```{r}
 df.karger <- df.mapping.raw %>%
@@ -387,16 +389,16 @@ df.karger <- df.mapping.raw %>%
   mutate(
     value = recode(
       value,
-      "Mental" = -1,
+      "Mental" = 0,
       "Physical" = 1,
       #"Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
-      "No" = -1,
+      "No" = 0,
       "Yes" = 1
     )
   ) %>% ungroup() %>%
   select(user, question_name, task, value)
 
-df.karger %>% write_csv('df_for_karger_MAIN.csv')
+df.karger %>% write_csv('task_map_long.csv')
 ```
 
 # How well did the people who showed up today do on the pre-test?
