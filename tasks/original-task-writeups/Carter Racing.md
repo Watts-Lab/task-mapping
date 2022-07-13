@@ -11,6 +11,8 @@ Kray, Laura J., and Adam D. Galinsky. "The debiasing effect of counterfactual mi
 
 Link: https://www.researchgate.net/profile/Laura-Kray-2/publication/222830434_The_debiasing_effect_of_counterfactual_mind-sets_Increasing_the_search_for_disconfirmatory_information_in_group_decisions/links/5aa56ac60f7e9badd9ab57df/The-debiasing-effect-of-counterfactual-mind-sets-Increasing-the-search-for-disconfirmatory-information-in-group-decisions.pdf
 
+Another version of this task: https://osf.io/nyxwg
+
 Pre-task prime:
 Galinsky, A. D., & Moskowitz, G. B. (2000). Counterfactuals as behavioral primes: Priming the simulation heuristic and consideration of alternatives. Journal of Experimental Social Psychology,
 36, 257–383
