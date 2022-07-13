@@ -41,6 +41,101 @@ question_based_summary <- df.main_questions_summary %>%
   )
 ```
 
+# Confidence Judgements and Consensus
+
+```{r}
+df.confidence_scores_raw <- df.mapping.raw %>%
+  select(c(task, grep('confidence', names(df.mapping.raw)))) %>%
+  pivot_longer(-task, names_to = "question") %>%
+  mutate(
+    value = recode(
+    value,
+    "Very confident" = 5,
+    "Confident" = 4,
+    "Neutral" = 3,
+    "Not confident" = 2,
+    "Not at all confident" =1
+  )) %>%
+  mutate(question = gsub("_confidence", "", question))
+
+# This is z-scored by individual user
+df.confidence_scores_zscore <- df.mapping.raw %>%
+  select(c(task, user, grep('confidence', names(df.mapping.raw)))) %>%
+  pivot_longer(-c(task, user), names_to = "question") %>%
+  mutate(
+    value = recode(
+    value,
+    "Very confident" = 5,
+    "Confident" = 4,
+    "Neutral" = 3,
+    "Not confident" = 2,
+    "Not at all confident" =1
+  )) %>%
+  group_by(user) %>%
+  mutate(
+    value = scale(value)
+  ) %>% mutate(question = gsub("_confidence", "", question)) %>% ungroup()
+```
+
+There is a very strong correlation between the confidence scores and the level of agreement -- about 0.77. This relationship holds regardless of whether you z-score the confidence scores (which helps to account for individual-level variation in assigning confidence).
+
+```{r}
+# Task-based confidence
+zscored_confidence_by_task <- df.confidence_scores_zscore %>%
+  group_by(task) %>%
+  summarize(
+    mean_confidence = mean(value, na.rm = T)
+  )
+
+task_based_confidence <- inner_join(task_based_summary, zscored_confidence_by_task, by = "task")
+
+cor.test(task_based_confidence$mean_agreement, task_based_confidence$mean_confidence)
+
+# Question-based confidence
+zscored_confidence_by_question <- df.confidence_scores_zscore %>%
+  group_by(question) %>%
+  summarize(
+    mean_confidence = mean(value, na.rm = T)
+  )
+
+question_based_confidence <- inner_join(question_based_summary, zscored_confidence_by_question, by = c("question_name"="question"))
+
+cor.test(question_based_confidence$mean_agreement, question_based_confidence$mean_confidence)
+```
+
+A version of the above with the original ordinal variables (non-normalized)
+```{r}
+# Task-based confidence
+confidence_by_task <- df.confidence_scores %>%
+  group_by(task) %>%
+  summarize(
+    mean_confidence = mean(value, na.rm = T)
+  )
+
+task_based_confidence <- inner_join(task_based_summary, confidence_by_task, by = "task")
+
+cor.test(task_based_confidence$mean_agreement, task_based_confidence$mean_confidence)
+
+# Question-based confidence
+confidence_by_question <- df.confidence_scores %>%
+  group_by(question) %>%
+  summarize(
+    mean_confidence = mean(value, na.rm = T)
+  )
+
+question_based_confidence <- inner_join(question_based_summary, confidence_by_question, by = c("question_name"="question"))
+
+cor.test(question_based_confidence$mean_agreement, question_based_confidence$mean_confidence)
+```
+
+```{r}
+ggplot(task_based_confidence, 
+       aes(x = mean_agreement,
+           y = mean_confidence)) +
+  geom_point() + 
+  labs(title ="Per Task: Level of Rater Agreement v. Mean Normalized Rater Confidence")
+```
+
 Hierarchical Clustering
 ```{r, fig.height=8}
 set.seed(1)
