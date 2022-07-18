@@ -1762,152 +1762,29 @@ pre code {
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxua25pdHI6Om9wdHNfY2h1bmskc2V0KGVjaG8gPSBUUlVFKVxubGlicmFyeShmYWN0b2V4dHJhKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxua25pdHI6Om9wdHNfY2h1bmskc2V0KGVjaG8gPSBUUlVFKVxubGlicmFyeShmYWN0b2V4dHJhKVxubGlicmFyeShOYkNsdXN0KVxubGlicmFyeShjbHVzdGVyKVxubGlicmFyeShwbG90bHkpXG5saWJyYXJ5KGlycilcbmxpYnJhcnkoYW55dGltZSlcbmxpYnJhcnkoZHBseXIpXG5saWJyYXJ5KHRpZHl2ZXJzZSlcbmBgYCJ9 -->
 <pre class="r"><code>knitr::opts_chunk$set(echo = TRUE)
-library(factoextra)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiTG9hZGluZyByZXF1aXJlZCBwYWNrYWdlOiBnZ3Bsb3QyXG5XZWxjb21lISBXYW50IHRvIGxlYXJuIG1vcmU/IFNlZSB0d28gZmFjdG9leHRyYS1yZWxhdGVkIGJvb2tzIGF0IGh0dHBzOi8vZ29vLmdsL3ZlM1dCYVxuIn0= -->
-<pre><code>Loading required package: ggplot2
-Welcome! Want to learn more? See two factoextra-related books at https://goo.gl/ve3WBa</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShOYkNsdXN0KVxubGlicmFyeShjbHVzdGVyKVxubGlicmFyeShwbG90bHkpXG5gYGAifQ== -->
-<pre class="r"><code>library(NbClust)
+library(factoextra)
+library(NbClust)
 library(cluster)
-library(plotly)</code></pre>
+library(plotly)
+library(irr)
+library(anytime)
+library(dplyr)
+library(tidyverse)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUmVnaXN0ZXJlZCBTMyBtZXRob2Qgb3ZlcndyaXR0ZW4gYnkgJ2RhdGEudGFibGUnOlxuICBtZXRob2QgICAgICAgICAgIGZyb21cbiAgcHJpbnQuZGF0YS50YWJsZSAgICAgXG5SZWdpc3RlcmVkIFMzIG1ldGhvZCBvdmVyd3JpdHRlbiBieSAnaHRtbHdpZGdldHMnOlxuICBtZXRob2QgICAgICAgICAgIGZyb20gICAgICAgICBcbiAgcHJpbnQuaHRtbHdpZGdldCB0b29sczpyc3R1ZGlvXG5cbkF0dGFjaGluZyBwYWNrYWdlOiDigJhwbG90bHnigJlcblxuVGhlIGZvbGxvd2luZyBvYmplY3QgaXMgbWFza2VkIGZyb20g4oCYcGFja2FnZTpnZ3Bsb3Qy4oCZOlxuXG4gICAgbGFzdF9wbG90XG5cblRoZSBmb2xsb3dpbmcgb2JqZWN0IGlzIG1hc2tlZCBmcm9tIOKAmHBhY2thZ2U6c3RhdHPigJk6XG5cbiAgICBmaWx0ZXJcblxuVGhlIGZvbGxvd2luZyBvYmplY3QgaXMgbWFza2VkIGZyb20g4oCYcGFja2FnZTpncmFwaGljc+KAmTpcblxuICAgIGxheW91dFxuIn0= -->
-<pre><code>Registered S3 method overwritten by &#39;data.table&#39;:
-  method           from
-  print.data.table     
-Registered S3 method overwritten by &#39;htmlwidgets&#39;:
-  method           from         
-  print.htmlwidget tools:rstudio
-
-Attaching package: ‘plotly’
-
-The following object is masked from ‘package:ggplot2’:
-
-    last_plot
-
-The following object is masked from ‘package:stats’:
-
-    filter
-
-The following object is masked from ‘package:graphics’:
-
-    layout</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShpcnIpXG5gYGAifQ== -->
-<pre class="r"><code>library(irr)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiTG9hZGluZyByZXF1aXJlZCBwYWNrYWdlOiBscFNvbHZlXG4ifQ== -->
-<pre><code>Loading required package: lpSolve</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShhbnl0aW1lKVxubGlicmFyeShkcGx5cilcbmBgYCJ9 -->
-<pre class="r"><code>library(anytime)
-library(dplyr)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5BdHRhY2hpbmcgcGFja2FnZTog4oCYZHBseXLigJlcblxuVGhlIGZvbGxvd2luZyBvYmplY3RzIGFyZSBtYXNrZWQgZnJvbSDigJhwYWNrYWdlOnN0YXRz4oCZOlxuXG4gICAgZmlsdGVyLCBsYWdcblxuVGhlIGZvbGxvd2luZyBvYmplY3RzIGFyZSBtYXNrZWQgZnJvbSDigJhwYWNrYWdlOmJhc2XigJk6XG5cbiAgICBpbnRlcnNlY3QsIHNldGRpZmYsIHNldGVxdWFsLCB1bmlvblxuIn0= -->
-<pre><code>
-Attaching package: ‘dplyr’
-
-The following objects are masked from ‘package:stats’:
-
-    filter, lag
-
-The following objects are masked from ‘package:base’:
-
-    intersect, setdiff, setequal, union</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh0aWR5dmVyc2UpXG5gYGAifQ== -->
-<pre class="r"><code>library(tidyverse)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUmVnaXN0ZXJlZCBTMyBtZXRob2RzIG92ZXJ3cml0dGVuIGJ5ICdkYnBseXInOlxuICBtZXRob2QgICAgICAgICBmcm9tXG4gIHByaW50LnRibF9sYXp5ICAgICBcbiAgcHJpbnQudGJsX3NxbCAgICAgIFxu4pSA4pSAIEF0dGFjaGluZyBwYWNrYWdlcyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAgdGlkeXZlcnNlIDEuMy4xIOKUgOKUgFxu4pyTIHRpYmJsZSAgMy4xLjYgICAgIOKckyBwdXJyciAgIDAuMy40XG7inJMgdGlkeXIgICAxLjIuMCAgICAg4pyTIHN0cmluZ3IgMS40LjBcbuKckyByZWFkciAgIDIuMS4xICAgICDinJMgZm9yY2F0cyAwLjUuMVxu4pSA4pSAIENvbmZsaWN0cyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAgdGlkeXZlcnNlX2NvbmZsaWN0cygpIOKUgOKUgFxueCB0aWR5cjo6ZXhwYW5kKCkgbWFza3MgTWF0cml4OjpleHBhbmQoKVxueCBkcGx5cjo6ZmlsdGVyKCkgbWFza3MgcGxvdGx5OjpmaWx0ZXIoKSwgc3RhdHM6OmZpbHRlcigpXG54IGRwbHlyOjpsYWcoKSAgICBtYXNrcyBzdGF0czo6bGFnKClcbnggdGlkeXI6OnBhY2soKSAgIG1hc2tzIE1hdHJpeDo6cGFjaygpXG54IHRpZHlyOjp1bnBhY2soKSBtYXNrcyBNYXRyaXg6OnVucGFjaygpXG4ifQ== -->
-<pre><code>Registered S3 methods overwritten by &#39;dbplyr&#39;:
-  method         from
-  print.tbl_lazy     
-  print.tbl_sql      
-── Attaching packages ───────────────────────────────────────────────── tidyverse 1.3.1 ──
-✓ tibble  3.1.6     ✓ purrr   0.3.4
-✓ tidyr   1.2.0     ✓ stringr 1.4.0
-✓ readr   2.1.1     ✓ forcats 0.5.1
-── Conflicts ──────────────────────────────────────────────────── tidyverse_conflicts() ──
-x tidyr::expand() masks Matrix::expand()
-x dplyr::filter() masks plotly::filter(), stats::filter()
-x dplyr::lag()    masks stats::lag()
-x tidyr::pack()   masks Matrix::pack()
-x tidyr::unpack() masks Matrix::unpack()</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Read in the Data</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGYubWFwcGluZy5yYXcgPC0gcmVhZF9jc3YoJy4uL3Jhd19tYXAuY3N2JylcbmBgYCJ9 -->
-<pre class="r"><code>df.mapping.raw &lt;- read_csv(&#39;../raw_map.csv&#39;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUm93czogMTcwOSBDb2x1bW5zOiA3OFxu4pSA4pSAIENvbHVtbiBzcGVjaWZpY2F0aW9uIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgFxuRGVsaW1pdGVyOiBcIixcIlxuY2hyICg3Mik6IFExY29uY2VwdF9iZWhhdiwgUTFjb25jZXB0X2JlaGF2X2VsYWJvcmF0aW9uLCBRMWNvbmNlcHRfYmVoYXZfY29uZmlkZW5jZSwgUTIuLi5cbmRibCAgKDUpOiBRMmludGVsX21hbmlwXzEsIFE1Y3JlYXRpdml0eV9pbnB1dF8xLCBRMjFpbnRlbGxlY3RpdmVfanVkZ18xLCBjcmVhdGVkQXQsIHVwLi4uXG5sZ2wgICgxKTogcGxhdGZvcm1cblxu4oS5IFVzZSBgc3BlYygpYCB0byByZXRyaWV2ZSB0aGUgZnVsbCBjb2x1bW4gc3BlY2lmaWNhdGlvbiBmb3IgdGhpcyBkYXRhLlxu4oS5IFNwZWNpZnkgdGhlIGNvbHVtbiB0eXBlcyBvciBzZXQgYHNob3dfY29sX3R5cGVzID0gRkFMU0VgIHRvIHF1aWV0IHRoaXMgbWVzc2FnZS5cbiJ9 -->
-<pre><code>Rows: 1709 Columns: 78
-── Column specification ──────────────────────────────────────────────────────────────────
-Delimiter: &quot;,&quot;
-chr (72): Q1concept_behav, Q1concept_behav_elaboration, Q1concept_behav_confidence, Q2...
-dbl  (5): Q2intel_manip_1, Q5creativity_input_1, Q21intellective_judg_1, createdAt, up...
-lgl  (1): platform
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFza19tYXAgPC0gcmVhZF9jc3YoJy4uL3Rhc2tfbWFwLmNzdicpXG5gYGAifQ== -->
-<pre class="r"><code>task_map &lt;- read_csv(&#39;../task_map.csv&#39;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUm93czogNzEgQ29sdW1uczogMjRcbuKUgOKUgCBDb2x1bW4gc3BlY2lmaWNhdGlvbiDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIBcbkRlbGltaXRlcjogXCIsXCJcbmNociAgKDEpOiB0YXNrXG5kYmwgKDIzKTogUTFjb25jZXB0X2JlaGF2LCBRM3R5cGVfMV9wbGFubmluZywgUTR0eXBlXzJfZ2VuZXJhdGUsIFE2dHlwZV81X2NjLCBRN3R5cGVfNy4uLlxuXG7ihLkgVXNlIGBzcGVjKClgIHRvIHJldHJpZXZlIHRoZSBmdWxsIGNvbHVtbiBzcGVjaWZpY2F0aW9uIGZvciB0aGlzIGRhdGEuXG7ihLkgU3BlY2lmeSB0aGUgY29sdW1uIHR5cGVzIG9yIHNldCBgc2hvd19jb2xfdHlwZXMgPSBGQUxTRWAgdG8gcXVpZXQgdGhpcyBtZXNzYWdlLlxuIn0= -->
-<pre><code>Rows: 71 Columns: 24
-── Column specification ──────────────────────────────────────────────────────────────────
-Delimiter: &quot;,&quot;
-chr  (1): task
-dbl (23): Q1concept_behav, Q3type_1_planning, Q4type_2_generate, Q6type_5_cc, Q7type_7...
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGYubWFpbl9xdWVzdGlvbnNfc3VtbWFyeSA8LSByZWFkX2NzdignLi4vbWFpbl9xdWVzdGlvbl9zdW1tYXJ5LmNzdicpXG5gYGAifQ== -->
-<pre class="r"><code>df.main_questions_summary &lt;- read_csv(&#39;../main_question_summary.csv&#39;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUm93czogMTQ4MCBDb2x1bW5zOiA4XG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5EZWxpbWl0ZXI6IFwiLFwiXG5jaHIgKDQpOiB0YXNrLCB0YXNrX2Jsb2JfdXJsLCBxdWVzdGlvbl9uYW1lLCBhbGxfdmFsdWVzXG5kYmwgKDQpOiBtZWFuX3JhdGluZywgbl9sYWJlbHMsIGFncmVlbWVudCwgZ2VuZXJhbC5hbHBoYVxuXG7ihLkgVXNlIGBzcGVjKClgIHRvIHJldHJpZXZlIHRoZSBmdWxsIGNvbHVtbiBzcGVjaWZpY2F0aW9uIGZvciB0aGlzIGRhdGEuXG7ihLkgU3BlY2lmeSB0aGUgY29sdW1uIHR5cGVzIG9yIHNldCBgc2hvd19jb2xfdHlwZXMgPSBGQUxTRWAgdG8gcXVpZXQgdGhpcyBtZXNzYWdlLlxuIn0= -->
-<pre><code>Rows: 1480 Columns: 8
-── Column specification ──────────────────────────────────────────────────────────────────
-Delimiter: &quot;,&quot;
-chr (4): task, task_blob_url, question_name, all_values
-dbl (4): mean_rating, n_labels, agreement, general.alpha
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFza19iYXNlZF9zdW1tYXJ5IDwtIGRmLm1haW5fcXVlc3Rpb25zX3N1bW1hcnkgJT4lXG4gIGZpbHRlcihuX2xhYmVscyA+IDEwKSAlPiVcbiAgZ3JvdXBfYnkodGFzaywgdGFza19ibG9iX3VybCkgJT4lXG4gIHN1bW1hcml6ZShcbiAgICBuX2xhYmVscyA9IHJvdW5kKG1lYW4obl9sYWJlbHMpLDApLFxuICAgIG1lYW5fYWdyZWVtZW50ID0gbWVhbihhZ3JlZW1lbnQpLFxuICAgIG1lYW5fYWxwaGEgPSBtZWFuKGdlbmVyYWwuYWxwaGEpXG4gICkgJT4lXG4gIGFycmFuZ2UoZGVzYyhtZWFuX2FscGhhKSlcbmBgYCJ9 -->
-<pre class="r"><code>task_based_summary &lt;- df.main_questions_summary %&gt;%
-  filter(n_labels &gt; 10) %&gt;%
-  group_by(task, task_blob_url) %&gt;%
-  summarize(
-    n_labels = round(mean(n_labels),0),
-    mean_agreement = mean(agreement),
-    mean_alpha = mean(general.alpha)
-  ) %&gt;%
-  arrange(desc(mean_alpha))</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiYHN1bW1hcmlzZSgpYCBoYXMgZ3JvdXBlZCBvdXRwdXQgYnkgJ3Rhc2snLiBZb3UgY2FuIG92ZXJyaWRlIHVzaW5nIHRoZSBgLmdyb3Vwc2BcbmFyZ3VtZW50LlxuIn0= -->
-<pre><code>`summarise()` has grouped output by &#39;task&#39;. You can override using the `.groups`
-argument.</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucXVlc3Rpb25fYmFzZWRfc3VtbWFyeSA8LSBkZi5tYWluX3F1ZXN0aW9uc19zdW1tYXJ5ICU+JVxuICBmaWx0ZXIobl9sYWJlbHMgPiAxMCkgJT4lXG4gIGdyb3VwX2J5KHF1ZXN0aW9uX25hbWUpICU+JVxuICBzdW1tYXJpemUoXG4gICAgbl9sYWJlbHMgPSByb3VuZChtZWFuKG5fbGFiZWxzKSwwKSxcbiAgICBtZWFuX2FncmVlbWVudCA9IG1lYW4oYWdyZWVtZW50KSxcbiAgICBtZWFuX2FscGhhID0gbWVhbihnZW5lcmFsLmFscGhhKVxuICApXG5gYGAifQ== -->
-<pre class="r"><code>question_based_summary &lt;- df.main_questions_summary %&gt;%
-  filter(n_labels &gt; 10) %&gt;%
-  group_by(question_name) %&gt;%
-  summarize(
-    n_labels = round(mean(n_labels),0),
-    mean_agreement = mean(agreement),
-    mean_alpha = mean(general.alpha)
-  )</code></pre>
-<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImdyb3VwZWRfZGYiLCJ0YmxfZGYiLCJ0YmwiLCJkYXRhLmZyYW1lIl0sIm5yb3ciOjcyLCJuY29sIjo1LCJzdW1tYXJ5Ijp7IkEgdGliYmxlIjpbIjcyIMOXIDUiXSwiR3JvdXBzIjpbInRhc2sgWzcyXSJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUE2MWFDNVFjVlprZTh3SmlYaVFSd1VBb0Z6Z213Q1JWOTlhOVZaZEZMN01KQ1FGQ0lBbEVCWVAzT2RPa3Aydm9SeUE1Nnl2aGdDRG83aXFzQ0JzOG9ndklBbnZrc2VpdTYrS0QxU01CUEtpN2dMcUdKSk9aNlVFWE40aTg5NnVaN3NuUVI1ZXo1MVNmVEtyN1Z0Vzk5Ly8vNy8vKzcrK3U5U3MvU0dkK2NHWlhWOWZVcm1udm1OSTFkVHJlZGsyL2NPT3E3clNyYTlvVWZIaEgxN1N1SS9MamxiaG9RWDRXZi9Qd2QxYnJ4R3dSck16cXdmblZUSmRkZjJ0dzNubzNVTTFzdzVRcXZZR3ExbXV0OFpQWFpsVlZEdFk3VmNzcStia2xLMHMxVXhvb2x5cXF1aTNvTWZWU1ZnbFdxSnBiMnJyanp6WmxWUnVZckgrZzdNWk85cGEydWtvd2dFbUR6QWRYNEd6cnloa2JHamJiMG1oOW1yUGVHVlV1QjdWNlZpMjU5dnJ2dXFoVWEyQUQ2NnpWK2RtTnF0cnI2bTFMV3JlVStsWHZ4QjBudDlhdjFPclZ4dmoyZkRYckQxUlFhK2lhRzlzRWRsWjMxZllkUjY5dXVGb3RONjdlNTNCbnRlcktLcit4ZGY2a1AyNVJyUTZUOHJ2R1oydGR2T2pDU3MxVVZUOThPMlpyTFZpaUtxb1hJN1cyaHhadWFQVDNxMnBwdXd0eVp6YXc5c1JhUzg4cVdZdkpmYW0zVVhXMW9GVEJ4Z2RLcG81UHdaS1d2UnRWYlV0N3NpTmJZL2xhUWJsVW00amMvQjRORHloVEQzcXJKUnZVY1UvcnpIdk9yTlhoc3JHOUQrU2V5MTJpQXAxbFd6b2N1N1ZrWFZhYldFbFZMQnhwQVo3K2JKSi9ncDV5T1RQajgySFBXYU5xTUdjOUM0Q29NY05iMXkzZVZDcGJvL3FEMVZrMXEvUm1OUlVzK1hBR1dHMUZMQ2J3ODg2TjJ3YnltWHBWdjJzTkhiVXBSOS83YXNFR1YzYmpJZDE0eUp4akFVN2JqbDUvcVdKenArWHYzYllKVU14ZWdlZzFFS1dnWDIxdlR6dDdVN1UwdHVrY2N0dmFNRnhSTGRWS05WdzNrRytqTlJyRDlpMkJ3ZVd3VEc4TEJyS0J4amhHVGcycSthbnhVT09NVi8ybGNnblJyYmRubkwyaEx4dWJLeGdvcTdiUFRqNTNISUxkOWF5NzB1alhlSnU3Szg5SUlNWlV0dzNVYzk4TjlHMXIreVZZcjBybGFxWnNzRDZESmNHS3lRaWY1S3laYTFVTk0rZU9hSTBjTnluZXF3Q0lQSjh1YUtoS2ZjeWNkcUwxV0lTaFhxcTVmbGVwQjFlTXU2WjE4cGdOU1BqNjJBUXFzTTVzeVJGakZFeHVnNjBGR0ZXclphWTBPWGtPWDlHSDZ3OGwyL0ZuTmt3WnNGS0lVVlZ0ZGVXeEFLaXlxdzNnb29uYjVxN0h1VW90V0t2cTFaS1oyT1hDSHV5cnJ4OXBhTnJ1Q3FJL0F1dXhYWlNEeThldGJFY2lXcWN2QTM0Q0RicXlRYStyT0hCYmFic2FKNG1zQ3ZSTzBOejVmZHVxRTVnOGFvV3F1MTd3VXV2YWdiZHc1OEwxV2M0dlNPUGV5cGp6SnVYYVpOLzN1cXljOVpiZ3FBQVd3S3kyVlF2V04vSTBSOGhLZ1c2QWlVQkhiWGV0Um1SemI2OG9OMXpRSFd4MDFTcjJVYXNIUGZXNk11MWxqdCtVbGYycFFXK202Z0d5RkxIUkdwbWR1N2hTOHhQa2RPci95UzRibktxYXZueW5rd25tdURWQUV3elk2a0IwL1ZsRldaZFRYK1V0bERMNzNOeXdqcHB5N1BtTmNjejRMTXVURW94Z1duNmNDT2lDMVRuSVFhNWxqT1k1UEduT2NhNFB4cmZWanNSR0pQWjVJTHJlUHNTeFVkYTF5ZGhmdExGYTJscFN3ZHBHdVk0YWhTVHB5NEFlb0wyMGZXSldUTENxVk91YmZOL2NsYTRHOEtOQ1ZMZVd0cXB5ZTNQalM0OUJZMTJwUEpsMFpxM0phMDVRVlpPeVpORlpqWnFHWTJwakliZ0NIcXQxQm1EMkN0UU1zTkI2WlE3ZE4yOVZUbHBqN0tXdUxQVTMydjZiZjE3UGhwNWdMUml5YzJOTDNqSk5zT1RNSzVFOHBSeDdyb3BNcWdVWElaY0ExSFlNaituSkExdDNlYUNCUHV0eXFFNzI5VHMzOVNuVDNkTzlOaXUzZlRKbnc0Q0M2MVpsMVhyMUVCN2ZzekpuNjk0YzVUMkhjbjJ5WnhadnpBSzNWWmtHUWgzQWNSV1VpL3Fob1FudUhhc0Y5V0NUSzVmYms3TzNvN2hneVpyK2dReUpsbGZYQ1J2ZkttOThYNzArVUR0dCtYSTFVRnJXQzdabzZHV28zY3VyRG5jdTM2VHE5VnIzdVVvdno2M3Zickg4Y2x5M1hKY3pYVnRPbzlEeGxDcktRc3VwVHduVFdsQWRwOFE3NnB3S2RaS0lrTnRpVmt1TWN5YUpWQ2c4VHpnVEl2RXM0aEdKSXk1MEZETnF1ZkhXRmJTYXN6cWhpWGFFQzZKalpnUVhLckdNeFRIRllwSFFxU0tKRjFGQm50UnhTR2pJbklwaUhUbm1mY29wSVpRUm1vVFVhWlpxbW9ZSksyYTF5QmtiR1JhbFJrVThaUXBCU2doeEtxVUU3eHczQXZIa29TcG9OWjF3cjNnc0RMRWlUV051cUkrU0pGR0dtREIyQ2NmNlBvbDlNYXQ1RlZJZmFtNTBLcmpoOEIyeE9rWGNPSWxURzNGTFNhd1F5b0pRWWhSVGxEQkFMOVJFMlZTRU1kR1d3anpHYUtoVEFwdVRLQ3pJTmg3YVdKT0lleHBSd1V6S0NlemtvWEVoY28vNzFGZ2ZwYXFndUZtTHpSTUtDVU9VYzVHSmVlSmpZbU1icHNxa0ZwbmdoSXRDWGN4cXFWT0N4a1NsU1J3UkJrU29OSXc5cFlrTmZjSjBwQld3U1d4QmNhT2g4WkZSQ0JjVkVST2MyZ2lCREdQS1ZPbzhrQ280WU9wTU1hdHBvV0lXdVFoUm95NUpMVFdlaThnNUVTT1NMRExhQyt0VFZ4QktoUElhTEttRU01ell5Q08vT0UxcEZCR2R3cWd3alUza0ZYTUZvWVNIRVkwakZZTVJZdzdTVEZLUlJscXp4S1RLQWZxR094dEZCWGxTSlQ3UFlNTUFTdTlTbU1SUkRZakNHdDR3eXhJZEpsaE5GTE1hU1VMdmt6Q09JZ2RVR3F0VXlFM2tLTGRlRUJjblZvVXVqazFCR1pBbmQ1ekdDZkdXYXA2QWtWUDRrTVFzZ1ZuTVIwQ2tjdHpIQldFeUVpUWtJT1VrMUVobnlvVURXM2xGMDFRN3BBRFNBeFV1TGFpYXBncUVKVURMaWRiVXBvNDViMGhNT1lwcHFKbFFOT1NPTXNjTFdvMkp5QkFVMFRneFFvblVHa0lNRWdDQlkyR2NoTXpTU0ZsUGlsa3R6cDJWT01GUmNiUk9mQXJNUjU3NE1LVTVMd3NMWXZhV0Y2UVVZbU00RnJGZzRFVEZMaFd4U0VVa2pIRmc1empuRXM4Tjh3VXBCWmRxeEN6UzRFT1Rwa0pwYTVuaUVENE82aWNTY1l6MEp6d3NhRFVDOTRVOEJVT0NubzBBU2dUemxxVXhnOURUSmtIOGhHZEZzYkpCTGhFU0tnSVptMkJSdUM1VVZsTkdFMm9jRkFQRExsQ1RDbG90aG1aRjRPQTBsYUtZSmhhNUZ6S0N3SUZTZ0ZDUUdWQlpFRXA4Q3BWTUVyQUlVa0FiSVRTaDFGb0ZRVXVodWFoSkZNRGpDNm80VUNHTVFCQWc0Nmhob0EvUUZHb1B3WEpnTTBjODQ1UkNBaGJrU2NZVlJ6bTFXcUhLUUl4RHNjS3pWTm1RY3FnSXVEU052QzZvQm5EbExGd1dFaVF5RTBBSFliRkpRdzY1QlZIRXdKWXNSdGRUa0hxbGptb1RpaGdTVWp1ZnhpQi9ORG5DMjVBb1RSMGpVUkttcVNrSUpkRGd5Z2xCRTY5REhsdmxERlF6UzdnT0ViSXdFa2g2Q3BGVWtKNE1CWXNUcmFCTG5GRFd4UVMweVVnU1craTlGT01JSUlGM0MyTGxoQkxVR0xRMGloa1RRaW5uRFVEb0FWR0Jyc0JhejZDZnJTZ0tKU2F2TVNndEVZL1J4WEdhRUIxQ0dxaFVDMnVzc0pCN05xSUZvUVJFWmNOSXUwaWh5L0FXa2doQ0VpcGRSOTRnY0VrdWdWeWlDMW9OVEU4cHRBazRnM0FIc1NCNHFERkFrZklXcVc0OFRJdEpRVndTZ2o4OHBIZ3FLTHBlY0NMb0N6MjRBRk1iRGxmYUtGSGNKd1hwRWtLMEF1YlFEc09WYU5vU0dzVU81Z0dhSUM3dU9Mb0NEZFFXc3hwb01JNkF1Y1R3Vk1WQUJJU0tjY1NnQ1NZcEpGS2NwalNCWUNuSWt4RWd3S0R4bkE0ZFQwVGlRM2cyUlk3RElJYnNVRWg5VlZURlNRQUZ3Vk5OVVhBZ3pMWGpTRGlxRlZvYlR0Q1lhdlNxMEhxRjhTU1BTSkpxVko2UUpEYUZFSUx3WXFESWxPYnlqcUxBQXBVRktRVTB1M0FkSkNySTNnc2dINTBPMm54UGlVQ1RTaE0wa0pBTWFVSDF6U2FPVVUxQ3h5QStuRWw0U0pFUW1rVVdiUjI2SEFHd0pDRHRncnBGd1NNWG81ZFNpc1ZvRmdFUm4rUmZuMFJKbEVzRnhCSnB6OU9pT21FSVJzUUlLUmRUK0ErOUtPUmRyR05pVTIrY1NKSGFVV0dhS3czemZqQkZ4MHNKS280UGtXNkdVRWNJajBRaVRLeWdBWFZScS9FSVhhSFZscmxJYUkrc2l6VllMQ0dLa0R3RFU4ODBkeVlzQ0NXQ29ZbEhHbkEwR1NSaGFOMlloYlhXcDRKeEk1QUNnQXdYQmJGeWhOMURXQkdSS0VxaUVLVENzQTZOS1lDS3RJOGlORm9DN1g1QmNRUGVYSVJ3UWNqcE5QOW1CSzBOVFNOME8wbU14SE1RQ3FrbHRDQlBHdWpoSEFoUkFtNFdhS2pRdmNVT0hiN1FLYVhvOEIzMXdFcEJyR3dTZEZQYUdxK05WV21valBPeHNhaDZJWFhDTzdCS3BJd3F5RFpVNThqaUZjV2E1OThQeGxFQzF6cWtIUVM2VGczS0Rab0VWbEQveHF3SE42WkFKczhoYWRId1UyOVRDSFpMT1NXSVl1UWlraFpVVGZNS0hXa2ZoUzYwSU9BbzlGU2hyUkpNRzIyZENMbXdxQTlSUWQ5endRVG9TTXZSNDN1VCtFUTVMT0FGOUNXUzNta0hPbUVLSEZaUUJrQkhvcTJCM0dJOHhmd29xWnBhaXU3WHBBbkw1U1hzakZ4UnZ3Y1lrU0prUHVMRUlMMFpaeXJ5YUVScy91MFhSM3FramtDOUZzV1QwRDhDYUxlS21GUno5R29DL1p3S1F4cHFyZEdUZUZTand0U3JJVkNVSWswRjE3RjE2Ty9SMVlkb2NSSnRYR1RCeWo3MkhocTZxQm9RNlFUcXdJV3hOcWpUTGc2TlYraTVOWTJvelR0RzU2Q2RDNm9CbEZGRndDUndtRXFaUVI0UXJSMVRGRXFQc3hCaTB3ZzBQQVV4bDBjbEJXOW9rdkRZaHpHSmxJaHMvaE9PZ2h3UEdZcXJTQk5qQ3ZJa3BCYlhhSjhZRTZqVlVGZmdZSjcvT0dEQktRNHRDUkxESkxRZ3JRd2xrQkNvOHhBTHBGQUtER3RnQUswVmNRbGE4U1RpbmlWaFFmVXRWa0NIeUg5TlNaTUVQVENKWTUrSWtCcUxOVkhOWXhIRGo3cWc3T1pnWFZDWFlUNDB1YlpNZlA1TkxQQWZoWGw5UTJFSVBhRlJRWDFBU0ltbUtleUlZMGgwUWFJWTdhSml5QXZZeDVFUzJFYXNhVUgxalhybHdZcUNVczdSSUtJSGNFbE9WZ3FTaXpOUFU0bzJCRGpOZjZQUGYvYytJKzBhZTUwaE9vN3RjZDd4K1UrZFArMXQ3bnU3WS9JMjYveXA2enZYN1R3dk9qNy9lY2Q5bmV1Mjk4MDZ6aWNkNXp2WGVUdDdPL2ZUSG1jZG4wL3J1STUzSER2MzgzWisvUDhlTyszdTNGZkhlRmNMUi9MNU93ZCs5TlBmWHl5Zi85U01FMys1ZkpGOGZzNzdaejM2MlQvSTBkdXVYZlh4azk0alIzZHMrT0ZKcCsrUW94L3JQZkdTS1JqdmZlckpvMzUraXh3OTk5TXZMbnl1UzQ3MjNITHBOZVdmeXRIM0gvL0tpNWNma0tQTDh3dW55dEZnOTMzZmUrZ3lPVG8xZWVWbjl5blpmUDNSNDA4KzV4OXhmT0NaczIvNXJHeStNbS9Eb3ZvblpmUGxucU52STcvQmNlNGpOK3grVFRhZnIwMTk4TEc1c2puVWMyNy9UOTZRemYvNFRmankrczA0THY3OXgrWTlKcHZmK055SmcwdGZsTTE3TjN6bGE3Zmh2aThOMy91bDRmdGtjK3Y1cFh0UDZaYk5DOGRlc25uQmkzdSsraHRjdjI3MWl2djNmMDgyejd6NGlNZGVlRncyVjdDaFZiYzlMSnZKcmRtMTEyQWVjdGNzOW8wbHNybmtpZS9mTHVmTFp2Q0YzeDJ4N3IyeXVmakNsMTUvWklac3pyL3dteC8zMzVUTjJjOGRyTTdkTHBzenJncjdWaHdtbStOT2xDTUhUMzMxMWI4NFhZNE1IanpqNGI1ZGN1U1pKVWMrTWVQZVE4ZnZIREZ5ZmZVRU9mTFFkZE5xai95REhMbnIxUVBsejZ5VUk5Zk0rcnQxN2s0NThvbEhidnpHd1IvSmtmN3JtOU0zOXNpUmk3NTJHZjdKa1o1LzdiM3B3bitYSThzKzg1V2hieTJYSXlmZDgvb1BiM3BZamt5Wk1aL2ZQaXFIMzloODFEUC9ObE1PUHo3MXE5Y3NmNThjZml4LzdaYkQzejEyMzd2ZTlZUWN2di9sSDh0Ykg1REROL1VmL1BTS2hoek8xZzUvTzdsRERrZi90QnF1bDBOdlhMWHcwVjhHY3VpbEgzVDdlWFBrMEF1RFAxRHhmWExvMisrOCtla0hNZjZWMDQrNC9Pc2I1ZEN1K2g5Mm5qQlZEbDAzeHpRK3YwTU9uZjJoM3k0Y2ZWWU9NWExqMTNaZU80R2o1dmw3UG4vWDZJT3lPV1hXbW05dFpuTGsyTzNIM0hEY0MzSll6ci8rdGJOak9UenRqcjg2ZTl0ME9mVEs0MmM5UFAyLzVkQVRkM3k1K3g0dWgyNCtjbVRwOTk4aGgzYnk3OHg1K2s0NXRGMitPTEozdHh6YW5GODRRdzYxOERVMEkzdng3czNmbFFkZXZmNERHLy8yb3ppV0hyZ3hPVTRlT0JqOFBSOTZVeDc0M1k3b0ErNFhPQjYvYzlFdEw4c0R6d3dldHVXTGkrV0JKM2Q4OGRuYlg1Y0g3dnVGK3QxWC8xa2V1UGY5bzYrODk0dnlnRnU4NXJFTlRYbmdranZPUEVmaVB2YlVSOWhUbStYZzZKZWZ1dVNpRDh2QnIrZXZ1K1hnN2MzdnJmbmx6WEp3MTJldjZmM3gxWEx3dW9jVzNMejNWamw0OVpZbmI1Q1h5OEVzL2E4RmMwZmtvRnQvOUJhN1RnNWVNSlk0Y3JCbjZiNzV1M3JrNE9sMy8vYlZIYlBrNElsM1YxL2JYWk9EaTM0d3RHL3hRVGs0Ky9DUFBubjFiRG5Zd3RIK29RKzk5UHVycnBUN2R3OTlhdUFucDh2OUQ1eC93cTdabDdTT0Y4djlIMS93czZQM3JaYjcreGNlZm1EbkpybC93MHVQUDMzVU5YTC9uR05PMi9YakMrUytOM2VlNG9iL1J1NTc5cGlmejd4emg5eDN6OWsvdmVmc244bDlPLy95aVZQdi9wemM5NUYzbi9tVCtrZmt2bk11ZnZXdnV3Zmt2bW16VHV4Zi9aOXk3MnYvMHYzZ0p4Zkl2YmNldG1iTzV2UGszcHZ6MTVmazNxdkVEMDgrWlpmYzIvcy9OMzFDOU1tOXB6NDdQTy9xRWZuY3IyNTVhbnQybm56T1ZENEgxOHM5cngrKzlJWnZuU0gzL1BhNkR6OFdIQ3YzN04xOTNYZExsOG85Mjk5Tjc3OE00eXV2bkw5MzQxMXl6K25ETDh4WU5WM3VXWGpzbzgzM1RaZS8vc0w5djFyNjlFUHkxNWU1VTg0NTdNaU81OWlubTdLcTFickdIL0pxRDg2MHFxNlcrV3IrQ045Ykx6K2ltbDJ4cklMeC9KYlorSnZ5U2Z6MzVwdHZQdHc1Yi91aWZON3ByY0ZwazU4L3pOOWZtdGZrU3h2VjlwTjNoMWN1TFN2dEpoNVptOVB2Vk9WUzFWdDFZOC9OdHJjM1Bsb2U2RlA0OUViSHlvZGxBL2tUYlZoN3l1VG44eWNlM0s5MkRNeHRWUEs5Mm03VDE2aHM2YzRMLzh5eDArT3YyYTMzWjAxNlAzMTh5V2x2ZHRnM3cxVjZTNVYyK3poOXpKUzJKWERjbUV1V0RWUkxoeXpCYUcxWlBhdFBQSHM0MDJUbDlzaVliVjF2L0M5TDNuZ1NsakFBQUE9PSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["task"],"name":[1],"type":["chr"],"align":["left"]},{"label":["task_blob_url"],"name":[2],"type":["chr"],"align":["left"]},{"label":["n_labels"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["mean_agreement"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["mean_alpha"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"9 Dot Problem","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/310e683a350d63f825bb93b482fe3eea0b77906d","3":"24","4":"0.9268116","5":"0.8536232"},{"1":"Reproducing arts","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/7ceec71a09f6765997f516124169b1453d6cfded","3":"25","4":"0.9220000","5":"0.8440000"},{"1":"Moral Reasoning (Disciplinary Action Case)","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/edb737be2692b45c969a7d55443b1419b8a27f91","3":"25","4":"0.9079881","5":"0.8159762"},{"1":"Word completion given part of word","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/3b402305ea14b1e5ff863223523703eb58b38075","3":"24","4":"0.8944746","5":"0.7889493"},{"1":"Sudoku","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/1ecd1c518ca1685a790722ea832907e6c90d660a","3":"22","4":"0.8909091","5":"0.7818182"},{"1":"Recall stories","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/1b76fa649c2d98846c3f1777ac2c04e76a79f74f","3":"24","4":"0.8903080","5":"0.7806159"},{"1":"Visual Oddball Target","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/fa03f0b6cb896c63eb2db85546248d16d324a9a7","3":"25","4":"0.8876742","5":"0.7753485"},{"1":"Recall images","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/eca5a325d6c0b2ad89042bd37775530b822d9710","3":"24","4":"0.8843427","5":"0.7686853"},{"1":"Word construction from a subset of letters","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/f60d4b216f31395c8626cb60ce08256f8cdf18aa","3":"22","4":"0.8830087","5":"0.7660173"},{"1":"Guessing the correlation","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/dd22d23dec2aee1c467f42d4d08ac8d544e9e10b","3":"26","4":"0.8824615","5":"0.7649231"},{"1":"Word completion given starting letter","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/8ea9342a87412579fa804f337d0f75b1ba2902d7","3":"24","4":"0.8807971","5":"0.7615942"},{"1":"Unscramble words (anagrams)","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/30cf1ca8903915963d1a5a0435a8ef9c2966c3ec","3":"22","4":"0.8790043","5":"0.7580087"},{"1":"Summarize Discussion","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/b9a451e13133e78d3cf691ee946f351cbf9df8e0","3":"24","4":"0.8753929","5":"0.7507858"},{"1":"Hidden figures in a picture (Recall Task)","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/9afb1a0a9ec62d1f6a76383112b86c3084c1fa5e","3":"24","4":"0.8747283","5":"0.7494565"},{"1":"Recall word lists","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/d601341a49b846db778981bb57c8ae710c6ed11c","3":"24","4":"0.8747200","5":"0.7494401"},{"1":"Abstract grid task","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/a7f6d32c5ec2fe812b69f62a6edfc5d57b07d119","3":"24","4":"0.8742754","5":"0.7485507"},{"1":"Estimating pages of a book","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/270ff70411e741cdaa06c1e36df92e47da0e44cb","3":"24","4":"0.8741765","5":"0.7483531"},{"1":"Recall videos","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/60d448472fd3b6772287c8245757b5f166cae6f4","3":"23","4":"0.8741530","5":"0.7483060"},{"1":"Random dot motion","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/b1920249c70bac8369eb82fa388beef9f1c8a28d","3":"24","4":"0.8727355","5":"0.7454710"},{"1":"Allocating resources to programs","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/8a13990b67bb3d8e5efc243643b0b59a306e35e6","3":"25","4":"0.8721014","5":"0.7442029"},{"1":"Wildcam Gorongosa (Zooniverse)","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/8591c25ff47c9a98dc22c31136d504705d31adf2","3":"24","4":"0.8701087","5":"0.7402174"},{"1":"Typing game","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/4f9f17e96b89bb7f810c1f2f083e0829d6f8fd61","3":"24","4":"0.8700099","5":"0.7400198"},{"1":"Wason's Selection Task","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/4cc6b7fdc8d7a4e89498919cce7f441cbff6c5f5","3":"24","4":"0.8655468","5":"0.7310935"},{"1":"Reading the mind in the eyes","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/e8bb671b296c889abdd5a627fea271944d602605","3":"23","4":"0.8650301","5":"0.7300602"},{"1":"Computer maze","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/2bb706878d0cfc9e5e95fd5845516bc736d9f5ec","3":"26","4":"0.8626603","5":"0.7253205"},{"1":"Writing story","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/c6f4220a23107878cbf0adb35373ce55450cf934","3":"24","4":"0.8581926","5":"0.7163853"},{"1":"Crisis mapping","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/c4765b7f194a81c47d49c052ccec1edc281231a1","3":"24","4":"0.8541667","5":"0.7083333"},{"1":"Rank cities by population, rank words by familiarity","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/f809f2767747cbc99b233dda7be304e3c7aa4ef0","3":"23","4":"0.8537549","5":"0.7075099"},{"1":"Shopping plan","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/26c52d545ff3c5beee6fc622a7b72fe2f5633fa6","3":"25","4":"0.8534275","5":"0.7068551"},{"1":"Letters-to-numbers problems (cryptography)","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/c56a651edbab57b147e65b73ad036ea92cc81fb9","3":"23","4":"0.8522163","5":"0.7044325"},{"1":"Railroad Route Construction game","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/6aed3040229d59b35254c80656fee1588b54bb9f","3":"27","4":"0.8519544","5":"0.7039088"},{"1":"Mastermind","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/3e3bc094bd3bef84457f519fd02ab3e5217088c1","3":"26","4":"0.8505385","5":"0.7010769"},{"1":"Estimating Factual Quantities","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/77aae9937fb064daeccb8576b02f501996c3ca8a","3":"23","4":"0.8499341","5":"0.6998682"},{"1":"Advertisement writing","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/09547baa9ee9ade429f15274d1258baa3ad25252","3":"24","4":"0.8487319","5":"0.6974638"},{"1":"Splitting a deck of cards","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/732efca83a5cc086246240f5ff9c63ddf55c8d99","3":"22","4":"0.8477273","5":"0.6954545"},{"1":"Recall association","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/6cdc2247016405e6372b044ca8b9dcd9d91ed13f","3":"21","4":"0.8474531","5":"0.6949062"},{"1":"Checkers","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/bf0d01be1a755fdf6d46fc2ab1fcf5077d11e7bf","3":"23","4":"0.8459881","5":"0.6919763"},{"1":"Euclidean traveling salesperson","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/a27330d4c7a26ebac960b30d32d5dee6cfed1420","3":"23","4":"0.8454451","5":"0.6908903"},{"1":"Ravens Matrices","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/05bef5a0893b58123cbc2699220c6dcdd17a6f7d","3":"22","4":"0.8445455","5":"0.6890909"},{"1":"Arithmetic problem 1","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/22ba525cd1a757777314e60b9f12fe6e6a5ab47b","3":"24","4":"0.8437500","5":"0.6875000"},{"1":"Estimating social quantity","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/56341d997c68a41ed859ce2c4e7288a1488379a9","3":"23","4":"0.8423066","5":"0.6846132"},{"1":"Object based generalization for reasoning (Phyre)","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/017bf5024eb0e6797f0ef58ccb47b52efa993aa1","3":"22","4":"0.8406926","5":"0.6813853"},{"1":"Categorization problem","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/7dee968b347ce81be64623baf9d628cdb626b0bf","3":"24","4":"0.8391304","5":"0.6782609"},{"1":"Room assignment task","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/3e61278b26c027d84e87f85b3e8305d33c47ed1c","3":"24","4":"0.8391304","5":"0.6782609"},{"1":"Estimating geological metrics","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/8d50ef06e8b5f90d384642bf3298043759673c86","3":"24","4":"0.8358202","5":"0.6716403"},{"1":"Run a mini business","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/d7e53b20e5934ec7603f5ab51db1afc597287937","3":"23","4":"0.8347826","5":"0.6695652"},{"1":"Game of Clue - Terrorist Attack","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/9961e4fe8aa541f6ef5f7b6cb171304ee81a2668","3":"25","4":"0.8332500","5":"0.6665000"},{"1":"Wolf, goat and cabbage transfer","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/b9d60e8325c43f3284c5844b42d8fce986f71934","3":"24","4":"0.8289855","5":"0.6579710"},{"1":"Hidden figures in a picture (Searching Task)","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/807b07808432adef059cc23e2261979c4ac6fb34","3":"21","4":"0.8280952","5":"0.6561905"},{"1":"Iterative lemonade stand task","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/61f92dbd5e19bf4eb4b08972a22eb0e8f5b6ec06","3":"24","4":"0.8258729","5":"0.6517457"},{"1":"Logic Problem","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/951fa3e663e027582f5d7b0df8956c9d33ab5690","3":"26","4":"0.8230769","5":"0.6461538"},{"1":"Putting food into categories","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/18f592c297a321002458953433b2e96117c99ae7","3":"25","4":"0.8205254","5":"0.6410507"},{"1":"Graph coloring task","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/8668e1f05c81b8f8e0f44381e897442bed258d23","3":"22","4":"0.8181818","5":"0.6363636"},{"1":"Target Search","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/9ce3cc6fb17d9999491f24e92e9b833e44e3fc4a","3":"22","4":"0.8170996","5":"0.6341991"},{"1":"The N light bulbs game","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/0c7b29bdcfbcda80acef4cd5be03e9febf31aca3","3":"23","4":"0.8127470","5":"0.6254941"},{"1":"Trivia Multiple Choice Quiz","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/e6c1dddd14b66f8c41768ee84cfc6b8c37976755","3":"23","4":"0.8123007","5":"0.6246014"},{"1":"The Fish game","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/5dfd38851f62758d90b3fd8c56d36320f41e128b","3":"24","4":"0.8063982","5":"0.6127964"},{"1":"Desert survival","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/12fe1bf10e0d96710f3a47d95bcbde9069db261e","3":"24","4":"0.8062500","5":"0.6125000"},{"1":"Search for Oil Task","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/6d3cc0d689bfc7f7ae069f983a92debe79c5a8fc","3":"23","4":"0.8049454","5":"0.6098908"},{"1":"Image rating","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/81647e66eb5682dece8b3d39f5c8756372d951e5","3":"24","4":"0.8032197","5":"0.6064394"},{"1":"Husbands and wives transfer","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/1c98f62f162c321565a1f3bcdff706ce38e2d134","3":"24","4":"0.7996130","5":"0.5992260"},{"1":"Carter Racing","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/697c9e03da2c8b681f9a65a0030bbb77affe87bf","3":"24","4":"0.7948370","5":"0.5896739"},{"1":"Find the maximum","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/c205b98896b4deadb50c076b7bce1de8ff4fffdf","3":"24","4":"0.7873188","5":"0.5746377"},{"1":"NASA Moon survival","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/611b7846e04bc728e40cfae30b313dfee1eeb306","3":"24","4":"0.7810688","5":"0.5621377"},{"1":"Carter Racing (Experimenterless Version)","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/353a2dcfffea85ce0d2bbe5a3f0e650341c95ffa","3":"24","4":"0.7802454","5":"0.5604908"},{"1":"Architectural design task","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/f7804cfb2764f0421a91d2c04af7d05059987ccf","3":"24","4":"0.7795290","5":"0.5590580"},{"1":"Whac-A-Mole","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/8b56ba8b5591973c83fc68741db3fe273568c739","3":"21","4":"0.7730768","5":"0.5461536"},{"1":"Space Fortress","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/4ac7263407418def53fe726df62e73be716f5707","3":"23","4":"0.7698040","5":"0.5396080"},{"1":"Divergent Association Task","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/4a4bc97f42877152244f7903cd726027494ccfb5","3":"24","4":"0.7693429","5":"0.5386858"},{"1":"To evacuate or not to evacuate","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/641ecc0c5f0cd7e57f990b7bc10b833b660f2311","3":"26","4":"0.7668526","5":"0.5337051"},{"1":"Wildcat Wells","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/032b38726446129214960a511b03c67285f04b33","3":"23","4":"0.7590761","5":"0.5181522"},{"1":"Railroad Route Construction game (Impossible Version)","2":"https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/3faf39f9336620c7f8e78e2da2eb65f383646a91","3":"24","4":"0.7564938","5":"0.5129877"}],"options":{"columns":{"min":{},"max":[10],"total":[5]},"rows":{"min":[10],"max":[10],"total":[72]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <div id="confidence-judgements-and-consensus" class="section level1">
@@ -1955,126 +1832,82 @@ of whether you z-score the confidence scores (which helps to account for
 individual-level variation in assigning confidence).</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6MjAsIm5jb2wiOjUsInN1bW1hcnkiOnsiQSB0aWJibGUiOlsiMjAgw5cgNSJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUE1VlVmMHdUZHhRL0N3WHNBTzhxaXM2WmpMQVl4NCtHYTBGcVdQeWVBUnhUV2V3bXcrSGd2RjYvN1YxNnZldnVybERJSUc1WmhqSEd1RDgwYk1rMExtUk81K0pDeUp5T1pHeHpJMGJuSWlOYVpCT0ZUaWkwKzJFeW5jVEo3bzVlQ3lSTDNDWGZmci8zK2J6M3ZwLzNydSs5VkxYTFp0cGxRaEFrQlVsZFlrQlNqTW9STWRidDNGSnNSNUJVZy9LeUJFbEZscXA3VURGYXJyTEtRcFdWRXlleUhIaUpqd3F5UHJhTjVUMUpFQmY4OGtJUWMrQTJJU0RUZ2crU3ZnQW5zLzRrVVNvSkhDblJESnpqNGtTT0F5OXpRWnBzaGlMclppa255N0Z5YTV4YjdzQTNTQXdsUWhmcDVZVVdEcm84TUJtdnZJV1ZHWllucFZhSlZFTEhpVXdIYnFkNGlSUWhMWGlTY1RZcVFxRnExcnp3aW1VT25CWjRHdnBsMGdrWnFqa09vdzVyaWR6cWg2U04xTGJTT0c1MldLMkt2WnNqWlpGeVFjSHRscEllTmtraWxlVEpnQkpQbEpNZXBUQWdRaTlGdmg2QWtzd0tmQ0lGbXhZYkovMGN4ZlB6aTFpcUVWYlNBM2tvVXJLZTlCT09EUnBSUnRKMFFuKzVCcFdUVGtxV09aaW9xbDJEN2FRZmltNUI5RkdLcGtRMU5ycllabFppblJ4VXRMSXlKYllxY0xicVJ0Z1I3WG5zdmZ3LzlzZTEvNS8zNkRyQnhMM0M2NzM3ZmdLVHJ6eGNkYkwvUHBoK2I2cWhvNjRTM1BFV21JL2Z6QVN4eHRnK3ByY0pSTTVsWlAyY213dW16MVFqbThSQ0VJblZJR25jSmhCTnVmTGgyaDhId0crWGQ2Ky9abXNCc2U0anJ4YXMyd0VpWFplNVQrNnVCNU9IK2xaMlo0VkE5TnZhdHNPRllURHRIZHAvWUN3UFJEa0RGOE1iUVd6dHV5Y2FWMXZCRkJyaDlxeGtRWFNzTFB6QThqU1lISDRxZUxiZG10QTVHanJUTkpoZkMyNTkramYrOHBzeE1HRWI2bjE0cWhNTW4vNTRhMmV3QkV4OU9ZSmVaZnJBdUlpdStjSmlBUk5OKzVFM3d2VmcvTVloSkRQVURpYlRQNmlxT0hZUXhMbytkNXgyL3c2bVh5anEyYm45T0JqSHU0YnJ3enZBN2J4Z2NjMmF6MERrbmZmL0txZ2ZBSGV1bjF5eCtzSm1NQmxLSGI3aFBBK21LdkpmUEcrRklKdzNHT292R2dTUkM5NkxkMThqd08wZSs1LzhESjM0N2xqYml1cUc2QXlCWlE4eEk5dERCQmJPYjBnYi80ZEExYmZhWHduc1hGZDMwUjliQ0xReE9OYmVXVVZnRGRFSEkxK05FK2gzZVo2M2lrd0VsbnUxOHVEWHp4SG0rODkyUEkvMEU5akY3NHV2N2Q1RG9IM1BITGh5OWlNQ3ZWZkpNSnNqQkJiWXVpNnpaaStCRGN3WVZ2M1NRNWpObzVlcVR4d2p6RStpYlJWSDZ3anNtOE1kdDF5bkNITkp4WFI2ZlFhQi92RDJ6VzJYUmhkTktpTlArYUFVbjFKR2ZTRHAvVVdxYkJ6TTRFbU9ja0pPYjlOc0g2UjRrdktJVUJsRHZONmtwam1VOHpPVTNsY2Fvclk2NjRKcTd5d1VzRlFVV2l5NmlDeGxHZllxUDdPenM5SEZTbW1Pa25TbE9taHlVVEpsY1l1cVRBUjV0TWdsWFoycUFxODRHZVlQNDhTVUZoY0J5d0s4cXNSVlRETUIzbHVzL3ZkTUdqMzNaTVhQT2ZQT3hya3JEYk9MU3BnR2VRL0w2N1V6YXBYVEM2ZGtyQ1ZzOFl0c3NuQUtLbGxrUWFaME94TXRjRHFpNVlZOCtoZCt6aTNWZ3dZQUFBPT0ifQ== -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["question_name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n_labels"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["mean_agreement"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["mean_alpha"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["mean_confidence"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"Q10maximizing","2":"24","3":"0.7488002","4":"0.4976004","5":"4.369222"},{"1":"Q11optimizing","2":"24","3":"0.7606183","4":"0.5212365","5":"4.264482"},{"1":"Q13outcome_multip","2":"24","3":"0.8625385","4":"0.7250770","5":"4.472791"},{"1":"Q14sol_scheme_mul","2":"24","3":"0.7005816","4":"0.4011632","5":"4.102399"},{"1":"Q15dec_verifiability","2":"24","3":"0.9177158","4":"0.8354316","5":"4.431246"},{"1":"Q16shared_knowledge","2":"24","3":"0.8038368","4":"0.6076737","5":"4.091281"},{"1":"Q17within_sys_sol","2":"23","3":"0.8651452","4":"0.7302904","5":"4.338795"},{"1":"Q18ans_recog","2":"23","3":"0.8102150","4":"0.6204300","5":"4.192510"},{"1":"Q19time_solvability","2":"23","3":"0.8754647","4":"0.7509295","5":"4.273259"},{"1":"Q1concept_behav","2":"24","3":"0.9624458","4":"0.9248916","5":"4.741369"},{"1":"Q20type_3_type_4","2":"24","3":"0.9263412","4":"0.8526824","5":"4.447045"},{"1":"Q22confl_tradeoffs","2":"24","3":"0.7999022","4":"0.5998043","5":"4.183733"},{"1":"Q23ss_out_uncert","2":"23","3":"0.7676678","4":"0.5353356","5":"4.240492"},{"1":"Q24eureka_question","2":"23","3":"0.8988407","4":"0.7976813","5":"4.364541"},{"1":"Q3type_1_planning","2":"24","3":"0.8569129","4":"0.7138257","5":"4.445290"},{"1":"Q4type_2_generate","2":"24","3":"0.8881848","4":"0.7763695","5":"4.518432"},{"1":"Q6type_5_cc","2":"24","3":"0.9098595","4":"0.8197190","5":"4.525453"},{"1":"Q7type_7_battle","2":"24","3":"0.8145644","4":"0.6291289","5":"4.440023"},{"1":"Q8type_8_performance","2":"24","3":"0.9026136","4":"0.8052272","5":"4.547104"},{"1":"Q9divisible_unitary","2":"23","3":"0.7765028","4":"0.5530057","5":"4.200702"}],"options":{"columns":{"min":{},"max":[10],"total":[5]},"rows":{"min":[10],"max":[10],"total":[20]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBUYXNrLWJhc2VkIGNvbmZpZGVuY2VcbnpzY29yZWRfY29uZmlkZW5jZV9ieV90YXNrIDwtIGRmLmNvbmZpZGVuY2Vfc2NvcmVzX3pzY29yZSAlPiVcbiAgZ3JvdXBfYnkodGFzaykgJT4lXG4gIHN1bW1hcml6ZShcbiAgICBtZWFuX2NvbmZpZGVuY2UgPSBtZWFuKHZhbHVlLCBuYS5ybSA9IFQpXG4gIClcblxudGFza19iYXNlZF9jb25maWRlbmNlIDwtIGlubmVyX2pvaW4odGFza19iYXNlZF9zdW1tYXJ5LCB6c2NvcmVkX2NvbmZpZGVuY2VfYnlfdGFzaywgYnkgPSBcInRhc2tcIilcblxuY29yLnRlc3QodGFza19iYXNlZF9jb25maWRlbmNlJG1lYW5fYWdyZWVtZW50LCB0YXNrX2Jhc2VkX2NvbmZpZGVuY2UkbWVhbl9jb25maWRlbmNlKVxuYGBgIn0= -->
+<pre class="r"><code># Task-based confidence
+zscored_confidence_by_task &lt;- df.confidence_scores_zscore %&gt;%
+  group_by(task) %&gt;%
+  summarize(
+    mean_confidence = mean(value, na.rm = T)
+  )
+
+task_based_confidence &lt;- inner_join(task_based_summary, zscored_confidence_by_task, by = &quot;task&quot;)
+
+cor.test(task_based_confidence$mean_agreement, task_based_confidence$mean_confidence)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdFBlYXJzb24ncyBwcm9kdWN0LW1vbWVudCBjb3JyZWxhdGlvblxuXG5kYXRhOiAgdGFza19iYXNlZF9jb25maWRlbmNlJG1lYW5fYWdyZWVtZW50IGFuZCB0YXNrX2Jhc2VkX2NvbmZpZGVuY2UkbWVhbl9jb25maWRlbmNlXG50ID0gMTAuMjgxLCBkZiA9IDcwLCBwLXZhbHVlID0gMS4yNDZlLTE1XG5hbHRlcm5hdGl2ZSBoeXBvdGhlc2lzOiB0cnVlIGNvcnJlbGF0aW9uIGlzIG5vdCBlcXVhbCB0byAwXG45NSBwZXJjZW50IGNvbmZpZGVuY2UgaW50ZXJ2YWw6XG4gMC42NjMxMTEwIDAuODUzODY1M1xuc2FtcGxlIGVzdGltYXRlczpcbiAgICAgIGNvciBcbjAuNzc1NjI2MyBcbiJ9 -->
+<pre><code>
+    Pearson&#39;s product-moment correlation
+
+data:  task_based_confidence$mean_agreement and task_based_confidence$mean_confidence
+t = 10.281, df = 70, p-value = 1.246e-15
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.6631110 0.8538653
+sample estimates:
+      cor 
+0.7756263 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBRdWVzdGlvbi1iYXNlZCBjb25maWRlbmNlXG56c2NvcmVkX2NvbmZpZGVuY2VfYnlfcXVlc3Rpb24gPC0gZGYuY29uZmlkZW5jZV9zY29yZXNfenNjb3JlICU+JVxuICBncm91cF9ieShxdWVzdGlvbikgJT4lXG4gIHN1bW1hcml6ZShcbiAgICBtZWFuX2NvbmZpZGVuY2UgPSBtZWFuKHZhbHVlLCBuYS5ybSA9IFQpXG4gIClcblxucXVlc3Rpb25fYmFzZWRfY29uZmlkZW5jZSA8LSBpbm5lcl9qb2luKHF1ZXN0aW9uX2Jhc2VkX3N1bW1hcnksIHpzY29yZWRfY29uZmlkZW5jZV9ieV9xdWVzdGlvbiwgYnkgPSBjKFwicXVlc3Rpb25fbmFtZVwiPVwicXVlc3Rpb25cIikpXG5cbmNvci50ZXN0KHF1ZXN0aW9uX2Jhc2VkX2NvbmZpZGVuY2UkbWVhbl9hZ3JlZW1lbnQsIHF1ZXN0aW9uX2Jhc2VkX2NvbmZpZGVuY2UkbWVhbl9jb25maWRlbmNlKVxuYGBgIn0= -->
+<pre class="r"><code># Question-based confidence
+zscored_confidence_by_question &lt;- df.confidence_scores_zscore %&gt;%
+  group_by(question) %&gt;%
+  summarize(
+    mean_confidence = mean(value, na.rm = T)
+  )
+
+question_based_confidence &lt;- inner_join(question_based_summary, zscored_confidence_by_question, by = c(&quot;question_name&quot;=&quot;question&quot;))
+
+cor.test(question_based_confidence$mean_agreement, question_based_confidence$mean_confidence)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdFBlYXJzb24ncyBwcm9kdWN0LW1vbWVudCBjb3JyZWxhdGlvblxuXG5kYXRhOiAgcXVlc3Rpb25fYmFzZWRfY29uZmlkZW5jZSRtZWFuX2FncmVlbWVudCBhbmQgcXVlc3Rpb25fYmFzZWRfY29uZmlkZW5jZSRtZWFuX2NvbmZpZGVuY2VcbnQgPSA1LjExNjIsIGRmID0gMTgsIHAtdmFsdWUgPSA3LjIyNGUtMDVcbmFsdGVybmF0aXZlIGh5cG90aGVzaXM6IHRydWUgY29ycmVsYXRpb24gaXMgbm90IGVxdWFsIHRvIDBcbjk1IHBlcmNlbnQgY29uZmlkZW5jZSBpbnRlcnZhbDpcbiAwLjQ5NjMwMDYgMC45MDQyNjAzXG5zYW1wbGUgZXN0aW1hdGVzOlxuICAgICAgY29yIFxuMC43Njk3NjM0IFxuIn0= -->
+<pre><code>
+    Pearson&#39;s product-moment correlation
+
+data:  question_based_confidence$mean_agreement and question_based_confidence$mean_confidence
+t = 5.1162, df = 18, p-value = 7.224e-05
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.4963006 0.9042603
+sample estimates:
+      cor 
+0.7697634 </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>A version of the above with the original ordinal variables
 (non-normalized)</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBUYXNrLWJhc2VkIGNvbmZpZGVuY2VcbmNvbmZpZGVuY2VfYnlfdGFzayA8LSBkZi5jb25maWRlbmNlX3Njb3JlcyAlPiVcbiAgZ3JvdXBfYnkodGFzaykgJT4lXG4gIHN1bW1hcml6ZShcbiAgICBtZWFuX2NvbmZpZGVuY2UgPSBtZWFuKHZhbHVlLCBuYS5ybSA9IFQpXG4gIClcblxudGFza19iYXNlZF9jb25maWRlbmNlIDwtIGlubmVyX2pvaW4odGFza19iYXNlZF9zdW1tYXJ5LCBjb25maWRlbmNlX2J5X3Rhc2ssIGJ5ID0gXCJ0YXNrXCIpXG5cbmNvci50ZXN0KHRhc2tfYmFzZWRfY29uZmlkZW5jZSRtZWFuX2FncmVlbWVudCwgdGFza19iYXNlZF9jb25maWRlbmNlJG1lYW5fY29uZmlkZW5jZSlcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBUYXNrLWJhc2VkIGNvbmZpZGVuY2VcbmNvbmZpZGVuY2VfYnlfdGFzayA8LSBkZi5jb25maWRlbmNlX3Njb3JlcyAlPiVcbiAgZ3JvdXBfYnkodGFzaykgJT4lXG4gIHN1bW1hcml6ZShcbiAgICBtZWFuX2NvbmZpZGVuY2UgPSBtZWFuKHZhbHVlLCBuYS5ybSA9IFQpXG4gIClcbmBgYCJ9 -->
 <pre class="r"><code># Task-based confidence
 confidence_by_task &lt;- df.confidence_scores %&gt;%
   group_by(task) %&gt;%
   summarize(
     mean_confidence = mean(value, na.rm = T)
-  )
-
-task_based_confidence &lt;- inner_join(task_based_summary, confidence_by_task, by = &quot;task&quot;)
-
-cor.test(task_based_confidence$mean_agreement, task_based_confidence$mean_confidence)</code></pre>
+  )</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5cdFBlYXJzb24ncyBwcm9kdWN0LW1vbWVudCBjb3JyZWxhdGlvblxuXG5kYXRhOiAgdGFza19iYXNlZF9jb25maWRlbmNlJG1lYW5fYWdyZWVtZW50IGFuZCB0YXNrX2Jhc2VkX2NvbmZpZGVuY2UkbWVhbl9jb25maWRlbmNlXG50ID0gOC4yNjk5LCBkZiA9IDY5LCBwLXZhbHVlID0gNi40MTVlLTEyXG5hbHRlcm5hdGl2ZSBoeXBvdGhlc2lzOiB0cnVlIGNvcnJlbGF0aW9uIGlzIG5vdCBlcXVhbCB0byAwXG45NSBwZXJjZW50IGNvbmZpZGVuY2UgaW50ZXJ2YWw6XG4gMC41NjUyODI0IDAuODA2MTQ2M1xuc2FtcGxlIGVzdGltYXRlczpcbiAgICAgY29yIFxuMC43MDU1MzggXG4ifQ== -->
-<pre><code>
-    Pearson&#39;s product-moment correlation
-
-data:  task_based_confidence$mean_agreement and task_based_confidence$mean_confidence
-t = 8.2699, df = 69, p-value = 6.415e-12
-alternative hypothesis: true correlation is not equal to 0
-95 percent confidence interval:
- 0.5652824 0.8061463
-sample estimates:
-     cor 
-0.705538 </code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBRdWVzdGlvbi1iYXNlZCBjb25maWRlbmNlXG5jb25maWRlbmNlX2J5X3F1ZXN0aW9uIDwtIGRmLmNvbmZpZGVuY2Vfc2NvcmVzICU+JVxuICBncm91cF9ieShxdWVzdGlvbikgJT4lXG4gIHN1bW1hcml6ZShcbiAgICBtZWFuX2NvbmZpZGVuY2UgPSBtZWFuKHZhbHVlLCBuYS5ybSA9IFQpXG4gIClcblxucXVlc3Rpb25fYmFzZWRfY29uZmlkZW5jZSA8LSBpbm5lcl9qb2luKHF1ZXN0aW9uX2Jhc2VkX3N1bW1hcnksIGNvbmZpZGVuY2VfYnlfcXVlc3Rpb24sIGJ5ID0gYyhcInF1ZXN0aW9uX25hbWVcIj1cInF1ZXN0aW9uXCIpKVxuXG5jb3IudGVzdChxdWVzdGlvbl9iYXNlZF9jb25maWRlbmNlJG1lYW5fYWdyZWVtZW50LCBxdWVzdGlvbl9iYXNlZF9jb25maWRlbmNlJG1lYW5fY29uZmlkZW5jZSlcbmBgYCJ9 -->
-<pre class="r"><code># Question-based confidence
-confidence_by_question &lt;- df.confidence_scores %&gt;%
-  group_by(question) %&gt;%
-  summarize(
-    mean_confidence = mean(value, na.rm = T)
-  )
-
-question_based_confidence &lt;- inner_join(question_based_summary, confidence_by_question, by = c(&quot;question_name&quot;=&quot;question&quot;))
-
-cor.test(question_based_confidence$mean_agreement, question_based_confidence$mean_confidence)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5cdFBlYXJzb24ncyBwcm9kdWN0LW1vbWVudCBjb3JyZWxhdGlvblxuXG5kYXRhOiAgcXVlc3Rpb25fYmFzZWRfY29uZmlkZW5jZSRtZWFuX2FncmVlbWVudCBhbmQgcXVlc3Rpb25fYmFzZWRfY29uZmlkZW5jZSRtZWFuX2NvbmZpZGVuY2VcbnQgPSA1LjI0OTMsIGRmID0gMTgsIHAtdmFsdWUgPSA1LjQzZS0wNVxuYWx0ZXJuYXRpdmUgaHlwb3RoZXNpczogdHJ1ZSBjb3JyZWxhdGlvbiBpcyBub3QgZXF1YWwgdG8gMFxuOTUgcGVyY2VudCBjb25maWRlbmNlIGludGVydmFsOlxuIDAuNTExMTI1NyAwLjkwNzgxNzlcbnNhbXBsZSBlc3RpbWF0ZXM6XG4gICAgICBjb3IgXG4wLjc3NzczNTQgXG4ifQ== -->
-<pre><code>
-    Pearson&#39;s product-moment correlation
-
-data:  question_based_confidence$mean_agreement and question_based_confidence$mean_confidence
-t = 5.2493, df = 18, p-value = 5.43e-05
-alternative hypothesis: true correlation is not equal to 0
-95 percent confidence interval:
- 0.5111257 0.9078179
-sample estimates:
-      cor 
-0.7777354 </code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3IgaW4gZ3JvdXBfYnkoLiwgdGFzaykgOiBvYmplY3QgJ2RmLmNvbmZpZGVuY2Vfc2NvcmVzJyBub3QgZm91bmRcbiJ9 -->
+<pre><code>Error in group_by(., task) : object &#39;df.confidence_scores&#39; not found</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZ2dwbG90KHRhc2tfYmFzZWRfY29uZmlkZW5jZSwgXG4gICAgICAgYWVzKHggPSBtZWFuX2FncmVlbWVudCxcbiAgICAgICAgICAgeSA9IG1lYW5fY29uZmlkZW5jZSkpICtcbiAgZ2VvbV9wb2ludCgpICsgXG4gIGxhYnModGl0bGUgPVwiUGVyIFRhc2s6IExldmVsIG9mIFJhdGVyIEFncmVlbWVudCB2LiBNZWFuIE5vcm1hbGl6ZWQgUmF0ZXIgQ29uZmlkZW5jZVwiKVxuYGBgIn0= -->
-<pre class="r"><code>ggplot(task_based_confidence, 
-       aes(x = mean_agreement,
-           y = mean_confidence)) +
-  geom_point() + 
-  labs(title =&quot;Per Task: Level of Rater Agreement v. Mean Normalized Rater Confidence&quot;)</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Hierarchical Clustering</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2V0LnNlZWQoMSlcblxuIyBERiBvZiBkYXRhXG50YXNrX1BDcyA8LSBjb21iaW5lZF9kYXRhICU+JSBzZWxlY3QoXG4gdGFzaywgZ3JlcChcIlBDXCIsIG5hbWVzKGNvbWJpbmVkX2RhdGEpKVxuKSAlPiVcbiAgY29sdW1uX3RvX3Jvd25hbWVzKFwidGFza1wiKVxuXG4jIEZpbmQgYmVzdCB3YXkgdG8gY2x1c3RlclxuIyBtZXRob2RzIHRvIGFzc2Vzc1xubSA8LSBjKCBcImF2ZXJhZ2VcIiwgXCJzaW5nbGVcIiwgXCJjb21wbGV0ZVwiLCBcIndhcmRcIilcbm5hbWVzKG0pIDwtIGMoIFwiYXZlcmFnZVwiLCBcInNpbmdsZVwiLCBcImNvbXBsZXRlXCIsIFwid2FyZFwiKVxuXG4jIGZ1bmN0aW9uIHRvIGNvbXB1dGUgY29lZmZpY2llbnRcbmFjIDwtIGZ1bmN0aW9uKHgpIHtcbiAgYWduZXModGFza19QQ3MsIG1ldGhvZCA9IHgpJGFjXG59XG5cbm1hcF9kYmwobSwgYWMpXG5cblxuIyBEaXNzaW1pbGFyaXR5IG1hdHJpeFxuZCA8LSBkaXN0KHRhc2tfUENzLCBtZXRob2QgPSBcImV1Y2xpZGVhblwiKVxuXG4jIEhpZXJhcmNoaWNhbCBjbHVzdGVyaW5nIHVzaW5nIENvbXBsZXRlIExpbmthZ2VcbiMgV2FyZCdzIG1ldGhvZFxuaGM1IDwtIGhjbHVzdChkLCBtZXRob2QgPSBcIndhcmQuRDJcIiApXG5cbiMgQ3V0IHRyZWUgaW50byA0IGdyb3Vwc1xuc3ViX2dycCA8LSBjdXRyZWUoaGM1LCBrID0gNClcblxucGRmKGZpbGUgPSBcInRhc2tfZGVuZHJvZ3JhbS5wZGZcIixcbiAgICBoZWlnaHQgPSA2KVxuXG4jIFBsb3QgdGhlIG9idGFpbmVkIGRlbmRyb2dyYW1cbnBsb3QoaGM1LCBjZXggPSAwLjYpXG5yZWN0LmhjbHVzdChoYzUsIGsgPSA0LCBib3JkZXIgPSAyOjUpXG5cbmRldi5vZmYoKVxuYGBgIn0= -->
-<pre class="r"><code>set.seed(1)
-
-# DF of data
-task_PCs &lt;- combined_data %&gt;% select(
- task, grep(&quot;PC&quot;, names(combined_data))
-) %&gt;%
-  column_to_rownames(&quot;task&quot;)
-
-# Find best way to cluster
-# methods to assess
-m &lt;- c( &quot;average&quot;, &quot;single&quot;, &quot;complete&quot;, &quot;ward&quot;)
-names(m) &lt;- c( &quot;average&quot;, &quot;single&quot;, &quot;complete&quot;, &quot;ward&quot;)
-
-# function to compute coefficient
-ac &lt;- function(x) {
-  agnes(task_PCs, method = x)$ac
-}
-
-map_dbl(m, ac)
-
-
-# Dissimilarity matrix
-d &lt;- dist(task_PCs, method = &quot;euclidean&quot;)
-
-# Hierarchical clustering using Complete Linkage
-# Ward&#39;s method
-hc5 &lt;- hclust(d, method = &quot;ward.D2&quot; )
-
-# Cut tree into 4 groups
-sub_grp &lt;- cutree(hc5, k = 4)
-
-pdf(file = &quot;task_dendrogram.pdf&quot;,
-    height = 6)
-
-# Plot the obtained dendrogram
-plot(hc5, cex = 0.6)
-rect.hclust(hc5, k = 4, border = 2:5)
-
-dev.off()</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -2082,49 +1915,10 @@ dev.off()</code></pre>
 <h1>Look at “old taxonomies”</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGYubWNnIDwtIGRmLm1haW5fcXVlc3Rpb25zX3N1bW1hcnkgJT4lXG4gIGZpbHRlcihuX2xhYmVscyA+IDEwKSAlPiVcbiAgdW5ncm91cCgpICU+JVxuICBmaWx0ZXIoIWlzLm5hKHN0cl9tYXRjaChxdWVzdGlvbl9uYW1lLCBcInR5cGVcIikpIHwgIWlzLm5hKHN0cl9tYXRjaChxdWVzdGlvbl9uYW1lLCBcImJlaGF2XCIpKSkgJT4lXG4gIHNlbGVjdCh0YXNrLCBxdWVzdGlvbl9uYW1lLCBtZWFuX3JhdGluZykgJT4lXG4gIHBpdm90X3dpZGVyKG5hbWVzX2Zyb20gPSBxdWVzdGlvbl9uYW1lLCB2YWx1ZXNfZnJvbSA9IG1lYW5fcmF0aW5nKVxuXG50b3RhbF9tY2dyYXRoIDwtIHJvd1N1bXMoZGYubWNnW2MoMjo3KV0pXG5cbmRmLm1jZyA8LSBjYmluZChkZi5tY2csIGRhdGEuZnJhbWUoXCJ0b3RhbF9tY2dyYXRoXCIgPSB0b3RhbF9tY2dyYXRoKSlcbmBgYCJ9 -->
-<pre class="r"><code>df.mcg &lt;- df.main_questions_summary %&gt;%
-  filter(n_labels &gt; 10) %&gt;%
-  ungroup() %&gt;%
-  filter(!is.na(str_match(question_name, &quot;type&quot;)) | !is.na(str_match(question_name, &quot;behav&quot;))) %&gt;%
-  select(task, question_name, mean_rating) %&gt;%
-  pivot_wider(names_from = question_name, values_from = mean_rating)
-
-total_mcgrath &lt;- rowSums(df.mcg[c(2:7)])
-
-df.mcg &lt;- cbind(df.mcg, data.frame(&quot;total_mcgrath&quot; = total_mcgrath))</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZ2dwbG90KFxuICBkZi5tY2cgJT4lXG4gICAgcmVuYW1lKFxuICAgICAgUGh5c2ljYWwgPSBRMWNvbmNlcHRfYmVoYXYsXG4gICAgICBJbnRlbGxlY3RpdmUgPSBRMjB0eXBlXzNfdHlwZV80LFxuICAgICAgUGxhbm5pbmcgPSBRM3R5cGVfMV9wbGFubmluZyxcbiAgICAgIEdlbmVyYXRpdmUgPSBRNHR5cGVfMl9nZW5lcmF0ZSxcbiAgICAgIGBDb2duaXRpdmUgQ29uZmxpY3RgID0gUTZ0eXBlXzVfY2MsXG4gICAgICBCYXR0bGUgPSBRN3R5cGVfN19iYXR0bGUsXG4gICAgICBQZXJmb3JtYW5jZSA9IFE4dHlwZV84X3BlcmZvcm1hbmNlXG4gICAgKSAlPiVcbiAgICBzZWxlY3QoLXRvdGFsX21jZ3JhdGgpICU+JVxuICAgIHBpdm90X2xvbmdlcihjb2xzID0gLXRhc2spICU+JVxuICAgIHJlbmFtZShgTWVhbiBSYXRlciBSZXNwb25zZWAgPSB2YWx1ZSksXG4gIGFlcyh4ID0gbmFtZSwgeSA9IHRhc2spXG4pICsgZ2VvbV90aWxlKGFlcyhmaWxsID0gYE1lYW4gUmF0ZXIgUmVzcG9uc2VgKSkgKyBzY2FsZV9maWxsX2dyYWRpZW50KGxvdyA9IFwiI0NDMzM2M1wiLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGhpZ2ggPSBcIiMwN0JFQjhcIikgKyB0aGVtZShheGlzLnRleHQueCA9IGVsZW1lbnRfdGV4dChcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGFuZ2xlID0gOTAsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB2anVzdCA9IDAuNSxcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGhqdXN0ID0gMVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICkpICsgXG4gIGxhYnMoeCA9IFwiRGltZW5zaW9uIGluIE1jR3JhdGgncyBUYXhvbm9teVwiLFxuICAgICAgIHkgPSBcIlRhc2sgTmFtZVwiKVxuXG5nZ3NhdmUoXCIyNnRhc2stbWNncmF0aC1yYXRpbmdzLnBuZ1wiKVxuYGBgIn0= -->
-<pre class="r"><code>ggplot(
-  df.mcg %&gt;%
-    rename(
-      Physical = Q1concept_behav,
-      Intellective = Q20type_3_type_4,
-      Planning = Q3type_1_planning,
-      Generative = Q4type_2_generate,
-      `Cognitive Conflict` = Q6type_5_cc,
-      Battle = Q7type_7_battle,
-      Performance = Q8type_8_performance
-    ) %&gt;%
-    select(-total_mcgrath) %&gt;%
-    pivot_longer(cols = -task) %&gt;%
-    rename(`Mean Rater Response` = value),
-  aes(x = name, y = task)
-) + geom_tile(aes(fill = `Mean Rater Response`)) + scale_fill_gradient(low = &quot;#CC3363&quot;,
-                                                       high = &quot;#07BEB8&quot;) + theme(axis.text.x = element_text(
-                                                         angle = 90,
-                                                         vjust = 0.5,
-                                                         hjust = 1
-                                                       )) + 
-  labs(x = &quot;Dimension in McGrath&#39;s Taxonomy&quot;,
-       y = &quot;Task Name&quot;)
-
-ggsave(&quot;26task-mcgrath-ratings.png&quot;)</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>McGrath - within v. between-category variance</p>
@@ -2137,53 +1931,10 @@ ggsave(&quot;26task-mcgrath-ratings.png&quot;)</code></pre>
       Performance = Q8type_8_performance</code></pre>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBnZXQgdG90YWwgc3VtIG9mIHNxdWFyZXNcbm1jZ19jb2xtZWFucyA8LSBkZi5tY2cgJT4lIHNlbGVjdCgtYyh0YXNrLCB0b3RhbF9tY2dyYXRoKSkgJT4lIGNvbE1lYW5zKClcbnRvdGFsX3N1bV9zcXVhcmVzIDwtICgoKGRmLm1jZyAlPiUgc2VsZWN0KC1jKHRhc2ssIHRvdGFsX21jZ3JhdGgpKSktbWNnX2NvbG1lYW5zKSAlPiVcbiAgYWJzKCkpXjIgJT4lIGNvbFN1bXMoKSAlPiUgc3VtKClcblxuIyB3aXRoaW4gY2F0ZWdvcnlcbnBoeXNpY2FsX2NhdGVnb3J5IDwtIGRmLm1jZyAlPiUgZmlsdGVyKFExY29uY2VwdF9iZWhhdiA+IG1lYW4oZGYubWNnJFExY29uY2VwdF9iZWhhdikpXG5pbnRlbGxlY3RpdmVfY2F0ZWdvcnkgPC0gZGYubWNnICU+JSBmaWx0ZXIoUTIwdHlwZV8zX3R5cGVfNCA+IG1lYW4oZGYubWNnJFEyMHR5cGVfM190eXBlXzQpKVxucGxhbm5pbmdfY2F0ZWdvcnkgPC0gZGYubWNnICU+JSBmaWx0ZXIoUTN0eXBlXzFfcGxhbm5pbmcgPiBtZWFuKGRmLm1jZyRRM3R5cGVfMV9wbGFubmluZykpXG5nZW5lcmF0aXZlX2NhdGVnb3J5IDwtIGRmLm1jZyAlPiUgZmlsdGVyKFE0dHlwZV8yX2dlbmVyYXRlID4gbWVhbihkZi5tY2ckUTR0eXBlXzJfZ2VuZXJhdGUpKVxuY2NfY2F0ZWdvcnkgPC0gZGYubWNnICU+JSBmaWx0ZXIoUTZ0eXBlXzVfY2MgPiBtZWFuKGRmLm1jZyRRNnR5cGVfNV9jYykpXG5iYXR0bGVfY2F0ZWdvcnkgPC0gZGYubWNnICU+JSBmaWx0ZXIoUTd0eXBlXzdfYmF0dGxlID4gbWVhbihkZi5tY2ckUTd0eXBlXzdfYmF0dGxlKSlcbnBlcmZvcm1hbmNlX2NhdGVnb3J5IDwtIGRmLm1jZyAlPiUgZmlsdGVyKFE4dHlwZV84X3BlcmZvcm1hbmNlID4gbWVhbihkZi5tY2ckUTh0eXBlXzhfcGVyZm9ybWFuY2UpKVxuXG4jIHdpdGhpbi1jYXRlZ29yeSBzdW0gb2Ygc3F1YXJlc1xuY2FsY19TUyA8LSBmdW5jdGlvbihkZikgc3VtKGFzLm1hdHJpeChkaXN0KGRmKV4yKSkgLyAoMiAqIG5yb3coZGYpKVxuXG50b3RhbF93aXRoaW5fc3MgPC0gc3VtKFxuICBjYWxjX1NTKHBoeXNpY2FsX2NhdGVnb3J5ICU+JSBzZWxlY3QoLWModGFzaywgdG90YWxfbWNncmF0aCkpKSxcbiAgY2FsY19TUyhpbnRlbGxlY3RpdmVfY2F0ZWdvcnkgJT4lIHNlbGVjdCgtYyh0YXNrLCB0b3RhbF9tY2dyYXRoKSkpLFxuICBjYWxjX1NTKHBsYW5uaW5nX2NhdGVnb3J5ICU+JSBzZWxlY3QoLWModGFzaywgdG90YWxfbWNncmF0aCkpKSxcbiAgY2FsY19TUyhnZW5lcmF0aXZlX2NhdGVnb3J5ICU+JSBzZWxlY3QoLWModGFzaywgdG90YWxfbWNncmF0aCkpKSxcbiAgY2FsY19TUyhjY19jYXRlZ29yeSAlPiUgc2VsZWN0KC1jKHRhc2ssIHRvdGFsX21jZ3JhdGgpKSksXG4gIGNhbGNfU1MoYmF0dGxlX2NhdGVnb3J5ICU+JSBzZWxlY3QoLWModGFzaywgdG90YWxfbWNncmF0aCkpKSxcbiAgY2FsY19TUyhwZXJmb3JtYW5jZV9jYXRlZ29yeSAlPiUgc2VsZWN0KC1jKHRhc2ssIHRvdGFsX21jZ3JhdGgpKSlcbilcblxuYmV0d2Vlbl9zcyA8LSB0b3RhbF9zdW1fc3F1YXJlcy10b3RhbF93aXRoaW5fc3NcbmBgYCJ9 -->
-<pre class="r"><code># get total sum of squares
-mcg_colmeans &lt;- df.mcg %&gt;% select(-c(task, total_mcgrath)) %&gt;% colMeans()
-total_sum_squares &lt;- (((df.mcg %&gt;% select(-c(task, total_mcgrath)))-mcg_colmeans) %&gt;%
-  abs())^2 %&gt;% colSums() %&gt;% sum()
-
-# within category
-physical_category &lt;- df.mcg %&gt;% filter(Q1concept_behav &gt; mean(df.mcg$Q1concept_behav))
-intellective_category &lt;- df.mcg %&gt;% filter(Q20type_3_type_4 &gt; mean(df.mcg$Q20type_3_type_4))
-planning_category &lt;- df.mcg %&gt;% filter(Q3type_1_planning &gt; mean(df.mcg$Q3type_1_planning))
-generative_category &lt;- df.mcg %&gt;% filter(Q4type_2_generate &gt; mean(df.mcg$Q4type_2_generate))
-cc_category &lt;- df.mcg %&gt;% filter(Q6type_5_cc &gt; mean(df.mcg$Q6type_5_cc))
-battle_category &lt;- df.mcg %&gt;% filter(Q7type_7_battle &gt; mean(df.mcg$Q7type_7_battle))
-performance_category &lt;- df.mcg %&gt;% filter(Q8type_8_performance &gt; mean(df.mcg$Q8type_8_performance))
-
-# within-category sum of squares
-calc_SS &lt;- function(df) sum(as.matrix(dist(df)^2)) / (2 * nrow(df))
-
-total_within_ss &lt;- sum(
-  calc_SS(physical_category %&gt;% select(-c(task, total_mcgrath))),
-  calc_SS(intellective_category %&gt;% select(-c(task, total_mcgrath))),
-  calc_SS(planning_category %&gt;% select(-c(task, total_mcgrath))),
-  calc_SS(generative_category %&gt;% select(-c(task, total_mcgrath))),
-  calc_SS(cc_category %&gt;% select(-c(task, total_mcgrath))),
-  calc_SS(battle_category %&gt;% select(-c(task, total_mcgrath))),
-  calc_SS(performance_category %&gt;% select(-c(task, total_mcgrath)))
-)
-
-between_ss &lt;- total_sum_squares-total_within_ss</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJpbnQoXCJXaXRoaW4gU1M6XCIpXG5jYWxjX1NTKHBoeXNpY2FsX2NhdGVnb3J5ICU+JSBzZWxlY3QoLWModGFzaywgdG90YWxfbWNncmF0aCkpKVxuY2FsY19TUyhpbnRlbGxlY3RpdmVfY2F0ZWdvcnkgJT4lIHNlbGVjdCgtYyh0YXNrLCB0b3RhbF9tY2dyYXRoKSkpXG5jYWxjX1NTKHBsYW5uaW5nX2NhdGVnb3J5ICU+JSBzZWxlY3QoLWModGFzaywgdG90YWxfbWNncmF0aCkpKVxuY2FsY19TUyhnZW5lcmF0aXZlX2NhdGVnb3J5ICU+JSBzZWxlY3QoLWModGFzaywgdG90YWxfbWNncmF0aCkpKVxuY2FsY19TUyhjY19jYXRlZ29yeSAlPiUgc2VsZWN0KC1jKHRhc2ssIHRvdGFsX21jZ3JhdGgpKSlcbmNhbGNfU1MoYmF0dGxlX2NhdGVnb3J5ICU+JSBzZWxlY3QoLWModGFzaywgdG90YWxfbWNncmF0aCkpKVxuY2FsY19TUyhwZXJmb3JtYW5jZV9jYXRlZ29yeSAlPiUgc2VsZWN0KC1jKHRhc2ssIHRvdGFsX21jZ3JhdGgpKSlcblxucHJpbnQoXCJCZXR3ZWVuIFNTOlwiKVxuYmV0d2Vlbl9zc1xuYGBgIn0= -->
-<pre class="r"><code>print(&quot;Within SS:&quot;)
-calc_SS(physical_category %&gt;% select(-c(task, total_mcgrath)))
-calc_SS(intellective_category %&gt;% select(-c(task, total_mcgrath)))
-calc_SS(planning_category %&gt;% select(-c(task, total_mcgrath)))
-calc_SS(generative_category %&gt;% select(-c(task, total_mcgrath)))
-calc_SS(cc_category %&gt;% select(-c(task, total_mcgrath)))
-calc_SS(battle_category %&gt;% select(-c(task, total_mcgrath)))
-calc_SS(performance_category %&gt;% select(-c(task, total_mcgrath)))
-
-print(&quot;Between SS:&quot;)
-between_ss</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -2192,234 +1943,26 @@ between_ss</code></pre>
 <p>The world according to McGrath</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2V0LnNlZWQoMSlcblxucGNhIDwtIGRmLm1jZyAlPiUgI3NlbGVjdCgtY29udGludW91c19xdWVzdGlvbnMpICU+JVxuICBzZWxlY3QoLXRhc2ssIC10b3RhbF9tY2dyYXRoKSAlPiVcbiAgcHJjb21wKGNlbnRlciA9IFQpICMgc2hvdWxkIHdlIGNlbnRlciBhbmQgc2NhbGU/IG1ha2VzIG5vIGJpZyBkaWZmZXJlbmNlIGJlY2F1c2UgZXZlcnl0aGluZyBpcyBhbHJlYWR5IDAtMVxuXG4jIGdldCBvcHRpbWFsIG51bWJlciBvZiBjbHVzdGVycyAtLSBcInNpbGhvdWV0dGVcIiBtZXRob2RcbmZ2aXpfbmJjbHVzdCh4ID0gcGNhJHgsIEZVTmNsdXN0ZXIgPSBzdGF0czo6a21lYW5zLCBtZXRob2QgPSBcInNpbGhvdWV0dGVcIikgK1xuICBsYWJzKHN1YnRpdGxlID0gXCJTaWxob3VldHRlIG1ldGhvZFwiKVxuXG4jIGdldCBvcHRpbWFsIG51bWJlciBvZiBjbHVzdGVycyAtLSBcIndzc1wiIGVsYm93IG1ldGhvZFxuZnZpel9uYmNsdXN0KHggPSBwY2EkeCwgRlVOY2x1c3RlciA9IHN0YXRzOjprbWVhbnMsIG1ldGhvZCA9IFwid3NzXCIpICtcbiAgbGFicyhzdWJ0aXRsZSA9IFwiRWxib3cgbWV0aG9kXCIpXG5cbmttZWFuc19vdXRwdXQgPC0gcGNhJHggJT4lICMgMiBpcyB0aGUgb3B0aW1hbCBudW1iZXJcbiAga21lYW5zKGNlbnRlcnMgPSAyLCBuc3RhcnQgPSAxMDApXG5cbmNvbWJpbmVkX2RhdGEgPC0gY2JpbmQoZGYubWNnLFxuICAgICAgcGNhJHgsIGZhY3RvcihrbWVhbnNfb3V0cHV0JGNsdXN0ZXIpKSAlPiVcbiAgcmVuYW1lKGNsdXN0ZXIgPSBgZmFjdG9yKGttZWFuc19vdXRwdXQkY2x1c3RlcilgKVxuIFxucCA8LSBjb21iaW5lZF9kYXRhICU+JVxuICBnZ3Bsb3QoYWVzKFxuICAgIHggPSBQQzEsXG4gICAgeSA9IFBDMixcbiAgICBsYWJlbCA9IHRhc2sgLFxuICAgIGZpbGwgPSBjbHVzdGVyXG4gICkpICsgZ2VvbV9wb2ludCgpICsgZ2VvbV9sYWJlbChudWRnZV95ID0gMC4xLCBzaXplID0gMilcbnBcbmBgYCJ9 -->
-<pre class="r"><code>set.seed(1)
-
-pca &lt;- df.mcg %&gt;% #select(-continuous_questions) %&gt;%
-  select(-task, -total_mcgrath) %&gt;%
-  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
-
-# get optimal number of clusters -- &quot;silhouette&quot; method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = &quot;silhouette&quot;) +
-  labs(subtitle = &quot;Silhouette method&quot;)
-
-# get optimal number of clusters -- &quot;wss&quot; elbow method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = &quot;wss&quot;) +
-  labs(subtitle = &quot;Elbow method&quot;)
-
-kmeans_output &lt;- pca$x %&gt;% # 2 is the optimal number
-  kmeans(centers = 2, nstart = 100)
-
-combined_data &lt;- cbind(df.mcg,
-      pca$x, factor(kmeans_output$cluster)) %&gt;%
-  rename(cluster = `factor(kmeans_output$cluster)`)
- 
-p &lt;- combined_data %&gt;%
-  ggplot(aes(
-    x = PC1,
-    y = PC2,
-    label = task ,
-    fill = cluster
-  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
-p</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>The world according to Laughlin</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2V0LnNlZWQoMSlcblxuZGYubGF1Z2hsaW4gPC0gZGYubWFpbl9xdWVzdGlvbnNfc3VtbWFyeSAlPiVcbiAgZmlsdGVyKG5fbGFiZWxzID4gMTApICU+JVxuICB1bmdyb3VwKCkgJT4lXG4gIGZpbHRlcihcbiAgICBxdWVzdGlvbl9uYW1lICVpbiUgYyhcbiAgICAgIFwiUTE1ZGVjX3ZlcmlmaWFiaWxpdHlcIixcbiAgICAgIFwiUTE2c2hhcmVkX2tub3dsZWRnZVwiLFxuICAgICAgXCJRMTd3aXRoaW5fc3lzX3NvbFwiLFxuICAgICAgXCJRMThhbnNfcmVjb2dcIixcbiAgICAgIFwiUTE5dGltZV9zb2x2YWJpbGl0eVwiLFxuICAgICAgXCJRMjFpbnRlbGxlY3RpdmVfanVkZ18xXCIsXG4gICAgICBcIlEyNGV1cmVrYV9xdWVzdGlvblwiXG4gICAgKVxuICApICU+JSAgc2VsZWN0KHRhc2ssIHF1ZXN0aW9uX25hbWUsIG1lYW5fcmF0aW5nKSAlPiVcbiAgcGl2b3Rfd2lkZXIobmFtZXNfZnJvbSA9IHF1ZXN0aW9uX25hbWUsIHZhbHVlc19mcm9tID0gbWVhbl9yYXRpbmcpXG5cbnBjYSA8LSBkZi5sYXVnaGxpbiAlPiUgI3NlbGVjdCgtY29udGludW91c19xdWVzdGlvbnMpICU+JVxuICBzZWxlY3QoLXRhc2spICU+JVxuICBwcmNvbXAoY2VudGVyID0gVCkgIyBzaG91bGQgd2UgY2VudGVyIGFuZCBzY2FsZT8gbWFrZXMgbm8gYmlnIGRpZmZlcmVuY2UgYmVjYXVzZSBldmVyeXRoaW5nIGlzIGFscmVhZHkgMC0xXG5cbiMgZ2V0IG9wdGltYWwgbnVtYmVyIG9mIGNsdXN0ZXJzIC0tIFwic2lsaG91ZXR0ZVwiIG1ldGhvZFxuZnZpel9uYmNsdXN0KHggPSBwY2EkeCwgRlVOY2x1c3RlciA9IHN0YXRzOjprbWVhbnMsIG1ldGhvZCA9IFwic2lsaG91ZXR0ZVwiKSArXG4gIGxhYnMoc3VidGl0bGUgPSBcIlNpbGhvdWV0dGUgbWV0aG9kXCIpXG5cbiMgZ2V0IG9wdGltYWwgbnVtYmVyIG9mIGNsdXN0ZXJzIC0tIFwid3NzXCIgZWxib3cgbWV0aG9kXG5mdml6X25iY2x1c3QoeCA9IHBjYSR4LCBGVU5jbHVzdGVyID0gc3RhdHM6OmttZWFucywgbWV0aG9kID0gXCJ3c3NcIikgK1xuICBsYWJzKHN1YnRpdGxlID0gXCJFbGJvdyBtZXRob2RcIilcblxua21lYW5zX291dHB1dCA8LSBwY2EkeCAlPiUgIyAyIGlzIHRoZSBvcHRpbWFsIG51bWJlclxuICBrbWVhbnMoY2VudGVycyA9IDIsIG5zdGFydCA9IDEwMClcblxuY29tYmluZWRfZGF0YSA8LSBjYmluZChkZi5sYXVnaGxpbixcbiAgICAgIHBjYSR4LCBmYWN0b3Ioa21lYW5zX291dHB1dCRjbHVzdGVyKSkgJT4lXG4gIHJlbmFtZShjbHVzdGVyID0gYGZhY3RvcihrbWVhbnNfb3V0cHV0JGNsdXN0ZXIpYClcbiBcbnAgPC0gY29tYmluZWRfZGF0YSAlPiVcbiAgZ2dwbG90KGFlcyhcbiAgICB4ID0gUEMxLFxuICAgIHkgPSBQQzIsXG4gICAgbGFiZWwgPSB0YXNrICxcbiAgICBmaWxsID0gY2x1c3RlclxuICApKSArIGdlb21fcG9pbnQoKSArIGdlb21fbGFiZWwobnVkZ2VfeSA9IDAuMSwgc2l6ZSA9IDIpXG5wXG5gYGAifQ== -->
-<pre class="r"><code>set.seed(1)
-
-df.laughlin &lt;- df.main_questions_summary %&gt;%
-  filter(n_labels &gt; 10) %&gt;%
-  ungroup() %&gt;%
-  filter(
-    question_name %in% c(
-      &quot;Q15dec_verifiability&quot;,
-      &quot;Q16shared_knowledge&quot;,
-      &quot;Q17within_sys_sol&quot;,
-      &quot;Q18ans_recog&quot;,
-      &quot;Q19time_solvability&quot;,
-      &quot;Q21intellective_judg_1&quot;,
-      &quot;Q24eureka_question&quot;
-    )
-  ) %&gt;%  select(task, question_name, mean_rating) %&gt;%
-  pivot_wider(names_from = question_name, values_from = mean_rating)
-
-pca &lt;- df.laughlin %&gt;% #select(-continuous_questions) %&gt;%
-  select(-task) %&gt;%
-  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
-
-# get optimal number of clusters -- &quot;silhouette&quot; method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = &quot;silhouette&quot;) +
-  labs(subtitle = &quot;Silhouette method&quot;)
-
-# get optimal number of clusters -- &quot;wss&quot; elbow method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = &quot;wss&quot;) +
-  labs(subtitle = &quot;Elbow method&quot;)
-
-kmeans_output &lt;- pca$x %&gt;% # 2 is the optimal number
-  kmeans(centers = 2, nstart = 100)
-
-combined_data &lt;- cbind(df.laughlin,
-      pca$x, factor(kmeans_output$cluster)) %&gt;%
-  rename(cluster = `factor(kmeans_output$cluster)`)
- 
-p &lt;- combined_data %&gt;%
-  ggplot(aes(
-    x = PC1,
-    y = PC2,
-    label = task ,
-    fill = cluster
-  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
-p</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>The world according to Shaw</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2V0LnNlZWQoMSlcblxuZGYuc2hhdyA8LSBkZi5tYWluX3F1ZXN0aW9uc19zdW1tYXJ5ICU+JVxuICBmaWx0ZXIobl9sYWJlbHMgPiAxMCkgJT4lXG4gIHVuZ3JvdXAoKSAlPiVcbiAgZmlsdGVyKFxuICAgIHF1ZXN0aW9uX25hbWUgJWluJSBjKFxuICAgICAgXCJRMmludGVsX21hbmlwXzFcIixcbiAgICAgIFwiUTEzb3V0Y29tZV9tdWx0aXBcIixcbiAgICAgIFwiUTE0c29sX3NjaGVtZV9tdWxcIlxuICAgIClcbiAgKSAlPiUgIHNlbGVjdCh0YXNrLCBxdWVzdGlvbl9uYW1lLCBtZWFuX3JhdGluZykgJT4lXG4gIHBpdm90X3dpZGVyKG5hbWVzX2Zyb20gPSBxdWVzdGlvbl9uYW1lLCB2YWx1ZXNfZnJvbSA9IG1lYW5fcmF0aW5nKVxuXG5wY2EgPC0gZGYuc2hhdyAlPiUgI3NlbGVjdCgtY29udGludW91c19xdWVzdGlvbnMpICU+JVxuICBzZWxlY3QoLXRhc2spICU+JVxuICBwcmNvbXAoY2VudGVyID0gVCkgIyBzaG91bGQgd2UgY2VudGVyIGFuZCBzY2FsZT8gbWFrZXMgbm8gYmlnIGRpZmZlcmVuY2UgYmVjYXVzZSBldmVyeXRoaW5nIGlzIGFscmVhZHkgMC0xXG5cbiMgZ2V0IG9wdGltYWwgbnVtYmVyIG9mIGNsdXN0ZXJzIC0tIFwic2lsaG91ZXR0ZVwiIG1ldGhvZFxuZnZpel9uYmNsdXN0KHggPSBwY2EkeCwgRlVOY2x1c3RlciA9IHN0YXRzOjprbWVhbnMsIG1ldGhvZCA9IFwic2lsaG91ZXR0ZVwiKSArXG4gIGxhYnMoc3VidGl0bGUgPSBcIlNpbGhvdWV0dGUgbWV0aG9kXCIpXG5cbiMgZ2V0IG9wdGltYWwgbnVtYmVyIG9mIGNsdXN0ZXJzIC0tIFwid3NzXCIgZWxib3cgbWV0aG9kXG5mdml6X25iY2x1c3QoeCA9IHBjYSR4LCBGVU5jbHVzdGVyID0gc3RhdHM6OmttZWFucywgbWV0aG9kID0gXCJ3c3NcIikgK1xuICBsYWJzKHN1YnRpdGxlID0gXCJFbGJvdyBtZXRob2RcIilcblxua21lYW5zX291dHB1dCA8LSBwY2EkeCAlPiUgIyAyIGlzIHRoZSBvcHRpbWFsIG51bWJlclxuICBrbWVhbnMoY2VudGVycyA9IDIsIG5zdGFydCA9IDEwMClcblxuY29tYmluZWRfZGF0YSA8LSBjYmluZChkZi5zaGF3LFxuICAgICAgcGNhJHgsIGZhY3RvcihrbWVhbnNfb3V0cHV0JGNsdXN0ZXIpKSAlPiVcbiAgcmVuYW1lKGNsdXN0ZXIgPSBgZmFjdG9yKGttZWFuc19vdXRwdXQkY2x1c3RlcilgKVxuIFxucCA8LSBjb21iaW5lZF9kYXRhICU+JVxuICBnZ3Bsb3QoYWVzKFxuICAgIHggPSBQQzEsXG4gICAgeSA9IFBDMixcbiAgICBsYWJlbCA9IHRhc2sgLFxuICAgIGZpbGwgPSBjbHVzdGVyXG4gICkpICsgZ2VvbV9wb2ludCgpICsgZ2VvbV9sYWJlbChudWRnZV95ID0gMC4xLCBzaXplID0gMilcbnBcbmBgYCJ9 -->
-<pre class="r"><code>set.seed(1)
-
-df.shaw &lt;- df.main_questions_summary %&gt;%
-  filter(n_labels &gt; 10) %&gt;%
-  ungroup() %&gt;%
-  filter(
-    question_name %in% c(
-      &quot;Q2intel_manip_1&quot;,
-      &quot;Q13outcome_multip&quot;,
-      &quot;Q14sol_scheme_mul&quot;
-    )
-  ) %&gt;%  select(task, question_name, mean_rating) %&gt;%
-  pivot_wider(names_from = question_name, values_from = mean_rating)
-
-pca &lt;- df.shaw %&gt;% #select(-continuous_questions) %&gt;%
-  select(-task) %&gt;%
-  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
-
-# get optimal number of clusters -- &quot;silhouette&quot; method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = &quot;silhouette&quot;) +
-  labs(subtitle = &quot;Silhouette method&quot;)
-
-# get optimal number of clusters -- &quot;wss&quot; elbow method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = &quot;wss&quot;) +
-  labs(subtitle = &quot;Elbow method&quot;)
-
-kmeans_output &lt;- pca$x %&gt;% # 2 is the optimal number
-  kmeans(centers = 2, nstart = 100)
-
-combined_data &lt;- cbind(df.shaw,
-      pca$x, factor(kmeans_output$cluster)) %&gt;%
-  rename(cluster = `factor(kmeans_output$cluster)`)
- 
-p &lt;- combined_data %&gt;%
-  ggplot(aes(
-    x = PC1,
-    y = PC2,
-    label = task ,
-    fill = cluster
-  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
-p</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>The world according to Steiner</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2V0LnNlZWQoMSlcblxuZGYuc3RlaW5lciA8LSBkZi5tYWluX3F1ZXN0aW9uc19zdW1tYXJ5ICU+JVxuICBmaWx0ZXIobl9sYWJlbHMgPiAxMCkgJT4lXG4gIHVuZ3JvdXAoKSAlPiVcbiAgZmlsdGVyKFxuICAgIHF1ZXN0aW9uX25hbWUgJWluJSBjKFxuICAgICAgXCJROWRpdmlzaWJsZV91bml0YXJ5XCIsXG4gICAgICBcIlExMG1heGltaXppbmdcIixcbiAgICAgIFwiUTExb3B0aW1pemluZ1wiXG4gICAgKVxuICApICU+JSAgc2VsZWN0KHRhc2ssIHF1ZXN0aW9uX25hbWUsIG1lYW5fcmF0aW5nKSAlPiVcbiAgcGl2b3Rfd2lkZXIobmFtZXNfZnJvbSA9IHF1ZXN0aW9uX25hbWUsIHZhbHVlc19mcm9tID0gbWVhbl9yYXRpbmcpXG5cbnBjYSA8LSBkZi5zdGVpbmVyICU+JSAjc2VsZWN0KC1jb250aW51b3VzX3F1ZXN0aW9ucykgJT4lXG4gIHNlbGVjdCgtdGFzaykgJT4lXG4gIHByY29tcChjZW50ZXIgPSBUKSAjIHNob3VsZCB3ZSBjZW50ZXIgYW5kIHNjYWxlPyBtYWtlcyBubyBiaWcgZGlmZmVyZW5jZSBiZWNhdXNlIGV2ZXJ5dGhpbmcgaXMgYWxyZWFkeSAwLTFcblxuIyBnZXQgb3B0aW1hbCBudW1iZXIgb2YgY2x1c3RlcnMgLS0gXCJzaWxob3VldHRlXCIgbWV0aG9kXG5mdml6X25iY2x1c3QoeCA9IHBjYSR4LCBGVU5jbHVzdGVyID0gc3RhdHM6OmttZWFucywgbWV0aG9kID0gXCJzaWxob3VldHRlXCIpICtcbiAgbGFicyhzdWJ0aXRsZSA9IFwiU2lsaG91ZXR0ZSBtZXRob2RcIilcblxuIyBnZXQgb3B0aW1hbCBudW1iZXIgb2YgY2x1c3RlcnMgLS0gXCJ3c3NcIiBlbGJvdyBtZXRob2RcbmZ2aXpfbmJjbHVzdCh4ID0gcGNhJHgsIEZVTmNsdXN0ZXIgPSBzdGF0czo6a21lYW5zLCBtZXRob2QgPSBcIndzc1wiKSArXG4gIGxhYnMoc3VidGl0bGUgPSBcIkVsYm93IG1ldGhvZFwiKVxuXG5rbWVhbnNfb3V0cHV0IDwtIHBjYSR4ICU+JSAjIDIgaXMgdGhlIG9wdGltYWwgbnVtYmVyXG4gIGttZWFucyhjZW50ZXJzID0gMywgbnN0YXJ0ID0gMTAwKVxuXG5jb21iaW5lZF9kYXRhIDwtIGNiaW5kKGRmLnN0ZWluZXIsXG4gICAgICBwY2EkeCwgZmFjdG9yKGttZWFuc19vdXRwdXQkY2x1c3RlcikpICU+JVxuICByZW5hbWUoY2x1c3RlciA9IGBmYWN0b3Ioa21lYW5zX291dHB1dCRjbHVzdGVyKWApXG4gXG5wIDwtIGNvbWJpbmVkX2RhdGEgJT4lXG4gIGdncGxvdChhZXMoXG4gICAgeCA9IFBDMSxcbiAgICB5ID0gUEMyLFxuICAgIGxhYmVsID0gdGFzayAsXG4gICAgZmlsbCA9IGNsdXN0ZXJcbiAgKSkgKyBnZW9tX3BvaW50KCkgKyBnZW9tX2xhYmVsKG51ZGdlX3kgPSAwLjEsIHNpemUgPSAyKVxucFxuYGBgIn0= -->
-<pre class="r"><code>set.seed(1)
-
-df.steiner &lt;- df.main_questions_summary %&gt;%
-  filter(n_labels &gt; 10) %&gt;%
-  ungroup() %&gt;%
-  filter(
-    question_name %in% c(
-      &quot;Q9divisible_unitary&quot;,
-      &quot;Q10maximizing&quot;,
-      &quot;Q11optimizing&quot;
-    )
-  ) %&gt;%  select(task, question_name, mean_rating) %&gt;%
-  pivot_wider(names_from = question_name, values_from = mean_rating)
-
-pca &lt;- df.steiner %&gt;% #select(-continuous_questions) %&gt;%
-  select(-task) %&gt;%
-  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
-
-# get optimal number of clusters -- &quot;silhouette&quot; method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = &quot;silhouette&quot;) +
-  labs(subtitle = &quot;Silhouette method&quot;)
-
-# get optimal number of clusters -- &quot;wss&quot; elbow method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = &quot;wss&quot;) +
-  labs(subtitle = &quot;Elbow method&quot;)
-
-kmeans_output &lt;- pca$x %&gt;% # 2 is the optimal number
-  kmeans(centers = 3, nstart = 100)
-
-combined_data &lt;- cbind(df.steiner,
-      pca$x, factor(kmeans_output$cluster)) %&gt;%
-  rename(cluster = `factor(kmeans_output$cluster)`)
- 
-p &lt;- combined_data %&gt;%
-  ggplot(aes(
-    x = PC1,
-    y = PC2,
-    label = task ,
-    fill = cluster
-  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
-p</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>The world according to Zigurs</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2V0LnNlZWQoMSlcblxuZGYuemlndXJzIDwtIGRmLm1haW5fcXVlc3Rpb25zX3N1bW1hcnkgJT4lXG4gIGZpbHRlcihuX2xhYmVscyA+IDEwKSAlPiVcbiAgdW5ncm91cCgpICU+JVxuICBmaWx0ZXIoXG4gICAgcXVlc3Rpb25fbmFtZSAlaW4lIGMoXG4gICAgICBcIlExM291dGNvbWVfbXVsdGlwXCIsXG4gICAgICBcIlExNHNvbF9zY2hlbWVfbXVsXCIsXG4gICAgICBcIlEyMmNvbmZsX3RyYWRlb2Zmc1wiLFxuICAgICAgXCJRMjNzc19vdXRfdW5jZXJ0XCJcbiAgICApXG4gICkgJT4lICBzZWxlY3QodGFzaywgcXVlc3Rpb25fbmFtZSwgbWVhbl9yYXRpbmcpICU+JVxuICBwaXZvdF93aWRlcihuYW1lc19mcm9tID0gcXVlc3Rpb25fbmFtZSwgdmFsdWVzX2Zyb20gPSBtZWFuX3JhdGluZylcblxucGNhIDwtIGRmLnppZ3VycyAlPiUgI3NlbGVjdCgtY29udGludW91c19xdWVzdGlvbnMpICU+JVxuICBzZWxlY3QoLXRhc2spICU+JVxuICBwcmNvbXAoY2VudGVyID0gVCkgIyBzaG91bGQgd2UgY2VudGVyIGFuZCBzY2FsZT8gbWFrZXMgbm8gYmlnIGRpZmZlcmVuY2UgYmVjYXVzZSBldmVyeXRoaW5nIGlzIGFscmVhZHkgMC0xXG5cbiMgZ2V0IG9wdGltYWwgbnVtYmVyIG9mIGNsdXN0ZXJzIC0tIFwic2lsaG91ZXR0ZVwiIG1ldGhvZFxuZnZpel9uYmNsdXN0KHggPSBwY2EkeCwgRlVOY2x1c3RlciA9IHN0YXRzOjprbWVhbnMsIG1ldGhvZCA9IFwic2lsaG91ZXR0ZVwiKSArXG4gIGxhYnMoc3VidGl0bGUgPSBcIlNpbGhvdWV0dGUgbWV0aG9kXCIpXG5cbiMgZ2V0IG9wdGltYWwgbnVtYmVyIG9mIGNsdXN0ZXJzIC0tIFwid3NzXCIgZWxib3cgbWV0aG9kXG5mdml6X25iY2x1c3QoeCA9IHBjYSR4LCBGVU5jbHVzdGVyID0gc3RhdHM6OmttZWFucywgbWV0aG9kID0gXCJ3c3NcIikgK1xuICBsYWJzKHN1YnRpdGxlID0gXCJFbGJvdyBtZXRob2RcIilcblxua21lYW5zX291dHB1dCA8LSBwY2EkeCAlPiUgIyAyIGlzIHRoZSBvcHRpbWFsIG51bWJlclxuICBrbWVhbnMoY2VudGVycyA9IDIsIG5zdGFydCA9IDEwMClcblxuY29tYmluZWRfZGF0YSA8LSBjYmluZChkZi56aWd1cnMsXG4gICAgICBwY2EkeCwgZmFjdG9yKGttZWFuc19vdXRwdXQkY2x1c3RlcikpICU+JVxuICByZW5hbWUoY2x1c3RlciA9IGBmYWN0b3Ioa21lYW5zX291dHB1dCRjbHVzdGVyKWApXG4gXG5wIDwtIGNvbWJpbmVkX2RhdGEgJT4lXG4gIGdncGxvdChhZXMoXG4gICAgeCA9IFBDMSxcbiAgICB5ID0gUEMyLFxuICAgIGxhYmVsID0gdGFzayAsXG4gICAgZmlsbCA9IGNsdXN0ZXJcbiAgKSkgKyBnZW9tX3BvaW50KCkgKyBnZW9tX2xhYmVsKG51ZGdlX3kgPSAwLjEsIHNpemUgPSAyKVxucFxuYGBgIn0= -->
-<pre class="r"><code>set.seed(1)
-
-df.zigurs &lt;- df.main_questions_summary %&gt;%
-  filter(n_labels &gt; 10) %&gt;%
-  ungroup() %&gt;%
-  filter(
-    question_name %in% c(
-      &quot;Q13outcome_multip&quot;,
-      &quot;Q14sol_scheme_mul&quot;,
-      &quot;Q22confl_tradeoffs&quot;,
-      &quot;Q23ss_out_uncert&quot;
-    )
-  ) %&gt;%  select(task, question_name, mean_rating) %&gt;%
-  pivot_wider(names_from = question_name, values_from = mean_rating)
-
-pca &lt;- df.zigurs %&gt;% #select(-continuous_questions) %&gt;%
-  select(-task) %&gt;%
-  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
-
-# get optimal number of clusters -- &quot;silhouette&quot; method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = &quot;silhouette&quot;) +
-  labs(subtitle = &quot;Silhouette method&quot;)
-
-# get optimal number of clusters -- &quot;wss&quot; elbow method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = &quot;wss&quot;) +
-  labs(subtitle = &quot;Elbow method&quot;)
-
-kmeans_output &lt;- pca$x %&gt;% # 2 is the optimal number
-  kmeans(centers = 2, nstart = 100)
-
-combined_data &lt;- cbind(df.zigurs,
-      pca$x, factor(kmeans_output$cluster)) %&gt;%
-  rename(cluster = `factor(kmeans_output$cluster)`)
- 
-p &lt;- combined_data %&gt;%
-  ggplot(aes(
-    x = PC1,
-    y = PC2,
-    label = task ,
-    fill = cluster
-  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
-p</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->

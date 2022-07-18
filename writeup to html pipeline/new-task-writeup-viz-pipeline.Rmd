@@ -29,6 +29,10 @@ library(tidyverse)
 
 # Pull in Survey Data
 ```{r}
+qualtrics_api_credentials(api_key = "91xPIrVaorSVR2vigYP4xG540WbapOLOyZoz90Ql",
+base_url = "upenn.co1.qualtrics.com",
+overwrite = TRUE)
+
 task_writing_survey_id <- (surveys %>% filter(name == "Task Rewriting Submission Form [NEW]"))$id
 
 df.survey_results <- fetch_survey(

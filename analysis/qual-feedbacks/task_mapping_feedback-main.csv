@@ -138,6 +138,25 @@ Carter Racing,Q18ans_recog_elaboration,"Seeing the right answer means they also 
 Carter Racing,Q24eureka_question_elaboration,"I'm not sure if figuring out the right question to ask here is a ""trick"" or not?"
 Carter Racing,Q17within_sys_sol_elaboration,Not sure as it said you could ask for more information so I said yes
 Carter Racing,Q23ss_out_uncert_elaboration,They don't know if they get scholarship
+Carter Racing (Experimenterless Version),Q8type_8_performance_elaboration,You fail if you predict that the race can go on.
+Carter Racing (Experimenterless Version),Q16shared_knowledge_elaboration,A formula can be devised to show the relationship between air temperature and engine failure and show  levels of air  temperatures where engine failures peak.
+Carter Racing (Experimenterless Version),Q22confl_tradeoffs_elaboration,The game involves the dilemma of whether to go ahead with the race or not for cases made for the same. But the objective is to deny the race based on engine failure due to air temperature.
+Carter Racing (Experimenterless Version),Q6type_5_cc_elaboration,"It could be one that requires collaboration, no one person is given all the info, they have to work together to figure out the answer"
+Carter Racing (Experimenterless Version),Q7type_7_battle_elaboration,"No, your fighting the data, not other people."
+Carter Racing (Experimenterless Version),Q8type_8_performance_elaboration,either select yes and fail or no and pass
+Carter Racing (Experimenterless Version),Q9divisible_unitary_elaboration,"I would say yes, because different people in the group are given different data and they have to combine everything together to come up with correct answer"
+Carter Racing (Experimenterless Version),Q11optimizing_elaboration,"There IS a correct answer - dont race, and the data, i interpreted ight, gives that answer"
+Carter Racing (Experimenterless Version),Q4type_2_generate_elaboration,"The team must use the collected data to determine whether they should proceed or not, I would assume this would take some brainstorming. "
+Carter Racing (Experimenterless Version),Q6type_5_cc_elaboration,In groups there will be several differing viewpoints and there is only one correct answer
+Carter Racing (Experimenterless Version),Q7type_7_battle_elaboration,It is set up as a competition for a sponsorship but there's only one correct answer
+Carter Racing (Experimenterless Version),Q8type_8_performance_elaboration,You either get the answer correct or not.
+Carter Racing (Experimenterless Version),Q10maximizing_elaboration,It doesn't state anywhere that the task is timed
+Carter Racing (Experimenterless Version),Q11optimizing_elaboration,There is only one correct answer
+Carter Racing (Experimenterless Version),Q13outcome_multip_elaboration,"It's a ""right or wrong"" task"
+Carter Racing (Experimenterless Version),Q15dec_verifiability_elaboration,"You will know it's correct if you back out of the race, you can verify the incorrect answer by trying to race and you'll find out you're guaranteed to fail."
+Carter Racing (Experimenterless Version),Q16shared_knowledge_elaboration,I would assume that an algorithm could solve this 
+Carter Racing (Experimenterless Version),Q20type_3_type_4_elaboration,There's only one correct answer
+Carter Racing (Experimenterless Version),Q24eureka_question_elaboration,I think once they start the race if they decide to they realize the game was rigged to fail.
 Categorization problem,Q9divisible_unitary_elaboration,it doesn't say you can't work in groups but it doesn't say you can
 Categorization problem,Q10maximizing_elaboration,there is a fixed amount of time
 Categorization problem,Q22confl_tradeoffs_elaboration,the distractor cards that are conflicting.

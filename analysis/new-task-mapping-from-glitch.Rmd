@@ -26,6 +26,14 @@ Ensure we don't have any accidental resubmissions -- sometimes the server logs a
 Also ensure we don't have anyone submitting without a workerID
 
 ```{r}
+# Fix an issue with the new Carter racing, in which I forgot to set the task blob URL 
+# due to creating the HTML's before I put the new writeup on GitHub
+carter_mapped_date <- 1658155951000
+df.mapping.raw <- df.mapping.raw %>%
+  mutate(
+    task_blob_url = ifelse(task == "Carter Racing (Experimenterless Version)" & createdAt < carter_mapped_date,
+                           "https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/353a2dcfffea85ce0d2bbe5a3f0e650341c95ffa", task_blob_url))
+
 # distinct submissions
 df.mapping.raw <- distinct(df.mapping.raw, user, task, .keep_all = T)
 
