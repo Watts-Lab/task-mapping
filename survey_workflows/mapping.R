@@ -40,7 +40,7 @@
         
         worker_links <- as.list(paste0(url, person))
         link_groups[["links"]][[i]] <- worker_links
-        link_groups[["comments"]][[i]] <- paste0("Task Mapping Mapping Round 1")
+        link_groups[["comments"]][[i]] <- paste0("Task Mapping - Carter Racing")
       }
       
       worker_ids <- link_groups$worker_id
@@ -49,25 +49,19 @@
       
       #--- Sending Surveys ----
       header_msg = "
-          Hi — you signed up to be part of our ongoing projects, and we reached out last week about your qualification to do our task (Answering 23 questions about a group or individual activity).
-
-          SUMMARY: Our study is ongoing, and we are releasing more tasks today! Come do tasks with us!
-          
-          Especially if you have not gotten the chance to do a task yet, please come! We would love your help.
-          
-          As a reminder, you should visit your personal link (included in this email) to start doing tasks. 
-
-          To avoid spamming your inboxes, we plan to post major updates on Fridays, and we will release the largest batches of tasks then. 
-          We will also post some tasks throughout the week, as quickly we are able to add them to the database. 
-          
-          In this past week, we have seen very high demand, and the daily tasks have generally been completed within an hour of being posted — thank you for your hard work and dedication! 
-          However, because of this demand, and because creating tasks takes time, please do not be alarmed if you do not see any postings when you visit the site. 
+         Hello! You previously qualified for our task, in which you answered 23 questions about a group task. 
+         We now have one additional task added to the database, and there are opportunities for around 20 individuals to answer questions about the task. 
+         You will be paid at the same rate ($15/hour) that you were paid for the original task.
+         
+         Please re-visit your personal link at the URL below! This will be first-come, first-serve; the first 20 people to arrive will be able to complete the task.
+         Additionally, we will maintain this mailing list and notify you when new tasks become available.
          "
       footer_msg = "
-          We will pay you $3 per completed survey ($15/hr rate), and you will receive the bonus within 3-4 business days. 
           You do NOT need to email us a completion code; if you reach the page with the code, this means that you have completed the survey.
 
-          We hope to see you again soon.
+          We hope to see you soon. 
+          
+          Thank you so much!
             "
       
       json_body = list(
@@ -141,7 +135,6 @@
         "text"
       ))
       
-      #--- HIGH SCORING People : Preparing + Sending Surveys ----
       #--- PAYING People ----
       mapper_payment <- read_csv("mapper_payment.csv")%>% 
         mutate(
