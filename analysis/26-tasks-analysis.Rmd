@@ -517,7 +517,6 @@ kmeans <- pca$x %>%
 combined_data <- cbind(task.map.data,
       pca$x, factor(kmeans$cluster)) %>%
   rename(cluster = `factor(kmeans$cluster)`)
-
 p <- combined_data %>%
   ggplot(aes(
     x = PC1,

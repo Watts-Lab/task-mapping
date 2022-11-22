@@ -94,16 +94,21 @@ Get a sense of inter-rater reliability
 task_response_summary <- responses_clean_ind %>%
   group_by(task, question) %>%
   # set NA to 0
-  mutate_all(funs(ifelse(is.na(.), 0, .))) %>% 
-  summarize(mean_rating = mean(value, na.rm = T),
+  #mutate_all(funs(ifelse(is.na(.), 0, .))) %>%
+  # set to binary
+  mutate(value_scaled = ifelse(value !=3 , ifelse(value<3,0,1), NA)) %>%
+  drop_na() %>%
+   summarize(mean_rating = mean(value, na.rm = T),
+            agreement_scaled = ifelse(abs(value_scaled-mean(value_scaled))==0, 1, 0),
             agreement = ifelse(abs(value-mean(value))==0, 1, 0),
             n_labels = agree(t(value))$raters,
             all_values = paste(value, collapse = " & ")) %>%
-  ungroup()%>%
-  group_by(task) %>%
+  ungroup() %>% unique() %>%
+  group_by(question) %>%
   summarize(
     n_labels = round(mean(n_labels),0),
-    mean_agreement = mean(agreement)
+    mean_agreement = mean(agreement, na.rm = T),
+    mean_agreement_scaled = mean(agreement_scaled, na.rm = T)
   ) %>%
   arrange(desc(mean_agreement)) %>%
   filter(n_labels > 1)
@@ -117,16 +122,21 @@ quantile(task_response_summary$mean_agreement, c(0.025, 0.9725))
 question_response_summary <- responses_clean_ind %>%
   group_by(task, question) %>%
   # set NA to 0
-  mutate_all(funs(ifelse(is.na(.), 0, .))) %>% 
+  #mutate_all(funs(ifelse(is.na(.), 0, .))) %>%
+  # set to binary
+  mutate(value_scaled = ifelse(value !=3 , ifelse(value<3,0,1), NA)) %>%
+  drop_na() %>%
   summarize(mean_rating = mean(value, na.rm = T),
+            agreement_scaled = ifelse(abs(value_scaled-mean(value_scaled))==0, 1, 0),
             agreement = ifelse(abs(value-mean(value))==0, 1, 0),
             n_labels = agree(t(value))$raters,
             all_values = paste(value, collapse = " & ")) %>%
-  ungroup()%>%
+  ungroup() %>% unique() %>%
   group_by(question) %>%
   summarize(
     n_labels = round(mean(n_labels),0),
-    mean_agreement = mean(agreement)
+    mean_agreement = mean(agreement, na.rm = T),
+    mean_agreement_scaled = mean(agreement_scaled, na.rm = T)
   ) %>%
   arrange(desc(mean_agreement)) %>%
   filter(n_labels > 1)
@@ -135,27 +145,84 @@ question_response_summary
 
 mean(question_response_summary$mean_agreement)
 sd(question_response_summary$mean_agreement)
-quantile(question_response_summary$mean_agreement, c(0.025, 0.9725))
+quantile(question_response_summary$mean_agreement, c(0.025, 0.9725), na.rm = T)
 
 
-kripp.alpha.by.task <- data.frame(matrix(nrow = 0, ncol = 2))
-
-for(task_name in task_response_summary$task){
-  ka <- responses_clean_ind %>% filter(task == task_name) %>%
-  pivot_wider(names_from = question, values_from = value) %>% ungroup() %>%
-  select(-c(task, user)) %>%
-  as.matrix() %>% kripp.alpha("ordinal")
-  
-  newrow = data.frame(
-    task = task_name,
-    k.alpha = ka$value
-  )
-  
-  kripp.alpha.by.task <- rbind(kripp.alpha.by.task, newrow)
-}
-
-kripp.alpha.by.task %>% arrange(desc(k.alpha))
+# kripp.alpha.by.task <- data.frame(matrix(nrow = 0, ncol = 2))
+# 
+# for(task_name in task_response_summary$task){
+#   ka <- responses_clean_ind %>% filter(task == task_name) %>%
+#   pivot_wider(names_from = question, values_from = value) %>% ungroup() %>%
+#   select(-c(task, user)) %>%
+#   as.matrix() %>% kripp.alpha("ordinal")
+#   
+#   newrow = data.frame(
+#     task = task_name,
+#     k.alpha = ka$value
+#   )
+#   
+#   kripp.alpha.by.task <- rbind(kripp.alpha.by.task, newrow)
+# }
+# 
+# kripp.alpha.by.task %>% arrange(desc(k.alpha))
 ```
+
+```{r fig.height=5, fig.width=20}
+averaged_by_task <- responses_clean_ind %>%
+  ungroup() %>%
+  group_by(task, question) %>%
+  summarize(value = mean(value, na.rm = T)) %>%
+  pivot_wider(names_from = question, values_from = value)
+
+
+A <- averaged_by_task %>%
+  ggplot(aes(
+    x = generate_ideas,
+    y = generate_creativity
+  )) + geom_count() +
+  geom_smooth(method = 'lm')+
+  labs(title = "A") +
+  annotate("text", x = 1.5, y = 4, size = 10, label = paste("r =", 
+                                                            toString(round(cor(averaged_by_task$generate_ideas, averaged_by_task$generate_creativity, use="complete.obs"),3)))) +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        plot.title = element_text(size=30, face="bold"),
+        legend.text = element_text(size=25)) #change legend text font size)
+
+B <- averaged_by_task %>%
+  ggplot(aes(
+    x = goal_standard,
+    y = goal_optimize
+  )) + geom_count() +
+  geom_smooth(method = 'lm')+
+  labs(title = "B") +
+  annotate("text", x = 1.5, y = 4, size = 10, label = paste("r =",
+                                                            toString(round(cor(averaged_by_task$goal_standard, averaged_by_task$goal_optimize, use="complete.obs"),3)))) +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        plot.title = element_text(size=30, face="bold"),
+        legend.text = element_text(size=25))
+
+C <- averaged_by_task %>%
+  ggplot(aes(
+    x = solution_objectivity,
+    y = solution_optimal
+  )) + geom_count() +
+  geom_smooth(method = 'lm')+
+  labs(title = "C") +
+  annotate("text", x = 1.5, y = 4, size = 10, label = paste("r =",
+                                                          toString(round(cor(averaged_by_task$solution_objectivity, averaged_by_task$solution_optimal, use="complete.obs"),3)))) +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        plot.title = element_text(size=30, face="bold"),
+        legend.text = element_text(size=25))
+
+
+g <- arrangeGrob(A,B,C, nrow = 1)
+
+ggsave("corrplot_related_questions.png", g)
+```
+
 
 
 Look at correlations of similar questions

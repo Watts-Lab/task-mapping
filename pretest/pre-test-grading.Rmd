@@ -14,6 +14,9 @@ pacman::p_load(agreement,stats,corrplot,irr,stringr,markdown,ggplot2,dplyr,qualt
 
 
 ```{r}
+qualtrics_api_credentials(api_key = "91xPIrVaorSVR2vigYP4xG540WbapOLOyZoz90Ql",
+base_url = "upenn.co1.qualtrics.com",
+overwrite = TRUE)
 surveys <- all_surveys()
 pretest_id <- (surveys %>% filter(name == "Pre-Test MTurk Pilot"))$id 
 ```
@@ -50,6 +53,7 @@ I made a mistake in which some people didn't see the appropriate feedback during
 ```{r}
 df.pretest <- df.pretest %>%
   filter(
+    Progress == 100 &
     trainQ11optimizing == 0 &
     trainQ14sol_sch_mul == 0 &
     trainQ16shared_know == 1 &
@@ -314,15 +318,16 @@ ggplot(df.results_by_thresh,
            y = csop_score_diff)) +
   geom_point() + geom_line() +
   geom_hline(yintercept = mean_csop_error, color = "red") + 
-  geom_vline(xintercept = 0.7525, color = "blue") + 
-  geom_vline(xintercept = 0.8225, color = "blue") + 
+  geom_vline(xintercept = 0.75, color = "blue") + 
+  #geom_vline(xintercept = 0.7525, color = "blue") + 
+  #geom_vline(xintercept = 0.8225, color = "blue") + 
   geom_errorbar(aes(ymin=ci_min, ymax=ci_max), width=.01) + 
   geom_text(aes(label = num_workers), vjust=-10, color = "blue",
             data = df.results_by_thresh[critical_indices,]) +
   labs(
-    title = "Mean Error on CSOP Task By Pre-Test (16 Question) Theshold",
+    title = "Mean Error on Validation Task By Pre-Test (16-Question) Theshold",
     x = "Threshold (% correct on Pre-Test)",
-    y  = "Total Error of Mean Score (Difference from Gold)"
+    y  = "Abs(Mean Response - Correct Response)"
   ) +
   ylim(c(1, 6)) + 
   theme_bw()

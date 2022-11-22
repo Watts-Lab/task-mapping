@@ -18,7 +18,8 @@ library(tidyverse)
 ```
 
 ```{r}
-df.mapping.raw <- read_delim('http://task-robot.glitch.me/results/survey/csv')
+# df.mapping.raw <- read_delim('http://task-robot.glitch.me/results/survey/csv')
+df.mapping.raw <- read_csv('../raw_map.csv')
 ```
 
 Ensure we don't have any accidental resubmissions -- sometimes the server logs a "double click" as two separate maps!
@@ -28,64 +29,65 @@ Also ensure we don't have anyone submitting without a workerID
 ```{r}
 # Fix an issue with the new Carter racing, in which I forgot to set the task blob URL 
 # due to creating the HTML's before I put the new writeup on GitHub
-carter_mapped_date <- 1658155951000
-df.mapping.raw <- df.mapping.raw %>%
-  mutate(
-    task_blob_url = ifelse(task == "Carter Racing (Experimenterless Version)" & createdAt < carter_mapped_date,
-                           "https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/353a2dcfffea85ce0d2bbe5a3f0e650341c95ffa", task_blob_url))
-
-# distinct submissions
-df.mapping.raw <- distinct(df.mapping.raw, user, task, .keep_all = T)
-
-# no non-Turkers --- your userID needs to start with A
-df.mapping.raw <- df.mapping.raw %>% filter(startsWith(user, "A"))
-
-nrow(df.mapping.raw)
+# 
+# carter_mapped_date <- 1658155951000
+# df.mapping.raw <- df.mapping.raw %>%
+#   mutate(
+#     task_blob_url = ifelse(task == "Carter Racing (Experimenterless Version)" & createdAt < carter_mapped_date,
+#                            "https://api.github.com/repos/Watts-Lab/task-mapping/git/blobs/353a2dcfffea85ce0d2bbe5a3f0e650341c95ffa", task_blob_url))
+# 
+# # distinct submissions
+# df.mapping.raw <- distinct(df.mapping.raw, user, task, .keep_all = T)
+# 
+# # no non-Turkers --- your userID needs to start with A
+# df.mapping.raw <- df.mapping.raw %>% filter(startsWith(user, "A"))
+# 
+# nrow(df.mapping.raw)
 ```
 # Save the Raw Data
 
 ```{r}
-df.mapping.raw %>% write_csv('../raw_map.csv')
+# df.mapping.raw %>% write_csv('../raw_map.csv')
 ```
 
 # Create a CSV of workers to pay in `survey_workflows` with WorkerID, date, how many tasks they did, whether they've been paid for it
 
 ```{r}
 # The same spreadsheet logs how much we previously paid; we read this in and update
-df.payment.prev <- read_csv('../survey_workflows/mapper_payment.csv') %>% 
-  select(WorkerId, amount_paid, last_payment_date)
-
-# First, we keep track of everyone's cumulative payments
-df.mapping.payment <- df.mapping.raw %>%
-  select(
-    user, updatedAt
-  ) %>%
-  mutate(
-    pay = 3, # flat rate of $3 per task
-    paid = 0
-  ) %>%
-  group_by(user) %>%
-  summarize(
-    lastUpdate = last(updatedAt),
-    payment = sum(pay),
-    num_tasks_completed = payment/3
-  ) %>% rename(WorkerId = user)
-
-# Then we subtract off how much they have already been paid
-df.mapping.payment.new <- df.mapping.payment %>% left_join(df.payment.prev, by = "WorkerId") %>%
-   mutate(
-     amount_paid = ifelse(is.na(amount_paid), 0, amount_paid)
-   ) %>%
-  mutate(
-    amount_to_pay = payment - amount_paid
-  )
-
-df.mapping.payment.new %>% write_csv('../survey_workflows/mapper_payment.csv')
+# df.payment.prev <- read_csv('../survey_workflows/mapper_payment.csv') %>% 
+#   select(WorkerId, amount_paid, last_payment_date)
+# 
+# # First, we keep track of everyone's cumulative payments
+# df.mapping.payment <- df.mapping.raw %>%
+#   select(
+#     user, updatedAt
+#   ) %>%
+#   mutate(
+#     pay = 3, # flat rate of $3 per task
+#     paid = 0
+#   ) %>%
+#   group_by(user) %>%
+#   summarize(
+#     lastUpdate = last(updatedAt),
+#     payment = sum(pay),
+#     num_tasks_completed = payment/3
+#   ) %>% rename(WorkerId = user)
+# 
+# # Then we subtract off how much they have already been paid
+# df.mapping.payment.new <- df.mapping.payment %>% left_join(df.payment.prev, by = "WorkerId") %>%
+#    mutate(
+#      amount_paid = ifelse(is.na(amount_paid), 0, amount_paid)
+#    ) %>%
+#   mutate(
+#     amount_to_pay = payment - amount_paid
+#   )
+# 
+# df.mapping.payment.new %>% write_csv('../survey_workflows/mapper_payment.csv')
 ```
 
 Budget check!
 ```{r}
-sum(df.mapping.payment.new$payment)
+# sum(df.mapping.payment.new$payment)
 ```
 
 
@@ -146,6 +148,7 @@ df.main_questions_summary <- df.mapping.raw %>%
 df.main_questions_summary %>% write_csv('../main_question_summary.csv')
 ```
 
+
 Inter-Rater Reliability:
 Select 2 raters at random and bootstrap a situation where we have only 2 -- this will mimic stage 1
 
@@ -182,7 +185,7 @@ Select 2 raters at random and bootstrap a situation where we have only 2 -- this
 #             agreement = ifelse(mean_rating > 0.5, mean_rating, 1-mean_rating),
 #             general.alpha = (agreement-0.5)/(0.5)
 #             )
-#   
+# 
 #   task_summary <- dataframe_resampled %>%
 #     group_by(task, task_blob_url) %>%
 #   summarize(
@@ -202,9 +205,9 @@ Select 2 raters at random and bootstrap a situation where we have only 2 -- this
 #     mean_alpha = mean(general.alpha)
 #   ) %>%
 #   arrange(desc(mean_alpha))
-#   
+# 
 #   q_agr_mean <- c(q_agr_mean, mean(question_summary$mean_agreement))
-#   
+# 
 # }
 # 
 # quantile(task_agr_mean, c(0.025, 0.9725))
@@ -275,6 +278,184 @@ Special investigation into whether the (second) rewrite of Putting Food Into Cat
 # old.writeup
 ```
 
+How often did people answer NA?
+```{r, fig.height=10, fig.width=10}
+df.mapping.raw %>%
+  select(c(main_questions, task, task_blob_url)) %>%
+  select(-continuous_questions) %>%
+  pivot_longer(cols = -c(task, task_blob_url), names_to = "question_name") %>%
+  mutate(value = recode(value, 
+                     "Mental" = 0,
+                     "Physical" = 1,
+                    # "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+                     "No" = 0,
+                     "Yes" = 1
+                   )) %>%
+  filter(is.na(value)) %>%
+  # this gets us to all the NA's
+  mutate(
+    value = 1,
+  ) %>% select(task, question_name) %>% table() %>% as.data.frame() %>%
+  rename(`Number of NA`= Freq) %>%
+  mutate(question_name = fct_reorder(.f = as.factor(question_name),
+                               .x = `Number of NA`,
+                               .fun = function(x)sum(x,na.rm = TRUE))) %>%
+  ggplot(
+   aes(x=question_name, y=task, fill=`Number of NA`)
+  ) +
+  geom_raster() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + 
+  scale_fill_distiller(palette = "Spectral") +
+  labs(
+    title = "Heatmap of Tasks and Questions with 'NA' Rating",
+    x = "Question Name",
+    y = "Task Name"
+  ) 
+
+
+ggsave("heatmap_of_na.png")
+```
+
+
+```{r}
+df.mapping.raw %>%
+  select(c(main_questions, task, task_blob_url)) %>%
+  select(-continuous_questions) %>%
+  pivot_longer(cols = -c(task, task_blob_url), names_to = "question_name") %>%
+  mutate(value = recode(value, 
+                     "Mental" = 0,
+                     "Physical" = 1,
+                    # "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+                     "No" = 0,
+                     "Yes" = 1
+                   )) %>%
+  filter(is.na(value)) %>%
+  # this gets us to all the NA's
+  mutate(
+    value = 1
+  ) %>%
+  mutate(
+    highlight = as.factor(ifelse(question_name == "Q9divisible_unitary" | question_name == "Q18ans_recog", 1,0))
+  ) %>%
+  ggplot(
+    aes(
+      x = fct_infreq(question_name),
+    )
+  ) + geom_bar(aes(y = (..count..)/sum(..count..), fill = highlight)) +
+  theme_light() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+        legend.position = "none")+
+  labs(
+    title = "Breakdown of Questions for Which People Answered 'Not Applicable'",
+    x = "Question Name",
+    y = "Proportion of 'NA'"
+  ) 
+```
+
+```{r}
+df.mapping.raw %>%
+  select(c(main_questions, task, task_blob_url)) %>%
+  select(-continuous_questions) %>%
+  pivot_longer(cols = -c(task, task_blob_url), names_to = "question_name") %>%
+  mutate(value = recode(value, 
+                     "Mental" = 0,
+                     "Physical" = 1,
+                    # "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+                     "No" = 0,
+                     "Yes" = 1
+                   )) %>%
+  filter(is.na(value)) %>%
+  # this gets us to all the NA's
+  mutate(
+    value = 1
+  ) %>%
+  mutate(
+    highlight = as.factor(ifelse(task == "Railroad Route Construction game (Impossible Version)" | task == "Whac-A-Mole", 1,0))
+  ) %>%
+  ggplot(
+    aes(
+      x = fct_infreq(task),
+    )
+  ) + geom_bar(aes(y = (..count..)/sum(..count..), fill = highlight)) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+        legend.position = "none")+
+  labs(
+    title = "Breakdown of Tasks for Which People Answered 'Not Applicable'",
+    x = "Task Name",
+    y = "Proportion of 'NA'"
+  )
+```
+
+```{r}
+df.mapping.raw %>%
+  filter(Q9divisible_unitary == "Not applicable or not answerable based on the task description (Please Elaborate Below.)") %>%
+  select(Q9divisible_unitary_elaboration, task) %>% View()
+```
+
+Visualize the task map & questions where the mean might be close to the middle of the scale
+
+```{r, fig.height=12, fig.width=12}
+task_map %>%
+  pivot_longer(cols = -task) %>%
+  rename(`Mean Rater Reponse` = value) %>%
+  mutate(name = fct_reorder(.f = as.factor(name),
+                               .x = `Mean Rater Reponse`,
+                               .fun = function(x)sum(x,na.rm = TRUE))) %>%
+  ggplot(
+   aes(x=name, y=task, fill=`Mean Rater Reponse`)
+  ) +
+  geom_raster() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + 
+  scale_fill_distiller(palette = "Spectral") +
+  labs(
+    title = "Heatmap of Tasks and Ratings (Columns Ordered by Rating Sum)",
+    x = "Question Name",
+    y = "Task Name"
+  )
+
+ggsave(filename = "heatmap_of_all_tasks_sorted.png")
+```
+
+
+Plot the McGrath Graph
+```{r}
+df.mcg <- df.main_questions_summary %>%
+  filter(!is.na(str_match(question_name, "type")) | !is.na(str_match(question_name, "behav"))) %>%
+  select(task_name, question_name, mean_rating) %>%
+  pivot_wider(names_from = question_name, values_from = mean_rating)
+
+total_mcgrath <- rowSums(df.mcg[c(3:9)])
+
+df.mcg <- cbind(df.mcg, data.frame("total_mcgrath" = total_mcgrath))
+```
+
+```{r, fig.height = 12, fig.width= 8}
+ggplot(
+  df.mcg %>%
+    rename(
+      Physical = Q1concept_behav,
+      Intellective = Q20type_3_type_4,
+      Planning = Q3type_1_planning,
+      Creativity = Q4type_2_generate,
+      `Cognitive Conflict` = Q6type_5_cc,
+      Battle = Q7type_7_battle,
+      Performance = Q8type_8_performance
+    ) %>%
+    select(-total_mcgrath) %>%
+    pivot_longer(cols = -c(task, task_blob_url)) %>%
+    rename(`Mean Rater Response` = value),
+  aes(x = name, y = task)
+) + geom_tile(aes(fill = `Mean Rater Response`)) + scale_fill_gradient(low = "#CC3363",
+                                                       high = "#07BEB8") + theme(axis.text.x = element_text(
+                                                         angle = 90,
+                                                         vjust = 0.5,
+                                                         hjust = 1
+                                                       )) + 
+  labs(x = "Dimension in McGrath's Taxonomy",
+       y = "Task Name")
+
+ggsave("ALLtask-mcgrath-ratings.png")
+```
 
 Draw the task map using PCA & clustering
 
@@ -496,4 +677,43 @@ p.old<- combined_old  %>%
 p.old
 ggsave(plot = p.old, filename = './map-visuals/task-map-OLD.png')
 fviz_eig(pca.old)
+```
+
+IRR part 2
+
+```{r}
+# responses_clean_ind <- df.mapping.raw %>%
+#   select(c(main_questions, task, task_blob_url, user)) %>%
+#   select(-continuous_questions) %>%
+#   pivot_longer(cols = -c(task,task_blob_url, user), names_to = "question_name") %>%
+#   mutate(value = recode(value, 
+#                      "Mental" = 0,
+#                      "Physical" = 1,
+#                      "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+#                      "No" = 0,
+#                      "Yes" = 1
+#                    )) %>%
+#   filter(value != 3) %>% # remove cases in which people thought it wasn't answerable - for now
+#   rename(question = question_name) %>%
+#   filter(task_blob_url %in% most_recent_blob_urls$task_blob_url)
+```
+
+```{r}
+# kripp.alpha.by.task <- data.frame(matrix(nrow = 0, ncol = 2))
+# 
+# for(task_name in task_map$task){
+#   ka <- responses_clean_ind %>% filter(task == task_name) %>%
+#   pivot_wider(names_from = question, values_from = value) %>% ungroup() %>%
+#   select(-c(task, task_blob_url, user)) %>%
+#   as.matrix() %>% kripp.alpha("ordinal")
+#   
+#   newrow = data.frame(
+#     task = task_name,
+#     k.alpha = ka$value
+#   )
+#   
+#   kripp.alpha.by.task <- rbind(kripp.alpha.by.task, newrow)
+# }
+# 
+# kripp.alpha.by.task %>% arrange(desc(k.alpha))
 ```

@@ -5,6 +5,7 @@ output: html_notebook
 
 ```{r}
 knitr::opts_chunk$set(echo = TRUE)
+library(corrplot)
 library(factoextra)
 library(NbClust)
 library(cluster)
@@ -25,20 +26,44 @@ task_based_summary <- df.main_questions_summary %>%
   filter(n_labels > 10) %>%
   group_by(task, task_blob_url) %>%
   summarize(
-    n_labels = round(mean(n_labels),0),
     mean_agreement = mean(agreement),
     mean_alpha = mean(general.alpha)
   ) %>%
-  arrange(desc(mean_alpha))
+  arrange(desc(mean_agreement))
+
+task_based_summary
+mean(task_based_summary$mean_agreement)
+sd(task_based_summary$mean_agreement)
+quantile(task_based_summary$mean_agreement, c(0.025, 0.9725))
 
 question_based_summary <- df.main_questions_summary %>%
   filter(n_labels > 10) %>%
   group_by(question_name) %>%
   summarize(
-    n_labels = round(mean(n_labels),0),
     mean_agreement = mean(agreement),
     mean_alpha = mean(general.alpha)
-  )
+  ) %>%
+  arrange(desc(mean_agreement))
+
+question_based_summary
+mean(question_based_summary$mean_agreement)
+sd(question_based_summary$mean_agreement)
+quantile(question_based_summary$mean_agreement, c(0.025, 0.9725), na.rm = T)
+```
+
+
+# Correlation Matrix
+```{r fig.height=10}
+corrplot(abs(cor(task_map[-1])), method = "shade",
+         addCoef.col = TRUE,
+         tl.col = "black", type = 'lower', diag = FALSE)
+```
+
+
+# Nominal Scaling
+```{r}
+
+task_map
 ```
 
 # Confidence Judgements and Consensus
