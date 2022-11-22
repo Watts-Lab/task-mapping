@@ -5,7 +5,7 @@ Mapped by: xehu
 ## 1. Stimulus Complex 
 Participants are presented with a pattern, which looks like a matrix or grid with a white background. There is a missing piece to the pattern.
 
-Here is an example to help you imagine what the pattern might look like. Participants could see a grid with four spaces. In the first space they see a square, divided into four pieces, with one piece colored in. Then, in the second space, there is a square with two of four pieces colored in. In the third space, there is a sqaure with three of four pieces colored in. After the first three steps in the pattern, there would be a blank space on the grid.
+Here is an example to help you imagine what the pattern might look like. Participants could see a grid with four spaces. In the first space they see a square, divided into four pieces, with one piece colored in. Then, in the second space, there is a square with two of four pieces colored in. In the third space, there is a square with three of four pieces colored in. After the first three steps in the pattern, there would be a blank space on the grid.
 
 Participants would then see a few multiple-choice options for what could fill the blank space. For example, they could choose between a square with one, two, three, or four pieces filled in.
 
