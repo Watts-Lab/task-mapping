@@ -128,6 +128,7 @@ thisscript.url <- df.thisscript$url
 df.blobs <- jsonlite::fromJSON(content(req, "text"))$tree %>% 
 filter(grepl("tasks/summaries/", path))
 ```
+
 These are the tasks that are successfully edited so far
 ```{r}
 edited_tasks <- read_csv('./edited_tasks.csv')$edited_tasks

@@ -1,0 +1,22 @@
+---
+title: "Clean Task Output"
+author: "Emily Hu"
+date: "2022-12-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(dplyr)
+library(tidyverse)
+```
+
+## Import Other CSV's
+- Task HTML's
+- tasks.csv
+- Task Map itself
+
+```{r}
+read_csv()
+```
