@@ -8,7 +8,7 @@ Participants are asked to take the role of the board of directors of an investme
 Participants are given different information about the companies allowing groups to divide majority and minority opinions, they then discuss investment strategy either anonymously or in identified conditions. All participants should work together and provide the rank ordering of the three companies.
 
 ## 2. Goal Directives 
-The goal for each group is to reach an agreement on the rank ordering of the three companies based on the information they receive. The task is designed so that the full information would show that a company among the three is the best investement, while another company is the least desirable. They should find out which company is precisely the best investment and provide the rank ordering of the three companies within the time limit.
+The goal for each group is to reach an agreement on the rank ordering of the three companies based on the information they receive. The task is designed so that the full information would show that a company among the three is the best investment, while another company is the least desirable. They should find out which company is precisely the best investment and provide the rank ordering of the three companies within the time limit.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
