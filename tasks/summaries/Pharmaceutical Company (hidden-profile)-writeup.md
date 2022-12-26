@@ -1,4 +1,4 @@
-# pharmaceutical company (hidden-profile)
+# Pharmaceutical Company (hidden-profile)
 
 Mapped by: Ye-Huifang 
 
