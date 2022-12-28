@@ -396,7 +396,33 @@ Visualize the task map & questions where the mean might be close to the middle o
 
 ```{r, fig.height=12, fig.width=12}
 task_map %>%
-  pivot_longer(cols = -task) %>%
+  # rename columns in a more pretty format
+  rename(
+    `Conceptual-Behavioral` = Q1concept_behav,
+    `Type 1 (Planning)` = Q3type_1_planning,
+    `Type 2 (Generate)` = Q4type_2_generate,
+    `Type 5 (Cognitive Conflict)` = Q6type_5_cc,
+    `Type 7 (Battle)` = Q7type_7_battle,
+    `Type 8 (Performance)` = Q8type_8_performance,
+    `Divisible-Unitary` = Q9divisible_unitary,
+    `Maximizing` = Q10maximizing,
+    `Optimizing` = Q11optimizing,
+    `Outcome Multiplicity` = Q13outcome_multip,
+    `Solution Scheme Multiplicity` = Q14sol_scheme_mul,
+    `Decision Verifiability` = Q15dec_verifiability,
+    `Shared Knowledge` = Q16shared_knowledge,
+    `Within-System Solution` = Q17within_sys_sol,
+    `Answer Recognizability` = Q18ans_recog,
+    `Time Solvability` = Q19time_solvability,
+    `Type 3 and Type 4 (Objective Correctness)` = Q20type_3_type_4,
+    `Conflicting Tradeoffs` = Q22confl_tradeoffs,
+    `Solution Scheme Outcome Uncertainty` = Q23ss_out_uncert,
+    `Eureka Question` = Q24eureka_question,
+    `Intellectual-Manipulative` = Q2intel_manip_1,
+    `Intellective-Judgmental` = Q21intellective_judg_1,
+    `Creativity Input` = Q2intel_manip_1
+  ) %>%
+   pivot_longer(cols = -task) %>%
   rename(`Mean Rater Reponse` = value) %>%
   mutate(name = fct_reorder(.f = as.factor(name),
                                .x = `Mean Rater Reponse`,
@@ -409,52 +435,11 @@ task_map %>%
   scale_fill_distiller(palette = "Spectral") +
   labs(
     title = "Heatmap of Tasks and Ratings (Columns Ordered by Rating Sum)",
-    x = "Question Name",
+    x = "Dimension Name",
     y = "Task Name"
   )
 
 ggsave(filename = "heatmap_of_all_tasks_sorted.png")
-```
-
-
-Plot the McGrath Graph
-```{r}
-df.mcg <- df.main_questions_summary %>%
-  filter(!is.na(str_match(question_name, "type")) | !is.na(str_match(question_name, "behav"))) %>%
-  select(task_name, question_name, mean_rating) %>%
-  pivot_wider(names_from = question_name, values_from = mean_rating)
-
-total_mcgrath <- rowSums(df.mcg[c(3:9)])
-
-df.mcg <- cbind(df.mcg, data.frame("total_mcgrath" = total_mcgrath))
-```
-
-```{r, fig.height = 12, fig.width= 8}
-ggplot(
-  df.mcg %>%
-    rename(
-      Physical = Q1concept_behav,
-      Intellective = Q20type_3_type_4,
-      Planning = Q3type_1_planning,
-      Creativity = Q4type_2_generate,
-      `Cognitive Conflict` = Q6type_5_cc,
-      Battle = Q7type_7_battle,
-      Performance = Q8type_8_performance
-    ) %>%
-    select(-total_mcgrath) %>%
-    pivot_longer(cols = -c(task, task_blob_url)) %>%
-    rename(`Mean Rater Response` = value),
-  aes(x = name, y = task)
-) + geom_tile(aes(fill = `Mean Rater Response`)) + scale_fill_gradient(low = "#CC3363",
-                                                       high = "#07BEB8") + theme(axis.text.x = element_text(
-                                                         angle = 90,
-                                                         vjust = 0.5,
-                                                         hjust = 1
-                                                       )) + 
-  labs(x = "Dimension in McGrath's Taxonomy",
-       y = "Task Name")
-
-ggsave("ALLtask-mcgrath-ratings.png")
 ```
 
 Draw the task map using PCA & clustering
@@ -470,39 +455,40 @@ pca <- task_map %>% #select(-continuous_questions) %>%
 fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "silhouette") +
   labs(subtitle = "Silhouette method")
 
-# get optimal number of clusters -- "wss" elbow method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "wss") +
-  labs(subtitle = "Elbow method")
+# get optimal number of clusters
+NbClust(data = pca$x, distance = "euclidean",
+        min.nc = 2, max.nc = 15, method = "kmeans")
 
+# NOTE -- replacing with 5 for better visual purposes
 kmeans_output <- pca$x %>% # 2 is the optimal number
-  kmeans(centers = 2, nstart = 100)
+  kmeans(centers = 3, nstart = 100)
 
 combined_data <- cbind(task_map,
       pca$x, factor(kmeans_output$cluster)) %>%
   rename(cluster = `factor(kmeans_output$cluster)`)
 
-james_set <- c('Writing story',
- '9 Dot Problem',
- 'Word construction from a subset of letters',
- 'Image rating',
- 'Checkers',
- 'Run a mini business',
- 'Typing game',
- 'Whac-A-Mole',
- 'Divergent Association Task',
- 'Carter Racing',
- 'Object based generalization for reasoning (Phyre)')
-
- apricot_set <- c('Search for Oil Task',
- 'Advertisement writing',
- "Wason's Selection Task",
- 'To evacuate or not to evacuate',
- 'Space Fortress',
- 'Word completion given part of word',
- 'Graph coloring task',
- 'Estimating social quantity',
- 'Logic Problem',
- 'Divergent Association Task')
+# james_set <- c('Writing story',
+#  '9 Dot Problem',
+#  'Word construction from a subset of letters',
+#  'Image rating',
+#  'Checkers',
+#  'Run a mini business',
+#  'Typing game',
+#  'Whac-A-Mole',
+#  'Divergent Association Task',
+#  'Carter Racing',
+#  'Object based generalization for reasoning (Phyre)')
+# 
+#  apricot_set <- c('Search for Oil Task',
+#  'Advertisement writing',
+#  "Wason's Selection Task",
+#  'To evacuate or not to evacuate',
+#  'Space Fortress',
+#  'Word completion given part of word',
+#  'Graph coloring task',
+#  'Estimating social quantity',
+#  'Logic Problem',
+#  'Divergent Association Task')
 
 
 p <- combined_data %>%
@@ -511,7 +497,9 @@ p <- combined_data %>%
     y = PC2,
     label = task,
     fill = cluster
-  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2) #+ , alpha=0.05) +
+  )) + geom_point() + geom_label(nudge_y = 0.1, size = 4) +
+  
+  #+ , alpha=0.05) +
 # highlights only the ones in the selected set
   # geom_label(
   #   data = subset(combined_data, task %in% c("NASA Moon survival", "Desert survival")),
@@ -524,6 +512,8 @@ p <- combined_data %>%
   #   nudge_y = 0.1,
   #   size = 2
   # )
+ theme_light(base_size = 24)
+
 p
 
 plot_ly(
@@ -543,17 +533,50 @@ ggsave(plot = p, filename = '../task-map.png')
 Analysis of what the first three PC's mean
 ```{r}
 # non-absolute value version
-pca$rotation[,1:3] %>% data.frame() %>%
+pcaclean <- pca$rotation[, 1:3] %>% data.frame() %>%
   rownames_to_column() %>%
   pivot_longer(cols = c(PC1, PC2, PC3), names_to = "PC") %>%
-  ggplot(aes(y = rowname, x = PC, fill = value)) +
+  # rename columns in a more pretty format
+  mutate(rowname =
+           recode(
+             rowname,
+               "Q1concept_behav" = "Conceptual-Behavioral",
+               "Q3type_1_planning" = "Type 1 (Planning)",
+               "Q4type_2_generate" = "Type 2 (Generate)",
+               "Q6type_5_cc" = "Type 5 (Cognitive Conflict)",
+               "Q7type_7_battle" = "Type 7 (Battle)",
+               "Q8type_8_performance" = "Type 8 (Performance)",
+               "Q9divisible_unitary" = "Divisible-Unitary",
+               "Q10maximizing" = "Maximizing",
+               "Q11optimizing" = "Optimizing",
+               "Q13outcome_multip" = "Outcome Multiplicity",
+               "Q14sol_scheme_mul" = "Solution Scheme Multiplicity",
+               "Q15dec_verifiability" = "Decision Verifiability",
+               "Q16shared_knowledge" = "Shared Knowledge",
+               "Q17within_sys_sol" = "Within-System Solution",
+               "Q18ans_recog" = "Answer Recognizability",
+               "Q19time_solvability" = "Time Solvability",
+               "Q20type_3_type_4" = "Type 3 and Type 4 (Objective Correctness)",
+               "Q22confl_tradeoffs" = "Conflicting Tradeoffs",
+               "Q23ss_out_uncert" = "Solution Scheme Outcome Uncertainty",
+               "Q24eureka_question" = "Eureka Question",
+               "Q2intel_manip_1" = "Intellectual-Manipulative",
+               "Q21intellective_judg_1" = "Intellective-Judgmental",
+               "Q5creativity_input_1" = "Creativity Input"
+           ))
+
+pcaclean %>% 
+ggplot(aes(y = rowname, x = PC, fill = value)) +
   geom_tile() +
-  scale_fill_viridis_c(option = "magma")
+  geom_text(aes(label= round(value,2), color = round(value,2) > 0)) +
+  scale_color_manual(guide = "none", values = c("white", "black")) +
+  scale_fill_viridis_c(option = "magma") +
+  labs(
+    y = "Dimension Name"
+  )
 
 # absolute value version
-pca$rotation[,1:3] %>% data.frame() %>%
-  rownames_to_column() %>%
-  pivot_longer(cols = c(PC1, PC2, PC3), names_to = "PC") %>%
+pcaclean %>%
   ggplot(aes(y = rowname, x = PC, fill = abs(value))) +
   geom_tile() +
   scale_fill_viridis_c(option = "magma")

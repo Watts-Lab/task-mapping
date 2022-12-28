@@ -5,6 +5,7 @@ output: html_notebook
 
 ```{r}
 knitr::opts_chunk$set(echo = TRUE)
+library(infotheo)
 library(corrplot)
 library(factoextra)
 library(NbClust)
@@ -13,6 +14,7 @@ library(plotly)
 library(irr)
 library(anytime)
 library(dplyr)
+library(ggdendro)
 library(tidyverse)
 ```
 
@@ -60,10 +62,12 @@ corrplot(abs(cor(task_map[-1])), method = "shade",
 ```
 
 
-# Nominal Scaling
+# Descriptive Statistics
 ```{r}
-
-task_map
+task_map[-1] %>% as.matrix() %>% mean()
+task_map[-1] %>% as.matrix() %>% median()
+task_map[-1] %>% as.matrix() %>% sd()
+task_map[-1] %>% as.matrix() %>% range()
 ```
 
 # Confidence Judgements and Consensus
@@ -131,7 +135,7 @@ cor.test(question_based_confidence$mean_agreement, question_based_confidence$mea
 A version of the above with the original ordinal variables (non-normalized)
 ```{r}
 # Task-based confidence
-confidence_by_task <- df.confidence_scores %>%
+confidence_by_task <- df.confidence_scores_raw %>%
   group_by(task) %>%
   summarize(
     mean_confidence = mean(value, na.rm = T)
@@ -142,7 +146,7 @@ task_based_confidence <- inner_join(task_based_summary, confidence_by_task, by =
 cor.test(task_based_confidence$mean_agreement, task_based_confidence$mean_confidence)
 
 # Question-based confidence
-confidence_by_question <- df.confidence_scores %>%
+confidence_by_question <- df.confidence_scores_raw %>%
   group_by(question) %>%
   summarize(
     mean_confidence = mean(value, na.rm = T)
@@ -162,61 +166,164 @@ ggplot(task_based_confidence,
 ```
 
 Hierarchical Clustering
-```{r, fig.height=8}
+```{r hidden ggdendro plotting function}
+set_labels_params <- function(nbLabels,
+                              direction = c("tb", "bt", "lr", "rl"),
+                              fan       = FALSE) {
+  if (fan) {
+    angle       <-  360 / nbLabels * 1:nbLabels + 90
+    idx         <-  angle >= 90 & angle <= 270
+    angle[idx]  <-  angle[idx] + 180
+    hjust       <-  rep(0, nbLabels)
+    hjust[idx]  <-  1
+  } else {
+    angle       <-  rep(0, nbLabels)
+    hjust       <-  0
+    if (direction %in% c("tb", "bt")) { angle <- angle + 45 }
+    if (direction %in% c("tb", "rl")) { hjust <- 1 }
+  }
+  list(angle = angle, hjust = hjust, vjust = 0.5)
+}
+dendro_data_k <- function(hc, k) {
+  
+  hcdata    <-  ggdendro::dendro_data(hc, type = "rectangle")
+  seg       <-  hcdata$segments
+  labclust  <-  cutree(hc, k)[hc$order]
+  segclust  <-  rep(0L, nrow(seg))
+  heights   <-  sort(hc$height, decreasing = TRUE)
+  height    <-  mean(c(heights[k], heights[k - 1L]), na.rm = TRUE)
+  
+  for (i in 1:k) {
+    xi      <-  hcdata$labels$x[labclust == i]
+    idx1    <-  seg$x    >= min(xi) & seg$x    <= max(xi)
+    idx2    <-  seg$xend >= min(xi) & seg$xend <= max(xi)
+    idx3    <-  seg$yend < height
+    idx     <-  idx1 & idx2 & idx3
+    segclust[idx] <- i
+  }
+  
+  idx                    <-  which(segclust == 0L)
+  segclust[idx]          <-  segclust[idx + 1L]
+  hcdata$segments$clust  <-  segclust
+  hcdata$segments$line   <-  as.integer(segclust < 1L)
+  hcdata$labels$clust    <-  labclust
+  
+  hcdata
+}
+plot_ggdendro <- function(hcdata,
+                          direction   = c("lr", "rl", "tb", "bt"),
+                          fan         = FALSE,
+                          scale.color = NULL,
+                          branch.size = 1,
+                          label.size  = 3,
+                          nudge.label = 0.01,
+                          expand.y    = 0.1) {
+  
+  direction <- match.arg(direction) # if fan = FALSE
+  ybreaks   <- pretty(segment(hcdata)$y, n = 5)
+  ymax      <- max(segment(hcdata)$y)
+  
+  ## branches
+  p <- ggplot() +
+    geom_segment(data         =  segment(hcdata),
+                 aes(x        =  x,
+                     y        =  y,
+                     xend     =  xend,
+                     yend     =  yend,
+                     linetype =  factor(line),
+                     colour   =  factor(clust)),
+                 lineend      =  "round",
+                 show.legend  =  FALSE,
+                 size         =  branch.size)
+  
+  ## orientation
+  if (fan) {
+    p <- p +
+      coord_polar(direction = -1) +
+      scale_x_continuous(breaks = NULL,
+                         limits = c(0, nrow(label(hcdata)))) +
+      scale_y_reverse(breaks = ybreaks)
+  } else {
+    p <- p + scale_x_continuous(breaks = NULL)
+    if (direction %in% c("rl", "lr")) {
+      p <- p + coord_flip()
+    }
+    if (direction %in% c("bt", "lr")) {
+      p <- p + scale_y_reverse(breaks = ybreaks)
+    } else {
+      p <- p + scale_y_continuous(breaks = ybreaks)
+      nudge.label <- -(nudge.label)
+    }
+  }
+  
+  # labels
+  labelParams <- set_labels_params(nrow(hcdata$labels), direction, fan)
+  hcdata$labels$angle <- labelParams$angle
+  
+  p <- p +
+    geom_text(data        =  label(hcdata),
+              aes(x       =  x,
+                  y       =  y,
+                  label   =  label,
+                  colour  =  factor(clust),
+                  angle   =  angle),
+              vjust       =  labelParams$vjust,
+              hjust       =  labelParams$hjust,
+              nudge_y     =  ymax * nudge.label,
+              size        =  label.size,
+              show.legend =  FALSE)
+  
+  # colors and limits
+  if (!is.null(scale.color)) {
+    p <- p + scale_color_manual(values = scale.color)
+  }
+  
+  ylim <- -round(ymax * expand.y, 1)
+  p    <- p + expand_limits(y = ylim)
+  
+  p
+}
+```
+
+```{r, fig.height=12}
 set.seed(1)
 
-# DF of data
-task_PCs <- combined_data %>% select(
- task, grep("PC", names(combined_data))
-) %>%
-  column_to_rownames("task")
-
-# Find best way to cluster
-# methods to assess
-m <- c( "average", "single", "complete", "ward")
-names(m) <- c( "average", "single", "complete", "ward")
-
-# function to compute coefficient
-ac <- function(x) {
-  agnes(task_PCs, method = x)$ac
-}
-
-map_dbl(m, ac)
-
-
 # Dissimilarity matrix
-d <- dist(task_PCs, method = "euclidean")
+d <- dist(task_map %>% column_to_rownames("task"), method = "euclidean")
 
 # Hierarchical clustering using Complete Linkage
 # Ward's method
 hc5 <- hclust(d, method = "ward.D2" )
 
-# Cut tree into 4 groups
-sub_grp <- cutree(hc5, k = 4)
-
-pdf(file = "task_dendrogram.pdf",
-    height = 6)
+# get optimal number of clusters
+NbClust(data = task_map %>% column_to_rownames("task"), distance = "euclidean", min.nc = 2, max.nc = 15, method = "ward.D2")
 
 # Plot the obtained dendrogram
-plot(hc5, cex = 0.6)
-rect.hclust(hc5, k = 4, border = 2:5)
-
-dev.off()
+colors = c( "#118AB2", "#A53860", "#073B4C", "#9071EE", "#209A92", "#3E885B", "#CC9328")
+hcdata <- dendro_data_k(hc5, 2)
+p <- plot_ggdendro(hcdata,
+                   direction   = "lr",
+                   scale.color = colors,
+                   label.size  = 10,
+                   branch.size = 2,
+                   expand.y    = 4) + theme_void()
+p
 ```
 
 # Look at "old taxonomies"
 
 ```{r}
-df.mcg <- df.main_questions_summary %>%
-  filter(n_labels > 10) %>%
-  ungroup() %>%
-  filter(!is.na(str_match(question_name, "type")) | !is.na(str_match(question_name, "behav"))) %>%
-  select(task, question_name, mean_rating) %>%
-  pivot_wider(names_from = question_name, values_from = mean_rating)
-
-total_mcgrath <- rowSums(df.mcg[c(2:7)])
-
-df.mcg <- cbind(df.mcg, data.frame("total_mcgrath" = total_mcgrath))
+df.mcg <- task_map %>%
+  select(
+    task,
+    Q1concept_behav,
+    Q20type_3_type_4,
+    Q3type_1_planning,
+    Q4type_2_generate,
+    Q6type_5_cc,
+    Q7type_7_battle,
+    Q8type_8_performance
+  )
 ```
 
 ```{r fig.height=9, fig.width=7}
@@ -231,7 +338,6 @@ ggplot(
       Battle = Q7type_7_battle,
       Performance = Q8type_8_performance
     ) %>%
-    select(-total_mcgrath) %>%
     pivot_longer(cols = -task) %>%
     rename(`Mean Rater Response` = value),
   aes(x = name, y = task)
@@ -258,268 +364,128 @@ McGrath - within v. between-category variance
       Performance = Q8type_8_performance
 ```
 
-```{r}
-# get total sum of squares
-mcg_colmeans <- df.mcg %>% select(-c(task, total_mcgrath)) %>% colMeans()
-total_sum_squares <- (((df.mcg %>% select(-c(task, total_mcgrath)))-mcg_colmeans) %>%
-  abs())^2 %>% colSums() %>% sum()
+# How much more information do we get when adding columns?
+- Calculate mutual information for each subset (McGrath, Steiner, etc.)
+- Compare to mutual information when using all columns
+- We expect there to be *more mutual information* when we use all columns 
 
-# within category
-physical_category <- df.mcg %>% filter(Q1concept_behav > mean(df.mcg$Q1concept_behav))
-intellective_category <- df.mcg %>% filter(Q20type_3_type_4 > mean(df.mcg$Q20type_3_type_4))
-planning_category <- df.mcg %>% filter(Q3type_1_planning > mean(df.mcg$Q3type_1_planning))
-generative_category <- df.mcg %>% filter(Q4type_2_generate > mean(df.mcg$Q4type_2_generate))
-cc_category <- df.mcg %>% filter(Q6type_5_cc > mean(df.mcg$Q6type_5_cc))
-battle_category <- df.mcg %>% filter(Q7type_7_battle > mean(df.mcg$Q7type_7_battle))
-performance_category <- df.mcg %>% filter(Q8type_8_performance > mean(df.mcg$Q8type_8_performance))
+```{r set up individual dfs for each source paper}
+task_map_discrete <- cbind(task_map$task, discretize(task_map[-1], nbins = 10)) %>%
+                        rename(task = `task_map$task`)
 
-# within-category sum of squares
-calc_SS <- function(df) sum(as.matrix(dist(df)^2)) / (2 * nrow(df))
-
-total_within_ss <- sum(
-  calc_SS(physical_category %>% select(-c(task, total_mcgrath))),
-  calc_SS(intellective_category %>% select(-c(task, total_mcgrath))),
-  calc_SS(planning_category %>% select(-c(task, total_mcgrath))),
-  calc_SS(generative_category %>% select(-c(task, total_mcgrath))),
-  calc_SS(cc_category %>% select(-c(task, total_mcgrath))),
-  calc_SS(battle_category %>% select(-c(task, total_mcgrath))),
-  calc_SS(performance_category %>% select(-c(task, total_mcgrath)))
-)
-
-between_ss <- total_sum_squares-total_within_ss
-```
-
-```{r}
-print("Within SS:")
-calc_SS(physical_category %>% select(-c(task, total_mcgrath)))
-calc_SS(intellective_category %>% select(-c(task, total_mcgrath)))
-calc_SS(planning_category %>% select(-c(task, total_mcgrath)))
-calc_SS(generative_category %>% select(-c(task, total_mcgrath)))
-calc_SS(cc_category %>% select(-c(task, total_mcgrath)))
-calc_SS(battle_category %>% select(-c(task, total_mcgrath)))
-calc_SS(performance_category %>% select(-c(task, total_mcgrath)))
-
-print("Between SS:")
-between_ss
-```
-
-
-# Plotting individual taxonomies
-
-The world according to McGrath
-```{r}
-set.seed(1)
-
-pca <- df.mcg %>% #select(-continuous_questions) %>%
-  select(-task, -total_mcgrath) %>%
-  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
-
-# get optimal number of clusters -- "silhouette" method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "silhouette") +
-  labs(subtitle = "Silhouette method")
-
-# get optimal number of clusters -- "wss" elbow method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "wss") +
-  labs(subtitle = "Elbow method")
-
-kmeans_output <- pca$x %>% # 2 is the optimal number
-  kmeans(centers = 2, nstart = 100)
-
-combined_data <- cbind(df.mcg,
-      pca$x, factor(kmeans_output$cluster)) %>%
-  rename(cluster = `factor(kmeans_output$cluster)`)
- 
-p <- combined_data %>%
-  ggplot(aes(
-    x = PC1,
-    y = PC2,
-    label = task ,
-    fill = cluster
-  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
-p
-```
-
-The world according to Laughlin
-```{r}
-set.seed(1)
-
-df.laughlin <- df.main_questions_summary %>%
-  filter(n_labels > 10) %>%
-  ungroup() %>%
-  filter(
-    question_name %in% c(
-      "Q15dec_verifiability",
-      "Q16shared_knowledge",
-      "Q17within_sys_sol",
-      "Q18ans_recog",
-      "Q19time_solvability",
-      "Q21intellective_judg_1",
-      "Q24eureka_question"
+df.mcg <- task_map_discrete %>%
+  select(
+    task,
+    Q1concept_behav,
+    Q20type_3_type_4,
+    Q3type_1_planning,
+    Q4type_2_generate,
+    Q6type_5_cc,
+    Q7type_7_battle,
+    Q8type_8_performance
+  )
+df.laughlin <- task_map_discrete %>%
+  select(
+    task,
+    Q15dec_verifiability,
+    Q16shared_knowledge,
+    Q17within_sys_sol,
+    Q18ans_recog,
+    Q19time_solvability,
+    Q21intellective_judg_1,
+    Q24eureka_question
     )
-  ) %>%  select(task, question_name, mean_rating) %>%
-  pivot_wider(names_from = question_name, values_from = mean_rating)
 
-pca <- df.laughlin %>% #select(-continuous_questions) %>%
-  select(-task) %>%
-  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
-
-# get optimal number of clusters -- "silhouette" method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "silhouette") +
-  labs(subtitle = "Silhouette method")
-
-# get optimal number of clusters -- "wss" elbow method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "wss") +
-  labs(subtitle = "Elbow method")
-
-kmeans_output <- pca$x %>% # 2 is the optimal number
-  kmeans(centers = 2, nstart = 100)
-
-combined_data <- cbind(df.laughlin,
-      pca$x, factor(kmeans_output$cluster)) %>%
-  rename(cluster = `factor(kmeans_output$cluster)`)
- 
-p <- combined_data %>%
-  ggplot(aes(
-    x = PC1,
-    y = PC2,
-    label = task ,
-    fill = cluster
-  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
-p
-```
-
-The world according to Shaw
-```{r}
-set.seed(1)
-
-df.shaw <- df.main_questions_summary %>%
-  filter(n_labels > 10) %>%
-  ungroup() %>%
-  filter(
-    question_name %in% c(
-      "Q2intel_manip_1",
-      "Q13outcome_multip",
-      "Q14sol_scheme_mul"
+df.shaw <- task_map_discrete %>%
+  select(
+    task,
+    Q2intel_manip_1,
+    Q13outcome_multip,
+    Q14sol_scheme_mul
     )
-  ) %>%  select(task, question_name, mean_rating) %>%
-  pivot_wider(names_from = question_name, values_from = mean_rating)
 
-pca <- df.shaw %>% #select(-continuous_questions) %>%
-  select(-task) %>%
-  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
-
-# get optimal number of clusters -- "silhouette" method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "silhouette") +
-  labs(subtitle = "Silhouette method")
-
-# get optimal number of clusters -- "wss" elbow method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "wss") +
-  labs(subtitle = "Elbow method")
-
-kmeans_output <- pca$x %>% # 2 is the optimal number
-  kmeans(centers = 2, nstart = 100)
-
-combined_data <- cbind(df.shaw,
-      pca$x, factor(kmeans_output$cluster)) %>%
-  rename(cluster = `factor(kmeans_output$cluster)`)
- 
-p <- combined_data %>%
-  ggplot(aes(
-    x = PC1,
-    y = PC2,
-    label = task ,
-    fill = cluster
-  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
-p
-```
-The world according to Steiner
-```{r}
-set.seed(1)
-
-df.steiner <- df.main_questions_summary %>%
-  filter(n_labels > 10) %>%
-  ungroup() %>%
-  filter(
-    question_name %in% c(
-      "Q9divisible_unitary",
-      "Q10maximizing",
-      "Q11optimizing"
+df.steiner <- task_map_discrete %>%
+ select(
+    task,
+    Q9divisible_unitary,
+    Q10maximizing,
+    Q11optimizing
     )
-  ) %>%  select(task, question_name, mean_rating) %>%
-  pivot_wider(names_from = question_name, values_from = mean_rating)
 
-pca <- df.steiner %>% #select(-continuous_questions) %>%
+df.zigurs <- task_map_discrete %>%
+ select(
+    task,
+    Q13outcome_multip,
+    Q14sol_scheme_mul,
+    Q22confl_tradeoffs,
+    Q23ss_out_uncert
+    )
+```
+for documentation, see: https://cran.r-project.org/web/packages/infotheo/infotheo.pdf
+
+Confirming discretization still looks good (qualitatively)
+```{r}
+pca <- task_map_discrete %>% #select(-continuous_questions) %>%
   select(-task) %>%
-  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
-
-# get optimal number of clusters -- "silhouette" method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "silhouette") +
-  labs(subtitle = "Silhouette method")
-
-# get optimal number of clusters -- "wss" elbow method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "wss") +
-  labs(subtitle = "Elbow method")
+  prcomp(center = T)
 
 kmeans_output <- pca$x %>% # 2 is the optimal number
   kmeans(centers = 3, nstart = 100)
-
-combined_data <- cbind(df.steiner,
+combined_data <- cbind(task_map,
       pca$x, factor(kmeans_output$cluster)) %>%
   rename(cluster = `factor(kmeans_output$cluster)`)
- 
-p <- combined_data %>%
-  ggplot(aes(
-    x = PC1,
-    y = PC2,
-    label = task ,
-    fill = cluster
-  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
-p
+         
+plot_ly(
+  x = combined_data$PC1,
+  y = combined_data$PC2,
+  z = combined_data$PC3,
+  type = "scatter3d",
+  mode = "markers", # can use mode = "text"
+  text = combined_data$task ,
+  color = combined_data$cluster
+)
 ```
 
-The world according to Zigurs
+
 ```{r}
-set.seed(1)
-
-df.zigurs <- df.main_questions_summary %>%
-  filter(n_labels > 10) %>%
-  ungroup() %>%
-  filter(
-    question_name %in% c(
-      "Q13outcome_multip",
-      "Q14sol_scheme_mul",
-      "Q22confl_tradeoffs",
-      "Q23ss_out_uncert"
-    )
-  ) %>%  select(task, question_name, mean_rating) %>%
-  pivot_wider(names_from = question_name, values_from = mean_rating)
-
-pca <- df.zigurs %>% #select(-continuous_questions) %>%
-  select(-task) %>%
-  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
-
-# get optimal number of clusters -- "silhouette" method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "silhouette") +
-  labs(subtitle = "Silhouette method")
-
-# get optimal number of clusters -- "wss" elbow method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "wss") +
-  labs(subtitle = "Elbow method")
-
-kmeans_output <- pca$x %>% # 2 is the optimal number
-  kmeans(centers = 2, nstart = 100)
-
-combined_data <- cbind(df.zigurs,
-      pca$x, factor(kmeans_output$cluster)) %>%
-  rename(cluster = `factor(kmeans_output$cluster)`)
- 
-p <- combined_data %>%
-  ggplot(aes(
-    x = PC1,
-    y = PC2,
-    label = task ,
-    fill = cluster
-  )) + geom_point() + geom_label(nudge_y = 0.1, size = 2)
-p
+#total correlation (also known as multi-information)
+multiinformation(task_map_discrete[-1])
+multiinformation(df.mcg[-1])
+multiinformation(df.laughlin[-1])
+multiinformation(df.shaw[-1])
+multiinformation(df.steiner[-1])
+multiinformation(df.zigurs[-1])
 ```
+
+```{r}
+# maybe don't run? takes forever, likely due to calculation of many conditional probabilities. also, negative and not interpretable
+# interaction information
+# interinformation(task_map_discrete[-1])
+# interinformation(df.mcg[-1])
+# interinformation(df.laughlin[-1])
+# interinformation(df.shaw[-1])
+# interinformation(df.steiner[-1])
+# interinformation(df.zigurs[-1])
+```
+
+```{r}
+# entropy?
+entropy(task_map_discrete[-1])
+entropy(df.mcg[-1])
+entropy(df.laughlin[-1])
+entropy(df.shaw[-1])
+entropy(df.steiner[-1])
+entropy(df.zigurs[-1])
+```
+
+
+Notes on how this is supposed to work:
+
+from https://arxiv.org/pdf/1701.08868.pdf
+> In the case of three random variables, interaction
+information is the gain (or loss) in information transmitted between any two of the variables, due to additional knowledge of the third random variable. That is, interaction information
+is the difference between the conditional and unconditional mutual information between two of the variables, where the conditioning is on the third variable. It is important to note that unlike (conditional) mutual information which is always non-negative, interaction information can be negative.
+
+
+
 
