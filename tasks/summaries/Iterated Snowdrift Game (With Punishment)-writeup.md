@@ -7,13 +7,14 @@ Participants are randomly paired in a group acting as two drivers who are caught
 
 There are two stages in this game. During the first stage, participant choose to cooperate or defect. If both cooperate, they have the benefit of getting home while sharing the labor. Thus, Rewards = (benefit - labor)/ 2. If both defect, they do not get anywhere and hence incur the punishment, meaning Rewards = 0. If only one shovels, however, they both get home; however, the defector is able to free-ride and avoids the labor cost while reaping all the benefits (Rewards = benefit). In contrast, the cooperator gets fewer Rewards, as they have to put in all the labor (Rewards = benefit - labor). We assume benefit is greater than labor, as both parties want to get home.
 
-During the second stage, cooperator is given the chance to punish defector on an individual basis as follows. If cooperator accepts the cost of punishment, then all the payoffs of the defector in the group are reduced by a fine, and simultaneously the punisher’s profit is also reduced by a single unit, which is the costs of punishment. Note that the cost of punishment is always constant at different values of fine. 
+During the second stage, the cooperator is given the chance to punish the defector for their free-riding behavior. Punishment works as follows: the cooperator has to incur a fixed fee (1 unit) in order to punish defectors. If they choose to incur the fee, then the payoffs for the defectors are reduced by a fine. Note, however, that while the fine can take different values, the fee for punishing does not change. The possibility that someone might punish you if you defect therefore makes the option of defection more risky.
+
 ## 2. Goal Directives 
 Participants are instructed that their goal is to maximize their individual payoff (Rewards) and are given a limited amount of time (e.g., 10 minutes) to make a decision during the first stage. Letting the opponent do all the work is the best option for your individual payoff, but if the other player stays in the car, it is better to shovel. The worst outcome is if both players choose to stay in the car. 
 
 For example, imagine that there are three groups in the game. In Group 1, both player A and player B decide to cooperate. In Group 2, player C remains in the car while player D gets out and starts shoveling. In Group 3, neither player E nor player F is willing to cooperate. The payoff values of different players rank in order: player C > player A/player B > player D > player E/player F.
 
-However, participants should take the fine and cost of punishment into account in the game. The cooperator has the chance to punish defector, which means if the fine is heavy, it is not worth to defect.
+However, participants should take the fine and potential cost of punishment into account in this game. The cooperator has the chance to punish the defector, which means if the fine is heavy, it is not worth it to defect.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.
