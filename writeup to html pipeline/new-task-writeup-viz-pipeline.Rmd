@@ -192,6 +192,7 @@ df.task_map_format %>% write_csv('./html/task-htmls.csv')
 ```
 
 Remove all other summaries
+- This ensures that any summary that had its name changed after being initially submitted will be removed from the system.
 ```{r}
 for(i in 1:length(df.blobs$path)){
   file_path <- df.blobs$path[i]
