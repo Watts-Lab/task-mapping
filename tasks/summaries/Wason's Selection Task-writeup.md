@@ -15,7 +15,7 @@ Then, imagine that the four cards are:
 4. 7 (front), D (back)
 
 ## 2. Goal Directives 
-The goal is to identify which cards, if turned over, would allow the participant to determine if the conditional sentence is true or false. Participants make the selection by clicking on the appopriate cards on the interface.
+The goal is to identify which cards, if turned over, would allow the participant to determine if the conditional sentence is true or false. Participants make the selection by clicking on the appropriate cards on the interface.
 
 Consider the example above: "If there is a D on one side of any card, then there is a 3 on its other side."
 

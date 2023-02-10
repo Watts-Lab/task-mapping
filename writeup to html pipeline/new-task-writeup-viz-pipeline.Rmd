@@ -141,6 +141,11 @@ colnames(df.task_map_format) <- c('task', 'html', 'github', 'path', 'script')
 for(i in 1:length(edited_tasks)){
   task_name <- edited_tasks[i]
   
+  # Replace the quotes in the name
+  task_name <- str_replace_all(task_name, "&#39;s", "'") %>%
+                str_replace_all("&ldquo;", "\"") %>%
+                str_replace_all("&rdquo;", "\"")
+  
   blob_path <- paste0("tasks/summaries/",task_name,"-writeup.md")
   blob_url <- df.blobs %>% filter(path == blob_path) %>%
     select(url) %>% as.character()
@@ -162,6 +167,11 @@ for(i in 1:length(edited_tasks)){
   # Replace the words "stimulus complex" and "goal directives"
   txt_html <- str_replace_all(txt_html, "1. Stimulus Complex", "1. Set-Up") %>%
                 str_replace_all("2. Goal Directives", "2. Objective / Goal")
+  
+  # Replace the quotes in the main text
+  txt_html <- str_replace_all(txt_html, "&#39;s", "\'") %>%
+                str_replace_all("&ldquo;", "\"") %>%
+                str_replace_all("&rdquo;", "\"")
   
   # Remove the Allowed Group Processes
   txt_html <- str_split(txt_html, "<h2>3.")[[1]][1]
