@@ -3,7 +3,7 @@
 Mapped by: Ye-Huifang 
 
 ## 1. Stimulus Complex 
-Participants are randomly paired for a negotiation over a mock job recruitment scenario. Each person is randomly assigned the role of either the recruit (person being hired) or the recruiter (person doing the hiring). The different roles have different objectives: for example, the recruit may want a higher bonus, while the recruiter would rather pay a as low a bonus as possible. The possible settlement options for each participant are associated with point values, which are described in a private "payoff schedule" for each participant (explained in more detail below).
+Participants are randomly paired for a negotiation over a mock job recruitment scenario. Each person is randomly assigned the role of either the recruit (person being hired) or the recruiter (person doing the hiring). The different roles have different objectives: for example, the recruit may want a higher bonus, while the recruiter would rather pay as low a bonus as possible. The possible settlement options for each participant are associated with point values, which are described in a private "payoff schedule" for each participant (explained in more detail below).
 
 Here is an example to help you imagine what the negotiation might look like. Participants would receive a list of settlement options for each issue, and the payoff (in points) associated with each option. They would see only their own payoff schedule, and would not be aware of their counterparts'. Participants would then conduct negotiations over the employment package.
 

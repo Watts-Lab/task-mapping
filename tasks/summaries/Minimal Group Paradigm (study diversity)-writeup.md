@@ -3,10 +3,10 @@
 Mapped by: Ye-Huifang 
 
 ## 1. Stimulus Complex 
-Participants are randomly and anonymously divided into two groups (e.g., "Group A" and "Group B"), ostensibly on the basis of trivial criteria (e.g., preference for paintings or the toss of a coin). After that, participants take part in an ostensibly unrelated resource distribution task. During this task, participants distribute a valuable resource (e.g., money or points) between other participants who are only identified by code number and group membership (e.g., "participant number 34 of Group A"). Participants are told that, after the task is finished, they will receive the total amount of the resource that has been allocated to them by the other participants.
+Participants are randomly and anonymously divided into two groups (e.g., "Group A" and "Group B"). After they are divided into groups, participants receive an anonymous list of players (e.g., "participant number 34 of Group A," "participant number 12 of Group B"). They are then asked to distribute a valuable resource (e.g., money or points) between the participants on the list. Participants are told that, after the task is finished, they will receive the total amount of the resource that has been allocated to them by the other participants.
 
 ## 2. Goal Directives 
-The goal is to exclude "objective" influences from the situation and distribute the resources to others. People are not instructed that they should maximize team resources or personal resources. They should allocate all the resources they own to other participants, including those not in their same team.
+The goal for participants is simply to allocate the resources however they like. There are no right or wrong answers for how participants should divide up the resources. Participants do NOT need to maximize the resources of people on their own team, nor maximize their personal resources.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.

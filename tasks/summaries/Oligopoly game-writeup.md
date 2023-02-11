@@ -3,12 +3,16 @@
 Mapped by: Ye-Huifang 
 
 ## 1. Stimulus Complex 
-Participants first read the instruction before the game. The game has 6 rounds, in which participants will decide whether to "compete" or "collude." All decisions must go up at the count of "THREE." Players would get a different number of payoffs in each round based on their own decision as well as the decision of their "rivals" which are determined by the majority of all votes in the group.
+Participants experience a game with a pre-determined number of rounds. In each round of the game, participants must independently decide whether to "compete" or "collude." Players get a different amount of payoff in each round based on a combination of how they decided and how everyone else in the round decided. The players know the different possible payoffs ahead of time.
 
-Suppose the four possible pay-offs are as follows (the first element represents the decision made by you, the second stands for rivals’ decision and the third is the pay-off): ["Compete", "Compete", 10], ["Collude", "Compete", 0], ["Compete", "Collude", 40], ["Collude", "Collude", 20]. In the first round, more than half of the players decide to "compete." Then those who choose to "compete" would receive 10 points. Those who choose to "collude” would receive 0 points. Then we will play round 2 and everyone will vote all over again. Suppose in round 2 a majority of players choose to "collude". Then those who choose to “compete” receive 40 points and those who "collude" receive 20 points.
+Here is an example. Suppose that the four possible pay-offs are as follows: [You choose - "Compete", Majority chooses - "Compete",  Your Payoff - 10], [You choose - "Collude", Majority chooses - "Compete", Your Payoff - 0], [You choose - "Compete", Majority chooses - "Collude", Your Payoff - 40], [You choose - "Collude", Majority chooses - "Collude", Your Payoff - 20]. In this example, you would get the most payoff if you choose to compete, but the majority chooses to collude. 
+
+Let's say that, in the first round, more than half of the players decide to "compete." Then those who choose to "compete" would receive 10 points. Those who choose to "collude” would receive 0 points. Then we will play round 2 ,and everyone will vote all over again. Suppose in round 2 that a majority of players choose to "collude". Then those who choose to “compete” receive 40 points and those who "collude" receive 20 points.
 
 ## 2. Goal Directives 
-Participants are instructed that their goal is to maximize the total pay-offs.
+Each participant's goal is to maximize their own payoff. Therefore, when making a decision, participants will have to weigh individual benefit against the unknown actions of other players. Notice that, even though the best possible individual outcome (Payoff = 40) is for you to choose "Compete" and for the majority to choose "Collude," if everyone follows this same logic, then the majority will end up being "Compete," and the payoff will only be 10.
+
+Participants must make their decisions in a fixed amount of time.
 
 ## 3. Allowed Group Processes 
 The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.

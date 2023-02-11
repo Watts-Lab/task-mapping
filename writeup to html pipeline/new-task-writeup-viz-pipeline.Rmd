@@ -142,7 +142,7 @@ for(i in 1:length(edited_tasks)){
   task_name <- edited_tasks[i]
   
   # Replace the quotes in the name
-  task_name <- str_replace_all(task_name, "&#39;s", "'") %>%
+  task_name <- str_replace_all(task_name, "&#39;", "'") %>%
                 str_replace_all("&ldquo;", "\"") %>%
                 str_replace_all("&rdquo;", "\"")
   
@@ -168,10 +168,11 @@ for(i in 1:length(edited_tasks)){
   txt_html <- str_replace_all(txt_html, "1. Stimulus Complex", "1. Set-Up") %>%
                 str_replace_all("2. Goal Directives", "2. Objective / Goal")
   
-  # Replace the quotes in the main text
-  txt_html <- str_replace_all(txt_html, "&#39;s", "\'") %>%
+  # Replace special characters in the main text
+  txt_html <- str_replace_all(txt_html, "&#39;", "\'") %>%
                 str_replace_all("&ldquo;", "\"") %>%
-                str_replace_all("&rdquo;", "\"")
+                str_replace_all("&rdquo;", "\"") %>%
+                str_replace_all("&gt;", ">")
   
   # Remove the Allowed Group Processes
   txt_html <- str_split(txt_html, "<h2>3.")[[1]][1]
