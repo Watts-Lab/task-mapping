@@ -466,9 +466,8 @@ fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "silhouette") +
 NbClust(data = pca$x, distance = "euclidean",
         min.nc = 2, max.nc = 15, method = "kmeans")
 
-# NOTE -- replacing with 5 for better visual purposes
 kmeans_output <- pca$x %>% # 2 is the optimal number
-  kmeans(centers = 3, nstart = 100)
+  kmeans(centers = 2, nstart = 100)
 
 combined_data <- cbind(task_map,
       pca$x, factor(kmeans_output$cluster)) %>%
