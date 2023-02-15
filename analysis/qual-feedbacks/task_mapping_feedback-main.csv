@@ -26,6 +26,18 @@ Advertisement writing,Q1concept_behav_elaboration,I thought it would take more t
 Advertisement writing,Q3type_1_planning_elaboration,"Since it involves multiple people chipping in, i think it is a planning task."
 Advertisement writing,Q13outcome_multip_elaboration,It's a judgment call and many offerings could be suitable.
 Advertisement writing,Q6type_5_cc_elaboration,"I think it's possible that people might have to resolve differences in opinion if they were working in teams but based on the information provided, it can't be described as a ""main purpose."""
+Aerospace Investment (Role-playing),Q3type_1_planning_elaboration,"The answer is a little squishy cause we are negotiating so there is an element of following steps and writing them down, so I wasn’t aure"
+Aerospace Investment (Role-playing),Q5creativity_input_1_elaboration,"There is logical n getting a good term sheet, but creativity in getting the other party to “like” you"
+Aerospace Investment (Role-playing),Q6type_5_cc_elaboration,I think negotiation qualifies
+Aerospace Investment (Role-playing),Q7type_7_battle_elaboration,"There is competition in negotiation, but there is also the other component"
+Aerospace Investment (Role-playing),Q11optimizing_elaboration,You are scored but the metric is shaky and not completely known
+Aerospace Investment (Role-playing),Q13outcome_multip_elaboration,There is a high score but not a well defined method to get there since part of it is subjecyive
+Aerospace Investment (Role-playing),Q15dec_verifiability_elaboration,You can compare scores and verify the highest one
+Aerospace Investment (Role-playing),Q17within_sys_sol_elaboration,"You could be the nicest person in the world but if the other team score you bad, then you loose. It’s subjective"
+Aerospace Investment (Role-playing),Q18ans_recog_elaboration,I think it’s too subjective to know this
+Aerospace Investment (Role-playing),Q19time_solvability_elaboration,Someone could follow your instructions exactly but still fail due to subjectivity
+Aerospace Investment (Role-playing),Q22confl_tradeoffs_elaboration,"Each is negotiating while still trying to maximize social capital, huge tradeoff"
+Aerospace Investment (Role-playing),Q9divisible_unitary_elaboration,"There is only one person on each negotiating side, so there is no one to divide tasks with"
 Allocating resources to programs,Q17within_sys_sol_elaboration,"N/A: there is no right, wrong, or optimal way of allocation"
 Allocating resources to programs,Q18ans_recog_elaboration,"N/A: there is no right, wrong, or optimal way of allocation"
 Allocating resources to programs,Q17within_sys_sol_elaboration,there is no right or wrong solution
@@ -49,6 +61,28 @@ Allocating resources to programs,Q21intellective_judg_1_elaboration,"I hope I ha
 Allocating resources to programs,Q22confl_tradeoffs_elaboration,"There are tradeoffs because some programs will not receive the same amount of money even if you wanted them to and as such, you have to decide which of the 3 programs would be more beneficial."
 Allocating resources to programs,Q6type_5_cc_elaboration,"when they say ""resolve different conflicts in people's values and interests"" do they mean there is a team resolving it, or do they mean the hypothetical people in the hypothetical government?"
 Allocating resources to programs,Q6type_5_cc_elaboration,The group must work together to determine how to spend the money across different programs
+Apache helicopter flight simulator (Longbow2),Q14sol_scheme_mul_elaboration,It was not detailed in the description if there was more than one way to approach attacking the targets.
+Apache helicopter flight simulator (Longbow2),Q15dec_verifiability_elaboration,Not applicable as a target is simply destroyed or it is not.
+Apache helicopter flight simulator (Longbow2),Q18ans_recog_elaboration,"There is no correct answer, only scoring as much as possible."
+Apache helicopter flight simulator (Longbow2),Q19time_solvability_elaboration,There is no solution
+Apache helicopter flight simulator (Longbow2),Q5creativity_input_1_elaboration,some creativity might be involve with controlling the helicopter
+Apache helicopter flight simulator (Longbow2),Q9divisible_unitary_elaboration,technically the concept of this game involve divide and conquer since you are reliant on each person to do a certain task (e.g. gunner)
+Apache helicopter flight simulator (Longbow2),Q17within_sys_sol_elaboration,its a video game so you can't know. You learn as u go.
+Apache helicopter flight simulator (Longbow2),Q2intel_manip_1_elaboration,Mostly mental but is the sim like a physical simulator or just a game?
+Apache helicopter flight simulator (Longbow2),Q5creativity_input_1_elaboration,"It is a good combo of both, creative and logic"
+Apache helicopter flight simulator (Longbow2),Q9divisible_unitary_elaboration,They need to work together but each person has a defined role
+Apache helicopter flight simulator (Longbow2),Q11optimizing_elaboration,There’s a wide range of scores possible
+Apache helicopter flight simulator (Longbow2),Q13outcome_multip_elaboration,"This is difficult to answer, there is a best result but how to get there…"
+Apache helicopter flight simulator (Longbow2),Q15dec_verifiability_elaboration,"If you get 30 points, by definition it’s correct"
+Apache helicopter flight simulator (Longbow2),Q17within_sys_sol_elaboration,Unknown how much depends on instruction versus the people
+Apache helicopter flight simulator (Longbow2),Q21intellective_judg_1_elaboration,I honestly am not sure on this one
+Apache helicopter flight simulator (Longbow2),Q22confl_tradeoffs_elaboration,Without more info I would say yes there are different things to consider
+Apache helicopter flight simulator (Longbow2),Q9divisible_unitary_elaboration,By design there are separate roles for participants.
+Apache helicopter flight simulator (Longbow2),Q16shared_knowledge_elaboration,This will heavily depend on how much creativity is needed to achieve the goals. The description is vague on that end.
+Apache helicopter flight simulator (Longbow2),Q7type_7_battle_elaboration,doesn't specify that the team is in competition with another team
+Apache helicopter flight simulator (Longbow2),Q9divisible_unitary_elaboration,specifies that they will get role-specific training
+Apache helicopter flight simulator (Longbow2),Q18ans_recog_elaboration,"surviving, earning score, completing objective"
+Apache helicopter flight simulator (Longbow2),Q20type_3_type_4_elaboration,best possible score
 Architectural design task,Q21intellective_judg_1_elaboration,Some of the choices in this scenario will be subjective like what colors to use but one must also use logic to adhere to the rules of the task.
 Architectural design task,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Architectural design task,Q8type_8_performance_elaboration,The wording on scoring is vague. It does mention to follow design rules or fail.
@@ -111,6 +145,139 @@ Arithmetic problem 1,Q16shared_knowledge_elaboration,I would assume that an algo
 Arithmetic problem 1,Q18ans_recog_elaboration,"I don't think an outsider would know the best possible answer for sure, only the person that created the problem"
 Arithmetic problem 1,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the answers correct or not
 Arithmetic problem 1,Q23ss_out_uncert_elaboration,"I'm answering this in this way because I make the assumption that disclosure of the 10 minute time, with correct machine assignment is for the researcher and not made available to participants."
+Arithmetic problem 2,Q17within_sys_sol_elaboration,There is not enough information for one person to figure out the solution.
+Arithmetic problem 2,Q5creativity_input_1_elaboration,Primarily a logic task.
+Arithmetic problem 2,Q6type_5_cc_elaboration,It's collaborative but I don't think it's necessarily a difference of opinion or viewpoint.
+Arithmetic problem 2,Q22confl_tradeoffs_elaboration,"While members have different information, I don't think it conflicts."
+Arithmetic problem 2,Q5creativity_input_1_elaboration,I don’t see the creativity here
+Arithmetic problem 2,Q6type_5_cc_elaboration,"Well there needs to be colabaration, so differing perspectives"
+Arithmetic problem 2,Q7type_7_battle_elaboration,Competing against the clock but not with each other
+Arithmetic problem 2,Q9divisible_unitary_elaboration,It’s best if they work together
+Arithmetic problem 2,Q14sol_scheme_mul_elaboration,Collaborate and get all the information processed is the only way
+Arithmetic problem 2,Q16shared_knowledge_elaboration,If the model had all information
+Arithmetic problem 2,Q17within_sys_sol_elaboration,I don’t think this question applies
+Arithmetic problem 2,Q22confl_tradeoffs_elaboration,Not conflicting but they do need to work together
+Arithmetic problem 2,Q8type_8_performance_elaboration,If not given an answer within the time limit then it's nothing outcome
+Arithmetic problem 2,Q22confl_tradeoffs_elaboration,Clue is randomly distributed among members so I'm not sure if that's 'conflicting' pieces of information but there is tradeoffs.
+Arithmetic problem 2,Q7type_7_battle_elaboration,"Well, in this case, there is a ticking clock element....so they do need to beat the clock which made me question more if that is considered a win/lose based on the clock."
+Arithmetic problem 2,Q8type_8_performance_elaboration,No mention is made about the precision or accuracy (plane arrival) - just that they need to share clues to solve the problem.
+Arithmetic problem 2,Q11optimizing_elaboration,"Very difficult. It doesn't mention about precision of the answer they come up with, but it is implied that they must work together and share clues in order to solve the problem - and the problem has a precise answer."
+Arithmetic problem 2,Q13outcome_multip_elaboration,"The wording of ""in order to reach solutions"" possibly implies that there is more than one best solution - but the goal of determining the plane's arrival time doesn't have much wiggle room as to accuracy of the solution.."
+Arithmetic problem 2,Q16shared_knowledge_elaboration,"I think that if each clue is presented, it could be solved with an algorithm, but since the set-up involves multiple participants each having a piece of the puzzle, that sounds like a social dynamic at play that relies on group cooperation. So I said no."
+Arithmetic problem 2,Q19time_solvability_elaboration,"I am assuming this means after everyone has shared their clues, then yes, you can both solve and show the solution."
+Arithmetic problem 2,Q3type_1_planning_elaboration,"Sometimes arithmetic problems need to be solved in a certain order, however they're trying to achieve one concrete answer and not reordering events, so I believe it's NOT a ""planning"" task."
+Arithmetic problem 2,Q5creativity_input_1_elaboration,"The clues are given, but participants need to mold them into something helpful which involves some creative problem-solving but not as much as generating a new idea."
+Arithmetic problem 2,Q6type_5_cc_elaboration,"Presumably the clues are factual, so while there may be disagreement on how to organize them or what they imply, there aren't different ""viewpoints"" to use a persuasive argument for."
+Arithmetic problem 2,Q7type_7_battle_elaboration,You can solve the problem or not (pass/fail) but are not competing.
+Arithmetic problem 2,Q8type_8_performance_elaboration,You can either solve the problem or not.
+Arithmetic problem 2,Q9divisible_unitary_elaboration,Clues must be combined to make sense.
+Arithmetic problem 2,Q10maximizing_elaboration,"Only required to finish within time limit, not a race and accuracy is pass/fail."
+Battle of the sexes,Q9divisible_unitary_elaboration,This is not a collaborative effort where 2 players are trying to reach the same goal.
+Battle of the sexes,Q17within_sys_sol_elaboration,"I think this is and isn't answerable based on what each player shares about their choices, and the truthfulness of their choices."
+Battle of the sexes,Q19time_solvability_elaboration,it is not a problem you can solve
+Battle of the sexes,Q24eureka_question_elaboration,there is no trick
+Battle of the sexes,Q5creativity_input_1_elaboration,Some creativity involved in trying to manipulate the other player
+Battle of the sexes,Q7type_7_battle_elaboration,"The goal is to maximize the total for both players, so your “competing” against the game"
+Battle of the sexes,Q14sol_scheme_mul_elaboration,Since it relies on judgements I would say there are different way
+Battle of the sexes,Q17within_sys_sol_elaboration,Its subjective
+Battle of the sexes,Q19time_solvability_elaboration,There are many ways it could go so a path to the solution would be varying
+Battle of the sexes,Q21intellective_judg_1_elaboration,Whether you get the max or not
+Battle of the sexes,Q23ss_out_uncert_elaboration,This isn’t stated in the description
+Battle of the sexes,Q7type_7_battle_elaboration,Participant can choose to cooperate or compete with others.
+Best job candidate (hidden-profile),Q1concept_behav_elaboration,No trouble at all and I had no need for additional clarification.
+Best job candidate (hidden-profile),Q10maximizing_elaboration,"I mean, there is a time limit, but how much time there is within that limit, I'm not sure. If I knew their time limit, I could say a definite yes or no."
+Best job candidate (hidden-profile),Q8type_8_performance_elaboration,It is not specified what happens if you pick a suboptimal candidate.
+Best job candidate (hidden-profile),Q14sol_scheme_mul_elaboration,Discussions are involved so there may be various ways.
+Best job candidate (hidden-profile),Q20type_3_type_4_elaboration,There exists a right candidate though it can only be determined after some discussions due o the design of the game.
+Best job candidate (hidden-profile),Q22confl_tradeoffs_elaboration,"There are positive, negative and neutral characters to consider among the candidates."
+Best job candidate (hidden-profile),Q23ss_out_uncert_elaboration,Only after the group discussions can the participants be fairly certain.
+Best job candidate (hidden-profile),Q24eureka_question_elaboration,There is no one aha moment as the several factors are systematically analyzed.
+Best job candidate (hidden-profile),Q14sol_scheme_mul_elaboration,"constraints may influence the methods that the group can use to reach their decision, but within those constraints, the group is free to use their own judgment and decision-making process."
+Best job candidate (hidden-profile),Q4type_2_generate_elaboration,"They have to share info, discussing who would be best"
+Best job candidate (hidden-profile),Q5creativity_input_1_elaboration,"The big realization is that the group needs to share info, which is a creative idea, but the figuring out which is best is logic based"
+Best job candidate (hidden-profile),Q8type_8_performance_elaboration,The winning condition is to decide which one is the best
+Best job candidate (hidden-profile),Q9divisible_unitary_elaboration,This is the opposite of the right answer
+Best job candidate (hidden-profile),Q11optimizing_elaboration,The precision comes in figuring out which is “right”
+Best job candidate (hidden-profile),Q14sol_scheme_mul_elaboration,"How they come to the decision is left up to the group, so there could be many trains of thought that lead there, but success is deciding the one correct answer"
+Best job candidate (hidden-profile),Q16shared_knowledge_elaboration,"Assuming the algorithm had perfect information, which the group as a whole has but individual member do not, then yes"
+Best job candidate (hidden-profile),Q17within_sys_sol_elaboration,If they work together
+Best job candidate (hidden-profile),Q19time_solvability_elaboration,I think so since each facet is given numerical values
+Best job candidate (hidden-profile),Q20type_3_type_4_elaboration,"The objective answer is the right person for the job, the person with the max score"
+Best job candidate (hidden-profile),Q22confl_tradeoffs_elaboration,Each person has different info
+Best job candidate (hidden-profile),Q24eureka_question_elaboration,The aha moment is realizing you have to combine all info as a froup
+Biopharm Seltek,Q23ss_out_uncert_elaboration,This is a negotiation
+Biopharm Seltek,Q2intel_manip_1_elaboration,Not clear about what amount of keyboarding/dialog needs to be done with negotiation partner.
+Biopharm Seltek,Q5creativity_input_1_elaboration,The creativity would be related to how to achieve the best outcome for the buyer or seller.
+Biopharm Seltek,Q6type_5_cc_elaboration,"The price is the factor to be decided upon.  Each side doesn't know something about the other.  These could possibly be used to persuade, or otherwise influence the decision of the other toward a certain outcome"
+Biopharm Seltek,Q7type_7_battle_elaboration,"I see it as more of a cooperation goal, or negotiation task than a battle because both are trying to achieve a desirable outcome."
+Biopharm Seltek,Q10maximizing_elaboration,There does not appear to be a timing or speed element
+Biopharm Seltek,Q11optimizing_elaboration,"The goal is to reach a deal, but the price is not a specific goal, rather a negotiation."
+Biopharm Seltek,Q13outcome_multip_elaboration,"I don't know how the price choices are presented.  If there are exact choices for each side, then this would be a yes, perhaps.  If the amount is open-ended, then the answer is no."
+Biopharm Seltek,Q14sol_scheme_mul_elaboration,"There's not a description of the interaction, so I have to assume there's open chat and open price negotiation.   This would provide innumerable solutions.  A more structured interface could be a yes for this."
+Biopharm Seltek,Q15dec_verifiability_elaboration,"I had to check ""not answerable"" because it's not clear if there is a demonstrably correct answer that and expert could evaluate.  If there are correct valuations for Seltek, then an outsider could verify the correctness, but the task instructions do not say there is a certain best outcome price."
+Biopharm Seltek,Q17within_sys_sol_elaboration,Both sides have sufficient motivation and the means to consummate a better outcome or solution.
+Biopharm Seltek,Q18ans_recog_elaboration,"Unless the price choices are fixed, then the amount of the negotiated price is subjective."
+Biopharm Seltek,Q19time_solvability_elaboration,"It's difficult with so many options for the negotiation, but each side can say the solution is right based on the objectives of paying less and selling for more (or at all)  Each side has a right outcome"
+Biopharm Seltek,Q20type_3_type_4_elaboration,"Reaching agreement is the correct, objective answer."
+Biopharm Seltek,Q5creativity_input_1_elaboration,There is always at least some creativity in negotiating
+Biopharm Seltek,Q7type_7_battle_elaboration,There is two objectives
+Biopharm Seltek,Q8type_8_performance_elaboration,"There is both. There is a yes no answer and if the answer is yes, then a price."
+Biopharm Seltek,Q11optimizing_elaboration,I would say
+Biopharm Seltek,Q14sol_scheme_mul_elaboration,"As long as the actually decide to sell, there is a wide range of outcomes"
+Biopharm Seltek,Q15dec_verifiability_elaboration,I’m not sure what they mean by this
+Biopharm Seltek,Q17within_sys_sol_elaboration,"It relies on emotions so there is a huge range of “valid” olutions, as long as a deal is rwached"
+Blocks World for Teams,Q1concept_behav_elaboration,"The previous question was pretty clear from the clues in the set-up, but only if you're familiar with the terms ""virtual"" and ""avatar"" and what those terms imply.  Also, it depends on the interface being used to control a participant's avatar."
+Blocks World for Teams,Q2intel_manip_1_elaboration,"This question depends on the interface that is being used; if the interface is say, a computer mouse, then it's very low effort physically, but if a VR setup is used, then it's a bit more physical."
+Blocks World for Teams,Q3type_1_planning_elaboration,"Although the set-up instructions are a bit vague, I think this task is probably a planning task because there's a proper way to accomplish the task that would involve coordination.  It would be nice to know details about whether or not participants have any time before starting the actual activity whether they have time to plan the task before diving in."
+Blocks World for Teams,Q1concept_behav_elaboration,It's in a virtual world
+Blocks World for Teams,Q4type_2_generate_elaboration,Because there's no communication between the team members I would assume this wouldn't be considered a brainstorming task
+Blocks World for Teams,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, since the goal is to complete the task in a certain amount of time I assume it's against another person or team"
+Blocks World for Teams,Q8type_8_performance_elaboration,You either get the sequence correct or not.
+Blocks World for Teams,Q9divisible_unitary_elaboration,Multiple users can work at once separately to get their portion of the sequence correct
+Blocks World for Teams,Q10maximizing_elaboration,It is a timed task
+Blocks World for Teams,Q11optimizing_elaboration,There is only one correct answer
+Blocks World for Teams,Q13outcome_multip_elaboration,"It's a ""right or wrong"" task"
+Blocks World for Teams,Q14sol_scheme_mul_elaboration,There is only one correct sequence so I would assume there's one best way to complete the task
+Blocks World for Teams,Q16shared_knowledge_elaboration,I would assume that an algorithm could solve this
+Blocks World for Teams,Q17within_sys_sol_elaboration,"It's unclear if they have enough information to solve, but I would assume they're not completely ""flying blind"" during the task"
+Blocks World for Teams,Q18ans_recog_elaboration,You receive feedback to let you know if you were right.
+Blocks World for Teams,Q19time_solvability_elaboration,"It's unclear on if they let you know whether the sequence is correct or not until the end, but I would assume if the clock stops you know you're right"
+Blocks World for Teams,Q20type_3_type_4_elaboration,There's only one correct answer
+Blocks World for Teams,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the answers correct or not
+Blocks World for Teams,Q9divisible_unitary_elaboration,The description doesn't say if teammates can communicate in any way.
+Blocks World for Teams,Q9divisible_unitary_elaboration,They have to work together to deliver the right sequence.
+Blocks World for Teams,Q14sol_scheme_mul_elaboration,I'm not really clear if each participant is assigned a color specifically or as long as someone picks up the required color that it is okay.
+Blocks World for Teams,Q22confl_tradeoffs_elaboration,I can see this go either way since there are incorrect blocks you could choose.
+Bullard Houses,Q9divisible_unitary_elaboration,I don't really think this applies because they're not working towards a shared goal.
+Bullard Houses,Q5creativity_input_1_elaboration,convincing others/using persuasion techniques are creative
+Bullard Houses,Q7type_7_battle_elaboration,competing objectives
+Bullard Houses,Q8type_8_performance_elaboration,two possibilities are possible: meet or not. either is possible but not is the goal.
+Bullard Houses,Q9divisible_unitary_elaboration,"in groups where there are multiple people, the financial structures (bonds, mortgages, etc) could be divided"
+Bullard Houses,Q13outcome_multip_elaboration,there will be many ways to disagree/force an impasse
+Bullard Houses,Q15dec_verifiability_elaboration,"there will be varying opinions and reasoning, can only verify that an agreement wasn't reached"
+Bullard Houses,Q16shared_knowledge_elaboration,"requires hiding information from others, perspective/opinion/persuasion that AI cannot do"
+Bullard Houses,Q17within_sys_sol_elaboration,"no solution, per say, just an agreement or not"
+Bullard Houses,Q19time_solvability_elaboration,its about the agreement/interaction and not a concrete answer
+Bullard Houses,Q23ss_out_uncert_elaboration,"information withheld, trusting others, persuasive techniques"
+Bullard Houses,Q18ans_recog_elaboration,It is a negatiin so unsure how you could see best outcome for both grouos
+Bullard Houses,Q4type_2_generate_elaboration,Since the task is logical with the idea of achieving an optimal answer it is not primarily a generation task but it does require brainstorming and more aptly negotiations.
+Bullard Houses,Q5creativity_input_1_elaboration,The task requires creative thinking because each team is trying out strategies to get a fair deal for their side.
+Bullard Houses,Q6type_5_cc_elaboration,Negotiations involve analysis of data and resolve inherent differences with the teams.
+Bullard Houses,Q7type_7_battle_elaboration,"Since the optimal outcome is an impasse there there is no specific win lose, but there is clear objective for optimal performance as the participants are required to be secretive and achieve a fair deal for their side."
+Bullard Houses,Q9divisible_unitary_elaboration,"It says people work in teams with specif goals in mind, so it can be a divide and conquer task."
+Bullard Houses,Q11optimizing_elaboration,They need to avoid reaching an  agreement.
+Bullard Houses,Q14sol_scheme_mul_elaboration,"There is only one right outcome which is optimal and that is to not achieve an agreement. However while each team takes the side of buyer and seller and plays to defend their interest, the strategies are loosely defined. This opens up several ways to arrive at the outcome."
+Bullard Houses,Q15dec_verifiability_elaboration,The analysis can be double checked .
+Bullard Houses,Q16shared_knowledge_elaboration,Requires creative thinking.
+Bullard Houses,Q17within_sys_sol_elaboration,"While the best efforts can be put forth to achieve an impasse, there is no specific solution. But the analysis of financials is a fairly objective exercise and judgement can be exercised to arrive at the desired"
+Bullard Houses,Q18ans_recog_elaboration,"Only an optimal outcome exists, but no correct answer."
+Bullard Houses,Q19time_solvability_elaboration,"The participants can maybe defend their actions or explain their reasoning, but cannot show the solution is right."
+Bullard Houses,Q20type_3_type_4_elaboration,The participants report if the negotiations are settled or not based on realistic financial structures and judgement
+Bullard Houses,Q21intellective_judg_1_elaboration,There are subjective parts like defending the interest of the buyer and seller and also objective parts like financial analysis.
+Bullard Houses,Q22confl_tradeoffs_elaboration,Negotiations involve trade offs.
+Bullard Houses,Q23ss_out_uncert_elaboration,Some parts involve negotiations which cannt be predetermined.
+Bullard Houses,Q24eureka_question_elaboration,"Systematic analysis, negotiations are involved aimed at achieving an impasse, so no aha moment"
+Bullard Houses,Q6type_5_cc_elaboration,This will depend on whether or not the participant is assigned to a group.
 Carter Racing,Q3type_1_planning_elaboration,They will be taking in information and planning to proceed with the race or back out
 Carter Racing,Q7type_7_battle_elaboration,You only lose if you decide to race as you are doomed to fail
 Carter Racing,Q8type_8_performance_elaboration,"The only correct and precise solution to the task is not to proceed with the race,"
@@ -212,6 +379,21 @@ Checkers,Q15dec_verifiability_elaboration,I believe a checker master or computer
 Checkers,Q16shared_knowledge_elaboration,An algorithm could be programmed to provide the best move based on the other pieces on the board
 Checkers,Q20type_3_type_4_elaboration,There are many different moves that can be made
 Checkers,Q21intellective_judg_1_elaboration,I believe moves are mostly logical but subjective in that there are multiple moves to choose
+Chicken,Q5creativity_input_1_elaboration,"only creativity in plan-making, no discussion"
+Chicken,Q6type_5_cc_elaboration,everyone is out for themselves
+Chicken,Q8type_8_performance_elaboration,variance of winnings
+Chicken,Q10maximizing_elaboration,maximize own payoff
+Chicken,Q11optimizing_elaboration,"variance of winnings, just ""most"""
+Chicken,Q13outcome_multip_elaboration,best possible outcome will depend on both players
+Chicken,Q15dec_verifiability_elaboration,can verify that players followed rules and that penalties were given correctly etc
+Chicken,Q16shared_knowledge_elaboration,algorithm could determine best course of outcome
+Chicken,Q17within_sys_sol_elaboration,only two possible choices
+Chicken,Q18ans_recog_elaboration,correct answer will depend on other players' actions
+Chicken,Q19time_solvability_elaboration,can show outcomes to decisions and which had better outcome
+Chicken,Q20type_3_type_4_elaboration,amount of payoff can be objectively ranked
+Chicken,Q22confl_tradeoffs_elaboration,must risk own earnings to achieve more with the dare/chicken choices
+Chicken,Q23ss_out_uncert_elaboration,"participants don't know their opponent's choice, what their opponent will choose"
+Chicken,Q9divisible_unitary_elaboration,I don't really think this applies because they're not working towards a shared goal.
 Computer maze,Q1concept_behav_elaboration,No I didn't have trouble.
 Computer maze,Q2intel_manip_1_elaboration,No I didn't have trouble.
 Computer maze,Q3type_1_planning_elaboration,No I didn't have trouble.
@@ -264,6 +446,22 @@ Desert survival,Q6type_5_cc_elaboration,If working as a group different particip
 Desert survival,Q18ans_recog_elaboration,I think different people can have different justifications for their answers
 Desert survival,Q20type_3_type_4_elaboration,The group does not know the final list so must come up with a consensus.
 Desert survival,Q21intellective_judg_1_elaboration,This is a mix of logic (what makes sense) vs. subjective (what feels right)
+Dictator game and its variants,Q17within_sys_sol_elaboration,I think it might not be relevant because it is just a matter of offering nothing or something and there is not just one round.
+Dictator game and its variants,Q9divisible_unitary_elaboration,Not applicable since only one person is making a decision each round.
+Dictator game and its variants,Q11optimizing_elaboration,Goal is to get as close to the maximum as possible.
+Dictator game and its variants,Q15dec_verifiability_elaboration,There would be too much subjectivity involved to know for sure.
+Dictator game and its variants,Q18ans_recog_elaboration,"Unless the person received the full amount, then no. You could tell if someone did well though."
+Dictator game and its variants,Q19time_solvability_elaboration,Assuming resources means they have access to data from other rounds/participants.
+Dictator game and its variants,Q20type_3_type_4_elaboration,"Unless you get the maximum, I don't think you can really say."
+Dictator game and its variants,Q23ss_out_uncert_elaboration,They probably have an idea but not for sure.
+Dictator game and its variants,Q9divisible_unitary_elaboration,Players make decisions in isolation
+Dictator game and its variants,Q19time_solvability_elaboration,I don’t think there’s one right solution
+Dictator game and its variants,Q5creativity_input_1_elaboration,I think this is more personality than creativity.
+Dictator game and its variants,Q7type_7_battle_elaboration,"One of the easier questions, whoever has the most money wins here"
+Dictator game and its variants,Q9divisible_unitary_elaboration,"I was a little confused as it involves two people, but am unsure if I understood this question."
+Dictator game and its variants,Q11optimizing_elaboration,There is no precise number to 'win' this game.
+Dictator game and its variants,Q19time_solvability_elaboration,Is it right for one or both of the people in this study?
+Dictator game and its variants,Q1concept_behav_elaboration,I did not need additional clarification because we are talking about ideas
 Divergent Association Task,Q9divisible_unitary_elaboration,No team work
 Divergent Association Task,Q24eureka_question_elaboration,There is no trick involved in this solution.
 Divergent Association Task,Q4type_2_generate_elaboration,You are possibly brainstorming to determine which words are different in your list
@@ -359,6 +557,38 @@ Euclidean traveling salesperson,Q16shared_knowledge_elaboration,I would assume t
 Euclidean traveling salesperson,Q18ans_recog_elaboration,"It states "" they will not be told that they have reached the optimum"""
 Euclidean traveling salesperson,Q23ss_out_uncert_elaboration,"It states "" they will not be told that they have reached the optimum"""
 Euclidean traveling salesperson,Q18ans_recog_elaboration,"The fact that ""but they will not be told that they have reached the optimum."" compels me to say ""No"""
+Find the common symbol,Q5creativity_input_1_elaboration,There is some creativity in the messages to describe the symbols.
+Find the common symbol,Q6type_5_cc_elaboration,It is trying to get everyone on the same page.
+Find the common symbol,Q8type_8_performance_elaboration,"It could be designed that way but in this task's objective, it seems more open."
+Find the common symbol,Q13outcome_multip_elaboration,The goal seems open to exactly what is the best.
+Find the common symbol,Q15dec_verifiability_elaboration,I am assuming just getting the right symbol is correct.
+Find the common symbol,Q17within_sys_sol_elaboration,"It is difficult, but yes."
+Find the common symbol,Q18ans_recog_elaboration,Assuming the right answer is choosing the correct symbol.
+Find the common symbol,Q5creativity_input_1_elaboration,"requires creativity to find a solution, many possible methods, but no generation"
+Find the common symbol,Q6type_5_cc_elaboration,different perspectives (numbers held) must find like number/resolve
+Find the common symbol,Q7type_7_battle_elaboration,"time in seconds spent is recorded, time limit, objectively wrong answer"
+Find the common symbol,Q8type_8_performance_elaboration,"only one correct answer, time limit"
+Find the common symbol,Q9divisible_unitary_elaboration,requires group input
+Find the common symbol,Q4type_2_generate_elaboration,"Requires messaging between teammates to find the common symbol, I assume this may be considered brainstorming"
+Find the common symbol,Q5creativity_input_1_elaboration,"It seems like a process of elimination game, nothing to do with creativity"
+Find the common symbol,Q7type_7_battle_elaboration,Must complete with the fewest messages possible and the fastest time
+Find the common symbol,Q8type_8_performance_elaboration,It's based on the highest score not pass/fail
+Find the common symbol,Q10maximizing_elaboration,It is a timed task
+Find the common symbol,Q11optimizing_elaboration,There is only one correct answer
+Find the common symbol,Q13outcome_multip_elaboration,"It's a ""right or wrong"" task"
+Find the common symbol,Q14sol_scheme_mul_elaboration,To guess exactly right would be the only correct way
+Find the common symbol,Q15dec_verifiability_elaboration,You know you're correct when you discover the symbols match
+Find the common symbol,Q19time_solvability_elaboration,You'll know you've solved it when you find the matching symbols.
+Find the common symbol,Q6type_5_cc_elaboration,Everyone has a different set so different perspectives by definition
+Find the common symbol,Q13outcome_multip_elaboration,There is obviously one solution
+Find the common symbol,Q15dec_verifiability_elaboration,It can be “correct” but part of the task is to do at as quickly with as little communication. Technically just guessing in the first few minutes could win. There is probably a “most efficient” way but there is no enough info.
+Find the common symbol,Q16shared_knowledge_elaboration,Not enough info to decide this
+Find the common symbol,Q17within_sys_sol_elaboration,The grading is sliding and the description doesn’t elaborate on that
+Find the common symbol,Q19time_solvability_elaboration,It depends on the grading rubrik
+Find the common symbol,Q20type_3_type_4_elaboration,I think the SHOULD be.
+Find the common symbol,Q13outcome_multip_elaboration,I don't think the optimal quickest time can be determined.
+Find the common symbol,Q19time_solvability_elaboration,I think there are optimal correct messages to send.
+Find the common symbol,Q24eureka_question_elaboration,Everyone should list all the symbols they have in the first message then the symbol in common in the second.
 Find the maximum,Q13outcome_multip_elaboration,The participant is not being told everything
 Find the maximum,Q4type_2_generate_elaboration,There may be brainstorming involved as they interpret the feedback
 Find the maximum,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, since the goal is to maximize points I assume it's against another person or team"
@@ -468,6 +698,150 @@ Image rating,Q21intellective_judg_1_elaboration,"you are ""objectively"" trying 
 Image rating,Q22confl_tradeoffs_elaboration,this question is confusing.
 Image rating,Q23ss_out_uncert_elaboration,They dont know how many points
 Image rating,Q9divisible_unitary_elaboration,All participants are working on individual screens
+Intergroup Prisoner's Dilemma,Q1concept_behav_elaboration,This is about taking risk and evaluating return probability.
+Intergroup Prisoner's Dilemma,Q2intel_manip_1_elaboration,"It's not clear what the mechanic is to choose how much to donate, so I'm guessing the amount of physical as very low, but not absent"
+Intergroup Prisoner's Dilemma,Q4type_2_generate_elaboration,"There is seemingly no group interaction, nor idea creation tasks."
+Intergroup Prisoner's Dilemma,Q5creativity_input_1_elaboration,Low creative effort involving picturing the best potential outcomes and making a choice
+Intergroup Prisoner's Dilemma,Q7type_7_battle_elaboration,The team doesn't communicate but they all make a decision that pits them against another group for the payout from the bonus.
+Intergroup Prisoner's Dilemma,Q8type_8_performance_elaboration,"There are multiple ways to play the game without experiencing ""all or nothing"""
+Intergroup Prisoner's Dilemma,Q9divisible_unitary_elaboration,This is a simple donation decision task that's the same for each participant
+Intergroup Prisoner's Dilemma,Q10maximizing_elaboration,This is only a decision task
+Intergroup Prisoner's Dilemma,Q11optimizing_elaboration,"There is an element of precision for the group to have full donation participation, but this is not an individual or group goal that can be managed"
+Intergroup Prisoner's Dilemma,Q13outcome_multip_elaboration,There is a better outcome for the group but a best solution is not the goal of the individual
+Intergroup Prisoner's Dilemma,Q14sol_scheme_mul_elaboration,Participants have to choose to donate to the group and that's their only option.
+Intergroup Prisoner's Dilemma,Q15dec_verifiability_elaboration,Any number of variations of donations might win the pot.  The best solution for the individual has many outcomes.
+Intergroup Prisoner's Dilemma,Q16shared_knowledge_elaboration,"The AI can both make a decision, and provide the ultimate group solution to win the pot."
+Intergroup Prisoner's Dilemma,Q17within_sys_sol_elaboration,"The answer is a moral, ethical and risk factor that has no internal solution."
+Intergroup Prisoner's Dilemma,Q18ans_recog_elaboration,"Since the outcome is dependent upon others, there is no right answer to achieving the best personal outcome."
+Intergroup Prisoner's Dilemma,Q19time_solvability_elaboration,The outcome depends upon too many variables outside the control of the participant
+Intergroup Prisoner's Dilemma,Q20type_3_type_4_elaboration,"Knowing that all participants contributing gives the best option to win the prize, or at least split the pot is the correct objective answer."
+Intergroup Prisoner's Dilemma,Q22confl_tradeoffs_elaboration,Participants have to take risk on the others making the same choices if they make a donation.
+Intergroup Prisoner's Dilemma,Q23ss_out_uncert_elaboration,This is the main theme of the task
+Intergroup Prisoner's Dilemma,Q9divisible_unitary_elaboration,They each have to make decisions separately
+Intergroup Prisoner's Dilemma,Q4type_2_generate_elaboration,It's more of a trust game than a brainstorming game
+Intergroup Prisoner's Dilemma,Q7type_7_battle_elaboration,The goal is to have the most investments to win
+Intergroup Prisoner's Dilemma,Q8type_8_performance_elaboration,"Although if you're team wins you split the pot, you can still walk away with cash if you didn't invest everything"
+Intergroup Prisoner's Dilemma,Q10maximizing_elaboration,It is a timed task
+Intergroup Prisoner's Dilemma,Q13outcome_multip_elaboration,The best solution is to have more invested than the other team
+Intergroup Prisoner's Dilemma,Q15dec_verifiability_elaboration,It's a trust game and you don't know whether you've won until the end
+Intergroup Prisoner's Dilemma,Q17within_sys_sol_elaboration,"You don't know how others invest, it's about trust"
+Intergroup Prisoner's Dilemma,Q23ss_out_uncert_elaboration,You don't know how the others invested until the end
+Intergroup Prisoner's Dilemma,Q15dec_verifiability_elaboration,you can see who has the most at the end
+Intergroup Prisoner's Dilemma,Q17within_sys_sol_elaboration,it depends on the outcome of the game
+Intergroup Prisoner's Dilemma,Q18ans_recog_elaboration,there isn't one solution as it is a game
+Intergroup Prisoner's Dilemma,Q19time_solvability_elaboration,it depends what others do as to how much the person gets
+Investment Game (aka Trust Game),Q7type_7_battle_elaboration,Since money involved in the payoffs and participants are competing for the money while evaluating risk it is a competition though winning is not mentioned openly.
+Investment Game (aka Trust Game),Q8type_8_performance_elaboration,If on of the rooms decide to keep all the money then the other room comes empty. So there can be a lose all senario.
+Investment Game (aka Trust Game),Q9divisible_unitary_elaboration,The groups in room A and B  act in groups to play the game.
+Investment Game (aka Trust Game),Q10maximizing_elaboration,maximize individual payoff in limited time is the goal.
+Investment Game (aka Trust Game),Q11optimizing_elaboration,max out the payoff
+Investment Game (aka Trust Game),Q14sol_scheme_mul_elaboration,Based on decisions of room A and B the game may proceed in various ways.
+Investment Game (aka Trust Game),Q18ans_recog_elaboration,"Only an optimal outcome is listed -maximizing payoff, but no correct answer can be achieved."
+Investment Game (aka Trust Game),Q20type_3_type_4_elaboration,Game can go many ways based on the players.
+Investment Game (aka Trust Game),Q21intellective_judg_1_elaboration,subjective to decision making of players.
+Investment Game (aka Trust Game),Q22confl_tradeoffs_elaboration,The opposite room may just keep all the money if it senses the psychology of the other room to be too greedy i their next move.
+Investment Game (aka Trust Game),Q23ss_out_uncert_elaboration,game can go either ways.
+Investment Game (aka Trust Game),Q24eureka_question_elaboration,It resembles a psychology game based on notions of risk and profit. So no aha moment.
+Investment Game (aka Trust Game),Q5creativity_input_1_elaboration,Need some creativity or human understanding to decide what people in the other room will do
+Investment Game (aka Trust Game),Q6type_5_cc_elaboration,You must resolve the others wanting to maximize payoffs with your own desire
+Investment Game (aka Trust Game),Q11optimizing_elaboration,The goal is just to maximize your payoff
+Investment Game (aka Trust Game),Q13outcome_multip_elaboration,There’s subjectivity and reliance on others
+Investment Game (aka Trust Game),Q14sol_scheme_mul_elaboration,It almost entirely depends on other humans choices
+Investment Game (aka Trust Game),Q15dec_verifiability_elaboration,Any of a wide range of choices could maximize payoff
+Investment Game (aka Trust Game),Q16shared_knowledge_elaboration,It relies on human decision making
+Investment Game (aka Trust Game),Q17within_sys_sol_elaboration,There isn’t a perfect solution I don’t think
+Investment Game (aka Trust Game),Q20type_3_type_4_elaboration,"There is an objective outcome but no probable way to get there, therebisnrandomnessnonvolved"
+Investment Game (aka Trust Game),Q21intellective_judg_1_elaboration,"Some logic, thinking “what would I do if I were in room b” but randomness too"
+Investment Game (aka Trust Game),Q23ss_out_uncert_elaboration,It doesn’t say when we are told the outcomes
+Investment Game (aka Trust Game),Q5creativity_input_1_elaboration,only creativity is in persuasion technique between team members
+Investment Game (aka Trust Game),Q6type_5_cc_elaboration,"assuming only one person is in each room, they make the decision. if there are teams, teams would need to convince each other to reach a decision."
+Investment Game (aka Trust Game),Q7type_7_battle_elaboration,maximizing profit over the other team
+Investment Game (aka Trust Game),Q8type_8_performance_elaboration,variances in money amounts
+Investment Game (aka Trust Game),Q13outcome_multip_elaboration,there is a best possible outcome for each room and dependent on the other
+Investment Game (aka Trust Game),Q14sol_scheme_mul_elaboration,"can keep money or get back what is transferred, multiple ways"
+Investment Game (aka Trust Game),Q16shared_knowledge_elaboration,"depends on other human players, only best possible outcomes could be calculated but players are a wildcard"
+Investment Game (aka Trust Game),Q18ans_recog_elaboration,will depend on future team's actions
+Investment Game (aka Trust Game),Q20type_3_type_4_elaboration,"having more money is objectively better, there is a most likely outcome"
+Investment Game (aka Trust Game),Q21intellective_judg_1_elaboration,money/points are objective
+Investment Game (aka Trust Game),Q22confl_tradeoffs_elaboration,must sacrifice in hopes of higher return
+Investment Game (aka Trust Game),Q23ss_out_uncert_elaboration,"participants don't know other team's wishes or decisions, trust"
+Investment Game (aka Trust Game),Q17within_sys_sol_elaboration,There isn't really a solution to be had. More a decision is made. It's about morality.
+Investment Game (aka Trust Game),Q18ans_recog_elaboration,It's not really an answer they are looking for.
+Investment Game (aka Trust Game),Q19time_solvability_elaboration,There is no solution.
+Investment Game (aka Trust Game),Q7type_7_battle_elaboration,Certain participants can choose to cooperate or compete.
+Investment Game (aka Trust Game),Q2intel_manip_1_elaboration,It could be clarified if the rooms are actual physical rooms or virtual rooms.
+Investment Game (aka Trust Game),Q9divisible_unitary_elaboration,This is not a collaborative effort where 2 players are trying to reach the same goal.
+Investment Game (aka Trust Game),Q17within_sys_sol_elaboration,"I don't believe this applies because information given is not set in stone, thus there is no true solution."
+Investment game (hidden-profile),Q9divisible_unitary_elaboration,They're trying to do the opposite and bring varied info together.
+Investment game (hidden-profile),Q16shared_knowledge_elaboration,I'm assuming an algorithm would solve with all the information.
+Investment game (hidden-profile),Q5creativity_input_1_elaboration,"Participants need to evaluate, synthesize and make recommendations based on information, so it's mostly creative."
+Investment game (hidden-profile),Q6type_5_cc_elaboration,Based on the funding example I categorize this as resolving differences to reach a conclusion.
+Investment game (hidden-profile),Q7type_7_battle_elaboration,This is a team task to achieve the specific goal of ranking the three companies.
+Investment game (hidden-profile),Q8type_8_performance_elaboration,"It wasn't clear about the rewards or requirements for completion.  Objective only says the group ""should"" find out the ""correct decision"""
+Investment game (hidden-profile),Q9divisible_unitary_elaboration,Each worker is evaluating information for the purpose of reaching a shared conclusion
+Investment game (hidden-profile),Q11optimizing_elaboration,Objective says there is an objective ranking to the three investments.
+Investment game (hidden-profile),Q13outcome_multip_elaboration,"1st, 2nd and 3rd best investment are objectively ranked by the researcher."
+Investment game (hidden-profile),Q14sol_scheme_mul_elaboration,"There is a time limit, but the debate and discussion with information provided to each allows for many ways to resolve."
+Investment game (hidden-profile),Q15dec_verifiability_elaboration,Objective states that this is exactly the result of the study to come up with the correct order of the three investments.
+Investment game (hidden-profile),Q16shared_knowledge_elaboration,The algo could not be scripted for the negotiation of differing information.
+Investment game (hidden-profile),Q18ans_recog_elaboration,Researcher states there is a correct ordering to the investment decisions
+Investment game (hidden-profile),Q20type_3_type_4_elaboration,The financial information provided would lead to a correct ordering if participants share the information completely
+Investment game (hidden-profile),Q23ss_out_uncert_elaboration,This is not stated anywhere in the text.  I am not sure what information is given to participants by the end
+Investment game (hidden-profile),Q6type_5_cc_elaboration,This is collaborative
+Investment game (hidden-profile),Q9divisible_unitary_elaboration,"I don’t think so, but this might be a matter of opiniin"
+Investment game (hidden-profile),Q11optimizing_elaboration,There is a specific order that is right
+Investment game (hidden-profile),Q14sol_scheme_mul_elaboration,"I think there are lots of different ways, but it’s set up that they have to work together"
+Investment game (hidden-profile),Q19time_solvability_elaboration,It can be correct but the way to get there might not be
+Investment game (hidden-profile),Q24eureka_question_elaboration,That they have to work together
+Investment game (hidden-profile),Q3type_1_planning_elaboration,This is an evaluation task not a planning one.
+Investment game (hidden-profile),Q5creativity_input_1_elaboration,"The problem is logical but a bit of creative thinking cannot hurt. Since people work in groups, they may create ideas before applying logic to arrive at the correct solution."
+Investment game (hidden-profile),Q7type_7_battle_elaboration,Since the participants should arrive at the correct ordering within the time it can be described as a competition.
+Investment game (hidden-profile),Q8type_8_performance_elaboration,Precision matters as there is one correct sequence.
+Investment game (hidden-profile),Q9divisible_unitary_elaboration,"It says people can work in groups and discuss their strategies, so it can be a divide and conquer task."
+Investment game (hidden-profile),Q10maximizing_elaboration,No advantage of finishing fast but the exercise is time restricted.
+Investment game (hidden-profile),Q22confl_tradeoffs_elaboration,Since desirability has several factors there are tradeoffs.
+Investment game (hidden-profile),Q23ss_out_uncert_elaboration,Since each participant is given different pieces of info they may be unsure till the end when it all comes together
+Investment game (hidden-profile),Q24eureka_question_elaboration,There is no one aha moment as the several factors are systematically analyzed.
+Investment game (hidden-profile),Q9divisible_unitary_elaboration,Decisions should be made a full group and shouldn't divide up work
+Investment game (hidden-profile),Q15dec_verifiability_elaboration,I think an expert could provide insight on which financial metrics are most important
+Iterated Snowdrift Game (With Punishment),Q9divisible_unitary_elaboration,I don't really think this applies because they're not working towards a shared goal.
+Iterated Snowdrift Game (With Punishment),Q5creativity_input_1_elaboration,There is some creativity involved in judging your partner and going with a feeling on what they are going to do
+Iterated Snowdrift Game (With Punishment),Q7type_7_battle_elaboration,In this case is maximin payoff “winning”? It isn’t really clear
+Iterated Snowdrift Game (With Punishment),Q11optimizing_elaboration,The goal is to decide what your partner is going to do but the payout is precise
+Iterated Snowdrift Game (With Punishment),Q13outcome_multip_elaboration,"I think they are looking for who chooses what, not any kind of “solution”"
+Iterated Snowdrift Game (With Punishment),Q14sol_scheme_mul_elaboration,Adding in the punishment phase makes this question difficult
+Iterated Snowdrift Game (With Punishment),Q15dec_verifiability_elaboration,"I’m not sure if there is a correct solution. From which perspective. There is an objectively best solution for each side, but how does one get there?"
+Iterated Snowdrift Game (With Punishment),Q17within_sys_sol_elaboration,I’m not sure on this one either. What’s best changes depending on who we are talking about and how to get there.
+Iterated Snowdrift Game (With Punishment),Q18ans_recog_elaboration,If there is a correct answer I think it would be recognizable
+Iterated Snowdrift Game (With Punishment),Q19time_solvability_elaboration,"Assuming we are talking about just maximin payout, then this isbyes"
+Iterated Snowdrift Game (With Punishment),Q20type_3_type_4_elaboration,Maximize payoff
+Iterated Snowdrift Game (With Punishment),Q22confl_tradeoffs_elaboration,"If you in a position to be punished, that is definitely conflicting"
+Iterated Snowdrift Game (With Punishment),Q23ss_out_uncert_elaboration,They don’t know what their partner will pick
+Iterated Snowdrift Game (With Punishment),Q24eureka_question_elaboration,It’s subjective
+Iterated Snowdrift Game (With Punishment),Q2intel_manip_1_elaboration,"not ACTUALLY shoveling snow, hypothetical"
+Iterated Snowdrift Game (With Punishment),Q5creativity_input_1_elaboration,some creativity in strategy but choices are limited and therefore mostly logical
+Iterated Snowdrift Game (With Punishment),Q6type_5_cc_elaboration,each is out for themselves but can receive poor outcome if no one coordinates
+Iterated Snowdrift Game (With Punishment),Q7type_7_battle_elaboration,"ranking of players, trying to get higher outcome"
+Iterated Snowdrift Game (With Punishment),Q8type_8_performance_elaboration,multiple rankings
+Iterated Snowdrift Game (With Punishment),Q13outcome_multip_elaboration,"there is an optimal solution for each player, the most money"
+Iterated Snowdrift Game (With Punishment),Q14sol_scheme_mul_elaboration,player methods will vary due to punishments/morality/etc
+Iterated Snowdrift Game (With Punishment),Q15dec_verifiability_elaboration,"having the most money and not breaking any rules can be verified, can compare against possible totals"
+Iterated Snowdrift Game (With Punishment),Q16shared_knowledge_elaboration,an algorithm could determine the highest possible payout for each player and how to get this
+Iterated Snowdrift Game (With Punishment),Q18ans_recog_elaboration,"there are many different methods for achieving an outcome and one might not be objectively ""best"" to others"
+Iterated Snowdrift Game (With Punishment),Q20type_3_type_4_elaboration,money values are objective even if the methods/means are not
+Iterated Snowdrift Game (With Punishment),Q23ss_out_uncert_elaboration,"will not know other player responses, methods, moralities, lies"
+Iterated Snowdrift Game (Without Punishment),Q1concept_behav_elaboration,Both but mental is first
+Iterated Snowdrift Game (Without Punishment),Q9divisible_unitary_elaboration,Individual decisions
+Iterated Snowdrift Game (Without Punishment),Q14sol_scheme_mul_elaboration,there are 2 ways to complete the task
+Iterated Snowdrift Game (Without Punishment),Q19time_solvability_elaboration,People could work differently at different times so probably can't replicate the scenario
+Iterated Snowdrift Game (Without Punishment),Q1concept_behav_elaboration,both but an argument can be made for mental effort since it's a strategy and decision-making game. There is however that component of physical effort.
+Iterated Snowdrift Game (Without Punishment),Q1concept_behav_elaboration,"It's not 100% clear to me, but does seem like that is actually a real scenario."
+Iterated Snowdrift Game (Without Punishment),Q7type_7_battle_elaboration,Players are ranked.
+Iterated Snowdrift Game (Without Punishment),Q10maximizing_elaboration,They are trying to maximize points.
+Iterated Snowdrift Game (Without Punishment),Q11optimizing_elaboration,There is a best option which maximizes the payoff.
+Iterated Snowdrift Game (Without Punishment),Q13outcome_multip_elaboration,There is a best option but it might not happen depending on the other participant.
+Iterated Snowdrift Game (Without Punishment),Q16shared_knowledge_elaboration,An algorithm could be used with different scenarios.
+Iterated Snowdrift Game (Without Punishment),Q23ss_out_uncert_elaboration,They will know as soon as they know the other participant's choice.
 Iterative lemonade stand task,Q10maximizing_elaboration,Goal is to maximize profit.
 Iterative lemonade stand task,Q13outcome_multip_elaboration,It is not clear if there are multiple solutions to reach the max profit.
 Iterative lemonade stand task,Q13outcome_multip_elaboration,"not sure, maybe more than one set of choices will lead to the highest profit"
@@ -525,6 +899,77 @@ Mastermind,Q13outcome_multip_elaboration,If you guess all of the colors correctl
 Mastermind,Q15dec_verifiability_elaboration,Participants will receive feedback immediately after to inform them how correct they were before their next turn
 Mastermind,Q18ans_recog_elaboration,Participants receive feedback after each turn
 Mastermind,Q23ss_out_uncert_elaboration,Because participants receive feedback after each turn they don’t have to wait until the game is finished to know how they did
+Minimal Group Paradigm (study diversity),Q18ans_recog_elaboration,there is no right answer
+Minimal Group Paradigm (study diversity),Q19time_solvability_elaboration,there is no solution
+Minimal Group Paradigm (study diversity),Q2intel_manip_1_elaboration,"I would only answer ""entirely Mental"" if there were zero input required."
+Minimal Group Paradigm (study diversity),Q5creativity_input_1_elaboration,"The setup doesn't specify how big the list is, if it's random, or the mechanism for choosing.  I assume a certain amount of thought about how to allocate the resource."
+Minimal Group Paradigm (study diversity),Q11optimizing_elaboration,Objective clearly states there is no right or wrong answer and no set outcome.
+Minimal Group Paradigm (study diversity),Q13outcome_multip_elaboration,"The outcome is unique, random and subjective."
+Minimal Group Paradigm (study diversity),Q15dec_verifiability_elaboration,Completely subjective outcomes
+Minimal Group Paradigm (study diversity),Q17within_sys_sol_elaboration,Only required to allocate the resources
+Minimal Group Paradigm (study diversity),Q18ans_recog_elaboration,"Subjective outcome that doesn't need to be justified and cannot be recognized as ""correct"""
+Minimal Group Paradigm (study diversity),Q19time_solvability_elaboration,There are no right or wrong answers.
+Minimal Group Paradigm (study diversity),Q22confl_tradeoffs_elaboration,The tradeoff is how to allocate the resources.  The instructions don't indicate what information is provided about the other participants
+Minimal Group Paradigm (study diversity),Q3type_1_planning_elaboration,You have to plan out how to divide your resources
+Minimal Group Paradigm (study diversity),Q4type_2_generate_elaboration,You can brainstorm and divide how the resources are divided
+Minimal Group Paradigm (study diversity),Q6type_5_cc_elaboration,In groups there will be several differing viewpoints and the division has to be agreed upon
+Minimal Group Paradigm (study diversity),Q10maximizing_elaboration,It doesn't state anywhere that the task is timed
+Minimal Group Paradigm (study diversity),Q13outcome_multip_elaboration,There's no right or wrong solutions
+Minimal Group Paradigm (study diversity),Q15dec_verifiability_elaboration,There are no right or wrong answers
+Minimal Group Paradigm (study diversity),Q16shared_knowledge_elaboration,"Since it's a subjective division of resources, I'm not sure if an algorithm would help"
+Minimal Group Paradigm (study diversity),Q18ans_recog_elaboration,There's isn't a correct answer
+Minimal Group Paradigm (study diversity),Q19time_solvability_elaboration,There's no correct answer
+Minimal Group Paradigm (study diversity),Q20type_3_type_4_elaboration,There's no correct answer
+Minimal Group Paradigm (study diversity),Q5creativity_input_1_elaboration,This is all creative or random depending on how you look at it.
+Minimal Group Paradigm (study diversity),Q6type_5_cc_elaboration,Each person is on their own.
+Minimal Group Paradigm (study diversity),Q10maximizing_elaboration,Just allocate your full set seems to be the objectice
+Minimal Group Paradigm (study diversity),Q15dec_verifiability_elaboration,All solutions are acceptable
+Minimal Group Paradigm (study diversity),Q16shared_knowledge_elaboration,"This is all social dynamics and not really a game anyway, per se"
+Minimal Group Paradigm (study diversity),Q17within_sys_sol_elaboration,They are all valid I think
+Minimal Group Paradigm (study diversity),Q20type_3_type_4_elaboration,This is all subjective
+Minimal Group Paradigm (study diversity),Q23ss_out_uncert_elaboration,They are told they can do whatever they want basically
+Minimal Group Paradigm (study diversity),Q19time_solvability_elaboration,it doesn't seem like you're really solving anything
+Minimal Group Paradigm (study diversity),Q23ss_out_uncert_elaboration,there is no real goal i don't think
+Minimal Group Paradigm (study diversity),Q17within_sys_sol_elaboration,There is no actual solution to this task.
+Minimum-effort tacit coordination game,Q11optimizing_elaboration,To get as close as possible to a high a number as possible
+Minimum-effort tacit coordination game,Q13outcome_multip_elaboration,It seems obvious to me for everyone to choose 7
+Minimum-effort tacit coordination game,Q14sol_scheme_mul_elaboration,Many choices to make that will get an ok outcome
+Minimum-effort tacit coordination game,Q15dec_verifiability_elaboration,"I’m not sure about this but I think there is, it’s not stated though"
+Minimum-effort tacit coordination game,Q18ans_recog_elaboration,I think this is a matter of interpretation
+Minimum-effort tacit coordination game,Q19time_solvability_elaboration,I don’t think it’s probable because of interpretation
+Minimum-effort tacit coordination game,Q9divisible_unitary_elaboration,I don't really think this applies because they're not working towards a shared goal.
+Minimum-effort tacit coordination game,Q14sol_scheme_mul_elaboration,I believe there is only one number that will attain the goal of maximizing payoff.
+Minimum-effort tacit coordination game,Q24eureka_question_elaboration,"Unless I am confused myself everyone should simply ""guess"" 7."
+Mock jury,Q1concept_behav_elaboration,"No trouble, clarification was adequate"
+Mock jury,Q11optimizing_elaboration,I would have liked more clarification here
+Mock jury,Q5creativity_input_1_elaboration,"only creativity would be in persuading others, otherwise it's remembering events and logically prioritizing them"
+Mock jury,Q6type_5_cc_elaboration,must reach consensus
+Mock jury,Q8type_8_performance_elaboration,"scale is 1-9, although verdict is unanimous or not"
+Mock jury,Q11optimizing_elaboration,unanimous decision
+Mock jury,Q13outcome_multip_elaboration,"number judgements might vary, even if there's unanimous agreement"
+Mock jury,Q22confl_tradeoffs_elaboration,"evidence might be contradictory, other people might raise arguments"
+Mock jury,Q23ss_out_uncert_elaboration,participants don't know the true guilt or what other jurors will vote
+Mock jury,Q3type_1_planning_elaboration,"In this case, the instructions imply that there is a process, and planning the events of the process is a necessary step in completing the objective, but the process in the description isn't given and depends on exactly how the scenario plays out.  I don't know if more clarification could be given in this case, but I'm confident there's a way to plan the optimal steps in completing the objective."
+Mock jury,Q20type_3_type_4_elaboration,"There is an objective solution, which is everyone agreeing on the verdict, but as far as an objective answer, different people may come up with different verdicts."
+Mock jury,Q3type_1_planning_elaboration,"Throughout the presentation I would assume note taking/etc would be encourage to reach a decision, this would entail some planning"
+Mock jury,Q4type_2_generate_elaboration,"You would consider the evidence and come to a decision, this could be considered brainstorming."
+Mock jury,Q6type_5_cc_elaboration,You would have to consider the other jurors opinions regarding the case and come to a conclusion together.
+Mock jury,Q8type_8_performance_elaboration,Since it's guilt/not-guilty I guess this could be the same thing
+Mock jury,Q10maximizing_elaboration,"There is a time limit, but otherwise there isn't a ""race"""
+Mock jury,Q13outcome_multip_elaboration,It is a subjective decision by the group
+Mock jury,Q17within_sys_sol_elaboration,It is the juror's job to determine whether one side or the other had enough information/evidence to reach a decision
+Mock jury,Q18ans_recog_elaboration,If the evidence leads you to one decision over the other you would know it
+Mock jury,Q20type_3_type_4_elaboration,The decision is based on a subjective opinion
+Mock jury,Q22confl_tradeoffs_elaboration,There will be two sides telling two different stories
+Mock jury,Q17within_sys_sol_elaboration,I think it would depend on each individual case to get a correct answer
+Mock jury,Q23ss_out_uncert_elaboration,I think this is a yes and no. They may feel they have the right answer but not know they do.
+Mock jury,Q9divisible_unitary_elaboration,doesn't apply because it's recording personal verdict.
+Mock jury,Q13outcome_multip_elaboration,The best solution in this case is to reach a verdict
+Mock jury,Q14sol_scheme_mul_elaboration,there is only one way to reach a verdict
+Mock jury,Q15dec_verifiability_elaboration,"Verdicts should be based on evidence and should not be subjugated to opinions or subjectivity. However, as humans subjectivity usually is at play in court. There are plenty of cases were the innocents was found guilty. Ideally both answers can be right"
+Mock jury,Q18ans_recog_elaboration,Both correct due to the scenario. Cases can be judged differently based on the juror.
+Mock jury,Q22confl_tradeoffs_elaboration,"Both, depending on the court case. Some obvious others, not so much. Pieces of information may or maybe conflict."
+Mock jury,Q24eureka_question_elaboration,"depending on the case, some cases will have aha moments based on knowing the evidence. Other cases not so much and you know the person is either guilt or not"
 Moral Reasoning (Disciplinary Action Case),Q11optimizing_elaboration,"There is no right or wrong course of action among the options, the goal is to select one of the courses of action."
 Moral Reasoning (Disciplinary Action Case),Q13outcome_multip_elaboration,"There is no right or wrong course of action among the options, the goal is to select one of the courses of action."
 Moral Reasoning (Disciplinary Action Case),Q14sol_scheme_mul_elaboration,"It appears that since the goal is to select one of the courses of action, this is the only ""process"" in this task."
@@ -601,6 +1046,63 @@ Moral Reasoning (Disciplinary Action Case),Q18ans_recog_elaboration,It states in
 "NASA Moon survival",Q5creativity_input_1_elaboration,It is unclear how much information the participant has about each item in the list.
 "NASA Moon survival",Q11optimizing_elaboration,"I base this on the language in the Objective referring to the ""true"" answer."
 "NASA Moon survival",Q13outcome_multip_elaboration,"I base this on the language in the Objective referring to the ""true"" answer."
+New Recruit,Q5creativity_input_1_elaboration,"players will have any number of creative persuasions but are trying to achieve logical goals that benefit them from preset options, not generating new ideas"
+New Recruit,Q8type_8_performance_elaboration,a variety of possible outcomes
+New Recruit,Q9divisible_unitary_elaboration,"don't know the other player's influences, must coordinate"
+New Recruit,Q10maximizing_elaboration,achieve the best outcome
+New Recruit,Q11optimizing_elaboration,most money possible for your desired area
+New Recruit,Q13outcome_multip_elaboration,"objectively there would be a best solution for at least one party's objective, and mathematically possibly even for both"
+New Recruit,Q14sol_scheme_mul_elaboration,many different persuasive methods
+New Recruit,Q15dec_verifiability_elaboration,mathematically you can show what the optimal result would have been for each player/both
+New Recruit,Q16shared_knowledge_elaboration,An AI could calculate the best overall results.
+New Recruit,Q18ans_recog_elaboration,it'll be obvious whether you've received enough for your payout points
+New Recruit,Q21intellective_judg_1_elaboration,"although persuasion will vary and amount of tradeoff, it's possible to achieve the best possible logical scenario and emotion is less important"
+New Recruit,Q22confl_tradeoffs_elaboration,what's valuable for one is not for another
+New Recruit,Q23ss_out_uncert_elaboration,they won't know the private schedule of the other player or their intentions
+New Recruit,Q24eureka_question_elaboration,will vary with each objective/player
+New Recruit,Q5creativity_input_1_elaboration,I think there is some creativity in trying to influence the other participant.
+New Recruit,Q6type_5_cc_elaboration,In the sense that it is a negotiation.
+New Recruit,Q7type_7_battle_elaboration,I can see this either way.  They are competing with each other in the negotiation even if it is not explicit.
+New Recruit,Q11optimizing_elaboration,I don't think there is a way to know the maximum to a precise measure.
+New Recruit,Q16shared_knowledge_elaboration,An algorithm could be used to come up with a fair outcome.
+New Recruit,Q19time_solvability_elaboration,I don't think so in this case since there will be give and take with the other participant.
+New Recruit,Q3type_1_planning_elaboration,I don't think it would be considered a planning task since you're negotiating.
+New Recruit,Q5creativity_input_1_elaboration,There may be some creativity involved in convincing the other side to accept your deal
+New Recruit,Q6type_5_cc_elaboration,You have to negotiate an agreement
+New Recruit,Q7type_7_battle_elaboration,"It is unclear if there's a competition or not, since the goal is to maximize points I assume it's against another person or team"
+New Recruit,Q10maximizing_elaboration,It's a timed task but it's unclear on if you get a better score if you come to an agreement sooner or not
+New Recruit,Q13outcome_multip_elaboration,"There's a best solution for each side, but not a definitive answer for the game altogether"
+New Recruit,Q15dec_verifiability_elaboration,"It's unclear if you can tell whether you ""settled"" for a less than ideal agreement or not"
+New Recruit,Q18ans_recog_elaboration,Because you can't see the other side's incentives I don't think you know the best possible outcome
+New Recruit,Q20type_3_type_4_elaboration,I would assume there's a max point total you can get
+New Recruit,Q22confl_tradeoffs_elaboration,You're negotiating and don't have the other side's information
+New Recruit,Q9divisible_unitary_elaboration,It is just a one on one negotiation
+New Recruit,Q18ans_recog_elaboration,There will not just be one right answer
+New Recruit,Q19time_solvability_elaboration,I don’t think there’s only one right answer
+New Recruit,Q9divisible_unitary_elaboration,They are working indepently
+New Recruit,Q6type_5_cc_elaboration,This is what negotiating means
+New Recruit,Q7type_7_battle_elaboration,"One participant will win, het a higher payoit"
+New Recruit,Q11optimizing_elaboration,The precise outcome would be getting the max according to their schedule
+New Recruit,Q19time_solvability_elaboration,They can show their answer is right
+New Recruit,Q5creativity_input_1_elaboration,The task requires creative thinking because each participant is trying out strategies to get a fair deal for his role be it the recruit or the recruiter. The analysis and payoffs are very objective though.
+New Recruit,Q6type_5_cc_elaboration,Maximizing payoffs by negotiations is the objective.
+New Recruit,Q7type_7_battle_elaboration,"The objective states the participants need to maximize payoffs for their role, at the  cost of the other person whose objective is to minimize the other persons bonus. So it is a competition."
+New Recruit,Q9divisible_unitary_elaboration,The participant only concerns with her or his own payoff schedule.Not a group effort.
+New Recruit,Q10maximizing_elaboration,maximize individual payoff in limited time is the goal.
+New Recruit,Q13outcome_multip_elaboration,maximizing individual payoff.
+New Recruit,Q14sol_scheme_mul_elaboration,SETTLEMENT OPTIONS ARE CLEARLY OUTLINED AND SO ARE THE PAYOFFS. But negotiations can be done in many ways.
+New Recruit,Q16shared_knowledge_elaboration,Requires creative thinking.
+New Recruit,Q17within_sys_sol_elaboration,While the maximizing profits outcome is clearly quantified there is no specific solution.
+New Recruit,Q19time_solvability_elaboration,"The participants can maybe defend their actions or explain their reasoning, but cannot show the solution is right as it is about maximizing payoff."
+New Recruit,Q20type_3_type_4_elaboration,negotiations are not entirely objective.
+New Recruit,Q21intellective_judg_1_elaboration,Contains objective and sujective parts.
+New Recruit,Q22confl_tradeoffs_elaboration,Negotiations involve trade offs.
+New Recruit,Q23ss_out_uncert_elaboration,Some parts involve negotiations which cannot be predetermined.
+New Recruit,Q24eureka_question_elaboration,"Systematic analysis, negotiations are involved aimed at achieving max payoffs, so no aha moment"
+New Recruit,Q18ans_recog_elaboration,There really is no right answer
+New Recruit,Q7type_7_battle_elaboration,Is there a stipulation that an agreement must be met for the payoff schedule to be in place?
+New Recruit,Q8type_8_performance_elaboration,"I would need to know if an agreement wasn't met then there would be no payoff, that would indicate an all or nothing outcome."
+New Recruit,Q18ans_recog_elaboration,There are unknown variables so it's not possible to know the correct answer
 Object based generalization for reasoning (Phyre),Q8type_8_performance_elaboration,"Seems like subsequent attempts earn fewer points, (max points when solved on first attempt) so that makes me think this answer is NO, but the fact that any puzzle can either be solved or not makes me think YES. So, unclear."
 Object based generalization for reasoning (Phyre),Q13outcome_multip_elaboration,"I mean, the best solution is solving on the first attempt...however, it seems like there could be many solutions that result in this end result, so unsure about my answer on this one."
 Object based generalization for reasoning (Phyre),Q20type_3_type_4_elaboration,"Solving the puzzle is the objective answer, but there might be many possible combinations of objects that result in this answer, so not sure."
@@ -616,6 +1118,118 @@ Object based generalization for reasoning (Phyre),Q20type_3_type_4_elaboration,"
 Object based generalization for reasoning (Phyre),Q21intellective_judg_1_elaboration,"While participant can use creativity/subjectivity in how they go about solving the puzzle, the answer/goal is still objective."
 Object based generalization for reasoning (Phyre),Q16shared_knowledge_elaboration,Some creativity is likely necessary here.
 Object based generalization for reasoning (Phyre),Q24eureka_question_elaboration,Some puzzles might have 'aha' moments but instructions do not specify enough.
+Oligopoly game,Q7type_7_battle_elaboration,I chose no because there's nothing in the task or objective which says the point totals will be compared between participants.
+Oligopoly game,Q9divisible_unitary_elaboration,Should be considerate of what the other participants' intentions.
+Oligopoly game,Q11optimizing_elaboration,Would like to get the maximum of 40
+Oligopoly game,Q23ss_out_uncert_elaboration,They will know their payoffs
+Oligopoly game,Q9divisible_unitary_elaboration,I don't really think this applies because they're not working towards a shared goal.
+Oligopoly game,Q13outcome_multip_elaboration,Seems like it depends on what others do as to the best answer
+Oligopoly game,Q21intellective_judg_1_elaboration,I put subjective because it depends on what others choose
+Oligopoly game,Q5creativity_input_1_elaboration,Little bit of creativity in predicting the actions of others
+Oligopoly game,Q7type_7_battle_elaboration,"There’s competition, but I don’t think it’s win/loss"
+Oligopoly game,Q11optimizing_elaboration,Maximize profit according to payout schedule
+Oligopoly game,Q21intellective_judg_1_elaboration,There may be a “best way to go about reading” but I don’t know if there is a best solution
+Oligopoly game,Q22confl_tradeoffs_elaboration,Prisoner dilemma is all about tradeoffs
+Oligopoly game,Q5creativity_input_1_elaboration,There may be an element of creativity to try and predict what others maybe selecting
+Oligopoly game,Q7type_7_battle_elaboration,The goal is to get the highest score possible against others
+Oligopoly game,Q8type_8_performance_elaboration,It's based on the highest score not pass/fail
+Oligopoly game,Q10maximizing_elaboration,There is a fixed amount of time for you to resond
+Oligopoly game,Q13outcome_multip_elaboration,The best answer is for you complete and everyone else to collude.
+Oligopoly game,Q15dec_verifiability_elaboration,If you receive 40 points then you know you selected the best possible solution
+Oligopoly game,Q16shared_knowledge_elaboration,I would assume that an algorithm could solve this
+Oligopoly game,Q17within_sys_sol_elaboration,"You don't know know what others selected, it's about trust"
+Oligopoly game,Q18ans_recog_elaboration,When the points are revealed you know whether you were right or not
+Oligopoly game,Q20type_3_type_4_elaboration,The best objective answer is for you to compete and everyone else colludes.
+Oligopoly game,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the answers correct or not until the points are revealed
+Organization Game,Q5creativity_input_1_elaboration,I would say more logical than creative.
+Organization Game,Q9divisible_unitary_elaboration,Each participant is in charge of a division.
+Organization Game,Q15dec_verifiability_elaboration,Seems like it will follow logic
+Organization Game,Q16shared_knowledge_elaboration,Tough but possible
+Organization Game,Q1concept_behav_elaboration,"It is not mentioned which type of work the organization does (business, construction, restaurant, etc.)"
+Organization Game,Q3type_1_planning_elaboration,The instructions were unclear
+Organization Game,Q5creativity_input_1_elaboration,It seems like there would be a logical sequence of decisions leading to a maximum score
+Organization Game,Q6type_5_cc_elaboration,"It wasn’t really clear, but I don’t thinknso"
+Organization Game,Q7type_7_battle_elaboration,There is a gradient of score not a binary win/loss
+Organization Game,Q9divisible_unitary_elaboration,"I am not sure, I don’t think there was enough info in the description"
+Organization Game,Q11optimizing_elaboration,The precise outcome is to get the highest score
+Organization Game,Q13outcome_multip_elaboration,This was not clear in description
+Organization Game,Q16shared_knowledge_elaboration,There are rules to this game and how the parts fit together. With sufficient “understanding “ of the rules I think a computer could solve this
+Organization Game,Q18ans_recog_elaboration,I have no idea on this one
+Organization Game,Q19time_solvability_elaboration,I think you can show that you maximized your score
+Organization Game,Q20type_3_type_4_elaboration,The problem is presented algorithmically so I assume there is
+Organization Game,Q23ss_out_uncert_elaboration,It isn’t really stated in the problem
+Pharmaceutical Company (hidden-profile),Q7type_7_battle_elaboration,group consensus
+Pharmaceutical Company (hidden-profile),Q8type_8_performance_elaboration,The task is designed so that the full information would show that one drug of the two is the best.
+Pharmaceutical Company (hidden-profile),Q9divisible_unitary_elaboration,some of the facts were shared provided to all three members can be divided and conquer in terms of memorizing portions.
+Pharmaceutical Company (hidden-profile),Q10maximizing_elaboration,time constraint and also memorizing as fast as possible (mentally).
+Pharmaceutical Company (hidden-profile),Q22confl_tradeoffs_elaboration,the information sheet should be as a whole. Some are share or not but each piece of information is unique. Therefore no conflict
+Pharmaceutical Company (hidden-profile),Q24eureka_question_elaboration,"depending on what information was memorized, that will produce the aha moment."
+Pharmaceutical Company (hidden-profile),Q4type_2_generate_elaboration,they are remembering but not generating their own
+Pharmaceutical Company (hidden-profile),Q5creativity_input_1_elaboration,memorizing isn't creative but convincing others/persuasion can be
+Pharmaceutical Company (hidden-profile),Q6type_5_cc_elaboration,much reach consensus/agreement with varying views
+Pharmaceutical Company (hidden-profile),Q7type_7_battle_elaboration,no comparisons to others
+Pharmaceutical Company (hidden-profile),Q8type_8_performance_elaboration,"either find the correct drug or not, although the memorization task has more possibilities"
+Pharmaceutical Company (hidden-profile),Q9divisible_unitary_elaboration,"if each person focuses on only one drug instead of all, might improve memory"
+Pharmaceutical Company (hidden-profile),Q10maximizing_elaboration,remembering as many as possible in time limit
+Pharmaceutical Company (hidden-profile),Q11optimizing_elaboration,one is objectively better than the other
+Pharmaceutical Company (hidden-profile),Q14sol_scheme_mul_elaboration,"memorization is personal and varied, different persuasion methods"
+Pharmaceutical Company (hidden-profile),Q15dec_verifiability_elaboration,can prove optimal drug
+Pharmaceutical Company (hidden-profile),Q16shared_knowledge_elaboration,AI could evaluate facts and find objective drug
+Pharmaceutical Company (hidden-profile),Q18ans_recog_elaboration,"some information is hidden from others, can only tell at the end"
+Pharmaceutical Company (hidden-profile),Q19time_solvability_elaboration,if given all information the objective best could be determined
+Pharmaceutical Company (hidden-profile),Q23ss_out_uncert_elaboration,"unsure how many they remembered, whether they picked the best"
+Pharmaceutical Company (hidden-profile),Q9divisible_unitary_elaboration,it has some individual work but also work that needs to be done as a team
+Pharmaceutical Company (hidden-profile),Q16shared_knowledge_elaboration,I feel like the algorithm could make it where each drug is looked at in terms of what drug is the best.
+Pharmaceutical Company (hidden-profile),Q6type_5_cc_elaboration,Since they have to reach consensus.
+Pharmaceutical Company (hidden-profile),Q9divisible_unitary_elaboration,The first part is but then they have to come together to discuss.
+Pharmaceutical Company (hidden-profile),Q11optimizing_elaboration,Goal is to choose the optimal drug.
+Pharmaceutical Company (hidden-profile),Q16shared_knowledge_elaboration,"I am not sure what type of information is in the information sheets. If it is primarily quantitative, then an algorithm would be able to be used."
+Pharmaceutical Company (hidden-profile),Q23ss_out_uncert_elaboration,They could have a pretty good idea but would not know for sure.
+Prisoner's Dilemma (various versions),Q7type_7_battle_elaboration,Participant can choose to cooperate or compete with others.
+Prisoner's Dilemma (various versions),Q9divisible_unitary_elaboration,Each person works indepently
+Prisoner's Dilemma (various versions),Q13outcome_multip_elaboration,"best for one is worse for another player, but each player has a best possible scenario"
+Prisoner's Dilemma (various versions),Q15dec_verifiability_elaboration,points are concrete and overall it's possible to say that a certain decision had a better outcome or a certain strategy will always result in a better outcome
+Prisoner's Dilemma (various versions),Q16shared_knowledge_elaboration,an algorithm could determine the highest chance at the best outcome
+Prisoner's Dilemma (various versions),Q17within_sys_sol_elaboration,only two concrete choices
+Prisoner's Dilemma (various versions),Q18ans_recog_elaboration,depends on the other player's response
+Prisoner's Dilemma (various versions),Q19time_solvability_elaboration,you could argue your reasoning for your decision and show that it earned the most points
+Prisoner's Dilemma (various versions),Q22confl_tradeoffs_elaboration,must balance the risk of earning more and possibly getting a penalty or earning at a conservative rate
+Prisoner's Dilemma (various versions),Q10maximizing_elaboration,"In this case, is to minimize losses.  Opposite of as much/many"
+Prisoner's Dilemma (various versions),Q5creativity_input_1_elaboration,There could be some creativity involved in trying to play mind games with other participants.
+Prisoner's Dilemma (various versions),Q7type_7_battle_elaboration,I chose no because there's nothing in the task or objective which says the point totals will be compared between participants.
+Prisoner's Dilemma (various versions),Q9divisible_unitary_elaboration,Each player works independently without discussion.
+Prisoner's Dilemma (various versions),Q13outcome_multip_elaboration,I think ultimately whatever maximizes points is the best solution.
+Prisoner's Dilemma (various versions),Q16shared_knowledge_elaboration,I think there is too much of a human element involved to be able to successfully use an algorithm.
+Prisoner's Dilemma (various versions),Q1concept_behav_elaboration,A combination of mental and physical effort will be needed.
+Prisoner's Dilemma (various versions),Q9divisible_unitary_elaboration,Not sure what is meant.
+Prisoner's Dilemma (various versions),Q13outcome_multip_elaboration,You can win a partial amount and still feel accomplished.
+Prisoner's Dilemma (various versions),Q6type_5_cc_elaboration,Not in the way the question asks it
+Prisoner's Dilemma (various versions),Q7type_7_battle_elaboration,It’s a push/pull so I consider that a competition
+Prisoner's Dilemma (various versions),Q16shared_knowledge_elaboration,Relies to much on intuitions
+Prisoner's Dilemma (various versions),Q8type_8_performance_elaboration,nothing is fully lost. A portion of the amount is will still be available.
+Prisoner's Dilemma (various versions),Q9divisible_unitary_elaboration,individual decision/game.
+Public goods game,Q7type_7_battle_elaboration,I'm conflicted about whether the goal of individual payoff would construe competition.
+Public goods game,Q10maximizing_elaboration,I am conflicted about whether trying to maximize both group payoff and individual payoff would qualify here.
+Public goods game,Q15dec_verifiability_elaboration,I am unsure if there is an ideal solution that fulfills both moximizing individual payoff and group payoff simultaneously.
+Public goods game,Q16shared_knowledge_elaboration,"I am unsure if an algorithm could solve this one on one hand because it is more of a social trask, but then again, it is math-based and I wonder if it could find the best way to maximize both individual and group payoffs with a formula."
+Public goods game,Q21intellective_judg_1_elaboration,"I am unsure if this applies to the task as it relies on others to make decisions for themselves and the group to earn the biggest payoff, so it seems like it would be partially logic and partially subjective to me, but I am unsure."
+Public goods game,Q22confl_tradeoffs_elaboration,"I question the word ""tradeoff,"" here, as everyone in the group relies on no information on what the other group members plan to contribute or not beforehand so they are essentially guessing whether they themselves should contribute more or less based on no information."
+Public goods game,Q7type_7_battle_elaboration,This involves two conflicting goals between maximizing individual payoff and team payoff.
+Public goods game,Q15dec_verifiability_elaboration,Correct depends on the definition as it can refer to a situation where each goal of the task is reasonably/moderately fulfilled.
+Public goods game,Q16shared_knowledge_elaboration,"The key role of social dynamics leads me toward saying no, however, focusing on the goals and maximizing each goal would be something that could be algorithmically programmed."
+Public goods game,Q5creativity_input_1_elaboration,It seems mostly logical but there is some creativity in deciding what others will
+Public goods game,Q7type_7_battle_elaboration,Some tradeoff a but I don’t really see a battle element
+Public goods game,Q11optimizing_elaboration,It says to maximize both payoffs without really defining that
+Public goods game,Q13outcome_multip_elaboration,There is not a definaition of what maximize both mean
+Public goods game,Q14sol_scheme_mul_elaboration,"I am not sure. Is this like a basket of goods problems, where you just add the two variables together?"
+Public goods game,Q15dec_verifiability_elaboration,Again it’s tough to say with more info
+Public goods game,Q16shared_knowledge_elaboration,This is difficult to answer without knowing more
+Public goods game,Q18ans_recog_elaboration,Too much subjectivity
+Public goods game,Q20type_3_type_4_elaboration,It isn’t clear if this is the case
+Public goods game,Q23ss_out_uncert_elaboration,It isn’t said when the people on the rooms will know their payoffs
+Public goods game,Q9divisible_unitary_elaboration,You make individual choices
+Public goods game,Q20type_3_type_4_elaboration,I think there is if everybody contributes the full amount then there is an even distribution that is higher than the start.
+Public goods game,Q22confl_tradeoffs_elaboration,Since no one knows what the other is doing I would say yes.
 Putting food into categories,Q6type_5_cc_elaboration,Different group members may have different ideas on categories
 Putting food into categories,Q19time_solvability_elaboration,"There is not a solvable problem, fully subjective"
 Putting food into categories,Q3type_1_planning_elaboration,Once you see your list of foods you would plan how to divide them
@@ -908,6 +1522,7 @@ Reproducing arts,Q15dec_verifiability_elaboration,"If it looks like a 1:1 copy, 
 Reproducing arts,Q16shared_knowledge_elaboration,I don't think an algorithm would be needed to make a copy
 Reproducing arts,Q18ans_recog_elaboration,Either you copy it without mistakes or you don't
 Reproducing arts,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the spreadsheet is correct or not right after they finish
+Reproducing arts,Q7type_7_battle_elaboration,it seems like threre is only one team
 Room assignment task,Q3type_1_planning_elaboration,"This is an optimization problem, I would not count it as planning."
 Room assignment task,Q14sol_scheme_mul_elaboration,"There is an optimal arrangement, so a ""best"" way"
 Room assignment task,Q2intel_manip_1_elaboration,"Though this is mainly a mental effort, there is physical interaction required."
@@ -950,6 +1565,34 @@ Search for Oil Task,Q11optimizing_elaboration,I think because there isn't a set 
 Search for Oil Task,Q16shared_knowledge_elaboration,I think given the rules and map an algorithm could be written to achieve the best outcome
 Search for Oil Task,Q19time_solvability_elaboration,"I think because this is mostly a memory task it can't just be explained as a ""best"" solution"
 Search for Oil Task,Q23ss_out_uncert_elaboration,"depends entirely on when the points feedback for their choices is provided, which isn't mentioned in the description."
+Sender-Receiver game,Q17within_sys_sol_elaboration,not a problem that has a solution
+Sender-Receiver game,Q19time_solvability_elaboration,no solution
+Sender-Receiver game,Q9divisible_unitary_elaboration,I don't really think this applies here because just one person can influence the outcome for the other person. There isn't a shared goal.
+Sender-Receiver game,Q9divisible_unitary_elaboration,This isn't really a group activity
+Sender-Receiver game,Q11optimizing_elaboration,Each participant competes for their own best outcome.
+Sender-Receiver game,Q15dec_verifiability_elaboration,if just depends on what the other person chose
+Sender-Receiver game,Q5creativity_input_1_elaboration,There is some creativity but it seems mostly logical
+Sender-Receiver game,Q6type_5_cc_elaboration,"I honestly am not sure, I would say no but you do have to think of what others would then do"
+Sender-Receiver game,Q7type_7_battle_elaboration,I would say there is a push/pull and the battle is of logic with the other person. This is the “princess bride” game and it seems there is a win and loss
+Sender-Receiver game,Q8type_8_performance_elaboration,You either maximize or you don’t based on one particular me decision of another.
+Sender-Receiver game,Q11optimizing_elaboration,"To send a message such that your payout is maximize. The decision is binary on your part, then there part"
+Sender-Receiver game,Q14sol_scheme_mul_elaboration,"There is two way a you can send the message, both of which could lead to you winning"
+Sender-Receiver game,Q15dec_verifiability_elaboration,It relies on the choice of another person
+Sender-Receiver game,Q18ans_recog_elaboration,Your logical explanation for choosing one could be just as valid as someone else’s for choosing the other message to send
+Sender-Receiver game,Q20type_3_type_4_elaboration,There is an objective outcome but how to get there seems subjective
+Sender-Receiver game,Q22confl_tradeoffs_elaboration,The tradeoff is trying to figure out what the other person will so
+Sender-Receiver game,Q7type_7_battle_elaboration,I had a little trouble because both players do get something regardless of who gets more.
+Sender-Receiver game,Q7type_7_battle_elaboration,more money than other player
+Sender-Receiver game,Q8type_8_performance_elaboration,both players can receive payments of varying amounts
+Sender-Receiver game,Q13outcome_multip_elaboration,what is best for one player is not for the other
+Sender-Receiver game,Q19time_solvability_elaboration,"while there might be a mathematical solution that is ""best"" for both players together, one player wants to succeed over the other and there are multiple ways to do this (lying, building trust, etc) that are not verifiable as ""best"""
+Sender-Receiver game,Q20type_3_type_4_elaboration,"morality is involved and lying/persuasion techniques, whats best for one is not for another, unlikely to have an outcome that is best for both players"
+Sender-Receiver game,Q21intellective_judg_1_elaboration,dollar amounts are concrete but the methods to obtain them can vary (lying)
+Sender-Receiver game,Q23ss_out_uncert_elaboration,participants don't know the others' thoughts/honesty
+Sender-Receiver game,Q24eureka_question_elaboration,will vary per player
+Sender-Receiver game,Q10maximizing_elaboration,time constraint and also maximizing their own payoff.
+Sender-Receiver game,Q11optimizing_elaboration,highest payoff
+Sender-Receiver game,Q19time_solvability_elaboration,Within time and pattern of message may allow the participants to form a desired outcome.
 Shopping plan,Q8type_8_performance_elaboration,It is stated that any score less than max number of points result in partial credit.
 Shopping plan,Q13outcome_multip_elaboration,It is not too clear if there are multiple optimal solutions.
 Shopping plan,Q7type_7_battle_elaboration,"You are fighting against a maximum point value, not other people/ Thats how I interopreted the objective.,"
@@ -1098,6 +1741,19 @@ Target Search,Q18ans_recog_elaboration,Since participants are told their point v
 Target Search,Q24eureka_question_elaboration,I think the AHA moment is when you click or choose a cell worth points and have identified part of the target
 Target Search,Q17within_sys_sol_elaboration,"No, since trial and error is likely involved."
 Target Search,Q23ss_out_uncert_elaboration,"No, since the goal is to get the most points."
+The beer game,Q9divisible_unitary_elaboration,"Sounds like there are information delays, but everyone should still try to work together as much as possible."
+The beer game,Q10maximizing_elaboration,Minimize costs
+The beer game,Q11optimizing_elaboration,Ideal goal is zero costs
+The beer game,Q13outcome_multip_elaboration,Sounds like zero costs is achievable.
+The beer game,Q7type_7_battle_elaboration,seems more collaborative as a team
+The beer game,Q8type_8_performance_elaboration,"doesn't mention what happens if an extensive error, no money, etc. multiple ways to meet the objective."
+The beer game,Q9divisible_unitary_elaboration,each player already is given a specialty
+The beer game,Q10maximizing_elaboration,having the smallest costs
+The beer game,Q11optimizing_elaboration,"the least amount of cost/damage/penalty is the ""best"" outcome"
+The beer game,Q13outcome_multip_elaboration,"it's random every turn so there could be multiple ""best"" solutions to get to the desired result"
+The beer game,Q16shared_knowledge_elaboration,"if given the parameters and variables, an AI could deduce what the best cost would be - but if they are random and after the fact, it would only be a best guess estimation"
+The beer game,Q17within_sys_sol_elaboration,you must guess based on what the random external factors will be and other players decisions
+The beer game,Q18ans_recog_elaboration,it should be obvious which decisions carry the most penalties
 The Fish game,Q7type_7_battle_elaboration,"It wasn’t quite clear whether they would be competing against each other, or just against a “max points”"
 The Fish game,Q14sol_scheme_mul_elaboration,"This is also iffy. There is a max score but it’s not clear if there is one or many ways. The description says there is trial and error, so that made this question harder to answer."
 The Fish game,Q2intel_manip_1_elaboration,This task requires mental effort and motor skills to move cursor.
@@ -1172,6 +1828,21 @@ To evacuate or not to evacuate,Q13outcome_multip_elaboration,There would be a 'b
 To evacuate or not to evacuate,Q14sol_scheme_mul_elaboration,"There is only one way of clicking a button, but more than one way of thinking about risk"
 To evacuate or not to evacuate,Q19time_solvability_elaboration,"I assume no, as there is the element of chance"
 To evacuate or not to evacuate,Q9divisible_unitary_elaboration,"It doesn't seem possible to really ""divide"" this task."
+TOPSIM - general mgmt business game,Q3type_1_planning_elaboration,"the description refers to the teams developing strategies (which sound like plans to me) but I wasn't clear if they were being judged on those strategies, or if they were being jusdged on the outcome of the decisions made based on those analyses and strategies"
+TOPSIM - general mgmt business game,Q5creativity_input_1_elaboration,I'm not sure how creative business planning is irl?
+TOPSIM - general mgmt business game,Q9divisible_unitary_elaboration,"Again, I don't know how business planning or analysis works. It seems likely subgroups or individuals could work on parts separately and then come together for the final decisions making..."
+TOPSIM - general mgmt business game,Q15dec_verifiability_elaboration,"I don't know that there is a ""correct"" answer in this task at all - just being better than other people (or is that the solution, because if so then yes it could be verified by an a 3rd party)"
+TOPSIM - general mgmt business game,Q16shared_knowledge_elaboration,"I feel like this kind of prediction/planning is something a mathematical model could be used for, but I'm not certain"
+TOPSIM - general mgmt business game,Q19time_solvability_elaboration,I'm not sure about the math - is it even possible to prove a best solution in a case with this many variable?
+TOPSIM - general mgmt business game,Q20type_3_type_4_elaboration,"Is the solution to this game the final stock price or the plan itself? Because the answer to this question is different based on what you call the ""solution"""
+TOPSIM - general mgmt business game,Q5creativity_input_1_elaboration,Logic and creativity is important in business planning
+TOPSIM - general mgmt business game,Q6type_5_cc_elaboration,We work as a group to try to out compete other groups
+TOPSIM - general mgmt business game,Q9divisible_unitary_elaboration,"This MIGHT be useful, break up different parts of the planning based on strengths of group members"
+TOPSIM - general mgmt business game,Q13outcome_multip_elaboration,"Based on the description, no there would be different ways to win"
+TOPSIM - general mgmt business game,Q15dec_verifiability_elaboration,"You can objectively say where a group one, but figuring out why might tougher bf showing how"
+TOPSIM - general mgmt business game,Q19time_solvability_elaboration,I don’t know if there is a “right” way to do its
+TOPSIM - general mgmt business game,Q20type_3_type_4_elaboration,The answer isn’t obvious
+TOPSIM - general mgmt business game,Q22confl_tradeoffs_elaboration,Business planning is all about tradeoffs
 Trivia Multiple Choice Quiz,Q9divisible_unitary_elaboration,Based on the instructions I believe this is an individual task and not a group task.
 Trivia Multiple Choice Quiz,Q18ans_recog_elaboration,I think different people can have different justifications for their answers
 Trivia Multiple Choice Quiz,Q4type_2_generate_elaboration,Could be a brainstorming task if you're using the process of elimination to arrive at the correct answer.
@@ -1219,6 +1890,29 @@ Typing game,Q11optimizing_elaboration,The goal is to make your document look exa
 Typing game,Q14sol_scheme_mul_elaboration,It has to look exactly like the target document
 Typing game,Q23ss_out_uncert_elaboration,"It seems unclear if the participants will be notified if they got the answers correct or not (typos, mistakes, etc)"
 Typing game,Q23ss_out_uncert_elaboration,depends on if one person or a team
+Ultimatum game (various versions),Q9divisible_unitary_elaboration,"There is no group, they decide individually"
+Ultimatum game (various versions),Q19time_solvability_elaboration,it depends on what the other person choses
+Ultimatum game (various versions),Q5creativity_input_1_elaboration,persuasiveness in dealing with the other player is slightly creative
+Ultimatum game (various versions),Q7type_7_battle_elaboration,earn more money than the other player or other teams
+Ultimatum game (various versions),Q8type_8_performance_elaboration,any number of values possible
+Ultimatum game (various versions),Q11optimizing_elaboration,"variety of possible money offers; ""most possible"" isn't concrete/precise"
+Ultimatum game (various versions),Q13outcome_multip_elaboration,relationships/proposals might have a mathematical best but that's not the focus of this exercise
+Ultimatum game (various versions),Q14sol_scheme_mul_elaboration,differences in persuasiveness
+Ultimatum game (various versions),Q15dec_verifiability_elaboration,"many possible ways to achieve a solution, differences in opinion as to what is ""better"""
+Ultimatum game (various versions),Q16shared_knowledge_elaboration,a computer could calculate the best outcomes for both sides without the persuasive arguments
+Ultimatum game (various versions),Q18ans_recog_elaboration,it will be obvious that more money is better than no money
+Ultimatum game (various versions),Q19time_solvability_elaboration,possible to figure out the best mathematical solution given enough time and removing emotion
+Ultimatum game (various versions),Q20type_3_type_4_elaboration,"although persuasive argument/feelings will play a role, if those were removed it's possible to find the best mathematical solution for both parties"
+Ultimatum game (various versions),Q21intellective_judg_1_elaboration,"right in the middle: the task will play out subjectively because of the players' feelings and motivations, but if two AI were doing it, they could choose the most logical/best offer."
+Ultimatum game (various versions),Q22confl_tradeoffs_elaboration,"must take some money > no money, or punish each other, persuasion/motivation are a factor"
+Ultimatum game (various versions),Q23ss_out_uncert_elaboration,will be unsure how the partners will respond
+Ultimatum game (various versions),Q24eureka_question_elaboration,"may have a realization moment when the other player acts a certain way, or that a behavior will not get the right result"
+Ultimatum game (various versions),Q7type_7_battle_elaboration,There is a competition element - “maximize your profits over the other person” but it’s more of a five and take element. The description talks about a winner take all scenario which is not true here
+Ultimatum game (various versions),Q10maximizing_elaboration,This one is harder cause we are asked to maximize our payout.
+Ultimatum game (various versions),Q13outcome_multip_elaboration,There is not a max pr best solution
+Ultimatum game (various versions),Q15dec_verifiability_elaboration,There could be many solutions that are acceptable to another player depending on the personality of the player
+Ultimatum game (various versions),Q17within_sys_sol_elaboration,"There is not a best, because it will depend on personalities of the players"
+Ultimatum game (various versions),Q23ss_out_uncert_elaboration,It’s all uncertainty
 Unscramble words (anagrams),Q2intel_manip_1_elaboration,"No. There is a wee bit of physical typing of each unscrambled word.  So, I brought the slider down to one tick above entirely mental effort."
 Unscramble words (anagrams),Q3type_1_planning_elaboration,"Yes, I pondered this for a while.  The task requires one answer and there is only one answer.  So, the answer needs to come from what words you already know.  This task comes from your knowledge of the English language, which is not really planning."
 Unscramble words (anagrams),Q5creativity_input_1_elaboration,"No, creativity comes into play here with regularity.  But that creativity is somewhat mixed with real knowledge as well."
@@ -1267,6 +1961,15 @@ Visual Oddball Target,Q18ans_recog_elaboration,I think once you identify it you 
 Visual Oddball Target,Q23ss_out_uncert_elaboration,It seems unclear if the participants will be notified if they got the pattern correct or not
 Visual Oddball Target,Q9divisible_unitary_elaboration,No team work
 Visual Oddball Target,Q9divisible_unitary_elaboration,Set Up and Objective did not disclose any group information
+Volunteer Investment Game,Q22confl_tradeoffs_elaboration,Participants must decide when to invest vs. waiting out for a bigger payoff
+Volunteer Investment Game,Q9divisible_unitary_elaboration,I don't really think this applies here because just one single individual can influence the outcome for everyone.
+Volunteer Investment Game,Q7type_7_battle_elaboration,goal is to maximize profit but there are two goals at the expense of others.
+Volunteer Investment Game,Q10maximizing_elaboration,time constraint.
+Volunteer Investment Game,Q13outcome_multip_elaboration,"not investing is best but if others also do not invest then the best solution would be forced to invest. Therefore, both."
+Volunteer Investment Game,Q14sol_scheme_mul_elaboration,either do nothing and hope others will invest or invest for the sake of the group and take a personal hit.
+Volunteer Investment Game,Q16shared_knowledge_elaboration,it can solve based on which goal it picks. But present the task of both it might be deadlock for it.
+Volunteer Investment Game,Q20type_3_type_4_elaboration,there are two goals so I suppose it is depended on what the person ultimate decides on.
+Volunteer Investment Game,Q9divisible_unitary_elaboration,You are not allowed to communicate with others
 Wason's Selection Task,Q8type_8_performance_elaboration,"If they do not select enough cards or if they select too many cards, then they fail the task."
 Wason's Selection Task,Q9divisible_unitary_elaboration,No team work
 Wason's Selection Task,Q9divisible_unitary_elaboration,"If a team, the most intelligent should do all of the work, or at least help the others understand it."

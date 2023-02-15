@@ -18,7 +18,6 @@ library(tidyverse)
 ```
 
 ```{r}
-# df.mapping.raw <- read_delim('http://task-robot.glitch.me/results/survey/csv')
 df.mapping.raw <- read_csv('../raw_map.csv')
 ```
 
@@ -44,17 +43,25 @@ Also ensure we don't have anyone submitting without a workerID
 # 
 # nrow(df.mapping.raw)
 ```
-# Save the Raw Data
 
 ```{r}
-# df.mapping.raw %>% write_csv('../raw_map.csv')
+# combine old and new maps
+# df.mapping.raw.73 <- read_csv('../raw_map.csv')
+# df.mapping.raw.30econ <- read_delim('http://task-robot.glitch.me/results/survey/csv')
+# df.mapping.raw <- rbind(df.mapping.raw.73,df.mapping.raw.30econ) %>% unique()
+```
+
+
+# Save the Raw Data
+```{r}
+df.mapping.raw %>% write_csv('../raw_map.csv')
 ```
 
 # Create a CSV of workers to pay in `survey_workflows` with WorkerID, date, how many tasks they did, whether they've been paid for it
 
 ```{r}
 # The same spreadsheet logs how much we previously paid; we read this in and update
-# df.payment.prev <- read_csv('../survey_workflows/mapper_payment.csv') %>% 
+# df.payment.prev <- read_csv('../survey_workflows/mapper_payment.csv') %>%
 #   select(WorkerId, amount_paid, last_payment_date)
 # 
 # # First, we keep track of everyone's cumulative payments
@@ -387,9 +394,9 @@ df.mapping.raw %>%
 ```
 
 ```{r}
-df.mapping.raw %>%
-  filter(Q9divisible_unitary == "Not applicable or not answerable based on the task description (Please Elaborate Below.)") %>%
-  select(Q9divisible_unitary_elaboration, task) %>% View()
+t# df.mapping.raw %>%
+#   filter(Q9divisible_unitary == "Not applicable or not answerable based on the task description (Please Elaborate Below.)") %>%
+#   select(Q9divisible_unitary_elaboration, task) %>% View()
 ```
 
 Visualize the task map & questions where the mean might be close to the middle of the scale
