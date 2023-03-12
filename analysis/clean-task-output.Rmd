@@ -14,9 +14,16 @@ library(tidyverse)
 
 ## Import Other CSV's
 - Task HTML's
-- tasks.csv
 - Task Map itself
 
 ```{r}
-read_csv()
+# Task HTML's
+task_htmls <- read_csv('../writeup to html pipeline/html/task-htmls.csv')
+
+# Task Map
+task_map <- read_csv('../task_map.csv')
+```
+
+```{r}
+task_map %>% left_join(task_htmls, by = "task") %>% write_csv('../task_map_with_additional_documentation.csv')
 ```

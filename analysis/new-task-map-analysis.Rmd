@@ -3,6 +3,8 @@ title: "new-task-map-analysis"
 output: html_notebook
 ---
 
+This notebook contains exploratory analysis for the task mapping project.
+
 ```{r}
 knitr::opts_chunk$set(echo = TRUE)
 library(infotheo)
@@ -23,6 +25,8 @@ Read in the Data
 df.mapping.raw <- read_csv('../raw_map.csv')
 task_map <- read_csv('../task_map.csv')
 df.main_questions_summary <- read_csv('../main_question_summary.csv')
+
+# Look at how much people agreed on the questions
 
 task_based_summary <- df.main_questions_summary %>%
   filter(n_labels > 10) %>%

@@ -1,0 +1,285 @@
+---
+title: "R Notebook for Paper-Related Visualizations"
+output: html_notebook
+---
+
+This notebook contains the key visualizations for the Task Mapping paper.
+
+```{r}
+library(factoextra)
+library(NbClust)
+library(cluster)
+library(plotly)
+library(ggplot2)
+library(caret) #for knn
+library(e1071) #for svm
+library(dplyr)
+library(tidyverse)
+```
+
+Very useful decision boundary plotting code from: https://mhahsler.github.io/Introduction_to_Data_Mining_R_Examples/book/classification-alternative-techniques.html#k-nearest-neighbors
+```{r decisionplot}
+
+decisionplot <- function(model, data, class_var, 
+  predict_type = c("class", "prob"), resolution = 5 * 75) {
+  # resolution is set to 75 dpi if the image is rendered  5 inces wide. 
+  
+  y <- data %>% pull(class_var)
+  x <- data %>% dplyr::select(-all_of(class_var))
+  
+  # resubstitution accuracy
+  prediction <- predict(model, x, type = predict_type[1])
+  # LDA returns a list
+  if(is.list(prediction)) prediction <- prediction$class
+  prediction <- factor(prediction, levels = levels(y))
+  
+  cm <- confusionMatrix(data = prediction, reference = y)
+  acc <- cm$overall["Accuracy"]
+  
+  # evaluate model on a grid
+  r <- sapply(x[, 1:2], range, na.rm = TRUE)
+  xs <- seq(r[1,1], r[2,1], length.out = resolution)
+  ys <- seq(r[1,2], r[2,2], length.out = resolution)
+  g <- cbind(rep(xs, each = resolution), rep(ys, time = resolution))
+  colnames(g) <- colnames(r)
+  g <- as_tibble(g)
+  
+  ### guess how to get class labels from predict
+  ### (unfortunately not very consistent between models)
+  cl <- predict(model, g, type = predict_type[1])
+  
+  # LDA returns a list
+  if(is.list(cl)) { 
+    prob <- cl$posterior
+    cl <- cl$class
+  } else
+    try(prob <- predict(model, g, type = predict_type[2]))
+  
+  # we visualize the difference in probability/score between the 
+  # winning class and the second best class.
+  # don't use probability if predict for the classifier does not support it.
+  max_prob <- 1
+  try({
+    max_prob <- t(apply(prob, MARGIN = 1, sort, decreasing = TRUE))
+    max_prob <- max_prob[,1] - max_prob[,2]
+  }, silent = TRUE) 
+  
+  cl <- factor(cl, levels = levels(y))
+  
+  g <- g %>% add_column(prediction = cl, probability = max_prob)
+  
+  ggplot(g, mapping = aes_string(
+    x = colnames(g)[1],
+    y = colnames(g)[2])) +
+    geom_raster(mapping = aes(fill = prediction, alpha = probability)) +
+     geom_contour(mapping = aes(z = as.numeric(prediction)), 
+      bins = length(levels(cl)), size = .5, color = "black") +
+    geom_point(data = data, mapping =  aes_string(
+      x = colnames(data)[1],
+      y = colnames(data)[2],
+      shape = class_var), alpha = .7) + 
+    scale_alpha_continuous(range = c(0,1), limits = c(0,1), guide = "none") +  
+    labs(subtitle = paste("Training accuracy:", round(acc, 2)))
+}
+```
+
+# Load the Data
+```{r}
+task_map <- read_csv('../task_map.csv')
+```
+
+# Plot the Task Map and other Related Images
+
+Draw the task map using PCA & clustering
+
+First, run the PCA
+```{r, fig.width=16, fig.height=5}
+set.seed(1)
+
+pca <- task_map %>% #select(-continuous_questions) %>%
+  select(-task) %>%
+  prcomp(center = T)
+
+# get optimal number of clusters -- "silhouette" method
+fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "silhouette") +
+  labs(subtitle = "Silhouette method")
+
+# get optimal number of clusters
+NbClust(data = pca$x, distance = "euclidean",
+        min.nc = 2, max.nc = 15, method = "kmeans")
+
+kmeans_output <- pca$x %>% 
+  kmeans(centers = 3, nstart = 100)
+
+combined_data <- cbind(task_map,
+      pca$x, factor(kmeans_output$cluster)) %>%
+  rename(cluster = `factor(kmeans_output$cluster)`)
+
+fviz_eig(pca)
+```
+
+Standard Task Map Image with All Labels
+```{r, fig.width=14, fig.height=5}
+p <- combined_data %>%
+  ggplot(aes(
+    x = PC1,
+    y = PC2,
+    label = task,
+    fill = cluster
+  )) + geom_point() + geom_label(nudge_y = 0.1, size = 4) +
+  
+  #+ , alpha=0.05) +
+# highlights only the ones in the selected set
+  # geom_label(
+  #   data = subset(combined_data, task %in% c("NASA Moon survival", "Desert survival")),
+  #   aes(
+  #     x = PC1,
+  #     y = PC2,
+  #     label = task ,
+  #     fill = cluster
+  #   ),
+  #   nudge_y = 0.1,
+  #   size = 2
+  # )
+ theme_light(base_size = 24)
+
+p # show the plot
+
+ggsave(plot = p, filename = '../task-map.png')
+```
+
+Task Map Image Highlighting Specific Subsets (for Illustrative Purposes)
+```{r, fig.width=14, fig.height=5}
+# An illustrative set to display
+display_set <- c('Writing story',
+ 'Advertisement writing', 
+ 'Desert survival',
+ 'NASA Moon survival',
+ 'Ultimatum game (various versions)',
+ 'Dictator game and its variants',
+ 'Prisoner\'s Dilemma (various versions)',
+ '9 Dot Problem',
+ 'Word construction from a subset of letters',
+ 'Typing game',
+ 'Ravens Matrices',
+ 'Euclidean traveling salesperson'
+ )
+
+# A set of the tasks that are most different
+max_diff_set <- c('Putting food into categories',
+ '9 Dot Problem',
+ 'Shopping plan',
+ 'Mock jury',
+ 'Whac-A-Mole',
+ 'Checkers',
+ 'Reproducing arts',
+ 'Image rating',
+ 'TOPSIM - general mgmt business game',
+ 'Word construction from a subset of letters',
+ 'Minimal Group Paradigm (study diversity)')
+
+# A set of tasks that are the most similar
+min_diff_set <- c('Arithmetic problem 1',
+ 'Euclidean traveling salesperson',
+ 'Abstract grid task',
+ 'Mastermind',
+ 'Logic Problem',
+ 'Guessing the correlation',
+ 'Random dot motion',
+ 'Letters-to-numbers problems (cryptography)',
+ 'Computer maze',
+ 'Recall images',
+ 'Recall stories')
+
+# A set of tasks that illustrates opportunities to add new tasks
+display_limitations_set <- c('Recall word lists',
+                             'Hidden figures in a picture (Recall Task)',
+                             'Recall images',
+                             'Recall stories',
+                             'Recall videos',
+                             'Writing story',
+                             'Advertisement writing')
+
+p <- combined_data %>%
+  ggplot(aes(
+    x = PC1,
+    y = PC2,
+    #label = task,
+    #fill = cluster
+    )) + geom_point(aes(size = 4)) +
+  #geom_point(aes(color = cluster, size = 4)) +
+#highlights only the ones in the selected set
+geom_point(data = subset(combined_data, task %in% display_limitations_set), aes(color = "firebrick1", size = 4)) +
+geom_label(
+  data = subset(combined_data, task %in% display_limitations_set),
+  aes(
+    x = PC1,
+    y = PC2,
+    label = task
+  ),
+  nudge_y = 0.1,
+  size = 4
+) +
+ theme_minimal(base_size = 18) + theme(legend.position = "none")  
+
+p
+
+ggsave(plot = p, filename = '../images/task-map_with_new_task_opportunities_highlighted.png')
+```
+
+Create a cool 3D version
+```{r}
+plot_ly(
+  x = combined_data$PC1,
+  y = combined_data$PC2,
+  z = combined_data$PC3,
+  type = "scatter3d",
+  mode = "markers", # can use mode = "text"
+  text = combined_data$task ,
+  color = combined_data$cluster
+)
+```
+
+Create synthetic dependent variable based on the clusters
+```{r}
+tasks_with_dv <- subset(combined_data, task %in% max_diff_set) %>%
+  mutate(
+    synergy = as.factor(ifelse(cluster == 3 | cluster == 2, 1, 0))
+  )
+combined_data <- combined_data %>%
+  mutate(
+    synergy = as.factor(ifelse(cluster == 3 | cluster == 2, 1, 0))
+  )
+```
+
+# Fitting and Visualizing Models for the Task Map.
+
+```{r}
+x <- combined_data %>% select(PC1, PC2, synergy, task)
+train <- tasks_with_dv %>% select(PC1, PC2, synergy, task)
+model <- train %>% svm(synergy ~ PC1 + PC2, data = ., kernel = "linear")
+
+svmplot <- decisionplot(model, x, class_var = "synergy") + 
+  geom_point(data = train, aes(x = PC1, y = PC2, shape = synergy), color = "darkolivegreen2", show.legend = F) +
+  geom_label(data = train, aes(label = task ), nudge_y = 0.1, nudge_x = -0.1, size = 3) +
+  labs(title = "SVM (Linear Kernel)") +
+  theme_minimal(base_size = 12)
+
+svmplot
+  
+ggsave('svmplot_synthetic_data.png')
+```
+
+```{r}
+model <- train %>% knn3(synergy ~ PC1 + PC2, data = ., k = 1)
+
+knnplot <- decisionplot(model, x, class_var = "synergy") +
+  geom_point(data = train, aes(x = PC1, y = PC2, shape = synergy), color = "darkolivegreen2", show.legend = F) +
+  geom_label(data = train, aes(label = task ), nudge_y = 0.1, nudge_x = -0.1, size = 3) +
+  labs(title = "kNN (1 neighbor)") + 
+  theme_minimal(base_size = 12)
+
+knnplot
+  
+ggsave('knnplot_synthetic_data.png')
+```

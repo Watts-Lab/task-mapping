@@ -5,21 +5,24 @@ date: "5/11/2022"
 output: html_document
 ---
 
+This notebook takes in the raw Task Map Rater Data and cleans it into the Task Map.
+
+It also contains a few explorations of that data --- such as the proportion of people who answered NA, rater agreement, and EDA of the principal components.
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(factoextra)
-library(NbClust)
-library(cluster)
-library(plotly)
-library(irr)
-library(anytime)
+library(ggplot2)
 library(dplyr)
 library(tidyverse)
 ```
 
+# Read in the Task Map
+Read in our saved version of the task map.
 ```{r}
 df.mapping.raw <- read_csv('../raw_map.csv')
 ```
+
+# Commented out code below reads the map directly from Glitch, processes data, and updates payment scripts.
 
 Ensure we don't have any accidental resubmissions -- sometimes the server logs a "double click" as two separate maps!
 
@@ -51,14 +54,12 @@ Also ensure we don't have anyone submitting without a workerID
 # df.mapping.raw <- rbind(df.mapping.raw.73,df.mapping.raw.30econ) %>% unique()
 ```
 
-
-# Save the Raw Data
+Save the Raw Data
 ```{r}
-df.mapping.raw %>% write_csv('../raw_map.csv')
+# df.mapping.raw %>% write_csv('../raw_map.csv')
 ```
 
-# Create a CSV of workers to pay in `survey_workflows` with WorkerID, date, how many tasks they did, whether they've been paid for it
-
+Create a CSV of workers to pay in `survey_workflows` with WorkerID, date, how many tasks they did, whether they've been paid for it
 ```{r}
 # The same spreadsheet logs how much we previously paid; we read this in and update
 # df.payment.prev <- read_csv('../survey_workflows/mapper_payment.csv') %>%
@@ -99,6 +100,8 @@ Budget check!
 
 
 # Take a look at the Task Map Itself
+
+First, store the names of the questions.
 ```{r}
 # Question names
 main_questions <- c(
@@ -131,6 +134,8 @@ continuous_questions <- c('Q2intel_manip_1',
                           'Q21intellective_judg_1','Q5creativity_input_1') 
 ```
 
+# Obtain a Summary of Ratings (including Rater Agreement)
+
 ```{r}
 df.main_questions_summary <- df.mapping.raw %>%
   select(c(main_questions, task, task_blob_url)) %>%
@@ -155,74 +160,7 @@ df.main_questions_summary <- df.mapping.raw %>%
 df.main_questions_summary %>% write_csv('../main_question_summary.csv')
 ```
 
-
-Inter-Rater Reliability:
-Select 2 raters at random and bootstrap a situation where we have only 2 -- this will mimic stage 1
-
-```{r}
-# set.seed(1)
-# 
-# N_ITER <- 10000
-# task_agr_mean <- c()
-# q_agr_mean <- c()
-# 
-# for(i in 1:N_ITER){
-#   print(i)
-#   dataframe_resampled <- df.mapping.raw %>%
-#     group_by(task_blob_url) %>%
-#     filter(n() >= 10) %>%
-#     slice_sample(n = 2) %>%
-#     select(c(main_questions, task, task_blob_url)) %>%
-#     select(-continuous_questions) %>%
-#     pivot_longer(cols = -c(task, task_blob_url), names_to = "question_name") %>%
-#     mutate(
-#       value = recode(
-#         value,
-#         "Mental" = 0,
-#         "Physical" = 1,
-#         "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
-#         "No" = 0,
-#         "Yes" = 1
-#       )
-#     ) %>%
-#     group_by(task, task_blob_url, question_name) %>%
-#   summarize(mean_rating = mean(value, na.rm = T),
-#             n_labels = agree(t(value))$raters,
-#             all_values = paste(value, collapse = " & "),
-#             agreement = ifelse(mean_rating > 0.5, mean_rating, 1-mean_rating),
-#             general.alpha = (agreement-0.5)/(0.5)
-#             )
-# 
-#   task_summary <- dataframe_resampled %>%
-#     group_by(task, task_blob_url) %>%
-#   summarize(
-#     n_labels = round(mean(n_labels),0),
-#     mean_agreement = mean(agreement),
-#     mean_alpha = mean(general.alpha)
-#   ) %>%
-#   arrange(desc(mean_alpha))
-# 
-#   task_agr_mean <- c(task_agr_mean, mean(task_summary$mean_agreement))
-# 
-#   question_summary <- dataframe_resampled %>%
-#   group_by(question_name) %>%
-#   summarize(
-#     n_labels = round(mean(n_labels),0),
-#     mean_agreement = mean(agreement),
-#     mean_alpha = mean(general.alpha)
-#   ) %>%
-#   arrange(desc(mean_alpha))
-# 
-#   q_agr_mean <- c(q_agr_mean, mean(question_summary$mean_agreement))
-# 
-# }
-# 
-# quantile(task_agr_mean, c(0.025, 0.9725))
-# quantile(q_agr_mean, c(0.025, 0.9725))
-```
-
-Export the task map
-
+# Export the task map (rows = tasks; columns = features)
 ```{r}
 # Before mapping the tasks, filter to ONLY the most recent blob
 # If checking BETWEEN blobs, comment this out
@@ -236,6 +174,7 @@ df.mapping.raw <- df.mapping.raw %>%
   filter(task_blob_url %in% most_recent_blob_urls$task_blob_url)
 ```
 
+Separately calculate categorical and numeric, as categories need to be converted to 1&0
 ```{r}
 categorical <- df.mapping.raw %>%
   select(c(main_questions, task, task_blob_url)) %>%
@@ -254,7 +193,6 @@ categorical <- df.mapping.raw %>%
   ) %>% unique() %>%
   pivot_wider(values_from = "value", names_from = "question_name")
 
-
 numeric <- df.mapping.raw %>%
   select(c(continuous_questions, task, task_blob_url)) %>%
   pivot_longer(cols = -c(task, task_blob_url), names_to = "question_name") %>%
@@ -270,8 +208,10 @@ task_map <- inner_join(categorical, numeric, by = c("task", "task_blob_url")) %>
 task_map %>% write_csv('../task_map.csv')
 ```
 
-Special investigation into whether the (second) rewrite of Putting Food Into Categories helped
 
+# Additional Explorations and Validations of the Map's Descriptive Characteristics
+
+Special investigation into whether the (second) rewrite of Putting Food Into Categories helped
 ```{r}
 # Commented this out because I've set the task map to take the most recent blob.
 
@@ -285,7 +225,8 @@ Special investigation into whether the (second) rewrite of Putting Food Into Cat
 # old.writeup
 ```
 
-How often did people answer NA?
+## How often did people answer NA?
+
 ```{r, fig.height=10, fig.width=10}
 df.mapping.raw %>%
   select(c(main_questions, task, task_blob_url)) %>%
@@ -319,10 +260,8 @@ df.mapping.raw %>%
     y = "Task Name"
   ) 
 
-
-ggsave("heatmap_of_na.png")
+#ggsave("heatmap_of_na.png")
 ```
-
 
 ```{r}
 df.mapping.raw %>%
@@ -393,13 +332,7 @@ df.mapping.raw %>%
   )
 ```
 
-```{r}
-t# df.mapping.raw %>%
-#   filter(Q9divisible_unitary == "Not applicable or not answerable based on the task description (Please Elaborate Below.)") %>%
-#   select(Q9divisible_unitary_elaboration, task) %>% View()
-```
-
-Visualize the task map & questions where the mean might be close to the middle of the scale
+## Visualize the task map & questions where the mean might be close to the middle of the scale
 
 ```{r, fig.height=12, fig.width=12}
 task_map %>%
@@ -446,97 +379,18 @@ task_map %>%
     y = "Task Name"
   )
 
-ggsave(filename = "heatmap_of_all_tasks_sorted.png")
+#ggsave(filename = "heatmap_of_all_tasks_sorted.png")
 ```
 
-Draw the task map using PCA & clustering
-
-```{r, fig.width=12, fig.height=5}
-set.seed(1)
-
+# Basic PCA Analysis
+```{r}
 pca <- task_map %>% #select(-continuous_questions) %>%
   select(-task) %>%
-  prcomp(center = T) # should we center and scale? makes no big difference because everything is already 0-1
-
-# get optimal number of clusters -- "silhouette" method
-fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "silhouette") +
-  labs(subtitle = "Silhouette method")
-
-# get optimal number of clusters
-NbClust(data = pca$x, distance = "euclidean",
-        min.nc = 2, max.nc = 15, method = "kmeans")
-
-kmeans_output <- pca$x %>% # 2 is the optimal number
-  kmeans(centers = 2, nstart = 100)
-
-combined_data <- cbind(task_map,
-      pca$x, factor(kmeans_output$cluster)) %>%
-  rename(cluster = `factor(kmeans_output$cluster)`)
-
-# james_set <- c('Writing story',
-#  '9 Dot Problem',
-#  'Word construction from a subset of letters',
-#  'Image rating',
-#  'Checkers',
-#  'Run a mini business',
-#  'Typing game',
-#  'Whac-A-Mole',
-#  'Divergent Association Task',
-#  'Carter Racing',
-#  'Object based generalization for reasoning (Phyre)')
-# 
-#  apricot_set <- c('Search for Oil Task',
-#  'Advertisement writing',
-#  "Wason's Selection Task",
-#  'To evacuate or not to evacuate',
-#  'Space Fortress',
-#  'Word completion given part of word',
-#  'Graph coloring task',
-#  'Estimating social quantity',
-#  'Logic Problem',
-#  'Divergent Association Task')
-
-
-p <- combined_data %>%
-  ggplot(aes(
-    x = PC1,
-    y = PC2,
-    label = task,
-    fill = cluster
-  )) + geom_point() + geom_label(nudge_y = 0.1, size = 4) +
-  
-  #+ , alpha=0.05) +
-# highlights only the ones in the selected set
-  # geom_label(
-  #   data = subset(combined_data, task %in% c("NASA Moon survival", "Desert survival")),
-  #   aes(
-  #     x = PC1,
-  #     y = PC2,
-  #     label = task ,
-  #     fill = cluster
-  #   ),
-  #   nudge_y = 0.1,
-  #   size = 2
-  # )
- theme_light(base_size = 24)
-
-p
-
-plot_ly(
-  x = combined_data$PC1,
-  y = combined_data$PC2,
-  z = combined_data$PC3,
-  type = "scatter3d",
-  mode = "markers", # can use mode = "text"
-  text = combined_data$task ,
-  color = combined_data$cluster
-)
-
-fviz_eig(pca)
-ggsave(plot = p, filename = '../task-map.png')
+  prcomp(center = T)
 ```
 
-Analysis of what the first three PC's mean
+## Analysis of what the first three PC's mean
+
 ```{r}
 # non-absolute value version
 pcaclean <- pca$rotation[, 1:3] %>% data.frame() %>%
@@ -587,6 +441,7 @@ pcaclean %>%
   geom_tile() +
   scale_fill_viridis_c(option = "magma")
 ```
+
 PC1:
 - Whether there's a "correct answer" or not
 
@@ -596,153 +451,115 @@ PC2:
 PC3:
 - Whether you can know you're right before the game ends / whether there are many possible solutions
 
-# Set up Data Export for Karger's Algo
-Currently renamed this to `task_map_long`
+# Old Export Functions for Previous Explorations --- Commented Out
 
+## Set up Data Export for Karger's Algo
+Export a long version of the task map (`task_map_long`)
 ```{r}
-df.karger <- df.mapping.raw %>%
-  select(c(main_questions, task, user)) %>%
-  select(-continuous_questions) %>%
-  pivot_longer(cols = -c(task,user), names_to = "question_name") %>%
-  mutate(
-    value = recode(
-      value,
-      "Mental" = 0,
-      "Physical" = 1,
-      #"Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
-      "No" = 0,
-      "Yes" = 1
-    )
-  ) %>% ungroup() %>%
-  select(user, question_name, task, value) %>%
-  rename(task_name = task,
-         name = user)
-
-df.karger %>% write_csv('task_map_long.csv')
+# df.karger <- df.mapping.raw %>%
+#   select(c(main_questions, task, user)) %>%
+#   select(-continuous_questions) %>%
+#   pivot_longer(cols = -c(task,user), names_to = "question_name") %>%
+#   mutate(
+#     value = recode(
+#       value,
+#       "Mental" = 0,
+#       "Physical" = 1,
+#       #"Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
+#       "No" = 0,
+#       "Yes" = 1
+#     )
+#   ) %>% ungroup() %>%
+#   select(user, question_name, task, value) %>%
+#   rename(task_name = task,
+#          name = user)
+# 
+# df.karger %>% write_csv('task_map_long.csv')
 ```
 
-# How well did the people who showed up today do on the pre-test?
+## How well did the people who showed up today do on the pre-test?
 ```{r}
-previously_tested <- read_csv('../survey_workflows/previous_tested.csv')
-
-df.rater_distribution <- df.mapping.payment %>%
-  select(WorkerId, num_tasks_completed) %>%
-  left_join(previously_tested, by = c("WorkerId" = "name")) %>%
-  group_by(WorkerId) %>% # get rid of people who did the old pre-test
-        arrange(WorkerId, desc(score_pct)) %>% 
-        slice(1) %>%
-  select(WorkerId, num_tasks_completed, score_pct) %>% ungroup() %>%
-  group_by(score_pct) %>%
-  summarize(num_workers = sum(num_tasks_completed))
-  
-ggplot(df.rater_distribution, aes(x = score_pct, y = num_workers)) +
-  geom_bar(stat = "identity") +
-  scale_x_binned()
+# previously_tested <- read_csv('../survey_workflows/previous_tested.csv')
+# 
+# df.rater_distribution <- df.mapping.payment %>%
+#   select(WorkerId, num_tasks_completed) %>%
+#   left_join(previously_tested, by = c("WorkerId" = "name")) %>%
+#   group_by(WorkerId) %>% # get rid of people who did the old pre-test
+#         arrange(WorkerId, desc(score_pct)) %>% 
+#         slice(1) %>%
+#   select(WorkerId, num_tasks_completed, score_pct) %>% ungroup() %>%
+#   group_by(score_pct) %>%
+#   summarize(num_workers = sum(num_tasks_completed))
+#   
+# ggplot(df.rater_distribution, aes(x = score_pct, y = num_workers)) +
+#   geom_bar(stat = "identity") +
+#   scale_x_binned()
 ```
 
-Look at qualitative feedback about questions
+## Look at qualitative feedback about questions
 ```{r}
-df.mapping.raw %>%
-select(c(contains("elaboration"),task)) %>%
-pivot_longer(cols = -task, names_to = "question_name") %>%
-  drop_na() %>%
-  filter(nchar(value) > 2) %>%
-  # drop people who said like, 'no'
-  filter(value != 'no problems.' & value != 'Nope' & value != 'No trouble.') %>% 
-  arrange(task) %>% write_csv("./qual-feedbacks/task_mapping_feedback-main.csv")
+# df.mapping.raw %>%
+# select(c(contains("elaboration"),task)) %>%
+# pivot_longer(cols = -task, names_to = "question_name") %>%
+#   drop_na() %>%
+#   filter(nchar(value) > 2) %>%
+#   # drop people who said like, 'no'
+#   filter(value != 'no problems.' & value != 'Nope' & value != 'No trouble.') %>% 
+#   arrange(task) %>% write_csv("./qual-feedbacks/task_mapping_feedback-main.csv")
 ```
 
-Visualize the original map (Stage 1)
+## Visualize the original map (Stage 1)
 ```{r}
 # get old task map
-df.task_map_old_names <- read_csv('../archive/task_map.csv')
-df.task_map_old <- cbind(df.task_map_old_names[,1],read_csv('../archive/task_map_numeric.csv'))
-
-df.task_map_old <- df.task_map_old %>%
-  filter(task %in% combined_data$task)
-
-set.seed(1)
-pca.old <- df.task_map_old %>%
-  select(-task) %>%
-  select(-effort_physical) %>% # no variation in this column
-  prcomp(scale = T)
-
-# get optimal number of clusters -- "silhouette" method
-fviz_nbclust(x = pca.old$x, FUNcluster = stats::kmeans, method = "silhouette") +
-  labs(subtitle = "Silhouette method")
-
-kmeans.old <- pca.old$x %>%
-  kmeans(centers = 2, nstart = 100) 
-
-combined_old <- cbind(df.task_map_old,
-      pca.old$x, factor(kmeans.old$cluster)) %>%
-  rename(
-    cluster = `factor(kmeans.old$cluster)`
-  )
-
-p.old<- combined_old  %>%
-  ggplot(
-    aes(x = PC1,
-    y = PC2,
-    label = task,
-    fill = cluster
-    )
-  ) + geom_point() + geom_label(nudge_y = 0.8, size = 2) # +
+# df.task_map_old_names <- read_csv('../archive/task_map.csv')
+# df.task_map_old <- cbind(df.task_map_old_names[,1],read_csv('../archive/task_map_numeric.csv'))
 # 
-#   #highlight similar tasks for sanity check
-#   geom_label(
-#     data = subset(combined_old, task %in% c("NASA Moon survival", "Desert survival")),
-#     aes(
-#       x = PC1,
-#       y = PC2,
-#       label = task ,
-#       fill = cluster
-#     ),
-#     nudge_y = 0.8,
-#     size = 2
+# df.task_map_old <- df.task_map_old %>%
+#   filter(task %in% combined_data$task)
+# 
+# set.seed(1)
+# pca.old <- df.task_map_old %>%
+#   select(-task) %>%
+#   select(-effort_physical) %>% # no variation in this column
+#   prcomp(scale = T)
+# 
+# # get optimal number of clusters -- "silhouette" method
+# fviz_nbclust(x = pca.old$x, FUNcluster = stats::kmeans, method = "silhouette") +
+#   labs(subtitle = "Silhouette method")
+# 
+# kmeans.old <- pca.old$x %>%
+#   kmeans(centers = 2, nstart = 100) 
+# 
+# combined_old <- cbind(df.task_map_old,
+#       pca.old$x, factor(kmeans.old$cluster)) %>%
+#   rename(
+#     cluster = `factor(kmeans.old$cluster)`
 #   )
-
-
-p.old
-ggsave(plot = p.old, filename = './map-visuals/task-map-OLD.png')
-fviz_eig(pca.old)
-```
-
-IRR part 2
-
-```{r}
-# responses_clean_ind <- df.mapping.raw %>%
-#   select(c(main_questions, task, task_blob_url, user)) %>%
-#   select(-continuous_questions) %>%
-#   pivot_longer(cols = -c(task,task_blob_url, user), names_to = "question_name") %>%
-#   mutate(value = recode(value, 
-#                      "Mental" = 0,
-#                      "Physical" = 1,
-#                      "Not applicable or not answerable based on the task description (Please Elaborate Below.)" = 3,
-#                      "No" = 0,
-#                      "Yes" = 1
-#                    )) %>%
-#   filter(value != 3) %>% # remove cases in which people thought it wasn't answerable - for now
-#   rename(question = question_name) %>%
-#   filter(task_blob_url %in% most_recent_blob_urls$task_blob_url)
-```
-
-```{r}
-# kripp.alpha.by.task <- data.frame(matrix(nrow = 0, ncol = 2))
 # 
-# for(task_name in task_map$task){
-#   ka <- responses_clean_ind %>% filter(task == task_name) %>%
-#   pivot_wider(names_from = question, values_from = value) %>% ungroup() %>%
-#   select(-c(task, task_blob_url, user)) %>%
-#   as.matrix() %>% kripp.alpha("ordinal")
-#   
-#   newrow = data.frame(
-#     task = task_name,
-#     k.alpha = ka$value
-#   )
-#   
-#   kripp.alpha.by.task <- rbind(kripp.alpha.by.task, newrow)
-# }
+# p.old<- combined_old  %>%
+#   ggplot(
+#     aes(x = PC1,
+#     y = PC2,
+#     label = task,
+#     fill = cluster
+#     )
+#   ) + geom_point() + geom_label(nudge_y = 0.8, size = 2) # +
+# # 
+# #   #highlight similar tasks for sanity check
+# #   geom_label(
+# #     data = subset(combined_old, task %in% c("NASA Moon survival", "Desert survival")),
+# #     aes(
+# #       x = PC1,
+# #       y = PC2,
+# #       label = task ,
+# #       fill = cluster
+# #     ),
+# #     nudge_y = 0.8,
+# #     size = 2
+# #   )
 # 
-# kripp.alpha.by.task %>% arrange(desc(k.alpha))
+# 
+# p.old
+# ggsave(plot = p.old, filename = './map-visuals/task-map-OLD.png')
+# fviz_eig(pca.old)
 ```
