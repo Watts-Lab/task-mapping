@@ -21,7 +21,6 @@ Read in our saved version of the task map.
 ```{r}
 df.mapping.raw <- read_csv('../raw_map.csv')
 ```
-
 # Commented out code below reads the map directly from Glitch, processes data, and updates payment scripts.
 
 Ensure we don't have any accidental resubmissions -- sometimes the server logs a "double click" as two separate maps!
@@ -204,10 +203,51 @@ numeric <- df.mapping.raw %>%
   
 task_map <- inner_join(categorical, numeric, by = c("task", "task_blob_url")) %>% ungroup() %>%
   select(-task_blob_url) # remove task blob for main task map export
+```
+
+# Add in McGrath Type 6, which is rated by hand
+```{r}
+#mixed-motive tasks
+mixed_motive_tasks = c(
+        "Arithmetic problem 2",
+        "Pharmaceutical Company (hidden-profile)",
+        "New Recruit",
+        "Iterated Snowdrift Game (Without Punishment)",
+        "Iterated Snowdrift Game (With Punishment)",
+        "Blocks World for Teams",
+        "The beer game",
+        "Mock jury",
+        "Investment Game (aka Trust Game)",
+        "TOPSIM - general mgmt business game",
+        "Oligopoly game",
+        "Minimal Group Paradigm (study diversity)",
+        "Organization Game",
+        "Biopharm Seltek",
+        "Bullard Houses",
+        "Apache helicopter flight simulator (Longbow2)",
+        "Sender-Receiver game",
+        "Volunteer Investment Game",
+        "Ultimatum game (various versions)",
+        "Prisoner's Dilemma (various versions)",
+        "Public goods game",
+        "Best job candidate (hidden-profile)",
+        "Aerospace Investment (Role-playing)",
+        "Find the common symbol",
+        "Battle of the sexes",
+        "Investment game (hidden-profile)",
+        "Dictator game and its variants",
+        "Intergroup Prisoner's Dilemma",
+        "Chicken",
+        "Minimum-effort tacit coordination game"
+)
+
+task_map <- task_map %>%
+  mutate(
+    Q25_type6_mixed_motive = ifelse(task %in% mixed_motive_tasks, 1,0)    
+  )
 
 task_map %>% write_csv('../task_map.csv')
 ```
-
 
 # Additional Explorations and Validations of the Map's Descriptive Characteristics
 
@@ -422,7 +462,8 @@ pcaclean <- pca$rotation[, 1:3] %>% data.frame() %>%
                "Q24eureka_question" = "Eureka Question",
                "Q2intel_manip_1" = "Intellectual-Manipulative",
                "Q21intellective_judg_1" = "Intellective-Judgmental",
-               "Q5creativity_input_1" = "Creativity Input"
+               "Q5creativity_input_1" = "Creativity Input",
+               "Q25_type6_mixed_motive" = "Mixed Motive"
            ))
 
 pcaclean %>% 
