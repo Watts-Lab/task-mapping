@@ -133,8 +133,22 @@ continuous_questions <- c('Q2intel_manip_1',
                           'Q21intellective_judg_1','Q5creativity_input_1') 
 ```
 
-# Obtain a Summary of Ratings (including Rater Agreement)
 
+# Export the task map (rows = tasks; columns = features)
+```{r}
+# Before mapping the tasks, filter to ONLY the most recent blob
+# If checking BETWEEN blobs, comment this out
+tasks_blobs_and_ids <- df.mapping.raw %>%
+  select(task, task_blob_url, updatedAt) %>%
+  arrange(desc(updatedAt))
+  
+most_recent_blob_urls <- tasks_blobs_and_ids %>% distinct(task, .keep_all = T)
+  
+df.mapping.raw <- df.mapping.raw %>%
+  filter(task_blob_url %in% most_recent_blob_urls$task_blob_url)
+```
+
+Get a Task & Question Rating Summary
 ```{r}
 df.main_questions_summary <- df.mapping.raw %>%
   select(c(main_questions, task, task_blob_url)) %>%
@@ -159,18 +173,12 @@ df.main_questions_summary <- df.mapping.raw %>%
 df.main_questions_summary %>% write_csv('../main_question_summary.csv')
 ```
 
-# Export the task map (rows = tasks; columns = features)
+
 ```{r}
-# Before mapping the tasks, filter to ONLY the most recent blob
-# If checking BETWEEN blobs, comment this out
-tasks_blobs_and_ids <- df.mapping.raw %>%
-  select(task, task_blob_url, updatedAt) %>%
-  arrange(desc(updatedAt))
-  
-most_recent_blob_urls <- tasks_blobs_and_ids %>% distinct(task, .keep_all = T)
-  
-df.mapping.raw <- df.mapping.raw %>%
-  filter(task_blob_url %in% most_recent_blob_urls$task_blob_url)
+df.main_questions_summary %>%
+  filter() %>%
+  group_by(task) %>% summarize(mean_labels = mean(n_labels)) %>%
+  summarize(mean(mean_labels))
 ```
 
 Separately calculate categorical and numeric, as categories need to be converted to 1&0

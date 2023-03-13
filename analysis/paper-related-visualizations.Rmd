@@ -166,17 +166,17 @@ display_set <- c('Writing story',
  )
 
 # A set of the tasks that are most different
-max_diff_set <- c('Putting food into categories',
+max_diff_set <- c('Shopping plan',
+ 'Minimal Group Paradigm (study diversity)',
  '9 Dot Problem',
- 'Shopping plan',
- 'Mock jury',
  'Whac-A-Mole',
+ 'Bullard Houses',
+ 'Putting food into categories',
  'Checkers',
  'Reproducing arts',
+ 'Allocating resources to programs',
  'Image rating',
- 'TOPSIM - general mgmt business game',
- 'Word construction from a subset of letters',
- 'Minimal Group Paradigm (study diversity)')
+ 'Arithmetic problem 2')
 
 # A set of tasks that are the most similar
 min_diff_set <- c('Arithmetic problem 1',
@@ -220,7 +220,7 @@ geom_label(
     y = PC2,
     label = task
   ),
-  nudge_y = 0.1,
+  nudge_y = 0.15,
   size = 4
 ) +
  theme_minimal(base_size = 18) + theme(legend.position = "none")  
@@ -236,7 +236,7 @@ graph_illustrative_plots(display_limitations_set, '../images/task-map_with_new_t
 
 graph_illustrative_plots(max_diff_set, '../images/task-map_with_max_diff_highlighted.png')
 
-graph_illustrative_plots(min_diff_set, '../images/task-map_with_min_diff_highlighted.png')
+# graph_illustrative_plots(min_diff_set, '../images/task-map_with_min_diff_highlighted.png')
 ```
 
 Create a cool 3D version
@@ -256,11 +256,11 @@ Create synthetic dependent variable based on the clusters
 ```{r}
 tasks_with_dv <- subset(combined_data, task %in% max_diff_set) %>%
   mutate(
-    synergy = as.factor(ifelse(cluster == 3 | cluster == 2, 1, 0))
+    synergy = as.factor(ifelse(cluster == 1 | cluster == 2, 1, 0))
   )
 combined_data <- combined_data %>%
   mutate(
-    synergy = as.factor(ifelse(cluster == 3 | cluster == 2, 1, 0))
+    synergy = as.factor(ifelse(cluster == 1 | cluster == 2, 1, 0))
   )
 ```
 
@@ -273,13 +273,13 @@ model <- train %>% svm(synergy ~ PC1 + PC2, data = ., kernel = "linear")
 
 svmplot <- decisionplot(model, x, class_var = "synergy") + 
   geom_point(data = train, aes(x = PC1, y = PC2, shape = synergy), color = "darkolivegreen2", show.legend = F) +
-  geom_label(data = train, aes(label = task ), nudge_y = 0.1, nudge_x = -0.1, size = 3) +
+  geom_label(data = train, aes(label = task ), nudge_y = 0.1, size = 3) +
   labs(title = "SVM (Linear Kernel)") +
   theme_minimal(base_size = 12)
 
 svmplot
   
-ggsave('svmplot_synthetic_data.png')
+ggsave('svmplot_synthetic_data.png', width = 12, height = 5)
 ```
 
 ```{r}
@@ -287,11 +287,11 @@ model <- train %>% knn3(synergy ~ PC1 + PC2, data = ., k = 1)
 
 knnplot <- decisionplot(model, x, class_var = "synergy") +
   geom_point(data = train, aes(x = PC1, y = PC2, shape = synergy), color = "darkolivegreen2", show.legend = F) +
-  geom_label(data = train, aes(label = task ), nudge_y = 0.1, nudge_x = -0.1, size = 3) +
+  geom_label(data = train, aes(label = task ), nudge_y = 0.1, size = 3) +
   labs(title = "kNN (1 neighbor)") + 
   theme_minimal(base_size = 12)
 
 knnplot
   
-ggsave('knnplot_synthetic_data.png')
+ggsave('knnplot_synthetic_data.png', width = 12, height = 5)
 ```
