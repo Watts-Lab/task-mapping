@@ -1,4 +1,3 @@
-# Task Mapping
 This page shows a map of the tasks invovled in the [group dynamics research focus](https://css.seas.upenn.edu/project/group-dynamics/) at the [Computational Social Science Lab at Penn](https://css.seas.upenn.edu), and provides a mechanism to download the data directly.
 
 ### The map
