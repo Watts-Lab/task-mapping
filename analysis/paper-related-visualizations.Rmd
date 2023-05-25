@@ -22,7 +22,7 @@ Very useful decision boundary plotting code from: https://mhahsler.github.io/Int
 
 decisionplot <- function(model, data, class_var, 
   predict_type = c("class", "prob"), resolution = 5 * 75) {
-  # resolution is set to 75 dpi if the image is rendered  5 inces wide. 
+  # resolution is set to 75 dpi if the image is rendered  5 inches wide. 
   
   y <- data %>% pull(class_var)
   x <- data %>% dplyr::select(-all_of(class_var))
@@ -148,22 +148,50 @@ p # show the plot
 ggsave(plot = p, filename = '../task-map.png')
 ```
 
-Task Map Image Highlighting Specific Subsets (for Illustrative Purposes)
-```{r, fig.width=14, fig.height=5}
+Define various sets of tasks for purposes of display
+```{r}
 # An illustrative set to display
 display_set <- c('Writing story',
  'Advertisement writing', 
  'Desert survival',
  'NASA Moon survival',
- 'Ultimatum game (various versions)',
  'Dictator game and its variants',
- 'Prisoner\'s Dilemma (various versions)',
+ 'Ultimatum game (various versions)',
  '9 Dot Problem',
  'Word construction from a subset of letters',
+ 'Word completion given part of word',
  'Typing game',
  'Ravens Matrices',
  'Euclidean traveling salesperson'
  )
+
+writing <- c('Writing story',
+ 'Advertisement writing'
+)
+
+survival <- c(
+  'Desert survival',
+ 'NASA Moon survival'
+)
+
+econ <- c(
+ 'Dictator game and its variants',
+ 'Ultimatum game (various versions)'
+)
+
+intellective <- c(
+  '9 Dot Problem',
+  'Typing game',
+  'Ravens Matrices',
+  'Euclidean traveling salesperson'
+)
+
+maximizing <- 
+  c(
+    'Word construction from a subset of letters',
+    'Word completion given part of word'
+  )
+
 
 # A set of the tasks that are most different
 max_diff_set <- c('Shopping plan',
@@ -199,42 +227,103 @@ display_limitations_set <- c('Recall word lists',
                              'Recall videos',
                              'Writing story',
                              'Advertisement writing')
+```
 
 
-graph_illustrative_plots <- function(displayset, filename){
-  p <- combined_data %>%
-  ggplot(aes(
-    x = PC1,
-    y = PC2,
-    #label = task,
-    #fill = cluster
-    )) + geom_point(aes(size = 4)) +
-  #geom_point(aes(color = cluster, size = 4)) +
-#highlights only the ones in the selected set
-geom_point(data = subset(combined_data, task %in% displayset), aes(size = 4),
-           color = "firebrick1") +
-geom_label(
-  data = subset(combined_data, task %in% displayset),
-  aes(
-    x = PC1,
-    y = PC2,
-    label = task
-  ),
-  nudge_y = 0.15,
-  size = 4
-) +
- theme_minimal(base_size = 18) + theme(legend.position = "none")  
-
-p
-
-ggsave(plot = p, filename = filename, width = 14, height = 5)
+Task Map Image Highlighting Specific Subsets (for Illustrative Purposes)
+```{r}
+graph_illustrative_plots <- function(displayset, filename) {
+  combined_data_with_labels <- combined_data %>%
+    # Mutate it so that the different sets show up with labels
+    
+    # display points with differently-colored labels
+    mutate(point_group = ifelse(
+      task %in% writing,
+      'Writing Tasks',
+      ifelse(
+        task %in% survival,
+        'Survival Ranking Tasks',
+        ifelse(
+          task %in% econ,
+          'Economic Games',
+          ifelse(
+            task %in% intellective,
+            'Intellective Tasks',
+            "Maximizing Tasks"
+          )
+        )
+      )
+    ))
+  
+  # max and min diff labels
+  # mutate(
+  #   point_group = ifelse(task %in% max_diff_set, 'Most Different Tasks',
+  #                        ifelse(task %in% min_diff_set,'Most Similar Tasks', NA))
+  # )
+  
+  p <-  combined_data_with_labels %>%
+    ggplot(aes(x = PC1,
+               y = PC2,
+               #label = task,
+               #fill = cluster)) +
+               
+               # + geom_point(aes(size = 4)) +
+               # geom_point(aes(color = cluster, size = 4)) +
+               
+               #highlights only the ones in the selected set
+               
+               #   geom_label(
+               #   data = subset(combined_data_with_labels, task %in% displayset),
+               #   aes(
+               #     x = PC1,
+               #     y = PC1,
+               #     label = task
+               #   ),
+               #   nudge_y = 0.15,
+               #   size = 4
+               # ) +
+               # note - depending on which you want to show first, may want to put points first, labels 2nd
+               
+               # color by point group
+               geom_label(
+                 data = subset(combined_data_with_labels, task %in% displayset),
+                 aes(label = task, fill = point_group),
+                 vjust = "inward",
+                 hjust = "inward",
+                 color = "white",
+                 size = 4.5,
+                 fontface = "bold"
+               ) +
+                 theme_minimal(base_size = 18) +
+                 theme(legend.position = "none",
+                       plot.title = element_text(face = "bold")) +
+                 labs(x = "Demonstrable Correctness (PC1)",
+                      y = "Collaboration-Conflict (PC2)",
+                      title = "Projection of the Task Space in 2D (using PCA), with Illustrative Tasks") +
+                 # make colors darker
+                 scale_fill_hue(l = 45)
+               
+               ggsave(
+                 plot = p,
+                 filename = filename,
+                 width = 14,
+                 height = 5
+               )
 }
 ```
 
-```{r, fig.width=14, fig.height=5}
-graph_illustrative_plots(display_limitations_set, '../images/task-map_with_new_task_opportunities_highlighted.png')
+```{r}
+graph_illustrative_plots(display_set, '../images/task-map_with_display_set_highlighted.png'
+                    )
+```
 
-graph_illustrative_plots(max_diff_set, '../images/task-map_with_max_diff_highlighted.png')
+
+```{r, fig.width=14, fig.height=5}
+#graph_illustrative_plots(display_limitations_set, '../images/task-map_with_new_task_opportunities_highlighted.png')
+
+#graph_illustrative_plots(max_diff_set, '../images/task-map_with_max_diff_highlighted.png')
+
+# graph_illustrative_plots(c(max_diff_set, min_diff_set), '../images/task-map_with_max_and_min_diff_highlighted.png')
 
 # graph_illustrative_plots(min_diff_set, '../images/task-map_with_min_diff_highlighted.png')
 ```
@@ -262,6 +351,36 @@ combined_data <- combined_data %>%
   mutate(
     synergy = as.factor(ifelse(cluster == 1 | cluster == 2, 1, 0))
   )
+
+combined_data %>% 
+  # rename columns in a more pretty format
+  rename(
+    `Conceptual-Behavioral` = Q1concept_behav,
+    `Type 1 (Planning)` = Q3type_1_planning,
+    `Type 2 (Generate)` = Q4type_2_generate,
+    `Type 5 (Cognitive Conflict)` = Q6type_5_cc,
+    `Type 7 (Battle)` = Q7type_7_battle,
+    `Type 8 (Performance)` = Q8type_8_performance,
+    `Divisible-Unitary` = Q9divisible_unitary,
+    `Maximizing` = Q10maximizing,
+    `Optimizing` = Q11optimizing,
+    `Outcome Multiplicity` = Q13outcome_multip,
+    `Solution Scheme Multiplicity` = Q14sol_scheme_mul,
+    `Decision Verifiability` = Q15dec_verifiability,
+    `Shared Knowledge` = Q16shared_knowledge,
+    `Within-System Solution` = Q17within_sys_sol,
+    `Answer Recognizability` = Q18ans_recog,
+    `Time Solvability` = Q19time_solvability,
+    `Type 3 and Type 4 (Objective Correctness)` = Q20type_3_type_4,
+    `Conflicting Tradeoffs` = Q22confl_tradeoffs,
+    `Solution Scheme Outcome Uncertainty` = Q23ss_out_uncert,
+    `Eureka Question` = Q24eureka_question,
+    `Intellectual-Manipulative` = Q2intel_manip_1,
+    `Intellective-Judgmental` = Q21intellective_judg_1,
+    `Creativity Input` = Q5creativity_input_1,
+    `Type 6 (Mixed-Motive)` = Q25_type6_mixed_motive
+  ) %>%
+  write_csv('tasks_with_synthetic_data.csv')
 ```
 
 # Fitting and Visualizing Models for the Task Map.
@@ -272,8 +391,8 @@ train <- tasks_with_dv %>% select(PC1, PC2, synergy, task)
 model <- train %>% svm(synergy ~ PC1 + PC2, data = ., kernel = "linear")
 
 svmplot <- decisionplot(model, x, class_var = "synergy") + 
-  geom_point(data = train, aes(x = PC1, y = PC2, shape = synergy), color = "darkolivegreen2", show.legend = F) +
-  geom_label(data = train, aes(label = task ), nudge_y = 0.1, size = 3) +
+  geom_point(data = train, aes(x = PC1, y = PC2, shape = synergy, size = 5), color = "darkolivegreen2", show.legend = F) +
+  geom_label(data = train, aes(label = task ), nudge_y = 0.2, size = 3) +
   labs(title = "SVM (Linear Kernel)") +
   theme_minimal(base_size = 12)
 
@@ -286,7 +405,7 @@ ggsave('svmplot_synthetic_data.png', width = 12, height = 5)
 model <- train %>% knn3(synergy ~ PC1 + PC2, data = ., k = 1)
 
 knnplot <- decisionplot(model, x, class_var = "synergy") +
-  geom_point(data = train, aes(x = PC1, y = PC2, shape = synergy), color = "darkolivegreen2", show.legend = F) +
+  geom_point(data = train, aes(x = PC1, y = PC2, shape = synergy, size = 5), color = "darkolivegreen2", show.legend = F) +
   geom_label(data = train, aes(label = task ), nudge_y = 0.1, size = 3) +
   labs(title = "kNN (1 neighbor)") + 
   theme_minimal(base_size = 12)

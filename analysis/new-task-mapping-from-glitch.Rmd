@@ -12,6 +12,7 @@ It also contains a few explorations of that data --- such as the proportion of p
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(ggplot2)
+library(irr) # for agree()
 library(dplyr)
 library(tidyverse)
 ```
@@ -65,7 +66,7 @@ Create a CSV of workers to pay in `survey_workflows` with WorkerID, date, how ma
 #   select(WorkerId, amount_paid, last_payment_date)
 # 
 # # First, we keep track of everyone's cumulative payments
-# df.mapping.payment <- df.mapping.all %>%
+# df.mapping.payment <- df.mapping.raw %>%
 #   select(
 #     user, updatedAt
 #   ) %>%
@@ -409,7 +410,7 @@ task_map %>%
     `Eureka Question` = Q24eureka_question,
     `Intellectual-Manipulative` = Q2intel_manip_1,
     `Intellective-Judgmental` = Q21intellective_judg_1,
-    `Creativity Input` = Q2intel_manip_1
+    `Creativity Input` = Q5creativity_input_1
   ) %>%
    pivot_longer(cols = -task) %>%
   rename(`Mean Rater Reponse` = value) %>%

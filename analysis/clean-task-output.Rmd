@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 library(dplyr)
 library(tidyverse)
+library(htm2txt)
 ```
 
 ## Import Other CSV's
@@ -22,6 +23,29 @@ task_htmls <- read_csv('../writeup to html pipeline/html/task-htmls.csv')
 
 # Task Map
 task_map <- read_csv('../task_map.csv')
+
+# Citations and Links
+tasks_and_sources <- read_csv('./tasks_and_sources.csv') %>%
+  rename(task = Task)
+```
+```{r}
+task_htmls %>%
+  mutate(
+    stimulus_complex = str_extract(html, "<h2>1. Set-Up.*<h2>2. Objective / Goal</h2>"),
+    stimulus_complex = str_replace(stimulus_complex, "<h2>1. Set-Up</h2><p>", ""),
+    stimulus_complex = str_replace(stimulus_complex, "<h2>2. Objective / Goal</h2>", ""),
+    stimulus_complex = htm2txt(stimulus_complex),
+    
+    goal_directives = str_extract(html, "<h2>2. Objective / Goal.*"),
+    goal_directives = str_replace(goal_directives, "<h2>2. Objective / Goal</h2>", ""),
+    goal_directives = htm2txt(goal_directives),
+
+  ) %>%
+  inner_join(tasks_and_sources, by = "task") %>%
+  select(c(task, Citation, stimulus_complex, goal_directives)) %>%
+  arrange(task) %>%
+  write_csv('./task_data_table_small.csv')
+  #write_csv('./task_data_table.csv')
 ```
 
 ```{r}
