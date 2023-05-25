@@ -167,4 +167,4 @@ It takes a team to study teams. Our main research team at the Computational Soci
 
 This work was also created with the support from numerous others, including many research assistants at the University of Pennsylvania, as well as the with labor of Amazon Mechanical Turk workers. 
 
-You can learn more about our lab [here](https://css.seas.upenn.edu/people/). 
+This project is part of the [group dynamics research](https://css.seas.upenn.edu/project/group-dynamics/) at the [Computational Social Science Lab at Penn](https://css.seas.upenn.edu). You can learn more about our lab [here](https://css.seas.upenn.edu/people/). 
