@@ -227,6 +227,14 @@ display_limitations_set <- c('Recall word lists',
                              'Recall videos',
                              'Writing story',
                              'Advertisement writing')
+
+# set of tasks used in TPM
+tpm_set <- c(
+  "Mock jury",
+  "Room assignment task",
+  "Divergent Association Task",
+  "Estimating Factual Quantities"
+)
 ```
 
 
@@ -236,7 +244,19 @@ graph_illustrative_plots <- function(displayset, filename) {
   combined_data_with_labels <- combined_data %>%
     # Mutate it so that the different sets show up with labels
     
-    # display points with differently-colored labels
+    # TPM set
+    # mutate(
+    #   point_group = ifelse(
+    #     task == "Mock jury",
+    #     "1",
+    #     ifelse(
+    #       task == "Divergent Association Task",
+    #       "2", "3"
+    #     )
+    #   )
+    # )
+
+    # display points with differently-colored labels --- DisplaySet
     mutate(point_group = ifelse(
       task %in% writing,
       'Writing Tasks',
@@ -265,7 +285,8 @@ graph_illustrative_plots <- function(displayset, filename) {
     ggplot(aes(x = PC1,
                y = PC2,
                #label = task,
-               #fill = cluster)) +
+               #fill = cluster
+               )) +
                
                # + geom_point(aes(size = 4)) +
                # geom_point(aes(color = cluster, size = 4)) +
@@ -282,7 +303,7 @@ graph_illustrative_plots <- function(displayset, filename) {
                #   nudge_y = 0.15,
                #   size = 4
                # ) +
-               # note - depending on which you want to show first, may want to put points first, labels 2nd
+               # # note - depending on which you want to show first, may want to put points first, labels 2nd
                
                # color by point group
                geom_label(
@@ -297,7 +318,8 @@ graph_illustrative_plots <- function(displayset, filename) {
                  theme_minimal(base_size = 18) +
                  theme(legend.position = "none",
                        plot.title = element_text(face = "bold")) +
-                 labs(x = "Demonstrable Correctness (PC1)",
+                 labs(
+                      x = "Demonstrable Correctness (PC1)",
                       y = "Collaboration-Conflict (PC2)",
                       title = "Projection of the Task Space in 2D (using PCA), with Illustrative Tasks") +
                  # make colors darker
@@ -313,8 +335,13 @@ graph_illustrative_plots <- function(displayset, filename) {
 ```
 
 ```{r}
+# graph_illustrative_plots(tpm_set, '../images/task-map_with_tpm_set_highlighted.png'
+#                     )
+```
+
+```{r}
 graph_illustrative_plots(display_set, '../images/task-map_with_display_set_highlighted.png'
-                    )
+                 )
 ```
 
 
