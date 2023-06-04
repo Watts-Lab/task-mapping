@@ -1,0 +1,92 @@
+---
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(ggplot2)
+library(e1071)
+library(plotly)
+library(dplyr)
+library(tidyverse)
+```
+
+```{r load-data, echo=FALSE, message=FALSE, warning=FALSE}
+task_map <- read_csv('./task_map.csv')
+```
+```{r interactive_map, echo = F}
+task_map_pca <- prcomp(task_map[, -1], scale = TRUE)
+task_map_pca_result <- as.data.frame(task_map_pca$x[, 1:2])
+task_map_pca_result$TaskName <- task_map$task
+
+# Define the UI
+ui <- fluidPage(
+  titlePanel("Interactive Task Map"),
+  sidebarLayout(
+    sidebarPanel(
+      numericInput("k_value", "Enter the value of k:", min = 1, value = 2),
+      actionButton("cluster_btn", "Apply Clustering"),
+      actionButton("reset_btn", "Reset Clustering")
+    ),
+    mainPanel(
+      plotlyOutput("map_plot")
+    )
+  )
+)
+
+# Define the server
+server <- function(input, output) {
+  # Initialize clustering data frame
+  clustering_data <- reactiveValues(data = NULL)
+
+  # Apply k-means clustering
+  applyClustering <- function(k) {
+    if (k > 1) {
+      cluster_result <- kmeans(task_map[, -1], centers = k)
+      clustering_data$data <- task_map_pca_result
+      clustering_data$data$cluster <- as.factor(cluster_result$cluster)
+    }
+  }
+
+  # Default clustering
+  default_clustering <- reactive({
+    applyClustering(2)  # Set the default value of k
+    clustering_data$data
+  })
+
+  # Apply k-means clustering when the button is clicked
+  observeEvent(input$cluster_btn, {
+    k <- input$k_value
+    applyClustering(k)
+  })
+
+  # Reset clustering
+  observeEvent(input$reset_btn, {
+    clustering_data$data <- task_map_pca_result
+    clustering_data$data$cluster <- NULL
+  })
+
+  # Plotly map plot
+  output$map_plot <- renderPlotly({
+    plot_data <- clustering_data$data
+
+    ggplotly(
+      ggplot(plot_data, aes(x = PC1, y = PC2, color = cluster, text = TaskName)) +
+        geom_point(size = 3) +
+        theme_minimal()
+    )
+  })
+
+  # Update default clustering when task_map_pca_result changes
+  observe({
+    if (is.null(clustering_data$data)) {
+      clustering_data$data <- default_clustering()
+    }
+  })
+}
+
+# Run the Shiny app
+shinyApp(ui, server)
+```
