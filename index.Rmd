@@ -16,6 +16,13 @@ title: `r params$set_title`
 ```
 A digital companion for our (forthcoming) paper, "Tasks Beyond Taxonomies: A Multidimensional Design Space for Team Tasks."
 
+## Read our Preprint!
+Our paper is currently under review at _Management Science_. The latest version of our paper preprint can be found at the following PsyArXiv link:
+https://osf.io/preprints/psyarxiv/543sz
+
+### Data and Code
+Our data and code are also publicly available: https://osf.io/4pftv/
+
 ## Tasks play an enormous, often underestimated, role in team behavior.  
 Teams that excel in one task --- such as solving math puzzles --- may not necessarily perform well on another (such as writing short stories). Indeed, different tasks may require entirely different skills, approaches, and strategies; you wouldn't coach a soccer team the same way as you would a chess team!
 
@@ -75,12 +82,12 @@ Another way the Task Map can potentially help you is by providing you with quant
 
 ![A Support Vector Machine, trained on all 24 task dimensions, can be used to predict a team outcome (for example, whether teams display "synergy" or not) for a given task. (Here, the synergy labels are synthetic, while the task points are real.) The green points with white labels represent 10 tasks used in the researcher’s experiment. For these 10 tasks, teams displayed synergy for some (synergy = 1, represented by a triangle), and did not display synergy for others (synergy = 0, represented by a circle). The SVM predicts that teams performing tasks in the blue region will display synergy, while teams performing tasks in the red region will not display synergy. The lower panel shows the top 10 weights for the SVM. Tasks in the positive class tend to have greater weight in the Mixed-Motive, Conflicting Tradeoffs, Solution Scheme Outcome Uncertainty, Cognitive Conflict, and Generate dimensions. Tasks in the negative class tend to have greater weight in the Outcome Multiplicity, Objective Correctness, Optimizing, Decision Verifiability, and Divisible-Unitary dimensions.](task_svm_sample.png)
 
-The underlying support vector machine used for this example was generated using [this Python notebook](https://github.com/Watts-Lab/task-mapping/blob/master/analysis/svm_with_synthetic_data.ipynb).
+The underlying support vector machine used for this example was generated using [this Python notebook](https://osf.io/9ks4z).
 
 ### Download the Data
-You can use the Task Space today, by downloading it here: [`task_map.csv`](https://github.com/Watts-Lab/task-mapping/blob/master/task_map.csv). This data is updated periodically with new tasks, ratings, and columns, as appropriate.
+You can use the Task Space today, by downloading it here: [`task_map.csv`](https://osf.io/q3tx2). This data is updated periodically with new tasks, ratings, and columns, as appropriate.
 
-If you are curious about the specific descriptions of each class, we also provide an [augmented version of the data, with an additional column called `html` that details the specific task description](https://github.com/Watts-Lab/task-mapping/blob/master/task_map_with_additional_documentation.csv). Additionally, we document all of the questions used to generate the tasks [here](https://github.com/Watts-Lab/task-mapping/blob/master/questions.csv).
+For additional details, please refer to our OSF Page (https://osf.io/4pftv/).
 
 ### Contribute your own tasks / dimensions!
 We welcome efforts to continue expanding our Task Space. At present, please contact the Corresponding Author, **Xinlan Emily Hu**, at **<xehu> @ wharton (dot) upenn (dot) edu**.
