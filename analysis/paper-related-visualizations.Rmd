@@ -194,19 +194,35 @@ maximizing <-
 
 
 # A set of the tasks that are most different
-max_diff_set <- c('Shopping plan',
- 'Minimal Group Paradigm (study diversity)',
- '9 Dot Problem',
- 'Whac-A-Mole',
- 'Bullard Houses',
+# this set has no restrictions
+max_diff_set <- c('Railroad Route Construction game (Impossible Version)',
+ 'Reproducing arts',
+ 'Best job candidate (hidden-profile)',
  'Putting food into categories',
  'Checkers',
- 'Reproducing arts',
- 'Allocating resources to programs',
+ 'Minimal Group Paradigm (study diversity)',
+ 'Whac-A-Mole',
+ '9 Dot Problem',
+ 'Shopping plan',
+ 'TOPSIM - general mgmt business game')
+
+# This is the set that you can actually play as individual + as a group
+# Removes the impossible version of the railroad game and all economic games
+max_diff_no_economicGames <- c(
+'Writing story',
+ '9 Dot Problem',
+ 'Word construction from a subset of letters',
  'Image rating',
- 'Arithmetic problem 2')
+ 'Checkers',
+ 'Run a mini business',
+ 'Typing game',
+ 'Whac-A-Mole',
+ 'Divergent Association Task',
+ 'Carter Racing'
+)
 
 # A set of tasks that are the most similar
+# No restrictions on this set
 min_diff_set <- c('Arithmetic problem 1',
  'Euclidean traveling salesperson',
  'Abstract grid task',
@@ -216,8 +232,7 @@ min_diff_set <- c('Arithmetic problem 1',
  'Random dot motion',
  'Letters-to-numbers problems (cryptography)',
  'Computer maze',
- 'Recall images',
- 'Recall stories')
+ 'Recall images')
 
 # A set of tasks that illustrates opportunities to add new tasks
 display_limitations_set <- c('Recall word lists',
@@ -235,51 +250,79 @@ tpm_set <- c(
   "Divergent Association Task",
   "Estimating Factual Quantities"
 )
+
+
+mcgrath_quad_display_set <- c(
+  "Whac-A-Mole",  # Competitions
+  "Space Fortress",
+  
+  "Search for Oil Task", # Performances (hit a target)
+  "Target Search",
+  
+  "9 Dot Problem", # Choose (Correct Answer)
+  "Ravens Matrices",
+  
+  "Moral Reasoning (Disciplinary Action Case)", # Choose (No correct answer)
+  "Allocating resources to programs",
+  
+  "Advertisement writing", # Generate (open-ended)
+  "Writing story",
+  
+  "Word construction from a subset of letters", # Generate (close-ended)
+  "Word completion given starting letter",
+  
+  "Shopping plan", # Planning Task
+  
+  "Mock jury", # in between / econ and choose
+
+  "Ultimatum game (various versions)", # Econ games
+  "Dictator game and its variants",
+  
+  "Pharmaceutical Company (hidden-profile)", # Negotiation/Hidden Profile
+  "Investment game (hidden-profile)"
+)
+
 ```
 
+Group all points in the Task Map by a rough, intuitive, label!
+```{r}
+task_map_with_intuitive_labels <- read_csv('../task_map_with_intuitive_hand_groupings.csv') %>%
+  mutate(
+    group = as.factor(group)
+  )
+```
 
 Task Map Image Highlighting Specific Subsets (for Illustrative Purposes)
 ```{r}
 graph_illustrative_plots <- function(displayset, filename) {
   combined_data_with_labels <- combined_data %>%
     # Mutate it so that the different sets show up with labels
-    
-    # TPM set
-    # mutate(
-    #   point_group = ifelse(
-    #     task == "Mock jury",
-    #     "1",
+    # display points with differently-colored labels --- DisplaySet
+    # mutate(point_group = ifelse(
+    #   task %in% writing,
+    #   'Writing Tasks',
+    #   ifelse(
+    #     task %in% survival,
+    #     'Survival Ranking Tasks',
     #     ifelse(
-    #       task == "Divergent Association Task",
-    #       "2", "3"
+    #       task %in% econ,
+    #       'Economic Games',
+    #       ifelse(
+    #         task %in% intellective,
+    #         'Intellective Tasks',
+    #         "Maximizing Tasks"
+    #       )
     #     )
     #   )
-    # )
-
-    # display points with differently-colored labels --- DisplaySet
-    mutate(point_group = ifelse(
-      task %in% writing,
-      'Writing Tasks',
-      ifelse(
-        task %in% survival,
-        'Survival Ranking Tasks',
-        ifelse(
-          task %in% econ,
-          'Economic Games',
-          ifelse(
-            task %in% intellective,
-            'Intellective Tasks',
-            "Maximizing Tasks"
-          )
-        )
-      )
-    ))
+    # )) %>%
+    # left_join(task_map_with_intuitive_labels, by = "task") %>%
+    # rename(`McGrath Quadrant` = group)
   
   # max and min diff labels
-  # mutate(
-  #   point_group = ifelse(task %in% max_diff_set, 'Most Different Tasks',
-  #                        ifelse(task %in% min_diff_set,'Most Similar Tasks', NA))
-  # )
+  mutate(
+    point_group = ifelse(task %in% max_diff_set, 'Most Different Tasks',
+                         ifelse(task %in% min_diff_set,'Most Similar Tasks', NA))
+  )
   
   p <-  combined_data_with_labels %>%
     ggplot(aes(x = PC1,
@@ -288,42 +331,38 @@ graph_illustrative_plots <- function(displayset, filename) {
                #fill = cluster
                )) +
                
-               # + geom_point(aes(size = 4)) +
-               # geom_point(aes(color = cluster, size = 4)) +
+              # add the background points
+                geom_point(
+                data = combined_data_with_labels,
+                # aes(color = `McGrath Quadrant`),
+                alpha = 0.4
+              ) +
                
-               #highlights only the ones in the selected set
-               
-               #   geom_label(
-               #   data = subset(combined_data_with_labels, task %in% displayset),
-               #   aes(
-               #     x = PC1,
-               #     y = PC1,
-               #     label = task
-               #   ),
-               #   nudge_y = 0.15,
-               #   size = 4
-               # ) +
-               # # note - depending on which you want to show first, may want to put points first, labels 2nd
-               
+               # create labels by point group
                # color by point group
+               # ------------------------------------------------------------
                geom_label(
                  data = subset(combined_data_with_labels, task %in% displayset),
                  aes(label = task, fill = point_group),
-                 vjust = "inward",
+                 # aes(label = task, fill = `McGrath Quadrant`), # replace with point_group?
+                 # vjust = "inward",
                  hjust = "inward",
                  color = "white",
-                 size = 4.5,
+                 size = 2.5,
                  fontface = "bold"
                ) +
+
                  theme_minimal(base_size = 18) +
-                 theme(legend.position = "none",
-                       plot.title = element_text(face = "bold")) +
+                 # theme(legend.position = "none",
+                 #       plot.title = element_text(face = "bold")) +
+                theme(plot.title = element_text(face = "bold")) +
                  labs(
                       x = "Demonstrable Correctness (PC1)",
                       y = "Collaboration-Conflict (PC2)",
                       title = "Projection of the Task Space in 2D (using PCA), with Illustrative Tasks") +
                  # make colors darker
                  scale_fill_hue(l = 45)
+               # ------------------------------------------------------------
                
                ggsave(
                  plot = p,
@@ -335,24 +374,18 @@ graph_illustrative_plots <- function(displayset, filename) {
 ```
 
 ```{r}
-# graph_illustrative_plots(tpm_set, '../images/task-map_with_tpm_set_highlighted.png'
-#                     )
+# graph_illustrative_plots(mcgrath_quad_display_set, '../images/task-map_with_display_set_highlighted_and_background_points.png'
+#                  )
 ```
-
-```{r}
-graph_illustrative_plots(display_set, '../images/task-map_with_display_set_highlighted.png'
-                 )
-```
-
 
 ```{r, fig.width=14, fig.height=5}
 #graph_illustrative_plots(display_limitations_set, '../images/task-map_with_new_task_opportunities_highlighted.png')
 
-#graph_illustrative_plots(max_diff_set, '../images/task-map_with_max_diff_highlighted.png')
+graph_illustrative_plots(max_diff_set, '../images/task-map_with_max_diff_highlighted.png')
 
-# graph_illustrative_plots(c(max_diff_set, min_diff_set), '../images/task-map_with_max_and_min_diff_highlighted.png')
+graph_illustrative_plots(c(max_diff_set, min_diff_set), '../images/task-map_with_max_and_min_diff_highlighted.png')
 
-# graph_illustrative_plots(min_diff_set, '../images/task-map_with_min_diff_highlighted.png')
+graph_illustrative_plots(min_diff_set, '../images/task-map_with_min_diff_highlighted.png')
 ```
 
 Create a cool 3D version
@@ -370,7 +403,7 @@ plot_ly(
 
 Create synthetic dependent variable based on the clusters
 ```{r}
-tasks_with_dv <- subset(combined_data, task %in% max_diff_set) %>%
+tasks_with_dv <- subset(combined_data, task %in% max_diff_no_economicGames) %>%
   mutate(
     synergy = as.factor(ifelse(cluster == 1 | cluster == 2, 1, 0))
   )

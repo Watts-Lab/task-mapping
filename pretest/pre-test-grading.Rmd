@@ -333,6 +333,10 @@ ggplot(df.results_by_thresh,
   theme_bw()
 ```
 
+```{r}
+df.results_by_thresh
+```
+
 Plot how many people drop off at each threshold
 ```{r}
 ggplot(df.results_by_thresh,
@@ -400,14 +404,6 @@ df.pretest <- df.pretest %>%
   ) 
 ```
 
-Average test score (for the main pre-test):
-```{r}
-mean(df.pretest$score)
-
-mean(df.pretest$score)/16
-```
-
-
 Get a sense of how long it took people to complete (for the main pre-test):
 ```{r}
 median(df.pretest$`Duration (in seconds)`)/60
@@ -447,11 +443,10 @@ pretest_workers <- pretest.passed %>%
     tested = 1
   )
 
+# What's the average score of workers we used?
 rbind(old_workers,pretest_workers) %>%
   filter(`pre-test` == 1 & score_pct >= 0.75) %>% select(name, score_pct) %>% unique() %>%
-  filter(name == "A3CGQOJC28OVGN")
+  summarize(mean = mean(score_pct))
 
  # %>% write_csv('temp/all_tested_and_pretested_workers_for_payment_05_20_1227pm.csv')
 ```
-
-
