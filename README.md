@@ -1,4 +1,4 @@
-# The Task Space: A Framework for a Cumulative Science of Team Performance
+# The Task Space: An Integrative Framework for Team Research
 
 *Management Science*, Accepted October 2025
 

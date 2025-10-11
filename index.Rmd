@@ -9,6 +9,8 @@ title: `r params$set_title`
 ---
 
 ```{r include=FALSE}
+# TODO --- this whole website needs to be updated before we finalize the replication package!!
+
 # Note to self for things to improve in this writeup
 # - Link to full paper (once complete)
 # - Easier, cleaner mechanism of selecting tasks (perhaps a Python library or just clean up the code?)
