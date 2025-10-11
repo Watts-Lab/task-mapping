@@ -19,6 +19,12 @@ Read in our saved version of the task map.
 df.mapping.raw <- read_csv('../raw_map.csv')
 ```
 
+Get some basic statistics of the users. How many workers were there?
+```{r}
+actual_workers <- unique(df.mapping.raw$user)
+length(actual_workers)
+```
+
 First, store the names of the questions.
 ```{r}
 # Question names
