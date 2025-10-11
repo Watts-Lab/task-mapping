@@ -1,5 +1,7 @@
-# Manuscript title: The Task Space: A Framework for a Cumulative Science of Team Performance
+# The Task Space: A Framework for a Cumulative Science of Team Performance
+
 *Management Science*, Accepted October 2025
+
 Author(s): Xinlan Emily Hu, Mark E. Whiting, Linnea Gandhi, Duncan J. Watts, and Abdullah Almaatouq
 
 
