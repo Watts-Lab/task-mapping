@@ -39,6 +39,60 @@ main_questions <- c(
 continuous_questions <- c('Q2intel_manip_1',
                           'Q21intellective_judg_1','Q5creativity_input_1') 
 
+pretty_name_lookup <- c(
+  "Q1concept_behav" = "Conceptual-Behavioral",
+  "Q3type_1_planning" = "Type 1 (Planning)",
+  "Q4type_2_generate" = "Type 2 (Generate)",
+  "Q6type_5_cc" = "Type 5 (Cognitive Conflict)",
+  "Q7type_7_battle" = "Type 7 (Battle)",
+  "Q8type_8_performance" = "Type 8 (Performance)",
+  "Q9divisible_unitary" = "Divisible-Unitary",
+  "Q10maximizing" = "Maximizing",
+  "Q11optimizing" = "Optimizing",
+  "Q13outcome_multip" = "Outcome Multiplicity",
+  "Q14sol_scheme_mul" = "Solution Scheme Multiplicity",
+  "Q15dec_verifiability" = "Decision Verifiability",
+  "Q16shared_knowledge" = "Shared Knowledge",
+  "Q17within_sys_sol" = "Within-System Solution",
+  "Q18ans_recog" = "Answer Recognizability",
+  "Q19time_solvability" = "Time Solvability",
+  "Q20type_3_type_4" = "Type 3 and Type 4 (Objective Correctness)",
+  "Q22confl_tradeoffs" = "Conflicting Tradeoffs",
+  "Q23ss_out_uncert" = "Solution Scheme Outcome Uncertainty",
+  "Q24eureka_question" = "Eureka Question",
+  "Q2intel_manip_1" = "Intellectual-Manipulative",
+  "Q21intellective_judg_1" = "Intellective-Judgmental",
+  "Q5creativity_input_1" = "Creativity Input",
+  "Q25_type6_mixed_motive" = "Type 6 (Mixed-Motive)"
+)
+
+pretty_name_order <- c(
+  "Conceptual-Behavioral",
+  "Type 1 (Planning)",
+  "Type 2 (Generate)",
+  "Type 5 (Cognitive Conflict)",
+  "Type 7 (Battle)",
+  "Type 8 (Performance)",
+  "Divisible-Unitary",
+  "Maximizing",
+  "Optimizing",
+  "Outcome Multiplicity",
+  "Solution Scheme Multiplicity",
+  "Decision Verifiability",
+  "Shared Knowledge",
+  "Within-System Solution",
+  "Answer Recognizability",
+  "Time Solvability",
+  "Type 3 and Type 4 (Objective Correctness)",
+  "Conflicting Tradeoffs",
+  "Solution Scheme Outcome Uncertainty",
+  "Eureka Question",
+  "Intellectual-Manipulative",
+  "Intellective-Judgmental",
+  "Creativity Input",
+  "Type 6 (Mixed-Motive)"
+)
+
 
 ## -----------------------------------------------------------------------------
 # Before mapping the tasks, filter to ONLY the most recent blob
@@ -125,6 +179,10 @@ task_map <- task_map %>%
   mutate(
     Q25_type6_mixed_motive = ifelse(task %in% mixed_motive_tasks, 1,0)    
   )
+
+task_map <- task_map %>%
+  rename(!!!setNames(names(pretty_name_lookup), pretty_name_lookup)) %>%
+  select(task, all_of(pretty_name_order))
 
 
 ## -----------------------------------------------------------------------------

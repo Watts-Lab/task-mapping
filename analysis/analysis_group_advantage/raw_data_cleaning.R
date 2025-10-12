@@ -103,13 +103,13 @@ offline_scoring <- load_CSVs("offline scoring",FALSE)
 
 ## -----------------------------------------------------------------------------
 # export player-rounds (this has the players)
-player_rounds %>% write_csv('../../outputs/player_rounds.csv')
+player_rounds %>% write_csv('../../outputs/processed_data/player_rounds.csv')
 # export the roudns
-rounds %>% write_csv('../../outputs/rounds.csv')
+rounds %>% write_csv('../../outputs/processed_data/rounds.csv')
 # export the stage data (this has the raw outputs)
-stages %>% write_csv('../../outputs/stages.csv')
+stages %>% write_csv('../../outputs/processed_data/stages.csv')
 # export the players
-players %>% write_csv('../../outputs/players.csv')
+players %>% write_csv('../../outputs/processed_data/players.csv')
 
 
 ## -----------------------------------------------------------------------------
@@ -182,11 +182,21 @@ task_map <-
   ) |>
   filter(task != "NA")
 
-mcgrath_mapping = read_csv(file.path("..","..","..","outputs","processed_data","20_task_map_mcgrath_manually_updated.csv")) |> select(task, matches("_cat")) |>
+mcgrath_mapping_wide = read_csv(file.path("..","..","outputs","processed_data","20_task_map_mcgrath_manually_updated.csv")) |> 
+  select(task, matches("_cat"))
+
+mcgrath_mapping = mcgrath_mapping_wide |>
   pivot_longer(matches("_cat"), names_to = "mcgrath_type") |>
-  mutate(mcgrath_type = sub("_cat", "", mcgrath_type),) |>
+  mutate(mcgrath_type = sub("_cat", "", mcgrath_type)) |>
   filter(value == 1) |>
   select(-value)
+
+mcgrath_categories <- unique(mcgrath_mapping$mcgrath_type)
+
+mcgrath_category_cols <- setdiff(names(mcgrath_mapping_wide), "task")
+mcgrath_non_uncategorized_cols <- setdiff(mcgrath_category_cols, "Uncategorized_cat")
+
+base_columns <- c("task", "playerCount", "strong", "weak", "Low", "Medium", "High", "wave")
 
 
 ## -----------------------------------------------------------------------------
@@ -213,7 +223,7 @@ player_conditions <- players |>
 
 
 ## -----------------------------------------------------------------------------
-player_conditions %>% write_csv("../../outputs/player_conditions.csv")
+player_conditions %>% write_csv("../../outputs/processed_data/player_conditions.csv")
 
 
 ## -----------------------------------------------------------------------------
@@ -400,7 +410,7 @@ rbind(
   unscramble_words,
   recall_association
 ) %>% drop_na() %>%
-  write_csv('../../outputs/summable_answers_raw.csv')
+  write_csv('../../outputs/processed_data/summable_answers_raw.csv')
 
 
 ## -----------------------------------------------------------------------------
@@ -535,7 +545,7 @@ permutation_synergy(raw_score_data,individuals_update = individuals_update)
 
 ## -----------------------------------------------------------------------------
 synergy_data = permutation_synergy(raw_score_data, individuals_update = individuals_update)
-synergy_data |> write_csv("../../outputs/condition_level_group_advantage.csv")
+synergy_data |> write_csv("../../outputs/processed_data/condition_level_group_advantage.csv")
 
 synergy_data_for_prediction <- synergy_data |> 
   select(task,complexity,playerCount,strong,weak) |> 
@@ -544,14 +554,18 @@ synergy_data_for_prediction <- synergy_data |>
   left_join(task_map)
 
 synergy_data_for_prediction |> 
-  write_csv("../../outputs/condition_level_group_advantage_with_ivs.csv")
+  write_csv("../../outputs/processed_data/condition_level_group_advantage_with_ivs.csv")
 
 synergy_data_for_prediction |> 
   select(task, playerCount, strong, weak, Low, Medium, High, wave) |> 
-  left_join(mcgrath_mapping) |> 
-  mutate(type = 1) |> 
-  pivot_wider(names_from = mcgrath_type, values_from = type, values_fill = 0) |>
-  write_csv("../../outputs/condition_level_group_advantage_with_ivs_and_categories.csv")
+  left_join(mcgrath_mapping_wide, by = "task") |> 
+  mutate(across(all_of(mcgrath_category_cols), ~ coalesce(.x, 0))) |>
+  mutate(Uncategorized_cat = if_else(
+    rowSums(across(all_of(mcgrath_non_uncategorized_cols))) == 0,
+    1,
+    Uncategorized_cat
+  )) |>
+  write_csv("../../outputs/processed_data/condition_level_group_advantage_with_ivs_and_categories.csv")
 
 
 ## -----------------------------------------------------------------------------
@@ -826,5 +840,5 @@ observation_synergy_map_and_composition.csv <- both_modeling_data |> pivot_wider
 # merge playerIds back in
 observation_synergy_map_and_composition.csv <- players_with_panel %>% select(c(stageId, playerIds)) %>% unique() %>% merge(observation_synergy_map_and_composition.csv, on = "stageId", how = "right")
 
-observation_synergy_map_and_composition.csv %>% write_csv("../../outputs/observation_level_dv_with_composition.csv")
+observation_synergy_map_and_composition.csv %>% write_csv("../../outputs/processed_data/observation_level_dv_with_composition.csv")
 

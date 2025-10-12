@@ -1,0 +1,25 @@
+﻿Dimension Name,Question Text,Source
+Conceptual-Behavioral,"Does this task primarily require physical effort, as opposed to primarily requiring mental effort?",McGrath
+Intellectual-Manipulative,What is the fraction of physical (as opposed to mental) effort required for the task?,Shaw
+Type 1 (Planning),"Is this a ""planning"" task? In other words, is one of the main purpose(s) of this task to produce a sequence of concrete steps or actions that an individual can follow to achieve some goal?",McGrath
+Type 2 (Generate),"Is this a ""generation"" or ""brainstorming"" task? In other words, is one of the main purpose(s) of this task to produce a number of ideas or examples, without any particular action associated with them?",McGrath
+Creativity Input,"What fraction of the effort required for this task is creative thinking (as opposed to any other type of effort, whether physical, logical, etc.)?",New; Continuous version of Type 2 (Generate)
+Type 5 (Cognitive Conflict),"Is one of the main purpose(s) of this task to resolve people's differences in opinion, perspective, or viewpoint?",McGrath
+Type 6 (Mixed-Motive),"During this task, group members pursue different interests, objectives, or goals.",McGrath
+Type 7 (Battle),Can the outcome of this task be described in win/lose terms?,McGrath
+Type 8 (Performance),"Does the task have an all-or-nothing outcome? In other words, is it sufficient to just meet a particular standard?",McGrath
+Divisible-Unitary,Is it efficient and useful for members of the group to work on discrete parts (or subtasks) of this activity?,Steiner
+Maximizing,"Is the goal (or one of the goals) of this task to try to achieve doing something as much as possible, as many as possible, or as quickly as possible?",Steiner
+Optimizing,Is the goal (or one of the goals) of this task to try to achieve a precise outcome?,Steiner
+Outcome Multiplicity,"Is there only one ""best"" solution (or possible solution) to this task?","Shaw, Zigurs et al."
+Solution Scheme Multiplicity,"Is there only one method for achieving the task, as opposed to many alternatives for task completion?","Shaw, Zigurs et al."
+Decision Verifiability,"Can acceptable solutions to this task be demonstrated or verified to be correct (e.g., by an expert or third-party)?",Laughlin and Ellis
+Shared Knowledge,"Can this task be written as a ""formal model"" that an algorithm could solve?",Laughlin and Ellis
+Within-System Solution,Is there enough information in the problem to find a valid solution?,Laughlin and Ellis
+Answer Recognizability,"If someone who is able to solve the problem explains their answer, would others recognize it as correct without contest?",Laughlin and Ellis
+Time Solvability,"Is a participant able to come up with a provably correct solution, assuming sufficient ability, time, motivation, and resources?",Laughlin and Ellis
+Type 3 and Type 4 (Objective Correctness),Is there an objectively correct solution to this task that can be calculated or selected?,McGrath
+Intellective-Judgmental,"On a scale of 0 (entirely subjective, with no correct answer; a judgmental task) to 1 (entirely objective and demonstrable by pure logic; an intellective task), how would you classify the extent of demonstrable correctness of this task?",Laughlin and Ellis
+Conflicting Tradeoffs,Does completing this task require participants to evaluate tradeoffs --- conflicting possible solutions or conflicting pieces of information?,Zigurs et al.
+Solution Scheme Outcome Uncertainty,"When doing this task, will the participants have any uncertainty about whether their method or solution will lead to the desired outcome?",Zigurs et al.
+Eureka Question,"Is the solution to the question obvious as soon as it is proposed --- for example, once people see the ""trick,"" they know how to solve it?",Laughlin and Ellis

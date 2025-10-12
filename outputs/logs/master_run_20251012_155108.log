@@ -1,0 +1,2 @@
+2025-10-12 15:51:08,843 INFO Starting analysis master script
+2025-10-12 15:51:08,843 INFO Some optional packages could not be imported at start (they are optional): [('nbconvert/nbformat', "No module named 'nbconvert'")]. If you want to enable full functionality, install them in your Python environment, e.g. python3 -m pip install pandas numpy scipy matplotlib seaborn scikit-learn statsmodels nbformat nbconvert tqdm optuna

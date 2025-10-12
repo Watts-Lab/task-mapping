@@ -1,0 +1,46 @@
+{
+  "task_space": [
+    {
+      "name": "task_space.generate_map",
+      "elapsed_sec": 0.8305742740631104,
+      "result": 0
+    },
+    {
+      "name": "task_space.generate_mcgrath",
+      "elapsed_sec": 0.03043508529663086,
+      "result": null
+    },
+    {
+      "name": "task_space.plot_visuals",
+      "elapsed_sec": 1.8415510654449463,
+      "result": 0
+    }
+  ],
+  "group_advantage": [
+    {
+      "name": "group_advantage.ensure_mcgrath_before_clean",
+      "elapsed_sec": 0.02224111557006836,
+      "result": null
+    },
+    {
+      "name": "group_advantage.raw_data_cleaning",
+      "elapsed_sec": 47.2163028717041,
+      "result": 1
+    },
+    {
+      "name": "group_advantage.models",
+      "elapsed_sec": 5.2227911949157715,
+      "error": true
+    },
+    {
+      "name": "group_advantage.viz",
+      "elapsed_sec": 3.82413387298584,
+      "error": true
+    },
+    {
+      "name": "group_advantage.demographics_viz",
+      "elapsed_sec": 3.33675217628479,
+      "error": true
+    }
+  ]
+}

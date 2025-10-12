@@ -1,0 +1,1554 @@
+2025-10-12 16:20:25,722 INFO Starting analysis master script
+2025-10-12 16:20:25,722 INFO Some optional packages could not be imported at start (they are optional): [('nbconvert/nbformat', "No module named 'nbconvert'")]. If you want to enable full functionality, install them in your Python environment, e.g. python3 -m pip install pandas numpy scipy matplotlib seaborn scikit-learn statsmodels nbformat nbconvert tqdm optuna
+2025-10-12 16:20:25,722 INFO Running task_space pipeline
+2025-10-12 16:20:25,723 INFO Timing: task_space.generate_map
+2025-10-12 16:20:25,723 INFO Running R script /Users/xehu/Desktop/task-mapping/analysis/analysis_task_space/generate_task_map_from_raw.R
+2025-10-12 16:20:25,723 INFO Running command: /usr/local/bin/Rscript -e set.seed(as.integer(Sys.getenv('ANALYSIS_SEED', '19104'))); source('generate_task_map_from_raw.R') (cwd=/Users/xehu/Desktop/task-mapping/analysis/analysis_task_space)
+2025-10-12 16:20:26,030 INFO 
+2025-10-12 16:20:26,031 INFO Attaching package: ‘dplyr’
+2025-10-12 16:20:26,031 INFO 
+2025-10-12 16:20:26,031 INFO The following objects are masked from ‘package:stats’:
+2025-10-12 16:20:26,031 INFO 
+2025-10-12 16:20:26,031 INFO     filter, lag
+2025-10-12 16:20:26,031 INFO 
+2025-10-12 16:20:26,031 INFO The following objects are masked from ‘package:base’:
+2025-10-12 16:20:26,031 INFO 
+2025-10-12 16:20:26,031 INFO     intersect, setdiff, setequal, union
+2025-10-12 16:20:26,031 INFO 
+2025-10-12 16:20:26,315 INFO ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+2025-10-12 16:20:26,315 INFO ✔ forcats   1.0.1     ✔ readr     2.1.5
+2025-10-12 16:20:26,315 INFO ✔ ggplot2   4.0.0     ✔ stringr   1.5.2
+2025-10-12 16:20:26,315 INFO ✔ lubridate 1.9.4     ✔ tibble    3.3.0
+2025-10-12 16:20:26,315 INFO ✔ purrr     1.1.0     ✔ tidyr     1.3.1
+2025-10-12 16:20:26,346 INFO ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+2025-10-12 16:20:26,346 INFO ✖ dplyr::filter() masks stats::filter()
+2025-10-12 16:20:26,346 INFO ✖ dplyr::lag()    masks stats::lag()
+2025-10-12 16:20:26,346 INFO ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+2025-10-12 16:20:26,444 INFO Rows: 2406 Columns: 78
+2025-10-12 16:20:26,447 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:20:26,447 INFO Delimiter: ","
+2025-10-12 16:20:26,447 INFO chr (72): Q1concept_behav, Q1concept_behav_elaboration, Q1concept_behav_conf...
+2025-10-12 16:20:26,447 INFO dbl  (5): Q2intel_manip_1, Q5creativity_input_1, Q21intellective_judg_1, cre...
+2025-10-12 16:20:26,447 INFO lgl  (1): platform
+2025-10-12 16:20:26,449 INFO 
+2025-10-12 16:20:26,449 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:20:26,449 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:20:26,586 INFO Warning messages:
+2025-10-12 16:20:26,586 INFO 1: Using an external vector in selections was deprecated in tidyselect 1.1.0.
+2025-10-12 16:20:26,586 INFO ℹ Please use `all_of()` or `any_of()` instead.
+2025-10-12 16:20:26,586 INFO   # Was:
+2025-10-12 16:20:26,586 INFO   data %>% select(main_questions)
+2025-10-12 16:20:26,586 INFO 
+2025-10-12 16:20:26,586 INFO   # Now:
+2025-10-12 16:20:26,586 INFO   data %>% select(all_of(main_questions))
+2025-10-12 16:20:26,586 INFO 
+2025-10-12 16:20:26,586 INFO See <https://tidyselect.r-lib.org/reference/faq-external-vector.html>.
+2025-10-12 16:20:26,586 INFO 2: Using an external vector in selections was deprecated in tidyselect 1.1.0.
+2025-10-12 16:20:26,586 INFO ℹ Please use `all_of()` or `any_of()` instead.
+2025-10-12 16:20:26,586 INFO   # Was:
+2025-10-12 16:20:26,586 INFO   data %>% select(continuous_questions)
+2025-10-12 16:20:26,586 INFO 
+2025-10-12 16:20:26,586 INFO   # Now:
+2025-10-12 16:20:26,586 INFO   data %>% select(all_of(continuous_questions))
+2025-10-12 16:20:26,586 INFO 
+2025-10-12 16:20:26,586 INFO See <https://tidyselect.r-lib.org/reference/faq-external-vector.html>.
+2025-10-12 16:20:26,586 INFO 3: There was 1 warning in `mutate()`.
+2025-10-12 16:20:26,587 INFO ℹ In argument: `value = recode(value, Mental = 0, Physical = 1, No = 0, Yes =
+2025-10-12 16:20:26,587 INFO   1)`.
+2025-10-12 16:20:26,587 INFO Caused by warning:
+2025-10-12 16:20:26,587 INFO ! Unreplaced values treated as NA as `.x` is not compatible.
+2025-10-12 16:20:26,587 INFO Please specify replacements exhaustively or supply `.default`.
+2025-10-12 16:20:26,596 INFO Completed task_space.generate_map in 0.874 sec
+2025-10-12 16:20:26,597 INFO Copied /Users/xehu/Desktop/task-mapping/outputs/processed_data/task_map.csv -> /Users/xehu/Desktop/task-mapping/data/task_map.csv
+2025-10-12 16:20:26,599 INFO Timing: task_space.generate_mcgrath
+2025-10-12 16:20:26,640 INFO Completed task_space.generate_mcgrath in 0.041 sec
+2025-10-12 16:20:26,641 INFO Copied /Users/xehu/Desktop/task-mapping/data/hand_labeled_task_mcgrath_sectors.csv -> /Users/xehu/Desktop/task-mapping/outputs/processed_data/hand_labeled_task_mcgrath_sectors.csv
+2025-10-12 16:20:26,641 INFO Copied /Users/xehu/Desktop/task-mapping/data/hand_labeled_task_mcgrath_sectors.csv -> /Users/xehu/Desktop/task-mapping/outputs/processed_data/hand_labeled_task_mcgrath_sectors.csv
+2025-10-12 16:20:26,641 INFO Timing: task_space.plot_visuals
+2025-10-12 16:20:26,641 INFO Running R script /Users/xehu/Desktop/task-mapping/analysis/analysis_task_space/clean_task_map_visuals.R
+2025-10-12 16:20:26,642 INFO Running command: /usr/local/bin/Rscript -e set.seed(as.integer(Sys.getenv('ANALYSIS_SEED', '19104'))); source('clean_task_map_visuals.R') (cwd=/Users/xehu/Desktop/task-mapping/analysis/analysis_task_space)
+2025-10-12 16:20:26,736 INFO Loading required package: ggplot2
+2025-10-12 16:20:27,044 INFO Welcome! Want to learn more? See two factoextra-related books at https://goo.gl/ve3WBa
+2025-10-12 16:20:27,066 INFO 
+2025-10-12 16:20:27,066 INFO Attaching package: ‘dplyr’
+2025-10-12 16:20:27,066 INFO 
+2025-10-12 16:20:27,066 INFO The following objects are masked from ‘package:stats’:
+2025-10-12 16:20:27,067 INFO 
+2025-10-12 16:20:27,067 INFO     filter, lag
+2025-10-12 16:20:27,067 INFO 
+2025-10-12 16:20:27,067 INFO The following objects are masked from ‘package:base’:
+2025-10-12 16:20:27,067 INFO 
+2025-10-12 16:20:27,067 INFO     intersect, setdiff, setequal, union
+2025-10-12 16:20:27,067 INFO 
+2025-10-12 16:20:27,173 INFO ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+2025-10-12 16:20:27,173 INFO ✔ forcats   1.0.1     ✔ stringr   1.5.2
+2025-10-12 16:20:27,173 INFO ✔ lubridate 1.9.4     ✔ tibble    3.3.0
+2025-10-12 16:20:27,173 INFO ✔ purrr     1.1.0     ✔ tidyr     1.3.1
+2025-10-12 16:20:27,173 INFO ✔ readr     2.1.5
+2025-10-12 16:20:27,203 INFO ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+2025-10-12 16:20:27,203 INFO ✖ dplyr::filter() masks stats::filter()
+2025-10-12 16:20:27,203 INFO ✖ dplyr::lag()    masks stats::lag()
+2025-10-12 16:20:27,203 INFO ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+2025-10-12 16:20:27,272 INFO Rows: 102 Columns: 25
+2025-10-12 16:20:27,274 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:20:27,275 INFO Delimiter: ","
+2025-10-12 16:20:27,275 INFO chr  (1): task
+2025-10-12 16:20:27,275 INFO dbl (24): Conceptual-Behavioral, Type 1 (Planning), Type 2 (Generate), Type ...
+2025-10-12 16:20:27,277 INFO 
+2025-10-12 16:20:27,277 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:20:27,277 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:20:28,316 INFO *** : The Hubert index is a graphical method of determining the number of clusters.
+2025-10-12 16:20:28,316 INFO                 In the plot of Hubert index, we seek a significant knee that corresponds to a
+2025-10-12 16:20:28,316 INFO                 significant increase of the value of the measure i.e the significant peak in Hubert
+2025-10-12 16:20:28,316 INFO                 index second differences plot.
+2025-10-12 16:20:28,316 INFO 
+2025-10-12 16:20:28,317 INFO *** : The D index is a graphical method of determining the number of clusters.
+2025-10-12 16:20:28,317 INFO                 In the plot of D index, we seek a significant knee (the significant peak in Dindex
+2025-10-12 16:20:28,317 INFO                 second differences plot) that corresponds to a significant increase of the value of
+2025-10-12 16:20:28,317 INFO                 the measure.
+2025-10-12 16:20:28,317 INFO 
+2025-10-12 16:20:28,317 INFO *******************************************************************
+2025-10-12 16:20:28,317 INFO * Among all indices:
+2025-10-12 16:20:28,317 INFO * 9 proposed 2 as the best number of clusters
+2025-10-12 16:20:28,317 INFO * 3 proposed 3 as the best number of clusters
+2025-10-12 16:20:28,317 INFO * 2 proposed 4 as the best number of clusters
+2025-10-12 16:20:28,317 INFO * 5 proposed 10 as the best number of clusters
+2025-10-12 16:20:28,317 INFO * 2 proposed 13 as the best number of clusters
+2025-10-12 16:20:28,317 INFO * 1 proposed 14 as the best number of clusters
+2025-10-12 16:20:28,317 INFO * 2 proposed 15 as the best number of clusters
+2025-10-12 16:20:28,317 INFO 
+2025-10-12 16:20:28,317 INFO                    ***** Conclusion *****
+2025-10-12 16:20:28,317 INFO 
+2025-10-12 16:20:28,317 INFO * According to the majority rule, the best number of clusters is  2
+2025-10-12 16:20:28,317 INFO 
+2025-10-12 16:20:28,317 INFO 
+2025-10-12 16:20:28,317 INFO *******************************************************************
+2025-10-12 16:20:28,590 INFO Warning messages:
+2025-10-12 16:20:28,590 INFO 1: In geom_bar(stat = "identity", fill = barfill, color = barcolor,  :
+2025-10-12 16:20:28,590 INFO   Ignoring empty aesthetic: `width`.
+2025-10-12 16:20:28,590 INFO 2: In geom_point(data = subset(combined_data_with_labels, task %in%  :
+2025-10-12 16:20:28,590 INFO   Ignoring unknown parameters: `vjust` and `hjust`
+2025-10-12 16:20:28,590 INFO 3: In geom_point(data = subset(combined_data_with_labels, task %in%  :
+2025-10-12 16:20:28,590 INFO   Ignoring unknown aesthetics: label
+2025-10-12 16:20:28,604 INFO Completed task_space.plot_visuals in 1.963 sec
+2025-10-12 16:20:28,604 INFO Running group_advantage pipeline
+2025-10-12 16:20:28,605 INFO Timing: group_advantage.ensure_mcgrath_before_clean
+2025-10-12 16:20:28,638 INFO Completed group_advantage.ensure_mcgrath_before_clean in 0.033 sec
+2025-10-12 16:20:28,638 INFO Timing: group_advantage.raw_data_cleaning
+2025-10-12 16:20:28,638 INFO Running R script /Users/xehu/Desktop/task-mapping/analysis/analysis_group_advantage/raw_data_cleaning.R
+2025-10-12 16:20:28,638 INFO Running command: /usr/local/bin/Rscript -e set.seed(as.integer(Sys.getenv('ANALYSIS_SEED', '19104'))); source('raw_data_cleaning.R') (cwd=/Users/xehu/Desktop/task-mapping/analysis/analysis_group_advantage)
+2025-10-12 16:20:28,740 INFO 
+2025-10-12 16:20:28,740 INFO Attaching package: ‘pls’
+2025-10-12 16:20:28,740 INFO 
+2025-10-12 16:20:28,740 INFO The following object is masked from ‘package:stats’:
+2025-10-12 16:20:28,740 INFO 
+2025-10-12 16:20:28,740 INFO     loadings
+2025-10-12 16:20:28,740 INFO 
+2025-10-12 16:20:28,744 INFO randomForest 4.7-1.2
+2025-10-12 16:20:28,744 INFO Type rfNews() to see new features/changes/bug fixes.
+2025-10-12 16:20:29,123 INFO Loading required package: ggplot2
+2025-10-12 16:20:29,319 INFO 
+2025-10-12 16:20:29,320 INFO Attaching package: ‘ggplot2’
+2025-10-12 16:20:29,320 INFO 
+2025-10-12 16:20:29,320 INFO The following object is masked from ‘package:randomForest’:
+2025-10-12 16:20:29,320 INFO 
+2025-10-12 16:20:29,320 INFO     margin
+2025-10-12 16:20:29,320 INFO 
+2025-10-12 16:20:29,320 INFO Loading required package: lattice
+2025-10-12 16:20:29,683 INFO 
+2025-10-12 16:20:29,683 INFO Attaching package: ‘caret’
+2025-10-12 16:20:29,683 INFO 
+2025-10-12 16:20:29,683 INFO The following object is masked from ‘package:pls’:
+2025-10-12 16:20:29,683 INFO 
+2025-10-12 16:20:29,683 INFO     R2
+2025-10-12 16:20:29,683 INFO 
+2025-10-12 16:20:29,684 INFO Loading required package: foreach
+2025-10-12 16:20:29,686 INFO Loading required package: iterators
+2025-10-12 16:20:29,689 INFO Loading required package: parallel
+2025-10-12 16:20:29,790 INFO Registering fonts with R
+2025-10-12 16:20:29,841 INFO 
+2025-10-12 16:20:29,841 INFO Please cite as:
+2025-10-12 16:20:29,842 INFO 
+2025-10-12 16:20:29,842 INFO  Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.
+2025-10-12 16:20:29,842 INFO  R package version 5.2.3. https://CRAN.R-project.org/package=stargazer
+2025-10-12 16:20:29,842 INFO 
+2025-10-12 16:20:29,893 INFO ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+2025-10-12 16:20:29,893 INFO ✔ dplyr     1.1.4     ✔ readr     2.1.5
+2025-10-12 16:20:29,893 INFO ✔ forcats   1.0.1     ✔ stringr   1.5.2
+2025-10-12 16:20:29,893 INFO ✔ lubridate 1.9.4     ✔ tibble    3.3.0
+2025-10-12 16:20:29,893 INFO ✔ purrr     1.1.0     ✔ tidyr     1.3.1
+2025-10-12 16:20:29,929 INFO ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+2025-10-12 16:20:29,929 INFO ✖ purrr::accumulate() masks foreach::accumulate()
+2025-10-12 16:20:29,929 INFO ✖ dplyr::combine()    masks randomForest::combine()
+2025-10-12 16:20:29,929 INFO ✖ dplyr::filter()     masks stats::filter()
+2025-10-12 16:20:29,929 INFO ✖ purrr::flatten()    masks jsonlite::flatten()
+2025-10-12 16:20:29,929 INFO ✖ dplyr::lag()        masks stats::lag()
+2025-10-12 16:20:29,929 INFO ✖ purrr::lift()       masks caret::lift()
+2025-10-12 16:20:29,929 INFO ✖ ggplot2::margin()   masks randomForest::margin()
+2025-10-12 16:20:29,929 INFO ✖ dplyr::slice()      masks xgboost::slice()
+2025-10-12 16:20:29,929 INFO ✖ purrr::when()       masks foreach::when()
+2025-10-12 16:20:29,929 INFO ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+2025-10-12 16:20:29,947 INFO Scanning ttf files in /Library/Fonts/, /System/Library/Fonts, /System/Library/Fonts/Supplemental, ~/Library/Fonts/ ...
+2025-10-12 16:20:29,947 INFO Extracting .afm files from .ttf files...
+2025-10-12 16:20:32,716 INFO /System/Library/Fonts/Supplemental/Arial Unicode.ttf : ArialUnicodeMS already registered in fonts database. Skipping.
+2025-10-12 16:20:32,796 INFO /System/Library/Fonts/Apple Braille Outline 6 Dot.ttf : AppleBraille-Outline6Dot already registered in fonts database. Skipping.
+2025-10-12 16:20:32,884 INFO /System/Library/Fonts/Apple Braille Outline 8 Dot.ttf : AppleBraille-Outline8Dot already registered in fonts database. Skipping.
+2025-10-12 16:20:32,938 INFO /System/Library/Fonts/Apple Braille Pinpoint 6 Dot.ttf : AppleBraille-Pinpoint6Dot already registered in fonts database. Skipping.
+2025-10-12 16:20:32,995 INFO /System/Library/Fonts/Apple Braille Pinpoint 8 Dot.ttf : AppleBraille-Pinpoint8Dot already registered in fonts database. Skipping.
+2025-10-12 16:20:33,031 INFO /System/Library/Fonts/Apple Braille.ttf : AppleBraille already registered in fonts database. Skipping.
+2025-10-12 16:20:33,056 INFO /System/Library/Fonts/Apple Symbols.ttf : No FontName. Skipping.
+2025-10-12 16:20:33,075 INFO /System/Library/Fonts/Geneva.ttf : No FontName. Skipping.
+2025-10-12 16:20:33,090 INFO /System/Library/Fonts/Keyboard.ttf : -Keyboard already registered in fonts database. Skipping.
+2025-10-12 16:20:33,144 INFO /System/Library/Fonts/Monaco.ttf : No FontName. Skipping.
+2025-10-12 16:20:33,238 INFO /System/Library/Fonts/NewYork.ttf : -NewYork-Regular already registered in fonts database. Skipping.
+2025-10-12 16:20:33,320 INFO /System/Library/Fonts/NewYorkItalic.ttf : -NewYork-RegularItalic already registered in fonts database. Skipping.
+2025-10-12 16:20:33,406 INFO /System/Library/Fonts/SFArabic.ttf : -SFArabic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:20:33,514 INFO /System/Library/Fonts/SFArabicRounded.ttf : -SFArabicRounded-Regular already registered in fonts database. Skipping.
+2025-10-12 16:20:33,528 INFO /System/Library/Fonts/SFArmenian.ttf : -SFArmenian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:20:33,543 INFO /System/Library/Fonts/SFArmenianRounded.ttf : -SFArmenianRounded-Regular already registered in fonts database. Skipping.
+2025-10-12 16:20:33,560 INFO /System/Library/Fonts/SFCamera.ttf : --SFCamera-Regular already registered in fonts database. Skipping.
+2025-10-12 16:20:33,671 INFO /System/Library/Fonts/SFCompact.ttf : -SFCompact-Black already registered in fonts database. Skipping.
+2025-10-12 16:20:33,760 INFO /System/Library/Fonts/SFCompactItalic.ttf : -SFCompact-BlackItalic already registered in fonts database. Skipping.
+2025-10-12 16:20:33,873 INFO /System/Library/Fonts/SFCompactRounded.ttf : --SFCompactRounded-Regular already registered in fonts database. Skipping.
+2025-10-12 16:20:33,890 INFO /System/Library/Fonts/SFGeorgian.ttf : -SFGeorgian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:20:33,907 INFO /System/Library/Fonts/SFGeorgianRounded.ttf : -SFGeorgianRounded-Regular already registered in fonts database. Skipping.
+2025-10-12 16:20:33,917 INFO /System/Library/Fonts/SFHebrew.ttf : -SFHebrew-Regular already registered in fonts database. Skipping.
+2025-10-12 16:20:33,928 INFO /System/Library/Fonts/SFHebrewRounded.ttf : -SFHebrewRounded-Regular already registered in fonts database. Skipping.
+2025-10-12 16:20:34,057 INFO /System/Library/Fonts/SFNS.ttf : -SFNS-Regular already registered in fonts database. Skipping.
+2025-10-12 16:20:34,146 INFO /System/Library/Fonts/SFNSItalic.ttf : -SFNS-RegularItalic already registered in fonts database. Skipping.
+2025-10-12 16:20:34,203 INFO /System/Library/Fonts/SFNSMono.ttf : -SFNSMono-Light already registered in fonts database. Skipping.
+2025-10-12 16:20:34,254 INFO /System/Library/Fonts/SFNSMonoItalic.ttf : -SFNSMono-LightItalic already registered in fonts database. Skipping.
+2025-10-12 16:20:34,359 INFO /System/Library/Fonts/SFNSRounded.ttf : -SFNSRounded-Regular already registered in fonts database. Skipping.
+2025-10-12 16:20:34,421 INFO /System/Library/Fonts/Supplemental/Academy Engraved LET Fonts.ttf : AcademyEngravedLetPlain already registered in fonts database. Skipping.
+2025-10-12 16:20:34,481 INFO /System/Library/Fonts/Supplemental/Academy Engraved LET Fonts.ttf : AcademyEngravedLetPlain already registered in fonts database. Skipping.
+2025-10-12 16:20:34,498 INFO /System/Library/Fonts/Supplemental/Andale Mono.ttf : AndaleMono already registered in fonts database. Skipping.
+2025-10-12 16:20:34,515 INFO /System/Library/Fonts/Supplemental/Andale Mono.ttf : AndaleMono already registered in fonts database. Skipping.
+2025-10-12 16:20:34,560 INFO /System/Library/Fonts/Supplemental/Apple Chancery.ttf : No FontName. Skipping.
+2025-10-12 16:20:34,607 INFO /System/Library/Fonts/Supplemental/Apple Chancery.ttf : No FontName. Skipping.
+2025-10-12 16:20:38,164 INFO /System/Library/Fonts/Supplemental/AppleGothic.ttf : No FontName. Skipping.
+2025-10-12 16:20:41,792 INFO /System/Library/Fonts/Supplemental/AppleGothic.ttf : No FontName. Skipping.
+2025-10-12 16:20:46,168 INFO /System/Library/Fonts/Supplemental/AppleMyungjo.ttf : AppleMyungjo already registered in fonts database. Skipping.
+2025-10-12 16:20:50,550 INFO /System/Library/Fonts/Supplemental/AppleMyungjo.ttf : AppleMyungjo already registered in fonts database. Skipping.
+2025-10-12 16:20:50,573 INFO /System/Library/Fonts/Supplemental/Arial Black.ttf : Arial-Black already registered in fonts database. Skipping.
+2025-10-12 16:20:50,596 INFO /System/Library/Fonts/Supplemental/Arial Black.ttf : Arial-Black already registered in fonts database. Skipping.
+2025-10-12 16:20:50,671 INFO /System/Library/Fonts/Supplemental/Arial Bold Italic.ttf : Arial-BoldItalicMT already registered in fonts database. Skipping.
+2025-10-12 16:20:50,758 INFO /System/Library/Fonts/Supplemental/Arial Bold Italic.ttf : Arial-BoldItalicMT already registered in fonts database. Skipping.
+2025-10-12 16:20:50,932 INFO /System/Library/Fonts/Supplemental/Arial Bold.ttf : Arial-BoldMT already registered in fonts database. Skipping.
+2025-10-12 16:20:51,048 INFO /System/Library/Fonts/Supplemental/Arial Bold.ttf : Arial-BoldMT already registered in fonts database. Skipping.
+2025-10-12 16:20:51,129 INFO /System/Library/Fonts/Supplemental/Arial Italic.ttf : Arial-ItalicMT already registered in fonts database. Skipping.
+2025-10-12 16:20:51,209 INFO /System/Library/Fonts/Supplemental/Arial Italic.ttf : Arial-ItalicMT already registered in fonts database. Skipping.
+2025-10-12 16:20:51,230 INFO /System/Library/Fonts/Supplemental/Arial Narrow Bold Italic.ttf : ArialNarrow-BoldItalic already registered in fonts database. Skipping.
+2025-10-12 16:20:51,252 INFO /System/Library/Fonts/Supplemental/Arial Narrow Bold Italic.ttf : ArialNarrow-BoldItalic already registered in fonts database. Skipping.
+2025-10-12 16:20:51,274 INFO /System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf : ArialNarrow-Bold already registered in fonts database. Skipping.
+2025-10-12 16:20:51,296 INFO /System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf : ArialNarrow-Bold already registered in fonts database. Skipping.
+2025-10-12 16:20:51,317 INFO /System/Library/Fonts/Supplemental/Arial Narrow Italic.ttf : ArialNarrow-Italic already registered in fonts database. Skipping.
+2025-10-12 16:20:51,339 INFO /System/Library/Fonts/Supplemental/Arial Narrow Italic.ttf : ArialNarrow-Italic already registered in fonts database. Skipping.
+2025-10-12 16:20:51,360 INFO /System/Library/Fonts/Supplemental/Arial Narrow.ttf : ArialNarrow already registered in fonts database. Skipping.
+2025-10-12 16:20:51,381 INFO /System/Library/Fonts/Supplemental/Arial Narrow.ttf : ArialNarrow already registered in fonts database. Skipping.
+2025-10-12 16:20:51,399 INFO /System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf : ArialRoundedMTBold already registered in fonts database. Skipping.
+2025-10-12 16:20:51,417 INFO /System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf : ArialRoundedMTBold already registered in fonts database. Skipping.
+2025-10-12 16:20:54,184 INFO /System/Library/Fonts/Supplemental/Arial Unicode.ttf : ArialUnicodeMS already registered in fonts database. Skipping.
+2025-10-12 16:20:56,983 INFO /System/Library/Fonts/Supplemental/Arial Unicode.ttf : ArialUnicodeMS already registered in fonts database. Skipping.
+2025-10-12 16:20:57,103 INFO /System/Library/Fonts/Supplemental/Arial.ttf : ArialMT already registered in fonts database. Skipping.
+2025-10-12 16:20:57,223 INFO /System/Library/Fonts/Supplemental/Arial.ttf : ArialMT already registered in fonts database. Skipping.
+2025-10-12 16:20:57,263 INFO /System/Library/Fonts/Supplemental/Ayuthaya.ttf : No FontName. Skipping.
+2025-10-12 16:20:57,301 INFO /System/Library/Fonts/Supplemental/Ayuthaya.ttf : No FontName. Skipping.
+2025-10-12 16:20:57,451 INFO /System/Library/Fonts/Supplemental/BigCaslon.ttf : No FontName. Skipping.
+2025-10-12 16:20:57,600 INFO /System/Library/Fonts/Supplemental/BigCaslon.ttf : No FontName. Skipping.
+2025-10-12 16:20:57,622 INFO /System/Library/Fonts/Supplemental/Bodoni 72 Smallcaps Book.ttf : BodoniSvtyTwoSCITCTT-Book already registered in fonts database. Skipping.
+2025-10-12 16:20:57,645 INFO /System/Library/Fonts/Supplemental/Bodoni 72 Smallcaps Book.ttf : BodoniSvtyTwoSCITCTT-Book already registered in fonts database. Skipping.
+2025-10-12 16:20:57,677 INFO /System/Library/Fonts/Supplemental/Bodoni Ornaments.ttf : BodoniOrnamentsITCTT already registered in fonts database. Skipping.
+2025-10-12 16:20:57,708 INFO /System/Library/Fonts/Supplemental/Bodoni Ornaments.ttf : BodoniOrnamentsITCTT already registered in fonts database. Skipping.
+2025-10-12 16:20:57,998 INFO /System/Library/Fonts/Supplemental/Bradley Hand Bold.ttf : Bradley-Hand-Bold already registered in fonts database. Skipping.
+2025-10-12 16:20:58,290 INFO /System/Library/Fonts/Supplemental/Bradley Hand Bold.ttf : Bradley-Hand-Bold already registered in fonts database. Skipping.
+2025-10-12 16:20:58,460 INFO /System/Library/Fonts/Supplemental/Brush Script.ttf : BrushScriptMT already registered in fonts database. Skipping.
+2025-10-12 16:20:58,636 INFO /System/Library/Fonts/Supplemental/Brush Script.ttf : BrushScriptMT already registered in fonts database. Skipping.
+2025-10-12 16:20:58,654 INFO /System/Library/Fonts/Supplemental/Chalkduster.ttfsh: line 1: 11906 Abort trap: 6           '/Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/library/Rttf2pt1/exec//ttf2pt1' -a -GfAe '/System/Library/Fonts/Supplemental/Chalkduster.ttf' '/var/folders/73/jl9lgbkj511fwjxkl9cvw7q00000gq/T//Rtmp0vakpK/fonts/Chalkduster' 2>&1
+2025-10-12 16:20:58,654 INFO  : No FontName. Skipping.
+2025-10-12 16:20:58,672 INFO /System/Library/Fonts/Supplemental/Chalkduster.ttfsh: line 1: 11908 Abort trap: 6           '/Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/library/Rttf2pt1/exec//ttf2pt1' -a -GfAe '/System/Library/Fonts/Supplemental/Chalkduster.ttf' '/var/folders/73/jl9lgbkj511fwjxkl9cvw7q00000gq/T//Rtmp0vakpK/fonts/Chalkduster' 2>&1
+2025-10-12 16:20:58,672 INFO  : No FontName. Skipping.
+2025-10-12 16:20:58,738 INFO /System/Library/Fonts/Supplemental/Comic Sans MS Bold.ttf : ComicSansMS-Bold already registered in fonts database. Skipping.
+2025-10-12 16:20:58,801 INFO /System/Library/Fonts/Supplemental/Comic Sans MS Bold.ttf : ComicSansMS-Bold already registered in fonts database. Skipping.
+2025-10-12 16:20:58,852 INFO /System/Library/Fonts/Supplemental/Comic Sans MS.ttf : ComicSansMS already registered in fonts database. Skipping.
+2025-10-12 16:20:58,902 INFO /System/Library/Fonts/Supplemental/Comic Sans MS.ttf : ComicSansMS already registered in fonts database. Skipping.
+2025-10-12 16:20:59,009 INFO /System/Library/Fonts/Supplemental/Courier New Bold Italic.ttf : CourierNewPS-BoldItalicMT already registered in fonts database. Skipping.
+2025-10-12 16:20:59,116 INFO /System/Library/Fonts/Supplemental/Courier New Bold Italic.ttf : CourierNewPS-BoldItalicMT already registered in fonts database. Skipping.
+2025-10-12 16:20:59,243 INFO /System/Library/Fonts/Supplemental/Courier New Bold.ttf : CourierNewPS-BoldMT already registered in fonts database. Skipping.
+2025-10-12 16:20:59,371 INFO /System/Library/Fonts/Supplemental/Courier New Bold.ttf : CourierNewPS-BoldMT already registered in fonts database. Skipping.
+2025-10-12 16:20:59,472 INFO /System/Library/Fonts/Supplemental/Courier New Italic.ttf : CourierNewPS-ItalicMT already registered in fonts database. Skipping.
+2025-10-12 16:20:59,571 INFO /System/Library/Fonts/Supplemental/Courier New Italic.ttf : CourierNewPS-ItalicMT already registered in fonts database. Skipping.
+2025-10-12 16:20:59,690 INFO /System/Library/Fonts/Supplemental/Courier New.ttf : CourierNewPSMT already registered in fonts database. Skipping.
+2025-10-12 16:20:59,808 INFO /System/Library/Fonts/Supplemental/Courier New.ttf : CourierNewPSMT already registered in fonts database. Skipping.
+2025-10-12 16:20:59,868 INFO /System/Library/Fonts/Supplemental/DIN Alternate Bold.ttf : DINAlternate-Bold already registered in fonts database. Skipping.
+2025-10-12 16:20:59,927 INFO /System/Library/Fonts/Supplemental/DIN Alternate Bold.ttf : DINAlternate-Bold already registered in fonts database. Skipping.
+2025-10-12 16:20:59,998 INFO /System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf : DINCondensed-Bold already registered in fonts database. Skipping.
+2025-10-12 16:21:00,070 INFO /System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf : DINCondensed-Bold already registered in fonts database. Skipping.
+2025-10-12 16:21:00,235 INFO /System/Library/Fonts/Supplemental/Diwan Thuluth.ttf : No FontName. Skipping.
+2025-10-12 16:21:00,401 INFO /System/Library/Fonts/Supplemental/Diwan Thuluth.ttf : No FontName. Skipping.
+2025-10-12 16:21:00,521 INFO /System/Library/Fonts/Supplemental/Farisi.ttf : No FontName. Skipping.
+2025-10-12 16:21:00,639 INFO /System/Library/Fonts/Supplemental/Farisi.ttf : No FontName. Skipping.
+2025-10-12 16:21:00,728 INFO /System/Library/Fonts/Supplemental/Georgia Bold Italic.ttf : Georgia-BoldItalic already registered in fonts database. Skipping.
+2025-10-12 16:21:00,816 INFO /System/Library/Fonts/Supplemental/Georgia Bold Italic.ttf : Georgia-BoldItalic already registered in fonts database. Skipping.
+2025-10-12 16:21:00,907 INFO /System/Library/Fonts/Supplemental/Georgia Bold.ttf : Georgia-Bold already registered in fonts database. Skipping.
+2025-10-12 16:21:00,998 INFO /System/Library/Fonts/Supplemental/Georgia Bold.ttf : Georgia-Bold already registered in fonts database. Skipping.
+2025-10-12 16:21:01,085 INFO /System/Library/Fonts/Supplemental/Georgia Italic.ttf : Georgia-Italic already registered in fonts database. Skipping.
+2025-10-12 16:21:01,172 INFO /System/Library/Fonts/Supplemental/Georgia Italic.ttf : Georgia-Italic already registered in fonts database. Skipping.
+2025-10-12 16:21:01,266 INFO /System/Library/Fonts/Supplemental/Georgia.ttf : Georgia already registered in fonts database. Skipping.
+2025-10-12 16:21:01,361 INFO /System/Library/Fonts/Supplemental/Georgia.ttf : Georgia already registered in fonts database. Skipping.
+2025-10-12 16:21:01,371 INFO /System/Library/Fonts/Supplemental/Gurmukhi.ttf : No FontName. Skipping.
+2025-10-12 16:21:01,380 INFO /System/Library/Fonts/Supplemental/Gurmukhi.ttf : No FontName. Skipping.
+2025-10-12 16:21:01,448 INFO /System/Library/Fonts/Supplemental/Herculanum.ttf : No FontName. Skipping.
+2025-10-12 16:21:01,515 INFO /System/Library/Fonts/Supplemental/Herculanum.ttf : No FontName. Skipping.
+2025-10-12 16:21:01,525 INFO /System/Library/Fonts/Supplemental/Hoefler Text Ornaments.ttf : No FontName. Skipping.
+2025-10-12 16:21:01,536 INFO /System/Library/Fonts/Supplemental/Hoefler Text Ornaments.ttf : No FontName. Skipping.
+2025-10-12 16:21:01,569 INFO /System/Library/Fonts/Supplemental/Impact.ttf : Impact already registered in fonts database. Skipping.
+2025-10-12 16:21:01,601 INFO /System/Library/Fonts/Supplemental/Impact.ttf : Impact already registered in fonts database. Skipping.
+2025-10-12 16:21:01,675 INFO /System/Library/Fonts/Supplemental/Khmer Sangam MN.ttf : KhmerSangamMN already registered in fonts database. Skipping.
+2025-10-12 16:21:01,747 INFO /System/Library/Fonts/Supplemental/Khmer Sangam MN.ttf : KhmerSangamMN already registered in fonts database. Skipping.
+2025-10-12 16:21:01,792 INFO /System/Library/Fonts/Supplemental/Kokonor.ttfsh: line 1: 11989 Abort trap: 6           '/Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/library/Rttf2pt1/exec//ttf2pt1' -a -GfAe '/System/Library/Fonts/Supplemental/Kokonor.ttf' '/var/folders/73/jl9lgbkj511fwjxkl9cvw7q00000gq/T//Rtmp0vakpK/fonts/Kokonor' 2>&1
+2025-10-12 16:21:01,793 INFO  : No FontName. Skipping.
+2025-10-12 16:21:01,835 INFO /System/Library/Fonts/Supplemental/Kokonor.ttfsh: line 1: 11991 Abort trap: 6           '/Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/library/Rttf2pt1/exec//ttf2pt1' -a -GfAe '/System/Library/Fonts/Supplemental/Kokonor.ttf' '/var/folders/73/jl9lgbkj511fwjxkl9cvw7q00000gq/T//Rtmp0vakpK/fonts/Kokonor' 2>&1
+2025-10-12 16:21:01,836 INFO  : No FontName. Skipping.
+2025-10-12 16:21:01,857 INFO /System/Library/Fonts/Supplemental/Krungthep.ttf : No FontName. Skipping.
+2025-10-12 16:21:01,879 INFO /System/Library/Fonts/Supplemental/Krungthep.ttf : No FontName. Skipping.
+2025-10-12 16:21:01,911 INFO /System/Library/Fonts/Supplemental/Lao Sangam MN.ttf : LaoSangamMN already registered in fonts database. Skipping.
+2025-10-12 16:21:01,943 INFO /System/Library/Fonts/Supplemental/Lao Sangam MN.ttf : LaoSangamMN already registered in fonts database. Skipping.
+2025-10-12 16:21:02,263 INFO /System/Library/Fonts/Supplemental/Luminari.ttf : Luminari-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:02,580 INFO /System/Library/Fonts/Supplemental/Luminari.ttf : Luminari-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:02,652 INFO /System/Library/Fonts/Supplemental/Microsoft Sans Serif.ttf : MicrosoftSansSerif already registered in fonts database. Skipping.
+2025-10-12 16:21:02,722 INFO /System/Library/Fonts/Supplemental/Microsoft Sans Serif.ttf : MicrosoftSansSerif already registered in fonts database. Skipping.
+2025-10-12 16:21:02,902 INFO /System/Library/Fonts/Supplemental/Mishafi Gold.ttf : No FontName. Skipping.
+2025-10-12 16:21:03,084 INFO /System/Library/Fonts/Supplemental/Mishafi Gold.ttf : No FontName. Skipping.
+2025-10-12 16:21:03,499 INFO /System/Library/Fonts/Supplemental/Mishafi.ttf : No FontName. Skipping.
+2025-10-12 16:21:03,911 INFO /System/Library/Fonts/Supplemental/Mishafi.ttf : No FontName. Skipping.
+2025-10-12 16:21:03,916 INFO /System/Library/Fonts/Supplemental/NISC18030.ttf : No FontName. Skipping.
+2025-10-12 16:21:03,922 INFO /System/Library/Fonts/Supplemental/NISC18030.ttf : No FontName. Skipping.
+2025-10-12 16:21:03,944 INFO /System/Library/Fonts/Supplemental/NotoSansAdlam-Regular.ttf : NotoSansAdlam-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:03,965 INFO /System/Library/Fonts/Supplemental/NotoSansAdlam-Regular.ttf : NotoSansAdlam-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:03,975 INFO /System/Library/Fonts/Supplemental/NotoSansAvestan-Regular.ttf : NotoSansAvestan-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:03,984 INFO /System/Library/Fonts/Supplemental/NotoSansAvestan-Regular.ttf : NotoSansAvestan-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,036 INFO /System/Library/Fonts/Supplemental/NotoSansBamum-Regular.ttf : NotoSansBamum-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,087 INFO /System/Library/Fonts/Supplemental/NotoSansBamum-Regular.ttf : NotoSansBamum-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,173 INFO /System/Library/Fonts/Supplemental/NotoSansBassaVah-Regular.ttf : NotoSansBassaVah-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,181 INFO /System/Library/Fonts/Supplemental/NotoSansBassaVah-Regular.ttf : NotoSansBassaVah-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,197 INFO /System/Library/Fonts/Supplemental/NotoSansBatak-Regular.ttf : NotoSansBatak-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,212 INFO /System/Library/Fonts/Supplemental/NotoSansBatak-Regular.ttf : NotoSansBatak-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,328 INFO /System/Library/Fonts/Supplemental/NotoSansBhaiksuki-Regular.ttf : NotoSansBhaiksuki-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,444 INFO /System/Library/Fonts/Supplemental/NotoSansBhaiksuki-Regular.ttf : NotoSansBhaiksuki-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,459 INFO /System/Library/Fonts/Supplemental/NotoSansBrahmi-Regular.ttf : NotoSansBrahmi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,474 INFO /System/Library/Fonts/Supplemental/NotoSansBrahmi-Regular.ttf : NotoSansBrahmi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,482 INFO /System/Library/Fonts/Supplemental/NotoSansBuginese-Regular.ttf : NotoSansBuginese-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,489 INFO /System/Library/Fonts/Supplemental/NotoSansBuginese-Regular.ttf : NotoSansBuginese-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,496 INFO /System/Library/Fonts/Supplemental/NotoSansBuhid-Regular.ttf : NotoSansBuhid-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,502 INFO /System/Library/Fonts/Supplemental/NotoSansBuhid-Regular.ttf : NotoSansBuhid-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,510 INFO /System/Library/Fonts/Supplemental/NotoSansCarian-Regular.ttf : NotoSansCarian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,517 INFO /System/Library/Fonts/Supplemental/NotoSansCarian-Regular.ttf : NotoSansCarian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,528 INFO /System/Library/Fonts/Supplemental/NotoSansCaucasianAlbanian-Regular.ttf : NotoSansCaucasianAlbanian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,539 INFO /System/Library/Fonts/Supplemental/NotoSansCaucasianAlbanian-Regular.ttf : NotoSansCaucasianAlbanian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,557 INFO /System/Library/Fonts/Supplemental/NotoSansChakma-Regular.ttf : NotoSansChakma-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,575 INFO /System/Library/Fonts/Supplemental/NotoSansChakma-Regular.ttf : NotoSansChakma-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,589 INFO /System/Library/Fonts/Supplemental/NotoSansCham-Regular.ttf : NotoSansCham-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,602 INFO /System/Library/Fonts/Supplemental/NotoSansCham-Regular.ttf : NotoSansCham-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,614 INFO /System/Library/Fonts/Supplemental/NotoSansCoptic-Regular.ttf : NotoSansCoptic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,625 INFO /System/Library/Fonts/Supplemental/NotoSansCoptic-Regular.ttf : NotoSansCoptic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:04,910 INFO /System/Library/Fonts/Supplemental/NotoSansCuneiform-Regular.ttf : NotoSansCuneiform-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,191 INFO /System/Library/Fonts/Supplemental/NotoSansCuneiform-Regular.ttf : NotoSansCuneiform-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,200 INFO /System/Library/Fonts/Supplemental/NotoSansCypriot-Regular.ttf : NotoSansCypriot-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,207 INFO /System/Library/Fonts/Supplemental/NotoSansCypriot-Regular.ttf : NotoSansCypriot-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,219 INFO /System/Library/Fonts/Supplemental/NotoSansDuployan-Regular.ttf : NotoSansDuployan-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,231 INFO /System/Library/Fonts/Supplemental/NotoSansDuployan-Regular.ttf : NotoSansDuployan-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,538 INFO /System/Library/Fonts/Supplemental/NotoSansEgyptianHieroglyphs-Regular.ttf : NotoSansEgyptianHieroglyphs-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,848 INFO /System/Library/Fonts/Supplemental/NotoSansEgyptianHieroglyphs-Regular.ttf : NotoSansEgyptianHieroglyphs-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,856 INFO /System/Library/Fonts/Supplemental/NotoSansElbasan-Regular.ttf : NotoSansElbasan-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,864 INFO /System/Library/Fonts/Supplemental/NotoSansElbasan-Regular.ttf : NotoSansElbasan-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,875 INFO /System/Library/Fonts/Supplemental/NotoSansGlagolitic-Regular.ttf : NotoSansGlagolitic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,887 INFO /System/Library/Fonts/Supplemental/NotoSansGlagolitic-Regular.ttf : NotoSansGlagolitic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,895 INFO /System/Library/Fonts/Supplemental/NotoSansGothic-Regular.ttf : NotoSansGothic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,902 INFO /System/Library/Fonts/Supplemental/NotoSansGothic-Regular.ttf : NotoSansGothic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,915 INFO /System/Library/Fonts/Supplemental/NotoSansHanifiRohingya-Regular.ttf : NotoSansHanifiRohingya-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,928 INFO /System/Library/Fonts/Supplemental/NotoSansHanifiRohingya-Regular.ttf : NotoSansHanifiRohingya-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,936 INFO /System/Library/Fonts/Supplemental/NotoSansHanunoo-Regular.ttf : NotoSansHanunoo-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,943 INFO /System/Library/Fonts/Supplemental/NotoSansHanunoo-Regular.ttf : NotoSansHanunoo-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,950 INFO /System/Library/Fonts/Supplemental/NotoSansHatran-Regular.ttf : NotoSansHatran-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,957 INFO /System/Library/Fonts/Supplemental/NotoSansHatran-Regular.ttf : NotoSansHatran-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,965 INFO /System/Library/Fonts/Supplemental/NotoSansImperialAramaic-Regular.ttf : NotoSansImperialAramaic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,973 INFO /System/Library/Fonts/Supplemental/NotoSansImperialAramaic-Regular.ttf : NotoSansImperialAramaic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,980 INFO /System/Library/Fonts/Supplemental/NotoSansInscriptionalPahlavi-Regular.ttf : NotoSansInscriptionalPahlavi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,987 INFO /System/Library/Fonts/Supplemental/NotoSansInscriptionalPahlavi-Regular.ttf : NotoSansInscriptionalPahlavi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:05,995 INFO /System/Library/Fonts/Supplemental/NotoSansInscriptionalParthian-Regular.ttf : NotoSansInscriptionalParthian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,002 INFO /System/Library/Fonts/Supplemental/NotoSansInscriptionalParthian-Regular.ttf : NotoSansInscriptionalParthian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,022 INFO /System/Library/Fonts/Supplemental/NotoSansKaithi-Regular.ttf : NotoSansKaithi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,040 INFO /System/Library/Fonts/Supplemental/NotoSansKaithi-Regular.ttf : NotoSansKaithi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,050 INFO /System/Library/Fonts/Supplemental/NotoSansKayahLi-Regular.ttf : NotoSansKayahLi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,059 INFO /System/Library/Fonts/Supplemental/NotoSansKayahLi-Regular.ttf : NotoSansKayahLi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,071 INFO /System/Library/Fonts/Supplemental/NotoSansKharoshthi-Regular.ttf : NotoSansKharoshthi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,083 INFO /System/Library/Fonts/Supplemental/NotoSansKharoshthi-Regular.ttf : NotoSansKharoshthi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,103 INFO /System/Library/Fonts/Supplemental/NotoSansKhojki-Regular.ttf : NotoSansKhojki-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,123 INFO /System/Library/Fonts/Supplemental/NotoSansKhojki-Regular.ttf : NotoSansKhojki-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,134 INFO /System/Library/Fonts/Supplemental/NotoSansKhudawadi-Regular.ttf : NotoSansKhudawadi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,145 INFO /System/Library/Fonts/Supplemental/NotoSansKhudawadi-Regular.ttf : NotoSansKhudawadi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,156 INFO /System/Library/Fonts/Supplemental/NotoSansLepcha-Regular.ttf : NotoSansLepcha-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,166 INFO /System/Library/Fonts/Supplemental/NotoSansLepcha-Regular.ttf : NotoSansLepcha-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,176 INFO /System/Library/Fonts/Supplemental/NotoSansLimbu-Regular.ttf : NotoSansLimbu-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,186 INFO /System/Library/Fonts/Supplemental/NotoSansLimbu-Regular.ttf : NotoSansLimbu-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,210 INFO /System/Library/Fonts/Supplemental/NotoSansLinearA-Regular.ttf : NotoSansLinearA-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,233 INFO /System/Library/Fonts/Supplemental/NotoSansLinearA-Regular.ttf : NotoSansLinearA-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,262 INFO /System/Library/Fonts/Supplemental/NotoSansLinearB-Regular.ttf : NotoSansLinearB-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,291 INFO /System/Library/Fonts/Supplemental/NotoSansLinearB-Regular.ttf : NotoSansLinearB-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,298 INFO /System/Library/Fonts/Supplemental/NotoSansLisu-Regular.ttf : NotoSansLisu-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,306 INFO /System/Library/Fonts/Supplemental/NotoSansLisu-Regular.ttf : NotoSansLisu-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,313 INFO /System/Library/Fonts/Supplemental/NotoSansLycian-Regular.ttf : NotoSansLycian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,320 INFO /System/Library/Fonts/Supplemental/NotoSansLycian-Regular.ttf : NotoSansLycian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,326 INFO /System/Library/Fonts/Supplemental/NotoSansLydian-Regular.ttf : NotoSansLydian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,333 INFO /System/Library/Fonts/Supplemental/NotoSansLydian-Regular.ttf : NotoSansLydian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,344 INFO /System/Library/Fonts/Supplemental/NotoSansMahajani-Regular.ttf : NotoSansMahajani-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,355 INFO /System/Library/Fonts/Supplemental/NotoSansMahajani-Regular.ttf : NotoSansMahajani-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,367 INFO /System/Library/Fonts/Supplemental/NotoSansMandaic-Regular.ttf : NotoSansMandaic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,379 INFO /System/Library/Fonts/Supplemental/NotoSansMandaic-Regular.ttf : NotoSansMandaic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,393 INFO /System/Library/Fonts/Supplemental/NotoSansManichaean-Regular.ttf : NotoSansManichaean-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,408 INFO /System/Library/Fonts/Supplemental/NotoSansManichaean-Regular.ttf : NotoSansManichaean-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,439 INFO /System/Library/Fonts/Supplemental/NotoSansMarchen-Regular.ttf : NotoSansMarchen-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,471 INFO /System/Library/Fonts/Supplemental/NotoSansMarchen-Regular.ttf : NotoSansMarchen-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,481 INFO /System/Library/Fonts/Supplemental/NotoSansMeeteiMayek-Regular.ttf : NotoSansMeeteiMayek-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,492 INFO /System/Library/Fonts/Supplemental/NotoSansMeeteiMayek-Regular.ttf : NotoSansMeeteiMayek-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,509 INFO /System/Library/Fonts/Supplemental/NotoSansMendeKikakui-Regular.ttf : NotoSansMendeKikakui-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,525 INFO /System/Library/Fonts/Supplemental/NotoSansMendeKikakui-Regular.ttf : NotoSansMendeKikakui-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,544 INFO /System/Library/Fonts/Supplemental/NotoSansMeroitic-Regular.ttf : NotoSansMeroitic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,561 INFO /System/Library/Fonts/Supplemental/NotoSansMeroitic-Regular.ttf : NotoSansMeroitic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,577 INFO /System/Library/Fonts/Supplemental/NotoSansMiao-Regular.ttf : NotoSansMiao-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,593 INFO /System/Library/Fonts/Supplemental/NotoSansMiao-Regular.ttf : NotoSansMiao-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,612 INFO /System/Library/Fonts/Supplemental/NotoSansModi-Regular.ttf : NotoSansModi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,629 INFO /System/Library/Fonts/Supplemental/NotoSansModi-Regular.ttf : NotoSansModi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,694 INFO /System/Library/Fonts/Supplemental/NotoSansMongolian-Regular.ttf : NotoSansMongolian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,758 INFO /System/Library/Fonts/Supplemental/NotoSansMongolian-Regular.ttf : NotoSansMongolian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,765 INFO /System/Library/Fonts/Supplemental/NotoSansMro-Regular.ttf : NotoSansMro-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,773 INFO /System/Library/Fonts/Supplemental/NotoSansMro-Regular.ttf : NotoSansMro-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,782 INFO /System/Library/Fonts/Supplemental/NotoSansMultani-Regular.ttf : NotoSansMultani-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,791 INFO /System/Library/Fonts/Supplemental/NotoSansMultani-Regular.ttf : NotoSansMultani-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,799 INFO /System/Library/Fonts/Supplemental/NotoSansNabataean-Regular.ttf : NotoSansNabataean-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,808 INFO /System/Library/Fonts/Supplemental/NotoSansNabataean-Regular.ttf : NotoSansNabataean-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,845 INFO /System/Library/Fonts/Supplemental/NotoSansNewa-Regular.ttf : NotoSansNewa-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,882 INFO /System/Library/Fonts/Supplemental/NotoSansNewa-Regular.ttf : NotoSansNewa-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,895 INFO /System/Library/Fonts/Supplemental/NotoSansNewTaiLue-Regular.ttf : NotoSansNewTaiLue-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,908 INFO /System/Library/Fonts/Supplemental/NotoSansNewTaiLue-Regular.ttf : NotoSansNewTaiLue-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,917 INFO /System/Library/Fonts/Supplemental/NotoSansNKo-Regular.ttf : NotoSansNKo-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,927 INFO /System/Library/Fonts/Supplemental/NotoSansNKo-Regular.ttf : NotoSansNKo-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,937 INFO /System/Library/Fonts/Supplemental/NotoSansOlChiki-Regular.ttf : NotoSansOlChiki-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,946 INFO /System/Library/Fonts/Supplemental/NotoSansOlChiki-Regular.ttf : NotoSansOlChiki-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,957 INFO /System/Library/Fonts/Supplemental/NotoSansOldHungarian-Regular.ttf : NotoSansOldHungarian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,968 INFO /System/Library/Fonts/Supplemental/NotoSansOldHungarian-Regular.ttf : NotoSansOldHungarian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,976 INFO /System/Library/Fonts/Supplemental/NotoSansOldItalic-Regular.ttf : NotoSansOldItalic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,983 INFO /System/Library/Fonts/Supplemental/NotoSansOldItalic-Regular.ttf : NotoSansOldItalic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,990 INFO /System/Library/Fonts/Supplemental/NotoSansOldNorthArabian-Regular.ttf : NotoSansOldNorthArabian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:06,998 INFO /System/Library/Fonts/Supplemental/NotoSansOldNorthArabian-Regular.ttf : NotoSansOldNorthArabian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,004 INFO /System/Library/Fonts/Supplemental/NotoSansOldPermic-Regular.ttf : NotoSansOldPermic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,012 INFO /System/Library/Fonts/Supplemental/NotoSansOldPermic-Regular.ttf : NotoSansOldPermic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,021 INFO /System/Library/Fonts/Supplemental/NotoSansOldPersian-Regular.ttf : NotoSansOldPersian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,030 INFO /System/Library/Fonts/Supplemental/NotoSansOldPersian-Regular.ttf : NotoSansOldPersian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,037 INFO /System/Library/Fonts/Supplemental/NotoSansOldSouthArabian-Regular.ttf : NotoSansOldSouthArabian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,043 INFO /System/Library/Fonts/Supplemental/NotoSansOldSouthArabian-Regular.ttf : NotoSansOldSouthArabian-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,051 INFO /System/Library/Fonts/Supplemental/NotoSansOldTurkic-Regular.ttf : NotoSansOldTurkic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,058 INFO /System/Library/Fonts/Supplemental/NotoSansOldTurkic-Regular.ttf : NotoSansOldTurkic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,067 INFO /System/Library/Fonts/Supplemental/NotoSansOsage-Regular.ttf : NotoSansOsage-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,077 INFO /System/Library/Fonts/Supplemental/NotoSansOsage-Regular.ttf : NotoSansOsage-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,085 INFO /System/Library/Fonts/Supplemental/NotoSansOsmanya-Regular.ttf : NotoSansOsmanya-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,094 INFO /System/Library/Fonts/Supplemental/NotoSansOsmanya-Regular.ttf : NotoSansOsmanya-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,104 INFO /System/Library/Fonts/Supplemental/NotoSansPahawhHmong-Regular.ttf : NotoSansPahawhHmong-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,115 INFO /System/Library/Fonts/Supplemental/NotoSansPahawhHmong-Regular.ttf : NotoSansPahawhHmong-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,127 INFO /System/Library/Fonts/Supplemental/NotoSansPalmyrene-Regular.ttf : NotoSansPalmyrene-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,140 INFO /System/Library/Fonts/Supplemental/NotoSansPalmyrene-Regular.ttf : NotoSansPalmyrene-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,148 INFO /System/Library/Fonts/Supplemental/NotoSansPauCinHau-Regular.ttf : NotoSansPauCinHau-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,155 INFO /System/Library/Fonts/Supplemental/NotoSansPauCinHau-Regular.ttf : NotoSansPauCinHau-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,169 INFO /System/Library/Fonts/Supplemental/NotoSansPhagsPa-Regular.ttf : NotoSansPhagsPa-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,184 INFO /System/Library/Fonts/Supplemental/NotoSansPhagsPa-Regular.ttf : NotoSansPhagsPa-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,191 INFO /System/Library/Fonts/Supplemental/NotoSansPhoenician-Regular.ttf : NotoSansPhoenician-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,199 INFO /System/Library/Fonts/Supplemental/NotoSansPhoenician-Regular.ttf : NotoSansPhoenician-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,212 INFO /System/Library/Fonts/Supplemental/NotoSansPsalterPahlavi-Regular.ttf : NotoSansPsalterPahlavi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,224 INFO /System/Library/Fonts/Supplemental/NotoSansPsalterPahlavi-Regular.ttf : NotoSansPsalterPahlavi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,231 INFO /System/Library/Fonts/Supplemental/NotoSansRejang-Regular.ttf : NotoSansRejang-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,238 INFO /System/Library/Fonts/Supplemental/NotoSansRejang-Regular.ttf : NotoSansRejang-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,247 INFO /System/Library/Fonts/Supplemental/NotoSansSamaritan-Regular.ttf : NotoSansSamaritan-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,256 INFO /System/Library/Fonts/Supplemental/NotoSansSamaritan-Regular.ttf : NotoSansSamaritan-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,267 INFO /System/Library/Fonts/Supplemental/NotoSansSaurashtra-Regular.ttf : NotoSansSaurashtra-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,277 INFO /System/Library/Fonts/Supplemental/NotoSansSaurashtra-Regular.ttf : NotoSansSaurashtra-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,293 INFO /System/Library/Fonts/Supplemental/NotoSansSharada-Regular.ttf : NotoSansSharada-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,309 INFO /System/Library/Fonts/Supplemental/NotoSansSharada-Regular.ttf : NotoSansSharada-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,316 INFO /System/Library/Fonts/Supplemental/NotoSansSoraSompeng-Regular.ttf : NotoSansSoraSompeng-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,324 INFO /System/Library/Fonts/Supplemental/NotoSansSoraSompeng-Regular.ttf : NotoSansSoraSompeng-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,332 INFO /System/Library/Fonts/Supplemental/NotoSansSundanese-Regular.ttf : NotoSansSundanese-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,340 INFO /System/Library/Fonts/Supplemental/NotoSansSundanese-Regular.ttf : NotoSansSundanese-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,350 INFO /System/Library/Fonts/Supplemental/NotoSansSylotiNagri-Regular.ttf : NotoSansSylotiNagri-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,360 INFO /System/Library/Fonts/Supplemental/NotoSansSylotiNagri-Regular.ttf : NotoSansSylotiNagri-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,379 INFO /System/Library/Fonts/Supplemental/NotoSansSyriac-Regular.ttf : NotoSansSyriac-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,398 INFO /System/Library/Fonts/Supplemental/NotoSansSyriac-Regular.ttf : NotoSansSyriac-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,406 INFO /System/Library/Fonts/Supplemental/NotoSansTagalog-Regular.ttf : NotoSansTagalog-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,413 INFO /System/Library/Fonts/Supplemental/NotoSansTagalog-Regular.ttf : NotoSansTagalog-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,420 INFO /System/Library/Fonts/Supplemental/NotoSansTagbanwa-Regular.ttf : NotoSansTagbanwa-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,427 INFO /System/Library/Fonts/Supplemental/NotoSansTagbanwa-Regular.ttf : NotoSansTagbanwa-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,437 INFO /System/Library/Fonts/Supplemental/NotoSansTaiLe-Regular.ttf : NotoSansTaiLe-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,446 INFO /System/Library/Fonts/Supplemental/NotoSansTaiLe-Regular.ttf : NotoSansTaiLe-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,465 INFO /System/Library/Fonts/Supplemental/NotoSansTaiTham-Regular.ttf : NotoSansTaiTham already registered in fonts database. Skipping.
+2025-10-12 16:21:07,483 INFO /System/Library/Fonts/Supplemental/NotoSansTaiTham-Regular.ttf : NotoSansTaiTham already registered in fonts database. Skipping.
+2025-10-12 16:21:07,496 INFO /System/Library/Fonts/Supplemental/NotoSansTaiViet-Regular.ttf : NotoSansTaiViet-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,510 INFO /System/Library/Fonts/Supplemental/NotoSansTaiViet-Regular.ttf : NotoSansTaiViet-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,519 INFO /System/Library/Fonts/Supplemental/NotoSansTakri-Regular.ttf : NotoSansTakri-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,529 INFO /System/Library/Fonts/Supplemental/NotoSansTakri-Regular.ttf : NotoSansTakri-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,542 INFO /System/Library/Fonts/Supplemental/NotoSansThaana-Regular.ttf : NotoSansThaana-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,555 INFO /System/Library/Fonts/Supplemental/NotoSansThaana-Regular.ttf : NotoSansThaana-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,575 INFO /System/Library/Fonts/Supplemental/NotoSansTirhuta-Regular.ttf : NotoSansTirhuta-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,594 INFO /System/Library/Fonts/Supplemental/NotoSansTirhuta-Regular.ttf : NotoSansTirhuta-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,602 INFO /System/Library/Fonts/Supplemental/NotoSansUgaritic-Regular.ttf : NotoSansUgaritic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,610 INFO /System/Library/Fonts/Supplemental/NotoSansUgaritic-Regular.ttf : NotoSansUgaritic-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,631 INFO /System/Library/Fonts/Supplemental/NotoSansVai-Regular.ttf : NotoSansVai-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,652 INFO /System/Library/Fonts/Supplemental/NotoSansVai-Regular.ttf : NotoSansVai-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,661 INFO /System/Library/Fonts/Supplemental/NotoSansWancho-Regular.ttf : NotoSansWancho-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,671 INFO /System/Library/Fonts/Supplemental/NotoSansWancho-Regular.ttf : NotoSansWancho-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,681 INFO /System/Library/Fonts/Supplemental/NotoSansWarangCiti-Regular.ttf : NotoSansWarangCiti-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,691 INFO /System/Library/Fonts/Supplemental/NotoSansWarangCiti-Regular.ttf : NotoSansWarangCiti-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,748 INFO /System/Library/Fonts/Supplemental/NotoSansYi-Regular.ttf : NotoSansYi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,803 INFO /System/Library/Fonts/Supplemental/NotoSansYi-Regular.ttf : NotoSansYi-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,816 INFO /System/Library/Fonts/Supplemental/NotoSerifAhom-Regular.ttf : NotoSerifAhom-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,829 INFO /System/Library/Fonts/Supplemental/NotoSerifAhom-Regular.ttf : NotoSerifAhom-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,859 INFO /System/Library/Fonts/Supplemental/NotoSerifBalinese-Regular.ttf : NotoSerifBalinese-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,889 INFO /System/Library/Fonts/Supplemental/NotoSerifBalinese-Regular.ttf : NotoSerifBalinese-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,898 INFO /System/Library/Fonts/Supplemental/NotoSerifNyiakengPuachueHmong-Regular.ttf : NotoSerifHmongNyiakeng-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:07,908 INFO /System/Library/Fonts/Supplemental/NotoSerifNyiakengPuachueHmong-Regular.ttf : NotoSerifHmongNyiakeng-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:08,016 INFO /System/Library/Fonts/Supplemental/PartyLET-plain.ttf : PartyLetPlain already registered in fonts database. Skipping.
+2025-10-12 16:21:08,122 INFO /System/Library/Fonts/Supplemental/PartyLET-plain.ttf : PartyLetPlain already registered in fonts database. Skipping.
+2025-10-12 16:21:08,167 INFO /System/Library/Fonts/Supplemental/PlantagenetCherokee.ttf : No FontName. Skipping.
+2025-10-12 16:21:08,211 INFO /System/Library/Fonts/Supplemental/PlantagenetCherokee.ttf : No FontName. Skipping.
+2025-10-12 16:21:08,252 INFO /System/Library/Fonts/Supplemental/Sathu.ttf : No FontName. Skipping.
+2025-10-12 16:21:08,294 INFO /System/Library/Fonts/Supplemental/Sathu.ttf : No FontName. Skipping.
+2025-10-12 16:21:08,319 INFO /System/Library/Fonts/Supplemental/Silom.ttf : No FontName. Skipping.
+2025-10-12 16:21:08,342 INFO /System/Library/Fonts/Supplemental/Silom.ttf : No FontName. Skipping.
+2025-10-12 16:21:08,371 INFO /System/Library/Fonts/Supplemental/Skia.ttf : No FontName. Skipping.
+2025-10-12 16:21:08,400 INFO /System/Library/Fonts/Supplemental/Skia.ttf : No FontName. Skipping.
+2025-10-12 16:21:08,537 INFO /System/Library/Fonts/Supplemental/STIXTwoText-Italic.ttf : STIXTwoText-Italic already registered in fonts database. Skipping.
+2025-10-12 16:21:08,675 INFO /System/Library/Fonts/Supplemental/STIXTwoText-Italic.ttf : STIXTwoText-Italic already registered in fonts database. Skipping.
+2025-10-12 16:21:08,797 INFO /System/Library/Fonts/Supplemental/STIXTwoText.ttf : STIXTwoText already registered in fonts database. Skipping.
+2025-10-12 16:21:08,920 INFO /System/Library/Fonts/Supplemental/STIXTwoText.ttf : STIXTwoText already registered in fonts database. Skipping.
+2025-10-12 16:21:09,018 INFO /System/Library/Fonts/Supplemental/Tahoma Bold.ttf : Tahoma-Bold already registered in fonts database. Skipping.
+2025-10-12 16:21:09,115 INFO /System/Library/Fonts/Supplemental/Tahoma Bold.ttf : Tahoma-Bold already registered in fonts database. Skipping.
+2025-10-12 16:21:09,221 INFO /System/Library/Fonts/Supplemental/Tahoma.ttf : Tahoma already registered in fonts database. Skipping.
+2025-10-12 16:21:09,325 INFO /System/Library/Fonts/Supplemental/Tahoma.ttf : Tahoma already registered in fonts database. Skipping.
+2025-10-12 16:21:09,430 INFO /System/Library/Fonts/Supplemental/Times New Roman Bold Italic.ttf : TimesNewRomanPS-BoldItalicMT already registered in fonts database. Skipping.
+2025-10-12 16:21:09,534 INFO /System/Library/Fonts/Supplemental/Times New Roman Bold Italic.ttf : TimesNewRomanPS-BoldItalicMT already registered in fonts database. Skipping.
+2025-10-12 16:21:09,687 INFO /System/Library/Fonts/Supplemental/Times New Roman Bold.ttf : TimesNewRomanPS-BoldMT already registered in fonts database. Skipping.
+2025-10-12 16:21:09,842 INFO /System/Library/Fonts/Supplemental/Times New Roman Bold.ttf : TimesNewRomanPS-BoldMT already registered in fonts database. Skipping.
+2025-10-12 16:21:09,954 INFO /System/Library/Fonts/Supplemental/Times New Roman Italic.ttf : TimesNewRomanPS-ItalicMT already registered in fonts database. Skipping.
+2025-10-12 16:21:10,064 INFO /System/Library/Fonts/Supplemental/Times New Roman Italic.ttf : TimesNewRomanPS-ItalicMT already registered in fonts database. Skipping.
+2025-10-12 16:21:10,224 INFO /System/Library/Fonts/Supplemental/Times New Roman.ttf : TimesNewRomanPSMT already registered in fonts database. Skipping.
+2025-10-12 16:21:10,384 INFO /System/Library/Fonts/Supplemental/Times New Roman.ttf : TimesNewRomanPSMT already registered in fonts database. Skipping.
+2025-10-12 16:21:12,337 INFO /System/Library/Fonts/Supplemental/Trattatello.ttf : Trattatello already registered in fonts database. Skipping.
+2025-10-12 16:21:14,268 INFO /System/Library/Fonts/Supplemental/Trattatello.ttf : Trattatello already registered in fonts database. Skipping.
+2025-10-12 16:21:14,285 INFO /System/Library/Fonts/Supplemental/Trebuchet MS Bold Italic.ttf : Trebuchet-BoldItalic already registered in fonts database. Skipping.
+2025-10-12 16:21:14,301 INFO /System/Library/Fonts/Supplemental/Trebuchet MS Bold Italic.ttf : Trebuchet-BoldItalic already registered in fonts database. Skipping.
+2025-10-12 16:21:14,316 INFO /System/Library/Fonts/Supplemental/Trebuchet MS Bold.ttf : TrebuchetMS-Bold already registered in fonts database. Skipping.
+2025-10-12 16:21:14,331 INFO /System/Library/Fonts/Supplemental/Trebuchet MS Bold.ttf : TrebuchetMS-Bold already registered in fonts database. Skipping.
+2025-10-12 16:21:14,348 INFO /System/Library/Fonts/Supplemental/Trebuchet MS Italic.ttf : TrebuchetMS-Italic already registered in fonts database. Skipping.
+2025-10-12 16:21:14,366 INFO /System/Library/Fonts/Supplemental/Trebuchet MS Italic.ttf : TrebuchetMS-Italic already registered in fonts database. Skipping.
+2025-10-12 16:21:14,381 INFO /System/Library/Fonts/Supplemental/Trebuchet MS.ttf : TrebuchetMS already registered in fonts database. Skipping.
+2025-10-12 16:21:14,396 INFO /System/Library/Fonts/Supplemental/Trebuchet MS.ttf : TrebuchetMS already registered in fonts database. Skipping.
+2025-10-12 16:21:14,418 INFO /System/Library/Fonts/Supplemental/Verdana Bold Italic.ttf : Verdana-BoldItalic already registered in fonts database. Skipping.
+2025-10-12 16:21:14,439 INFO /System/Library/Fonts/Supplemental/Verdana Bold Italic.ttf : Verdana-BoldItalic already registered in fonts database. Skipping.
+2025-10-12 16:21:14,464 INFO /System/Library/Fonts/Supplemental/Verdana Bold.ttf : Verdana-Bold already registered in fonts database. Skipping.
+2025-10-12 16:21:14,487 INFO /System/Library/Fonts/Supplemental/Verdana Bold.ttf : Verdana-Bold already registered in fonts database. Skipping.
+2025-10-12 16:21:14,511 INFO /System/Library/Fonts/Supplemental/Verdana Italic.ttf : Verdana-Italic already registered in fonts database. Skipping.
+2025-10-12 16:21:14,535 INFO /System/Library/Fonts/Supplemental/Verdana Italic.ttf : Verdana-Italic already registered in fonts database. Skipping.
+2025-10-12 16:21:14,560 INFO /System/Library/Fonts/Supplemental/Verdana.ttf : Verdana already registered in fonts database. Skipping.
+2025-10-12 16:21:14,585 INFO /System/Library/Fonts/Supplemental/Verdana.ttf : Verdana already registered in fonts database. Skipping.
+2025-10-12 16:21:14,614 INFO /System/Library/Fonts/Supplemental/Webdings.ttf : Webdings already registered in fonts database. Skipping.
+2025-10-12 16:21:14,643 INFO /System/Library/Fonts/Supplemental/Webdings.ttf : Webdings already registered in fonts database. Skipping.
+2025-10-12 16:21:14,656 INFO /System/Library/Fonts/Supplemental/Wingdings 2.ttf : Wingdings2 already registered in fonts database. Skipping.
+2025-10-12 16:21:14,668 INFO /System/Library/Fonts/Supplemental/Wingdings 2.ttf : Wingdings2 already registered in fonts database. Skipping.
+2025-10-12 16:21:14,676 INFO /System/Library/Fonts/Supplemental/Wingdings 3.ttf : Wingdings3 already registered in fonts database. Skipping.
+2025-10-12 16:21:14,684 INFO /System/Library/Fonts/Supplemental/Wingdings 3.ttf : Wingdings3 already registered in fonts database. Skipping.
+2025-10-12 16:21:14,698 INFO /System/Library/Fonts/Supplemental/Wingdings.ttf : Wingdings-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:14,711 INFO /System/Library/Fonts/Supplemental/Wingdings.ttf : Wingdings-Regular already registered in fonts database. Skipping.
+2025-10-12 16:21:15,100 INFO /System/Library/Fonts/Supplemental/Zapfino.ttf : No FontName. Skipping.
+2025-10-12 16:21:15,491 INFO /System/Library/Fonts/Supplemental/Zapfino.ttf : No FontName. Skipping.
+2025-10-12 16:21:15,501 INFO /System/Library/Fonts/Symbol.ttf : No FontName. Skipping.
+2025-10-12 16:21:15,514 INFO /System/Library/Fonts/ZapfDingbats.ttf : No FontName. Skipping.
+2025-10-12 16:21:15,514 INFO Found FontName for 0 fonts.
+2025-10-12 16:21:15,514 INFO Scanning afm files in /Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/library/extrafontdb/metrics
+2025-10-12 16:21:15,613 INFO .Keyboard already registered with pdfFont().
+2025-10-12 16:21:15,613 INFO .New York already registered with pdfFont().
+2025-10-12 16:21:15,613 INFO .SF Arabic already registered with pdfFont().
+2025-10-12 16:21:15,613 INFO .SF Arabic Rounded already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO .SF Armenian already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO .SF Armenian Rounded already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO .SF Camera already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO .SF Compact already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO .SF Compact Rounded already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO .SF Georgian already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO .SF Georgian Rounded already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO .SF Hebrew already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO .SF Hebrew Rounded already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO .SF NS Mono already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO .SF NS Rounded already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Academy Engraved LET already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Andale Mono already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO More than one version of regular/bold/italic found for Apple Braille. Skipping setup for this font.
+2025-10-12 16:21:15,614 INFO AppleMyungjo already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Arial already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Arial Black already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Arial Narrow already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Arial Rounded MT Bold already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Arial Unicode MS already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Bodoni 72 Smallcaps already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Bodoni Ornaments already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO No regular (non-bold, non-italic) version of Brush Script MT. Skipping setup for this font.
+2025-10-12 16:21:15,614 INFO Comic Sans MS already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Courier New already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO No regular (non-bold, non-italic) version of DIN Alternate. Skipping setup for this font.
+2025-10-12 16:21:15,614 INFO No regular (non-bold, non-italic) version of DIN Condensed. Skipping setup for this font.
+2025-10-12 16:21:15,614 INFO Georgia already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Impact already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Khmer Sangam MN already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Lao Sangam MN already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Luminari already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Microsoft Sans Serif already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Noto Sans Adlam already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Noto Sans Avestan already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Noto Sans Bamum already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Noto Sans Bassa Vah already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Noto Sans Batak already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Noto Sans Bhaiksuki already registered with pdfFont().
+2025-10-12 16:21:15,614 INFO Noto Sans Brahmi already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Buginese already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Buhid already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Carian already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans CaucAlban already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Chakma already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Cham already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Coptic already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Cuneiform already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Cypriot already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Duployan already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans EgyptHiero already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Elbasan already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Glagolitic already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Gothic already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans HanifiRohg already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Hanunoo already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Hatran already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans ImpAramaic already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans InsPahlavi already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans InsParthi already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Kaithi already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Kayah Li already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Kharoshthi already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Khojki already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Khudawadi already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Lepcha already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Limbu already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Linear A already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Linear B already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Lisu already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Lycian already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Lydian already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Mahajani already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Mandaic already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Manichaean already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Marchen already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans MeeteiMayek already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Mende Kikakui already registered with pdfFont().
+2025-10-12 16:21:15,615 INFO Noto Sans Meroitic already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Miao already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Modi already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Mongolian already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Mro already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Multani already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Nabataean already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Newa already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans NewTaiLue already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans NKo already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Ol Chiki already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO No regular (non-bold, non-italic) version of Noto Sans Old Italic. Skipping setup for this font.
+2025-10-12 16:21:15,616 INFO Noto Sans Old Permic already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Old Turkic already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans OldHung already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans OldNorArab already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans OldPersian already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans OldSouArab already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Osage already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Osmanya already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Pahawh Hmong already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Palmyrene already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans PauCinHau already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans PhagsPa already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Phoenician already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans PsaPahlavi already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Rejang already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Samaritan already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Saurashtra already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Sharada already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans SoraSomp already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Sundanese already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Syloti Nagri already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Syriac already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Tagalog already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Tagbanwa already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Tai Le already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Tai Tham already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Tai Viet already registered with pdfFont().
+2025-10-12 16:21:15,616 INFO Noto Sans Takri already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Noto Sans Thaana already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Noto Sans Tirhuta already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Noto Sans Ugaritic already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Noto Sans Vai already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Noto Sans Wancho already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Noto Sans WarangCiti already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Noto Sans Yi already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Noto Serif Ahom already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Noto Serif Balinese already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Noto Serif Hmong Nyiakeng already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Party LET already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO STIX Two Text already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO System Font already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Tahoma already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Times New Roman already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Trattatello already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Trebuchet MS already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Verdana already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Webdings already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Wingdings already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Wingdings 2 already registered with pdfFont().
+2025-10-12 16:21:15,617 INFO Wingdings 3 already registered with pdfFont().
+2025-10-12 16:21:15,621 INFO .Keyboard already registered with postscriptFont().
+2025-10-12 16:21:15,621 INFO .New York already registered with postscriptFont().
+2025-10-12 16:21:15,621 INFO .SF Arabic already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO .SF Arabic Rounded already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO .SF Armenian already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO .SF Armenian Rounded already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO .SF Camera already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO .SF Compact already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO .SF Compact Rounded already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO .SF Georgian already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO .SF Georgian Rounded already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO .SF Hebrew already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO .SF Hebrew Rounded already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO .SF NS Mono already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO .SF NS Rounded already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Academy Engraved LET already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Andale Mono already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO More than one version of regular/bold/italic found for Apple Braille. Skipping setup for this font.
+2025-10-12 16:21:15,622 INFO AppleMyungjo already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Arial already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Arial Black already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Arial Narrow already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Arial Rounded MT Bold already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Arial Unicode MS already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Bodoni 72 Smallcaps already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Bodoni Ornaments already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO No regular (non-bold, non-italic) version of Brush Script MT. Skipping setup for this font.
+2025-10-12 16:21:15,622 INFO Comic Sans MS already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Courier New already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO No regular (non-bold, non-italic) version of DIN Alternate. Skipping setup for this font.
+2025-10-12 16:21:15,622 INFO No regular (non-bold, non-italic) version of DIN Condensed. Skipping setup for this font.
+2025-10-12 16:21:15,622 INFO Georgia already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Impact already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Khmer Sangam MN already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Lao Sangam MN already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Luminari already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Microsoft Sans Serif already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Noto Sans Adlam already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Noto Sans Avestan already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Noto Sans Bamum already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Noto Sans Bassa Vah already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Noto Sans Batak already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Noto Sans Bhaiksuki already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Noto Sans Brahmi already registered with postscriptFont().
+2025-10-12 16:21:15,622 INFO Noto Sans Buginese already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Buhid already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Carian already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans CaucAlban already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Chakma already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Cham already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Coptic already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Cuneiform already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Cypriot already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Duployan already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans EgyptHiero already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Elbasan already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Glagolitic already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Gothic already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans HanifiRohg already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Hanunoo already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Hatran already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans ImpAramaic already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans InsPahlavi already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans InsParthi already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Kaithi already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Kayah Li already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Kharoshthi already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Khojki already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Khudawadi already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Lepcha already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Limbu already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Linear A already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Linear B already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Lisu already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Lycian already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Lydian already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Mahajani already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Mandaic already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Manichaean already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Marchen already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans MeeteiMayek already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Mende Kikakui already registered with postscriptFont().
+2025-10-12 16:21:15,623 INFO Noto Sans Meroitic already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Miao already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Modi already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Mongolian already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Mro already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Multani already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Nabataean already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Newa already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans NewTaiLue already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans NKo already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Ol Chiki already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO No regular (non-bold, non-italic) version of Noto Sans Old Italic. Skipping setup for this font.
+2025-10-12 16:21:15,624 INFO Noto Sans Old Permic already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Old Turkic already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans OldHung already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans OldNorArab already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans OldPersian already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans OldSouArab already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Osage already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Osmanya already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Pahawh Hmong already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Palmyrene already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans PauCinHau already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans PhagsPa already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Phoenician already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans PsaPahlavi already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Rejang already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Samaritan already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Saurashtra already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Sharada already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans SoraSomp already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Sundanese already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Syloti Nagri already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Syriac already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Tagalog already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Tagbanwa already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Tai Le already registered with postscriptFont().
+2025-10-12 16:21:15,624 INFO Noto Sans Tai Tham already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Noto Sans Tai Viet already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Noto Sans Takri already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Noto Sans Thaana already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Noto Sans Tirhuta already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Noto Sans Ugaritic already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Noto Sans Vai already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Noto Sans Wancho already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Noto Sans WarangCiti already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Noto Sans Yi already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Noto Serif Ahom already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Noto Serif Balinese already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Noto Serif Hmong Nyiakeng already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Party LET already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO STIX Two Text already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO System Font already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Tahoma already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Times New Roman already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Trattatello already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Trebuchet MS already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Verdana already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Webdings already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Wingdings already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Wingdings 2 already registered with postscriptFont().
+2025-10-12 16:21:15,625 INFO Wingdings 3 already registered with postscriptFont().
+2025-10-12 16:21:15,711 INFO Rows: 76 Columns: 13
+2025-10-12 16:21:15,714 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,714 INFO Delimiter: ","
+2025-10-12 16:21:15,714 INFO chr  (8): _id, gameLobbyId, treatmentId, roundIds, playerIds, batchId, data....
+2025-10-12 16:21:15,714 INFO dbl  (2): data.round_count, data.totalDuration
+2025-10-12 16:21:15,714 INFO lgl  (1): data.justStarted
+2025-10-12 16:21:15,714 INFO dttm (2): finishedAt, createdAt
+2025-10-12 16:21:15,717 INFO 
+2025-10-12 16:21:15,717 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,717 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,727 INFO Rows: 232 Columns: 13
+2025-10-12 16:21:15,731 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,731 INFO Delimiter: ","
+2025-10-12 16:21:15,731 INFO chr  (8): _id, gameLobbyId, treatmentId, roundIds, playerIds, batchId, data....
+2025-10-12 16:21:15,731 INFO dbl  (2): data.round_count, data.totalDuration
+2025-10-12 16:21:15,731 INFO lgl  (1): data.justStarted
+2025-10-12 16:21:15,731 INFO dttm (2): finishedAt, createdAt
+2025-10-12 16:21:15,734 INFO 
+2025-10-12 16:21:15,734 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,734 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,742 INFO Rows: 115 Columns: 13
+2025-10-12 16:21:15,743 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,743 INFO Delimiter: ","
+2025-10-12 16:21:15,743 INFO chr  (8): _id, gameLobbyId, treatmentId, roundIds, playerIds, batchId, data....
+2025-10-12 16:21:15,743 INFO dbl  (2): data.round_count, data.totalDuration
+2025-10-12 16:21:15,743 INFO lgl  (1): data.justStarted
+2025-10-12 16:21:15,743 INFO dttm (2): finishedAt, createdAt
+2025-10-12 16:21:15,746 INFO 
+2025-10-12 16:21:15,746 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,746 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,754 INFO Rows: 99 Columns: 13
+2025-10-12 16:21:15,760 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,760 INFO Delimiter: ","
+2025-10-12 16:21:15,760 INFO chr  (8): _id, gameLobbyId, treatmentId, roundIds, playerIds, batchId, data....
+2025-10-12 16:21:15,760 INFO dbl  (2): data.round_count, data.totalDuration
+2025-10-12 16:21:15,760 INFO lgl  (1): data.justStarted
+2025-10-12 16:21:15,760 INFO dttm (2): finishedAt, createdAt
+2025-10-12 16:21:15,762 INFO 
+2025-10-12 16:21:15,762 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,762 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,774 INFO Rows: 131 Columns: 12
+2025-10-12 16:21:15,776 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,776 INFO Delimiter: ","
+2025-10-12 16:21:15,776 INFO chr  (7): _id, queuedPlayerIds, playerIds, gameId, treatmentId, batchId, lob...
+2025-10-12 16:21:15,776 INFO dbl  (2): index, availableCount
+2025-10-12 16:21:15,776 INFO dttm (3): timeoutStartedAt, timedOutAt, createdAt
+2025-10-12 16:21:15,778 INFO 
+2025-10-12 16:21:15,778 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,778 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,787 INFO Rows: 519 Columns: 12
+2025-10-12 16:21:15,789 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,789 INFO Delimiter: ","
+2025-10-12 16:21:15,789 INFO chr  (7): _id, queuedPlayerIds, playerIds, gameId, treatmentId, batchId, lob...
+2025-10-12 16:21:15,789 INFO dbl  (2): index, availableCount
+2025-10-12 16:21:15,789 INFO dttm (3): timeoutStartedAt, timedOutAt, createdAt
+2025-10-12 16:21:15,791 INFO 
+2025-10-12 16:21:15,791 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,791 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,799 INFO Rows: 183 Columns: 12
+2025-10-12 16:21:15,801 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,801 INFO Delimiter: ","
+2025-10-12 16:21:15,801 INFO chr  (7): _id, queuedPlayerIds, playerIds, gameId, treatmentId, batchId, lob...
+2025-10-12 16:21:15,801 INFO dbl  (2): index, availableCount
+2025-10-12 16:21:15,801 INFO dttm (3): timeoutStartedAt, timedOutAt, createdAt
+2025-10-12 16:21:15,804 INFO 
+2025-10-12 16:21:15,804 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,804 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,811 INFO Rows: 144 Columns: 12
+2025-10-12 16:21:15,813 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,813 INFO Delimiter: ","
+2025-10-12 16:21:15,813 INFO chr  (7): _id, queuedPlayerIds, playerIds, gameId, treatmentId, batchId, lob...
+2025-10-12 16:21:15,813 INFO dbl  (2): index, availableCount
+2025-10-12 16:21:15,813 INFO dttm (3): timeoutStartedAt, timedOutAt, createdAt
+2025-10-12 16:21:15,815 INFO 
+2025-10-12 16:21:15,815 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,815 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,825 INFO Rows: 18 Columns: 5
+2025-10-12 16:21:15,827 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,827 INFO Delimiter: ","
+2025-10-12 16:21:15,827 INFO chr  (3): _id, name, factorIds
+2025-10-12 16:21:15,827 INFO dttm (2): createdAt, archivedAt
+2025-10-12 16:21:15,829 INFO 
+2025-10-12 16:21:15,829 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,829 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,836 INFO Rows: 24 Columns: 5
+2025-10-12 16:21:15,837 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,837 INFO Delimiter: ","
+2025-10-12 16:21:15,837 INFO chr  (3): _id, name, factorIds
+2025-10-12 16:21:15,837 INFO dttm (2): createdAt, archivedAt
+2025-10-12 16:21:15,839 INFO 
+2025-10-12 16:21:15,839 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,839 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,847 INFO Rows: 31 Columns: 5
+2025-10-12 16:21:15,848 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,848 INFO Delimiter: ","
+2025-10-12 16:21:15,848 INFO chr  (3): _id, name, factorIds
+2025-10-12 16:21:15,848 INFO dttm (2): createdAt, archivedAt
+2025-10-12 16:21:15,851 INFO 
+2025-10-12 16:21:15,851 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,851 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,858 INFO Rows: 31 Columns: 5
+2025-10-12 16:21:15,859 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,859 INFO Delimiter: ","
+2025-10-12 16:21:15,859 INFO chr  (3): _id, name, factorIds
+2025-10-12 16:21:15,859 INFO dttm (2): createdAt, archivedAt
+2025-10-12 16:21:15,862 INFO 
+2025-10-12 16:21:15,862 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,862 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,871 INFO Rows: 34 Columns: 5
+2025-10-12 16:21:15,873 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,873 INFO Delimiter: ","
+2025-10-12 16:21:15,873 INFO chr  (4): _id, name, value, factorTypeId
+2025-10-12 16:21:15,873 INFO dttm (1): createdAt
+2025-10-12 16:21:15,875 INFO 
+2025-10-12 16:21:15,875 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,875 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,884 INFO Rows: 36 Columns: 5
+2025-10-12 16:21:15,886 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,886 INFO Delimiter: ","
+2025-10-12 16:21:15,886 INFO chr  (4): _id, name, value, factorTypeId
+2025-10-12 16:21:15,886 INFO dttm (1): createdAt
+2025-10-12 16:21:15,888 INFO 
+2025-10-12 16:21:15,888 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,888 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,895 INFO Rows: 36 Columns: 5
+2025-10-12 16:21:15,896 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,896 INFO Delimiter: ","
+2025-10-12 16:21:15,896 INFO chr  (4): _id, name, value, factorTypeId
+2025-10-12 16:21:15,896 INFO dttm (1): createdAt
+2025-10-12 16:21:15,898 INFO 
+2025-10-12 16:21:15,898 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,898 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,905 INFO Rows: 36 Columns: 5
+2025-10-12 16:21:15,907 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,907 INFO Delimiter: ","
+2025-10-12 16:21:15,907 INFO chr  (4): _id, name, value, factorTypeId
+2025-10-12 16:21:15,907 INFO dttm (1): createdAt
+2025-10-12 16:21:15,909 INFO 
+2025-10-12 16:21:15,909 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,909 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,919 INFO Rows: 19 Columns: 9
+2025-10-12 16:21:15,920 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,920 INFO Delimiter: ","
+2025-10-12 16:21:15,921 INFO chr  (4): _id, name, description, type
+2025-10-12 16:21:15,921 INFO dbl  (2): min, max
+2025-10-12 16:21:15,921 INFO lgl  (1): required
+2025-10-12 16:21:15,921 INFO dttm (2): createdAt, archivedAt
+2025-10-12 16:21:15,923 INFO 
+2025-10-12 16:21:15,923 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,923 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,930 INFO Rows: 17 Columns: 9
+2025-10-12 16:21:15,931 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,931 INFO Delimiter: ","
+2025-10-12 16:21:15,931 INFO chr  (4): _id, name, description, type
+2025-10-12 16:21:15,931 INFO dbl  (2): min, max
+2025-10-12 16:21:15,931 INFO lgl  (2): required, archivedAt
+2025-10-12 16:21:15,931 INFO dttm (1): createdAt
+2025-10-12 16:21:15,933 INFO 
+2025-10-12 16:21:15,934 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,934 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,940 INFO Rows: 17 Columns: 9
+2025-10-12 16:21:15,942 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,942 INFO Delimiter: ","
+2025-10-12 16:21:15,942 INFO chr  (4): _id, name, description, type
+2025-10-12 16:21:15,942 INFO dbl  (2): min, max
+2025-10-12 16:21:15,942 INFO lgl  (2): required, archivedAt
+2025-10-12 16:21:15,942 INFO dttm (1): createdAt
+2025-10-12 16:21:15,944 INFO 
+2025-10-12 16:21:15,944 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,944 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,951 INFO Rows: 17 Columns: 9
+2025-10-12 16:21:15,952 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,952 INFO Delimiter: ","
+2025-10-12 16:21:15,952 INFO chr  (4): _id, name, description, type
+2025-10-12 16:21:15,952 INFO dbl  (2): min, max
+2025-10-12 16:21:15,952 INFO lgl  (2): required, archivedAt
+2025-10-12 16:21:15,952 INFO dttm (1): createdAt
+2025-10-12 16:21:15,955 INFO 
+2025-10-12 16:21:15,955 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,955 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,964 INFO Rows: 1 Columns: 9
+2025-10-12 16:21:15,966 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,966 INFO Delimiter: ","
+2025-10-12 16:21:15,966 INFO chr  (4): _id, name, timeoutType, timeoutStrategy
+2025-10-12 16:21:15,966 INFO dbl  (1): timeoutInSeconds
+2025-10-12 16:21:15,966 INFO lgl  (3): timeoutBots, extendCount, archivedAt
+2025-10-12 16:21:15,966 INFO dttm (1): createdAt
+2025-10-12 16:21:15,968 INFO 
+2025-10-12 16:21:15,968 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,968 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,974 INFO Rows: 2 Columns: 9
+2025-10-12 16:21:15,976 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,976 INFO Delimiter: ","
+2025-10-12 16:21:15,976 INFO chr  (4): _id, name, timeoutType, timeoutStrategy
+2025-10-12 16:21:15,976 INFO dbl  (1): timeoutInSeconds
+2025-10-12 16:21:15,976 INFO lgl  (3): timeoutBots, extendCount, archivedAt
+2025-10-12 16:21:15,976 INFO dttm (1): createdAt
+2025-10-12 16:21:15,978 INFO 
+2025-10-12 16:21:15,978 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,978 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,985 INFO Rows: 2 Columns: 9
+2025-10-12 16:21:15,986 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,986 INFO Delimiter: ","
+2025-10-12 16:21:15,986 INFO chr  (4): _id, name, timeoutType, timeoutStrategy
+2025-10-12 16:21:15,986 INFO dbl  (1): timeoutInSeconds
+2025-10-12 16:21:15,986 INFO lgl  (3): timeoutBots, extendCount, archivedAt
+2025-10-12 16:21:15,986 INFO dttm (1): createdAt
+2025-10-12 16:21:15,989 INFO 
+2025-10-12 16:21:15,989 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:15,989 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:15,997 INFO Rows: 2 Columns: 9
+2025-10-12 16:21:15,999 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:15,999 INFO Delimiter: ","
+2025-10-12 16:21:15,999 INFO chr  (4): _id, name, timeoutType, timeoutStrategy
+2025-10-12 16:21:15,999 INFO dbl  (1): timeoutInSeconds
+2025-10-12 16:21:15,999 INFO lgl  (3): timeoutBots, extendCount, archivedAt
+2025-10-12 16:21:15,999 INFO dttm (1): createdAt
+2025-10-12 16:21:16,001 INFO 
+2025-10-12 16:21:16,001 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:16,001 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:16,011 INFO Rows: 42 Columns: 11
+2025-10-12 16:21:16,013 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:16,013 INFO Delimiter: ","
+2025-10-12 16:21:16,013 INFO chr  (4): _id, assignment, status, gameLobbyIds
+2025-10-12 16:21:16,013 INFO dbl  (1): index
+2025-10-12 16:21:16,013 INFO lgl  (2): full, gameIds
+2025-10-12 16:21:16,013 INFO dttm (4): runningAt, finishedAt, createdAt, archivedAt
+2025-10-12 16:21:16,015 INFO 
+2025-10-12 16:21:16,015 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:16,015 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:16,023 INFO Rows: 165 Columns: 11
+2025-10-12 16:21:16,025 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:16,025 INFO Delimiter: ","
+2025-10-12 16:21:16,025 INFO chr  (4): _id, assignment, status, gameLobbyIds
+2025-10-12 16:21:16,025 INFO dbl  (1): index
+2025-10-12 16:21:16,025 INFO lgl  (2): full, gameIds
+2025-10-12 16:21:16,025 INFO dttm (4): runningAt, finishedAt, createdAt, archivedAt
+2025-10-12 16:21:16,027 INFO 
+2025-10-12 16:21:16,027 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:16,027 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:16,034 INFO Rows: 63 Columns: 11
+2025-10-12 16:21:16,036 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:16,036 INFO Delimiter: ","
+2025-10-12 16:21:16,036 INFO chr  (4): _id, assignment, status, gameLobbyIds
+2025-10-12 16:21:16,036 INFO dbl  (1): index
+2025-10-12 16:21:16,036 INFO lgl  (2): full, gameIds
+2025-10-12 16:21:16,036 INFO dttm (4): runningAt, finishedAt, createdAt, archivedAt
+2025-10-12 16:21:16,038 INFO 
+2025-10-12 16:21:16,038 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:16,038 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:16,045 INFO Rows: 48 Columns: 11
+2025-10-12 16:21:16,047 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:16,047 INFO Delimiter: ","
+2025-10-12 16:21:16,047 INFO chr  (4): _id, assignment, status, gameLobbyIds
+2025-10-12 16:21:16,047 INFO dbl  (1): index
+2025-10-12 16:21:16,047 INFO lgl  (2): full, gameIds
+2025-10-12 16:21:16,047 INFO dttm (4): runningAt, finishedAt, createdAt, archivedAt
+2025-10-12 16:21:16,049 INFO 
+2025-10-12 16:21:16,049 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:16,049 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:16,102 INFO Rows: 380 Columns: 13
+2025-10-12 16:21:16,104 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:16,104 INFO Delimiter: ","
+2025-10-12 16:21:16,104 INFO chr  (8): _id, stageIds, gameId, data.type, data.name, data.anonName, data.s...
+2025-10-12 16:21:16,104 INFO dbl  (3): index, data.current_round, data.bonusRate
+2025-10-12 16:21:16,104 INFO lgl  (1): data.assigned
+2025-10-12 16:21:16,104 INFO dttm (1): createdAt
+2025-10-12 16:21:16,106 INFO 
+2025-10-12 16:21:16,107 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:16,107 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:16,266 INFO Rows: 1160 Columns: 13
+2025-10-12 16:21:16,268 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:16,268 INFO Delimiter: ","
+2025-10-12 16:21:16,268 INFO chr  (7): _id, stageIds, gameId, data.type, data.name, data.anonName, data.A
+2025-10-12 16:21:16,268 INFO dbl  (3): index, data.current_round, data.bonusRate
+2025-10-12 16:21:16,268 INFO lgl  (2): data.similarityList, data.assigned
+2025-10-12 16:21:16,268 INFO dttm (1): createdAt
+2025-10-12 16:21:16,270 INFO 
+2025-10-12 16:21:16,270 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:16,270 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:16,362 INFO Rows: 575 Columns: 10
+2025-10-12 16:21:16,364 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:16,364 INFO Delimiter: ","
+2025-10-12 16:21:16,364 INFO chr  (7): _id, stageIds, gameId, data.type, data.name, data.anonName, data.A
+2025-10-12 16:21:16,364 INFO dbl  (2): index, data.current_round
+2025-10-12 16:21:16,364 INFO dttm (1): createdAt
+2025-10-12 16:21:16,367 INFO 
+2025-10-12 16:21:16,367 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:16,367 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:16,415 INFO Rows: 495 Columns: 10
+2025-10-12 16:21:16,416 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:16,417 INFO Delimiter: ","
+2025-10-12 16:21:16,417 INFO chr  (7): _id, stageIds, gameId, data.type, data.name, data.anonName, data.A
+2025-10-12 16:21:16,417 INFO dbl  (2): index, data.current_round
+2025-10-12 16:21:16,417 INFO dttm (1): createdAt
+2025-10-12 16:21:16,419 INFO 
+2025-10-12 16:21:16,419 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:16,419 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:16,554 INFO Rows: 1900 Columns: 131
+2025-10-12 16:21:16,556 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:16,556 INFO Delimiter: ","
+2025-10-12 16:21:16,556 INFO chr  (33): _id, name, displayName, roundId, gameId, data.type, data.componen...
+2025-10-12 16:21:16,556 INFO dbl  (36): index, durationInSeconds, data.stage_count, data.maxPossibleScore...
+2025-10-12 16:21:16,556 INFO num   (1): data.duplicateCellID
+2025-10-12 16:21:16,556 INFO lgl  (59): data.constraint-1-A-C-violated, data.student-B-dragger, data.stud...
+2025-10-12 16:21:16,556 INFO dttm  (2): startTimeAt, createdAt
+2025-10-12 16:21:16,559 INFO 
+2025-10-12 16:21:16,559 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:16,559 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:16,911 INFO Rows: 5800 Columns: 164
+2025-10-12 16:21:16,913 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:16,913 INFO Delimiter: ","
+2025-10-12 16:21:16,913 INFO chr  (31): _id, name, displayName, roundId, gameId, data.type, data.componen...
+2025-10-12 16:21:16,913 INFO dbl  (36): index, durationInSeconds, data.stage_count, data.scoreIncrement, ...
+2025-10-12 16:21:16,913 INFO num   (1): data.duplicateCellID
+2025-10-12 16:21:16,913 INFO lgl  (94): data.clickingCellID, data.isDisagree, data.constraint-1-A-C-viola...
+2025-10-12 16:21:16,913 INFO dttm  (2): startTimeAt, createdAt
+2025-10-12 16:21:16,916 INFO 
+2025-10-12 16:21:16,916 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:16,916 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:16,979 INFO Rows: 2875 Columns: 58
+2025-10-12 16:21:16,980 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:16,980 INFO Delimiter: ","
+2025-10-12 16:21:16,980 INFO chr  (31): _id, name, displayName, roundId, gameId, data.0, data.type, data....
+2025-10-12 16:21:16,981 INFO dbl  (16): index, durationInSeconds, data.stage_count, data.startTimeAt, dat...
+2025-10-12 16:21:16,981 INFO lgl   (9): data.isDisagree, data.needAudioReset, data.needTypeReset, data.ne...
+2025-10-12 16:21:16,981 INFO dttm  (2): startTimeAt, createdAt
+2025-10-12 16:21:16,983 INFO 
+2025-10-12 16:21:16,983 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:16,983 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,059 INFO Rows: 2475 Columns: 46
+2025-10-12 16:21:17,061 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,061 INFO Delimiter: ","
+2025-10-12 16:21:17,061 INFO chr  (26): _id, name, displayName, roundId, gameId, data.type, data.componen...
+2025-10-12 16:21:17,061 INFO dbl  (15): index, durationInSeconds, data.stage_count, data.scoreIncrement, ...
+2025-10-12 16:21:17,061 INFO num   (1): data.previousCoords
+2025-10-12 16:21:17,061 INFO lgl   (2): data.scroll, data.previousCoordsSet
+2025-10-12 16:21:17,061 INFO dttm  (2): startTimeAt, createdAt
+2025-10-12 16:21:17,064 INFO 
+2025-10-12 16:21:17,064 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,064 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,205 INFO Rows: 445 Columns: 31
+2025-10-12 16:21:17,207 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,207 INFO Delimiter: ","
+2025-10-12 16:21:17,207 INFO chr  (11): _id, id, urlParams, exitStepsDone, exitStatus, exitReason, retire...
+2025-10-12 16:21:17,207 INFO dbl   (7): data.index, data.score, data.adjustedScore, data.totalPayment, da...
+2025-10-12 16:21:17,207 INFO num   (1): data.neighbors
+2025-10-12 16:21:17,207 INFO lgl   (8): bot, timeoutStartedAt, timeoutWaitCount, data.approved, data.left...
+2025-10-12 16:21:17,207 INFO dttm  (4): readyAt, exitAt, retiredAt, createdAt
+2025-10-12 16:21:17,209 INFO 
+2025-10-12 16:21:17,209 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,209 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,239 INFO Rows: 1327 Columns: 32
+2025-10-12 16:21:17,241 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,241 INFO Delimiter: ","
+2025-10-12 16:21:17,241 INFO chr  (11): _id, id, urlParams, exitStepsDone, exitStatus, exitReason, retire...
+2025-10-12 16:21:17,241 INFO dbl   (7): data.index, data.score, data.adjustedScore, data.totalPayment, da...
+2025-10-12 16:21:17,241 INFO num   (1): data.neighbors
+2025-10-12 16:21:17,241 INFO lgl   (9): bot, timeoutStartedAt, timeoutWaitCount, data.approved, data.subm...
+2025-10-12 16:21:17,241 INFO dttm  (4): readyAt, exitAt, retiredAt, createdAt
+2025-10-12 16:21:17,244 INFO 
+2025-10-12 16:21:17,244 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,244 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,265 INFO Rows: 578 Columns: 31
+2025-10-12 16:21:17,266 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,267 INFO Delimiter: ","
+2025-10-12 16:21:17,267 INFO chr  (11): _id, id, urlParams, exitStepsDone, exitStatus, exitReason, retire...
+2025-10-12 16:21:17,267 INFO dbl   (6): data.index, data.score, data.adjustedScore, data.totalPayment, da...
+2025-10-12 16:21:17,267 INFO num   (1): data.neighbors
+2025-10-12 16:21:17,267 INFO lgl   (9): bot, timeoutStartedAt, timeoutWaitCount, data.approved, data.curr...
+2025-10-12 16:21:17,267 INFO dttm  (4): readyAt, exitAt, retiredAt, createdAt
+2025-10-12 16:21:17,269 INFO 
+2025-10-12 16:21:17,269 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,269 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,289 INFO Rows: 489 Columns: 30
+2025-10-12 16:21:17,291 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,291 INFO Delimiter: ","
+2025-10-12 16:21:17,291 INFO chr  (11): _id, id, urlParams, exitStepsDone, exitStatus, exitReason, retire...
+2025-10-12 16:21:17,291 INFO dbl   (6): data.index, data.score, data.adjustedScore, data.totalPayment, da...
+2025-10-12 16:21:17,291 INFO num   (1): data.neighbors
+2025-10-12 16:21:17,291 INFO lgl   (8): bot, timeoutStartedAt, timeoutWaitCount, data.approved, data.curr...
+2025-10-12 16:21:17,291 INFO dttm  (4): readyAt, exitAt, retiredAt, createdAt
+2025-10-12 16:21:17,294 INFO 
+2025-10-12 16:21:17,294 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,294 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,315 INFO Rows: 7168 Columns: 8
+2025-10-12 16:21:17,317 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,317 INFO Delimiter: ","
+2025-10-12 16:21:17,317 INFO chr  (7): _id, playerId, gameId, roundId, stageId, name, jsonData
+2025-10-12 16:21:17,317 INFO dttm (1): createdAt
+2025-10-12 16:21:17,319 INFO 
+2025-10-12 16:21:17,319 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,319 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,391 INFO Rows: 20786 Columns: 8
+2025-10-12 16:21:17,392 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,392 INFO Delimiter: ","
+2025-10-12 16:21:17,392 INFO chr  (7): _id, playerId, gameId, roundId, stageId, name, jsonData
+2025-10-12 16:21:17,392 INFO dttm (1): createdAt
+2025-10-12 16:21:17,395 INFO 
+2025-10-12 16:21:17,395 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,395 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,536 INFO Rows: 54356 Columns: 8
+2025-10-12 16:21:17,538 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,538 INFO Delimiter: ","
+2025-10-12 16:21:17,538 INFO chr  (7): _id, playerId, gameId, roundId, stageId, name, jsonData
+2025-10-12 16:21:17,538 INFO dttm (1): createdAt
+2025-10-12 16:21:17,541 INFO 
+2025-10-12 16:21:17,541 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,541 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,692 INFO Rows: 40295 Columns: 8
+2025-10-12 16:21:17,694 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,694 INFO Delimiter: ","
+2025-10-12 16:21:17,694 INFO chr  (7): _id, playerId, gameId, roundId, stageId, name, jsonData
+2025-10-12 16:21:17,694 INFO dttm (1): createdAt
+2025-10-12 16:21:17,696 INFO 
+2025-10-12 16:21:17,696 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,696 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,723 INFO Rows: 1185 Columns: 7
+2025-10-12 16:21:17,724 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,724 INFO Delimiter: ","
+2025-10-12 16:21:17,724 INFO chr  (5): _id, batchId, playerId, roundId, gameId
+2025-10-12 16:21:17,725 INFO dbl  (1): data.team
+2025-10-12 16:21:17,725 INFO dttm (1): createdAt
+2025-10-12 16:21:17,727 INFO 
+2025-10-12 16:21:17,727 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,727 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,737 INFO Rows: 3110 Columns: 7
+2025-10-12 16:21:17,739 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,739 INFO Delimiter: ","
+2025-10-12 16:21:17,739 INFO chr  (5): _id, batchId, playerId, roundId, gameId
+2025-10-12 16:21:17,739 INFO dbl  (1): data.team
+2025-10-12 16:21:17,739 INFO dttm (1): createdAt
+2025-10-12 16:21:17,741 INFO 
+2025-10-12 16:21:17,741 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,741 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,749 INFO Rows: 1650 Columns: 6
+2025-10-12 16:21:17,751 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,751 INFO Delimiter: ","
+2025-10-12 16:21:17,751 INFO chr  (5): _id, batchId, playerId, roundId, gameId
+2025-10-12 16:21:17,751 INFO dttm (1): createdAt
+2025-10-12 16:21:17,753 INFO 
+2025-10-12 16:21:17,753 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,753 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,762 INFO Rows: 1535 Columns: 6
+2025-10-12 16:21:17,764 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,764 INFO Delimiter: ","
+2025-10-12 16:21:17,764 INFO chr  (5): _id, batchId, playerId, roundId, gameId
+2025-10-12 16:21:17,764 INFO dttm (1): createdAt
+2025-10-12 16:21:17,766 INFO 
+2025-10-12 16:21:17,766 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,766 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,792 INFO Rows: 5925 Columns: 26
+2025-10-12 16:21:17,793 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,793 INFO Delimiter: ","
+2025-10-12 16:21:17,793 INFO chr  (13): _id, batchId, playerId, stageId, roundId, gameId, data.scoreArr, ...
+2025-10-12 16:21:17,793 INFO dbl   (3): data.maxPossiblePay, data.payEarned, data.scoreFeedback
+2025-10-12 16:21:17,794 INFO lgl   (8): data.correct, data.directionsCompleted, data.showOverview, data.s...
+2025-10-12 16:21:17,794 INFO dttm  (2): createdAt, submittedAt
+2025-10-12 16:21:17,796 INFO 
+2025-10-12 16:21:17,796 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,796 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,847 INFO Rows: 15550 Columns: 26
+2025-10-12 16:21:17,849 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,849 INFO Delimiter: ","
+2025-10-12 16:21:17,849 INFO chr  (13): _id, batchId, playerId, stageId, roundId, gameId, data.score, dat...
+2025-10-12 16:21:17,849 INFO dbl   (3): data.scoreFeedback, data.maxPossiblePay, data.payEarned
+2025-10-12 16:21:17,849 INFO lgl   (8): data.correct, data.directionsCompleted, data.showOverview, data.s...
+2025-10-12 16:21:17,849 INFO dttm  (2): createdAt, submittedAt
+2025-10-12 16:21:17,852 INFO 
+2025-10-12 16:21:17,852 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,852 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,874 INFO Rows: 8250 Columns: 21
+2025-10-12 16:21:17,876 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,876 INFO Delimiter: ","
+2025-10-12 16:21:17,876 INFO chr  (9): _id, batchId, playerId, stageId, roundId, gameId, data.clicked, da...
+2025-10-12 16:21:17,876 INFO dbl  (4): data.maxPossiblePay, data.payEarned, data.score, data.scoreFeedback
+2025-10-12 16:21:17,876 INFO lgl  (6): data.correct, data.directionsCompleted, data.showOverview, data.ap...
+2025-10-12 16:21:17,876 INFO dttm (2): createdAt, submittedAt
+2025-10-12 16:21:17,879 INFO 
+2025-10-12 16:21:17,879 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,879 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,912 INFO Rows: 7675 Columns: 18
+2025-10-12 16:21:17,914 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,914 INFO Delimiter: ","
+2025-10-12 16:21:17,914 INFO chr  (7): _id, batchId, playerId, stageId, roundId, gameId, data.scoreArr
+2025-10-12 16:21:17,914 INFO dbl  (6): data.maxPossiblePay, data.payEarned, data.scoreFeedback, data.step...
+2025-10-12 16:21:17,914 INFO lgl  (3): data.correct, data.directionsCompleted, data.showOverview
+2025-10-12 16:21:17,914 INFO dttm (2): createdAt, submittedAt
+2025-10-12 16:21:17,916 INFO 
+2025-10-12 16:21:17,916 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,916 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,939 INFO Rows: 125 Columns: 11
+2025-10-12 16:21:17,941 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,941 INFO Delimiter: ","
+2025-10-12 16:21:17,941 INFO chr  (9): _id, playerId, gameId, data.gender, data.strengthInGame, data.payF...
+2025-10-12 16:21:17,941 INFO dbl  (1): data.age
+2025-10-12 16:21:17,941 INFO dttm (1): createdAt
+2025-10-12 16:21:17,943 INFO 
+2025-10-12 16:21:17,943 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,943 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,951 INFO Rows: 453 Columns: 11
+2025-10-12 16:21:17,953 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,953 INFO Delimiter: ","
+2025-10-12 16:21:17,953 INFO chr  (9): _id, playerId, gameId, data.gender, data.strengthInGame, data.payF...
+2025-10-12 16:21:17,953 INFO dbl  (1): data.age
+2025-10-12 16:21:17,953 INFO dttm (1): createdAt
+2025-10-12 16:21:17,956 INFO 
+2025-10-12 16:21:17,956 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,956 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,964 INFO Rows: 501 Columns: 14
+2025-10-12 16:21:17,966 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,966 INFO Delimiter: ","
+2025-10-12 16:21:17,966 INFO chr  (11): _id, playerId, gameId, data.synergyPreference, data.enjoyedTask, ...
+2025-10-12 16:21:17,966 INFO dbl   (1): data.age
+2025-10-12 16:21:17,966 INFO lgl   (1): data.teamViability
+2025-10-12 16:21:17,966 INFO dttm  (1): createdAt
+2025-10-12 16:21:17,968 INFO 
+2025-10-12 16:21:17,968 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,968 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:17,977 INFO Rows: 548 Columns: 14
+2025-10-12 16:21:17,979 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:17,979 INFO Delimiter: ","
+2025-10-12 16:21:17,979 INFO chr  (11): _id, playerId, gameId, data.synergyPreference, data.enjoyedTask, ...
+2025-10-12 16:21:17,979 INFO dbl   (1): data.age
+2025-10-12 16:21:17,979 INFO lgl   (1): data.teamViability
+2025-10-12 16:21:17,979 INFO dttm  (1): createdAt
+2025-10-12 16:21:17,982 INFO 
+2025-10-12 16:21:17,982 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:17,982 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:18,011 INFO Rows: 1194 Columns: 2
+2025-10-12 16:21:18,013 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:18,013 INFO Delimiter: ","
+2025-10-12 16:21:18,013 INFO chr (1): stageId
+2025-10-12 16:21:18,013 INFO dbl (1): score
+2025-10-12 16:21:18,015 INFO 
+2025-10-12 16:21:18,015 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:18,015 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:18,021 INFO Rows: 1 Columns: 2
+2025-10-12 16:21:18,023 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:18,023 INFO Delimiter: ","
+2025-10-12 16:21:18,023 INFO chr (1): stageId
+2025-10-12 16:21:18,023 INFO dbl (1): score
+2025-10-12 16:21:18,025 INFO 
+2025-10-12 16:21:18,025 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:18,025 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:18,033 INFO Rows: 2201 Columns: 2
+2025-10-12 16:21:18,035 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:18,035 INFO Delimiter: ","
+2025-10-12 16:21:18,035 INFO chr (1): stageId
+2025-10-12 16:21:18,035 INFO dbl (1): score
+2025-10-12 16:21:18,037 INFO 
+2025-10-12 16:21:18,037 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:18,037 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:18,171 INFO Rows: 102 Columns: 25
+2025-10-12 16:21:18,173 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:18,173 INFO Delimiter: ","
+2025-10-12 16:21:18,173 INFO chr  (1): task
+2025-10-12 16:21:18,173 INFO dbl (24): Conceptual-Behavioral, Type 1 (Planning), Type 2 (Generate), Type ...
+2025-10-12 16:21:18,175 INFO 
+2025-10-12 16:21:18,175 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:18,175 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:18,186 INFO Rows: 102 Columns: 21
+2025-10-12 16:21:18,187 INFO ── Column specification ────────────────────────────────────────────────────────
+2025-10-12 16:21:18,187 INFO Delimiter: ","
+2025-10-12 16:21:18,187 INFO chr  (1): task
+2025-10-12 16:21:18,187 INFO dbl (20): Answer Recognizability_cat, Conflicting Tradeoffs_cat, Creativity ...
+2025-10-12 16:21:18,189 INFO 
+2025-10-12 16:21:18,189 INFO ℹ Use `spec()` to retrieve the full column specification for this data.
+2025-10-12 16:21:18,190 INFO ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+2025-10-12 16:21:18,199 INFO Joining with `by = join_by(factorTypeId)`
+2025-10-12 16:21:18,214 INFO Joining with `by = join_by(factorId)`
+2025-10-12 16:21:18,227 INFO Joining with `by = join_by(playerId)`
+2025-10-12 16:21:18,340 INFO Joining with `by = join_by(gameId)`
+2025-10-12 16:21:18,344 INFO Joining with `by = join_by(treatmentId)`
+2025-10-12 16:21:18,670 INFO Joining with `by = join_by(playerId)`
+2025-10-12 16:21:18,679 INFO Joining with `by = join_by(stageId)`
+2025-10-12 16:21:18,689 INFO Joining with `by = join_by(stageId)`
+2025-10-12 16:21:18,699 INFO Joining with `by = join_by(stageId)`
+2025-10-12 16:21:18,741 INFO Joining with `by = join_by(playerId)`
+2025-10-12 16:21:18,760 INFO Joining with `by = join_by(stageId)`
+2025-10-12 16:21:18,769 INFO Joining with `by = join_by(stageId)`
+2025-10-12 16:21:18,779 INFO Joining with `by = join_by(stageId)`
+2025-10-12 16:21:18,882 INFO `summarise()` has grouped output by 'stageId', 'task', 'complexity',
+2025-10-12 16:21:18,882 INFO 'playerCount', 'wave'. You can override using the `.groups` argument.
+2025-10-12 16:21:19,118 INFO Joining with `by = join_by(playerId)`
+2025-10-12 16:21:19,128 INFO Joining with `by = join_by(stageId)`
+2025-10-12 16:21:19,137 INFO Joining with `by = join_by(stageId)`
+2025-10-12 16:21:19,255 INFO Joining with `by = join_by(stageId)`
+2025-10-12 16:21:21,058 INFO `summarise()` has grouped output by 'task', 'complexity'. You can override
+2025-10-12 16:21:21,058 INFO using the `.groups` argument.
+2025-10-12 16:21:21,064 INFO Joining with `by = join_by(task, complexity, playerCount)`
+2025-10-12 16:21:21,079 INFO `summarise()` has grouped output by 'task', 'complexity'. You can override
+2025-10-12 16:21:21,079 INFO using the `.groups` argument.
+2025-10-12 16:21:21,093 INFO `summarise()` has grouped output by 'task', 'complexity'. You can override
+2025-10-12 16:21:21,093 INFO using the `.groups` argument.
+2025-10-12 16:21:21,100 INFO Joining with `by = join_by(task, complexity, playerCount)`
+2025-10-12 16:21:21,117 INFO `summarise()` has grouped output by 'task', 'complexity'. You can override
+2025-10-12 16:21:21,117 INFO using the `.groups` argument.
+2025-10-12 16:21:21,128 INFO Joining with `by = join_by(task)`
+2025-10-12 16:21:21,137 INFO Joining with `by = join_by(task)`
+2025-10-12 16:21:21,178 INFO Error in `rename_with()`:
+2025-10-12 16:21:21,178 INFO ℹ In argument: `setdiff(names(.), base_columns)`.
+2025-10-12 16:21:21,178 INFO Caused by error:
+2025-10-12 16:21:21,178 INFO ! object '.' not found
+2025-10-12 16:21:21,178 INFO Backtrace:
+2025-10-12 16:21:21,178 INFO      ▆
+2025-10-12 16:21:21,178 INFO   1. ├─base::source("raw_data_cleaning.R")
+2025-10-12 16:21:21,178 INFO   2. │ ├─base::withVisible(eval(ei, envir))
+2025-10-12 16:21:21,178 INFO   3. │ └─base::eval(ei, envir)
+2025-10-12 16:21:21,178 INFO   4. │   └─base::eval(ei, envir)
+2025-10-12 16:21:21,178 INFO   5. ├─readr::write_csv(...)
+2025-10-12 16:21:21,178 INFO   6. │ └─readr::write_delim(...)
+2025-10-12 16:21:21,178 INFO   7. │   ├─base::stopifnot(is.data.frame(x))
+2025-10-12 16:21:21,178 INFO   8. │   └─base::is.data.frame(x)
+2025-10-12 16:21:21,178 INFO   9. ├─dplyr::rename_with(...)
+2025-10-12 16:21:21,178 INFO  10. ├─dplyr:::rename_with.data.frame(...)
+2025-10-12 16:21:21,178 INFO  11. │ └─tidyselect::eval_select(enquo(.cols), .data, allow_rename = FALSE)
+2025-10-12 16:21:21,178 INFO  12. │   └─tidyselect:::eval_select_impl(...)
+2025-10-12 16:21:21,178 INFO  13. │     ├─tidyselect:::with_subscript_errors(...)
+2025-10-12 16:21:21,178 INFO  14. │     │ └─base::withCallingHandlers(...)
+2025-10-12 16:21:21,178 INFO  15. │     └─tidyselect:::vars_select_eval(...)
+2025-10-12 16:21:21,178 INFO  16. │       └─tidyselect:::walk_data_tree(expr, data_mask, context_mask)
+2025-10-12 16:21:21,178 INFO  17. │         └─tidyselect:::eval_context(expr, context_mask, call = error_call)
+2025-10-12 16:21:21,178 INFO  18. │           ├─tidyselect:::with_chained_errors(...)
+2025-10-12 16:21:21,178 INFO  19. │           │ └─base::withCallingHandlers(...)
+2025-10-12 16:21:21,178 INFO  20. │           └─rlang::eval_tidy(as_quosure(expr, env), context_mask)
+2025-10-12 16:21:21,178 INFO  21. ├─generics::setdiff(names(.), base_columns)
+2025-10-12 16:21:21,178 INFO  22. └─base::.handleSimpleError(`<fn>`, "object '.' not found", base::quote(NULL))
+2025-10-12 16:21:21,178 INFO  23.   └─tidyselect (local) h(simpleError(msg, call))
+2025-10-12 16:21:21,178 INFO  24.     └─cli::cli_abort(c(i = msg), call = call, parent = cnd)
+2025-10-12 16:21:21,178 INFO  25.       └─rlang::abort(...)
+2025-10-12 16:21:21,178 INFO There were 15 warnings (use warnings() to see them)
+2025-10-12 16:21:21,178 INFO Execution halted
+2025-10-12 16:21:21,216 INFO Completed group_advantage.raw_data_cleaning in 52.578 sec
+2025-10-12 16:21:21,216 INFO Timing: group_advantage.models
+2025-10-12 16:21:21,216 INFO Executing notebook /Users/xehu/Desktop/task-mapping/analysis/analysis_group_advantage/models.ipynb
+2025-10-12 16:21:21,248 ERROR nbconvert/nbformat is required to execute notebooks: No module named 'nbconvert'
+2025-10-12 16:21:21,248 ERROR Error during group_advantage.models after 0.032 sec
+Traceback (most recent call last):
+  File "/Users/xehu/Desktop/task-mapping/analysis/run_master.py", line 272, in execute_notebook
+    from nbconvert.preprocessors import ExecutePreprocessor
+ModuleNotFoundError: No module named 'nbconvert'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xehu/Desktop/task-mapping/analysis/run_master.py", line 375, in time_callable
+    res = func()
+  File "/Users/xehu/Desktop/task-mapping/analysis/run_master.py", line 520, in <lambda>
+    results.append(time_callable('group_advantage.models', lambda: execute_notebook(nb_models, timeout=3600)))
+  File "/Users/xehu/Desktop/task-mapping/analysis/run_master.py", line 275, in execute_notebook
+    raise RuntimeError('Install nbformat and nbconvert in your Python environment to execute notebooks (e.g. pip install nbformat nbconvert)')
+RuntimeError: Install nbformat and nbconvert in your Python environment to execute notebooks (e.g. pip install nbformat nbconvert)
+2025-10-12 16:21:21,254 INFO Timing: group_advantage.viz
+2025-10-12 16:21:21,254 INFO Executing notebook /Users/xehu/Desktop/task-mapping/analysis/analysis_group_advantage/viz.ipynb
+2025-10-12 16:21:21,281 ERROR nbconvert/nbformat is required to execute notebooks: No module named 'nbconvert'
+2025-10-12 16:21:21,281 ERROR Error during group_advantage.viz after 0.027 sec
+Traceback (most recent call last):
+  File "/Users/xehu/Desktop/task-mapping/analysis/run_master.py", line 272, in execute_notebook
+    from nbconvert.preprocessors import ExecutePreprocessor
+ModuleNotFoundError: No module named 'nbconvert'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xehu/Desktop/task-mapping/analysis/run_master.py", line 375, in time_callable
+    res = func()
+  File "/Users/xehu/Desktop/task-mapping/analysis/run_master.py", line 525, in <lambda>
+    results.append(time_callable('group_advantage.viz', lambda: execute_notebook(nb_viz, timeout=3600)))
+  File "/Users/xehu/Desktop/task-mapping/analysis/run_master.py", line 275, in execute_notebook
+    raise RuntimeError('Install nbformat and nbconvert in your Python environment to execute notebooks (e.g. pip install nbformat nbconvert)')
+RuntimeError: Install nbformat and nbconvert in your Python environment to execute notebooks (e.g. pip install nbformat nbconvert)
+2025-10-12 16:21:21,282 INFO Timing: group_advantage.demographics_viz
+2025-10-12 16:21:21,282 INFO Executing notebook /Users/xehu/Desktop/task-mapping/analysis/analysis_group_advantage/demographics_viz.ipynb
+2025-10-12 16:21:21,299 ERROR nbconvert/nbformat is required to execute notebooks: No module named 'nbconvert'
+2025-10-12 16:21:21,299 ERROR Error during group_advantage.demographics_viz after 0.018 sec
+Traceback (most recent call last):
+  File "/Users/xehu/Desktop/task-mapping/analysis/run_master.py", line 272, in execute_notebook
+    from nbconvert.preprocessors import ExecutePreprocessor
+ModuleNotFoundError: No module named 'nbconvert'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xehu/Desktop/task-mapping/analysis/run_master.py", line 375, in time_callable
+    res = func()
+  File "/Users/xehu/Desktop/task-mapping/analysis/run_master.py", line 531, in <lambda>
+    results.append(time_callable('group_advantage.demographics_viz', lambda: execute_notebook(nb_demographics, timeout=1800)))
+  File "/Users/xehu/Desktop/task-mapping/analysis/run_master.py", line 275, in execute_notebook
+    raise RuntimeError('Install nbformat and nbconvert in your Python environment to execute notebooks (e.g. pip install nbformat nbconvert)')
+RuntimeError: Install nbformat and nbconvert in your Python environment to execute notebooks (e.g. pip install nbformat nbconvert)
+2025-10-12 16:21:21,300 INFO Wrote summary to /Users/xehu/Desktop/task-mapping/outputs/logs/master_summary_20251012_162025.json
+2025-10-12 16:21:21,300 INFO Done

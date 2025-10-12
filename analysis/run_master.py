@@ -112,6 +112,57 @@ OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
 LOG_DIR = OUTPUTS_DIR / 'logs'
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
+REQUIRED_OUTPUT_SUBDIRS = [
+    OUTPUTS_DIR / 'processed_data',
+    OUTPUTS_DIR / 'figures',
+    OUTPUTS_DIR / 'cached_pkls',
+    LOG_DIR,
+]
+
+
+def ensure_output_dirs(*extra: Path) -> None:
+    """Ensure required output subdirectories exist before running pipelines."""
+    for path in REQUIRED_OUTPUT_SUBDIRS:
+        path.mkdir(parents=True, exist_ok=True)
+    for path in extra:
+        Path(path).mkdir(parents=True, exist_ok=True)
+
+
+def sync_task_map_visual_labels() -> None:
+    """Copy the curated McGrath sector labels from data/ into outputs/ for plotting."""
+    source_path = ROOT / 'data' / 'hand_labeled_task_mcgrath_sectors.csv'
+    if not source_path.exists():
+        raise FileNotFoundError(
+            f"Required label file not found: {source_path}. Add it to the repo before running the pipeline."
+        )
+
+    dest_path = OUTPUTS_DIR / 'processed_data' / source_path.name
+    dest_path.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(source_path, dest_path)
+    logger.info('Copied %s -> %s', source_path, dest_path)
+
+
+def sync_task_map_dataset() -> None:
+    """Mirror the generated task_map.csv into data/ for downstream R code."""
+    generated = OUTPUTS_DIR / 'processed_data' / 'task_map.csv'
+    if not generated.exists():
+        raise FileNotFoundError(
+            'Expected task map at %s before syncing to data/' % generated
+        )
+
+    target = ROOT / 'data' / 'task_map.csv'
+    target.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(generated, target)
+    logger.info('Copied %s -> %s', generated, target)
+
+
+def assert_exists(description: str, *paths: Path) -> None:
+    missing = [p for p in paths if not p.exists()]
+    if missing:
+        raise FileNotFoundError(
+            f"Missing expected {description}: {', '.join(str(p) for p in missing)}"
+        )
+
 # Make repo root importable so we can import analysis.* modules when running the
 # script from the repository root or elsewhere. This avoids ModuleNotFoundError
 # like "No module named 'analysis'" when dynamically importing analysis
@@ -193,6 +244,8 @@ def run_command(cmd: List[str], cwd: Optional[Path] = None, env: Optional[Dict[s
 def execute_notebook(nb_path: Path, timeout: int = 600, kernel_name: Optional[str] = None) -> None:
     logger.info('Executing notebook %s', nb_path)
     nb = nbformat.read(str(nb_path), as_version=4)
+    if not kernel_name:
+        kernel_name = nb.metadata.get('kernelspec', {}).get('name', 'python3')
     # Prepend a small seeding cell so notebook kernels initialize deterministic seeds where possible
     try:
         from nbformat.v4 import new_code_cell
@@ -389,6 +442,7 @@ def run_task_space_pipeline():
     2) plot/clean visuals (Rmarkdown)
     """
     logger.info('Running task_space pipeline')
+    ensure_output_dirs()
     # paths
     rmd_generate = ANALYSIS_DIR / 'analysis_task_space' / 'generate_task_map_from_raw.Rmd'
     rmd_visuals = ANALYSIS_DIR / 'analysis_task_space' / 'clean_task_map_visuals.Rmd'
@@ -399,18 +453,22 @@ def run_task_space_pipeline():
         # always prefer a purl'd .R script; generate it if missing
         r_script_generate = ensure_r_script(rmd_generate)
         results.append(time_callable('task_space.generate_map', lambda: run_r_script(r_script_generate)))
+        if results and not results[-1].get('error'):
+            sync_task_map_dataset()
         # Generate the McGrath categorical mapping as part of task-space preprocessing
         try:
             from analysis.analysis_task_space.generate_mcgrath import generate_mcgrath
             task_map_path = OUTPUTS_DIR / 'processed_data' / 'task_map.csv'
             out_path = OUTPUTS_DIR / 'processed_data' / '20_task_map_mcgrath_manually_updated.csv'
             results.append(time_callable('task_space.generate_mcgrath', lambda: generate_mcgrath(task_map_path, out_path)))
+            sync_task_map_visual_labels()
         except Exception as e:
             logger.exception('Failed to generate mcgrath categories in task_space: %s', e)
     else:
         logger.warning('Missing %s; skipping', rmd_generate)
 
     if rmd_visuals.exists():
+        sync_task_map_visual_labels()
         r_script_visuals = ensure_r_script(rmd_visuals)
         results.append(time_callable('task_space.plot_visuals', lambda: run_r_script(r_script_visuals)))
     else:
@@ -427,6 +485,7 @@ def run_group_advantage_pipeline():
     3) run viz notebook(s)
     """
     logger.info('Running group_advantage pipeline')
+    ensure_output_dirs()
     rmd_clean = ANALYSIS_DIR / 'analysis_group_advantage' / 'raw_data_cleaning.rmd'
     nb_models = ANALYSIS_DIR / 'analysis_group_advantage' / 'models.ipynb'
     nb_viz = ANALYSIS_DIR / 'analysis_group_advantage' / 'viz.ipynb'
@@ -447,6 +506,13 @@ def run_group_advantage_pipeline():
             logger.exception('Failed to ensure mcgrath categories before cleaning: %s', e)
         # Now run raw data cleaning (which may expect the mcgrath CSV part-way through)
         results.append(time_callable('group_advantage.raw_data_cleaning', lambda: run_r_script(r_script_clean)))
+        if results and not results[-1].get('error'):
+            assert_exists(
+                'group advantage condition-level CSVs',
+                OUTPUTS_DIR / 'processed_data' / 'condition_level_group_advantage.csv',
+                OUTPUTS_DIR / 'processed_data' / 'condition_level_group_advantage_with_ivs.csv',
+                OUTPUTS_DIR / 'processed_data' / 'condition_level_group_advantage_with_ivs_and_categories.csv',
+            )
     else:
         logger.warning('Missing %s; skipping', rmd_clean)
 

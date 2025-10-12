@@ -1,0 +1,103 @@
+task,group
+Categorization problem,Choose
+Mastermind,Choose
+Logic Problem,Choose
+Sudoku,Choose
+"Rank cities by population, rank words by familiarity",Choose
+Reading the mind in the eyes,Choose
+Moral Reasoning (Disciplinary Action Case),Choose
+Guessing the correlation,Choose
+"Wolf, goat and cabbage transfer",Choose
+Room assignment task,Choose
+Arithmetic problem 1,Choose
+Visual Oddball Target,Choose
+Allocating resources to programs,Choose
+Game of Clue - Terrorist Attack,Choose
+Word completion given part of word,Choose
+NASA Moon survival,Choose
+Image rating,Choose
+Estimating Factual Quantities,Choose
+Recall videos,Choose
+To evacuate or not to evacuate,Choose
+Estimating geological metrics,Choose
+Euclidean traveling salesperson,Choose
+Reproducing arts,Choose
+Estimating social quantity,Choose
+Estimating pages of a book,Choose
+Abstract grid task,Choose
+Unscramble words (anagrams),Choose
+Random dot motion,Choose
+Wildcam Gorongosa (Zooniverse),Choose
+Recall stories,Choose
+Recall association,Choose
+Letters-to-numbers problems (cryptography),Choose
+Recall word lists,Choose
+Wason's Selection Task,Choose
+9 Dot Problem,Choose
+Splitting a deck of cards,Choose
+Ravens Matrices,Choose
+Trivia Multiple Choice Quiz,Choose
+Desert survival,Choose
+Graph coloring task,Choose
+Husbands and wives transfer,Choose
+Recall images,Choose
+Iterative lemonade stand task,Execute
+Space Fortress,Execute
+The N light bulbs game,Execute
+Railroad Route Construction game,Execute
+Run a mini business,Execute
+Search for Oil Task,Execute
+Hidden figures in a picture (Searching Task),Execute
+Target Search,Execute
+Find the maximum,Execute
+Architectural design task,Execute
+Crisis mapping,Execute
+The Fish game,Execute
+Hidden figures in a picture (Recall Task),Execute
+Computer maze,Execute
+Object based generalization for reasoning (Phyre),Execute
+Railroad Route Construction game (Impossible Version),Execute
+Wildcat Wells,Execute
+Checkers,Execute
+Typing game,Execute
+Whac-A-Mole,Execute
+Blocks World for Teams,Execute
+Apache helicopter flight simulator (Longbow2),Execute
+Organization Game,Execute
+TOPSIM - general mgmt business game,Execute
+Shopping plan,Generate
+Writing story,Generate
+Word construction from a subset of letters,Generate
+Word completion given starting letter,Generate
+Summarize Discussion,Generate
+Divergent Association Task,Generate
+Advertisement writing,Generate
+Putting food into categories,Generate
+Carter Racing (Experimenterless Version),Negotiate
+Carter Racing,Negotiate
+Oligopoly game,Negotiate
+Bullard Houses,Negotiate
+Arithmetic problem 2,Negotiate
+Find the common symbol,Negotiate
+Intergroup Prisoner's Dilemma,Negotiate
+Minimum-effort tacit coordination game,Negotiate
+Public goods game,Negotiate
+The beer game,Negotiate
+Pharmaceutical Company (hidden-profile),Negotiate
+Ultimatum game (various versions),Negotiate
+New Recruit,Negotiate
+Investment Game (aka Trust Game),Negotiate
+Aerospace Investment (Role-playing),Negotiate
+Minimal Group Paradigm (study diversity),Negotiate
+Volunteer Investment Game,Negotiate
+Sender-Receiver game,Negotiate
+Iterated Snowdrift Game (With Punishment),Negotiate
+Dictator game and its variants,Negotiate
+Chicken,Negotiate
+Battle of the sexes,Negotiate
+Prisoner's Dilemma (various versions),Negotiate
+Mock jury,Negotiate
+Biopharm Seltek,Negotiate
+Iterated Snowdrift Game (Without Punishment),Negotiate
+Investment game (hidden-profile),Negotiate
+Best job candidate (hidden-profile),Negotiate

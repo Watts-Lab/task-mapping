@@ -1,4 +1,4 @@
-task,playerCount,strong,weak,Low,Medium,High,wave,NA,Within-System Solution,Decision Verifiability,Maximizing
+task,playerCount,strong,weak,Low,Medium,High,wave,Uncategorized_cat,Within-System Solution_cat,Decision Verifiability_cat,Maximizing_cat
 Allocating Resources,3,0.7033048054849464,1.2282629775680391,1,0,0,1,1,0,0,0
 Allocating Resources,6,0.5924926296019454,1.1638661939263142,1,0,0,1,1,0,0,0
 Allocating Resources,3,0.7786720694291456,1.4220910138248843,0,1,0,1,1,0,0,0

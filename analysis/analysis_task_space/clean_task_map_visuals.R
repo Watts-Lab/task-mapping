@@ -35,10 +35,11 @@ combined_data <- cbind(task_map,
 fviz_eig(pca)
 
 ## -----------------------------------------------------------------------------
-task_map_with_intuitive_labels <- read_csv('../../outputs/processed_data/hand_labeled_task_mcgrath_sectors.csv') %>%
-  mutate(
-    group = as.factor(group)
-  )
+task_map_with_intuitive_labels <- read_csv(
+  '../../outputs/processed_data/hand_labeled_task_mcgrath_sectors.csv',
+  show_col_types = FALSE
+) %>%
+  mutate(group = as.factor(group))
 
 
 ## ----fig.width=14, fig.height=5-----------------------------------------------
