@@ -15,7 +15,7 @@ library(tidyverse)
 
 # Load the Data
 ```{r}
-task_map <- read_csv('../../outputs/task_map.csv')
+task_map <- read_csv('../../outputs/processed_data/task_map.csv')
 ```
 
 # Plot the Task Map
@@ -52,7 +52,7 @@ fviz_eig(pca)
 
 # Task Map with McGrath Labels for interpretability
 ```{r}
-task_map_with_intuitive_labels <- read_csv('../../data/task_map_with_intuitive_hand_groupings.csv') %>%
+task_map_with_intuitive_labels <- read_csv('../../outputs/processed_data/hand_labeled_task_mcgrath_sectors.csv') %>%
   mutate(
     group = as.factor(group)
   )
@@ -113,7 +113,7 @@ p <- combined_data_with_labels %>%
 # Save the plot as an .svg file
 ggsave(
     plot = p,
-  filename = "../../outputs/task_map_with_intuitive_illustrations_raw.svg",
+  filename = "../../outputs/figures/task_map_with_intuitive_illustrations_raw.svg",
     width = 14,
     height = 5,
     device = "svg"

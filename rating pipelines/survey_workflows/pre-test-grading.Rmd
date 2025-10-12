@@ -1,0 +1,452 @@
+---
+title: "pre-test-grading"
+author: "Emily Hu"
+date: "5/5/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(agreement,stats,corrplot,irr,stringr,markdown,ggplot2,dplyr,qualtRics,DescTools, plotly,tidyverse)
+```
+
+
+```{r}
+qualtrics_api_credentials(api_key = "91xPIrVaorSVR2vigYP4xG540WbapOLOyZoz90Ql",
+base_url = "upenn.co1.qualtrics.com",
+overwrite = TRUE)
+surveys <- all_surveys()
+pretest_id <- (surveys %>% filter(name == "Pre-Test MTurk Pilot"))$id 
+```
+
+```{r}
+df.pretest <- fetch_survey(
+  surveyID = pretest_id,
+  save_dir = ".",
+  force_request = TRUE,
+  convert = FALSE,
+  label = FALSE
+)
+```
+
+Get total people who did the pretest
+```{r}
+pretest_id_old <- (surveys %>% filter(name == "[MTURK SCREENER] Task Mapping Pre-Test"))$id 
+
+df.pretest.old <- fetch_survey(
+  surveyID = pretest_id_old,
+  save_dir = ".",
+  force_request = TRUE,
+  convert = FALSE,
+  label = FALSE
+)
+
+df.pretest.old %>%
+  select(name) %>%
+  write_csv('old-pretest-workers.csv')
+```
+
+# Filter out people who got training wrong
+I made a mistake in which some people didn't see the appropriate feedback during the training. This is the set of people who actually did see all feedback.
+```{r}
+df.pretest <- df.pretest %>%
+  filter(
+    Progress == 100 &
+    trainQ11optimizing == 0 &
+    trainQ14sol_sch_mul == 0 &
+    trainQ16shared_know == 1 &
+    trainQ4type_2_gen == 1 &
+    trainQ7type_7_battle == 0 &
+    trainQ9div_uni == 1
+  )
+```
+
+# Get a sense of how people scored
+
+```{r}
+df.pretest <- df.pretest %>%
+  mutate(
+    test1 = ifelse(test1Q3 == 1, 1, 0),
+    test2 = ifelse(test2Q19 == 1, 1, 0),
+    test3 = ifelse(test3Q7 == 0, 1, 0),
+    test4 = ifelse(test4Q10 == 1, 1,0),
+    test5 = ifelse(test5Q18 == 1, 1,0),
+    test6 = ifelse(test6Q22 == 1, 1,0),
+    test7 = ifelse(test7Q20 == 1, 1,0),
+    test8 = ifelse(test8Q23 == 1, 1,0),
+    test9 = ifelse(test9Q14 == 0, 1,0),
+    test10 = ifelse(test10Q24 == 0,1,0),
+    test11 = ifelse(test11Q4 == 0,1,0),
+    test12 = ifelse(test12Q11 == 1,1,0),
+    test13 = ifelse(test13Q15 == 1,1,0),
+    test14 = ifelse(test14Q8 == 1,1,0),
+    test15 = ifelse(test15Q16 == 1,1,0),
+    test16 = ifelse(test16Q17 == 1,1,0),
+    score = test1+test2+test3+test4+test5+test6+test7+test8+test9+test10+test11+test12+
+                test13+test14+test15+test16
+  ) 
+
+df.pretest %>%
+  select(name, score) %>%
+  ggplot(aes(x = score)) +
+  geom_histogram() +
+    scale_x_discrete(limits = seq(0:16)) +
+    geom_vline(xintercept = mean(df.pretest$score), color = "red")+
+    theme_classic()
+```
+
+Average test score:
+```{r}
+mean(df.pretest$score)
+
+mean(df.pretest$score)/16
+```
+
+
+Get a sense of how long it took people to complete
+
+```{r}
+median(df.pretest$`Duration (in seconds)`)/60
+```
+
+Did people's means get to the truth?
+```{r}
+df.pretest %>% select(test1Q3,
+                      test2Q19,
+                      test3Q7,
+                      test4Q10,
+                      test5Q18,
+                      test6Q22,
+                      test7Q20,
+                      test8Q23,
+                      test9Q14,
+                      test10Q24,
+                      test11Q4,
+                      test12Q11,
+                      test13Q15,
+                      test14Q8,
+                      test15Q16,
+                      test16Q17) %>% colMeans()
+```
+
+Which questions tended to trip people up the most?
+
+```{r}
+mean_diff_from_truth <- df.pretest %>% select(test1,
+                      test2,
+                      test3,
+                      test4,
+                      test5,
+                      test6,
+                      test7,
+                      test8,
+                      test9,
+                      test10,
+                      test11,
+                      test12,
+                      test13,
+                      test14,
+                      test15,
+                      test16) %>% colMeans()
+
+1-mean_diff_from_truth
+```
+
+# How well does your pre-test score predict your error on the "practice test" (full 23 questions)?
+
+Individual pre-test scores
+
+```{r}
+df.pretest <- df.pretest %>%
+  mutate(
+    csop1 = ifelse(Q10maximizing == 1, 1,0),
+    csop2 = ifelse(Q11optimizing == 1, 1,0),
+    csop3 = ifelse(Q13outcome_multip == 1, 1,0),
+    csop4 = ifelse(Q14sol_scheme_mul == 0, 1,0),
+    csop5 = ifelse(Q15dec_verifiability == 1, 1,0),
+    csop6 = ifelse(Q16shared_knowledge == 1, 1,0),
+    csop7 = ifelse(Q17within_sys_sol == 1, 1,0),
+    csop8 = ifelse(Q18ans_recog == 1, 1,0),
+    csop9 = ifelse(Q19time_solvability == 1, 1,0),
+    csop10 = ifelse(Q1concept_behav == 0, 1, 0),
+    csop11 = ifelse(Q20type_3_type_4 == 1, 1,0),
+    csop12 = ifelse(Q22confl_tradeoffs == 1, 1,0),
+    csop13 = ifelse(Q23ss_out_uncert == 1, 1,0),
+    csop14 = ifelse(Q24eureka_question  == 0, 1,0),
+    csop15 = ifelse(Q4type_2_generate  == 0, 1,0),
+    csop16 = ifelse(Q6type_5_cc  == 0, 1,0),
+    csop17 = ifelse(Q7type_7_battle == 0, 1,0),
+    csop18 = ifelse(Q8type_8_performance == 0, 1,0),
+    csop19 = ifelse(Q9divisible_unitary == 1, 1,0),
+    total_csop_score = csop1+csop2+csop3+csop4+csop5+csop6+csop7+csop8+csop9+csop10+
+                        csop11+csop12+csop13+csop14+csop15+csop16+csop17+csop18+csop19
+  )
+```
+
+Correlation between the pre-test score and the total CSOP score
+
+```{r}
+cor(df.pretest$score, df.pretest$total_csop_score)
+```
+
+
+Collective pre-test answers
+```{r}
+# get mean CSOP error
+all_workers_ans <- df.pretest %>%
+    select(Q10maximizing,Q11optimizing,Q13outcome_multip,Q14sol_scheme_mul,
+           Q15dec_verifiability,Q16shared_knowledge,Q17within_sys_sol,Q18ans_recog,
+           Q19time_solvability,Q1concept_behav,Q20type_3_type_4,Q22confl_tradeoffs,
+           Q23ss_out_uncert,Q24eureka_question,Q3type_1_planning,Q4type_2_generate,
+           Q6type_5_cc,Q7type_7_battle,Q8type_8_performance,Q9divisible_unitary) %>%
+    colMeans()
+  
+gold_ans <- c(1,1,1,0,1,1,1,1,1,0,1,1,1,0,0.5,0,0,0,0,0.75)
+
+mean_csop_error <- sum(abs(all_workers_ans-gold_ans))
+```
+
+```{r}
+# get the ordering of the workers
+workers_order <-
+  df.pretest %>%
+    arrange(desc(score)) %>%
+    group_by(name) %>%
+    transmute(score_pct = score/16)
+
+min_pct <- min(workers_order$score_pct)
+max_pct <- max(workers_order$score_pct)
+
+df.results_by_thresh <- data.frame("thresh" = c(),
+           "csop_score_diff" = c(),
+           "ci_max" = c(),
+           "ci_min" = c(),
+           "num_workers" = c()) ## TODO - add the number of workers
+
+for(thresh in seq(min_pct, max_pct, 0.01)){
+  qualified_workers <- workers_order %>% filter(score_pct >= thresh)
+  
+  # do a quick bootstrap - 95% CI
+  diffs_for_boot <- c()
+  if (nrow(qualified_workers) > 1) {
+    for (i in 1:100) {
+      randomly_selected_workers <- qualified_workers[sample(nrow(qualified_workers),size=nrow(qualified_workers),replace=TRUE),]
+      qualified_workers_subset <- left_join(randomly_selected_workers, df.pretest, by = "name")
+      subset_worker_ans <- qualified_workers_subset %>%
+        ungroup() %>%
+        select(
+          Q10maximizing, Q11optimizing,Q13outcome_multip, Q14sol_scheme_mul,
+          Q15dec_verifiability, Q16shared_knowledge, Q17within_sys_sol,
+          Q18ans_recog, Q19time_solvability, Q1concept_behav, Q20type_3_type_4,
+          Q22confl_tradeoffs, Q23ss_out_uncert, Q24eureka_question,
+          Q3type_1_planning, Q4type_2_generate, Q6type_5_cc, Q7type_7_battle,
+          Q8type_8_performance, Q9divisible_unitary
+        ) %>%
+        colMeans()
+      diff <- sum(abs(subset_worker_ans - gold_ans))
+      diffs_for_boot <- c(diffs_for_boot, diff)
+    }
+  }
+  
+  qualified_workers_data <-
+    df.pretest %>% filter(name %in% qualified_workers$name)
+  worker_ans <- qualified_workers_data %>%
+    select(Q10maximizing,Q11optimizing,Q13outcome_multip,Q14sol_scheme_mul,
+           Q15dec_verifiability,Q16shared_knowledge,Q17within_sys_sol,Q18ans_recog,
+           Q19time_solvability,Q1concept_behav,Q20type_3_type_4,Q22confl_tradeoffs,
+           Q23ss_out_uncert,Q24eureka_question,Q3type_1_planning,Q4type_2_generate,
+           Q6type_5_cc,Q7type_7_battle,Q8type_8_performance,Q9divisible_unitary) %>%
+    colMeans()
+    
+    diff <- sum(abs(worker_ans-gold_ans))
+    ci <- quantile(diffs_for_boot, c(0.025, 0.975))
+    
+    df.results_by_thresh <-rbind(df.results_by_thresh,
+                                 data.frame(thresh = thresh,
+                                  csop_score_diff = diff,
+                                  ci_max = ci[1],
+                                  ci_min = ci[2],
+                                  num_workers = nrow(qualified_workers)))
+}
+
+# plot fewer labels --- only plot when it changes
+critical_indices <- c()
+last <- 0
+for(i in 1:length(df.results_by_thresh$num_workers)){
+  cur <- df.results_by_thresh$num_workers[i]
+  if(cur != last){
+    critical_indices <- c(critical_indices, i)
+  }
+  last <- cur
+}
+
+# how much does error in the CSOP task go down depending on the pretest threshold?
+ggplot(df.results_by_thresh,
+       aes(x = thresh,
+           y = csop_score_diff)) +
+  geom_point() + geom_line() +
+  geom_hline(yintercept = mean_csop_error, color = "red") + 
+  geom_errorbar(aes(ymin=ci_min, ymax=ci_max), width=.01) + 
+  geom_text(aes(label = num_workers), vjust=-10, color = "blue",
+            data = df.results_by_thresh[critical_indices,]) +
+  labs(
+    title = "Mean Error on CSOP Task By Pre-Test (16 Question) Theshold",
+    x = "Threshold (% correct on Pre-Test)",
+    y  = "Total Error of Mean Score (Difference from Gold)"
+  ) +
+  ylim(c(1, 6)) + 
+  theme_bw()
+```
+
+```{r}
+critical_threshes <- c()
+last <- 0
+for(i in 1:length(df.results_by_thresh$num_workers)){
+  cur <- df.results_by_thresh$num_workers[i]
+  if(cur != last){
+    critical_threshes <- c(critical_threshes, df.results_by_thresh$thresh[i])
+  }
+  last <- cur
+}
+```
+
+```{r}
+ggplot(df.results_by_thresh,
+       aes(x = thresh,
+           y = csop_score_diff)) +
+  geom_point() + geom_line() +
+  geom_hline(yintercept = mean_csop_error, color = "red") + 
+  geom_vline(xintercept = 0.75, color = "blue") + 
+  #geom_vline(xintercept = 0.7525, color = "blue") + 
+  #geom_vline(xintercept = 0.8225, color = "blue") + 
+  geom_errorbar(aes(ymin=ci_min, ymax=ci_max), width=.01) + 
+  geom_text(aes(label = num_workers), vjust=-10, color = "blue",
+            data = df.results_by_thresh[critical_indices,]) +
+  labs(
+    title = "Mean Error on Validation Task By Pre-Test (16-Question) Theshold",
+    x = "Threshold (% correct on Pre-Test)",
+    y  = "Abs(Mean Response - Correct Response)"
+  ) +
+  ylim(c(1, 6)) + 
+  theme_bw()
+```
+
+```{r}
+df.results_by_thresh
+```
+
+Plot how many people drop off at each threshold
+```{r}
+ggplot(df.results_by_thresh,
+       aes(x = thresh,
+           y = num_workers/length(df.pretest$name))
+) +
+  geom_point() +
+  geom_line() +
+  geom_vline(xintercept = 0.7525, color = "blue") + 
+  geom_vline(xintercept = 0.8225, color = "blue") + 
+  labs(
+    y = "% of Total Workers",
+    x = "Pre-test threshold"
+  )
+```
+
+
+# Output Workers who are qualified
+```{r}
+pilot.pretest.passed <- df.pretest %>% mutate(
+  score_pct = score/16,
+  paid = 1
+) %>%
+  filter(`use-answers` == `random-answering`) %>%
+  select(name, score_pct, paid)
+
+pilot.pretest.passed
+```
+
+------MAIN DATA COLLECTION DATA BELOW---------
+```{r}
+surveys <- all_surveys()
+#pretest_id <- (surveys %>% filter(name == "[MTURK SCREENER] Task Mapping Pre-Test"))$id 
+pretest_id <- (surveys %>% filter(name == "Pre-Test MTurk - MAIN"))$id 
+df.pretest <- fetch_survey(
+  surveyID = pretest_id,
+  save_dir = ".",
+  force_request = TRUE,
+  convert = FALSE,
+  label = FALSE
+)
+
+# input scores
+df.pretest <- df.pretest %>%
+  mutate(
+    test1 = ifelse(test1Q3 == 1, 1, 0),
+    test2 = ifelse(test2Q19 == 1, 1, 0),
+    test3 = ifelse(test3Q7 == 0, 1, 0),
+    test4 = ifelse(test4Q10 == 1, 1,0),
+    test5 = ifelse(test5Q18 == 1, 1,0),
+    test6 = ifelse(test6Q22 == 1, 1,0),
+    test7 = ifelse(test7Q20 == 1, 1,0),
+    test8 = ifelse(test8Q23 == 1, 1,0),
+    test9 = ifelse(test9Q14 == 0, 1,0),
+    test10 = ifelse(test10Q24 == 0,1,0),
+    test11 = ifelse(test11Q4 == 0,1,0),
+    test12 = ifelse(test12Q11 == 1,1,0),
+    test13 = ifelse(test13Q15 == 1,1,0),
+    test14 = ifelse(test14Q8 == 1,1,0),
+    test15 = ifelse(test15Q16 == 1,1,0),
+    test16 = ifelse(test16Q17 == 1,1,0),
+    score = test1+test2+test3+test4+test5+test6+test7+test8+test9+test10+
+      test11+test12+test13+test14+test15+test16,
+    score_pct = score/16
+  ) 
+```
+
+Get a sense of how long it took people to complete (for the main pre-test):
+```{r}
+median(df.pretest$`Duration (in seconds)`)/60
+```
+
+# Output workers from the main pre-test who are qualified
+```{r}
+main.pretest.passed <- df.pretest %>%
+  mutate(
+    paid = 0
+  ) %>%
+  filter(`use-answers` == `random-answering`) %>%
+  select(name, score_pct, paid)%>%
+  arrange(desc(score_pct))
+
+main.pretest.passed
+```
+
+# Join everyone together
+```{r}
+old_workers <- read_csv('./temp/old-pretest-workers.csv') %>%
+  mutate(
+    score_pct = NA,
+    paid = 1,
+    payment_amount = 0,
+    `pre-test` = 0,
+    tested = 1
+  )%>%
+  filter(name != "3" & name != "emily test")
+
+pretest.passed <- rbind(pilot.pretest.passed,main.pretest.passed)
+
+pretest_workers <- pretest.passed %>%
+  mutate(
+    payment_amount = ifelse(paid==0, 5, 0),
+    `pre-test` = 1,
+    tested = 1
+  )
+
+# What's the average score of workers we used?
+rbind(old_workers,pretest_workers) %>%
+  filter(`pre-test` == 1 & score_pct >= 0.75) %>% select(name, score_pct) %>% unique() %>%
+  summarize(mean = mean(score_pct))
+
+ # %>% write_csv('temp/all_tested_and_pretested_workers_for_payment_05_20_1227pm.csv')
+```

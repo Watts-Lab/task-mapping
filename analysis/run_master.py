@@ -1,0 +1,510 @@
+#!/usr/bin/env python3
+"""
+Master orchestration script for analyses under `analysis/`.
+
+Responsibilities (initial version):
+- Import the major Python packages used across the analyses so missing imports surface early.
+- Provide helper functions to:
+  - execute Jupyter notebooks (in-process) and Rmarkdown files (via Rscript/rmarkdown::render)
+  - run modules while capturing stdout/stderr to a timestamped log file
+  - backup and clear the `outputs/` folder so we can measure runtime "without" cached .pkl artifacts
+  - measure runtime with and without existing .pkl cache files
+- Define orchestration functions for the prioritized analyses (task_space and group_advantage).
+
+Notes:
+- This script intentionally does NOT auto-run heavy analyses on import. Use the CLI at the bottom to
+  invoke only the steps you want (or import functions programmatically).
+- Before running any step that clears `outputs/`, the script creates a backup under
+  `.analysis_master_backups/` so you can restore outputs if desired.
+
+Usage examples:
+  # list available steps
+  python analysis/run_master.py --list
+
+  # run only the task space pipeline
+  python analysis/run_master.py --steps task_space
+
+  # run group advantage pipeline end-to-end
+  python analysis/run_master.py --steps group_advantage
+
+  # run both
+  python analysis/run_master.py --steps task_space,group_advantage
+
+"""
+from __future__ import annotations
+
+import sys
+import os
+import time
+import datetime
+import shutil
+import subprocess
+import logging
+import json
+import pickle
+from pathlib import Path
+from typing import Callable, Iterable, List, Optional, Dict, Any
+
+# Data science imports (import errors are logged but don't crash immediately)
+_missing_packages = []
+try:
+    import pandas as pd
+except Exception as e:
+    _missing_packages.append(('pandas', str(e)))
+try:
+    import numpy as np
+except Exception as e:
+    _missing_packages.append(('numpy', str(e)))
+try:
+    import scipy
+except Exception as e:
+    _missing_packages.append(('scipy', str(e)))
+try:
+    import matplotlib
+    import matplotlib.pyplot as plt
+except Exception as e:
+    _missing_packages.append(('matplotlib', str(e)))
+try:
+    import seaborn as sns
+except Exception as e:
+    _missing_packages.append(('seaborn', str(e)))
+try:
+    import sklearn
+except Exception as e:
+    _missing_packages.append(('scikit-learn', str(e)))
+try:
+    import statsmodels
+except Exception as e:
+    _missing_packages.append(('statsmodels', str(e)))
+try:
+    import tensorflow as tf
+except Exception as e:
+    # TensorFlow is optional for some analyses; keep going
+    _missing_packages.append(('tensorflow', str(e)))
+try:
+    import optuna
+except Exception as e:
+    _missing_packages.append(('optuna', str(e)))
+try:
+    import shap
+except Exception as e:
+    _missing_packages.append(('shap', str(e)))
+try:
+    from tqdm import tqdm
+except Exception as e:
+    _missing_packages.append(('tqdm', str(e)))
+
+# Notebook execution
+try:
+    import nbformat
+    from nbconvert.preprocessors import ExecutePreprocessor
+except Exception as e:
+    _missing_packages.append(('nbconvert/nbformat', str(e)))
+
+ROOT = Path(__file__).resolve().parent.parent
+ANALYSIS_DIR = Path(__file__).resolve().parent
+OUTPUTS_DIR = ROOT / 'outputs'
+BACKUP_ROOT = ANALYSIS_DIR / '.analysis_master_backups'
+BACKUP_ROOT = ROOT / '.analysis_master_backups'
+
+# Ensure outputs/logs exist at repo root
+OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
+LOG_DIR = OUTPUTS_DIR / 'logs'
+LOG_DIR.mkdir(parents=True, exist_ok=True)
+
+# Make repo root importable so we can import analysis.* modules when running the
+# script from the repository root or elsewhere. This avoids ModuleNotFoundError
+# like "No module named 'analysis'" when dynamically importing analysis
+# submodules (e.g., generate_mcgrath).
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+# global seed to use when running analyses (wherever possible)
+SEED = 19104
+
+# configure logging
+timestamp = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+log_file = LOG_DIR / f'master_run_{timestamp}.log'
+logger = logging.getLogger('analysis_master')
+logger.setLevel(logging.DEBUG)
+fmt = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
+fh = logging.FileHandler(log_file)
+fh.setLevel(logging.DEBUG)
+fh.setFormatter(fmt)
+ch = logging.StreamHandler(sys.stdout)
+ch.setLevel(logging.INFO)
+ch.setFormatter(fmt)
+logger.addHandler(fh)
+logger.addHandler(ch)
+
+logger.info('Starting analysis master script')
+if _missing_packages:
+    # These packages are optional for some analyses. Log at INFO with an install hint
+    logger.info(
+        'Some optional packages could not be imported at start (they are optional): %s. '
+        'If you want to enable full functionality, install them in your Python environment, e.g. '
+        "python3 -m pip install pandas numpy scipy matplotlib seaborn scikit-learn statsmodels nbformat nbconvert tqdm optuna",
+        _missing_packages,
+    )
+
+
+# Try to locate Rscript on PATH or common install locations
+def find_rscript() -> Optional[str]:
+    # check PATH
+    from shutil import which
+    p = which('Rscript')
+    if p:
+        return p
+    # common Homebrew /usr locations on macOS
+    candidates = ['/opt/homebrew/bin/Rscript', '/usr/local/bin/Rscript', '/usr/bin/Rscript']
+    for c in candidates:
+        if Path(c).exists():
+            return c
+    return None
+
+
+# Utility: run a shell command and stream output to logger
+def run_command(cmd: List[str], cwd: Optional[Path] = None, env: Optional[Dict[str, str]] = None, timeout: Optional[int] = None) -> int:
+    """Run a shell command while ensuring the ANALYSIS_SEED and PYTHONHASHSEED are set in the environment.
+
+    This helps make Rscript/subprocess and Python notebook executions reproducible where possible.
+    """
+    logger.info('Running command: %s (cwd=%s)', ' '.join(cmd), str(cwd) if cwd else None)
+    # Merge provided env with the current OS environment and enforce seed variables
+    new_env = os.environ.copy()
+    if env:
+        new_env.update(env)
+    # Ensure the analysis seed and python hash seed are present
+    new_env.setdefault('ANALYSIS_SEED', str(SEED))
+    new_env.setdefault('PYTHONHASHSEED', str(SEED))
+    process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd=cwd, env=new_env, text=True)
+    try:
+        for line in process.stdout:
+            logger.info(line.rstrip())
+        process.wait(timeout=timeout)
+    except subprocess.TimeoutExpired:
+        process.kill()
+        logger.error('Command timed out: %s', cmd)
+        return 1
+    return process.returncode
+
+
+# Execute a Jupyter notebook in place and capture outputs
+def execute_notebook(nb_path: Path, timeout: int = 600, kernel_name: Optional[str] = None) -> None:
+    logger.info('Executing notebook %s', nb_path)
+    nb = nbformat.read(str(nb_path), as_version=4)
+    # Prepend a small seeding cell so notebook kernels initialize deterministic seeds where possible
+    try:
+        from nbformat.v4 import new_code_cell
+        seed_cell = new_code_cell("""
+import os, random
+import numpy as np
+seed = int(os.getenv('ANALYSIS_SEED', '{}'))
+random.seed(seed)
+np.random.seed(seed)
+try:
+    import tensorflow as tf
+    tf.random.set_seed(seed)
+except Exception:
+    pass
+""".format(SEED))
+        # Only prepend if first cell doesn't already set ANALYSIS_SEED
+        if not nb.cells or 'ANALYSIS_SEED' not in ''.join(nb.cells[0].get('source','')):
+            nb.cells.insert(0, seed_cell)
+    except Exception:
+        logger.debug('Could not insert seed cell into notebook; continuing without injecting seed')
+    # Import ExecutePreprocessor lazily so we can provide a clearer error message
+    # when nbconvert/nbformat are not available in the environment.
+    try:
+        from nbconvert.preprocessors import ExecutePreprocessor
+    except Exception as e:
+        logger.error('nbconvert/nbformat is required to execute notebooks: %s', e)
+        raise RuntimeError('Install nbformat and nbconvert in your Python environment to execute notebooks (e.g. pip install nbformat nbconvert)')
+
+    ep = ExecutePreprocessor(timeout=timeout, kernel_name=kernel_name)
+    ep.allow_errors = False
+    ep.preprocess(nb, {'metadata': {'path': str(nb_path.parent)}})
+    # write executed notebook to outputs folder (timestamped copy)
+    out_nb = nb_path.parent / f"executed_{nb_path.name}"
+    nbformat.write(nb, str(out_nb))
+    logger.info('Finished executing notebook; saved executed copy to %s', out_nb)
+
+
+# Render an Rmarkdown file via Rscript calling rmarkdown::render
+def render_rmarkdown(rmd_path: Path, output_dir: Optional[Path] = None) -> int:
+    logger.info('Rendering RMarkdown %s', rmd_path)
+    # Build the R expression safely to avoid unterminated f-strings and quote issues
+    # Ensure the R process uses the analysis seed when rendering
+    expr = f"set.seed(as.integer(Sys.getenv('ANALYSIS_SEED', '{SEED}'))); rmarkdown::render('{rmd_path.as_posix()}'"
+    if output_dir:
+        expr += f", output_dir = '{str(output_dir)}'"
+    expr += ")"
+    # Use find_rscript (defined at module level) to locate the executable
+    rscript = find_rscript()
+    if not rscript:
+        logger.error('Rscript not found on PATH. Please install R and ensure Rscript is available. '
+                     'On macOS with Homebrew: brew install --cask r or brew install r')
+        raise RuntimeError('Rscript not found; cannot render RMarkdown')
+
+    cmd = [rscript, '-e', expr]
+    return run_command(cmd, cwd=rmd_path.parent)
+
+
+# Run an R script (.R) via Rscript; returns the subprocess exit code
+def run_r_script(r_path: Path) -> int:
+    logger.info('Running R script %s', r_path)
+    rscript = find_rscript()
+    if not rscript:
+        logger.error('Rscript not found on PATH. Cannot run R script %s', r_path)
+        raise RuntimeError('Rscript not found; cannot run R script')
+    # Run the R script but ensure the seed from ANALYSIS_SEED is applied at start
+    # We use Rscript -e "set.seed(...); source('script.R')" so the seed is set for the session
+    expr = f"set.seed(as.integer(Sys.getenv('ANALYSIS_SEED', '{SEED}'))); source('{r_path.name}')"
+    return run_command([rscript, '-e', expr], cwd=r_path.parent)
+
+
+# Ensure a purl'd .R script exists for an Rmd: if missing, try to generate it with knitr::purl
+def ensure_r_script(rmd_path: Path) -> Path:
+    r_path = rmd_path.with_suffix('.R')
+    if r_path.exists():
+        return r_path
+    # try to generate via knitr::purl using Rscript
+    rscript = find_rscript()
+    if not rscript:
+        logger.error('Rscript not found; cannot generate .R from %s', rmd_path)
+        raise RuntimeError('Rscript not found; cannot purl Rmd')
+    expr = f"knitr::purl('{rmd_path.name}', output = '{r_path.name}')"
+    rc = run_command([rscript, '-e', expr], cwd=rmd_path.parent)
+    if rc != 0:
+        logger.error('Failed to purl %s -> %s (exit %s)', rmd_path, r_path, rc)
+        raise RuntimeError(f'Failed to purl {rmd_path}')
+    if not r_path.exists():
+        logger.error('Expected generated R script not found: %s', r_path)
+        raise RuntimeError('Generated R script not found after purl')
+    logger.info('Generated R script %s from %s', r_path, rmd_path)
+    return r_path
+
+
+# Backup current outputs folder before destructive actions
+def backup_outputs() -> Path:
+    if not OUTPUTS_DIR.exists():
+        logger.info('No outputs/ folder to backup')
+        return None
+    ts = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+    dest = BACKUP_ROOT / f'outputs_backup_{ts}'
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    logger.info('Backing up %s -> %s', OUTPUTS_DIR, dest)
+    shutil.copytree(OUTPUTS_DIR, dest)
+    return dest
+
+
+# Clear outputs directory (delete contents but leave directory)
+def clear_outputs() -> None:
+    if not OUTPUTS_DIR.exists():
+        logger.info('outputs/ folder does not exist; nothing to clear')
+        return
+    for child in OUTPUTS_DIR.iterdir():
+        try:
+            if child.is_dir():
+                shutil.rmtree(child)
+            else:
+                child.unlink()
+        except Exception as e:
+            logger.exception('Failed to remove %s: %s', child, e)
+    logger.info('Cleared outputs/ folder')
+
+
+# Timing wrapper: time a callable and log its stdout/stderr automatically (callable should perform work)
+def time_callable(name: str, func: Callable[[], Any]) -> Dict[str, Any]:
+    logger.info('Timing: %s', name)
+    start = time.time()
+    try:
+        res = func()
+        elapsed = time.time() - start
+        logger.info('Completed %s in %.3f sec', name, elapsed)
+        return {'name': name, 'elapsed_sec': elapsed, 'result': res}
+    except Exception:
+        elapsed = time.time() - start
+        logger.exception('Error during %s after %.3f sec', name, elapsed)
+        return {'name': name, 'elapsed_sec': elapsed, 'error': True}
+
+
+# Time with and without pickle cache: given a list of pkl paths and a run function that produces them.
+def time_with_and_without_pkls(name: str, pkl_paths: Iterable[Path], run_func: Callable[[], Any]) -> Dict[str, Any]:
+    pkl_paths = [Path(p) for p in pkl_paths]
+    tl: Dict[str, Any] = {'name': name}
+    # time loading (if present)
+    load_times = {}
+    for p in pkl_paths:
+        if p.exists():
+            t0 = time.time()
+            try:
+                with p.open('rb') as f:
+                    _ = pickle.load(f)
+                load_times[str(p)] = time.time() - t0
+                logger.info('Loaded cache %s in %.3f sec', p, load_times[str(p)])
+            except Exception as e:
+                load_times[str(p)] = None
+                logger.exception('Error loading %s: %s', p, e)
+        else:
+            load_times[str(p)] = None
+    tl['load_times'] = load_times
+
+    # backup outputs then clear
+    backup = backup_outputs()
+    clear_outputs()
+
+    # run the function (from scratch) and time it
+    tstart = time.time()
+    try:
+        run_func()
+        gen_time = time.time() - tstart
+        logger.info('Generated results for %s in %.3f sec (from scratch)', name, gen_time)
+        tl['gen_time_sec'] = gen_time
+    except Exception:
+        gen_time = time.time() - tstart
+        logger.exception('Error generating results for %s after %.3f sec', name, gen_time)
+        tl['gen_time_sec'] = gen_time
+        tl['error'] = True
+
+    # restore outputs backup to avoid destructive side-effects for other steps
+    if backup is not None:
+        logger.info('Restoring outputs from backup %s', backup)
+        # clear current outputs then copy backup back
+        clear_outputs()
+        shutil.copytree(backup, OUTPUTS_DIR, dirs_exist_ok=True)
+        logger.info('Restored outputs from backup')
+
+    return tl
+
+
+# -----------------------------
+# Orchestration functions for prioritized analyses
+# -----------------------------
+
+# Task space pipeline
+def run_task_space_pipeline():
+    """Orchestrate the task space analysis:
+    1) generate task map from raw annotations (Rmarkdown)
+    2) plot/clean visuals (Rmarkdown)
+    """
+    logger.info('Running task_space pipeline')
+    # paths
+    rmd_generate = ANALYSIS_DIR / 'analysis_task_space' / 'generate_task_map_from_raw.Rmd'
+    rmd_visuals = ANALYSIS_DIR / 'analysis_task_space' / 'clean_task_map_visuals.Rmd'
+
+    results = []
+
+    if rmd_generate.exists():
+        # always prefer a purl'd .R script; generate it if missing
+        r_script_generate = ensure_r_script(rmd_generate)
+        results.append(time_callable('task_space.generate_map', lambda: run_r_script(r_script_generate)))
+        # Generate the McGrath categorical mapping as part of task-space preprocessing
+        try:
+            from analysis.analysis_task_space.generate_mcgrath import generate_mcgrath
+            task_map_path = OUTPUTS_DIR / 'processed_data' / 'task_map.csv'
+            out_path = OUTPUTS_DIR / 'processed_data' / '20_task_map_mcgrath_manually_updated.csv'
+            results.append(time_callable('task_space.generate_mcgrath', lambda: generate_mcgrath(task_map_path, out_path)))
+        except Exception as e:
+            logger.exception('Failed to generate mcgrath categories in task_space: %s', e)
+    else:
+        logger.warning('Missing %s; skipping', rmd_generate)
+
+    if rmd_visuals.exists():
+        r_script_visuals = ensure_r_script(rmd_visuals)
+        results.append(time_callable('task_space.plot_visuals', lambda: run_r_script(r_script_visuals)))
+    else:
+        logger.warning('Missing %s; skipping', rmd_visuals)
+
+    return results
+
+
+# Group advantage pipeline
+def run_group_advantage_pipeline():
+    """Orchestrate group advantage analysis:
+    1) raw data cleaning (Rmd)
+    2) run models notebook(s)
+    3) run viz notebook(s)
+    """
+    logger.info('Running group_advantage pipeline')
+    rmd_clean = ANALYSIS_DIR / 'analysis_group_advantage' / 'raw_data_cleaning.rmd'
+    nb_models = ANALYSIS_DIR / 'analysis_group_advantage' / 'models.ipynb'
+    nb_viz = ANALYSIS_DIR / 'analysis_group_advantage' / 'viz.ipynb'
+    nb_demographics = ANALYSIS_DIR / 'analysis_group_advantage' / 'demographics_viz.ipynb'
+
+    results = []
+
+    if rmd_clean.exists():
+        r_script_clean = ensure_r_script(rmd_clean)
+        # Ensure mcgrath mapping exists before running raw data cleaning; task_space is the source of truth
+        try:
+            from analysis.analysis_task_space.generate_mcgrath import generate_mcgrath
+            task_map_path = OUTPUTS_DIR / 'processed_data' / 'task_map.csv'
+            out_path = OUTPUTS_DIR / 'processed_data' / '20_task_map_mcgrath_manually_updated.csv'
+            # generate (idempotent) before cleaning so R code can rely on it mid-script
+            results.append(time_callable('group_advantage.ensure_mcgrath_before_clean', lambda: generate_mcgrath(task_map_path, out_path)))
+        except Exception as e:
+            logger.exception('Failed to ensure mcgrath categories before cleaning: %s', e)
+        # Now run raw data cleaning (which may expect the mcgrath CSV part-way through)
+        results.append(time_callable('group_advantage.raw_data_cleaning', lambda: run_r_script(r_script_clean)))
+    else:
+        logger.warning('Missing %s; skipping', rmd_clean)
+
+    if nb_models.exists():
+        results.append(time_callable('group_advantage.models', lambda: execute_notebook(nb_models, timeout=3600)))
+    else:
+        logger.warning('Missing %s; skipping', nb_models)
+
+    if nb_viz.exists():
+        results.append(time_callable('group_advantage.viz', lambda: execute_notebook(nb_viz, timeout=3600)))
+    else:
+        logger.warning('Missing %s; skipping', nb_viz)
+
+    # demographics_viz: added to the group_advantage pipeline per request (only this notebook)
+    if nb_demographics.exists():
+        results.append(time_callable('group_advantage.demographics_viz', lambda: execute_notebook(nb_demographics, timeout=1800)))
+    else:
+        logger.warning('Missing %s; skipping', nb_demographics)
+
+    return results
+
+
+# -----------------------------
+# CLI: select which steps to run
+# -----------------------------
+if __name__ == '__main__':
+    import argparse
+
+    parser = argparse.ArgumentParser(description='Master orchestrator for analyses in analysis/')
+    parser.add_argument('--steps', type=str, default='', help='Comma-separated steps: task_space,group_advantage')
+    parser.add_argument('--list', action='store_true', help='List available steps')
+    parser.add_argument('--with-pkl', action='store_true', help='For steps that support it, measure load-time from .pkl and generate-time from scratch')
+    args = parser.parse_args()
+
+    available = ['task_space', 'group_advantage']
+    if args.list:
+        print('Available steps:')
+        for s in available:
+            print(' -', s)
+        sys.exit(0)
+
+    selected = [s.strip() for s in args.steps.split(',') if s.strip()]
+    if not selected:
+        logger.info('No steps selected; use --list to see available steps')
+        sys.exit(0)
+
+    final_results = {}
+    for step in selected:
+        if step == 'task_space':
+            final_results['task_space'] = run_task_space_pipeline()
+        elif step == 'group_advantage':
+            final_results['group_advantage'] = run_group_advantage_pipeline()
+        else:
+            logger.warning('Unknown step: %s', step)
+
+    # Save a JSON summary of timings
+    summary_path = LOG_DIR / f'master_summary_{timestamp}.json'
+    with summary_path.open('w') as f:
+        json.dump(final_results, f, default=str, indent=2)
+    logger.info('Wrote summary to %s', summary_path)
+    logger.info('Done')

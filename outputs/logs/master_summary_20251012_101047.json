@@ -1,0 +1,24 @@
+{
+  "group_advantage": [
+    {
+      "name": "group_advantage.raw_data_cleaning",
+      "elapsed_sec": 56.135014057159424,
+      "result": 0
+    },
+    {
+      "name": "group_advantage.models",
+      "elapsed_sec": 0.0280458927154541,
+      "error": true
+    },
+    {
+      "name": "group_advantage.viz",
+      "elapsed_sec": 0.019223928451538086,
+      "error": true
+    },
+    {
+      "name": "group_advantage.demographics_viz",
+      "elapsed_sec": 0.011172771453857422,
+      "error": true
+    }
+  ]
+}

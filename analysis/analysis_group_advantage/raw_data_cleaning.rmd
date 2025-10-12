@@ -119,31 +119,41 @@ players %>% write_csv('../../outputs/players.csv')
 tasks_in_waves <- list(list(
   wave = 1,
   tasks = c(
-    "Moral Reasoning",
+  player_rounds %>% write_csv('../../outputs/processed_data/player_rounds.csv')
     "Allocating Resources",
-    "Writing Story",
+  rounds %>% write_csv('../../outputs/processed_data/rounds.csv')
     "Divergent Association",
-    "Room Assignment",
+  stages %>% write_csv('../../outputs/processed_data/stages.csv')
     "Wolf Goat Cabbage",
-    "Guess the Correlation",
+  players %>% write_csv('../../outputs/processed_data/players.csv')
     "Sudoku",
     "Whac a Mole",
+    write_csv('../../outputs/processed_data/summable_answers_raw.csv')
     "Word Construction"
   )
+  synergy_data |> write_csv("../../outputs/processed_data/condition_level_group_advantage.csv")
 ),
 list(
+    write_csv("../../outputs/processed_data/condition_level_group_advantage_with_ivs.csv")
   wave = 2,
   tasks = c(
+    write_csv("../../outputs/processed_data/condition_level_group_advantage_with_ivs_and_categories.csv")
     "Logic Problem",
     "Unscramble Words",
+  ggsave("../../outputs/figures/figure_2.pdf", plot = figure_2, height = 14, width = 14)
     "Recall Word Lists",
+  ggsave("../../outputs/figures/figure_2.png", plot = figure_2, height = 14, width = 14)
     "Random Dot Motion",
     "Typing"
+  observation_synergy_map_and_composition.csv %>% write_csv("../../outputs/processed_data/observation_level_dv_with_composition.csv")
   )
 ),
 list(
+  task_map <-
+    read_csv(file.path("..","..","data","task_map.csv")) %>%
   wave = 3,
   tasks = c(
+  mcgrath_mapping = read_csv(file.path("..","..","..","outputs","processed_data","20_task_map_mcgrath_manually_updated.csv")) |> select(task, matches("_cat")) |>
     "Putting Food Into Categories",
     "Recall Association",
     "hk_22482ca42486c72f Writing",
@@ -185,7 +195,7 @@ task_map <-
   ) |>
   filter(task != "NA")
 
-mcgrath_mapping = read_csv(file.path("..","..","data","20_task_map_mcgrath_manually_updated.csv")) |> select(task, matches("_cat")) |>
+mcgrath_mapping = read_csv(file.path("..","..","..","outputs","processed_data","20_task_map_mcgrath_manually_updated.csv")) |> select(task, matches("_cat")) |>
   pivot_longer(matches("_cat"), names_to = "mcgrath_type") |>
   mutate(mcgrath_type = sub("_cat", "", mcgrath_type),) |>
   filter(value == 1) |>
@@ -726,8 +736,8 @@ figure_2 <- aggregated_synergy_summary_data_by_wave |>
   axis.text.y = element_text(size = 18),
   axis.text.x = element_text(size = 18)
 )
-ggsave("../../outputs/figure_2.pdf", plot = figure_2, height = 14, width = 14)
-ggsave("../../outputs/figure_2.png", plot = figure_2, height = 14, width = 14)
+ggsave("../../outputs/figures/figure_2.pdf", plot = figure_2, height = 14, width = 14)
+ggsave("../../outputs/figures/figure_2.png", plot = figure_2, height = 14, width = 14)
 ```
 
 ## Group Composition @ Observation Level

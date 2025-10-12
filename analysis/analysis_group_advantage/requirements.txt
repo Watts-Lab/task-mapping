@@ -1,0 +1,51 @@
+# requirements for analysis/analysis_group_advantage
+
+# --- Python (pip) packages ---
+# Install with: python -m pip install -r requirements.txt
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+scikit-learn
+statsmodels
+patsy
+joblib
+tqdm
+plotly
+optuna
+shap
+tensorflow
+requests
+nbformat
+notebook
+ipykernel
+
+# NOTE: some analyses may use heavy ML packages (tensorflow, shap, optuna).
+# If you need GPU support for TensorFlow, install the appropriate tensorflow package for your platform.
+
+
+# --- R (CRAN) packages ---
+# Install the R packages in R with:
+# install.packages(c("pkg1","pkg2"), repos = "https://cran.r-project.org/")
+jsonlite
+pls
+randomForest
+Rtsne
+umap
+caret
+doParallel
+foreach
+xgboost
+nnet
+ggplot2
+ggfortify
+ggpubr
+ggrepel
+ggbuildr
+ggridges
+extrafont
+stargazer
+tidyverse
+tidyr
+broom

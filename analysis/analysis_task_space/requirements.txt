@@ -1,0 +1,24 @@
+# requirements for analysis/analysis_task_space
+
+# --- Python (pip) packages ---
+# Install with: python -m pip install -r requirements.txt
+numpy
+pandas
+scipy
+matplotlib
+scikit-learn
+
+# --- R (CRAN) packages ---
+# Install in R with:
+# install.packages(c("pkg1","pkg2"))
+
+dplyr
+tidyverse
+factoextra
+NbClust
+cluster
+svglite
+ggplot2
+
+# Notes:
+# - tidyverse already includes dplyr and ggplot2, but I list them explicitly for clarity.
