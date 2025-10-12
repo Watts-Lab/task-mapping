@@ -146,5 +146,6 @@ task_map <- task_map %>%
 
 # Export the Task Map
 ```{r}
-task_map %>% write_csv('../task_map.csv')
+# write task map into the repository `outputs/` folder (ensures we don't modify `data/`)
+task_map %>% write_csv('../../outputs/task_map.csv')
 ```

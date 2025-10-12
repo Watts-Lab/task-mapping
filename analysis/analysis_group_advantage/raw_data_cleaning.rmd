@@ -60,9 +60,24 @@ load_CSVs <- function(pattern, rename = TRUE) {
   if (rename) {
     adjusted_pattern <-
       gsub("-(\\w)", "\\U\\1", sub("s$", "", pattern), perl = TRUE) |>  paste0("Id")
-    data <- data |>
-      select(-starts_with(adjusted_pattern)) |>  # Removes duplicate ids especially for stageId
-      rename_with( ~ adjusted_pattern, matches("_id$")) # Conditional renaming
+
+    # Remove any existing columns that already start with the adjusted pattern
+    data <- data |> select(-starts_with(adjusted_pattern))
+
+    # Some CSVs use a generic `_id` column name for the primary id. If present,
+    # rename it to the expected adjusted_pattern (e.g. `factorId`, `playerId`).
+    if ("_id" %in% names(data)) {
+      data <- data |> rename(!!adjusted_pattern := `_id`)
+    }
+
+    # Find columns that end with _id and only attempt to rename if any are present.
+    id_cols <- names(data)[grepl("_id$", names(data))]
+    if (length(id_cols) > 0) {
+      # Replace the trailing "_id" with the adjusted pattern for each matched column.
+      # Use rename_with with an explicit .cols selection so the function receives and
+      # returns a vector of the same length as the selected columns.
+      data <- data |> rename_with(.fn = ~ gsub("_id$", adjusted_pattern, .), .cols = all_of(id_cols))
+    }
   }
   
   return(data)
