@@ -1,0 +1,13 @@
+Version: 1.0
+
+RestoreWorkspace: Default
+SaveWorkspace: Default
+hk_3bf0ce9e1b2871ab: Default
+
+EnableCodeIndexing: Yes
+UseSpacesForTab: Yes
+NumSpacesForTab: 2
+Encoding: UTF-8
+
+RnwWeave: Sweave
+LaTeX: pdfLaTeX

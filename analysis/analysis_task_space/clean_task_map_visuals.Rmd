@@ -1,0 +1,353 @@
+---
+title: "clean_task_map_visuals"
+output: html_notebook
+---
+
+```{r}
+library(factoextra)
+library(NbClust)
+library(cluster)
+library(svglite)
+library(ggplot2)
+library(dplyr)
+library(tidyverse)
+```
+
+# Load the Data
+```{r}
+task_map <- read_csv('../../data/task_map.csv')
+```
+
+# Plot the Task Map
+
+Draw the task map using PCA & clustering
+
+First, run the PCA
+```{r, fig.width=16, fig.height=5}
+set.seed(1)
+
+pca <- task_map %>% #select(-continuous_questions) %>%
+  select(-task) %>%
+  prcomp(center = T)
+
+# get optimal number of clusters -- "silhouette" method
+fviz_nbclust(x = pca$x, FUNcluster = stats::kmeans, method = "silhouette") +
+  labs(subtitle = "Silhouette method")
+
+# get optimal number of clusters
+NbClust(data = pca$x, distance = "euclidean",
+        min.nc = 2, max.nc = 15, method = "kmeans")
+
+kmeans_output <- pca$x %>% 
+  kmeans(centers = 3, nstart = 100)
+
+combined_data <- cbind(task_map,
+      pca$x, factor(kmeans_output$cluster)) %>%
+  rename(cluster = `factor(kmeans_output$cluster)`)
+
+fviz_eig(pca)
+```
+
+Standard Task Map Image with All Labels
+```{r, fig.width=14, fig.height=5}
+p <- combined_data %>%
+  ggplot(aes(
+    x = PC1,
+    y = PC2,
+    label = task,
+    fill = cluster
+  )) + geom_point() + geom_label(nudge_y = 0.1, size = 4) +
+
+ theme_light(base_size = 24)
+
+p
+
+ggsave(plot = p, filename = '../../outputs/task-map.png')
+```
+
+
+# Task Map with McGrath Labels for interpretability
+```{r}
+task_map_with_intuitive_labels <- read_csv('../../data/figure_2_intuitive_interpretation/task_map_with_intuitive_hand_groupings.csv') %>%
+  mutate(
+    group = as.factor(group)
+  )
+```
+
+```{r, fig.width=14, fig.height=5}
+combined_data_with_labels <- combined_data %>%
+    left_join(task_map_with_intuitive_labels, by = "task") %>%
+    rename(`McGrath Quadrant` = group)
+
+mcgrath_quad_display_set <- c(
+    "Whac-A-Mole",
+    "Space Fortress",
+    "Search for Oil Task",
+    "Target Search",
+    "9 Dot Problem",
+    "Ravens Matrices",
+    "Moral Reasoning (Disciplinary Action Case)",
+    "Allocating resources to programs",
+    "hk_22482ca42486c72f writing",
+    "Writing story",
+    "Word construction from a subset of letters",
+    "Word completion given starting letter",
+    "Shopping plan",
+    "Mock jury",
+    "Ultimatum game (various versions)",
+    "Dictator game and its variants",
+    "Pharmaceutical Company (hidden-profile)",
+    "Investment game (hidden-profile)"
+)
+
+p <- combined_data_with_labels %>%
+    ggplot(aes(x = PC1,
+               y = PC2,
+               label = task,
+               color = `McGrath Quadrant`
+               )) +
+    geom_point(alpha = 0.4) +
+    geom_label(data = subset(combined_data_with_labels, task %in% mcgrath_quad_display_set),
+               aes(label = task, fill = `McGrath Quadrant`),
+               vjust = "inward",
+               hjust = "inward",
+               color = "white",
+               size = 2.5,
+               fontface = "bold") +
+    geom_point(data = subset(combined_data_with_labels, task %in% mcgrath_quad_display_set),
+               aes(label = task, fill = `McGrath Quadrant`),
+               vjust = "inward",
+               hjust = "inward",
+               color = "black") +
+    theme_minimal(base_size = 18) +
+    theme(plot.title = element_text(face = "bold")) +
+    labs(x = "Demonstrable Correctness (PC1)",
+         y = "Collaboration-Conflict (PC2)",
+         title = "Projection of the Task Space in 2D (using PCA), with Illustrative Tasks") +
+    scale_fill_hue(l = 45)
+
+# Save the plot as an .svg file
+ggsave(
+    plot = p,
+  filename = "../../outputs/figure_2_intuitive_interpretation/task_map_with_intuitive_illustrations_raw.svg",
+    width = 14,
+    height = 5,
+    device = "svg"
+)
+
+p
+```
+
+# Task Map Showing Maximum- and Minimum-ally Different Task Sets
+```{r}
+# A set of the tasks that are most different
+# this set has no restrictions
+max_diff_set <- c('Railroad Route Construction game (Impossible Version)',
+ 'Reproducing arts',
+ 'Best job candidate (hidden-profile)',
+ 'Putting food into categories',
+ 'Checkers',
+ 'Minimal Group Paradigm (study diversity)',
+ 'Whac-A-Mole',
+ '9 Dot Problem',
+ 'Shopping plan',
+ 'TOPSIM - general mgmt business game')
+
+# A set of tasks that are the most similar
+# No restrictions on this set
+min_diff_set <- c('Arithmetic problem 1',
+ 'Euclidean traveling salesperson',
+ 'Abstract grid task',
+ 'Mastermind',
+ 'Logic Problem',
+ 'Guessing the correlation',
+ 'Random dot motion',
+ 'Letters-to-numbers problems (cryptography)',
+ 'Computer maze',
+ 'Recall images')
+```
+```{r, fig.width=14, fig.height=5}
+ combined_data_with_labels <- combined_data %>%
+    mutate(
+        point_group = ifelse(task %in% max_diff_set, 'Most Different Tasks',
+                             ifelse(task %in% min_diff_set, 'Most Similar Tasks', NA))
+    )
+  
+p <- combined_data_with_labels %>%
+    ggplot(aes(x = PC1,
+               y = PC2,
+               )) +
+    geom_point(alpha = 0.4) +
+    geom_label(data = subset(combined_data_with_labels, task %in% c(max_diff_set, min_diff_set)),
+               aes(label = task, fill = point_group),
+               hjust = "inward",
+               color = "white",
+               size = 2.5,
+               fontface = "bold") +
+    theme_minimal(base_size = 18) +
+    theme(plot.title = element_text(face = "bold")) +
+    labs(x = "Demonstrable Correctness (PC1)",
+         y = "Collaboration-Conflict (PC2)",
+         title = "Projection of the Task Space in 2D (using PCA), with Illustrative Tasks") +
+    scale_fill_hue(l = 45)
+
+# Save the plot as an .svg file
+ggsave(
+    plot = p,
+  filename = "../../outputs/figure_3_task_selection/Similar-Different-Dense-Sparse_raw.svg",
+    width = 14,
+    height = 5,
+    device = "svg"
+)
+
+p
+```
+
+# Simulation of 10-Task Study + Plot the Support Vector Machine
+```{r}
+# This is the set that you can actually play as individual + as a group
+# Removes the impossible version of the railroad game and all economic games
+
+# In our hypothetical scenario, the researcher chooses these as the 10 tasks to study
+max_diff_no_economicGames <- c(
+'Writing story',
+ '9 Dot Problem',
+ 'Word construction from a subset of letters',
+ 'Image rating',
+ 'Checkers',
+ 'Run a mini business',
+ 'Typing game',
+ 'Whac-A-Mole',
+ 'Divergent Association Task',
+ 'Carter Racing'
+)
+```
+
+Create synthetic dependent variable based on the clusters
+```{r}
+tasks_with_dv <- subset(combined_data, task %in% max_diff_no_economicGames) %>%
+  mutate(
+    synergy = as.factor(ifelse(cluster == 1 | cluster == 2, 1, 0))
+  )
+combined_data <- combined_data %>%
+  mutate(
+    synergy = as.factor(ifelse(cluster == 1 | cluster == 2, 1, 0))
+  )
+
+# Save this so that we can run the real SVM in Python!
+combined_data %>% 
+  # rename columns in a more pretty format
+  rename(
+    `Conceptual-Behavioral` = Q1concept_behav,
+    `Type 1 (Planning)` = Q3type_1_planning,
+    `Type 2 (Generate)` = Q4type_2_generate,
+    `Type 5 (Cognitive Conflict)` = Q6type_5_cc,
+    `Type 7 (Battle)` = Q7type_7_battle,
+    `Type 8 (Performance)` = Q8type_8_performance,
+    `Divisible-Unitary` = Q9divisible_unitary,
+    `Maximizing` = Q10maximizing,
+    `Optimizing` = Q11optimizing,
+    `Outcome Multiplicity` = Q13outcome_multip,
+    `Solution Scheme Multiplicity` = Q14sol_scheme_mul,
+    `Decision Verifiability` = Q15dec_verifiability,
+    `Shared Knowledge` = Q16shared_knowledge,
+    `Within-System Solution` = Q17within_sys_sol,
+    `Answer Recognizability` = Q18ans_recog,
+    `Time Solvability` = Q19time_solvability,
+    `Type 3 and Type 4 (Objective Correctness)` = Q20type_3_type_4,
+    `Conflicting Tradeoffs` = Q22confl_tradeoffs,
+    `Solution Scheme Outcome Uncertainty` = Q23ss_out_uncert,
+    `Eureka Question` = Q24eureka_question,
+    `Intellectual-Manipulative` = Q2intel_manip_1,
+    `Intellective-Judgmental` = Q21intellective_judg_1,
+    `Creativity Input` = Q5creativity_input_1,
+    `Type 6 (Mixed-Motive)` = Q25_type6_mixed_motive
+  ) %>%
+  write_csv('tasks_with_synthetic_data.csv')
+```
+
+The SVM Plotted here is fitted on just PC1 and PC2 for visualization purposes, but the 
+"real" SVM that we fit and test (done in Python) in the file `svm_with_synthetic_data.ipynb`
+is fit on the full data.
+
+Decision boundary plotting code from: https://mhahsler.github.io/Introduction_to_Data_Mining_R_Examples/book/classification-alternative-techniques.html#k-nearest-neighbors
+```{r decisionplot}
+decisionplot <- function(model, data, class_var, 
+  predict_type = c("class", "prob"), resolution = 5 * 75) {
+  # resolution is set to 75 dpi if the image is rendered  5 inches wide. 
+  
+  y <- data %>% pull(class_var)
+  x <- data %>% dplyr::select(-all_of(class_var))
+  
+  # resubstitution accuracy
+  prediction <- predict(model, x, type = predict_type[1])
+  # LDA returns a list
+  if(is.list(prediction)) prediction <- prediction$class
+  prediction <- factor(prediction, levels = levels(y))
+  
+  cm <- confusionMatrix(data = prediction, reference = y)
+  acc <- cm$overall["Accuracy"]
+  
+  # evaluate model on a grid
+  r <- sapply(x[, 1:2], range, na.rm = TRUE)
+  xs <- seq(r[1,1], r[2,1], length.out = resolution)
+  ys <- seq(r[1,2], r[2,2], length.out = resolution)
+  g <- cbind(rep(xs, each = resolution), rep(ys, time = resolution))
+  colnames(g) <- colnames(r)
+  g <- as_tibble(g)
+  
+  ### guess how to get class labels from predict
+  ### (unfortunately not very consistent between models)
+  cl <- predict(model, g, type = predict_type[1])
+  
+  # LDA returns a list
+  if(is.list(cl)) { 
+    prob <- cl$posterior
+    cl <- cl$class
+  } else
+    try(prob <- predict(model, g, type = predict_type[2]))
+  
+  # we visualize the difference in probability/score between the 
+  # winning class and the second best class.
+  # don't use probability if predict for the classifier does not support it.
+  max_prob <- 1
+  try({
+    max_prob <- t(apply(prob, MARGIN = 1, sort, decreasing = TRUE))
+    max_prob <- max_prob[,1] - max_prob[,2]
+  }, silent = TRUE) 
+  
+  cl <- factor(cl, levels = levels(y))
+  
+  g <- g %>% add_column(prediction = cl, probability = max_prob)
+  
+  ggplot(g, mapping = aes_string(
+    x = colnames(g)[1],
+    y = colnames(g)[2])) +
+    geom_raster(mapping = aes(fill = prediction, alpha = probability)) +
+     geom_contour(mapping = aes(z = as.numeric(prediction)), 
+      bins = length(levels(cl)), size = .5, color = "black") +
+    geom_point(data = data, mapping =  aes_string(
+      x = colnames(data)[1],
+      y = colnames(data)[2],
+      shape = class_var), alpha = .7) + 
+    scale_alpha_continuous(range = c(0,1), limits = c(0,1), guide = "none") +  
+    labs(subtitle = paste("Training accuracy:", round(acc, 2)))
+}
+```
+
+```{r}
+x <- combined_data %>% select(PC1, PC2, synergy, task)
+train <- tasks_with_dv %>% select(PC1, PC2, synergy, task)
+model <- train %>% svm(synergy ~ PC1 + PC2, data = ., kernel = "linear")
+
+svmplot <- decisionplot(model, x, class_var = "synergy") + 
+  geom_point(data = train, aes(x = PC1, y = PC2, shape = synergy, size = 5), color = "darkolivegreen2", show.legend = F) +
+  geom_label(data = train, aes(label = task ), nudge_y = 0.2, size = 3) +
+  labs(title = "SVM (Linear Kernel)") +
+  theme_minimal(base_size = 12)
+
+svmplot
+  
+ggsave('../figure_4_visualize_boundary_conditions/svmplot_synthetic_data_raw.svg', width = 12, height = 5, device = "svg")
+```
+

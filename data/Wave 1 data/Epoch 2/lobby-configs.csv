@@ -1,0 +1,3 @@
+﻿_id,name,timeoutType,timeoutInSeconds,timeoutStrategy,timeoutBots,extendCount,createdAt,archivedAt
+ymGg8uuAHBBGCJqGB,default,lobby,300,fail,,,2023-04-26T20:21:30Z,
+Cezv5te2mnXWr7ZDB,ten_min,lobby,600,fail,,,2023-05-02T17:16:42Z,

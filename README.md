@@ -4,8 +4,18 @@
 
 Author(s): Xinlan Emily Hu, Mark E. Whiting, Linnea Gandhi, Duncan J. Watts, and Abdullah Almaatouq
 
-
 ## 1.	Overview
+
+This repository contains the data and code required to reproduce the results in `The Task Space: An Integrative Framework for Team Research`. This paper presents a novel multidimensional representation of tasks, in which the task performed by a group can be described along 24 quantifiable dimensions that are grounded in prior theory. It also presents a case study in which the 24-dimensional Task Space is used to select a set of 20 diverse tasks, and subsequently to predict heterogeneity in *group advantage* (the ability of groups to outperform an equivalent individual) across the 20 tasks.
+
+The data and code in this paper are divided into two distinct components:
+
+(1) **The Task Map**: A database of 102 tasks sourced from the interdisciplinary literature on group collaboration, annotated by human raters (sourced from Amazon Mechanical Turk) along the 24 dimensions. Here, the relevant empirical data is from the annotation process, and the analysis code transforms the raw ratings into final task dimensions.
+
+(2) **Group Advantage Integrative Experiment**: A large-scale experiment in which 1,200+ workers on Amazon Mechanical Turk are recruited to complete tasks in real time. We then use the 24 task dimensions to predict the extent to which groups outperform equivalent individuals (*group advantage*). Here, the relevant empirical data comes from this experiment, and the analysis explores the question, *when (on which tasks) do groups outperform individuals?*
+
+
+
 
 INSTRUCTIONS: The typical README serves the purpose of guiding a reader through the available material and a route to replicating the results in the research paper. Start by providing a brief overview of the available material and a brief guide as to how to proceed from beginning to end.
 

@@ -1,0 +1,855 @@
+title: "Evaluating high throughput teams experiments" output: github_document bibliography: bib.bib --- \# Setup \### Imports
+
+```{r echo=FALSE, message=FALSE}
+library(jsonlite)
+library(pls)
+
+library(randomForest)
+library(tsne)
+library(umap)
+library(caret)
+library(doParallel)
+library(foreach)
+library(xgboost)
+library(nnet)
+
+library(ggplot2)
+library(ggfortify)
+library(ggpubr)
+library(ggrepel)
+library(ggbuildr)
+library(ggridges)
+library(extrafont)
+
+library(stargazer)
+
+library(tidyverse)
+library(tidyr)
+library(broom)
+
+seed = 0
+epsilon = 0.000001
+z = 1.96 # For 95%CI
+outcome_term = "Group Advantage"
+
+# load fonts
+font_import(paths = NULL, prompt = FALSE)  
+loadfonts(device = "all")
+```
+
+```{r}
+load_CSVs <- function(pattern, rename = TRUE) {
+  # sub("s$", "Id", pattern)
+  # Load and process CSV files
+  files <- data.frame(path = list.files(
+    "../data/",
+    paste0(pattern, ".csv"),
+    recursive = TRUE,
+    full.names = TRUE
+  )) |>
+    filter(grepl(paste0("Wave [0-9] data.*/",pattern,".csv"), path))
+    
+    data <- files |> 
+    mutate(data = map(path, \(f) read_csv(f) |> mutate(across(
+      matches("(data.score|duplicateCellID)"), as.character # Handle inconsistencies in stages output formats
+    ))),
+    .keep = "none") |>
+    unnest(data) |>
+    distinct()
+  
+  if (rename) {
+    adjusted_pattern <-
+      gsub("-(\\w)", "\\U\\1", sub("s$", "", pattern), perl = TRUE) |>  paste0("Id")
+    data <- data |>
+      select(-starts_with(adjusted_pattern)) |>  # Removes duplicate ids especially for stageId
+      rename_with( ~ adjusted_pattern, matches("_id$")) # Conditional renaming
+  }
+  
+  return(data)
+}
+```
+
+```{r message=FALSE}
+games <- load_CSVs("games")
+game_lobbies <- load_CSVs("game-lobbies")
+treatments <- load_CSVs("treatments")  
+factors <- load_CSVs("factors")
+factor_types <- load_CSVs("factor-types")
+lobby_configs <- load_CSVs("lobby-configs")
+batches <- load_CSVs("batches")
+rounds <- load_CSVs("rounds")
+stages <- load_CSVs("stages")
+players <- load_CSVs("players")
+player_logs <- load_CSVs("player-logs")
+player_rounds <- load_CSVs("player-rounds")
+player_stages <- load_CSVs("player-stages")
+player_inputs <- load_CSVs("player-inputs")
+offline_scoring <- load_CSVs("offline scoring",FALSE)
+```
+
+```{r}
+# export player-rounds (this has the players)
+player_rounds %>% write_csv('../../outputs/player_rounds.csv')
+# export the roudns
+rounds %>% write_csv('../../outputs/rounds.csv')
+# export the stage data (this has the raw outputs)
+stages %>% write_csv('../../outputs/stages.csv')
+# export the players
+players %>% write_csv('../../outputs/players.csv')
+```
+
+
+```{r}
+tasks_in_waves <- list(list(
+  wave = 1,
+  tasks = c(
+    "Moral Reasoning",
+    "Allocating Resources",
+    "Writing Story",
+    "Divergent Association",
+    "Room Assignment",
+    "Wolf Goat Cabbage",
+    "Guess the Correlation",
+    "Sudoku",
+    "Whac a Mole",
+    "Word Construction"
+  )
+),
+list(
+  wave = 2,
+  tasks = c(
+    "Logic Problem",
+    "Unscramble Words",
+    "Recall Word Lists",
+    "Random Dot Motion",
+    "Typing"
+  )
+),
+list(
+  wave = 3,
+  tasks = c(
+    "Putting Food Into Categories",
+    "Recall Association",
+    "hk_22482ca42486c72f Writing",
+    "Wildcat Wells",
+    "WildCam"
+  )
+))
+
+task_map <-
+  read_csv(file.path("..","..","data","task_map.csv")) %>%
+  mutate(
+    task = case_when(
+      task == "Allocating resources to programs" ~ "Allocating Resources",
+      task == "Guessing the correlation" ~ "Guess the Correlation",
+      task == "Moral Reasoning (Disciplinary Action Case)" ~ "Moral Reasoning",
+      task == "Whac-A-Mole" ~ "Whac a Mole",
+      task == "Divergent Association Task" ~ "Divergent Association",
+      task == "Room assignment task" ~ "Room Assignment",
+      task == "Wolf, goat and cabbage transfer" ~ "Wolf Goat Cabbage",
+      task == "Word construction from a subset of letters" ~ "Word Construction",
+      task == "Writing story" ~ "Writing Story",
+      task == "Unscramble words (anagrams)" ~ "Unscramble Words",
+      task == "Wildcam Gorongosa (Zooniverse)" ~ "WildCam",
+      task == "Putting food into categories" ~ "Putting Food Into Categories",
+      task == "Recall association" ~ "Recall Association",
+      task == "hk_22482ca42486c72f writing" ~ "hk_22482ca42486c72f Writing",
+      # task == "Search for Oil Task" ~ "Wildcat Wells",
+      task == "Random dot motion" ~ "Random Dot Motion",
+      task == "Typing game" ~ "Typing",
+      task == "Recall word lists" ~ "Recall Word Lists",
+      TRUE ~ task
+    ),
+    wave = case_when(
+      task %in% tasks_in_waves[[1]]$tasks ~ 1,
+      task %in% tasks_in_waves[[2]]$tasks ~ 2,
+      task %in% tasks_in_waves[[3]]$tasks ~ 3,
+      TRUE ~ NA
+    )
+  ) |>
+  filter(task != "NA")
+
+mcgrath_mapping = read_csv(file.path("..","..","data","20_task_map_mcgrath_manually_updated.csv")) |> select(task, matches("_cat")) |>
+  pivot_longer(matches("_cat"), names_to = "mcgrath_type") |>
+  mutate(mcgrath_type = sub("_cat", "", mcgrath_type),) |>
+  filter(value == 1) |>
+  select(-value)
+```
+
+# Data cleaning
+## Conditions
+Cleaning treatments and associating them with players
+
+```{r}
+conditions <- factors |> 
+  select(factorId,value, factorTypeId) |> 
+  inner_join(factor_types |>
+               select(factorTypeId, name) |> 
+               filter(name %in% c("unitsSeed", "unitsIndex", "playerCount"))) |>
+  inner_join(
+    treatments |>
+      mutate(factorId = str_split(factorIds, ",")) |>
+      unnest() |> select(treatmentId, factorId),
+  ) |>
+  select(-matches("factor")) |> 
+  distinct() |>
+  pivot_wider() |>
+  na.omit()
+
+player_conditions <- players |>
+  left_join(player_rounds |> select(playerId, gameId) |> distinct()) |>
+  inner_join(games |> select(gameId, treatmentId, )) |>
+  inner_join(conditions) |>
+  select(-treatmentId, -gameId)
+```
+
+```{r}
+player_conditions %>% write_csv("../../outputs/player_conditions.csv")
+```
+
+
+## Task instances
+```{r}
+complexity_levels = c("Low","Medium","High")
+playerCountLevels = c(1,3,6)
+synergy_levels = c("None", "Weak", "Strong")
+
+task_instances <-
+  stages |>
+  filter(!grepl("(Practice|Intro)", displayName)) |>
+  filter(!is.na(data.constants)) |> # This removes missing constants, but unclear if that's correct
+  mutate(
+    instance = sub('.*"name":"(.*?)".*',"\\1", data.constants),
+    instance_number = case_when(
+      grepl("zero", instance) ~ 0,
+      grepl("one", instance) ~ 1,
+      grepl("two", instance) ~ 2,
+      grepl("three", instance) ~ 3,
+      grepl("0", instance) ~ 0,
+      grepl("1", instance) ~ 1,
+      grepl("2", instance) ~ 2,
+      grepl("3", instance) ~ 3,
+      TRUE ~ NaN
+    ),
+    instance = if_else(grepl("dat instance ",instance), instance_number + 1, instance_number),
+    complexity = ordered(instance, labels = complexity_levels)
+  ) |> 
+  select(stageId,instance,data.constants, complexity)
+```
+
+```{r}
+# export "raw" data
+typing <- player_conditions |>
+  select(playerId, playerCount, data.playerIds) |>
+  left_join(player_stages) |>
+  left_join(
+    stages |> select(
+      stageId,
+      displayName,
+      startTimeAt,
+      data.stageLength,
+      data.defaultStageLength,
+    )
+  ) |>
+  left_join(task_instances) |>
+  left_join(offline_scoring) |>
+  mutate(task = sub(" Round.*", "", displayName),
+         score = as.numeric(if_else(is.na(score), data.score, as.character(score))),
+         playerCount = ordered(playerCount)
+         ) |>
+  ungroup() |> 
+    filter(str_detect(displayName, "Typing")) |>
+    select(roundId) |> unique()
+
+# |> write_csv('../../outputs/raw_recruitment_info_for_explore.csv')
+```
+
+## Data preparation
+```{r}
+raw_score_data <-
+  player_conditions |>
+  select(playerId, playerCount, data.playerIds) |>
+  na.omit() |>
+  left_join(player_stages) |>
+  left_join(
+    stages |> select(
+      stageId,
+      displayName,
+      startTimeAt,
+      data.stageLength,
+      data.defaultStageLength,
+    )
+  ) |>
+  left_join(task_instances) |>
+  left_join(offline_scoring) |>
+  filter(!is.na(complexity)) |> 
+  mutate(task = sub(" Round.*", "", displayName),
+         score = as.numeric(if_else(is.na(score), data.score, as.character(score))),
+         playerCount = ordered(playerCount)
+         ) |>
+  filter(!is.na(score)) |> 
+  group_by(task, complexity) |>
+  mutate(
+    score = if_else(task == "Random Dot Motion", score, if_else(score < 0, 0, 100 * score / max(score))),
+    duration =  data.stageLength / 60000,
+    efficiency = score / duration,
+    wave = case_when(
+      task %in% tasks_in_waves[[1]]$tasks ~ 1,
+      task %in% tasks_in_waves[[2]]$tasks ~ 2,
+      task %in% tasks_in_waves[[3]]$tasks ~ 3,
+      TRUE ~ NA
+    )
+  ) |>
+  ungroup() |>
+  select(wave,
+         task,
+         complexity,
+         playerCount,
+         stageId,
+         score,
+         duration,
+         efficiency,
+         playerIds = data.playerIds
+  ) |>
+  unique() |>
+  filter(!is.na(efficiency)) |>
+  filter(!is.na(score)) |> 
+  group_by(stageId, task, complexity, playerCount, wave, playerIds) |> 
+  summarize(score = max(score), duration = min(duration), efficiency = max(efficiency)) |> 
+  ungroup()
+```
+
+## Exploring how we can join raw data for certain tasks (e.g., around generating words, ideas)
+
+**Word Construction**
+- Letter list: data.constants [use dictionary to determine if all letters are present/word is correct]
+- Answers: data.wordsList
+**Unscramble Words**
+- Word list: data.constants [can create answer key]
+- Answers: data.userInputList	
+**Putting Food Into Categories**
+- Food List: data.constants [need GPT for this one?]
+- Answers: data.similaritiesList
+**Recall Association**
+- Word List: data.constants [has the ground truth answers]
+- Answers:data.recalledWords
+**Recall Word Lists**
+- Word List: data.constants [has the ground truth answers]
+- Answers: % TODO: maybe explore adding %
+
+```{r}
+metadata_map <- stages %>%
+  filter(data.type %in% c(
+    "WordConstruction", "UnscrambleWords", 
+    "PuttingFoodIntoCategories", "RecallAssociation", "RecallWordLists"
+  )) %>%
+  pivot_longer(
+    cols = starts_with("data") & !matches("^data\\.type$"),
+    names_to = "data_col",
+    values_to = "val",
+    values_transform = list(val = as.character)
+  ) %>%
+  group_by(data.type, data_col) %>%
+  filter(any(!is.na(val))) %>%
+  ungroup() %>%
+  distinct(data.type, data_col)
+
+# this is the set of columns with metadata for each game of this type
+metadata_map
+```
+
+get the key columns with the raw input data for each task
+```{r}
+food_into_categories <- stages %>%
+  filter(data.type %in% c(
+    "PuttingFoodIntoCategories"
+  )) %>% select(
+    c(
+      stageId, data.type, data.constants, data.similaritiesList
+    )
+  ) %>%
+  rename(
+    data.answers = data.similaritiesList
+  )
+word_construction <- stages%>%
+    filter(data.type %in% c(
+    "WordConstruction"
+  )) %>% select(
+    c(
+      stageId, data.type, data.constants, data.wordsList
+    )
+  ) %>%
+  rename(
+    data.answers = data.wordsList
+  )
+unscramble_words <- stages %>%
+  filter(data.type %in% c(
+    "UnscrambleWords"
+  )) %>% select(
+    c(
+      stageId, data.type, data.constants, data.userInputList
+    )
+  ) %>%
+  rename(
+    data.answers = data.userInputList
+  )
+recall_association <- stages %>%
+  filter(data.type %in% c(
+    "RecallAssociation"
+  ))%>% select(
+    c(
+      stageId, data.type, data.constants, data.recalledWords
+    )
+  ) %>%
+  rename(
+    data.answers = data.recalledWords
+  )
+```
+
+```{r}
+rbind(
+  food_into_categories,
+  word_construction,
+  unscramble_words,
+  recall_association
+) %>% drop_na() %>%
+  write_csv('../../outputs/summable_answers_raw.csv')
+```
+
+
+# Functions
+
+## Group Advantage (Condition-Level)
+```{r}
+permutation_synergy = function(input_data, col = "score", individuals_update) {
+  individuals = input_data |>
+    filter(playerCount == 1) |>
+    select(-playerCount) |>
+    crossing(data.frame(playerCount = c(3, 6))) |>
+    arrange(desc(!!sym(col))) |>
+    group_by(task, complexity, playerCount) |>
+    summarise(
+      random_individual = mean(!!sym(col)),
+      random_individual_sd = sd(!!sym(col)),
+      random_individual_n = n(),
+      best_individual_n = choose(n(), mean(playerCount)),
+      best_individual = sum(choose(n() - row_number(), playerCount - 1)  * !!sym(col)) / best_individual_n,
+      best_individual_sd = sqrt(sum(
+        choose(n() - row_number(), playerCount - 1) * (!!sym(col) - best_individual) **
+          2
+      ) / best_individual_n),
+      
+    ) |>
+    mutate(playerCount = ordered(playerCount, levels = c(1, 3, 6))) |>
+    ungroup()
+  
+  input_data |>
+    filter(playerCount != 1) |>
+    left_join(individuals) |>
+    group_by(task, complexity, playerCount) |>
+    summarize(
+      team_n = n(),
+      strong =  mean(!!sym(col)) / first(best_individual),
+      weak = mean(!!sym(col)) / first(random_individual),
+      team_sd = sd(!!sym(col)),
+      strong_se = strong * sqrt((team_sd ** 2 / (
+        mean(!!sym(col)) ** 2 * team_n
+      )) + (
+        first(best_individual_sd) ** 2 / (first(best_individual) ** 2 * first(best_individual_n))
+      )),
+      weak_se = weak * sqrt((team_sd ** 2 / (
+        mean(!!sym(col)) ** 2 * team_n
+      )) + (
+        first(random_individual_sd) ** 2 / (first(random_individual) ** 2 * first(random_individual_n))
+      ))
+    ) |> ungroup()
+}
+```
+
+## Group Advantage (Observation Level)
+
+This is a special version of the group advantage calculation that leaves it at the team level, instead of going down to the instance level. 
+```{r}
+permutation_synergy_partial = function(input_data, col = "score", individuals_update) {
+  individuals = input_data |>
+    filter(playerCount == 1) |>
+    select(-playerCount) |>
+    crossing(data.frame(playerCount = c(3, 6))) |>
+    arrange(desc(!!sym(col))) |>
+    group_by(task, complexity, playerCount) |>
+    summarise(
+      random_individual = mean(!!sym(col)),
+      random_individual_sd = sd(!!sym(col)),
+      random_individual_n = n(),
+      best_individual_n = choose(n(), mean(playerCount)),
+      best_individual = sum(choose(n() - row_number(), playerCount - 1)  * !!sym(col)) / best_individual_n,
+      best_individual_sd = sqrt(sum(
+        choose(n() - row_number(), playerCount - 1) * (!!sym(col) - best_individual) **
+          2
+      ) / best_individual_n),
+      
+    ) |>
+    mutate(playerCount = ordered(playerCount, levels = c(1, 3, 6))) |>
+    ungroup()
+  
+  input_data |>
+    filter(playerCount != 1) |>
+    left_join(individuals)
+}
+```
+
+```{r}
+individuals_update = player_conditions |>
+  select(playerId, playerCount, data.playerIds) |>
+  na.omit() |>
+  left_join(player_stages) |>
+  left_join(
+    stages |> select(
+      stageId,
+      data.average,
+      data.corrAngle,
+      displayName,
+      startTimeAt,
+      data.stageLength,
+      data.defaultStageLength,
+    )
+  ) |>
+  left_join(task_instances) |>
+  left_join(offline_scoring) |>
+  filter(!is.na(complexity)) |>
+  mutate(
+    task = sub(" Round.*", "", displayName),
+    score = as.numeric(if_else(
+      is.na(score), data.score, as.character(score)
+    )),
+    average = data.average,
+    correct_angle = data.corrAngle,
+    playerCount = ordered(playerCount)
+  ) |>
+  filter(task == "Random Dot Motion")  |>
+  filter(playerCount == 1) |>
+  select(task, complexity, stageId, score, average, correct_angle) |>
+  na.omit() |>
+  crossing(data.frame(playerCount = c(3, 6))) |>
+  group_by(task, complexity, playerCount) |>
+  do(data.frame(
+    best_individual_score = apply(combn(.$score, first(.$playerCount)), 2, max),
+    random_individual_response = abs(colMeans(
+    combn(.$average, first(.$playerCount))
+  ) - .$correct_angle[1])) |>
+    summarise(
+      random_individual = mean((
+        180 - ifelse(random_individual_response > 180, 360 - random_individual_response, random_individual_response)
+      ) / 1.8),
+      random_individual_sd = sd((
+        180 - ifelse(random_individual_response > 180, 360 - random_individual_response, random_individual_response)
+      ) / 1.8),
+      random_individual_n = n(),
+       best_individual_n = n(),
+      best_individual = mean(best_individual_score),
+      best_individual_sd = sd(best_individual_score)
+    ))
+
+permutation_synergy(raw_score_data,individuals_update = individuals_update)
+```
+
+## Export Cleaned Data
+
+```{r}
+synergy_data = permutation_synergy(raw_score_data, individuals_update = individuals_update)
+synergy_data |> write_csv("../../outputs/condition_level_group_advantage.csv")
+
+synergy_data_for_prediction <- synergy_data |> 
+  select(task,complexity,playerCount,strong,weak) |> 
+  mutate(value = 1) |> 
+  pivot_wider(names_from = complexity,values_fill = 0) |> 
+  left_join(task_map)
+
+synergy_data_for_prediction |> 
+  write_csv("../../outputs/condition_level_group_advantage_with_ivs.csv")
+
+synergy_data_for_prediction |> 
+  select(task, playerCount, strong, weak, Low, Medium, High, wave) |> 
+  left_join(mcgrath_mapping) |> 
+  mutate(type = 1) |> 
+  pivot_wider(names_from = mcgrath_type, values_from = type, values_fill = 0) |>
+  write_csv("../../outputs/condition_level_group_advantage_with_ivs_and_categories.csv")
+```
+
+## Figure 2
+```{r}
+synergy_summary_data <- synergy_data |>
+  pivot_longer(c("strong", "weak"), names_to = "DV") |>
+  pivot_longer(
+    c("strong_se", "weak_se"),
+    names_sep = "_",
+    names_to = c("name", "se"),
+    values_to = "SE"
+  ) |>
+  filter(DV == name) |> select(-name, -se) |>
+  mutate(
+    DV = if_else(DV == "weak", paste0("Weak ",outcome_term), paste0("Strong ",outcome_term)),
+    DV = ordered(DV, levels = c(paste0("Weak ",outcome_term), paste0("Strong ",outcome_term))),
+    complexity = paste(complexity, "Complexity"),
+    complexity = ordered(
+      complexity,
+      levels = c("Low Complexity", "Medium Complexity", "High Complexity")
+    ),
+    playerCount = if_else(playerCount == 3, "Small Group", "Large Group"),
+    playerCount = ordered(playerCount, levels = c("Small Group", "Large Group")),
+    grouping = "Task",
+    group = task
+  ) |> 
+  left_join(task_map |> select(task,wave)) |> 
+  mutate(
+    wave = paste0("Wave ",wave)
+  )
+
+aggregated_synergy_summary_data_by_wave = synergy_summary_data |>
+  select(-grouping, -group) |>
+  pivot_longer(c(task, complexity, playerCount),
+               names_to = "grouping",
+               values_to = "group") |>
+  group_by(grouping, group, DV, wave) |>
+  summarise(value = mean(value),
+            SE = sqrt(sum(SE ^ 2) / length(SE) ^ 2)) |> 
+  mutate(
+    grouping = case_when(
+      grouping == "complexity" ~ "Complexity",
+      grouping == "playerCount" ~ "Size",
+      grouping == "task" ~ "Task",
+    ),
+    grouping = ordered(grouping, levels = c("Task", "Complexity", "Size"))
+  ) |> 
+  filter(grouping == "Task")
+
+# Make the order "Strong," then "Weak"
+aggregated_synergy_summary_data_by_wave$DV <- factor(
+  aggregated_synergy_summary_data_by_wave$DV,
+  levels = rev(levels(aggregated_synergy_summary_data_by_wave$DV))
+)
+
+figure_2 <- aggregated_synergy_summary_data_by_wave |>
+  ggplot(aes(
+    value,
+    reorder(group, value),
+    xmin = value - z * SE ,
+    xmax = value + z * SE,
+  )) +
+  facet_grid(
+    cols = vars(DV),
+    rows = vars(wave),
+    scales = "free_y",
+    space = "free",
+    switch = "both"
+  ) +
+  geom_vline(xintercept = c(1), linetype = "21") +
+  theme_pubclean() +
+  theme_pubclean(flip = FALSE) +
+  theme(
+    legend.position = "bottom",
+    plot.margin = margin(
+      t = 1,
+      r = 1,
+      b = 1,
+      l = 1
+    ),
+    strip.placement = "outside",
+    # strip.background = element_blank(),
+    panel.spacing = unit(0.5, "lines"),
+    legend.margin = margin(t = -25),
+  ) + 
+  geom_pointrange(
+    data = synergy_summary_data,
+    aes(
+      value,
+      group,
+      shape = playerCount,
+      # color = if_else(display,complexity,"none"),
+      color = complexity,
+      xmin = value - z * SE ,
+      xmax = value + z * SE,
+      # fill = if_else(((value - z * SE) - 1)*((value + z * SE) - 1)>0,complexity,"white")
+    ),
+    position = position_dodge2(width = 0.8, padding = 0.1, reverse = FALSE),
+    size = .4,
+    fill = "white",
+    stroke = .9,
+    # shape = 21
+  ) +
+  scale_color_manual(
+    values = c(
+      "Low Complexity" = "#1b9e77",
+      "Medium Complexity" = "#7570b3",
+      "High Complexity" = "#d95f02",
+      "white" = "white"
+    ),
+    # guide = "none"
+  ) +
+  scale_shape_manual(values = c(21,4)) +
+  # scale_shape_manual(values = c(21,24)) +
+  labs(
+    y = "",
+    x = "",
+    color = "",
+    fill = "",
+    shape = ""
+  ) + geom_crossbar() +
+ theme(
+  legend.position = "top",
+  legend.justification = "right",
+  legend.box = "horizontal",
+  legend.text = element_text(size = 18),
+  plot.margin = margin(t = 28, r = 50, b = 15, l = 5),  # Increase r until legend fits!
+  strip.placement = "outside",
+  panel.spacing = unit(0.5, "lines"),
+  legend.margin = margin(b = 10, t = 0),
+  legend.box.margin = margin(t = 7, r = 0, b = 0, l = 0),
+  strip.background = element_blank(),
+  strip.text = element_text(face = "bold", color = "black", size = 20),
+  axis.text.y = element_text(size = 18),
+  axis.text.x = element_text(size = 18)
+)
+ggsave("../../outputs/figure_2.pdf", plot = figure_2, height = 14, width = 14)
+ggsave("../../outputs/figure_2.png", plot = figure_2, height = 14, width = 14)
+```
+
+## Group Composition @ Observation Level
+
+```{r}
+panel = read_csv(file.path("..","..","data","players","individuals.csv"))
+
+players_with_panel <-
+  players |> mutate(WorkerId = sub(" .*", "", id)) |>
+  select(playerId, WorkerId, playerIds = data.playerIds) |>
+  left_join(
+    panel |> select(
+      WorkerId,
+      date,
+      CRT,
+      birth_year,
+      gender,
+      education_level,
+      political_fiscal,
+      political_social,
+      political_party,
+      income_min,
+      income_max,
+      IRCS_GS,
+      IRCS_GV,
+      IRCS_IB,
+      IRCS_IS = IRCS_IR,
+      IRCS_IV,
+      IRCS_RS,
+      marital_status,
+      race,
+      RME
+    )
+  ) |>
+  mutate(value = 1) |>
+  pivot_wider(
+    names_from = gender,
+    names_prefix = "gender_",
+    values_fn = mean,
+    values_fill = 0
+  ) |>
+  mutate(value = 1) |>
+  pivot_wider(
+    names_from = marital_status,
+    names_prefix = "marital_status_",
+    values_fn = mean,
+    values_fill = 0
+  ) |>
+  mutate(value = 1) |>
+  pivot_wider(
+    names_from = political_party,
+    names_prefix = "political_party_",
+    values_fn = mean,
+    values_fill = 0
+  ) |>
+  mutate(value = 1) |>
+  pivot_wider(
+    names_from = education_level,
+    names_prefix = "education_level_",
+    values_fn = mean,
+    values_fill = 0
+  ) |>
+  mutate(value = 1) |>
+  pivot_wider(
+    names_from = race,
+    names_prefix = "race_",
+    values_fn = mean,
+    values_fill = 0
+  ) |>
+  mutate(
+    birth_year = abs(birth_year),
+    birth_year = if_else(birth_year > 1000, birth_year, as.numeric(format(as.Date(date), "%Y")) - birth_year),
+    ) |>
+  filter(as.numeric(format(as.Date(date), "%Y")) - 17 > birth_year,birth_year > 1900) |> 
+  select(-matches("_NA"),-date) |>
+  na.omit() |> 
+  left_join(player_stages |> select(playerId, stageId))
+
+stage_team_compositions <- players_with_panel |> group_by(stageId) |>
+  summarise(
+            n = n(),
+            across(c(
+              matches("gender"),
+              matches("marital_status"),
+              matches("political_party"),
+              matches("education_level"),
+              matches("race")
+            ), mean),
+            across(
+              c(
+                CRT,
+                birth_year,
+                matches("income"),
+                matches("IRCS"),
+                RME,
+                political_fiscal,
+                political_social
+              ),
+              c(
+                mean = ~ mean(.x, na.rm = TRUE),
+                min = ~ min(.x, na.rm = TRUE),
+                max = ~ max(.x, na.rm = TRUE),
+                sd = ~ sd(.x, na.rm = TRUE)
+              )
+            )) |>
+  filter(n != 1) |>
+  select(-n) |>
+  na.omit()
+
+synergy_data_partial <-
+  permutation_synergy_partial(raw_score_data, individuals_update = individuals_update) |>
+  mutate(weak = score / random_individual,
+         strong = score / best_individual) |>
+  select(stageId, task, complexity, playerCount, weak, strong) |>
+  pivot_longer(c(weak, strong), names_to = "DV") |>
+  semi_join(stage_team_compositions)
+```
+
+```{r}
+task_instance_modeling_data <-
+  synergy_data_partial |> left_join(task_map |> select(task, wave)) |> mutate(features = "Task instance")
+
+composition_modeling_data <-
+  task_instance_modeling_data |> left_join(stage_team_compositions) |> mutate(features = "Team composition")
+
+task_space_modeling_data <-
+  task_instance_modeling_data |> left_join(task_map) |> mutate(features = "Task space")
+
+both_modeling_data <-
+  composition_modeling_data |> left_join(task_map) |> mutate(features = "All features")
+
+observation_synergy_map_and_composition.csv <- both_modeling_data |> pivot_wider(names_from = DV) |> 
+  mutate(value = 1) |> 
+  pivot_wider(names_from = complexity, values_fill = 0) |> 
+  mutate(synergy = if_else(strong > 1, "strong", if_else(weak > 1, "weak", "none")))
+
+# merge playerIds back in
+observation_synergy_map_and_composition.csv <- players_with_panel %>% select(c(stageId, playerIds)) %>% unique() %>% merge(observation_synergy_map_and_composition.csv, on = "stageId", how = "right")
+
+observation_synergy_map_and_composition.csv %>% write_csv("../../outputs/observation_level_dv_with_composition.csv")
+```

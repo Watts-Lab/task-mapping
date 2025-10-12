@@ -1,0 +1,216 @@
+---
+title: "new-task-writeup-viz-pipeline"
+author: "Emily Hu"
+date: "2/27/2022"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(DescTools)
+library(factoextra)
+library(httr)
+library(jsonlite)
+library(stats)
+library(corrplot)
+library(irr)
+library(icr)
+library(stringr)
+library(markdown)
+library(qualtRics)
+library(ggplot2)
+library(plotly)
+library(dplyr)
+library(tidyverse)
+```
+
+# Pull in Survey Data
+```{r}
+qualtrics_api_credentials(api_key = "91xPIrVaorSVR2vigYP4xG540WbapOLOyZoz90Ql",
+base_url = "upenn.co1.qualtrics.com",
+overwrite = TRUE)
+
+task_writing_survey_id <- (surveys %>% filter(name == "Task Rewriting Submission Form [NEW]"))$id
+
+df.survey_results <- fetch_survey(
+  surveyID = task_writing_survey_id,
+  save_dir = ".",
+  force_request = T
+)
+```
+
+# Check how many people did
+```{r}
+df.survey_results$`GitHub-id` %>% table()
+```
+
+# Check timing
+```{r}
+df.survey_results %>%
+  mutate(
+    Duration = EndDate-StartDate
+  ) %>%
+  summarize(
+    medianDuration = median(Duration),
+    sdDuration = sd(Duration)/60
+  )
+```
+
+```{r}
+#colnames(df.survey_results)
+
+df.survey_results_cleaned <-df.survey_results %>%
+  select(
+    `task-name`,
+    `GitHub-id`,
+    `stimulus-complex`,
+    `goal-directives`,
+    skills,
+    `ui-ux`,
+    `allowed-gr-proc`,
+    `GitHub-link`,
+    `external-resources`
+  )
+
+#df.survey_results_cleaned
+```
+
+# Generate .md Files
+```{r}
+for(i in 1:nrow(df.survey_results_cleaned)){
+  row <- df.survey_results_cleaned[i,]
+  task_title <- paste0("# ",toString(row$`task-name`),"\n\n")
+  author <- paste0("Mapped by: ",toString(row$`GitHub-id`)," \n\n")
+  stim_complex <- paste0("## 1. Stimulus Complex \n",toString(row$`stimulus-complex`),"\n\n")
+  goal_directives <- paste0("## 2. Goal Directives \n",toString(row$`goal-directives`),"\n\n")
+  allowed_group_processes <- "## 3. Allowed Group Processes \n" 
+  group_proc_info <- "The following details are not the main parts of the task, but rather additional information about ways in which participants could interact.\n\n"
+  skills <- paste0("### Skills \n",toString(row$`skills`),"\n\n")
+  uiux <- paste0("### UI-UX Allowed Processes\n",toString(row$`ui-ux`),"\n\n")
+  other_allowed_proc <- paste0("### Other Allowed Processes\n",toString(row$`allowed-gr-proc`),"\n\n")
+  github <- paste0("## GitHub Link \n",toString(row$`GitHub-link`))
+
+  total_markdown_string <- paste0(task_title,
+                                  author,
+                                  stim_complex,
+                                  goal_directives,
+                                  allowed_group_processes,
+                                  group_proc_info,
+                                  skills,
+                                  uiux,
+                                  other_allowed_proc,
+                                  github)
+  
+  file_title <- paste0("../tasks/summaries/",row$`task-name`,"-writeup.md")
+  
+  # only write the file if it doesn't already exist
+  if(file.exists(file_title) == FALSE){
+    writeup_file <- file(file_title, "w") # Create Rmarkdown file
+    cat(total_markdown_string, file = writeup_file) # Write your content to Rmarkdown file
+    close(writeup_file)
+  }
+}
+```
+
+# Generate a CSV with task names in one column and HTML in a second column
+This will enable us to paste directly into the task mapping survey.
+
+```{r}
+req <- httr::GET("https://api.github.com/repos/Watts-Lab/task-mapping/git/trees/master?recursive=1")
+df.thisscript <- jsonlite::fromJSON(content(req, "text"))$tree %>% 
+filter(grepl("writeup\ to\ html\ pipeline/new-task-writeup-viz-pipeline.Rmd", path))
+
+thisscript.url <- df.thisscript$url
+
+df.blobs <- jsonlite::fromJSON(content(req, "text"))$tree %>% 
+filter(grepl("tasks/summaries/", path))
+```
+
+These are the tasks that are successfully edited so far
+```{r}
+edited_tasks <- read_csv('./edited_tasks.csv')$edited_tasks
+```
+
+```{r message=FALSE, warning=FALSE}
+df.task_map_format <- data.frame(matrix(ncol = 5, nrow = 0))
+colnames(df.task_map_format) <- c('task', 'html', 'github', 'path', 'script')
+
+for(i in 1:length(edited_tasks)){
+  task_name <- edited_tasks[i]
+  
+  # Replace the quotes in the name
+  task_name <- str_replace_all(task_name, "&#39;", "'") %>%
+                str_replace_all("&ldquo;", "\"") %>%
+                str_replace_all("&rdquo;", "\"")
+  
+  blob_path <- paste0("tasks/summaries/",task_name,"-writeup.md")
+  blob_url <- df.blobs %>% filter(path == blob_path) %>%
+    select(url) %>% as.character()
+  path <- df.blobs %>% filter(path == blob_path) %>%
+    select(path) %>% as.character()
+  
+  file_title <- paste0("../tasks/summaries/",task_name,"-writeup.md")
+  
+  txt <- read_file(file_title)
+  txt_html <- markdownToHTML(text = txt,
+                             fragment.only =  T)
+  
+  # remove the mapper name and the github link
+  txt_html <- str_remove(txt_html, "<p>Mapped by: .*</p>") %>%
+      str_remove("<h2>.*GitHub Link.*") %>%
+      str_remove("<a href=.*</a>") %>%
+      str_remove("<p></p>")
+  
+  # Replace the words "stimulus complex" and "goal directives"
+  txt_html <- str_replace_all(txt_html, "1. Stimulus Complex", "1. Set-Up") %>%
+                str_replace_all("2. Goal Directives", "2. Objective / Goal")
+  
+  # Replace special characters in the main text
+  txt_html <- str_replace_all(txt_html, "&#39;", "\'") %>%
+                str_replace_all("&ldquo;", "\"") %>%
+                str_replace_all("&rdquo;", "\"") %>%
+                str_replace_all("&gt;", ">")
+  
+  # Remove the Allowed Group Processes
+  txt_html <- str_split(txt_html, "<h2>3.")[[1]][1]
+  
+  # remove line breaks
+  txt_html <- str_replace_all(txt_html, "[\r\n]" , "")
+  
+  # add better line breaks
+  txt_html <- str_replace_all(txt_html, "<h2>", "<br><h2>") %>%
+              str_replace_all("<h1>", "<h2>") %>%
+              str_replace_all("</h1>", "</h2>")
+  
+  new_row = data.frame(
+    'task'= task_name,
+    'html' =  txt_html,
+    'github' = blob_url,
+    'path' = path,
+    'script' = thisscript.url
+  )
+  
+  df.task_map_format <- rbind(df.task_map_format, new_row)
+}
+```
+
+Write mapped tasks into HTML for rating
+```{r}
+df.task_map_format %>% write_csv('./html/task-htmls.csv')
+```
+
+Remove all other summaries
+- This ensures that any summary that had its name changed after being initially submitted will be removed from the system.
+```{r}
+for(i in 1:length(df.blobs$path)){
+  file_path <- df.blobs$path[i]
+  if(!(file_path %in% df.task_map_format$path)){
+    file.remove(paste0("../",file_path))
+  }
+}
+```
+
+---------------------------------------------------------
