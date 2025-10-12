@@ -194,7 +194,6 @@ mcgrath_mapping = mcgrath_mapping_wide |>
 mcgrath_categories <- unique(mcgrath_mapping$mcgrath_type)
 
 mcgrath_category_cols <- setdiff(names(mcgrath_mapping_wide), "task")
-mcgrath_non_uncategorized_cols <- setdiff(mcgrath_category_cols, "Uncategorized_cat")
 
 base_columns <- c("task", "playerCount", "strong", "weak", "Low", "Medium", "High", "wave")
 
@@ -561,9 +560,9 @@ synergy_data_for_prediction |>
   left_join(mcgrath_mapping_wide, by = "task") |> 
   mutate(across(all_of(mcgrath_category_cols), ~ coalesce(.x, 0))) |>
   mutate(Uncategorized_cat = if_else(
-    rowSums(across(all_of(mcgrath_non_uncategorized_cols))) == 0,
+    rowSums(across(all_of(mcgrath_category_cols))) == 0,
     1,
-    Uncategorized_cat
+    0
   )) |>
   write_csv("../../outputs/processed_data/condition_level_group_advantage_with_ivs_and_categories.csv")
 
