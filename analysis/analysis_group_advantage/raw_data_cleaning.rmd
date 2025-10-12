@@ -42,7 +42,7 @@ load_CSVs <- function(pattern, rename = TRUE) {
   # sub("s$", "Id", pattern)
   # Load and process CSV files
   files <- data.frame(path = list.files(
-    "../data/",
+    "../../data/",
     paste0(pattern, ".csv"),
     recursive = TRUE,
     full.names = TRUE
