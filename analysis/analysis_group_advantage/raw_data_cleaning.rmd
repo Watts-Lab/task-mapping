@@ -67,7 +67,8 @@ load_CSVs <- function(pattern, rename = TRUE) {
     # Some CSVs use a generic `_id` column name for the primary id. If present,
     # rename it to the expected adjusted_pattern (e.g. `factorId`, `playerId`).
     if ("_id" %in% names(data)) {
-      data <- data |> rename(!!adjusted_pattern := `_id`)
+      # Use rlang::sym to convert the character name into a symbol for `:=`
+      data <- data |> rename(!!rlang::sym(adjusted_pattern) := `_id`)
     }
 
     # Find columns that end with _id and only attempt to rename if any are present.
