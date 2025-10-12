@@ -14,7 +14,7 @@ library(tidyverse)
 ```
 
 ```{r load-data, echo=FALSE, message=FALSE, warning=FALSE}
-task_map <- read_csv('./task_map.csv')
+task_map <- read_csv('./data/task_map.csv')
 ```
 ```{r interactive_map, echo = F}
 task_map_pca <- prcomp(task_map[, -1], scale = TRUE)
