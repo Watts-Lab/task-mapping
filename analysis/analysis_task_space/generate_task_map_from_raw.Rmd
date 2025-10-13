@@ -1,9 +1,11 @@
----
 title: "generate_task_map_from_raw.Rmd"
 author: "Emily Hu"
 date: "06/21/2023"
-output: html_document
----
+output:
+  html_document:
+    dev: png
+    fig_width: 8
+    fig_height: 5
 
 This notebook takes in the raw Task Map Rater Data and cleans it into the Task Map.
 

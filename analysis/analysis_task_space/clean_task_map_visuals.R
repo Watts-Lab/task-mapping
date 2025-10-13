@@ -7,6 +7,9 @@ library(ggplot2)
 library(dplyr)
 library(tidyverse)
 
+# Ensure plots default to PNG to avoid generating Rplots.pdf when running non-interactively
+options(device = function(...) grDevices::png(filename = tempfile(fileext = ".png")))
+
 ## -----------------------------------------------------------------------------
 task_map <- read_csv('../../outputs/processed_data/task_map.csv')
 

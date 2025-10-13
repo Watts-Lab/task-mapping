@@ -1,7 +1,16 @@
----
 title: "clean_task_map_visuals"
-output: html_notebook
----
+output:
+  html_document:
+    fig_caption: true
+    df_print: paged
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: hide
+    number_sections: false
+    dev: png
+    fig_width: 8
+    fig_height: 5
 
 ```{r}
 library(factoextra)

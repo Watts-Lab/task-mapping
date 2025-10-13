@@ -485,7 +485,7 @@ synergy_data_for_prediction |>
   write_csv(file.path(PROCESSED_DIR, "condition_level_group_advantage_with_ivs.csv"))
 
 synergy_data_for_prediction |>
-  select(task, playerCount, strong, weak, Low, Medium, High, wave) |>
+  # Keep ALL IVs from task_map (Task Space) + condition-level fields, then append category one-hots
   # Build the same normalized key as used in mcgrath_mapping_wide
   mutate(task_key = gsub("[^a-z0-9]", "", tolower(trimws(task)))) |>
   left_join(mcgrath_mapping_wide, by = "task_key") |>

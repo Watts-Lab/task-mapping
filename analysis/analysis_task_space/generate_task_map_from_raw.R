@@ -3,6 +3,9 @@ knitr::opts_chunk$set(echo = TRUE)
 library(dplyr)
 library(tidyverse)
 
+# Ensure plots default to PNG to avoid generating Rplots.pdf when running non-interactively
+options(device = function(...) grDevices::png(filename = tempfile(fileext = ".png")))
+
 
 ## -----------------------------------------------------------------------------
 df.mapping.raw <- read_csv('../../data/raw_map.csv')

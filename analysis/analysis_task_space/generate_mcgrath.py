@@ -27,35 +27,38 @@ def generate_mcgrath(df: pd.DataFrame) -> pd.DataFrame:
     # Identify McGrath dimension columns preserving DataFrame order
     mcgrath_colnames = [
         c for c in df.columns
-        if c.startswith("Type ") or c == CONCEPTUAL_BEHAVIORAL
+        if (c.startswith("Type ") or c == CONCEPTUAL_BEHAVIORAL)
+        and not (c.endswith("_cat") or c.endswith("_categorical"))
     ]
+    # Reproduce original assumption: ensure Conceptual-Behavioral is last
+    if CONCEPTUAL_BEHAVIORAL in mcgrath_colnames:
+        mcgrath_colnames = [c for c in mcgrath_colnames if c != CONCEPTUAL_BEHAVIORAL] + [CONCEPTUAL_BEHAVIORAL]
     if not mcgrath_colnames:
         raise ValueError("No McGrath columns found in DataFrame.")
 
     mcgrath_categorical_buckets: dict[str, str] = {}
 
     for i in range(len(df)):
-        # Reproduce original behavior: skip the first McGrath column
+        # Reproduce original behavior: skip the first McGrath column (order-dependent)
         task_vec_mcgrath = df[mcgrath_colnames].iloc[i][1:].astype(float).copy()
 
-        # Get Conceptual-Behavioral explicitly by name (robust to column order)
-        conceptual_behavioral = float(df.loc[df.index[i], CONCEPTUAL_BEHAVIORAL])
+        # Original logic: conceptual-behavioral is the last element of the sliced vector
+        conceptual_behavioral = float(task_vec_mcgrath.iloc[-1])
+        # Keep a snapshot of the non-conceptual slice BEFORE adding derived Type 4
+        non_conceptual_slice = task_vec_mcgrath.iloc[:-1].copy()
 
         # Type 4 = inverse of Type 3/4
         if MCGRATH_OBJECTIVE in task_vec_mcgrath.index:
             task_vec_mcgrath[TYPE4_NAME] = 1 - task_vec_mcgrath[MCGRATH_OBJECTIVE]
 
-        # get the naive max task type (could be conceptual)
+        # get the naive max task type (could be conceptual or derived Type 4)
         task_type = task_vec_mcgrath.idxmax()
         type_val = float(task_vec_mcgrath[task_type])
 
         # Type 4 must be assigned ONLY if it's not a Generate Task
-        # Compare against all but the last element (exclude conceptual)
+        # Compare against the max among NON-CONCEPTUAL base types (pre-Type4 derivation)
         if task_type == TYPE4_NAME:
-            # Exclude Type 4 itself (original code used positional slice to drop the last element,
-            # which after appending Type 4 was effectively dropping Type 4)
-            types_wo_type4 = task_vec_mcgrath.drop(labels=[TYPE4_NAME]) if TYPE4_NAME in task_vec_mcgrath.index else task_vec_mcgrath
-            if types_wo_type4.idxmax() == "Type 2 (Generate)":
+            if non_conceptual_slice.idxmax() == "Type 2 (Generate)":
                 task_type = "Type 2 (Generate)"
 
         # Type 8 needs to be psychomotor; if not, take next biggest
@@ -81,14 +84,15 @@ def generate_mcgrath(df: pd.DataFrame) -> pd.DataFrame:
         "mcgrath_category": list(mcgrath_categorical_buckets.values()),
     })
 
+    dummies = pd.get_dummies(mcgrath_df["mcgrath_category"], dtype=int).add_suffix("_cat")
     mcgrath_df_categorical = pd.concat([
         mcgrath_df["task_name"],
-        pd.get_dummies(mcgrath_df["mcgrath_category"], dtype=int).add_suffix("_cat"),
+        mcgrath_df["mcgrath_category"],
+        dummies,
     ], axis=1)
 
     # Merge back to original DF on unified id column
     merged = df.merge(mcgrath_df_categorical, on="task_name")
 
-    # Return merged DataFrame with one-hot mcgrath category columns appended
-
+    # Return merged DataFrame with label and one-hot mcgrath category columns appended
     return merged

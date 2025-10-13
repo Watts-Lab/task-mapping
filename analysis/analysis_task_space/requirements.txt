@@ -2,11 +2,13 @@
 
 # --- Python (pip) packages ---
 # Install with: python -m pip install -r requirements.txt
-numpy
-pandas
-scipy
-matplotlib
-scikit-learn
+numpy>=2.3.3
+pandas>=2.3.3
+scipy>=1.16.2
+matplotlib>=3.10.6
+scikit-learn>=1.7.2
+nbformat>=5.10.4
+nbconvert>=7.16.6
 
 # --- R (CRAN) packages ---
 # Install in R with:

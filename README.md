@@ -127,15 +127,24 @@ A data dictionary for all datasets can be found in `data/data_dictionary.md`.
 
 Both R and Python are required to reproduce this package. The code has been reproduced with R version 4.5.1 and Python version 3.13.7.
 
+<!-- INSTRUCTIONS: List any software used to run your code, and their versions. List any non-standard packages (e.g. Stata or R packages, python libraries) and their versions, if applicable. If using non-standard software, provide instructions on how to obtain it. If the code includes scripts that install packages, document here as well. If your code uses random numbers, use a fixed seed such that your results can be reproduced.
+
+If the runtime of the code is larger than a few minutes on a regular computer, indicate approximate runtimes. If relevant, describe necessary hardware requirements. -->
+
+### Dependencies and installation
+
 Nonstandard package requirements are listed separately for the two components:
 
 - Requirements for the Task Map can be found under `analysis_task_space/requirements.txt`.
 
 - Requirements for the Group Advantage study can be found under `analysis_group_advantage/requirements.txt`.
 
-<!-- INSTRUCTIONS: List any software used to run your code, and their versions. List any non-standard packages (e.g. Stata or R packages, python libraries) and their versions, if applicable. If using non-standard software, provide instructions on how to obtain it. If the code includes scripts that install packages, document here as well. If your code uses random numbers, use a fixed seed such that your results can be reproduced.
+For Python, you can easily install the dependencies correspending to each analysis using the following commands (a virtual environment is ideal):
 
-If the runtime of the code is larger than a few minutes on a regular computer, indicate approximate runtimes. If relevant, describe necessary hardware requirements. -->
+```bash
+python3 -m pip install -r analysis/analysis_group_advantage/requirements.txt
+python3 -m pip install -r analysis/analysis_task_space/requirements.txt
+```
 
 ## 5.	Programs/Code
 
