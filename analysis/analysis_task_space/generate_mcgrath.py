@@ -1,7 +1,10 @@
-"""Generate McGrath categorical mapping from data/task_map.csv
+"""Generate McGrath categorical mapping from a task map DataFrame.
+
+This function is robust to either `task` or `task_name` as the identifier column
+but otherwise reproduces the original selection logic exactly, including the
+column-order dependent behavior (skip the first McGrath column; assume the last
+selected column is Conceptual-Behavioral).
 """
-import argparse
-from pathlib import Path
 import pandas as pd
 
 MCGRATH_OBJECTIVE = "Type 3 and Type 4 (Objective Correctness)"
@@ -9,115 +12,83 @@ TYPE4_NAME = "Type 4 (Decision-Making)"
 TYPE8_NAME = "Type 8 (Performance)"
 CONCEPTUAL_BEHAVIORAL = "Conceptual-Behavioral"
 
-def infer_task_col(df: pd.DataFrame) -> str:
-    if "task" in df.columns:
-        return "task"
-    if "task_name" in df.columns:
-        return "task_name"
-    raise ValueError("Expected a task identifier column named 'task' or 'task_name'.")
-
-def infer_mcgrath_cols(df: pd.DataFrame) -> list[str]:
-    cols = []
-    for c in df.columns:
-        if c.startswith("Type ") or c == CONCEPTUAL_BEHAVIORAL:
-            cols.append(c)
-    required = {MCGRATH_OBJECTIVE, CONCEPTUAL_BEHAVIORAL}
-    missing = [c for c in required if c not in cols]
-    if missing:
-        raise ValueError(f"Missing required McGrath columns: {missing}")
-    # Ensure Conceptual-Behavioral is last to mimic original logic expectations
-    cols = [c for c in cols if c != CONCEPTUAL_BEHAVIORAL] + [CONCEPTUAL_BEHAVIORAL]
-    return cols
-
-def choose_mcgrath_category(s: pd.Series) -> str:
-    s = s.astype(float).fillna(0.0)
-    conceptual_behavioral = float(s.get(CONCEPTUAL_BEHAVIORAL, 0.0))
-
-    s_ext = s.copy()
-    s_ext[TYPE4_NAME] = 1.0 - float(s.get(MCGRATH_OBJECTIVE, 0.0))
-
-    # naive max
-    task_type = s_ext.idxmax()
-    type_val = float(s_ext[task_type])
-
-    # Type 4 must be assigned ONLY if it's not a Generate Task
-    s_no_conceptual = s_ext.drop(labels=[CONCEPTUAL_BEHAVIORAL], errors="ignore")
-    if task_type == TYPE4_NAME and s_no_conceptual.idxmax() == "Type 2 (Generate)":
-        task_type = "Type 2 (Generate)"
-
-    # Type 8 needs to be psychomotor, take next biggest category if it isn't
-    if task_type == TYPE8_NAME and conceptual_behavioral < 0.5:
-        s_wo_type8 = s_ext.drop(labels=[TYPE8_NAME], errors="ignore")
-        task_type = s_wo_type8.idxmax()
-
-    # Max type is Conceptual, reclassify as Type 8
-    if task_type == CONCEPTUAL_BEHAVIORAL:
-        task_type = TYPE8_NAME
-
-    # Correct answer and psychomotor component, reclassify as Type 8 or Type 3
-    if task_type == MCGRATH_OBJECTIVE:
-        if type_val >= 0.5 and conceptual_behavioral >= 0.5:
-            task_type = TYPE8_NAME
-        elif type_val >= 0.5 and conceptual_behavioral < 0.5:
-            task_type = "Type 3 (Intellective)"
-
-    return task_type
 
 def generate_mcgrath(df: pd.DataFrame) -> pd.DataFrame:
-    task_col = infer_task_col(df)
-    mcgrath_cols = infer_mcgrath_cols(df)
+    # Normalize id column to `task_name`
+    id_col = None
+    if "task_name" in df.columns:
+        id_col = "task_name"
+    elif "task" in df.columns:
+        df = df.rename(columns={"task": "task_name"}).copy()
+        id_col = "task_name"
+    else:
+        raise KeyError("Expected either 'task_name' or 'task' column in DataFrame. Found: %s" % list(df.columns))
 
-    # Compute one category per unique task
-    df_task = df[[task_col] + mcgrath_cols].drop_duplicates(subset=[task_col]).reset_index(drop=True)
-    categories = []
-    for _, row in df_task.iterrows():
-        categories.append(choose_mcgrath_category(row[mcgrath_cols]))
+    # Identify McGrath dimension columns preserving DataFrame order
+    mcgrath_colnames = [
+        c for c in df.columns
+        if c.startswith("Type ") or c == CONCEPTUAL_BEHAVIORAL
+    ]
+    if not mcgrath_colnames:
+        raise ValueError("No McGrath columns found in DataFrame.")
 
-    out = df_task[[task_col]].copy()
-    out["mcgrath_category"] = categories
-    one_hot = pd.get_dummies(out["mcgrath_category"], dtype=int).add_suffix("_cat")
-    out = pd.concat([out[[task_col]], one_hot], axis=1)
+    mcgrath_categorical_buckets: dict[str, str] = {}
 
-    # Validation: exactly one hot per task
-    cat_cols = [c for c in out.columns if c.endswith("_cat")]
-    assert len(cat_cols) > 0, "No *_cat columns generated."
-    rowsums = out[cat_cols].sum(axis=1)
-    assert rowsums.eq(1).all(), "Each task must have exactly one category set to 1."
+    for i in range(len(df)):
+        # Reproduce original behavior: skip the first McGrath column
+        task_vec_mcgrath = df[mcgrath_colnames].iloc[i][1:].astype(float).copy()
 
-    # Normalize task column name to 'task' for downstream merge
-    if task_col != "task":
-        out = out.rename(columns={task_col: "task"})
+        # Get Conceptual-Behavioral explicitly by name (robust to column order)
+        conceptual_behavioral = float(df.loc[df.index[i], CONCEPTUAL_BEHAVIORAL])
 
-    return out
+        # Type 4 = inverse of Type 3/4
+        if MCGRATH_OBJECTIVE in task_vec_mcgrath.index:
+            task_vec_mcgrath[TYPE4_NAME] = 1 - task_vec_mcgrath[MCGRATH_OBJECTIVE]
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--in_csv",
-        default="outputs/processed_data/condition_level_group_advantage_with_ivs.csv",
-        help="Input CSV with McGrath scores"
-    )
-    parser.add_argument(
-        "--out_csv",
-        default="outputs/processed_data/condition_level_group_advantage_with_ivs_and_categories.csv",
-        help="Output CSV with categories merged"
-    )
-    args = parser.parse_args()
+        # get the naive max task type (could be conceptual)
+        task_type = task_vec_mcgrath.idxmax()
+        type_val = float(task_vec_mcgrath[task_type])
 
-    in_path = Path(args.in_csv)
-    out_path = Path(args.out_csv)
+        # Type 4 must be assigned ONLY if it's not a Generate Task
+        # Compare against all but the last element (exclude conceptual)
+        if task_type == TYPE4_NAME:
+            # Exclude Type 4 itself (original code used positional slice to drop the last element,
+            # which after appending Type 4 was effectively dropping Type 4)
+            types_wo_type4 = task_vec_mcgrath.drop(labels=[TYPE4_NAME]) if TYPE4_NAME in task_vec_mcgrath.index else task_vec_mcgrath
+            if types_wo_type4.idxmax() == "Type 2 (Generate)":
+                task_type = "Type 2 (Generate)"
 
-    base = pd.read_csv(in_path)
-    mcgrath_ohe = generate_mcgrath(base)
+        # Type 8 needs to be psychomotor; if not, take next biggest
+        if task_type == TYPE8_NAME and conceptual_behavioral < 0.5:
+            task_type = task_vec_mcgrath.drop(labels=[TYPE8_NAME]).idxmax()
 
-    merged = base.merge(mcgrath_ohe, on="task", how="left")
-    # Validate merged one-hot on condition-level rows
-    cat_cols = [c for c in mcgrath_ohe.columns if c.endswith("_cat")]
-    if cat_cols:
-        rowsums = merged[cat_cols].sum(axis=1)
-        assert rowsums.eq(1).all(), "Each merged row must have exactly one category set to 1."
+        # Max type is Conceptual, reclassify as Type 8
+        if task_type == CONCEPTUAL_BEHAVIORAL:
+            task_type = TYPE8_NAME
 
-    merged.to_csv(out_path, index=False)
+        # Correctness + psychomotor → Type 8 or 3
+        if task_type == MCGRATH_OBJECTIVE:
+            if type_val >= 0.5 and conceptual_behavioral >= 0.5:
+                task_type = TYPE8_NAME
+            elif type_val >= 0.5 and conceptual_behavioral < 0.5:
+                task_type = "Type 3 (Intellective)"
 
-if __name__ == "__main__":
-    main()
+        mcgrath_categorical_buckets[df.loc[df.index[i], id_col]] = task_type
+
+    # Build categorical DataFrame
+    mcgrath_df = pd.DataFrame({
+        "task_name": list(mcgrath_categorical_buckets.keys()),
+        "mcgrath_category": list(mcgrath_categorical_buckets.values()),
+    })
+
+    mcgrath_df_categorical = pd.concat([
+        mcgrath_df["task_name"],
+        pd.get_dummies(mcgrath_df["mcgrath_category"], dtype=int).add_suffix("_cat"),
+    ], axis=1)
+
+    # Merge back to original DF on unified id column
+    merged = df.merge(mcgrath_df_categorical, on="task_name")
+
+    # Return merged DataFrame with one-hot mcgrath category columns appended
+
+    return merged

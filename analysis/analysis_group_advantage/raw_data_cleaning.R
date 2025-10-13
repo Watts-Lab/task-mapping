@@ -202,14 +202,53 @@ task_map <-
   ) |>
   filter(task != "NA")
 
-mcgrath_map_path <- file.path(PROCESSED_DIR, "20_task_map_mcgrath_manually_updated.csv")
+mcgrath_map_path <- file.path(PROCESSED_DIR, "task_map_with_mcgrath_categories_appended.csv")
 if (file.exists(mcgrath_map_path)) {
-  mcgrath_mapping_wide <- read_csv(mcgrath_map_path, show_col_types = FALSE) |>
-    select(task, matches("_cat"))
+  mcgrath_mapping_wide <- read_csv(mcgrath_map_path, show_col_types = FALSE)
+  # Backward-compat: the Python generator may use 'task_name' as the id column.
+  if (!("task" %in% names(mcgrath_mapping_wide)) && ("task_name" %in% names(mcgrath_mapping_wide))) {
+    mcgrath_mapping_wide <- mcgrath_mapping_wide |> rename(task = task_name)
+  }
+  # Canonicalize task names to match the same mapping used for task_map and raw_score_data
+  mcgrath_mapping_wide <- mcgrath_mapping_wide |>
+    mutate(
+      task = case_when(
+        task == "Allocating resources to programs" ~ "Allocating Resources",
+        task == "Guessing the correlation" ~ "Guess the Correlation",
+        task == "Moral Reasoning (Disciplinary Action Case)" ~ "Moral Reasoning",
+        task == "Whac-A-Mole" ~ "Whac a Mole",
+        task == "Divergent Association Task" ~ "Divergent Association",
+        task == "Room assignment task" ~ "Room Assignment",
+        task == "Wolf, goat and cabbage transfer" ~ "Wolf Goat Cabbage",
+        task == "Word construction from a subset of letters" ~ "Word Construction",
+        task == "Writing story" ~ "Writing Story",
+        task == "Unscramble words (anagrams)" ~ "Unscramble Words",
+        task == "Wildcam Gorongosa (Zooniverse)" ~ "WildCam",
+        task == "Putting food into categories" ~ "Putting Food Into Categories",
+        task == "Recall association" ~ "Recall Association",
+        task %in% c(
+          "hk_22482ca42486c72f writing",
+          "hk_22482ca42486c72f Writing",
+          "hk_bdaf755327fff794 writing",
+          "hk_bdaf755327fff794 Writing"
+        ) ~ "Advertisement Writing",
+        task == "Random dot motion" ~ "Random Dot Motion",
+        task == "Typing game" ~ "Typing",
+        task == "Recall word lists" ~ "Recall Word Lists",
+        TRUE ~ task
+      )
+    )
+  # Normalize a join key to ensure category rows always match canonical task names
+  normalize_key <- function(x) gsub("[^a-z0-9]", "", tolower(trimws(x)))
+  mcgrath_mapping_wide <- mcgrath_mapping_wide |>
+    mutate(task_key = normalize_key(task))
+  # Keep only the one-hot category columns for merging
+  mcgrath_category_cols <- grep("_cat$", names(mcgrath_mapping_wide), value = TRUE)
+  mcgrath_mapping_wide <- mcgrath_mapping_wide |> select(task_key, all_of(mcgrath_category_cols))
 } else {
-  mcgrath_mapping_wide <- tibble(task = unique(task_map$task))
+  mcgrath_mapping_wide <- tibble(task_key = character())
+  mcgrath_category_cols <- character()
 }
-mcgrath_category_cols <- setdiff(names(mcgrath_mapping_wide), "task")
 
 ## -----------------------------------------------------------------------------
 conditions <- factors |>
@@ -447,16 +486,14 @@ synergy_data_for_prediction |>
 
 synergy_data_for_prediction |>
   select(task, playerCount, strong, weak, Low, Medium, High, wave) |>
-  left_join(mcgrath_mapping_wide, by = "task") |>
+  # Build the same normalized key as used in mcgrath_mapping_wide
+  mutate(task_key = gsub("[^a-z0-9]", "", tolower(trimws(task)))) |>
+  left_join(mcgrath_mapping_wide, by = "task_key") |>
+  select(-task_key) |>
   (\(df) {
     if (length(mcgrath_category_cols) > 0) {
-      df <- df |>
-        mutate(across(all_of(mcgrath_category_cols), ~ coalesce(.x, 0))) |>
-        mutate(Uncategorized_cat = if_else(
-          rowSums(across(all_of(mcgrath_category_cols))) == 0, 1L, 0L
-        ))
-    } else {
-      df <- df |> mutate(Uncategorized_cat = 1L)
+      # Ensure NAs are treated as 0 but DO NOT add an artificial Uncategorized_cat column
+      df <- df |> mutate(across(all_of(mcgrath_category_cols), ~ as.numeric(coalesce(.x, 0))))
     }
     df
   })() |>

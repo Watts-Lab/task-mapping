@@ -141,7 +141,7 @@ If the runtime of the code is larger than a few minutes on a regular computer, i
 
 All programs and code associated with the project can be found in the `analysis` directory.
 
-Main analyses associated with each of the two components can be reproduced by running commands via the master script (`analysis/run_master.py`).
+Main analyses associated with each of the two components can be reproduced by running commands via the master script (`analysis/run_master.py`). Use the following commands from the root of the directory:
 
 ```
   # list available steps

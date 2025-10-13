@@ -168,15 +168,12 @@ def relocate_legacy_cached_pkls() -> None:
 
 
 def sync_task_map_visual_labels() -> None:
-    """Ensure curated McGrath sector labels exist under data/ and avoid copying into outputs/."""
+    """Use the curated McGrath sector labels from data/ into outputs/ for plotting."""
     source_path = ROOT / 'data' / 'hand_labeled_task_mcgrath_sectors.csv'
     if not source_path.exists():
         raise FileNotFoundError(
             f"Required label file not found: {source_path}. Add it to the repo before running the pipeline."
         )
-    # Do not copy into outputs/processed_data anymore; just log that we will reference it in-place.
-    logger.info('Using curated McGrath sector labels in-place at %s', source_path)
-
 
 def sync_task_map_dataset() -> None:
     """Mirror the generated task_map.csv into data/ for downstream R code."""
@@ -506,7 +503,7 @@ def run_task_space_pipeline():
         # Generate the McGrath categorical mapping as part of task-space preprocessing
         try:
             task_map_path = OUTPUTS_DIR / 'processed_data' / 'task_map.csv'
-            out_path = OUTPUTS_DIR / 'processed_data' / '20_task_map_mcgrath_manually_updated.csv'
+            out_path = OUTPUTS_DIR / 'processed_data' / 'task_map_with_mcgrath_categories_appended.csv'
             def _gen_mcgrath_ts():
                 df = pd.read_csv(task_map_path)
                 mc = generate_mcgrath(df)
@@ -553,7 +550,7 @@ def run_group_advantage_pipeline():
         # Ensure mcgrath mapping exists before running raw data cleaning; task_space is the source of truth
         try:
             task_map_path = OUTPUTS_DIR / 'processed_data' / 'task_map.csv'
-            out_path = OUTPUTS_DIR / 'processed_data' / '20_task_map_mcgrath_manually_updated.csv'
+            out_path = OUTPUTS_DIR / 'processed_data' / 'task_map_with_mcgrath_categories_appended.csv'
             def _gen_mcgrath_ga():
                 df = pd.read_csv(task_map_path)
                 mc = generate_mcgrath(df)
@@ -584,7 +581,7 @@ def run_group_advantage_pipeline():
     else:
         logger.warning('Missing %s; skipping', nb_viz)
 
-    # demographics_viz: added to the group_advantage pipeline per request (only this notebook)
+    # demographics_viz
     if nb_demographics.exists():
         results.append(time_callable('group_advantage.demographics_viz', lambda: execute_notebook(nb_demographics, timeout=1800)))
     else:
