@@ -1,0 +1,66 @@
+name: Deploy GitHub Pages (no-submodules)
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository (no submodules)
+        uses: actions/checkout@v4
+        with:
+          submodules: false
+          fetch-depth: 0
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build static site
+        run: |
+          set -euo pipefail
+          echo "Preparing site..."
+          mkdir -p dist
+          # Copy site assets (require index.html)
+          if [ -f index.html ]; then
+            cp index.html dist/
+          else
+            echo "::error::index.html not found in repo root; cannot build site"
+            exit 1
+          fi
+          cp -R "task space resources" "dist/task-space-resources" || true
+          cp -R outputs/figures dist/figures || true
+          cp -R outputs/processed_data dist/processed_data || true
+          # Copy docs if present
+          if [ -f README.md ]; then cp README.md dist/; fi
+          # Add CNAME if present
+          if [ -f CNAME ]; then cp CNAME dist/; fi
+          # Disable Jekyll processing just in case
+          touch dist/.nojekyll
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
