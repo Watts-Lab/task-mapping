@@ -1,0 +1,29 @@
+{
+  "group_advantage": [
+    {
+      "name": "group_advantage.ensure_mcgrath_before_clean",
+      "elapsed_sec": 0.027398347854614258,
+      "result": null
+    },
+    {
+      "name": "group_advantage.raw_data_cleaning",
+      "elapsed_sec": 54.462705850601196,
+      "result": 0
+    },
+    {
+      "name": "group_advantage.models",
+      "elapsed_sec": 8.984027862548828,
+      "result": null
+    },
+    {
+      "name": "group_advantage.viz",
+      "elapsed_sec": 117.93739771842957,
+      "error": true
+    },
+    {
+      "name": "group_advantage.demographics_viz",
+      "elapsed_sec": 3.8696467876434326,
+      "error": true
+    }
+  ]
+}

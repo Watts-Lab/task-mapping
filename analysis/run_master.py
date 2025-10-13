@@ -42,8 +42,13 @@ import subprocess
 import logging
 import json
 import pickle
+import pandas as pd
 from pathlib import Path
 from typing import Callable, Iterable, List, Optional, Dict, Any
+ROOT = Path(__file__).resolve().parent.parent
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from analysis.analysis_task_space.generate_mcgrath import generate_mcgrath
 
 # Data science imports (import errors are logged but don't crash immediately)
 _missing_packages = []
@@ -119,6 +124,14 @@ REQUIRED_OUTPUT_SUBDIRS = [
     LOG_DIR,
 ]
 
+LEGACY_CACHED_PKL_FILES = [
+    'train_test_data.pkl',
+    'iv_lists.pkl',
+    'enet_noise_robustness.pkl',
+    'enet_noise_robustness_r2_results.pkl',
+    'enet_noise_robustness_rmse_results.pkl',
+]
+
 
 def ensure_output_dirs(*extra: Path) -> None:
     """Ensure required output subdirectories exist before running pipelines."""
@@ -126,6 +139,32 @@ def ensure_output_dirs(*extra: Path) -> None:
         path.mkdir(parents=True, exist_ok=True)
     for path in extra:
         Path(path).mkdir(parents=True, exist_ok=True)
+    relocate_legacy_cached_pkls()
+
+
+def relocate_legacy_cached_pkls() -> None:
+    """Move legacy cached PKL files into outputs/cached_pkls if they were written to outputs/."""
+    cache_dir = OUTPUTS_DIR / 'cached_pkls'
+    moved: list[str] = []
+    for filename in LEGACY_CACHED_PKL_FILES:
+        src = OUTPUTS_DIR / filename
+        if not src.exists():
+            continue
+
+        dest = cache_dir / filename
+        try:
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            if dest.exists():
+                logger.info('Cached file already exists at %s; removing stray %s', dest, src)
+                src.unlink()
+            else:
+                shutil.move(src, dest)
+                moved.append(filename)
+        except Exception as exc:
+            logger.warning('Failed to relocate legacy cached PKL %s -> %s: %s', src, dest, exc)
+
+    if moved:
+        logger.info('Moved legacy cached PKL files into outputs/cached_pkls: %s', ', '.join(moved))
 
 
 def sync_task_map_visual_labels() -> None:
@@ -277,10 +316,9 @@ except Exception:
     ep = ExecutePreprocessor(timeout=timeout, kernel_name=kernel_name)
     ep.allow_errors = False
     ep.preprocess(nb, {'metadata': {'path': str(nb_path.parent)}})
-    # write executed notebook to outputs folder (timestamped copy)
-    out_nb = nb_path.parent / f"executed_{nb_path.name}"
-    nbformat.write(nb, str(out_nb))
-    logger.info('Finished executing notebook; saved executed copy to %s', out_nb)
+    # persist the in-memory notebook back to the original path only (no executed_* artefacts)
+    nbformat.write(nb, str(nb_path))
+    logger.info('Finished executing notebook; updated %s in place', nb_path)
 
 
 # Render an Rmarkdown file via Rscript calling rmarkdown::render
@@ -304,17 +342,18 @@ def render_rmarkdown(rmd_path: Path, output_dir: Optional[Path] = None) -> int:
 
 
 # Run an R script (.R) via Rscript; returns the subprocess exit code
-def run_r_script(r_path: Path) -> int:
+def run_r_script(r_path: Path) -> None:
     logger.info('Running R script %s', r_path)
     rscript = find_rscript()
     if not rscript:
         logger.error('Rscript not found on PATH. Cannot run R script %s', r_path)
         raise RuntimeError('Rscript not found; cannot run R script')
-    # Run the R script but ensure the seed from ANALYSIS_SEED is applied at start
-    # We use Rscript -e "set.seed(...); source('script.R')" so the seed is set for the session
+        
     expr = f"set.seed(as.integer(Sys.getenv('ANALYSIS_SEED', '{SEED}'))); source('{r_path.name}')"
-    return run_command([rscript, '-e', expr], cwd=r_path.parent)
-
+    rc = run_command([rscript, '-e', expr], cwd=r_path.parent)
+    if rc != 0:
+        raise RuntimeError(f'R script failed (exit {rc}): {r_path}')
+        return None
 
 # Ensure a purl'd .R script exists for an Rmd: if missing, try to generate it with knitr::purl
 def ensure_r_script(rmd_path: Path) -> Path:
@@ -379,9 +418,8 @@ def time_callable(name: str, func: Callable[[], Any]) -> Dict[str, Any]:
     except Exception:
         elapsed = time.time() - start
         logger.exception('Error during %s after %.3f sec', name, elapsed)
-        return {'name': name, 'elapsed_sec': elapsed, 'error': True}
-
-
+        raise
+    
 # Time with and without pickle cache: given a list of pkl paths and a run function that produces them.
 def time_with_and_without_pkls(name: str, pkl_paths: Iterable[Path], run_func: Callable[[], Any]) -> Dict[str, Any]:
     pkl_paths = [Path(p) for p in pkl_paths]
@@ -457,13 +495,17 @@ def run_task_space_pipeline():
             sync_task_map_dataset()
         # Generate the McGrath categorical mapping as part of task-space preprocessing
         try:
-            from analysis.analysis_task_space.generate_mcgrath import generate_mcgrath
             task_map_path = OUTPUTS_DIR / 'processed_data' / 'task_map.csv'
             out_path = OUTPUTS_DIR / 'processed_data' / '20_task_map_mcgrath_manually_updated.csv'
-            results.append(time_callable('task_space.generate_mcgrath', lambda: generate_mcgrath(task_map_path, out_path)))
-            sync_task_map_visual_labels()
+            def _gen_mcgrath_ts():
+                df = pd.read_csv(task_map_path)
+                mc = generate_mcgrath(df)
+                mc.to_csv(out_path, index=False)
+                results.append(time_callable('task_space.generate_mcgrath', _gen_mcgrath_ts))
+                sync_task_map_visual_labels()
         except Exception as e:
             logger.exception('Failed to generate mcgrath categories in task_space: %s', e)
+
     else:
         logger.warning('Missing %s; skipping', rmd_generate)
 
@@ -497,11 +539,13 @@ def run_group_advantage_pipeline():
         r_script_clean = ensure_r_script(rmd_clean)
         # Ensure mcgrath mapping exists before running raw data cleaning; task_space is the source of truth
         try:
-            from analysis.analysis_task_space.generate_mcgrath import generate_mcgrath
             task_map_path = OUTPUTS_DIR / 'processed_data' / 'task_map.csv'
             out_path = OUTPUTS_DIR / 'processed_data' / '20_task_map_mcgrath_manually_updated.csv'
-            # generate (idempotent) before cleaning so R code can rely on it mid-script
-            results.append(time_callable('group_advantage.ensure_mcgrath_before_clean', lambda: generate_mcgrath(task_map_path, out_path)))
+            def _gen_mcgrath_ga():
+                df = pd.read_csv(task_map_path)
+                mc = generate_mcgrath(df)
+                mc.to_csv(out_path, index=False)
+                results.append(time_callable('group_advantage.ensure_mcgrath_before_clean', _gen_mcgrath_ga))
         except Exception as e:
             logger.exception('Failed to ensure mcgrath categories before cleaning: %s', e)
         # Now run raw data cleaning (which may expect the mcgrath CSV part-way through)

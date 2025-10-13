@@ -25,7 +25,7 @@ from pathlib import Path
 
 # Match MTurk Worker IDs that start with 'A' and have at least 12 alnum chars.
 # Some WorkerIds are longer than 13 chars, so allow up to 40 to be safe.
-ID_RE = re.compile(r"\bA[0-9A-Za-z]{12,40}\b")
+ID_RE = re.compile(r"\bA(?=[A-Za-z0-9]{11,39}\b)(?=.*\d)[A-Za-z0-9]{12,40}\b")
 
 def load_or_create_key(key_path: Path) -> bytes:
     if key_path.exists():

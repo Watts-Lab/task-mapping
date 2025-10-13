@@ -1,0 +1,19 @@
+{
+  "task_space": [
+    {
+      "name": "task_space.generate_map",
+      "elapsed_sec": 0.7032089233398438,
+      "result": 0
+    },
+    {
+      "name": "task_space.generate_mcgrath",
+      "elapsed_sec": 1.9073486328125e-06,
+      "error": true
+    },
+    {
+      "name": "task_space.plot_visuals",
+      "elapsed_sec": 1.742074728012085,
+      "result": 0
+    }
+  ]
+}

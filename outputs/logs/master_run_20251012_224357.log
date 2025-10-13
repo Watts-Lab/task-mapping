@@ -1,0 +1,19 @@
+2025-10-12 22:43:57,513 INFO Starting analysis master script
+2025-10-12 22:43:57,513 INFO Running group_advantage pipeline
+2025-10-12 22:43:57,513 INFO Timing: group_advantage.ensure_mcgrath_before_clean
+2025-10-12 22:43:57,514 ERROR Error during group_advantage.ensure_mcgrath_before_clean after 0.000 sec
+Traceback (most recent call last):
+  File "/Users/xehu/Desktop/task-mapping/analysis/run_master.py", line 408, in time_callable
+    res = func()
+  File "/Users/xehu/Desktop/task-mapping/analysis/run_master.py", line 537, in <lambda>
+    results.append(time_callable('group_advantage.ensure_mcgrath_before_clean', lambda: generate_mcgrath(task_map_path, out_path)))
+                                                                                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: generate_mcgrath() takes 1 positional argument but 2 were given
+2025-10-12 22:43:57,514 INFO Timing: group_advantage.raw_data_cleaning
+2025-10-12 22:43:57,514 INFO Running R script /Users/xehu/Desktop/task-mapping/analysis/analysis_group_advantage/raw_data_cleaning.R
+2025-10-12 22:43:57,514 INFO Running command: /usr/local/bin/Rscript -e set.seed(as.integer(Sys.getenv('ANALYSIS_SEED', '19104'))); source('raw_data_cleaning.R') (cwd=/Users/xehu/Desktop/task-mapping/analysis/analysis_group_advantage)
+2025-10-12 22:43:57,596 INFO Error in { :
+2025-10-12 22:43:57,596 INFO   function '{' not supported in RHS call of a pipe (<input>:436:3)
+2025-10-12 22:43:57,596 INFO Calls: source
+2025-10-12 22:43:57,596 INFO Execution halted
+2025-10-12 22:43:57,601 INFO Completed group_advantage.raw_data_cleaning in 0.087 sec

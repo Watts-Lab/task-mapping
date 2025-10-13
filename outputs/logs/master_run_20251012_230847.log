@@ -1,0 +1,766 @@
+2025-10-12 23:08:47,541 INFO Starting analysis master script
+2025-10-12 23:08:47,541 INFO Running group_advantage pipeline
+2025-10-12 23:08:47,542 INFO Timing: group_advantage.ensure_mcgrath_before_clean
+2025-10-12 23:08:47,542 ERROR Error during group_advantage.ensure_mcgrath_before_clean after 0.000 sec
+Traceback (most recent call last):
+  File "/Users/xehu/Desktop/task-mapping/analysis/run_master.py", line 408, in time_callable
+    res = func()
+  File "/Users/xehu/Desktop/task-mapping/analysis/run_master.py", line 537, in <lambda>
+    results.append(time_callable('group_advantage.ensure_mcgrath_before_clean', lambda: generate_mcgrath(task_map_path, out_path)))
+                                                                                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: generate_mcgrath() takes 1 positional argument but 2 were given
+2025-10-12 23:08:47,542 INFO Timing: group_advantage.raw_data_cleaning
+2025-10-12 23:08:47,542 INFO Running R script /Users/xehu/Desktop/task-mapping/analysis/analysis_group_advantage/raw_data_cleaning.R
+2025-10-12 23:08:47,542 INFO Running command: /usr/local/bin/Rscript -e set.seed(as.integer(Sys.getenv('ANALYSIS_SEED', '19104'))); source('raw_data_cleaning.R') (cwd=/Users/xehu/Desktop/task-mapping/analysis/analysis_group_advantage)
+2025-10-12 23:08:47,656 INFO 
+2025-10-12 23:08:47,656 INFO Attaching package: ‘pls’
+2025-10-12 23:08:47,656 INFO 
+2025-10-12 23:08:47,656 INFO The following object is masked from ‘package:stats’:
+2025-10-12 23:08:47,656 INFO 
+2025-10-12 23:08:47,656 INFO     loadings
+2025-10-12 23:08:47,656 INFO 
+2025-10-12 23:08:47,660 INFO randomForest 4.7-1.2
+2025-10-12 23:08:47,661 INFO Type rfNews() to see new features/changes/bug fixes.
+2025-10-12 23:08:48,035 INFO Loading required package: ggplot2
+2025-10-12 23:08:48,248 INFO 
+2025-10-12 23:08:48,248 INFO Attaching package: ‘ggplot2’
+2025-10-12 23:08:48,249 INFO 
+2025-10-12 23:08:48,249 INFO The following object is masked from ‘package:randomForest’:
+2025-10-12 23:08:48,249 INFO 
+2025-10-12 23:08:48,249 INFO     margin
+2025-10-12 23:08:48,249 INFO 
+2025-10-12 23:08:48,249 INFO Loading required package: lattice
+2025-10-12 23:08:48,528 INFO 
+2025-10-12 23:08:48,528 INFO Attaching package: ‘caret’
+2025-10-12 23:08:48,528 INFO 
+2025-10-12 23:08:48,528 INFO The following object is masked from ‘package:pls’:
+2025-10-12 23:08:48,528 INFO 
+2025-10-12 23:08:48,528 INFO     R2
+2025-10-12 23:08:48,528 INFO 
+2025-10-12 23:08:48,529 INFO Loading required package: foreach
+2025-10-12 23:08:48,531 INFO Loading required package: iterators
+2025-10-12 23:08:48,534 INFO Loading required package: parallel
+2025-10-12 23:08:48,637 INFO Registering fonts with R
+2025-10-12 23:08:48,687 INFO 
+2025-10-12 23:08:48,687 INFO Please cite as:
+2025-10-12 23:08:48,687 INFO 
+2025-10-12 23:08:48,687 INFO  Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.
+2025-10-12 23:08:48,687 INFO  R package version 5.2.3. https://CRAN.R-project.org/package=stargazer
+2025-10-12 23:08:48,687 INFO 
+2025-10-12 23:08:48,737 INFO ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+2025-10-12 23:08:48,738 INFO ✔ dplyr     1.1.4     ✔ readr     2.1.5
+2025-10-12 23:08:48,738 INFO ✔ forcats   1.0.1     ✔ stringr   1.5.2
+2025-10-12 23:08:48,738 INFO ✔ lubridate 1.9.4     ✔ tibble    3.3.0
+2025-10-12 23:08:48,738 INFO ✔ purrr     1.1.0     ✔ tidyr     1.3.1
+2025-10-12 23:08:48,770 INFO ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+2025-10-12 23:08:48,770 INFO ✖ purrr::accumulate() masks foreach::accumulate()
+2025-10-12 23:08:48,770 INFO ✖ dplyr::combine()    masks randomForest::combine()
+2025-10-12 23:08:48,770 INFO ✖ dplyr::filter()     masks stats::filter()
+2025-10-12 23:08:48,770 INFO ✖ purrr::flatten()    masks jsonlite::flatten()
+2025-10-12 23:08:48,770 INFO ✖ dplyr::lag()        masks stats::lag()
+2025-10-12 23:08:48,770 INFO ✖ purrr::lift()       masks caret::lift()
+2025-10-12 23:08:48,770 INFO ✖ ggplot2::margin()   masks randomForest::margin()
+2025-10-12 23:08:48,770 INFO ✖ dplyr::slice()      masks xgboost::slice()
+2025-10-12 23:08:48,770 INFO ✖ purrr::when()       masks foreach::when()
+2025-10-12 23:08:48,770 INFO ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+2025-10-12 23:08:48,789 INFO Scanning ttf files in /Library/Fonts/, /System/Library/Fonts, /System/Library/Fonts/Supplemental, ~/Library/Fonts/ ...
+2025-10-12 23:08:48,789 INFO Extracting .afm files from .ttf files...
+2025-10-12 23:08:51,407 INFO /System/Library/Fonts/Supplemental/Arial Unicode.ttf : ArialUnicodeMS already registered in fonts database. Skipping.
+2025-10-12 23:08:51,487 INFO /System/Library/Fonts/Apple Braille Outline 6 Dot.ttf : AppleBraille-Outline6Dot already registered in fonts database. Skipping.
+2025-10-12 23:08:51,571 INFO /System/Library/Fonts/Apple Braille Outline 8 Dot.ttf : AppleBraille-Outline8Dot already registered in fonts database. Skipping.
+2025-10-12 23:08:51,624 INFO /System/Library/Fonts/Apple Braille Pinpoint 6 Dot.ttf : AppleBraille-Pinpoint6Dot already registered in fonts database. Skipping.
+2025-10-12 23:08:51,681 INFO /System/Library/Fonts/Apple Braille Pinpoint 8 Dot.ttf : AppleBraille-Pinpoint8Dot already registered in fonts database. Skipping.
+2025-10-12 23:08:51,716 INFO /System/Library/Fonts/Apple Braille.ttf : AppleBraille already registered in fonts database. Skipping.
+2025-10-12 23:08:51,741 INFO /System/Library/Fonts/Apple Symbols.ttf : No FontName. Skipping.
+2025-10-12 23:08:51,761 INFO /System/Library/Fonts/Geneva.ttf : No FontName. Skipping.
+2025-10-12 23:08:51,776 INFO /System/Library/Fonts/Keyboard.ttf : -Keyboard already registered in fonts database. Skipping.
+2025-10-12 23:08:51,830 INFO /System/Library/Fonts/Monaco.ttf : No FontName. Skipping.
+2025-10-12 23:08:51,923 INFO /System/Library/Fonts/NewYork.ttf : -NewYork-Regular already registered in fonts database. Skipping.
+2025-10-12 23:08:52,002 INFO /System/Library/Fonts/NewYorkItalic.ttf : -NewYork-RegularItalic already registered in fonts database. Skipping.
+2025-10-12 23:08:52,084 INFO /System/Library/Fonts/SFArabic.ttf : -SFArabic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:08:52,191 INFO /System/Library/Fonts/SFArabicRounded.ttf : -SFArabicRounded-Regular already registered in fonts database. Skipping.
+2025-10-12 23:08:52,207 INFO /System/Library/Fonts/SFArmenian.ttf : -SFArmenian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:08:52,222 INFO /System/Library/Fonts/SFArmenianRounded.ttf : -SFArmenianRounded-Regular already registered in fonts database. Skipping.
+2025-10-12 23:08:52,239 INFO /System/Library/Fonts/SFCamera.ttf : --SFCamera-Regular already registered in fonts database. Skipping.
+2025-10-12 23:08:52,346 INFO /System/Library/Fonts/SFCompact.ttf : -SFCompact-Black already registered in fonts database. Skipping.
+2025-10-12 23:08:52,435 INFO /System/Library/Fonts/SFCompactItalic.ttf : -SFCompact-BlackItalic already registered in fonts database. Skipping.
+2025-10-12 23:08:52,543 INFO /System/Library/Fonts/SFCompactRounded.ttf : --SFCompactRounded-Regular already registered in fonts database. Skipping.
+2025-10-12 23:08:52,558 INFO /System/Library/Fonts/SFGeorgian.ttf : -SFGeorgian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:08:52,575 INFO /System/Library/Fonts/SFGeorgianRounded.ttf : -SFGeorgianRounded-Regular already registered in fonts database. Skipping.
+2025-10-12 23:08:52,585 INFO /System/Library/Fonts/SFHebrew.ttf : -SFHebrew-Regular already registered in fonts database. Skipping.
+2025-10-12 23:08:52,596 INFO /System/Library/Fonts/SFHebrewRounded.ttf : -SFHebrewRounded-Regular already registered in fonts database. Skipping.
+2025-10-12 23:08:52,721 INFO /System/Library/Fonts/SFNS.ttf : -SFNS-Regular already registered in fonts database. Skipping.
+2025-10-12 23:08:52,806 INFO /System/Library/Fonts/SFNSItalic.ttf : -SFNS-RegularItalic already registered in fonts database. Skipping.
+2025-10-12 23:08:52,862 INFO /System/Library/Fonts/SFNSMono.ttf : -SFNSMono-Light already registered in fonts database. Skipping.
+2025-10-12 23:08:52,912 INFO /System/Library/Fonts/SFNSMonoItalic.ttf : -SFNSMono-LightItalic already registered in fonts database. Skipping.
+2025-10-12 23:08:53,013 INFO /System/Library/Fonts/SFNSRounded.ttf : -SFNSRounded-Regular already registered in fonts database. Skipping.
+2025-10-12 23:08:53,073 INFO /System/Library/Fonts/Supplemental/Academy Engraved LET Fonts.ttf : AcademyEngravedLetPlain already registered in fonts database. Skipping.
+2025-10-12 23:08:53,131 INFO /System/Library/Fonts/Supplemental/Academy Engraved LET Fonts.ttf : AcademyEngravedLetPlain already registered in fonts database. Skipping.
+2025-10-12 23:08:53,148 INFO /System/Library/Fonts/Supplemental/Andale Mono.ttf : AndaleMono already registered in fonts database. Skipping.
+2025-10-12 23:08:53,165 INFO /System/Library/Fonts/Supplemental/Andale Mono.ttf : AndaleMono already registered in fonts database. Skipping.
+2025-10-12 23:08:53,210 INFO /System/Library/Fonts/Supplemental/Apple Chancery.ttf : No FontName. Skipping.
+2025-10-12 23:08:53,255 INFO /System/Library/Fonts/Supplemental/Apple Chancery.ttf : No FontName. Skipping.
+2025-10-12 23:08:56,645 INFO /System/Library/Fonts/Supplemental/AppleGothic.ttf : No FontName. Skipping.
+2025-10-12 23:09:00,207 INFO /System/Library/Fonts/Supplemental/AppleGothic.ttf : No FontName. Skipping.
+2025-10-12 23:09:04,440 INFO /System/Library/Fonts/Supplemental/AppleMyungjo.ttf : AppleMyungjo already registered in fonts database. Skipping.
+2025-10-12 23:09:08,730 INFO /System/Library/Fonts/Supplemental/AppleMyungjo.ttf : AppleMyungjo already registered in fonts database. Skipping.
+2025-10-12 23:09:08,754 INFO /System/Library/Fonts/Supplemental/Arial Black.ttf : Arial-Black already registered in fonts database. Skipping.
+2025-10-12 23:09:08,776 INFO /System/Library/Fonts/Supplemental/Arial Black.ttf : Arial-Black already registered in fonts database. Skipping.
+2025-10-12 23:09:08,846 INFO /System/Library/Fonts/Supplemental/Arial Bold Italic.ttf : Arial-BoldItalicMT already registered in fonts database. Skipping.
+2025-10-12 23:09:08,914 INFO /System/Library/Fonts/Supplemental/Arial Bold Italic.ttf : Arial-BoldItalicMT already registered in fonts database. Skipping.
+2025-10-12 23:09:09,065 INFO /System/Library/Fonts/Supplemental/Arial Bold.ttf : Arial-BoldMT already registered in fonts database. Skipping.
+2025-10-12 23:09:09,174 INFO /System/Library/Fonts/Supplemental/Arial Bold.ttf : Arial-BoldMT already registered in fonts database. Skipping.
+2025-10-12 23:09:09,251 INFO /System/Library/Fonts/Supplemental/Arial Italic.ttf : Arial-ItalicMT already registered in fonts database. Skipping.
+2025-10-12 23:09:09,326 INFO /System/Library/Fonts/Supplemental/Arial Italic.ttf : Arial-ItalicMT already registered in fonts database. Skipping.
+2025-10-12 23:09:09,346 INFO /System/Library/Fonts/Supplemental/Arial Narrow Bold Italic.ttf : ArialNarrow-BoldItalic already registered in fonts database. Skipping.
+2025-10-12 23:09:09,367 INFO /System/Library/Fonts/Supplemental/Arial Narrow Bold Italic.ttf : ArialNarrow-BoldItalic already registered in fonts database. Skipping.
+2025-10-12 23:09:09,388 INFO /System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf : ArialNarrow-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:09,410 INFO /System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf : ArialNarrow-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:09,430 INFO /System/Library/Fonts/Supplemental/Arial Narrow Italic.ttf : ArialNarrow-Italic already registered in fonts database. Skipping.
+2025-10-12 23:09:09,451 INFO /System/Library/Fonts/Supplemental/Arial Narrow Italic.ttf : ArialNarrow-Italic already registered in fonts database. Skipping.
+2025-10-12 23:09:09,473 INFO /System/Library/Fonts/Supplemental/Arial Narrow.ttf : ArialNarrow already registered in fonts database. Skipping.
+2025-10-12 23:09:09,494 INFO /System/Library/Fonts/Supplemental/Arial Narrow.ttf : ArialNarrow already registered in fonts database. Skipping.
+2025-10-12 23:09:09,512 INFO /System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf : ArialRoundedMTBold already registered in fonts database. Skipping.
+2025-10-12 23:09:09,531 INFO /System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf : ArialRoundedMTBold already registered in fonts database. Skipping.
+2025-10-12 23:09:12,160 INFO /System/Library/Fonts/Supplemental/Arial Unicode.ttf : ArialUnicodeMS already registered in fonts database. Skipping.
+2025-10-12 23:09:14,788 INFO /System/Library/Fonts/Supplemental/Arial Unicode.ttf : ArialUnicodeMS already registered in fonts database. Skipping.
+2025-10-12 23:09:14,906 INFO /System/Library/Fonts/Supplemental/Arial.ttf : ArialMT already registered in fonts database. Skipping.
+2025-10-12 23:09:15,022 INFO /System/Library/Fonts/Supplemental/Arial.ttf : ArialMT already registered in fonts database. Skipping.
+2025-10-12 23:09:15,060 INFO /System/Library/Fonts/Supplemental/Ayuthaya.ttf : No FontName. Skipping.
+2025-10-12 23:09:15,097 INFO /System/Library/Fonts/Supplemental/Ayuthaya.ttf : No FontName. Skipping.
+2025-10-12 23:09:15,242 INFO /System/Library/Fonts/Supplemental/BigCaslon.ttf : No FontName. Skipping.
+2025-10-12 23:09:15,386 INFO /System/Library/Fonts/Supplemental/BigCaslon.ttf : No FontName. Skipping.
+2025-10-12 23:09:15,409 INFO /System/Library/Fonts/Supplemental/Bodoni 72 Smallcaps Book.ttf : BodoniSvtyTwoSCITCTT-Book already registered in fonts database. Skipping.
+2025-10-12 23:09:15,430 INFO /System/Library/Fonts/Supplemental/Bodoni 72 Smallcaps Book.ttf : BodoniSvtyTwoSCITCTT-Book already registered in fonts database. Skipping.
+2025-10-12 23:09:15,462 INFO /System/Library/Fonts/Supplemental/Bodoni Ornaments.ttf : BodoniOrnamentsITCTT already registered in fonts database. Skipping.
+2025-10-12 23:09:15,491 INFO /System/Library/Fonts/Supplemental/Bodoni Ornaments.ttf : BodoniOrnamentsITCTT already registered in fonts database. Skipping.
+2025-10-12 23:09:15,771 INFO /System/Library/Fonts/Supplemental/Bradley Hand Bold.ttf : Bradley-Hand-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:16,053 INFO /System/Library/Fonts/Supplemental/Bradley Hand Bold.ttf : Bradley-Hand-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:16,223 INFO /System/Library/Fonts/Supplemental/Brush Script.ttf : BrushScriptMT already registered in fonts database. Skipping.
+2025-10-12 23:09:16,388 INFO /System/Library/Fonts/Supplemental/Brush Script.ttf : BrushScriptMT already registered in fonts database. Skipping.
+2025-10-12 23:09:16,405 INFO /System/Library/Fonts/Supplemental/Chalkduster.ttfsh: line 1: 13017 Abort trap: 6           '/Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/library/Rttf2pt1/exec//ttf2pt1' -a -GfAe '/System/Library/Fonts/Supplemental/Chalkduster.ttf' '/var/folders/73/jl9lgbkj511fwjxkl9cvw7q00000gq/T//Rtmpcy5LUH/fonts/Chalkduster' 2>&1
+2025-10-12 23:09:16,405 INFO  : No FontName. Skipping.
+2025-10-12 23:09:16,421 INFO /System/Library/Fonts/Supplemental/Chalkduster.ttfsh: line 1: 13019 Abort trap: 6           '/Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/library/Rttf2pt1/exec//ttf2pt1' -a -GfAe '/System/Library/Fonts/Supplemental/Chalkduster.ttf' '/var/folders/73/jl9lgbkj511fwjxkl9cvw7q00000gq/T//Rtmpcy5LUH/fonts/Chalkduster' 2>&1
+2025-10-12 23:09:16,422 INFO  : No FontName. Skipping.
+2025-10-12 23:09:16,482 INFO /System/Library/Fonts/Supplemental/Comic Sans MS Bold.ttf : ComicSansMS-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:16,541 INFO /System/Library/Fonts/Supplemental/Comic Sans MS Bold.ttf : ComicSansMS-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:16,590 INFO /System/Library/Fonts/Supplemental/Comic Sans MS.ttf : ComicSansMS already registered in fonts database. Skipping.
+2025-10-12 23:09:16,638 INFO /System/Library/Fonts/Supplemental/Comic Sans MS.ttf : ComicSansMS already registered in fonts database. Skipping.
+2025-10-12 23:09:16,743 INFO /System/Library/Fonts/Supplemental/Courier New Bold Italic.ttf : CourierNewPS-BoldItalicMT already registered in fonts database. Skipping.
+2025-10-12 23:09:16,845 INFO /System/Library/Fonts/Supplemental/Courier New Bold Italic.ttf : CourierNewPS-BoldItalicMT already registered in fonts database. Skipping.
+2025-10-12 23:09:16,967 INFO /System/Library/Fonts/Supplemental/Courier New Bold.ttf : CourierNewPS-BoldMT already registered in fonts database. Skipping.
+2025-10-12 23:09:17,089 INFO /System/Library/Fonts/Supplemental/Courier New Bold.ttf : CourierNewPS-BoldMT already registered in fonts database. Skipping.
+2025-10-12 23:09:17,185 INFO /System/Library/Fonts/Supplemental/Courier New Italic.ttf : CourierNewPS-ItalicMT already registered in fonts database. Skipping.
+2025-10-12 23:09:17,282 INFO /System/Library/Fonts/Supplemental/Courier New Italic.ttf : CourierNewPS-ItalicMT already registered in fonts database. Skipping.
+2025-10-12 23:09:17,395 INFO /System/Library/Fonts/Supplemental/Courier New.ttf : CourierNewPSMT already registered in fonts database. Skipping.
+2025-10-12 23:09:17,506 INFO /System/Library/Fonts/Supplemental/Courier New.ttf : CourierNewPSMT already registered in fonts database. Skipping.
+2025-10-12 23:09:17,564 INFO /System/Library/Fonts/Supplemental/DIN Alternate Bold.ttf : DINAlternate-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:17,621 INFO /System/Library/Fonts/Supplemental/DIN Alternate Bold.ttf : DINAlternate-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:17,690 INFO /System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf : DINCondensed-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:17,758 INFO /System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf : DINCondensed-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:17,916 INFO /System/Library/Fonts/Supplemental/Diwan Thuluth.ttf : No FontName. Skipping.
+2025-10-12 23:09:18,076 INFO /System/Library/Fonts/Supplemental/Diwan Thuluth.ttf : No FontName. Skipping.
+2025-10-12 23:09:18,192 INFO /System/Library/Fonts/Supplemental/Farisi.ttf : No FontName. Skipping.
+2025-10-12 23:09:18,306 INFO /System/Library/Fonts/Supplemental/Farisi.ttf : No FontName. Skipping.
+2025-10-12 23:09:18,392 INFO /System/Library/Fonts/Supplemental/Georgia Bold Italic.ttf : Georgia-BoldItalic already registered in fonts database. Skipping.
+2025-10-12 23:09:18,477 INFO /System/Library/Fonts/Supplemental/Georgia Bold Italic.ttf : Georgia-BoldItalic already registered in fonts database. Skipping.
+2025-10-12 23:09:18,565 INFO /System/Library/Fonts/Supplemental/Georgia Bold.ttf : Georgia-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:18,651 INFO /System/Library/Fonts/Supplemental/Georgia Bold.ttf : Georgia-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:18,735 INFO /System/Library/Fonts/Supplemental/Georgia Italic.ttf : Georgia-Italic already registered in fonts database. Skipping.
+2025-10-12 23:09:18,817 INFO /System/Library/Fonts/Supplemental/Georgia Italic.ttf : Georgia-Italic already registered in fonts database. Skipping.
+2025-10-12 23:09:18,908 INFO /System/Library/Fonts/Supplemental/Georgia.ttf : Georgia already registered in fonts database. Skipping.
+2025-10-12 23:09:18,997 INFO /System/Library/Fonts/Supplemental/Georgia.ttf : Georgia already registered in fonts database. Skipping.
+2025-10-12 23:09:19,006 INFO /System/Library/Fonts/Supplemental/Gurmukhi.ttf : No FontName. Skipping.
+2025-10-12 23:09:19,016 INFO /System/Library/Fonts/Supplemental/Gurmukhi.ttf : No FontName. Skipping.
+2025-10-12 23:09:19,081 INFO /System/Library/Fonts/Supplemental/Herculanum.ttf : No FontName. Skipping.
+2025-10-12 23:09:19,148 INFO /System/Library/Fonts/Supplemental/Herculanum.ttf : No FontName. Skipping.
+2025-10-12 23:09:19,159 INFO /System/Library/Fonts/Supplemental/Hoefler Text Ornaments.ttf : No FontName. Skipping.
+2025-10-12 23:09:19,169 INFO /System/Library/Fonts/Supplemental/Hoefler Text Ornaments.ttf : No FontName. Skipping.
+2025-10-12 23:09:19,201 INFO /System/Library/Fonts/Supplemental/Impact.ttf : Impact already registered in fonts database. Skipping.
+2025-10-12 23:09:19,233 INFO /System/Library/Fonts/Supplemental/Impact.ttf : Impact already registered in fonts database. Skipping.
+2025-10-12 23:09:19,304 INFO /System/Library/Fonts/Supplemental/Khmer Sangam MN.ttf : KhmerSangamMN already registered in fonts database. Skipping.
+2025-10-12 23:09:19,375 INFO /System/Library/Fonts/Supplemental/Khmer Sangam MN.ttf : KhmerSangamMN already registered in fonts database. Skipping.
+2025-10-12 23:09:19,416 INFO /System/Library/Fonts/Supplemental/Kokonor.ttfsh: line 1: 13099 Abort trap: 6           '/Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/library/Rttf2pt1/exec//ttf2pt1' -a -GfAe '/System/Library/Fonts/Supplemental/Kokonor.ttf' '/var/folders/73/jl9lgbkj511fwjxkl9cvw7q00000gq/T//Rtmpcy5LUH/fonts/Kokonor' 2>&1
+2025-10-12 23:09:19,416 INFO  : No FontName. Skipping.
+2025-10-12 23:09:19,457 INFO /System/Library/Fonts/Supplemental/Kokonor.ttfsh: line 1: 13101 Abort trap: 6           '/Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/library/Rttf2pt1/exec//ttf2pt1' -a -GfAe '/System/Library/Fonts/Supplemental/Kokonor.ttf' '/var/folders/73/jl9lgbkj511fwjxkl9cvw7q00000gq/T//Rtmpcy5LUH/fonts/Kokonor' 2>&1
+2025-10-12 23:09:19,457 INFO  : No FontName. Skipping.
+2025-10-12 23:09:19,478 INFO /System/Library/Fonts/Supplemental/Krungthep.ttf : No FontName. Skipping.
+2025-10-12 23:09:19,499 INFO /System/Library/Fonts/Supplemental/Krungthep.ttf : No FontName. Skipping.
+2025-10-12 23:09:19,529 INFO /System/Library/Fonts/Supplemental/Lao Sangam MN.ttf : LaoSangamMN already registered in fonts database. Skipping.
+2025-10-12 23:09:19,559 INFO /System/Library/Fonts/Supplemental/Lao Sangam MN.ttf : LaoSangamMN already registered in fonts database. Skipping.
+2025-10-12 23:09:19,861 INFO /System/Library/Fonts/Supplemental/Luminari.ttf : Luminari-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:20,170 INFO /System/Library/Fonts/Supplemental/Luminari.ttf : Luminari-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:20,237 INFO /System/Library/Fonts/Supplemental/Microsoft Sans Serif.ttf : MicrosoftSansSerif already registered in fonts database. Skipping.
+2025-10-12 23:09:20,305 INFO /System/Library/Fonts/Supplemental/Microsoft Sans Serif.ttf : MicrosoftSansSerif already registered in fonts database. Skipping.
+2025-10-12 23:09:20,475 INFO /System/Library/Fonts/Supplemental/Mishafi Gold.ttf : No FontName. Skipping.
+2025-10-12 23:09:20,646 INFO /System/Library/Fonts/Supplemental/Mishafi Gold.ttf : No FontName. Skipping.
+2025-10-12 23:09:21,047 INFO /System/Library/Fonts/Supplemental/Mishafi.ttf : No FontName. Skipping.
+2025-10-12 23:09:21,443 INFO /System/Library/Fonts/Supplemental/Mishafi.ttf : No FontName. Skipping.
+2025-10-12 23:09:21,449 INFO /System/Library/Fonts/Supplemental/NISC18030.ttf : No FontName. Skipping.
+2025-10-12 23:09:21,455 INFO /System/Library/Fonts/Supplemental/NISC18030.ttf : No FontName. Skipping.
+2025-10-12 23:09:21,476 INFO /System/Library/Fonts/Supplemental/NotoSansAdlam-Regular.ttf : NotoSansAdlam-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:21,497 INFO /System/Library/Fonts/Supplemental/NotoSansAdlam-Regular.ttf : NotoSansAdlam-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:21,506 INFO /System/Library/Fonts/Supplemental/NotoSansAvestan-Regular.ttf : NotoSansAvestan-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:21,515 INFO /System/Library/Fonts/Supplemental/NotoSansAvestan-Regular.ttf : NotoSansAvestan-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:21,566 INFO /System/Library/Fonts/Supplemental/NotoSansBamum-Regular.ttf : NotoSansBamum-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:21,615 INFO /System/Library/Fonts/Supplemental/NotoSansBamum-Regular.ttf : NotoSansBamum-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:21,699 INFO /System/Library/Fonts/Supplemental/NotoSansBassaVah-Regular.ttf : NotoSansBassaVah-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:21,707 INFO /System/Library/Fonts/Supplemental/NotoSansBassaVah-Regular.ttf : NotoSansBassaVah-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:21,722 INFO /System/Library/Fonts/Supplemental/NotoSansBatak-Regular.ttf : NotoSansBatak-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:21,737 INFO /System/Library/Fonts/Supplemental/NotoSansBatak-Regular.ttf : NotoSansBatak-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:21,848 INFO /System/Library/Fonts/Supplemental/NotoSansBhaiksuki-Regular.ttf : NotoSansBhaiksuki-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:21,963 INFO /System/Library/Fonts/Supplemental/NotoSansBhaiksuki-Regular.ttf : NotoSansBhaiksuki-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:21,977 INFO /System/Library/Fonts/Supplemental/NotoSansBrahmi-Regular.ttf : NotoSansBrahmi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:21,991 INFO /System/Library/Fonts/Supplemental/NotoSansBrahmi-Regular.ttf : NotoSansBrahmi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:21,998 INFO /System/Library/Fonts/Supplemental/NotoSansBuginese-Regular.ttf : NotoSansBuginese-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,005 INFO /System/Library/Fonts/Supplemental/NotoSansBuginese-Regular.ttf : NotoSansBuginese-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,012 INFO /System/Library/Fonts/Supplemental/NotoSansBuhid-Regular.ttf : NotoSansBuhid-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,018 INFO /System/Library/Fonts/Supplemental/NotoSansBuhid-Regular.ttf : NotoSansBuhid-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,026 INFO /System/Library/Fonts/Supplemental/NotoSansCarian-Regular.ttf : NotoSansCarian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,034 INFO /System/Library/Fonts/Supplemental/NotoSansCarian-Regular.ttf : NotoSansCarian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,045 INFO /System/Library/Fonts/Supplemental/NotoSansCaucasianAlbanian-Regular.ttf : NotoSansCaucasianAlbanian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,055 INFO /System/Library/Fonts/Supplemental/NotoSansCaucasianAlbanian-Regular.ttf : NotoSansCaucasianAlbanian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,072 INFO /System/Library/Fonts/Supplemental/NotoSansChakma-Regular.ttf : NotoSansChakma-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,090 INFO /System/Library/Fonts/Supplemental/NotoSansChakma-Regular.ttf : NotoSansChakma-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,102 INFO /System/Library/Fonts/Supplemental/NotoSansCham-Regular.ttf : NotoSansCham-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,114 INFO /System/Library/Fonts/Supplemental/NotoSansCham-Regular.ttf : NotoSansCham-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,126 INFO /System/Library/Fonts/Supplemental/NotoSansCoptic-Regular.ttf : NotoSansCoptic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,137 INFO /System/Library/Fonts/Supplemental/NotoSansCoptic-Regular.ttf : NotoSansCoptic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,408 INFO /System/Library/Fonts/Supplemental/NotoSansCuneiform-Regular.ttf : NotoSansCuneiform-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,684 INFO /System/Library/Fonts/Supplemental/NotoSansCuneiform-Regular.ttf : NotoSansCuneiform-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,692 INFO /System/Library/Fonts/Supplemental/NotoSansCypriot-Regular.ttf : NotoSansCypriot-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,698 INFO /System/Library/Fonts/Supplemental/NotoSansCypriot-Regular.ttf : NotoSansCypriot-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,709 INFO /System/Library/Fonts/Supplemental/NotoSansDuployan-Regular.ttf : NotoSansDuployan-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:22,720 INFO /System/Library/Fonts/Supplemental/NotoSansDuployan-Regular.ttf : NotoSansDuployan-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,019 INFO /System/Library/Fonts/Supplemental/NotoSansEgyptianHieroglyphs-Regular.ttf : NotoSansEgyptianHieroglyphs-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,318 INFO /System/Library/Fonts/Supplemental/NotoSansEgyptianHieroglyphs-Regular.ttf : NotoSansEgyptianHieroglyphs-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,327 INFO /System/Library/Fonts/Supplemental/NotoSansElbasan-Regular.ttf : NotoSansElbasan-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,337 INFO /System/Library/Fonts/Supplemental/NotoSansElbasan-Regular.ttf : NotoSansElbasan-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,348 INFO /System/Library/Fonts/Supplemental/NotoSansGlagolitic-Regular.ttf : NotoSansGlagolitic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,359 INFO /System/Library/Fonts/Supplemental/NotoSansGlagolitic-Regular.ttf : NotoSansGlagolitic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,366 INFO /System/Library/Fonts/Supplemental/NotoSansGothic-Regular.ttf : NotoSansGothic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,373 INFO /System/Library/Fonts/Supplemental/NotoSansGothic-Regular.ttf : NotoSansGothic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,384 INFO /System/Library/Fonts/Supplemental/NotoSansHanifiRohingya-Regular.ttf : NotoSansHanifiRohingya-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,395 INFO /System/Library/Fonts/Supplemental/NotoSansHanifiRohingya-Regular.ttf : NotoSansHanifiRohingya-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,403 INFO /System/Library/Fonts/Supplemental/NotoSansHanunoo-Regular.ttf : NotoSansHanunoo-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,410 INFO /System/Library/Fonts/Supplemental/NotoSansHanunoo-Regular.ttf : NotoSansHanunoo-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,417 INFO /System/Library/Fonts/Supplemental/NotoSansHatran-Regular.ttf : NotoSansHatran-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,424 INFO /System/Library/Fonts/Supplemental/NotoSansHatran-Regular.ttf : NotoSansHatran-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,432 INFO /System/Library/Fonts/Supplemental/NotoSansImperialAramaic-Regular.ttf : NotoSansImperialAramaic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,440 INFO /System/Library/Fonts/Supplemental/NotoSansImperialAramaic-Regular.ttf : NotoSansImperialAramaic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,447 INFO /System/Library/Fonts/Supplemental/NotoSansInscriptionalPahlavi-Regular.ttf : NotoSansInscriptionalPahlavi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,454 INFO /System/Library/Fonts/Supplemental/NotoSansInscriptionalPahlavi-Regular.ttf : NotoSansInscriptionalPahlavi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,462 INFO /System/Library/Fonts/Supplemental/NotoSansInscriptionalParthian-Regular.ttf : NotoSansInscriptionalParthian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,469 INFO /System/Library/Fonts/Supplemental/NotoSansInscriptionalParthian-Regular.ttf : NotoSansInscriptionalParthian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,487 INFO /System/Library/Fonts/Supplemental/NotoSansKaithi-Regular.ttf : NotoSansKaithi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,506 INFO /System/Library/Fonts/Supplemental/NotoSansKaithi-Regular.ttf : NotoSansKaithi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,515 INFO /System/Library/Fonts/Supplemental/NotoSansKayahLi-Regular.ttf : NotoSansKayahLi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,524 INFO /System/Library/Fonts/Supplemental/NotoSansKayahLi-Regular.ttf : NotoSansKayahLi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,535 INFO /System/Library/Fonts/Supplemental/NotoSansKharoshthi-Regular.ttf : NotoSansKharoshthi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,546 INFO /System/Library/Fonts/Supplemental/NotoSansKharoshthi-Regular.ttf : NotoSansKharoshthi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,565 INFO /System/Library/Fonts/Supplemental/NotoSansKhojki-Regular.ttf : NotoSansKhojki-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,584 INFO /System/Library/Fonts/Supplemental/NotoSansKhojki-Regular.ttf : NotoSansKhojki-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,595 INFO /System/Library/Fonts/Supplemental/NotoSansKhudawadi-Regular.ttf : NotoSansKhudawadi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,605 INFO /System/Library/Fonts/Supplemental/NotoSansKhudawadi-Regular.ttf : NotoSansKhudawadi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,615 INFO /System/Library/Fonts/Supplemental/NotoSansLepcha-Regular.ttf : NotoSansLepcha-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,625 INFO /System/Library/Fonts/Supplemental/NotoSansLepcha-Regular.ttf : NotoSansLepcha-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,634 INFO /System/Library/Fonts/Supplemental/NotoSansLimbu-Regular.ttf : NotoSansLimbu-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,643 INFO /System/Library/Fonts/Supplemental/NotoSansLimbu-Regular.ttf : NotoSansLimbu-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,665 INFO /System/Library/Fonts/Supplemental/NotoSansLinearA-Regular.ttf : NotoSansLinearA-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,688 INFO /System/Library/Fonts/Supplemental/NotoSansLinearA-Regular.ttf : NotoSansLinearA-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,716 INFO /System/Library/Fonts/Supplemental/NotoSansLinearB-Regular.ttf : NotoSansLinearB-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,744 INFO /System/Library/Fonts/Supplemental/NotoSansLinearB-Regular.ttf : NotoSansLinearB-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,751 INFO /System/Library/Fonts/Supplemental/NotoSansLisu-Regular.ttf : NotoSansLisu-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,758 INFO /System/Library/Fonts/Supplemental/NotoSansLisu-Regular.ttf : NotoSansLisu-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,765 INFO /System/Library/Fonts/Supplemental/NotoSansLycian-Regular.ttf : NotoSansLycian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,772 INFO /System/Library/Fonts/Supplemental/NotoSansLycian-Regular.ttf : NotoSansLycian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,780 INFO /System/Library/Fonts/Supplemental/NotoSansLydian-Regular.ttf : NotoSansLydian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,787 INFO /System/Library/Fonts/Supplemental/NotoSansLydian-Regular.ttf : NotoSansLydian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,797 INFO /System/Library/Fonts/Supplemental/NotoSansMahajani-Regular.ttf : NotoSansMahajani-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,808 INFO /System/Library/Fonts/Supplemental/NotoSansMahajani-Regular.ttf : NotoSansMahajani-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,819 INFO /System/Library/Fonts/Supplemental/NotoSansMandaic-Regular.ttf : NotoSansMandaic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,830 INFO /System/Library/Fonts/Supplemental/NotoSansMandaic-Regular.ttf : NotoSansMandaic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,844 INFO /System/Library/Fonts/Supplemental/NotoSansManichaean-Regular.ttf : NotoSansManichaean-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,858 INFO /System/Library/Fonts/Supplemental/NotoSansManichaean-Regular.ttf : NotoSansManichaean-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,888 INFO /System/Library/Fonts/Supplemental/NotoSansMarchen-Regular.ttf : NotoSansMarchen-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,918 INFO /System/Library/Fonts/Supplemental/NotoSansMarchen-Regular.ttf : NotoSansMarchen-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,928 INFO /System/Library/Fonts/Supplemental/NotoSansMeeteiMayek-Regular.ttf : NotoSansMeeteiMayek-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,938 INFO /System/Library/Fonts/Supplemental/NotoSansMeeteiMayek-Regular.ttf : NotoSansMeeteiMayek-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,954 INFO /System/Library/Fonts/Supplemental/NotoSansMendeKikakui-Regular.ttf : NotoSansMendeKikakui-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,970 INFO /System/Library/Fonts/Supplemental/NotoSansMendeKikakui-Regular.ttf : NotoSansMendeKikakui-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:23,986 INFO /System/Library/Fonts/Supplemental/NotoSansMeroitic-Regular.ttf : NotoSansMeroitic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,002 INFO /System/Library/Fonts/Supplemental/NotoSansMeroitic-Regular.ttf : NotoSansMeroitic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,016 INFO /System/Library/Fonts/Supplemental/NotoSansMiao-Regular.ttf : NotoSansMiao-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,030 INFO /System/Library/Fonts/Supplemental/NotoSansMiao-Regular.ttf : NotoSansMiao-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,046 INFO /System/Library/Fonts/Supplemental/NotoSansModi-Regular.ttf : NotoSansModi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,063 INFO /System/Library/Fonts/Supplemental/NotoSansModi-Regular.ttf : NotoSansModi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,127 INFO /System/Library/Fonts/Supplemental/NotoSansMongolian-Regular.ttf : NotoSansMongolian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,192 INFO /System/Library/Fonts/Supplemental/NotoSansMongolian-Regular.ttf : NotoSansMongolian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,200 INFO /System/Library/Fonts/Supplemental/NotoSansMro-Regular.ttf : NotoSansMro-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,207 INFO /System/Library/Fonts/Supplemental/NotoSansMro-Regular.ttf : NotoSansMro-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,216 INFO /System/Library/Fonts/Supplemental/NotoSansMultani-Regular.ttf : NotoSansMultani-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,224 INFO /System/Library/Fonts/Supplemental/NotoSansMultani-Regular.ttf : NotoSansMultani-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,233 INFO /System/Library/Fonts/Supplemental/NotoSansNabataean-Regular.ttf : NotoSansNabataean-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,242 INFO /System/Library/Fonts/Supplemental/NotoSansNabataean-Regular.ttf : NotoSansNabataean-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,278 INFO /System/Library/Fonts/Supplemental/NotoSansNewa-Regular.ttf : NotoSansNewa-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,313 INFO /System/Library/Fonts/Supplemental/NotoSansNewa-Regular.ttf : NotoSansNewa-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,325 INFO /System/Library/Fonts/Supplemental/NotoSansNewTaiLue-Regular.ttf : NotoSansNewTaiLue-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,337 INFO /System/Library/Fonts/Supplemental/NotoSansNewTaiLue-Regular.ttf : NotoSansNewTaiLue-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,348 INFO /System/Library/Fonts/Supplemental/NotoSansNKo-Regular.ttf : NotoSansNKo-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,359 INFO /System/Library/Fonts/Supplemental/NotoSansNKo-Regular.ttf : NotoSansNKo-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,369 INFO /System/Library/Fonts/Supplemental/NotoSansOlChiki-Regular.ttf : NotoSansOlChiki-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,378 INFO /System/Library/Fonts/Supplemental/NotoSansOlChiki-Regular.ttf : NotoSansOlChiki-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,390 INFO /System/Library/Fonts/Supplemental/NotoSansOldHungarian-Regular.ttf : NotoSansOldHungarian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,401 INFO /System/Library/Fonts/Supplemental/NotoSansOldHungarian-Regular.ttf : NotoSansOldHungarian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,409 INFO /System/Library/Fonts/Supplemental/NotoSansOldItalic-Regular.ttf : NotoSansOldItalic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,417 INFO /System/Library/Fonts/Supplemental/NotoSansOldItalic-Regular.ttf : NotoSansOldItalic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,424 INFO /System/Library/Fonts/Supplemental/NotoSansOldNorthArabian-Regular.ttf : NotoSansOldNorthArabian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,432 INFO /System/Library/Fonts/Supplemental/NotoSansOldNorthArabian-Regular.ttf : NotoSansOldNorthArabian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,439 INFO /System/Library/Fonts/Supplemental/NotoSansOldPermic-Regular.ttf : NotoSansOldPermic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,446 INFO /System/Library/Fonts/Supplemental/NotoSansOldPermic-Regular.ttf : NotoSansOldPermic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,455 INFO /System/Library/Fonts/Supplemental/NotoSansOldPersian-Regular.ttf : NotoSansOldPersian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,464 INFO /System/Library/Fonts/Supplemental/NotoSansOldPersian-Regular.ttf : NotoSansOldPersian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,471 INFO /System/Library/Fonts/Supplemental/NotoSansOldSouthArabian-Regular.ttf : NotoSansOldSouthArabian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,477 INFO /System/Library/Fonts/Supplemental/NotoSansOldSouthArabian-Regular.ttf : NotoSansOldSouthArabian-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,484 INFO /System/Library/Fonts/Supplemental/NotoSansOldTurkic-Regular.ttf : NotoSansOldTurkic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,492 INFO /System/Library/Fonts/Supplemental/NotoSansOldTurkic-Regular.ttf : NotoSansOldTurkic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,502 INFO /System/Library/Fonts/Supplemental/NotoSansOsage-Regular.ttf : NotoSansOsage-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,511 INFO /System/Library/Fonts/Supplemental/NotoSansOsage-Regular.ttf : NotoSansOsage-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,519 INFO /System/Library/Fonts/Supplemental/NotoSansOsmanya-Regular.ttf : NotoSansOsmanya-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,528 INFO /System/Library/Fonts/Supplemental/NotoSansOsmanya-Regular.ttf : NotoSansOsmanya-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,538 INFO /System/Library/Fonts/Supplemental/NotoSansPahawhHmong-Regular.ttf : NotoSansPahawhHmong-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,548 INFO /System/Library/Fonts/Supplemental/NotoSansPahawhHmong-Regular.ttf : NotoSansPahawhHmong-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,561 INFO /System/Library/Fonts/Supplemental/NotoSansPalmyrene-Regular.ttf : NotoSansPalmyrene-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,572 INFO /System/Library/Fonts/Supplemental/NotoSansPalmyrene-Regular.ttf : NotoSansPalmyrene-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,580 INFO /System/Library/Fonts/Supplemental/NotoSansPauCinHau-Regular.ttf : NotoSansPauCinHau-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,588 INFO /System/Library/Fonts/Supplemental/NotoSansPauCinHau-Regular.ttf : NotoSansPauCinHau-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,601 INFO /System/Library/Fonts/Supplemental/NotoSansPhagsPa-Regular.ttf : NotoSansPhagsPa-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,614 INFO /System/Library/Fonts/Supplemental/NotoSansPhagsPa-Regular.ttf : NotoSansPhagsPa-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,622 INFO /System/Library/Fonts/Supplemental/NotoSansPhoenician-Regular.ttf : NotoSansPhoenician-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,630 INFO /System/Library/Fonts/Supplemental/NotoSansPhoenician-Regular.ttf : NotoSansPhoenician-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,642 INFO /System/Library/Fonts/Supplemental/NotoSansPsalterPahlavi-Regular.ttf : NotoSansPsalterPahlavi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,654 INFO /System/Library/Fonts/Supplemental/NotoSansPsalterPahlavi-Regular.ttf : NotoSansPsalterPahlavi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,661 INFO /System/Library/Fonts/Supplemental/NotoSansRejang-Regular.ttf : NotoSansRejang-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,668 INFO /System/Library/Fonts/Supplemental/NotoSansRejang-Regular.ttf : NotoSansRejang-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,677 INFO /System/Library/Fonts/Supplemental/NotoSansSamaritan-Regular.ttf : NotoSansSamaritan-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,686 INFO /System/Library/Fonts/Supplemental/NotoSansSamaritan-Regular.ttf : NotoSansSamaritan-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,696 INFO /System/Library/Fonts/Supplemental/NotoSansSaurashtra-Regular.ttf : NotoSansSaurashtra-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,706 INFO /System/Library/Fonts/Supplemental/NotoSansSaurashtra-Regular.ttf : NotoSansSaurashtra-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,721 INFO /System/Library/Fonts/Supplemental/NotoSansSharada-Regular.ttf : NotoSansSharada-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,736 INFO /System/Library/Fonts/Supplemental/NotoSansSharada-Regular.ttf : NotoSansSharada-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,744 INFO /System/Library/Fonts/Supplemental/NotoSansSoraSompeng-Regular.ttf : NotoSansSoraSompeng-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,751 INFO /System/Library/Fonts/Supplemental/NotoSansSoraSompeng-Regular.ttf : NotoSansSoraSompeng-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,760 INFO /System/Library/Fonts/Supplemental/NotoSansSundanese-Regular.ttf : NotoSansSundanese-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,768 INFO /System/Library/Fonts/Supplemental/NotoSansSundanese-Regular.ttf : NotoSansSundanese-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,777 INFO /System/Library/Fonts/Supplemental/NotoSansSylotiNagri-Regular.ttf : NotoSansSylotiNagri-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,786 INFO /System/Library/Fonts/Supplemental/NotoSansSylotiNagri-Regular.ttf : NotoSansSylotiNagri-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,805 INFO /System/Library/Fonts/Supplemental/NotoSansSyriac-Regular.ttf : NotoSansSyriac-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,824 INFO /System/Library/Fonts/Supplemental/NotoSansSyriac-Regular.ttf : NotoSansSyriac-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,832 INFO /System/Library/Fonts/Supplemental/NotoSansTagalog-Regular.ttf : NotoSansTagalog-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,840 INFO /System/Library/Fonts/Supplemental/NotoSansTagalog-Regular.ttf : NotoSansTagalog-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,847 INFO /System/Library/Fonts/Supplemental/NotoSansTagbanwa-Regular.ttf : NotoSansTagbanwa-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,856 INFO /System/Library/Fonts/Supplemental/NotoSansTagbanwa-Regular.ttf : NotoSansTagbanwa-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,866 INFO /System/Library/Fonts/Supplemental/NotoSansTaiLe-Regular.ttf : NotoSansTaiLe-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,876 INFO /System/Library/Fonts/Supplemental/NotoSansTaiLe-Regular.ttf : NotoSansTaiLe-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,895 INFO /System/Library/Fonts/Supplemental/NotoSansTaiTham-Regular.ttf : NotoSansTaiTham already registered in fonts database. Skipping.
+2025-10-12 23:09:24,913 INFO /System/Library/Fonts/Supplemental/NotoSansTaiTham-Regular.ttf : NotoSansTaiTham already registered in fonts database. Skipping.
+2025-10-12 23:09:24,926 INFO /System/Library/Fonts/Supplemental/NotoSansTaiViet-Regular.ttf : NotoSansTaiViet-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,938 INFO /System/Library/Fonts/Supplemental/NotoSansTaiViet-Regular.ttf : NotoSansTaiViet-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,948 INFO /System/Library/Fonts/Supplemental/NotoSansTakri-Regular.ttf : NotoSansTakri-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,958 INFO /System/Library/Fonts/Supplemental/NotoSansTakri-Regular.ttf : NotoSansTakri-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,971 INFO /System/Library/Fonts/Supplemental/NotoSansThaana-Regular.ttf : NotoSansThaana-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:24,982 INFO /System/Library/Fonts/Supplemental/NotoSansThaana-Regular.ttf : NotoSansThaana-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,001 INFO /System/Library/Fonts/Supplemental/NotoSansTirhuta-Regular.ttf : NotoSansTirhuta-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,020 INFO /System/Library/Fonts/Supplemental/NotoSansTirhuta-Regular.ttf : NotoSansTirhuta-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,028 INFO /System/Library/Fonts/Supplemental/NotoSansUgaritic-Regular.ttf : NotoSansUgaritic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,036 INFO /System/Library/Fonts/Supplemental/NotoSansUgaritic-Regular.ttf : NotoSansUgaritic-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,056 INFO /System/Library/Fonts/Supplemental/NotoSansVai-Regular.ttf : NotoSansVai-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,078 INFO /System/Library/Fonts/Supplemental/NotoSansVai-Regular.ttf : NotoSansVai-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,088 INFO /System/Library/Fonts/Supplemental/NotoSansWancho-Regular.ttf : NotoSansWancho-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,098 INFO /System/Library/Fonts/Supplemental/NotoSansWancho-Regular.ttf : NotoSansWancho-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,110 INFO /System/Library/Fonts/Supplemental/NotoSansWarangCiti-Regular.ttf : NotoSansWarangCiti-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,121 INFO /System/Library/Fonts/Supplemental/NotoSansWarangCiti-Regular.ttf : NotoSansWarangCiti-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,175 INFO /System/Library/Fonts/Supplemental/NotoSansYi-Regular.ttf : NotoSansYi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,231 INFO /System/Library/Fonts/Supplemental/NotoSansYi-Regular.ttf : NotoSansYi-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,245 INFO /System/Library/Fonts/Supplemental/NotoSerifAhom-Regular.ttf : NotoSerifAhom-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,257 INFO /System/Library/Fonts/Supplemental/NotoSerifAhom-Regular.ttf : NotoSerifAhom-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,288 INFO /System/Library/Fonts/Supplemental/NotoSerifBalinese-Regular.ttf : NotoSerifBalinese-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,317 INFO /System/Library/Fonts/Supplemental/NotoSerifBalinese-Regular.ttf : NotoSerifBalinese-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,327 INFO /System/Library/Fonts/Supplemental/NotoSerifNyiakengPuachueHmong-Regular.ttf : NotoSerifHmongNyiakeng-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,337 INFO /System/Library/Fonts/Supplemental/NotoSerifNyiakengPuachueHmong-Regular.ttf : NotoSerifHmongNyiakeng-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:25,446 INFO /System/Library/Fonts/Supplemental/PartyLET-plain.ttf : PartyLetPlain already registered in fonts database. Skipping.
+2025-10-12 23:09:25,553 INFO /System/Library/Fonts/Supplemental/PartyLET-plain.ttf : PartyLetPlain already registered in fonts database. Skipping.
+2025-10-12 23:09:25,598 INFO /System/Library/Fonts/Supplemental/PlantagenetCherokee.ttf : No FontName. Skipping.
+2025-10-12 23:09:25,641 INFO /System/Library/Fonts/Supplemental/PlantagenetCherokee.ttf : No FontName. Skipping.
+2025-10-12 23:09:25,683 INFO /System/Library/Fonts/Supplemental/Sathu.ttf : No FontName. Skipping.
+2025-10-12 23:09:25,724 INFO /System/Library/Fonts/Supplemental/Sathu.ttf : No FontName. Skipping.
+2025-10-12 23:09:25,748 INFO /System/Library/Fonts/Supplemental/Silom.ttf : No FontName. Skipping.
+2025-10-12 23:09:25,772 INFO /System/Library/Fonts/Supplemental/Silom.ttf : No FontName. Skipping.
+2025-10-12 23:09:25,801 INFO /System/Library/Fonts/Supplemental/Skia.ttf : No FontName. Skipping.
+2025-10-12 23:09:25,829 INFO /System/Library/Fonts/Supplemental/Skia.ttf : No FontName. Skipping.
+2025-10-12 23:09:25,964 INFO /System/Library/Fonts/Supplemental/STIXTwoText-Italic.ttf : STIXTwoText-Italic already registered in fonts database. Skipping.
+2025-10-12 23:09:26,099 INFO /System/Library/Fonts/Supplemental/STIXTwoText-Italic.ttf : STIXTwoText-Italic already registered in fonts database. Skipping.
+2025-10-12 23:09:26,221 INFO /System/Library/Fonts/Supplemental/STIXTwoText.ttf : STIXTwoText already registered in fonts database. Skipping.
+2025-10-12 23:09:26,341 INFO /System/Library/Fonts/Supplemental/STIXTwoText.ttf : STIXTwoText already registered in fonts database. Skipping.
+2025-10-12 23:09:26,435 INFO /System/Library/Fonts/Supplemental/Tahoma Bold.ttf : Tahoma-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:26,529 INFO /System/Library/Fonts/Supplemental/Tahoma Bold.ttf : Tahoma-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:26,632 INFO /System/Library/Fonts/Supplemental/Tahoma.ttf : Tahoma already registered in fonts database. Skipping.
+2025-10-12 23:09:26,734 INFO /System/Library/Fonts/Supplemental/Tahoma.ttf : Tahoma already registered in fonts database. Skipping.
+2025-10-12 23:09:26,837 INFO /System/Library/Fonts/Supplemental/Times New Roman Bold Italic.ttf : TimesNewRomanPS-BoldItalicMT already registered in fonts database. Skipping.
+2025-10-12 23:09:26,940 INFO /System/Library/Fonts/Supplemental/Times New Roman Bold Italic.ttf : TimesNewRomanPS-BoldItalicMT already registered in fonts database. Skipping.
+2025-10-12 23:09:27,093 INFO /System/Library/Fonts/Supplemental/Times New Roman Bold.ttf : TimesNewRomanPS-BoldMT already registered in fonts database. Skipping.
+2025-10-12 23:09:27,243 INFO /System/Library/Fonts/Supplemental/Times New Roman Bold.ttf : TimesNewRomanPS-BoldMT already registered in fonts database. Skipping.
+2025-10-12 23:09:27,355 INFO /System/Library/Fonts/Supplemental/Times New Roman Italic.ttf : TimesNewRomanPS-ItalicMT already registered in fonts database. Skipping.
+2025-10-12 23:09:27,463 INFO /System/Library/Fonts/Supplemental/Times New Roman Italic.ttf : TimesNewRomanPS-ItalicMT already registered in fonts database. Skipping.
+2025-10-12 23:09:27,619 INFO /System/Library/Fonts/Supplemental/Times New Roman.ttf : TimesNewRomanPSMT already registered in fonts database. Skipping.
+2025-10-12 23:09:27,781 INFO /System/Library/Fonts/Supplemental/Times New Roman.ttf : TimesNewRomanPSMT already registered in fonts database. Skipping.
+2025-10-12 23:09:29,689 INFO /System/Library/Fonts/Supplemental/Trattatello.ttf : Trattatello already registered in fonts database. Skipping.
+2025-10-12 23:09:31,563 INFO /System/Library/Fonts/Supplemental/Trattatello.ttf : Trattatello already registered in fonts database. Skipping.
+2025-10-12 23:09:31,579 INFO /System/Library/Fonts/Supplemental/Trebuchet MS Bold Italic.ttf : Trebuchet-BoldItalic already registered in fonts database. Skipping.
+2025-10-12 23:09:31,595 INFO /System/Library/Fonts/Supplemental/Trebuchet MS Bold Italic.ttf : Trebuchet-BoldItalic already registered in fonts database. Skipping.
+2025-10-12 23:09:31,610 INFO /System/Library/Fonts/Supplemental/Trebuchet MS Bold.ttf : TrebuchetMS-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:31,624 INFO /System/Library/Fonts/Supplemental/Trebuchet MS Bold.ttf : TrebuchetMS-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:31,639 INFO /System/Library/Fonts/Supplemental/Trebuchet MS Italic.ttf : TrebuchetMS-Italic already registered in fonts database. Skipping.
+2025-10-12 23:09:31,654 INFO /System/Library/Fonts/Supplemental/Trebuchet MS Italic.ttf : TrebuchetMS-Italic already registered in fonts database. Skipping.
+2025-10-12 23:09:31,668 INFO /System/Library/Fonts/Supplemental/Trebuchet MS.ttf : TrebuchetMS already registered in fonts database. Skipping.
+2025-10-12 23:09:31,682 INFO /System/Library/Fonts/Supplemental/Trebuchet MS.ttf : TrebuchetMS already registered in fonts database. Skipping.
+2025-10-12 23:09:31,704 INFO /System/Library/Fonts/Supplemental/Verdana Bold Italic.ttf : Verdana-BoldItalic already registered in fonts database. Skipping.
+2025-10-12 23:09:31,724 INFO /System/Library/Fonts/Supplemental/Verdana Bold Italic.ttf : Verdana-BoldItalic already registered in fonts database. Skipping.
+2025-10-12 23:09:31,748 INFO /System/Library/Fonts/Supplemental/Verdana Bold.ttf : Verdana-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:31,772 INFO /System/Library/Fonts/Supplemental/Verdana Bold.ttf : Verdana-Bold already registered in fonts database. Skipping.
+2025-10-12 23:09:31,797 INFO /System/Library/Fonts/Supplemental/Verdana Italic.ttf : Verdana-Italic already registered in fonts database. Skipping.
+2025-10-12 23:09:31,820 INFO /System/Library/Fonts/Supplemental/Verdana Italic.ttf : Verdana-Italic already registered in fonts database. Skipping.
+2025-10-12 23:09:31,843 INFO /System/Library/Fonts/Supplemental/Verdana.ttf : Verdana already registered in fonts database. Skipping.
+2025-10-12 23:09:31,868 INFO /System/Library/Fonts/Supplemental/Verdana.ttf : Verdana already registered in fonts database. Skipping.
+2025-10-12 23:09:31,897 INFO /System/Library/Fonts/Supplemental/Webdings.ttf : Webdings already registered in fonts database. Skipping.
+2025-10-12 23:09:31,925 INFO /System/Library/Fonts/Supplemental/Webdings.ttf : Webdings already registered in fonts database. Skipping.
+2025-10-12 23:09:31,938 INFO /System/Library/Fonts/Supplemental/Wingdings 2.ttf : Wingdings2 already registered in fonts database. Skipping.
+2025-10-12 23:09:31,950 INFO /System/Library/Fonts/Supplemental/Wingdings 2.ttf : Wingdings2 already registered in fonts database. Skipping.
+2025-10-12 23:09:31,958 INFO /System/Library/Fonts/Supplemental/Wingdings 3.ttf : Wingdings3 already registered in fonts database. Skipping.
+2025-10-12 23:09:31,965 INFO /System/Library/Fonts/Supplemental/Wingdings 3.ttf : Wingdings3 already registered in fonts database. Skipping.
+2025-10-12 23:09:31,979 INFO /System/Library/Fonts/Supplemental/Wingdings.ttf : Wingdings-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:31,992 INFO /System/Library/Fonts/Supplemental/Wingdings.ttf : Wingdings-Regular already registered in fonts database. Skipping.
+2025-10-12 23:09:32,370 INFO /System/Library/Fonts/Supplemental/Zapfino.ttf : No FontName. Skipping.
+2025-10-12 23:09:32,760 INFO /System/Library/Fonts/Supplemental/Zapfino.ttf : No FontName. Skipping.
+2025-10-12 23:09:32,770 INFO /System/Library/Fonts/Symbol.ttf : No FontName. Skipping.
+2025-10-12 23:09:32,783 INFO /System/Library/Fonts/ZapfDingbats.ttf : No FontName. Skipping.
+2025-10-12 23:09:32,783 INFO Found FontName for 0 fonts.
+2025-10-12 23:09:32,784 INFO Scanning afm files in /Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/library/extrafontdb/metrics
+2025-10-12 23:09:32,887 INFO .Keyboard already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO .New York already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO .SF Arabic already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO .SF Arabic Rounded already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO .SF Armenian already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO .SF Armenian Rounded already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO .SF Camera already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO .SF Compact already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO .SF Compact Rounded already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO .SF Georgian already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO .SF Georgian Rounded already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO .SF Hebrew already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO .SF Hebrew Rounded already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO .SF NS Mono already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO .SF NS Rounded already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO Academy Engraved LET already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO Andale Mono already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO More than one version of regular/bold/italic found for Apple Braille. Skipping setup for this font.
+2025-10-12 23:09:32,887 INFO AppleMyungjo already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO Arial already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO Arial Black already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO Arial Narrow already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO Arial Rounded MT Bold already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO Arial Unicode MS already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO Bodoni 72 Smallcaps already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO Bodoni Ornaments already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO No regular (non-bold, non-italic) version of Brush Script MT. Skipping setup for this font.
+2025-10-12 23:09:32,887 INFO Comic Sans MS already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO Courier New already registered with pdfFont().
+2025-10-12 23:09:32,887 INFO No regular (non-bold, non-italic) version of DIN Alternate. Skipping setup for this font.
+2025-10-12 23:09:32,887 INFO No regular (non-bold, non-italic) version of DIN Condensed. Skipping setup for this font.
+2025-10-12 23:09:32,888 INFO Georgia already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Impact already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Khmer Sangam MN already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Lao Sangam MN already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Luminari already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Microsoft Sans Serif already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Adlam already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Avestan already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Bamum already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Bassa Vah already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Batak already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Bhaiksuki already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Brahmi already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Buginese already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Buhid already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Carian already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans CaucAlban already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Chakma already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Cham already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Coptic already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Cuneiform already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Cypriot already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Duployan already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans EgyptHiero already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Elbasan already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Glagolitic already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Gothic already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans HanifiRohg already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Hanunoo already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Hatran already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans ImpAramaic already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans InsPahlavi already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans InsParthi already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Kaithi already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Kayah Li already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Kharoshthi already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Khojki already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Khudawadi already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Lepcha already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Limbu already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Linear A already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Linear B already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Lisu already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Lycian already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Lydian already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Mahajani already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Mandaic already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Manichaean already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Marchen already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans MeeteiMayek already registered with pdfFont().
+2025-10-12 23:09:32,888 INFO Noto Sans Mende Kikakui already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Meroitic already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Miao already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Modi already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Mongolian already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Mro already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Multani already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Nabataean already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Newa already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans NewTaiLue already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans NKo already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Ol Chiki already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO No regular (non-bold, non-italic) version of Noto Sans Old Italic. Skipping setup for this font.
+2025-10-12 23:09:32,889 INFO Noto Sans Old Permic already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Old Turkic already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans OldHung already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans OldNorArab already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans OldPersian already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans OldSouArab already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Osage already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Osmanya already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Pahawh Hmong already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Palmyrene already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans PauCinHau already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans PhagsPa already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Phoenician already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans PsaPahlavi already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Rejang already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Samaritan already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Saurashtra already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Sharada already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans SoraSomp already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Sundanese already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Syloti Nagri already registered with pdfFont().
+2025-10-12 23:09:32,889 INFO Noto Sans Syriac already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Noto Sans Tagalog already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Noto Sans Tagbanwa already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Noto Sans Tai Le already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Noto Sans Tai Tham already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Noto Sans Tai Viet already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Noto Sans Takri already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Noto Sans Thaana already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Noto Sans Tirhuta already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Noto Sans Ugaritic already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Noto Sans Vai already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Noto Sans Wancho already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Noto Sans WarangCiti already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Noto Sans Yi already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Noto Serif Ahom already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Noto Serif Balinese already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Noto Serif Hmong Nyiakeng already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO Party LET already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO STIX Two Text already registered with pdfFont().
+2025-10-12 23:09:32,890 INFO System Font already registered with pdfFont().
+2025-10-12 23:09:32,891 INFO Tahoma already registered with pdfFont().
+2025-10-12 23:09:32,891 INFO Times New Roman already registered with pdfFont().
+2025-10-12 23:09:32,891 INFO Trattatello already registered with pdfFont().
+2025-10-12 23:09:32,891 INFO Trebuchet MS already registered with pdfFont().
+2025-10-12 23:09:32,891 INFO Verdana already registered with pdfFont().
+2025-10-12 23:09:32,891 INFO Webdings already registered with pdfFont().
+2025-10-12 23:09:32,891 INFO Wingdings already registered with pdfFont().
+2025-10-12 23:09:32,891 INFO Wingdings 2 already registered with pdfFont().
+2025-10-12 23:09:32,891 INFO Wingdings 3 already registered with pdfFont().
+2025-10-12 23:09:32,895 INFO .Keyboard already registered with postscriptFont().
+2025-10-12 23:09:32,895 INFO .New York already registered with postscriptFont().
+2025-10-12 23:09:32,895 INFO .SF Arabic already registered with postscriptFont().
+2025-10-12 23:09:32,895 INFO .SF Arabic Rounded already registered with postscriptFont().
+2025-10-12 23:09:32,895 INFO .SF Armenian already registered with postscriptFont().
+2025-10-12 23:09:32,895 INFO .SF Armenian Rounded already registered with postscriptFont().
+2025-10-12 23:09:32,895 INFO .SF Camera already registered with postscriptFont().
+2025-10-12 23:09:32,895 INFO .SF Compact already registered with postscriptFont().
+2025-10-12 23:09:32,895 INFO .SF Compact Rounded already registered with postscriptFont().
+2025-10-12 23:09:32,895 INFO .SF Georgian already registered with postscriptFont().
+2025-10-12 23:09:32,895 INFO .SF Georgian Rounded already registered with postscriptFont().
+2025-10-12 23:09:32,895 INFO .SF Hebrew already registered with postscriptFont().
+2025-10-12 23:09:32,895 INFO .SF Hebrew Rounded already registered with postscriptFont().
+2025-10-12 23:09:32,895 INFO .SF NS Mono already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO .SF NS Rounded already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Academy Engraved LET already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Andale Mono already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO More than one version of regular/bold/italic found for Apple Braille. Skipping setup for this font.
+2025-10-12 23:09:32,896 INFO AppleMyungjo already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Arial already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Arial Black already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Arial Narrow already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Arial Rounded MT Bold already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Arial Unicode MS already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Bodoni 72 Smallcaps already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Bodoni Ornaments already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO No regular (non-bold, non-italic) version of Brush Script MT. Skipping setup for this font.
+2025-10-12 23:09:32,896 INFO Comic Sans MS already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Courier New already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO No regular (non-bold, non-italic) version of DIN Alternate. Skipping setup for this font.
+2025-10-12 23:09:32,896 INFO No regular (non-bold, non-italic) version of DIN Condensed. Skipping setup for this font.
+2025-10-12 23:09:32,896 INFO Georgia already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Impact already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Khmer Sangam MN already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Lao Sangam MN already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Luminari already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Microsoft Sans Serif already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Noto Sans Adlam already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Noto Sans Avestan already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Noto Sans Bamum already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Noto Sans Bassa Vah already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Noto Sans Batak already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Noto Sans Bhaiksuki already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Noto Sans Brahmi already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Noto Sans Buginese already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Noto Sans Buhid already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Noto Sans Carian already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Noto Sans CaucAlban already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Noto Sans Chakma already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Noto Sans Cham already registered with postscriptFont().
+2025-10-12 23:09:32,896 INFO Noto Sans Coptic already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Cuneiform already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Cypriot already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Duployan already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans EgyptHiero already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Elbasan already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Glagolitic already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Gothic already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans HanifiRohg already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Hanunoo already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Hatran already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans ImpAramaic already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans InsPahlavi already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans InsParthi already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Kaithi already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Kayah Li already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Kharoshthi already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Khojki already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Khudawadi already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Lepcha already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Limbu already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Linear A already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Linear B already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Lisu already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Lycian already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Lydian already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Mahajani already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Mandaic already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Manichaean already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Marchen already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans MeeteiMayek already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Mende Kikakui already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Meroitic already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Miao already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Modi already registered with postscriptFont().
+2025-10-12 23:09:32,897 INFO Noto Sans Mongolian already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Mro already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Multani already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Nabataean already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Newa already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans NewTaiLue already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans NKo already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Ol Chiki already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO No regular (non-bold, non-italic) version of Noto Sans Old Italic. Skipping setup for this font.
+2025-10-12 23:09:32,898 INFO Noto Sans Old Permic already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Old Turkic already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans OldHung already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans OldNorArab already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans OldPersian already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans OldSouArab already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Osage already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Osmanya already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Pahawh Hmong already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Palmyrene already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans PauCinHau already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans PhagsPa already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Phoenician already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans PsaPahlavi already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Rejang already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Samaritan already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Saurashtra already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Sharada already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans SoraSomp already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Sundanese already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Syloti Nagri already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Syriac already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Tagalog already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Tagbanwa already registered with postscriptFont().
+2025-10-12 23:09:32,898 INFO Noto Sans Tai Le already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Noto Sans Tai Tham already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Noto Sans Tai Viet already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Noto Sans Takri already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Noto Sans Thaana already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Noto Sans Tirhuta already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Noto Sans Ugaritic already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Noto Sans Vai already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Noto Sans Wancho already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Noto Sans WarangCiti already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Noto Sans Yi already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Noto Serif Ahom already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Noto Serif Balinese already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Noto Serif Hmong Nyiakeng already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Party LET already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO STIX Two Text already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO System Font already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Tahoma already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Times New Roman already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Trattatello already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Trebuchet MS already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Verdana already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Webdings already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Wingdings already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Wingdings 2 already registered with postscriptFont().
+2025-10-12 23:09:32,899 INFO Wingdings 3 already registered with postscriptFont().
+2025-10-12 23:09:35,505 INFO Error in `left_join()`:
+2025-10-12 23:09:35,506 INFO ! Join columns in `y` must be present in the data.
+2025-10-12 23:09:35,506 INFO ✖ Problem with `playerId`.
+2025-10-12 23:09:35,506 INFO Backtrace:
+2025-10-12 23:09:35,506 INFO      ▆
+2025-10-12 23:09:35,506 INFO   1. ├─base::source("raw_data_cleaning.R")
+2025-10-12 23:09:35,506 INFO   2. │ ├─base::withVisible(eval(ei, envir))
+2025-10-12 23:09:35,506 INFO   3. │ └─base::eval(ei, envir)
+2025-10-12 23:09:35,506 INFO   4. │   └─base::eval(ei, envir)
+2025-10-12 23:09:35,506 INFO   5. ├─dplyr::summarize(...)
+2025-10-12 23:09:35,506 INFO   6. ├─dplyr::group_by(...)
+2025-10-12 23:09:35,506 INFO   7. ├─dplyr::filter(...)
+2025-10-12 23:09:35,506 INFO   8. ├─dplyr::filter(...)
+2025-10-12 23:09:35,506 INFO   9. ├─base::unique(...)
+2025-10-12 23:09:35,506 INFO  10. ├─dplyr::select(...)
+2025-10-12 23:09:35,506 INFO  11. ├─dplyr::ungroup(...)
+2025-10-12 23:09:35,506 INFO  12. ├─dplyr::mutate(...)
+2025-10-12 23:09:35,506 INFO  13. ├─dplyr::group_by(...)
+2025-10-12 23:09:35,506 INFO  14. ├─dplyr::filter(...)
+2025-10-12 23:09:35,506 INFO  15. ├─dplyr::mutate(...)
+2025-10-12 23:09:35,506 INFO  16. ├─dplyr::filter(...)
+2025-10-12 23:09:35,506 INFO  17. ├─dplyr::left_join(...)
+2025-10-12 23:09:35,506 INFO  18. └─dplyr:::left_join.data.frame(...)
+2025-10-12 23:09:35,507 INFO  19.   └─dplyr:::join_mutate(...)
+2025-10-12 23:09:35,507 INFO  20.     └─dplyr:::join_cols(...)
+2025-10-12 23:09:35,507 INFO  21.       └─dplyr:::check_join_vars(by$y, y_names, by$condition, "y", error_call = error_call)
+2025-10-12 23:09:35,507 INFO  22.         └─rlang::abort(bullets, call = error_call)
+2025-10-12 23:09:35,507 INFO There were 11 warnings (use warnings() to see them)
+2025-10-12 23:09:35,508 INFO Execution halted
+2025-10-12 23:09:35,535 INFO Completed group_advantage.raw_data_cleaning in 47.993 sec
