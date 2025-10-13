@@ -23,33 +23,33 @@ The Task Space provides a framework to do exactly that. It allows researchers to
 
 Potential applications of the Task Space include:
 
--  Intelligently **selecting tasks for experiments** (for example, to [maximize the diversity of tasks selected](./task space resources/choose-10-tasks.ipynb), or to focus on tasks with special properties);
+-  Intelligently **selecting tasks for experiments** (for example, to [maximize the diversity of tasks selected](https://github.com/Watts-Lab/task-mapping/blob/master/task%20space%20resources/choose-10-tasks.ipynb), or to focus on tasks with special properties);
 -  **Quantifying task similarities and differences**, both to understand the generalizability of findings and to control for task features in statistical analysis;
 -  **Building "task-sensitive" theories** that account for how team behavior varies as a function of task features;
 -  **Designing team environments** that are tailored to the specific task at hand (for example, assigning actors to tasks for which they have a comparative advantage).
 
 # Using the Task Space
 
-As a starting point, we built a ``map'' of the space: a repository of 102 laboratory tasks from the interdisciplinary literature on group performance, rated along the 24 Task Space dimensions using a crowd annotation process. 
+As a starting point, we built a "map" of the space: a repository of 102 laboratory tasks from the interdisciplinary literature on group performance, rated along the 24 Task Space dimensions using a crowd annotation process. 
 
-## Download the Task Map
-The Task Map (102 x 24 matrix) can be downloaded here: [`task_map.csv`](./processed_data/task_map.csv).
+## 1. Download the Task Map
+The Task Map (102 x 24 matrix) can be downloaded here: [`task_map.csv`](https://raw.githubusercontent.com/Watts-Lab/task-mapping/master/data/task_map.csv).
 
-## 24 Task Dimensions
-The 24 dimensions are detailed here: ['24_dimensions_clean.csv'](./task space resources/24_dimensions_clean.csv).
+## 2. 24 Task Dimensions
+The 24 dimensions are detailed here: [`24_dimensions_clean.csv`](https://raw.githubusercontent.com/Watts-Lab/task-mapping/master/task%20space%20resources/24_dimensions_clean.csv).
 
-## 102 Tasks
-The 102 tasks and their descriptions are detailed here: [`102_tasks_with_sources_clean.csv`](./task space resources/102_tasks_with_sources_clean.csv).
+## 3. 102 Tasks
+The 102 tasks and their descriptions are detailed here: [`102_tasks_with_sources_clean.csv`](https://raw.githubusercontent.com/Watts-Lab/task-mapping/master/task%20space%20resources/102_tasks_with_sources_clean.csv).
 
 # Annotating New Tasks
 
 We also provide documentation on how to annotate new tasks, including the annotation rubric and the code used to generate the Task Space from raw annotations.
 
-- The questions displayed to raters can be found here: [`questions_displayed_to_raters.csv`](./task space resources/questions_displayed_to_raters.csv).
+- The questions displayed to raters can be found here: [`questions_displayed_to_raters.csv`](https://raw.githubusercontent.com/Watts-Lab/task-mapping/master/task%20space%20resources/questions_displayed_to_raters.csv).
 
-- Resources for rater training and managing the annotation pipeline can be found here: [`rating pipelines/`](./task space resources/rating pipelines/)
+- Resources for rater training and managing the annotation pipeline can be found here: [`rating pipelines/`](https://github.com/Watts-Lab/task-mapping/tree/master/task%20space%20resources/rating%20pipelines)
 
-- The code used to generate the Task Space from raw annotations can be found here: [`generate_task_map_from_raw.Rmd`](./analysis/analysis_task_space/generate_task_map_from_raw.Rmd).
+- The code used to generate the Task Space from raw annotations can be found here: [`generate_task_map_from_raw.Rmd`](https://github.com/Watts-Lab/task-mapping/blob/master/analysis/analysis_task_space/generate_task_map_from_raw.Rmd).
 
 # Accessing our Full Reproduction package
 
