@@ -168,17 +168,14 @@ def relocate_legacy_cached_pkls() -> None:
 
 
 def sync_task_map_visual_labels() -> None:
-    """Copy the curated McGrath sector labels from data/ into outputs/ for plotting."""
+    """Ensure curated McGrath sector labels exist under data/ and avoid copying into outputs/."""
     source_path = ROOT / 'data' / 'hand_labeled_task_mcgrath_sectors.csv'
     if not source_path.exists():
         raise FileNotFoundError(
             f"Required label file not found: {source_path}. Add it to the repo before running the pipeline."
         )
-
-    dest_path = OUTPUTS_DIR / 'processed_data' / source_path.name
-    dest_path.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(source_path, dest_path)
-    logger.info('Copied %s -> %s', source_path, dest_path)
+    # Do not copy into outputs/processed_data anymore; just log that we will reference it in-place.
+    logger.info('Using curated McGrath sector labels in-place at %s', source_path)
 
 
 def sync_task_map_dataset() -> None:
