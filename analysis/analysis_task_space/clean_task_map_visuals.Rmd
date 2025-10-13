@@ -85,6 +85,9 @@ mcgrath_quad_display_set <- c(
     "Investment game (hidden-profile)"
 )
 
+# -------------------------------------------------------------------------
+# Appendix Figure 5 (A two-dimensional projection of the Task Space using PCA)
+
 p <- combined_data_with_labels %>%
     ggplot(aes(x = PC1,
                y = PC2,

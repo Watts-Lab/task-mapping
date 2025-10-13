@@ -14,9 +14,13 @@ pacman::p_load(agreement,stats,corrplot,irr,stringr,markdown,ggplot2,dplyr,qualt
 
 
 ```{r}
-qualtrics_api_credentials(api_key = "91xPIrVaorSVR2vigYP4xG540WbapOLOyZoz90Ql",
-base_url = "upenn.co1.qualtrics.com",
-overwrite = TRUE)
+# SECURITY: Do not hard-code API keys. Provide your own Qualtrics key via environment variable QUALTRICS_API_KEY.
+# Example: Sys.setenv(QUALTRICS_API_KEY="<your-key>") before knitting, or set it in your shell environment.
+qualtrics_api_credentials(
+  api_key = Sys.getenv("QUALTRICS_API_KEY", ""),
+  base_url = "upenn.co1.qualtrics.com",
+  overwrite = TRUE
+)
 surveys <- all_surveys()
 pretest_id <- (surveys %>% filter(name == "Pre-Test MTurk Pilot"))$id 
 ```

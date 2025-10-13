@@ -512,12 +512,75 @@ aggregated_synergy_summary_data_by_wave$DV <- factor(
   levels = rev(levels(aggregated_synergy_summary_data_by_wave$DV))
 )
 
-figure_2 <- aggregated_synergy_summary_data_by_wave |>
+synergy_summary_data <- synergy_data |>
+  pivot_longer(c("strong", "weak"), names_to = "DV") |>
+  pivot_longer(
+    c("strong_se", "weak_se"),
+    names_sep = "_",
+    names_to = c("name", "se"),
+    values_to = "SE"
+  ) |>
+  filter(DV == name) |> select(-name, -se) |>
+  mutate(
+    DV = if_else(DV == "weak", paste0("Weak ",outcome_term), paste0("Strong ",outcome_term)),
+    DV = ordered(DV, levels = c(paste0("Weak ",outcome_term), paste0("Strong ",outcome_term))),
+    complexity = paste(complexity, "Complexity"),
+    complexity = ordered(
+      complexity,
+      levels = c("Low Complexity", "Medium Complexity", "High Complexity")
+    ),
+    playerCount = if_else(playerCount == 3, "Small Group", "Large Group"),
+    playerCount = ordered(playerCount, levels = c("Small Group", "Large Group")),
+    grouping = "Task",
+    group = task
+  ) |> 
+  left_join(task_map |> select(task,wave)) |> 
+  mutate(
+    wave = paste0("Wave ",wave)
+  )
+
+aggregated_synergy_summary_data_by_wave = synergy_summary_data |>
+  select(-grouping, -group) |>
+  pivot_longer(c(task, complexity, playerCount),
+               names_to = "grouping",
+               values_to = "group") |>
+  group_by(grouping, group, DV, wave) |>
+  summarise(value = mean(value),
+            SE = sqrt(sum(SE ^ 2) / length(SE) ^ 2)) |> 
+  mutate(
+    grouping = case_when(
+      grouping == "complexity" ~ "Complexity",
+      grouping == "playerCount" ~ "Size",
+      grouping == "task" ~ "Task",
+    ),
+    grouping = ordered(grouping, levels = c("Task", "Complexity", "Size"))
+  ) |> 
+  filter(grouping == "Task")
+
+# Make the order "Strong," then "Weak"
+aggregated_synergy_summary_data_by_wave$DV <- factor(
+  aggregated_synergy_summary_data_by_wave$DV,
+  levels = rev(levels(aggregated_synergy_summary_data_by_wave$DV))
+)
+
+# -----------------------------------------------------------------------------
+# FIGURE 4 IN MAIN TEXT (DESCRIPTIVE FIGURE OF HETEROGENEITY IN GROUP ADVANTAGE)
+# Heterogeneity in group advantage across conditions. Each point represents the 
+# observed group advantage at the level of an experimental condition, which is 
+# a tuple of task (y-axis) × level of complexity (color) × group size (point 
+# shape; small, three-person groups are represented by circles and large, 
+# six-person groups are represented by crosses). Tasks are grouped by the 
+# experimental wave in which they appeared (top three facets). Error bars 
+# represent the analytical 95% confidence intervals (1.96 * 1 standard error) 
+# for group advantage in a given condition. Boxes are centered around the mean 
+# and show one standard error. 
+
+figure_heterogeneity <- aggregated_synergy_summary_data_by_wave |>
   ggplot(aes(
     value,
     reorder(group, value),
-    xmin = value - z * SE,
-    xmax = value + z * SE
+    xmin = value - z * SE ,
+    xmax = value + z * SE,
   )) +
   facet_grid(
     cols = vars(DV),
@@ -531,25 +594,34 @@ figure_2 <- aggregated_synergy_summary_data_by_wave |>
   theme_pubclean(flip = FALSE) +
   theme(
     legend.position = "bottom",
-    plot.margin = margin(t = 1, r = 1, b = 1, l = 1),
+    plot.margin = margin(
+      t = 1,
+      r = 1,
+      b = 1,
+      l = 1
+    ),
     strip.placement = "outside",
+    # strip.background = element_blank(),
     panel.spacing = unit(0.5, "lines"),
-    legend.margin = margin(t = -25)
-  ) +
+    legend.margin = margin(t = -25),
+  ) + 
   geom_pointrange(
     data = synergy_summary_data,
     aes(
       value,
       group,
       shape = playerCount,
+      # color = if_else(display,complexity,"none"),
       color = complexity,
-      xmin = value - z * SE,
-      xmax = value + z * SE
+      xmin = value - z * SE ,
+      xmax = value + z * SE,
+      # fill = if_else(((value - z * SE) - 1)*((value + z * SE) - 1)>0,complexity,"white")
     ),
     position = position_dodge2(width = 0.8, padding = 0.1, reverse = FALSE),
     size = .4,
     fill = "white",
-    stroke = .9
+    stroke = .9,
+    # shape = 21
   ) +
   scale_color_manual(
     values = c(
@@ -557,20 +629,36 @@ figure_2 <- aggregated_synergy_summary_data_by_wave |>
       "Medium Complexity" = "#7570b3",
       "High Complexity" = "#d95f02",
       "white" = "white"
-    )
+    ),
+    # guide = "none"
   ) +
-  scale_shape_manual(values = c(21, 4)) +
+  scale_shape_manual(values = c(21,4)) +
+  # scale_shape_manual(values = c(21,24)) +
   labs(
     y = "",
     x = "",
     color = "",
     fill = "",
     shape = ""
-  ) +
-  geom_crossbar()
+  ) + geom_crossbar() +
+ theme(
+  legend.position = "top",
+  legend.justification = "right",
+  legend.box = "horizontal",
+  legend.text = element_text(size = 18),
+  plot.margin = margin(t = 28, r = 50, b = 15, l = 5),  # Increase r until legend fits!
+  strip.placement = "outside",
+  panel.spacing = unit(0.5, "lines"),
+  legend.margin = margin(b = 10, t = 0),
+  legend.box.margin = margin(t = 7, r = 0, b = 0, l = 0),
+  strip.background = element_blank(),
+  strip.text = element_text(face = "bold", color = "black", size = 20),
+  axis.text.y = element_text(size = 18),
+  axis.text.x = element_text(size = 18)
+)
+ggsave(file.path(FIGURES_DIR, "heterogeneity_in_group_advantage_across_conditions.pdf"), plot = figure_heterogeneity, height = 14, width = 14, create.dir = TRUE)
+ggsave(file.path(FIGURES_DIR, "heterogeneity_in_group_advantage_across_conditions.png"), plot = figure_heterogeneity, height = 14, width = 14, create.dir = TRUE)
 
-ggsave(file.path(FIGURES_DIR, "figure_2.pdf"), plot = figure_2, height = 14, width = 14)
-ggsave(file.path(FIGURES_DIR, "figure_2.png"), plot = figure_2, height = 14, width = 14)
 
 ## -----------------------------------------------------------------------------
 panel <- read_csv(file.path(DATA_DIR, "players", "individuals.csv"), show_col_types = FALSE)

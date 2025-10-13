@@ -228,6 +228,7 @@ logger.addHandler(fh)
 logger.addHandler(ch)
 
 logger.info('Starting analysis master script')
+logger.info('Using ANALYSIS_SEED=%s (will also set PYTHONHASHSEED for subprocesses)', SEED)
 if _missing_packages:
     # These packages are optional for some analyses. Log at INFO with an install hint
     logger.info(
@@ -292,6 +293,7 @@ def execute_notebook(nb_path: Path, timeout: int = 600, kernel_name: Optional[st
 import os, random
 import numpy as np
 seed = int(os.getenv('ANALYSIS_SEED', '{}'))
+print(f'Using ANALYSIS_SEED={seed}')
 random.seed(seed)
 np.random.seed(seed)
 try:
@@ -326,7 +328,11 @@ def render_rmarkdown(rmd_path: Path, output_dir: Optional[Path] = None) -> int:
     logger.info('Rendering RMarkdown %s', rmd_path)
     # Build the R expression safely to avoid unterminated f-strings and quote issues
     # Ensure the R process uses the analysis seed when rendering
-    expr = f"set.seed(as.integer(Sys.getenv('ANALYSIS_SEED', '{SEED}'))); rmarkdown::render('{rmd_path.as_posix()}'"
+    expr = (
+        "seed_val <- as.integer(Sys.getenv('ANALYSIS_SEED', '" + str(SEED) + "')); "
+        "set.seed(seed_val); message(sprintf('Using ANALYSIS_SEED=%d', seed_val)); "
+        f"rmarkdown::render('{rmd_path.as_posix()}'"
+    )
     if output_dir:
         expr += f", output_dir = '{str(output_dir)}'"
     expr += ")"
@@ -342,15 +348,19 @@ def render_rmarkdown(rmd_path: Path, output_dir: Optional[Path] = None) -> int:
 
 
 # Run an R script (.R) via Rscript; returns the subprocess exit code
-def run_r_script(r_path: Path) -> None:
+def run_r_script(r_path: Path, cwd: Optional[Path] = None) -> None:
     logger.info('Running R script %s', r_path)
     rscript = find_rscript()
     if not rscript:
         logger.error('Rscript not found on PATH. Cannot run R script %s', r_path)
         raise RuntimeError('Rscript not found; cannot run R script')
         
-    expr = f"set.seed(as.integer(Sys.getenv('ANALYSIS_SEED', '{SEED}'))); source('{r_path.name}')"
-    rc = run_command([rscript, '-e', expr], cwd=r_path.parent)
+    expr = (
+        "seed_val <- as.integer(Sys.getenv('ANALYSIS_SEED', '" + str(SEED) + "')); "
+        "set.seed(seed_val); message(sprintf('Using ANALYSIS_SEED=%d', seed_val)); "
+        f"source('{r_path.name}')"
+    )
+    rc = run_command([rscript, '-e', expr], cwd=(cwd or r_path.parent))
     if rc != 0:
         raise RuntimeError(f'R script failed (exit {rc}): {r_path}')
         return None
@@ -487,9 +497,12 @@ def run_task_space_pipeline():
 
     results = []
 
-    if rmd_generate.exists():
-        # always prefer a purl'd .R script; generate it if missing
-        r_script_generate = ensure_r_script(rmd_generate)
+    if rmd_generate.exists() or (rmd_generate.with_suffix('.R')).exists():
+        # Prefer a purl'd .R script; if Rmd missing but .R exists, run it directly
+        if rmd_generate.exists():
+            r_script_generate = ensure_r_script(rmd_generate)
+        else:
+            r_script_generate = rmd_generate.with_suffix('.R')
         results.append(time_callable('task_space.generate_map', lambda: run_r_script(r_script_generate)))
         if results and not results[-1].get('error'):
             sync_task_map_dataset()
@@ -501,20 +514,22 @@ def run_task_space_pipeline():
                 df = pd.read_csv(task_map_path)
                 mc = generate_mcgrath(df)
                 mc.to_csv(out_path, index=False)
-                results.append(time_callable('task_space.generate_mcgrath', _gen_mcgrath_ts))
-                sync_task_map_visual_labels()
+            results.append(time_callable('task_space.generate_mcgrath', _gen_mcgrath_ts))
+            sync_task_map_visual_labels()
         except Exception as e:
             logger.exception('Failed to generate mcgrath categories in task_space: %s', e)
-
     else:
-        logger.warning('Missing %s; skipping', rmd_generate)
+        logger.warning('Missing %s and %s; skipping', rmd_generate, rmd_generate.with_suffix('.R'))
 
-    if rmd_visuals.exists():
+    if rmd_visuals.exists() or (rmd_visuals.with_suffix('.R')).exists():
         sync_task_map_visual_labels()
-        r_script_visuals = ensure_r_script(rmd_visuals)
+        if rmd_visuals.exists():
+            r_script_visuals = ensure_r_script(rmd_visuals)
+        else:
+            r_script_visuals = rmd_visuals.with_suffix('.R')
         results.append(time_callable('task_space.plot_visuals', lambda: run_r_script(r_script_visuals)))
     else:
-        logger.warning('Missing %s; skipping', rmd_visuals)
+        logger.warning('Missing %s and %s; skipping', rmd_visuals, rmd_visuals.with_suffix('.R'))
 
     return results
 
@@ -535,8 +550,9 @@ def run_group_advantage_pipeline():
 
     results = []
 
-    if rmd_clean.exists():
-        r_script_clean = ensure_r_script(rmd_clean)
+    if rmd_clean.exists() or (rmd_clean.with_suffix('.R')).exists():
+        # If Rmd exists, purl to R; otherwise run the existing R script directly
+        r_script_clean = ensure_r_script(rmd_clean) if rmd_clean.exists() else rmd_clean.with_suffix('.R')
         # Ensure mcgrath mapping exists before running raw data cleaning; task_space is the source of truth
         try:
             task_map_path = OUTPUTS_DIR / 'processed_data' / 'task_map.csv'
@@ -545,11 +561,12 @@ def run_group_advantage_pipeline():
                 df = pd.read_csv(task_map_path)
                 mc = generate_mcgrath(df)
                 mc.to_csv(out_path, index=False)
-                results.append(time_callable('group_advantage.ensure_mcgrath_before_clean', _gen_mcgrath_ga))
+            results.append(time_callable('group_advantage.ensure_mcgrath_before_clean', _gen_mcgrath_ga))
         except Exception as e:
             logger.exception('Failed to ensure mcgrath categories before cleaning: %s', e)
         # Now run raw data cleaning (which may expect the mcgrath CSV part-way through)
-        results.append(time_callable('group_advantage.raw_data_cleaning', lambda: run_r_script(r_script_clean)))
+        # Run from the script's directory so that '../outputs' within the R script resolves to the repo outputs/
+        results.append(time_callable('group_advantage.raw_data_cleaning', lambda: run_r_script(r_script_clean, cwd=r_script_clean.parent)))
         if results and not results[-1].get('error'):
             assert_exists(
                 'group advantage condition-level CSVs',
@@ -558,7 +575,7 @@ def run_group_advantage_pipeline():
                 OUTPUTS_DIR / 'processed_data' / 'condition_level_group_advantage_with_ivs_and_categories.csv',
             )
     else:
-        logger.warning('Missing %s; skipping', rmd_clean)
+        logger.warning('Missing %s and %s; skipping', rmd_clean, rmd_clean.with_suffix('.R'))
 
     if nb_models.exists():
         results.append(time_callable('group_advantage.models', lambda: execute_notebook(nb_models, timeout=3600)))

@@ -36,11 +36,10 @@ fviz_eig(pca)
 
 ## -----------------------------------------------------------------------------
 task_map_with_intuitive_labels <- read_csv(
-  '../../outputs/processed_data/hand_labeled_task_mcgrath_sectors.csv',
+  '../../data/hand_labeled_task_mcgrath_sectors.csv',
   show_col_types = FALSE
 ) %>%
   mutate(group = as.factor(group))
-
 
 ## ----fig.width=14, fig.height=5-----------------------------------------------
 combined_data_with_labels <- combined_data %>%
