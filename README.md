@@ -54,9 +54,14 @@ This folder contains the primary assets for using and reproducing the crowd-anno
 
 The top level of this folder contains cleaned up `.csv` files of the the 24 task dimensions, 102 tasks, and the questions used for annotation.
 
-#### 5. `multi-task-empirica/` subfolder
+#### 5. `multi-task-empirica` (external repository)
 
-This folder contains the assets and code required for running the large-scale group experiments on Empirica. This folder is a Git submodule; it links to another GitHub repository, which manages the version control for its contents.
+The Empirica experiment code is hosted in a dedicated repository to keep this site’s static build lightweight and avoid submodule issues in GitHub Pages:
+
+- Repository: https://github.com/Watts-Lab/multi-task-empirica
+- App tasks: https://github.com/Watts-Lab/multi-task-empirica/tree/master/multi-task-app/customTasks/
+
+If you need a local copy alongside this repo, clone it next to the current directory or into `multi-task-empirica/` manually. It is not included as a submodule to prevent CI failures during Pages deployment.
 
 <!-- INSTRUCTIONS: The typical README serves the purpose of guiding a reader through the available material and a route to replicating the results in the research paper. Start by providing a brief overview of the available material and a brief guide as to how to proceed from beginning to end. -->
 
@@ -103,9 +108,13 @@ The following materials may be useful to future researchers wishing to reproduce
 - `rating pipelines/survey_workflows/` contains code associated with grading the pre-test for filterings raters, as well as the panel of rater comprising our final pool.
 - `rating pipelines/writeup to html pipeline/` contains code and materials associated with translating the written task summaries (which are stored in `.md` format in the `writeups/` folder) into html files, which was the format in which they were displayed to raters.
 
-#### `multi-task-empirica/` subfolder
+#### `multi-task-empirica` (external repository)
 
-This folder contains the materials required to conduct real-time group experiments on the Empirica platform. Documentation for the Empirica code is provided within the folder; individual task implementations (which include all stimuli and participant instructions) can be found in `multi-task-empirica/multi-task-app/customTasks/`. Folders in that directory correspond to the code for implementing each of the 20 tasks in the experiment.
+Materials required to conduct real-time group experiments on the Empirica platform are maintained in the external repository noted above. Documentation lives in that repo; individual task implementations (stimuli and participant instructions) are here:
+
+- https://github.com/Watts-Lab/multi-task-empirica/tree/master/multi-task-app/customTasks/
+
+To work locally, clone that repository and follow its README.
 
 <!-- INSTRUCTIONS: The README should contain a description of the origin (provenance), location and accessibility of the data used in the article. 
 
