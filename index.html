@@ -447,33 +447,76 @@ can be found here: <a href="https://github.com/Watts-Lab/task-mapping/tree/maste
 be found here: <a href="https://github.com/Watts-Lab/task-mapping/blob/master/analysis/analysis_task_space/generate_task_map_from_raw.Rmd"><code>generate_task_map_from_raw.Rmd</code></a>.</p></li>
 </ul>
 </div>
-<div id="accessing-our-full-reproduction-package" class="section level1">
-<h1>Accessing our Full Reproduction package</h1>
-<p>Our full reproduction package is hosted <a href="https://github.com/Watts-Lab/task-mapping">on GitHub</a>.</p>
-</div>
-<div id="visualizing-the-task-map" class="section level1">
-<h1>Visualizing the Task Map</h1>
+<div id="exploring-our-data" class="section level1">
+<h1>Exploring Our Data</h1>
+<p>Please use the interactive tools below to explore the data associated
+with our paper!</p>
+<div id="task-cluster-explorer" class="section level2">
+<h2>Task Cluster Explorer</h2>
 <p>The following interactive visualizer allows you to explore the Task
 Map in two dimensions using PCA, and to conduct k-means clustering on
 the underlying 24-dimensional space. You can choose different values of
-<em>k</em>, and mouse over each dot to see the name of the task.</p>
+<em>k</em>, and mouse over each dot to see the name of the task. You can
+use this tool to get an intuitive sense of the relationships between
+tasks.</p>
 <iframe src="https://xehu.shinyapps.io/interactive-task-map/?showcase=0" width="100%" height="400px" data-external="1">
 </iframe>
 </div>
+<div id="group-advantage-explorer-20-experimental-tasks" class="section level2">
+<h2>Group Advantage Explorer (20 Experimental Tasks)</h2>
+<p>In our paper, we demonstrate the use of the Task Space by conducting
+a large-scale integrative experiment measuring the phenomenon of
+<em>group advantage</em> — in which an interacting group outperforms
+individuals working alone. In our experiment, we define two types of
+group advantage:</p>
+<ul>
+<li><strong>Strong Group Advantage</strong> is the ratio between an
+interacting group’s performance to that of the <em>best</em> individual
+in an equivalently-sized “nominal” team (a statistical aggregation of
+participants who worked alone, used to account for the resource
+advantage of having more people).</li>
+<li><strong>Weak Group Advantage</strong> is the ratio between an
+interacting group’s performance to that of a <em>randomly-selected</em>
+individual in an equivalently sized “nominal” team.</li>
+</ul>
+<p>Our experiment involved 20 tasks sampled from the task space, which
+were implemented at three levels of complexity (low, medium, and high)
+and completed by groups of two different sizes (3 and 6). In the
+following interactive panel, please explore our data to see how group
+advantage varies across these experimental conditions. You can toggle
+between Strong/Weak Advantage, filter by complexity and group size, and
+hover to see task names.</p>
+<p>A key takeaway is that <strong>group advantage is incredibly
+heterogeneous</strong>; there’s no one answer for whether groups
+outperform individuals. But importantly, these differences are
+explainable by task features. However, it turns out that the Task Space
+features can explain 43% of the variance in this phenomenon,
+demonstrating that our framework can systematically account for
+variations in group outcomes like this one.</p>
+<p>If you are interested in learning more, our data, code, and materials
+are available in our <a href="https://github.com/Watts-Lab/task-mapping">GitHub
+repository</a>.</p>
+<iframe src="https://xehu.shinyapps.io/interactive-task-map-group-advantage/?showcase=0" width="100%" height="400px" data-external="1">
+</iframe>
+</div>
+</div>
+<div id="accessing-our-full-reproduction-package" class="section level1">
+<h1>Accessing our Full Reproduction Package</h1>
+<p>Our full reproduction package is hosted <a href="https://github.com/Watts-Lab/task-mapping">on GitHub
+(https://github.com/Watts-Lab/task-mapping)</a>.</p>
+</div>
 <div id="team" class="section level1">
 <h1>Team</h1>
-<ul>
-<li><a href="https://xinlanemilyhu.com">Xinlan Emily Hu</a>
-(Corresponding Author)</li>
-<li><a href="https://whiting.me/">Mark Whiting</a></li>
-<li><a href="https://www.linneagandhi.com/">Linnea Gandhi</a></li>
-<li><a href="https://duncanjwatts.com/">Duncan J. Watts</a></li>
-<li><a href="http://amaatouq.io/">Abdullah Almaatouq</a> (Corresponding
-Author)</li>
-</ul>
-<p>This work was also created with the support from many other people,
-including many research assistants at the University of Pennsylvania, as
-well as the with labor of Amazon Mechanical Turk workers.</p>
+<p>The paper’s authors are listed below. For feedback, questions, or
+suggestions for new tasks and dimensions, please reach out to the
+Corresponding Authors. - <a href="https://xinlanemilyhu.com">Xinlan
+Emily Hu</a> (Corresponding Author) - <a href="https://whiting.me/">Mark
+Whiting</a> - <a href="https://www.linneagandhi.com/">Linnea Gandhi</a>
+- <a href="https://duncanjwatts.com/">Duncan J. Watts</a> - <a href="http://amaatouq.io/">Abdullah Almaatouq</a> (Corresponding
+Author)</p>
+<p>We also acknowledge that this work was created with the support from
+many other people, including research assistants at the University of
+Pennsylvania and the labor of Amazon Mechanical Turk workers.</p>
 <p>This project is part of the <a href="https://css.seas.upenn.edu/project/integrative-experiments/">group
 dynamics / integrative experiments research</a> at the <a href="https://css.seas.upenn.edu">Computational Social Science Lab at
 Penn</a>. You can learn more about our lab <a href="https://css.seas.upenn.edu/people/">here</a>.</p>

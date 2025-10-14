@@ -1,0 +1,149 @@
+---
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(ggplot2)
+library(plotly)
+library(dplyr)
+library(tidyr)
+library(readr)
+library(shiny)
+library(rlang)
+```
+
+```{r load-data, echo=FALSE, message=FALSE, warning=FALSE}
+# Load PCA base
+task_map <- read_csv('./outputs/processed_data/task_map.csv')
+# Load group advantage at condition level (has task, complexity, playerCount, strong, weak)
+ga_cond <- read_csv('./outputs/processed_data/condition_level_group_advantage.csv')
+
+# PCA of task map
+pca <- prcomp(task_map[, -1], scale = TRUE)
+pca_df <- as.data.frame(pca$x[, 1:2]) %>% mutate(task_pca = task_map$task)
+
+# Normalize task names between sources for robust joining
+norm_task <- function(x) {
+  x <- tolower(x)
+  x <- gsub('[^a-z0-9]+', ' ', x)
+  trimws(x)
+}
+
+pca_df <- pca_df %>% mutate(task_norm = norm_task(.data$task_pca))
+
+# Map GA task names to task_map names when they differ
+# User-provided mapping (GA name -> output/task_map name)
+name_map <- c(
+  'Sudoku' = 'Sudoku',
+  'Moral Reasoning' = 'Moral Reasoning (Disciplinary Action Case)',
+  'Wolf Goat Cabbage' = 'Wolf, goat and cabbage transfer',
+  'Guess the Correlation' = 'Guessing the correlation',
+  'Writing Story' = 'Writing story',
+  'Room Assignment' = 'Room assignment task',
+  'Allocating Resources' = 'Allocating resources to programs',
+  'Divergent Association' = 'Divergent Association Task',
+  'Word Construction' = 'Word construction from a subset of letters',
+  'Whac a Mole' = 'Whac-A-Mole',
+  'Random Dot Motion' = 'Random dot motion',
+  'Recall Association' = 'Recall association',
+  'Recall Word Lists' = 'Recall word lists',
+  'Typing' = 'Typing game',
+  'Unscramble Words' = 'Unscramble words (anagrams)',
+  'WildCam' = 'Wildcam Gorongosa (Zooniverse)',
+  'Advertisement Writing' = 'Advertisement writing',
+  'Putting Food Into Categories' = 'Putting food into categories'
+)
+
+ga_cond <- ga_cond %>% mutate(
+  task_mapped = dplyr::recode(.data$task, !!!name_map, .default = .data$task),
+  task_norm = norm_task(.data$task_mapped)
+)
+
+# Ensure complexity is ordered factor
+ga_cond <- ga_cond %>% mutate(
+  complexity = factor(.data$complexity, levels = c('Low', 'Medium', 'High'), ordered = TRUE),
+  playerCount = as.factor(.data$playerCount)
+)
+
+# For default view, compute task-level means (across complexity and group sizes)
+ga_task_means <- ga_cond %>%
+  group_by(.data$task_norm) %>%
+  summarise(
+    task = dplyr::first(.data$task_mapped),
+    strong = mean(.data$strong, na.rm = TRUE),
+    weak = mean(.data$weak, na.rm = TRUE),
+    .groups = 'drop'
+  )
+
+# Join PCA with GA info; keep the mapped task name
+pca_ga <- pca_df %>%
+  inner_join(ga_task_means, by = 'task_norm') %>%
+  transmute(PC1 = .data$PC1, PC2 = .data$PC2, task_norm = .data$task_norm,
+            task = .data$task, strong = .data$strong, weak = .data$weak)
+
+# Keep a version with all condition rows for filtering
+pca_ga_cond <- pca_df %>% inner_join(ga_cond, by = 'task_norm')
+```
+
+```{r ui-server, echo=FALSE}
+ui <- fluidPage(
+  titlePanel('Interactive Task Map — Group Advantage (20 tasks)'),
+  sidebarLayout(
+    sidebarPanel(
+      radioButtons('dv', 'Color by:', choices = c('Strong' = 'strong', 'Weak' = 'weak'), selected = 'strong', inline = TRUE),
+  selectInput('complexity', 'Complexity:', choices = c('All', 'Low', 'Medium', 'High'), selected = 'All'),
+  checkboxGroupInput('groupSize', 'Group size:', choices = c('3', '6'), selected = c('3','6'), inline = TRUE),
+  checkboxInput('showLabels', 'Show labels', value = FALSE),
+  helpText('Note: Colors are centered at 1. Blue indicates advantage (>1), red indicates disadvantage (<1).')
+    ),
+    mainPanel(
+      plotlyOutput('map_plot')
+    )
+  )
+)
+
+server <- function(input, output) {
+  # reactive filtered data
+  filtered_points <- reactive({
+    dv_col <- input$dv
+
+    if (input$complexity == 'All') {
+      df <- pca_ga %>% mutate(value = .data[[dv_col]])
+    } else {
+      df <- pca_ga_cond %>%
+        filter(.data$complexity == input$complexity) %>%
+        filter(as.character(.data$playerCount) %in% input$groupSize) %>%
+        group_by(.data$task_norm, .data$task_mapped, .data$PC1, .data$PC2) %>%
+        summarise(value = mean(.data[[dv_col]], na.rm = TRUE), .groups = 'drop') %>%
+        rename(task = .data$task_mapped)
+    }
+
+    df
+  })
+
+  output$map_plot <- renderPlotly({
+    dv_label <- ifelse(input$dv == 'strong', 'Strong Advantage', 'Weak Advantage')
+
+    base <- ggplot() +
+      geom_point(data = pca_df, aes(x = .data$PC1, y = .data$PC2), color = 'grey70', alpha = 0.5, size = 2) +
+      theme_minimal() + labs(x = 'PC1', y = 'PC2')
+
+    pts <- filtered_points()
+
+    g <- base +
+      geom_point(data = pts, aes(x = .data$PC1, y = .data$PC2, color = .data$value, text = paste0(.data$task, '\n', dv_label, ': ', round(.data$value, 3))), size = 4) +
+      scale_color_gradient2(name = dv_label, low = '#b2182b', mid = '#f7f7f7', high = '#2166ac', midpoint = 1)
+
+    if (isTRUE(input$showLabels)) {
+      g <- g + geom_text(data = pts, aes(x = .data$PC1, y = .data$PC2, label = .data$task), vjust = -0.8, size = 3)
+    }
+
+    ggplotly(g, tooltip = c('text'))
+  })
+}
+
+shinyApp(ui, server)
+```

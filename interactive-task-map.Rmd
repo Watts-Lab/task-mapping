@@ -11,6 +11,9 @@ library(e1071)
 library(plotly)
 library(dplyr)
 library(tidyverse)
+library(readr)
+library(shiny)
+library(rlang)
 ```
 
 ```{r load-data, echo=FALSE, message=FALSE, warning=FALSE}
@@ -73,7 +76,7 @@ server <- function(input, output) {
     plot_data <- clustering_data$data
 
     ggplotly(
-      ggplot(plot_data, aes(x = PC1, y = PC2, color = cluster, text = TaskName)) +
+      ggplot(plot_data, aes(x = .data$PC1, y = .data$PC2, color = .data$cluster, text = .data$TaskName)) +
         geom_point(size = 3) +
         theme_minimal()
     )

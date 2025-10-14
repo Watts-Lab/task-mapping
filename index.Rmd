@@ -51,13 +51,13 @@ We also provide documentation on how to annotate new tasks, including the annota
 
 - The code used to generate the Task Space from raw annotations can be found here: [`generate_task_map_from_raw.Rmd`](https://github.com/Watts-Lab/task-mapping/blob/master/analysis/analysis_task_space/generate_task_map_from_raw.Rmd).
 
-# Accessing our Full Reproduction package
+# Exploring Our Data
 
-Our full reproduction package is hosted [on GitHub](https://github.com/Watts-Lab/task-mapping).
+Please use the interactive tools below to explore the data associated with our paper!
 
-# Visualizing the Task Map
+## Task Cluster Explorer
 
-The following interactive visualizer allows you to explore the Task Map in two dimensions using PCA, and to conduct k-means clustering on the underlying 24-dimensional space. You can choose different values of *k*, and mouse over each dot to see the name of the task.
+The following interactive visualizer allows you to explore the Task Map in two dimensions using PCA, and to conduct k-means clustering on the underlying 24-dimensional space. You can choose different values of *k*, and mouse over each dot to see the name of the task. You can use this tool to get an intuitive sense of the relationships between tasks.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -73,13 +73,35 @@ library(tidyverse)
 knitr::include_app("https://xehu.shinyapps.io/interactive-task-map/")
 ```
 
+## Group Advantage Explorer (20 Experimental Tasks)
+
+In our paper, we demonstrate the use of the Task Space by conducting a large-scale integrative experiment measuring the phenomenon of *group advantage* --- in which an interacting group outperforms individuals working alone. In our experiment, we define two types of group advantage:
+
+- **Strong Group Advantage** is the ratio between an interacting group's performance to that of the *best* individual in an equivalently-sized "nominal" team (a statistical aggregation of participants who worked alone, used to account for the resource advantage of having more people).
+- **Weak Group Advantage** is the ratio between an interacting group's performance to that of a *randomly-selected* individual in an equivalently sized "nominal" team.
+
+Our experiment involved 20 tasks sampled from the task space, which were implemented at three levels of complexity (low, medium, and high) and completed by groups of two different sizes (3 and 6). In the following interactive panel, please explore our data to see how group advantage varies across these experimental conditions. You can toggle between Strong/Weak Advantage, filter by complexity and group size, and hover to see task names.
+
+A key takeaway is that **group advantage is incredibly heterogeneous**; there's no one answer for whether groups outperform individuals. But importantly, these differences are explainable by task features. However, it turns out that the Task Space features can explain 43% of the variance in this phenomenon, demonstrating that our framework can systematically account for variations in group outcomes like this one.
+
+If you are interested in learning more, our data, code, and materials are available in our [GitHub repository](https://github.com/Watts-Lab/task-mapping).
+
+```{r echo=F, out.width="100%"}
+knitr::include_app("https://xehu.shinyapps.io/interactive-task-map-group-advantage/")
+```
+
+# Accessing our Full Reproduction Package
+
+Our full reproduction package is hosted [on GitHub (https://github.com/Watts-Lab/task-mapping)](https://github.com/Watts-Lab/task-mapping).
+
 # Team
+The paper's authors are listed below. For feedback, questions, or suggestions for new tasks and dimensions, please reach out to the Corresponding Authors.
 - [Xinlan Emily Hu](https://xinlanemilyhu.com) (Corresponding Author)
 - [Mark Whiting](https://whiting.me/)
 - [Linnea Gandhi](https://www.linneagandhi.com/)
 - [Duncan J. Watts](https://duncanjwatts.com/)
 - [Abdullah Almaatouq](http://amaatouq.io/) (Corresponding Author)
 
-This work was also created with the support from many other people, including many research assistants at the University of Pennsylvania, as well as the with labor of Amazon Mechanical Turk workers. 
+We also acknowledge that this work was created with the support from many other people, including research assistants at the University of Pennsylvania and the labor of Amazon Mechanical Turk workers. 
 
 This project is part of the [group dynamics / integrative experiments research](https://css.seas.upenn.edu/project/integrative-experiments/) at the [Computational Social Science Lab at Penn](https://css.seas.upenn.edu). You can learn more about our lab [here](https://css.seas.upenn.edu/people/). 
