@@ -87,7 +87,7 @@ A key takeaway is that **group advantage is incredibly heterogeneous**; there's 
 If you are interested in learning more, our data, code, and materials are available in our [GitHub repository](https://github.com/Watts-Lab/task-mapping).
 
 ```{r echo=F, out.width="100%"}
-knitr::include_app("https://xehu.shinyapps.io/interactive-task-map-group-advantage/")
+knitr::include_app("https://xehu-gh.shinyapps.io/interactive-task-map-group-advantage/")
 ```
 
 # Accessing our Full Reproduction Package
