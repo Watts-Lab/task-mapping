@@ -64,8 +64,5 @@ outputs/logs/*.log
 .analysis_master_backups/
 outputs/.analysis_master_backups/
 
-# Large cached artifacts (opt-in commit)
-outputs/cached_pkls/*.pkl
-
 # Node modules (empirica app)
 multi-task-empirica/multi-task-app/node_modules/
