@@ -1,0 +1,21 @@
+.case-text {
+  white-space: pre-wrap;
+  margin: auto;
+  margin-top: 2%;
+  border: 2px solid #0284c7;
+  width: 90%;
+  padding: 10px;
+}
+
+.case-story::-webkit-scrollbar {
+  width: 8px;
+}
+
+.case-story::-webkit-scrollbar-thumb {
+  background-color: #C9C9C9;
+  border-radius: 10px;
+}
+
+.case-story::-webkit-scrollbar-thumb:hover {
+  background-color: #949494;
+}

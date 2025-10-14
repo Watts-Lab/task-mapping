@@ -1,0 +1,131 @@
+html,
+body,
+.app {
+  // Tailwind sizing is on 16px base. We could put this in the .grid, but we
+  // might have resets or portals breaking down, so we apply enthusiastically.
+  font-size: 16px;
+}
+
+// IMPORTANT
+//
+// .grid is only defined on the player side, so it's used as a namespace for
+// player-side overrides.
+//
+.grid {
+  // Using Inter insures we have a normalize font sizes and weights across
+  // browsers. Using variable font for file size, but it will fail on older
+  // browsers. A lot of what we're doing will fail on browsers old enough to not
+  // super variable fonts, so not a real issue.
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+// We want full window control of layout all the way up to .round, which is then
+// part of the experiment code and we can manage. "main" is unfortunately not
+// giving us the full frame by default. We could have used wh/vw... Same same.
+.grid main {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.round {
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+// .avatar-tooltip forces avatars with a blueprint tootlip to size correctly.
+.avatar-tooltip {
+  height: 100%;
+  width: 100%;
+  & > span {
+    height: 100%;
+    width: 100%;
+    & > span {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+// .two-col-layout is used to have the chat in the right column. It is also used
+// in the header to align items to the right column.
+.two-col-layout {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto 20rem;
+}
+
+// .three-eq-col is a 3 equal columns layout.
+.three-eq-col {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+// .task-layout lays out the task area and the submit button
+.task-layout {
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.task-layout-practice {
+  background-image: url("https://thumbs.dreamstime.com/b/practice-stamp-white-practice-stamp-white-background-sign-label-sticker-124301622.jpg");
+  background-repeat: no-repeat;
+  background-size: 120px;
+  background-position: right 1% top 2%;
+  height: 100%;
+  overflow: scroll;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.task-layout-practice2 {
+  max-width: 90%;
+}
+
+// .sidebar is the right column containing the user profile and chat.
+.sidebar {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  &.solo {
+    grid-template-rows: auto 1fr;
+  }
+}
+
+// .mychat is the custom class added to the Empirica Chat package to cancel all
+// default CSS on the chat so we can customize it more easily.
+.mychat {
+  .chat {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    .messages {
+      overflow: auto;
+      padding: 1rem 0;
+
+      .empty {
+        height: 100%;
+        padding: 2rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+// .admin only changes the admin ui. We only change things here if one of the
+// billion competing stylesheets have broken the
+.admin {
+  // The admin wants a 14px apparently.
+  font-size: 14px;
+}

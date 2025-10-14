@@ -1,0 +1,614 @@
+treatments:
+  - name: single-s0-i0
+    factorIds:
+      - jXr5ZLctJgsTbsi9B
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - ZhDC4ZhjyhCGRwXP2
+      - cCp7Tm9Dm8FTg52zY
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - 42kqsXhQdCdZAHfAT
+      - 2CvteN7NFtEdcsXgW
+  - name: triple-s0-i0
+    factorIds:
+      - 22zXf9tr6X2bFR954
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - ZhDC4ZhjyhCGRwXP2
+      - cCp7Tm9Dm8FTg52zY
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - 42kqsXhQdCdZAHfAT
+      - 2CvteN7NFtEdcsXgW
+  - name: six-s0-i0
+    factorIds:
+      - vhi8DcLi6JC3Z4AmT
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - ZhDC4ZhjyhCGRwXP2
+      - cCp7Tm9Dm8FTg52zY
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - 42kqsXhQdCdZAHfAT
+      - 2CvteN7NFtEdcsXgW
+  - name: single-s0-i1
+    factorIds:
+      - jXr5ZLctJgsTbsi9B
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - ZhDC4ZhjyhCGRwXP2
+      - cCp7Tm9Dm8FTg52zY
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - 42kqsXhQdCdZAHfAT
+      - xYoRk27DDFZS25wnh
+  - name: triple-s0-i1
+    factorIds:
+      - 22zXf9tr6X2bFR954
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - ZhDC4ZhjyhCGRwXP2
+      - cCp7Tm9Dm8FTg52zY
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - 42kqsXhQdCdZAHfAT
+      - xYoRk27DDFZS25wnh
+  - name: six-s0-i1
+    factorIds:
+      - vhi8DcLi6JC3Z4AmT
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - ZhDC4ZhjyhCGRwXP2
+      - cCp7Tm9Dm8FTg52zY
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - 42kqsXhQdCdZAHfAT
+      - xYoRk27DDFZS25wnh
+  - name: single-s2-i0
+    factorIds:
+      - jXr5ZLctJgsTbsi9B
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - ZhDC4ZhjyhCGRwXP2
+      - cCp7Tm9Dm8FTg52zY
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - NhtENMJgzP52MstwX
+      - 2CvteN7NFtEdcsXgW
+  - name: triple-s2-i0
+    factorIds:
+      - 22zXf9tr6X2bFR954
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - ZhDC4ZhjyhCGRwXP2
+      - cCp7Tm9Dm8FTg52zY
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - NhtENMJgzP52MstwX
+      - 2CvteN7NFtEdcsXgW
+  - name: six-s2-i0
+    factorIds:
+      - vhi8DcLi6JC3Z4AmT
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - ZhDC4ZhjyhCGRwXP2
+      - cCp7Tm9Dm8FTg52zY
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - NhtENMJgzP52MstwX
+      - 2CvteN7NFtEdcsXgW
+  - name: single-s2-i1
+    factorIds:
+      - jXr5ZLctJgsTbsi9B
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - ZhDC4ZhjyhCGRwXP2
+      - cCp7Tm9Dm8FTg52zY
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - NhtENMJgzP52MstwX
+      - xYoRk27DDFZS25wnh
+  - name: triple-s2-i1
+    factorIds:
+      - 22zXf9tr6X2bFR954
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - ZhDC4ZhjyhCGRwXP2
+      - cCp7Tm9Dm8FTg52zY
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - NhtENMJgzP52MstwX
+      - xYoRk27DDFZS25wnh
+  - name: six-s2-i1
+    factorIds:
+      - vhi8DcLi6JC3Z4AmT
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - ZhDC4ZhjyhCGRwXP2
+      - cCp7Tm9Dm8FTg52zY
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - NhtENMJgzP52MstwX
+      - xYoRk27DDFZS25wnh
+  - name: single-s3-i0
+    factorIds:
+      - jXr5ZLctJgsTbsi9B
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - ZhDC4ZhjyhCGRwXP2
+      - cCp7Tm9Dm8FTg52zY
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - RFS6JW8n9xPSiJ8b7
+      - 2CvteN7NFtEdcsXgW
+  - name: single-s3-i1
+    factorIds:
+      - xYoRk27DDFZS25wnh
+      - RFS6JW8n9xPSiJ8b7
+      - Q5jfRizbr4NLPbJoR
+      - 7C8oz4teZgcskPjfh
+      - cCp7Tm9Dm8FTg52zY
+      - ZhDC4ZhjyhCGRwXP2
+      - LbnKEh9ieYuomWm3y
+      - QzFuHjANT97WR4mu2
+      - nHj5rCAu3RJ9e3Amc
+      - t8tC2YSZba66F9XSC
+      - RE6NyqM5usdFQLptd
+      - w5NKdKPYoy9drBeL7
+      - TBLxkCXgAteXXjLJY
+      - RSDZmCux7CeKbQozZ
+      - 78NBWmXNk3oM2wDiz
+      - 6ZjfKLF6SbbdjEkTq
+      - jXr5ZLctJgsTbsi9B
+  - name: triple-s3-i0
+    factorIds:
+      - 22zXf9tr6X2bFR954
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - ZhDC4ZhjyhCGRwXP2
+      - cCp7Tm9Dm8FTg52zY
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - RFS6JW8n9xPSiJ8b7
+      - 2CvteN7NFtEdcsXgW
+  - name: triple-s3-i1
+    factorIds:
+      - 22zXf9tr6X2bFR954
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - ZhDC4ZhjyhCGRwXP2
+      - cCp7Tm9Dm8FTg52zY
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - RFS6JW8n9xPSiJ8b7
+      - xYoRk27DDFZS25wnh
+  - name: six-s3-i0
+    factorIds:
+      - vhi8DcLi6JC3Z4AmT
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - ZhDC4ZhjyhCGRwXP2
+      - cCp7Tm9Dm8FTg52zY
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - RFS6JW8n9xPSiJ8b7
+      - 2CvteN7NFtEdcsXgW
+  - name: six-s3-i1
+    factorIds:
+      - vhi8DcLi6JC3Z4AmT
+      - 6ZjfKLF6SbbdjEkTq
+      - 78NBWmXNk3oM2wDiz
+      - RSDZmCux7CeKbQozZ
+      - TBLxkCXgAteXXjLJY
+      - w5NKdKPYoy9drBeL7
+      - RE6NyqM5usdFQLptd
+      - t8tC2YSZba66F9XSC
+      - nHj5rCAu3RJ9e3Amc
+      - QzFuHjANT97WR4mu2
+      - LbnKEh9ieYuomWm3y
+      - cCp7Tm9Dm8FTg52zY
+      - ZhDC4ZhjyhCGRwXP2
+      - 7C8oz4teZgcskPjfh
+      - Q5jfRizbr4NLPbJoR
+      - RFS6JW8n9xPSiJ8b7
+      - xYoRk27DDFZS25wnh
+factorTypes:
+  - _id: svwe4guwPWQHRs58H
+    name: playerCount
+    description: The Number of players participating in the given game.
+    required: true
+    type: Integer
+    min: 1
+  - _id: nckkeNMafK6L7Nzzn
+    name: stageDuration
+    description: >-
+      Determines how long (in seconds) a stage will last (the default length is
+      120 seconds).
+    required: true
+    type: Number
+    min: 1
+    max: 100000000
+  - _id: MCgCiD7rDeJGXNa6c
+    name: introDuration
+    description: >-
+      Determines how long (in seconds) intro steps per task will last (the
+      default length is 120 seconds).
+    required: true
+    type: Integer
+    min: 0
+    max: 100000000
+  - _id: HMKzxgogMMFEY4pAk
+    name: outroDuration
+    description: >-
+      Determines how long (in seconds) outro steps per task will last (the
+      default length is 120 seconds).
+    required: true
+    type: Integer
+    min: 0
+    max: 100000000
+  - _id: DxxDhAhotmTRRWvTz
+    name: networkStructure
+    description: >-
+      Who is connected to who: 1-2,1-3,2-5,2-6,... (-1 indicates complete
+      connections)
+    required: true
+    type: String
+  - _id: yaKsaf9dZ4PFdoMmq
+    name: randomizeTask
+    description: Determines if the task type order will be randomized.
+    required: true
+    type: Boolean
+  - _id: grQBWBiMrGHmC7gt3
+    name: randomizeInstance
+    description: Determines if the task instances order will be randomized.
+    required: true
+    type: Boolean
+  - _id: eqaQyjMTgG4i2CbyM
+    name: chat
+    description: >-
+      Determines whether or not you can chat with your neighbors during the
+      interactive stage.
+    required: true
+    type: Boolean
+  - _id: jgdC24YxBmBWbMiMu
+    name: chatGroups
+    description: >-
+      Players can be in multiple chat groups (denoted by a letter):
+      1-A,1-B,2-B,3-B,4-A,... (1 has 2 chat windows, can talk with 2 and 3 in
+      window B, and with 4 in window A). (-1 indicates complete connection)
+    required: true
+    type: String
+  - _id: mKiToMczzZeN6v3aX
+    name: basePay
+    description: The base amount of money a user will get from completing the experiment.
+    required: true
+    type: Number
+    min: 0
+    max: 10
+  - _id: koZQJNPGxwtTgX2pH
+    name: conversionRate
+    description: >-
+      The conversion rate of score to bonus dollars paid. When the rate is
+      quarter, this means the user will get $8 if they score 300 points.
+    required: true
+    type: Number
+  - _id: 7MD9A7yvE3rw2QRwH
+    name: feedback
+    description: >-
+      Determines whether or not the user will be able to have any feedback (ie.
+      outcome stage or score shown).
+    required: true
+    type: Boolean
+  - _id: ivqhL4H96THc5aNuM
+    name: longTermEngagement
+    description: >-
+      For conditions that don’t require synchronized gameplay between multiple
+      users/clients; determines whether an additional stage will be added to the
+      end of each round with maximum/infinite duration, allowing users to leave
+      and return to the page at their convenience. This probably only works for
+      “solo”
+    required: true
+    type: Boolean
+  - _id: LYKHiLhoi6kuC6obL
+    name: quitEarly
+    description: >-
+      If toggled, a subject has the option to skip to the Exit Steps prior to
+      starting a new round
+    required: true
+    type: Boolean
+  - _id: 4aHTu3g8Fgke53LgC
+    name: subUnits
+    description: integer value for how many splits there should be
+    required: false
+    type: Integer
+  - _id: aesa2wTqiAj6huZWu
+    name: unitsSeed
+    description: seed s.t. split of tasks is the same
+    required: false
+    type: Integer
+  - _id: 473BeGxhFWS78Si9o
+    name: unitsIndex
+    description: 'integer of which split to give a batch [0 to subUnits - 1]'
+    required: false
+    type: Integer
+factors:
+  - _id: w5NKdKPYoy9drBeL7
+    name: 'true'
+    value: true
+    factorTypeId: yaKsaf9dZ4PFdoMmq
+  - _id: JS5FJLuTLMLGmvPJC
+    name: 'false'
+    value: false
+    factorTypeId: yaKsaf9dZ4PFdoMmq
+  - _id: RE6NyqM5usdFQLptd
+    name: 'true'
+    value: true
+    factorTypeId: grQBWBiMrGHmC7gt3
+  - _id: Y23qcpjbS2tYTjcfP
+    name: 'false'
+    value: false
+    factorTypeId: grQBWBiMrGHmC7gt3
+  - _id: t8tC2YSZba66F9XSC
+    name: 'true'
+    value: true
+    factorTypeId: eqaQyjMTgG4i2CbyM
+  - _id: 9zDQvmdJaidq4MmBD
+    name: 'false'
+    value: false
+    factorTypeId: eqaQyjMTgG4i2CbyM
+  - _id: ZhDC4ZhjyhCGRwXP2
+    name: 'true'
+    value: true
+    factorTypeId: 7MD9A7yvE3rw2QRwH
+  - _id: xpmG8uWAYKqvA2ttf
+    name: 'false'
+    value: false
+    factorTypeId: 7MD9A7yvE3rw2QRwH
+  - _id: egccKfoXCFLdiq5cw
+    name: 'true'
+    value: true
+    factorTypeId: ivqhL4H96THc5aNuM
+  - _id: cCp7Tm9Dm8FTg52zY
+    name: 'false'
+    value: false
+    factorTypeId: ivqhL4H96THc5aNuM
+  - _id: 7C8oz4teZgcskPjfh
+    name: 'true'
+    value: true
+    factorTypeId: LYKHiLhoi6kuC6obL
+  - _id: w4yFuu2SLPmexyMdA
+    name: 'false'
+    value: false
+    factorTypeId: LYKHiLhoi6kuC6obL
+  - _id: jXr5ZLctJgsTbsi9B
+    name: single
+    value: 1
+    factorTypeId: svwe4guwPWQHRs58H
+  - _id: XBAtfweTe8eHAdhPA
+    name: double
+    value: 2
+    factorTypeId: svwe4guwPWQHRs58H
+  - _id: 22zXf9tr6X2bFR954
+    name: triple
+    value: 3
+    factorTypeId: svwe4guwPWQHRs58H
+  - _id: vhi8DcLi6JC3Z4AmT
+    name: six
+    value: 6
+    factorTypeId: svwe4guwPWQHRs58H
+  - _id: xDu7NN2vB5YaZhAHH
+    name: ten
+    value: 10
+    factorTypeId: svwe4guwPWQHRs58H
+  - _id: 6ZjfKLF6SbbdjEkTq
+    name: one_min
+    value: 60
+    factorTypeId: nckkeNMafK6L7Nzzn
+  - _id: pJmctQkDCvnSBK3Wj
+    name: five_mins
+    value: 300
+    factorTypeId: nckkeNMafK6L7Nzzn
+  - _id: 78NBWmXNk3oM2wDiz
+    name: two_mins
+    value: 120
+    factorTypeId: MCgCiD7rDeJGXNa6c
+  - _id: RSDZmCux7CeKbQozZ
+    name: two_mins
+    value: 120
+    factorTypeId: HMKzxgogMMFEY4pAk
+  - _id: TBLxkCXgAteXXjLJY
+    name: complete
+    value: '-1'
+    factorTypeId: DxxDhAhotmTRRWvTz
+  - _id: nHj5rCAu3RJ9e3Amc
+    name: all
+    value: '-1'
+    factorTypeId: jgdC24YxBmBWbMiMu
+  - _id: DNaLQEzNDQGHeNvHQ
+    name: one
+    value: 1
+    factorTypeId: koZQJNPGxwtTgX2pH
+  - _id: LbnKEh9ieYuomWm3y
+    name: five
+    value: 5
+    factorTypeId: koZQJNPGxwtTgX2pH
+  - _id: XXm6mXiWNygse3Lnc
+    name: one
+    value: 1
+    factorTypeId: mKiToMczzZeN6v3aX
+  - _id: QzFuHjANT97WR4mu2
+    name: five
+    value: 5
+    factorTypeId: mKiToMczzZeN6v3aX
+  - _id: Q5jfRizbr4NLPbJoR
+    name: two
+    value: 2
+    factorTypeId: 4aHTu3g8Fgke53LgC
+  - _id: 42kqsXhQdCdZAHfAT
+    name: '1'
+    value: 1
+    factorTypeId: aesa2wTqiAj6huZWu
+  - _id: 2CvteN7NFtEdcsXgW
+    name: zero
+    value: 0
+    factorTypeId: 473BeGxhFWS78Si9o
+  - _id: xYoRk27DDFZS25wnh
+    name: one
+    value: 1
+    factorTypeId: 473BeGxhFWS78Si9o
+  - _id: NhtENMJgzP52MstwX
+    name: '2'
+    value: 2
+    factorTypeId: aesa2wTqiAj6huZWu
+  - _id: RFS6JW8n9xPSiJ8b7
+    name: '3'
+    value: 3
+    factorTypeId: aesa2wTqiAj6huZWu
+  - _id: sHH2TJK29g2deqQNf
+    name: '4'
+    value: 4
+    factorTypeId: aesa2wTqiAj6huZWu
+  - _id: Q5E65KMuYtZ7fRkXx
+    name: '5'
+    value: 5
+    factorTypeId: aesa2wTqiAj6huZWu
+lobbyConfigs:
+  - name: default
+    timeoutType: lobby
+    timeoutInSeconds: 300
+    timeoutStrategy: fail
+    gameLobbyIds: []
+  - name: ten_min
+    timeoutType: lobby
+    timeoutInSeconds: 600
+    timeoutStrategy: fail
+    gameLobbyIds: []

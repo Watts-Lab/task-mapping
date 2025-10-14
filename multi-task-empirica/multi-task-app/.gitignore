@@ -1,0 +1,12 @@
+node_modules/
+private/*.txt
+private/*.gz
+private/*.zip
+packages/
+settings.json
+production.json
+prod.json
+staging.json
+development.json
+dev.json
+local.json

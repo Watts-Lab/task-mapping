@@ -1,0 +1,71 @@
+.sudoku-text {
+  margin: auto;
+  margin-top: 2%;
+  border: 2px solid #0284C7;
+  width: 60%;
+  padding: 10px;
+  text-align: left;
+}
+
+.gameBoard {
+  display: flex;
+  flex-flow: row wrap;
+  border-style: solid;
+  border-width: 0px;
+  margin: auto;
+  height: 342px;
+  width: 342px;
+  margin-top: 20px;
+}
+
+.inputBox {
+  height: 38px;
+  width: 38px;
+  border-radius: 0px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  border-style: solid;
+}
+
+/* .inputBox[type=text]:focus {
+  background-color: lightblue !important;
+} */
+
+.whiteBox {
+  background-color: white !important;
+}
+
+.grayBox {
+  background-color: #ebebeb !important;
+}
+
+.content {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.normal {
+  font-weight: bold;
+  color: #0284C7;
+}
+
+.prefilled {
+  font-weight: normal;
+}
+
+.clicked {
+  background-color: lightblue !important;
+}
+
+.duplicate {
+  background-color: lightsteelblue !important;
+}
+
+.callout {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+}

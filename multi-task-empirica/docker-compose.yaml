@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  mte-app:
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ${PWD}/multi-task-app:/home/mt/app:rw
+    tty: true
+    stdin_open: true
