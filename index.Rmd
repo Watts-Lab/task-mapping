@@ -96,6 +96,7 @@ Our full reproduction package is hosted [on GitHub (https://github.com/Watts-Lab
 
 # Team
 The paper's authors are listed below. For feedback, questions, or suggestions for new tasks and dimensions, please reach out to the Corresponding Authors.
+
 - [Xinlan Emily Hu](https://xinlanemilyhu.com) (Corresponding Author)
 - [Mark Whiting](https://whiting.me/)
 - [Linnea Gandhi](https://www.linneagandhi.com/)
