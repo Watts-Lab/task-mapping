@@ -149,6 +149,16 @@ python3 -m pip install -r analysis/analysis_group_advantage/requirements.txt
 python3 -m pip install -r analysis/analysis_task_space/requirements.txt
 ```
 
+For R, you can install the commonly used package set across this repo with one command:
+
+```bash
+Rscript scripts/install_r_dependencies.R
+```
+
+Notes:
+- This installs a superset of packages referenced across R scripts and Rmd files (Shiny apps, visualization, modeling, and utilities).
+- If any package fails because it’s not on CRAN in your environment, install it manually (e.g., from GitHub) or skip if not needed for your workflow.
+
 ## 5.	Programs/Code
 
 All programs and code associated with the project can be found in the `analysis` directory.
