@@ -34,27 +34,28 @@ norm_task <- function(x) {
 
 pca_df <- pca_df %>% mutate(task_norm = norm_task(.data$task_pca))
 
-# Map GA task names to task_map names when they differ
-# User-provided mapping (GA name -> output/task_map name)
+# Map GA task names to task_map names
 name_map <- c(
-  'Sudoku' = 'Sudoku',
-  'Moral Reasoning' = 'Moral Reasoning (Disciplinary Action Case)',
-  'Wolf Goat Cabbage' = 'Wolf, goat and cabbage transfer',
-  'Guess the Correlation' = 'Guessing the correlation',
-  'Writing Story' = 'Writing story',
-  'Room Assignment' = 'Room assignment task',
-  'Allocating Resources' = 'Allocating resources to programs',
-  'Divergent Association' = 'Divergent Association Task',
-  'Word Construction' = 'Word construction from a subset of letters',
-  'Whac a Mole' = 'Whac-A-Mole',
-  'Random Dot Motion' = 'Random dot motion',
-  'Recall Association' = 'Recall association',
-  'Recall Word Lists' = 'Recall word lists',
-  'Typing' = 'Typing game',
-  'Unscramble Words' = 'Unscramble words (anagrams)',
-  'WildCam' = 'Wildcam Gorongosa (Zooniverse)',
-  'Advertisement Writing' = 'Advertisement writing',
-  'Putting Food Into Categories' = 'Putting food into categories'
+  'Advertisement Writing'        = 'Advertisement Writing',
+  'Allocating Resources'         = 'Allocating resources to programs',
+  'Divergent Association'        = 'Divergent Association Task',
+  'Guess the Correlation'        = 'Guessing the correlation',
+  'Logic Problem'                = 'Logic Problem',
+  'Moral Reasoning'              = 'Moral Reasoning (Disciplinary Action Case)',
+  'Putting Food Into Categories' = 'Putting food into categories',
+  'Random Dot Motion'            = 'Random dot motion',
+  'Recall Association'           = 'Recall association',
+  'Recall Word Lists'            = 'Recall word lists',
+  'Room Assignment'              = 'Room assignment task',
+  'Sudoku'                       = 'Sudoku',
+  'Typing'                       = 'Typing game',
+  'Unscramble Words'             = 'Unscramble words (anagrams)',
+  'Whac a Mole'                  = 'Whac-A-Mole',
+  'WildCam'                      = 'Wildcam Gorongosa (Zooniverse)',
+  'Wildcat Wells'                = 'Wildcat Wells',
+  'Wolf Goat Cabbage'            = 'Wolf, goat and cabbage transfer',
+  'Word Construction'            = 'Word construction from a subset of letters',
+  'Writing Story'                = 'Writing story'
 )
 
 ga_cond <- ga_cond %>% mutate(

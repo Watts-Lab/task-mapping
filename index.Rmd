@@ -9,6 +9,9 @@ params:
 
 Author(s): Xinlan Emily Hu, Mark E. Whiting, Linnea Gandhi, Duncan J. Watts, and Abdullah Almaatouq
 
+# Read the <a href="https://osf.io/preprints/psyarxiv/543sz" target="_blank">Paper</a>!
+Access the <a href="https://osf.io/5dhu2/files/rjwhu" target="_blank">Appendices and Supplementary Materials</a> for details about the tasks, annotation process, experimental design, and analyses.
+
 # Abstract
 
 Research on teams spans many contexts, but integrating knowledge from heterogeneous sources is challenging because studies typically examine different tasks that cannot be directly compared. Most investigations involve teams working on just one or a handful of tasks, and researchers lack principled ways to quantify how similar or different these tasks are from one another. We address this challenge by introducing the “Task Space,” a multidimensional space in which tasks—and the distances between them—can be represented formally, and use it to create a “Task Map” of 102 crowd-annotated tasks from the published experimental literature. We then demonstrate the Task Space’s utility by performing an integrative experiment that addresses a fundamental question in team research: *when do interacting groups outperform individuals?* Our experiment samples 20 diverse tasks from the Task Map at three complexity levels and recruits 1,231 participants to work either individually or in groups of three or six (180 experimental conditions). We find striking heterogeneity in group advantage, with groups performing anywhere from three times worse to 60% better than the best individual working alone, depending on the task context. Critically, the Task Space makes this heterogeneity predictable: it significantly outperforms traditional typologies in predicting group advantage on unseen tasks. Our models also reveal theoretically meaningful interactions between task features; for example, group advantage on creative tasks depends on whether the answers are objectively verifiable. We conclude by arguing that the Task Space enables researchers to integrate findings across different experiments, thereby building cumulative knowledge about team performance.
@@ -69,7 +72,14 @@ library(dplyr)
 library(tidyverse)
 ```
 
-```{r echo=F, out.width="100%"}
+```{css, echo=FALSE}
+iframe {
+  width: 100% !important;
+  border: none;
+}
+```
+
+```{r echo=F}
 knitr::include_app("https://xehu.shinyapps.io/interactive-task-map/")
 ```
 
@@ -86,7 +96,7 @@ A key takeaway is that **group advantage is incredibly heterogeneous**; there's 
 
 If you are interested in learning more, our data, code, and materials are available in our [GitHub repository](https://github.com/Watts-Lab/task-mapping).
 
-```{r echo=F, out.width="100%"}
+```{r echo=F}
 knitr::include_app("https://xehu-gh.shinyapps.io/interactive-task-map-group-advantage/")
 ```
 
