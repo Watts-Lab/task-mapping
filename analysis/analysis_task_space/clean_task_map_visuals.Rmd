@@ -62,7 +62,7 @@ fviz_eig(pca)
 # Task Map with McGrath Labels for interpretability
 ```{r}
 task_map_with_intuitive_labels <- read_csv(
-  '../../outputs/processed_data/hand_labeled_task_mcgrath_sectors.csv',
+  '../../data/hand_labeled_task_mcgrath_sectors.csv',
   show_col_types = FALSE
 ) %>%
   mutate(group = as.factor(group))
@@ -75,23 +75,42 @@ combined_data_with_labels <- combined_data %>%
 
 mcgrath_quad_display_set <- c(
     "Whac-A-Mole",
-    "Space Fortress",
-    "Search for Oil Task",
-    "Target Search",
-    "9 Dot Problem",
-    "Ravens Matrices",
-    "Moral Reasoning (Disciplinary Action Case)",
+    "Divergent Association Task",
+    "Guessing the correlation",
+    "Room assignment task",
+    "Sudoku",
     "Allocating resources to programs",
-    "hk_22482ca42486c72f writing",
-    "Writing story",
+    "Moral Reasoning (Disciplinary Action Case)",
+    "Wolf, goat and cabbage transfer",
     "Word construction from a subset of letters",
-    "Word completion given starting letter",
-    "Shopping plan",
-    "Mock jury",
-    "Ultimatum game (various versions)",
-    "Dictator game and its variants",
-    "Pharmaceutical Company (hidden-profile)",
-    "Investment game (hidden-profile)"
+    "Writing story",
+    "Logic Problem",
+    "Random dot motion",
+    "Recall word lists",
+    "Typing game",
+    "Unscramble words (anagrams)",
+    "Advertisement Writing",
+    "Putting food into categories",
+    "Recall association",
+    "Search for Oil Task"
+    
+    # "Space Fortress",
+    # "Search for Oil Task",
+    # "Target Search",
+    # "9 Dot Problem",
+    # "Ravens Matrices",
+    # "Moral Reasoning (Disciplinary Action Case)",
+    # "Allocating resources to programs",
+    # "Advertisement Writing",
+    # "Writing story",
+    # "Word construction from a subset of letters",
+    # "Word completion given starting letter",
+    # "Shopping plan",
+    # "Mock jury",
+    # "Ultimatum game (various versions)",
+    # "Dictator game and its variants",
+    # "Pharmaceutical Company (hidden-profile)",
+    # "Investment game (hidden-profile)"
 )
 
 # -------------------------------------------------------------------------

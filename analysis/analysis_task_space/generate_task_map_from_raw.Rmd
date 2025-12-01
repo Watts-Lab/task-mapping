@@ -204,6 +204,258 @@ task_map <- task_map %>%
   select(task, all_of(pretty_name_order))
 ```
 
+# Bootstrapped IRR Analysis
+```{r}
+library(purrr)
+library(tidyr)
+library(ggplot2)
+library(stringr)
+
+set.seed(2023)
+
+rater_candidates <- c("rater_id","rater","user_id","worker_id","respondent_id","respondent","email","mturk_id","worker","user")
+rater_col <- intersect(names(df.mapping.raw), rater_candidates) %>% first()
+
+# Keep only question names that actually exist in df.mapping.raw
+
+available_questions <- intersect(main_questions, names(df.mapping.raw))
+missing_questions <- setdiff(main_questions, available_questions)
+if(length(missing_questions) > 0){
+message("These question columns do not exist in df.mapping.raw and will be skipped:\n",
+paste(missing_questions, collapse = ", "))
+}
+main_questions_use <- available_questions
+
+if(is.null(rater_col) || length(rater_col)==0){
+df.mapping.raw <- df.mapping.raw %>% mutate(.respondent_row = row_number())
+rater_col <- ".respondent_row"
+}
+
+crowd_questions <- setdiff(pretty_name_order, "Type 6 (Mixed-Motive)")
+
+# ORIGINAL AGGREGATE: compute the original mean per task × question from the raw rater rows
+orig_agg <- df.mapping.raw %>%
+  mutate(across(-c(task, !!sym(rater_col)), as.character)) %>%   # ← FIX: convert ALL question columns
+  select(any_of(c("task", rater_col, main_questions_use))) %>%
+  pivot_longer(
+    cols = -all_of(c("task", rater_col)),
+    names_to = "question_name",
+    values_to = "value"
+  ) %>%
+  mutate(value = recode(value,
+                        "Mental" = 0,
+                        "Physical" = 1,
+                        "No" = 0,
+                        "Yes" = 1)) %>%
+  mutate(value = as.numeric(value)) %>%
+  group_by(task, question_name) %>%
+  summarize(orig_mean = mean(value, na.rm = TRUE), .groups = "drop") %>%
+  left_join(
+    tibble(
+      question_name = names(pretty_name_lookup),
+      pretty = pretty_name_lookup[names(pretty_name_lookup)]
+    ),
+    by = "question_name"
+  ) %>%
+  mutate(pretty = coalesce(pretty, question_name)) %>%
+  filter(pretty %in% crowd_questions)
+
+# ---------------------------------------------------------
+# Bootstrap section (fully fixed)
+# ---------------------------------------------------------
+
+boot_results <- vector("list", n_boot)
+
+for(i in seq_len(n_boot)) {
+
+  sampled_ids <- sample(unique_raters, n_raters_sample, replace = TRUE)
+
+  boot_df <- map_dfr(
+    sampled_ids,
+    ~ df.mapping.raw %>% filter((!!rlang::sym(rater_col)) == .x)
+  )
+
+  # Force all relevant question columns to character
+  boot_df_chr <- boot_df %>%
+    mutate(across(any_of(main_questions_use), as.character))
+
+  boot_long <- boot_df_chr %>%
+    select(any_of(c("task", main_questions_use))) %>%
+    pivot_longer(
+      cols = -task,
+      names_to = "question_name",
+      values_to = "value"
+    ) %>%
+    # Keep only the primary categorical answers you want
+    mutate(
+      value = na_if(value, ""),   # remove blanks
+      value = ifelse(value %in% c("Yes","No","Physical","Mental"), value, NA_character_)
+    ) %>%
+    filter(!is.na(value)) %>%
+    # Safe recode with default NA
+    mutate(
+      value = dplyr::recode(
+        value,
+        "Mental"   = "0",
+        "Physical" = "1",
+        "No"       = "0",
+        "Yes"      = "1",
+        .default   = NA_character_
+      ),
+      value = as.numeric(value)
+    ) %>%
+    group_by(task, question_name) %>%
+    summarize(mean_value = mean(value, na.rm = TRUE), .groups = "drop") %>%
+    left_join(
+      tibble(
+        question_name = names(pretty_name_lookup),
+        pretty = pretty_name_lookup[names(pretty_name_lookup)]
+      ),
+      by = "question_name"
+    ) %>%
+    mutate(pretty = coalesce(pretty, question_name)) %>%
+    filter(pretty %in% crowd_questions)
+
+  boot_results[[i]] <- boot_long %>% mutate(iter = i)
+}
+
+boot_all <- bind_rows(boot_results)
+
+# attach original means and compute differences
+boot_all_diff <- boot_all %>%
+  left_join(
+    orig_agg %>% select(task, pretty, orig_mean),
+    by = c("task", "pretty")
+  ) %>%
+  mutate(diff_from_orig = mean_value - orig_mean)
+
+# ---------------------------------------------------------
+# Compute CIs
+# ---------------------------------------------------------
+
+cis <- boot_all_diff %>%
+  group_by(task, pretty) %>%
+  summarize(
+    lower = quantile(diff_from_orig, probs = 0.025, na.rm = TRUE),
+    upper = quantile(diff_from_orig, probs = 0.975, na.rm = TRUE),
+    boot_mean = mean(diff_from_orig, na.rm = TRUE),
+    orig_mean = first(orig_mean),
+    .groups = "drop"
+  ) %>%
+  mutate(ci_width = upper - lower)
+
+# ---------------------------------------------------------
+# Summary by question (UPDATED)
+# ---------------------------------------------------------
+
+ci_summary_by_column <- boot_all_diff %>%
+  group_by(pretty) %>%
+  summarize(
+    n_tasks = n_distinct(task),
+    mean_difference = mean(diff_from_orig, na.rm = TRUE),
+    sd_difference = sd(diff_from_orig, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  left_join(
+    cis %>%
+      group_by(pretty) %>%
+      summarize(
+        mean_ci_width = mean(ci_width, na.rm = TRUE),
+        median_ci_width = median(ci_width, na.rm = TRUE),
+        max_ci_width = max(ci_width, na.rm = TRUE),
+        pct_wide_gt_0_2 = mean(ci_width > 0.2, na.rm = TRUE),
+        .groups = "drop"
+      ),
+    by = "pretty"
+  ) %>%
+  arrange(desc(sd_difference))
+
+# ---------------------------------------------------------
+# Save outputs
+# ---------------------------------------------------------
+
+dir.create("../../outputs/processed_data", recursive = TRUE, showWarnings = FALSE)
+dir.create("../../outputs/figures", recursive = TRUE, showWarnings = FALSE)
+
+write_csv(ci_summary_by_column, "../../outputs/processed_data/ci_summary_by_column.csv")
+write_csv(cis, "../../outputs/processed_data/task_question_bootstrap_cis.csv")
+
+# ---------------------------------------------------------
+# PREPARATION: Calculate Mean Absolute Difference (Instability)
+# ---------------------------------------------------------
+
+# 1. Calculate the Mean Absolute Difference for every task/dimension
+#    Formula: Average of |Bootstrap Mean - Original Mean|
+#    Interpretation: "On average, how far does a new sample drift from the original?"
+task_instability_by_dim <- boot_all_diff %>%
+  group_by(pretty, task) %>%
+  summarize(
+    # We use abs() because we care about the MAGNITUDE of the change
+    mean_abs_diff = mean(abs(diff_from_orig), na.rm = TRUE),
+    .groups = "drop"
+  )
+
+# 2. Sort Dimensions (Y-axis)
+#    We sort by the Median Instability.
+#    Top of plot = Dimensions most likely to change (Unstable).
+#    Bottom of plot = Dimensions that stay the same (Stable).
+dim_order_instability <- task_instability_by_dim %>%
+  group_by(pretty) %>%
+  summarize(median_instability = median(mean_abs_diff, na.rm = TRUE)) %>%
+  arrange(median_instability) %>% 
+  pull(pretty)
+
+task_instability_by_dim <- task_instability_by_dim %>%
+  mutate(pretty = factor(pretty, levels = dim_order_instability))
+
+# ---------------------------------------------------------
+# PLOT: Raincloud of Instability
+# ---------------------------------------------------------
+
+p_raincloud_mad <- ggplot(task_instability_by_dim, aes(x = mean_abs_diff, y = pretty)) +
+  
+  # 1. Density Ridges (Shows the shape of instability for the dimension)
+  ggridges::geom_density_ridges(
+    aes(fill = pretty),
+    jittered_points = TRUE,       # Adds the tick marks for tasks
+    position = ggridges::position_points_jitter(
+      width = 0.001, height = 0   # Tiny jitter to separate overlapping lines slightly
+    ),
+    point_shape = '|',            # Vertical tick marks
+    point_size = 2,               # Mark size
+    point_alpha = 0.6,            # Transparency
+    alpha = 0.7,                  # Ridge transparency
+    scale = 0.9
+  ) +
+  
+  # 2. Formatting
+  labs(
+    x = "Mean Absolute Difference (Avg distance from Original Mean)",
+    y = "Task Dimension",
+    title = "Task Stability Map: Magnitude of Change",
+    subtitle = "Each '|' mark is one Task.\nValues further right indicate tasks that change drastically based on the rater sample."
+  ) +
+  
+  theme_minimal() +
+  theme(
+    text = element_text(family = "Times New Roman", size = 12),
+    legend.position = "none",
+    axis.text.y = element_text(face = "bold"),
+    panel.grid.minor = element_blank()
+  )
+
+# ---------------------------------------------------------
+# Save
+# ---------------------------------------------------------
+
+ggsave("../../outputs/figures/task_map_absolute_diff_raincloud.png",
+       p_raincloud_mad, width = 10, height = 12, units = "in", dpi = 300)
+
+print(p_raincloud_mad)
+
+```
+
+
 # Export the Task Map
 ```{r}
 # write task map into the repository `outputs/` folder (ensures we don't modify `data/`)
