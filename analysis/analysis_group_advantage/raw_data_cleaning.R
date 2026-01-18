@@ -31,9 +31,13 @@ epsilon = 0.000001
 z = 1.96 # For 95%CI
 outcome_term = "Group Advantage"
 
-# load fonts
-font_import(paths = NULL, prompt = FALSE)
-loadfonts(device = "all")
+# load fonts quietly and only import if needed to avoid noisy warnings
+options(extrafont.quiet = TRUE)
+fonts_available <- tryCatch(extrafont::fonts(), error = function(e) character())
+if (!length(fonts_available)) {
+  suppressWarnings(suppressMessages(font_import(paths = NULL, prompt = FALSE)))
+}
+suppressWarnings(suppressMessages(loadfonts(device = "all", quiet = TRUE)))
 
 # --- Resolve project-root anchored paths and ensure output dirs exist ---
 script_path <- tryCatch({
@@ -70,8 +74,10 @@ load_CSVs <- function(pattern, rename = TRUE) {
     filter(grepl(paste0("Wave [0-9] data.*/", pattern, ".csv"), path))
 
   data <- files |>
-    mutate(data = purrr::map(path, \(f) read_csv(f, show_col_types = FALSE) |>
-                               mutate(across(matches("(data.score|duplicateCellID)"), as.character))),
+    mutate(data = purrr::map(path, \(f) suppressWarnings(
+      read_csv(f, show_col_types = FALSE) |>
+        mutate(across(matches("(data.score|duplicateCellID)"), as.character))
+    )),
            .keep = "none") |>
     unnest(data) |>
     distinct()
@@ -257,14 +263,16 @@ conditions <- factors |>
     factor_types |>
       select(factorTypeId, name) |>
       filter(name %in% c("unitsSeed", "unitsIndex", "playerCount")),
-    by = "factorTypeId"
+    by = "factorTypeId",
+    relationship = "many-to-many"
   ) |>
   inner_join(
     treatments |>
       mutate(factorId = str_split(factorIds, ",")) |>
       unnest(cols = c(factorId)) |>
       select(treatmentId, factorId),
-    by = "factorId"
+    by = "factorId",
+    relationship = "many-to-many"
   ) |>
   select(-matches("factor")) |>
   distinct() |>
@@ -327,7 +335,7 @@ raw_score_data <-
   filter(!is.na(complexity)) |>
   mutate(
     task = sub(" Round.*", "", displayName),
-    score = as.numeric(if_else(is.na(score), data.score, as.character(score))),
+      score = suppressWarnings(as.numeric(if_else(is.na(score), data.score, as.character(score)))),
     playerCount = ordered(playerCount)
   ) |>
   filter(!is.na(score)) |>
@@ -378,7 +386,8 @@ permutation_synergy = function(input_data, col = "score", individuals_update) {
       best_individual = sum(choose(n() - row_number(), playerCount - 1) * !!sym(col)) / best_individual_n,
       best_individual_sd = sqrt(sum(
         choose(n() - row_number(), playerCount - 1) * (!!sym(col) - best_individual) ^ 2
-      ) / best_individual_n)
+      ) / best_individual_n),
+      .groups = "drop"
     ) |>
     mutate(playerCount = ordered(playerCount, levels = c(1, 3, 6))) |>
     ungroup()
@@ -394,7 +403,7 @@ permutation_synergy = function(input_data, col = "score", individuals_update) {
       team_sd = sd(!!sym(col)),
       strong_se = strong * sqrt((team_sd ^ 2 / (mean(!!sym(col)) ^ 2 * team_n)) + (first(best_individual_sd) ^ 2 / (first(best_individual) ^ 2 * first(best_individual_n)))),
       weak_se = weak * sqrt((team_sd ^ 2 / (mean(!!sym(col)) ^ 2 * team_n)) + (first(random_individual_sd) ^ 2 / (first(random_individual) ^ 2 * first(random_individual_n))))
-    ) |>
+    , .groups = "drop") |>
     ungroup()
 }
 
@@ -413,7 +422,8 @@ permutation_synergy_partial = function(input_data, col = "score", individuals_up
       best_individual = sum(choose(n() - row_number(), playerCount - 1) * !!sym(col)) / best_individual_n,
       best_individual_sd = sqrt(sum(
         choose(n() - row_number(), playerCount - 1) * (!!sym(col) - best_individual) ^ 2
-      ) / best_individual_n)
+      ) / best_individual_n),
+      .groups = "drop"
     ) |>
     mutate(playerCount = ordered(playerCount, levels = c(1, 3, 6))) |>
     ungroup()
@@ -446,7 +456,7 @@ individuals_update = player_conditions |>
   filter(!is.na(complexity)) |>
   mutate(
     task = sub(" Round.*", "", displayName),
-    score = as.numeric(if_else(is.na(score), data.score, as.character(score))),
+    score = suppressWarnings(as.numeric(if_else(is.na(score), data.score, as.character(score)))),
     average = data.average,
     correct_angle = data.corrAngle,
     playerCount = ordered(playerCount)
@@ -511,14 +521,14 @@ synergy_summary_data <- synergy_data |>
   filter(DV == name) |> select(-name, -se) |>
   mutate(
     DV = if_else(DV == "weak", paste0("Weak ", outcome_term), paste0("Strong ", outcome_term)),
-    DV = ordered(DV, levels = c(paste0("Weak ", outcome_term), paste0("Strong ", outcome_term))),
+    DV = factor(DV, levels = c(paste0("Weak ", outcome_term), paste0("Strong ", outcome_term))),
     complexity = paste(complexity, "Complexity"),
-    complexity = ordered(
+    complexity = factor(
       complexity,
       levels = c("Low Complexity", "Medium Complexity", "High Complexity")
     ),
     playerCount = if_else(playerCount == 3, "Small Group", "Large Group"),
-    playerCount = ordered(playerCount, levels = c("Small Group", "Large Group")),
+    playerCount = factor(playerCount, levels = c("Small Group", "Large Group")),
     grouping = "Task",
     group = task
   ) |>
@@ -532,7 +542,7 @@ aggregated_synergy_summary_data_by_wave = synergy_summary_data |>
   summarise(
     value = mean(value),
     SE = sqrt(sum(SE ^ 2) / length(SE) ^ 2),
-    .groups = "drop_last"
+    .groups = "drop"
   ) |>
   mutate(
     grouping = case_when(
@@ -560,14 +570,14 @@ synergy_summary_data <- synergy_data |>
   filter(DV == name) |> select(-name, -se) |>
   mutate(
     DV = if_else(DV == "weak", paste0("Weak ",outcome_term), paste0("Strong ",outcome_term)),
-    DV = ordered(DV, levels = c(paste0("Weak ",outcome_term), paste0("Strong ",outcome_term))),
+    DV = factor(DV, levels = c(paste0("Weak ",outcome_term), paste0("Strong ",outcome_term))),
     complexity = paste(complexity, "Complexity"),
-    complexity = ordered(
+    complexity = factor(
       complexity,
       levels = c("Low Complexity", "Medium Complexity", "High Complexity")
     ),
     playerCount = if_else(playerCount == 3, "Small Group", "Large Group"),
-    playerCount = ordered(playerCount, levels = c("Small Group", "Large Group")),
+    playerCount = factor(playerCount, levels = c("Small Group", "Large Group")),
     grouping = "Task",
     group = task
   ) |> 
@@ -583,7 +593,8 @@ aggregated_synergy_summary_data_by_wave = synergy_summary_data |>
                values_to = "group") |>
   group_by(grouping, group, DV, wave) |>
   summarise(value = mean(value),
-            SE = sqrt(sum(SE ^ 2) / length(SE) ^ 2)) |> 
+            SE = sqrt(sum(SE ^ 2) / length(SE) ^ 2),
+            .groups = "drop") |> 
   mutate(
     grouping = case_when(
       grouping == "complexity" ~ "Complexity",
@@ -648,6 +659,7 @@ figure_heterogeneity <- aggregated_synergy_summary_data_by_wave |>
       value,
       group,
       shape = playerCount,
+      linewidth = complexity,
       # color = if_else(display,complexity,"none"),
       color = complexity,
       xmin = value - z * SE ,
@@ -669,13 +681,21 @@ figure_heterogeneity <- aggregated_synergy_summary_data_by_wave |>
     ),
     # guide = "none"
   ) +
+  scale_linewidth_manual(
+    name = "",
+    values = c(
+      "Low Complexity" = 0.5,
+      "Medium Complexity" = 0.9,
+      "High Complexity" = 1.3
+    ),
+    guide = "legend"
+  ) +
   scale_shape_manual(values = c(21,4)) +
   # scale_shape_manual(values = c(21,24)) +
   labs(
     y = "",
     x = "",
     color = "",
-    fill = "",
     shape = ""
   ) + geom_crossbar() +
  theme(
