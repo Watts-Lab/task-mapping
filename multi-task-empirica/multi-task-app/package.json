@@ -9,7 +9,7 @@
     "format": "prettier --write 'customTasks/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
-    "@babel/runtime": "^7.18.3",
+    "@babel/runtime": "^7.28.4",
     "@blueprintjs/core": "^3.54.0",
     "@empirica/chat": "^2.3.1",
     "@tailwindcss/forms": "^0.2.1",
